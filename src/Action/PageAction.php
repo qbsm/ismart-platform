@@ -6,6 +6,7 @@ use App\Event\EntityResolved;
 use App\Event\PageLoaded;
 use App\Event\SeoBuilt;
 use App\Service\DataLoaderService;
+use App\Service\SeoBuilderRegistry;
 use App\Service\SeoService;
 use App\Service\TemplateDataBuilder;
 use Psr\EventDispatcher\EventDispatcherInterface;
@@ -28,7 +29,8 @@ final class PageAction
         SeoService $seoService,
         TemplateDataBuilder $templateDataBuilder,
         array $settings,
-        ?EventDispatcherInterface $dispatcher = null
+        ?EventDispatcherInterface $dispatcher = null,
+        ?SeoBuilderRegistry $seoBuilderRegistry = null,
     ) {
         $this->twig = $twig;
         $this->dataLoader = $dataLoader;
@@ -36,6 +38,7 @@ final class PageAction
         $this->templateDataBuilder = $templateDataBuilder;
         $this->settings = $settings;
         $this->dispatcher = $dispatcher;
+        $this->seoBuilderRegistry = $seoBuilderRegistry;
     }
 
     private Twig $twig;
@@ -43,6 +46,7 @@ final class PageAction
     private SeoService $seoService;
     private TemplateDataBuilder $templateDataBuilder;
     private ?EventDispatcherInterface $dispatcher;
+    private ?SeoBuilderRegistry $seoBuilderRegistry;
 
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface
     {
@@ -147,7 +151,7 @@ final class PageAction
         $seoData = $this->dataLoader->loadSeo($jsonBaseDir, $langCode, $pageId, $baseUrl);
 
         if ($entity !== null) {
-            $seoData = $this->buildSeoForEntity($entity, $baseUrl, $entityConfig);
+            $seoData = $this->buildSeoForEntity($entity, $baseUrl, $langCode, $entityConfig, is_array($global) ? $global : [], $entityType);
         }
 
         if ($seoData !== null) {
@@ -205,26 +209,50 @@ final class PageAction
      * @param array<string,mixed> $config
      * @return array<string,mixed>
      */
-    private function buildSeoForEntity(array $entity, string $baseUrl, array $config): array
+    /**
+     * Строит SEO для entity-страницы коллекции.
+     *
+     * Если SeoBuilderRegistry зарегистрирован и содержит builder для коллекции (или default) — делегирует ему.
+     * Иначе — inline generic-логика (для обратной совместимости deployments без Registry).
+     *
+     * @param array<string,mixed> $entity
+     * @param array<string,mixed> $config
+     * @param array<string,mixed> $global
+     * @return array<string,mixed>
+     */
+    private function buildSeoForEntity(array $entity, string $baseUrl, string $langCode, array $config, array $global, string $entityType): array
     {
+        if ($this->seoBuilderRegistry !== null) {
+            $builder = $this->seoBuilderRegistry->get($entityType);
+            if ($builder !== null) {
+                return $builder->build($entity, $baseUrl, $langCode, $config, $global);
+            }
+        }
+
+        // Inline fallback (legacy-совместимость): generic SEO без специфического Schema.org.
         $itemKey = (string) ($config['item_key'] ?? '');
         $ogType = (string) ($config['og_type'] ?? 'website');
+        $siteName = (string) ($global['name'] ?? $global['site_name'] ?? '');
 
         $inner = $itemKey !== '' ? ($entity[$itemKey] ?? []) : $entity;
         $name = (string) ($inner['name'] ?? $inner['title'] ?? $entity['slug'] ?? '');
         $desc = (string) ($entity['desc']['short'] ?? $entity['desc']['full'] ?? $inner['desc'] ?? $inner['lead'] ?? '');
-        $ogImage = $baseUrl . '/data/img/seo/og.webp?v=2';
+        $ogImage = rtrim($baseUrl, '/') . '/data/img/seo/og.webp?v=2';
+
+        $meta = [
+            ['name' => 'description', 'content' => $desc],
+            ['property' => 'og:type', 'content' => $ogType],
+            ['property' => 'og:title', 'content' => $name],
+            ['property' => 'og:description', 'content' => $desc],
+            ['property' => 'og:image', 'content' => $ogImage],
+        ];
+        if ($siteName !== '') {
+            $meta[] = ['property' => 'og:site_name', 'content' => $siteName];
+        }
 
         return [
             'title' => $name,
-            'meta' => [
-                ['name' => 'description', 'content' => $desc],
-                ['property' => 'og:type', 'content' => $ogType],
-                ['property' => 'og:title', 'content' => $name],
-                ['property' => 'og:description', 'content' => $desc],
-                ['property' => 'og:site_name', 'content' => 'Kumho Tire'],
-                ['property' => 'og:image', 'content' => $ogImage],
-            ],
+            'meta' => $meta,
             'json_ld' => null,
             'json_ld_faq' => null,
         ];

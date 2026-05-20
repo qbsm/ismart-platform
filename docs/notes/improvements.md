@@ -54,7 +54,7 @@
 
 - **`RequestAttributes` ещё не применён**. Заменить literal `'csrf_token'`, `'request_id'` и т.д. в ~20 местах.
 - **DI-конструкторы — разнобой**. PageAction (25-45) и SitemapAction используют классическое присваивание, ApiSendAction — promoted readonly. Унифицировать.
-- **`Service/SeoService` — kumho-вариант (inline)**. В italy/beepitron — Strategy pattern (`SeoBuilderInterface` + `SeoBuilderRegistry`). Решить: миграция baseline на Strategy и `distill sync` для всех. Перед миграцией — review.
+- ~~**`Service/SeoService` — kumho-вариант (inline)**~~ — **РЕШЕНО** в [ADR-0003](../architecture/decisions/0003-seo-builder-strategy.md): baseline принимает italy-вариант Strategy pattern (`SeoBuilderInterface` + `SeoBuilderRegistry` + `DefaultSeoBuilder`). PageAction принимает `?SeoBuilderRegistry` опционально, обратно-совместим. В работе.
 - **TemplateDataBuilder::extractHeroPreloadImage() — 62 строки**. Логика adaptive images + fallback стоит вынести.
 - **Unit-тесты для Support-модулей** — `Arr`, `Json`, `PlatformSettings` чистые утилиты, идеальные кандидаты на unit-coverage. Дать confidence для дальнейших рефакторингов.
 - **`distill init --from <existing-deployment>`** — расширение CLI: создавать новый deployment не только из baseline, но и с overrides существующего deployment'а как стартовой точки. Use case: trazano-миграция (см. [migrations/trazano.md](migrations/trazano.md)) — `--from ../kumho-tires.ru` сразу даст архитектуру для tire-deployment'а. Кандидат на реализацию после первого реального применения паттерна (валидировать на trazano).
