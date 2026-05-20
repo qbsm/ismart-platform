@@ -40,6 +40,9 @@
     "validate-json": "node tools/ops/validate-json.js data/json",
     "generate-llms": "php tools/ops/generate-llms-full.php > public/llms-full.txt",
     "fix-permissions": "sudo bash tools/ops/fix-permissions.sh",
+    "distill": "node tools/distill/distill.mjs",
+    "distill:scan": "node tools/distill/distill.mjs scan",
+    "distill:inventory": "node tools/distill/build-inventory.mjs > CORE-INVENTORY.md",
     "prepare": "husky"
   },
   "lint-staged": {
