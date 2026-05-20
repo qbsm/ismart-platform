@@ -260,6 +260,127 @@ async function cmdMarkOverride(deploymentPath, file, reason) {
   console.log(`  reason: ${reason}`);
 }
 
+async function cmdSync(deploymentPath, opts) {
+  const depAbs = resolve(deploymentPath);
+  if (!existsSync(depAbs)) {
+    console.error(`deployment не найден: ${depAbs}`);
+    process.exit(1);
+  }
+
+  const statePath = join(depAbs, '.distill', 'state.json');
+  const state = existsSync(statePath)
+    ? JSON.parse(await readFile(statePath, 'utf8'))
+    : { overrides: {}, drift: {} };
+  const overrides = new Set(Object.keys(state.overrides ?? {}));
+
+  process.stderr.write(`baseline:   ${PLATFORM_ROOT}\n`);
+  process.stderr.write(`deployment: ${depAbs}\n`);
+  process.stderr.write('сканирую...\n');
+
+  const baseline = await loadOrBuildBaseline();
+  const deployment = await buildManifest(depAbs);
+  const { drifted, missingInDeployment } = compareManifests(baseline, deployment);
+
+  // Кандидаты на sync: drift + missing, минус overrides, минус brand-specific префиксы.
+  // По умолчанию sync только src/ + config/ (без brand-specific) + tools/ + public/index.php.
+  // docs/, tests/, README, кэши — НЕ синкаем (deployment может вести свою историю).
+  const SKIP_PREFIXES = [
+    // Brand-specific (deployment-only)
+    'config/project.php', 'config/llms-full.php', 'config/llms-full.php.dist',
+    'config/project.php.dist',
+    'data/', 'assets/css/sections/', 'assets/css/pages/',
+    'assets/js/sections/', 'assets/js/pages/',
+    'templates/sections/', 'templates/pages/',
+    // Runtime / per-deployment
+    '.distill/', '.env', '.env.example', '.gitconfig',
+    '.phpunit.cache/', '.php-cs-fixer.cache',
+    // Documentation (deployment может вести свои docs/sessions/notes)
+    'docs/', 'README.md', 'CLAUDE.md', 'CHANGELOG.md',
+    // Tests (deployment может иметь свои интеграционные тесты)
+    'tests/',
+    // Manifest/locks
+    'composer.lock', 'package-lock.json',
+  ];
+  const isSkipped = (rel) => {
+    if (overrides.has(rel)) return 'override';
+    for (const prefix of SKIP_PREFIXES) {
+      if (rel === prefix || rel.startsWith(prefix)) return 'brand-specific';
+    }
+    if (opts.only && !rel.startsWith(opts.only)) return 'not in --only';
+    return null;
+  };
+
+  const toSync = [];
+  const skipped = [];
+  for (const rel of [...drifted, ...missingInDeployment]) {
+    const reason = isSkipped(rel);
+    if (reason) {
+      skipped.push({ rel, reason });
+    } else {
+      toSync.push(rel);
+    }
+  }
+
+  toSync.sort();
+  skipped.sort((a, b) => a.rel.localeCompare(b.rel));
+
+  console.log();
+  console.log(`=== sync plan ===`);
+  console.log(`baseline:   ${PLATFORM_ROOT}`);
+  console.log(`deployment: ${depAbs}`);
+  console.log();
+  console.log(`будет синхронизировано: ${toSync.length} файлов`);
+  console.log(`пропущено: ${skipped.length} файлов (overrides, brand-specific, etc.)`);
+  console.log();
+
+  if (toSync.length === 0) {
+    console.log('Нечего синхронизировать. Все CORE-файлы либо identical, либо overrides.');
+    return;
+  }
+
+  console.log('--- ФАЙЛЫ ДЛЯ SYNC ---');
+  toSync.forEach(f => console.log(`  ← ${f}`));
+  console.log();
+
+  if (opts.dryRun) {
+    console.log('--dry-run: ничего не копировал. Запустите без --dry-run для применения.');
+    return;
+  }
+
+  if (!opts.yes) {
+    process.stdout.write(`Синхронизировать ${toSync.length} файлов? [y/N] `);
+    const answer = await new Promise(r => {
+      process.stdin.once('data', d => r(d.toString().trim().toLowerCase()));
+    });
+    if (answer !== 'y' && answer !== 'yes') {
+      console.log('отменено.');
+      return;
+    }
+  }
+
+  let copied = 0;
+  for (const rel of toSync) {
+    await copyFile(join(PLATFORM_ROOT, rel), join(depAbs, rel));
+    copied++;
+  }
+  console.log(`\n✓ синхронизировано ${copied} файлов`);
+
+  // Обновить state.json: last_sync, platform_commit, очистить drift (теперь identical)
+  state.platform_commit = getBaselineCommit();
+  state.platform_branch = getBaselineBranch();
+  state.last_sync = new Date().toISOString();
+  if (state.drift) {
+    for (const f of toSync) delete state.drift[f];
+  }
+  await writeJson(statePath, state);
+  console.log(`✓ state.json обновлён: platform_commit=${state.platform_commit.substring(0, 7)}, last_sync=${state.last_sync}`);
+
+  console.log(`\nДальше:`);
+  console.log(`  cd ${relative(process.cwd(), depAbs)}`);
+  console.log(`  composer dump-autoload -o   # перерегистрировать новые классы`);
+  console.log(`  # запустить тесты / smoke / commit`);
+}
+
 function printHelp() {
   console.log(`distill — file-level tracking между ismart-platform и deployments
 
@@ -268,6 +389,7 @@ function printHelp() {
   diff <deployment-path>              Сравнить baseline с deployment'ом
   status                              Обзор drift'а по всем siblings (kumho/italy/beepitron)
   init <slug>                         Создать новый deployment из baseline
+  sync <deployment-path>              Подтянуть drift CORE-файлов из baseline (с учётом overrides)
   mark-override <dep> <file> <reason> Пометить файл как deployment-specific override
   help                                Это сообщение
 
@@ -280,6 +402,11 @@ function printHelp() {
   --name "<name>"            Заполнит MAIL_FROM_NAME и MAIL_SUBJECT_PREFIX в .env
   --domain <domain>          Заполнит APP_BASE_URL (https://<domain>/) в .env
   --lang <code>              APP_DEFAULT_LANG (default ru)
+
+Флаги для sync:
+  --dry-run                  Показать список файлов, ничего не копировать
+  --yes                      Применить без интерактивного подтверждения
+  --only=<prefix>            Только файлы под этим путём (например --only=src/Support)
 
 Примеры:
   npm run distill:scan
@@ -306,6 +433,9 @@ function parseArgs(args) {
     else if (a.startsWith('--domain=')) opts.domain = a.slice(9);
     else if (a === '--lang') opts.lang = args[++i];
     else if (a.startsWith('--lang=')) opts.lang = a.slice(7);
+    else if (a === '--dry-run') opts.dryRun = true;
+    else if (a === '--yes' || a === '-y') opts.yes = true;
+    else if (a.startsWith('--only=')) opts.only = a.slice(7);
     else positional.push(a);
   }
   return { opts, positional };
@@ -339,6 +469,12 @@ async function main() {
         process.exit(1);
       }
       return cmdMarkOverride(positional[0], positional[1], positional.slice(2).join(' '));
+    case 'sync':
+      if (!positional[0]) {
+        console.error('Использование: distill sync <deployment-path> [--dry-run] [--yes] [--only=src/Support]');
+        process.exit(1);
+      }
+      return cmdSync(positional[0], opts);
     default:
       console.error(`неизвестная команда: ${cmd}`);
       printHelp();
