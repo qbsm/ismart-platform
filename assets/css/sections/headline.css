@@ -1,0 +1,39 @@
+.headline {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  @media (--lg) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.headline .section__item.heading-wrap {
+  --mouse-x: -100px;
+  --mouse-y: -100px;
+  --spotlight-radius: 6rem;
+
+  background: radial-gradient(
+    circle var(--spotlight-radius) at var(--mouse-x) var(--mouse-y),
+    var(--color-3) 0%,
+    var(--color-3) 40%,
+    var(--color-2) 100%
+  );
+  background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+
+  @media (--lg) {
+    --spotlight-radius: 9rem;
+  }
+}
+
+.headline .title {
+  font-size: 1.4em;
+  line-height: 1.2;
+
+  @media (--lg) {
+    font-size: 2.5em;
+  }
+}

@@ -20,12 +20,11 @@
   {% set sliderSettings = sliderSettings|merge({'pagination': {'color': '#fff'}|merge(sliderSettings.pagination)}) %}
 {% endif %}
 
-<div class="slider" style="width: 100%; height: 100%;">
+<div class="slider">
   <div 
-    class="swiper-container {% if sliderSettings.pagination is defined and not sliderSettings.pagination.enabled %}no-pagination{% endif %}" 
+    class="swiper {% if sliderSettings.pagination is defined and not sliderSettings.pagination.enabled %}no-pagination{% endif %}"
     id="{{ slider_id|default('introSlider') }}" 
-    data-settings="{{ sliderSettings|json_encode }}"
-    style="width: 100%; height: 100%;">
+    data-settings="{{ sliderSettings|json_encode }}">
     <div class="swiper-wrapper">
       {% if items is defined and items is not empty %}
         {% for item in items %}
@@ -41,18 +40,18 @@
                   class: 'img-responsive',
                   style: 'width: 100%; height: 100%; object-fit: cover;',
                   picture_style: 'display: block; width: 100%; height: 100%;',
-                  sizes_preset: 'full',
+                  sizes_preset: 'hero',
                   loading: loop.first ? 'eager' : 'lazy'
                 } %}
               {% elseif item.cover is defined and item.cover %}
-                {# Old format with cover URL #}
+                {# Слайд с обложкой (URL в item.cover) #}
                 {% include 'components/picture.twig' with {
                   image: {'src': item.cover},
                   alt: item.alt|default(item.heading.title|default('Slider image')),
                   class: 'img-responsive',
                   style: 'width: 100%; height: 100%; object-fit: cover;',
                   picture_style: 'display: block; width: 100%; height: 100%;',
-                  sizes_preset: 'full',
+                  sizes_preset: 'hero',
                   loading: loop.first ? 'eager' : 'lazy'
                 } %}
               {% endif %}

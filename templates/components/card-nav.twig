@@ -1,0 +1,20 @@
+{% if item.href is defined %}
+<a href="{{ item.href }}" class="card-nav {{ item.class|default('') }} link">
+{% else %}
+<div class="card-nav {{ item.class|default('') }}">
+{% endif %}
+  {% if item.cover is defined %}
+    <div class="card__item cover-wrap">
+      <div class="card__cover" style="background-image: url('{{ url(item.cover.src) }}');"></div>
+    </div>
+  {% endif %}
+  {% if item.title is defined %}
+    <div class="card__item title-wrap">
+      <span class="card__title">{{ item.title | raw }}</span>
+    </div>
+  {% endif %}
+{% if item.href is defined %}
+</a>
+{% else %}
+</div>
+{% endif %}

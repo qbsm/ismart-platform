@@ -1,5 +1,5 @@
 # Зависимости
-vendor/
+/vendor/
 node_modules/
 
 # Служебные
@@ -13,6 +13,9 @@ node_modules/
 cache/
 *.cache
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Конфигурационные файлы окружения
 .env
@@ -24,9 +27,16 @@ cache/
 Thumbs.db
 desktop.ini
 
+# Локальные настройки Claude Code
+.claude/
+
+# Личный gitconfig (email, имя)
+.gitconfig
+
 # Файлы IDE и редакторов
 .idea/
 .vscode/
+.cursor/
 *.sublime-project
 *.sublime-workspace
 *.komodoproject
@@ -34,6 +44,7 @@ desktop.ini
 .phpstorm.meta.php
 _ide_helper.php
 .phpunit.result.cache
+.php-cs-fixer.cache
 
 # Файлы загрузок (опционально, если есть директория для загрузок пользователей)
 uploads/
@@ -46,6 +57,7 @@ uploads/
 
 # Файлы сборки (если используется сборщик)
 build/
+!tools/build/
 dist/
 
 # Файлы сборки CSS и JS
@@ -59,6 +71,13 @@ assets/js/build/*
 *.bundle.css
 *.[0-9a-f]*.css
 *.[0-9a-f]*.js
+# Исключения: корневые конфиги (паттерн выше ловит их из-за hex-символов c/d/e/f в имени)
+!webpack.config.js
+!postcss.config.js
+!eslint.config.js
+!eslint.config.mjs
+!stylelint.config.mjs
+!vitest.config.js
 
 # Файлы манифестов сборки
 *-manifest.json
@@ -68,19 +87,33 @@ css-manifest.json
 # Файлы композера
 composer.phar
 
+# Отчёты покрытия тестов
+coverage/
+
 # Другие файлы, которые не должны попасть в репозиторий
 error_log
 sitemap.xml
 sitemap.xml.gz
 sitemap-pages-*.xml
-sitemap-portfolio-*.xml
 
-# Проекты
-whatsapp
-telegram
+# Локальные проекты/папки (при необходимости добавьте свои)
+# whatsapp
+# telegram
 
 # Файлы конфигурации Apache (htaccess хранится в репозитории)
 
 # Добавляем папку logs/
 logs/
-robots.txt
+
+# Симлинки в public/ (создаются при сборке)
+public/assets
+public/data
+public/robots.txt
+
+# Архивная копия master
+kumho-tires.ru-master/
+
+# Крупные медиа-файлы, не коммитим в репозиторий
+data/img/tires/
+data/img/restaurants/
+data/img/restaurants-list/

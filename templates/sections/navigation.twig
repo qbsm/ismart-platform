@@ -1,0 +1,25 @@
+<section class="navigation section">
+  <div class="container">
+    {% if data.items is defined and data.items is not empty %}
+      <div class="section__item items-wrap">
+        {% for item in data.items %}
+          <div class="section__subitem item-wrap size-{{ item.size|default('half') }}">
+            {% if item.type == 'buttons' %}
+              <div class="buttons-wrap">
+                {% for btn in item.items %}
+                  {% include 'components/button-section.twig' with {'item': btn} %}
+                {% endfor %}
+              </div>
+            {% elseif item.type == 'gradient' %}
+              {% include 'components/card-gradient.twig' with {'item': item} %}
+            {% elseif item.type == 'button' %}
+              {% include 'components/button-section.twig' with {'item': item} %}
+            {% else %}
+              {% include 'components/card-nav.twig' with {'item': item} %}
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>

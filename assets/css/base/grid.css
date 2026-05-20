@@ -3,34 +3,49 @@
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (--lg) {
     max-width: 120rem;
-    margin-left: calc((100vw - 120rem)/2);
-    margin-right: calc((100vw - 120rem)/2);
   }
 
   @media (--xl) {
-    max-width: 140rem;
-    margin-left: calc((100vw - 140rem)/2);
-    margin-right: calc((100vw - 140rem)/2);
+    max-width: 136rem;
   }
 }
 
-.container-narrow {
+.container-sm {
   position: relative;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (--lg) {
-    max-width: 90rem;
-    margin-left: calc((100vw - 90rem)/2);
-    margin-right: calc((100vw - 90rem)/2);
+    max-width: 80rem;
+  }
+
+  @media (--xl) {
+    max-width: 80rem;
   }
 }
 
-.container-grid-left {
+.container-md {
+  position: relative;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (--lg) {
+    max-width: 99.2rem;
+  }
+}
+
+.container-left {
   width: 100%;
   padding-left: 1rem;
 
@@ -38,16 +53,32 @@
     width: calc(100vw - ((100vw - 120rem)/2));
     margin-left: calc((100vw - 120rem)/2);
   }
-}
 
-.padding-grid-left {
-  width: 100%;
-  padding-left: 1rem;
-
-  @media (--lg) {
-    padding-left: calc(((100vw - 120rem)/2) + 1rem);
+  @media (--xl) {
+    width: calc(100vw - ((100vw - 136rem)/2));
+    margin-left: calc((100vw - 136rem)/2);
+    margin-right: calc((100vw - 136rem)/2);
   }
 }
+
+.container-left.offset {
+  padding-left: 2rem;
+
+  @media (--lg) {
+    width: 100%;
+    margin-left: 0;
+    padding-left: calc((100vw - 120rem)/2 + 2rem);
+  }
+
+  @media (--xl) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: calc((100vw - 136rem)/2 + 2rem);
+  }
+}
+
+
 
 .section {
   padding-top: 2rem;
@@ -57,14 +88,6 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
-}
-
-.container-md {
-  max-width: 45rem;
-}
-
-.container-lg {
-  max-width: 60rem;
 }
 
 .container-full {

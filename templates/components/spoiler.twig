@@ -1,9 +1,9 @@
 <div class="spoiler {% if item.active is defined and item.active %}active{% endif %}">
   <div class="spoiler__item title-wrap {% if item.active is defined and item.active %}active{% endif %}">
-    <span class="h6 spoiler__item-title font-1-demibold uppercase">{{ item.title | raw }}</span>
-    <div class="spoiler__item-icon-wrap"><img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" class="img-responsive"></div>
+    <span class="h6 spoiler__item-title weight-600 uppercase">{{ item.title | raw }}</span>
+    <div class="spoiler__item-icon-wrap"><img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" class="img-responsive" loading="lazy"></div>
   </div>
-  <div class="spoiler__item desc-wrap" {% if item.active is defined and item.active %}style="display: flex; max-height: none; overflow: visible;"{% endif %}>
+  <div class="spoiler__item desc-wrap">
     {% for item in item.items %}
       <div class="spoiler__desc">{{ item | raw }}</div>
     {% endfor %}

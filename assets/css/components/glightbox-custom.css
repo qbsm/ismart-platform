@@ -1,4 +1,4 @@
-/* Стили для GLightbox */
+/* Стили для GLightbox. !important — переопределение стилей библиотеки. */
 
 /* Блокировка скролла при открытом лайтбоксе */
 body.glightbox-open {
@@ -18,7 +18,7 @@ body.glightbox-open {
 
 .glightbox-clean .gclose {
   background-color: var(--color-4) !important;
-  opacity: 50%;
+  opacity: 0.5;
   backdrop-filter: blur(5px);
 }
 
@@ -32,6 +32,7 @@ body.glightbox-open {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -41,7 +42,7 @@ body.glightbox-open {
 .glightbox-clean .gnext, 
 .glightbox-clean .gprev {
   background-color: var(--color-4) !important;
-  opacity: 50%;
+  opacity: 0.5;
   backdrop-filter: blur(5px);
   border-radius: 5px;
 }
@@ -49,7 +50,7 @@ body.glightbox-open {
 .glightbox-clean .gnext:hover, 
 .glightbox-clean .gprev:hover {
   background-color: var(--color-4) !important;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .goverlay {
@@ -91,11 +92,11 @@ body.glightbox-open {
 
 .vk-video-container iframe {
   border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgb(0 0 0 / 30%);
 }
 
 /* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .vk-video-container {
     max-width: 95vw;
     max-height: 80vh;

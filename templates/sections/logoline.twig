@@ -1,0 +1,21 @@
+<section class="logoline section">
+    <div class="swiper" id="logolineSlider">
+      <div class="swiper-wrapper">
+        {% if data.tires is defined and data.tires is not empty %}
+          {% for slug in data.tires %}
+            {% set tireItem = load_json('data/json/' ~ lang_code ~ '/tires/' ~ slug ~ '.json') %}
+            {% if tireItem and tireItem.visible | default(false) %}
+              <div class="swiper-slide">
+                <a href="{{ url('/' ~ slug ~ '/') }}" class="logoline__item link">
+                  <span class="logoline__title font-2 weight-600">{{ tireItem.item.code }}</span>
+                  {% if tireItem.item.series is defined and tireItem.item.series %}
+                    <span class="logoline__series">{{ tireItem.item.series }}</span>
+                  {% endif %}
+                </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+</section>

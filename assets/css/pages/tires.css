@@ -1,0 +1,208 @@
+/* --- Tire Detail Page --- */
+
+.tire-detail {
+  padding-block-end: 2rem;
+}
+
+.tire-detail .block-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+/* Grid: две колонки на десктопе */
+.tire-detail__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  min-width: 0;
+}
+
+@media (width >= 1200px) {
+  .tire-detail__grid {
+    grid-template-columns: 40% 1fr;
+    gap: 3rem 4rem;
+  }
+}
+
+/* Gallery — левая колонка */
+.tire-detail__gallery {
+  width: 100%;
+  min-width: 0;
+}
+
+.tire-detail__main-image {
+  background: #f7f7f7;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+}
+
+@media (width >= 1200px) {
+  .tire-detail__main-image {
+    height: 500px;
+    aspect-ratio: auto;
+  }
+}
+
+.tire-detail__main-image picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tire-detail__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.tire-detail__thumbs {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.tire-detail__thumb {
+  width: 90px;
+  height: 90px;
+  border: 1px solid transparent;
+  border-radius: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  background: #f7f7f7;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-1);
+}
+
+.tire-detail__thumb.active {
+  border-color: var(--color-3);
+}
+
+.tire-detail__thumb:hover {
+  border-color: var(--color-3);
+}
+
+.tire-detail__thumb img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Info — правая колонка */
+.tire-detail__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.tire-detail p {
+  margin: 0;
+}
+
+.tire-detail__header {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.tire-detail__title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+}
+
+.tire-detail__title-group .heading-accent {
+  margin-bottom: 0.25rem;
+}
+
+.tire-detail__series {
+  color: var(--color-5);
+}
+
+.tire-detail__badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+  background: var(--color-3);
+  color: #fff;
+  align-self: flex-start;
+}
+
+.tire-detail__desc {
+  line-height: 1.6;
+  font-size: 1.125em;
+}
+
+.tire-detail .custom-list {
+  font-size: 1.125em;
+}
+
+.tire-detail__text {
+  line-height: 1.7;
+  font-size: 1.125em;
+}
+
+/* Sizes — full width */
+.tire-detail__sizes {
+  width: 100%;
+  min-width: 0;
+}
+
+@media (width >= 1200px) {
+  .tire-detail__sizes {
+    grid-column: 1 / -1;
+  }
+}
+
+.tire-detail__sizes .block-wrap {
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Size table */
+.tire-detail__table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.tire-detail__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tire-detail__table th,
+.tire-detail__table td {
+  padding: 1.15rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-4);
+  white-space: nowrap;
+}
+
+.tire-detail__table th {
+  font-weight: 600;
+  background: var(--color-3);
+  color: var(--color-1);
+  font-size: 0.9375em;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tire-detail__table tbody tr:hover {
+  background: #f7f7f7;
+}
+
+.tire-detail__table tbody tr:nth-child(even) {
+  background: #fafafa;
+}

@@ -1,0 +1,22 @@
+{# trust.twig — Блок доверия: краткие преимущества компании #}
+<section class="trust">
+  <div class="container">
+    {% if data.items is defined and data.items|length > 0 %}
+    <div class="trust__grid">
+      {% for item in data.items %}
+      <div class="trust__item">
+        {% if item.icon is defined %}
+          <div class="trust__icon">{{ item.icon }}</div>
+        {% endif %}
+        {% if item.title is defined %}
+          <h3 class="trust__title">{{ item.title }}</h3>
+        {% endif %}
+        {% if item.desc is defined %}
+          <p class="trust__desc">{{ item.desc }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>

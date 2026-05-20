@@ -3,28 +3,49 @@
   bottom: 1rem;
   left: 0;
   right: 0;
-  z-index: var(--z-index-9);
-  /* Стили для анимации задаются в JavaScript */
+  z-index: var(--z-index-6);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cookie-panel.hidden {
+  display: none;
+}
+
+.cookie-panel.opening {
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 .cookie-panel .section__item {
   padding: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
-  background-color: var(--color-4);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  background-color: var(--color-1);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+  border-radius: 1rem;
   margin: 0 1rem;
 
   @media (--md) {
     padding: 3rem;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin: 0 2rem;
+    border-radius: 2rem;
   }
+}
+
+.cookie-panel .desc-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.cookie-panel .button-wrap {
+  display: flex;
+  align-items: center;
 }
 
 .cookie-panel .desc-wrap {
@@ -42,7 +63,7 @@
 }
 
 /* Адаптация для мобильных устройств */
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .cookie-panel {
     bottom: 0;
     left: 0;
@@ -51,8 +72,6 @@
   
   .cookie-panel .section__item {
     margin: 0;
-    border-radius: 0;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-radius: 2rem 2rem 0 0;
   }
 }

@@ -1,0 +1,23 @@
+{% set _cover_src = '' %}
+{% if data.cover is iterable %}
+  {% if data.cover.src is defined %}
+    {% set _cover_src = data.cover.src %}
+  {% elseif data.cover['1920'] is defined %}
+    {% set _cover_src = data.cover['1920'] %}
+  {% elseif data.cover['1280'] is defined %}
+    {% set _cover_src = data.cover['1280'] %}
+  {% endif %}
+{% else %}
+  {% set _cover_src = data.cover %}
+{% endif %}
+{% set _cover_style = "background-image: url('" ~ url(_cover_src) ~ "')" %}
+{% if data.cover_position is defined and data.cover_position %}
+  {% set _cover_style = _cover_style ~ "; background-position: " ~ data.cover_position %}
+{% endif %}
+<section class="frame">
+  <div class="section__item cover-wrap">
+    {% if _cover_src %}
+      <div class="cover" style="{{ _cover_style }}"></div>
+    {% endif %}
+  </div>
+</section>

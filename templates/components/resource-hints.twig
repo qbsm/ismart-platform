@@ -1,0 +1,11 @@
+{# Resource hints: dns-prefetch и preconnect для внешних доменов #}
+{% if config.settings.resource_hints is defined and config.settings.resource_hints is iterable %}
+  {% for hint in config.settings.resource_hints %}
+    {% if hint.rel == 'preconnect' %}
+      <link rel="preconnect" href="{{ hint.href }}" {% if hint.crossorigin|default(false) %}crossorigin{% endif %}>
+      <link rel="dns-prefetch" href="{{ hint.href }}">
+    {% elseif hint.rel == 'dns-prefetch' %}
+      <link rel="dns-prefetch" href="{{ hint.href }}">
+    {% endif %}
+  {% endfor %}
+{% endif %}

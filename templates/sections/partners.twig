@@ -1,0 +1,40 @@
+{# partners.twig — Блок для партнёров: экосистема и интеграция #}
+<section class="partners" id="partners">
+  <div class="container partners__inner">
+    <div class="partners__text">
+      {% if data.label is defined %}
+        <div class="partners__label">{{ data.label }}</div>
+      {% endif %}
+      {% if data.heading is defined %}
+        <h2 class="partners__heading">{{ data.heading|raw }}</h2>
+      {% endif %}
+      {% if data.description is defined %}
+        <p class="partners__description">{{ data.description|raw }}</p>
+      {% endif %}
+      {% if data.features is defined and data.features|length > 0 %}
+        <ul class="partners__features">
+          {% for feature in data.features %}
+            <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+    {% if data.cards is defined and data.cards|length > 0 %}
+    <div class="partners__visual">
+      {% for card in data.cards %}
+      <div class="partners__card">
+        {% if card.icon is defined %}
+          <div class="partners__card-icon">{{ card.icon }}</div>
+        {% endif %}
+        {% if card.title is defined %}
+          <h4 class="partners__card-title">{{ card.title }}</h4>
+        {% endif %}
+        {% if card.desc is defined %}
+          <p class="partners__card-desc">{{ card.desc }}</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>

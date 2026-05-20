@@ -1,26 +1,32 @@
 // Обработка клика по иконке бургера
-document.addEventListener('DOMContentLoaded', function() {
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   const burgerIcon = document.getElementById('burgerIcon');
   let scrollPosition = 0;
-  
+
   if (burgerIcon) {
-    burgerIcon.addEventListener('click', function(e) {
-      this.classList.toggle('active');
-      
+    burgerIcon.addEventListener('click', function () {
       const burgerMenu = document.getElementById('burgerMenu');
+      const isOpen = this.classList.toggle('active');
+
+      this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      this.setAttribute(
+        'aria-label',
+        isOpen ? this.dataset.labelClose || 'Close menu' : this.dataset.labelOpen || 'Open menu'
+      );
+
       if (burgerMenu) {
         burgerMenu.classList.toggle('active');
-        
-        // Блокировка/разблокировка прокрутки страницы
-        if (burgerMenu.classList.contains('active')) {
-          // Сохраняем текущую позицию прокрутки
+        burgerMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+
+        if (isOpen) {
           scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-          document.body.style.overflow = 'hidden'; // Блокируем прокрутку
+          document.body.style.overflow = 'hidden';
           document.body.style.position = 'fixed';
           document.body.style.top = `-${scrollPosition}px`;
           document.body.style.width = '100%';
         } else {
-          // Восстанавливаем прокрутку
           document.body.style.overflow = '';
           document.body.style.position = '';
           document.body.style.top = '';
@@ -45,14 +51,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // Закрытие меню при клике на пункты меню
   const menuItems = document.querySelectorAll('#burgerMenu a');
   if (menuItems.length > 0) {
-    menuItems.forEach(item => {
+    menuItems.forEach((item) => {
       item.addEventListener('click', function () {
         if (burgerIcon) {
           burgerIcon.classList.remove('active');
+          burgerIcon.setAttribute('aria-expanded', 'false');
+          burgerIcon.setAttribute('aria-label', burgerIcon.dataset.labelOpen || 'Open menu');
         }
         if (burgerMenu) {
           burgerMenu.classList.remove('active');
-          // Восстанавливаем прокрутку
+          burgerMenu.setAttribute('aria-hidden', 'true');
           document.body.style.overflow = '';
           document.body.style.position = '';
           document.body.style.top = '';
@@ -68,8 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (burgerIcon && burgerMenu) {
       if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target)) {
         burgerIcon.classList.remove('active');
+        burgerIcon.setAttribute('aria-expanded', 'false');
+        burgerIcon.setAttribute('aria-label', burgerIcon.dataset.labelOpen || 'Open menu');
         burgerMenu.classList.remove('active');
-        // Восстанавливаем прокрутку
+        burgerMenu.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
         document.body.style.position = '';
         document.body.style.top = '';

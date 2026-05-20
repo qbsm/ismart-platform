@@ -1,10 +1,20 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  font-size: 1em;
+}
+
 body,
 input,
 select,
 textarea {
     font-size: 1.4rem;
-    font-family: var(--font-1-regular);
- 
+    font-family: var(--font-1);
+    font-weight: 350;
+    line-height: 1.2;
+
     @media (--lg) {
         font-size: 1.6rem;
     }
@@ -16,90 +26,113 @@ h3,
 h4,
 h5,
 h6 {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  font-family: var(--font-1-demibold);
-  line-height: 1.1;
+  margin-block: 0;
+  font-family: var(--font-2);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.heading,
+.title {
+  font-family: var(--font-2);
+  line-height: 1.25;
 }
 
 .h1 {
-  font-size: 1.8em;
+  font-size: 1.2em;
 
   @media (--lg) {
-    font-size: 3.2em;
+    font-size: 2.1em;
   }
 }
 
 .h2 {
-  font-size: 1.6em;
+  font-size: 1.05em;
 
   @media (--lg) {
-    font-size: 2.8em;
+    font-size: 1.75em;
   }
 }
 
 .h3 {
-  font-size: 1.4em;
+  font-size: 0.95em;
 
   @media (--lg) {
-    font-size: 2.4em;
+    font-size: 1.5em;
   }
 }
 
 .h4 {
-  font-size: 1.2em;
+  font-size: 0.9em;
 
   @media (--lg) {
-    font-size: 2.0em;
+    font-size: 1.25em;
   }
 }
 
 .h5 {
-  font-size: 1em;
+  font-size: 0.85em;
 
   @media (--lg) {
-    font-size: 1.6em;
+    font-size: 1.1em;
   }
 }
 
 .h6 {
-  font-size: 0.9em;
+  font-size: 0.8em;
 
   @media (--lg) {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
 b,
 strong {
-  font-family: var(--font-1-bold);
+  font-weight: 600;
 }
 
-.font-1-light {
-  font-family: var(--font-1-light);
+.weight-100 {
+  font-weight: 100;
 }
 
-.font-1-regular {
-  font-family: var(--font-1-regular);
+.weight-200 {
+  font-weight: 200;
 }
 
-.font-1-normal {
-  font-family: var(--font-1-normal);
+.weight-300 {
+  font-weight: 300;
 }
 
-.font-1-medium {
-  font-family: var(--font-1-medium);
+.weight-400 {
+  font-weight: 400;
 }
 
-.font-1-demibold {
-  font-family: var(--font-1-demibold);
+.weight-500 {
+  font-weight: 500;
 }
 
-.font-1-bold {
-  font-family: var(--font-1-bold);
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-800 {
+  font-weight: 800;
+}
+
+.weight-900 {
+  font-weight: 900;
+}
+
+.font-1 {
+  font-family: var(--font-1);
+}
+
+.font-2 {
+  font-family: var(--font-2);
 }
 
 .text-lg {
@@ -125,12 +158,5 @@ strong {
 }
 
 .longread {
-  font-size: 0.8em;
-}
-
-.heading .copyright {
-  margin-left: -0.05em;
-  font-size: 0.7em;
-  font-family: var(--font-1-light);
-  font-weight: 100;
+  font-size: 1em;
 }

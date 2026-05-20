@@ -1,0 +1,21 @@
+<section class="actions">
+  <div class="container">
+    <div class="section__item block-wrap items-stretch">
+      {% if data.heading is defined %}
+        <div class="section__subitem heading-wrap items-start text-left">
+          <span class="heading-accent self-start" aria-hidden="true"></span>
+          {% include 'components/heading.twig' with {'item': data.heading} %}
+        </div>
+      {% endif %}
+      {% if data.items is defined and data.items is not empty %}
+        <div class="section__subitem cards-action-wrap">
+          {% for item in data.items %}
+            <div class="section__inner card-action-wrap">
+              {% include 'components/card-action.twig' with {'item': item} %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

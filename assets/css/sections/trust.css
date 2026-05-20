@@ -1,0 +1,57 @@
+/* trust.css — Блок доверия */
+
+.trust {
+  padding: 80px 0;
+  background: var(--color-1);
+}
+
+.trust__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (--sm) {
+  .trust__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (--lg) {
+  .trust__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+}
+
+.trust__item {
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.trust__icon {
+  width: 48px;
+  height: 48px;
+  background: #f8f9fb;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  font-size: 22px;
+}
+
+.trust__title {
+  font-family: var(--font-2);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-2);
+  margin-bottom: 6px;
+}
+
+.trust__desc {
+  font-size: 13px;
+  color: var(--color-5);
+  line-height: 1.5;
+}

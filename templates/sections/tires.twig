@@ -1,0 +1,171 @@
+<section class="tires section">
+  <div class="container">
+    <div class="section__item block-wrap">
+      {% if data.heading is defined %}
+        <div class="section__subitem heading-wrap">
+          <span class="heading-accent self-start" aria-hidden="true"></span>
+          {% include 'components/heading.twig' with {'item': data.heading} %}
+        </div>
+      {% endif %}
+      {% set tiresList = load_json('data/json/' ~ lang_code ~ '/pages/tires.json') %}
+      {% set filterVisible = true %}
+      {% if data.filter is defined %}
+        {% if data.filter is iterable %}
+          {% set filterVisible = data.filter.visible is defined ? data.filter.visible : true %}
+        {% else %}
+          {% set filterVisible = data.filter ? true : false %}
+        {% endif %}
+      {% endif %}
+      {% set tiresItems = [] %}
+      {% set allDiameters = [] %}
+      {% set allWidths = [] %}
+      {% set allProfiles = [] %}
+      {% if tiresList and tiresList.items is not empty %}
+        {% for slug in tiresList.items %}
+          {% set tireItem = load_json('data/json/' ~ lang_code ~ '/tires/' ~ slug ~ '.json') %}
+          {% if tireItem and tireItem.visible | default(false) %}
+            {% set tiresItems = tiresItems | merge([tireItem]) %}
+            {% set filterData = tireItem.filter | default({}) %}
+            {% set diameters = filterData.diameters | default(filterData.diameter | default([])) %}
+            {% set widths = filterData.widths | default(filterData.width | default([])) %}
+            {% set profiles = filterData.profiles | default(filterData.profile | default(filterData.heights | default(filterData.height | default([])))) %}
+            {% for value in diameters %}
+              {% if value not in allDiameters %}
+                {% set allDiameters = allDiameters | merge([value]) %}
+              {% endif %}
+            {% endfor %}
+            {% for value in widths %}
+              {% if value not in allWidths %}
+                {% set allWidths = allWidths | merge([value]) %}
+              {% endif %}
+            {% endfor %}
+            {% for value in profiles %}
+              {% if value not in allProfiles %}
+                {% set allProfiles = allProfiles | merge([value]) %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      {% set previewLimit = data.preview_limit | default(0) %}
+      {% set hasPreviewLimit = previewLimit > 0 %}
+      {% set renderedItems = hasPreviewLimit ? (tiresItems | slice(0, previewLimit)) : tiresItems %}
+      {% set allModelsLinkVisible = false %}
+      {% set allModelsLinkTitle = 'Все модели' %}
+      {% set allModelsLinkHref = '/tires/' %}
+      {% if data.all_models_link is defined and data.all_models_link %}
+        {% set allModelsLinkVisible = data.all_models_link.visible | default(false) %}
+        {% set allModelsLinkTitle = data.all_models_link.title | default('Все модели') %}
+        {% set allModelsLinkHref = data.all_models_link.href | default('/tires/') %}
+      {% endif %}
+
+      {% if filterVisible %}
+        {% set diameterOptions = [{'value': '', 'label': 'Все'}] %}
+        {% for value in allDiameters|sort %}
+          {% set diameterOptions = diameterOptions|merge([{'value': value, 'label': value}]) %}
+        {% endfor %}
+        {% set profileOptions = [{'value': '', 'label': 'Все'}] %}
+        {% for value in allProfiles|sort %}
+          {% set profileOptions = profileOptions|merge([{'value': value, 'label': value}]) %}
+        {% endfor %}
+        {% set widthOptions = [{'value': '', 'label': 'Все'}] %}
+        {% for value in allWidths|sort %}
+          {% set widthOptions = widthOptions|merge([{'value': value, 'label': value}]) %}
+        {% endfor %}
+        {% set seasonButtons = [] %}
+        {% for s in data.filter.seasons | default([]) %}
+          {% set btn = {'label': s.label, 'class': 'js-select-season', 'data_attr_name': 'data-season', 'data_attr': s.value} %}
+          {% if s.disabled is defined and s.disabled %}
+            {% set btn = btn | merge({'disabled': true}) %}
+          {% endif %}
+          {% set seasonButtons = seasonButtons | merge([btn]) %}
+        {% endfor %}
+        {% set tiresFilter = {
+          'root_class': 'section__subitem filter-wrap',
+          'groups': [
+            {
+              'type': 'buttons',
+              'class': 'seasons-wrap',
+              'buttons': seasonButtons
+            },
+            {
+              'type': 'select',
+              'class': 'select-wrap',
+              'id': 'tires-diameter',
+              'label': 'Диаметр',
+              'select_class': 'custom-select js-select js-select-diameter',
+              'options': diameterOptions
+            },
+            {
+              'type': 'select',
+              'class': 'select-wrap',
+              'id': 'tires-profile',
+              'label': 'Высота профиля',
+              'select_class': 'custom-select js-select js-select-profile',
+              'options': profileOptions
+            },
+            {
+              'type': 'select',
+              'class': 'select-wrap',
+              'id': 'tires-width',
+              'label': 'Ширина',
+              'select_class': 'custom-select js-select js-select-width',
+              'options': widthOptions
+            }
+          ]
+        } %}
+        {% include 'components/filter.twig' with {'filter': tiresFilter} %}
+      {% endif %}
+
+      {% if renderedItems is not empty %}
+        <div class="section__subitem cards-tire-wrap">
+          {% for tireItem in renderedItems %}
+            {% set filterData = tireItem.filter | default({}) %}
+            {% set seasonRaw = filterData.season | default(['summer']) %}
+            {% set seasons = seasonRaw is iterable ? seasonRaw : [seasonRaw] %}
+            {% set seasonCodes = [] %}
+            {% for season in seasons %}
+              {% set seasonNorm = season|lower|trim %}
+              {% set code = '' %}
+              {% if seasonNorm in ['лето', 'summer'] %}
+                {% set code = 'summer' %}
+              {% elseif seasonNorm in ['зима', 'winter'] %}
+                {% set code = 'winter' %}
+              {% elseif seasonNorm in ['всесезонные', 'всесезонная', 'allseason', 'all season', 'all-season'] %}
+                {% set code = 'allseason' %}
+              {% elseif seasonNorm in ['шипованные', 'шипы', 'studded'] %}
+                {% set code = 'studded' %}
+              {% endif %}
+              {% if code and code not in seasonCodes %}
+                {% set seasonCodes = seasonCodes | merge([code]) %}
+              {% endif %}
+            {% endfor %}
+            {% set dataSeasons = '|' %}
+            {% for value in seasonCodes %}
+              {% set dataSeasons = dataSeasons ~ value ~ '|' %}
+            {% endfor %}
+            {% set dataSizes = '|' %}
+            {% for size in tireItem.sizes | default([]) %}
+              {% set dataSizes = dataSizes ~ size.label ~ '|' %}
+            {% endfor %}
+            <div
+              class="section__inner card-tire-wrap js-filter-card"
+              data-season="{{ dataSeasons }}"
+              data-sizes="{{ dataSizes }}"
+            >
+              {% include 'components/card-tire.twig' with {'item': tireItem} %}
+            </div>
+          {% endfor %}
+        </div>
+        {% if allModelsLinkVisible %}
+          <div class="section__subitem all-models-link-wrap">
+            <a href="{{ url(allModelsLinkHref) }}" class="button button-sm outline-color-2 button-animated animation-shift uppercase link">{{ allModelsLinkTitle }}</a>
+          </div>
+        {% endif %}
+        <div class="section__subitem filter-empty-wrap hidden js-filter-empty">
+          <span class="filter-empty-text">Такие модели не найдены</span>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

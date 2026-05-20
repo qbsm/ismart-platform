@@ -1,5 +1,6 @@
 // JavaScript для heading
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('heading загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для heading
 });

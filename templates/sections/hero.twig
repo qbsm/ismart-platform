@@ -1,0 +1,67 @@
+{# hero.twig — Hero-секция с формой входа для сотрудников #}
+<section class="hero">
+  <div class="hero__bg">
+    <canvas class="hero__canvas js-hero-canvas"></canvas>
+  </div>
+  <div class="container hero__content">
+    <div class="hero__text">
+      {% if data.heading is defined %}
+        <{{ data.heading.tag|default('h1') }} class="hero__title">
+          {{ data.heading.title|raw }}
+        </{{ data.heading.tag|default('h1') }}>
+      {% endif %}
+      {% if data.description is defined %}
+        <p class="hero__description">{{ data.description|raw }}</p>
+      {% endif %}
+      {% if data.actions is defined and data.actions|length > 0 %}
+        <div class="hero__actions">
+          {% for action in data.actions %}
+            <a href="{{ action.href|default('#') }}" class="{{ action.class|default('button') }}"
+              {% if action.target is defined %} target="{{ action.target }}"{% endif %}>
+              {{ action.title }}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+
+    {% if data.login is defined and data.login.visible|default(true) %}
+    <div class="hero__login-card" id="login">
+      {% if data.login.title is defined %}
+        <h2 class="hero__login-title">{{ data.login.title }}</h2>
+      {% endif %}
+      {% if data.login.subtitle is defined %}
+        <p class="hero__login-sub">{{ data.login.subtitle }}</p>
+      {% endif %}
+      <form class="hero__login-form js-login-form" method="post" action="{{ data.login.action|default('#') }}">
+        {% for field in data.login.fields|default([]) %}
+        <div class="hero__form-group">
+          <label for="login-{{ field.name }}">{{ field.label }}</label>
+          <input
+            type="{{ field.type|default('text') }}"
+            id="login-{{ field.name }}"
+            name="{{ field.name }}"
+            placeholder="{{ field.placeholder|default('') }}"
+            autocomplete="{{ field.autocomplete|default('off') }}"
+          >
+        </div>
+        {% endfor %}
+        <button class="button button-orange hero__login-btn" type="submit">
+          {{ data.login.button|default('Войти') }}
+        </button>
+      </form>
+      {% if data.login.hint is defined %}
+      <div class="hero__login-hint">
+        <span>🛡️</span>
+        {{ data.login.hint }}
+      </div>
+      {% endif %}
+      {% if data.login.help is defined %}
+      <div class="hero__login-help">
+        {{ data.login.help|raw }}
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>

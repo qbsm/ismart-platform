@@ -1,5 +1,6 @@
 // JavaScript для contacts
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('contacts загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для contacts
 });

@@ -1,26 +1,36 @@
 .button {
     position: relative;
     width: auto;
-    display: flex;
-    justify-content: flex-start;
+    height: 5.6rem;
+    padding: 0 3.2rem;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
     background: transparent;
-    font-size: inherit;
+    font-size: 1.5rem;
     font-family: inherit;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: inherit;
+    text-decoration: none;
     border-width: .1rem;
     border-style: solid;
     border-color: transparent;
     cursor: pointer;
-    transition: border-color var(--transition-1);
+    transition:
+        background var(--transition-1),
+        border-color var(--transition-1),
+        color var(--transition-1),
+        box-shadow var(--transition-1);
     overflow: hidden;
+    border-radius: 0.4rem;
+    gap: 0.5rem;
 }
 
-.button-circle {
-    height: 4.6rem;
-    width: 4.6rem;
-    background: transparent;
-    border: .1rem solid var(--color-1);
-    border-radius: 50%;
+.button__icon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
 }
 
 .button__item.content-wrap {
@@ -58,17 +68,30 @@
 
 .button-sm {
     height: 4rem;
-    gap: 1rem;
-    padding: 0.75rem;
-    padding-right: 2rem;
-    font-size: 0.7em;
+    gap: 0.8rem;
+    padding: 0 2rem;
+    font-size: 1.3rem;
 }
 
-.button-md {
-    height: 5rem;
+.button-md,
+.button-lg {
+    height: 5.6rem;
     gap: 1rem;
-    padding: 1rem;
-    padding-right: 2rem;
+    padding: 0 3.2rem;
+    font-size: 1.5rem;
+}
+
+.button-md .button__item.content-wrap::before {
+    left: calc(-1 * (100% - 3rem));
+}
+
+.button-md .button__subitem.icon-wrap {
+    height: 3rem;
+    width: 3rem;
+}
+
+.button-md .button__icon {
+    height: 1.4rem;
 }
 
 .button-md.button-circle {
@@ -83,53 +106,8 @@
     left: calc(-1 * (100% + 1rem));
 }
 
-.button-md.button-circle.button-animated:hover .button__item.animation-shift {
-    transform: translateX(calc(100% + 1rem));
-}
-
-.button-md.button-animated:hover .button__item.animation-shift {
-    transform: translateX(calc(100% - 2rem));
-}
-
-.button-md.button-circle.button-animated .button__subitem.icon-wrap.animation-rotate-90 {
-    transition: var(--transition-2);
-}
-
-.button-md.button-circle.button-animated:hover .button__subitem.icon-wrap.animation-rotate-90 {
-    transform: rotate(90deg)
-}
-
-.button-md .button__item.content-wrap::before {
-    left: calc(-1 * (100% - 3rem));
-}
-
-.button-md.button-rounded {
-    border-radius: 2.5rem;
-}
-
-.button-md .button__subitem.icon-wrap {
-    height: 3rem;
-    width: 3rem;
-}
-
-.button-md .button__icon {
-    height: 1.4rem;
-}
-
-.button-lg {
-    height: 6rem;
-    gap: 1rem;
-    padding: 1rem;
-    padding-right: 2rem;
-    font-size: 1.1em;
-}
-
 .button-lg .button__item.content-wrap::before {
     left: calc(-1 * (100% - 4rem));
-}
-
-.button-lg.button-rounded {
-    border-radius: 3rem;
 }
 
 .button-lg .button__subitem.icon-wrap {
@@ -139,64 +117,124 @@
 
 .button-lg .button__icon {
     width: 1.6rem;
+    height: 1.6rem;
 }
 
-.button.bg-color-1:hover {
-    background: var(--color-6);
+.button-circle {
+    height: 4.6rem;
+    width: 4.6rem;
+    background: transparent;
+    border: .1rem solid var(--color-1);
+    border-radius: 50%;
+}
+
+.button-sm.button-rounded {
+    border-radius: 2rem;
+}
+
+.button-md.button-rounded {
+    border-radius: 2.5rem;
+}
+
+.button-md.button-rounded-sm {
+    border-radius: 1rem;
+}
+
+.button-lg.button-rounded {
+    border-radius: 3rem;
+}
+
+.button.bg-color-2 {
+    background: var(--color-2);
     color: var(--color-1);
 }
 
-.button.bg-color-1.color-3:hover {
+/* Кнопка акцентная (как в trazano: button-3) */
+.button.button-3 {
+    background: var(--color-3);
     color: var(--color-1);
-}
-
-.button.bg-color-3:hover {
-    background: var(--color-6);
-}
-
-.outline-color-1 {
-    border-color: var(--color-1);
-}
-
-.button.outline-color-1:hover {
-    border-color: var(--color-6);
-}
-
-.button.outline-color-1:hover .button__subitem.icon-wrap {
-    background: var(--color-6);
-}
-
-.button-outline-color-2 {
-    border-color: var(--color-2);
-    transition: border-color 0.25s ease-out;
-}
-
-.button-outline-color-2:hover {
-    border-color: var(--color-6);
-}
-
-.button-outline-color-2:hover .button__subitem.icon-wrap {
-    background: var(--color-6);
-}
-
-.outline-color-3 {
     border-color: var(--color-3);
 }
 
-.button.outline-color-3:hover .button__subitem.icon-wrap {
+.button.bg-color-6 {
     background: var(--color-6);
 }
 
-.outline-color-6 {
-    border-color: var(--color-6);
+.button.bg-color-6.active {
+    background: var(--color-2);
+    color: var(--color-1);
 }
 
-.button.outline-color-6:hover {
+.button.outline-color-1 {
     border-color: var(--color-1);
 }
 
-.outline-color-6:hover .button__subitem.icon-wrap {
-    background: var(--color-6);
+.button.outline-color-2 {
+    border-color: var(--color-2);
+}
+
+.button.outline-color-3 {
+    border-color: var(--color-3);
+}
+
+.button.outline-color-6 {
+    border-color: var(--color-6);
+}
+
+/* Единый hover для всех кнопок: плавное затенение базового цвета.
+   Inset box-shadow рисует тёмный полупрозрачный слой поверх любого фона —
+   и заливает «прозрачные» outline-кнопки, и слегка затемняет цветные. */
+.button:hover {
+    box-shadow: inset 0 0 0 100rem rgb(0 0 0 / 8%);
+}
+
+.button:active {
+    box-shadow: inset 0 0 0 100rem rgb(0 0 0 / 16%);
+}
+
+/* Outline-кнопки на прозрачном фоне — эффект едва заметный */
+.button.outline-color-1:hover,
+.button.outline-color-2:hover,
+.button.outline-color-3:hover,
+.button.outline-color-6:hover {
+    box-shadow: inset 0 0 0 100rem rgb(0 0 0 / 1.5%);
+}
+
+.button.outline-color-1:active,
+.button.outline-color-2:active,
+.button.outline-color-3:active,
+.button.outline-color-6:active {
+    box-shadow: inset 0 0 0 100rem rgb(0 0 0 / 4%);
+}
+
+.button-animated.animation-shift::after {
+    content: "";
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    background-color: currentcolor;
+    mask: url("/data/img/ui/icons/icon-arrow-right-sm-color-2.svg?v=3") center / contain no-repeat;
+    transition: transform 0.25s ease-out;
+}
+
+.button-animated.animation-shift:hover::after {
+    transform: translateX(0.5rem);
+}
+
+.button-md.button-animated:hover .button__item.animation-shift {
+    transform: translateX(calc(100% - 2rem));
+}
+
+.button-md.button-circle.button-animated:hover .button__item.animation-shift {
+    transform: translateX(calc(100% + 1rem));
+}
+
+.button-md.button-circle.button-animated .button__subitem.icon-wrap.animation-rotate-90 {
+    transition: var(--transition-2);
+}
+
+.button-md.button-circle.button-animated:hover .button__subitem.icon-wrap.animation-rotate-90 {
+    transform: rotate(90deg);
 }
 
 .button-animated:hover .button__subitem.icon-wrap.animation-rotate-45 {
@@ -217,19 +255,4 @@
 
 .button-animated:hover .button__subitem.icon-wrap.animation-icon-up .button__icon {
     animation: top-to-down 0.5s ease-out forwards;
-}
-
-.button-animated.animation-shift:after {
-    content: "";
-    display: block;
-    right: 0;
-    top: 0;
-    width: 1.25rem;
-    height: 1.25rem;
-    background: url(/data/img/ui/icons/icon-arrow-right-sm-color-2.svg) center no-repeat;
-    transition: transform 0.25s ease-out;
-}
-
-.button-animated.animation-shift:hover:after {
-    transform: translateX(0.5rem);
 }

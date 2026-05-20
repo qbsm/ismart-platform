@@ -1,0 +1,20 @@
+{% if item.href is defined %}
+<a href="{{ item.href }}" class="card-gradient {{ item.class|default('') }} link" {% if item.cover is defined %}style="background-image: url('{{ url(item.cover.src) }}');"{% endif %}>
+{% else %}
+<div class="card-gradient {{ item.class|default('') }}" {% if item.cover is defined %}style="background-image: url('{{ url(item.cover.src) }}');"{% endif %}>
+{% endif %}
+  {% if item.title is defined %}
+    <div class="card__item title-wrap">
+      <span class="card__title">{{ item.title | raw }}</span>
+    </div>
+  {% endif %}
+  {% if item.icon is defined %}
+    <div class="card__item icon-wrap {{ item.icon.class|default('') }}">
+      <img src="{{ item.icon.src }}" alt="{{ item.icon.alt|default('') }}" class="img-responsive" loading="lazy">
+    </div>
+  {% endif %}
+{% if item.href is defined %}
+</a>
+{% else %}
+</div>
+{% endif %}

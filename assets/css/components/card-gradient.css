@@ -1,0 +1,60 @@
+.card-gradient {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 2rem;
+  background: var(--gradient-3);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: var(--color-1);
+  overflow: hidden;
+  transition: all 0.25s ease-out;
+  container-type: inline-size;
+  container-name: card-gradient;
+
+  @container card-gradient (min-width: 75rem) {
+    padding: 4rem;
+    gap: 1.25rem;
+    border-radius: 4rem;
+  }
+}
+
+a.card-gradient:hover {
+  background: linear-gradient(to left, #000, #000);
+  color: var(--color-1);
+}
+
+.card-gradient .card__item.title-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.card-gradient .card__item.title-wrap .card__title {
+  font-size: 2em;
+
+  @container card-gradient (min-width: 75rem) {
+    font-size: 2.5em;
+  }
+}
+
+.card-gradient .card__item.icon-wrap {
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.card-gradient .card__item.icon-wrap img {
+  width: 2rem;
+  height: 2rem;
+
+  @container card-gradient (min-width: 75rem) {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}

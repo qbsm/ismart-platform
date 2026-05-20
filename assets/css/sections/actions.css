@@ -1,0 +1,37 @@
+.actions {
+  padding-bottom: 4rem;
+
+  @media (--lg) {
+    padding-bottom: 6rem;
+  }
+}
+
+.actions .section__item.block-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (--lg) {
+    gap: 4rem;
+  }
+}
+
+.actions .section__subitem.heading-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.actions .section__subitem.cards-action-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.actions .section__inner.card-action-wrap {
+  width: 100%;
+  height: 30rem;
+
+  @media (--lg) {
+    height: 22rem;
+  }
+}

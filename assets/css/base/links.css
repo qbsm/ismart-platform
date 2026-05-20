@@ -1,147 +1,100 @@
 .link {
-    position: relative;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-}
-
-.link-inline {
-    display: inline;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color var(--transition-1), opacity var(--transition-1);
 }
 
 .link:hover {
-    opacity: 0.85;
+  opacity: 0.9;
 }
 
 .link:active {
-    opacity: 0.7;
+  opacity: 0.8;
 }
 
-.link-color-1 {
-    color: var(--color-1);
+.button.link,
+.button.link:hover,
+.button.link:active {
+  opacity: 1;
+  transition: background var(--transition-1), border-color var(--transition-1), color var(--transition-1);
 }
 
-.link-color-2 {
-    color: var(--color-2);
+.link.color-1:hover {
+  color: var(--color-6);
 }
 
-.link-color-3 {
-    color: var(--color-3);
+.link.color-2 {
+  color: var(--color-2);
 }
 
-.link-color-4 {
-    color: var(--color-4);
+.link.color-2:hover {
+  color: var(--color-3);
 }
 
-.link-color-5 {
-    color: var(--color-5);
+.link.color-3:hover {
+  color: var(--color-6);
 }
 
-.link-color-6 {
-    color: var(--color-6);
+.link.color-6 {
+  color: var(--color-6);
 }
 
-/* Базовые стили для элементов ссылки */
-.link__item {
-    display: inline-flex;
-    align-items: center;
+.link.color-6:hover {
+  color: var(--color-2);
 }
 
-/* Стили для ссылок с подчеркиванием */
-.link-underline .link__item:last-child {
-    position: relative;
+.link.inline {
+  display: inline;
 }
 
-.link-underline .link__item:last-child:after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: currentColor;
-    transition: width 0.3s ease;
+.link.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentcolor;
+  transition: width 0.3s ease;
 }
 
-.link-underline:hover .link__item:last-child:after {
-    width: 100%;
+.link.underline:hover::after {
+  width: 100%;
 }
 
-.link__item.icon-wrap {
-    position: relative;
-    height: 2rem;
-    width: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: var(--transition-2);
-    overflow: hidden;
+.link.underline-center {
+  position: relative;
 }
 
-.link-animated:hover .link__item.icon-wrap.animation-fly {
-    background: var(--color-6);
+.link.underline-center::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.2rem;
+  height: 1px;
+  background-color: currentcolor;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
 
-.link-animated:hover .link__item.icon-wrap.animation-rotate-180 {
-    background: var(--color-6);
+.link.underline-center:hover::after,
+.link.underline-center:focus-visible::after {
+  transform: scaleX(1);
 }
 
-.link-animated:hover .link__icon {
-    opacity: 1;
+.link.active {
+  opacity: 1;
 }
 
-.link-animated:hover .link__item.icon-wrap.animation-fly .link__icon {
-    animation: fly 0.5s ease-out forwards;
+.link.underline-center.active::after {
+  transform: scaleX(1);
 }
 
-.link-animated:hover .link__item.icon-wrap.animation-left-to-right .link__icon {
-    animation: left-to-right 0.5s ease-out forwards;
-}
-
-.link-animated .link__item.icon-wrap.animation-rotate-180 .link__icon {
-    transition: var(--transition-2);
-}
-
-.link-animated:hover .link__item.icon-wrap.animation-rotate-180 .link__icon {
-    transform: rotate(180deg);
-}
-
-.link-animated .link__item.icon-wrap.icon-fade {
-    opacity: 0;
-}
-
-.link-animated:hover .link__item.icon-wrap.icon-fade {
-    opacity: 1;
-}
-
-.link .icon-absolute {
-    position: absolute;
-    left: -2.6rem;
-}
-
-/*
-.link-icon {
-    position: absolute;
-    left: -2.5rem;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-6);
-    height: 2rem;
-    width: 2rem;
-    fill: var(--color-1);
-    border-radius: 50%;
-}
-
-.icon {
-    width: .7rem;
-    height: 1rem;
-}*/
-
-.link:hover .link-icon {
-    fill: var(--color-3);
-    transform: rotate(-45deg);
+.link.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }

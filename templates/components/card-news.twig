@@ -1,0 +1,29 @@
+<a href="{% if item.slug is defined %}{{ url('/news/' ~ item.slug) }}{% else %}#{% endif %}" class="card-news card-news-link link">
+  <div class="card-news__item cover-wrap">
+    {% if item.cover.src is defined %}
+      <div class="card-news__cover" style="background-image: url('{{ url(item.cover.src) }}');"></div>
+    {% elseif item.cover['800'] is defined %}
+      <div class="card-news__cover" style="background-image: url('{{ url(item.cover['800']) }}');"></div>
+    {% elseif item.cover['400'] is defined %}
+      <div class="card-news__cover" style="background-image: url('{{ url(item.cover['400']) }}');"></div>
+    {% endif %}
+  </div>
+  <div class="card-news__item content-wrap">
+    <div class="card-news__item date-link-wrap">
+      <div class="card-news__subitem date-wrap">
+        <div class="card-news__hex-cube"{% if item.hex is defined %} style="background: {{ item.hex }};"{% endif %}></div>
+        <span class="card-news__date">{{ item.date | raw }}</span>
+      </div>
+      <div class="card-news__subitem link-wrap">
+        <span class="card-news__link nowrap uppercase">Читать статью</span>
+      </div>
+    </div>
+    <div class="card-news__item title-wrap">
+      <span class="card-news__title font-1">{{ item.title | raw }}</span>
+    </div>
+    <div class="card-news__item desc-wrap">
+      <span class="card-news__desc">{{ item.desc | raw }}</span>
+    </div>
+    <div class="card-news__item delimiter"></div>
+  </div>
+</a>

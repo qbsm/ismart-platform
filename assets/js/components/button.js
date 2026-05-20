@@ -1,5 +1,6 @@
 // JavaScript для button
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('button загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для button
 });

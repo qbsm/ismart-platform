@@ -1,15 +1,11 @@
-<section class="burger-menu" id="burgerMenu">
+<section class="burger-menu" id="burgerMenu" role="navigation" aria-label="{{ global.burger.aria_open[lang_code]|default('Menu') }}" aria-hidden="true">
   <div class="container">
     {% for item in items %}
+      {% if item.visible is not defined or item.visible %}
       {% set nav_path = item.href | trim('/') %}
       
-      {# Scope Prefix #}
-      {% set scope_segment = (current_scope == 'op' ? 'op/' : '') %}
-      
       {% if lang_code != config.settings.default_lang %}
-        {% set nav_path = lang_code ~ '/' ~ scope_segment ~ nav_path %}
-      {% else %}
-        {% set nav_path = scope_segment ~ nav_path %}
+        {% set nav_path = lang_code ~ '/' ~ nav_path %}
       {% endif %}
       
       {% if nav_path is not empty and not nav_path ends with '/' %}
@@ -19,6 +15,7 @@
       <a href="{{ url(nav_path) }}" class="burger-menu__item link">
         <span class="burger-menu__title uppercase">{{ item.title }}</span>
       </a>
+      {% endif %}
     {% endfor %}
   </div>
 </section> 

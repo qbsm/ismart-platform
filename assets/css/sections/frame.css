@@ -1,0 +1,60 @@
+.frame {
+  position: relative;
+  margin-top: -5.7rem;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  height: 35rem;
+  clip-path: inset(0);
+
+  @media (--lg) {
+    margin-top: -9.2rem;
+  }
+}
+
+.frame::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  border-radius: 2.5rem 2.5rem 0 0;
+  background-color: #fff;
+  z-index: 950;
+
+  @media (--md) {
+    height: 6rem;
+    border-radius: 10rem 10rem 0 0;
+  }
+}
+
+.frame .section__item.cover-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.frame .section__item.cover-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(0deg 0% 0% / 20%);
+  z-index: 1;
+}
+
+.frame .cover {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.frame + .section,
+.frame + .tire-detail .section {
+  padding-top: 0;
+}

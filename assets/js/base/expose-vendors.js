@@ -16,5 +16,5 @@ export default {
   GLightbox,
   jQuery: $,
   $,
-  Inputmask
-}; 
+  Inputmask,
+};

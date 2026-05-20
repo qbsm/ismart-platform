@@ -1,95 +1,182 @@
-{# 
+{#
   Компонент адаптивного изображения с поддержкой WebP, srcset и sizes
-  
+
   Параметры:
   - image (обязательный) - объект изображения
   - alt - альтернативный текст
   - class - CSS классы для img
-  - sizes_preset - пресет размеров: "full", "half", "quarter" (по умолчанию "full")
+  - sizes_preset - пресет размеров: "hero", "content", "card", "thumbnail", "logo" (по умолчанию "hero")
   - sizes - кастомная строка sizes (переопределяет preset)
   - loading - "lazy" или "eager" (по умолчанию "lazy")
   - itemprop - Schema.org атрибут
 #}
 
+{# Контекстные пресеты sizes (max viewport 2560px) #}
 {% set defaultSizes = {
-  'full': '(min-width: 1441px) 1400px, (min-width: 1200px) 1200px, 100vw',
-  'half': '(min-width: 1441px) 700px, (min-width: 1200px) 600px, (min-width: 992px) 50vw, 100vw',
-  'half-mobile': '(max-width: 400px) 100vw, (min-width: 992px) 50vw, 100vw',
-  'quarter': '(min-width: 1441px) 330px, (min-width: 1200px) 280px, (min-width: 992px) calc(25vw - 20px), 25vw',
-  'gallery-thumb': '(min-width: 1441px) 330px, (min-width: 1200px) 280px, (min-width: 992px) calc(25vw - 20px), 25vw',
-  'gallery-cover': '(min-width: 1200px) 600px, 100vw'
+  'hero': '100vw',
+  'content': '(min-width: 1441px) 1400px, (min-width: 1200px) 1200px, 100vw',
+  'card': '(min-width: 1200px) 25vw, (min-width: 768px) 33vw, 50vw',
+  'thumbnail': '(min-width: 768px) 200px, 33vw',
+  'logo': '200px'
 } %}
 
-{% set preset = sizes_preset|default('full') %}
-{% set imageSizes = sizes|default(defaultSizes[preset]) %}
+{# Все доступные ключи размеров (порядок важен — от меньшего к большему) #}
+{% set sizeKeys = ['400', '800', '1280', '1600', '1920', '2560'] %}
+
+{% set preset = sizes_preset|default('hero') %}
+{% set imageSizes = sizes|default(defaultSizes[preset]|default('100vw')) %}
 {% set imageLoading = loading|default('lazy') %}
 {% set imageClass = class|default('img-responsive') %}
 {% set imageAlt = alt|default(image.alt|default('')) %}
 {% set imageStyle = style|default('') %}
 {% set pictureClass = picture_class|default('') %}
 {% set pictureStyle = picture_style|default('') %}
+{% set imageWidth = width|default(image.width|default(null)) %}
+{% set imageHeight = height|default(image.height|default(null)) %}
+{% set imageFetchpriority = imageLoading == 'eager' ? 'high' : null %}
 
-{# Новый формат: horizontal/vertical #}
+{# --- Макрос: собрать srcset из объекта изображения по доступным ключам --- #}
+{% macro build_srcset(img, sizeKeys) %}
+  {%- set items = [] -%}
+  {%- for key in sizeKeys -%}
+    {%- if img[key] is defined and img[key] and img[key] != '#' -%}
+      {%- set items = items|merge([url(img[key]) ~ ' ' ~ key ~ 'w']) -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {{- items|join(', ') -}}
+{% endmacro %}
+
+{# --- Макрос: собрать AVIF srcset (заменяет .webp → .avif в путях) --- #}
+{% macro build_avif_srcset(img, sizeKeys) %}
+  {%- set items = [] -%}
+  {%- for key in sizeKeys -%}
+    {%- if img[key] is defined and img[key] and img[key] != '#' -%}
+      {%- set avifPath = img[key]|replace({'.webp': '.avif'}) -%}
+      {%- set items = items|merge([url(avifPath) ~ ' ' ~ key ~ 'w']) -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {{- items|join(', ') -}}
+{% endmacro %}
+
+{# --- Макрос: найти fallback src (наименьший доступный размер) --- #}
+{% macro find_fallback(img, sizeKeys) %}
+  {%- set _found = '' -%}
+  {%- for key in sizeKeys -%}
+    {%- if _found == '' and img[key] is defined and img[key] and img[key] != '#' -%}
+      {%- set _found = img[key] -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {{- _found -}}
+{% endmacro %}
+
+{% import _self as self %}
+
+{# Формат: horizontal/vertical (адаптивные ориентации) #}
 {% if image.horizontal is defined or image.vertical is defined %}
   <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
     {# Вертикальная версия для узких экранов #}
     {% if image.vertical is defined %}
-      {% set vImg = image.vertical %}
-      {% set vSrcset = [] %}
-      {% if vImg['800'] is defined %}
-        {% set vSrcset = vSrcset|merge([url(vImg['800']) ~ ' 800w']) %}
+      {% set vAvifSrcset = self.build_avif_srcset(image.vertical, sizeKeys) %}
+      {% if vAvifSrcset|trim %}
+        <source
+          media="(max-width: 767px)"
+          srcset="{{ vAvifSrcset|trim }}"
+          sizes="{{ imageSizes }}"
+          type="image/avif">
       {% endif %}
-      {% if vImg['1600'] is defined %}
-        {% set vSrcset = vSrcset|merge([url(vImg['1600']) ~ ' 1600w']) %}
-      {% endif %}
-      {% if vImg.raw is defined %}
-        {% set vSrcset = vSrcset|merge([url(vImg.raw) ~ ' 1920w']) %}
-      {% endif %}
-      {% if vSrcset|length > 0 %}
-        <source 
-          media="(max-width: 767px)" 
-          srcset="{{ vSrcset|join(', ') }}"
+      {% set vSrcset = self.build_srcset(image.vertical, sizeKeys) %}
+      {% if vSrcset|trim %}
+        <source
+          media="(max-width: 767px)"
+          srcset="{{ vSrcset|trim }}"
           sizes="{{ imageSizes }}"
           type="image/webp">
       {% endif %}
     {% endif %}
-    
+
     {# Горизонтальная версия для широких экранов (по умолчанию) #}
     {% if image.horizontal is defined %}
-      {% set hImg = image.horizontal %}
-      {% set hSrcset = [] %}
-      {% if hImg['800'] is defined %}
-        {% set hSrcset = hSrcset|merge([url(hImg['800']) ~ ' 800w']) %}
+      {% set hAvifSrcset = self.build_avif_srcset(image.horizontal, sizeKeys) %}
+      {% if hAvifSrcset|trim %}
+        <source
+          srcset="{{ hAvifSrcset|trim }}"
+          sizes="{{ imageSizes }}"
+          type="image/avif">
       {% endif %}
-      {% if hImg['1600'] is defined %}
-        {% set hSrcset = hSrcset|merge([url(hImg['1600']) ~ ' 1600w']) %}
-      {% endif %}
-      {% if hImg.raw is defined %}
-        {% set hSrcset = hSrcset|merge([url(hImg.raw) ~ ' 1920w']) %}
-      {% endif %}
-      {% if hSrcset|length > 0 %}
-        <source 
-          srcset="{{ hSrcset|join(', ') }}"
+      {% set hSrcset = self.build_srcset(image.horizontal, sizeKeys) %}
+      {% if hSrcset|trim %}
+        <source
+          srcset="{{ hSrcset|trim }}"
           sizes="{{ imageSizes }}"
           type="image/webp">
       {% endif %}
-      {% set fallbackSrc = hImg['800']|default(hImg['1600']|default(hImg.raw)) %}
+      {% set fallbackSrc = self.find_fallback(image.horizontal, sizeKeys)|trim %}
     {% elseif image.vertical is defined %}
-      {% set vImg = image.vertical %}
-      {% set fallbackSrc = vImg['800']|default(vImg['1600']|default(vImg.raw)) %}
+      {% set fallbackSrc = self.find_fallback(image.vertical, sizeKeys)|trim %}
     {% endif %}
-    
-    <img 
-      src="{{ url(fallbackSrc) }}" 
-      alt="{{ imageAlt }}" 
-      loading="{{ imageLoading }}" 
+
+    {% set dims = imageWidth and imageHeight ? {'width': imageWidth, 'height': imageHeight} : image_dimensions(fallbackSrc) %}
+    <img
+      src="{{ url(fallbackSrc) }}"
+      alt="{{ imageAlt }}"
+      loading="{{ imageLoading }}"
       decoding="async"
       class="{{ imageClass }}"
+      {% if dims %}width="{{ dims.width }}" height="{{ dims.height }}"{% endif %}
+      {% if imageFetchpriority %}fetchpriority="{{ imageFetchpriority }}"{% endif %}
       {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
       {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
   </picture>
 
-{# Новый формат: прямые ключи raw/1600/800 #}
+{# Формат: числовые ключи размеров (400/800/1280/1600/1920/2560) #}
+{% elseif image['400'] is defined or image['800'] is defined or image['1280'] is defined or image['1600'] is defined or image['1920'] is defined or image['2560'] is defined %}
+  {% set srcset = self.build_srcset(image, sizeKeys) %}
+  {% set avifSrcset = self.build_avif_srcset(image, sizeKeys) %}
+  {% set fallbackSrc = self.find_fallback(image, sizeKeys)|trim %}
+  {% set dims = imageWidth and imageHeight ? {'width': imageWidth, 'height': imageHeight} : image_dimensions(fallbackSrc) %}
+
+  <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
+    {% if avifSrcset|trim %}
+      <source
+        srcset="{{ avifSrcset|trim }}"
+        sizes="{{ imageSizes }}"
+        type="image/avif">
+    {% endif %}
+    {% if srcset|trim %}
+      <source
+        srcset="{{ srcset|trim }}"
+        sizes="{{ imageSizes }}"
+        type="image/webp">
+    {% endif %}
+    <img
+      src="{{ url(fallbackSrc) }}"
+      alt="{{ imageAlt }}"
+      loading="{{ imageLoading }}"
+      decoding="async"
+      class="{{ imageClass }}"
+      {% if dims %}width="{{ dims.width }}" height="{{ dims.height }}"{% endif %}
+      {% if imageFetchpriority %}fetchpriority="{{ imageFetchpriority }}"{% endif %}
+      {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
+      {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
+  </picture>
+
+{# Формат: один URL (image.src) #}
+{% elseif image.src is defined %}
+  {% set dims = imageWidth and imageHeight ? {'width': imageWidth, 'height': imageHeight} : image_dimensions(image.src) %}
+  <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
+    <img
+      src="{{ url(image.src) }}"
+      alt="{{ imageAlt }}"
+      loading="{{ imageLoading }}"
+      decoding="async"
+      class="{{ imageClass }}"
+      {% if dims %}width="{{ dims.width }}" height="{{ dims.height }}"{% endif %}
+      {% if imageFetchpriority %}fetchpriority="{{ imageFetchpriority }}"{% endif %}
+      {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
+      {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
+  </picture>
+
+{# Обратная совместимость: старые ключи raw/1600/800 #}
 {% elseif image.raw is defined or image['1600'] is defined or image['800'] is defined %}
   {% set srcsetItems = [] %}
   {% if image['800'] and image['800'] != '#' %}
@@ -102,96 +189,31 @@
     {% set srcsetItems = srcsetItems|merge([url(image.raw) ~ ' 1920w']) %}
   {% endif %}
   {% set fallbackSrc = image['800']|default(image['1600']|default(image.raw)) %}
-  
+  {% set dims = imageWidth and imageHeight ? {'width': imageWidth, 'height': imageHeight} : image_dimensions(fallbackSrc) %}
+
   <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
     {% if srcsetItems|length > 0 %}
-      <source 
-        srcset="{{ srcsetItems|join(', ') }}" 
-        sizes="{{ imageSizes }}" 
+      <source
+        srcset="{{ srcsetItems|join(', ') }}"
+        sizes="{{ imageSizes }}"
         type="image/webp">
     {% endif %}
-    <img 
-      src="{{ url(fallbackSrc) }}" 
-      alt="{{ imageAlt }}" 
-      loading="{{ imageLoading }}" 
+    <img
+      src="{{ url(fallbackSrc) }}"
+      alt="{{ imageAlt }}"
+      loading="{{ imageLoading }}"
       decoding="async"
       class="{{ imageClass }}"
-      {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
-      {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
-  </picture>
-
-{# Старый формат: sources (обратная совместимость) #}
-{% elseif image.sources is defined %}
-  <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
-    {% if image.sources.mobile is defined %}
-      {% set mobileSrc = image.sources.mobile.src is defined ? image.sources.mobile.src : image.sources.mobile %}
-      <source 
-        media="(max-width: 767px)" 
-        srcset="{{ url(mobileSrc) }}"
-        type="image/webp">
-    {% endif %}
-    {% set desktopImg = image.sources.desktop is defined ? image.sources.desktop : (image.sources.default is defined ? image.sources.default : null) %}
-    {% if desktopImg %}
-      {% set desktopSrc = desktopImg.src is defined ? desktopImg.src : desktopImg %}
-      <img 
-        src="{{ url(desktopSrc) }}" 
-        alt="{{ imageAlt }}" 
-        loading="{{ imageLoading }}" 
-        decoding="async"
-        class="{{ imageClass }}"
-        {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
-        {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
-    {% endif %}
-  </picture>
-
-{# Старый формат: versions (обратная совместимость) #}
-{% elseif image.versions is defined and image.versions %}
-  {% set srcsetItems = [] %}
-  {% if image.versions['800'] is defined %}
-    {% set srcsetItems = srcsetItems|merge([url(image.versions['800']) ~ ' 800w']) %}
-  {% endif %}
-  {% if image.versions['1600'] is defined %}
-    {% set srcsetItems = srcsetItems|merge([url(image.versions['1600']) ~ ' 1600w']) %}
-  {% endif %}
-  {% if image.versions.raw is defined %}
-    {% set srcsetItems = srcsetItems|merge([url(image.versions.raw) ~ ' 1920w']) %}
-  {% endif %}
-  {% set fallbackSrc = image.versions['1600']|default(image.versions['800']|default(image.versions.raw)) %}
-  
-  <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
-    {% if srcsetItems|length > 0 %}
-      <source 
-        srcset="{{ srcsetItems|join(', ') }}" 
-        sizes="{{ imageSizes }}" 
-        type="image/webp">
-    {% endif %}
-    <img 
-      src="{{ url(fallbackSrc) }}" 
-      alt="{{ imageAlt }}" 
-      loading="{{ imageLoading }}" 
-      decoding="async"
-      class="{{ imageClass }}"
-      {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
-      {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
-  </picture>
-
-{# Старый формат: src (обратная совместимость) #}
-{% elseif image.src is defined %}
-  <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
-    <img 
-      src="{{ url(image.src) }}" 
-      alt="{{ imageAlt }}" 
-      loading="{{ imageLoading }}" 
-      decoding="async"
-      class="{{ imageClass }}"
+      {% if dims %}width="{{ dims.width }}" height="{{ dims.height }}"{% endif %}
+      {% if imageFetchpriority %}fetchpriority="{{ imageFetchpriority }}"{% endif %}
       {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
       {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
   </picture>
 
 {# Fallback: заглушка #}
 {% else %}
-  <img 
-    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect fill='%23ddd' width='100' height='100'/%3E%3C/svg%3E" 
-    alt="{{ imageAlt|default('Image not available') }}" 
+  <img
+    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect fill='%23ddd' width='100' height='100'/%3E%3C/svg%3E"
+    alt="{{ imageAlt|default('Image not available') }}"
     class="{{ imageClass }}">
 {% endif %}

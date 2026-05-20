@@ -1,0 +1,244 @@
+{# base.twig #}
+<!doctype html>
+<html lang="{{ lang_code }}" class="{{ currentLang.direction|default('ltr') }}" dir="{{ currentLang.direction|default('ltr') }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ pageTitle|default('Заголовок страницы по умолчанию')|raw }}</title>
+  
+  {% if pageSeoData and pageSeoData.meta %}
+    {% set _og_title = pageTitle|default('') %}
+    {% set _og_description = '' %}
+    {% set _og_image = '' %}
+    {% set _og_url = '' %}
+    {% for meta in pageSeoData.meta %}
+      {% if meta.name %}
+        <meta name="{{ meta.name }}" content="{{ meta.content|raw }}">
+      {% elseif meta.property %}
+        <meta property="{{ meta.property }}" content="{{ meta.content|raw }}">
+        {% if meta.property == 'og:title' %}{% set _og_title = meta.content %}{% endif %}
+        {% if meta.property == 'og:description' %}{% set _og_description = meta.content %}{% endif %}
+        {% if meta.property == 'og:image' %}{% set _og_image = meta.content %}{% endif %}
+        {% if meta.property == 'og:url' %}{% set _og_url = meta.content %}{% endif %}
+      {% endif %}
+    {% endfor %}
+    {# Twitter Card (дублируем OG для соцсетей) #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ _og_title|raw }}">
+    {% if _og_description %}<meta name="twitter:description" content="{{ _og_description|raw }}">{% endif %}
+    {% if _og_image %}<meta name="twitter:image" content="{{ _og_image|raw }}">{% endif %}
+    {% if _og_url %}<meta name="twitter:url" content="{{ _og_url|raw }}">{% endif %}
+  {% else %}
+    {# Минимальные Twitter Card при отсутствии SEO meta #}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ pageTitle|default('')|raw }}">
+  {% endif %}
+  
+  {# Логика формирования current_url, canonical и alternate #}
+  {% set _base_url_trimmed = base_url|trim('/') %} {# base_url без слешей по краям #}
+
+  {# seo_url_path передан из PageAction — готовый путь без trailing slash. #}
+  {# Fallback для legacy-контекста: reverse route_map (page_id 'tires-list' → '/tires'). #}
+  {% if seo_url_path is defined and seo_url_path is not null %}
+    {% set _path_segment = seo_url_path %}
+  {% elseif page_id == 'index' %}
+    {% set _path_segment = '' %}
+  {% else %}
+    {% set _url_slug = page_id %}
+    {% for url_part, mapped_id in config.settings.route_map | default({}) %}
+      {% if mapped_id == page_id %}{% set _url_slug = url_part %}{% endif %}
+    {% endfor %}
+    {% set _path_segment = _url_slug %}
+    {% if route_params|length > 0 %}
+      {% set _path_segment = _path_segment ~ '/' ~ route_params|join('/') %}
+    {% endif %}
+  {% endif %}
+
+  {% set _final_path_for_current_url = (_path_segment != '') ? '/' ~ _path_segment : '/' %}
+  {% set current_url = _base_url_trimmed ~ _final_path_for_current_url %}
+
+
+  {% set _base_domain_for_seo = base_url|replace({'http://': '', 'https://': ''})|split('/')[0] %}
+  {% set _base_secure_domain_for_seo = 'https://' ~ _base_domain_for_seo %}
+  
+  {% set _url_path_for_seo = _path_segment %}
+
+  {% if is_lang_in_url and lang_code != config.settings.default_lang %}
+    {% set _url_prefix_for_seo = _base_secure_domain_for_seo ~ '/' ~ lang_code %}
+  {% else %}
+    {% set _url_prefix_for_seo = _base_secure_domain_for_seo %}
+  {% endif %}
+  
+  {% set _path_for_canonical = _url_path_for_seo|trim('/') %}
+  {% set final_canonical_url = _url_prefix_for_seo|trim('/') ~ (_path_for_canonical != '' ? '/' ~ _path_for_canonical : '/') %}
+
+
+  <link rel="canonical" href="{{ final_canonical_url }}" />
+  
+  {% for lang_loop_code in config.settings.available_langs %}
+    {# Пропускаем текущий язык - не добавляем rel="alternate" для него #}
+    {% if lang_loop_code != lang_code %}
+      {% if lang_loop_code == config.settings.default_lang %}
+        {% set _alt_url_base_for_seo = _base_secure_domain_for_seo %}
+      {% else %}
+        {% set _alt_url_base_for_seo = _base_secure_domain_for_seo ~ '/' ~ lang_loop_code %}
+      {% endif %}
+
+      {% set _path_for_alt = _url_path_for_seo|trim('/') %}
+      {% set final_alt_url = _alt_url_base_for_seo|trim('/') ~ (_path_for_alt != '' ? '/' ~ _path_for_alt : '/') %}
+
+      <link rel="alternate" href="{{ final_alt_url }}" hreflang="{{ lang_loop_code }}" />
+    {% endif %}
+  {% endfor %}
+  
+  {% if page_id == 'index' %}
+    <link rel="alternate" href="{{ _base_secure_domain_for_seo ~ '/' }}" hreflang="x-default" />
+  {% endif %}
+
+  {% include 'components/resource-hints.twig' %}
+
+  {% if preload_fonts is defined and preload_fonts is iterable and preload_fonts|length > 0 %}
+  {% for path in preload_fonts %}
+  <link rel="preload" href="{{ url(path) }}" as="font" type="font/woff2" crossorigin>
+  {% endfor %}
+  {% endif %}
+
+  {# Responsive preload hero-изображения с imagesrcset и type #}
+  {% if hero_preload_image is defined and hero_preload_image %}
+    {% if hero_preload_image is iterable %}
+      {# Адаптивный preload с AVIF и WebP #}
+      {% set _preload_srcset_parts = [] %}
+      {% for key, path in hero_preload_image %}
+        {% set _preload_srcset_parts = _preload_srcset_parts|merge([url(path) ~ ' ' ~ key ~ 'w']) %}
+      {% endfor %}
+      {% if _preload_srcset_parts|length > 0 %}
+        {% set _preload_srcset = _preload_srcset_parts|join(', ') %}
+        {# AVIF preload #}
+        {% set _avif_srcset_parts = [] %}
+        {% for key, path in hero_preload_image %}
+          {% set _avif_path = path|replace({'.webp': '.avif'}) %}
+          {% set _avif_srcset_parts = _avif_srcset_parts|merge([url(_avif_path) ~ ' ' ~ key ~ 'w']) %}
+        {% endfor %}
+        <link rel="preload" as="image" imagesrcset="{{ _avif_srcset_parts|join(', ') }}" imagesizes="100vw" type="image/avif">
+        {# WebP preload (fallback) #}
+        <link rel="preload" as="image" imagesrcset="{{ _preload_srcset }}" imagesizes="100vw" type="image/webp">
+      {% endif %}
+    {% else %}
+      <link rel="preload" href="{{ url(hero_preload_image) }}" as="image">
+    {% endif %}
+  {% endif %}
+
+  <script>
+    window.appConfig = {
+      baseUrl: "{{ base_url | e('js') }}", 
+      langCode: "{{ lang_code | e('js') }}",
+      YANDEX_METRIC_ID: {{ config.settings.yandex_metric_id|default(0) }}
+    };
+  </script>
+  
+  {% include 'components/analytics.twig' %}
+  
+  {% include 'components/styles.twig' %}
+  
+  {% include 'components/favicons.twig' %}
+  
+  {% include 'components/scripts.twig' %}
+  
+  {# Микроразметка Schema.org Organization #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ site.name|default('Company') }}",
+    {% if global.logo.horizontal.black is defined %}
+    "logo": "{{ _base_secure_domain_for_seo ~ '/' ~ global.logo.horizontal.black.src }}",
+    {% endif %}
+    "url": "{{ _base_secure_domain_for_seo }}",
+    {% if global.email is defined %}
+    "email": "{{ global.email.title|replace({'<span>': '', '</span>': ''})|raw }}",
+    {% endif %}
+    {% if global.phones is defined and global.phones|length > 0 %}
+    "telephone": [
+      {% for phone in global.phones %}
+      "{{ phone.title|replace({'<span>': '', '</span>': ''})|raw }}"{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    {% endif %}
+    {% if global.address[lang_code] is defined and global.address[lang_code]|length > 0 %}
+    "address": [
+      {% for address in global.address[lang_code] %}
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "{{ address.title|replace({'<span>': '', '</span>': ''})|raw }}"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ],
+    {% endif %}
+    {% if global.socials is defined and global.socials|length > 0 %}
+    "sameAs": [
+      {% for social in global.socials %}
+      {% if social.visible %}
+      "{{ social.href }}"{% if not loop.last %},{% endif %}
+      {% endif %}
+      {% endfor %}
+    ]
+    {% endif %}
+  }
+  </script>
+
+  {# Schema.org WebSite для GEO / LLM #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.name|default('Company') }}",
+    "url": "{{ _base_secure_domain_for_seo ~ '/' }}"
+  }
+  </script>
+
+  {% if breadcrumb is defined and breadcrumb is iterable and breadcrumb|length > 0 %}
+  {# Schema.org BreadcrumbList для GEO / LLM #}
+  {% set _breadcrumb_base = _base_secure_domain_for_seo %}
+  {% if is_lang_in_url and lang_code != config.settings.default_lang %}
+    {% set _breadcrumb_base = _breadcrumb_base ~ '/' ~ lang_code %}
+  {% endif %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {% for item in breadcrumb %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": "{{ item.name|e('js') }}",
+        "item": "{{ _breadcrumb_base ~ (item.url == '/' ? '/' : item.url)|e('js') }}"
+      }{% if not loop.last %},{% endif %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
+
+  {% if pageSeoData.json_ld is defined and pageSeoData.json_ld is not empty %}
+  <script type="application/ld+json">
+    {{ pageSeoData.json_ld | raw }}
+  </script>
+  {% endif %}
+  {% if pageSeoData.json_ld_faq is defined and pageSeoData.json_ld_faq is not empty %}
+  <script type="application/ld+json">
+    {{ pageSeoData.json_ld_faq | raw }}
+  </script>
+  {% endif %}
+</head>
+
+<body class="page-{{ pageData.name|default(page_id) }}">
+  {% include 'components/analytics-noscript.twig' %}
+  <a href="#page-content" class="skip-link js-skip-link">{{ skip_link_text|default('Перейти к контенту') }}</a>
+  {% block content %}{% endblock %}
+  {# Глобальное подключение cookie-panel #}
+  {% include 'sections/cookie-panel.twig' %}
+</body>
+
+</html>
