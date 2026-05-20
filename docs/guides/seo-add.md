@@ -1,5 +1,11 @@
 # Инструкция по созданию SEO-метаданных для страниц
 
+SEO в платформе строится **двумя путями**:
+
+1. **Статический SEO** (большинство страниц) — JSON-файл `data/json/{lang}/seo/{page_id}.json`, читается `DataLoaderService::loadSeo()`. Этот документ описывает именно его.
+
+2. **Динамический SEO для entity-страниц коллекций** (tire, news, restaurant, …) — через **`SeoBuilderRegistry` + builder per collection** (см. [ADR-0003](../architecture/decisions/0003-seo-builder-strategy.md)). См. раздел [Динамический SEO для entity-страниц](#динамический-seo-для-entity-страниц) ниже.
+
 ## Расположение файлов
 SEO файлы находятся в директории: `data/json/ru/seo/`
 
@@ -14,6 +20,100 @@ SEO файлы находятся в директории: `data/json/ru/seo/`
 - `landshaftnoe-proektirovanie.json`
 - `team.json`
 - `contacts.json`
+
+## Динамический SEO для entity-страниц
+
+Entity-страницы коллекций (`/catalog/at52/`, `/news/launch-2026/`, `/restaurants/atelier/`) не имеют статического `data/json/{lang}/seo/<slug>.json` — SEO строится **в runtime** из entity-данных через `SeoBuilderInterface`.
+
+### Как это работает
+
+```
+URL /catalog/sport-sa-37
+  ↓
+PageAction::__invoke()
+  ↓
+DataLoaderService::loadEntity() → entity-данные
+  ↓
+SeoBuilderRegistry::get('tires') → builder для коллекции 'tires'
+  ↓ (если не зарегистрирован — DefaultSeoBuilder)
+$builder->build($entity, $baseUrl, $langCode, $config, $global) → SEO-массив
+  ↓
+SeoService::processTemplates() → render Twig-подстановки внутри SEO
+  ↓
+Twig базовый шаблон → meta-теги, JSON-LD в `<head>`
+```
+
+### Добавить кастомный builder для новой коллекции
+
+#### 1. Создать класс `src/Service/<Entity>SeoBuilder.php`
+
+```php
+<?php
+declare(strict_types=1);
+namespace App\Service;
+
+final class RestaurantSeoBuilder implements SeoBuilderInterface
+{
+    public function build(array $entity, string $baseUrl, string $langCode, array $config, array $global): array
+    {
+        $r = $entity['restaurant'] ?? [];
+        $name = (string) ($r['name'] ?? $entity['slug'] ?? '');
+        $desc = (string) ($entity['desc']['short'] ?? '');
+
+        return [
+            'title' => $name,
+            'meta' => [
+                ['name' => 'description', 'content' => $desc],
+                ['property' => 'og:type', 'content' => 'restaurant'],
+                ['property' => 'og:title', 'content' => $name],
+            ],
+            'json_ld' => [
+                '@context' => 'https://schema.org',
+                '@type' => 'Restaurant',
+                'name' => $name,
+                'address' => $r['address'] ?? null,
+            ],
+            'json_ld_faq' => null,
+        ];
+    }
+}
+```
+
+#### 2. Зарегистрировать в `config/container.php`
+
+```php
+RestaurantSeoBuilder::class => \DI\autowire(),
+
+SeoBuilderRegistry::class => static fn(ContainerInterface $c) => new SeoBuilderRegistry(
+    [
+        'restaurants' => $c->get(RestaurantSeoBuilder::class),
+    ],
+    $c->get(DefaultSeoBuilder::class),  // fallback для остальных коллекций
+),
+```
+
+Ключ массива (`'restaurants'`) — имя коллекции из `config/project.php:collections.*`.
+
+#### 3. Если не делать ничего — работает DefaultSeoBuilder
+
+`DefaultSeoBuilder` использует `item.name`/`item.title` для `<title>` и `og:title`, `entity.desc.short` для description. Этого достаточно для базового SEO большинства коллекций (tires, products, services).
+
+Кастомный builder нужен **только** если коллекция требует:
+- Schema.org/JSON-LD per тип (Product, Restaurant, Article)
+- FAQPage block
+- Кастомных `og:type` (`product`, `article`, `restaurant`)
+- Cover из специфичного поля entity (`covers[0]`, `gallery[0]`)
+
+### Когда что использовать
+
+| Сценарий | Как делать |
+|---|---|
+| Простая страница (about, contacts) | Статический `data/json/{lang}/seo/{slug}.json` |
+| Entity без Schema.org (общая коллекция) | DefaultSeoBuilder автоматически |
+| Entity со Schema.org (Restaurant, Product, Article) | Кастомный builder + Registry-binding |
+| FAQ-блок на entity-странице | Builder возвращает `json_ld_faq` |
+
+---
 
 ## Структура SEO файла
 
