@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Service;
 
+use App\Support\Arr;
 use Psr\Http\Message\UploadedFileInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
@@ -62,7 +63,7 @@ final class MailService
             return false;
         }
 
-        $currentUrl = $this->extractString($formData, 'current_url');
+        $currentUrl = Arr::str($formData, 'current_url');
         $pagePath = $currentUrl !== '' ? (parse_url($currentUrl, PHP_URL_PATH) ?: '/') : '/';
         $subject = trim($this->config['subject_prefix'] . ' Заявка с сайта — ' . $pagePath);
 
@@ -81,9 +82,9 @@ final class MailService
             ->html($htmlBody);
 
         // Reply-To: email клиента, если есть
-        $clientEmail = $this->extractString($formData, 'email');
+        $clientEmail = Arr::str($formData, 'email');
         if ($clientEmail !== '' && filter_var($clientEmail, FILTER_VALIDATE_EMAIL) !== false) {
-            $clientName = $this->extractString($formData, 'name');
+            $clientName = Arr::str($formData, 'name');
             $email->replyTo($clientName !== '' ? new Address($clientEmail, $clientName) : new Address($clientEmail));
         }
 
@@ -255,8 +256,4 @@ final class MailService
         return $value;
     }
 
-    private function extractString(array $data, string $key): string
-    {
-        return isset($data[$key]) && is_string($data[$key]) ? trim($data[$key]) : '';
-    }
 }

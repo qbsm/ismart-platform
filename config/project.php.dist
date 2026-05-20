@@ -30,7 +30,5 @@ return [
     ],
 
     // Внешние интеграции (флаги включения)
-    'integrations' => [
-        // 'photoroom' => ['enabled' => true],
-    ],
+    'integrations' => [],
 ];

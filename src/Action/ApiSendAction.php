@@ -6,6 +6,7 @@ namespace App\Action;
 
 use App\Middleware\CorrelationIdMiddleware;
 use App\Service\MailService;
+use App\Support\Arr;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
@@ -29,10 +30,10 @@ final class ApiSendAction
         $requestId = (string) $request->getAttribute(CorrelationIdMiddleware::REQUEST_ATTRIBUTE, '');
         $parsed = $request->getParsedBody();
         $data = is_array($parsed) ? $parsed : [];
-        $idempotencyKey = $this->extractString($data, 'idempotency_key');
+        $idempotencyKey = Arr::str($data, 'idempotency_key');
 
         // CSRF
-        $csrfToken = $this->extractString($data, 'csrf_token');
+        $csrfToken = Arr::str($data, 'csrf_token');
         $sessionToken = isset($_SESSION['csrf_token']) && is_string($_SESSION['csrf_token']) ? $_SESSION['csrf_token'] : '';
 
         if ($csrfToken === '' || $sessionToken === '' || !hash_equals($sessionToken, $csrfToken)) {
@@ -91,31 +92,23 @@ final class ApiSendAction
     {
         $errors = [];
 
-        $phoneRaw = $this->extractString($data, 'phone');
+        $phoneRaw = Arr::str($data, 'phone');
         $phone = preg_replace('/\D+/', '', $phoneRaw) ?? '';
         if ($phone === '' || strlen($phone) < 7 || strlen($phone) > 15) {
             $errors['phone'] = 'Неверный телефон';
         }
 
-        $policy = $this->extractString($data, 'policy');
+        $policy = Arr::str($data, 'policy');
         if ($policy !== 'on') {
             $errors['policy'] = 'Согласитесь с политикой';
         }
 
-        $email = $this->extractString($data, 'email');
+        $email = Arr::str($data, 'email');
         if ($email !== '' && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
             $errors['email'] = 'Неверный E-mail';
         }
 
         return $errors;
-    }
-
-    /**
-     * @param array<string,mixed> $data
-     */
-    private function extractString(array $data, string $key): string
-    {
-        return isset($data[$key]) && is_string($data[$key]) ? trim($data[$key]) : '';
     }
 
     /**

@@ -1,22 +1,21 @@
 # CORE INVENTORY — ядро iSmart Platform
 
-Этот документ — детальная карта файлов **ядра** baseline'а `ismart-platform/`, с описанием назначения каждого и статусом в трёх production deployment'ах:
+Карта файлов **ядра** baseline'а `ismart-platform/` с описанием назначения каждого и статусом в трёх production deployment'ах (kumho, italy, beepitron).
 
 | Метка | Значение |
 |---|---|
 | `✓`   | файл присутствует и идентичен baseline'у |
-| `M`   | файл присутствует, но **содержимое расходится** (drift) |
+| `M`   | файл присутствует, но содержимое расходится (drift) |
 | `✗`   | файла нет в deployment'е |
 
-Классификация в колонке **Категория**:
+Категории:
 
-- `CORE ✓` — есть во всех трёх, идентичен. Безусловно ядро.
-- `CORE drift` — есть во всех трёх, но содержимое разъехалось. Кандидат на унификацию через `distill sync`.
-- `partial (N/3)` — присутствует только в части deployment'ов. Требует разбора: либо ядро (с пропусками) либо deployment-specific.
-- `BASELINE-only` — впервые появился в baseline'е. Требует распространения в deployment'ы.
+- `CORE ✓` — есть во всех 3, идентичен. Безусловное ядро.
+- `CORE drift` — есть во всех 3, но содержимое разошлось. Кандидат на унификацию.
+- `partial (N/3)` — есть только в части deployments.
+- `BASELINE-only` — впервые в baseline'е, ещё не распространён.
 
-Сгенерировано автоматически: `node tools/distill/build-inventory.mjs > CORE-INVENTORY.md`
-Дата: 2026-05-20
+Сгенерировано: `node tools/distill/build-inventory.mjs > CORE-INVENTORY.md` (2026-05-20)
 
 ---
 
@@ -25,12 +24,12 @@
 | Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `public/index.php` | — | ✓ | M | M | CORE drift |
-| `config/routes.php` | — | ✓ | M | M | CORE drift |
+| `config/routes.php` | — | M | M | M | CORE drift |
 | `config/middleware.php` | Slim middleware: last added = outermost = runs first. | ✓ | ✓ | M | CORE drift |
-| `config/container.php` | За прокси схема приходит в X-Forwarded-Proto; иначе HTTPS | ✓ | M | M | CORE drift |
-| `config/settings.php` | APP_ENV: production | development — разделение окружений (кэш Twig, уровень л... | ✓ | M | M | CORE drift |
+| `config/container.php` | За прокси схема приходит в X-Forwarded-Proto; иначе HTTPS | M | M | M | CORE drift |
+| `config/settings.php` | APP_ENV: production | development — разделение окружений (кэш Twig, уровень л... | M | M | M | CORE drift |
 | `config/errors.php` | Карта доменных ошибок: HTTP-код → заголовок и сообщение для пользователя | ✓ | ✓ | ✓ | CORE ✓ |
-| `config/project.php.dist` | — | ✓ | ✗ | ✗ | partial (1/3) |
+| `config/project.php.dist` | — | M | ✗ | ✗ | partial (1/3) |
 | `config/llms-full.php.dist` | — | ✗ | ✗ | ✗ | BASELINE-only |
 | `config/image-sizes.json` | — | ✓ | M | ✗ | partial (2/3) |
 | `config/redirects.json` | — | ✓ | ✓ | M | CORE drift |
@@ -39,10 +38,10 @@
 
 | Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
-| `src/Action/ApiSendAction.php` | CSRF | ✓ | M | M | CORE drift |
+| `src/Action/ApiSendAction.php` | CSRF | M | M | M | CORE drift |
 | `src/Action/HealthAction.php` | Health check для мониторинга (load balancer, uptime, алерты) | ✓ | ✓ | ✓ | CORE ✓ |
 | `src/Action/PageAction.php` | — | ✓ | M | M | CORE drift |
-| `src/Action/SitemapAction.php` | Генерация sitemap.xml с учётом мультиязычности и hreflang | ✓ | M | M | CORE drift |
+| `src/Action/SitemapAction.php` | Генерация sitemap.xml с учётом мультиязычности и hreflang | M | M | M | CORE drift |
 
 ## src/Service — сервисный слой
 
@@ -50,7 +49,7 @@
 |---|---|:-:|:-:|:-:|---|
 | `src/Service/DataLoaderService.php` | Загружает global.json — глобальные данные сайта (навигация, контакты, языки) | ✓ | M | M | CORE drift |
 | `src/Service/LanguageService.php` | Определяет язык из первого сегмента URL | ✓ | M | M | CORE drift |
-| `src/Service/MailService.php` | Reply-To: email клиента, если есть | ✓ | ✓ | M | CORE drift |
+| `src/Service/MailService.php` | Reply-To: email клиента, если есть | M | M | M | CORE drift |
 | `src/Service/SeoService.php` | Рекурсивно рендерит Twig-шаблоны внутри SEO-данных | ✓ | M | M | CORE drift |
 | `src/Service/TemplateDataBuilder.php` | Собирает финальный массив данных для Twig-шаблона | ✓ | M | M | CORE drift |
 
@@ -71,8 +70,8 @@
 
 | Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
-| `src/Handler/HttpErrorHandler.php` | Обработчик HTTP-ошибок (404, 405 и др.): отдаёт ответ по карте доменных ошибок | ✓ | ✓ | ✓ | CORE ✓ |
-| `src/Handler/ServerErrorHandler.php` | Единый обработчик необработанных исключений: | ✓ | ✓ | ✓ | CORE ✓ |
+| `src/Handler/HttpErrorHandler.php` | Обработчик HTTP-ошибок (404, 405 и др.): отдаёт ответ по карте доменных ошибок | M | M | M | CORE drift |
+| `src/Handler/ServerErrorHandler.php` | Единый обработчик необработанных исключений: | M | M | M | CORE drift |
 
 ## src/Event — domain events
 
@@ -94,15 +93,17 @@
 
 | Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
+| `src/Support/Arr.php` | Утилиты для типизированного извлечения значений из ассоциативных массивов | ✗ | ✗ | ✗ | BASELINE-only |
 | `src/Support/BaseUrlResolver.php` | — | ✓ | M | M | CORE drift |
 | `src/Support/CitySlugger.php` | Транслитерация русских названий городов в URL-slug | ✓ | ✗ | ✗ | partial (1/3) |
 | `src/Support/JsonProcessor.php` | Рекурсивно нормализует пути data/* в абсолютные URL | ✓ | ✓ | ✓ | CORE ✓ |
+| `src/Support/PlatformSettings.php` | Типизированный доступ к ключам массива settings | ✗ | ✗ | ✗ | BASELINE-only |
+| `src/Support/RequestAttributes.php` | Константы атрибутов request'а и ключей, разбросанных по приложению | ✗ | ✗ | ✗ | BASELINE-only |
+| `src/Support/RespondsToContent.php` | Trait для Handler'ов и Action'ов: разбор Accept-заголовка и проставление X-Re... | ✗ | ✗ | ✗ | BASELINE-only |
 
 ## src/Api — внешние интеграции (необязательно)
 
-| Файл | Назначение | kumho | italy | beepitron | Категория |
-|---|---|:-:|:-:|:-:|---|
-| `src/Api/PhotoroomApiClient.php` | format?:'png'|'webp'|'jpg'|'jpeg', | ✓ | ✗ | ✗ | partial (1/3) |
+_файлов нет_
 
 ## tools/scaffold — генераторы (create-*)
 
@@ -110,7 +111,7 @@
 |---|---|:-:|:-:|:-:|---|
 | `tools/scaffold/create-collection.js` | --- Аргументы --- | ✓ | ✗ | ✗ | partial (1/3) |
 | `tools/scaffold/create-component.js` | Стили для ${component} | ✓ | ✓ | ✗ | partial (2/3) |
-| `tools/scaffold/create-deployment.js` | --- Аргументы --- | ✓ | ✗ | ✗ | partial (1/3) |
+| `tools/scaffold/create-deployment.js` | --- Аргументы --- | M | ✗ | ✗ | partial (1/3) |
 | `tools/scaffold/create-page.js` | Стили для ${page} | ✓ | M | ✗ | partial (2/3) |
 | `tools/scaffold/create-section.js` | Стили для ${section} | ✓ | ✓ | ✗ | partial (2/3) |
 | `tools/scaffold/utils.js` | Читает global.json и возвращает массив кодов языков | ✓ | ✗ | ✗ | partial (1/3) |
@@ -154,8 +155,9 @@
 | Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `tools/distill/README.md` | tools/distill — file-level tracking между baseline и deployments | ✗ | ✗ | ✗ | BASELINE-only |
-| `tools/distill/build-inventory.mjs` | Генератор CORE-INVENTORY.md | ✗ | ✗ | ✗ | BASELINE-only |
+| `tools/distill/build-inventory.mjs` | Генератор CORE-INVENTORY.md: per-file карта ядра baseline'а + | ✗ | ✗ | ✗ | BASELINE-only |
 | `tools/distill/distill.mjs` | distill — CLI для file-level tracking между ismart-platform (baseline) | ✗ | ✗ | ✗ | BASELINE-only |
+| `tools/distill/lib.mjs` | Общая библиотека для CLI distill: обход файлов, sha256, manifest, описания | ✗ | ✗ | ✗ | BASELINE-only |
 
 ## Корневые конфиги
 
@@ -172,7 +174,7 @@
 | `phpstan.neon` | — | ✓ | ✓ | ✓ | CORE ✓ |
 | `.gitignore` | — | M | M | M | CORE drift |
 | `.htaccess` | — | ✓ | ✓ | ✓ | CORE ✓ |
-| `.env.example` | — | ✓ | M | M | CORE drift |
+| `.env.example` | — | M | M | M | CORE drift |
 
 ## Документация и базовые шаблоны
 
@@ -181,6 +183,7 @@
 | `README.md` | iSmart Platform | M | M | ✗ | partial (2/3) |
 | `CLAUDE.md` | CLAUDE.md | M | ✗ | M | partial (2/3) |
 | `DISTILLATION.md` | Дистилляция iSmart Platform | ✗ | ✗ | ✗ | BASELINE-only |
+| `CORE-INVENTORY.md` | — | ✗ | ✗ | ✗ | BASELINE-only |
 | `templates/base.twig` | base.twig | ✓ | M | M | CORE drift |
 | `templates/pages/page.twig` | — | ✓ | ✓ | M | CORE drift |
 
@@ -190,15 +193,15 @@
 
 | Категория | Кол-во |
 |---|---|
-| **CORE ✓** (идентичны во всех трёх) | 16 |
-| **CORE drift** (есть везде, но разъехалось) | 33 |
-| **partial** (отсутствует в части deployments) | 30 |
-| **BASELINE-only** (новые в baseline) | 5 |
+| **CORE ✓** (идентичны во всех 3) | 14 |
+| **CORE drift** (есть везде, но разошлось) | 35 |
+| **partial** (отсутствует в части deployments) | 29 |
+| **BASELINE-only** (новые в baseline) | 11 |
 
 ## Ключевые моменты для имплементации
 
-1. **`CORE ✓`** — копировать в baseline без правок, маркировать как `strict` в manifest.
-2. **`CORE drift`** — требует **review per file**: какая из версий каноническая, что вынести в `.dist`, что в `Support`. Это первоочередная работа.
-3. **`partial`** — два варианта: либо это deployment-specific (помечать как override), либо это **намеренный CORE-кандидат**, который ещё не докатился до части deployment'ов (надо `distill sync`).
-4. **`BASELINE-only`** (например, DISTILLATION.md, tools/distill/*) — распространяется в deployments только после согласования.
+1. **`CORE ✓`** — маркировать в manifest как `sync_policy: strict`. Любой drift = баг.
+2. **`CORE drift`** — review per file: какая версия каноническая. Это первоочередная работа `distill sync`.
+3. **`partial`** — либо deployment-specific (override), либо CORE-кандидат, не докатился. Решается явной маркировкой.
+4. **`BASELINE-only`** — распространяется в deployments после согласования.
 

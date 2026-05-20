@@ -1,16 +1,16 @@
 {
   "$schema": "https://ismart.pro/schemas/distill-manifest-v1.json",
   "platform_version": "1.0.0",
-  "generated_at": "2026-05-20T01:59:42.705Z",
-  "file_count": 287,
+  "generated_at": "2026-05-20T02:14:10.080Z",
+  "file_count": 291,
   "files": {
     ".editorconfig": {
       "sha256": "3770f26fa30ba598d2441a3aaac94303070444d8798188381c4ce30a854519e9",
       "size": 172
     },
     ".env.example": {
-      "sha256": "47cd682cff4931086c0c61e2bd00d14d83aad2a1ac5d791c3a0199aa6f4978bd",
-      "size": 934
+      "sha256": "1afcb5618e8e6cec42d1051fe942f971f13ba3aee27780ca8b5395b0ab9bcebd",
+      "size": 634
     },
     ".gitignore": {
       "sha256": "a49fe5b3504e76889717b178cd05d72fcb7c73ae6beb894c93cc716531951e59",
@@ -29,8 +29,8 @@
       "size": 9269
     },
     "CORE-INVENTORY.md": {
-      "sha256": "a7e7cfb74875af2d12bdd38d76a95607f9af6fc9f236b0854b10b2e6487109a5",
-      "size": 14730
+      "sha256": "9649222f2ddcd4f50f639cfab705081a9053bc680b6a26b5630289245fc69186",
+      "size": 14979
     },
     "DISTILLATION.md": {
       "sha256": "17bdc5bc18d5ced4060274b6ac760a7e5b0af71adece0617409179b540895343",
@@ -537,8 +537,8 @@
       "size": 736
     },
     "config/container.php": {
-      "sha256": "68f4f516ad07000bf75fcc321c493618a9dcc43e7f30c65f4fed84cb0343c194",
-      "size": 7564
+      "sha256": "ae94c8f4dd6a33e729c0c396b9cff350b459a0a6f172ee29fcbbc9af1868f59a",
+      "size": 6831
     },
     "config/errors.php": {
       "sha256": "f54bd3127872d5ba65ae9aa841e6bfb24fe6ff3d0c3a78bb3cba7486bcaebef3",
@@ -561,24 +561,24 @@
       "size": 1854
     },
     "config/project.php": {
-      "sha256": "bfa454934a03593059b1d533a76d6519abb97a17eb19f14145988c8973f078e7",
-      "size": 1400
+      "sha256": "70791ef67fb215f17fc91f9b51a8aa7a0c41563a8c820dadc83765108750bdd1",
+      "size": 1348
     },
     "config/project.php.dist": {
-      "sha256": "bfa454934a03593059b1d533a76d6519abb97a17eb19f14145988c8973f078e7",
-      "size": 1400
+      "sha256": "70791ef67fb215f17fc91f9b51a8aa7a0c41563a8c820dadc83765108750bdd1",
+      "size": 1348
     },
     "config/redirects.json": {
       "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
       "size": 3
     },
     "config/routes.php": {
-      "sha256": "0ea71bb778042e68d06bc124713ed28554130dfc25b362016a13df40ea25a895",
-      "size": 604
+      "sha256": "f0d97bac1932c3b25a7873cb8fec88ba7ac5049dd2f7d3cff586cdd59fa62f44",
+      "size": 461
     },
     "config/settings.php": {
-      "sha256": "19c3305ab8f7a1093f3efc28ed7c2eeb5ab2965722ee71c94a06dc8733394600",
-      "size": 5761
+      "sha256": "50b89e67923d0f7ada1f460c43193f2d85fff08bae32a313fb69525353adefd2",
+      "size": 5246
     },
     "data/json/global.json": {
       "sha256": "baf336c317a907a666913a7ca438461f8c9ae773a4cb82725ed9fd341046ac64",
@@ -637,8 +637,8 @@
       "size": 1209
     },
     "src/Action/ApiSendAction.php": {
-      "sha256": "b9809ea1cf6db5e692999e74e68952378b829540a731ed31a28e024b5188da5c",
-      "size": 6201
+      "sha256": "0b591a6a1f70790100f461199baf1ad1c980ccd6ba4fb2a9609294d688b5534e",
+      "size": 5938
     },
     "src/Action/HealthAction.php": {
       "sha256": "4c396ce641aec7ad6e9346d0305d49f4b6d93fc880ca5949a01df3da107998b4",
@@ -649,12 +649,8 @@
       "size": 15412
     },
     "src/Action/SitemapAction.php": {
-      "sha256": "d4d7cb3493ff69bfdc6cf72f1681f3901d9102778c0789cb6942154971b633c9",
-      "size": 8253
-    },
-    "src/Api/PhotoroomApiClient.php": {
-      "sha256": "f59fc7abb9a5e9250b29945acd377d6cf0918124e530fe8045037b42e58642cd",
-      "size": 4600
+      "sha256": "57c488287395a28168ab339311f12a8352f3705f28a61255a08c5e0f3a4b60f9",
+      "size": 8271
     },
     "src/Event/EntityResolved.php": {
       "sha256": "3248751dc898d587a39241592160c4371251953c7e44bfac9f80196b9cbe69ac",
@@ -669,12 +665,12 @@
       "size": 818
     },
     "src/Handler/HttpErrorHandler.php": {
-      "sha256": "04bd4fe6902030e7927c607d4e6a4f79fa3f60b0f48ddf3597513d0855f4e2df",
-      "size": 3006
+      "sha256": "cd2ec72e576c5154a67706139203f7a693d3aff5db3af0980af16a3034788590",
+      "size": 2549
     },
     "src/Handler/ServerErrorHandler.php": {
-      "sha256": "92fe6afbf802d9eab2c161459e5250d220c06bae1d785606e59e136296f59bc6",
-      "size": 3477
+      "sha256": "210cf0feb513c8d9b3a211b5ed90241354a22403b828169022634cf9b9f30f7d",
+      "size": 2830
     },
     "src/Middleware/CorrelationIdMiddleware.php": {
       "sha256": "114381c641068e07ce15124e8cd95fa332bbca95f74ddce3b5f9d478b801c6f8",
@@ -717,8 +713,8 @@
       "size": 1644
     },
     "src/Service/MailService.php": {
-      "sha256": "6c85de4f0afbfaa8626daf010c5a313cd856bac4912d28bd95e78f06c9df3f4b",
-      "size": 10089
+      "sha256": "d3a39354d5571215fc941b674dfd0f1e343e198897e8c15e5d818c870b2cfd48",
+      "size": 9907
     },
     "src/Service/SeoService.php": {
       "sha256": "0c996dfe27635ae7f74f0a6fdcaac99b31c6b6dc39ed9744312fcc5ac8cf31ab",
@@ -727,6 +723,10 @@
     "src/Service/TemplateDataBuilder.php": {
       "sha256": "a3c7a5c59561c05c636607739cecd812fbc1dc238f1bdba319ffe9dd32edd85a",
       "size": 9078
+    },
+    "src/Support/Arr.php": {
+      "sha256": "c82f1290adc17e23b8f4e1ca401a6fc34a6c599e01c2f64b92e432e5c19f3c9e",
+      "size": 1603
     },
     "src/Support/BaseUrlResolver.php": {
       "sha256": "ce55837a6a3217df5a04cd0675c19ac2f22ec3cb42abfdacfce2dbe1d954b21f",
@@ -739,6 +739,18 @@
     "src/Support/JsonProcessor.php": {
       "sha256": "e0b893bbd24058d0ca7d851bea7ef31f13ea7cc7ea0d6551a827437a526a5ab1",
       "size": 1162
+    },
+    "src/Support/PlatformSettings.php": {
+      "sha256": "24c22473c1e0b18fb60f09f73cda451b38bb55568e6738c0dc8adb3a4e4f5a02",
+      "size": 1525
+    },
+    "src/Support/RequestAttributes.php": {
+      "sha256": "e11a90dfaa3a79184dc1bd3bd73759f7ba1dd57376481ec8f2202af85b71f7df",
+      "size": 753
+    },
+    "src/Support/RespondsToContent.php": {
+      "sha256": "cc43b23769c7c1ee5f849f13378fa5708bbc3ddbf2d0ab03627df15a55e11c38",
+      "size": 1072
     },
     "src/Twig/AssetExtension.php": {
       "sha256": "cbd87c8c7dec9fd52456b767a33bfc6f53a5fe4febdd01eb09e1471bc786fd53",
@@ -1069,12 +1081,16 @@
       "size": 3120
     },
     "tools/distill/build-inventory.mjs": {
-      "sha256": "a71138e167390b61276849fca132880188883af806be4ea49b743158f5e8dd93",
-      "size": 11877
+      "sha256": "246681f0ce797a84ad13f61013a53caa2a7c41b10036b60d4713f6720d26220f",
+      "size": 8135
     },
     "tools/distill/distill.mjs": {
-      "sha256": "fdb451e75c57146e2e9159cda46f3daf35fcf970503dbb7e9a9c16c11ccc677d",
-      "size": 10753
+      "sha256": "899b43985eec5d14d2a4c6e5a383b04ff612e482aea3b8fba9423d236feb2594",
+      "size": 6579
+    },
+    "tools/distill/lib.mjs": {
+      "sha256": "cdb958ae4d1c64f09a6f611b80c488156b2054df65859f293f3724f5014d2511",
+      "size": 6002
     },
     "tools/ops/__pycache__/normalize-tire-temperature.cpython-313.pyc": {
       "sha256": "033218ebad9f736326c30e8f619a3685b8bc04deef798b3b21fb9576e59d67af",
@@ -1125,8 +1141,8 @@
       "size": 3874
     },
     "tools/scaffold/create-deployment.js": {
-      "sha256": "4fb078c2323fd316110a5b8f3b0c26c60069d7ec3e12cfb9509a82325b679c8c",
-      "size": 7802
+      "sha256": "e75d44e4c8a4f25cbac6e02a12f2b271bdc822841c09a5f5aecf91d0a405b5c2",
+      "size": 7620
     },
     "tools/scaffold/create-page.js": {
       "sha256": "8ea35a717f82def7b22c60790ec73b35622ce3779a7d24683a2995d54af15762",

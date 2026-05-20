@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Action;
 
 use App\Support\CitySlugger;
+use App\Support\PlatformSettings;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -33,9 +34,9 @@ final class SitemapAction
         }
         $base = rtrim($base, '/');
 
-        $langs = (array) ($this->settings['available_langs'] ?? ['ru', 'en']);
-        $defaultLang = (string) ($this->settings['default_lang'] ?? 'ru');
-        $routeMap = (array) ($this->settings['route_map'] ?? []);
+        $langs = PlatformSettings::availableLangs($this->settings);
+        $defaultLang = PlatformSettings::defaultLang($this->settings);
+        $routeMap = PlatformSettings::routeMap($this->settings);
 
         $sitemapPages = (array) ($this->settings['sitemap_pages'] ?? []);
         $urls = $this->buildUrls($base, $langs, $defaultLang, $routeMap, $sitemapPages);

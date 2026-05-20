@@ -6,6 +6,7 @@ namespace App\Handler;
 
 use App\Middleware\CorrelationIdMiddleware;
 use App\Support\BaseUrlResolver;
+use App\Support\RespondsToContent;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -19,6 +20,8 @@ use Throwable;
  */
 final class HttpErrorHandler
 {
+    use RespondsToContent;
+
     private const FALLBACK_CODE = 500;
 
     public function __construct(
@@ -41,11 +44,8 @@ final class HttpErrorHandler
         $title = $entry['title'] ?? 'Ошибка';
         $message = $entry['message'] ?? '';
 
-        $requestId = $request->getAttribute(CorrelationIdMiddleware::REQUEST_ATTRIBUTE, '');
-        $response = $this->responseFactory->createResponse($code);
-        if ($requestId !== '') {
-            $response = $response->withHeader('X-Request-Id', $requestId);
-        }
+        $requestId = (string) $request->getAttribute(CorrelationIdMiddleware::REQUEST_ATTRIBUTE, '');
+        $response = $this->withRequestIdHeader($this->responseFactory->createResponse($code), $requestId);
 
         if ($this->wantsJson($request)) {
             $payload = [
@@ -71,20 +71,5 @@ final class HttpErrorHandler
             ])
         );
         return $response->withHeader('Content-Type', 'text/html; charset=utf-8');
-    }
-
-    private function wantsJson(ServerRequestInterface $request): bool
-    {
-        $accept = $request->getHeaderLine('Accept');
-        if ($accept === '') {
-            return false;
-        }
-        foreach (array_map('trim', explode(',', $accept)) as $part) {
-            $type = strtolower(explode(';', $part)[0]);
-            if ($type === 'application/json') {
-                return true;
-            }
-        }
-        return false;
     }
 }
