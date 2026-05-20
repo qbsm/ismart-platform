@@ -3,9 +3,10 @@
  * Все команды distill (scan/diff/status/init/mark-override) импортируют отсюда.
  */
 
-import { readFile, readdir, stat } from 'node:fs/promises';
+import { readFile, readdir, stat, copyFile as fsCopyFile, mkdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { execSync } from 'node:child_process';
 import { join, sep, basename, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -172,4 +173,40 @@ export async function extractDescription(absPath) {
     return '';
   }
   return '';
+}
+
+/** sha-хеш текущего коммита baseline. 'unknown' если git недоступен. */
+export function getBaselineCommit() {
+  try {
+    return execSync('git rev-parse HEAD', { cwd: PLATFORM_ROOT, encoding: 'utf8' }).trim();
+  } catch {
+    return 'unknown';
+  }
+}
+
+/** Текущая ветка baseline. */
+export function getBaselineBranch() {
+  try {
+    return execSync('git rev-parse --abbrev-ref HEAD', { cwd: PLATFORM_ROOT, encoding: 'utf8' }).trim();
+  } catch {
+    return 'unknown';
+  }
+}
+
+/** Копирует файл, создавая parent-директорию при необходимости. */
+export async function copyFile(src, dst) {
+  await mkdir(dirname(dst), { recursive: true });
+  await fsCopyFile(src, dst);
+}
+
+/** Пишет JSON в файл с pretty-print + trailing newline. */
+export async function writeJson(path, data) {
+  await mkdir(dirname(path), { recursive: true });
+  await writeFile(path, JSON.stringify(data, null, 2) + '\n');
+}
+
+/** Пишет произвольный текст в файл, создавая parent-директорию. */
+export async function writeText(path, content) {
+  await mkdir(dirname(path), { recursive: true });
+  await writeFile(path, content);
 }
