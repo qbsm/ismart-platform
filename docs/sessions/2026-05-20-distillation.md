@@ -70,6 +70,10 @@
 - Tag: `legacy-archive-v0` — snapshot старой архитектуры до замены
 - Branch: `distill/initial-baseline` — текущая работа
 
+## Запланировано
+
+- **Миграция trazano-tires.ru на baseline** — план в [`docs/notes/migrations/trazano.md`](../notes/migrations/trazano.md). 8–12 дней. Принцип: визуал/оформление от trazano, архитектура (Slim/Twig 3/scaffold/middleware) от kumho. CSS целиком переносится из trazano, шаблоны/конфиги/JS — из kumho. Реальный first-use case для `distill init` + `mark-override`.
+
 ## Что отложено
 
 - **PageAction::__invoke (155 строк)** — рефакторинг на 4 метода, требует integration-тестов первыми.

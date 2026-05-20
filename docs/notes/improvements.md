@@ -57,6 +57,7 @@
 - **`Service/SeoService` — kumho-вариант (inline)**. В italy/beepitron — Strategy pattern (`SeoBuilderInterface` + `SeoBuilderRegistry`). Решить: миграция baseline на Strategy и `distill sync` для всех. Перед миграцией — review.
 - **TemplateDataBuilder::extractHeroPreloadImage() — 62 строки**. Логика adaptive images + fallback стоит вынести.
 - **Unit-тесты для Support-модулей** — `Arr`, `Json`, `PlatformSettings` чистые утилиты, идеальные кандидаты на unit-coverage. Дать confidence для дальнейших рефакторингов.
+- **`distill init --from <existing-deployment>`** — расширение CLI: создавать новый deployment не только из baseline, но и с overrides существующего deployment'а как стартовой точки. Use case: trazano-миграция (см. [migrations/trazano.md](migrations/trazano.md)) — `--from ../kumho-tires.ru` сразу даст архитектуру для tire-deployment'а. Кандидат на реализацию после первого реального применения паттерна (валидировать на trazano).
 
 ### Низкий приоритет (когда дойдут руки)
 
