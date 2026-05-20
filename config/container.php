@@ -15,7 +15,9 @@ use App\Middleware\RedirectMiddleware;
 use App\Middleware\RequestDurationMiddleware;
 use App\Middleware\SecurityHeadersMiddleware;
 use App\Service\DataLoaderService;
+use App\Service\DefaultSeoBuilder;
 use App\Service\MailService;
+use App\Service\SeoBuilderRegistry;
 use App\Twig\AssetExtension;
 use App\Twig\DataExtension;
 use App\Twig\UrlExtension;
@@ -112,9 +114,23 @@ return static function (): ContainerInterface {
         RequestDurationMiddleware::class => \DI\autowire(),
 
         HealthAction::class => \DI\autowire(),
+
+        // SEO Strategy: реестр builder'ов по типу коллекции + DefaultSeoBuilder как fallback.
+        // Deployments расширяют через config-override этого binding'а, добавляя свои Builder'ы:
+        //   SeoBuilderRegistry::class => static fn(ContainerInterface $c) => new SeoBuilderRegistry(
+        //       ['restaurants' => $c->get(RestaurantSeoBuilder::class)],
+        //       $c->get(DefaultSeoBuilder::class),
+        //   ),
+        DefaultSeoBuilder::class => \DI\autowire(),
+        SeoBuilderRegistry::class => static fn(ContainerInterface $c) => new SeoBuilderRegistry(
+            [],
+            $c->get(DefaultSeoBuilder::class),
+        ),
+
         PageAction::class => \DI\autowire()
             ->constructorParameter('settings', \DI\get('settings'))
-            ->constructorParameter('dispatcher', \DI\get(EventDispatcherInterface::class)),
+            ->constructorParameter('dispatcher', \DI\get(EventDispatcherInterface::class))
+            ->constructorParameter('seoBuilderRegistry', \DI\get(SeoBuilderRegistry::class)),
         SitemapAction::class => \DI\autowire()->constructorParameter('settings', \DI\get('settings')),
         ServerErrorHandler::class => \DI\autowire()->constructorParameter('displayErrorDetails', \DI\get('displayErrorDetails')),
         HttpErrorHandler::class => \DI\autowire()->constructorParameter('errorMap', \DI\get('errorMap')),
