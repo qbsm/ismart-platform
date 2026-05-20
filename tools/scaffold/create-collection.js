@@ -144,6 +144,61 @@ const twigContent = `{% extends 'base.twig' %}
 `;
 writeIfNotExists(path.join(PROJECT_ROOT, 'templates', 'pages', `${singular}.twig`), twigContent);
 
+// --- Stub кастомного SeoBuilder'а (опционально — для Schema.org/JSON-LD per collection) ---
+// См. ADR-0003 и docs/guides/seo-add.md. Если кастомный SEO не нужен — DefaultSeoBuilder подхватит.
+const builderClass = `${capitalize(singular)}SeoBuilder`;
+const builderContent = `<?php
+
+declare(strict_types=1);
+
+namespace App\\Service;
+
+/**
+ * SEO-builder для коллекции '${slug}' (Schema.org per collection).
+ *
+ * Зарегистрируйте в config/container.php:
+ *   ${builderClass}::class => \\DI\\autowire(),
+ *   SeoBuilderRegistry::class => static fn(ContainerInterface \$c) => new SeoBuilderRegistry(
+ *       ['${slug}' => \$c->get(${builderClass}::class)],
+ *       \$c->get(DefaultSeoBuilder::class),
+ *   );
+ *
+ * Если кастомный SEO не нужен — оставьте только DefaultSeoBuilder в Registry (он подхватит '${slug}'),
+ * а этот файл удалите.
+ */
+final class ${builderClass} implements SeoBuilderInterface
+{
+    public function build(array \$entity, string \$baseUrl, string \$langCode, array \$config, array \$global): array
+    {
+        \$itemKey = (string) (\$config['item_key'] ?? '');
+        \$inner = \$itemKey !== '' ? (\$entity[\$itemKey] ?? []) : \$entity;
+        \$name = (string) (\$inner['name'] ?? \$inner['title'] ?? \$entity['slug'] ?? '');
+        \$desc = (string) (\$entity['desc']['short'] ?? \$entity['desc']['full'] ?? '');
+        \$ogType = (string) (\$config['og_type'] ?? 'website');
+
+        return [
+            'title' => \$name,
+            'meta' => [
+                ['name' => 'description', 'content' => \$desc],
+                ['property' => 'og:type', 'content' => \$ogType],
+                ['property' => 'og:title', 'content' => \$name],
+                ['property' => 'og:description', 'content' => \$desc],
+            ],
+            // Заполните под Schema.org/<Type> для коллекции '${slug}':
+            'json_ld' => [
+                '@context' => 'https://schema.org',
+                '@type' => 'Thing',  // TODO: замените на корректный тип (Product, Article, Restaurant, ...)
+                'name' => \$name,
+                'description' => \$desc,
+            ],
+            'json_ld_faq' => null,
+        ];
+    }
+}
+`;
+writeIfNotExists(path.join(PROJECT_ROOT, 'src', 'Service', `${builderClass}.php`), builderContent);
+console.log(`  ✓ src/Service/${builderClass}.php (опционально — для Schema.org per collection)`);
+
 // --- Инструкция для project.php ---
 console.log('\n========================================');
 console.log('Добавьте в config/project.php:');
@@ -166,6 +221,14 @@ console.log(`],\n`);
 
 console.log('// sitemap_pages — добавить:');
 console.log(`'${slug}',\n`);
+
+console.log('========================================');
+console.log('SeoBuilder (опционально, см. docs/guides/seo-add.md):');
+console.log('========================================\n');
+console.log(`// Если хотите Schema.org для коллекции — добавьте в config/container.php:`);
+console.log(`// ${builderClass}::class => \\DI\\autowire(),`);
+console.log(`// и в SeoBuilderRegistry — '${slug}' => \\$c->get(${builderClass}::class)`);
+console.log(`// Иначе удалите src/Service/${builderClass}.php — DefaultSeoBuilder будет использован.\n`);
 
 console.log('========================================');
 console.log('Готово!\n');
