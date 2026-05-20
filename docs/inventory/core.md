@@ -15,7 +15,7 @@
 - `partial (N/3)` — есть только в части deployments.
 - `BASELINE-only` — впервые в baseline'е, ещё не распространён.
 
-Сгенерировано: `node tools/distill/build-inventory.mjs > CORE-INVENTORY.md` (2026-05-20)
+Сгенерировано: `npm run distill:inventory` (2026-05-20)
 
 ---
 
@@ -47,7 +47,7 @@
 
 | Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
-| `src/Service/DataLoaderService.php` | Загружает global.json — глобальные данные сайта (навигация, контакты, языки) | ✓ | M | M | CORE drift |
+| `src/Service/DataLoaderService.php` | Загружает global.json — глобальные данные сайта (навигация, контакты, языки) | M | M | M | CORE drift |
 | `src/Service/LanguageService.php` | Определяет язык из первого сегмента URL | ✓ | M | M | CORE drift |
 | `src/Service/MailService.php` | Reply-To: email клиента, если есть | M | M | M | CORE drift |
 | `src/Service/SeoService.php` | Рекурсивно рендерит Twig-шаблоны внутри SEO-данных | ✓ | M | M | CORE drift |
@@ -60,8 +60,8 @@
 | `src/Middleware/CorrelationIdMiddleware.php` | Добавляет X-Request-Id к запросу и ответу для трассировки (логи, поддержка) | ✓ | ✓ | ✓ | CORE ✓ |
 | `src/Middleware/CorsMiddleware.php` | CORS middleware: обрабатывает preflight (OPTIONS) и добавляет CORS-заголовки ... | ✓ | ✓ | ✓ | CORE ✓ |
 | `src/Middleware/LanguageMiddleware.php` | — | ✓ | ✓ | ✓ | CORE ✓ |
-| `src/Middleware/RateLimitMiddleware.php` | Rate limiting для POST /api/send: ограничение запросов по IP в скользящем окне | ✓ | ✓ | ✓ | CORE ✓ |
-| `src/Middleware/RedirectMiddleware.php` | — | ✓ | ✓ | M | CORE drift |
+| `src/Middleware/RateLimitMiddleware.php` | Rate limiting для POST /api/send: ограничение запросов по IP в скользящем окне | M | M | M | CORE drift |
+| `src/Middleware/RedirectMiddleware.php` | — | M | M | M | CORE drift |
 | `src/Middleware/RequestDurationMiddleware.php` | Измеряет время обработки запроса и логирует результат в JSON-формате | ✓ | ✓ | ✓ | CORE ✓ |
 | `src/Middleware/SecurityHeadersMiddleware.php` | Добавляет HTTP security headers ко всем ответам, включая базовую Content-Secu... | ✓ | M | M | CORE drift |
 | `src/Middleware/TrailingSlashMiddleware.php` | Best practice: без trailing slash для всех ресурсов кроме корня. | ✓ | M | M | CORE drift |
@@ -85,8 +85,8 @@
 
 | Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
-| `src/Twig/AssetExtension.php` | Читает содержимое CSS-файла из build-директории для inline-вставки в <style> | ✓ | M | M | CORE drift |
-| `src/Twig/DataExtension.php` | — | ✓ | M | M | CORE drift |
+| `src/Twig/AssetExtension.php` | Читает содержимое CSS-файла из build-директории для inline-вставки в <style> | M | M | M | CORE drift |
+| `src/Twig/DataExtension.php` | — | M | M | M | CORE drift |
 | `src/Twig/UrlExtension.php` | Статика (data/, assets/) всегда от корня документа (public/), иначе на /ru/ к... | ✓ | ✓ | ✓ | CORE ✓ |
 
 ## src/Support — поддерживающие классы
@@ -96,6 +96,7 @@
 | `src/Support/Arr.php` | Утилиты для типизированного извлечения значений из ассоциативных массивов | ✗ | ✗ | ✗ | BASELINE-only |
 | `src/Support/BaseUrlResolver.php` | — | ✓ | M | M | CORE drift |
 | `src/Support/CitySlugger.php` | Транслитерация русских названий городов в URL-slug | ✓ | ✗ | ✗ | partial (1/3) |
+| `src/Support/Json.php` | Унифицированная загрузка JSON-файлов | ✗ | ✗ | ✗ | BASELINE-only |
 | `src/Support/JsonProcessor.php` | Рекурсивно нормализует пути data/* в абсолютные URL | ✓ | ✓ | ✓ | CORE ✓ |
 | `src/Support/PlatformSettings.php` | Типизированный доступ к ключам массива settings | ✗ | ✗ | ✗ | BASELINE-only |
 | `src/Support/RequestAttributes.php` | Константы атрибутов request'а и ключей, разбросанных по приложению | ✗ | ✗ | ✗ | BASELINE-only |
@@ -155,7 +156,7 @@ _файлов нет_
 | Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `tools/distill/README.md` | tools/distill — file-level tracking между baseline и deployments | ✗ | ✗ | ✗ | BASELINE-only |
-| `tools/distill/build-inventory.mjs` | Генератор CORE-INVENTORY.md: per-file карта ядра baseline'а + | ✗ | ✗ | ✗ | BASELINE-only |
+| `tools/distill/build-inventory.mjs` | Генератор docs/inventory/core.md: per-file карта ядра baseline'а + | ✗ | ✗ | ✗ | BASELINE-only |
 | `tools/distill/distill.mjs` | distill — CLI для file-level tracking между ismart-platform (baseline) | ✗ | ✗ | ✗ | BASELINE-only |
 | `tools/distill/lib.mjs` | Общая библиотека для CLI distill: обход файлов, sha256, manifest, описания | ✗ | ✗ | ✗ | BASELINE-only |
 
@@ -172,7 +173,7 @@ _файлов нет_
 | `vitest.config.js` | @type {import('vitest').UserConfig} | ✓ | ✓ | ✗ | partial (2/3) |
 | `phpunit.xml` | — | ✓ | ✓ | M | CORE drift |
 | `phpstan.neon` | — | ✓ | ✓ | ✓ | CORE ✓ |
-| `.gitignore` | — | M | M | M | CORE drift |
+| `.gitignore` | — | ✓ | M | M | CORE drift |
 | `.htaccess` | — | ✓ | ✓ | ✓ | CORE ✓ |
 | `.env.example` | — | M | M | M | CORE drift |
 
@@ -182,8 +183,12 @@ _файлов нет_
 |---|---|:-:|:-:|:-:|---|
 | `README.md` | iSmart Platform | M | M | ✗ | partial (2/3) |
 | `CLAUDE.md` | CLAUDE.md | M | ✗ | M | partial (2/3) |
-| `DISTILLATION.md` | Дистилляция iSmart Platform | ✗ | ✗ | ✗ | BASELINE-only |
-| `CORE-INVENTORY.md` | — | ✗ | ✗ | ✗ | BASELINE-only |
+| `docs/README.md` | docs — документация iSmart Platform | ✗ | ✗ | ✗ | BASELINE-only |
+| `docs/architecture/distillation.md` | Дистилляция iSmart Platform | ✗ | ✗ | ✗ | BASELINE-only |
+| `docs/inventory/core.md` | — | ✗ | ✗ | ✗ | BASELINE-only |
+| `docs/conventions/best-practices.md` | Best Practices — принципы развития iSmart Platform | ✗ | ✗ | ✗ | BASELINE-only |
+| `docs/conventions/naming.md` | Naming Conventions — соглашения для масштабируемого нейминга | ✗ | ✗ | ✗ | BASELINE-only |
+| `docs/notes/improvements.md` | Improvement Log — журнал улучшений ядра | ✗ | ✗ | ✗ | BASELINE-only |
 | `templates/base.twig` | base.twig | ✓ | M | M | CORE drift |
 | `templates/pages/page.twig` | — | ✓ | ✓ | M | CORE drift |
 
@@ -193,10 +198,10 @@ _файлов нет_
 
 | Категория | Кол-во |
 |---|---|
-| **CORE ✓** (идентичны во всех 3) | 14 |
-| **CORE drift** (есть везде, но разошлось) | 35 |
+| **CORE ✓** (идентичны во всех 3) | 13 |
+| **CORE drift** (есть везде, но разошлось) | 36 |
 | **partial** (отсутствует в части deployments) | 29 |
-| **BASELINE-only** (новые в baseline) | 11 |
+| **BASELINE-only** (новые в baseline) | 16 |
 
 ## Ключевые моменты для имплементации
 

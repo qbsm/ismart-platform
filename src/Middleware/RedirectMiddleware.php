@@ -3,6 +3,7 @@
 namespace App\Middleware;
 
 use App\Support\BaseUrlResolver;
+use App\Support\Json;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -79,19 +80,7 @@ final class RedirectMiddleware implements MiddlewareInterface
         }
 
         $path = (string) ($this->settings['paths']['redirects'] ?? '');
-        if ($path === '' || !is_file($path)) {
-            $this->map = [];
-            return $this->map;
-        }
-
-        $content = @file_get_contents($path);
-        if ($content === false) {
-            $this->map = [];
-            return $this->map;
-        }
-
-        $data = json_decode($content, true);
-        $this->map = is_array($data) ? $data : [];
+        $this->map = $path === '' ? [] : (Json::load($path) ?? []);
         return $this->map;
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Service;
 
+use App\Support\Json;
 use App\Support\JsonProcessor;
 
 final class DataLoaderService
@@ -147,17 +148,8 @@ final class DataLoaderService
      */
     public function loadJson(string $path, string $baseUrl): ?array
     {
-        if (!is_file($path)) {
-            return null;
-        }
-
-        $content = @file_get_contents($path);
-        if ($content === false) {
-            return null;
-        }
-
-        $data = json_decode($content, true);
-        if ($data === null && json_last_error() !== JSON_ERROR_NONE) {
+        $data = Json::load($path);
+        if ($data === null) {
             return null;
         }
 

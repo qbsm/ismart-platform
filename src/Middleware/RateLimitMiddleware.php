@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Middleware;
 
+use App\Support\Json;
 use Psr\Http\Message\ResponseFactoryInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -61,14 +62,11 @@ final class RateLimitMiddleware implements MiddlewareInterface
 
         $now = time();
         $data = ['count' => 0, 'window_start' => $now];
-        if (is_readable($file)) {
-            $raw = (string) @file_get_contents($file);
-            $decoded = json_decode($raw, true);
-            if (is_array($decoded) && isset($decoded['window_start'], $decoded['count'])) {
-                if ($now - (int) $decoded['window_start'] < $window) {
-                    $data = ['count' => (int) $decoded['count'], 'window_start' => (int) $decoded['window_start']];
-                }
-            }
+        $decoded = Json::load($file);
+        if ($decoded !== null && isset($decoded['window_start'], $decoded['count'])
+            && $now - (int) $decoded['window_start'] < $window
+        ) {
+            $data = ['count' => (int) $decoded['count'], 'window_start' => (int) $decoded['window_start']];
         }
 
         $data['count']++;

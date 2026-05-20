@@ -2,6 +2,7 @@
 
 namespace App\Twig;
 
+use App\Support\Json;
 use RuntimeException;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
@@ -95,24 +96,7 @@ class AssetExtension extends AbstractExtension
             return $this->manifestCache;
         }
 
-        if (!file_exists($this->manifestPath)) {
-            $this->manifestCache = null;
-            return null;
-        }
-
-        $manifestJson = @file_get_contents($this->manifestPath);
-        if ($manifestJson === false) {
-            $this->manifestCache = null;
-            return null;
-        }
-
-        $manifest = json_decode($manifestJson, true);
-        if (!is_array($manifest)) {
-            $this->manifestCache = null;
-            return null;
-        }
-
-        $this->manifestCache = $manifest;
+        $this->manifestCache = Json::load($this->manifestPath);
         return $this->manifestCache;
     }
 
@@ -122,24 +106,7 @@ class AssetExtension extends AbstractExtension
             return $this->cssManifestCache;
         }
 
-        if (!file_exists($this->cssManifestPath)) {
-            $this->cssManifestCache = null;
-            return null;
-        }
-
-        $manifestJson = @file_get_contents($this->cssManifestPath);
-        if ($manifestJson === false) {
-            $this->cssManifestCache = null;
-            return null;
-        }
-
-        $manifest = json_decode($manifestJson, true);
-        if (!is_array($manifest)) {
-            $this->cssManifestCache = null;
-            return null;
-        }
-
-        $this->cssManifestCache = $manifest;
+        $this->cssManifestCache = Json::load($this->cssManifestPath);
         return $this->cssManifestCache;
     }
 

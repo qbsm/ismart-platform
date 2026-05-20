@@ -1,8 +1,8 @@
 {
   "$schema": "https://ismart.pro/schemas/distill-manifest-v1.json",
   "platform_version": "1.0.0",
-  "generated_at": "2026-05-20T02:14:10.080Z",
-  "file_count": 291,
+  "generated_at": "2026-05-20T02:28:32.069Z",
+  "file_count": 298,
   "files": {
     ".editorconfig": {
       "sha256": "3770f26fa30ba598d2441a3aaac94303070444d8798188381c4ce30a854519e9",
@@ -25,20 +25,12 @@
       "size": 131
     },
     "CLAUDE.md": {
-      "sha256": "3b6a74941000ab55bb63c334321fbb272b1583b7cfb80fa50e079120a07fb617",
-      "size": 9269
-    },
-    "CORE-INVENTORY.md": {
-      "sha256": "9649222f2ddcd4f50f639cfab705081a9053bc680b6a26b5630289245fc69186",
-      "size": 14979
-    },
-    "DISTILLATION.md": {
-      "sha256": "17bdc5bc18d5ced4060274b6ac760a7e5b0af71adece0617409179b540895343",
-      "size": 21518
+      "sha256": "771b30059779c2c76c185a529f3a8ebb50b60c568129e33c6ecab12383db4e59",
+      "size": 9446
     },
     "README.md": {
-      "sha256": "232ee232fd33802ad1b02fde443b9204067a9c4867ccafe1ac516539f73ad0d5",
-      "size": 2631
+      "sha256": "544a009e2c11ba997ebb0f1cfd8239b16be04550c5b38d54a947ab1c9546fd3a",
+      "size": 3322
     },
     "assets/css/base/animations.css": {
       "sha256": "0ab2e886f595ce7cdee634105fc4b99fafeadddd1f7f79fb42440f152fa93b13",
@@ -604,13 +596,45 @@
       "sha256": "10220090490fdb03ef772767012b9db966f0163d9622927e3aaa313113bf3609",
       "size": 326
     },
+    "docs/README.md": {
+      "sha256": "1ef193fbfb717fd1c1add7c0ed9e446b0d4ffe820bb11f435d2c592ac3751f8f",
+      "size": 3316
+    },
+    "docs/architecture/decisions/0001-static-utilities-vs-services.md": {
+      "sha256": "89df0cbb77ce4ecb332a4cea84e70aa8986fba5fa4783d3fb0a8ff729ed96d1c",
+      "size": 3685
+    },
+    "docs/architecture/decisions/0002-photoroom-out-of-baseline.md": {
+      "sha256": "2a64d9131bb34123c1c11c75610c8423936b567d6b9b805a34396fcaab195f80",
+      "size": 3676
+    },
+    "docs/architecture/distillation.md": {
+      "sha256": "17bdc5bc18d5ced4060274b6ac760a7e5b0af71adece0617409179b540895343",
+      "size": 21518
+    },
+    "docs/conventions/best-practices.md": {
+      "sha256": "54c90fe97deb3683da35b443602a97e31eacfb5cbc7606f12cae5daf1ae79f4a",
+      "size": 4916
+    },
+    "docs/conventions/naming.md": {
+      "sha256": "7c6b9b2e20c4c366d5e4c32935a8bcb03c9913413106ea7feb7119d4d022f4a3",
+      "size": 6211
+    },
+    "docs/inventory/core.md": {
+      "sha256": "dd8c2e6e6671d0cd4a9a077ae8789609bd9d409acda4ab4c2e588c0065bc31e5",
+      "size": 15193
+    },
+    "docs/notes/improvements.md": {
+      "sha256": "18d986d3a0ea624f359022efacb9f307018ea4a229bc7dacf7e92cb38fd9459c",
+      "size": 8180
+    },
     "eslint.config.js": {
       "sha256": "fcf7db63f14a7ee61bdd66469a6f4b870163b4c911fd705f05c75437379b4c24",
       "size": 914
     },
     "package.json": {
-      "sha256": "55dc1ced3ad60395520d9e29c618627cbd32d0dd8a77529efc9e0bd579e81022",
-      "size": 4877
+      "sha256": "5f387075b466a440d0f8d41fa1164b239cc0e54fffe7663034c9fc9f91c42a62",
+      "size": 4882
     },
     "phpstan.neon": {
       "sha256": "083b02abb5015fcb91e253426138ff3fc037df5d6c70a43235354e9417337e27",
@@ -649,8 +673,8 @@
       "size": 15412
     },
     "src/Action/SitemapAction.php": {
-      "sha256": "57c488287395a28168ab339311f12a8352f3705f28a61255a08c5e0f3a4b60f9",
-      "size": 8271
+      "sha256": "ee8a34044a59868e6a0993a0f362602e390a74ca18fb6bde4ca37d8d7b325c30",
+      "size": 8081
     },
     "src/Event/EntityResolved.php": {
       "sha256": "3248751dc898d587a39241592160c4371251953c7e44bfac9f80196b9cbe69ac",
@@ -685,12 +709,12 @@
       "size": 2478
     },
     "src/Middleware/RateLimitMiddleware.php": {
-      "sha256": "e09ab3975b88fc89191f03b1c699d5867f08ba8b8af7803645246fd72fc36142",
-      "size": 3742
+      "sha256": "ef520401f3a7233edb0a90d29b7a5ce0e9d75ec93b698d1519ad587a79471730",
+      "size": 3621
     },
     "src/Middleware/RedirectMiddleware.php": {
-      "sha256": "866fd2a90a589214395214c839465482bd787b442e72813c62e0bc08d0cd1619",
-      "size": 2923
+      "sha256": "7bf727ee39b0eb6170d1bdd0728886a77668df0135c22a3a436c4ac0fb34c34f",
+      "size": 2648
     },
     "src/Middleware/RequestDurationMiddleware.php": {
       "sha256": "8932fed8f91cbaf56335b57e6e005e2e0b5e4e316804526355a5bdae32821633",
@@ -705,8 +729,8 @@
       "size": 1169
     },
     "src/Service/DataLoaderService.php": {
-      "sha256": "e5825f674123f689dd4c814d023eeba601232615eeec7748fe9edb3257e81003",
-      "size": 7168
+      "sha256": "4bc2faea7627171aae82f987d505a7820363d3fc2405205b701537adbe44d6bf",
+      "size": 6956
     },
     "src/Service/LanguageService.php": {
       "sha256": "306e6a1417cf9025eab4d01eb1922cd6c8dc5d5f3f1e80c5f0f3d045a4d6ccf3",
@@ -736,6 +760,10 @@
       "sha256": "074c1ed4bb95d10607948a65bc823b07bb9a2e59edce9b465cf00007e7f6b1ae",
       "size": 2528
     },
+    "src/Support/Json.php": {
+      "sha256": "80b0c079c7e09e4517575a4379da1dca6c753bb4b333563586f3b7708461cd19",
+      "size": 1767
+    },
     "src/Support/JsonProcessor.php": {
       "sha256": "e0b893bbd24058d0ca7d851bea7ef31f13ea7cc7ea0d6551a827437a526a5ab1",
       "size": 1162
@@ -753,12 +781,12 @@
       "size": 1072
     },
     "src/Twig/AssetExtension.php": {
-      "sha256": "cbd87c8c7dec9fd52456b767a33bfc6f53a5fe4febdd01eb09e1471bc786fd53",
-      "size": 5089
+      "sha256": "cb6a6626de0512d054e5980b527df99f3811044c34b4c8d589aa50d3c3c19b80",
+      "size": 4195
     },
     "src/Twig/DataExtension.php": {
-      "sha256": "d3fcba9be02a6fd076746da5ac15793948fa80001b6ee03805a94432e4b21b0a",
-      "size": 6776
+      "sha256": "ba1b8d7e8aa791230b0b9ec634ccc892e37f50d5d22469b5cd93018958896699",
+      "size": 6119
     },
     "src/Twig/UrlExtension.php": {
       "sha256": "fa8c84ed6583b704b984b0c76c4863eef1cdda0ae85322b24e02b3f57c3e3740",
@@ -1077,16 +1105,16 @@
       "size": 2517
     },
     "tools/distill/README.md": {
-      "sha256": "9c3ab7b8e0c3acb73a6ccb4a0192ae11b3a00a48e88951f5f986608b70841b15",
-      "size": 3120
+      "sha256": "cec01fe4d46326b89aff0652d92a50d17591843d68124fcffb5901779fe32c59",
+      "size": 3163
     },
     "tools/distill/build-inventory.mjs": {
-      "sha256": "246681f0ce797a84ad13f61013a53caa2a7c41b10036b60d4713f6720d26220f",
-      "size": 8135
+      "sha256": "6299680256dcf470c9a064b2ee04853ac0698f6df4982f11091983a6cb5cf0ab",
+      "size": 8292
     },
     "tools/distill/distill.mjs": {
-      "sha256": "899b43985eec5d14d2a4c6e5a383b04ff612e482aea3b8fba9423d236feb2594",
-      "size": 6579
+      "sha256": "d5c50d17ced5353cdcedad2b8f00735828b309bb12beb5d64bc88c99cbfadee4",
+      "size": 6615
     },
     "tools/distill/lib.mjs": {
       "sha256": "cdb958ae4d1c64f09a6f611b80c488156b2054df65859f293f3724f5014d2511",

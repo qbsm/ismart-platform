@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Action;
 
 use App\Support\CitySlugger;
+use App\Support\Json;
 use App\Support\PlatformSettings;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -165,18 +166,13 @@ final class SitemapAction
         string $valueKey,
         string $sluggerKey
     ): array {
-        $jsonPath = $jsonBaseDir . '/' . $lang . '/pages/' . $dataPage . '.json';
-        if (!is_readable($jsonPath)) {
-            return [];
-        }
-        $raw = (string) file_get_contents($jsonPath);
-        $data = json_decode($raw, true);
-        if (!is_array($data) || !isset($data[$listKey]) || !is_array($data[$listKey])) {
+        $items = Json::loadKey($jsonBaseDir . '/' . $lang . '/pages/' . $dataPage . '.json', $listKey);
+        if ($items === null) {
             return [];
         }
 
         $slugs = [];
-        foreach ($data[$listKey] as $item) {
+        foreach ($items as $item) {
             if (!is_array($item) || !isset($item[$valueKey]) || !is_string($item[$valueKey])) {
                 continue;
             }

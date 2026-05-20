@@ -3,6 +3,7 @@
 namespace App\Twig;
 
 use App\Support\CitySlugger;
+use App\Support\Json;
 use App\Support\JsonProcessor;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
@@ -135,14 +136,7 @@ class DataExtension extends AbstractExtension
             return null;
         }
         if ($this->imageDimensionsManifest === null) {
-            $manifestPath = $this->baseDir . '/data/img/image-dimensions.json';
-            if (!is_file($manifestPath)) {
-                $this->imageDimensionsManifest = [];
-                return null;
-            }
-            $content = @file_get_contents($manifestPath);
-            $data = $content !== false ? json_decode($content, true) : null;
-            $this->imageDimensionsManifest = is_array($data) ? $data : [];
+            $this->imageDimensionsManifest = Json::load($this->baseDir . '/data/img/image-dimensions.json') ?? [];
         }
         $entry = $this->imageDimensionsManifest[$path] ?? null;
         if (!is_array($entry) || !isset($entry['width'], $entry['height'])) {
@@ -159,20 +153,8 @@ class DataExtension extends AbstractExtension
             return $this->cache[$relativePath];
         }
 
-        $fullPath = $this->baseDir . '/' . $relativePath;
-        if (!is_file($fullPath)) {
-            $this->cache[$relativePath] = null;
-            return null;
-        }
-
-        $content = @file_get_contents($fullPath);
-        if ($content === false) {
-            $this->cache[$relativePath] = null;
-            return null;
-        }
-
-        $data = json_decode($content, true);
-        if ($data === null && json_last_error() !== JSON_ERROR_NONE) {
+        $data = Json::load($this->baseDir . '/' . $relativePath);
+        if ($data === null) {
             $this->cache[$relativePath] = null;
             return null;
         }

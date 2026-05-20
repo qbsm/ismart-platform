@@ -336,7 +336,7 @@ distill init <slug> --name "Ритейл Логистик" --domain retail-logis
 ### Этап 0 — Документ + CLI прототип (СЕЙЧАС)
 
 - [x] Разведка состояния трёх deployment'ов
-- [x] DISTILLATION.md (этот документ)
+- [x] `docs/architecture/distillation.md` (этот документ)
 - [x] Manifest-схема
 - [x] `tools/distill/distill.mjs` прототип (`scan`, `diff`)
 
@@ -425,6 +425,6 @@ CLI делает локальные правки, коммитит **в теку
 
 ## 10. Открытое управление
 
-- Этот документ живёт в `ismart-platform/DISTILLATION.md` — он же `single source of truth`.
+- Этот документ живёт в `ismart-platform/docs/architecture/distillation.md` — он же `single source of truth`.
 - PR в baseline ревьюится владельцем платформы (или утверждённой группой).
-- Decision log по архитектурным вопросам — `ismart-platform/decisions/` (ADR-формат, опционально).
+- Decision log по архитектурным вопросам — `docs/architecture/decisions/NNNN-*.md` (ADR-формат).

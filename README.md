@@ -4,7 +4,7 @@
 
 Content-agnostic ядро: всё, что связано с бизнес-предметкой конкретного сайта, живёт в JSON-данных и одном файле `config/project.php` — ядро (`src/`) о них ничего не знает.
 
-Этот репозиторий — **canonical baseline** платформы, дистиллированный из трёх production deployment'ов. Подробности — в [`DISTILLATION.md`](DISTILLATION.md).
+Этот репозиторий — **canonical baseline** платформы, дистиллированный из трёх production deployment'ов. Подробности — в [`docs/`](docs/).
 
 ## Production deployment'ы
 
@@ -57,7 +57,12 @@ npm run create-deployment -- <slug>
 
 ## Документация
 
-- [`DISTILLATION.md`](DISTILLATION.md) — стратегия дистилляции, file-level tracking, CLI `distill`, roadmap миграции
+- [`docs/README.md`](docs/README.md) — оглавление документации
+- [`docs/architecture/distillation.md`](docs/architecture/distillation.md) — стратегия дистилляции, file-level tracking, CLI `distill`, roadmap миграции
+- [`docs/inventory/core.md`](docs/inventory/core.md) — таблица ядра + статус во всех deployments (генерится `npm run distill:inventory`)
+- [`docs/conventions/best-practices.md`](docs/conventions/best-practices.md) — принципы развития (минимализм, type-safety, immutability)
+- [`docs/conventions/naming.md`](docs/conventions/naming.md) — соглашения имён классов и папок
+- [`docs/notes/improvements.md`](docs/notes/improvements.md) — журнал улучшений (applied / open opportunities)
 - [`CLAUDE.md`](CLAUDE.md) — гайд для Claude Code (русский язык, архитектура, ключевые файлы)
 
 ## Лицензия

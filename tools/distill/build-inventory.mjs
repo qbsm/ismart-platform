@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Генератор CORE-INVENTORY.md: per-file карта ядра baseline'а +
+ * Генератор docs/inventory/core.md: per-file карта ядра baseline'а +
  * статус (✓/M/✗) в kumho/italy/beepitron.
  *
- * Запуск: node tools/distill/build-inventory.mjs > CORE-INVENTORY.md
+ * Запуск: npm run distill:inventory
+ *   (или: node tools/distill/build-inventory.mjs > docs/inventory/core.md)
  */
 
 import { readdir, stat } from 'node:fs/promises';
@@ -43,7 +44,7 @@ const GROUPS = [
   { title: 'tools/utils — утилиты', glob: 'tools/utils/' },
   { title: 'tools/distill — CLI трекинга', glob: 'tools/distill/' },
   { title: 'Корневые конфиги', paths: ['composer.json', 'package.json', 'webpack.config.js', 'postcss.config.js', 'eslint.config.js', 'stylelint.config.mjs', 'vitest.config.js', 'phpunit.xml', 'phpstan.neon', '.gitignore', '.htaccess', '.env.example'] },
-  { title: 'Документация и базовые шаблоны', paths: ['README.md', 'CLAUDE.md', 'DISTILLATION.md', 'CORE-INVENTORY.md', 'templates/base.twig', 'templates/pages/page.twig'] },
+  { title: 'Документация и базовые шаблоны', paths: ['README.md', 'CLAUDE.md', 'docs/README.md', 'docs/architecture/distillation.md', 'docs/inventory/core.md', 'docs/conventions/best-practices.md', 'docs/conventions/naming.md', 'docs/notes/improvements.md', 'templates/base.twig', 'templates/pages/page.twig'] },
 ];
 
 async function* listFiles(absDir, rel = '') {
@@ -139,7 +140,7 @@ async function main() {
     `- \`partial (N/${DEP_KEYS.length})\` — есть только в части deployments.`,
     '- `BASELINE-only` — впервые в baseline\'е, ещё не распространён.',
     '',
-    `Сгенерировано: \`node tools/distill/build-inventory.mjs > CORE-INVENTORY.md\` (${today})`,
+    `Сгенерировано: \`npm run distill:inventory\` (${today})`,
     '',
     '---',
     '',

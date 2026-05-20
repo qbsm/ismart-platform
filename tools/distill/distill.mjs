@@ -13,7 +13,7 @@
  *   node tools/distill/distill.mjs <command> [args]
  *   npm run distill -- <command> [args]
  *
- * Документация: DISTILLATION.md, §6.
+ * Документация: docs/architecture/distillation.md, §6.
  */
 
 import { writeFile, mkdir } from 'node:fs/promises';
@@ -135,7 +135,7 @@ function printHelp() {
   npm run distill -- diff ../kumho-tires.ru
   npm run distill -- status
 
-Документация: DISTILLATION.md §6, tools/distill/README.md.
+Документация: docs/architecture/distillation.md §6, tools/distill/README.md.
 `);
 }
 

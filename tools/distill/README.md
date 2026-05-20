@@ -2,7 +2,7 @@
 
 CLI для отслеживания того, какие файлы дрейфуют между `ismart-platform` (canonical baseline) и production deployments (`kumho-tires.ru`, `italycommunity.ru`, `beepitron`).
 
-Подробная стратегия — [`DISTILLATION.md`](../../DISTILLATION.md).
+Подробная стратегия — [`docs/architecture/distillation.md`](../../docs/architecture/distillation.md).
 
 ## Команды
 
@@ -11,7 +11,7 @@ CLI для отслеживания того, какие файлы дрейфу
 npm run distill:scan
 
 # Сгенерировать сводную таблицу ядра по всем deployments
-npm run distill:inventory   # → CORE-INVENTORY.md
+npm run distill:inventory   # → docs/inventory/core.md
 
 # Сравнить baseline с конкретным deployment'ом
 npm run distill -- diff ../kumho-tires.ru
@@ -30,7 +30,7 @@ npm run distill -- help
 | Файл | Назначение |
 |---|---|
 | `distill.mjs` | Основной CLI: `scan`, `diff`, `status` |
-| `build-inventory.mjs` | Генератор `CORE-INVENTORY.md` — детальная таблица ядра + статус во всех deployments |
+| `build-inventory.mjs` | Генератор `docs/inventory/core.md` — детальная таблица ядра + статус во всех deployments |
 
 ## Алгоритм
 
@@ -48,7 +48,7 @@ npm run distill -- help
 
 MVP (этап 1) — реализован: `scan`, `diff`, `status`, `build-inventory.mjs`.
 
-Этап 2 (после ревью CORE-INVENTORY):
+Этап 2 (после ревью docs/inventory/core.md):
 
 - `sync <deployment>` — pull-from-baseline для `CORE` файлов, с интерактивным подтверждением каждого.
 - `propose <deployment> <file>` — push-to-baseline (создаёт patch + git-branch + PR).
@@ -58,4 +58,4 @@ MVP (этап 1) — реализован: `scan`, `diff`, `status`, `build-inve
 ## Где смотреть результат
 
 - `.distill/manifest.json` — manifest baseline'а (создан `scan`).
-- `CORE-INVENTORY.md` (в корне) — таблица ядра с описаниями и статусами.
+- `docs/inventory/core.md` — таблица ядра с описаниями и статусами.
