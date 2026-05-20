@@ -1,8 +1,8 @@
 {
   "$schema": "https://ismart.pro/schemas/distill-manifest-v1.json",
   "platform_version": "1.0.0",
-  "generated_at": "2026-05-20T01:53:46.678Z",
-  "file_count": 284,
+  "generated_at": "2026-05-20T01:59:42.705Z",
+  "file_count": 287,
   "files": {
     ".editorconfig": {
       "sha256": "3770f26fa30ba598d2441a3aaac94303070444d8798188381c4ce30a854519e9",
@@ -28,13 +28,17 @@
       "sha256": "3b6a74941000ab55bb63c334321fbb272b1583b7cfb80fa50e079120a07fb617",
       "size": 9269
     },
+    "CORE-INVENTORY.md": {
+      "sha256": "a7e7cfb74875af2d12bdd38d76a95607f9af6fc9f236b0854b10b2e6487109a5",
+      "size": 14730
+    },
     "DISTILLATION.md": {
-      "sha256": "85b9d7a5df1a37e281466a027dfba0b3b30aba357f509e504702923b5c0e7bfc",
-      "size": 21441
+      "sha256": "17bdc5bc18d5ced4060274b6ac760a7e5b0af71adece0617409179b540895343",
+      "size": 21518
     },
     "README.md": {
-      "sha256": "0eb22fbb0d86c2054d3f4d73587b9b15a13bee757cdc66dbcd0d35eabb5b073b",
-      "size": 2624
+      "sha256": "232ee232fd33802ad1b02fde443b9204067a9c4867ccafe1ac516539f73ad0d5",
+      "size": 2631
     },
     "assets/css/base/animations.css": {
       "sha256": "0ab2e886f595ce7cdee634105fc4b99fafeadddd1f7f79fb42440f152fa93b13",
@@ -605,8 +609,8 @@
       "size": 914
     },
     "package.json": {
-      "sha256": "dde06c49020d6336c3c14dd173091a7fd815faf18897c4bc1fcef3379849b938",
-      "size": 4682
+      "sha256": "55dc1ced3ad60395520d9e29c618627cbd32d0dd8a77529efc9e0bd579e81022",
+      "size": 4877
     },
     "phpstan.neon": {
       "sha256": "083b02abb5015fcb91e253426138ff3fc037df5d6c70a43235354e9417337e27",
@@ -1060,9 +1064,17 @@
       "sha256": "10b33e7ce36dc5c8e7aa2267b17206bd503d63e965b5ace7f7d186ac435d9bcd",
       "size": 2517
     },
+    "tools/distill/README.md": {
+      "sha256": "9c3ab7b8e0c3acb73a6ccb4a0192ae11b3a00a48e88951f5f986608b70841b15",
+      "size": 3120
+    },
+    "tools/distill/build-inventory.mjs": {
+      "sha256": "a71138e167390b61276849fca132880188883af806be4ea49b743158f5e8dd93",
+      "size": 11877
+    },
     "tools/distill/distill.mjs": {
-      "sha256": "b5dfae9c7d200a071da2dbce7f1ce67a07fefc23f9ae17858156331f1ef04b49",
-      "size": 10743
+      "sha256": "fdb451e75c57146e2e9159cda46f3daf35fcf970503dbb7e9a9c16c11ccc677d",
+      "size": 10753
     },
     "tools/ops/__pycache__/normalize-tire-temperature.cpython-313.pyc": {
       "sha256": "033218ebad9f736326c30e8f619a3685b8bc04deef798b3b21fb9576e59d67af",

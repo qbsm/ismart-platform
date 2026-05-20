@@ -1,6 +1,6 @@
 # Дистилляция iSmart Platform
 
-Документ описывает, как из трёх production deployment'ов (`kumho-tires.ru`, `italycommunity.ru`, `bp` / `beepitron.com`) выделяется тиражируемая платформа `ismart-platform`, и как поддерживается её консистентность во времени.
+Документ описывает, как из трёх production deployment'ов (`kumho-tires.ru`, `italycommunity.ru`, `beepitron` / `beepitron.com`) выделяется тиражируемая платформа `ismart-platform`, и как поддерживается её консистентность во времени.
 
 ---
 
@@ -14,14 +14,14 @@
 |---|---|---|---|---|
 | `kumho-tires.ru` | `github:qbsm/kumho-tires.ru` | шины (Kumho) | `feat/dealer-brand-logo` | 509 MB |
 | `italycommunity.ru` | `github:qbsm/italy-platform` | сеть ресторанов | `refactor/backend-slim-events` | 865 MB |
-| `bp` (beepitron.com) | `bitbucket:ismart-team/bp` | электротехника | `main` | 3.7 GB |
+| `beepitron` (beepitron.com) | `bitbucket:ismart-team/bp` | электротехника | `main` | 3.7 GB |
 
 И **отдельно** живёт репо `ismart-platform` (`github:qbsm/ismart-platform.git`), который сейчас содержит **legacy архитектуру предыдущей итерации** (свой DI/Router в `core/`, `index.php` в корне, один коммит `b37b001 Initial commit`). К новой slim-twig архитектуре этот baseline отношения не имеет.
 
 ### Проблема
 
 1. **Нет canonical source.** Любое улучшение ядра делается в одном deployment'е, а в два других попадает копипастой (или не попадает — drift).
-2. **Drift накапливается.** Сегодняшний срез: 4/5 классов `src/Action` идентичны, middleware совпадает 100%, но `SeoService` разъехался (kumho inline vs italy/bp Strategy), `tools/scaffold` отсутствует в bp, тесты в bp сведены к одному smoke.
+2. **Drift накапливается.** Сегодняшний срез: 4/5 классов `src/Action` идентичны, middleware совпадает 100%, но `SeoService` разъехался (kumho inline vs italy/beepitron Strategy), `tools/scaffold` отсутствует в beepitron, тесты в beepitron сведены к одному smoke.
 3. **Заводить нового заказчика дорого.** Без canonical baseline новый deployment делается копированием существующего проекта с последующей вычисткой бизнес-специфики.
 
 ### Удачное окно
@@ -300,7 +300,7 @@ distill scan
 # Сравнить baseline vs deployment
 distill diff ../kumho-tires.ru
 distill diff ../italycommunity.ru
-distill diff ../bp
+distill diff ../beepitron
 
 # Один общий обзор всех deployment'ов
 distill status
@@ -365,11 +365,11 @@ distill init <slug> --name "Ритейл Логистик" --domain retail-logis
 
 - **kumho:** `src/Action/PhotoroomRemoveBackgroundAction.php` → override (Photoroom-интеграция, kumho-only).
 - **italy:** `src/Service/RestaurantSeoBuilder.php` → override (после унификации SeoService).
-- **bp:** массовый drift, см. §8.
+- **beepitron:** массовый drift, см. §8.
 
 ### Этап 3 — Унификация sub-strategy
 
-См. §8 — открытые вопросы (`SeoService` Strategy, scaffold/tests в bp).
+См. §8 — открытые вопросы (`SeoService` Strategy, scaffold/tests в beepitron).
 
 ### Этап 4 — Регулярный sync
 
@@ -386,11 +386,11 @@ distill init <slug> --name "Ритейл Логистик" --domain retail-logis
 ### SeoService: inline vs Strategy
 
 - **kumho:** inline-реализация в `SeoService`.
-- **italy/bp:** `SeoBuilderInterface` + `SeoBuilderRegistry` + per-collection builder'ы.
+- **italy/beepitron:** `SeoBuilderInterface` + `SeoBuilderRegistry` + per-collection builder'ы.
 
-**Предложение:** взять italy/bp вариант в baseline (расширяемость лучше), kumho мигрировать в `distill sync`. Generic `DefaultSeoBuilder` — fallback в baseline'е. Перед миграцией — review с автором паттерна.
+**Предложение:** взять italy/beepitron вариант в baseline (расширяемость лучше), kumho мигрировать в `distill sync`. Generic `DefaultSeoBuilder` — fallback в baseline'е. Перед миграцией — review с автором паттерна.
 
-### bp drift
+### beepitron drift
 
 - **tools/scaffold отсутствует** — добавить `distill sync` после переноса в baseline.
 - **tests редуцированы** — добавить.

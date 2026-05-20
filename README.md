@@ -12,7 +12,7 @@ Content-agnostic ядро: всё, что связано с бизнес-пре�
 |---|---|---|
 | `kumho-tires.ru` | шины (Kumho) | `github:qbsm/kumho-tires.ru` |
 | `italycommunity.ru` | сеть ресторанов | `github:qbsm/italy-platform` |
-| `bp` (beepitron.com) | электротехника | `bitbucket:ismart-team/bp` |
+| `beepitron` (beepitron.com) | электротехника | `bitbucket:ismart-team/bp` |
 
 ## Быстрый старт (baseline)
 

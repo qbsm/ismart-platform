@@ -1,6 +1,6 @@
 # tools/distill — file-level tracking между baseline и deployments
 
-CLI для отслеживания того, какие файлы дрейфуют между `ismart-platform` (canonical baseline) и production deployments (`kumho-tires.ru`, `italycommunity.ru`, `bp`).
+CLI для отслеживания того, какие файлы дрейфуют между `ismart-platform` (canonical baseline) и production deployments (`kumho-tires.ru`, `italycommunity.ru`, `beepitron`).
 
 Подробная стратегия — [`DISTILLATION.md`](../../DISTILLATION.md).
 
@@ -16,9 +16,9 @@ npm run distill:inventory   # → CORE-INVENTORY.md
 # Сравнить baseline с конкретным deployment'ом
 npm run distill -- diff ../kumho-tires.ru
 npm run distill -- diff ../italycommunity.ru --limit=10
-npm run distill -- diff ../bp --no-unique
+npm run distill -- diff ../beepitron --no-unique
 
-# Краткий статус по всем известным deployments (kumho/italy/bp)
+# Краткий статус по всем известным deployments (kumho/italy/beepitron)
 npm run distill -- status
 
 # Помощь

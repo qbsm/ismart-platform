@@ -6,7 +6,7 @@
  *   - путь
  *   - краткое описание из docblock'а
  *   - sha256
- *   - наличие/совпадение в kumho/italy/bp
+ *   - наличие/совпадение в kumho/italy/beepitron
  *
  * Запуск: node tools/distill/build-inventory.mjs > CORE-INVENTORY.md
  */
@@ -24,7 +24,7 @@ const PARENT = dirname(PLATFORM_ROOT);
 const DEPLOYMENTS = {
   kumho: join(PARENT, 'kumho-tires.ru'),
   italy: join(PARENT, 'italycommunity.ru'),
-  bp: join(PARENT, 'bp'),
+  beepitron: join(PARENT, 'beepitron.ru'),
 };
 
 // Группы для таблицы — порядок важен (отражается в отчёте).
@@ -160,7 +160,7 @@ async function processFile(relPath) {
     sha,
     kumho: inDep.kumho,
     italy: inDep.italy,
-    bp: inDep.bp,
+    beepitron: inDep.beepitron,
   };
 }
 
@@ -169,7 +169,7 @@ function classify(row) {
   // CORE с drift — везде есть но не все ✓
   // PARTIAL — есть только в 1-2 deployments
   // BASELINE-ONLY — нет ни в одном (новый файл baseline'а, например DISTILLATION.md)
-  const flags = [row.kumho, row.italy, row.bp];
+  const flags = [row.kumho, row.italy, row.beepitron];
   const present = flags.filter(f => f !== '✗').length;
   const sames = flags.filter(f => f === '✓').length;
   if (present === 3 && sames === 3) return 'CORE ✓';
@@ -219,7 +219,7 @@ async function main() {
       out.push('');
       continue;
     }
-    out.push('| Файл | Назначение | kumho | italy | bp | Категория |');
+    out.push('| Файл | Назначение | kumho | italy | beepitron | Категория |');
     out.push('|---|---|:-:|:-:|:-:|---|');
     for (const row of rows) {
       const cat = classify(row);
@@ -228,7 +228,7 @@ async function main() {
       else if (cat === 'BASELINE-only') totalBaselineOnly++;
       else totalPartial++;
       const desc = row.desc.length > 80 ? row.desc.slice(0, 77) + '...' : row.desc;
-      out.push(`| \`${row.path}\` | ${desc} | ${row.kumho} | ${row.italy} | ${row.bp} | ${cat} |`);
+      out.push(`| \`${row.path}\` | ${desc} | ${row.kumho} | ${row.italy} | ${row.beepitron} | ${cat} |`);
     }
     out.push('');
   }

@@ -22,7 +22,7 @@
 
 ## Точка входа и роутинг
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `public/index.php` | — | ✓ | M | M | CORE drift |
 | `config/routes.php` | — | ✓ | M | M | CORE drift |
@@ -37,7 +37,7 @@
 
 ## src/Action — контроллеры
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `src/Action/ApiSendAction.php` | CSRF | ✓ | M | M | CORE drift |
 | `src/Action/HealthAction.php` | Health check для мониторинга (load balancer, uptime, алерты) | ✓ | ✓ | ✓ | CORE ✓ |
@@ -46,7 +46,7 @@
 
 ## src/Service — сервисный слой
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `src/Service/DataLoaderService.php` | Загружает global.json — глобальные данные сайта (навигация, контакты, языки) | ✓ | M | M | CORE drift |
 | `src/Service/LanguageService.php` | Определяет язык из первого сегмента URL | ✓ | M | M | CORE drift |
@@ -56,7 +56,7 @@
 
 ## src/Middleware — middleware stack
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `src/Middleware/CorrelationIdMiddleware.php` | Добавляет X-Request-Id к запросу и ответу для трассировки (логи, поддержка) | ✓ | ✓ | ✓ | CORE ✓ |
 | `src/Middleware/CorsMiddleware.php` | CORS middleware: обрабатывает preflight (OPTIONS) и добавляет CORS-заголовки ... | ✓ | ✓ | ✓ | CORE ✓ |
@@ -69,14 +69,14 @@
 
 ## src/Handler — error handlers
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `src/Handler/HttpErrorHandler.php` | Обработчик HTTP-ошибок (404, 405 и др.): отдаёт ответ по карте доменных ошибок | ✓ | ✓ | ✓ | CORE ✓ |
 | `src/Handler/ServerErrorHandler.php` | Единый обработчик необработанных исключений: | ✓ | ✓ | ✓ | CORE ✓ |
 
 ## src/Event — domain events
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `src/Event/EntityResolved.php` | Событие: сущность коллекции найдена и загружена | ✓ | ✓ | ✓ | CORE ✓ |
 | `src/Event/PageLoaded.php` | Событие: страница загружена и готова к рендерингу | ✓ | ✓ | ✓ | CORE ✓ |
@@ -84,7 +84,7 @@
 
 ## src/Twig — Twig extensions
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `src/Twig/AssetExtension.php` | Читает содержимое CSS-файла из build-директории для inline-вставки в <style> | ✓ | M | M | CORE drift |
 | `src/Twig/DataExtension.php` | — | ✓ | M | M | CORE drift |
@@ -92,7 +92,7 @@
 
 ## src/Support — поддерживающие классы
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `src/Support/BaseUrlResolver.php` | — | ✓ | M | M | CORE drift |
 | `src/Support/CitySlugger.php` | Транслитерация русских названий городов в URL-slug | ✓ | ✗ | ✗ | partial (1/3) |
@@ -100,13 +100,13 @@
 
 ## src/Api — внешние интеграции (необязательно)
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `src/Api/PhotoroomApiClient.php` | format?:'png'|'webp'|'jpg'|'jpeg', | ✓ | ✗ | ✗ | partial (1/3) |
 
 ## tools/scaffold — генераторы (create-*)
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `tools/scaffold/create-collection.js` | --- Аргументы --- | ✓ | ✗ | ✗ | partial (1/3) |
 | `tools/scaffold/create-component.js` | Стили для ${component} | ✓ | ✓ | ✗ | partial (2/3) |
@@ -117,7 +117,7 @@
 
 ## tools/build — сборка
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `tools/build/build-critical.js` | Build critical CSS: PostCSS processing + minification → assets/css/build/crit... | ✓ | ✗ | ✗ | partial (1/3) |
 | `tools/build/build-images.js` | /raw/ (JPG, PNG, WebP). Also JPG/PNG outside raw/ (legacy) | ✓ | M | ✗ | partial (2/3) |
@@ -130,7 +130,7 @@
 
 ## tools/ops — операционные скрипты
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `tools/ops/__pycache__/normalize-tire-temperature.cpython-313.pyc` | — | ✓ | ✗ | ✗ | partial (1/3) |
 | `tools/ops/check-tires-json.py` | — | ✓ | ✗ | ✗ | partial (1/3) |
@@ -145,23 +145,24 @@
 
 ## tools/utils — утилиты
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `tools/utils/convert-fonts.js` | TTF → WOFF2 conversion with Cyrillic + Latin subset. | ✓ | ✗ | ✗ | partial (1/3) |
 
 ## tools/distill — CLI трекинга
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
+| `tools/distill/README.md` | tools/distill — file-level tracking между baseline и deployments | ✗ | ✗ | ✗ | BASELINE-only |
 | `tools/distill/build-inventory.mjs` | Генератор CORE-INVENTORY.md | ✗ | ✗ | ✗ | BASELINE-only |
 | `tools/distill/distill.mjs` | distill — CLI для file-level tracking между ismart-platform (baseline) | ✗ | ✗ | ✗ | BASELINE-only |
 
 ## Корневые конфиги
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `composer.json` | — | ✓ | M | M | CORE drift |
-| `package.json` | — | ✓ | M | M | CORE drift |
+| `package.json` | — | M | M | M | CORE drift |
 | `webpack.config.js` | — | ✓ | M | ✗ | partial (2/3) |
 | `postcss.config.js` | — | ✓ | M | M | CORE drift |
 | `eslint.config.js` | ', 'assets/js/vendor/**', 'node_modules/**'] }, | ✓ | M | ✗ | partial (2/3) |
@@ -175,7 +176,7 @@
 
 ## Документация и базовые шаблоны
 
-| Файл | Назначение | kumho | italy | bp | Категория |
+| Файл | Назначение | kumho | italy | beepitron | Категория |
 |---|---|:-:|:-:|:-:|---|
 | `README.md` | iSmart Platform | M | M | ✗ | partial (2/3) |
 | `CLAUDE.md` | CLAUDE.md | M | ✗ | M | partial (2/3) |
@@ -192,7 +193,7 @@
 | **CORE ✓** (идентичны во всех трёх) | 16 |
 | **CORE drift** (есть везде, но разъехалось) | 33 |
 | **partial** (отсутствует в части deployments) | 30 |
-| **BASELINE-only** (новые в baseline) | 4 |
+| **BASELINE-only** (новые в baseline) | 5 |
 
 ## Ключевые моменты для имплементации
 

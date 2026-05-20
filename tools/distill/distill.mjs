@@ -226,7 +226,7 @@ async function cmdDiff(deploymentPath, opts = {}) {
 async function cmdStatus() {
   // По умолчанию ищем deployments рядом с baseline'ом — siblings в parent-каталоге.
   const parent = dirname(PLATFORM_ROOT);
-  const candidates = ['kumho-tires.ru', 'italycommunity.ru', 'bp'];
+  const candidates = ['kumho-tires.ru', 'italycommunity.ru', 'beepitron.ru'];
 
   const baseline = await loadOrBuildBaseline();
   const baselineCount = Object.keys(baseline).length;
