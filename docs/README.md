@@ -28,6 +28,9 @@ docs/
     js-naming.md                 # JS: селекторы, модули, глобальные объекты
     twig-naming.md               # Twig: секции, переменные, подключения
     json-naming.md               # JSON: структура страниц и data-файлов
+    git.md                       # Git: ветки (feat/fix/refactor/...), Conventional Commits, PR, tags
+    env-vars.md                  # ENV: SCREAMING_SNAKE_CASE, префиксы (APP_/MAIL_/...), .env.example
+    routes-and-urls.md           # URLs: kebab-case slug, trailing slash, /api/* vs /{page}/
 
   guides/                      # how-to и policies
     page-add.md                  # как добавить новую страницу

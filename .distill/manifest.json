@@ -1,8 +1,8 @@
 {
   "$schema": "https://ismart.pro/schemas/distill-manifest-v1.json",
   "platform_version": "1.0.0",
-  "generated_at": "2026-05-20T02:38:27.563Z",
-  "file_count": 335,
+  "generated_at": "2026-05-20T02:46:34.929Z",
+  "file_count": 338,
   "files": {
     ".editorconfig": {
       "sha256": "3770f26fa30ba598d2441a3aaac94303070444d8798188381c4ce30a854519e9",
@@ -601,8 +601,8 @@
       "size": 326
     },
     "docs/README.md": {
-      "sha256": "e7dff448d5a0c97cc6e94638e5ffc1fa8b6787021d394171dee2f21d0ad6850a",
-      "size": 6211
+      "sha256": "722c4b84146acd2cbbf2a5185a6cf18030eb1d17113ca99a333717841bd69c30",
+      "size": 6521
     },
     "docs/api/form-send.md": {
       "sha256": "979aa138faaa9ce71ba3bca340337ba97e9b5f9e8227b98b84bef510707bf28e",
@@ -668,6 +668,14 @@
       "sha256": "cbd957ade410d2fbf218d2b6b126767c9696698d1009ba7442267f958a6ffcc6",
       "size": 19841
     },
+    "docs/conventions/env-vars.md": {
+      "sha256": "6ba12dabad789f0c9bd5d2c5c197cfce93bfe034c97f6cc8279dcd0722bc8894",
+      "size": 5544
+    },
+    "docs/conventions/git.md": {
+      "sha256": "d3764211985a30b38958696b13821e40a12622a605b0f4702c53422537a3ab5e",
+      "size": 6804
+    },
     "docs/conventions/html-naming.md": {
       "sha256": "9d6c56807611942a1cda71ac72fd521c2183ac2df4ef22595ec87f276622fedd",
       "size": 23379
@@ -683,6 +691,10 @@
     "docs/conventions/naming.md": {
       "sha256": "7c6b9b2e20c4c366d5e4c32935a8bcb03c9913413106ea7feb7119d4d022f4a3",
       "size": 6211
+    },
+    "docs/conventions/routes-and-urls.md": {
+      "sha256": "bae2b12deb2b57be529751952c5f047c6d250cb80db1b9d0d9d5f52d8f203ee2",
+      "size": 6976
     },
     "docs/conventions/twig-naming.md": {
       "sha256": "c71ad7b479f02acacc06bbd6ae2489f5d2e4df2646c7aa6c93df4ee7634df5f4",
@@ -757,8 +769,8 @@
       "size": 15856
     },
     "docs/notes/improvements.md": {
-      "sha256": "18d986d3a0ea624f359022efacb9f307018ea4a229bc7dacf7e92cb38fd9459c",
-      "size": 8180
+      "sha256": "44258d81116b79507123fdb04362b49e6136decd739f21fc6a47fc94318fc5ed",
+      "size": 10875
     },
     "docs/sessions/2026-05-20-distillation.md": {
       "sha256": "14fb0b99d40d242b1a55a57928383348eab29f49252971e625fb8d440e4b3423",

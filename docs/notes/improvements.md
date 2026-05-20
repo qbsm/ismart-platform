@@ -64,6 +64,22 @@
 - **`MailService::FIELD_LABELS`** не содержит `subject` — в письме лейбл „Subject" вместо локализованного. Дополнить мапу.
 - **Magic HTTP-коды (404, 500, 419, 422, 429)** разбросаны inline. Не стоит самостоятельной константной таблицы — встроенные PSR-7 коды читабельны. Но стоит закрепить _доменные_ коды в `config/errors.php` (уже есть карта 404/500, расширить).
 
+### Naming-конвенции — оставшиеся gap'ы (после 2026-05-20 расширения)
+
+Сейчас в `docs/conventions/` покрыто: PHP (`naming.md`), HTML, CSS, JS, Twig, JSON, Git, ENV, Routes/URLs, best-practices — 10 файлов. Что **не покрыто** и стоит добавить, когда наступит на этот gap:
+
+- **Tests naming** — как именовать test-классы (`XxxTest`), методы (`testYy_zZz_pattern`, `should*`, `given_when_then`), fixture-файлы. Сейчас есть только эмпирическая практика из существующих тестов.
+- **File / directory naming (вне `src/`)** — sessions (`YYYY-MM-DD-<topic>.md`), ADR (`NNNN-<slug>.md`), brand assets (`logo-h-color-N.svg`), `data/img/<entity>/<size>/<n>.webp`. Сейчас по факту работает, но правила не зафиксированы.
+- **Composer / npm package names** — vendor/package convention (если выпускаем что-то как пакет).
+- **Error / exception class names** — суффикс `Exception`, грамматика имени (`ApiKeyMissingException`, не `MissingApiKeyError`).
+- **Event names** — past participle без суффикса (зафиксировано в `naming.md`), но не задокументированы конвенции payload'а событий (имена свойств, формат).
+- **Image filenames** — в `guides/images.md` упоминается, но без жёстких правил. Стоит зафиксировать: `<entity-slug>-<variant>-<index>.<ext>`, ресайз-suffix через папку (`400/`, `800/`), не через имя.
+- **CSS custom properties (`--name`)** — в `css-naming.md` §5 базово есть. Но нет правила про namespace (`--button-bg` vs `--bg-button`).
+- **Twig blocks** — в `twig-naming.md` есть про шаблоны, но не зафиксирован формат `{% block name %}` (имя в snake_case или kebab?).
+- **PHP interfaces / abstract classes** — `naming.md` упоминает Interface suffix вскользь. Зафиксировать: `*Interface` если в одной папке с реализацией, namespace-имя (без суффикса) — если в отдельной `Contract/`/`Port/` папке.
+
+Каждый gap — кандидат на отдельный файл в `docs/conventions/` или дополнение существующего, по триггеру: реальная ситуация выбора в коде, которая требует решения.
+
 ---
 
 ## Patterns Found — повторяющиеся подходы (зафиксировать)
