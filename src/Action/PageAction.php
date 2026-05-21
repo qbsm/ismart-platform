@@ -128,7 +128,10 @@ final class PageAction
                             $entity = $loaded;
                             $entityType = (string) $collKey;
                             $entityConfig = $collConfig;
-                            $pageData = ['name' => $subSlug, 'sections' => []];
+                            // Сохраняем sections из list-page (header/hero/list/footer) — entity-страница
+                            // переиспользует layout. Hero и list-секции получают entity через extras.
+                            $listSections = (isset($pageData['sections']) && is_array($pageData['sections'])) ? $pageData['sections'] : [];
+                            $pageData = ['name' => $subSlug, 'sections' => $listSections];
                             $this->dispatch(new EntityResolved($entityType, $subSlug, $entity, $entityConfig));
                         }
                     }
