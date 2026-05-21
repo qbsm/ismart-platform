@@ -43,6 +43,7 @@
     "distill": "node tools/distill/distill.mjs",
     "distill:scan": "node tools/distill/distill.mjs scan",
     "distill:inventory": "node tools/distill/build-inventory.mjs > docs/inventory/core.md",
+    "orchestrate": "node tools/orchestrator/orchestrate.mjs",
     "prepare": "husky"
   },
   "lint-staged": {
