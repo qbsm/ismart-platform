@@ -2,7 +2,7 @@
 
 /**
  * distill — CLI для file-level tracking между ismart-platform (baseline)
- * и production deployments (kumho-tires.ru, italycommunity.ru, beepitron.ru, ...).
+ * и production deployments (kumho-tires.ru, italycommunity.ru, beepitron.com, ...).
  *
  * Команды:
  *   scan                                 Построить manifest baseline'а → .distill/manifest.json
@@ -35,7 +35,7 @@ import {
   getBaselineBranch,
 } from './lib.mjs';
 
-const SIBLING_DEPLOYMENTS = ['kumho-tires.ru', 'italycommunity.ru', 'beepitron.ru'];
+const SIBLING_DEPLOYMENTS = ['kumho-tires.ru', 'italycommunity.ru', 'beepitron.com'];
 const STATUS_ICONS = { drift: 'M', unique: '+', missing: '-' };
 
 async function cmdScan() {

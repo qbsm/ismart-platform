@@ -23,7 +23,7 @@ const PARENT = dirname(PLATFORM_ROOT);
 const DEPLOYMENTS = {
   kumho: join(PARENT, 'kumho-tires.ru'),
   italy: join(PARENT, 'italycommunity.ru'),
-  beepitron: join(PARENT, 'beepitron.ru'),
+  beepitron: join(PARENT, 'beepitron.com'),
 };
 const DEP_KEYS = Object.keys(DEPLOYMENTS);
 
