@@ -1,6 +1,6 @@
 # Сессия 2026-05-20 — Дистилляция baseline + наполнение docs/
 
-Длинная сессия по выделению `ismart-platform` как canonical baseline из трёх production deployment'ов (kumho-tires.ru, italycommunity.ru, beepitron.ru) и сборке вокруг него инструментов и документации.
+Длинная сессия по выделению `ismart-platform` как canonical baseline из трёх production deployment'ов (kumho-tires.ru, italycommunity.ru, beepitron.com) и сборке вокруг него инструментов и документации.
 
 ## Ключевые моменты
 
