@@ -357,20 +357,37 @@ final class PageAction
                 continue;
             }
             $inner = $itemKey !== '' ? ($entity[$itemKey] ?? []) : $entity;
-            $items[] = [
+            $flat = [
                 'slug' => $entity['slug'] ?? $entitySlug,
+                'id' => $inner['id'] ?? null,
+                'visible' => $entity['visible'] ?? true,
                 'cover' => $inner['cover'] ?? ['src' => ''],
                 'hex' => $inner['hex'] ?? '',
                 'date' => $inner['date'] ?? '',
                 'title' => $inner['title'] ?? $inner['name'] ?? '',
                 'desc' => $inner['desc'] ?? $inner['lead'] ?? '',
+                'href' => $inner['href'] ?? '',
             ];
+            // Дополнительные entity-поля для фильтров/тегов/счётчиков на list-страницах
+            foreach (['types', 'feature', 'tags', 'category', 'season'] as $extra) {
+                if (isset($inner[$extra])) {
+                    $flat[$extra] = $inner[$extra];
+                }
+            }
+            $items[] = $flat;
         }
 
+        // Инжект во все секции, где data.items пуст или отсутствует. Backward-compat:
+        // секции с непустым data.items не перезаписываются (явный контент остаётся).
+        // Это обслуживает паттерны hero+typeCounts / filter-chip / list-section одновременно
+        // — не требуя дублирования items в JSON на каждой секции.
         foreach ($sections as $idx => $section) {
-            if (isset($section['name']) && $section['name'] === $navSlug && isset($section['data'])) {
+            if (!is_array($section) || !isset($section['data']) || !is_array($section['data'])) {
+                continue;
+            }
+            $existing = $section['data']['items'] ?? null;
+            if ($existing === null || (is_array($existing) && $existing === [])) {
                 $sections[$idx]['data']['items'] = $items;
-                return;
             }
         }
     }
