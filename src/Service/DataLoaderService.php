@@ -64,9 +64,10 @@ final class DataLoaderService
     public function loadEntitySlugs(string $jsonBaseDir, string $langCode, array $collectionConfig): ?array
     {
         $navSlug = (string) ($collectionConfig['nav_slug'] ?? '');
+        $slugsPage = (string) ($collectionConfig['slugs_page'] ?? $navSlug);
         $slugsSource = (string) ($collectionConfig['slugs_source'] ?? 'items');
 
-        $path = rtrim($jsonBaseDir, '/') . '/' . $langCode . '/pages/' . $navSlug . '.json';
+        $path = rtrim($jsonBaseDir, '/') . '/' . $langCode . '/pages/' . $slugsPage . '.json';
         $data = $this->loadJson($path, '');
         if (!is_array($data)) {
             return null;
