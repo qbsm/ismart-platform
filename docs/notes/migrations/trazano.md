@@ -1,9 +1,17 @@
 # Миграция trazano-tires.ru на iSmart Platform
 
-**Статус:** план (не начат)
-**Дата плана:** 2026-05-20
-**Срок (оценочно):** 8–12 рабочих дней
+**Статус:** ✅ Выполнена (2026-05-21)
+**Ветка:** `feat/migrate-to-ismart-platform` @ qbsm/trazano-tires.ru
+**Локальная папка:** `~/Sites/trazano-tires.ru-v2/` (cutover на основной путь ещё не делался)
+**Детали:** `~/Sites/trazano-tires.ru-v2/MIGRATION-STATUS.md`
+**Дата плана:** 2026-05-20 (исходный план ниже — для истории)
 **Источник-донор:** `kumho-tires.ru` (та же тематика — шины)
+
+> Аналогичная миграция `mirage-russia.ru` выполнена параллельно — ветка
+> `feat/migrate-to-ismart-platform` @ qbsm/mirage-russia.ru,
+> папка `~/Sites/mirage-russia.ru-v2/`.
+
+> Cводка по всем deployments: `docs/notes/migrations/status-by-deployment.md`.
 
 ---
 
