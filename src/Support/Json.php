@@ -47,7 +47,5 @@ final class Json
         return isset($data[$key]) && is_array($data[$key]) ? $data[$key] : null;
     }
 
-    private function __construct()
-    {
-    }
+    private function __construct() {}
 }

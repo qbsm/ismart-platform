@@ -158,9 +158,9 @@ namespace App\\Service;
  *
  * Зарегистрируйте в config/container.php:
  *   ${builderClass}::class => \\DI\\autowire(),
- *   SeoBuilderRegistry::class => static fn(ContainerInterface \$c) => new SeoBuilderRegistry(
- *       ['${slug}' => \$c->get(${builderClass}::class)],
- *       \$c->get(DefaultSeoBuilder::class),
+ *   SeoBuilderRegistry::class => static fn(ContainerInterface $c) => new SeoBuilderRegistry(
+ *       ['${slug}' => $c->get(${builderClass}::class)],
+ *       $c->get(DefaultSeoBuilder::class),
  *   );
  *
  * Если кастомный SEO не нужен — оставьте только DefaultSeoBuilder в Registry (он подхватит '${slug}'),
@@ -168,28 +168,28 @@ namespace App\\Service;
  */
 final class ${builderClass} implements SeoBuilderInterface
 {
-    public function build(array \$entity, string \$baseUrl, string \$langCode, array \$config, array \$global): array
+    public function build(array $entity, string $baseUrl, string $langCode, array $config, array $global): array
     {
-        \$itemKey = (string) (\$config['item_key'] ?? '');
-        \$inner = \$itemKey !== '' ? (\$entity[\$itemKey] ?? []) : \$entity;
-        \$name = (string) (\$inner['name'] ?? \$inner['title'] ?? \$entity['slug'] ?? '');
-        \$desc = (string) (\$entity['desc']['short'] ?? \$entity['desc']['full'] ?? '');
-        \$ogType = (string) (\$config['og_type'] ?? 'website');
+        $itemKey = (string) ($config['item_key'] ?? '');
+        $inner = $itemKey !== '' ? ($entity[$itemKey] ?? []) : $entity;
+        $name = (string) ($inner['name'] ?? $inner['title'] ?? $entity['slug'] ?? '');
+        $desc = (string) ($entity['desc']['short'] ?? $entity['desc']['full'] ?? '');
+        $ogType = (string) ($config['og_type'] ?? 'website');
 
         return [
-            'title' => \$name,
+            'title' => $name,
             'meta' => [
-                ['name' => 'description', 'content' => \$desc],
-                ['property' => 'og:type', 'content' => \$ogType],
-                ['property' => 'og:title', 'content' => \$name],
-                ['property' => 'og:description', 'content' => \$desc],
+                ['name' => 'description', 'content' => $desc],
+                ['property' => 'og:type', 'content' => $ogType],
+                ['property' => 'og:title', 'content' => $name],
+                ['property' => 'og:description', 'content' => $desc],
             ],
             // Заполните под Schema.org/<Type> для коллекции '${slug}':
             'json_ld' => [
                 '@context' => 'https://schema.org',
                 '@type' => 'Thing',  // TODO: замените на корректный тип (Product, Article, Restaurant, ...)
-                'name' => \$name,
-                'description' => \$desc,
+                'name' => $name,
+                'description' => $desc,
             ],
             'json_ld_faq' => null,
         ];
@@ -227,7 +227,7 @@ console.log('SeoBuilder (опционально, см. docs/guides/seo-add.md):'
 console.log('========================================\n');
 console.log(`// Если хотите Schema.org для коллекции — добавьте в config/container.php:`);
 console.log(`// ${builderClass}::class => \\DI\\autowire(),`);
-console.log(`// и в SeoBuilderRegistry — '${slug}' => \\$c->get(${builderClass}::class)`);
+console.log(`// и в SeoBuilderRegistry — '${slug}' => $c->get(${builderClass}::class)`);
 console.log(`// Иначе удалите src/Service/${builderClass}.php — DefaultSeoBuilder будет использован.\n`);
 
 console.log('========================================');

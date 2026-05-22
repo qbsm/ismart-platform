@@ -15,8 +15,7 @@ final class NotificationDispatcher
     public function __construct(
         private readonly iterable $channels,
         private readonly LoggerInterface $logger,
-    ) {
-    }
+    ) {}
 
     /**
      * Sequential dispatch. Любая ошибка канала изолируется и логируется,

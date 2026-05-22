@@ -37,7 +37,5 @@ final class Arr
         return isset($data[$key]) && is_array($data[$key]) ? $data[$key] : [];
     }
 
-    private function __construct()
-    {
-    }
+    private function __construct() {}
 }

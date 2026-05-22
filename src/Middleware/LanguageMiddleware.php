@@ -30,7 +30,7 @@ final class LanguageMiddleware implements MiddlewareInterface
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {
         $path = trim($request->getUri()->getPath(), '/');
-        $segments = $path === '' ? [] : array_values(array_filter(explode('/', $path), static fn (string $v) => $v !== ''));
+        $segments = $path === '' ? [] : array_values(array_filter(explode('/', $path), static fn(string $v) => $v !== ''));
 
         $baseUrl = $this->baseUrlResolver->resolve($request);
         $globalPath = (string) ($this->settings['paths']['json_global'] ?? '');

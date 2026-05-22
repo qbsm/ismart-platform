@@ -48,8 +48,7 @@ final class GoogleSheetsChannel implements ChannelInterface
         private readonly LoggerInterface $logger,
         private readonly array $config,
         private readonly string $projectRoot,
-    ) {
-    }
+    ) {}
 
     public function name(): string
     {
@@ -230,7 +229,7 @@ final class GoogleSheetsChannel implements ChannelInterface
             ]);
             $code = $response->getStatusCode();
             $data = $response->toArray(false);
-        } catch (TransportException | ExceptionInterface $e) {
+        } catch (TransportException|ExceptionInterface $e) {
             throw new RuntimeException('oauth_transport: ' . $e->getMessage());
         }
 
@@ -319,14 +318,14 @@ final class GoogleSheetsChannel implements ChannelInterface
         $path = $this->tokenCachePath();
         $dir = dirname($path);
         if (!is_dir($dir)) {
-            @mkdir($dir, 0775, true);
+            @mkdir($dir, 0o775, true);
         }
         $payload = json_encode([
             'access_token' => $token,
             'expires_at' => time() + $expiresIn - 60,
         ]);
         @file_put_contents($path, (string) $payload, LOCK_EX);
-        @chmod($path, 0600);
+        @chmod($path, 0o600);
     }
 
     private function tokenCachePath(): string
@@ -344,7 +343,7 @@ final class GoogleSheetsChannel implements ChannelInterface
     {
         $dir = dirname($path);
         if (!is_dir($dir)) {
-            @mkdir($dir, 0775, true);
+            @mkdir($dir, 0o775, true);
         }
         @touch($path);
     }

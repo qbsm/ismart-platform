@@ -112,7 +112,7 @@ final class NotificationDispatcherTest extends TestCase
         $dispatcher = new NotificationDispatcher([$first, $second, $third, $fourth], new NullLogger());
         $results = $dispatcher->dispatch([], [], 'req-5');
 
-        self::assertSame(['first', 'second', 'third', 'fourth'], array_map(fn ($r) => $r->channel, $results));
+        self::assertSame(['first', 'second', 'third', 'fourth'], array_map(fn($r) => $r->channel, $results));
         self::assertSame(
             [
                 ChannelResult::STATUS_SUCCESS,
@@ -120,7 +120,7 @@ final class NotificationDispatcherTest extends TestCase
                 ChannelResult::STATUS_DISABLED,
                 ChannelResult::STATUS_WARNING,
             ],
-            array_map(fn ($r) => $r->status, $results),
+            array_map(fn($r) => $r->status, $results),
         );
     }
 
@@ -134,13 +134,12 @@ final class NotificationDispatcherTest extends TestCase
 
     private function stubChannel(string $name, bool $enabled, ChannelResult $result): ChannelInterface
     {
-        return new class($name, $enabled, $result) implements ChannelInterface {
+        return new class ($name, $enabled, $result) implements ChannelInterface {
             public function __construct(
                 private readonly string $channelName,
                 private readonly bool $enabled,
                 private readonly ChannelResult $result,
-            ) {
-            }
+            ) {}
 
             public function name(): string
             {

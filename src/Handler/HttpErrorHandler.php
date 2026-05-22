@@ -29,8 +29,7 @@ final class HttpErrorHandler
         private Twig $twig,
         private BaseUrlResolver $baseUrlResolver,
         private array $errorMap,
-    ) {
-    }
+    ) {}
 
     public function __invoke(
         ServerRequestInterface $request,

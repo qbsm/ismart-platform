@@ -30,7 +30,7 @@ $env = static function (string $key): string {
     return (string) $value;
 };
 
-$bool = static fn (string $key): bool => filter_var($env($key), FILTER_VALIDATE_BOOLEAN);
+$bool = static fn(string $key): bool => filter_var($env($key), FILTER_VALIDATE_BOOLEAN);
 
 $mask = static function (string $value, int $keep = 4): string {
     if ($value === '') {
@@ -110,7 +110,7 @@ $channels = [
     })(),
 ];
 
-$tag = static fn (bool $enabled): string => $enabled ? '[ON] ' : '[off]';
+$tag = static fn(bool $enabled): string => $enabled ? '[ON] ' : '[off]';
 
 echo "\nNotification channels:\n";
 foreach ($channels as $name => $info) {

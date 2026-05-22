@@ -41,8 +41,7 @@ final class TelegramChannel implements ChannelInterface
         private readonly HttpClientInterface $httpClient,
         private readonly LoggerInterface $logger,
         private readonly array $config,
-    ) {
-    }
+    ) {}
 
     public function name(): string
     {

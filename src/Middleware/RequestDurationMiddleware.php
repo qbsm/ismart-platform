@@ -18,9 +18,7 @@ use Psr\Log\LoggerInterface;
  */
 final class RequestDurationMiddleware implements MiddlewareInterface
 {
-    public function __construct(private LoggerInterface $logger)
-    {
-    }
+    public function __construct(private LoggerInterface $logger) {}
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {

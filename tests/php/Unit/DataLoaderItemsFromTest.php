@@ -19,8 +19,8 @@ final class DataLoaderItemsFromTest extends TestCase
     {
         $this->service = new DataLoaderService();
         $this->tmpDir = sys_get_temp_dir() . '/ismart_items_from_' . bin2hex(random_bytes(4));
-        @mkdir($this->tmpDir . '/ru/pages', 0755, true);
-        @mkdir($this->tmpDir . '/ru/news', 0755, true);
+        @mkdir($this->tmpDir . '/ru/pages', 0o755, true);
+        @mkdir($this->tmpDir . '/ru/news', 0o755, true);
     }
 
     protected function tearDown(): void
@@ -93,7 +93,7 @@ final class DataLoaderItemsFromTest extends TestCase
 
     public function testInjectItemsFromFallsBackToDirectoryScanWithNaturalSort(): void
     {
-        @mkdir($this->tmpDir . '/ru/management', 0755, true);
+        @mkdir($this->tmpDir . '/ru/management', 0o755, true);
         foreach (['1', '10', '2'] as $slug) {
             file_put_contents(
                 $this->tmpDir . '/ru/management/' . $slug . '.json',

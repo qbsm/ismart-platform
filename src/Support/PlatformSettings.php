@@ -47,7 +47,5 @@ final class PlatformSettings
         return is_array($settings['collections'] ?? null) ? $settings['collections'] : [];
     }
 
-    private function __construct()
-    {
-    }
+    private function __construct() {}
 }

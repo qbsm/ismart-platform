@@ -20,8 +20,7 @@ final class SecurityHeadersMiddleware implements MiddlewareInterface
     public function __construct(
         private readonly bool $addHsts = true,
         private readonly ?string $contentSecurityPolicy = self::DEFAULT_CSP,
-    ) {
-    }
+    ) {}
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {

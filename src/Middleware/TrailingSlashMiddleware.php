@@ -10,9 +10,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 
 final class TrailingSlashMiddleware implements MiddlewareInterface
 {
-    public function __construct(private ResponseFactoryInterface $responseFactory)
-    {
-    }
+    public function __construct(private ResponseFactoryInterface $responseFactory) {}
 
     public function process(ServerRequestInterface $request, RequestHandlerInterface $handler): ResponseInterface
     {

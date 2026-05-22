@@ -22,8 +22,7 @@ final class SeoBuilderRegistry
     public function __construct(
         private array $builders = [],
         private ?SeoBuilderInterface $default = null,
-    ) {
-    }
+    ) {}
 
     /**
      * Возвращает builder для коллекции или $default (если зарегистрирован), либо null.

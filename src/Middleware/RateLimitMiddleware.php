@@ -57,7 +57,7 @@ final class RateLimitMiddleware implements MiddlewareInterface
         $file = $this->cacheDir . '/' . $key . '.json';
 
         if (!is_dir($this->cacheDir)) {
-            @mkdir($this->cacheDir, 0755, true);
+            @mkdir($this->cacheDir, 0o755, true);
         }
 
         $now = time();

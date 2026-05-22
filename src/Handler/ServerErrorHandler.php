@@ -30,8 +30,7 @@ final class ServerErrorHandler
         private BaseUrlResolver $baseUrlResolver,
         private LoggerInterface $logger,
         private bool $displayErrorDetails,
-    ) {
-    }
+    ) {}
 
     public function __invoke(
         ServerRequestInterface $request,

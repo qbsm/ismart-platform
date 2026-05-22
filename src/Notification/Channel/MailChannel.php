@@ -16,8 +16,7 @@ final class MailChannel implements ChannelInterface
     public function __construct(
         private readonly MailService $mailService,
         private readonly array $config = [],
-    ) {
-    }
+    ) {}
 
     public function name(): string
     {

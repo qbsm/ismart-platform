@@ -52,7 +52,7 @@ final class PageActionTest extends TestCase
 
     private function createRequest(string $method, string $path): ServerRequestInterface
     {
-        $uri = (new UriFactory())->createUri('http://localhost' . $path);
-        return (new ServerRequestFactory())->createServerRequest($method, $uri);
+        $uri = new UriFactory()->createUri('http://localhost' . $path);
+        return new ServerRequestFactory()->createServerRequest($method, $uri);
     }
 }

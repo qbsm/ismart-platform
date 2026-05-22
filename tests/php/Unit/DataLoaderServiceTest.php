@@ -26,7 +26,7 @@ final class DataLoaderServiceTest extends TestCase
     {
         $path = __DIR__ . '/../fixtures/invalid.json';
         if (!is_dir(dirname($path))) {
-            mkdir(dirname($path), 0755, true);
+            mkdir(dirname($path), 0o755, true);
         }
         file_put_contents($path, '{ invalid }');
         try {
@@ -102,8 +102,8 @@ final class DataLoaderServiceTest extends TestCase
         $dir = $this->createFixtureDir();
         $json = json_encode([
             'sections' => [
-                ['name' => 'articles', 'data' => ['items' => ['art-1', 'art-2']]]
-            ]
+                ['name' => 'articles', 'data' => ['items' => ['art-1', 'art-2']]],
+            ],
         ]);
         file_put_contents($dir . '/ru/pages/articles.json', (string) $json);
         try {
@@ -153,7 +153,7 @@ final class DataLoaderServiceTest extends TestCase
     public function testLoadEntityReturnsNullWhenItemKeyEmpty(): void
     {
         $dir = $this->createFixtureDir();
-        @mkdir($dir . '/ru/products', 0755, true);
+        @mkdir($dir . '/ru/products', 0o755, true);
         file_put_contents($dir . '/ru/products/test.json', '{"other":{"name":"X"}}');
         try {
             $config = ['data_dir' => 'products', 'item_key' => 'item'];
@@ -167,7 +167,7 @@ final class DataLoaderServiceTest extends TestCase
     public function testLoadEntityReturnsNullWhenNotVisible(): void
     {
         $dir = $this->createFixtureDir();
-        @mkdir($dir . '/ru/products', 0755, true);
+        @mkdir($dir . '/ru/products', 0o755, true);
         file_put_contents($dir . '/ru/products/hidden.json', '{"item":{"name":"H"},"visible":false}');
         try {
             $config = ['data_dir' => 'products', 'item_key' => 'item'];
@@ -181,7 +181,7 @@ final class DataLoaderServiceTest extends TestCase
     public function testLoadEntitySetsSlugAndReturnsData(): void
     {
         $dir = $this->createFixtureDir();
-        @mkdir($dir . '/ru/products', 0755, true);
+        @mkdir($dir . '/ru/products', 0o755, true);
         file_put_contents($dir . '/ru/products/my-item.json', '{"item":{"name":"My Item"},"visible":true}');
         try {
             $config = ['data_dir' => 'products', 'item_key' => 'item'];
@@ -258,7 +258,7 @@ final class DataLoaderServiceTest extends TestCase
     private function createFixtureDir(): string
     {
         $dir = __DIR__ . '/../fixtures/json_entity_test_' . bin2hex(random_bytes(4));
-        @mkdir($dir . '/ru/pages', 0755, true);
+        @mkdir($dir . '/ru/pages', 0o755, true);
         return $dir;
     }
 

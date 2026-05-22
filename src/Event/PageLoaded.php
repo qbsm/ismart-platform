@@ -22,6 +22,5 @@ final class PageLoaded
         public readonly string $langCode,
         public readonly array $pageData,
         public readonly int $status,
-    ) {
-    }
+    ) {}
 }

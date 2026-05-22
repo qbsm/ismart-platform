@@ -33,8 +33,8 @@ final class MiddlewareTest extends TestCase
         if (self::$app === null) {
             self::markTestSkipped('App not bootstrapped');
         }
-        $uri = (new UriFactory())->createUri('http://localhost');
-        $request = (new ServerRequestFactory())->createServerRequest('GET', $uri->withPath('/contacts'));
+        $uri = new UriFactory()->createUri('http://localhost');
+        $request = new ServerRequestFactory()->createServerRequest('GET', $uri->withPath('/contacts'));
         $response = self::$app->handle($request);
         self::assertSame(301, $response->getStatusCode());
         self::assertStringContainsString('/contacts/', $response->getHeaderLine('Location'));
@@ -45,8 +45,8 @@ final class MiddlewareTest extends TestCase
         if (self::$app === null) {
             self::markTestSkipped('App not bootstrapped');
         }
-        $uri = (new UriFactory())->createUri('http://localhost/en/');
-        $request = (new ServerRequestFactory())->createServerRequest('GET', $uri);
+        $uri = new UriFactory()->createUri('http://localhost/en/');
+        $request = new ServerRequestFactory()->createServerRequest('GET', $uri);
         $response = self::$app->handle($request);
         self::assertSame(200, $response->getStatusCode());
     }

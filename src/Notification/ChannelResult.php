@@ -19,8 +19,7 @@ final class ChannelResult
         public readonly string $status,
         public readonly string $message,
         public readonly array $meta,
-    ) {
-    }
+    ) {}
 
     /**
      * @param array<string,mixed> $meta

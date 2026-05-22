@@ -89,9 +89,9 @@
     "stylelint": "^17.3.0",
     "stylelint-config-standard": "^40.0.0",
     "subset-font": "^2.4.0",
-    "vitest": "^2.0.0",
+    "vitest": "^4.0.0",
     "webpack": "^5.105.2",
-    "webpack-cli": "^6.0.1",
+    "webpack-cli": "^7.0.0",
     "webpack-manifest-plugin": "^6.0.1"
   },
   "dependencies": {

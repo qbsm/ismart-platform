@@ -59,7 +59,7 @@ return static function (): ContainerInterface {
         LoggerInterface::class => static function () use ($settings): LoggerInterface {
             $logDir = (string) ($settings['paths']['logs'] ?? '');
             if ($logDir !== '' && !is_dir($logDir)) {
-                @mkdir($logDir, 0755, true);
+                @mkdir($logDir, 0o755, true);
             }
 
             $logger = new Logger('app');
@@ -169,33 +169,33 @@ return static function (): ContainerInterface {
             );
         },
 
-        HttpClientInterface::class => static fn () => HttpClient::create(),
+        HttpClientInterface::class => static fn() => HttpClient::create(),
 
-        MailChannel::class => static fn (ContainerInterface $c) => new MailChannel(
+        MailChannel::class => static fn(ContainerInterface $c) => new MailChannel(
             $c->get(MailService::class),
             $c->get('settings')['mail'] ?? [],
         ),
 
-        CallTouchChannel::class => static fn (ContainerInterface $c) => new CallTouchChannel(
+        CallTouchChannel::class => static fn(ContainerInterface $c) => new CallTouchChannel(
             $c->get(HttpClientInterface::class),
             $c->get(LoggerInterface::class),
             $c->get('settings')['calltouch'] ?? [],
         ),
 
-        TelegramChannel::class => static fn (ContainerInterface $c) => new TelegramChannel(
+        TelegramChannel::class => static fn(ContainerInterface $c) => new TelegramChannel(
             $c->get(HttpClientInterface::class),
             $c->get(LoggerInterface::class),
             $c->get('settings')['telegram'] ?? [],
         ),
 
-        GoogleSheetsChannel::class => static fn (ContainerInterface $c) => new GoogleSheetsChannel(
+        GoogleSheetsChannel::class => static fn(ContainerInterface $c) => new GoogleSheetsChannel(
             $c->get(HttpClientInterface::class),
             $c->get(LoggerInterface::class),
             $c->get('settings')['google_sheets'] ?? [],
             (string) ($c->get('settings')['project_root'] ?? ''),
         ),
 
-        NotificationDispatcher::class => static fn (ContainerInterface $c) => new NotificationDispatcher(
+        NotificationDispatcher::class => static fn(ContainerInterface $c) => new NotificationDispatcher(
             [
                 $c->get(MailChannel::class),
                 $c->get(CallTouchChannel::class),

@@ -19,7 +19,5 @@ final class RequestAttributes
     public const CURRENT_LANG = 'current_lang';
     public const IS_LANG_IN_URL = 'is_lang_in_url';
 
-    private function __construct()
-    {
-    }
+    private function __construct() {}
 }
