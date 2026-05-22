@@ -186,7 +186,7 @@ final class PageAction
             $extrasKey = (string) ($entityConfig['extras_key'] ?? $entityType);
             $extras[$extrasKey] = $entity;
             $extras['entity'] = $entity;
-            $extras['breadcrumb'] = $this->buildEntityBreadcrumb($global, $langCode, $entity, $entityConfig);
+            $extras['breadcrumb'] = $this->buildEntityBreadcrumb($global, $langCode, $entity, $entityConfig, $pageJsonDir, $baseUrl);
             $extras['frame_data'] = $this->extractFrameFromListPage($pageJsonDir, $entityConfig, $baseUrl);
             $extras['seo_url_path'] = trim((string) ($entityConfig['nav_slug'] ?? ''), '/') . '/' . trim((string) ($entity['slug'] ?? ''), '/');
         }
@@ -271,9 +271,10 @@ final class PageAction
      * @param array<string,mixed> $config
      * @return array<int, array{name: string, url: string}>
      */
-    private function buildEntityBreadcrumb(array $global, string $langCode, array $entity, array $config): array
+    private function buildEntityBreadcrumb(array $global, string $langCode, array $entity, array $config, string $pageJsonDir = '', string $baseUrl = ''): array
     {
         $navSlug = (string) ($config['nav_slug'] ?? '');
+        $listPageId = (string) ($config['list_page_id'] ?? $navSlug);
         $itemKey = (string) ($config['item_key'] ?? '');
 
         $inner = $itemKey !== '' ? ($entity[$itemKey] ?? []) : $entity;
@@ -282,7 +283,7 @@ final class PageAction
 
         $nav = $global['nav'][$langCode]['items'] ?? [];
         $homeTitle = 'Главная';
-        $listTitle = ucfirst($navSlug);
+        $listTitle = '';
         $listHref = '/' . $navSlug . '/';
         foreach ($nav as $navItem) {
             if (!is_array($navItem)) {
@@ -293,9 +294,24 @@ final class PageAction
                 $homeTitle = (string) ($navItem['title'] ?? $homeTitle);
             }
             if ($href === $navSlug) {
-                $listTitle = (string) ($navItem['title'] ?? $listTitle);
+                $listTitle = (string) ($navItem['title'] ?? '');
                 $listHref = '/' . $href . '/';
             }
+        }
+
+        // Fallback порядок для listTitle: nav.title → pages/{list}.json::title → pages/{list}.json::name → ucfirst(navSlug)
+        if ($listTitle === '' && $pageJsonDir !== '' && $listPageId !== '') {
+            $listPage = $this->dataLoader->loadPage($pageJsonDir, $listPageId, $baseUrl);
+            if (is_array($listPage)) {
+                $listTitle = (string) ($listPage['title'] ?? $listPage['name'] ?? '');
+                // Защита от случая когда name === slug (например news.json::name === 'news')
+                if ($listTitle === $navSlug) {
+                    $listTitle = '';
+                }
+            }
+        }
+        if ($listTitle === '') {
+            $listTitle = ucfirst($navSlug);
         }
 
         return [
