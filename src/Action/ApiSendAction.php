@@ -5,7 +5,8 @@ declare(strict_types=1);
 namespace App\Action;
 
 use App\Middleware\CorrelationIdMiddleware;
-use App\Service\MailService;
+use App\Notification\ChannelResult;
+use App\Notification\NotificationDispatcher;
 use App\Support\Arr;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -14,7 +15,7 @@ use Psr\Log\LoggerInterface;
 final class ApiSendAction
 {
     public function __construct(
-        private readonly MailService $mailService,
+        private readonly NotificationDispatcher $dispatcher,
         private readonly LoggerInterface $logger,
     ) {
     }
@@ -67,21 +68,45 @@ final class ApiSendAction
             return $this->json($response, 422, $payload);
         }
 
-        // Отправка email
+        // Параллельная (независимая) отправка по всем каналам
         $uploadedFiles = $request->getUploadedFiles();
-        $mailSent = $this->mailService->sendFormSubmission($data, $uploadedFiles, $requestId);
+        $data['_user_agent'] = (string) ($request->getHeaderLine('User-Agent') ?: '');
+        $data['_ip'] = $this->clientIp($request);
 
-        if (!$mailSent) {
-            $this->logger->warning('Форма принята, но письмо не отправлено', ['request_id' => $requestId]);
+        $results = $this->dispatcher->dispatch($data, $uploadedFiles, $requestId);
+        $channels = [];
+        foreach ($results as $result) {
+            $channels[$result->channel] = $result->status;
+            if ($result->status === ChannelResult::STATUS_FAILED) {
+                $this->logger->warning('Канал не доставил', [
+                    'channel' => $result->channel,
+                    'message' => $result->message,
+                    'request_id' => $requestId,
+                ]);
+            }
         }
 
         $payload = [
             'success' => true,
             'message' => 'Заявка успешно отправлена',
+            'channels' => $channels,
             'request_id' => $requestId,
         ];
         $this->cacheResponse($idempotencyKey, 200, $payload);
         return $this->json($response, 200, $payload);
+    }
+
+    private function clientIp(ServerRequestInterface $request): string
+    {
+        $forwarded = $request->getHeaderLine('X-Forwarded-For');
+        if ($forwarded !== '') {
+            $first = trim(explode(',', $forwarded)[0]);
+            if ($first !== '') {
+                return $first;
+            }
+        }
+        $serverParams = $request->getServerParams();
+        return (string) ($serverParams['REMOTE_ADDR'] ?? '');
     }
 
     /**

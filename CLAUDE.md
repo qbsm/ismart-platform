@@ -128,6 +128,10 @@ RequestDuration → CorrelationId → SecurityHeaders → CORS → BodyParsing �
 
 Три события в `PageAction`: `EntityResolved`, `PageLoaded`, `SeoBuilt` — точки расширения для будущих интеграций.
 
+### Notification Channels (ADR-0005)
+
+`ApiSendAction` отправляет submit формы в 4 базовых канала через `NotificationDispatcher`: `mail`, `calltouch`, `telegram`, `google_sheets`. Каждый канал — отдельный класс под `ChannelInterface` (`src/Notification/Channel/`). Канал без credentials отдаёт `disabled` через `isEnabled()`, не падает. JSON response содержит `channels: {name: status}`. Throwable одного канала изолируется и не блокирует остальные.
+
 ### Twig Extensions
 
 - **AssetExtension** — `asset()` для JS/CSS с manifest lookup

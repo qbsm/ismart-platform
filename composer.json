@@ -11,7 +11,8 @@
         "twig/twig": "^3.0",
         "league/event": "^3.0",
         "psr/event-dispatcher": "^1.0",
-        "symfony/mailer": "^8.0"
+        "symfony/mailer": "^8.0",
+        "symfony/http-client": "^8.0"
     },
     "autoload": {
         "psr-4": {

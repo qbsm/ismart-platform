@@ -92,6 +92,25 @@ return [
         'from_name' => (string) (getenv('MAIL_FROM_NAME') ?: ''),
         'subject_prefix' => (string) (getenv('MAIL_SUBJECT_PREFIX') ?: ''),
     ],
+    'calltouch' => [
+        'enable' => filter_var((string) (getenv('CT_ENABLE') ?: 'false'), FILTER_VALIDATE_BOOLEAN),
+        'route_key' => (string) (getenv('CT_ROUTE_KEY') ?: ''),
+        'token' => (string) (getenv('CT_TOKEN') ?: ''),
+        'timeout' => (int) (getenv('CT_TIMEOUT') ?: 10),
+    ],
+    'telegram' => [
+        'enable' => filter_var((string) (getenv('TG_ENABLE') ?: 'false'), FILTER_VALIDATE_BOOLEAN),
+        'bot_token' => (string) (getenv('TG_BOT_TOKEN') ?: ''),
+        'chat_id' => (string) (getenv('TG_CHAT_ID') ?: ''),
+        'timeout' => (int) (getenv('TG_TIMEOUT') ?: 10),
+    ],
+    'google_sheets' => [
+        'enable' => filter_var((string) (getenv('GS_ENABLE') ?: 'false'), FILTER_VALIDATE_BOOLEAN),
+        'spreadsheet_id' => (string) (getenv('GS_SPREADSHEET_ID') ?: ''),
+        'sheet_name' => (string) (getenv('GS_SHEET_NAME') ?: 'Заявки'),
+        'credentials_path' => (string) (getenv('GS_CREDENTIALS_PATH') ?: 'config/secrets/google-service-account.json'),
+        'timeout' => (int) (getenv('GS_TIMEOUT') ?: 10),
+    ],
     'errors' => require __DIR__ . '/errors.php',
     'twig' => [
         'cache' => $isProduction ? $cacheDir . '/twig' : false,
