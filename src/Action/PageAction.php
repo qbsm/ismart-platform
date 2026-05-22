@@ -74,6 +74,10 @@ final class PageAction
         $collections = (array) ($this->settings['collections'] ?? []);
         $jsonBaseDir = (string) ($this->settings['paths']['json_base'] ?? '');
 
+        if ($pageData !== null) {
+            $this->dataLoader->injectItemsFrom($pageData, $collections, $jsonBaseDir, $langCode, $baseUrl);
+        }
+
         $status = 200;
         $entity = null;
         $entityType = '';

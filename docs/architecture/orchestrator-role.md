@@ -96,6 +96,35 @@ Pre-populated на текущий момент (см. ниже).
 - # detected anti-patterns
 - TOP 3 рекомендации с конкретными командами
 
+### 7. `commit-miner.mjs`
+
+**Идея:** оркестратор не должен ограничиваться финальным state'ом файлов. **Каждый коммит** в deployments — кандидат на распознавание паттерна или улучшения для baseline. Финальный sha256-diff скрывает интент изменений; история коммитов сохраняет его в commit message + diff.
+
+Что mining делает на каждом deployment'е (incremental — с `state.json :: platform_commit` или с явного `--since`):
+
+| Класс коммита | Признак | Action |
+|---|---|---|
+| **CORE-hotfix** | `git diff` коммита затрагивает файл, помеченный `kind: core` в manifest'е, тип коммита `fix:` | candidate в baseline через `distill propose`. Скорее всего тот же баг есть и в других deployments |
+| **CORE-refactor** | CORE-файл + `refactor:` | review с автором; если универсально — propose, иначе override с reason |
+| **Reusable feature** | DEPLOYMENT-файл, но имя generic (`*Service.php`, `templates/components/*.twig`), `feat:` | candidate на extract в `templates/components/` или `src/Support/` |
+| **Recurring topic** | одинаковая тема в commit message в 2+ deployments за последний период (`fix: cookie panel`, `fix: csrf token`) | сильный сигнал на baseline-фикс. Записать как opportunity |
+| **Drift origin** | для каждого drift-файла из `divergence-audit` — `git log --follow` находит **первый коммит** где deployment разошёлся с baseline | даёт reason для `mark-override` или `propose` |
+| **Convention violation** | commit message не Conventional Commits (`update`, `wip`, `.`) | пометка в health-report для команды |
+
+Output: `commits-{date}.json` + раздел в health-report с TOP candidates на propose/extract.
+
+**Зачем именно поком­митно:**
+
+- Финальный state «sha256 разошёлся» не показывает **почему**. Коммит-сообщение «fix: cookie-panel disappears after pages refactor» сразу маршрутизирует баг к opportunity #7.
+- Один и тот же фикс в 2+ deployments за одну неделю — сильнейший сигнал что в baseline дыра (см. реальный эпизод 2026-05-21: `BaseUrlResolver` `APP_BASE_URL` priority — сначала фикснули в kumho, через пару дней в beepitron — orchestrator должен был поймать **после первого** и предложить вынести).
+- Conventional Commits превращает истории в **структурированный feed** для analyzer'а без LLM.
+
+**Сложности:**
+
+- Требуется read-access ко всем sibling-репо (уже есть в orchestrate.mjs через `existsSync(d.path)`).
+- `git log`/`git show` на больших историях — кэшировать в `.distill/state.json :: commit_cache_until`.
+- Маппинг файлов deployment'а на CORE-категорию — через `manifest.json :: kind`.
+
 ## Существующие opportunities (extracted из сессии 2026-05-21)
 
 Эти **точно** просятся в baseline на следующей итерации:
@@ -195,6 +224,7 @@ npm run orchestrate
 |---|---|
 | **MVP (P1)** | `divergence-audit.mjs` + `data-flow-audit.mjs` + первый `health-report` |
 | P2 | `pattern-detector.mjs` (legacy-naming, numeric-id, hardcoded colors) |
-| P3 | `duplicate-detector.mjs` — сложнее, требует AST |
-| P4 | Интеграция с GitHub Issues / Linear — каждое open opportunity = ticket |
-| P5 | CI-mode: `npm run orchestrate -- --strict` exit-code 1 если новые P1-issues |
+| P3 | `commit-miner.mjs` — incremental analysis истории deployments |
+| P4 | `duplicate-detector.mjs` — сложнее, требует AST |
+| P5 | Интеграция с GitHub Issues / Linear — каждое open opportunity = ticket |
+| P6 | CI-mode: `npm run orchestrate -- --strict` exit-code 1 если новые P1-issues |

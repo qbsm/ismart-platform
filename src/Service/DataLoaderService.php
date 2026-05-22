@@ -157,4 +157,156 @@ final class DataLoaderService
         JsonProcessor::processJsonPaths($data, $baseUrl);
         return $data;
     }
+
+    /**
+     * Резолвит `data.items_from` в секциях страницы (ADR-0004).
+     *
+     * Идёт по `$pageData['sections']`. Для секций с непустым `data.items_from`
+     * и пустым `data.items`:
+     *  - Находит коллекцию в `$collections` (ключ === items_from ИЛИ nav_slug коллекции).
+     *  - Резолвит slug'и: declared order через loadEntitySlugs; иначе directory scan + natural sort.
+     *  - Каждый slug → loadEntity (visibility/item_key как обычно) → flat-формат.
+     *  - Опция `data.limit` (int) — обрезает результат.
+     *
+     * Backward-compat: секции с непустым `data.items` не перезаписываются.
+     *
+     * @param array<string,mixed> $pageData     Данные страницы (модифицируются by-ref)
+     * @param array<string,mixed> $collections  config/project.php :: collections
+     * @param string              $jsonBaseDir  Корневая директория JSON
+     * @param string              $langCode     Код языка
+     * @param string              $baseUrl      Базовый URL для путей в entity
+     */
+    public function injectItemsFrom(array &$pageData, array $collections, string $jsonBaseDir, string $langCode, string $baseUrl): void
+    {
+        if (!isset($pageData['sections']) || !is_array($pageData['sections'])) {
+            return;
+        }
+
+        $sections = &$pageData['sections'];
+        foreach ($sections as $idx => $section) {
+            if (!is_array($section) || !isset($section['data']) || !is_array($section['data'])) {
+                continue;
+            }
+            $itemsFrom = $section['data']['items_from'] ?? null;
+            if (!is_string($itemsFrom) || $itemsFrom === '') {
+                continue;
+            }
+            $existing = $section['data']['items'] ?? null;
+            if (is_array($existing) && $existing !== []) {
+                continue;
+            }
+
+            $collConfig = $this->resolveCollection($itemsFrom, $collections);
+            if ($collConfig === null) {
+                continue;
+            }
+
+            $slugs = $this->loadEntitySlugs($jsonBaseDir, $langCode, $collConfig);
+            if ($slugs === null || $slugs === []) {
+                $slugs = $this->scanCollectionSlugs($jsonBaseDir, $langCode, $collConfig);
+            }
+            if ($slugs === []) {
+                continue;
+            }
+
+            $items = [];
+            foreach ($slugs as $slug) {
+                $entity = $this->loadEntity($jsonBaseDir, $langCode, $slug, $baseUrl, $collConfig);
+                if ($entity === null) {
+                    continue;
+                }
+                $items[] = $this->flattenEntityForList($entity, $collConfig);
+            }
+
+            $limit = $section['data']['limit'] ?? null;
+            if (is_int($limit) && $limit > 0) {
+                $items = array_slice($items, 0, $limit);
+            }
+
+            $sections[$idx]['data']['items'] = $items;
+        }
+    }
+
+    /**
+     * Directory scan slug'ов коллекции с natural sort (slug='1','2','10').
+     *
+     * Используется как fallback в injectItemsFrom, когда list-page не содержит
+     * declared order. Заявленный slug-источник на list-page имеет приоритет —
+     * этот метод вызывается ТОЛЬКО при его отсутствии.
+     *
+     * @param array<string,mixed> $collectionConfig
+     * @return array<int,string>
+     */
+    public function scanCollectionSlugs(string $jsonBaseDir, string $langCode, array $collectionConfig): array
+    {
+        $dataDir = (string) ($collectionConfig['data_dir'] ?? '');
+        if ($dataDir === '') {
+            return [];
+        }
+        $dir = rtrim($jsonBaseDir, '/') . '/' . $langCode . '/' . $dataDir;
+        if (!is_dir($dir)) {
+            return [];
+        }
+        $files = glob($dir . '/*.json');
+        if ($files === false || $files === []) {
+            return [];
+        }
+        $slugs = array_map(static fn(string $path): string => basename($path, '.json'), $files);
+        usort($slugs, 'strnatcmp');
+        return $slugs;
+    }
+
+    /**
+     * @param array<string,mixed> $collections
+     * @return array<string,mixed>|null
+     */
+    private function resolveCollection(string $key, array $collections): ?array
+    {
+        if (isset($collections[$key]) && is_array($collections[$key])) {
+            return $collections[$key];
+        }
+        foreach ($collections as $collConfig) {
+            if (is_array($collConfig) && ($collConfig['nav_slug'] ?? '') === $key) {
+                return $collConfig;
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Уплощает entity до flat-формата для list-секций.
+     *
+     * Совпадает по структуре с PageAction::injectListItems — чтобы Twig-шаблоны
+     * получали одинаковую форму данных независимо от пути инжекции (list-page
+     * vs. items_from на любой странице).
+     *
+     * @param array<string,mixed> $entity
+     * @param array<string,mixed> $collectionConfig
+     * @return array<string,mixed>
+     */
+    private function flattenEntityForList(array $entity, array $collectionConfig): array
+    {
+        $itemKey = (string) ($collectionConfig['item_key'] ?? '');
+        $inner = $itemKey !== '' ? ($entity[$itemKey] ?? []) : $entity;
+        if (!is_array($inner)) {
+            $inner = [];
+        }
+        $flat = [
+            'slug' => $entity['slug'] ?? '',
+            'id' => $inner['id'] ?? null,
+            'visible' => $entity['visible'] ?? true,
+            'cover' => $inner['cover'] ?? ['src' => ''],
+            'hex' => $inner['hex'] ?? '',
+            'date' => $inner['date'] ?? '',
+            'title' => $inner['title'] ?? $inner['name'] ?? '',
+            'desc' => $inner['desc'] ?? $inner['lead'] ?? '',
+            'href' => $inner['href'] ?? '',
+        ];
+        foreach (['types', 'feature', 'tags', 'category', 'season'] as $extra) {
+            if (isset($inner[$extra])) {
+                $flat[$extra] = $inner[$extra];
+            }
+        }
+        return $flat;
+    }
 }

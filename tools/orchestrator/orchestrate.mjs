@@ -15,6 +15,8 @@ import { writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { dataFlowAudit } from './analyzers/data-flow-audit.mjs';
 import { divergenceAudit } from './analyzers/divergence-audit.mjs';
 import { patternDetector } from './analyzers/pattern-detector.mjs';
+import { commitMiner } from './analyzers/commit-miner.mjs';
+import { opportunityTracker } from './analyzers/opportunity-tracker.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PLATFORM = resolve(__dirname, '../..');
@@ -51,6 +53,14 @@ async function main() {
   if (!only || only === 'patterns') {
     console.log('▸ pattern-detector...');
     results.patterns = await patternDetector(deployments);
+  }
+  if (!only || only === 'commits') {
+    console.log('▸ commit-miner...');
+    results.commits = await commitMiner(PLATFORM, deployments);
+  }
+  if (!only || only === 'opportunities') {
+    console.log('▸ opportunity-tracker...');
+    results.opportunities = await opportunityTracker(PLATFORM, results);
   }
 
   // Сборка report'а
@@ -105,13 +115,15 @@ function renderReport(results, date, deployments) {
     if (counts.length === 0) {
       lines.push('✓ Все deployments sync с baseline (по CORE).');
     } else {
-      lines.push('| Deployment | Drifted | Identical | Missing | Unique |');
-      lines.push('|---|---|---|---|---|');
+      lines.push('| Deployment | Drifted | Intentional | Ready-to-sync | Identical | Missing | Unique |');
+      lines.push('|---|---|---|---|---|---|---|');
       for (const c of counts) {
-        lines.push(`| ${c.deployment} | ${c.drifted} | ${c.identical} | ${c.missing} | ${c.unique} |`);
+        const intentional = c.intentional ?? 0;
+        const ready = c.readyToSync ?? c.drifted ?? 0;
+        lines.push(`| ${c.deployment} | ${c.drifted} | ${intentional} | ${ready} | ${c.identical} | ${c.missing} | ${c.unique} |`);
       }
       lines.push('');
-      lines.push('Детально: `npm run distill -- diff <deployment>`.');
+      lines.push('Колонки **Intentional** (overrides) и **Ready-to-sync** (drift без override) — учитывают `.distill/state.json :: overrides`. Детально: `npm run distill -- diff <deployment>`.');
     }
     lines.push('');
   }
@@ -135,6 +147,71 @@ function renderReport(results, date, deployments) {
         lines.push('');
       }
     }
+  }
+
+  if (results.commits) {
+    lines.push('## Commit mining — recurring fixes и CORE-hotfixes (90 дней)');
+    lines.push('');
+    if (results.commits.length === 0) {
+      lines.push('✓ Нет recurring fixes и CORE-hotfix-коммитов за окно.');
+    } else {
+      const recurring = results.commits.filter(f => f.type === 'recurring-topic').sort((a, b) => b.total - a.total);
+      const coreHotfixes = results.commits.filter(f => f.type === 'core-hotfix');
+      const convViolations = results.commits.filter(f => f.type === 'convention-violation');
+
+      if (recurring.length > 0) {
+        lines.push('### Recurring topics (cross-deployment)');
+        lines.push('');
+        lines.push('| Scope | Total | Deployments |');
+        lines.push('|---|---|---|');
+        for (const r of recurring) {
+          lines.push(`| \`${r.scope}\` | ${r.total} | ${r.deployments.join(', ')} |`);
+        }
+        lines.push('');
+        lines.push('**Сигнал:** один scope фиксится в нескольких deployments — кандидат на baseline-фикс или opportunity.');
+        lines.push('');
+      }
+
+      if (coreHotfixes.length > 0) {
+        lines.push('### CORE-hotfixes (fix-коммиты, трогающие baseline-файлы)');
+        lines.push('');
+        for (const f of coreHotfixes.slice(0, 30)) {
+          lines.push(`- **${f.deployment}** \`${f.sha}\` — ${f.subject}`);
+          if (f.coreFiles?.length) lines.push(`  - core: ${f.coreFiles.map(x => `\`${x}\``).join(', ')}`);
+        }
+        if (coreHotfixes.length > 30) lines.push(`- … ещё ${coreHotfixes.length - 30}`);
+        lines.push('');
+        lines.push('**Сигнал:** скорее всего тот же баг есть в других deployments — кандидат на `distill propose`.');
+        lines.push('');
+      }
+
+      if (convViolations.length > 0) {
+        lines.push('### Convention violations');
+        lines.push('');
+        lines.push('| Deployment | Non-conventional | Total | % |');
+        lines.push('|---|---|---|---|');
+        for (const v of convViolations) {
+          const pct = v.total > 0 ? Math.round((v.count * 100) / v.total) : 0;
+          lines.push(`| ${v.deployment} | ${v.count} | ${v.total} | ${pct}% |`);
+        }
+        lines.push('');
+      }
+    }
+  }
+
+  if (Array.isArray(results.opportunities) && results.opportunities.length > 0) {
+    lines.push('## Opportunity tracking — счётчики «Встречалось» из текущего прогона');
+    lines.push('');
+    lines.push('Связь по маркерам `<!-- tracks: <kind>[:<value>] -->` в [opportunities.md](opportunities.md).');
+    lines.push('');
+    lines.push('| # | Opportunity | Status | Found (этот прогон) | Deployments |');
+    lines.push('|---|---|---|---|---|');
+    for (const o of results.opportunities) {
+      const title = o.title.length > 70 ? o.title.slice(0, 67) + '...' : o.title;
+      const deps = o.deployments.length > 0 ? o.deployments.join(', ') : '—';
+      lines.push(`| ${o.id} | ${title} | ${o.status} | ${o.found} | ${deps} |`);
+    }
+    lines.push('');
   }
 
   lines.push('---');

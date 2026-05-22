@@ -50,6 +50,8 @@ export async function dataFlowAudit(deployments) {
           if (!name) continue;
           const items = s.data?.items;
           if (Array.isArray(items) && items.length > 0) continue;
+          // ADR-0004: секция с data.items_from резолвится DataLoader'ом на runtime — не finding.
+          if (typeof s.data?.items_from === 'string' && s.data.items_from !== '') continue;
 
           // Determine candidate entity dir
           let candidate = entityDirs.has(name) ? name : null;

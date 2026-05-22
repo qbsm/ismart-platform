@@ -5,10 +5,10 @@
 
 | # | Opportunity | Status | Встречалось | Где |
 |---|---|---|---|---|
-| 1 | `data.items_from` cross-page injection | open | 8 раз | beepitron.com |
-| 2 | Numeric-aware sort в `loadEntitySlugs` | open | 1 раз | beepitron.com |
-| 3 | `data.declared_order` для коллекций | open | 1 раз | beepitron.com |
-| 4 | Items inline (3-й тип источника) | open | 1 раз | beepitron.com /video |
+| 1 | `data.items_from` cross-page injection <!-- tracks: data-flow --> | ✅ done (ADR-0004, 2026-05-21) | 8 раз | beepitron.com |
+| 2 | Numeric-aware sort в `loadEntitySlugs` <!-- tracks: data-flow --> | ✅ done (ADR-0004 `scanCollectionSlugs`, 2026-05-21) | 1 раз | beepitron.com |
+| 3 | `data.declared_order` для коллекций <!-- tracks: data-flow --> | ✅ done (ADR-0004 inherits list-page items[], 2026-05-21) | 1 раз | beepitron.com |
+| 4 | Items inline (3-й тип источника) <!-- tracks: data-flow --> | ✅ done (ADR-0004 backward-compat: data.items уже непуст ⇒ не трогаем, 2026-05-21) | 1 раз | beepitron.com /video |
 | 5 | Auto-redirect legacy URL'ов при rename collection | open | 2 раза | beepitron.com |
 | 6 | scaffold `create-collection` поддержка `slugs_page` | open | 1 раз | beepitron.com |
 | 7 | Cookie-panel default include в base.twig | open | 1 раз | beepitron.com |
@@ -16,6 +16,9 @@
 | 9 | `injectListItems` во ВСЕ секции с пустым `data.items` | ✅ done (baseline `33c0f1c`) | 4 раза | beepitron.com |
 | 10 | `slugs_page` decoupling | ✅ done (baseline `08fa612`) | 1 раз | beepitron.com |
 | 11 | Entity-load переиспользует sections из list-page | ✅ done (baseline `69c9621`) | 1 раз | beepitron.com |
+| 12 | SeoBuilder Strategy унификация во всех deployments <!-- tracks: commit:feat(seo) --> | ✅ done (ADR-0003 baseline) | 8 раз (commit-miner cross-deployment) | все 5 |
+| 13 | CSS-refactor по `fix(css)` повторам <!-- tracks: commit:fix(css) --> | open (расследовать) | 5 раз | italy/beepitron/trazano/mirage |
+| 14 | CSP middleware унификация <!-- tracks: commit:fix(csp) --> | open | 4 раза | kumho/italy/beepitron |
 
 ---
 
