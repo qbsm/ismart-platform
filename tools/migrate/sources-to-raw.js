@@ -34,14 +34,23 @@ if (!fs.existsSync(imgDir)) {
 }
 
 /**
- * Pre-scan JSON: собирает все direct-cited paths (cover.src, src и т.п.),
- * чтобы не переносить в raw/ файлы, на которые есть прямые <img src> ссылки.
+ * Pre-scan JSON: собирает все direct-cited paths (cover.src, inline <img src>
+ * в body, любые ссылки `data/img/...` в строковых значениях),
+ * чтобы не переносить в raw/ файлы, на которые есть прямые HTML/URL ссылки.
+ *
+ * Покрывает:
+ *   "src": "data/img/X/Y.webp"            ← JSON field
+ *   "body": "<img src='/data/img/X/1.webp'>"  ← inline HTML внутри JSON-строки
+ *   "icon": "data/img/icons/foo.png"      ← любое поле-ссылка
  */
 async function scanDirectCited() {
   const cited = new Set();
   if (!fs.existsSync(jsonRoot)) return cited;
 
   const jsonFiles = await glob('**/*.json', { cwd: jsonRoot, absolute: true });
+  // Ловим любое вхождение `data/img/...{ext}` где угодно в файле (внутри
+  // строковых значений; обрезаем ведущий `/` если он есть).
+  const re = /\/?data\/img\/[^"'\s)>]+\.(?:jpg|jpeg|png|webp|avif)/gi;
   for (const file of jsonFiles) {
     let raw;
     try {
@@ -49,15 +58,18 @@ async function scanDirectCited() {
     } catch {
       continue;
     }
-    // Regex по строкам формата "...": "data/img/..."
-    const re = /"data\/img\/[^"]+\.(?:jpg|jpeg|png|webp|avif)"/gi;
     const matches = raw.match(re) ?? [];
-    for (const m of matches) {
-      const p = m.slice(1, -1); // strip quotes
-      // Skip пути, которые уже в /raw/ или в adaptive-папке /400/ etc.
+    for (let p of matches) {
+      if (p.startsWith('/')) p = p.slice(1);
       if (p.includes('/raw/')) continue;
       if (/\/(400|800|1280|1600|1920|2560)\//.test(p)) continue;
       cited.add(p);
+      // Sibling-extensions: если контент ссылается на 1.webp, то 1.jpg/1.png
+      // в той же папке — её source, тоже не трогаем.
+      const parsed = path.parse(p);
+      for (const ext of ['jpg', 'jpeg', 'png', 'webp', 'avif']) {
+        cited.add(path.posix.join(parsed.dir, `${parsed.name}.${ext}`));
+      }
     }
   }
   return cited;
