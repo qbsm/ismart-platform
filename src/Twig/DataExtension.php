@@ -16,6 +16,7 @@ class DataExtension extends AbstractExtension
     private array $cache = [];
     /** @var array<string, array{width: int, height: int}>|null */
     private ?array $imageDimensionsManifest = null;
+    private bool $imageManifestExists = false;
 
     public function __construct(string $baseDir, string $baseUrl)
     {
@@ -28,6 +29,7 @@ class DataExtension extends AbstractExtension
         return [
             new TwigFunction('load_json', [$this, 'loadJson']),
             new TwigFunction('image_dimensions', [$this, 'getImageDimensions']),
+            new TwigFunction('image_has', [$this, 'imageHas']),
             new TwigFunction('city_to_slug', [CitySlugger::class, 'slug']),
             new TwigFunction('resolve_city_by_slug', [$this, 'resolveCityBySlug']),
             new TwigFunction('resolve_section_meta', [$this, 'resolveSectionMeta']),
@@ -120,29 +122,70 @@ class DataExtension extends AbstractExtension
     }
 
     /**
-     * Возвращает { width, height } для пути из манифеста (tools/build/images.js).
+     * Возвращает { width, height } для пути из манифеста (tools/build/build-images.js).
+     *
+     * Принимает любую форму пути:
+     *   data/img/intro/800/foo.webp
+     *   /data/img/intro/800/foo.webp
+     *   https://host/data/img/intro/800/foo.webp
+     *   intro/800/foo.webp
      *
      * @return array{width: int, height: int}|null
      */
-    /**
-     * Путь в манифесте: относительно data/img (например intro/cover.jpg или restaurants/.../1.jpg).
-     * В шаблон может приходить с префиксом data/img/ — он отрезается при поиске.
-     */
     public function getImageDimensions(string $path): ?array
     {
-        $path = ltrim(str_replace('\\', '/', $path), '/');
-        $path = preg_replace('#^data/img/#', '', $path);
-        if ($path === '') {
+        $key = $this->normalizeManifestKey($path);
+        if ($key === '') {
             return null;
         }
-        if ($this->imageDimensionsManifest === null) {
-            $this->imageDimensionsManifest = Json::load($this->baseDir . '/data/img/image-dimensions.json') ?? [];
-        }
-        $entry = $this->imageDimensionsManifest[$path] ?? null;
-        if (!is_array($entry) || !isset($entry['width'], $entry['height'])) {
+        $this->loadImageDimensionsManifest();
+        $entry = $this->imageDimensionsManifest[$key] ?? null;
+        if ($entry === null) {
             return null;
         }
-        return ['width' => (int) $entry['width'], 'height' => (int) $entry['height']];
+        return ['width' => $entry['width'], 'height' => $entry['height']];
+    }
+
+    /**
+     * Проверяет наличие файла изображения в манифесте.
+     *
+     * Используется в picture.twig для гейтинга `<source>` и srcset items — чтобы не
+     * эмитить пути к несуществующим файлам (например, AVIF, пропущенный из-за
+     * skip-upscale в build-images.js).
+     *
+     * Graceful fallback: если манифест не существует на диске (свежий клон без
+     * `npm run build:images`), возвращает `true` — шаблон ведёт себя как до
+     * введения гейтинга, эмитит всё, что в JSON.
+     */
+    public function imageHas(string $path): bool
+    {
+        $key = $this->normalizeManifestKey($path);
+        if ($key === '') {
+            return false;
+        }
+        $this->loadImageDimensionsManifest();
+        if (!$this->imageManifestExists) {
+            return true;
+        }
+        return isset($this->imageDimensionsManifest[$key]);
+    }
+
+    private function normalizeManifestKey(string $path): string
+    {
+        $path = str_replace('\\', '/', $path);
+        $path = preg_replace('#^https?://[^/]+/#', '', $path) ?? $path;
+        $path = ltrim($path, '/');
+        return preg_replace('#^data/img/#', '', $path) ?? $path;
+    }
+
+    private function loadImageDimensionsManifest(): void
+    {
+        if ($this->imageDimensionsManifest !== null) {
+            return;
+        }
+        $manifestPath = $this->baseDir . '/data/img/image-dimensions.json';
+        $this->imageManifestExists = is_file($manifestPath);
+        $this->imageDimensionsManifest = Json::load($manifestPath) ?? [];
     }
 
     public function loadJson(string $relativePath): ?array

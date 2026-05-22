@@ -35,34 +35,41 @@
 {% set imageHeight = height|default(image.height|default(null)) %}
 {% set imageFetchpriority = imageLoading == 'eager' ? 'high' : null %}
 
-{# --- Макрос: собрать srcset из объекта изображения по доступным ключам --- #}
+{# --- Макрос: собрать srcset из объекта изображения по доступным ключам.
+       image_has() — manifest-driven гейтинг: путь попадает в srcset только если
+       файл реально сгенерирован build:images (ADR-0006). При отсутствии манифеста
+       image_has возвращает true (graceful, см. DataExtension::imageHas). --- #}
 {% macro build_srcset(img, sizeKeys) %}
   {%- set items = [] -%}
   {%- for key in sizeKeys -%}
-    {%- if img[key] is defined and img[key] and img[key] != '#' -%}
+    {%- if img[key] is defined and img[key] and img[key] != '#' and image_has(img[key]) -%}
       {%- set items = items|merge([url(img[key]) ~ ' ' ~ key ~ 'w']) -%}
     {%- endif -%}
   {%- endfor -%}
   {{- items|join(', ') -}}
 {% endmacro %}
 
-{# --- Макрос: собрать AVIF srcset (заменяет .webp → .avif в путях) --- #}
+{# --- Макрос: собрать AVIF srcset (заменяет .webp → .avif в путях).
+       AVIF часто отсутствует при skip-upscale в build-images.js — гейтим через image_has. --- #}
 {% macro build_avif_srcset(img, sizeKeys) %}
   {%- set items = [] -%}
   {%- for key in sizeKeys -%}
     {%- if img[key] is defined and img[key] and img[key] != '#' -%}
       {%- set avifPath = img[key]|replace({'.webp': '.avif'}) -%}
-      {%- set items = items|merge([url(avifPath) ~ ' ' ~ key ~ 'w']) -%}
+      {%- if image_has(avifPath) -%}
+        {%- set items = items|merge([url(avifPath) ~ ' ' ~ key ~ 'w']) -%}
+      {%- endif -%}
     {%- endif -%}
   {%- endfor -%}
   {{- items|join(', ') -}}
 {% endmacro %}
 
-{# --- Макрос: найти fallback src (наименьший доступный размер) --- #}
+{# --- Макрос: найти fallback src (наименьший доступный размер).
+       Тоже гейтим — иначе fallback может указывать на отсутствующий файл. --- #}
 {% macro find_fallback(img, sizeKeys) %}
   {%- set _found = '' -%}
   {%- for key in sizeKeys -%}
-    {%- if _found == '' and img[key] is defined and img[key] and img[key] != '#' -%}
+    {%- if _found == '' and img[key] is defined and img[key] and img[key] != '#' and image_has(img[key]) -%}
       {%- set _found = img[key] -%}
     {%- endif -%}
   {%- endfor -%}
