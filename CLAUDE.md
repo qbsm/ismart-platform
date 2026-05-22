@@ -142,6 +142,7 @@ RequestDuration → CorrelationId → SecurityHeaders → CORS → BodyParsing �
 - **Изображения** — адаптивные через `picture.twig`, размеры в `config/image-sizes.json`, dimensions в `data/img/image-dimensions.json`
 - **Symlinks/Junction** — на Windows используются junction вместо symlink (`setup-public-links.js`)
 - **Windows-специфика** — нормализация путей `str_replace('\\', '/')` в `BaseUrlResolver` и `container.php`
+- **Inline `<style>` в JSON-контенте — запрещён без необходимости.** Правила для классов контента (`.content-policy`, `.content-warranty` и т.п.) держим в `assets/css/sections/content.css` (или соответствующем модуле). Inline `<style>` дублирует селекторы, разрастает HTML, мешает кэшу/CSP и нарушает разделение data/style.
 
 ## Testing
 
