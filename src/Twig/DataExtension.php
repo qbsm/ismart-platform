@@ -33,6 +33,7 @@ class DataExtension extends AbstractExtension
             new TwigFunction('image_dimensions', [$this, 'getImageDimensions']),
             new TwigFunction('image_has', [$this, 'imageHas']),
             new TwigFunction('image_variants', [$this, 'imageVariants']),
+            new TwigFunction('image_fallback', [$this, 'imageFallback']),
             new TwigFunction('city_to_slug', [CitySlugger::class, 'slug']),
             new TwigFunction('resolve_city_by_slug', [$this, 'resolveCityBySlug']),
             new TwigFunction('resolve_section_meta', [$this, 'resolveSectionMeta']),
@@ -224,6 +225,26 @@ class DataExtension extends AbstractExtension
                 : null;
         }
         return $variants;
+    }
+
+    /**
+     * Возвращает наименьший доступный webp-вариант для raw-path.
+     *
+     * Используется в card-секциях (card-news, card-tire и т.п.) для
+     * `<div style="background-image: url(...)">` или `<img src="...">` —
+     * когда нужен один путь, не srcset. Берётся самый маленький ключ
+     * (обычно 400) — экономит трафик в card-grid'ах.
+     *
+     * Если raw не валиден или manifest пуст → ''.
+     */
+    public function imageFallback(string $rawPath): string
+    {
+        foreach ($this->imageVariants($rawPath) as $variant) {
+            if (is_array($variant) && !empty($variant['webp'])) {
+                return $variant['webp'];
+            }
+        }
+        return '';
     }
 
     /**

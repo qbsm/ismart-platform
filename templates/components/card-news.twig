@@ -1,7 +1,21 @@
 <a href="{% if item.slug is defined %}{{ url('/news/' ~ item.slug) }}{% else %}#{% endif %}" class="card-news card-news-link link">
   <div class="card-news__item cover-wrap">
-    {% if item.cover.src is defined %}
+    {# Новый контракт (ADR-0007): cover — string raw-path #}
+    {% if item.cover is iterable == false and item.cover %}
+      {% set _coverFallback = image_fallback(item.cover) %}
+      {% if _coverFallback %}
+        <div class="card-news__cover" style="background-image: url('{{ url(_coverFallback) }}');"></div>
+      {% endif %}
+    {# Новый контракт: cover — {src, alt?} объект #}
+    {% elseif item.cover.src is defined and item.cover.src is iterable == false %}
+      {% set _coverFallback = image_fallback(item.cover.src) %}
+      {% if _coverFallback %}
+        <div class="card-news__cover" style="background-image: url('{{ url(_coverFallback) }}');"></div>
+      {% endif %}
+    {# LEGACY: cover.src — direct url string внутри объекта (без raw/) #}
+    {% elseif item.cover.src is defined %}
       <div class="card-news__cover" style="background-image: url('{{ url(item.cover.src) }}');"></div>
+    {# LEGACY: cover как объект с числовыми ключами #}
     {% elseif item.cover['800'] is defined %}
       <div class="card-news__cover" style="background-image: url('{{ url(item.cover['800']) }}');"></div>
     {% elseif item.cover['400'] is defined %}
