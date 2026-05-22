@@ -101,8 +101,35 @@
 
 {% import _self as self %}
 
-{# === НОВЫЙ КОНТРАКТ (proposal 0003 / raw-source): image — string raw-path === #}
-{% if image is iterable == false and image %}
+{# === НОВЫЙ КОНТРАКТ (ADR-0007): image — {src, alt?, ...} объект с raw-path === #}
+{% if image.src is defined and image.src is iterable == false and image.src %}
+  {% set rawPath = image.src %}
+  {% set avifSrcset = self.raw_srcset(rawPath, 'avif') %}
+  {% set webpSrcset = self.raw_srcset(rawPath, 'webp') %}
+  {% set fallbackSrc = self.raw_fallback(rawPath)|trim %}
+  {% set dims = imageWidth and imageHeight ? {'width': imageWidth, 'height': imageHeight} : image_dimensions(fallbackSrc) %}
+
+  <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
+    {% if avifSrcset|trim %}
+      <source srcset="{{ avifSrcset|trim }}" sizes="{{ imageSizes }}" type="image/avif">
+    {% endif %}
+    {% if webpSrcset|trim %}
+      <source srcset="{{ webpSrcset|trim }}" sizes="{{ imageSizes }}" type="image/webp">
+    {% endif %}
+    <img
+      src="{{ url(fallbackSrc) }}"
+      alt="{{ imageAlt }}"
+      loading="{{ imageLoading }}"
+      decoding="async"
+      class="{{ imageClass }}"
+      {% if dims %}width="{{ dims.width }}" height="{{ dims.height }}"{% endif %}
+      {% if imageFetchpriority %}fetchpriority="{{ imageFetchpriority }}"{% endif %}
+      {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
+      {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
+  </picture>
+
+{# === НОВЫЙ КОНТРАКТ (ADR-0007): image — string raw-path === #}
+{% elseif image is iterable == false and image %}
   {% set avifSrcset = self.raw_srcset(image, 'avif') %}
   {% set webpSrcset = self.raw_srcset(image, 'webp') %}
   {% set fallbackSrc = self.raw_fallback(image)|trim %}
