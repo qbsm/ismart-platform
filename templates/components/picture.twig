@@ -35,10 +35,33 @@
 {% set imageHeight = height|default(image.height|default(null)) %}
 {% set imageFetchpriority = imageLoading == 'eager' ? 'high' : null %}
 
-{# --- Макрос: собрать srcset из объекта изображения по доступным ключам.
-       image_has() — manifest-driven гейтинг: путь попадает в srcset только если
-       файл реально сгенерирован build:images (ADR-0006). При отсутствии манифеста
-       image_has возвращает true (graceful, см. DataExtension::imageHas). --- #}
+{# --- НОВЫЕ макросы (proposal 0003 / raw-source): из raw-path резолвят manifest entries --- #}
+
+{# Собирает srcset одного формата (webp|avif) из imageVariants(). Используется для raw-source. #}
+{% macro raw_srcset(rawPath, format) %}
+  {%- set items = [] -%}
+  {%- for key, variant in image_variants(rawPath) -%}
+    {%- if variant and variant[format] -%}
+      {%- set items = items|merge([url(variant[format]) ~ ' ' ~ key ~ 'w']) -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {{- items|join(', ') -}}
+{% endmacro %}
+
+{# Находит fallback src (наименьший доступный ключ webp) из raw-path. #}
+{% macro raw_fallback(rawPath) %}
+  {%- set _found = '' -%}
+  {%- for key, variant in image_variants(rawPath) -%}
+    {%- if _found == '' and variant and variant['webp'] -%}
+      {%- set _found = variant['webp'] -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {{- _found -}}
+{% endmacro %}
+
+{# --- LEGACY макросы (на время миграции; будут удалены после полной раскатки proposal 0003).
+       image_has() — manifest-driven гейтинг ADR-0006. При отсутствии манифеста image_has
+       возвращает true (graceful). --- #}
 {% macro build_srcset(img, sizeKeys) %}
   {%- set items = [] -%}
   {%- for key in sizeKeys -%}
@@ -78,8 +101,77 @@
 
 {% import _self as self %}
 
-{# Формат: horizontal/vertical (адаптивные ориентации) #}
-{% if image.horizontal is defined or image.vertical is defined %}
+{# === НОВЫЙ КОНТРАКТ (proposal 0003 / raw-source): image — string raw-path === #}
+{% if image is iterable == false and image %}
+  {% set avifSrcset = self.raw_srcset(image, 'avif') %}
+  {% set webpSrcset = self.raw_srcset(image, 'webp') %}
+  {% set fallbackSrc = self.raw_fallback(image)|trim %}
+  {% set dims = imageWidth and imageHeight ? {'width': imageWidth, 'height': imageHeight} : image_dimensions(fallbackSrc) %}
+
+  <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
+    {% if avifSrcset|trim %}
+      <source srcset="{{ avifSrcset|trim }}" sizes="{{ imageSizes }}" type="image/avif">
+    {% endif %}
+    {% if webpSrcset|trim %}
+      <source srcset="{{ webpSrcset|trim }}" sizes="{{ imageSizes }}" type="image/webp">
+    {% endif %}
+    <img
+      src="{{ url(fallbackSrc) }}"
+      alt="{{ imageAlt }}"
+      loading="{{ imageLoading }}"
+      decoding="async"
+      class="{{ imageClass }}"
+      {% if dims %}width="{{ dims.width }}" height="{{ dims.height }}"{% endif %}
+      {% if imageFetchpriority %}fetchpriority="{{ imageFetchpriority }}"{% endif %}
+      {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
+      {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
+  </picture>
+
+{# === НОВЫЙ КОНТРАКТ: horizontal/vertical как raw-path strings === #}
+{% elseif (image.horizontal is defined and image.horizontal is iterable == false) or (image.vertical is defined and image.vertical is iterable == false) %}
+  <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
+    {# Вертикальная — mobile #}
+    {% if image.vertical is defined and image.vertical is iterable == false %}
+      {% set vAvif = self.raw_srcset(image.vertical, 'avif') %}
+      {% if vAvif|trim %}
+        <source media="(max-width: 767px)" srcset="{{ vAvif|trim }}" sizes="{{ imageSizes }}" type="image/avif">
+      {% endif %}
+      {% set vWebp = self.raw_srcset(image.vertical, 'webp') %}
+      {% if vWebp|trim %}
+        <source media="(max-width: 767px)" srcset="{{ vWebp|trim }}" sizes="{{ imageSizes }}" type="image/webp">
+      {% endif %}
+    {% endif %}
+
+    {# Горизонтальная — по умолчанию #}
+    {% if image.horizontal is defined and image.horizontal is iterable == false %}
+      {% set hAvif = self.raw_srcset(image.horizontal, 'avif') %}
+      {% if hAvif|trim %}
+        <source srcset="{{ hAvif|trim }}" sizes="{{ imageSizes }}" type="image/avif">
+      {% endif %}
+      {% set hWebp = self.raw_srcset(image.horizontal, 'webp') %}
+      {% if hWebp|trim %}
+        <source srcset="{{ hWebp|trim }}" sizes="{{ imageSizes }}" type="image/webp">
+      {% endif %}
+      {% set fallbackSrc = self.raw_fallback(image.horizontal)|trim %}
+    {% elseif image.vertical is defined and image.vertical is iterable == false %}
+      {% set fallbackSrc = self.raw_fallback(image.vertical)|trim %}
+    {% endif %}
+
+    {% set dims = imageWidth and imageHeight ? {'width': imageWidth, 'height': imageHeight} : image_dimensions(fallbackSrc) %}
+    <img
+      src="{{ url(fallbackSrc) }}"
+      alt="{{ imageAlt }}"
+      loading="{{ imageLoading }}"
+      decoding="async"
+      class="{{ imageClass }}"
+      {% if dims %}width="{{ dims.width }}" height="{{ dims.height }}"{% endif %}
+      {% if imageFetchpriority %}fetchpriority="{{ imageFetchpriority }}"{% endif %}
+      {% if imageStyle %}style="{{ imageStyle }}"{% endif %}
+      {% if itemprop is defined %}itemprop="{{ itemprop }}"{% endif %}>
+  </picture>
+
+{# === LEGACY: horizontal/vertical как объекты с числовыми ключами === #}
+{% elseif image.horizontal is defined or image.vertical is defined %}
   <picture {% if pictureClass %}class="{{ pictureClass }}"{% endif %} {% if pictureStyle %}style="{{ pictureStyle }}"{% endif %}>
     {# Вертикальная версия для узких экранов #}
     {% if image.vertical is defined %}

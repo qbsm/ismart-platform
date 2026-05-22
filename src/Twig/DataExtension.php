@@ -17,6 +17,8 @@ class DataExtension extends AbstractExtension
     /** @var array<string, array{width: int, height: int}>|null */
     private ?array $imageDimensionsManifest = null;
     private bool $imageManifestExists = false;
+    /** @var list<string>|null */
+    private ?array $imageSizeKeys = null;
 
     public function __construct(string $baseDir, string $baseUrl)
     {
@@ -30,6 +32,7 @@ class DataExtension extends AbstractExtension
             new TwigFunction('load_json', [$this, 'loadJson']),
             new TwigFunction('image_dimensions', [$this, 'getImageDimensions']),
             new TwigFunction('image_has', [$this, 'imageHas']),
+            new TwigFunction('image_variants', [$this, 'imageVariants']),
             new TwigFunction('city_to_slug', [CitySlugger::class, 'slug']),
             new TwigFunction('resolve_city_by_slug', [$this, 'resolveCityBySlug']),
             new TwigFunction('resolve_section_meta', [$this, 'resolveSectionMeta']),
@@ -176,6 +179,94 @@ class DataExtension extends AbstractExtension
         $path = preg_replace('#^https?://[^/]+/#', '', $path) ?? $path;
         $path = ltrim($path, '/');
         return preg_replace('#^data/img/#', '', $path) ?? $path;
+    }
+
+    /**
+     * Для raw-path возвращает резолвнутые ключи (proposal 0003, raw-source contract).
+     *
+     * Вход:  "data/img/intro/raw/desk-lemons.webp"
+     * Выход: [
+     *   '400'  => ['webp' => 'data/img/intro/400/desk-lemons.webp', 'avif' => 'data/img/intro/400/desk-lemons.avif'],
+     *   '800'  => ['webp' => 'data/img/intro/800/desk-lemons.webp', 'avif' => null],
+     *   '1600' => null,  // вообще не сгенерирован под этот ключ
+     * ]
+     *
+     * Только downscale: эмитим ключи, которые реально есть в manifest'е.
+     * Если в пути нет `/raw/` сегмента → возвращаем [] (контракт нарушен).
+     * Если манифест отсутствует на диске → возвращаем [] (build:images не запускался).
+     *
+     * @return array<string, array{webp: ?string, avif: ?string}|null>
+     */
+    public function imageVariants(string $rawPath): array
+    {
+        $pattern = $this->extractPatternFromRawPath($rawPath);
+        if ($pattern === null) {
+            return [];
+        }
+        $this->loadImageDimensionsManifest();
+        if (!$this->imageManifestExists) {
+            return [];
+        }
+
+        $variants = [];
+        foreach ($this->loadImageSizeKeys() as $key) {
+            $webpKey = $pattern['dir'] . $key . '/' . $pattern['basename'] . '.webp';
+            $avifKey = $pattern['dir'] . $key . '/' . $pattern['basename'] . '.avif';
+
+            $hasWebp = isset($this->imageDimensionsManifest[$webpKey]);
+            $hasAvif = isset($this->imageDimensionsManifest[$avifKey]);
+
+            $variants[$key] = ($hasWebp || $hasAvif)
+                ? [
+                    'webp' => $hasWebp ? 'data/img/' . $webpKey : null,
+                    'avif' => $hasAvif ? 'data/img/' . $avifKey : null,
+                ]
+                : null;
+        }
+        return $variants;
+    }
+
+    /**
+     * Извлекает (dir, basename) из raw-path для resolve в manifest.
+     *
+     * "data/img/intro/raw/desk-lemons.webp" → ['dir' => 'intro/', 'basename' => 'desk-lemons']
+     * "data/img/restaurants/X/raw/cover.jpg" → ['dir' => 'restaurants/X/', 'basename' => 'cover']
+     *
+     * Возвращает null если в пути нет `/raw/` сегмента (контракт нарушен).
+     *
+     * @return array{dir: string, basename: string}|null
+     */
+    private function extractPatternFromRawPath(string $rawPath): ?array
+    {
+        $path = $this->normalizeManifestKey($rawPath);
+        if ($path === '' || !str_contains($path, '/raw/')) {
+            return null;
+        }
+        $cleaned = str_replace('/raw/', '/', $path);
+        $info = pathinfo($cleaned);
+        $dir = $info['dirname'];
+        $dirPrefix = ($dir === '.' || $dir === '') ? '' : $dir . '/';
+        return [
+            'dir' => $dirPrefix,
+            'basename' => $info['filename'],
+        ];
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function loadImageSizeKeys(): array
+    {
+        if ($this->imageSizeKeys !== null) {
+            return $this->imageSizeKeys;
+        }
+        $path = $this->baseDir . '/config/image-sizes.json';
+        $data = is_file($path) ? Json::load($path) : null;
+        $keys = is_array($data) && isset($data['keys']) && is_array($data['keys'])
+            ? $data['keys']
+            : ['400', '800', '1280', '1600', '1920', '2560'];
+        $this->imageSizeKeys = array_values(array_map('strval', $keys));
+        return $this->imageSizeKeys;
     }
 
     private function loadImageDimensionsManifest(): void
