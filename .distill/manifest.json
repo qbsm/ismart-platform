@@ -1,8 +1,8 @@
 {
   "$schema": "https://ismart.pro/schemas/distill-manifest-v1.json",
   "platform_version": "1.0.0",
-  "generated_at": "2026-05-22T12:33:33.324Z",
-  "file_count": 397,
+  "generated_at": "2026-05-22T15:26:35.850Z",
+  "file_count": 402,
   "files": {
     ".editorconfig": {
       "sha256": "3770f26fa30ba598d2441a3aaac94303070444d8798188381c4ce30a854519e9",
@@ -97,8 +97,8 @@
       "size": 454
     },
     ".phpunit.cache/test-results": {
-      "sha256": "930e7e0a162a7e4de98b6c1aa1830627cca9b51d1afa5e5c6cf3a8ffdbc55790",
-      "size": 8127
+      "sha256": "534d36930600558d114fad3333dd85d7279b0df71730657edf73814440bcdf76",
+      "size": 8755
     },
     ".prettierignore": {
       "sha256": "4e5c2c63d415377a1ea46d32232fe9236fbc424b8e45e1a2c590d68b35f76d1d",
@@ -732,6 +732,10 @@
       "sha256": "39d391351c4c1af5157742b4983f5db879e45c142d805185c430de1cc0f3ebc0",
       "size": 10232
     },
+    "docs/architecture/decisions/0006-manifest-driven-images.md": {
+      "sha256": "1b3335f48944cd3fc4725a348a3521fd4576f746733c240cd41291822d944d73",
+      "size": 8306
+    },
     "docs/architecture/distillation.md": {
       "sha256": "6f61c26ea98f73b7a3eef10af6daae033883ea0308934ebbc46acc64f7e8eb52",
       "size": 21543
@@ -745,8 +749,8 @@
       "size": 8695
     },
     "docs/architecture/images.md": {
-      "sha256": "f7b8316c2ae0ce7af5107153b4b24ed31edb3feb03cff92b4dbd2a6fff2de3e9",
-      "size": 1835
+      "sha256": "b4bebb057ef2a53531ef93efa0af3d1b7340bd1996242abb8811b7ff7eff85aa",
+      "size": 5243
     },
     "docs/architecture/orchestrator-role.md": {
       "sha256": "5c38f46f2d7b5ab05c55d5e86a4ecf0fd542c98513253a6a6ea3f4db3c457e96",
@@ -829,8 +833,8 @@
       "size": 2010
     },
     "docs/guides/deploy-checklist.md": {
-      "sha256": "b4bcdbcc8aa1c1e39c2c4470ce5483e1b0f0c8c4bcaa7b9481c65ab18a86b4fd",
-      "size": 2966
+      "sha256": "5d03211f441a4a3e1822c41ccb1b1d3ce214fcb89c189839982360710653f2a2",
+      "size": 3246
     },
     "docs/guides/fonts-audit.md": {
       "sha256": "15fa77c98c685ca07e56d13f8942280334f264d180e267e90b2fbdc3587e05ee",
@@ -912,9 +916,17 @@
       "sha256": "8a74970328672344ff9efa0f64d2e9f7e50be4be97bcfaa0eb607adba2d7cfb3",
       "size": 7657
     },
+    "docs/proposals/0002-card-gradient-animated-covers.md": {
+      "sha256": "136007b63d9d83d8ca535047d18c19a037f56bde2e3130e452b52f2c085fc0b7",
+      "size": 16941
+    },
     "docs/proposals/README.md": {
       "sha256": "062b266da27c0cdbe56bfbfe07ddfa618c3143c138c993b0c6ac52398376a689",
       "size": 2294
+    },
+    "docs/roles/README.md": {
+      "sha256": "af0322c7abba1f34685a805f2d82258ac3761364c7672c46dd7f9acbb263fa9c",
+      "size": 2742
     },
     "docs/sessions/2026-05-20-distillation.md": {
       "sha256": "e9edb36292327c89498aa9f76aee1375219bacc1ff264b33508fbaa7510c8ec2",
@@ -923,6 +935,10 @@
     "docs/sessions/2026-05-21-orchestrator-extension.md": {
       "sha256": "d4c1886b5bc52414db0c4758f9fb5f3b570b36682b7f94aef42dd4dd4de505dc",
       "size": 5318
+    },
+    "docs/sessions/2026-05-22-manifest-driven-images.md": {
+      "sha256": "7025efe322deee4d9b534191b1a41fa5fe46812d8404582e4a9cb1f17c808c6d",
+      "size": 4372
     },
     "docs/sessions/2026-05-22-notification-channels-implementation.md": {
       "sha256": "4cef6085454ca79c52464493d5c8f1395a51858b429ff59cc4dfff41a7016228",
@@ -1129,8 +1145,8 @@
       "size": 4195
     },
     "src/Twig/DataExtension.php": {
-      "sha256": "ba1b8d7e8aa791230b0b9ec634ccc892e37f50d5d22469b5cd93018958896699",
-      "size": 6119
+      "sha256": "6a2a223df80468dce4bd72cca6081674b195381280e2c978a1354d3013042ea4",
+      "size": 7660
     },
     "src/Twig/UrlExtension.php": {
       "sha256": "fa8c84ed6583b704b984b0c76c4863eef1cdda0ae85322b24e02b3f57c3e3740",
@@ -1257,8 +1273,8 @@
       "size": 130
     },
     "templates/components/picture.twig": {
-      "sha256": "21a4ac3997b849ae29452891b51682c44d7b8c53dd5425596bc63360e04cab11",
-      "size": 9813
+      "sha256": "1574fbad252b542bfcff2ca12ca755ccf2d807a331a6d3e36e3ba50f9f06aee3",
+      "size": 10499
     },
     "templates/components/resource-hints.twig": {
       "sha256": "75a075b8d36f751db4b843aff828359b91c75dfa27c9c091d86c01217f532f6a",
@@ -1395,6 +1411,10 @@
     "tests/php/Unit/ArrTest.php": {
       "sha256": "8f782b20a1f0e814e7cbc10b6c37d8e540cfb03b97304674fa797b39f8cb5abd",
       "size": 2283
+    },
+    "tests/php/Unit/DataExtensionImageHasTest.php": {
+      "sha256": "1f9c7b3563fa573a75bcbdc18726bd9ed1603c68c5c2aadccedff6e990e40994",
+      "size": 5414
     },
     "tests/php/Unit/DataLoaderItemsFromTest.php": {
       "sha256": "befecd4de444c02e2401c4c23151825d4acf41a2a7fcf8218527d77dc1e8adde",

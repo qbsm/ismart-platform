@@ -82,7 +82,7 @@ async function main() {
   }
 
   fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
-  console.log('images: манифест размеров записан в data/img/image-dimensions.json');
+  console.log('images: манифест размеров записан в assets/img/build/image-dimensions.json');
 }
 
 main().catch((err) => {

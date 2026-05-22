@@ -69,6 +69,8 @@ assets/css/build/*
 !assets/css/build/.gitkeep
 assets/js/build/*
 !assets/js/build/.gitkeep
+assets/img/build/*
+!assets/img/build/.gitkeep
 
 # Хешированные файлы сборки
 *.bundle.js

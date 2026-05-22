@@ -33,7 +33,7 @@ JSON-секция intro для `vertical` ссылается на `800` и `1600
 
 ## Decision
 
-Манифест `data/img/image-dimensions.json` уже перезаписывается с нуля при каждом `npm run build:images` и содержит запись для каждого реально сгенерированного `.webp` и `.avif`. Используем его как source of truth для шаблона.
+Манифест `assets/img/build/image-dimensions.json` уже перезаписывается с нуля при каждом `npm run build:images` и содержит запись для каждого реально сгенерированного `.webp` и `.avif`. Используем его как source of truth для шаблона.
 
 **Принципы:**
 1. **Build-time manifest** уже есть — не строим ещё одну машинерию.

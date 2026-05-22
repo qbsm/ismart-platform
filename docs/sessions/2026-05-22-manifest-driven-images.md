@@ -1,6 +1,6 @@
 # Сессия 2026-05-22 — Manifest-driven `<picture>` (ADR-0006)
 
-Реализация proposal 0001-manifest-driven-images: гейтинг `<source>` через `image_has()` на базе уже существующего `data/img/image-dimensions.json`. Попутно — fix CLS для абсолютных URL в `image_dimensions()`. Proposal удалён, мигрирован в ADR-0006.
+Реализация proposal 0001-manifest-driven-images: гейтинг `<source>` через `image_has()` на базе уже существующего `assets/img/build/image-dimensions.json`. Попутно — fix CLS для абсолютных URL в `image_dimensions()`. Proposal удалён, мигрирован в ADR-0006.
 
 ## Главное
 

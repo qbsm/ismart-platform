@@ -1,7 +1,7 @@
 // Image optimization & generation (config/image-sizes.json).
 // Sources: data/img/**/raw/ (JPG, PNG, WebP). Also JPG/PNG outside raw/ (legacy).
 // Output: WebP in 400/, 800/, 1280/, 1600/, 1920/, 2560/ subdirs.
-// Manifest: data/img/image-dimensions.json.
+// Manifest: assets/img/build/image-dimensions.json (рядом с asset/css-manifest).
 // Run: npm run build:images
 
 const path = require('path');
@@ -12,7 +12,8 @@ const sharp = require('sharp');
 const projectRoot = path.resolve(__dirname, '../..');
 const configPath = path.join(projectRoot, 'config/image-sizes.json');
 const imgDir = path.join(projectRoot, 'data/img');
-const manifestPath = path.join(imgDir, 'image-dimensions.json');
+const manifestDir = path.join(projectRoot, 'assets/img/build');
+const manifestPath = path.join(manifestDir, 'image-dimensions.json');
 
 function loadConfig() {
   const raw = fs.readFileSync(configPath, 'utf8');
@@ -160,6 +161,7 @@ async function main() {
     }
   }
 
+  fs.mkdirSync(manifestDir, { recursive: true });
   fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
   console.log('build:images: обработано файлов:', files.length, ', записей в манифесте:', Object.keys(manifest).length);
 }

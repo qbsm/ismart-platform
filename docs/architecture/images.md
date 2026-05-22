@@ -42,7 +42,7 @@ data/img/
 
 ## Manifest-driven контракт (ADR-0006)
 
-`data/img/image-dimensions.json` — **источник правды** для шаблона. Перезаписывается с нуля при каждом `npm run build:images` и содержит запись для каждого реально сгенерированного `.webp` и `.avif` файла.
+`assets/img/build/image-dimensions.json` — **источник правды** для шаблона. Перезаписывается с нуля при каждом `npm run build:images` и содержит запись для каждого реально сгенерированного `.webp` и `.avif` файла.
 
 `picture.twig` эмитит `<source>` и srcset items **только** для путей, присутствующих в манифесте. Защита от broken-AVIF при skip-upscale в build-images (raw меньше целевого ключа → файл не генерируется → JSON ссылается в пустоту → 404).
 

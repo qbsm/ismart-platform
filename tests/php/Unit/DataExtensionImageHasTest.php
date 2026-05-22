@@ -20,7 +20,7 @@ final class DataExtensionImageHasTest extends TestCase
     protected function setUp(): void
     {
         $this->tmpDir = sys_get_temp_dir() . '/ismart_image_has_' . bin2hex(random_bytes(4));
-        @mkdir($this->tmpDir . '/data/img', 0o755, true);
+        @mkdir($this->tmpDir . '/assets/img/build', 0o755, true);
     }
 
     protected function tearDown(): void
@@ -102,7 +102,7 @@ final class DataExtensionImageHasTest extends TestCase
 
         self::assertTrue($ext->imageHas('a.webp'));
         // Удаляем файл — но манифест уже в памяти, повторный вызов должен использовать кэш.
-        unlink($this->tmpDir . '/data/img/image-dimensions.json');
+        unlink($this->tmpDir . '/assets/img/build/image-dimensions.json');
         self::assertTrue($ext->imageHas('a.webp'));
     }
 
@@ -112,7 +112,7 @@ final class DataExtensionImageHasTest extends TestCase
     private function writeManifest(array $entries): void
     {
         file_put_contents(
-            $this->tmpDir . '/data/img/image-dimensions.json',
+            $this->tmpDir . '/assets/img/build/image-dimensions.json',
             (string) json_encode($entries),
         );
     }

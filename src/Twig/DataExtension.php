@@ -183,7 +183,7 @@ class DataExtension extends AbstractExtension
         if ($this->imageDimensionsManifest !== null) {
             return;
         }
-        $manifestPath = $this->baseDir . '/data/img/image-dimensions.json';
+        $manifestPath = $this->baseDir . '/assets/img/build/image-dimensions.json';
         $this->imageManifestExists = is_file($manifestPath);
         $this->imageDimensionsManifest = Json::load($manifestPath) ?? [];
     }
