@@ -4,6 +4,11 @@
  * MVP-классификация (см. docs/inventory/commit-baseline.md):
  *   - core-hotfix          — `fix:` коммит trogает файл из baseline manifest'а
  *   - recurring-topic      — один scope (`fix(seo)`) встретился в ≥2 deployments в окне
+ *   - component-pattern    — коммит затрагивает templates/sections/{X}.twig или
+ *                            assets/{css,js}/sections/{X}.{css,js} → группируется по section-имени;
+ *                            если в ≥2 deployments одна и та же секция активно правится →
+ *                            кандидат на extract в templates/components/ (см. memory
+ *                            feedback-core-proposals-in-baseline).
  *   - convention-violation — subject не соответствует Conventional Commits regex
  *   - skipped              — `sync(baseline)` / `chore(deps)` (служебные, не findings)
  *
@@ -28,6 +33,8 @@ export async function commitMiner(platformDir, deployments) {
   const manifestFiles = await loadManifestFiles(platformDir);
   const byDeployment = new Map();
   const findings = [];
+  // section-name → Map<deployment, commitCount>
+  const componentSections = new Map();
 
   for (const d of deployments) {
     const commits = collectCommits(d.path);
@@ -51,6 +58,14 @@ export async function commitMiner(platformDir, deployments) {
           coreFiles: c.files.filter(f => manifestFiles.has(f)).slice(0, 3),
         });
       }
+
+      // component-pattern: правки секций и компонентов фронта (Twig/CSS/JS)
+      // группируются по имени секции → паттерн = ≥2 deployments на одну секцию.
+      for (const sec of extractComponentSections(c.files)) {
+        if (!componentSections.has(sec)) componentSections.set(sec, new Map());
+        const m = componentSections.get(sec);
+        m.set(d.slug, (m.get(d.slug) || 0) + 1);
+      }
     }
 
     if (convViolations > 0) {
@@ -59,6 +74,19 @@ export async function commitMiner(platformDir, deployments) {
         type: 'convention-violation',
         count: convViolations,
         total: commits.filter(c => !c.skipped).length,
+      });
+    }
+  }
+
+  // Cross-deployment component-pattern: секция правится в ≥2 deployments.
+  for (const [section, slugs] of componentSections) {
+    if (slugs.size >= RECURRING_MIN_DEPLOYMENTS) {
+      findings.push({
+        type: 'component-pattern',
+        section,
+        deployments: [...slugs.keys()],
+        counts: Object.fromEntries(slugs),
+        total: [...slugs.values()].reduce((a, b) => a + b, 0),
       });
     }
   }
@@ -134,4 +162,24 @@ async function loadManifestFiles(platformDir) {
 function touchesCore(files, manifestFiles) {
   if (manifestFiles.size === 0) return false;
   return files.some(f => manifestFiles.has(f));
+}
+
+/**
+ * Извлекает имена секций/компонентов из списка изменённых файлов:
+ *   templates/sections/intro.twig   → "intro"
+ *   templates/components/card-news.twig → "card-news"
+ *   assets/css/sections/intro.css   → "intro"
+ *   assets/js/sections/intro.js     → "intro"
+ *   assets/css/components/card-news.css → "card-news"
+ *
+ * Возвращает Set имён (один коммит — одно вхождение каждой секции).
+ */
+function extractComponentSections(files) {
+  const sections = new Set();
+  const re = /^(?:templates|assets\/css|assets\/js)\/(?:sections|components)\/([a-z0-9_-]+)\.(twig|css|js)$/i;
+  for (const f of files) {
+    const m = f.match(re);
+    if (m) sections.add(m[1]);
+  }
+  return sections;
 }

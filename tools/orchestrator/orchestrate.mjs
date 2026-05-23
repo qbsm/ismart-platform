@@ -17,6 +17,7 @@ import { divergenceAudit } from './analyzers/divergence-audit.mjs';
 import { patternDetector } from './analyzers/pattern-detector.mjs';
 import { commitMiner } from './analyzers/commit-miner.mjs';
 import { opportunityTracker } from './analyzers/opportunity-tracker.mjs';
+import { analyzeDeploymentProposals, renderDeploymentProposalsSection } from './analyzers/deployment-proposals.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PLATFORM = resolve(__dirname, '../..');
@@ -57,6 +58,10 @@ async function main() {
   if (!only || only === 'commits') {
     console.log('▸ commit-miner...');
     results.commits = await commitMiner(PLATFORM, deployments);
+  }
+  if (!only || only === 'deployment-proposals') {
+    console.log('▸ deployment-proposals aggregator...');
+    results.deploymentProposals = await analyzeDeploymentProposals();
   }
   if (!only || only === 'opportunities') {
     console.log('▸ opportunity-tracker...');
@@ -158,6 +163,20 @@ function renderReport(results, date, deployments) {
       const recurring = results.commits.filter(f => f.type === 'recurring-topic').sort((a, b) => b.total - a.total);
       const coreHotfixes = results.commits.filter(f => f.type === 'core-hotfix');
       const convViolations = results.commits.filter(f => f.type === 'convention-violation');
+      const componentPatterns = results.commits.filter(f => f.type === 'component-pattern').sort((a, b) => b.total - a.total);
+
+      if (componentPatterns.length > 0) {
+        lines.push('### Component patterns (вёрстка/стили секций — кандидаты на extract в `templates/components/`)');
+        lines.push('');
+        lines.push('| Section | Total commits | Deployments |');
+        lines.push('|---|---|---|');
+        for (const p of componentPatterns) {
+          lines.push(`| \`${p.section}\` | ${p.total} | ${p.deployments.join(', ')} |`);
+        }
+        lines.push('');
+        lines.push('**Сигнал:** одна и та же секция/компонент правится в ≥2 deployments — кандидат на унификацию в `templates/components/` или общий `assets/css/components/`. Чем больше total — тем активнее эволюция.');
+        lines.push('');
+      }
 
       if (recurring.length > 0) {
         lines.push('### Recurring topics (cross-deployment)');
@@ -197,6 +216,11 @@ function renderReport(results, date, deployments) {
         lines.push('');
       }
     }
+  }
+
+  if (results.deploymentProposals) {
+    lines.push(renderDeploymentProposalsSection(results.deploymentProposals));
+    lines.push('');
   }
 
   if (Array.isArray(results.opportunities) && results.opportunities.length > 0) {
