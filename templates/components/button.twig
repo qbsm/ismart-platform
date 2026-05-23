@@ -1,6 +1,6 @@
 {% set content %}
   {{ item.title | raw }}
-  {% if item.icon is defined %}
+  {% if item.icon is defined and item.icon and item.icon.src is defined and item.icon.src %}
     <img src="{{ item.icon.src }}" alt="{{ item.icon.alt | default('') }}" class="button__icon {{ item.icon.class | default('') }}" loading="lazy">
   {% endif %}
 {% endset %}
