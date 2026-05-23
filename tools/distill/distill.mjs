@@ -20,7 +20,7 @@
  */
 
 import { writeFile, mkdir, readFile } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 import { join, relative, resolve, dirname } from 'node:path';
 import {
   PLATFORM_ROOT,
@@ -104,8 +104,10 @@ async function cmdStatus() {
   console.log();
   console.log(`baseline: ${PLATFORM_ROOT}  (${Object.keys(baseline).length} файлов)`);
   console.log();
-  console.log('deployment           | identical | drifted | unique | missing');
-  console.log('---------------------|-----------|---------|--------|--------');
+  console.log('deployment           | identical | drifted | unique | missing | orphan-overrides');
+  console.log('---------------------|-----------|---------|--------|---------|------------------');
+
+  const orphanReport = [];
 
   for (const name of SIBLING_DEPLOYMENTS) {
     const path = join(parent, name);
@@ -116,11 +118,49 @@ async function cmdStatus() {
     const dep = await buildManifest(path);
     const { identical, drifted, uniqueToDeployment, missingInDeployment } =
       compareManifests(baseline, dep);
+
+    // Orphan overrides: помечен в state.json::overrides, но файла на диске нет.
+    // Это тихо ломает функциональность — overrides предполагает что файл существует
+    // и не должен синхронизироваться, но при его отсутствии downstream-код использует
+    // дефолты или падает с непонятной ошибкой.
+    const statePath = join(path, '.distill', 'state.json');
+    const orphans = [];
+    if (existsSync(statePath)) {
+      try {
+        const state = JSON.parse(readFileSync(statePath, 'utf8'));
+        for (const file of Object.keys(state.overrides ?? {})) {
+          if (!existsSync(join(path, file))) {
+            orphans.push(file);
+          }
+        }
+      } catch {
+        // ignore — broken state.json shown elsewhere
+      }
+    }
+
     console.log(
-      `${name.padEnd(20)} | ${pad(identical.length, 9)} | ${pad(drifted.length, 7)} | ${pad(uniqueToDeployment.length, 6)} | ${pad(missingInDeployment.length, 7)}`,
+      `${name.padEnd(20)} | ${pad(identical.length, 9)} | ${pad(drifted.length, 7)} | ${pad(uniqueToDeployment.length, 6)} | ${pad(missingInDeployment.length, 7)} | ${pad(orphans.length, 16)}`,
     );
+
+    if (orphans.length > 0) {
+      orphanReport.push({ deployment: name, orphans });
+    }
   }
   console.log();
+
+  if (orphanReport.length > 0) {
+    console.log('⚠ Orphan overrides (помечен в state.json, но файла нет на диске):');
+    for (const { deployment, orphans } of orphanReport) {
+      console.log(`  ${deployment}:`);
+      for (const file of orphans) {
+        console.log(`    - ${file}`);
+      }
+    }
+    console.log();
+    console.log('  Это тихо ломает функциональность. Восстановите файл или удалите override через');
+    console.log('  ручную правку .distill/state.json (после анализа: реально ли он нужен deployment\'у).');
+    console.log();
+  }
 }
 
 const pad = (n, w) => String(n).padStart(w);
