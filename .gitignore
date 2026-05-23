@@ -119,10 +119,6 @@ public/assets
 public/data
 public/robots.txt
 
-# Архивная копия master
-kumho-tires.ru-master/
 
-# Крупные медиа-файлы, не коммитим в репозиторий
-data/img/tires/
-data/img/restaurants/
-data/img/restaurants-list/
+# Контентные медиа-файлы лежат в git (full dataset).
+# Не добавлять сюда data/img/<section>/ — см. memory/project_full_media_in_git.
