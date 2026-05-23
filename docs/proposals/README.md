@@ -25,6 +25,24 @@ NNNN-короткий-slug.md
 ## Жизненный цикл
 
 ```
-Proposal (готов и обкатан) → review → принят → ADR (decisions/) + код в baseline → дистилляция в deployment'ы
-                                  → отклонён → удалён / архивирован
+Proposal (Proposed) → review → принят → ADR (decisions/) + код в baseline → дистилляция в deployment'ы
+                            → отклонён → Status: Rejected (НЕ удаляется)
+                            → заменён    → Status: Superseded by proposals/NNNN-*.md
 ```
+
+### Статусы
+
+В шапке файла обновляется `Status:`:
+
+- `Status: Proposed` — на review
+- `Status: Migrated to ADR-XXXX` — после принятия и миграции в ADR (ссылка на ADR)
+- `Status: Superseded by proposals/NNNN-*.md` — заменён другим proposal'ом
+- `Status: Rejected` — отклонён, с reason в начале файла
+
+### Важно: НЕ удалять proposal после миграции
+
+Proposal — это **обсуждение и альтернативы review-этапа**, ADR — **финальное решение**. Их сохранение даёт ответ на вопрос «почему именно так?» через месяцы, видны отвергнутые варианты, контекст.
+
+При `git rm` proposal'а теряется ход дискуссии. После принятия — обновляется только `Status:`, тело остаётся как архив.
+
+Соглашение зафиксировано в memory `feedback-proposals-lifecycle`.
