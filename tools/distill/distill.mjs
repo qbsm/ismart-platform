@@ -328,8 +328,11 @@ async function cmdSync(deploymentPath, opts) {
     // Brand-specific (deployment-only)
     'config/project.php', 'config/llms-full.php', 'config/llms-full.php.dist',
     'config/project.php.dist',
-    'data/', 'assets/css/sections/', 'assets/css/pages/',
-    'assets/js/sections/', 'assets/js/pages/',
+    'data/',
+    // ADR-0009: вёрсточные ассеты целиком deployment-local. Точечный sync
+    // через `--only=assets/js/components/X/` для архитектурных модулей
+    // (form-callback, picture, etc) — explicit operation.
+    'assets/',
     'templates/sections/', 'templates/pages/',
     // Runtime / per-deployment
     '.distill/', '.env', '.env.example', '.gitconfig',
@@ -351,10 +354,15 @@ async function cmdSync(deploymentPath, opts) {
   ];
   const isSkipped = (rel) => {
     if (overrides.has(rel)) return 'override';
+    // --only=<prefix> применяется ДО SKIP_PREFIXES — позволяет explicit pull
+    // конкретной подпапки даже если она в default skip-list (ADR-0009 §
+    // «Точечный sync — по запросу»).
+    if (opts.only) {
+      return rel.startsWith(opts.only) ? null : 'not in --only';
+    }
     for (const prefix of SKIP_PREFIXES) {
       if (rel === prefix || rel.startsWith(prefix)) return 'brand-specific';
     }
-    if (opts.only && !rel.startsWith(opts.only)) return 'not in --only';
     return null;
   };
 
