@@ -1,8 +1,8 @@
 {
   "$schema": "https://ismart.pro/schemas/distill-manifest-v1.json",
   "platform_version": "1.0.0",
-  "generated_at": "2026-05-22T15:33:52.103Z",
-  "file_count": 403,
+  "generated_at": "2026-05-22T23:57:58.441Z",
+  "file_count": 409,
   "files": {
     ".editorconfig": {
       "sha256": "3770f26fa30ba598d2441a3aaac94303070444d8798188381c4ce30a854519e9",
@@ -97,8 +97,8 @@
       "size": 454
     },
     ".phpunit.cache/test-results": {
-      "sha256": "83b20791c31894de768e6897d58fefa72c3d7bc408d1ac0d1536c9c0f0438421",
-      "size": 8755
+      "sha256": "f18a07f7f43310ecdae30b2967bbaa937234e01b87b3d9067200097b2dc01244",
+      "size": 9630
     },
     ".prettierignore": {
       "sha256": "4e5c2c63d415377a1ea46d32232fe9236fbc424b8e45e1a2c590d68b35f76d1d",
@@ -740,6 +740,10 @@
       "sha256": "933cfbbd6382995043e378dbcd50ed317eea2a1bc0f55c54f4c7ae814a2260e1",
       "size": 8314
     },
+    "docs/architecture/decisions/0007-raw-source-picture.md": {
+      "sha256": "d3a08b1e30671c8fac6d89f56f47e7da7b7b9624de25ce5e716a6a7ddd6e9c42",
+      "size": 8279
+    },
     "docs/architecture/distillation.md": {
       "sha256": "6f61c26ea98f73b7a3eef10af6daae033883ea0308934ebbc46acc64f7e8eb52",
       "size": 21543
@@ -952,6 +956,10 @@
       "sha256": "88b785fe765c2447cb4278f6a7f5b617cc93587c670a2b479811adb2d7578e5f",
       "size": 4777
     },
+    "docs/sessions/2026-05-22-raw-source-picture.md": {
+      "sha256": "e3797f0a058ea723a85911b74ac282d81808aa728a459951d782c0ae1c04e806",
+      "size": 6548
+    },
     "eslint.config.js": {
       "sha256": "fcf7db63f14a7ee61bdd66469a6f4b870163b4c911fd705f05c75437379b4c24",
       "size": 914
@@ -993,8 +1001,8 @@
       "size": 679
     },
     "src/Action/PageAction.php": {
-      "sha256": "56bad4717598cff4924c2b66ae40ae972d086d3ffd788ca9ded87687183f8ad6",
-      "size": 18574
+      "sha256": "67c9076891ee3267d4efa9d566a67b7126c306ffbf47bbe56656b2e525d69836",
+      "size": 19463
     },
     "src/Action/SitemapAction.php": {
       "sha256": "ee8a34044a59868e6a0993a0f362602e390a74ca18fb6bde4ca37d8d7b325c30",
@@ -1149,8 +1157,8 @@
       "size": 4195
     },
     "src/Twig/DataExtension.php": {
-      "sha256": "da83de1864ecd35d80beb0aa1b8e35a36de00042533e32d2b1b8ce4daadcd113",
-      "size": 7668
+      "sha256": "4f2585f2b4fb40ea2f7c9cf96050eec5e82704ba5429ce8feafce59b8b9d7a61",
+      "size": 12392
     },
     "src/Twig/UrlExtension.php": {
       "sha256": "fa8c84ed6583b704b984b0c76c4863eef1cdda0ae85322b24e02b3f57c3e3740",
@@ -1217,8 +1225,8 @@
       "size": 604
     },
     "templates/components/card-news.twig": {
-      "sha256": "55dd1c1343116dca737fa58518dd1bf83dd56ef7a0c995b413c213df4f1313bd",
-      "size": 1467
+      "sha256": "94b18e13f56763d241a5237520207b272e45bc959d1f387c1c64243545e07319",
+      "size": 2367
     },
     "templates/components/card-number.twig": {
       "sha256": "d8a1a0e596a7ed780ca824fa41bf6c9a9e63d8dccdb70abadd4d4d8404a271d8",
@@ -1277,8 +1285,8 @@
       "size": 130
     },
     "templates/components/picture.twig": {
-      "sha256": "1574fbad252b542bfcff2ca12ca755ccf2d807a331a6d3e36e3ba50f9f06aee3",
-      "size": 10499
+      "sha256": "403520fef55034182a5cf2220a98d07526c7d862df8e8e0345f344d5f7834e1b",
+      "size": 16372
     },
     "templates/components/resource-hints.twig": {
       "sha256": "75a075b8d36f751db4b843aff828359b91c75dfa27c9c091d86c01217f532f6a",
@@ -1420,6 +1428,10 @@
       "sha256": "620ad42a30bd4cc7e7d82a583b5e8c6fcd20f3a1578c8d1bd4124f423ac38fc2",
       "size": 5438
     },
+    "tests/php/Unit/DataExtensionImageVariantsTest.php": {
+      "sha256": "56844a7d9d7238806a9aeb27433cb59609a9be6aa4053d0b041a575a0d4c1339",
+      "size": 8212
+    },
     "tests/php/Unit/DataLoaderItemsFromTest.php": {
       "sha256": "befecd4de444c02e2401c4c23151825d4acf41a2a7fcf8218527d77dc1e8adde",
       "size": 7454
@@ -1488,6 +1500,10 @@
       "sha256": "f237ec825462bc2310e4dad5a3caa946f8b866631db6c53cdb46447f9305a438",
       "size": 5919
     },
+    "tools/build/images-plan.js": {
+      "sha256": "b36447bdec4ba5128993c17ccbcb857e7ed1850d55fd3198dcdd4cbb8c4da40f",
+      "size": 4284
+    },
     "tools/build/images.js": {
       "sha256": "3f29db8ec89c03125a100e7b787a4ed932b2162013bdfdf684a5f6fa35879a9e",
       "size": 3013
@@ -1515,6 +1531,14 @@
     "tools/distill/lib.mjs": {
       "sha256": "97a5abe8f5e3274a525069d70cb2877042026d6f6ff5d33f8baa58720b4168e7",
       "size": 7334
+    },
+    "tools/migrate/json-to-raw-paths.js": {
+      "sha256": "cdf21970c6224fac385f99d294f0f7bcd9738eadd5d9116d9435d405992c1ee9",
+      "size": 7701
+    },
+    "tools/migrate/sources-to-raw.js": {
+      "sha256": "1aa5920f85abd0fe81dcaa215b2197bf53bb809f8eb129bc66c3bf21d9dc9ac7",
+      "size": 7586
     },
     "tools/ops/__pycache__/normalize-tire-temperature.cpython-313.pyc": {
       "sha256": "033218ebad9f736326c30e8f619a3685b8bc04deef798b3b21fb9576e59d67af",
