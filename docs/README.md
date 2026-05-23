@@ -1,107 +1,115 @@
 # docs — документация iSmart Platform
 
-Документация платформы организована по типам содержимого. Принцип: **разное живёт отдельно**.
+Документация платформы разделена на два уровня (ADR-0008):
 
-## Структура
+1. **Baseline (`ismart-platform/docs/`)** — canonical: ADR, baseline proposals, architecture, conventions.
+2. **Deployment (`<deployment>/docs/`)** — каждый kumho/italy/beepitron/… имеет свой набор session logs и proposals.
+
+См. [ADR-0008](architecture/decisions/0008-multi-deployment-docs.md) — обоснование структуры и flow.
+
+## Структура baseline (этого репо)
 
 ```
 docs/
-  architecture/                # стратегия, эталонные документы, ADR
-    distillation.md              # стратегия дистилляции (центральный документ)
-    platform-reference.md        # эталонная архитектура (Slim 4 + Twig + JSON-контент)
-    structure.md                 # схема файлов и папок
-    config.md                    # как устроена конфигурация
-    images.md                    # обработка изображений
-    admin-requests-security.md   # безопасность форм
-    headings-hierarchy-check.md  # семантическая иерархия H1-H6
-    performance-metrics.md       # перф-метрики
-    workflow-orchestration.md    # будущее n8n + Django (этапы 2-5)
-    decisions/                   # Architecture Decision Records (ADR)
-      0001-static-utilities-vs-services.md
-      0002-photoroom-out-of-baseline.md
+  architecture/                # эталонная архитектура (статика)
+    decisions/                 # ADR — финальные архитектурные решения, единый ряд
+      NNNN-*.md
+    distillation.md            # стратегия дистилляции
+    platform-reference.md      # эталонная архитектура (Slim 4 + Twig + JSON-контент)
+    structure.md, config.md, images.md, ...
+
+  proposals/                   # baseline proposals (cross-deployment темы)
+    NNNN-*.md                  # статусы: Proposed | Migrated to ADR-NNNN | Rejected | Superseded
+
+  sessions/                    # baseline-уровень сессии (ядро, инструменты, общие фиксы)
+    YYYY-MM-DD-<topic>.md
 
   conventions/                 # как пишем код
-    best-practices.md            # принципы (минимализм, type-safety, immutability)
-    naming.md                    # PHP: имена классов/папок (Action/Service/Middleware/Support)
-    html-naming.md               # HTML: классы, идентификаторы, атрибуты
-    css-naming.md                # CSS: структура файлов, BEM-подобная схема, sections vs components
-    js-naming.md                 # JS: селекторы, модули, глобальные объекты
-    twig-naming.md               # Twig: секции, переменные, подключения
-    json-naming.md               # JSON: структура страниц и data-файлов
-    git.md                       # Git: ветки (feat/fix/refactor/...), Conventional Commits, PR, tags
-    env-vars.md                  # ENV: SCREAMING_SNAKE_CASE, префиксы (APP_/MAIL_/...), .env.example
-    routes-and-urls.md           # URLs: kebab-case slug, trailing slash, /api/* vs /{page}/
+    git, naming (PHP/HTML/CSS/JS/Twig/JSON), env-vars, routes-and-urls
 
-  guides/                      # how-to и policies
-    page-add.md                  # как добавить новую страницу
-    seo-add.md                   # как добавить SEO для страницы
-    local-setup.md               # локальная настройка
-    deploy-checklist.md          # чек-лист релиза
-    geo-strategy.md              # GEO для AI-поисковиков
-    data-json-structure.md       # структура data/json/
-    dependencies-policy.md       # как добавляются и обновляются зависимости
-    backup-policy.md             # бэкапы
-    content-versioning.md        # версионирование контента
-    accessibility.md             # a11y чек-лист
-    fonts-audit.md               # ревизия подключения шрифтов
-    form-callback-plan.md        # план реализации формы обратной связи
-    images-lazy-loading.md       # lazy-loading изображений
-    logging.md                   # логирование (Monolog, JSON-формат)
-    metrics-goals.md             # цели метрики/аналитики
-    secrets-cicd.md              # секреты в CI/CD
+  guides/                      # how-to: добавить страницу, добавить SEO, локальная настройка, ...
 
   api/                         # API-контракты
-    form-send.md                 # POST /api/send
-    send-contract.md             # формат тела + ответа
+    send.md                    # POST /api/send (объединённый, был form-send + send-contract)
 
-  inventory/                   # автогенерируемые отчёты о текущем состоянии
-    core.md                      # таблица ядра + статус во всех deployments (npm run distill:inventory)
+  inventory/                   # автогенерируемые отчёты
+    core.md                    # таблица ядра + статус во всех deployments
+    deployments.md             # реестр deployments
+    commit-baseline.md         # статистика истории
 
-  notes/                       # живой журнал
-    improvements.md              # applied changes + open opportunities + patterns
+  notes/                       # живой журнал и migrations
+    improvements.md
+    migrations/
 
-  sessions/                    # ключевые моменты по сессиям работы
-    2026-05-20-distillation.md   # дистилляция baseline из 3 проектов + CLI distill
+  orchestrator/                # orchestrator pipeline + отчёты
+    opportunities.md
+    health-{date}.md
+    improvements-{date}.md
+
+  proposals/README.md          # описание lifecycle (Proposed → ADR / Rejected / Superseded)
+
+  roles/                       # роли компонентов системы (контракт: что делает / не делает)
+    README.md
+    orchestrator.md            # перенесено из architecture/orchestrator-role.md
 ```
 
-## Когда что куда писать
+## Структура deployment (kumho/italy/beepitron)
+
+В каждом deployment'е:
+
+```
+docs/
+  README.md                    # описание flow и ссылки на baseline ADR
+  sessions/                    # локальные сессии работы с deployment
+    YYYY-MM-DD-<topic>.md
+  proposals/                   # deployment-инициированные предложения
+    NNNN-<topic>.md            # нумерация локальная, статус → ADR в baseline
+```
+
+Deployment **не пишет** ADR — только proposals. После migration baseline'ом deployment proposal получает `Status: Migrated to baseline ADR-NNNN`.
+
+## Куда что писать
 
 | Тип записи | Куда |
 |---|---|
-| Новое архитектурное решение или эталон | `architecture/` (если стратегия) или `architecture/decisions/NNNN-*.md` (если ADR) |
-| Снимок текущего drift / inventory | `inventory/` — генерируется CLI, не правится руками |
-| Договорённость по стилю/нейму/тестам | `conventions/` |
-| How-to: как сделать N в существующей платформе | `guides/` |
-| API-контракт (request/response, headers) | `api/` |
-| Заметка о найденном дубле или отложенной задаче | `notes/improvements.md` |
-| Ключевые моменты длительной рабочей сессии | `sessions/YYYY-MM-DD-<topic>.md` |
-| Архитектурное решение, требующее обоснования и альтернатив | новый ADR в `architecture/decisions/` |
+| Архитектурное решение, обоснование и альтернативы (cross-deployment) | новый ADR в `architecture/decisions/NNNN-*.md` (baseline) |
+| Идея/паттерн от конкретного deployment'а | `<deployment>/docs/proposals/NNNN-*.md` |
+| Cross-deployment proposal после агрегации deployment proposals | `proposals/NNNN-*.md` (baseline) |
+| Сессия работы с ядром/инструментами/общими фиксами | `sessions/YYYY-MM-DD-*.md` (baseline) |
+| Сессия фикса вёрстки/контента конкретного deployment'а | `<deployment>/docs/sessions/YYYY-MM-DD-*.md` |
+| Конвенция (стиль кода, нейминг) | `conventions/` (baseline) |
+| Как сделать X в платформе (how-to) | `guides/` (baseline) |
+| API-контракт | `api/` (baseline) |
+| Снимок drift / inventory | `inventory/` — генерируется CLI |
+| Описание роли компонента системы | `roles/<name>.md` (baseline) |
+| Найденный дубль / отложенная задача | `notes/improvements.md` (baseline) |
+| Orchestrator-отчёт / opportunity | `orchestrator/` (baseline) |
 
-## ADR (Architecture Decision Records)
-
-Формат каждого ADR:
+## ADR — формат
 
 ```markdown
 # ADR-NNNN: <короткое имя решения>
 
-**Status**: Accepted | Proposed | Superseded | Deprecated
+**Status**: Accepted | Proposed | Superseded by ADR-XXXX | Deprecated
 **Date**: YYYY-MM-DD
+**Supersedes**: docs/proposals/NNNN-*.md (опционально)
 
 ## Context
-<что заставило принимать решение>
-
 ## Decision
-<что выбрали>
-
 ## Consequences
-<плюсы и минусы>
-
-## Alternatives considered
-<какие варианты отвергли и почему>
+## Решения, оставленные на потом (опционально)
+## References
 ```
 
-Нумерация — последовательная (`0001`, `0002`, ...). При замене старого решения новый ADR ссылается на старый и помечает его `Superseded`.
+Нумерация — последовательная (`0001`, `0002`, …). При замене старого решения новый ADR ссылается на старый через `Supersedes` / помечает старый `Superseded by ADR-XXXX`.
 
-## Корневые файлы (`/README.md`, `/CLAUDE.md`)
+## Proposals lifecycle
 
-Остаются в корне репозитория, потому что это **точки входа**: README.md — для людей, CLAUDE.md — для Claude Code. Они короткие и ссылаются на `docs/` для деталей.
+См. [`proposals/README.md`](proposals/README.md). Кратко:
+
+- **НЕ удалять** proposal после миграции — обновлять `Status:`.
+- Статусы: `Proposed` / `Migrated to ADR-NNNN` / `Superseded by proposals/NNNN-*.md` / `Rejected`.
+
+## Корневые файлы
+
+`/README.md` (для людей), `/CLAUDE.md` (для Claude Code) — точки входа, ссылаются на `docs/` для деталей.
