@@ -334,8 +334,16 @@ async function cmdSync(deploymentPath, opts) {
     // Runtime / per-deployment
     '.distill/', '.env', '.env.example', '.gitconfig',
     '.phpunit.cache/', '.php-cs-fixer.cache',
-    // Documentation (deployment может вести свои docs/sessions/notes)
-    'docs/', 'README.md', 'CLAUDE.md', 'CHANGELOG.md',
+    // Documentation: общие справочники (conventions/guides/api/architecture/roles/decisions)
+    // синкаются в deployments как read-only зеркало baseline-документации.
+    // Deployment-local и baseline-only — НЕ синкаем:
+    'docs/sessions/',     // baseline-уровень sessions; deployment ведёт свои в <deployment>/docs/sessions/
+    'docs/proposals/',    // baseline-уровень proposals; deployment ведёт свои в <deployment>/docs/proposals/
+    'docs/README.md',     // deployment имеет свой README (описание deployment-flow)
+    'docs/inventory/',    // baseline-generated отчёты
+    'docs/notes/',        // baseline-only журнал
+    'docs/orchestrator/', // baseline-generated reports + role
+    'README.md', 'CLAUDE.md', 'CHANGELOG.md',
     // Tests (deployment может иметь свои интеграционные тесты)
     'tests/',
     // Manifest/locks

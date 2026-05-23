@@ -1,8 +1,8 @@
 {
   "$schema": "https://ismart.pro/schemas/distill-manifest-v1.json",
   "platform_version": "1.0.0",
-  "generated_at": "2026-05-22T23:57:58.441Z",
-  "file_count": 409,
+  "generated_at": "2026-05-23T23:26:11.253Z",
+  "file_count": 429,
   "files": {
     ".editorconfig": {
       "sha256": "3770f26fa30ba598d2441a3aaac94303070444d8798188381c4ce30a854519e9",
@@ -13,8 +13,8 @@
       "size": 1575
     },
     ".gitignore": {
-      "sha256": "f30c88315c8cbc05604991691fc560303ab91eba3a593b2c8bca7ba262471cf1",
-      "size": 2714
+      "sha256": "e953329644282b5fdecce4a9366b16db20dc075094c149ac9c96064ce4924c26",
+      "size": 2679
     },
     ".htaccess": {
       "sha256": "c10a842f0bb8c79494656fa06916c12c978ce04d0bc0ca03be589bc4181d3535",
@@ -697,16 +697,20 @@
       "size": 326
     },
     "docs/README.md": {
-      "sha256": "722c4b84146acd2cbbf2a5185a6cf18030eb1d17113ca99a333717841bd69c30",
-      "size": 6521
+      "sha256": "f6de858679bc7e8f2c317f9e00de2fc7cb59920200ff8fbefaac478dd5e673e9",
+      "size": 5917
     },
-    "docs/api/form-send.md": {
+    "docs/api/README.md": {
+      "sha256": "673dd9b73a78ab3b38345144f55f2f8fc64e62d36b3937098c778e14a93ebff8",
+      "size": 530
+    },
+    "docs/api/send.md": {
       "sha256": "979aa138faaa9ce71ba3bca340337ba97e9b5f9e8227b98b84bef510707bf28e",
       "size": 3145
     },
-    "docs/api/send-contract.md": {
-      "sha256": "e696acf97c639da4e4a5f55b528ee12c25c5ca40b93c01e0769956ac5b8fd422",
-      "size": 5118
+    "docs/architecture/README.md": {
+      "sha256": "36b5c0a7b150181564b0d0bb0a8b43a81b8f3dcfddedfe114ddb8778dc3c2ebd",
+      "size": 1869
     },
     "docs/architecture/admin-requests-security.md": {
       "sha256": "72b22a2f81694f0c06454473b816fd27c012d3d1002731b42bd7b498d6e36e9c",
@@ -744,6 +748,14 @@
       "sha256": "d3a08b1e30671c8fac6d89f56f47e7da7b7b9624de25ce5e716a6a7ddd6e9c42",
       "size": 8279
     },
+    "docs/architecture/decisions/0008-multi-deployment-docs.md": {
+      "sha256": "56049efb96ad47b01787c689939a21d7b37b8b1ed9999e9aa3d6b234c25e0023",
+      "size": 5605
+    },
+    "docs/architecture/decisions/README.md": {
+      "sha256": "25241a3e08d16a7ef9f4a533281bfa95dc85950026b6a8550e77034361c5aa19",
+      "size": 1667
+    },
     "docs/architecture/distillation.md": {
       "sha256": "6f61c26ea98f73b7a3eef10af6daae033883ea0308934ebbc46acc64f7e8eb52",
       "size": 21543
@@ -760,10 +772,6 @@
       "sha256": "dc88455ce3a2de69d77088c1c35f344ea06b3cd75011f65784144387085771c3",
       "size": 5251
     },
-    "docs/architecture/orchestrator-role.md": {
-      "sha256": "5c38f46f2d7b5ab05c55d5e86a4ecf0fd542c98513253a6a6ea3f4db3c457e96",
-      "size": 17184
-    },
     "docs/architecture/performance-metrics.md": {
       "sha256": "85a5cc132a812ee3ecf3eb3f4c59d935aa86ec380c2622c9878e8651b283fbab",
       "size": 1176
@@ -779,6 +787,10 @@
     "docs/architecture/workflow-orchestration.md": {
       "sha256": "bbcca5dfc86ba21fd6215bb52849e5ce4e7f6404e07a9aba5a3dec0b5e4f6db3",
       "size": 2353
+    },
+    "docs/conventions/README.md": {
+      "sha256": "14bdb140a62491e8d26a6d46123412e88917428d3aef52a05e98cfec6a037277",
+      "size": 1509
     },
     "docs/conventions/best-practices.md": {
       "sha256": "54c90fe97deb3683da35b443602a97e31eacfb5cbc7606f12cae5daf1ae79f4a",
@@ -819,6 +831,10 @@
     "docs/conventions/twig-naming.md": {
       "sha256": "c71ad7b479f02acacc06bbd6ae2489f5d2e4df2646c7aa6c93df4ee7634df5f4",
       "size": 9567
+    },
+    "docs/guides/README.md": {
+      "sha256": "bed896a2b7b189d924e5946be125c04d0fdc41201667605893eafa06cc1e9eb9",
+      "size": 2096
     },
     "docs/guides/accessibility.md": {
       "sha256": "425093dc1b032a3068fd0735e2d4da285ca245d52e1cd98243e52149fd4b4277",
@@ -884,6 +900,10 @@
       "sha256": "abda109a08c04cae1d26bc9d87f56edde3540bebf88261849fa04173d722a3d3",
       "size": 14152
     },
+    "docs/inventory/README.md": {
+      "sha256": "1d3712c634a137fa0ae0de66e0e107f878f846c58b760ae36cb9f54238dc3611",
+      "size": 1260
+    },
     "docs/inventory/commit-baseline.md": {
       "sha256": "3198c91ff3dd89850115675a6d25bdaf20d4d042b0f3b3ef3e992f9ba62fec2a",
       "size": 5322
@@ -896,9 +916,17 @@
       "sha256": "de568d1a92910863d39084d2ee8a13606eab249b501d2347884e136ed2e55b64",
       "size": 10767
     },
+    "docs/notes/README.md": {
+      "sha256": "803c4ec051e7deb5dc1d047c493a7f05bad06e25704b243a7f9a728d798cb301",
+      "size": 1095
+    },
     "docs/notes/improvements.md": {
       "sha256": "cc335196edf3a6650ec3b86618433e571c19df8dcc64659534718413eb39ab51",
       "size": 11627
+    },
+    "docs/notes/migrations/README.md": {
+      "sha256": "d9461a5fc762e019a5a560b3b5a92d8e55f84f55d4e1e08746d7c00b5847455b",
+      "size": 924
     },
     "docs/notes/migrations/legacy-boilerplate-to-baseline.md": {
       "sha256": "68029a25c79adf169ecf040bf865b302274a42f717eca53912a925ada6ce62c2",
@@ -912,6 +940,10 @@
       "sha256": "dd1eb7e9cbe637771dd693c9fa1e65bd76feafe76d2d66c1729bd8f58170306d",
       "size": 23112
     },
+    "docs/orchestrator/README.md": {
+      "sha256": "9f5aebc8100bf9b383de2a78c12884521a5bfcee5c3c99c956db6dca074c6fe3",
+      "size": 1428
+    },
     "docs/orchestrator/health-2026-05-21.md": {
       "sha256": "41ef0a4aa7f086dd1af98bbecddc05823ed9ad4866ec77d46b2810d85e5b6bfb",
       "size": 19600
@@ -924,17 +956,49 @@
       "sha256": "8a74970328672344ff9efa0f64d2e9f7e50be4be97bcfaa0eb607adba2d7cfb3",
       "size": 7657
     },
+    "docs/proposals/0001-notification-channel-dispatcher.md": {
+      "sha256": "544ba62f3bee33bb039c85c320f55f02a157d19a291a4e5ce6d4fe54609e9dc2",
+      "size": 17498
+    },
     "docs/proposals/0002-card-gradient-animated-covers.md": {
       "sha256": "136007b63d9d83d8ca535047d18c19a037f56bde2e3130e452b52f2c085fc0b7",
       "size": 16941
     },
+    "docs/proposals/0003-raw-source-picture.md": {
+      "sha256": "0d4a8f564ba6618003c7a77699b1382d310010a4aa011656c622712d86873f15",
+      "size": 2520
+    },
+    "docs/proposals/0004-public-symlinks-security.md": {
+      "sha256": "843603af3195607758313f7503ea5eba3272d8d07ea39cf261fcf5f9620c5512",
+      "size": 5885
+    },
+    "docs/proposals/0005-deployment-asset-entrypoints.md": {
+      "sha256": "e8a2013dcd9a712aa6c4f0f68cb3a72af11793a006819d9f80791459b00cd1cd",
+      "size": 5143
+    },
+    "docs/proposals/0006-manifest-driven-images.md": {
+      "sha256": "b55ec55cbefe08f8e240eb30af9344d453b4ebd58f453f6a3e5eee4b444280b8",
+      "size": 2768
+    },
+    "docs/proposals/0007-data-driven-form-validation.md": {
+      "sha256": "b01cf11538172033c485bcf0a603648fe85d57d400faaa4454c6c49870b21a1a",
+      "size": 5418
+    },
+    "docs/proposals/0008-multi-deployment-docs.md": {
+      "sha256": "54916c6c17c0d067a15b043ec2f231016abb371fe07c6ad58da7a0b14072374b",
+      "size": 6933
+    },
     "docs/proposals/README.md": {
-      "sha256": "062b266da27c0cdbe56bfbfe07ddfa618c3143c138c993b0c6ac52398376a689",
-      "size": 2294
+      "sha256": "353679a8a0149ac3aae72f9907c981d7ed81d119a84ca6e0477782036ac9f878",
+      "size": 3474
     },
     "docs/roles/README.md": {
       "sha256": "af0322c7abba1f34685a805f2d82258ac3761364c7672c46dd7f9acbb263fa9c",
       "size": 2742
+    },
+    "docs/roles/orchestrator.md": {
+      "sha256": "5c38f46f2d7b5ab05c55d5e86a4ecf0fd542c98513253a6a6ea3f4db3c457e96",
+      "size": 17184
     },
     "docs/sessions/2026-05-20-distillation.md": {
       "sha256": "e9edb36292327c89498aa9f76aee1375219bacc1ff264b33508fbaa7510c8ec2",
@@ -959,6 +1023,18 @@
     "docs/sessions/2026-05-22-raw-source-picture.md": {
       "sha256": "e3797f0a058ea723a85911b74ac282d81808aa728a459951d782c0ae1c04e806",
       "size": 6548
+    },
+    "docs/sessions/2026-05-24-docs-refactor.md": {
+      "sha256": "42b6f50993238e9c8e220cbace455da653f307028bdb2e2db3652d76f07c0ec6",
+      "size": 4717
+    },
+    "docs/sessions/2026-05-24-orphan-overrides-detector.md": {
+      "sha256": "f6f22b67b7ec700568eeff1dae966188a76779fd8b6bf48eb479a9fdd88a5945",
+      "size": 3355
+    },
+    "docs/sessions/README.md": {
+      "sha256": "15f5b5010d564efbf83f065370aff420d4239a3a5f9877bbcf172acd113a0c5e",
+      "size": 1467
     },
     "eslint.config.js": {
       "sha256": "fcf7db63f14a7ee61bdd66469a6f4b870163b4c911fd705f05c75437379b4c24",
@@ -1201,8 +1277,8 @@
       "size": 1078
     },
     "templates/components/button.twig": {
-      "sha256": "311dbcf557c1b0f0f7ca229409c91a99c6de4f72dfecb83f87d6a5c01ce733a9",
-      "size": 857
+      "sha256": "cc966316aa4b5fde1ec7992b4df2877911043af9ce90b837503a411c3bc71120",
+      "size": 918
     },
     "templates/components/card-action.twig": {
       "sha256": "2f307e96b4c9e29def6de3b4b79b42af9ea25467db42f0b5c8cc7048b9f63e91",
@@ -1525,8 +1601,8 @@
       "size": 8293
     },
     "tools/distill/distill.mjs": {
-      "sha256": "ae6180eb5c80ca91f65bae8e0958d445ed5b66023ae5b5bb0cab4eafdbb892a4",
-      "size": 19924
+      "sha256": "07f1f0b15812d66093321472a99f0869f24126b4f4283e5c730ce53a3634a7ff",
+      "size": 22463
     },
     "tools/distill/lib.mjs": {
       "sha256": "97a5abe8f5e3274a525069d70cb2877042026d6f6ff5d33f8baa58720b4168e7",
@@ -1587,6 +1663,10 @@
     "tools/orchestrator/analyzers/data-flow-audit.mjs": {
       "sha256": "af83643ea08171f774ce1a589625edb1e9b82c661c092c5bc2851cfdc06151e0",
       "size": 3181
+    },
+    "tools/orchestrator/analyzers/deployment-proposals.mjs": {
+      "sha256": "e5277b5f811100aa418e72eda4f9849a38aeedcf1d2a107213976259d7a3c7cd",
+      "size": 5364
     },
     "tools/orchestrator/analyzers/divergence-audit.mjs": {
       "sha256": "82029844182e887a857ccba900cc5aac5efdaab50a96944b93b7c3492f35c2d6",
