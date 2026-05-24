@@ -90,6 +90,8 @@ Templates — defensive: `{{ (data.heading.title|default(data.heading))|raw }}`.
 | ❌ | ✅ |
 |---|---|
 | `item.images[0]` (object) в `url('{{...}}')` → "Array to string" | `item.images[0].src\|default('')` |
+| `tire.desc.full\|default(tire.desc)` где `desc` = dict `{short,full}` и `full` пустой → `default` падает на **сам dict** → "Array to string" | `tire.desc is iterable ? tire.desc.full\|default('') : tire.desc\|default('')` |
+| `url(global.policy)` где `policy` = объект/массив → `UrlExtension TypeError (array given)` | `{% set href = global.policy.href\|default(global.policy is iterable ? '/privacy-policy' : global.policy) %}` |
 | `item.cover` на top-level entity, а PageAction inject ждёт `entity.item.cover` | класть cover в `entity.item.cover` |
 | PageAction flat default `'cover' => ['src'=>'']` → array | twig guard `cover is iterable ? cover.src : cover` |
 | cover на корне `data/img/X/Y.webp` — `build:images` не обрабатывает (ищет `**/raw/`) | переместить в `data/img/X/raw/Y.webp` (ADR-0007) |
@@ -130,6 +132,16 @@ verify §3 ловит missing-paths.
 | mirage | `{class:{container:'narrow'}, heading:'...', article:'<HTML>'}` |
 
 `canonical-sync.py` детектит format и конвертит к platform `items[]`-формату. + strip дублирующий `<div class="container">` wrapper из inline-HTML.
+
+### 9a. Совмещённые canonical-секции (несколько UI-блоков в одном part)
+
+Архетип-B (doublestar) на home рендерит **одну** секцию `catalog`, внутри которой: preview-карточки + кнопка «весь каталог» + контакты + форма обратной связи. Раскладывать на отдельные **платформенные** секции (`catalog-home`, либо tires-preview + contacts + form), а не копировать part as-is.
+
+| ❌ | ✅ |
+|---|---|
+| home-секция `tires` рендерит ВСЕ карточки (как на listing) | отдельная `catalog-home.twig`: только `data.selected[]` slugs (preview) + кнопка `/catalog` |
+| canonical `video.twig` с `<video src=data/video/1.mp4>` забыт → пустая «фабрика» | перенести `data/video/*.mp4` + mask + импортировать `sections/video.css` |
+| canonical-компонент (`form-partner.twig`) вставлен как есть → canonical-глобалы (`footer.*`, `{{root}}`) падают | прогнать через адаптацию globals (§4) ПЕРЕД include |
 
 ---
 

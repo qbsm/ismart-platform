@@ -60,3 +60,21 @@ Inventory 47 legacy iSmart-сайтов (`tools/orchestrator/analyzers/legacy-ar
 - Refactor breaks existing deployments — distill sync вернёт их к новому baseline. Это **намеренная** массовая правка. Нужен smoke на каждом после.
 - Архетип-C canvas (39 сайтов авто-дилеров) — добавление новых секций (map/actions/services/countdown/...). Это **add**, не break.
 - Скаффолд clean-skeleton — нужно убедиться что create-deployment scaffolds минимально-рабочий deployment (просто открывается с empty data).
+
+## Доводка doublestar-v2 визуала до канона (http://doublestar.ru.test/)
+
+Главная и каталог doublestar-v2 приведены к каноническому виду (verify-gate PASSED, 0 console-ошибок на `/`, `/catalog`, entity).
+
+**Структура канонической главной** (archetype-B): на home секция `catalog` совмещённая — heading + preview-карточки (только `selected` slugs) + кнопка «Весь каталог» + контакты (`icon-text` круги) + форма (`form-partner`); плюс секция `video` = «Doublestar — фабрика умных шин» с автоплей-видео завода. Воспроизведено как платформенные секции:
+- `templates/sections/catalog-home.twig` — 8 preview-карточек card9 (из `selected[]`) + кнопка + контакты + `components/form-partner.twig`. CSS уже был в `sections/catalog.css` (правила `.icon-text`, `.catalog__subitem.contacts/.form`).
+- `templates/sections/factory.twig` — эквивалент канонического `video.twig`; `data/video/1.mp4` + mask `3.png` перенесены из канона, `sections/video.css` импортирован.
+- `index.json` sections: `header → intro → catalog-home → factory → footer`.
+
+**Пойманные грабли (в дополнение к pitfalls-каталогу):**
+- `form-partner.twig` тянул canonical-глобалы `footer.agreement/policy.href` + `{{root}}` → `url(global.policy)` падал TypeError (policy — массив). Fix: `{% set policyHref = global.policy.href|default(...) %}` с guard на iterable.
+- `tire.desc` = dict `{short, full}`; при пустом `full` фильтр `default` падал на сам dict → **«Array to string conversion»** (warning ловит только smoke §7, не PHPStan). Fix: `tire.desc is iterable ? tire.desc.full|default('') : tire.desc|default('')`.
+- 404-иконки: header button дефолт `icon-tire-color-1.svg` (trazano), buy-кнопка `icon-tire-buy-color-1.svg` — в doublestar их нет → `car.svg`.
+- entity SEO `og:image` дефолтит на `data/img/seo/og.webp` (не в JSON, генерится) → создать stub.
+- `/catalog` frame cover ссылался на несуществующий `data/img/catalog/cover.png` → existing intro-изображение.
+
+**Вывод для каталога pitfalls:** при переносе совмещённых canonical-секций (catalog+contacts+form в одном part) — раскладывать на платформенные секции, но `form-partner`/прочие canonical-компоненты обязательно прогонять через адаптацию globals (см. §4 каталога). Warning «Array to string» ловится smoke-рендером (`verify §7`), а не статикой — verify-gate обязателен.
