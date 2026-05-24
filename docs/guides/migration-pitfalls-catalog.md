@@ -114,6 +114,25 @@ verify §3 ловит missing-paths.
 
 ## 8. CSS pitfalls
 
+### 8a. rem-база: канон 1rem=16px, платформа 1rem=10px ⚠️ КРИТИЧНО
+
+Legacy iSmart-сайты **не переопределяют** `html { font-size }` → 1rem = **16px** (дефолт браузера). Платформа (kumho-canvas) ставит `html { font-size: 10px }` → 1rem = **10px**.
+
+**При порте canonical CSS (компонент/секция) ВСЕ rem-значения умножать на 1.6** (`16/10`). px-значения (heights, 1px borders) — без изменений.
+
+| ❌ | ✅ |
+|---|---|
+| Скопировать canonical `header.css`/`catalog.css` as-is → `font-size: 0.85rem` рендерится 8.5px вместо 13.6px → весь визуал сжат до 62.5% | конвертировать `Xrem → (X×1.6)rem`: `0.85rem → 1.36rem`, `2rem → 3.2rem`, `.5rem → .8rem` |
+| Убрать `html{font-size:10px}` чтобы «исправить» → ломает kumho-base (typography/buttons на 10px) | оставить 10px-базу платформы, конвертировать только портируемый canonical CSS |
+
+Скрипт-конвертер (regex, только `число+rem` вне слов):
+```python
+re.sub(r'(?<![\w.])(\d*\.?\d+)rem\b', lambda m: f'{float(m.group(1))*1.6:.4f}'.rstrip('0').rstrip('.')+'rem', css)
+```
+Симптом: «всё мелкое/сжатое», шрифты/отступы ~62% от канона. verify §7 НЕ ловит (размер HTML тот же) — только визуальный diff в браузере.
+
+### 8b. Прочее
+
 | ❌ | ✅ |
 |---|---|
 | `color(var(--color-3) blackness(15%))` (PostCSS stage 4) не работает в preset-env stage 2 → invalid → hover сливается | `color-mix(in srgb, var(--color-3), black 15%)` (CSS Color 5) |
