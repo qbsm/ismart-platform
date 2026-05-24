@@ -164,6 +164,18 @@ re.sub(r'(?<![\w.])(\d*\.?\d+)rem\b', lambda m: f'{float(m.group(1))*1.6:.4f}'.r
 
 ---
 
+## 9b. Entity/product data — размеры в плоском массиве (легко пропустить)
+
+Архетип-B (doublestar): размеры шин (`sizes[]` с ТТХ: diameter/size/load/speed/range/depth/pressure/noise/eco/aqua) лежат **НЕ** в catalog item, а **отдельным плоским массивом** `index.json → catalog.sizes[]` (659 строк), помеченным `model`. Канон-PHP фильтрует per-product: `size.model == item.model`.
+
+| ❌ | ✅ |
+|---|---|
+| Мигрировать только `catalog.items[]` → у entity `sizes: []` → таблица «Размеры и характеристики» ПУСТАЯ | сгруппировать `catalog.sizes[]` по `model`, записать в каждый entity-JSON по slug→model матчу |
+| Канон product = картинки + cards-размеры (платформа) | канон product-страница = **таблица размеров** (card5 + вкладки диаметров `js-diameter`/`js-card5`) — портировать product.twig/css/js целиком |
+| picture.twig image_has-гейтинг на entity-фото без сгенерённых вариантов → битые `<img>` | для канон-фото без raw/-вариантов — plain `<img src="{{ url(image.src) }}">` |
+
+Симптом: страница товара «структура некорректная» — нет таблицы размеров, битые фото, лишние секции (frame/«Похожие шины» которых нет в каноне).
+
 ## 10. Архитектура vs визуал (стратегическое)
 
 **Решение** (по словам пользователя): «архитектуру к kumho-style, визуал бренда подгоняем под рефакторенную структуру».

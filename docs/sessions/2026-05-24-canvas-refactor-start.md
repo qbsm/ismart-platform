@@ -78,3 +78,22 @@ Inventory 47 legacy iSmart-сайтов (`tools/orchestrator/analyzers/legacy-ar
 - `/catalog` frame cover ссылался на несуществующий `data/img/catalog/cover.png` → existing intro-изображение.
 
 **Вывод для каталога pitfalls:** при переносе совмещённых canonical-секций (catalog+contacts+form в одном part) — раскладывать на платформенные секции, но `form-partner`/прочие canonical-компоненты обязательно прогонять через адаптацию globals (см. §4 каталога). Warning «Array to string» ловится smoke-рендером (`verify §7`), а не статикой — verify-gate обязателен.
+
+## Доводка doublestar-v2: header + rem-база + footer + entity (продолжение)
+
+Полный визуальный аудит главной vs `http://doublestar.ru.test/` (блок-за-блоком через Playwright) + entity-страница.
+
+**Header** — портирован канон (была тёмная kumho-шапка): белая полоса, inline-SVG лого (green+orange), меню, последний пункт «Купить» → оранжевая pill через `.header__link-category:last-child`. Добавлены `--color-1/2` (раньше работали случайно через дефолты браузера).
+
+**rem-база (критично, см. pitfalls §8a)**: канон 1rem=16px, платформа 1rem=10px. Портированный канон-CSS (header/catalog/video/footer/product) конвертирован ×1.6. grid.css сохраняет 10px-базу платформы. Симптом был «всё мелкое/сжатое 62.5%».
+
+**Footer** — портирован канон (была раздутая kumho-версия с «Представительство TRAZANO в России»): тёмная полоса, nav-ссылки + agreement/policy + copyright из `global.footer.{navs,agreement,policy}` + `global.copyright`.
+
+**Контакты** — mdi-иконки (шрифт не подключён) → inline SVG phone/email. **Кнопки** button-3: оранжевый текст → белый. **skip-link** → off-screen.
+
+**Entity (страница товара)** — портирован канон `product` (была kumho-productdetail + frame + «Похожие шины»):
+- структура: breadcrumbs + фото(hover-свап) + заголовок + сезон + применимость(bodies) + profits + Купить + **таблица «Размеры и характеристики»** (вкладки диаметров `js-diameter` + `card5` со всеми ТТХ)
+- **ДАННЫЕ**: размеры в каноне лежат плоским массивом `index.json → catalog.sizes[]` (659 строк по `model`), фильтруются PHP per-product. Мигрированы во все 27 entity (apex=4, ds01=32) — раньше `sizes:[]` пустые → таблица пустая. См. pitfalls §9b.
+- product.js: vanilla фильтр диаметров + GLightbox.
+
+Всё: verify PASSED, 0 console-ошибок на `/`, `/catalog`, entity. Осталось: внутренние страницы (`/company`, `/contact`, `/actions`, `/buy`) на тот же аудит.
