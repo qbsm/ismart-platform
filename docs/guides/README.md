@@ -11,6 +11,7 @@ How-to и policy документы — как сделать конкретну
 - [`local-setup.md`](local-setup.md) — локальная настройка окружения
 - [`deploy-checklist.md`](deploy-checklist.md) — чек-лист релиза (включая `build:images` шаг, ADR-0006/0007)
 - [`legacy-to-platform-migration.md`](legacy-to-platform-migration.md) — миграция legacy iSmart-сайтов (boilerplate `dev/+project/`, gulp, vanilla PHP) на baseline (Slim 4 + Twig + sections)
+- [`migration-pitfalls-catalog.md`](migration-pitfalls-catalog.md) — каталог всех граблей миграции (12 категорий) + verify-gate чеклист
 
 ### Контент
 
