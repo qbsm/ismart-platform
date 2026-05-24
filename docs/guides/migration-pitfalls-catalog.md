@@ -176,6 +176,17 @@ re.sub(r'(?<![\w.])(\d*\.?\d+)rem\b', lambda m: f'{float(m.group(1))*1.6:.4f}'.r
 
 Симптом: страница товара «структура некорректная» — нет таблицы размеров, битые фото, лишние секции (frame/«Похожие шины» которых нет в каноне).
 
+## 9c. Пустая страница из-за `ignore missing` (молчаливый скип секций)
+
+`page.twig` рендерит секции через `{% include 'sections/' ~ name ~ '.twig' ignore missing %}`. Если twig-шаблон секции **отсутствует** в `templates/sections/`, секция **молча пропускается** — без ошибки, без warning, verify §7 проходит (header+footer дают size>5KB).
+
+| ❌ | ✅ |
+|---|---|
+| Мигрировать данные секции (strip/technology/banner/partner) но НЕ портировать twig → страница «пустая» (только header+footer) | проверять что для каждого `section.name` в JSON есть `templates/sections/<name>.twig` |
+| Полагаться на verify size/warnings | **визуальный** скрин каждой страницы — пустую секцию ловит только глаз |
+
+Симптом: `/company` отдаёт 200, 22KB, 0 warnings, но в браузере пусто между header и footer. Проверка: `comm -23 <(jq -r '.sections[].name' page.json|sort -u) <(ls templates/sections/|sed 's/.twig//'|sort)`.
+
 ## 10. Архитектура vs визуал (стратегическое)
 
 **Решение** (по словам пользователя): «архитектуру к kumho-style, визуал бренда подгоняем под рефакторенную структуру».

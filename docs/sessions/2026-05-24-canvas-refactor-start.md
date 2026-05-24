@@ -96,4 +96,18 @@ Inventory 47 legacy iSmart-сайтов (`tools/orchestrator/analyzers/legacy-ar
 - **ДАННЫЕ**: размеры в каноне лежат плоским массивом `index.json → catalog.sizes[]` (659 строк по `model`), фильтруются PHP per-product. Мигрированы во все 27 entity (apex=4, ds01=32) — раньше `sizes:[]` пустые → таблица пустая. См. pitfalls §9b.
 - product.js: vanilla фильтр диаметров + GLightbox.
 
-Всё: verify PASSED, 0 console-ошибок на `/`, `/catalog`, entity. Осталось: внутренние страницы (`/company`, `/contact`, `/actions`, `/buy`) на тот же аудит.
+Всё: verify PASSED, 0 console-ошибок на `/`, `/catalog`, entity.
+
+## Аудит внутренних страниц (/company, /contact, /actions, /buy)
+
+**Корневая грабля**: `page.twig` использует `{% include ... ignore missing %}` → секции, чьих twig-шаблонов нет в `templates/sections/`, **молча пропускаются**. `/company` была пустой т.к. `strip.twig` + `technology.twig` отсутствовали (данные в JSON были). Симптом — страница «пустая» (только header+footer), но 0 ошибок/warnings.
+
+- **/company** → канон: портированы `strip.twig`/`strip.css` (таймлайн «История компании»: год-чип+стрелка+описание) + `technology.twig`/`css` (о компании + фабрика-grid + сертификаты, под схему данных v2 `cover/about/factory/cert/rd`). Поправлены пути (cover 1.jpg→cover.jpg, rd удалён — нет изображений нигде, в каноне тоже).
+- **/contact** → канон: `banner.twig`/`css` (фон-обложка) + `partner.twig`/`css` (breadcrumbs + контакты-круги inline SVG + форма обратной связи).
+- **/actions** → frame-баннер + content-заголовок (данные минимальны, как в каноне).
+- **/buy** → kumho-style (по `[[project_tire_buy_page_from_kumho]]` — намеренно, не канон): frame + dealers-карта. Dealers пустые (data-gap: нет датасета дилеров + Яндекс-карта не инициализирована).
+- **frame.css**: добавлен `margin-top: 60px/100px` — баннер заезжал под fixed-header (обрезался) на /actions/buy/catalog.
+
+verify PASSED по 8 URL (/, /catalog, /company, /contact, /actions, /buy, 2 entity), 0 console-ошибок. Все портированные канон-CSS — с rem×1.6 (см. §8a).
+
+Остаточный data-gap: /buy dealers (нет датасета + карта), technology R&D-изображения (нет в источнике).
