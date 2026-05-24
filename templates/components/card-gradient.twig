@@ -1,11 +1,22 @@
 {% if item.href is defined %}
-<a href="{{ item.href }}" class="card-gradient {{ item.class|default('') }} link" {% if item.cover is defined %}style="background-image: url('{{ url(item.cover.src) }}');"{% endif %}>
+<a href="{{ item.href }}" class="card-gradient {{ item.class|default('') }} link">
 {% else %}
-<div class="card-gradient {{ item.class|default('') }}" {% if item.cover is defined %}style="background-image: url('{{ url(item.cover.src) }}');"{% endif %}>
+<div class="card-gradient {{ item.class|default('') }}">
 {% endif %}
+  {% if item.cover is defined %}
+    <div class="card-gradient__cover {{ item.cover.gradient|default('') }}"
+      {% if item.cover.src is defined %}style="background-image: url('{{ url(item.cover.src) }}');"{% endif %}></div>
+  {% endif %}
   {% if item.title is defined %}
     <div class="card__item title-wrap">
-      <span class="card__title">{{ item.title | raw }}</span>
+      {% if '|' in item.title %}
+        {% set parts = item.title|split('|') %}
+        <span class="card__title">{{ parts[0]|trim|raw }}</span>
+        <span class="card__separator" aria-hidden="true">|</span>
+        <span class="card__title">{{ parts[1]|trim|raw }}</span>
+      {% else %}
+        <span class="card__title">{{ item.title|raw }}</span>
+      {% endif %}
     </div>
   {% endif %}
   {% if item.icon is defined %}

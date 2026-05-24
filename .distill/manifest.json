@@ -1,8 +1,8 @@
 {
   "$schema": "https://ismart.pro/schemas/distill-manifest-v1.json",
   "platform_version": "1.0.0",
-  "generated_at": "2026-05-23T23:26:11.253Z",
-  "file_count": 429,
+  "generated_at": "2026-05-24T00:25:59.531Z",
+  "file_count": 435,
   "files": {
     ".editorconfig": {
       "sha256": "3770f26fa30ba598d2441a3aaac94303070444d8798188381c4ce30a854519e9",
@@ -201,8 +201,8 @@
       "size": 422
     },
     "assets/css/components/card-gradient.css": {
-      "sha256": "3ad5204f1e8ea1e4e939e335241b3454409b95943d70b672f5ba192037b32bce",
-      "size": 1172
+      "sha256": "baa8a393ef592ff9b4f9ad9c1040efbf13ada8c3ca0a7bc4ba6aa87da1637592",
+      "size": 3444
     },
     "assets/css/components/card-nav.css": {
       "sha256": "e9d3bbf93cf0cc937c90234190833e381736f603409f438799a9f38213f7203c",
@@ -752,6 +752,10 @@
       "sha256": "56049efb96ad47b01787c689939a21d7b37b8b1ed9999e9aa3d6b234c25e0023",
       "size": 5605
     },
+    "docs/architecture/decisions/0009-css-js-deployment-local.md": {
+      "sha256": "085c8757b5f388e4a6e34581003f34acd1d4e597a93ccc8d88c7580c89c3006a",
+      "size": 5449
+    },
     "docs/architecture/decisions/README.md": {
       "sha256": "25241a3e08d16a7ef9f4a533281bfa95dc85950026b6a8550e77034361c5aa19",
       "size": 1667
@@ -795,6 +799,10 @@
     "docs/conventions/best-practices.md": {
       "sha256": "54c90fe97deb3683da35b443602a97e31eacfb5cbc7606f12cae5daf1ae79f4a",
       "size": 4916
+    },
+    "docs/conventions/claude-session-boundaries.md": {
+      "sha256": "cb79fbf75aada06d86c2de6994ed7d1ffa35df5a8b3c659be756ec234e96131f",
+      "size": 5929
     },
     "docs/conventions/css-naming.md": {
       "sha256": "cbd957ade410d2fbf218d2b6b126767c9696698d1009ba7442267f958a6ffcc6",
@@ -948,6 +956,14 @@
       "sha256": "41ef0a4aa7f086dd1af98bbecddc05823ed9ad4866ec77d46b2810d85e5b6bfb",
       "size": 19600
     },
+    "docs/orchestrator/health-2026-05-23.md": {
+      "sha256": "8025333280fad74e617d37dbf800d36f311967085bccd6249186ffa620aa235e",
+      "size": 23097
+    },
+    "docs/orchestrator/health-2026-05-24.md": {
+      "sha256": "157ff336277080089c8c01b62ccaeb8103c04f80f661534cc8814ff425ef5b5c",
+      "size": 23226
+    },
     "docs/orchestrator/improvements-2026-05-21.md": {
       "sha256": "763a0a6303b6ed3013ea94445103afa97bb191d520cd03854bacac324cac8a98",
       "size": 5349
@@ -988,6 +1004,10 @@
       "sha256": "54916c6c17c0d067a15b043ec2f231016abb371fe07c6ad58da7a0b14072374b",
       "size": 6933
     },
+    "docs/proposals/0009-css-js-deployment-local.md": {
+      "sha256": "e4dfcd2089fa1cf34d90b766dae86c17262d12f1005209a5064d49008689363c",
+      "size": 5671
+    },
     "docs/proposals/README.md": {
       "sha256": "353679a8a0149ac3aae72f9907c981d7ed81d119a84ca6e0477782036ac9f878",
       "size": 3474
@@ -1023,6 +1043,10 @@
     "docs/sessions/2026-05-22-raw-source-picture.md": {
       "sha256": "e3797f0a058ea723a85911b74ac282d81808aa728a459951d782c0ae1c04e806",
       "size": 6548
+    },
+    "docs/sessions/2026-05-24-css-js-regression-postmortem.md": {
+      "sha256": "b5e7f906dd144d3155e0a00f432b1cf24eb5de23fd5b83fff5b0f9511573550f",
+      "size": 5578
     },
     "docs/sessions/2026-05-24-docs-refactor.md": {
       "sha256": "42b6f50993238e9c8e220cbace455da653f307028bdb2e2db3652d76f07c0ec6",
@@ -1293,8 +1317,8 @@
       "size": 358
     },
     "templates/components/card-gradient.twig": {
-      "sha256": "307843e0714931ac5d79bd2599477ab53a159628dadd9d58462b9365ee070c2f",
-      "size": 864
+      "sha256": "f595285b965bfe1c4d0c1ebb3d4ee98d7b3df555936fc6bfdb13e5e3be38a580",
+      "size": 1215
     },
     "templates/components/card-nav.twig": {
       "sha256": "2e7ec9a37fb5ba3b7ecb33b3a94f26a9f76020cf5859427f2b1770a282ed3bcd",
@@ -1601,8 +1625,8 @@
       "size": 8293
     },
     "tools/distill/distill.mjs": {
-      "sha256": "07f1f0b15812d66093321472a99f0869f24126b4f4283e5c730ce53a3634a7ff",
-      "size": 22463
+      "sha256": "052f1b6515107c739df6a7933ecb16b537858e3bf74c65ce49a6c78070112aae",
+      "size": 22937
     },
     "tools/distill/lib.mjs": {
       "sha256": "97a5abe8f5e3274a525069d70cb2877042026d6f6ff5d33f8baa58720b4168e7",
@@ -1657,8 +1681,8 @@
       "size": 2204
     },
     "tools/orchestrator/analyzers/commit-miner.mjs": {
-      "sha256": "e92d923679f4bff87fab2707ff242e807f982f4b023959f3b0eb1a0f94893897",
-      "size": 4805
+      "sha256": "7223e69492b4e64fab503cf7b956480961645cf50901730bea7a759baa8bf48e",
+      "size": 7145
     },
     "tools/orchestrator/analyzers/data-flow-audit.mjs": {
       "sha256": "af83643ea08171f774ce1a589625edb1e9b82c661c092c5bc2851cfdc06151e0",
@@ -1681,8 +1705,8 @@
       "size": 2745
     },
     "tools/orchestrator/orchestrate.mjs": {
-      "sha256": "a9fca50a83fe98a2f2b2d5b1a6533bcf847f3cd874869a1f998a1532c9274043",
-      "size": 9440
+      "sha256": "cb7b560c230bc5f90e07e9968956f78e2b04fcfbffa0457b45edd8e5077643a9",
+      "size": 10849
     },
     "tools/scaffold/create-collection.js": {
       "sha256": "a9fb56afd8fdd6147eaa46f01c03396157b441e0bc03f10287dce1ebbcb9098b",

@@ -1,0 +1,34 @@
+/* Brand variables template — copy to assets/css/base/variables.css and customize per deployment.
+   Только эти переменные + assets/fonts/<brand>/* — единственный источник brand-styling. */
+
+:root {
+  /* Цвета (canonical platform palette) */
+  --color-1: #fff;                          /* White */
+  --color-2: #000;                          /* Dark text */
+  --color-3: #f39910;                       /* TODO: brand accent (orange/yellow/blue/...) */
+  --color-4: #332c2b;                       /* TODO: brand secondary */
+  --color-5: hsla(0, 0%, 20%, 1);           /* Dark gray */
+  --color-6: hsla(0, 0%, 50%, 1);           /* Medium gray */
+  --color-7: hsla(0, 0%, 90%, 1);           /* Light gray (divider) */
+
+  /* Шрифты — TODO: указать brand fonts */
+  --font-default: 'BlinkMacSystemFont', -apple-system, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+  --font-1-thin: 'BrandFont-Thin', var(--font-default);
+  --font-1-light: 'BrandFont-Light', var(--font-default);
+  --font-1-regular: 'BrandFont-Regular', var(--font-default);
+  --font-1-medium: 'BrandFont-Medium', var(--font-default);
+  --font-1-bold: 'BrandFont-Bold', var(--font-default);
+  --font-1-extrabold: 'BrandFont-ExtraBold', var(--font-default);
+
+  /* Overlays + shadows + layout */
+  --overlay-1: hsla(0, 0%, 7%, .4);
+  --shadow-1: 0 1px 6px hsla(0, 0%, 7%, .7);
+  --shadow-2: 0 1px 6px hsla(0, 0%, 7%, .4);
+  --shadow-3: 0 8px 36px 2px #f3f5f8;
+
+  --root-padding: 2rem;
+  --container-max-width: 144rem;
+  --radius-1: 0.4rem;
+  --radius-2: 0.8rem;
+  --transition-1: 0.3s ease;
+}
