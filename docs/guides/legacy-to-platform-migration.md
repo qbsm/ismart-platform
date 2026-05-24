@@ -1122,6 +1122,86 @@ Yandex.Метрика обычно подключается через inline `<
 
 ---
 
+## 15a. Lessons learned (накопленные edge cases)
+
+По итогам миграции `trazano-tires.ru` → `trazano-tires.ru-v2` (2026-05-24):
+
+### CSS / стили
+
+1. **Опечатки selectorов в canonical CSS бывают часто.** Например `cataloglist.css` от trazano-orig имел `.cataloglist .sections__subitem.card-wrap` (лишний `s` в `sections`). HTML twig правильный (`section__subitem`) → правило не применялось → невидимые карточки. **Фикс в твоём CSS, не в twig** (привести к правильному BEM).
+
+2. **PostCSS `color()` function — stage 4 experimental.** PostCSS preset-env stage 2 (наш baseline) не обрабатывает `color(var(--color-3) blackness(15%))`. Без preprocessing'а property invalid → hover background становится прозрачным → button сливается с фоном. **Заменять на `color-mix(in srgb, var(--color-X), black N%)`** (CSS Color 5, поддержка Chrome 111+/Safari 16.2+/Firefox 113+):
+   ```bash
+   find assets/css -name "*.css" -exec sed -i.bak -E 's/color\(var\((--color-[0-9]+)\) blackness\(([0-9]+)%\)\)/color-mix(in srgb, var(\1), black \2%)/g' {} \;
+   ```
+
+3. **`@import "../../../node_modules/X/dist/X.css"` не работает** — postcss-import не resolves cross-package. Использовать pkg-relative: `@import "X/dist/X.css"`. Требует postcss.config.js с `postcss-import({ path: ['node_modules', 'assets/css'] })`.
+
+4. **Канонический header.twig + canonical header.css должны быть согласованы по разметке.** Если переносишь только CSS, оставляя kumho-разметку header.twig — невидимая шапка из-за non-matching BEM-selectors. Переносить **парой**: twig + css.
+
+5. **Kumho `assets/css/components/*.css` и `assets/css/pages/*.css` привносят kumho-look** даже после canonical sections/*. У них свои тёмные фоны, border'ы, padding'и. **Снести из `main.css`** компоненты которые не используются в canonical-разметке. Оставлять минимум: `glightbox-custom`, `card-dealer` (для /buy от kumho), `filter`, `form-callback`.
+
+### Картинки
+
+6. **`build:images` ищет исходники в `data/img/**/raw/`** (ADR-0007 raw-source contract). Cover'ы на корне `data/img/X/Y.webp` **не обрабатываются**, манифест пустой → picture.twig через `image_has()` отбраковывает все варианты → fallback src пустой.
+
+   **Действие**: переместить исходники в `raw/` подпапки + обновить пути в JSON + `npm run build:images`:
+   ```bash
+   for d in data/img/X/*/; do
+     mkdir -p "${d}raw"
+     mv "${d}cover.webp" "${d}raw/cover.webp" 2>/dev/null
+   done
+   ```
+
+7. **`frame.data.cover` обязателен для каждой страницы.** Frame.twig корректно гейтит rendering — пустой cover = пустая секция. Скопировать пути из canonical:
+   ```python
+   covers = {'about': 'cover8.webp', 'tires-list': 'cover7.webp', 'articles': 'cover14.webp', ...}
+   ```
+
+### PageAction inject
+
+8. **`PageAction::injectListItems()` берёт fields из `inner = entity[item_key]`.** Если `item_key='item'`, а cover/season/etc лежат на top-level entity (а не в `entity.item.*`) — они теряются. Положить под `entity.item.cover/season/code` для корректного inject.
+
+9. **PageAction flat default `'cover' => ['src' => '']`** — если cover отсутствует в inner, fallback **массив**. В twig обязательно: `{% set coverPath = item.cover is iterable ? item.cover.src|default('') : item.cover|default('') %}`.
+
+10. **PageAction whitelist в flat — ограниченный** (slug, id, visible, cover, hex, date, title, desc, href, types, feature, tags, category, season). Поля `bg`, `shadow`, `image` и пр. в flat **не попадают**. Если нужны в card-twig: либо использовать path-pattern (`/data/img/X/{slug}/bg.webp`), либо расширить flat-whitelist в PageAction baseline (через ADR).
+
+### kumho-template hard-codes
+
+11. **`kumho/sections/tires.twig` использует `load_json('pages/tires.json')`** (hard-coded path). Если у тебя page_id = `tires-list` (через route_map) — создать `pages/tires.json` алиас со списком slug'ов:
+    ```bash
+    cp data/json/ru/pages/catalog.json data/json/ru/pages/tires.json
+    ```
+
+12. **`kumho/components/card-tire.twig` hard-codes `/tires/<slug>`** в href. Для deployment с nav_slug != 'tires' (trazano: `catalog`, и т.д.) — править href в card-tire.twig:
+    ```twig
+    {% set href = url('/catalog/' ~ item.slug) %}
+    ```
+    Это **deployment-local override** (kumho остаётся на /tires/, trazano-v2 на /catalog/).
+
+### SEO
+
+13. **Legacy SEO format `{title, description, og: {...}}` ≠ platform format `{title, meta: [...], json_ld}`**. base.twig итерирует `seoData.meta[]`, генерируя `<meta name="..." content="...">` или `<meta property="og:* ...">`. Конвертация скриптом:
+    ```python
+    new = {'title': old['title'], 'meta': []}
+    if old.get('description'): new['meta'].append({'name': 'description', 'content': old['description']})
+    og = old.get('og') or {}
+    if og.get('title'): new['meta'].append({'property': 'og:title', 'content': og['title']})
+    ...
+    ```
+
+14. **`seo/{page_id}.json` нужен для каждой страницы.** Без него base.twig fallback на `'Заголовок страницы по умолчанию'` (даже если pageData.title задан — иногда не подхватывается). Создать seo/{page_id}.json с минимум title + meta description + og:*.
+
+### Twig 1.x deprecation
+
+15. **Canonical-сайты на Twig 1.x** показывают deprecation warnings PHP 8+ (`Return type of Twig\Node\Node::count() should either be compatible with Countable::count()`). Это **legacy issue в самом canonical**, не на нашей миграции. После переноса на platform (Twig 3) — warnings исчезают.
+
+### Hybrid migration — расширенный паттерн
+
+16. **Брать из kumho не только `/buy`** (memory `project-tire-buy-page-from-kumho`), а **весь tire-list functionality** для tire-deployments: `sections/tires.twig` + `components/filter.twig` + `components/card-tire.twig` + `tires.js`. Стилизация card-tire — переписать под canonical-разметку bird (background + cover + skewX title + brand-logo + line) либо адаптировать через CSS-переменные.
+
+---
+
 ## 16. Будущие улучшения этого гайда
 
 - [ ] `tools/migrate/legacy-page-to-sections.mjs` — автоматизация конверсии JSON структуры (flat → sections-format)
