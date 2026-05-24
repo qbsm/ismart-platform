@@ -1,28 +1,23 @@
-{% set name = item.item.name | default(item.item.code | default('')) %}
+{# Унифицированный tire-card (superset; узлы под if; визуал — per-project CSS).
+   Поля: title=code|name, desc=tagline|series, cover→bg иначе 30°-фото, season/frame опц. #}
+{% set t = item.item | default(item) %}
+{% set title = t.code | default(t.name | default('')) %}
+{% set tagline = t.tagline | default(t.series | default('')) %}
+{% set season = t.season | default('') %}
+{% set cover = t.cover | default('') %}
 {% set href = item.slug is defined and item.slug ? url('/tires/' ~ item.slug) : null %}
+{% set tireImage = item.images['30deg'] is defined ? item.images['30deg'] : (item.image is defined ? item.image : null) %}
+{% set imageAlt = (tireImage and tireImage.alt is defined and tireImage.alt) ? tireImage.alt : title %}
 
-<a{% if href %} href="{{ href }}"{% endif %} class="card-tire"{{ href ? '' : ' role="group"' }} style="color:inherit;text-decoration:none">
-  <div class="card__item title-wrap">
-    <span class="card__title font-2 weight-600">{{ item.item.code }}</span>
-  </div>
-  {% if item.item.series is defined and item.item.series %}
-    <div class="card__item desc-wrap">
-      <span class="card__desc">{{ item.item.series }}</span>
-    </div>
+<a{% if href %} href="{{ href }}"{% endif %} class="card-tire card-wrap link"{{ href ? '' : ' role="group"' }}>
+  {% if season %}
+    <img src="{{ url('data/img/ui/' ~ season ~ '.svg') }}" class="card-tire__season" alt="{{ season }}">
   {% endif %}
-  {% if item.item.frame is defined and item.item.frame %}
-    <div class="card__item frame-wrap">
-      <span class="card__frame">{{ item.item.frame }}</span>
-    </div>
-  {% endif %}
-{% set tireImage = item.images['30deg'] is defined
-    ? item.images['30deg']
-    : (item.image is defined ? item.image : null) %}
-  {% set imageAlt = tireImage and tireImage.alt is defined and tireImage.alt
-    ? tireImage.alt
-    : (name ? name ~ ', ракурс 30°' : '') %}
-  <div class="card-tire__img-wrap">
-    {% if tireImage %}
+
+  <div class="card__item cover-wrap">
+    {% if cover %}
+      <div class="card-tire__cover" style="background-image: url('{{ url(cover) }}');"></div>
+    {% elseif tireImage %}
       {% include 'components/picture.twig' with {
         image: tireImage,
         alt: imageAlt,
@@ -34,4 +29,20 @@
       } %}
     {% endif %}
   </div>
+
+  {% if tagline %}
+    <div class="card__item desc-wrap">
+      <span class="card__desc">{{ tagline|raw }}</span>
+    </div>
+  {% endif %}
+
+  <div class="card__item title-wrap">
+    <span class="card__title">{{ title|raw }}</span>
+  </div>
+
+  {% if t.frame is defined and t.frame %}
+    <div class="card__item frame-wrap">
+      <span class="card__frame">{{ t.frame }}</span>
+    </div>
+  {% endif %}
 </a>
