@@ -1,4 +1,5 @@
 {
+  "name": "index",
   "title": "iSmart Platform",
   "description": "Тиражируемая многоязычная платформа на Slim 4 + Twig 3.",
   "og": {
