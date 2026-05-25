@@ -22,7 +22,7 @@
   height: auto;
 }
 
-.logoline__item {
+.logoline .section__item {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -4,7 +4,7 @@
     {% if data.items is defined and data.items|length > 0 %}
     <div class="trust__grid">
       {% for item in data.items %}
-      <div class="trust__item">
+      <div class="section__item">
         {% if item.icon is defined %}
           <div class="trust__icon">{{ item.icon }}</div>
         {% endif %}

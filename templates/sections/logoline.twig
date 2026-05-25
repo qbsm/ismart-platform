@@ -6,7 +6,7 @@
             {% set tireItem = load_json('data/json/' ~ lang_code ~ '/tires/' ~ slug ~ '.json') %}
             {% if tireItem and tireItem.visible | default(false) %}
               <div class="swiper-slide">
-                <a href="{{ url('/' ~ slug ~ '/') }}" class="logoline__item link">
+                <a href="{{ url('/' ~ slug ~ '/') }}" class="section__item link">
                   <span class="logoline__title font-2 weight-600">{{ tireItem.item.code }}</span>
                   {% if tireItem.item.series is defined and tireItem.item.series %}
                     <span class="logoline__series">{{ tireItem.item.series }}</span>

@@ -5,14 +5,14 @@
   background: #f8f9fb;
 }
 
-.partners__inner {
+.partners .section__inner {
   display: flex;
   flex-direction: column;
   gap: 48px;
 }
 
 @media (--lg) {
-  .partners__inner {
+  .partners .section__inner {
     flex-direction: row;
     align-items: center;
     gap: 64px;

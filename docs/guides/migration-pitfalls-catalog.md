@@ -141,6 +141,21 @@ re.sub(r'(?<![\w.])(\d*\.?\d+)rem\b', lambda m: f'{float(m.group(1))*1.6:.4f}'.r
 | `@import "../../../node_modules/X/dist/X.css"` | `@import "X/dist/X.css"` (postcss-import `path:['node_modules','assets/css']`) |
 | `.skip-link` без off-screen CSS → visible "Перейти к контенту" | `.skip-link { position:absolute; left:-9999px } .skip-link:focus { left:1rem }` |
 
+### 8c. Generic-слоты СЕКЦИИ — `section__*`, не `{имя-секции}__*` ⚠️ частая грабля при порте
+
+Правило ([html-naming.md §1](../conventions/html-naming.md)): на уровне **секции** иерархические слоты — общий блок `section`: `section__item → section__subitem → section__inner → section__add → section__nested → section__deep → section__extra → section__leaf-N`. Именованный блок секции (`.technology`, `.show`, `.trust`) использовать **только** как scope/состояние и для **семантических** элементов (`technology__heading`, `intro__video`). Эталон — `actions`/`intro` в baseline.
+
+При порте легко скопировать canonical-вёрстку как `{name}__item` (так делает большинство legacy-частей) — это нарушение.
+
+| ❌ | ✅ |
+|---|---|
+| TWIG: `<div class="technology__item about">` / `technology__subitem item1` | `<div class="section__item about">` / `section__subitem item1` (хвостовой модификатор сохранить) |
+| CSS: голый `.technology__item { … }` → после rename станет глобальным `.section__item` и **протечёт на все секции** | scope под секцию: `.technology .section__item.about { … }`; вложенные — `.show .section__item .section__subitem` (`.show ` один раз в начало) |
+| Переименовать семантические `technology__heading`/`__rd-grid` тоже | трогать **только** generic-суффиксы (`item/subitem/inner/add/nested/deep/extra/leaf-N`); семантику оставить |
+| Переименовать `card__item`, `form__item`, `countdown__item` внутри секции | это **компоненты** (корень не `<section>`, принимают params, не `data.`) — для них `{component}__item` корректен, не трогать |
+
+Аудит по репо: для каждого `templates/sections/{name}.twig` грепнуть `{name}__(item\|subitem\|inner\|add\|nested\|deep\|extra\|leaf-[0-9]+)`. Симптом не виден в HTTP-статусе — verify §7 не ловит; проверять грепом + рендером (классы в DOM).
+
 ---
 
 ## 9. content-секции — разные форматы
