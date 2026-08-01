@@ -1,7 +1,7 @@
 {# Yandex.Metrika — отложенная загрузка после load + requestIdleCallback.
-   Не блокирует FCP/LCP/TBT. ID из config или fallback 107236894 #}
+   Не блокирует FCP/LCP/TBT. ID из YANDEX_METRIC_ID; без него счётчик не выводится. #}
 {% set _ym_id = config.settings.yandex_metric_id|default(0) %}
-{% if _ym_id == 0 %}{% set _ym_id = 107236894 %}{% endif %}
+{% if _ym_id %}
 <!-- Yandex.Metrika counter -->
 <script>
   (function() {
@@ -16,7 +16,6 @@
       var a = e.getElementsByTagName(t)[0]; a.parentNode.insertBefore(k, a);
 
       m[i]({{ _ym_id }}, 'init', {
-        defer: true,
         webvisor: true,
         clickmap: true,
         ecommerce: "dataLayer",
@@ -43,3 +42,4 @@
   })();
 </script>
 <!-- /Yandex.Metrika counter -->
+{% endif %}
