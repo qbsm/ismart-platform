@@ -1,0 +1,58 @@
+# 2026-08-02 — italycommunity.ru: SEO/GEO-углубление и связка с прежним брендом italy&co.
+
+## Задача
+
+Проработать глубокую SEO- и LLM-оптимизацию боевого `italycommunity.ru` и передать поисковикам/LLM, что ресторанная группа раньше называлась **italy&co.**, чтобы забрать всю прежнюю аудиторию.
+
+Решение пользователя по объёму: **только техническая связка** — прежнее название уходит в разметку, `llms.txt` и FAQ-схему, видимых блоков на сайте не добавляем. Старые URL со старого домена (`/menu`, `/banket`, `/delivery` → 404) не трогаем.
+
+## Где работали
+
+Боевой каталог `/var/www/ismart/italycommunity.ru` на sel (метод `sel-local`), затем те же правки раскатаны на стейдж `/var/www/ismart/italycommunity.ru.ismart.pro` (коммит `c9e3f89`). Перед раскаткой сверили md5 каждого файла стейджа с прод-версией **до** правок (`34d3d33`) — все совпадали, кроме `robots.txt`, поэтому копирование прод-версий безопасно. Стейдж закрыт от индексации `X-Robots-Tag` в nginx (`snippets/noindex.conf`), а не через `robots.txt`, — синхронизация robots его не раскрывает. По итогу прод и стейдж идентичны по всем правленным файлам.
+
+`git pull` на проде не делали намеренно: 10 коммитов, на которые прод «behind origin», — это те же правки, что уже лежат на проде отдельными коммитами (`/about`, FAQPage, Bist-график, inputmask, hero-preload). Merge дал бы только конфликты дублей.
+
+## Что было найдено
+
+| Находка | Статус до |
+|---|---|
+| Упоминаний `italy&co.` нет нигде: ни в schema, ни в контенте, ни в llms.txt | связи брендов не существовало |
+| `robots.txt` закрывал `/assets/js/build/` — каталог **боевых** бандлов (`main.*.js`, `ui-vendors.*.css`) | Google рендерил страницы без CSS/JS (longest-match бил `Allow: /*.css`) |
+| `llms-full.txt` на проде — старый, с шапкой «# iSmart Platform» | генератор не перезапускали после брендирования конфига |
+| `llms.txt` обещал английскую версию `/en/` и страницу `/experts` | обе → 404; ссылки со слешем → 301 |
+| Event-схема: `"image": ["https://italycommunity.ru/https://italycommunity.ru/..."]` | задвоенный домен — `covers[0].src` уже абсолютный |
+| Title всех ресторанов: `{название} — Экосистема итали` | без города, района и типа заведения |
+| В sitemap нет `lastmod` | — |
+| Restaurant-схемы не связаны с сущностью группы | нет `parentOrganization`, `@id` |
+
+## Что сделано
+
+**Связка с italy&co. (техническая):**
+- `Organization` + `WebSite`: `alternateName` из 8 написаний (`italy&co.`, `italy&co`, `Italy&Co`, `Italy & Co`, `итали энд ко`, `Итали`, …), `legalName` ООО «ТЭД», `taxID`, `knowsAbout`, `sameAs` дополнен `italycommunity.online` и `italyco.rest`, `publisher` у WebSite.
+- `description` организации: «…ранее известная как italy&co.» (JSON-LD, невидимо на странице).
+- FAQ-схема `/about`: два новых вопроса — «italy&co. и Итали — это одна и та же группа?» и «Как раньше называлась группа?», плюс упоминание в ответе «Что такое Итали».
+- `llms.txt` переписан: отдельный раздел «Прежнее название: italy&co.» с прямой инструкцией для LLM, что запросы про italy&co. / italyco.rest относятся к этой группе.
+
+**Общее SEO/GEO:**
+- `robots.txt`: открыты собранные бандлы, явная группа из 16 AI-краулеров (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended, YandexAdditional…), `Clean-param` для utm/ysclid/gclid/erid.
+- `RestaurantSeoBuilder`: `@id`, `parentOrganization` → `#organization`, `acceptsReservations` (по `bookingPoint`), `currenciesAccepted`, `image` — все обложки, поддержка `metaTitle`.
+- `metaTitle` заполнен для всех 17 ресторанов: гео + тип заведения (44–64 симв.).
+- Event-схема: исправлен задвоенный домен картинки, добавлены `url` и `organizer`.
+- `sitemap.xml`: `lastmod` по mtime JSON-источника (25/25 URL).
+- `llms-full.txt`: перегенерирован, добавлена коллекция событий, у каждой записи `URL:`, убрано дублирование города в адресах; генератор получил обратно совместимые опции `heading` и `url_pattern`.
+
+## Проверка
+
+`phpstan` — 0 ошибок, `phpunit` — 38 тестов OK, `validate-json` — 41 файл валиден, смоук 25/25 URL из sitemap: HTTP 200 и все JSON-LD парсятся.
+
+## Грабли
+
+**На проде параллельно работает автономный бот.** Между двумя моими коммитами вклинился `4a55602` от `root@ismart.pro` — бот увидел ту же проблему с robots.txt и добавил свои `Allow` (в т.ч. дубль `/assets/js/build/`, плюс верные `/assets/css/build/` и `/assets/js/utils/`). Правки не конфликтовали, дубль убран отдельным коммитом. Вывод: после записи в прод-каталог **сверять `git log`** — файл мог быть дополнен между заливкой и коммитом. См. [[feedback-prod-bot-diverges-git]].
+
+## Не сделано (осознанно)
+
+- Видимый блок про italy&co. на сайте — пользователь выбрал только техническую связку.
+- 301 для `/menu`, `/banket`, `/delivery` со старого домена — «не трогать».
+- `italy-group.ru` отдаёт 502: домен за Cloudflare (NS `*.ns.cloudflare.com`), не на нашем сервере — чинится только в кабинете CF.
+- FAQPage на `/about` живёт без видимого FAQ-блока на странице — формально расходится с гайдлайнами Google для structured data.
+- Дубли `/{slug}` и `/restaurants/{slug}` (обе 200) закрыты только canonical, 301 не ставили.
