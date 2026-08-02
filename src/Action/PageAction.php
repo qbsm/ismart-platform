@@ -448,7 +448,7 @@ final class PageAction
     private function ensureCsrfToken(): string
     {
         if (session_status() !== PHP_SESSION_ACTIVE) {
-            session_start();
+            session_start(['cache_limiter' => '']);
         }
 
         if (!isset($_SESSION['csrf_token']) || !is_string($_SESSION['csrf_token']) || $_SESSION['csrf_token'] === '') {
