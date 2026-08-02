@@ -244,7 +244,7 @@ final class PageAction
         $inner = $itemKey !== '' ? ($entity[$itemKey] ?? []) : $entity;
         $name = (string) ($inner['name'] ?? $inner['title'] ?? $entity['slug'] ?? '');
         $desc = (string) ($entity['desc']['short'] ?? $entity['desc']['full'] ?? $inner['desc'] ?? $inner['lead'] ?? '');
-        $ogImage = rtrim($baseUrl, '/') . '/data/img/seo/og.webp?v=2';
+        $ogImage = rtrim($baseUrl, '/') . '/data/img/seo/og.jpg?v=3';
 
         $meta = [
             ['name' => 'description', 'content' => $desc],

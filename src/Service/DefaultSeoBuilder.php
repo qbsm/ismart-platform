@@ -31,7 +31,7 @@ final class DefaultSeoBuilder implements SeoBuilderInterface
             ?? ''
         );
 
-        $ogImage = rtrim($baseUrl, '/') . '/data/img/seo/og.webp?v=2';
+        $ogImage = rtrim($baseUrl, '/') . '/data/img/seo/og.jpg?v=3';
 
         $meta = [
             ['name' => 'description', 'content' => $desc],
