@@ -34,6 +34,11 @@ desktop.ini
 # Локальные настройки Claude Code
 .claude/
 
+# Локальная рабочая зона: заметки/ad-hoc скилы (см. docs/local/README.md)
+# Содержимое не коммитится; README остаётся как маркер и описание конвенции.
+docs/local/*
+!docs/local/README.md
+
 # Личный gitconfig (email, имя)
 .gitconfig
 
@@ -74,6 +79,7 @@ assets/js/build/*
 !assets/js/build/.gitkeep
 assets/img/build/*
 !assets/img/build/.gitkeep
+!assets/img/build/image-dimensions.json
 
 # Хешированные файлы сборки
 *.bundle.js
