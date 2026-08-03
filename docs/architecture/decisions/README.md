@@ -32,6 +32,9 @@
 | 0006 | manifest-driven-images | Accepted |
 | 0007 | raw-source-picture | Accepted |
 | 0008 | multi-deployment-docs | Accepted |
+| 0009 | css-js-deployment-local | Accepted |
+| 0010 | form-callback-naming-normalization | Accepted |
+| 0011 | image-artifacts-in-git | Accepted |
 
 ## Жизненный цикл
 
