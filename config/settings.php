@@ -79,6 +79,11 @@ return [
         'max_requests' => 10,
         'window_seconds' => 60,
     ],
+    // CSP целиком строкой: пусто — базовая политика из SecurityHeadersMiddleware.
+    // Задаётся под deployment, когда список сторонних хостов известен и стабилен.
+    'security' => [
+        'csp' => (string) (getenv('APP_CSP') ?: ''),
+    ],
     'cors' => [
         'allowed_origins' => [], // например ['https://example.com'] или ['*'] для любого
         'allowed_methods' => ['GET', 'POST', 'OPTIONS', 'PUT', 'PATCH', 'DELETE'],

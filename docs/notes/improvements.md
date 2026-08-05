@@ -38,6 +38,18 @@
 | `RequestAttributes` | constants | Имена атрибутов request'а и ключей |
 | `RespondsToContent` | trait | `wantsJson()` + `withRequestIdHeader()` для error handlers |
 
+### 2026-08-05 — Разбор aimika-neiro-global, минимальный перенос
+
+- CSP: `object-src 'none'` + `form-action 'self'`, вся строка переопределяется `APP_CSP`
+  ([ADR-0012](../architecture/decisions/0012-csp-configurable-per-deployment.md)). Host-allowlist
+  для Метрики и Яндекс.Карт сознательно не вводили — см. Context в ADR.
+- `RateLimitMiddleware::pruneExpired()` — счётчики по IP чистятся раз в ~100 запросов; раньше файлы
+  в `cache/rate_limit` жили вечно.
+- `admin-requests-security.md` переписан: описывал классы, которых нет в ядре с дистилляции.
+- Не взяли (не нужны платформе сейчас): SSRF-safe fetch, storage-порт с `remove()`, AI-провайдеры
+  с реестром моделей и spend-guard, защита от prompt-injection. Разбор — в
+  `docs/sessions/2026-08-05-aimika-transfer-analysis.md`.
+
 ---
 
 ## Open Opportunities

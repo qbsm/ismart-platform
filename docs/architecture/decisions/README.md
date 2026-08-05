@@ -35,6 +35,7 @@
 | 0009 | css-js-deployment-local | Accepted |
 | 0010 | form-callback-naming-normalization | Accepted |
 | 0011 | image-artifacts-in-git | Accepted |
+| 0012 | csp-configurable-per-deployment | Accepted |
 
 ## Жизненный цикл
 

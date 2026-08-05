@@ -1,44 +1,22 @@
-## Защита эндпоинта /admin/requests
+# Просмотр заявок: требования к защите
 
-Эндпоинт используется для просмотра сохранённых JSON-заявок. Доступ должен быть ограничён.
+**В baseline эндпоинта `/admin/requests` нет.** Заявки нигде не сохраняются: `ApiSendAction`
+отдаёт их в каналы (`mail`, `calltouch`, `telegram`, `google_sheets`) и забывает. Логи
+(`logs/app-*.log`) содержат только `request_completed` — без персональных данных.
 
-### Возможности защиты
+Документ описывал классы `App\Http\Routing\ApiRouter` и `RequestsViewerController` из legacy-архитектуры
+(тег `legacy-archive-v0`) — в ядре их нет с момента дистилляции.
 
-- Basic Auth (включение и учётные данные)
-- Белый список IP (allowlist)
-- Ограничение размера просматриваемого файла
+## Если deployment добавляет просмотр заявок
 
-Все параметры настраиваются через конфиг (`settings.admin.*`) или переменные окружения.
+Такой эндпоинт отдаёт персональные данные (телефон, имя, e-mail), поэтому он не может быть
+просто «страницей под неочевидным адресом»:
 
-### Настройка через ENV
+- Basic Auth + allowlist IP, оба через ENV, fail-closed: не задан пароль — эндпоинт закрыт.
+- `X-Robots-Tag: noindex, nofollow` и запрет в `robots.txt`.
+- Лимит размера читаемого файла и запрет выхода за каталог заявок (проверка пути после `realpath`).
+- Лог обращений отдельным файлом, с IP и статусом (`ok` / `unauthorized` / `forbidden_ip`).
+- Срок хранения заявок и чистка по нему — иначе персональные данные копятся бессрочно.
 
-Пример `.htaccess`/конфигурации окружения:
-
-```
-SetEnv APP_ADMIN_BAUTH_ENABLED 1
-SetEnv APP_ADMIN_BAUTH_USER admin
-SetEnv APP_ADMIN_BAUTH_PASS secret
-SetEnv APP_ADMIN_ALLOW_IPS "127.0.0.1, 192.168.0.2"
-SetEnv APP_ADMIN_MAX_FILE_SIZE 1048576
-```
-
-### Детали реализации
-
-- Проверки выполняются в `App\Http\Routing\ApiRouter`:
-  - Basic Auth: `getAdminBasicAuthConfig()` + `checkBasicAuth()`
-  - IP Allowlist: `isIpAllowed()` с поддержкой списка из ENV
-  - Логирование обращений: `logs/admin.log` (`ok`/`unauthorized_basic_auth`/`forbidden_ip`)
-- Ограничение размера файла реализовано в `RequestsViewerController` (метод `getMaxFileSize()`).
-
-### Логи
-
-- `logs/admin.log` — JSON строки вида:
-
-```json
-{"time":"2025-08-08T10:00:00+03:00","url":"/admin/requests?file=request-123.json","ip":"127.0.0.1","ua":"Mozilla/5.0","status":"ok"}
-```
-
-### Рекомендации
-
-- Держать эндпоинт закрытым (Basic Auth включён, IP-фильтр задан).
-- Для продакшена использовать сложные пароли и ограничивать IP.
+Хранение заявок на диске — deployment-специфика; в ядро не поднимается, пока в этом не появится
+общая потребность.

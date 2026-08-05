@@ -60,6 +60,8 @@ final class RateLimitMiddleware implements MiddlewareInterface
             @mkdir($this->cacheDir, 0o755, true);
         }
 
+        $this->pruneExpired($window);
+
         $now = time();
         $data = ['count' => 0, 'window_start' => $now];
         $decoded = Json::load($file);
@@ -87,6 +89,26 @@ final class RateLimitMiddleware implements MiddlewareInterface
         }
 
         return $handler->handle($request);
+    }
+
+    /**
+     * Счётчик на IP остаётся в cache/rate_limit навсегда, хотя после окна бесполезен.
+     * Чистим отработавшие файлы примерно раз в сто запросов — скан директории на каждом
+     * POST под ботовым наплывом сам стал бы нагрузкой.
+     */
+    private function pruneExpired(int $window): void
+    {
+        if (mt_rand(1, 100) !== 1) {
+            return;
+        }
+
+        $deadline = time() - max($window * 10, 3600);
+        foreach (glob($this->cacheDir . '/*.json') ?: [] as $file) {
+            $mtime = @filemtime($file);
+            if ($mtime !== false && $mtime < $deadline) {
+                @unlink($file);
+            }
+        }
     }
 
     private function getClientIp(ServerRequestInterface $request): string
