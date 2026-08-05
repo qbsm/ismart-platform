@@ -38,17 +38,17 @@
 | `RequestAttributes` | constants | Имена атрибутов request'а и ключей |
 | `RespondsToContent` | trait | `wantsJson()` + `withRequestIdHeader()` для error handlers |
 
-### 2026-08-05 — Разбор aimika-neiro-global, минимальный перенос
+### 2026-08-05 — Разбор aimika-neiro-global
 
-- CSP: `object-src 'none'` + `form-action 'self'`, вся строка переопределяется `APP_CSP`
-  ([ADR-0012](../architecture/decisions/0012-csp-configurable-per-deployment.md)). Host-allowlist
-  для Метрики и Яндекс.Карт сознательно не вводили — см. Context в ADR.
-- `RateLimitMiddleware::pruneExpired()` — счётчики по IP чистятся раз в ~100 запросов; раньше файлы
-  в `cache/rate_limit` жили вечно.
-- `admin-requests-security.md` переписан: описывал классы, которых нет в ядре с дистилляции.
-- Не взяли (не нужны платформе сейчас): SSRF-safe fetch, storage-порт с `remove()`, AI-провайдеры
-  с реестром моделей и spend-guard, защита от prompt-injection. Разбор — в
-  `docs/sessions/2026-08-05-aimika-transfer-analysis.md`.
+- CSP: `object-src 'none'` + `form-action 'self'`; host-allowlist не вводим
+  ([ADR-0012](../architecture/decisions/0012-csp-no-third-party-allowlist.md)).
+- `RateLimitMiddleware::pruneExpired()` — счётчики по IP чистятся раз в ~100 запросов.
+- `admin-requests-security.md` описывал классы, которых нет в ядре с дистилляции — сокращён до факта.
+- Механизм переопределения CSP через `APP_CSP` сделали и в тот же день сняли: allowlist решили не
+  вводить, а «ручка на будущее» без единого потребителя — лишняя ветка в конфиге.
+- Из aimika не взяли: SSRF-safe fetch, storage-порт с `remove()`, AI-провайдеры с реестром моделей
+  и spend-guard, защиту от prompt-injection — это про сервис с пользователями и деньгами.
+  Разбор — в `docs/sessions/2026-08-05-aimika-transfer-analysis.md`.
 
 ---
 

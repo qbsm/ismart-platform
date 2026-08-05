@@ -114,15 +114,9 @@ return static function (): ContainerInterface {
             return $twig;
         },
 
-        SecurityHeadersMiddleware::class => static function (ContainerInterface $c) {
-            $settings = $c->get('settings');
-            $csp = (string) ($settings['security']['csp'] ?? '');
-
-            return new SecurityHeadersMiddleware(
-                ($settings['env'] ?? 'development') === 'production',
-                $csp !== '' ? $csp : SecurityHeadersMiddleware::DEFAULT_CSP
-            );
-        },
+        SecurityHeadersMiddleware::class => static fn(ContainerInterface $c) => new SecurityHeadersMiddleware(
+            ($c->get('settings')['env'] ?? 'development') === 'production'
+        ),
 
         RequestDurationMiddleware::class => \DI\autowire(),
 

@@ -15,10 +15,11 @@ use Psr\Http\Server\RequestHandlerInterface;
 final class SecurityHeadersMiddleware implements MiddlewareInterface
 {
     /**
-     * Базовая CSP: скрипты/стили/картинки — self + любой https (счётчики, карты, виджеты
-     * подключаются без правки ядра). Сужается через settings['security']['csp'] (APP_CSP).
+     * Базовая CSP: скрипты/стили/картинки — self + любой https (счётчики, карты и виджеты
+     * подключаются без правки ядра, см. ADR-0012). object-src и form-action закрыты:
+     * плагинов на страницах нет, а action формы приходит из JSON-контента.
      */
-    public const DEFAULT_CSP = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: wss:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'";
+    private const DEFAULT_CSP = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: wss:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'";
 
     public function __construct(
         private readonly bool $addHsts = true,
