@@ -59,17 +59,17 @@ $channels = [
         if (!$bool('CT_ENABLE')) {
             $reasons[] = 'CT_ENABLE=' . ($env('CT_ENABLE') ?: 'false');
         }
-        if ($env('CT_ROUTE_KEY') === '') {
-            $reasons[] = 'CT_ROUTE_KEY пуст';
-        }
-        if ($env('CT_TOKEN') === '') {
-            $reasons[] = 'CT_TOKEN пуст';
+        // Два режима: автопрозвон (route_key + token) либо регистрация заявки (site_id)
+        $hasCallback = $env('CT_ROUTE_KEY') !== '' && $env('CT_TOKEN') !== '';
+        $hasRequest = $env('CT_SITE_ID') !== '';
+        if (!$hasCallback && !$hasRequest) {
+            $reasons[] = 'нужен CT_ROUTE_KEY+CT_TOKEN (автопрозвон) либо CT_SITE_ID (заявка)';
         }
         if ($reasons === []) {
-            return [
-                'enabled' => true,
-                'detail' => 'route_key=' . $mask($env('CT_ROUTE_KEY')) . ', token=' . $mask($env('CT_TOKEN')),
-            ];
+            $detail = $hasCallback
+                ? 'автопрозвон: route_key=' . $mask($env('CT_ROUTE_KEY')) . ', token=' . $mask($env('CT_TOKEN'))
+                : 'заявка: site_id=' . $env('CT_SITE_ID');
+            return ['enabled' => true, 'detail' => $detail];
         }
         return ['enabled' => false, 'detail' => implode(', ', $reasons)];
     })(),

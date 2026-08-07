@@ -98,6 +98,9 @@ return [
         'enable' => filter_var((string) (getenv('CT_ENABLE') ?: 'false'), FILTER_VALIDATE_BOOLEAN),
         'route_key' => (string) (getenv('CT_ROUTE_KEY') ?: ''),
         'token' => (string) (getenv('CT_TOKEN') ?: ''),
+        // Числовой ID личного кабинета (Интеграции → Отправка данных во внешние
+        // системы → API). Включает режим регистрации заявки — без токена.
+        'site_id' => (string) (getenv('CT_SITE_ID') ?: ''),
         'timeout' => (int) (getenv('CT_TIMEOUT') ?: 10),
     ],
     'telegram' => [
