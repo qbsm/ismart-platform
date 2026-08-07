@@ -6,13 +6,17 @@
 
 html {
   height: 100%;
+
+  /* Якорные переходы (в т.ч. из бургер-меню) с отступом под липкую шапку */
+  scroll-padding-top: calc(var(--header-top-offset) + var(--header-fixed-height) + 1rem);
 }
 
 body {
   position: relative;
 
-  /* Это свойство нужно для работы sticky-позиционирования и корректного скролла внутри контейнеров */
-  height: 100%;
+  /* Без height: 100% скролл-контейнером остаётся документ. С ним контейнером
+     становился body: scroll-padding на html игнорировался, window.scrollTo не
+     работал, а на iOS после якорного перехода прокрутка «залипала». */
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -20,9 +24,11 @@ body {
   background-color: var(--color-1);
 }
 
+/* clip, а не hidden: hidden по одной оси делает элемент скролл-контейнером по
+   другой — именно из-за этого ломался sticky и под него добавляли height: 100%. */
 body,
 html {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 [dir="ltr"] {
