@@ -39,19 +39,19 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto 16px;
-  font-size: 22px;
+  font-size: 1.6em;
 }
 
 .trust__title {
   font-family: var(--font-2);
-  font-size: 15px;
+  font-size: 1.1em;
   font-weight: 700;
   color: var(--color-2);
   margin-bottom: 6px;
 }
 
 .trust__desc {
-  font-size: 13px;
+  font-size: 0.95em;
   color: var(--color-5);
   line-height: 1.5;
 }

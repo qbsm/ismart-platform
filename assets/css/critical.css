@@ -8,6 +8,7 @@
 }
 
 html {
+  font-size: 10px;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
@@ -15,12 +16,18 @@ html {
 body {
   margin: 0;
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 16px;
+  font-size: 1.4rem;
   line-height: 1.5;
   color: #000;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 1.6rem;
+  }
 }
 
 img {

@@ -24,7 +24,7 @@
 }
 
 .partners__label {
-  font-size: 12px;
+  font-size: 0.85em;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -34,7 +34,7 @@
 
 .partners__heading {
   font-family: var(--font-2);
-  font-size: 32px;
+  font-size: 2.3em;
   font-weight: 800;
   color: var(--color-2);
   line-height: 1.2;
@@ -43,7 +43,7 @@
 }
 
 .partners__description {
-  font-size: 16px;
+  font-size: 1.15em;
   color: var(--color-5);
   line-height: 1.7;
   margin-bottom: 32px;
@@ -61,7 +61,7 @@
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: 15px;
+  font-size: 1.1em;
   color: var(--color-6);
 }
 
@@ -114,20 +114,20 @@
 }
 
 .partners__card-icon {
-  font-size: 28px;
+  font-size: 2em;
   margin-bottom: 12px;
 }
 
 .partners__card-title {
   font-family: var(--font-2);
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 700;
   color: var(--color-2);
   margin-bottom: 4px;
 }
 
 .partners__card-desc {
-  font-size: 12px;
+  font-size: 0.85em;
   color: var(--color-5);
   line-height: 1.5;
 }
