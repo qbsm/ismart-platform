@@ -12,15 +12,17 @@ use Psr\Http\Server\MiddlewareInterface;
 use Psr\Http\Server\RequestHandlerInterface;
 
 /**
- * Rate limiting для POST /api/send: ограничение запросов по IP в скользящем окне.
- * Конфиг: settings['rate_limit_api_send'] => [ 'max_requests' => 10, 'window_seconds' => 60 ].
+ * Rate limiting публичных POST-эндпоинтов: ограничение запросов по IP в скользящем окне.
+ * Конфиг: settings['rate_limit_api_send'] => [ 'max_requests' => 10, 'window_seconds' => 60,
+ * 'paths' => ['/api/send'] ]. Deployment добавляет в 'paths' свои эндпоинты — правка ядра
+ * для этого не нужна.
  * Хранилище: файлы в cache/rate_limit/ (по хешу IP).
  */
 final class RateLimitMiddleware implements MiddlewareInterface
 {
-    private const TARGET_PATH = '/api/send';
+    private const DEFAULT_PATHS = ['/api/send'];
 
-    /** @var array{max_requests?: int, window_seconds?: int} */
+    /** @var array{max_requests?: int, window_seconds?: int, paths?: array<int,string>} */
     private array $config;
 
     private string $cacheDir;
@@ -42,7 +44,9 @@ final class RateLimitMiddleware implements MiddlewareInterface
         $path = $request->getUri()->getPath();
         $method = $request->getMethod();
 
-        if ($method !== 'POST' || $path !== self::TARGET_PATH) {
+        $targetPaths = $this->config['paths'] ?? self::DEFAULT_PATHS;
+
+        if ($method !== 'POST' || !in_array(rtrim($path, '/') ?: '/', $targetPaths, true)) {
             return $handler->handle($request);
         }
 
