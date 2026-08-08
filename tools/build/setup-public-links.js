@@ -22,10 +22,16 @@ const LINKS = [
   { link: 'data', target: '../data', type: 'dir' },
   // Корневые файлы
   { link: 'robots.txt', target: '../robots.txt', type: 'file' },
-  { link: '.env', target: '../.env', type: 'file' },
-  { link: 'composer.json', target: '../composer.json', type: 'file' },
-  { link: 'composer.lock', target: '../composer.lock', type: 'file' },
 ];
+
+/*
+ * `.env`, `composer.json` и `composer.lock` здесь были и создавали симлинки внутрь докрута.
+ * Приложению они не нужны: `public/index.php` находит корень проекта по файловой системе
+ * (`dirname(__DIR__)`), а не через докрут. Зато веб-сервер отдавал их наружу — 09.08.2026 так
+ * утекли `.env` девяти промо-сайтов вместе с токеном CallTouch. Секретам в докруте не место,
+ * даже прикрытым правилом nginx: правило можно забыть на новом сайте, а сборка молча
+ * пересоздаёт симлинк.
+ */
 
 function ensurePublicDir() {
   if (!fs.existsSync(publicDir)) {
