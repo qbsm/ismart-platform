@@ -67,7 +67,8 @@ final class ApiSendAction
             return $this->json($response, 422, $payload);
         }
 
-        // Параллельная (независимая) отправка по всем каналам
+        // Последовательная отправка: каналы независимы (падение одного не мешает
+        // остальным), но ответ формы ждёт их все — поэтому таймауты каналов держим короткими
         $uploadedFiles = $request->getUploadedFiles();
         $data['_user_agent'] = (string) ($request->getHeaderLine('User-Agent') ?: '');
         $data['_ip'] = $this->clientIp($request);
