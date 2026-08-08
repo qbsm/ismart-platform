@@ -42,12 +42,28 @@ $mask = static function (string $value, int $keep = 4): string {
     return substr($value, 0, $keep) . str_repeat('*', max(strlen($value) - $keep, 0));
 };
 
-$credentialsPath = $env('GS_CREDENTIALS_PATH');
+$credentialsPath = $env('SHEETS_CREDENTIALS_PATH');
 $credentialsAbs = $credentialsPath === ''
     ? ''
     : (str_starts_with($credentialsPath, '/') ? $credentialsPath : $projectRoot . '/' . ltrim($credentialsPath, '/'));
 
 $channels = [
+    'rescue' => (function () use ($env, $bool): array {
+        $reasons = [];
+        if (!$bool('RESCUE_ENABLE')) {
+            $reasons[] = 'RESCUE_ENABLE=' . ($env('RESCUE_ENABLE') ?: 'false');
+        }
+        if ($env('RESCUE_SITE') === '') {
+            $reasons[] = 'RESCUE_SITE пуст';
+        }
+        if ($reasons === []) {
+            // Ключ нужен только вне нашего периметра: обычно приёмник подтверждает
+            // отправителя по домену, и RESCUE_KEY пуст — это норма, а не недонастройка.
+            $how = $env('RESCUE_KEY') !== '' ? 'по ключу' : 'по домену';
+            return ['enabled' => true, 'detail' => 'site=' . $env('RESCUE_SITE') . ', подтверждение ' . $how];
+        }
+        return ['enabled' => false, 'detail' => implode(', ', $reasons)];
+    })(),
     'mail' => [
         'enabled' => $env('MAIL_TO') !== '',
         'detail' => $env('MAIL_TO') !== ''
@@ -56,54 +72,54 @@ $channels = [
     ],
     'calltouch' => (function () use ($env, $bool, $mask): array {
         $reasons = [];
-        if (!$bool('CT_ENABLE')) {
-            $reasons[] = 'CT_ENABLE=' . ($env('CT_ENABLE') ?: 'false');
+        if (!$bool('CALLTOUCH_ENABLE')) {
+            $reasons[] = 'CALLTOUCH_ENABLE=' . ($env('CALLTOUCH_ENABLE') ?: 'false');
         }
         // Два режима: автопрозвон (route_key + token) либо регистрация заявки (site_id)
-        $hasCallback = $env('CT_ROUTE_KEY') !== '' && $env('CT_TOKEN') !== '';
-        $hasRequest = $env('CT_SITE_ID') !== '';
+        $hasCallback = $env('CALLTOUCH_ROUTE_KEY') !== '' && $env('CALLTOUCH_TOKEN') !== '';
+        $hasRequest = $env('CALLTOUCH_SITE_ID') !== '';
         if (!$hasCallback && !$hasRequest) {
-            $reasons[] = 'нужен CT_ROUTE_KEY+CT_TOKEN (автопрозвон) либо CT_SITE_ID (заявка)';
+            $reasons[] = 'нужен CALLTOUCH_ROUTE_KEY+CALLTOUCH_TOKEN (автопрозвон) либо CALLTOUCH_SITE_ID (заявка)';
         }
         if ($reasons === []) {
             $detail = $hasCallback
-                ? 'автопрозвон: route_key=' . $mask($env('CT_ROUTE_KEY')) . ', token=' . $mask($env('CT_TOKEN'))
-                : 'заявка: site_id=' . $env('CT_SITE_ID');
+                ? 'автопрозвон: route_key=' . $mask($env('CALLTOUCH_ROUTE_KEY')) . ', token=' . $mask($env('CALLTOUCH_TOKEN'))
+                : 'заявка: site_id=' . $env('CALLTOUCH_SITE_ID');
             return ['enabled' => true, 'detail' => $detail];
         }
         return ['enabled' => false, 'detail' => implode(', ', $reasons)];
     })(),
     'telegram' => (function () use ($env, $bool): array {
         $reasons = [];
-        if (!$bool('TG_ENABLE')) {
-            $reasons[] = 'TG_ENABLE=' . ($env('TG_ENABLE') ?: 'false');
+        if (!$bool('TELEGRAM_ENABLE')) {
+            $reasons[] = 'TELEGRAM_ENABLE=' . ($env('TELEGRAM_ENABLE') ?: 'false');
         }
-        if ($env('TG_BOT_TOKEN') === '') {
-            $reasons[] = 'TG_BOT_TOKEN пуст';
+        if ($env('TELEGRAM_BOT_TOKEN') === '') {
+            $reasons[] = 'TELEGRAM_BOT_TOKEN пуст';
         }
-        if ($env('TG_CHAT_ID') === '') {
-            $reasons[] = 'TG_CHAT_ID пуст';
+        if ($env('TELEGRAM_CHAT_ID') === '') {
+            $reasons[] = 'TELEGRAM_CHAT_ID пуст';
         }
         if ($reasons === []) {
-            return ['enabled' => true, 'detail' => 'chat_id=' . $env('TG_CHAT_ID')];
+            return ['enabled' => true, 'detail' => 'chat_id=' . $env('TELEGRAM_CHAT_ID')];
         }
         return ['enabled' => false, 'detail' => implode(', ', $reasons)];
     })(),
     'google_sheets' => (function () use ($env, $bool, $credentialsAbs): array {
         $reasons = [];
-        if (!$bool('GS_ENABLE')) {
-            $reasons[] = 'GS_ENABLE=' . ($env('GS_ENABLE') ?: 'false');
+        if (!$bool('SHEETS_ENABLE')) {
+            $reasons[] = 'SHEETS_ENABLE=' . ($env('SHEETS_ENABLE') ?: 'false');
         }
-        if ($env('GS_SPREADSHEET_ID') === '') {
-            $reasons[] = 'GS_SPREADSHEET_ID пуст';
+        if ($env('SHEETS_SPREADSHEET_ID') === '') {
+            $reasons[] = 'SHEETS_SPREADSHEET_ID пуст';
         }
         if ($credentialsAbs === '' || !is_readable($credentialsAbs)) {
-            $reasons[] = 'creds не найден (' . ($env('GS_CREDENTIALS_PATH') ?: '?') . ')';
+            $reasons[] = 'creds не найден (' . ($env('SHEETS_CREDENTIALS_PATH') ?: '?') . ')';
         }
         if ($reasons === []) {
             return [
                 'enabled' => true,
-                'detail' => 'spreadsheet=' . $env('GS_SPREADSHEET_ID') . ', sheet=' . ($env('GS_SHEET_NAME') ?: 'Заявки'),
+                'detail' => 'spreadsheet=' . $env('SHEETS_SPREADSHEET_ID') . ', sheet=' . ($env('SHEETS_SHEET_NAME') ?: 'Заявки'),
             ];
         }
         return ['enabled' => false, 'detail' => implode(', ', $reasons)];
