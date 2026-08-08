@@ -1,5 +1,7 @@
 <?php
 
+use App\Support\Env;
+
 $projectRoot = dirname(__DIR__);
 
 // APP_ENV: production | development — разделение окружений (кэш Twig, уровень логов)
@@ -88,33 +90,45 @@ return [
         'allow_credentials' => false,
     ],
     'mail' => [
-        'dsn' => (string) (getenv('MAILER_DSN') ?: 'sendmail://default'),
-        'to' => (string) (getenv('MAIL_TO') ?: ''),
-        'from' => (string) (getenv('MAIL_FROM') ?: 'noreply@localhost'),
-        'from_name' => (string) (getenv('MAIL_FROM_NAME') ?: ''),
-        'subject_prefix' => (string) (getenv('MAIL_SUBJECT_PREFIX') ?: ''),
+        'dsn' => Env::get('MAIL_DSN', 'MAILER_DSN') ?: 'sendmail://default',
+        'to' => Env::get('MAIL_TO'),
+        'from' => Env::get('MAIL_FROM') ?: 'noreply@localhost',
+        'from_name' => Env::get('MAIL_FROM_NAME'),
+        'subject_prefix' => Env::get('MAIL_SUBJECT_PREFIX'),
     ],
+    // Единый приёмник заявок (api.ismart.pro): забирает почту, телеграм и таблицы.
+    // Подтверждение отправителя — по домену: заявку шлёт бэкенд, значит с адреса, на который
+    // домен и резолвится. Ключ нужен только хостингам вне нашего периметра.
+    'api' => [
+        'enable' => Env::bool('API_ENABLE', 'LEADS_API_ENABLE'),
+        'url' => Env::get('API_URL', 'LEADS_API_URL') ?: 'https://api.ismart.pro/v1/lead',
+        'site' => Env::get('API_SITE', 'LEADS_API_SITE'),
+        'key' => Env::get('API_KEY', 'LEADS_API_KEY'),
+        'timeout' => Env::int('API_TIMEOUT', 10, 'LEADS_API_TIMEOUT'),
+    ],
+
     'calltouch' => [
-        'enable' => filter_var((string) (getenv('CT_ENABLE') ?: 'false'), FILTER_VALIDATE_BOOLEAN),
-        'route_key' => (string) (getenv('CT_ROUTE_KEY') ?: ''),
-        'token' => (string) (getenv('CT_TOKEN') ?: ''),
+        'enable' => Env::bool('CALLTOUCH_ENABLE', 'CT_ENABLE'),
+        'route_key' => Env::get('CALLTOUCH_ROUTE_KEY', 'CT_ROUTE_KEY'),
+        'token' => Env::get('CALLTOUCH_TOKEN', 'CT_TOKEN'),
         // Числовой ID личного кабинета (Интеграции → Отправка данных во внешние
         // системы → API). Включает режим регистрации заявки — без токена.
-        'site_id' => (string) (getenv('CT_SITE_ID') ?: ''),
-        'timeout' => (int) (getenv('CT_TIMEOUT') ?: 10),
+        'site_id' => Env::get('CALLTOUCH_SITE_ID', 'CT_SITE_ID'),
+        'timeout' => Env::int('CALLTOUCH_TIMEOUT', 10, 'CT_TIMEOUT'),
     ],
     'telegram' => [
-        'enable' => filter_var((string) (getenv('TG_ENABLE') ?: 'false'), FILTER_VALIDATE_BOOLEAN),
-        'bot_token' => (string) (getenv('TG_BOT_TOKEN') ?: ''),
-        'chat_id' => (string) (getenv('TG_CHAT_ID') ?: ''),
-        'timeout' => (int) (getenv('TG_TIMEOUT') ?: 10),
+        'enable' => Env::bool('TELEGRAM_ENABLE', 'TG_ENABLE'),
+        'bot_token' => Env::get('TELEGRAM_BOT_TOKEN', 'TG_BOT_TOKEN'),
+        'chat_id' => Env::get('TELEGRAM_CHAT_ID', 'TG_CHAT_ID'),
+        'timeout' => Env::int('TELEGRAM_TIMEOUT', 10, 'TG_TIMEOUT'),
     ],
     'google_sheets' => [
-        'enable' => filter_var((string) (getenv('GS_ENABLE') ?: 'false'), FILTER_VALIDATE_BOOLEAN),
-        'spreadsheet_id' => (string) (getenv('GS_SPREADSHEET_ID') ?: ''),
-        'sheet_name' => (string) (getenv('GS_SHEET_NAME') ?: 'Заявки'),
-        'credentials_path' => (string) (getenv('GS_CREDENTIALS_PATH') ?: 'config/secrets/google-service-account.json'),
-        'timeout' => (int) (getenv('GS_TIMEOUT') ?: 10),
+        'enable' => Env::bool('SHEETS_ENABLE', 'GS_ENABLE'),
+        'spreadsheet_id' => Env::get('SHEETS_SPREADSHEET_ID', 'GS_SPREADSHEET_ID'),
+        'sheet_name' => Env::get('SHEETS_SHEET_NAME', 'GS_SHEET_NAME') ?: 'Заявки',
+        'credentials_path' => Env::get('SHEETS_CREDENTIALS_PATH', 'GS_CREDENTIALS_PATH')
+            ?: 'config/secrets/google-service-account.json',
+        'timeout' => Env::int('SHEETS_TIMEOUT', 10, 'GS_TIMEOUT'),
     ],
     'errors' => require __DIR__ . '/errors.php',
     'twig' => [
