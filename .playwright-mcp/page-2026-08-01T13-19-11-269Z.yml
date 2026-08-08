@@ -1,0 +1,202 @@
+- generic [ref=f8e2]:
+  - paragraph [ref=f8e259]: Проводятся технические работы. Из-за задержек в статистике данные в отчётах неполные. Позже сервис вернётся к нормальной работе. Извините за неудобства!
+  - generic [ref=f8e4]:
+    - generic [ref=f8e6]:
+      - generic [ref=f8e7]:
+        - link [ref=f8e10] [cursor=pointer]:
+          - /url: /list
+        - generic [ref=f8e28]:
+          - generic [ref=f8e29]:
+            - link "Обзор" [ref=f8e32] [cursor=pointer]:
+              - /url: /overview?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false
+            - generic [ref=f8e40]: Дашборды
+            - generic [ref=f8e49]: Отчеты
+            - generic [ref=f8e57]: Поведение
+            - generic [ref=f8e65]: Посетители
+          - generic [ref=f8e75]:
+            - link "Цели" [ref=f8e78] [cursor=pointer]:
+              - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goalsConversionViewKind=List
+            - link "Конверсии" [ref=f8e90] [cursor=pointer]:
+              - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goalsConversionViewKind=Chart
+          - generic [ref=f8e100]:
+            - link "Тег Менеджер" [ref=f8e103] [cursor=pointer]:
+              - /url: /ytm/overview?id=107236894
+            - generic [ref=f8e112]: Вариокуб
+          - generic [ref=f8e121]:
+            - generic [ref=f8e122]: Привлечение
+            - link "Интеграции" [ref=f8e132] [cursor=pointer]:
+              - /url: /marketplace?id=107236894
+            - link "Инсайты" [ref=f8e142] [cursor=pointer]:
+              - /url: /insights?id=107236894
+            - generic [ref=f8e150]: Настройки
+      - generic [ref=f8e158]: Свернуть
+    - generic [ref=f8e164]:
+      - generic [ref=f8e166]:
+        - generic [ref=f8e168]:
+          - generic "Kumho (kumho-tires.ru)" [ref=f8e174]:
+            - generic [ref=f8e175] [cursor=pointer]:
+              - img "Kumho (kumho-tires.ru)" [ref=f8e177]
+              - generic [ref=f8e178]: Kumho (kumho-tires.ru)
+            - generic [ref=f8e181]:
+              - link "kumho-tires.ru•" [ref=f8e182] [cursor=pointer]:
+                - /url: http://kumho-tires.ru
+              - generic [ref=f8e183]: "107236894"
+          - generic [ref=f8e185]:
+            - link "Настройка аккаунта" [ref=f8e186] [cursor=pointer]:
+              - /url: /preferences/subscriptions
+            - button "Помощь" [ref=f8e187]:
+              - generic "Помощь" [ref=f8e190] [cursor=pointer]
+            - generic [ref=f8e195]:
+              - button [ref=f8e196]
+              - generic [ref=f8e202]: "0"
+            - button [ref=f8e203]
+        - generic [ref=f8e212] [cursor=pointer]:
+          - img "fedorovich-d" [ref=f8e215]
+          - generic [ref=f8e216]: fedorovich-d
+      - generic [ref=f8e260]:
+        - generic [ref=f8e261]:
+          - generic [ref=f8e262]:
+            - generic [ref=f8e263]:
+              - generic [ref=f8e265]:
+                - generic [ref=f8e266]: Конверсии
+                - link [ref=f8e269] [cursor=pointer]:
+                  - /url: /support/metrica/ru/reports/conversion
+              - generic [ref=f8e276]:
+                - generic [ref=f8e277] [cursor=pointer]: Использовано 0 из 200 целей
+                - button "Добавить цель" [ref=f8e282]:
+                  - generic "Добавить цель" [ref=f8e285] [cursor=pointer]
+                - button [ref=f8e287]
+                - button [ref=f8e293]
+            - generic [ref=f8e300]:
+              - generic [ref=f8e301]:
+                - radiogroup [ref=f8e303]:
+                  - generic "Сегодня" [ref=f8e305]:
+                    - radio "Сегодня" [checked] [ref=f8e306] [cursor=pointer]
+                  - generic "Вчера" [ref=f8e310]:
+                    - radio "Вчера" [ref=f8e311] [cursor=pointer]
+                  - generic "Неделя" [ref=f8e315]:
+                    - radio "Неделя" [ref=f8e316] [cursor=pointer]
+                  - generic "Месяц" [ref=f8e320]:
+                    - radio "Месяц" [ref=f8e321] [cursor=pointer]
+                  - generic "Квартал" [ref=f8e325]:
+                    - radio "Квартал" [ref=f8e326] [cursor=pointer]
+                  - generic [ref=f8e330]:
+                    - radio "1 авг" [ref=f8e331] [cursor=pointer]
+                    - generic [ref=f8e332]: 1 авг
+                - button "Сегмент • Не выбран" [ref=f8e340]:
+                  - generic [ref=f8e349] [cursor=pointer]:
+                    - text: Сегмент
+                    - generic [ref=f8e350]:
+                      - text: •
+                      - generic [ref=f8e351]: Не выбран
+              - button "100 %" [ref=f8e357]
+            - generic [ref=f8e374]:
+              - generic [ref=f8e375]:
+                - generic [ref=f8e376]: Визиты
+                - button [ref=f8e383]
+              - generic [ref=f8e389]:
+                - generic [ref=f8e390]: Люди
+                - button [ref=f8e396]
+          - generic [ref=f8e403]:
+            - button "Статистика • Скрыта" [ref=f8e404]:
+              - generic "Статистика • Скрыта" [ref=f8e411] [cursor=pointer]
+            - button "Метрики • Конверсия, +2" [ref=f8e416]
+            - button "Все цели" [ref=f8e424]:
+              - generic "Все цели" [ref=f8e427] [cursor=pointer]
+        - generic [ref=f8e432]:
+          - button "Поиск" [ref=f8e434]:
+            - generic "Поиск" [ref=f8e440] [cursor=pointer]
+          - button "По 10 минут" [ref=f8e443]:
+            - generic "По 10 минут" [ref=f8e446] [cursor=pointer]
+        - generic [ref=f8e452]:
+          - generic [ref=f8e463]:
+            - 'link "Автоцель: отправка формы" [ref=f8e469] [cursor=pointer]':
+              - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=519192336&goalsConversionViewKind=List
+            - generic [ref=f8e474]:
+              - generic [ref=f8e475]: ID 519192336
+              - generic "отправки всех форм" [ref=f8e477]
+              - generic [ref=f8e478]:
+                - generic "Добавить на дашборд" [ref=f8e479]
+                - generic "Редактировать" [ref=f8e484]
+                - generic "Метки" [ref=f8e487]
+                - generic "Добавить в избранное" [ref=f8e492]
+                - generic "Показать статистику" [ref=f8e495]
+          - generic [ref=f8e514]:
+            - 'link "Автоцель: клик по номеру телефона" [ref=f8e521] [cursor=pointer]':
+              - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=543212097&goalsConversionViewKind=List
+            - generic [ref=f8e526]:
+              - generic [ref=f8e527]: ID 543212097
+              - generic "клики по всем номерам телефонов" [ref=f8e529]
+              - generic [ref=f8e530]:
+                - generic "Добавить на дашборд" [ref=f8e531]
+                - generic "Редактировать" [ref=f8e536]
+                - generic "Метки" [ref=f8e539]
+                - generic "Добавить в избранное" [ref=f8e544]
+                - generic "Показать статистику" [ref=f8e547]
+          - generic [ref=f8e566]:
+            - 'link "Автоцель: отправил контактные данные" [ref=f8e572] [cursor=pointer]':
+              - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=543982286&goalsConversionViewKind=List
+            - generic [ref=f8e577]:
+              - generic [ref=f8e578]: ID 543982286
+              - generic "отправил контактные данные" [ref=f8e580]
+              - generic [ref=f8e581]:
+                - generic "Добавить на дашборд" [ref=f8e582]
+                - generic "Редактировать" [ref=f8e587]
+                - generic "Метки" [ref=f8e590]
+                - generic "Добавить в избранное" [ref=f8e595]
+                - generic "Показать статистику" [ref=f8e598]
+          - generic [ref=f8e617]:
+            - 'link "Автоцель: заполнил контактные данные" [ref=f8e622] [cursor=pointer]':
+              - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=543982287&goalsConversionViewKind=List
+            - generic [ref=f8e627]:
+              - generic [ref=f8e628]: ID 543982287
+              - generic "заполнил контактные данные" [ref=f8e630]
+              - generic [ref=f8e631]:
+                - generic "Добавить на дашборд" [ref=f8e632]
+                - generic "Редактировать" [ref=f8e637]
+                - generic "Метки" [ref=f8e640]
+                - generic "Добавить в избранное" [ref=f8e645]
+                - generic "Показать статистику" [ref=f8e648]
+          - generic [ref=f8e667]:
+            - 'link "Автоцель: клик по email" [ref=f8e673] [cursor=pointer]':
+              - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=549646346&goalsConversionViewKind=List
+            - generic [ref=f8e678]:
+              - generic [ref=f8e679]: ID 549646346
+              - generic "клики по всем email-адресам" [ref=f8e681]
+              - generic [ref=f8e682]:
+                - generic "Добавить на дашборд" [ref=f8e683]
+                - generic "Редактировать" [ref=f8e688]
+                - generic "Метки" [ref=f8e691]
+                - generic "Добавить в избранное" [ref=f8e696]
+                - generic "Показать статистику" [ref=f8e699]
+          - generic [ref=f8e718]:
+            - 'link "Автоцель: скачивание файла" [ref=f8e724] [cursor=pointer]':
+              - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=560847126&goalsConversionViewKind=List
+            - generic [ref=f8e729]:
+              - generic [ref=f8e730]: ID 560847126
+              - generic "скачивание всех файлов" [ref=f8e732]
+              - generic [ref=f8e733]:
+                - generic "Добавить на дашборд" [ref=f8e734]
+                - generic "Редактировать" [ref=f8e739]
+                - generic "Метки" [ref=f8e742]
+                - generic "Добавить в избранное" [ref=f8e747]
+                - generic "Показать статистику" [ref=f8e750]
+      - generic [ref=f8e224]:
+        - generic [ref=f8e225]:
+          - link "Пользовательское соглашение" [ref=f8e227] [cursor=pointer]:
+            - /url: https://yandex.ru/legal/metrica_termsofuse
+          - link "Политика конфиденциальности" [ref=f8e229] [cursor=pointer]:
+            - /url: https://yandex.ru/legal/confidential
+          - link "Справка" [ref=f8e231] [cursor=pointer]:
+            - /url: /support/metrica/ru/
+          - link "Задать вопрос" [ref=f8e233] [cursor=pointer]:
+            - /url: /support/metrica/ru/troubleshooting/
+          - link "Предложить идею" [ref=f8e235] [cursor=pointer]:
+            - /url: /support/metrica/ru/troubleshooting/idea
+        - generic [ref=f8e236]:
+          - generic [ref=f8e237]: Ru
+          - generic [ref=f8e246]:
+            - text: © 2008–2026 OOO «
+            - link "ЯНДЕКС" [ref=f8e247] [cursor=pointer]:
+              - /url: https://ya.ru
+            - text: »

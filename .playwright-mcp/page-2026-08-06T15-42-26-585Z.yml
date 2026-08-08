@@ -1,0 +1,425 @@
+- generic [active] [ref=f28e1]:
+  - link "Перейти к контенту" [ref=f28e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f28e3]:
+    - banner [ref=f28e4]:
+      - generic [ref=f28e5]:
+        - link [ref=f28e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f28e8]
+        - navigation "Основное меню" [ref=f28e9]:
+          - link "Главная" [ref=f28e11] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/
+          - link "О компании" [ref=f28e13] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/about
+          - link "Шины" [ref=f28e15] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/tires
+          - link "Подбор шин" [ref=f28e17] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/podbor
+          - link "Расширенная гарантия" [ref=f28e19] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/warranty
+          - link "Где купить" [ref=f28e21] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/buy
+    - generic [ref=f28e27]:
+      - heading "Модели шин Kumho" [level=1] [ref=f28e30]
+      - generic [ref=f28e32]:
+        - generic [ref=f28e33]:
+          - button "Лето" [ref=f28e34] [cursor=pointer]
+          - button "Всесезонные" [ref=f28e36] [cursor=pointer]
+          - button "Зима" [ref=f28e38] [cursor=pointer]
+          - button "Шипованные" [ref=f28e40] [cursor=pointer]
+        - generic [ref=f28e42]:
+          - generic [ref=f28e44]: Диаметр
+          - combobox "Диаметр" [ref=f28e45]:
+            - option "Все" [selected]
+            - option "12"
+            - option "13"
+            - option "14"
+            - option "15"
+            - option "16"
+            - option "17"
+            - option "18"
+            - option "19"
+            - option "20"
+            - option "21"
+            - option "22"
+        - generic [ref=f28e46]:
+          - generic [ref=f28e48]: Высота профиля
+          - combobox "Высота профиля" [ref=f28e49]:
+            - option "Все" [selected]
+            - option "8.50"
+            - option "9.5"
+            - option "10.5"
+            - option "11.5"
+            - option "12.5"
+            - option "30"
+            - option "35"
+            - option "40"
+            - option "45"
+            - option "50"
+            - option "55"
+            - option "60"
+            - option "65"
+            - option "70"
+            - option "75"
+            - option "80"
+            - option "85"
+        - generic [ref=f28e50]:
+          - generic [ref=f28e52]: Ширина
+          - combobox "Ширина" [ref=f28e53]:
+            - option "Все" [selected]
+            - option "27"
+            - option "30"
+            - option "31"
+            - option "32"
+            - option "33"
+            - option "35"
+            - option "135"
+            - option "145"
+            - option "155"
+            - option "165"
+            - option "175"
+            - option "185"
+            - option "195"
+            - option "205"
+            - option "215"
+            - option "225"
+            - option "235"
+            - option "245"
+            - option "255"
+            - option "265"
+            - option "275"
+            - option "285"
+            - option "295"
+            - option "305"
+            - option "315"
+            - option "325"
+      - generic [ref=f28e54]:
+        - link "AT52 Road Venture Kumho AT52 Road Venture" [ref=f28e56] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/at52
+          - generic [ref=f28e57]: AT52
+          - generic [ref=f28e59]: Road Venture
+          - img "Kumho AT52 Road Venture" [ref=f28e63]
+        - link "AT61 Road Venture Kumho AT61 Road Venture" [ref=f28e65] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/at61
+          - generic [ref=f28e66]: AT61
+          - generic [ref=f28e68]: Road Venture
+          - img "Kumho AT61 Road Venture" [ref=f28e72]
+        - link "CX11 PorTran Kumho CX11 PorTran" [ref=f28e74] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/cx11
+          - generic [ref=f28e75]: CX11
+          - generic [ref=f28e77]: PorTran
+          - img "Kumho CX11 PorTran" [ref=f28e81]
+        - link "CW11 WinterPorTran Kumho CW11 WinterPorTran" [ref=f28e83] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/cw11
+          - generic [ref=f28e84]: CW11
+          - generic [ref=f28e86]: WinterPorTran
+          - img "Kumho CW11 WinterPorTran" [ref=f28e90]
+        - link "CW51 WinterPorTran Kumho CW51 WinterPorTran" [ref=f28e92] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/cw51
+          - generic [ref=f28e93]: CW51
+          - generic [ref=f28e95]: WinterPorTran
+          - img "Kumho CW51 WinterPorTran" [ref=f28e99]
+        - link "ES31 Ecowing Kumho ES31 Ecowing" [ref=f28e101] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/es31
+          - generic [ref=f28e102]: ES31
+          - generic [ref=f28e104]: Ecowing
+          - img "Kumho ES31 Ecowing" [ref=f28e108]
+        - link "HA31 SOLUS Kumho HA31 SOLUS" [ref=f28e110] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ha31
+          - generic [ref=f28e111]: HA31
+          - generic [ref=f28e113]: SOLUS
+          - img "Kumho HA31 SOLUS" [ref=f28e117]
+        - link "HA32 SOLUS Kumho HA32 SOLUS" [ref=f28e119] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ha32
+          - generic [ref=f28e120]: HA32
+          - generic [ref=f28e122]: SOLUS
+          - img "Kumho HA32 SOLUS" [ref=f28e126]
+        - link "HA32+ SOLUS Kumho HA32+ SOLUS" [ref=f28e128] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ha32-plus
+          - generic [ref=f28e129]: HA32+
+          - generic [ref=f28e131]: SOLUS
+          - img "Kumho HA32+ SOLUS" [ref=f28e135]
+        - link "HP71 CRUGEN Kumho HP71 CRUGEN" [ref=f28e137] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/hp71
+          - generic [ref=f28e138]: HP71
+          - generic [ref=f28e140]: CRUGEN
+          - img "Kumho HP71 CRUGEN" [ref=f28e144]
+        - link "HP91 CRUGEN Kumho HP91 CRUGEN" [ref=f28e146] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/hp91
+          - generic [ref=f28e147]: HP91
+          - generic [ref=f28e149]: CRUGEN
+          - img "Kumho HP91 CRUGEN" [ref=f28e153]
+        - link "HS51 ECSTA Kumho HS51 ECSTA" [ref=f28e155] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/hs51
+          - generic [ref=f28e156]: HS51
+          - generic [ref=f28e158]: ECSTA
+          - img "Kumho HS51 ECSTA" [ref=f28e162]
+        - link "HS52 ECSTA Kumho HS52 ECSTA" [ref=f28e164] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/hs52
+          - generic [ref=f28e165]: HS52
+          - generic [ref=f28e167]: ECSTA
+          - img "Kumho HS52 ECSTA" [ref=f28e171]
+        - link "HS63 ECSTA Kumho HS63 ECSTA" [ref=f28e173] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/hs63
+          - generic [ref=f28e174]: HS63
+          - generic [ref=f28e176]: ECSTA
+          - img "Kumho HS63 ECSTA" [ref=f28e180]
+        - link "KC53 PorTran Kumho KC53 PorTran" [ref=f28e182] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kc53
+          - generic [ref=f28e183]: KC53
+          - generic [ref=f28e185]: PorTran
+          - img "Kumho KC53 PorTran" [ref=f28e189]
+        - link "KH11 Ecowing Kumho KH11 Ecowing" [ref=f28e191] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kh11
+          - generic [ref=f28e192]: KH11
+          - generic [ref=f28e194]: Ecowing
+          - img "Kumho KH11 Ecowing" [ref=f28e198]
+        - link "KH17 Ecowing Kumho KH17 Ecowing" [ref=f28e200] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kh17
+          - generic [ref=f28e201]: KH17
+          - generic [ref=f28e203]: Ecowing
+          - img "Kumho KH17 Ecowing" [ref=f28e207]
+        - link "KH25 Ecowing Kumho KH25 Ecowing" [ref=f28e209] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kh25
+          - generic [ref=f28e210]: KH25
+          - generic [ref=f28e212]: Ecowing
+          - img "Kumho KH25 Ecowing" [ref=f28e216]
+        - link "KH27 Ecowing Kumho KH27 Ecowing" [ref=f28e218] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kh27
+          - generic [ref=f28e219]: KH27
+          - generic [ref=f28e221]: Ecowing
+          - img "Kumho KH27 Ecowing" [ref=f28e225]
+        - link "KH31 Ecowing Kumho KH31 Ecowing" [ref=f28e227] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kh31
+          - generic [ref=f28e228]: KH31
+          - generic [ref=f28e230]: Ecowing
+          - img "Kumho KH31 Ecowing" [ref=f28e234]
+        - link "KL21 Road Venture Kumho KL21 Road Venture" [ref=f28e236] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kl21
+          - generic [ref=f28e237]: KL21
+          - generic [ref=f28e239]: Road Venture
+          - img "Kumho KL21 Road Venture" [ref=f28e243]
+        - link "KL33 Road Venture Kumho KL33 Road Venture" [ref=f28e245] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kl33
+          - generic [ref=f28e246]: KL33
+          - generic [ref=f28e248]: Road Venture
+          - img "Kumho KL33 Road Venture" [ref=f28e252]
+        - link "KL71 Road Venture Kumho KL71 Road Venture" [ref=f28e254] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/kl71
+          - generic [ref=f28e255]: KL71
+          - generic [ref=f28e257]: Road Venture
+          - img "Kumho KL71 Road Venture" [ref=f28e261]
+        - link "KU39 ECSTA Kumho KU39 ECSTA" [ref=f28e263] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ku39
+          - generic [ref=f28e264]: KU39
+          - generic [ref=f28e266]: ECSTA
+          - img "Kumho KU39 ECSTA" [ref=f28e270]
+        - link "MT51 Road Venture Kumho MT51 Road Venture" [ref=f28e272] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/mt51
+          - generic [ref=f28e273]: MT51
+          - generic [ref=f28e275]: Road Venture
+          - img "Kumho MT51 Road Venture" [ref=f28e279]
+        - link "MT71 Road Venture Kumho MT71 Road Venture" [ref=f28e281] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/mt71
+          - generic [ref=f28e282]: MT71
+          - generic [ref=f28e284]: Road Venture
+          - img "Kumho MT71 Road Venture" [ref=f28e288]
+        - link "PS71 ECSTA Kumho PS71 ECSTA" [ref=f28e290] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ps71
+          - generic [ref=f28e291]: PS71
+          - generic [ref=f28e293]: ECSTA
+          - img "Kumho PS71 ECSTA" [ref=f28e297]
+        - link "PS72 ECSTA Sport S Kumho PS72 ECSTA Sport S" [ref=f28e299] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ps72
+          - generic [ref=f28e300]: PS72
+          - generic [ref=f28e302]: ECSTA Sport S
+          - img "Kumho PS72 ECSTA Sport S" [ref=f28e306]
+        - link "TA31 Road Venture Kumho TA31 Road Venture" [ref=f28e308] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ta31
+          - generic [ref=f28e309]: TA31
+          - generic [ref=f28e311]: Road Venture
+          - img "Kumho TA31 Road Venture" [ref=f28e315]
+        - link "WI32 WinterCraft ice Kumho WI32 WinterCraft ice" [ref=f28e317] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/wi32
+          - generic [ref=f28e318]: WI32
+          - generic [ref=f28e320]: WinterCraft ice
+          - img "Kumho WI32 WinterCraft ice" [ref=f28e324]
+        - link "WI51 WinterCraft ice Kumho WI51 WinterCraft ice" [ref=f28e326] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/wi51
+          - generic [ref=f28e327]: WI51
+          - generic [ref=f28e329]: WinterCraft ice
+          - img "Kumho WI51 WinterCraft ice" [ref=f28e333]
+        - link "WP52+ WinterCraft Kumho WP52+ WinterCraft" [ref=f28e335] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/wp52-plus
+          - generic [ref=f28e336]: WP52+
+          - generic [ref=f28e338]: WinterCraft
+          - img "Kumho WP52+ WinterCraft" [ref=f28e342]
+        - link "WP72 WinterCraft Kumho WP72 WinterCraft" [ref=f28e344] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/wp72
+          - generic [ref=f28e345]: WP72
+          - generic [ref=f28e347]: WinterCraft
+          - img "Kumho WP72 WinterCraft" [ref=f28e351]
+        - link "WS31 WinterCraft ice Kumho WS31 WinterCraft ice" [ref=f28e353] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ws31
+          - generic [ref=f28e354]: WS31
+          - generic [ref=f28e356]: WinterCraft ice
+          - img "Kumho WS31 WinterCraft ice" [ref=f28e360]
+        - link "WS51 WinterCraft ice Kumho WS51 WinterCraft ice" [ref=f28e362] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ws51
+          - generic [ref=f28e363]: WS51
+          - generic [ref=f28e365]: WinterCraft ice
+          - img "Kumho WS51 WinterCraft ice" [ref=f28e369]
+        - link "WS71 WinterCraft Kumho WS71 WinterCraft" [ref=f28e371] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/ws71
+          - generic [ref=f28e372]: WS71
+          - generic [ref=f28e374]: WinterCraft
+          - img "Kumho WS71 WinterCraft" [ref=f28e378]
+    - generic [ref=f28e381]:
+      - generic [ref=f28e382]:
+        - heading "Конфигуратор подбора шин" [level=2] [ref=f28e385]
+        - generic [ref=f28e386]: Четыре вопроса — тип автомобиля, сезон, приоритет и размер — и в подборке останутся только подходящие модели Kumho из этого каталога.
+      - link "Подобрать шины" [ref=f28e388] [cursor=pointer]:
+        - /url: https://kumho-tires.ru/podbor
+    - generic [ref=f28e391]:
+      - generic [ref=f28e392]:
+        - heading "Как выбрать шины Kumho по сезону" [level=2] [ref=f28e395]
+        - generic [ref=f28e397]:
+          - paragraph [ref=f28e398]:
+            - text: В каталоге
+            - generic [ref=f28e399]: 36 моделей и 1148 типоразмеров
+            - text: с посадочным диаметром
+            - generic [ref=f28e400]: от R12 до R22
+            - text: . Отобрать нужные помогает фильтр по сезону, диаметру, ширине и высоте профиля.
+          - paragraph [ref=f28e401]:
+            - generic [ref=f28e402]: Зимние шины
+            - text: —
+            - generic [ref=f28e403]: 9 моделей, 432 типоразмера
+            - text: "(R13–R22). Шипованные рассчитаны на лёд и укатанный снег:"
+            - link "WinterCraft ice WI32" [ref=f28e404] [cursor=pointer]:
+              - /url: /tires/wi32
+            - text: (77 типоразмеров),
+            - link "WS31" [ref=f28e405] [cursor=pointer]:
+              - /url: /tires/ws31
+            - text: и
+            - link "WinterPorTran CW11" [ref=f28e406] [cursor=pointer]:
+              - /url: /tires/cw11
+            - text: "для микроавтобусов и фургонов. Нешипованные (фрикционные) — для города и трассы с частыми переходами через ноль:"
+            - link "WinterCraft WP52+" [ref=f28e407] [cursor=pointer]:
+              - /url: /tires/wp52-plus
+            - text: (136 типоразмеров, самый широкий выбор),
+            - link "WS71" [ref=f28e408] [cursor=pointer]:
+              - /url: /tires/ws71
+            - text: для мощных кроссоверов,
+            - link "WP72" [ref=f28e409] [cursor=pointer]:
+              - /url: /tires/wp72
+            - text: ","
+            - link "WinterCraft ice WI51" [ref=f28e410] [cursor=pointer]:
+              - /url: /tires/wi51
+            - text: ","
+            - link "WS51" [ref=f28e411] [cursor=pointer]:
+              - /url: /tires/ws51
+            - text: и коммерческая
+            - link "CW51" [ref=f28e412] [cursor=pointer]:
+              - /url: /tires/cw51
+            - text: .
+          - paragraph [ref=f28e413]:
+            - generic [ref=f28e414]: Всесезонные шины
+            - text: —
+            - generic [ref=f28e415]: 11 моделей, 253 типоразмера
+            - text: "(R13–R20). Подходят там, где зима мягкая, а пробег небольшой: не нужен второй комплект и двойной шиномонтаж. Для легковых автомобилей —"
+            - link "SOLUS HA32" [ref=f28e416] [cursor=pointer]:
+              - /url: /tires/ha32
+            - text: (97 типоразмеров),
+            - link "HA32+" [ref=f28e417] [cursor=pointer]:
+              - /url: /tires/ha32-plus
+            - text: и
+            - link "HA31" [ref=f28e418] [cursor=pointer]:
+              - /url: /tires/ha31
+            - text: ; для внедорожников и пикапов — линейка Road Venture (
+            - link "AT52" [ref=f28e419] [cursor=pointer]:
+              - /url: /tires/at52
+            - text: ","
+            - link "KL71" [ref=f28e420] [cursor=pointer]:
+              - /url: /tires/kl71
+            - text: ","
+            - link "MT71" [ref=f28e421] [cursor=pointer]:
+              - /url: /tires/mt71
+            - text: ); для фургонов —
+            - link "PorTran CX11" [ref=f28e422] [cursor=pointer]:
+              - /url: /tires/cx11
+            - text: .
+          - paragraph [ref=f28e423]:
+            - generic [ref=f28e424]: Летние шины
+            - text: —
+            - generic [ref=f28e425]: 16 моделей, 463 типоразмера
+            - text: "(R12–R22): линейки ECSTA, Ecowing, CRUGEN и PorTran. В устойчивые морозы и на льду зимняя резина безопаснее любой всесезонной — всесезонные модели рассчитаны на мягкую зиму."
+          - paragraph [ref=f28e426]:
+            - generic [ref=f28e427]: Коммерческий транспорт
+            - text: — семейство PorTran,
+            - generic [ref=f28e428]: 107 усиленных C-типоразмеров
+            - text: "(R12–R18): летняя"
+            - link "PorTran KC53" [ref=f28e429] [cursor=pointer]:
+              - /url: /tires/kc53
+            - text: ", всесезонная"
+            - link "PorTran CX11" [ref=f28e430] [cursor=pointer]:
+              - /url: /tires/cx11
+            - text: ", зимние"
+            - link "WinterPorTran CW11" [ref=f28e431] [cursor=pointer]:
+              - /url: /tires/cw11
+            - text: (шипованная) и
+            - link "WinterPorTran CW51" [ref=f28e432] [cursor=pointer]:
+              - /url: /tires/cw51
+            - text: (нешипованная) — для фургонов, микроавтобусов и лёгких грузовиков.
+      - generic [ref=f28e433]:
+        - heading "Оригинальная продукция и гарантия" [level=2] [ref=f28e436]
+        - generic [ref=f28e438]:
+          - paragraph [ref=f28e439]:
+            - text: «Север Авто» —
+            - generic [ref=f28e440]: официальный дистрибьютор
+            - text: шин Kumho | Кумхо компании Kumho Tire в России. Шины поставляются напрямую и продаются через авторизованные шинные центры, поэтому на них действует
+            - generic [ref=f28e441]: гарантия производителя
+            - text: .
+          - paragraph [ref=f28e442]:
+            - text: Дополнительно работает программа
+            - link "«Расширенная гарантия Kumho»" [ref=f28e443] [cursor=pointer]:
+              - /url: /warranty
+            - text: —
+            - generic [ref=f28e444]: ещё один год защиты
+            - text: от эксплуатационных повреждений сверх заводской гарантии. Оформить её можно
+            - generic [ref=f28e445]: только на шины, купленные у авторизованных партнёров
+            - text: ": их список и карта — в разделе"
+            - link "«Где купить»" [ref=f28e446] [cursor=pointer]:
+              - /url: /buy
+            - text: ", там же отмечены центры, принимающие обращения по гарантии."
+          - paragraph [ref=f28e447]:
+            - text: На боковине любой шины Kumho есть
+            - generic [ref=f28e448]: заводская маркировка с датой производства
+            - text: — по ней видно, что шина не залежалась на складе.
+    - generic [ref=f28e450]:
+      - link [ref=f28e453] [cursor=pointer]:
+        - /url: https://kumho-tires.ru/
+        - img "Logo" [ref=f28e454]
+      - generic [ref=f28e455]:
+        - link "Главная" [ref=f28e457] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/
+        - link "О компании" [ref=f28e459] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/about
+        - link "Шины" [ref=f28e461] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires
+        - link "Подбор шин" [ref=f28e463] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/podbor
+        - link "Расширенная гарантия" [ref=f28e465] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/warranty
+        - link "Где купить" [ref=f28e467] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/buy
+        - link "Контакты" [ref=f28e469] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/contacts
+      - generic [ref=f28e470]:
+        - generic [ref=f28e471]: Права на сайт принадлежат ООО «Сталкер» (ИНН 7719614965, ОГРН 1067761249654).
+        - generic [ref=f28e472]: © 2026 Север Авто. Все права защищены
+      - generic [ref=f28e473]:
+        - link "Политика обработки персональных данных" [ref=f28e474] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/data/docs/personal-data-policy.pdf
+        - link "Политика использования cookie-файлов" [ref=f28e475] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/cookies-policy

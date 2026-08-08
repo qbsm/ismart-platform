@@ -212,6 +212,21 @@ npm run orchestrate
 #   [P3] beepitron, italy: legacy class `.container-left.offset` в 2 шаблонах
 ```
 
+## Verify-гейт — обязательный Definition of Done
+
+**Любая** правка деплоя (config/project.php, assets, data, шаблоны) НЕ считается «verified/done», пока не зелёный гейт:
+
+```bash
+node tools/distill/verify-deployment.mjs ../<deployment>      # validate-json + build:js + build:css
+# + рантайм-smoke затронутых роутов: php -S 127.0.0.1:PORT -t public && curl /…  (200/404)
+```
+
+**Правило:** `PHP-роут отдаёт 200` ≠ `деплой работает`. Реальную поломку часто ловит ТОЛЬКО сборка.
+
+**Канонический провал (инцидент 2026-05-29, beepitron):** восстановил отсутствовавший `config/project.php`, проверил PHP-рендер (200 по коллекциям) и объявил «починено» — **не запустив сборку**. А `assets/js/main.js` и `main.css` ветки были копией baseline/kumho: импортировали ~26 несуществующих модулей (tires/dealers/tire-detail) и НЕ импортировали свои (news-slider) → `npm run build:js` падал, JS не собирался, слайдер не работал. Это **divergence assets-слоя** (ADR-0009: assets/css,js — deployment-local, расходятся между деплоями) — ловится исключительно `build`, не PHP-рендером.
+
+**Вывод для пайплайна:** verify = `validate-json` + `build:js` (webpack ловит чужие импорты в main.js) + `build:css` (ловит битые `@import` в main.css) + рантайм-smoke. Без всех четырёх «verified» объявлять нельзя.
+
 ## Что НЕ должен делать оркестратор
 
 - **Авто-фиксить** код — только обнаруживать и рекомендовать. Решение принимает человек.

@@ -96,15 +96,15 @@ return [
         'from_name' => Env::get('MAIL_FROM_NAME'),
         'subject_prefix' => Env::get('MAIL_SUBJECT_PREFIX'),
     ],
-    // Единый приёмник заявок (api.ismart.pro): забирает почту, телеграм и таблицы.
+    // Сервис доставки заявок: забирает на себя почту, телеграм и таблицы.
     // Подтверждение отправителя — по домену: заявку шлёт бэкенд, значит с адреса, на который
     // домен и резолвится. Ключ нужен только хостингам вне нашего периметра.
-    'api' => [
-        'enable' => Env::bool('API_ENABLE', 'LEADS_API_ENABLE'),
-        'url' => Env::get('API_URL', 'LEADS_API_URL') ?: 'https://api.ismart.pro/v1/lead',
-        'site' => Env::get('API_SITE', 'LEADS_API_SITE'),
-        'key' => Env::get('API_KEY', 'LEADS_API_KEY'),
-        'timeout' => Env::int('API_TIMEOUT', 10, 'LEADS_API_TIMEOUT'),
+    'leads' => [
+        'enable' => Env::bool('LEADS_ENABLE', 'API_ENABLE', 'LEADS_API_ENABLE'),
+        'url' => Env::get('LEADS_URL', 'API_URL', 'LEADS_API_URL') ?: 'https://api.ismart.pro/v1/collect',
+        'site' => Env::get('LEADS_SITE', 'API_SITE', 'LEADS_API_SITE'),
+        'key' => Env::get('LEADS_KEY', 'API_KEY', 'LEADS_API_KEY'),
+        'timeout' => Env::int('LEADS_TIMEOUT', 10, 'API_TIMEOUT', 'LEADS_API_TIMEOUT'),
     ],
 
     'calltouch' => [

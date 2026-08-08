@@ -81,6 +81,8 @@ project/
 
 - `docs/guides/` — инструкции (добавление страниц, SEO)
 - `docs/architecture/` — техническая документация (структура, метрики)
+- `docs/conventions/` — соглашения по неймингу и стилю (CSS, HTML, JS, JSON, Twig)
+- `docs/local/` — **локальная рабочая зона** (заметки, ad-hoc скилы). Gitignored (кроме `README.md`), не дистиллируется. См. `docs/local/README.md`.
 
 ---
 

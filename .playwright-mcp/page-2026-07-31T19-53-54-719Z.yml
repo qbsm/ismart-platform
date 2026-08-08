@@ -1,0 +1,554 @@
+- generic [active] [ref=f4e1]:
+  - main [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - generic [ref=f4e5]:
+        - generic [ref=f4e6]:
+          - link [ref=f4e8] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f4e10]:
+            - img "БорисХоф 34 года"
+            - generic [ref=f4e11]: Официальный дилер TANK в Москве
+        - generic [ref=f4e12]:
+          - generic [ref=f4e13]:
+            - generic [ref=f4e14]: TANK БорисХоф МКАД
+            - generic [ref=f4e15]:
+              - link "+7 (495) 011-11-03" [ref=f4e16] [cursor=pointer]:
+                - /url: tel:+74950111103
+              - generic [ref=f4e17]: 29 км МКАД, уч. 1, лит. Б
+          - generic [ref=f4e18]:
+            - generic [ref=f4e19]: TANK БорисХоф Сити
+            - generic [ref=f4e20]:
+              - link "+7 (495) 011-11-02" [ref=f4e21] [cursor=pointer]:
+                - /url: tel:+74950111102
+              - generic [ref=f4e22]: 2-я Магистральная ул., 18, стр. 22
+        - link "Заказать звонок" [ref=f4e24] [cursor=pointer]:
+          - /url: "#call"
+        - text: 󰏷
+      - generic [ref=f4e26]:
+        - link "TANK 300" [ref=f4e27] [cursor=pointer]:
+          - /url: /tank-300
+        - link "TANK 400" [ref=f4e29] [cursor=pointer]:
+          - /url: /tank-400
+        - link "TANK 500" [ref=f4e31] [cursor=pointer]:
+          - /url: /tank-500
+        - link "TANK 700" [ref=f4e33] [cursor=pointer]:
+          - /url: /tank-700
+        - link "Комплектации" [ref=f4e35] [cursor=pointer]:
+          - /url: /#complectations-wrap
+        - link "Авто в наличии" [ref=f4e37] [cursor=pointer]:
+          - /url: /cars
+        - link "Сервис" [ref=f4e39] [cursor=pointer]:
+          - /url: /service
+        - link "Новости" [ref=f4e41] [cursor=pointer]:
+          - /url: /news
+        - link "Контакты" [ref=f4e43] [cursor=pointer]:
+          - /url: "#combomap"
+      - generic [ref=f4e47]:
+        - generic [ref=f4e48]:
+          - heading "Сервис TANK в БорисХоф" [level=1] [ref=f4e49]
+          - paragraph [ref=f4e50]: "Официальный сервис TANK в Москве: техническое обслуживание, диагностика, слесарный и кузовной ремонт, детейлинг, оригинальные запчасти и гарантия на выполненные работы."
+          - link "Записаться на сервис" [ref=f4e52] [cursor=pointer]:
+            - /url: "#service-form"
+          - list [ref=f4e53]:
+            - listitem [ref=f4e54]:
+              - generic [ref=f4e55]: 󰗡
+              - text: Официальный дилер TANK
+            - listitem [ref=f4e56]:
+              - generic [ref=f4e57]: 󰗡
+              - text: Оригинальные запчасти
+            - listitem [ref=f4e58]:
+              - generic [ref=f4e59]: 󰗡
+              - text: Гарантия на работы
+            - listitem [ref=f4e60]:
+              - generic [ref=f4e61]: 󰗡
+              - text: 2 сервисных центра в Москве
+          - list [ref=f4e62]:
+            - listitem [ref=f4e63]:
+              - link "󰟙 TANK БорисХоф МКАД Москва, 29 км МКАД, уч. 1, лит. Б" [ref=f4e64] [cursor=pointer]:
+                - /url: "#combomap"
+                - generic [ref=f4e65]: 󰟙
+                - generic [ref=f4e66]: TANK БорисХоф МКАД
+                - generic [ref=f4e67]: Москва, 29 км МКАД, уч. 1, лит. Б
+            - listitem [ref=f4e68]:
+              - link "󰟙 TANK БорисХоф Сити Москва, 2-я Магистральная ул., 18, стр. 22" [ref=f4e69] [cursor=pointer]:
+                - /url: "#combomap"
+                - generic [ref=f4e70]: 󰟙
+                - generic [ref=f4e71]: TANK БорисХоф Сити
+                - generic [ref=f4e72]: Москва, 2-я Магистральная ул., 18, стр. 22
+        - complementary [ref=f4e73]:
+          - generic [ref=f4e74]: Для новых автомобилей
+          - generic [ref=f4e75]: ТО-0 для новых TANK
+          - paragraph [ref=f4e76]: Пройдите первое техническое обслуживание в первые 2 месяца или до 3 000 км пробега.
+          - link "Записаться на ТО-0" [ref=f4e77] [cursor=pointer]:
+            - /url: "#service-form"
+      - navigation "Хлебные крошки" [ref=f4e79]:
+        - list [ref=f4e80]:
+          - listitem [ref=f4e81]:
+            - link "Главная" [ref=f4e82] [cursor=pointer]:
+              - /url: https://tank-borishof.ru/
+            - text: /
+          - listitem [ref=f4e83]: Сервис TANK
+      - generic [ref=f4e85]:
+        - generic [ref=f4e86]:
+          - heading "Основные направления сервиса" [level=2] [ref=f4e87]
+          - paragraph [ref=f4e88]: Полный спектр работ по обслуживанию и ремонту TANK 300, TANK 400, TANK 500 и TANK 700 у официального дилера.
+        - generic [ref=f4e89]:
+          - article [ref=f4e90] [cursor=pointer]:
+            - generic [ref=f4e91]:
+              - generic [ref=f4e92]: 󱠔
+              - heading "Техническое обслуживание" [level=3] [ref=f4e94]
+            - list [ref=f4e95]:
+              - listitem [ref=f4e96]: Регламентное ТО по пробегу
+              - listitem [ref=f4e97]: Замена масла и фильтров
+              - listitem [ref=f4e98]: Замена технических жидкостей
+              - listitem [ref=f4e99]: Сезонное обслуживание
+              - listitem [ref=f4e100]: ТО-0 для новых автомобилей
+            - link "Записаться" [ref=f4e101]:
+              - /url: "#service-form"
+          - article [ref=f4e102] [cursor=pointer]:
+            - generic [ref=f4e103]:
+              - generic [ref=f4e104]: 󰨇
+              - heading "Диагностика" [level=3] [ref=f4e106]
+            - list [ref=f4e107]:
+              - listitem [ref=f4e108]: Компьютерная диагностика
+              - listitem [ref=f4e109]: Диагностика двигателя и АКПП
+              - listitem [ref=f4e110]: Диагностика ходовой части
+              - listitem [ref=f4e111]: Диагностика электрики
+              - listitem [ref=f4e112]: Предпродажная проверка
+            - link "Записаться" [ref=f4e113]:
+              - /url: "#service-form"
+          - article [ref=f4e114] [cursor=pointer]:
+            - generic [ref=f4e115]:
+              - generic [ref=f4e116]: 󰖷
+              - heading "Слесарный ремонт" [level=3] [ref=f4e118]
+            - list [ref=f4e119]:
+              - listitem [ref=f4e120]: Ремонт двигателя
+              - listitem [ref=f4e121]: Ремонт АКПП и трансмиссии
+              - listitem [ref=f4e122]: Ремонт подвески и рулевого
+              - listitem [ref=f4e123]: Тормозная система
+              - listitem [ref=f4e124]: Замена ремней и цепей ГРМ
+            - link "Записаться" [ref=f4e125]:
+              - /url: "#service-form"
+          - article [ref=f4e126] [cursor=pointer]:
+            - generic [ref=f4e127]:
+              - generic [ref=f4e128]: 󰭫
+              - heading "Кузовной ремонт" [level=3] [ref=f4e130]
+            - list [ref=f4e131]:
+              - listitem [ref=f4e132]: Локальный ремонт кузова
+              - listitem [ref=f4e133]: Окраска деталей
+              - listitem [ref=f4e134]: Восстановление после ДТП
+              - listitem [ref=f4e135]: Ремонт бамперов
+              - listitem [ref=f4e136]: Полировка и защита ЛКП
+            - link "Записаться" [ref=f4e137]:
+              - /url: "#service-form"
+          - article [ref=f4e138] [cursor=pointer]:
+            - generic [ref=f4e139]:
+              - generic [ref=f4e140]: 󱕅
+              - heading "Детейлинг" [level=3] [ref=f4e142]
+            - list [ref=f4e143]:
+              - listitem [ref=f4e144]: Химчистка салона
+              - listitem [ref=f4e145]: Полировка кузова
+              - listitem [ref=f4e146]: Защитные покрытия
+              - listitem [ref=f4e147]: Антидождь на стёкла
+              - listitem [ref=f4e148]: Озонирование и антибактериальная обработка
+            - link "Записаться" [ref=f4e149]:
+              - /url: "#service-form"
+          - article [ref=f4e150] [cursor=pointer]:
+            - generic [ref=f4e151]:
+              - generic [ref=f4e152]: 󱁤
+              - heading "Дополнительные услуги" [level=3] [ref=f4e154]
+            - list [ref=f4e155]:
+              - listitem [ref=f4e156]: Шиномонтаж и балансировка
+              - listitem [ref=f4e157]: Сход-развал
+              - listitem [ref=f4e158]: Мойка моторного отсека
+              - listitem [ref=f4e159]: Установка аксессуаров
+              - listitem [ref=f4e160]: Оригинальные запчасти
+            - link "Записаться" [ref=f4e161]:
+              - /url: "#service-form"
+      - generic [ref=f4e163]:
+        - generic [ref=f4e164]:
+          - heading "Как проходит обслуживание автомобиля" [level=2] [ref=f4e165]
+          - paragraph [ref=f4e166]: Прозрачный процесс без скрытых работ — все дополнительные операции согласуются с вами.
+        - list [ref=f4e167]:
+          - listitem [ref=f4e168]:
+            - generic [ref=f4e169]: "01"
+            - generic [ref=f4e171]: Вы оставляете заявку на сайте или звоните в сервис.
+          - listitem [ref=f4e172]:
+            - generic [ref=f4e173]: "02"
+            - generic [ref=f4e175]: Специалист уточняет модель, пробег и причину обращения.
+          - listitem [ref=f4e176]:
+            - generic [ref=f4e177]: "03"
+            - generic [ref=f4e179]: Вы выбираете удобный сервисный центр и время визита.
+          - listitem [ref=f4e180]:
+            - generic [ref=f4e181]: "04"
+            - generic [ref=f4e183]: Мастер-консультант принимает автомобиль и фиксирует пожелания.
+          - listitem [ref=f4e184]:
+            - generic [ref=f4e185]: "05"
+            - generic [ref=f4e187]: Специалисты проводят диагностику или обслуживание.
+          - listitem [ref=f4e188]:
+            - generic [ref=f4e189]: "06"
+            - generic [ref=f4e191]: При необходимости дополнительные работы согласовываются с клиентом.
+          - listitem [ref=f4e192]:
+            - generic [ref=f4e193]: "07"
+            - generic [ref=f4e195]: Вы получаете автомобиль и рекомендации по дальнейшей эксплуатации.
+      - generic [ref=f4e197]:
+        - generic [ref=f4e198]:
+          - heading "Записаться на сервис TANK" [level=2] [ref=f4e199]
+          - paragraph [ref=f4e200]: Оставьте заявку — мастер-консультант свяжется с вами для подтверждения даты, времени и объёма работ.
+        - generic [ref=f4e201]:
+          - group "Автомобиль и тип обращения Шаг 1 из 3" [ref=f4e205]:
+            - generic [ref=f4e206]:
+              - generic [ref=f4e207]: Автомобиль и тип обращения
+              - generic [ref=f4e208]: Шаг 1 из 3
+            - generic [ref=f4e209]:
+              - generic [ref=f4e210]:
+                - generic [ref=f4e211]: Модель*
+                - combobox "Модель*" [ref=f4e212]:
+                  - option "Выберите модель" [disabled] [selected]
+                  - option "TANK 300"
+                  - option "TANK 400"
+                  - option "TANK 500"
+                  - option "TANK 700"
+                  - option "Другая модель"
+              - generic [ref=f4e213]:
+                - generic [ref=f4e214]: Причина обращения*
+                - combobox "Причина обращения*" [ref=f4e215]:
+                  - option "Выберите услугу" [disabled] [selected]
+                  - option "Техническое обслуживание"
+                  - option "ТО-0"
+                  - option "Диагностика"
+                  - option "Слесарный ремонт"
+                  - option "Кузовной ремонт"
+                  - option "Детейлинг"
+                  - option "Дополнительные услуги"
+                  - option "Другое"
+              - generic [ref=f4e216]:
+                - generic [ref=f4e217]: Год выпуска — необязательно
+                - textbox "Год выпуска — необязательно" [ref=f4e218]:
+                  - /placeholder: "2024"
+              - generic [ref=f4e219]:
+                - generic [ref=f4e220]: Пробег, км — необязательно
+                - textbox "Пробег, км — необязательно" [ref=f4e221]:
+                  - /placeholder: 10 000
+              - generic [ref=f4e222]:
+                - generic [ref=f4e223]: VIN — необязательно
+                - textbox "VIN — необязательно" [ref=f4e224]:
+                  - /placeholder: Введите VIN
+              - generic [ref=f4e225]:
+                - generic [ref=f4e226]: Комментарий — необязательно
+                - textbox "Комментарий — необязательно" [ref=f4e227]:
+                  - /placeholder: Опишите вопрос или пожелания
+            - button "Следующий шаг" [ref=f4e229] [cursor=pointer]
+          - text: 󰄬 󰄬
+      - generic [ref=f4e231]:
+        - heading "Почему стоит обслуживать TANK у официального дилера БорисХоф" [level=2] [ref=f4e233]
+        - generic [ref=f4e234]:
+          - generic [ref=f4e235]:
+            - generic [ref=f4e237]: Официальный сервис TANK
+            - generic [ref=f4e238]: Обслуживание автомобилей TANK по стандартам производителя.
+          - generic [ref=f4e239]:
+            - generic [ref=f4e241]: Специалисты по моделям TANK
+            - generic [ref=f4e242]: Мастера знают особенности TANK 300, TANK 400, TANK 500 и TANK 700.
+          - generic [ref=f4e243]:
+            - generic [ref=f4e245]: Оригинальные запчасти
+            - generic [ref=f4e246]: Оригинальные детали, расходные материалы и рекомендованные технические жидкости.
+          - generic [ref=f4e247]:
+            - generic [ref=f4e249]: Дилерское оборудование
+            - generic [ref=f4e250]: Компьютерная диагностика и ремонт с применением профессионального оборудования.
+          - generic [ref=f4e251]:
+            - generic [ref=f4e253]: Гарантия на работы
+            - generic [ref=f4e254]: Гарантия на выполненные работы и установленные детали.
+          - generic [ref=f4e255]:
+            - generic [ref=f4e257]: Согласование стоимости
+            - generic [ref=f4e258]: Дополнительные работы выполняются только после согласования с клиентом.
+          - generic [ref=f4e259]:
+            - generic [ref=f4e261]: Видеообзор обслуживания
+            - generic [ref=f4e262]: Возможность получить видеоотчёт по состоянию автомобиля и рекомендациям мастера.
+      - generic [ref=f4e264]:
+        - generic [ref=f4e265]:
+          - heading "Видеообзор технического состояния автомобиля" [level=2] [ref=f4e266]
+          - paragraph [ref=f4e267]: "Во время обслуживания специалисты БорисХоф TANK могут подготовить видеообзор технического состояния автомобиля. Это помогает сделать процесс обслуживания прозрачным: клиент видит выявленные замечания, получает комментарии мастера и может дистанционно согласовать дополнительные работы."
+        - generic [ref=f4e268]:
+          - generic [ref=f4e269]: Тег video не поддерживается вашим браузером.
+          - generic [ref=f4e271]:
+            - group [ref=f4e272]:
+              - generic "1 Фиксация отклонений –" [ref=f4e273] [cursor=pointer]:
+                - generic [ref=f4e274]: "1"
+                - generic [ref=f4e275]: Фиксация отклонений
+                - text: –
+              - paragraph [ref=f4e276]: Технический специалист зафиксирует все отклонения на видео с использованием цветового индикатора (жёлтый или красный).
+            - group [ref=f4e277]:
+              - generic "2 Уведомление +" [ref=f4e278] [cursor=pointer]:
+                - generic [ref=f4e279]: "2"
+                - generic [ref=f4e280]: Уведомление
+                - text: +
+            - group [ref=f4e281]:
+              - generic "3 Просмотр +" [ref=f4e282] [cursor=pointer]:
+                - generic [ref=f4e283]: "3"
+                - generic [ref=f4e284]: Просмотр
+                - text: +
+            - group [ref=f4e285]:
+              - generic "4 Согласование +" [ref=f4e286] [cursor=pointer]:
+                - generic [ref=f4e287]: "4"
+                - generic [ref=f4e288]: Согласование
+                - text: +
+        - link "Записаться на сервис с видеообзором" [ref=f4e290] [cursor=pointer]:
+          - /url: "#service-form"
+      - generic [ref=f4e292]:
+        - generic [ref=f4e293]:
+          - heading "Специальные предложения сервиса" [level=2] [ref=f4e294]
+          - paragraph [ref=f4e295]: Актуальные акции сервисных центров БорисХоф TANK. Подробности и запись — через форму или по телефону.
+        - generic [ref=f4e296]:
+          - article [ref=f4e297]:
+            - generic [ref=f4e298]:
+              - img "Управляемость и тяга TANK без компромиссов"
+            - generic [ref=f4e299]:
+              - generic [ref=f4e300]: Управляемость и тяга TANK без компромиссов
+              - paragraph [ref=f4e301]: Точная геометрия и исправная трансмиссия — залог уверенного управления, равномерного износа шин и долговечности автомобиля.
+              - list [ref=f4e302]:
+                - listitem [ref=f4e303]: Проверка и регулировка сход-развала — 6 100 ₽
+                - listitem [ref=f4e304]: Обслуживание шлицов карданного вала — 3 660 ₽
+              - link "Записаться" [ref=f4e305] [cursor=pointer]:
+                - /url: "#service-form"
+          - article [ref=f4e306]:
+            - generic [ref=f4e307]:
+              - img "Чистый климат — уверенный комфорт вашего TANK"
+            - generic [ref=f4e308]:
+              - generic [ref=f4e309]: Чистый климат — уверенный комфорт вашего TANK
+              - paragraph [ref=f4e310]: "Обслуживание системы кондиционирования: чистый воздух в салоне, эффективное охлаждение и защита от бактерий."
+              - list [ref=f4e311]:
+                - listitem [ref=f4e312]: Перезаправка системы A/C — 5 083 ₽
+                - listitem [ref=f4e313]: Озонирование системы — 2 542 ₽
+                - listitem [ref=f4e314]: Антибактериальная обработка — 4 056 ₽
+              - link "Записаться" [ref=f4e315] [cursor=pointer]:
+                - /url: "#service-form"
+          - article [ref=f4e316]:
+            - generic [ref=f4e317]:
+              - img "Максимальная эффективность охлаждения TANK"
+            - generic [ref=f4e318]:
+              - generic [ref=f4e319]: Максимальная эффективность охлаждения TANK
+              - paragraph [ref=f4e320]: "Комплексное обслуживание: мойка блока радиаторов и озонирование системы A/C — для безупречной работы охлаждения и чистоты воздуха в салоне."
+              - list [ref=f4e321]:
+                - listitem [ref=f4e322]: TANK 500 — 24 400 ₽
+                - listitem [ref=f4e323]: TANK 300 — 21 350 ₽
+              - link "Записаться" [ref=f4e324] [cursor=pointer]:
+                - /url: "#service-form"
+          - article [ref=f4e325]:
+            - generic [ref=f4e326]:
+              - img "Безупречная видимость для TANK в любую погоду"
+            - generic [ref=f4e327]:
+              - generic [ref=f4e328]: Безупречная видимость для TANK в любую погоду
+              - paragraph [ref=f4e329]: Профессиональное покрытие «антидождь» создаёт защитный слой, отталкивающий воду и сохраняющий кристальную чистоту стёкол.
+              - list [ref=f4e330]:
+                - listitem [ref=f4e331]: Ветровое + все боковые стёкла — 6 090 ₽
+                - listitem [ref=f4e332]: Ветровое + передние боковые стёкла — 4 056 ₽
+              - link "Записаться" [ref=f4e333] [cursor=pointer]:
+                - /url: "#service-form"
+          - article [ref=f4e334]:
+            - generic [ref=f4e335]:
+              - img "Замена масла TANK по специальной цене от 8 500 ₽"
+            - generic [ref=f4e336]:
+              - generic [ref=f4e337]: Замена масла TANK по специальной цене от 8 500 ₽
+              - paragraph [ref=f4e338]: "В комплекс входит: моторное масло, масляный фильтр, колечко сливной пробки, снятие/установка защиты картера и работы по замене."
+              - list [ref=f4e339]:
+                - listitem [ref=f4e340]: TANK 300 — от 11 000 ₽
+                - listitem [ref=f4e341]: TANK 400 — от 11 000 ₽
+                - listitem [ref=f4e342]: TANK 500 — от 13 000 ₽
+                - listitem [ref=f4e343]: TANK 500HEV — от 10 000 ₽
+                - listitem [ref=f4e344]: TANK 700 — от 14 500 ₽
+              - link "Записаться" [ref=f4e345] [cursor=pointer]:
+                - /url: "#service-form"
+          - article [ref=f4e346]:
+            - generic [ref=f4e347]:
+              - img "Сервисные работы TANK по специальной цене"
+            - generic [ref=f4e348]:
+              - generic [ref=f4e349]: Сервисные работы TANK по специальной цене
+              - paragraph [ref=f4e350]: Услуги сервисных центров БорисХоф по специальной цене — обслуживание в БорисХоф TANK всегда выгодно.
+              - list [ref=f4e351]:
+                - listitem [ref=f4e352]: Обслуживание люка крыши — 5 000 ₽
+                - listitem [ref=f4e353]: Обслуживание выдвижных порогов с разбором — 10 000 ₽
+                - listitem [ref=f4e354]: Обслуживание сход-развальных болтов — 16 266 ₽
+              - link "Записаться" [ref=f4e355] [cursor=pointer]:
+                - /url: "#service-form"
+      - generic [ref=f4e357]:
+        - generic [ref=f4e358]:
+          - heading "Отзывы клиентов" [level=2] [ref=f4e359]
+          - generic [ref=f4e360]:
+            - generic [ref=f4e361]: 󰓎
+            - generic [ref=f4e362]: "5.0"
+            - generic [ref=f4e363]: на Яндекс Картах
+        - generic [ref=f4e364]:
+          - generic [ref=f4e365]:
+            - group "1 / 4" [ref=f4e366]:
+              - article [ref=f4e367]:
+                - generic [ref=f4e368]:
+                  - generic "Оценка 5 из 5" [ref=f4e369]:
+                    - generic [ref=f4e370]: 󰓎
+                    - generic [ref=f4e371]: 󰓎
+                    - generic [ref=f4e372]: 󰓎
+                    - generic [ref=f4e373]: 󰓎
+                    - generic [ref=f4e374]: 󰓎
+                  - generic [ref=f4e375]: 15 апреля
+                - paragraph [ref=f4e376]: Был на плановом техническом обслуживании у Евгения и Сергея. Все сделано в лучшем виде. Сервис высылает видео об осмотре авто и, если требуется, дают рекомендации по обслуживанию. Работа сервиса более чем устраивает. Езжу только сюда.
+                - generic [ref=f4e377]:
+                  - generic [ref=f4e378]: Лебедько Егор
+                  - link "󰟙 TANK БорисХоф МКАД" [ref=f4e379] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/191525017147/reviews/
+                    - generic [ref=f4e380]: 󰟙
+                    - text: TANK БорисХоф МКАД
+            - group "2 / 4" [ref=f4e381]:
+              - article [ref=f4e382]:
+                - generic [ref=f4e383]:
+                  - generic "Оценка 5 из 5" [ref=f4e384]:
+                    - generic [ref=f4e385]: 󰓎
+                    - generic [ref=f4e386]: 󰓎
+                    - generic [ref=f4e387]: 󰓎
+                    - generic [ref=f4e388]: 󰓎
+                    - generic [ref=f4e389]: 󰓎
+                  - generic [ref=f4e390]: 26 февраля
+                - paragraph [ref=f4e391]: Год назад купил TANK 700 в БорисХоф. Уже несколько ТО прошёл на Магистральной, только положительные эмоции! Подход профессиональный, вежливый, бережное отношение к клиенту.
+                - generic [ref=f4e392]:
+                  - generic [ref=f4e393]: Ацамаз Темесов
+                  - link "󰟙 TANK БорисХоф Сити" [ref=f4e394] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/105725548815/reviews/
+                    - generic [ref=f4e395]: 󰟙
+                    - text: TANK БорисХоф Сити
+            - group "3 / 4" [ref=f4e396]:
+              - article [ref=f4e397]:
+                - generic [ref=f4e398]:
+                  - generic "Оценка 5 из 5" [ref=f4e399]:
+                    - generic [ref=f4e400]: 󰓎
+                    - generic [ref=f4e401]: 󰓎
+                    - generic [ref=f4e402]: 󰓎
+                    - generic [ref=f4e403]: 󰓎
+                    - generic [ref=f4e404]: 󰓎
+                  - generic [ref=f4e405]: 20 мая
+                - paragraph [ref=f4e406]: Покупал тут Танк 300. Остался очень доволен. Все прошло максимально быстро и прозрачно. Персонал отзывчивый, ненавязчивый и профессиональный. … Был на ремонте колеса у Евгения. Все отлично и оперативно сделали!
+                - generic [ref=f4e407]:
+                  - generic [ref=f4e408]: Роман А.
+                  - link "󰟙 TANK БорисХоф МКАД" [ref=f4e409] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/191525017147/reviews/
+                    - generic [ref=f4e410]: 󰟙
+                    - text: TANK БорисХоф МКАД
+            - group "4 / 4" [ref=f4e411]:
+              - article [ref=f4e412]:
+                - generic [ref=f4e413]:
+                  - generic "Оценка 5 из 5" [ref=f4e414]:
+                    - generic [ref=f4e415]: 󰓎
+                    - generic [ref=f4e416]: 󰓎
+                    - generic [ref=f4e417]: 󰓎
+                    - generic [ref=f4e418]: 󰓎
+                    - generic [ref=f4e419]: 󰓎
+                  - generic [ref=f4e420]: 9 июля
+                - paragraph [ref=f4e421]: На выходных приехали в салон БорисХоф Tank. Выбрали две модели. Нам сразу предложили тест-драйв, без записи и ожидания. В итоге остановились на Танк 300 в премиум-комплектации.
+                - generic [ref=f4e422]:
+                  - generic [ref=f4e423]: Liubov K.
+                  - link "󰟙 TANK БорисХоф Сити" [ref=f4e424] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/105725548815/reviews/
+                    - generic [ref=f4e425]: 󰟙
+                    - text: TANK БорисХоф Сити
+          - generic [ref=f4e426]:
+            - button "Go to slide 1" [ref=f4e427] [cursor=pointer]
+            - button "Go to slide 2" [ref=f4e428] [cursor=pointer]
+        - generic [ref=f4e429]:
+          - button "Previous slide" [disabled]: prev
+          - button "Next slide" [ref=f4e430] [cursor=pointer]: next
+        - paragraph [ref=f4e431]: Отзывы с Яндекс Карт о дилерских центрах БорисХоф TANK
+      - generic [ref=f4e433]:
+        - heading "Вопросы и ответы" [level=2] [ref=f4e435]
+        - generic [ref=f4e436]:
+          - group [ref=f4e437]:
+            - generic "Когда нужно проходить ТО-0 на TANK? +" [ref=f4e438] [cursor=pointer]
+          - group [ref=f4e439]:
+            - generic "Можно ли пройти ТО TANK в БорисХоф, если автомобиль куплен у другого дилера? +" [ref=f4e440] [cursor=pointer]
+          - group [ref=f4e441]:
+            - generic "Какие модели TANK обслуживаются в БорисХоф? +" [ref=f4e442] [cursor=pointer]
+          - group [ref=f4e443]:
+            - generic "Можно ли записаться на сервис онлайн? +" [ref=f4e444] [cursor=pointer]
+          - group [ref=f4e445]:
+            - generic "Сколько стоит техническое обслуживание TANK? +" [ref=f4e446] [cursor=pointer]
+          - group [ref=f4e447]:
+            - generic "Используются ли оригинальные запчасти TANK? +" [ref=f4e448] [cursor=pointer]
+          - group [ref=f4e449]:
+            - generic "Можно ли пройти кузовной ремонт TANK? +" [ref=f4e450] [cursor=pointer]
+          - group [ref=f4e451]:
+            - generic "Можно ли выбрать удобный сервисный центр? +" [ref=f4e452] [cursor=pointer]
+      - generic [ref=f4e454]:
+        - heading "Адреса сервисных центров TANK БорисХоф" [level=2] [ref=f4e456]
+        - generic [ref=f4e457]:
+          - generic [ref=f4e459]:
+            - generic [ref=f4e460]:
+              - generic [ref=f4e461]: TANK БорисХоф МКАД
+              - generic [ref=f4e462]: Москва
+            - generic [ref=f4e463]:
+              - link "󱆓 +7 (495) 011-11-03" [ref=f4e465] [cursor=pointer]:
+                - /url: tel:+74950111103
+                - generic [ref=f4e466]: 󱆓
+                - text: +7 (495) 011-11-03
+              - generic [ref=f4e467]:
+                - generic [ref=f4e468]: 󰟙
+                - text: Москва, 29 км МКАД, уч. 1, лит. Б
+              - generic [ref=f4e469]:
+                - generic [ref=f4e470]: 󰅐
+                - text: Пн-Вс 09:00-21:00
+            - link "Записаться на сервис" [ref=f4e472] [cursor=pointer]:
+              - /url: "#service-form"
+          - generic [ref=f4e475]:
+            - generic [ref=f4e476]:
+              - generic [ref=f4e477]: TANK БорисХоф Сити
+              - generic [ref=f4e478]: Москва
+            - generic [ref=f4e479]:
+              - link "󱆓 +7 (495) 011-11-02" [ref=f4e481] [cursor=pointer]:
+                - /url: tel:+74950111102
+                - generic [ref=f4e482]: 󱆓
+                - text: +7 (495) 011-11-02
+              - generic [ref=f4e483]:
+                - generic [ref=f4e484]: 󰟙
+                - text: Москва, 2-я Магистральная ул., 18, стр. 22
+              - generic [ref=f4e485]:
+                - generic [ref=f4e486]: 󰅐
+                - text: Пн-Вс 09:00-21:00
+            - link "Записаться на сервис" [ref=f4e488] [cursor=pointer]:
+              - /url: "#service-form"
+      - generic [ref=f4e492]:
+        - generic [ref=f4e495]:
+          - link "VK" [ref=f4e497] [cursor=pointer]:
+            - /url: https://vk.ru/tank_borishoff
+          - link "Telegram" [ref=f4e501] [cursor=pointer]:
+            - /url: https://t.me/borishof_official
+          - link "Youtube" [ref=f4e508] [cursor=pointer]:
+            - /url: https://rutube.ru/channel/46485799/videos/
+        - generic [ref=f4e512]: Подробные условия акции
+        - generic [ref=f4e514]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой. Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+        - generic [ref=f4e517]:
+          - text: Вы можете купить новый TANK (ТЭНК) в автосалоне официального дилера ТАНК – БорисХоф, примерную актуальную цену моделей и комплектаций можно узнать, связавшись с нами по телефону
+          - link "+7 (495) 492-39-03" [ref=f4e518] [cursor=pointer]:
+            - /url: tel:+74954923903
+          - text: .
+        - generic [ref=f4e519]: Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930).
+        - generic [ref=f4e520]: © ООО «БорисХоф Холдинг». Все права защищены 2026
+        - navigation "Навигация в подвале" [ref=f4e521]:
+          - link "Автомобили TANK в наличии" [ref=f4e523] [cursor=pointer]:
+            - /url: /cars
+          - link "TANK 300" [ref=f4e525] [cursor=pointer]:
+            - /url: /tank-300
+          - link "TANK 400" [ref=f4e527] [cursor=pointer]:
+            - /url: /tank-400
+          - link "TANK 500" [ref=f4e529] [cursor=pointer]:
+            - /url: /tank-500
+          - link "TANK 700" [ref=f4e531] [cursor=pointer]:
+            - /url: /tank-700
+          - link "Сервис TANK" [ref=f4e533] [cursor=pointer]:
+            - /url: /service
+          - link "Новости" [ref=f4e535] [cursor=pointer]:
+            - /url: /news
+          - link "Контакты" [ref=f4e537] [cursor=pointer]:
+            - /url: /contacts
+  - dialog "Использование cookie-файлов":
+    - generic [ref=f4e539]:
+      - generic [ref=f4e540]:
+        - text: Мы используем
+        - link "cookie-файлы" [ref=f4e541] [cursor=pointer]:
+          - /url: https://tank.ru/privacy-policy
+        - text: для вашего удобства пользования сайтом
+      - button "Принять" [ref=f4e542] [cursor=pointer]

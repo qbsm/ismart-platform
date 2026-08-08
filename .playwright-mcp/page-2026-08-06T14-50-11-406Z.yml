@@ -1,0 +1,110 @@
+- generic [active] [ref=e1]:
+  - link "Перейти к контенту" [ref=e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=e8]
+        - navigation "Основное меню" [ref=e9]:
+          - link "Главная" [ref=e11] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/
+          - link "О компании" [ref=e13] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/about
+          - link "Шины" [ref=e15] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/tires
+          - link "Подбор шин" [ref=e17] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/podbor
+          - link "Расширенная гарантия" [ref=e19] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/warranty
+          - link "Где купить" [ref=e21] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/buy
+    - generic [ref=e27]:
+      - heading "О компании" [level=1] [ref=e31]
+      - generic [ref=e32]:
+        - generic [ref=e33]: «Север Авто» — официальный дистрибьютор шин Kumho в России.
+        - generic [ref=e36]:
+          - text: «Север Авто» является
+          - strong [ref=e37]: системообразующим предприятием России
+          - text: ", которое оказывает существенное влияние на развитие экономики страны и обеспечивает высокую занятость в городах присутствия.Многократный участник международных выставок автомобильной и шинной тематики."
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]: "27"
+          - generic [ref=e42]: лет экспертного опыта в шинной отрасли
+        - generic [ref=e43]:
+          - generic [ref=e44]: "16"
+          - generic [ref=e45]: филиалов и представительств по всей России
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - text: "3000"
+            - generic [ref=e48]: +
+          - generic [ref=e49]: сотрудников
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - text: "8"
+            - generic [ref=e54]: млн
+          - generic [ref=e55]: шин продано в 2025 году
+        - generic [ref=e56]: =
+        - generic [ref=e57]:
+          - generic [ref=e58]: 22 000
+          - generic [ref=e59]: шин в день
+      - generic [ref=e62]:
+        - text: Широкий продуктовый портфель, включающий надёжные шины и диски от известных брендов.
+        - strong [ref=e63]: Присутствие на российском рынке с 2013 года
+        - text: обеспечивает доверие и узнаваемость бренда «Север Авто».
+      - generic [ref=e64]:
+        - heading "Логистические центры" [level=2] [ref=e67]
+        - generic [ref=e69]:
+          - text: "Логистические центры расположены в крупнейших городах:"
+          - strong [ref=e70]: 16 складских комплексов общей площадью более 140 тыс. кв. м
+          - text: . В компании внедрена
+          - strong [ref=e71]: система управления складом WMS
+          - text: и
+          - strong [ref=e72]: система управления транспортом TMS
+          - text: .Маршрутизация грузов работает на
+          - strong [ref=e73]: технологиях Яндекса
+          - text: — она позволяет эффективнее выстраивать маршрут, гарантирует высокое качество сервиса и отслеживание доставки заказов клиентам в режиме реального времени.Компания «Север Авто» осуществляет оперативную доставку во все регионы страны не только собственным транспортом, но и с использованием услуг ведущих российских транспортных операторов, таких как
+          - strong [ref=e74]: «Деловые Линии», «ПЭК» и «КИТ»
+          - text: ", а также агрегаторов ключевых служб доставки.Всё это помогает нам эффективно и быстро доставлять заказы для наших клиентов по всей стране."
+      - generic [ref=e75]: Мы растём вместе с нашими клиентами и поставщиками!
+      - generic [ref=e79]:
+        - heading "Сотрудничество" [level=2] [ref=e81]
+        - generic [ref=e82]: "«Север Авто» — официальный дистрибьютор шин Kumho в России. Работаем с партнёрами и оптовыми покупателями: условия поставок, подключение к дилерской сети и работа с ассортиментом Kumho."
+        - link "Контакты для бизнеса" [ref=e85] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/contacts
+    - generic [ref=e87]:
+      - link [ref=e90] [cursor=pointer]:
+        - /url: http://kumho-tires.ru.test/
+        - img "Logo" [ref=e91]
+      - generic [ref=e92]:
+        - link "Главная" [ref=e94] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/
+        - link "О компании" [ref=e96] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/about
+        - link "Шины" [ref=e98] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/tires
+        - link "Подбор шин" [ref=e100] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/podbor
+        - link "Расширенная гарантия" [ref=e102] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/warranty
+        - link "Где купить" [ref=e104] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/buy
+        - link "Контакты" [ref=e106] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/contacts
+      - generic [ref=e107]:
+        - generic [ref=e108]: Права на сайт принадлежат ООО «Сталкер» (ИНН 7719614965, ОГРН 1067761249654).
+        - generic [ref=e109]: © 2026 Север Авто. Все права защищены
+      - generic [ref=e110]:
+        - link "Политика обработки персональных данных" [ref=e111] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/data/docs/personal-data-policy.pdf
+        - link "Политика использования cookie-файлов" [ref=e112] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/cookies-policy
+  - generic [ref=e115]:
+    - generic [ref=e117]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=e118] [cursor=pointer]:
+        - /url: /cookies-policy/
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=e120] [cursor=pointer]

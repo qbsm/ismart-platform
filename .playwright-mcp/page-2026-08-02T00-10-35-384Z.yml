@@ -1,0 +1,826 @@
+- generic [active] [ref=f22e1]:
+  - link "Перейти к контенту" [ref=f22e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f22e3]:
+    - generic [ref=f22e4]:
+      - generic [ref=f22e5]:
+        - link [ref=f22e6] [cursor=pointer]:
+          - /url: /
+          - img "FOTON" [ref=f22e7]
+        - img "АВИЛОН — официальный дилер" [ref=f22e10]
+      - generic [ref=f22e13]:
+        - link "+7 (495) 730-00-70" [ref=f22e14] [cursor=pointer]:
+          - /url: tel:+74957300070
+        - link "Москва, Волгоградский пр-т, 41, стр. 2" [ref=f22e15] [cursor=pointer]:
+          - /url: "#map"
+      - link "Заказать звонок" [ref=f22e17] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f22e19]:
+      - link "TUNLAND" [ref=f22e21] [cursor=pointer]:
+        - /url: "#model-tunland-g9"
+      - link "TOANO PRO" [ref=f22e24] [cursor=pointer]:
+        - /url: "#model-toano-pro"
+      - link "VIEW" [ref=f22e25] [cursor=pointer]:
+        - /url: "#model-view"
+      - link "Корпоративным клиентам" [ref=f22e26] [cursor=pointer]:
+        - /url: "#leasing"
+      - link "Покупателям" [ref=f22e28] [cursor=pointer]:
+        - /url: "#actions"
+  - main [ref=f22e31]:
+    - generic [ref=f22e40]:
+      - generic [ref=f22e41]:
+        - heading "Официальный дилер FOTON в Москве" [level=1] [ref=f22e42]
+        - paragraph [ref=f22e43]: Переоборудованные автомобили VIEW в АВИЛОН
+        - link "Получить предложение" [ref=f22e45] [cursor=pointer]:
+          - /url: "#callback"
+      - generic [ref=f22e48]:
+        - generic [ref=f22e49]:
+          - generic [ref=f22e50]: 6 моделей
+          - generic [ref=f22e51]: пикапы и фургоны
+        - generic [ref=f22e53]:
+          - generic [ref=f22e54]: 0%
+          - generic [ref=f22e55]: переплат по кредиту
+        - generic [ref=f22e57]:
+          - generic [ref=f22e58]: Трейд-ин
+          - generic [ref=f22e59]: выгодный обмен
+    - generic [ref=f22e62]:
+      - generic [ref=f22e63]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f22e65]: ОФИЦИАЛЬНЫЙ ДИЛЕР FOTON
+      - generic [ref=f22e68]:
+        - text: ПИКАПЫ TUNLAND — ОТ
+        - generic [ref=f22e69]: 3 740 000 ₽
+      - generic [ref=f22e71]:
+        - text: ФУРГОНЫ TOANO И VIEW — ОТ
+        - generic [ref=f22e72]: 3 135 000 ₽
+      - generic [ref=f22e73]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f22e75]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+      - generic [ref=f22e77]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f22e79]: ОФИЦИАЛЬНЫЙ ДИЛЕР FOTON
+      - generic [ref=f22e82]:
+        - text: ПИКАПЫ TUNLAND — ОТ
+        - generic [ref=f22e83]: 3 740 000 ₽
+      - generic [ref=f22e85]:
+        - text: ФУРГОНЫ TOANO И VIEW — ОТ
+        - generic [ref=f22e86]: 3 135 000 ₽
+      - generic [ref=f22e87]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f22e89]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+      - generic [ref=f22e91]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f22e93]: ОФИЦИАЛЬНЫЙ ДИЛЕР FOTON
+      - generic [ref=f22e96]:
+        - text: ПИКАПЫ TUNLAND — ОТ
+        - generic [ref=f22e97]: 3 740 000 ₽
+      - generic [ref=f22e99]:
+        - text: ФУРГОНЫ TOANO И VIEW — ОТ
+        - generic [ref=f22e100]: 3 135 000 ₽
+      - generic [ref=f22e101]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f22e103]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+    - generic [ref=f22e107]:
+      - generic [ref=f22e108]: Специальные условия
+      - generic [ref=f22e111]:
+        - generic [ref=f22e112]:
+          - generic [ref=f22e113]: "00"
+          - generic [ref=f22e114]: дней
+        - generic [ref=f22e115]:
+          - generic [ref=f22e116]: "19"
+          - generic [ref=f22e117]: часов
+        - generic [ref=f22e118]:
+          - generic [ref=f22e119]: "49"
+          - generic [ref=f22e120]: минут
+        - generic [ref=f22e121]:
+          - generic [ref=f22e122]: "25"
+          - generic [ref=f22e123]: секунд
+      - link "Получить предложение" [ref=f22e125] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f22e128]:
+      - heading "Модельный ряд" [level=2] [ref=f22e130]
+      - navigation "Фильтр по моделям" [ref=f22e132]:
+        - button "Все модели" [ref=f22e133] [cursor=pointer]
+        - button "FOTON TUNLAND G9" [ref=f22e134] [cursor=pointer]
+        - button "FOTON TUNLAND V7" [ref=f22e135] [cursor=pointer]
+        - button "FOTON TUNLAND V9" [ref=f22e136] [cursor=pointer]
+        - button "FOTON TOANO PRO" [ref=f22e137] [cursor=pointer]
+        - button "FOTON TOANO" [ref=f22e138] [cursor=pointer]
+        - button "FOTON VIEW" [ref=f22e139] [cursor=pointer]
+      - generic [ref=f22e140]:
+        - article [ref=f22e142]:
+          - generic [ref=f22e144]:
+            - generic [ref=f22e145]:
+              - img "FOTON TUNLAND G9"
+            - generic [ref=f22e146]:
+              - button "Белый" [ref=f22e147] [cursor=pointer]
+              - button "Серебристый металлик" [ref=f22e149] [cursor=pointer]
+              - button "Серый металлик" [ref=f22e151] [cursor=pointer]
+              - button "Черный металлик" [ref=f22e153] [cursor=pointer]
+              - button "Желтый" [ref=f22e155] [cursor=pointer]
+              - button "Синий металлик" [ref=f22e157] [cursor=pointer]
+              - button "Красный металлик" [ref=f22e159] [cursor=pointer]
+            - generic [ref=f22e161]: Желтый
+          - generic [ref=f22e162]:
+            - generic [ref=f22e163]:
+              - heading "FOTON TUNLAND G9 НОВЫЙ" [level=3] [ref=f22e164]:
+                - text: FOTON TUNLAND G9
+                - generic [ref=f22e165]: НОВЫЙ
+              - paragraph [ref=f22e166]: Универсальный рамный пикап 4×4
+              - generic [ref=f22e168]:
+                - text: от
+                - generic [ref=f22e169]: 3 740 000
+                - text: ₽
+            - list [ref=f22e170]:
+              - listitem [ref=f22e171]:
+                - generic [ref=f22e175]: Дизель 2.0, 162 л.с.
+              - listitem [ref=f22e176]:
+                - generic [ref=f22e180]: Полный привод 4×4
+              - listitem [ref=f22e181]:
+                - generic [ref=f22e185]: Грузоподъёмность 925 кг
+            - generic [ref=f22e186]:
+              - link "Получить предложение" [ref=f22e187] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f22e189] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f22e191] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f22e193]:
+            - generic [ref=f22e194]:
+              - generic [ref=f22e195]: Характеристики
+              - list [ref=f22e196]:
+                - listitem [ref=f22e197]:
+                  - generic [ref=f22e198]: Пикап, 4 двери, 5 мест
+                  - generic [ref=f22e199]: Кузов
+                - listitem [ref=f22e200]:
+                  - generic [ref=f22e201]: 2.0 дизель
+                  - generic [ref=f22e202]: Двигатель
+                - listitem [ref=f22e203]:
+                  - generic [ref=f22e204]: 162 л.с.
+                  - generic [ref=f22e205]: Мощность
+                - listitem [ref=f22e206]:
+                  - generic [ref=f22e207]: 8AT
+                  - generic [ref=f22e208]: Трансмиссия
+                - listitem [ref=f22e209]:
+                  - generic [ref=f22e210]: Полный (4WD)
+                  - generic [ref=f22e211]: Привод
+            - generic [ref=f22e212]:
+              - generic [ref=f22e213]: Габариты и масса
+              - list [ref=f22e214]:
+                - listitem [ref=f22e215]:
+                  - generic [ref=f22e216]: 5 340 × 1 980 × 1 920 мм
+                  - generic [ref=f22e217]: Габариты (Д × Ш × В)
+                - listitem [ref=f22e218]:
+                  - generic [ref=f22e219]: 3 110 мм
+                  - generic [ref=f22e220]: Колёсная база
+                - listitem [ref=f22e221]:
+                  - generic [ref=f22e222]: 925 кг
+                  - generic [ref=f22e223]: Грузоподъёмность
+          - generic [ref=f22e226]:
+            - link [ref=f22e228] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/11.webp
+              - img "FOTON TUNLAND G9 — фото 1" [ref=f22e230]
+            - link [ref=f22e232] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/12.webp
+              - img "FOTON TUNLAND G9 — фото 2" [ref=f22e234]
+            - link [ref=f22e236] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/13.webp
+              - img "FOTON TUNLAND G9 — фото 3" [ref=f22e238]
+            - link [ref=f22e240] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/14.webp
+              - img "FOTON TUNLAND G9 — фото 4" [ref=f22e242]
+            - link [ref=f22e244] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/15.webp
+              - img "FOTON TUNLAND G9 — фото 5" [ref=f22e246]
+            - link [ref=f22e248] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/16.webp
+              - img "FOTON TUNLAND G9 — фото 6" [ref=f22e250]
+            - link [ref=f22e252] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/17.webp
+              - img "FOTON TUNLAND G9 — фото 7" [ref=f22e254]
+            - link [ref=f22e256] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/18.webp
+              - img "FOTON TUNLAND G9 — фото 8" [ref=f22e258]
+            - link [ref=f22e260] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/19.webp
+              - img "FOTON TUNLAND G9 — фото 9" [ref=f22e262]
+            - link [ref=f22e264] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-g9/gallery/1280/20.webp
+              - img "FOTON TUNLAND G9 — фото 10" [ref=f22e266]
+        - article [ref=f22e270]:
+          - generic [ref=f22e272]:
+            - generic [ref=f22e273]:
+              - img "FOTON TUNLAND V7"
+            - generic [ref=f22e274]:
+              - button "Белый" [ref=f22e275] [cursor=pointer]
+              - button "Серебристый" [ref=f22e277] [cursor=pointer]
+              - button "Серый" [ref=f22e279] [cursor=pointer]
+              - button "Черный" [ref=f22e281] [cursor=pointer]
+              - button "Бирюзовый" [ref=f22e283] [cursor=pointer]
+              - button "Синий" [ref=f22e285] [cursor=pointer]
+              - button "Фиолетовый" [ref=f22e287] [cursor=pointer]
+              - button "Красный" [ref=f22e289] [cursor=pointer]
+            - generic [ref=f22e291]: Черный
+          - generic [ref=f22e292]:
+            - generic [ref=f22e293]:
+              - heading "FOTON TUNLAND V7" [level=3] [ref=f22e294]
+              - paragraph [ref=f22e295]: Премиальный пикап для города и трассы
+              - generic [ref=f22e297]:
+                - text: от
+                - generic [ref=f22e298]: 4 850 000
+                - text: ₽
+            - list [ref=f22e299]:
+              - listitem [ref=f22e300]:
+                - generic [ref=f22e304]: Дизель 2.0, 159 л.с.
+              - listitem [ref=f22e305]:
+                - generic [ref=f22e309]: Полный привод 4×4
+              - listitem [ref=f22e310]:
+                - generic [ref=f22e314]: Трансмиссия 8AT
+            - generic [ref=f22e315]:
+              - link "Получить предложение" [ref=f22e316] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f22e318] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f22e320] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f22e322]:
+            - generic [ref=f22e323]:
+              - generic [ref=f22e324]: Характеристики
+              - list [ref=f22e325]:
+                - listitem [ref=f22e326]:
+                  - generic [ref=f22e327]: Пикап, 4 двери, 5 мест
+                  - generic [ref=f22e328]: Кузов
+                - listitem [ref=f22e329]:
+                  - generic [ref=f22e330]: 2.0 дизель
+                  - generic [ref=f22e331]: Двигатель
+                - listitem [ref=f22e332]:
+                  - generic [ref=f22e333]: 159 л.с.
+                  - generic [ref=f22e334]: Мощность
+                - listitem [ref=f22e335]:
+                  - generic [ref=f22e336]: 8AT
+                  - generic [ref=f22e337]: Трансмиссия
+                - listitem [ref=f22e338]:
+                  - generic [ref=f22e339]: Полный (4WD)
+                  - generic [ref=f22e340]: Привод
+            - generic [ref=f22e341]:
+              - generic [ref=f22e342]: Габариты и масса
+              - list [ref=f22e343]:
+                - listitem [ref=f22e344]:
+                  - generic [ref=f22e345]: 5 617 × 2 090 × 1 955 мм
+                  - generic [ref=f22e346]: Габариты (Д × Ш × В)
+                - listitem [ref=f22e347]:
+                  - generic [ref=f22e348]: 3 355 мм
+                  - generic [ref=f22e349]: Колёсная база
+                - listitem [ref=f22e350]:
+                  - generic [ref=f22e351]: до 725 кг
+                  - generic [ref=f22e352]: Грузоподъёмность
+          - generic [ref=f22e355]:
+            - link [ref=f22e357] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/11.webp
+              - img "FOTON TUNLAND V7 — фото 1" [ref=f22e359]
+            - link [ref=f22e361] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/12.webp
+              - img "FOTON TUNLAND V7 — фото 2" [ref=f22e363]
+            - link [ref=f22e365] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/13.webp
+              - img "FOTON TUNLAND V7 — фото 3" [ref=f22e367]
+            - link [ref=f22e369] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/14.webp
+              - img "FOTON TUNLAND V7 — фото 4" [ref=f22e371]
+            - link [ref=f22e373] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/15.webp
+              - img "FOTON TUNLAND V7 — фото 5" [ref=f22e375]
+            - link [ref=f22e377] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/16.webp
+              - img "FOTON TUNLAND V7 — фото 6" [ref=f22e379]
+            - link [ref=f22e381] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/17.webp
+              - img "FOTON TUNLAND V7 — фото 7" [ref=f22e383]
+            - link [ref=f22e385] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/18.webp
+              - img "FOTON TUNLAND V7 — фото 8" [ref=f22e387]
+            - link [ref=f22e389] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/19.webp
+              - img "FOTON TUNLAND V7 — фото 9" [ref=f22e391]
+            - link [ref=f22e393] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v7/gallery/1280/20.webp
+              - img "FOTON TUNLAND V7 — фото 10" [ref=f22e395]
+        - article [ref=f22e399]:
+          - generic [ref=f22e401]:
+            - generic [ref=f22e402]:
+              - img "FOTON TUNLAND V9"
+            - generic [ref=f22e403]:
+              - button "Белый" [ref=f22e404] [cursor=pointer]
+              - button "Серебристый" [ref=f22e406] [cursor=pointer]
+              - button "Серый" [ref=f22e408] [cursor=pointer]
+              - button "Черный" [ref=f22e410] [cursor=pointer]
+              - button "Красный" [ref=f22e412] [cursor=pointer]
+              - button "Бирюзовый" [ref=f22e414] [cursor=pointer]
+              - button "Синий" [ref=f22e416] [cursor=pointer]
+              - button "Фиолетовый" [ref=f22e418] [cursor=pointer]
+            - generic [ref=f22e420]: Серебристый
+          - generic [ref=f22e421]:
+            - generic [ref=f22e422]:
+              - heading "FOTON TUNLAND V9" [level=3] [ref=f22e423]
+              - paragraph [ref=f22e424]: Флагманский пикап с салоном бизнес-класса
+              - generic [ref=f22e426]:
+                - text: от
+                - generic [ref=f22e427]: 5 050 000
+                - text: ₽
+            - list [ref=f22e428]:
+              - listitem [ref=f22e429]:
+                - generic [ref=f22e433]: Дизель 2.0, 159 л.с.
+              - listitem [ref=f22e434]:
+                - generic [ref=f22e438]: Полный привод 4×4
+              - listitem [ref=f22e439]:
+                - generic [ref=f22e443]: Грузоподъёмность 675 кг
+            - generic [ref=f22e444]:
+              - link "Получить предложение" [ref=f22e445] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f22e447] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f22e449] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f22e451]:
+            - generic [ref=f22e452]:
+              - generic [ref=f22e453]: Характеристики
+              - list [ref=f22e454]:
+                - listitem [ref=f22e455]:
+                  - generic [ref=f22e456]: Пикап, 4 двери, 5 мест
+                  - generic [ref=f22e457]: Кузов
+                - listitem [ref=f22e458]:
+                  - generic [ref=f22e459]: 2.0 дизель
+                  - generic [ref=f22e460]: Двигатель
+                - listitem [ref=f22e461]:
+                  - generic [ref=f22e462]: 159 л.с.
+                  - generic [ref=f22e463]: Мощность
+                - listitem [ref=f22e464]:
+                  - generic [ref=f22e465]: 8AT
+                  - generic [ref=f22e466]: Трансмиссия
+                - listitem [ref=f22e467]:
+                  - generic [ref=f22e468]: Полный (4WD)
+                  - generic [ref=f22e469]: Привод
+            - generic [ref=f22e470]:
+              - generic [ref=f22e471]: Габариты и масса
+              - list [ref=f22e472]:
+                - listitem [ref=f22e473]:
+                  - generic [ref=f22e474]: 5 617 × 2 090 × 1 955 мм
+                  - generic [ref=f22e475]: Габариты (Д × Ш × В)
+                - listitem [ref=f22e476]:
+                  - generic [ref=f22e477]: 3 355 мм
+                  - generic [ref=f22e478]: Колёсная база
+                - listitem [ref=f22e479]:
+                  - generic [ref=f22e480]: 1 577 × 1 650 × 530 мм
+                  - generic [ref=f22e481]: Грузовая платформа (Д × Ш × В)
+                - listitem [ref=f22e482]:
+                  - generic [ref=f22e483]: 675 кг
+                  - generic [ref=f22e484]: Грузоподъёмность
+          - generic [ref=f22e487]:
+            - link [ref=f22e489] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/11.webp
+              - img "FOTON TUNLAND V9 — фото 1" [ref=f22e491]
+            - link [ref=f22e493] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/12.webp
+              - img "FOTON TUNLAND V9 — фото 2" [ref=f22e495]
+            - link [ref=f22e497] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/13.webp
+              - img "FOTON TUNLAND V9 — фото 3" [ref=f22e499]
+            - link [ref=f22e501] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/14.webp
+              - img "FOTON TUNLAND V9 — фото 4" [ref=f22e503]
+            - link [ref=f22e505] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/15.webp
+              - img "FOTON TUNLAND V9 — фото 5" [ref=f22e507]
+            - link [ref=f22e509] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/16.webp
+              - img "FOTON TUNLAND V9 — фото 6" [ref=f22e511]
+            - link [ref=f22e513] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/17.webp
+              - img "FOTON TUNLAND V9 — фото 7" [ref=f22e515]
+            - link [ref=f22e517] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/18.webp
+              - img "FOTON TUNLAND V9 — фото 8" [ref=f22e519]
+            - link [ref=f22e521] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/19.webp
+              - img "FOTON TUNLAND V9 — фото 9" [ref=f22e523]
+            - link [ref=f22e525] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/tunland-v9/gallery/1280/20.webp
+              - img "FOTON TUNLAND V9 — фото 10" [ref=f22e527]
+        - article [ref=f22e531]:
+          - generic [ref=f22e533]:
+            - generic [ref=f22e534]:
+              - img "FOTON TOANO PRO"
+            - generic [ref=f22e535]:
+              - button "Белый" [ref=f22e536] [cursor=pointer]
+              - button "Серебристый металлик" [ref=f22e538] [cursor=pointer]
+              - button "Чёрный металлик" [ref=f22e540] [cursor=pointer]
+              - button "Золотисто-бежевый металлик" [ref=f22e542] [cursor=pointer]
+            - generic [ref=f22e544]: Белый
+          - generic [ref=f22e545]:
+            - generic [ref=f22e546]:
+              - heading "FOTON TOANO PRO" [level=3] [ref=f22e547]
+              - paragraph [ref=f22e548]: Цельнометаллический фургон до 12 м³
+              - generic [ref=f22e550]:
+                - text: от
+                - generic [ref=f22e551]: 3 250 000
+                - text: ₽
+            - list [ref=f22e552]:
+              - listitem [ref=f22e553]:
+                - generic [ref=f22e557]: Грузовой отсек до 12 м³
+              - listitem [ref=f22e558]:
+                - generic [ref=f22e562]: Грузоподъёмность до 910 кг
+              - listitem [ref=f22e563]:
+                - generic [ref=f22e567]: Дизель 2.5 л, 154 л.с.
+            - generic [ref=f22e568]:
+              - link "Получить предложение" [ref=f22e569] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f22e571] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f22e573] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f22e575]:
+            - generic [ref=f22e576]:
+              - generic [ref=f22e577]: Кузов и габариты
+              - list [ref=f22e578]:
+                - listitem [ref=f22e579]:
+                  - generic [ref=f22e580]: Цельнометаллический фургон
+                  - generic [ref=f22e581]: Кузов
+                - listitem [ref=f22e582]:
+                  - generic [ref=f22e583]: L2H2 / L3H2
+                  - generic [ref=f22e584]: Версии
+                - listitem [ref=f22e585]:
+                  - generic [ref=f22e586]: до 5 990 мм
+                  - generic [ref=f22e587]: Полная длина
+                - listitem [ref=f22e588]:
+                  - generic [ref=f22e589]: до 12 м³
+                  - generic [ref=f22e590]: Объём грузового отсека
+            - generic [ref=f22e591]:
+              - generic [ref=f22e592]: Двигатель и трансмиссия
+              - list [ref=f22e593]:
+                - listitem [ref=f22e594]:
+                  - generic [ref=f22e595]: 2.5 л, дизель
+                  - generic [ref=f22e596]: Двигатель
+                - listitem [ref=f22e597]:
+                  - generic [ref=f22e598]: 154 л.с.
+                  - generic [ref=f22e599]: Мощность
+                - listitem [ref=f22e600]:
+                  - generic [ref=f22e601]: МКПП-6
+                  - generic [ref=f22e602]: КПП
+                - listitem [ref=f22e603]:
+                  - generic [ref=f22e604]: Задний
+                  - generic [ref=f22e605]: Привод
+                - listitem [ref=f22e606]:
+                  - generic [ref=f22e607]: до 910 кг
+                  - generic [ref=f22e608]: Грузоподъёмность
+          - generic [ref=f22e611]:
+            - link [ref=f22e613] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano-pro/gallery/1280/1.webp
+              - img "FOTON TOANO PRO — фото 1" [ref=f22e615]
+            - link [ref=f22e617] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano-pro/gallery/1280/2.webp
+              - img "FOTON TOANO PRO — фото 2" [ref=f22e619]
+            - link [ref=f22e621] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano-pro/gallery/1280/3.webp
+              - img "FOTON TOANO PRO — фото 3" [ref=f22e623]
+            - link [ref=f22e625] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano-pro/gallery/1280/4.webp
+              - img "FOTON TOANO PRO — фото 4" [ref=f22e627]
+            - link [ref=f22e629] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano-pro/gallery/1280/5.webp
+              - img "FOTON TOANO PRO — фото 5" [ref=f22e631]
+        - article [ref=f22e635]:
+          - generic [ref=f22e638]:
+            - img "FOTON TOANO"
+          - generic [ref=f22e639]:
+            - generic [ref=f22e640]:
+              - heading "FOTON TOANO" [level=3] [ref=f22e641]
+              - paragraph [ref=f22e642]: Фургон и грузопассажирские версии
+              - generic [ref=f22e644]:
+                - text: от
+                - generic [ref=f22e645]: 3 135 000
+                - text: ₽
+            - list [ref=f22e646]:
+              - listitem [ref=f22e647]:
+                - generic [ref=f22e651]: Грузовой отсек до 12 м³
+              - listitem [ref=f22e652]:
+                - generic [ref=f22e656]: Грузоподъёмность до 910 кг
+              - listitem [ref=f22e657]:
+                - generic [ref=f22e661]: Дизель 2.8 л, 150 л.с.
+            - generic [ref=f22e662]:
+              - link "Получить предложение" [ref=f22e663] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f22e665] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f22e667] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f22e669]:
+            - generic [ref=f22e670]:
+              - generic [ref=f22e671]: Кузов и габариты
+              - list [ref=f22e672]:
+                - listitem [ref=f22e673]:
+                  - generic [ref=f22e674]: Фургон / грузопассажирский Mixto
+                  - generic [ref=f22e675]: Кузов
+                - listitem [ref=f22e676]:
+                  - generic [ref=f22e677]: 3 / 5+1
+                  - generic [ref=f22e678]: Мест
+                - listitem [ref=f22e679]:
+                  - generic [ref=f22e680]: L2H2 / L3H2 / L3H3
+                  - generic [ref=f22e681]: Версии
+                - listitem [ref=f22e682]:
+                  - generic [ref=f22e683]: 5 495 / 5 990 мм
+                  - generic [ref=f22e684]: Длина
+                - listitem [ref=f22e685]:
+                  - generic [ref=f22e686]: 2 415 / 2 700 мм
+                  - generic [ref=f22e687]: Высота
+                - listitem [ref=f22e688]:
+                  - generic [ref=f22e689]: до 12 м³
+                  - generic [ref=f22e690]: Объём грузового отсека
+            - generic [ref=f22e691]:
+              - generic [ref=f22e692]: Двигатель и трансмиссия
+              - list [ref=f22e693]:
+                - listitem [ref=f22e694]:
+                  - generic [ref=f22e695]: 2.8 л, дизель
+                  - generic [ref=f22e696]: Двигатель
+                - listitem [ref=f22e697]:
+                  - generic [ref=f22e698]: 150 л.с.
+                  - generic [ref=f22e699]: Мощность
+                - listitem [ref=f22e700]:
+                  - generic [ref=f22e701]: МКПП-6
+                  - generic [ref=f22e702]: КПП
+                - listitem [ref=f22e703]:
+                  - generic [ref=f22e704]: Задний
+                  - generic [ref=f22e705]: Привод
+                - listitem [ref=f22e706]:
+                  - generic [ref=f22e707]: до 910 кг
+                  - generic [ref=f22e708]: Грузоподъёмность
+          - generic [ref=f22e711]:
+            - link [ref=f22e713] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano/gallery/1280/1.webp
+              - img "FOTON TOANO — фото 1" [ref=f22e715]
+            - link [ref=f22e717] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano/gallery/1280/2.webp
+              - img "FOTON TOANO — фото 2" [ref=f22e719]
+            - link [ref=f22e721] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano/gallery/1280/3.webp
+              - img "FOTON TOANO — фото 3" [ref=f22e723]
+            - link [ref=f22e725] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano/gallery/1280/4.webp
+              - img "FOTON TOANO — фото 4" [ref=f22e727]
+            - link [ref=f22e729] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/toano/gallery/1280/5.webp
+              - img "FOTON TOANO — фото 5" [ref=f22e731]
+        - article [ref=f22e735]:
+          - generic [ref=f22e737]:
+            - generic [ref=f22e738]:
+              - img "FOTON VIEW"
+            - generic [ref=f22e739]:
+              - button "Белый" [ref=f22e740] [cursor=pointer]
+              - button "Серебристый металлик" [ref=f22e742] [cursor=pointer]
+              - button "Золотистый металлик" [ref=f22e744] [cursor=pointer]
+              - button "Чёрный металлик" [ref=f22e746] [cursor=pointer]
+              - button "Мятный металлик" [ref=f22e748] [cursor=pointer]
+              - button "Бирюзовый металлик" [ref=f22e750] [cursor=pointer]
+              - button "Серый металлик" [ref=f22e752] [cursor=pointer]
+              - button "Голубой металлик" [ref=f22e754] [cursor=pointer]
+              - button "Синий металлик" [ref=f22e756] [cursor=pointer]
+              - button "Фиолетовый металлик" [ref=f22e758] [cursor=pointer]
+            - generic [ref=f22e760]: Белый
+          - generic [ref=f22e761]:
+            - generic [ref=f22e762]:
+              - heading "FOTON VIEW" [level=3] [ref=f22e763]
+              - paragraph [ref=f22e764]: Компактный фургон для городской логистики
+              - generic [ref=f22e766]:
+                - text: от
+                - generic [ref=f22e767]: 3 185 000
+                - text: ₽
+            - list [ref=f22e768]:
+              - listitem [ref=f22e769]:
+                - generic [ref=f22e773]:
+                  - text: Выгода
+                  - generic [ref=f22e774]: до 300 000 ₽
+              - listitem [ref=f22e775]:
+                - generic [ref=f22e779]: Дизель 2.0 л, 163 л.с.
+              - listitem [ref=f22e780]:
+                - generic [ref=f22e784]: Трансмиссия 6MT / 8AT
+              - listitem [ref=f22e785]:
+                - generic [ref=f22e789]: Грузоподъёмность до 1 230 кг
+            - generic [ref=f22e790]:
+              - link "Получить предложение" [ref=f22e791] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f22e793] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f22e795] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f22e797]:
+            - generic [ref=f22e798]:
+              - generic [ref=f22e799]: Кузов и габариты
+              - list [ref=f22e800]:
+                - listitem [ref=f22e801]:
+                  - generic [ref=f22e802]: Фургон, 3 места
+                  - generic [ref=f22e803]: Кузов
+                - listitem [ref=f22e804]:
+                  - generic [ref=f22e805]: H1 / H2
+                  - generic [ref=f22e806]: Версии
+                - listitem [ref=f22e807]:
+                  - generic [ref=f22e808]: 5 490 мм
+                  - generic [ref=f22e809]: Длина
+                - listitem [ref=f22e810]:
+                  - generic [ref=f22e811]: 1 980 мм
+                  - generic [ref=f22e812]: Ширина
+                - listitem [ref=f22e813]:
+                  - generic [ref=f22e814]: 1 990 / 2 195 мм
+                  - generic [ref=f22e815]: Высота
+            - generic [ref=f22e816]:
+              - generic [ref=f22e817]: Двигатель и трансмиссия
+              - list [ref=f22e818]:
+                - listitem [ref=f22e819]:
+                  - generic [ref=f22e820]: 2.0 л, дизель
+                  - generic [ref=f22e821]: Двигатель
+                - listitem [ref=f22e822]:
+                  - generic [ref=f22e823]: 163 л.с.
+                  - generic [ref=f22e824]: Мощность
+                - listitem [ref=f22e825]:
+                  - generic [ref=f22e826]: 6MT / 8AT
+                  - generic [ref=f22e827]: Трансмиссия
+                - listitem [ref=f22e828]:
+                  - generic [ref=f22e829]: Задний (RWD)
+                  - generic [ref=f22e830]: Привод
+                - listitem [ref=f22e831]:
+                  - generic [ref=f22e832]: до 1 230 кг
+                  - generic [ref=f22e833]: Грузоподъёмность
+          - generic [ref=f22e836]:
+            - link [ref=f22e838] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/11.webp
+              - img "FOTON VIEW — фото 1" [ref=f22e840]
+            - link [ref=f22e842] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/12.webp
+              - img "FOTON VIEW — фото 2" [ref=f22e844]
+            - link [ref=f22e846] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/13.webp
+              - img "FOTON VIEW — фото 3" [ref=f22e848]
+            - link [ref=f22e850] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/14.webp
+              - img "FOTON VIEW — фото 4" [ref=f22e852]
+            - link [ref=f22e854] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/15.webp
+              - img "FOTON VIEW — фото 5" [ref=f22e856]
+            - link [ref=f22e858] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/16.webp
+              - img "FOTON VIEW — фото 6" [ref=f22e860]
+            - link [ref=f22e862] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/17.webp
+              - img "FOTON VIEW — фото 7" [ref=f22e864]
+            - link [ref=f22e866] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/18.webp
+              - img "FOTON VIEW — фото 8" [ref=f22e868]
+            - link [ref=f22e870] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/19.webp
+              - img "FOTON VIEW — фото 9" [ref=f22e872]
+            - link [ref=f22e874] [cursor=pointer]:
+              - /url: https://promo.foton-avilon.ru/data/img/range/view/gallery/1280/20.webp
+              - img "FOTON VIEW — фото 10" [ref=f22e876]
+    - generic [ref=f22e880]:
+      - generic [ref=f22e881]:
+        - heading "Акции и предложения" [level=2] [ref=f22e882]
+        - paragraph [ref=f22e883]: Выгодные программы покупки FOTON в АВИЛОН
+      - generic [ref=f22e884]:
+        - link "Тест-драйв FOTON Индивидуальная поездка Не нужно ждать — просто запишитесь на тест-драйв онлайн." [ref=f22e886] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Тест-драйв"
+          - img "FOTON" [ref=f22e888]
+          - generic [ref=f22e889]:
+            - generic [ref=f22e890]: Индивидуальная поездка
+            - generic [ref=f22e892]: Не нужно ждать — просто запишитесь на тест-драйв онлайн.
+        - link "Выгодный обмен FOTON Трейд-ин Обменяйте ваш автомобиль и получите дополнительную выгоду на FOTON." [ref=f22e894] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Выгодный обмен"
+          - img "FOTON" [ref=f22e896]
+          - generic [ref=f22e897]:
+            - generic [ref=f22e898]: Трейд-ин
+            - generic [ref=f22e900]: Обменяйте ваш автомобиль и получите дополнительную выгоду на FOTON.
+        - link "Кредит FOTON Кредит Кредит на пикапы и фургоны FOTON — без скрытых платежей. Расчёт за 10 минут." [ref=f22e902] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Кредит"
+          - img "FOTON" [ref=f22e904]
+          - generic [ref=f22e905]:
+            - generic [ref=f22e906]: Кредит
+            - generic [ref=f22e908]: Кредит на пикапы и фургоны FOTON — без скрытых платежей. Расчёт за 10 минут.
+    - generic [ref=f22e912]:
+      - generic [ref=f22e913]: Лизинг для бизнеса
+      - generic [ref=f22e914]: "Лизинг коммерческого транспорта FOTON для юридических лиц и ИП: гибкие платежи, НДС к зачёту"
+      - link "Рассчитать условия" [ref=f22e916] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f22e919]:
+      - generic [ref=f22e920]:
+        - heading "Преимущества Foton Авилон" [level=2] [ref=f22e921]
+        - paragraph [ref=f22e922]: Официальный дилер FOTON в Москве
+      - generic [ref=f22e923]:
+        - link "Пикапы и фургоны в наличии" [ref=f22e924] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Полная линейка FOTON — TUNLAND, TOANO, VIEW" [ref=f22e927] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Выгодный обмен автомобиля" [ref=f22e930] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Привилегии официального дилера" [ref=f22e933] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Кредит и лизинг для бизнеса" [ref=f22e936] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Победитель «Автодилер года 2026»" [ref=f22e939] [cursor=pointer]:
+          - /url: "#callback"
+    - generic [ref=f22e943]:
+      - generic [ref=f22e944]:
+        - heading "Способы покупки" [level=2] [ref=f22e945]
+        - paragraph [ref=f22e946]: Трейд-ин, кредит и лизинг на выгодных условиях
+      - generic [ref=f22e947]:
+        - article [ref=f22e949]:
+          - generic [ref=f22e953]:
+            - heading "Трейд-ин" [level=3] [ref=f22e954]
+            - list [ref=f22e956]:
+              - listitem [ref=f22e957]: Бесплатная диагностика и оценка за 30 минут
+              - listitem [ref=f22e958]:
+                - text: Лояльный трейд-ин — выгода до
+                - generic [ref=f22e959]: 200 000 ₽
+            - link "Получить оценку" [ref=f22e961] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f22e964]:
+          - generic [ref=f22e968]:
+            - heading "Кредит" [level=3] [ref=f22e969]
+            - list [ref=f22e971]:
+              - listitem [ref=f22e972]:
+                - generic [ref=f22e973]: 0% переплат
+                - text: по программам дилера
+              - listitem [ref=f22e974]: Первоначальный взнос от 10%
+              - listitem [ref=f22e975]: Срок до 84 месяцев
+            - link "Рассчитать условия" [ref=f22e977] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f22e980]:
+          - generic [ref=f22e984]:
+            - heading "Лизинг" [level=3] [ref=f22e985]
+            - list [ref=f22e987]:
+              - listitem [ref=f22e988]: Гибкий выбор срока и структуры платежей
+              - listitem [ref=f22e989]: Сохранение денежных средств в обороте
+              - listitem [ref=f22e990]: Лизинговый платёж без НДС на затраты организации
+              - listitem [ref=f22e991]:
+                - text: Корпоративным клиентам —
+                - generic [ref=f22e992]: индивидуальные условия
+            - link "Рассчитать условия" [ref=f22e994] [cursor=pointer]:
+              - /url: "#callback"
+    - generic [ref=f22e999]:
+      - generic [ref=f22e1000]:
+        - generic [ref=f22e1001]: Foton Авилон
+        - generic [ref=f22e1002]: Официальный дилер FOTON в Москве
+      - list [ref=f22e1003]:
+        - listitem [ref=f22e1004]:
+          - link "+7 (495) 730-00-70" [ref=f22e1008] [cursor=pointer]:
+            - /url: tel:+74957300070
+        - listitem [ref=f22e1009]:
+          - generic [ref=f22e1014]: Москва, Волгоградский пр-т, 41, стр. 2
+        - listitem [ref=f22e1015]:
+          - generic [ref=f22e1020]: "Пн–Вс: 09:00–21:40"
+      - generic [ref=f22e1021]:
+        - generic [ref=f22e1022]: Услуги
+        - generic [ref=f22e1023]:
+          - generic [ref=f22e1024]: Продажа
+          - generic [ref=f22e1025]: Трейд-ин
+          - generic [ref=f22e1026]: Кредит
+          - generic [ref=f22e1027]: Лизинг
+      - link "Получить консультацию" [ref=f22e1028] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f22e1033]:
+    - link [ref=f22e1035] [cursor=pointer]:
+      - /url: https://promo.foton-avilon.ru/
+      - img "FOTON" [ref=f22e1036]
+    - generic [ref=f22e1038]:
+      - link "ВКонтакте" [ref=f22e1039] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f22e1042] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f22e1045] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f22e1048]:
+      - link "Модельный ряд" [ref=f22e1050] [cursor=pointer]:
+        - /url: "#range"
+      - link "Преимущества" [ref=f22e1052] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f22e1054] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f22e1056] [cursor=pointer]:
+        - /url: "#map"
+    - generic [ref=f22e1057]: © 2026 Foton Авилон. Все права защищены
+    - generic [ref=f22e1059]:
+      - link "Политика конфиденциальности" [ref=f22e1060] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f22e1061] [cursor=pointer]:
+        - /url: https://promo.foton-avilon.ru/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f22e1062] [cursor=pointer]:
+        - /url: https://promo.foton-avilon.ru/consent/
+      - link "Правовая информация" [ref=f22e1063] [cursor=pointer]:
+        - /url: https://promo.foton-avilon.ru/legal-info/
+    - paragraph [ref=f22e1065]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f22e1068]:
+    - generic [ref=f22e1070]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f22e1071] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f22e1073] [cursor=pointer]

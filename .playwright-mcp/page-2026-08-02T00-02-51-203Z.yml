@@ -1,0 +1,666 @@
+- generic [active] [ref=f4e1]:
+  - main [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - generic [ref=f4e5]:
+        - generic [ref=f4e6]:
+          - link [ref=f4e8] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f4e10]:
+            - img "БорисХоф 34 года"
+            - generic [ref=f4e11]: Официальный дилер TANK в Москве
+        - generic [ref=f4e12]:
+          - generic [ref=f4e13]:
+            - generic [ref=f4e14]: TANK БорисХоф МКАД
+            - generic [ref=f4e15]:
+              - link "+7 (495) 011-11-03" [ref=f4e16] [cursor=pointer]:
+                - /url: tel:+74950111103
+              - generic [ref=f4e17]: 29 км МКАД, уч. 1, лит. Б
+          - generic [ref=f4e18]:
+            - generic [ref=f4e19]: TANK БорисХоф Сити
+            - generic [ref=f4e20]:
+              - link "+7 (495) 011-11-02" [ref=f4e21] [cursor=pointer]:
+                - /url: tel:+74950111102
+              - generic [ref=f4e22]: 2-я Магистральная ул., 18, стр. 22
+        - link "Заказать звонок" [ref=f4e24] [cursor=pointer]:
+          - /url: "#call"
+        - text: 󰏷
+      - generic [ref=f4e26]:
+        - link "Технические характеристики" [ref=f4e27] [cursor=pointer]:
+          - /url: /tank-300/technical-specifications
+        - link "Комплектации и цены" [ref=f4e29] [cursor=pointer]:
+          - /url: /tank-300/configuration
+        - link "Галерея" [ref=f4e31] [cursor=pointer]:
+          - /url: /tank-300/gallery
+        - link "Авто в наличии" [ref=f4e33] [cursor=pointer]:
+          - /url: /cars/tank-300
+        - link "Сервис" [ref=f4e35] [cursor=pointer]:
+          - /url: /service
+        - link "Новости" [ref=f4e37] [cursor=pointer]:
+          - /url: /news
+      - generic [ref=f4e39]:
+        - generic [ref=f4e41]:
+          - navigation "Хлебные крошки" [ref=f4e43]:
+            - list [ref=f4e44]:
+              - listitem [ref=f4e45]:
+                - link "Главная" [ref=f4e46] [cursor=pointer]:
+                  - /url: /
+                - text: /
+              - listitem [ref=f4e47]:
+                - link "Автомобили в наличии" [ref=f4e48] [cursor=pointer]:
+                  - /url: /cars
+                - text: /
+              - listitem [ref=f4e49]: TANK 300
+          - heading "Автомобили TANK 300 в наличии" [level=1] [ref=f4e51]
+          - generic [ref=f4e53]:
+            - paragraph [ref=f4e54]:
+              - generic [ref=f4e55]: 󰭮
+              - generic [ref=f4e56]: "В наличии сейчас: 47 автомобилей"
+            - generic [ref=f4e57]:
+              - navigation "Фильтр по модели" [ref=f4e58]:
+                - listitem [ref=f4e59]:
+                  - link "Все модели 47" [ref=f4e60] [cursor=pointer]:
+                    - /url: /cars
+                    - text: Все модели
+                    - generic [ref=f4e61]: "47"
+                - listitem [ref=f4e62]:
+                  - link "TANK 300 20" [ref=f4e63] [cursor=pointer]:
+                    - /url: /cars/tank-300
+                    - text: TANK 300
+                    - generic [ref=f4e64]: "20"
+                - listitem [ref=f4e65]:
+                  - link "TANK 400 11" [ref=f4e66] [cursor=pointer]:
+                    - /url: /cars/tank-400
+                    - text: TANK 400
+                    - generic [ref=f4e67]: "11"
+                - listitem [ref=f4e68]:
+                  - link "TANK 500 14" [ref=f4e69] [cursor=pointer]:
+                    - /url: /cars/tank-500
+                    - text: TANK 500
+                    - generic [ref=f4e70]: "14"
+                - listitem [ref=f4e71]:
+                  - link "TANK 700 2" [ref=f4e72] [cursor=pointer]:
+                    - /url: /cars/tank-700
+                    - text: TANK 700
+                    - generic [ref=f4e73]: "2"
+              - generic [ref=f4e74]:
+                - generic [ref=f4e75]: "Сортировка:"
+                - combobox "Сортировка:" [ref=f4e76] [cursor=pointer]:
+                  - option "По умолчанию" [selected]
+                  - 'option "Цена: сначала дешёвые"'
+                  - 'option "Цена: сначала дорогие"'
+                  - 'option "Год: новые в начале"'
+                  - 'option "Выгода: больше в начале"'
+          - list [ref=f4e78]:
+            - listitem [ref=f4e79]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Серый, VIN LGWFF7A58TJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e80] [cursor=pointer]:
+                - /url: /cars/tank-300-8758919
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e81]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e82]
+                  - paragraph [ref=f4e83]: 2026 г., Серый, VIN LGWFF7A58TJ6*****
+                  - list [ref=f4e84]:
+                    - listitem [ref=f4e85]:
+                      - generic [ref=f4e86]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e87]:
+                      - generic [ref=f4e88]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e89]:
+                      - generic [ref=f4e90]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e91]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e92]:
+                      - text: выгода до
+                      - generic [ref=f4e93]: 500 000 ₽
+                  - generic [ref=f4e94]: Подробнее →
+            - listitem [ref=f4e95]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Черный, VIN LGWFF7A55TJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e96] [cursor=pointer]:
+                - /url: /cars/tank-300-8867385
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e97]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e98]
+                  - paragraph [ref=f4e99]: 2026 г., Черный, VIN LGWFF7A55TJ6*****
+                  - list [ref=f4e100]:
+                    - listitem [ref=f4e101]:
+                      - generic [ref=f4e102]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e103]:
+                      - generic [ref=f4e104]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e105]:
+                      - generic [ref=f4e106]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e107]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e108]:
+                      - text: выгода до
+                      - generic [ref=f4e109]: 500 000 ₽
+                  - generic [ref=f4e110]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e111]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Серый, VIN LGWFF7A56TJ6***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e112] [cursor=pointer]:
+                - /url: /cars/tank-300-9093985
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e113]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e114]
+                  - paragraph [ref=f4e115]: 2026 г., Серый, VIN LGWFF7A56TJ6*****
+                  - list [ref=f4e116]:
+                    - listitem [ref=f4e117]:
+                      - generic [ref=f4e118]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e119]:
+                      - generic [ref=f4e120]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e121]:
+                      - generic [ref=f4e122]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e123]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e124]:
+                      - text: выгода до
+                      - generic [ref=f4e125]: 500 000 ₽
+                  - generic [ref=f4e126]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e127]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Черный, VIN LGWFF7A53TJ6***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e128] [cursor=pointer]:
+                - /url: /cars/tank-300-9093990
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e129]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e130]
+                  - paragraph [ref=f4e131]: 2026 г., Черный, VIN LGWFF7A53TJ6*****
+                  - list [ref=f4e132]:
+                    - listitem [ref=f4e133]:
+                      - generic [ref=f4e134]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e135]:
+                      - generic [ref=f4e136]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e137]:
+                      - generic [ref=f4e138]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e139]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e140]:
+                      - text: выгода до
+                      - generic [ref=f4e141]: 500 000 ₽
+                  - generic [ref=f4e142]: Подробнее →
+            - listitem [ref=f4e143]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Черный, VIN LGWFF7A55TJ6***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e144] [cursor=pointer]:
+                - /url: /cars/tank-300-9093997
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e145]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e146]
+                  - paragraph [ref=f4e147]: 2026 г., Черный, VIN LGWFF7A55TJ6*****
+                  - list [ref=f4e148]:
+                    - listitem [ref=f4e149]:
+                      - generic [ref=f4e150]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e151]:
+                      - generic [ref=f4e152]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e153]:
+                      - generic [ref=f4e154]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e155]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e156]:
+                      - text: выгода до
+                      - generic [ref=f4e157]: 500 000 ₽
+                  - generic [ref=f4e158]: Подробнее →
+            - listitem [ref=f4e159]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Белый, VIN LGWFF7A5XTJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e160] [cursor=pointer]:
+                - /url: /cars/tank-300-9094004
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e161]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e162]
+                  - paragraph [ref=f4e163]: 2026 г., Белый, VIN LGWFF7A5XTJ6*****
+                  - list [ref=f4e164]:
+                    - listitem [ref=f4e165]:
+                      - generic [ref=f4e166]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e167]:
+                      - generic [ref=f4e168]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e169]:
+                      - generic [ref=f4e170]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e171]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e172]:
+                      - text: выгода до
+                      - generic [ref=f4e173]: 500 000 ₽
+                  - generic [ref=f4e174]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e175]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Серый, VIN LGWFF7A5XTJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e176] [cursor=pointer]:
+                - /url: /cars/tank-300-9094011
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e177]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e178]
+                  - paragraph [ref=f4e179]: 2026 г., Серый, VIN LGWFF7A5XTJ6*****
+                  - list [ref=f4e180]:
+                    - listitem [ref=f4e181]:
+                      - generic [ref=f4e182]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e183]:
+                      - generic [ref=f4e184]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e185]:
+                      - generic [ref=f4e186]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e187]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e188]:
+                      - text: выгода до
+                      - generic [ref=f4e189]: 500 000 ₽
+                  - generic [ref=f4e190]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e191]:
+              - link "TANK 300 Премиум (2025) TANK 300 Премиум (2025) 2026 г., Красный, VIN LGWFF7A53TJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 899 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e192] [cursor=pointer]:
+                - /url: /cars/tank-300-9094015
+                - img "TANK 300 Премиум (2025)"
+                - generic [ref=f4e193]:
+                  - heading "TANK 300 Премиум (2025)" [level=2] [ref=f4e194]
+                  - paragraph [ref=f4e195]: 2026 г., Красный, VIN LGWFF7A53TJ6*****
+                  - list [ref=f4e196]:
+                    - listitem [ref=f4e197]:
+                      - generic [ref=f4e198]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e199]:
+                      - generic [ref=f4e200]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e201]:
+                      - generic [ref=f4e202]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e203]:
+                    - text: 4 899 000 ₽
+                    - generic [ref=f4e204]:
+                      - text: выгода до
+                      - generic [ref=f4e205]: 500 000 ₽
+                  - generic [ref=f4e206]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e207]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Серый, VIN LGWFF7A57TJ6***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e208] [cursor=pointer]:
+                - /url: /cars/tank-300-9309111
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e209]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e210]
+                  - paragraph [ref=f4e211]: 2026 г., Серый, VIN LGWFF7A57TJ6*****
+                  - list [ref=f4e212]:
+                    - listitem [ref=f4e213]:
+                      - generic [ref=f4e214]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e215]:
+                      - generic [ref=f4e216]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e217]:
+                      - generic [ref=f4e218]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e219]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e220]:
+                      - text: выгода до
+                      - generic [ref=f4e221]: 500 000 ₽
+                  - generic [ref=f4e222]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e223]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Серый, VIN LGWFF7A53TJ6***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e224] [cursor=pointer]:
+                - /url: /cars/tank-300-9309117
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e225]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e226]
+                  - paragraph [ref=f4e227]: 2026 г., Серый, VIN LGWFF7A53TJ6*****
+                  - list [ref=f4e228]:
+                    - listitem [ref=f4e229]:
+                      - generic [ref=f4e230]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e231]:
+                      - generic [ref=f4e232]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e233]:
+                      - generic [ref=f4e234]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e235]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e236]:
+                      - text: выгода до
+                      - generic [ref=f4e237]: 500 000 ₽
+                  - generic [ref=f4e238]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e239]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Красный, VIN EEYFF7A5XTA0***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e240] [cursor=pointer]:
+                - /url: /cars/tank-300-9309121
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e241]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e242]
+                  - paragraph [ref=f4e243]: 2026 г., Красный, VIN EEYFF7A5XTA0*****
+                  - list [ref=f4e244]:
+                    - listitem [ref=f4e245]:
+                      - generic [ref=f4e246]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e247]:
+                      - generic [ref=f4e248]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e249]:
+                      - generic [ref=f4e250]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e251]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e252]:
+                      - text: выгода до
+                      - generic [ref=f4e253]: 500 000 ₽
+                  - generic [ref=f4e254]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e255]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Черный, VIN LGWFF7A58TJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e256] [cursor=pointer]:
+                - /url: /cars/tank-300-9309123
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e257]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e258]
+                  - paragraph [ref=f4e259]: 2026 г., Черный, VIN LGWFF7A58TJ6*****
+                  - list [ref=f4e260]:
+                    - listitem [ref=f4e261]:
+                      - generic [ref=f4e262]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e263]:
+                      - generic [ref=f4e264]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e265]:
+                      - generic [ref=f4e266]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e267]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e268]:
+                      - text: выгода до
+                      - generic [ref=f4e269]: 500 000 ₽
+                  - generic [ref=f4e270]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e271]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Черный, VIN LGWFF7A51TJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e272] [cursor=pointer]:
+                - /url: /cars/tank-300-9309125
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e273]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e274]
+                  - paragraph [ref=f4e275]: 2026 г., Черный, VIN LGWFF7A51TJ6*****
+                  - list [ref=f4e276]:
+                    - listitem [ref=f4e277]:
+                      - generic [ref=f4e278]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e279]:
+                      - generic [ref=f4e280]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e281]:
+                      - generic [ref=f4e282]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e283]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e284]:
+                      - text: выгода до
+                      - generic [ref=f4e285]: 500 000 ₽
+                  - generic [ref=f4e286]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e287]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Черный, VIN LGWFF7A50TJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e288] [cursor=pointer]:
+                - /url: /cars/tank-300-9309127
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e289]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e290]
+                  - paragraph [ref=f4e291]: 2026 г., Черный, VIN LGWFF7A50TJ6*****
+                  - list [ref=f4e292]:
+                    - listitem [ref=f4e293]:
+                      - generic [ref=f4e294]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e295]:
+                      - generic [ref=f4e296]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e297]:
+                      - generic [ref=f4e298]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e299]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e300]:
+                      - text: выгода до
+                      - generic [ref=f4e301]: 500 000 ₽
+                  - generic [ref=f4e302]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e303]:
+              - link "TANK 300 Премиум (2025) TANK 300 Премиум (2025) 2026 г., Черный, VIN LGWFF7A51TJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 899 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e304] [cursor=pointer]:
+                - /url: /cars/tank-300-9309129
+                - img "TANK 300 Премиум (2025)"
+                - generic [ref=f4e305]:
+                  - heading "TANK 300 Премиум (2025)" [level=2] [ref=f4e306]
+                  - paragraph [ref=f4e307]: 2026 г., Черный, VIN LGWFF7A51TJ6*****
+                  - list [ref=f4e308]:
+                    - listitem [ref=f4e309]:
+                      - generic [ref=f4e310]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e311]:
+                      - generic [ref=f4e312]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e313]:
+                      - generic [ref=f4e314]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e315]:
+                    - text: 4 899 000 ₽
+                    - generic [ref=f4e316]:
+                      - text: выгода до
+                      - generic [ref=f4e317]: 500 000 ₽
+                  - generic [ref=f4e318]: Подробнее →
+            - listitem [ref=f4e319]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Белый, VIN LGWFF7A53TJ6***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e320] [cursor=pointer]:
+                - /url: /cars/tank-300-9309130
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e321]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e322]
+                  - paragraph [ref=f4e323]: 2026 г., Белый, VIN LGWFF7A53TJ6*****
+                  - list [ref=f4e324]:
+                    - listitem [ref=f4e325]:
+                      - generic [ref=f4e326]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e327]:
+                      - generic [ref=f4e328]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e329]:
+                      - generic [ref=f4e330]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e331]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e332]:
+                      - text: выгода до
+                      - generic [ref=f4e333]: 500 000 ₽
+                  - generic [ref=f4e334]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e335]:
+              - link "TANK 300 Сити Драйв (2025) TANK 300 Сити Драйв (2025) 2026 г., Белый, VIN LGWFF7A55TJ6***** 220 л.с. · 1967 см³ АКПП Полный 4 799 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e336] [cursor=pointer]:
+                - /url: /cars/tank-300-9309132
+                - img "TANK 300 Сити Драйв (2025)"
+                - generic [ref=f4e337]:
+                  - heading "TANK 300 Сити Драйв (2025)" [level=2] [ref=f4e338]
+                  - paragraph [ref=f4e339]: 2026 г., Белый, VIN LGWFF7A55TJ6*****
+                  - list [ref=f4e340]:
+                    - listitem [ref=f4e341]:
+                      - generic [ref=f4e342]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e343]:
+                      - generic [ref=f4e344]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e345]:
+                      - generic [ref=f4e346]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e347]:
+                    - text: 4 799 000 ₽
+                    - generic [ref=f4e348]:
+                      - text: выгода до
+                      - generic [ref=f4e349]: 500 000 ₽
+                  - generic [ref=f4e350]: Подробнее →
+            - listitem [ref=f4e351]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Черный, VIN LGWFF7A5XTJ6***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e352] [cursor=pointer]:
+                - /url: /cars/tank-300-9309133
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e353]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e354]
+                  - paragraph [ref=f4e355]: 2026 г., Черный, VIN LGWFF7A5XTJ6*****
+                  - list [ref=f4e356]:
+                    - listitem [ref=f4e357]:
+                      - generic [ref=f4e358]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e359]:
+                      - generic [ref=f4e360]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e361]:
+                      - generic [ref=f4e362]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e363]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e364]:
+                      - text: выгода до
+                      - generic [ref=f4e365]: 500 000 ₽
+                  - generic [ref=f4e366]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 →
+            - listitem [ref=f4e367]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Черный, VIN LGWFF7A55TJ6***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e368] [cursor=pointer]:
+                - /url: /cars/tank-300-9309135
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e369]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e370]
+                  - paragraph [ref=f4e371]: 2026 г., Черный, VIN LGWFF7A55TJ6*****
+                  - list [ref=f4e372]:
+                    - listitem [ref=f4e373]:
+                      - generic [ref=f4e374]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e375]:
+                      - generic [ref=f4e376]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e377]:
+                      - generic [ref=f4e378]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e379]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e380]:
+                      - text: выгода до
+                      - generic [ref=f4e381]: 500 000 ₽
+                  - generic [ref=f4e382]: Подробнее →
+            - listitem [ref=f4e383]:
+              - link "TANK 300 Сити Премиум (2025) TANK 300 Сити Премиум (2025) 2026 г., Черный, VIN EEYFF7A54TA0***** 220 л.с. · 1967 см³ АКПП Полный 5 249 000 ₽ выгода до 500 000 ₽ Подробнее →" [ref=f4e384] [cursor=pointer]:
+                - /url: /cars/tank-300-9309137
+                - img "TANK 300 Сити Премиум (2025)"
+                - generic [ref=f4e385]:
+                  - heading "TANK 300 Сити Премиум (2025)" [level=2] [ref=f4e386]
+                  - paragraph [ref=f4e387]: 2026 г., Черный, VIN EEYFF7A54TA0*****
+                  - list [ref=f4e388]:
+                    - listitem [ref=f4e389]:
+                      - generic [ref=f4e390]: 󰛕
+                      - text: 220 л.с. · 1967 см³
+                    - listitem [ref=f4e391]:
+                      - generic [ref=f4e392]: 󰽀
+                      - text: АКПП
+                    - listitem [ref=f4e393]:
+                      - generic [ref=f4e394]: 󰵤
+                      - text: Полный
+                  - paragraph [ref=f4e395]:
+                    - text: 5 249 000 ₽
+                    - generic [ref=f4e396]:
+                      - text: выгода до
+                      - generic [ref=f4e397]: 500 000 ₽
+                  - generic [ref=f4e398]: Подробнее →
+            - text: 󰛕 󰽀 󰵤 → 󰛕 󰽀 󰵤 →
+          - generic [ref=f4e399]:
+            - heading "Преимущества покупки в БорисХоф" [level=2] [ref=f4e400]
+            - list [ref=f4e401]:
+              - listitem [ref=f4e402]:
+                - generic [ref=f4e403]: 󰞑
+                - generic [ref=f4e404]: Официальный дилер TANK в Москве
+              - listitem [ref=f4e405]:
+                - generic [ref=f4e406]: 󰕥
+                - generic [ref=f4e407]: Гарантия производителя 5 лет
+              - listitem [ref=f4e408]:
+                - generic [ref=f4e409]: 󰌆
+                - generic [ref=f4e410]: Выдача в день оформления при готовности документов
+              - listitem [ref=f4e411]:
+                - generic [ref=f4e412]: 󱉸
+                - generic [ref=f4e413]: Кредитные программы от партнёрских банков, ставка от 16,7%
+              - listitem [ref=f4e414]:
+                - generic [ref=f4e415]: 󰓡
+                - generic [ref=f4e416]: "Trade-in: выкуп вашего авто и зачёт в стоимость нового"
+              - listitem [ref=f4e417]:
+                - generic [ref=f4e418]: 󰠔
+                - generic [ref=f4e419]: Льготный лизинг для юрлиц и ИП от 2,5%
+              - listitem [ref=f4e420]:
+                - generic [ref=f4e421]: 󱁤
+                - generic [ref=f4e422]: "Полный цикл сервиса: ТО, кузовной ремонт, оригинальные запчасти"
+              - listitem [ref=f4e423]:
+                - generic [ref=f4e424]: 󰭭
+                - generic [ref=f4e425]: Тест-драйв всего модельного ряда TANK
+          - generic [ref=f4e426]:
+            - heading "TANK 300 в наличии в Москве" [level=2] [ref=f4e427]
+            - generic [ref=f4e428]:
+              - paragraph [ref=f4e429]: TANK 300 — выбор для тех, кто ищет рамный внедорожник с ярким характером, удобный для города и уверенный за его пределами. Модель сочетает компактный для класса формат, высокий дорожный просвет, полный привод и прочную конструкцию, поэтому одинаково органично чувствует себя в плотном городском потоке, на зимней дороге и на маршрутах, где важна настоящая проходимость.
+              - paragraph [ref=f4e430]: "На странице представлены автомобили, которые доступны у официального дилера TANK БорисХоф в Москве. Здесь удобно сравнить комплектации, цвет, оснащение и статус конкретного автомобиля, а также быстро перейти к характеристикам, галерее и вариантам покупки. Если важны скорость сделки и прозрачные условия, это сильная точка модели: мы работаем с автомобилями из актуального стока, предлагаем тест-драйв, кредит, Trade-in и полное сопровождение покупки."
+              - paragraph [ref=f4e431]: С практической точки зрения TANK 300 особенно ценят за баланс манёвренности и внедорожного потенциала. Рамная архитектура, интеллектуальный полный привод, высокий клиренс и полезный набор водительских ассистентов делают его универсальным решением на каждый день. После покупки вы получаете официальный сервис, доступ к оригинальным запчастям, поддержку по регламентному обслуживанию и гарантию производителя. Если нужен новый TANK 300 в наличии в Москве без компромиссов по характеру, оснащению и уверенности на любой дороге, TANK БорисХоф помогает быстро перейти от выбора к реальной покупке.
+          - generic [ref=f4e432]:
+            - heading "Часто задаваемые вопросы" [level=2] [ref=f4e433]
+            - generic [ref=f4e434]:
+              - group [ref=f4e435]:
+                - generic "Все ли автомобили в листинге фактически в наличии? +" [ref=f4e436] [cursor=pointer]
+              - group [ref=f4e437]:
+                - generic "Можно ли купить автомобиль в кредит? +" [ref=f4e438] [cursor=pointer]
+              - group [ref=f4e439]:
+                - generic "Принимаете ли в Trade-in любой автомобиль? +" [ref=f4e440] [cursor=pointer]
+              - group [ref=f4e441]:
+                - generic "Как быстро можно получить машину после оформления? +" [ref=f4e442] [cursor=pointer]
+              - group [ref=f4e443]:
+                - generic "Можно ли записаться на тест-драйв? +" [ref=f4e444] [cursor=pointer]
+              - group [ref=f4e445]:
+                - generic "Гарантия и сервис у официального дилера? +" [ref=f4e446] [cursor=pointer]
+          - generic [ref=f4e447]:
+            - link "Подробнее о TANK 300" [ref=f4e448] [cursor=pointer]:
+              - /url: /tank-300
+            - link "Подробнее о TANK 400" [ref=f4e449] [cursor=pointer]:
+              - /url: /tank-400
+            - link "Подробнее о TANK 500" [ref=f4e450] [cursor=pointer]:
+              - /url: /tank-500
+            - link "Подробнее о TANK 700" [ref=f4e451] [cursor=pointer]:
+              - /url: /tank-700
+        - generic [ref=f4e453]:
+          - generic [ref=f4e456]:
+            - link "VK" [ref=f4e458] [cursor=pointer]:
+              - /url: https://vk.ru/tank_borishoff
+            - link "Telegram" [ref=f4e462] [cursor=pointer]:
+              - /url: https://t.me/borishof_official
+            - link "Youtube" [ref=f4e469] [cursor=pointer]:
+              - /url: https://rutube.ru/channel/46485799/videos/
+          - generic [ref=f4e473]: Подробные условия акции
+          - generic [ref=f4e475]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой. Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+          - generic [ref=f4e478]:
+            - text: Вы можете купить новый TANK (ТЭНК) в автосалоне официального дилера ТАНК – БорисХоф, примерную актуальную цену моделей и комплектаций можно узнать, связавшись с нами по телефону
+            - link "+7 (495) 492-39-03" [ref=f4e479] [cursor=pointer]:
+              - /url: tel:+74954923903
+            - text: .
+          - generic [ref=f4e480]: Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930).
+          - generic [ref=f4e481]: © ООО «БорисХоф Холдинг». Все права защищены 2026
+          - navigation "Навигация в подвале" [ref=f4e482]:
+            - link "Автомобили TANK в наличии" [ref=f4e484] [cursor=pointer]:
+              - /url: /cars
+            - link "TANK 300" [ref=f4e486] [cursor=pointer]:
+              - /url: /tank-300
+            - link "TANK 400" [ref=f4e488] [cursor=pointer]:
+              - /url: /tank-400
+            - link "TANK 500" [ref=f4e490] [cursor=pointer]:
+              - /url: /tank-500
+            - link "TANK 700" [ref=f4e492] [cursor=pointer]:
+              - /url: /tank-700
+            - link "Сервис TANK" [ref=f4e494] [cursor=pointer]:
+              - /url: /service
+            - link "Новости" [ref=f4e496] [cursor=pointer]:
+              - /url: /news
+            - link "Контакты" [ref=f4e498] [cursor=pointer]:
+              - /url: /contacts
+  - dialog "Использование cookie-файлов":
+    - generic [ref=f4e500]:
+      - generic [ref=f4e501]:
+        - text: Мы используем
+        - link "cookie-файлы" [ref=f4e502] [cursor=pointer]:
+          - /url: https://tank.ru/privacy-policy
+        - text: для вашего удобства пользования сайтом
+      - button "Принять" [ref=f4e503] [cursor=pointer]

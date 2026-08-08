@@ -1,0 +1,244 @@
+- generic [ref=f12e1]:
+  - generic [ref=f12e2]:
+    - paragraph [ref=f12e861]: Проводятся технические работы. Из-за задержек в статистике данные в отчётах неполные. Позже сервис вернётся к нормальной работе. Извините за неудобства!
+    - generic [ref=f12e4]:
+      - generic [ref=f12e6]:
+        - generic [ref=f12e7]:
+          - link [ref=f12e10] [cursor=pointer]:
+            - /url: /list
+          - generic [ref=f12e28]:
+            - generic [ref=f12e29]:
+              - link "Обзор" [ref=f12e32] [cursor=pointer]:
+                - /url: /overview?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false
+              - generic [ref=f12e40]: Дашборды
+              - generic [ref=f12e49]: Отчеты
+              - generic [ref=f12e57]: Поведение
+              - generic [ref=f12e65]: Посетители
+            - generic [ref=f12e75]:
+              - link "Цели" [ref=f12e78] [cursor=pointer]:
+                - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goalsConversionViewKind=List
+              - link "Конверсии" [ref=f12e90] [cursor=pointer]:
+                - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goalsConversionViewKind=Chart
+            - generic [ref=f12e100]:
+              - link "Тег Менеджер" [ref=f12e103] [cursor=pointer]:
+                - /url: /ytm/overview?id=107236894
+              - generic [ref=f12e112]: Вариокуб
+            - generic [ref=f12e121]:
+              - generic [ref=f12e122]: Привлечение
+              - link "Интеграции" [ref=f12e132] [cursor=pointer]:
+                - /url: /marketplace?id=107236894
+              - link "Инсайты" [ref=f12e142] [cursor=pointer]:
+                - /url: /insights?id=107236894
+              - generic [ref=f12e150]: Настройки
+        - generic [ref=f12e158]: Свернуть
+      - generic [ref=f12e164]:
+        - generic [ref=f12e166]:
+          - generic [ref=f12e168]:
+            - generic "Kumho (kumho-tires.ru)" [ref=f12e174]:
+              - generic [ref=f12e175] [cursor=pointer]:
+                - img "Kumho (kumho-tires.ru)" [ref=f12e177]
+                - generic [ref=f12e178]: Kumho (kumho-tires.ru)
+              - generic [ref=f12e181]:
+                - link "kumho-tires.ru•" [ref=f12e182] [cursor=pointer]:
+                  - /url: http://kumho-tires.ru
+                - generic [ref=f12e183]: "107236894"
+            - generic [ref=f12e185]:
+              - link "Настройка аккаунта" [ref=f12e186] [cursor=pointer]:
+                - /url: /preferences/subscriptions
+              - button "Помощь" [ref=f12e187]:
+                - generic "Помощь" [ref=f12e190] [cursor=pointer]
+              - generic [ref=f12e195]:
+                - button [ref=f12e196]
+                - generic [ref=f12e202]: "0"
+              - button [ref=f12e203]
+          - generic [ref=f12e212] [cursor=pointer]:
+            - img "fedorovich-d" [ref=f12e215]
+            - generic [ref=f12e216]: fedorovich-d
+        - generic [ref=f12e220]:
+          - generic [ref=f12e221]:
+            - generic [ref=f12e222]:
+              - generic [ref=f12e223]:
+                - generic [ref=f12e225]:
+                  - generic [ref=f12e226]: Конверсии
+                  - link [ref=f12e229] [cursor=pointer]:
+                    - /url: /support/metrica/ru/reports/conversion
+                - generic [ref=f12e236]:
+                  - generic [ref=f12e472] [cursor=pointer]: Использовано 0 из 200 целей
+                  - button "Добавить цель" [ref=f12e237]:
+                    - generic "Добавить цель" [ref=f12e240] [cursor=pointer]
+                  - button [ref=f12e242]
+                  - button [ref=f12e248]
+              - generic [ref=f12e255]:
+                - generic [ref=f12e256]:
+                  - radiogroup [ref=f12e477]:
+                    - generic "Сегодня" [ref=f12e479]:
+                      - radio "Сегодня" [checked] [ref=f12e480] [cursor=pointer]
+                    - generic "Вчера" [ref=f12e484]:
+                      - radio "Вчера" [ref=f12e485] [cursor=pointer]
+                    - generic "Неделя" [ref=f12e489]:
+                      - radio "Неделя" [ref=f12e490] [cursor=pointer]
+                    - generic "Месяц" [ref=f12e494]:
+                      - radio "Месяц" [ref=f12e495] [cursor=pointer]
+                    - generic "Квартал" [ref=f12e499]:
+                      - radio "Квартал" [ref=f12e500] [cursor=pointer]
+                    - generic [ref=f12e504]:
+                      - radio "1 авг" [ref=f12e505] [cursor=pointer]
+                      - generic [ref=f12e506]: 1 авг
+                  - button "Сегмент • Не выбран" [ref=f12e512]:
+                    - generic [ref=f12e304] [cursor=pointer]:
+                      - text: Сегмент
+                      - generic [ref=f12e305]:
+                        - text: •
+                        - generic [ref=f12e306]: Не выбран
+                - button "100 %" [ref=f12e513]
+              - generic [ref=f12e520]:
+                - generic [ref=f12e521]:
+                  - generic [ref=f12e522]: Визиты
+                  - button [ref=f12e529]
+                - generic [ref=f12e535]:
+                  - generic [ref=f12e536]: Люди
+                  - button [ref=f12e542]
+            - generic [ref=f12e327]:
+              - button "Статистика • Скрыта" [ref=f12e328]:
+                - generic "Статистика • Скрыта" [ref=f12e335] [cursor=pointer]
+              - button "Метрики • Конверсия, +2" [ref=f12e340]
+              - button "Все цели" [ref=f12e348]:
+                - generic "Все цели" [ref=f12e351] [cursor=pointer]
+          - generic [ref=f12e356]:
+            - button "Поиск" [ref=f12e358]:
+              - generic "Поиск" [ref=f12e364] [cursor=pointer]
+            - button "По 10 минут" [ref=f12e367]:
+              - generic "По 10 минут" [ref=f12e370] [cursor=pointer]
+          - generic [ref=f12e376]:
+            - generic [ref=f12e558]:
+              - 'link "Автоцель: отправка формы" [ref=f12e564] [cursor=pointer]':
+                - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=519192336&goalsConversionViewKind=List
+              - generic [ref=f12e569]:
+                - generic [ref=f12e570]: ID 519192336
+                - generic "отправки всех форм" [ref=f12e572]
+                - generic [ref=f12e573]:
+                  - generic "Добавить на дашборд" [ref=f12e574]
+                  - generic "Редактировать" [ref=f12e579]
+                  - generic "Метки" [ref=f12e582]
+                  - generic "Добавить в избранное" [ref=f12e587]
+                  - generic "Показать статистику" [ref=f12e590]
+            - generic [ref=f12e609]:
+              - 'link "Автоцель: клик по номеру телефона" [ref=f12e616] [cursor=pointer]':
+                - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=543212097&goalsConversionViewKind=List
+              - generic [ref=f12e621]:
+                - generic [ref=f12e622]: ID 543212097
+                - generic "клики по всем номерам телефонов" [ref=f12e624]
+                - generic [ref=f12e625]:
+                  - generic "Добавить на дашборд" [ref=f12e626]
+                  - generic "Редактировать" [ref=f12e631]
+                  - generic "Метки" [ref=f12e634]
+                  - generic "Добавить в избранное" [ref=f12e639]
+                  - generic "Показать статистику" [ref=f12e642]
+            - generic [ref=f12e661]:
+              - 'link "Автоцель: отправил контактные данные" [ref=f12e667] [cursor=pointer]':
+                - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=543982286&goalsConversionViewKind=List
+              - generic [ref=f12e672]:
+                - generic [ref=f12e673]: ID 543982286
+                - generic "отправил контактные данные" [ref=f12e675]
+                - generic [ref=f12e676]:
+                  - generic "Добавить на дашборд" [ref=f12e677]
+                  - generic "Редактировать" [ref=f12e682]
+                  - generic "Метки" [ref=f12e685]
+                  - generic "Добавить в избранное" [ref=f12e690]
+                  - generic "Показать статистику" [ref=f12e693]
+            - generic [ref=f12e712]:
+              - 'link "Автоцель: заполнил контактные данные" [ref=f12e717] [cursor=pointer]':
+                - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=543982287&goalsConversionViewKind=List
+              - generic [ref=f12e722]:
+                - generic [ref=f12e723]: ID 543982287
+                - generic "заполнил контактные данные" [ref=f12e725]
+                - generic [ref=f12e726]:
+                  - generic "Добавить на дашборд" [ref=f12e727]
+                  - generic "Редактировать" [ref=f12e732]
+                  - generic "Метки" [ref=f12e735]
+                  - generic "Добавить в избранное" [ref=f12e740]
+                  - generic "Показать статистику" [ref=f12e743]
+            - generic [ref=f12e762]:
+              - 'link "Автоцель: клик по email" [ref=f12e768] [cursor=pointer]':
+                - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=549646346&goalsConversionViewKind=List
+              - generic [ref=f12e773]:
+                - generic [ref=f12e774]: ID 549646346
+                - generic "клики по всем email-адресам" [ref=f12e776]
+                - generic [ref=f12e777]:
+                  - generic "Добавить на дашборд" [ref=f12e778]
+                  - generic "Редактировать" [ref=f12e783]
+                  - generic "Метки" [ref=f12e786]
+                  - generic "Добавить в избранное" [ref=f12e791]
+                  - generic "Показать статистику" [ref=f12e794]
+            - generic [ref=f12e813]:
+              - 'link "Автоцель: скачивание файла" [ref=f12e819] [cursor=pointer]':
+                - /url: /stat/traffic?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goal=560847126&goalsConversionViewKind=List
+              - generic [ref=f12e824]:
+                - generic [ref=f12e825]: ID 560847126
+                - generic "скачивание всех файлов" [ref=f12e827]
+                - generic [ref=f12e828]:
+                  - generic "Добавить на дашборд" [ref=f12e829]
+                  - generic "Редактировать" [ref=f12e834]
+                  - generic "Метки" [ref=f12e837]
+                  - generic "Добавить в избранное" [ref=f12e842]
+                  - generic "Показать статистику" [ref=f12e845]
+        - generic [ref=f12e444]:
+          - generic [ref=f12e445]:
+            - link "Пользовательское соглашение" [ref=f12e447] [cursor=pointer]:
+              - /url: https://yandex.ru/legal/metrica_termsofuse
+            - link "Политика конфиденциальности" [ref=f12e449] [cursor=pointer]:
+              - /url: https://yandex.ru/legal/confidential
+            - link "Справка" [ref=f12e451] [cursor=pointer]:
+              - /url: /support/metrica/ru/
+            - link "Задать вопрос" [ref=f12e453] [cursor=pointer]:
+              - /url: /support/metrica/ru/troubleshooting/
+            - link "Предложить идею" [ref=f12e455] [cursor=pointer]:
+              - /url: /support/metrica/ru/troubleshooting/idea
+          - generic [ref=f12e456]:
+            - generic [ref=f12e457]: Ru
+            - generic [ref=f12e466]:
+              - text: © 2008–2026 OOO «
+              - link "ЯНДЕКС" [ref=f12e467] [cursor=pointer]:
+                - /url: https://ya.ru
+              - text: »
+  - generic [ref=f12e863]:
+    - button [ref=f12e866]
+    - generic [ref=f12e874]:
+      - generic [ref=f12e875]: Новая цель
+      - generic [ref=f12e876]:
+        - generic [ref=f12e1068]:
+          - generic [ref=f12e1069]:
+            - text: Целевое событие • ex JS-событие
+            - link [ref=f12e1070] [cursor=pointer]:
+              - /url: /support/metrica/ru/general/goal-js-event
+          - generic [ref=f12e1075]: "Отслеживайте конверсионные онлайн и офлайн события на сайте и за его пределами: клики, отправки форм, заказы и многое другое. Получайте полную картину взаимодействия с аудиторией"
+        - generic [ref=f12e1078]:
+          - generic [ref=f12e1079]: Название цели
+          - generic [ref=f12e1083]:
+            - textbox "Уникальное название цели" [active] [ref=f12e1085]
+            - generic [ref=f12e1087]: "255"
+        - generic [ref=f12e1088]:
+          - generic [ref=f12e1089]: Идентификатор цели
+          - generic [ref=f12e1093]:
+            - button "Содержит" [ref=f12e1094]:
+              - generic "Содержит" [ref=f12e1097] [cursor=pointer]
+            - textbox [ref=f12e1105]
+        - generic [ref=f12e1107]:
+          - generic [ref=f12e1108] [cursor=pointer]: Дополнительные настройки
+          - generic [ref=f12e1111]:
+            - generic [ref=f12e1112]:
+              - generic [ref=f12e1113]:
+                - text: Сделать цель избранной
+                - generic [ref=f12e1114]: Это позволит вам видеть общие показатели по избранным целям в отчетах
+              - generic [ref=f12e1115] [cursor=pointer]:
+                - checkbox
+            - generic [ref=f12e1118]:
+              - generic [ref=f12e1119]: Статический доход
+              - generic [ref=f12e1127]:
+                - textbox "—" [ref=f12e1129]
+                - generic [ref=f12e1131]: ₽
+      - generic [ref=f12e1051]:
+        - button "Добавить цель" [disabled] [ref=f12e1052]:
+          - generic "Добавить цель" [ref=f12e1055]
+        - button "Отмена" [ref=f12e1057]:
+          - generic "Отмена" [ref=f12e1060] [cursor=pointer]

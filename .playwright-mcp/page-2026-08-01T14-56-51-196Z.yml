@@ -1,0 +1,426 @@
+- generic [ref=f76e2]:
+  - generic [ref=f76e4]:
+    - link [ref=f76e6] [cursor=pointer]:
+      - /url: ""
+    - generic [ref=f76e8]:
+      - link "Спецпредложения" [ref=f76e10] [cursor=pointer]:
+        - /url: "#actions"
+      - link "Услуги" [ref=f76e12] [cursor=pointer]:
+        - /url: "#services"
+      - link "Преимущества" [ref=f76e14] [cursor=pointer]:
+        - /url: "#advantages"
+      - link "Контакты" [ref=f76e16] [cursor=pointer]:
+        - /url: .combomap
+    - generic [ref=f76e17]:
+      - link "󰏷 +7 (495) 089-87-02" [ref=f76e19] [cursor=pointer]:
+        - /url: tel:+74950898702
+        - generic [ref=f76e20]: 󰏷
+        - text: +7 (495) 089-87-02
+      - link "Заказать звонок" [ref=f76e22] [cursor=pointer]:
+        - /url: ""
+    - text: 󰏷
+  - generic [ref=f76e24]:
+    - generic [ref=f76e25]:
+      - group "1 / 4" [ref=f76e26]:
+        - generic [ref=f76e30]:
+          - generic [ref=f76e31]:
+            - heading "Официальный сервис Geely в БорисХоф" [level=1] [ref=f76e32]: Официальный сервис Geelyв БорисХоф
+            - generic [ref=f76e33]:
+              - generic [ref=f76e34]:
+                - generic [ref=f76e35]: 󰵤
+                - generic [ref=f76e37]:
+                  - generic [ref=f76e38]: Проверка сход-развала при ТО
+                  - generic [ref=f76e39]: Бесплатно
+              - generic [ref=f76e40]:
+                - generic [ref=f76e41]: 󰒓
+                - generic [ref=f76e43]:
+                  - generic [ref=f76e44]: Замена масла в заднем редукторе
+                  - generic [ref=f76e45]: За 4 000 ₽
+              - generic [ref=f76e46]:
+                - generic [ref=f76e47]: 󱢖
+                - generic [ref=f76e49]:
+                  - generic [ref=f76e50]: Сезонный шиномонтаж
+                  - generic [ref=f76e51]: За 7 000 ₽
+              - generic [ref=f76e52]:
+                - generic [ref=f76e53]: 󰢨
+                - generic [ref=f76e55]:
+                  - generic [ref=f76e56]: Комплексная проверка автомобиля
+                  - generic [ref=f76e57]: От 4 999 ₽
+              - generic [ref=f76e58]:
+                - generic [ref=f76e59]: 󰢻
+                - generic [ref=f76e61]:
+                  - generic [ref=f76e62]: Замена масла в переднем редукторе
+                  - generic [ref=f76e63]: За 4 000 ₽
+              - generic [ref=f76e64]:
+                - generic [ref=f76e65]: 󱟰
+                - generic [ref=f76e67]:
+                  - generic [ref=f76e68]: Выгода в День Рождения
+                  - generic [ref=f76e69]: "-20% на работы и -10% на запчасти"
+          - generic [ref=f76e71]:
+            - heading "Рассчитать стоимость ремонта" [level=3] [ref=f76e72]
+            - generic [ref=f76e74]:
+              - generic [ref=f76e75]:
+                - generic [ref=f76e76]: Ваш телефон*
+                - textbox "Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон*" [ref=f76e77]:
+                  - /placeholder: +7 (___) ___-__-__
+              - button "Отправить заявку Успешно отправлена" [ref=f76e79] [cursor=pointer]:
+                - text: Отправить заявку
+                - generic [ref=f76e84]: Успешно отправлена
+              - generic [ref=f76e86]:
+                - checkbox [ref=f76e87] [cursor=pointer]
+                - generic [ref=f76e88]:
+                  - text: Я ознакомился с
+                  - link "Политикой обработки персональных данных клиентов" [ref=f76e89] [cursor=pointer]:
+                    - /url: https://borishof.ru/legal/personal-information/
+                  - text: и
+                  - link "Пользовательским соглашением сервисов БорисХоф" [ref=f76e90] [cursor=pointer]:
+                    - /url: https://borishof.ru/legal/user_agreement/
+                  - text: принимаю условия
+                  - link "Согласия на обработку персональных данных" [ref=f76e91] [cursor=pointer]:
+                    - /url: https://borishof.ru/legal/personal-data/
+                  - text: группы БорисХоф.
+                  - list [ref=f76e92]:
+                    - listitem [ref=f76e93]:
+                      - text: Даю согласие на обработку персональных данных и соглашаюсь с
+                      - link "Политикой обработки персональных данных" [ref=f76e94] [cursor=pointer]:
+                        - /url: https://borishof.ru/legal/personal-information/
+                    - listitem [ref=f76e95]: Даю согласие на получение информации об акциях, скидках, мероприятиях о товарах/услугах БорисХоф по телефону/электронной почте
+      - group "2 / 4" [ref=f76e97]:
+        - generic [ref=f76e101]:
+          - heading "Есть расчёт очередного ТО?" [level=2] [ref=f76e102]
+          - paragraph [ref=f76e103]: Перебьём любое предложение!
+          - button "Узнать подробности" [ref=f76e105] [cursor=pointer]
+      - group "3 / 4" [ref=f76e106]:
+        - generic [ref=f76e110]:
+          - heading "Замена масла муфты Haldex" [level=2] [ref=f76e111]
+          - paragraph [ref=f76e112]: за 10 000 Р
+          - button "Узнать подробности" [ref=f76e114] [cursor=pointer]
+      - group "4 / 4" [ref=f76e115]:
+        - generic [ref=f76e119]:
+          - heading "Замена масла в переднем редукторе" [level=2] [ref=f76e120]
+          - paragraph [ref=f76e121]: за 4 000 Р
+          - button "Узнать подробности" [ref=f76e123] [cursor=pointer]
+    - button "Previous slide" [ref=f76e124] [cursor=pointer]: prev
+    - button "Next slide" [ref=f76e125] [cursor=pointer]: next
+    - generic [ref=f76e127]:
+      - button "Go to slide 1" [ref=f76e128] [cursor=pointer]
+      - button "Go to slide 2" [ref=f76e129] [cursor=pointer]
+      - button "Go to slide 3" [ref=f76e130] [cursor=pointer]
+      - button "Go to slide 4" [ref=f76e131] [cursor=pointer]
+  - generic [ref=f76e133]:
+    - generic [ref=f76e135]:
+      - generic [ref=f76e136]:
+        - img "Техническое обслуживание автомобилей, как по регламенту, так и внеочередное"
+      - generic [ref=f76e137]: Техническое обслуживание автомобилей, как по регламенту, так и внеочередное
+    - generic [ref=f76e140]:
+      - generic [ref=f76e141]:
+        - img "Все виды ремонта, предусмотренные производителем"
+      - generic [ref=f76e142]: Все виды ремонта, предусмотренные производителем
+    - generic [ref=f76e145]:
+      - generic [ref=f76e146]:
+        - img "Программирование базовых и дополнительных функций автомобиля"
+      - generic [ref=f76e147]: Программирование базовых и дополнительных функций автомобиля
+  - generic [ref=f76e148]:
+    - generic [ref=f76e150]:
+      - heading "Спецпредложения" [level=3] [ref=f76e152]
+      - generic [ref=f76e153]:
+        - generic [ref=f76e154] [cursor=pointer]: Антибактериальная обработка кондиционера и проверка давления хладагента за 3 000 ₽
+        - generic [ref=f76e157] [cursor=pointer]: Бесплатная проверка сход-развала при ТО
+        - generic [ref=f76e160] [cursor=pointer]: Замена масла в заднем редукторе — 4 000 ₽
+        - generic [ref=f76e163] [cursor=pointer]: Сезонный шиномонтаж
+        - generic [ref=f76e166] [cursor=pointer]: Замена масла муфты HALDEX за 10 000 Р
+        - generic [ref=f76e169] [cursor=pointer]: Замена масла в переднем редукторе за 4 000 Р
+        - generic [ref=f76e172] [cursor=pointer]: Подарок в честь вашего Дня Рождения
+    - generic [ref=f76e176]:
+      - heading "Услуги" [level=3] [ref=f76e178]
+      - generic [ref=f76e180]:
+        - generic [ref=f76e181]: Техническое обслуживание
+        - generic [ref=f76e183]: Слесарный ремонт
+        - generic [ref=f76e185]: Электрика
+        - generic [ref=f76e187]: Кузовной ремонт
+        - generic [ref=f76e189]: Дополнительные услуги
+      - generic [ref=f76e191]:
+        - generic [ref=f76e193] [cursor=pointer]:
+          - generic [ref=f76e194]:
+            - generic [ref=f76e195]: Название услуги
+            - generic [ref=f76e196]: Замена масла двигателя
+          - generic [ref=f76e197]:
+            - generic [ref=f76e198]: Цена
+            - generic [ref=f76e199]: от 5 000 ₽
+        - generic [ref=f76e201] [cursor=pointer]:
+          - generic [ref=f76e202]:
+            - generic [ref=f76e203]: Название услуги
+            - generic [ref=f76e204]: Замена воздушного фильтра
+          - generic [ref=f76e205]:
+            - generic [ref=f76e206]: Цена
+            - generic [ref=f76e207]: от 1 000 ₽
+        - generic [ref=f76e209] [cursor=pointer]:
+          - generic [ref=f76e210]:
+            - generic [ref=f76e211]: Название услуги
+            - generic [ref=f76e212]: Замена микрофильтра салона
+          - generic [ref=f76e213]:
+            - generic [ref=f76e214]: Цена
+            - generic [ref=f76e215]: от 1 000 ₽
+        - generic [ref=f76e217] [cursor=pointer]:
+          - generic [ref=f76e218]:
+            - generic [ref=f76e219]: Название услуги
+            - generic [ref=f76e220]: Замена передних тормозных колодок
+          - generic [ref=f76e221]:
+            - generic [ref=f76e222]: Цена
+            - generic [ref=f76e223]: от 7 500 ₽
+        - generic [ref=f76e225] [cursor=pointer]:
+          - generic [ref=f76e226]:
+            - generic [ref=f76e227]: Название услуги
+            - generic [ref=f76e228]: Замена задних тормозных колодок
+          - generic [ref=f76e229]:
+            - generic [ref=f76e230]: Цена
+            - generic [ref=f76e231]: от 7 500 ₽
+        - button "Показать еще" [ref=f76e233] [cursor=pointer]
+      - generic [ref=f76e237]:
+        - heading "Запишитесь на техническое обслуживание:" [level=5] [ref=f76e239]
+        - generic [ref=f76e242]:
+          - generic [ref=f76e243]:
+            - generic [ref=f76e244]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f76e245]
+          - button "Отправить заявку Успешно отправлена" [ref=f76e247] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f76e252]: Успешно отправлена
+          - generic [ref=f76e254]:
+            - checkbox [ref=f76e255] [cursor=pointer]
+            - generic [ref=f76e256]:
+              - text: Я ознакомился с
+              - link "Политикой обработки персональных данных клиентов" [ref=f76e257] [cursor=pointer]:
+                - /url: https://borishof.ru/legal/personal-information/
+              - text: и
+              - link "Пользовательским соглашением сервисов БорисХоф" [ref=f76e258] [cursor=pointer]:
+                - /url: https://borishof.ru/legal/user_agreement/
+              - text: принимаю условия
+              - link "Согласия на обработку персональных данных" [ref=f76e259] [cursor=pointer]:
+                - /url: https://borishof.ru/legal/personal-data/
+              - text: группы БорисХоф.
+              - list [ref=f76e260]:
+                - listitem [ref=f76e261]:
+                  - text: Даю согласие на обработку персональных данных и соглашаюсь с
+                  - link "Политикой обработки персональных данных" [ref=f76e262] [cursor=pointer]:
+                    - /url: https://borishof.ru/legal/personal-information/
+                - listitem [ref=f76e263]: Даю согласие на получение информации об акциях, скидках, мероприятиях о товарах/услугах БорисХоф по телефону/электронной почте
+        - link "icon Записаться через Telegram" [ref=f76e266] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot?start=utmsource-google_utmmedium-cpc
+          - img "icon"
+          - generic [ref=f76e267]: Записаться через Telegram
+    - generic [ref=f76e269]:
+      - generic [ref=f76e270]:
+        - heading "Видеообзор" [level=3] [ref=f76e272]
+        - generic [ref=f76e273]: Видеообзор делает процесс обслуживания автомобиля полностью прозрачным для Вас. Во время технического обслуживания мастер-консультант отправит Вам подробный видеообзор технического состояния автомобиля. Контролировать процесс и согласовывать работы можно прямо со смартфона.
+        - generic [ref=f76e274]: Тег video не поддерживается вашим браузером.
+        - generic [ref=f76e277]:
+          - generic [ref=f76e278]:
+            - generic [ref=f76e279] [cursor=pointer]:
+              - generic [ref=f76e280]: 1. Фиксация отклонений
+              - generic [ref=f76e281]:
+                - img "Аккордеон"
+            - generic [ref=f76e282]: Наш технический специалист сделает видеозапись любых дополнительных отклонений с цветовым индикатором Желтый или Красный.
+          - generic [ref=f76e284]:
+            - generic [ref=f76e285] [cursor=pointer]:
+              - generic [ref=f76e286]: 2. Уведомление
+              - generic [ref=f76e287]:
+                - img "Аккордеон"
+            - generic [ref=f76e288]: Вы получите письмо с уникальной ссылкой на просмотр видео по Вашему автомобилю.
+          - generic [ref=f76e290]:
+            - generic [ref=f76e291] [cursor=pointer]:
+              - generic [ref=f76e292]: 3. Просмотр
+              - generic [ref=f76e293]:
+                - img "Аккордеон"
+            - generic [ref=f76e294]: Пройдя по уникальной ссылке, вы попадаете на персональную веб-страницу с видео-роликом и фотографиями с графическими аннотациями.
+          - generic [ref=f76e296]:
+            - generic [ref=f76e297] [cursor=pointer]:
+              - generic [ref=f76e298]: 4. Согласование
+              - generic [ref=f76e299]:
+                - img "Аккордеон"
+            - generic [ref=f76e300]: Каждое выявленное отклонение сопровождается калькуляцией, учитывающей Ваши индивидуальные условия. Просто выберите «Согласовать» для авторизации работ или «Заказать обратный звонок», если Вы хотите, чтобы наш специалист связался с Вами для дополнительных разъяснений.
+      - generic [ref=f76e302]:
+        - generic [ref=f76e303]:
+          - heading "Выгодная программа лояльности" [level=4] [ref=f76e304]
+          - button "Записаться" [ref=f76e306] [cursor=pointer]
+        - generic [ref=f76e307]: Уважаемые владельцы! БорисХоф запускает выгодное предложение по сервису «Программу лояльности». Предлагаем вам воспользоваться специальными привилегиями наших официальных сервисных центров.Специальная программа на обслуживание вашего автомобиля позволит вам сэкономить на ремонте и пройти техническое обслуживание выгодно, а специалисты наших официальных сервисных центров обслужат ваши автомобили по всем необходимым стандартам и дадут дополнительные рекомендации в случае необходимости.
+        - generic [ref=f76e309]:
+          - generic [ref=f76e311]:
+            - generic [ref=f76e312]:
+              - img "Последующие ТО с выгодой на работы и запасные части"
+            - generic [ref=f76e313]: Последующие ТО с выгодой на работы и запасные части
+          - generic [ref=f76e315]:
+            - generic [ref=f76e316]:
+              - img "Безвозмездное устранение неисправностей"
+            - generic [ref=f76e317]: Безвозмездное устранение неисправностей
+          - generic [ref=f76e319]:
+            - generic [ref=f76e320]:
+              - img "Ремонт узлов и агрегатов с выгодой"
+            - generic [ref=f76e321]: Ремонт узлов и агрегатов с выгодой
+      - generic [ref=f76e322]:
+        - generic [ref=f76e323]:
+          - generic [ref=f76e324]:
+            - img "Логотип Яндекс Сплит"
+          - heading "Делите оплату на части в БорисХоф с Яндекс Сплит" [level=4] [ref=f76e325]
+          - generic [ref=f76e326]: На 2 месяца без переплат, до 2-х лет — с небольшой доплатой
+        - generic [ref=f76e327]:
+          - generic [ref=f76e328]:
+            - img "Обложка блока"
+          - generic [ref=f76e329]:
+            - generic [ref=f76e331]:
+              - generic [ref=f76e332]:
+                - img "Заплатите 1/4 цены сегодня, остальное — потом"
+              - generic [ref=f76e333]: Заплатите 1/4 цены сегодня, остальное — потом
+            - generic [ref=f76e335]:
+              - generic [ref=f76e336]:
+                - img "Наведите камеру и узнайте, сколько можете потратить"
+              - generic [ref=f76e337]: Наведите камеру и узнайте, сколько можете потратить
+            - generic [ref=f76e339]:
+              - img "QR-код"
+    - generic [ref=f76e341]:
+      - heading "Наши преимущества" [level=3] [ref=f76e343]
+      - generic [ref=f76e344]:
+        - generic [ref=f76e345] [cursor=pointer]: Лучшие цены на услуги гарантируем
+        - generic [ref=f76e349] [cursor=pointer]: Сертифицированные технические специалисты
+        - generic [ref=f76e353] [cursor=pointer]: Ремонт по стандартам производителя
+        - generic [ref=f76e357] [cursor=pointer]: Гарантия на все виды работ
+        - generic [ref=f76e361] [cursor=pointer]: Удобное расположение в Москве
+    - generic [ref=f76e366]:
+      - generic [ref=f76e370]:
+        - generic [ref=f76e371]:
+          - generic [ref=f76e372]:
+            - generic [ref=f76e373]: БорисХоф Geely Сервис
+            - generic [ref=f76e374]: Москва
+          - generic [ref=f76e375]:
+            - link "󱆓 +7 (495) 089-87-02" [ref=f76e377] [cursor=pointer]:
+              - /url: tel:+74950898702
+              - generic [ref=f76e378]: 󱆓
+              - text: +7 (495) 089-87-02
+            - generic [ref=f76e379]:
+              - generic [ref=f76e380]: 󰟙
+              - text: Москва, ул. 2-я Магистральная, 18
+            - generic [ref=f76e381]:
+              - generic [ref=f76e382]: 󰅐
+              - text: Пн-Вс 09:00-21:00
+        - generic [ref=f76e383]:
+          - generic [ref=f76e384]: Доступны услуги
+          - generic [ref=f76e385]: Экспресс обслуживание, Слесарный ремонт, Шиномонтаж, Запчасти, Аренда авто
+        - button "Записаться на сервис" [ref=f76e387] [cursor=pointer]
+      - generic [ref=f76e389]:
+        - iframe [ref=f76e390]:
+          - generic [ref=f77e2]:
+            - generic [ref=f77e3]:
+              - link "БорисХоф Geely" [ref=f77e4] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+              - generic [ref=f77e5]:
+                - paragraph [ref=f77e6]: 5,0
+                - generic [ref=f77e7]:
+                  - list [ref=f77e9]:
+                    - listitem [ref=f77e10]
+                    - listitem [ref=f77e11]
+                    - listitem [ref=f77e12]
+                    - listitem [ref=f77e13]
+                    - listitem [ref=f77e14]
+                  - link "1256 отзывов • 2210 оценок" [ref=f77e15] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+              - link [ref=f77e17] [cursor=pointer]:
+                - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+            - generic [ref=f77e18]:
+              - paragraph [ref=f77e19]: Поставьте нам оценку
+              - link "Оставить отзыв" [ref=f77e20] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+            - generic [ref=f77e21]:
+              - generic [ref=f77e22]:
+                - generic [ref=f77e24]:
+                  - paragraph [ref=f77e25]: Варвара Саникович
+                  - paragraph [ref=f77e26]: 28 июня
+                - list [ref=f77e28]:
+                  - listitem [ref=f77e29]
+                  - listitem [ref=f77e30]
+                  - listitem [ref=f77e31]
+                  - listitem [ref=f77e32]
+                  - listitem [ref=f77e33]
+                - paragraph [ref=f77e34]:
+                  - text: Мы приобрели свою первую семейную машину в данном салоне. Объездили 5 дилеров! Борисхов сделал лучшее предложение по всем параметрам, учли наши пожелания по допам, страхованию и хорошо оценили нашу машину в трейд-ин. Благодарим менеджера Валерия Полякова и Артема Ханяна за оперативное, комфортное общение. Отдельно хотелось бы отметить саму атмосферу салона - много пространства, прекрасная зона ожидания, кофе, чай. Кажется мелочь, но это правда важно.
+                  - paragraph [ref=f77e35]:
+                    - text: ...
+                    - link "ещё" [ref=f77e36] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f77e37]:
+                - generic [ref=f77e39]:
+                  - paragraph [ref=f77e40]: Степан Соколов
+                  - paragraph [ref=f77e41]: 18 февраля
+                - list [ref=f77e43]:
+                  - listitem [ref=f77e44]
+                  - listitem [ref=f77e45]
+                  - listitem [ref=f77e46]
+                  - listitem [ref=f77e47]
+                  - listitem [ref=f77e48]
+                - paragraph [ref=f77e49]:
+                  - text: Отличный салон, все было прозрачно, чистые условия, отличное предложение дали как по авто, которое покупали, так и по авто, которое сдавали в трейд ин. По страховкам дали также великолепное предложение, более того дали ещё и скидку на КАСКО. Отдельная благодарность менеджеру отдела продаж и просто мастеру своего дела Александру Ветчинову, благодаря его помощи было кристальное понимание процесса. На моменте задумки покупки помог с выбором нужной модели, провел шикарный тест-драйв, объяснил каждую кнопку, рычажок и тумблер в автомобиле. В общем, спасибо большое салону и Александру за предоставленный сервис и автомобиль. Категорически советую!!!
+                  - paragraph [ref=f77e50]:
+                    - text: ...
+                    - link "ещё" [ref=f77e51] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f77e52]:
+                - generic [ref=f77e54]:
+                  - paragraph [ref=f77e55]: Сергей Харченков
+                  - paragraph [ref=f77e56]: 13 мая
+                - list [ref=f77e58]:
+                  - listitem [ref=f77e59]
+                  - listitem [ref=f77e60]
+                  - listitem [ref=f77e61]
+                  - listitem [ref=f77e62]
+                  - listitem [ref=f77e63]
+                - paragraph [ref=f77e64]:
+                  - text: Отличный салон. Доступны все модели Geely к просмотру и тест-драйв. Чисто, есть где перекусить пока проводишь сделку. Покупал машину с Сергеем Краузе. Он очень помог на всех этапах, от подробного инструктажа и подбора только реально нужных допников, до непосредственно помощи с регистрацией и полного инструктажа по нюансам взаимодействия с новым авто. Богатый набор дополнительных аксессуаров был установлен оперативно. В сервисном центре (расположен под салоном) виден профессионализм сервисных инженеров. Однозначно буду тут обслуживаться!
+                  - paragraph [ref=f77e65]:
+                    - text: ...
+                    - link "ещё" [ref=f77e66] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f77e67]:
+                - generic [ref=f77e69]:
+                  - paragraph [ref=f77e70]: Виталий А.
+                  - paragraph [ref=f77e71]: 26 марта
+                - list [ref=f77e73]:
+                  - listitem [ref=f77e74]
+                  - listitem [ref=f77e75]
+                  - listitem [ref=f77e76]
+                  - listitem [ref=f77e77]
+                  - listitem [ref=f77e78]
+                - paragraph [ref=f77e79]:
+                  - text: "Хочу выразить огромную благодарность команде дилерского центра БорисХоф на Шелепихе за отличный сервис и покупку автомобиля! Отдельное спасибо говорю менеджеру Александру Пузыреву. Это тот редкий случай, когда слова «клиентоцентричность» — не просто громкий лозунг, а реальный подход к работе. Александр очень помог с продажей моего старого автомобиля по трейд-ину: все прошло максимально прозрачно, быстро и без лишних нервов. Самое главное — он всегда шел мне навстречу, подстраивался под мой график и помог решить все организационные вопросы заранее, а не в день сделки. Отдельно хочу отметить зону ожидания. Здесь есть все необходимое: свежий чай, отличный кофе. Но самое главное — вкусные печеньки, которые отдельно оценила моя жена! Это, казалось бы, мелочь, но именно из таких приятных деталей складывается общее впечатление о сервисе. В общем, если вы ищете надежного дилера, который ценит своих клиентов и не подведет при оформлении трейд-ина — смело обращайтесь к Александру Пузыреву в БорисХоф на Шелепихе. Рекомендую!"
+                  - paragraph [ref=f77e80]:
+                    - text: ...
+                    - link "ещё" [ref=f77e81] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f77e82]:
+                - generic [ref=f77e84]:
+                  - paragraph [ref=f77e85]: Василий
+                  - paragraph [ref=f77e86]: 7 марта
+                - list [ref=f77e88]:
+                  - listitem [ref=f77e89]
+                  - listitem [ref=f77e90]
+                  - listitem [ref=f77e91]
+                  - listitem [ref=f77e92]
+                  - listitem [ref=f77e93]
+                - paragraph [ref=f77e94]:
+                  - text: "Оформляли покупку нового Ньюстара 001 в Борисхофе Джили на 2-Магистральной у Менеджера Максима Иванова. С участием кредитного специалиста. По сделке все максимально профессионально, корректно и прозрачно. Дали досконально проверить автомобиль, менеджер отзывчивый, хорошо подкован в технической части, отвечает на все вопросы, готов идти навстречу. Однозначно рекомендую как его лично, так и сам дилер. Помимо вышеуказанного: комфортная клиентская зона, администраторы тоже очень клиентоориентированные, есть все необходимое для комфортного ожидания. Спасибо за хорошую работу, было приятно иметь с вами дело."
+                  - paragraph [ref=f77e95]:
+                    - text: ...
+                    - link "ещё" [ref=f77e96] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+            - link "Больше отзывов на Яндекс Картах" [ref=f77e98] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=more-reviews
+        - link "БорисХоф Geely на карте Москвы — Яндекс Карты" [ref=f76e391] [cursor=pointer]:
+          - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/
+    - generic [ref=f76e395]:
+      - link "Правовая информация" [ref=f76e399] [cursor=pointer]:
+        - /url: https://borishof.ru/legal/
+      - generic [ref=f76e400]: "Дисклеймер акций:"
+      - generic [ref=f76e402]:
+        - superscript [ref=f76e403]: "1"
+        - text: Рассрочка — это форма кредита (займа), при которой переплаты по кредиту (займу) не возникает за счет скидки на товар или услугу, предоставляемой продавцом. За детальной информацией условия предоставления «Рассрочки» обращайтесь к сервис менеджеру дилерского центра. Вся информация носит справочный характер и не является публичной офертой (ст. 437 ГК РФ). При поддержке Тинькофф Кредит Брокер. Подробнее на сайте www.tinkoff.ru. АО «Тинькофф Банк» лицензия ЦБ РФ №2673, ООО «Микрофинансовая компания «Т-Финанс».
+        - superscript [ref=f76e404]: "2"
+        - text: Не является публичной офертой. Не суммируется с другими специальными акциями и специальными предложениями. Подробности у специалистов сервиса.Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наш дилерский центр.Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+      - generic [ref=f76e405]: Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930), тел. +7 (495) 646-07-12
+      - generic [ref=f76e406]: BORISHOF Geely — Официальный дилер марки Geely в Москве © 2026

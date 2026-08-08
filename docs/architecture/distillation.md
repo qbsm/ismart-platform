@@ -183,6 +183,7 @@ data/img/                      # медиа
 public/data -> ../data/img     # symlink
 .env
 deployments/<slug>/            # nginx, docker-compose, scripts
+docs/local/                    # локальные заметки/ad-hoc скилы (gitignored, кроме README)
 ```
 
 ---

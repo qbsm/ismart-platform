@@ -1,0 +1,414 @@
+- generic [active] [ref=f6e1]:
+  - link "Перейти к контенту" [ref=f6e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f6e3]:
+    - generic [ref=f6e4]:
+      - generic [ref=f6e5]:
+        - link [ref=f6e6] [cursor=pointer]:
+          - /url: /
+          - img "Москвич" [ref=f6e7]
+          - img "Москвич" [ref=f6e8]
+        - img "АВИЛОН — официальный дилер" [ref=f6e11]
+      - generic [ref=f6e14]:
+        - link "+7 (495) 730-44-03" [ref=f6e15] [cursor=pointer]:
+          - /url: tel:+74957304403
+        - link "Москва, Волгоградский пр-кт, 41 стр. 1" [ref=f6e16] [cursor=pointer]:
+          - /url: "#map"
+      - link "Заказать звонок" [ref=f6e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f6e19]:
+      - link "Модельный ряд" [ref=f6e20] [cursor=pointer]:
+        - /url: "#range"
+      - link "Акции" [ref=f6e21] [cursor=pointer]:
+        - /url: "#actions"
+      - link "Тест-драйв" [ref=f6e22] [cursor=pointer]:
+        - /url: "#callback"
+      - link "Преимущества" [ref=f6e23] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f6e24] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f6e25] [cursor=pointer]:
+        - /url: "#map"
+  - main [ref=f6e26]:
+    - generic [ref=f6e29]:
+      - generic [ref=f6e35]:
+        - generic [ref=f6e36]:
+          - heading "Москвич Авилон" [level=1] [ref=f6e37]
+          - paragraph [ref=f6e38]: Официальный дилер Москвич в Москве
+          - link "Получить предложение" [ref=f6e40] [cursor=pointer]:
+            - /url: "#callback"
+        - generic [ref=f6e42]:
+          - generic [ref=f6e43]:
+            - generic [ref=f6e44]: 0%
+            - generic [ref=f6e45]: переплат по кредиту
+          - generic [ref=f6e47]:
+            - generic [ref=f6e48]: 5 лет
+            - generic [ref=f6e49]: гарантия производителя
+          - generic [ref=f6e51]:
+            - generic [ref=f6e52]: В наличии
+            - generic [ref=f6e53]: актуальные модели
+      - generic [ref=f6e61]:
+        - heading "Москвич М70 и М90" [level=2] [ref=f6e62]
+        - paragraph [ref=f6e63]: Новые кроссоверы Москвич у официального дилера
+        - link "Смотреть модели" [ref=f6e65] [cursor=pointer]:
+          - /url: "#range"
+      - generic [ref=f6e72]:
+        - heading "Автомобили в наличии" [level=2] [ref=f6e73]
+        - paragraph [ref=f6e74]: Актуальные комплектации и цвета
+        - link "Узнать наличие" [ref=f6e76] [cursor=pointer]:
+          - /url: "#callback"
+    - generic [ref=f6e85]:
+      - generic [ref=f6e86]: Официальный дилер Москвич
+      - generic [ref=f6e88]: Кроссоверы М70 и М90
+      - generic [ref=f6e90]: Автомобили в наличии
+      - generic [ref=f6e92]: Трейд-ин с выгодой
+      - generic [ref=f6e94]: 0% переплат по кредиту
+      - generic [ref=f6e96]: Гарантия производителя
+      - generic [ref=f6e98]: Официальный дилер Москвич
+      - generic [ref=f6e100]: Кроссоверы М70 и М90
+      - generic [ref=f6e102]: Автомобили в наличии
+      - generic [ref=f6e104]: Трейд-ин с выгодой
+      - generic [ref=f6e106]: 0% переплат по кредиту
+      - generic [ref=f6e108]: Гарантия производителя
+      - generic [ref=f6e110]: Официальный дилер Москвич
+      - generic [ref=f6e112]: Кроссоверы М70 и М90
+      - generic [ref=f6e114]: Автомобили в наличии
+      - generic [ref=f6e116]: Трейд-ин с выгодой
+      - generic [ref=f6e118]: 0% переплат по кредиту
+      - generic [ref=f6e120]: Гарантия производителя
+    - generic [ref=f6e124]:
+      - generic [ref=f6e125]: Специальные условия
+      - generic [ref=f6e128]:
+        - generic [ref=f6e129]:
+          - generic [ref=f6e130]: "00"
+          - generic [ref=f6e131]: дней
+        - generic [ref=f6e132]:
+          - generic [ref=f6e133]: "11"
+          - generic [ref=f6e134]: часов
+        - generic [ref=f6e135]:
+          - generic [ref=f6e136]: "20"
+          - generic [ref=f6e137]: минут
+        - generic [ref=f6e138]:
+          - generic [ref=f6e139]: "45"
+          - generic [ref=f6e140]: секунд
+      - link "Получить предложение" [ref=f6e142] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f6e144]:
+      - heading "Модельный ряд" [level=2] [ref=f6e146]
+      - navigation "Фильтр по моделям" [ref=f6e148]:
+        - button "Все модели" [ref=f6e149] [cursor=pointer]
+        - button "Москвич 3" [ref=f6e150] [cursor=pointer]
+        - button "Москвич М70" [ref=f6e151] [cursor=pointer]
+        - button "Москвич М90" [ref=f6e152] [cursor=pointer]
+      - generic [ref=f6e153]:
+        - article [ref=f6e155]:
+          - generic [ref=f6e157]:
+            - generic [ref=f6e158]:
+              - img "Москвич 3"
+            - generic [ref=f6e159]:
+              - button "Красный" [ref=f6e160] [cursor=pointer]
+              - button "Белый" [ref=f6e162] [cursor=pointer]
+              - button "Голубой" [ref=f6e164] [cursor=pointer]
+              - button "Серый" [ref=f6e166] [cursor=pointer]
+              - button "Чёрный" [ref=f6e168] [cursor=pointer]
+            - generic [ref=f6e170]: Красный
+          - generic [ref=f6e171]:
+            - generic [ref=f6e172]:
+              - heading "Москвич 3" [level=3] [ref=f6e173]
+              - paragraph [ref=f6e174]: Компактный городской кроссовер с турбомотором 1.5T
+              - generic [ref=f6e175]:
+                - text: от
+                - generic [ref=f6e176]: 1 599 200 ₽
+            - list [ref=f6e177]:
+              - listitem [ref=f6e178]:
+                - generic [ref=f6e182]:
+                  - text: Турбомотор
+                  - generic [ref=f6e183]: 1.5T
+                  - text: ", 136 л.с."
+              - listitem [ref=f6e184]:
+                - generic [ref=f6e188]:
+                  - text: Механика
+                  - generic [ref=f6e189]: МКП6
+                  - text: или вариатор
+                  - generic [ref=f6e190]: CVT
+              - listitem [ref=f6e191]:
+                - generic [ref=f6e195]:
+                  - text: Мультимедиа
+                  - generic [ref=f6e196]: 10,25"
+                  - text: с CarPlay и Android Auto
+            - generic [ref=f6e197]:
+              - link "Узнать цену" [ref=f6e198] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f6e199] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f6e202]:
+            - link [ref=f6e204] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-3/gallery/1280/1.webp
+              - img "Москвич 3 — дизайн экстерьера" [ref=f6e206]
+            - link [ref=f6e208] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-3/gallery/1280/2.webp
+              - img "Москвич 3 — фронтальная оптика и решётка" [ref=f6e210]
+            - link [ref=f6e212] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-3/gallery/1280/3.webp
+              - img "Москвич 3 — вид сзади" [ref=f6e214]
+            - link [ref=f6e216] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-3/gallery/1280/4.webp
+              - img "Москвич 3 в голубом цвете" [ref=f6e218]
+            - link [ref=f6e220] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-3/gallery/1280/5.webp
+              - img "Москвич 3 — легкосплавные диски 17\"" [ref=f6e222]
+            - link [ref=f6e224] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-3/gallery/1280/6.webp
+              - img "Москвич 3 — мультимедиа 10,25\"" [ref=f6e226]
+            - link [ref=f6e228] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-3/gallery/1280/7.webp
+              - img "Москвич 3 — передние сиденья" [ref=f6e230]
+            - link [ref=f6e232] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-3/gallery/1280/8.webp
+              - img "Москвич 3 — задний ряд" [ref=f6e234]
+        - article [ref=f6e238]:
+          - generic [ref=f6e240]:
+            - generic [ref=f6e241]:
+              - img "Москвич М70"
+            - generic [ref=f6e242]:
+              - button "Алтайский красный" [ref=f6e243] [cursor=pointer]
+              - button "Архангельский белый" [ref=f6e245] [cursor=pointer]
+              - button "Ладожский голубой" [ref=f6e247] [cursor=pointer]
+              - button "Балтийский серый" [ref=f6e249] [cursor=pointer]
+              - button "Камчатский серебристый" [ref=f6e251] [cursor=pointer]
+              - button "Астраханский чёрный" [ref=f6e253] [cursor=pointer]
+            - generic [ref=f6e255]: Алтайский красный
+          - generic [ref=f6e256]:
+            - generic [ref=f6e257]:
+              - heading "Москвич М70" [level=3] [ref=f6e258]
+              - paragraph [ref=f6e259]: Городской кроссовер с турбомотором 1.5T
+              - generic [ref=f6e260]:
+                - text: от
+                - generic [ref=f6e261]: 2 689 000 ₽
+            - list [ref=f6e262]:
+              - listitem [ref=f6e263]:
+                - generic [ref=f6e267]:
+                  - text: Турбомотор
+                  - generic [ref=f6e268]: 1.5T
+                  - text: ", 150 л.с."
+              - listitem [ref=f6e269]:
+                - generic [ref=f6e273]:
+                  - text: Робот
+                  - generic [ref=f6e274]: DCT7
+                  - text: ", 7 передач"
+              - listitem [ref=f6e275]:
+                - generic [ref=f6e279]:
+                  - text: Комплектации
+                  - generic [ref=f6e280]: ДРАЙВ
+                  - text: и
+                  - generic [ref=f6e281]: УЛЬТРА
+            - generic [ref=f6e282]:
+              - link "Узнать цену" [ref=f6e283] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f6e284] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f6e287]:
+            - link [ref=f6e289] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m70/gallery/1280/1.webp
+              - img "Москвич М70 — дизайн экстерьера" [ref=f6e291]
+            - link [ref=f6e293] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m70/gallery/1280/2.webp
+              - img "Москвич М70 — корма и световая полоса" [ref=f6e295]
+            - link [ref=f6e297] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m70/gallery/1280/3.webp
+              - img "Москвич М70 — светодиодная оптика" [ref=f6e299]
+            - link [ref=f6e301] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m70/gallery/1280/4.webp
+              - img "Москвич М70 — салон, панель и руль" [ref=f6e303]
+            - link [ref=f6e305] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m70/gallery/1280/5.webp
+              - img "Москвич М70 — второй ряд сидений" [ref=f6e307]
+            - link [ref=f6e309] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m70/gallery/1280/6.webp
+              - img "Москвич М70 — панорамная крыша" [ref=f6e311]
+        - article [ref=f6e315]:
+          - generic [ref=f6e317]:
+            - generic [ref=f6e318]:
+              - img "Москвич М90"
+            - generic [ref=f6e319]:
+              - button "Уральский серый" [ref=f6e320] [cursor=pointer]
+              - button "Арктический белый" [ref=f6e322] [cursor=pointer]
+              - button "Камчатский серебристый" [ref=f6e324] [cursor=pointer]
+              - button "Карельский зелёный" [ref=f6e326] [cursor=pointer]
+              - button "Астраханский чёрный" [ref=f6e328] [cursor=pointer]
+            - generic [ref=f6e330]: Уральский серый
+          - generic [ref=f6e331]:
+            - generic [ref=f6e332]:
+              - heading "Москвич М90" [level=3] [ref=f6e333]
+              - paragraph [ref=f6e334]: Флагманский 7-местный полноприводный кроссовер
+              - generic [ref=f6e335]:
+                - text: от
+                - generic [ref=f6e336]: 3 905 000 ₽
+            - list [ref=f6e337]:
+              - listitem [ref=f6e338]:
+                - generic [ref=f6e342]:
+                  - text: Турбомотор
+                  - generic [ref=f6e343]: 2.0T
+                  - text: ", 200 л.с."
+              - listitem [ref=f6e344]:
+                - generic [ref=f6e348]: Полный привод, 7 мест
+              - listitem [ref=f6e349]:
+                - generic [ref=f6e353]:
+                  - text: 9-ступенчатый автомат
+                  - generic [ref=f6e354]: AT9
+            - generic [ref=f6e355]:
+              - link "Узнать цену" [ref=f6e356] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f6e357] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f6e360]:
+            - link [ref=f6e362] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m90/gallery/1280/1.webp
+              - img "Москвич М90 — дизайн экстерьера" [ref=f6e364]
+            - link [ref=f6e366] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m90/gallery/1280/2.webp
+              - img "Москвич М90 — фирменная решётка радиатора" [ref=f6e368]
+            - link [ref=f6e370] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m90/gallery/1280/3.webp
+              - img "Москвич М90 — корма и световая полоса" [ref=f6e372]
+            - link [ref=f6e374] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m90/gallery/1280/4.webp
+              - img "Москвич М90 — салон, панель и руль" [ref=f6e376]
+            - link [ref=f6e378] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m90/gallery/1280/5.webp
+              - img "Москвич М90 — третий ряд сидений" [ref=f6e380]
+            - link [ref=f6e382] [cursor=pointer]:
+              - /url: https://promo.moskvich-avilon.ru/data/img/range/moskvich-m90/gallery/1280/6.webp
+              - img "Москвич М90 — панорамная крыша" [ref=f6e384]
+    - generic [ref=f6e388]:
+      - generic [ref=f6e389]:
+        - heading "Специальные предложения" [level=2] [ref=f6e390]
+        - paragraph [ref=f6e391]: Актуальные программы покупки Москвич в Авилон
+      - generic [ref=f6e392]:
+        - link "Москвич М70 Москвич Москвич М70 от 2 689 000 ₽ Стартовая цена на новый кроссовер Москвич М70. Предложение действует до 31.07.2026." [ref=f6e394] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Москвич М70"
+          - img "Москвич" [ref=f6e396]
+          - generic [ref=f6e397]:
+            - generic [ref=f6e398]: Москвич М70 от 2 689 000 ₽
+            - generic [ref=f6e400]: Стартовая цена на новый кроссовер Москвич М70. Предложение действует до 31.07.2026.
+        - link "Москвич М70 Москвич Выгода при кредите Москвич М70 до 410 000 ₽ Дополнительная выгода до 410 000 ₽ при покупке Москвич М70 в кредит. До 31.07.2026." [ref=f6e402] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Москвич М70"
+          - img "Москвич" [ref=f6e404]
+          - generic [ref=f6e405]:
+            - generic [ref=f6e406]: Выгода при кредите Москвич М70 до 410 000 ₽
+            - generic [ref=f6e408]: Дополнительная выгода до 410 000 ₽ при покупке Москвич М70 в кредит. До 31.07.2026.
+      - button "Показать все" [ref=f6e410] [cursor=pointer]
+    - generic [ref=f6e414]:
+      - generic [ref=f6e415]: Индивидуальная поездка
+      - generic [ref=f6e416]: Не нужно ждать — просто запишитесь на тест-драйв онлайн
+      - link "Выбрать дату и время" [ref=f6e418] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f6e420]:
+      - generic [ref=f6e421]:
+        - heading "Преимущества Москвич Авилон" [level=2] [ref=f6e422]
+        - paragraph [ref=f6e423]: Официальный дилер Москвич в Москве
+      - generic [ref=f6e424]:
+        - generic [ref=f6e425]: Автомобили в наличии
+        - generic [ref=f6e428]: Актуальные комплектации и цвета
+        - generic [ref=f6e431]: Выгодный обмен по трейд-ин
+        - generic [ref=f6e434]: Привилегии официального дилера
+        - generic [ref=f6e437]: 0% переплат по кредиту
+        - generic [ref=f6e440]: Гарантия производителя
+    - generic [ref=f6e444]:
+      - generic [ref=f6e445]:
+        - heading "Способы покупки" [level=2] [ref=f6e446]
+        - paragraph [ref=f6e447]: Трейд-ин, кредит и лизинг на выгодных условиях
+      - generic [ref=f6e448]:
+        - article [ref=f6e450]:
+          - generic [ref=f6e454]:
+            - heading "Трейд-ин" [level=3] [ref=f6e455]
+            - list [ref=f6e457]:
+              - listitem [ref=f6e458]: Бесплатная оценка и диагностика
+              - listitem [ref=f6e459]: Зачёт стоимости в счёт нового Москвича
+            - link "Получить оценку" [ref=f6e461] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f6e463]:
+          - generic [ref=f6e467]:
+            - heading "Кредит" [level=3] [ref=f6e468]
+            - list [ref=f6e470]:
+              - listitem [ref=f6e471]:
+                - generic [ref=f6e472]: 0% переплат
+                - text: по программам дилера
+              - listitem [ref=f6e473]: Прозрачно и честно
+              - listitem [ref=f6e474]: Надёжные банки-партнёры
+            - link "Рассчитать условия" [ref=f6e476] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f6e478]:
+          - generic [ref=f6e482]:
+            - heading "Лизинг" [level=3] [ref=f6e483]
+            - list [ref=f6e485]:
+              - listitem [ref=f6e486]: Гибкий выбор срока и структуры платежей
+              - listitem [ref=f6e487]: Сохранение денежных средств в обороте
+              - listitem [ref=f6e488]: Лизинговый платёж без НДС на затраты организации
+            - link "Рассчитать условия" [ref=f6e490] [cursor=pointer]:
+              - /url: "#callback"
+    - generic [ref=f6e495]:
+      - generic [ref=f6e496]:
+        - generic [ref=f6e497]: Москвич Авилон
+        - generic [ref=f6e498]: Официальный дилер Москвич в Москве
+      - list [ref=f6e499]:
+        - listitem [ref=f6e500]:
+          - link "+7 (495) 730-44-03" [ref=f6e504] [cursor=pointer]:
+            - /url: tel:+74957304403
+        - listitem [ref=f6e505]:
+          - link "Москва, Волгоградский пр-кт, 41 стр. 1" [ref=f6e510] [cursor=pointer]:
+            - /url: "#combomap-ymap"
+        - listitem [ref=f6e511]:
+          - generic [ref=f6e516]: "Пн–Вс: 09:00–21:40"
+      - generic [ref=f6e517]:
+        - generic [ref=f6e518]: Услуги
+        - generic [ref=f6e519]:
+          - generic [ref=f6e520]: Продажа
+          - generic [ref=f6e521]: Трейд-ин
+          - generic [ref=f6e522]: Кредит
+      - link "Получить консультацию" [ref=f6e523] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f6e527]:
+    - link [ref=f6e529] [cursor=pointer]:
+      - /url: https://promo.moskvich-avilon.ru/
+      - img "Москвич" [ref=f6e530]
+    - generic [ref=f6e532]:
+      - link "ВКонтакте" [ref=f6e533] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f6e536] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f6e539] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f6e542]:
+      - link "Модельный ряд" [ref=f6e544] [cursor=pointer]:
+        - /url: "#range"
+      - link "Преимущества" [ref=f6e546] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f6e548] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f6e550] [cursor=pointer]:
+        - /url: "#map"
+    - generic [ref=f6e551]: © 2026. Москвич Авилон. Все права защищены
+    - generic [ref=f6e553]:
+      - link "Политика конфиденциальности" [ref=f6e554] [cursor=pointer]:
+        - /url: https://moskvich-m-avilon.ru/terms-condition/privacy-policy/
+      - link "Политика использования файлов cookie" [ref=f6e555] [cursor=pointer]:
+        - /url: https://promo.moskvich-avilon.ru/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f6e556] [cursor=pointer]:
+        - /url: https://promo.moskvich-avilon.ru/consent/
+      - link "Правовая информация" [ref=f6e557] [cursor=pointer]:
+        - /url: https://moskvich-m-avilon.ru/legal-information/
+    - paragraph [ref=f6e559]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f6e562]:
+    - generic [ref=f6e564]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f6e565] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f6e567] [cursor=pointer]

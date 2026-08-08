@@ -204,7 +204,7 @@ export class FormUI {
     }
 
     container = document.createElement('div');
-    container.className = 'form-callback__field form-callback__field--full form-callback__error-banner hidden';
+    container.className = 'form-callback__field field-full form-callback__error-banner hidden';
     container.setAttribute('aria-live', 'polite');
     container.setAttribute('aria-atomic', 'true');
     const span = document.createElement('span');

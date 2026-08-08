@@ -1,0 +1,102 @@
+- generic [active] [ref=f474e1]:
+  - generic [ref=f474e2]:
+    - generic [ref=f474e4]:
+      - link [ref=f474e10] [cursor=pointer]:
+        - /url: https://zoon.ru/orel/
+        - img "logo" [ref=f474e11]
+      - textbox "Поиск по названию или услуге" [ref=f474e20]
+      - textbox "Поиск города" [ref=f474e26]: Орёл
+      - generic [ref=f474e27]:
+        - link "Добавить организацию" [ref=f474e28] [cursor=pointer]:
+          - /url: "#"
+        - list [ref=f474e29]:
+          - listitem [ref=f474e30]:
+            - generic [ref=f474e31] [cursor=pointer]: Вход
+    - generic [ref=f474e34]:
+      - generic [ref=f474e36]: Ошибка 404
+      - generic [ref=f474e37]: Такой страницы нет
+      - link "Перейти на главную" [ref=f474e38] [cursor=pointer]:
+        - /url: https://zoon.ru/orel/
+  - generic [ref=f474e41]:
+    - generic [ref=f474e43]:
+      - generic [ref=f474e44]:
+        - img "logo" [ref=f474e46]
+        - list [ref=f474e47]:
+          - listitem [ref=f474e48]:
+            - link "Добавить место" [ref=f474e49] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f474e50]:
+            - link "Добавить специалиста" [ref=f474e51] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f474e52]:
+            - link "Доступ к организации" [ref=f474e53] [cursor=pointer]:
+              - /url: https://zoon.ru/corp/activation/?city=orel
+          - listitem [ref=f474e54]:
+            - link "Цены на услуги" [ref=f474e55] [cursor=pointer]:
+              - /url: https://zoon.ru/orel/price/
+          - listitem [ref=f474e56]:
+            - link "Помощь" [ref=f474e57] [cursor=pointer]:
+              - /url: https://zoon.ru/support/
+          - listitem [ref=f474e58]:
+            - link "Вакансии" [ref=f474e59] [cursor=pointer]:
+              - /url: https://zoon.ru/company/vacancies/remote/
+          - listitem [ref=f474e60]:
+            - link "О проекте «Zoon»" [ref=f474e61] [cursor=pointer]:
+              - /url: https://zoon.ru/company/
+          - listitem [ref=f474e62]:
+            - link "СМИ о нас" [ref=f474e63] [cursor=pointer]:
+              - /url: https://zoon.ru/blog/press/
+          - listitem [ref=f474e64]:
+            - link "Zoon в других городах" [ref=f474e65] [cursor=pointer]:
+              - /url: https://zoon.ru/cities/
+          - listitem [ref=f474e66]:
+            - link "Блог" [ref=f474e67] [cursor=pointer]:
+              - /url: https://zoon.ru/blog/
+          - listitem [ref=f474e68]:
+            - link "Статьи" [ref=f474e69] [cursor=pointer]:
+              - /url: https://zoon.ru/article/
+          - listitem [ref=f474e70]:
+            - link "Подборки организаций" [ref=f474e71] [cursor=pointer]:
+              - /url: https://zoon.ru/orel/award/
+          - listitem [ref=f474e72]:
+            - link "Сети организаций" [ref=f474e73] [cursor=pointer]:
+              - /url: https://zoon.ru/orel/networks/
+          - listitem [ref=f474e74]:
+            - link "Наши авторы" [ref=f474e75] [cursor=pointer]:
+              - /url: https://zoon.ru/article/author/
+      - list [ref=f474e77]:
+        - listitem [ref=f474e78]:
+          - text: Увидели ошибку —
+          - link "сообщите нам, нажав Ctrl+Enter" [ref=f474e80] [cursor=pointer]:
+            - /url: "#"
+        - listitem
+    - generic [ref=f474e81]:
+      - generic [ref=f474e82]:
+        - generic [ref=f474e83]:
+          - generic [ref=f474e84]:
+            - text: "Телефон:"
+            - link "+7 (495) 660-39-16" [ref=f474e85] [cursor=pointer]:
+              - /url: tel:+74956603916
+          - generic [ref=f474e86]:
+            - text: "Email:"
+            - link "info@zoon.ru" [ref=f474e87] [cursor=pointer]:
+              - /url: mailto:info@zoon.ru
+          - generic [ref=f474e88]: "Юр. адрес: 125167, г. Москва, ВН.ТЕР.Г. Муниципальный округ Хорошевский, пр-д Аэропорта, д. 8, стр. 4, помещ. 6М"
+          - generic [ref=f474e89]: "ОГРН: 1157746291878"
+        - link [ref=f474e91] [cursor=pointer]:
+          - /url: https://sk.ru
+      - generic [ref=f474e94]:
+        - link "Условия использования" [ref=f474e95] [cursor=pointer]:
+          - /url: https://zoon.ru/pages/terms_of_use/
+        - link "Политика конфиденциальности" [ref=f474e96] [cursor=pointer]:
+          - /url: https://zoon.ru/pages/privacy_policy/
+      - generic [ref=f474e97]:
+        - generic [ref=f474e98]: ООО «ЗУН» — IT-компания, которая предоставляет клиентам лицензию на программное обеспечение, позволяющее привлекать клиентов и управлять репутацией в Сети за счет автоматизированных модулей.
+        - generic [ref=f474e99]: "ООО «ЗУН« осуществляет деятельность в области информационных технологий. Основной код ОКВЭД: 62.09"
+  - generic [ref=f474e100]:
+    - generic [ref=f474e101]:
+      - text: Мы используем cookies
+      - link "подробнее" [ref=f474e102] [cursor=pointer]:
+        - /url: /pages/cookie_policy/
+    - button "Принять" [ref=f474e103] [cursor=pointer]
+  - iframe

@@ -156,10 +156,10 @@
   }
 }
 
-.form-callback__field--full,
-.form-callback__field--submit,
-.form-callback__field--rules,
-.form-callback__field--checkbox {
+.form-callback__field.field-full,
+.form-callback__field.field-submit,
+.form-callback__field.field-rules,
+.form-callback__field.field-checkbox {
   grid-column: 1 / -1;
 }
 
@@ -240,20 +240,20 @@
 }
 
 /* Label для select — всегда поднят */
-.form-callback__control--select ~ .form-callback__label {
+.form-callback__control.control-select ~ .form-callback__label {
   top: 1rem;
   transform: translateY(0);
   font-size: var(--fc-font-size-xs);
 }
 
 /* Для textarea label позиционирование */
-.form-callback__control--textarea ~ .form-callback__label {
+.form-callback__control.control-textarea ~ .form-callback__label {
   top: 1.6rem;
   transform: translateY(0);
 }
 
-.form-callback__control--textarea:focus ~ .form-callback__label,
-.form-callback__control--textarea:not(:placeholder-shown) ~ .form-callback__label {
+.form-callback__control.control-textarea:focus ~ .form-callback__label,
+.form-callback__control.control-textarea:not(:placeholder-shown) ~ .form-callback__label {
   top: 0.8rem;
   transform: translateY(0);
   font-size: var(--fc-font-size-xs);
@@ -268,7 +268,7 @@
    Select
    ========================================================================== */
 
-.form-callback__control--select {
+.form-callback__control.control-select {
   cursor: pointer;
   padding-right: 4rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236e6e6e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
@@ -277,7 +277,7 @@
   background-size: 1.2rem;
 }
 
-.form-callback__control--select:focus {
+.form-callback__control.control-select:focus {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236e6e6e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 
@@ -285,7 +285,7 @@
    Textarea
    ========================================================================== */
 
-.form-callback__control--textarea {
+.form-callback__control.control-textarea {
   height: auto;
   min-height: 12rem;
   padding-top: 2.4rem;
@@ -649,7 +649,7 @@
    Rules text
    ========================================================================== */
 
-.form-callback__field--rules {
+.form-callback__field.field-rules {
   padding-top: 0.4rem;
 }
 

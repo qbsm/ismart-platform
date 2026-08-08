@@ -1,0 +1,343 @@
+- generic [active] [ref=f50e1]:
+  - banner [ref=f50e2]:
+    - generic [ref=f50e3]:
+      - link [ref=f50e4] [cursor=pointer]:
+        - /url: /
+        - img "Omoda Logo" [ref=f50e6]
+      - navigation [ref=f50e7]:
+        - list [ref=f50e8]:
+          - listitem [ref=f50e9]:
+            - generic [ref=f50e10] [cursor=pointer]: Models
+          - listitem [ref=f50e11]:
+            - link "Finance" [ref=f50e12] [cursor=pointer]:
+              - /url: /finance
+          - listitem [ref=f50e14]:
+            - generic [ref=f50e15] [cursor=pointer]: About
+          - listitem [ref=f50e16]:
+            - generic [ref=f50e17] [cursor=pointer]: Owners
+          - listitem [ref=f50e18]:
+            - link "Offers" [ref=f50e19] [cursor=pointer]:
+              - /url: /offers
+          - listitem [ref=f50e21]:
+            - link "Car Comparison" [ref=f50e22] [cursor=pointer]:
+              - /url: /compare
+        - generic [ref=f50e24]:
+          - link "Book a Test Drive" [ref=f50e25] [cursor=pointer]:
+            - /url: /enquire/test-drive
+            - generic [ref=f50e32]:
+              - generic [ref=f50e33]: Book a
+              - text: Test Drive
+          - link "Locate a Dealer" [ref=f50e34] [cursor=pointer]:
+            - /url: /dealers
+  - generic [ref=f50e45]:
+    - img "OMODA C5" [ref=f50e47]
+    - generic [ref=f50e51]:
+      - generic [ref=f50e52]:
+        - generic [ref=f50e53] [cursor=pointer]: OMODA C5
+        - generic [ref=f50e54]:
+          - generic [ref=f50e55]: Overview
+          - generic [ref=f50e57]: Exterior
+          - generic [ref=f50e59]: Interior
+          - generic [ref=f50e61]: Features
+          - generic [ref=f50e63]: Specs
+      - generic [ref=f50e65]:
+        - generic [ref=f50e66]: From R339 900
+        - link "Brochure" [ref=f50e68] [cursor=pointer]:
+          - /url: /c5/omoda-c5-brochure.pdf
+    - generic [ref=f50e77]:
+      - generic [ref=f50e79]:
+        - generic [ref=f50e80]:
+          - paragraph [ref=f50e81]: Introducing the OMODA C5
+          - heading "The future starts with OMODA" [level=1] [ref=f50e82]
+          - paragraph [ref=f50e83]: The OMODA C5 was developed as an experimental project under the Art in Motion concept, which draws inspiration from avant-garde art to explore new concepts, colours, and forms in automotive design.
+        - generic [ref=f50e84]:
+          - generic [ref=f50e90]:
+            - generic [ref=f50e91]: Engine
+            - generic [ref=f50e92]: 1.5TCI Petrol
+          - generic [ref=f50e105]:
+            - generic [ref=f50e106]: Maximum Power
+            - generic [ref=f50e107]: 115 kW
+          - generic [ref=f50e113]:
+            - generic [ref=f50e114]: Maximum Torque
+            - generic [ref=f50e115]: 230 nM
+          - generic [ref=f50e120]:
+            - generic [ref=f50e121]: Fuel Consumption
+            - generic [ref=f50e122]: 6.9 L/100km
+          - generic [ref=f50e127]:
+            - generic [ref=f50e128]: Transmission
+            - generic [ref=f50e129]: CVT
+          - generic [ref=f50e136]:
+            - generic [ref=f50e137]: Fuel Tank Capacity
+            - generic [ref=f50e138]: 51 L
+      - generic [ref=f50e141]:
+        - img "OMODA C5" [ref=f50e143]
+        - img "OMODA C5" [ref=f50e145]
+    - generic [ref=f50e152]:
+      - generic [ref=f50e155]:
+        - img "OMODA C5 Exterior" [ref=f50e157]
+        - img "OMODA C5 Exterior" [ref=f50e159]
+        - img "OMODA C5 Exterior" [ref=f50e161]
+        - img "OMODA C5 Exterior" [ref=f50e163]
+      - generic [ref=f50e164]:
+        - paragraph [ref=f50e165]: Experience the exterior design of the OMODA C5
+        - heading "Iconic OMODA Exterior Design" [level=1] [ref=f50e166]
+        - paragraph [ref=f50e167]: The OMODA C5 boasts a modern and sporty look, featuring a stylish grille, 18" two-tone alloy wheels, floating roof, dynamic fastback bodywork, T-shaped daytime running lights, and dynamic turn signals that all come together to create a truly stunning design.
+    - generic [ref=f50e177]:
+      - generic [ref=f50e178]:
+        - paragraph [ref=f50e179]: Explore the interior of the OMODA C5
+        - heading "Premium Comfort" [level=1] [ref=f50e180]
+        - paragraph [ref=f50e181]: The front seats of the OMODA C5 are inspired by sports car design, with a high one-piece headrest, advanced lateral support for seat cushions, and perforated, high-quality eco-leather upholstery that delivers both comfort and style.
+      - generic [ref=f50e183]:
+        - img "OMODA C5 Interior" [ref=f50e184]
+        - paragraph [ref=f50e186]: The tech-forward interior of the new OMODA boasts many advanced features, including two high-resolution dual 10.25" screens, multi-color ambient interior lighting, wireless charging, premium acoustics, and much more.
+    - generic [ref=f50e187]:
+      - generic [ref=f50e189]:
+        - generic [ref=f50e190]:
+          - paragraph [ref=f50e191]: Features
+          - heading "EVERY MOVE IS A STATEMENT" [level=1] [ref=f50e192]
+          - paragraph [ref=f50e193]: Make every exit unforgettable with the bold piano-style tail lights of the OMODA C5. Always let them know where you're headed—with style.
+        - generic [ref=f50e195]:
+          - generic [ref=f50e196]:
+            - img "BOLD PIANO-STYLE TAIL LIGHTS" [ref=f50e197]
+            - heading "BOLD PIANO-STYLE TAIL LIGHTS" [level=2] [ref=f50e198]
+          - generic [ref=f50e199]:
+            - img "POWERED SPORTS SEATS" [ref=f50e200]
+            - heading "POWER TRUNK DOOR" [level=2] [ref=f50e201]
+          - generic [ref=f50e202]:
+            - img "POWER SUNROOF" [ref=f50e203]
+            - heading "POWER SUNROOF" [level=2] [ref=f50e204]
+      - generic [ref=f50e206]:
+        - generic [ref=f50e208]:
+          - paragraph [ref=f50e209]: Features
+          - heading "HEAR YOUR NAME IN LIGHTS" [level=1] [ref=f50e210]
+          - paragraph [ref=f50e211]: Colour-changing ambient interior lighting with dance function? Hey, OMODA, play my bedroom playlist.
+        - generic [ref=f50e214]:
+          - generic [ref=f50e215]:
+            - img "POWERED SPORTS SEATS" [ref=f50e216]
+            - heading "POWERED SPORTS SEATS" [level=2] [ref=f50e217]
+          - generic [ref=f50e218]:
+            - img "INTELLIGENT VOICE COMMAND" [ref=f50e219]
+            - heading "INTELLIGENT VOICE COMMAND" [level=2] [ref=f50e220]
+          - generic [ref=f50e221]:
+            - img "DUAL-ZONE AUTOMATIC A/C" [ref=f50e222]
+            - heading "DUAL-ZONE AUTOMATIC A/C" [level=2] [ref=f50e223]
+      - generic [ref=f50e232]:
+        - generic [ref=f50e233]:
+          - paragraph [ref=f50e234]: Features
+          - heading "SEE THE FUTURE IN STEREO" [level=1] [ref=f50e235]
+          - paragraph [ref=f50e236]: The dual 10.25" high-res screens of the OMODA C5 bring cutting-edge technology to every drive. Clear, immersive, and always within reach.
+        - generic [ref=f50e238]:
+          - generic [ref=f50e239]:
+            - img "WIRELESS CHARGING DOCK" [ref=f50e240]
+            - heading "WIRELESS CHARGING DOCK" [level=2] [ref=f50e241]
+          - generic [ref=f50e242]:
+            - img "INFOTAINMENT SYSTEM" [ref=f50e243]
+            - heading "INFOTAINMENT SYSTEM" [level=2] [ref=f50e244]
+          - generic [ref=f50e245]:
+            - img "SONY SOUND SYSTEM" [ref=f50e246]
+            - heading "SONY SOUND SYSTEM" [level=2] [ref=f50e247]
+    - generic [ref=f50e248]:
+      - heading "Book a Test Drive" [level=4] [ref=f50e249]
+      - generic [ref=f50e252]:
+        - text: Website
+        - textbox
+        - generic [ref=f50e253]:
+          - generic [ref=f50e254]:
+            - generic [ref=f50e255]: First Name*
+            - textbox "First Name*" [ref=f50e256]:
+              - /placeholder: First Name
+          - generic [ref=f50e257]:
+            - generic [ref=f50e258]: Last Name*
+            - textbox "Last Name*" [ref=f50e259]:
+              - /placeholder: Last Name
+          - generic [ref=f50e260]:
+            - generic [ref=f50e261]: Phone Number*
+            - textbox "Phone Number*" [ref=f50e263]:
+              - /placeholder: Phone Number
+          - generic [ref=f50e264]:
+            - generic [ref=f50e265]: Email*
+            - textbox "Email*" [ref=f50e267]:
+              - /placeholder: Email
+          - generic [ref=f50e268]:
+            - generic [ref=f50e269]: Model*
+            - combobox "Model*" [disabled] [ref=f50e271]:
+              - option "C5" [selected]
+              - option "C5 X"
+              - option "C7"
+              - option "C9"
+          - generic [ref=f50e272]:
+            - generic [ref=f50e273]: Variant*
+            - combobox "Variant*" [ref=f50e275]:
+              - option "Select a variant" [selected]
+              - option "Street Plus"
+              - option "SHS"
+          - generic [ref=f50e276]:
+            - generic [ref=f50e277]: Country / Province*
+            - combobox "Country / Province*" [ref=f50e279]:
+              - option "Select a country / province" [disabled] [selected]
+              - option "Western Cape"
+              - option "Eastern Cape"
+              - option "Free State"
+              - option "Gauteng"
+              - option "KwaZulu-Natal"
+              - option "Limpopo"
+              - option "North West"
+              - option "Mpumalanga"
+              - option "Northern Cape"
+              - option "Botswana"
+              - option "Namibia"
+              - option "Eswatini"
+          - generic [ref=f50e280]:
+            - generic [ref=f50e281]: Dealership*
+            - combobox "Dealership*" [disabled] [ref=f50e283]:
+              - option "Select a dealership" [disabled] [selected]
+          - generic [ref=f50e284]:
+            - generic [ref=f50e285]: Preferred Contact Date & Time*
+            - button "Preferred Contact Date & Time*" [ref=f50e287]:
+              - generic [ref=f50e288]: Select date and time (Mon-Fri, 8AM-5PM)
+          - generic [ref=f50e290]:
+            - checkbox "I agree to the Privacy Policy and Terms & Conditions, and consent to the processing and collection of my information as described therein." [ref=f50e291]
+            - checkbox
+            - generic [ref=f50e292] [cursor=pointer]:
+              - text: I agree to the
+              - link "Privacy Policy" [ref=f50e293]:
+                - /url: /legal/privacy-policy
+              - text: and
+              - link "Terms & Conditions" [ref=f50e294]:
+                - /url: /legal/terms-and-conditions
+              - text: ", and consent to the processing and collection of my information as described therein."
+        - button "Submit" [ref=f50e295] [cursor=pointer]
+    - generic [ref=f50e298]:
+      - generic [ref=f50e299]:
+        - heading "OMODA C5 Specifications" [level=1] [ref=f50e300]
+        - link "View full specs sheet" [ref=f50e302] [cursor=pointer]:
+          - /url: /c5/omoda-c5-spec-sheet.pdf
+      - generic [ref=f50e303]:
+        - heading [level=3] [ref=f50e307]:
+          - button [ref=f50e308] [cursor=pointer]:
+            - heading "Pricing" [level=3] [ref=f50e309]
+        - heading [level=3] [ref=f50e313]:
+          - button [ref=f50e314] [cursor=pointer]:
+            - heading "POWER & DRIVE TRAIN" [level=3] [ref=f50e315]
+        - heading [level=3] [ref=f50e319]:
+          - button [ref=f50e320] [cursor=pointer]:
+            - heading "DIMENSIONS, WEIGHTS, & CAPACITIES" [level=3] [ref=f50e321]
+        - heading [level=3] [ref=f50e325]:
+          - button [ref=f50e326] [cursor=pointer]:
+            - heading "Exterior" [level=3] [ref=f50e327]
+        - heading [level=3] [ref=f50e331]:
+          - button [ref=f50e332] [cursor=pointer]:
+            - heading "Interior" [level=3] [ref=f50e333]
+        - heading [level=3] [ref=f50e337]:
+          - button [ref=f50e338] [cursor=pointer]:
+            - heading "Technology" [level=3] [ref=f50e339]
+        - heading [level=3] [ref=f50e343]:
+          - button [ref=f50e344] [cursor=pointer]:
+            - heading "Safety" [level=3] [ref=f50e345]
+  - link [ref=f50e346] [cursor=pointer]:
+    - /url: https://wa.me/+27104429714
+  - generic [ref=f50e349]:
+    - generic [ref=f50e350]: Cookies & privacy
+    - generic [ref=f50e351]:
+      - paragraph [ref=f50e352]: We use cookies to make this site work smoothly and to improve your experience.
+      - paragraph [ref=f50e353]:
+        - text: Read our
+        - link "cookies notice" [ref=f50e354] [cursor=pointer]:
+          - /url: /legal/cookie-policy
+        - text: ","
+        - link "privacy statement (non-EU)" [ref=f50e355] [cursor=pointer]:
+          - /url: /legal/privacy-statement
+        - text: ", and"
+        - link "privacy policy" [ref=f50e356] [cursor=pointer]:
+          - /url: /legal/privacy-policy
+        - text: .
+    - generic [ref=f50e357]:
+      - button "Accept cookies" [ref=f50e358] [cursor=pointer]
+      - generic [ref=f50e359]:
+        - button "Reject non-essential" [ref=f50e360] [cursor=pointer]
+        - button "Cookie settings" [ref=f50e361] [cursor=pointer]
+  - contentinfo [ref=f50e362]:
+    - generic [ref=f50e365]:
+      - link [ref=f50e368] [cursor=pointer]:
+        - /url: /enquire/test-drive
+        - heading "Book a Test Drive" [level=3] [ref=f50e374]
+        - paragraph [ref=f50e375]: "Schedule your test drive: Sign up today"
+      - link [ref=f50e378] [cursor=pointer]:
+        - /url: /news
+        - heading "News" [level=3] [ref=f50e383]
+        - paragraph [ref=f50e384]: Stay up-to-date with the latest news
+      - link [ref=f50e387] [cursor=pointer]:
+        - /url: /dealers
+        - heading "Locate a Dealer" [level=3] [ref=f50e396]
+        - paragraph [ref=f50e397]: Find your nearest OMODA dealer
+      - link [ref=f50e400] [cursor=pointer]:
+        - /url: /offers
+        - heading "Promotions" [level=3] [ref=f50e410]
+        - paragraph [ref=f50e411]: Explore our latest promotions
+    - generic [ref=f50e413]:
+      - generic [ref=f50e415]:
+        - img "OMODA" [ref=f50e418]
+        - generic [ref=f50e419]:
+          - link "010 448 5388 (Option 3)" [ref=f50e423] [cursor=pointer]:
+            - /url: tel:0104485388
+          - link "customercare@omoda.co.za" [ref=f50e429] [cursor=pointer]:
+            - /url: mailto:customercare@omoda.co.za
+      - generic [ref=f50e430]:
+        - navigation [ref=f50e432]:
+          - link "Book a Test Drive" [ref=f50e434] [cursor=pointer]:
+            - /url: /enquire/test-drive
+          - link "Locate a Dealer" [ref=f50e436] [cursor=pointer]:
+            - /url: /dealers
+          - link "News" [ref=f50e438] [cursor=pointer]:
+            - /url: /news
+          - link "Warranty" [ref=f50e440] [cursor=pointer]:
+            - /url: /owners/warranty
+          - link "Finance" [ref=f50e442] [cursor=pointer]:
+            - /url: /finance
+          - link "Careers" [ref=f50e444] [cursor=pointer]:
+            - /url: /careers
+          - link "Car Comparison" [ref=f50e446] [cursor=pointer]:
+            - /url: /compare
+        - generic [ref=f50e447]:
+          - generic [ref=f50e448]:
+            - paragraph [ref=f50e449]: Roadside Assistance
+            - link "010 448 5388 (Option 1)" [ref=f50e453] [cursor=pointer]:
+              - /url: tel:0104485388
+            - link "086 150 5555 (AA 24 Hour Service)" [ref=f50e457] [cursor=pointer]:
+              - /url: tel:0861505555
+          - generic [ref=f50e458]:
+            - link "Omoda YouTube" [ref=f50e459] [cursor=pointer]:
+              - /url: https://www.youtube.com/@omodasouthafrica
+              - img "Omoda YouTube" [ref=f50e460]
+            - link "Omoda Twitter" [ref=f50e461] [cursor=pointer]:
+              - /url: https://twitter.com/Omoda_SA
+              - img "Omoda Twitter" [ref=f50e462]
+            - link "Omoda TikTok" [ref=f50e463] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@omodasa
+              - img "Omoda TikTok" [ref=f50e464]
+            - link "Omoda Instagram" [ref=f50e465] [cursor=pointer]:
+              - /url: https://www.instagram.com/omodasouthafrica/
+              - img "Omoda Instagram" [ref=f50e466]
+            - link "Omoda Facebook" [ref=f50e467] [cursor=pointer]:
+              - /url: https://www.facebook.com/OmodaSouthAfrica/
+              - img "Omoda Facebook" [ref=f50e468]
+      - generic [ref=f50e469]:
+        - paragraph [ref=f50e470]: We use cookies to improve your experience and tailor content. You can accept, reject non-essential cookies, or change your preferences at any time.
+        - generic [ref=f50e471]:
+          - button "Cookie settings" [ref=f50e472] [cursor=pointer]
+          - link "Cookies notice" [ref=f50e473] [cursor=pointer]:
+            - /url: /legal/cookie-policy
+      - generic [ref=f50e474]:
+        - generic [ref=f50e475]: © 2026 OMODA South Africa
+        - generic [ref=f50e476]:
+          - link "Legal Information" [ref=f50e477] [cursor=pointer]:
+            - /url: /legal
+          - link "Terms & Conditions" [ref=f50e478] [cursor=pointer]:
+            - /url: /legal/terms-and-conditions
+          - link "Privacy Policy" [ref=f50e479] [cursor=pointer]:
+            - /url: /legal/privacy-policy
+          - link "Privacy statement (non-EU)" [ref=f50e480] [cursor=pointer]:
+            - /url: /legal/privacy-statement
+          - link "Cookies notice" [ref=f50e481] [cursor=pointer]:
+            - /url: /legal/cookie-policy
+  - alert [ref=f50e482]

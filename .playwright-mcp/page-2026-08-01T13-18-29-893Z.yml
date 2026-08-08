@@ -1,0 +1,82 @@
+- generic [ref=f6e4]:
+  - generic [ref=f6e6]:
+    - generic [ref=f6e7]:
+      - link [ref=f6e10] [cursor=pointer]:
+        - /url: /list
+      - generic [ref=f6e28]:
+        - generic [ref=f6e29]:
+          - link "Обзор" [ref=f6e32] [cursor=pointer]:
+            - /url: /overview?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false
+          - generic [ref=f6e40]: Дашборды
+          - generic [ref=f6e49]: Отчеты
+          - generic [ref=f6e57]: Поведение
+          - generic [ref=f6e65]: Посетители
+        - generic [ref=f6e75]:
+          - link "Цели" [ref=f6e78] [cursor=pointer]:
+            - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&goalsConversionViewKind=List
+          - link "Конверсии" [ref=f6e90] [cursor=pointer]:
+            - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&goalsConversionViewKind=Chart
+        - generic [ref=f6e100]:
+          - link "Тег Менеджер" [ref=f6e103] [cursor=pointer]:
+            - /url: /ytm/overview?id=107236894
+          - generic [ref=f6e112]: Вариокуб
+        - generic [ref=f6e121]:
+          - generic [ref=f6e122]: Привлечение
+          - link "Интеграции" [ref=f6e132] [cursor=pointer]:
+            - /url: /marketplace?id=107236894
+          - link "Инсайты" [ref=f6e142] [cursor=pointer]:
+            - /url: /insights?id=107236894
+          - generic [ref=f6e150]: Настройки
+    - generic [ref=f6e158]: Свернуть
+  - generic [ref=f6e164]:
+    - generic [ref=f6e166]:
+      - generic [ref=f6e168]:
+        - generic "Kumho (kumho-tires.ru)" [ref=f6e174]:
+          - generic [ref=f6e175] [cursor=pointer]:
+            - img "Kumho (kumho-tires.ru)" [ref=f6e177]
+            - generic [ref=f6e178]: Kumho (kumho-tires.ru)
+          - generic [ref=f6e181]:
+            - link "kumho-tires.ru•" [ref=f6e182] [cursor=pointer]:
+              - /url: http://kumho-tires.ru
+            - generic [ref=f6e183]: "107236894"
+        - generic [ref=f6e185]:
+          - link "Настройка аккаунта" [ref=f6e186] [cursor=pointer]:
+            - /url: /preferences/subscriptions
+          - button "Помощь" [ref=f6e187]:
+            - generic "Помощь" [ref=f6e190] [cursor=pointer]
+          - generic [ref=f6e195]:
+            - button [ref=f6e196]
+            - generic [ref=f6e202]: "0"
+          - button [ref=f6e203]
+      - generic [ref=f6e212] [cursor=pointer]:
+        - img "fedorovich-d" [ref=f6e215]
+        - generic [ref=f6e216]: fedorovich-d
+    - generic [ref=f6e220]:
+      - generic [ref=f6e223]:
+        - generic [ref=f6e224]: Конверсии
+        - link [ref=f6e227] [cursor=pointer]:
+          - /url: /support/metrica/ru/reports/conversion
+      - generic [ref=f6e239]:
+        - button "Поиск" [ref=f6e241]:
+          - generic "Поиск" [ref=f6e247] [cursor=pointer]
+        - button "По 10 минут" [ref=f6e250]:
+          - generic "По 10 минут" [ref=f6e253] [cursor=pointer]
+    - generic [ref=f6e327]:
+      - generic [ref=f6e328]:
+        - link "Пользовательское соглашение" [ref=f6e330] [cursor=pointer]:
+          - /url: https://yandex.ru/legal/metrica_termsofuse
+        - link "Политика конфиденциальности" [ref=f6e332] [cursor=pointer]:
+          - /url: https://yandex.ru/legal/confidential
+        - link "Справка" [ref=f6e334] [cursor=pointer]:
+          - /url: /support/metrica/ru/
+        - link "Задать вопрос" [ref=f6e336] [cursor=pointer]:
+          - /url: /support/metrica/ru/troubleshooting/
+        - link "Предложить идею" [ref=f6e338] [cursor=pointer]:
+          - /url: /support/metrica/ru/troubleshooting/idea
+      - generic [ref=f6e339]:
+        - generic [ref=f6e340]: Ru
+        - generic [ref=f6e349]:
+          - text: © 2008–2026 OOO «
+          - link "ЯНДЕКС" [ref=f6e350] [cursor=pointer]:
+            - /url: https://ya.ru
+          - text: »

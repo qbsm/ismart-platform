@@ -15,7 +15,7 @@
 | CallTouch | `CALLTOUCH_` |
 | Telegram | `TELEGRAM_` |
 | Google Sheets | `SHEETS_` |
-| единый приёмник заявок | `API_` |
+| сервис доставки заявок | `LEADS_` |
 
 Исторически имена разошлись на пять схем (`CT_`, `TG_`, `GS_`, `MAILER_`, `LEADS_API_`).
 Читаются оба варианта: `App\Support\Env` берёт каноническое имя, а если его нет — прежнее.
@@ -84,15 +84,15 @@
 | `SHEETS_CREDENTIALS_PATH` | `GS_CREDENTIALS_PATH` | `config/secrets/google-service-account.json` | Ключ сервис-аккаунта |
 | `SHEETS_TIMEOUT` | `GS_TIMEOUT` | `10` | Таймаут, секунды |
 
-## Единый приёмник заявок
+## Сервис доставки заявок
 
 | Переменная | Прежнее имя | По умолчанию | Назначение |
 | --- | --- | --- | --- |
-| `API_ENABLE` | `LEADS_API_ENABLE` | `false` | Включает отправку в приёмник |
-| `API_URL` | `LEADS_API_URL` | `https://api.ismart.pro/v1/lead` | Адрес приёмника |
-| `API_SITE` | `LEADS_API_SITE` | пусто | Домен сайта, которым он представляется |
-| `API_KEY` | `LEADS_API_KEY` | пусто | Нужен только вне нашего периметра, см. ниже |
-| `API_TIMEOUT` | `LEADS_API_TIMEOUT` | `10` | Таймаут, секунды |
+| `LEADS_ENABLE` | `API_ENABLE`, `LEADS_API_ENABLE` | `false` | Включает отправку в сервис |
+| `LEADS_URL` | `API_URL`, `LEADS_API_URL` | `https://api.ismart.pro/v1/collect` | Адрес сервиса |
+| `LEADS_SITE` | `API_SITE`, `LEADS_API_SITE` | пусто | Домен сайта, которым он представляется |
+| `LEADS_KEY` | `API_KEY`, `LEADS_API_KEY` | пусто | Нужен только вне нашего периметра, см. ниже |
+| `LEADS_TIMEOUT` | `API_TIMEOUT`, `LEADS_API_TIMEOUT` | `10` | Таймаут, секунды |
 
 Подтверждение отправителя обычно идёт **по домену**: заявку шлёт бэкенд сайта, а значит с
 адреса, на который домен и резолвится — чтобы прикинуться чужим доменом, надо оказаться на
@@ -100,7 +100,7 @@
 
 Канал **добавочный**: `mail`, `telegram`, `google_sheets` остаются в ядре и включаются
 своими флагами. Где политика заказчика запрещает отдавать данные в сторонний сервис —
-просто не включаем `API_ENABLE`.
+просто не включаем `LEADS_ENABLE`.
 
 ---
 

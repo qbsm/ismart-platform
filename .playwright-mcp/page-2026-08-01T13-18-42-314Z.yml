@@ -1,0 +1,296 @@
+- generic [ref=f8e4]:
+  - generic [ref=f8e6]:
+    - generic [ref=f8e7]:
+      - link [ref=f8e10] [cursor=pointer]:
+        - /url: /list
+      - generic [ref=f8e28]:
+        - generic [ref=f8e29]:
+          - link "Обзор" [ref=f8e32] [cursor=pointer]:
+            - /url: /overview?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false
+          - generic [ref=f8e40]: Дашборды
+          - generic [ref=f8e49]: Отчеты
+          - generic [ref=f8e57]: Поведение
+          - generic [ref=f8e65]: Посетители
+        - generic [ref=f8e75]:
+          - link "Цели" [ref=f8e78] [cursor=pointer]:
+            - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&goalsConversionViewKind=List
+          - link "Конверсии" [ref=f8e90] [cursor=pointer]:
+            - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&goalsConversionViewKind=Chart
+        - generic [ref=f8e100]:
+          - link "Тег Менеджер" [ref=f8e103] [cursor=pointer]:
+            - /url: /ytm/overview?id=107236894
+          - generic [ref=f8e112]: Вариокуб
+        - generic [ref=f8e121]:
+          - generic [ref=f8e122]: Привлечение
+          - link "Интеграции" [ref=f8e132] [cursor=pointer]:
+            - /url: /marketplace?id=107236894
+          - link "Инсайты" [ref=f8e142] [cursor=pointer]:
+            - /url: /insights?id=107236894
+          - generic [ref=f8e150]: Настройки
+    - generic [ref=f8e158]: Свернуть
+  - generic [ref=f8e164]:
+    - generic [ref=f8e166]:
+      - generic [ref=f8e168]:
+        - generic "Kumho (kumho-tires.ru)" [ref=f8e174]:
+          - generic [ref=f8e175] [cursor=pointer]:
+            - img "Kumho (kumho-tires.ru)" [ref=f8e177]
+            - generic [ref=f8e178]: Kumho (kumho-tires.ru)
+          - generic [ref=f8e181]:
+            - link "kumho-tires.ru•" [ref=f8e182] [cursor=pointer]:
+              - /url: http://kumho-tires.ru
+            - generic [ref=f8e183]: "107236894"
+        - generic [ref=f8e185]:
+          - link "Настройка аккаунта" [ref=f8e186] [cursor=pointer]:
+            - /url: /preferences/subscriptions
+          - button "Помощь" [ref=f8e187]:
+            - generic "Помощь" [ref=f8e190] [cursor=pointer]
+          - generic [ref=f8e195]:
+            - button [ref=f8e196]
+            - generic [ref=f8e202]: "0"
+          - button [ref=f8e203]
+      - generic [ref=f8e212] [cursor=pointer]:
+        - img "fedorovich-d" [ref=f8e215]
+        - generic [ref=f8e216]: fedorovich-d
+    - iframe [ref=f8e221]:
+      - generic [ref=f9e11]:
+        - generic [ref=f9e12]: Настройка
+        - generic [ref=f9e13]:
+          - tablist [ref=f9e15]:
+            - tab "Счетчик" [selected] [ref=f9e16] [cursor=pointer]
+            - tab "Вебвизор" [ref=f9e18] [cursor=pointer]
+            - link "Цели" [ref=f9e20] [cursor=pointer]:
+              - /url: /
+            - tab "Фильтры1" [ref=f9e21] [cursor=pointer]
+            - tab "Загрузка данных" [ref=f9e23] [cursor=pointer]
+            - tab "Доступ1" [ref=f9e25] [cursor=pointer]
+            - link "Помощник настроек" [ref=f9e27] [cursor=pointer]:
+              - /url: /
+            - tab "Еженедельный отчет в Telegram" [ref=f9e28] [cursor=pointer]
+            - link "Заказать настройку Метрики" [ref=f9e32] [cursor=pointer]:
+              - /url: https://yandex.ru/promo/freeservice/metrica
+          - generic [ref=f9e34]:
+            - tabpanel "Счетчик" [ref=f9e35]:
+              - generic [ref=f9e36]:
+                - generic [ref=f9e37]:
+                  - generic [ref=f9e38]:
+                    - generic [ref=f9e39]: Номер 107236894
+                    - generic [ref=f9e42]:
+                      - generic [ref=f9e43]:
+                        - generic [ref=f9e44]: Имя счетчика
+                        - textbox "Имя счетчика" [ref=f9e49]: Kumho (kumho-tires.ru)
+                      - generic [ref=f9e50]:
+                        - generic [ref=f9e53]:
+                          - text: Адрес
+                          - generic [ref=f9e54]: сайта
+                        - generic [ref=f9e57]:
+                          - textbox "Домен или путь (без http, https и www)" [ref=f9e61]: kumho-tires.ru
+                          - generic [ref=f9e63]:
+                            - generic [ref=f9e64]: Привязан к Вебмастеру
+                            - button "Отвязать" [ref=f9e66] [cursor=pointer]
+                      - generic [ref=f9e71]:
+                        - button [ref=f9e72] [cursor=pointer]
+                        - generic [ref=f9e73]:
+                          - text: Дополнительные
+                          - generic [ref=f9e74]: адреса
+                      - generic [ref=f9e78]:
+                        - generic [ref=f9e80] [cursor=pointer]:
+                          - checkbox "Принимать данные только с указанных адресов" [checked] [ref=f9e82]
+                          - generic [ref=f9e83]: Принимать данные только с указанных адресов
+                        - generic [ref=f9e86] [cursor=pointer]:
+                          - checkbox "Включая поддомены" [ref=f9e88]
+                          - generic [ref=f9e89]: Включая поддомены
+                      - generic [ref=f9e90]:
+                        - generic [ref=f9e91]: Часовой пояс
+                        - generic [ref=f9e93]:
+                          - generic:
+                            - generic:
+                              - listbox:
+                                - generic: (GMT+03:00) Москва, Санкт-Петербург
+                          - textbox [ref=f9e98]: (GMT+03:00) Москва, Санкт-Петербург
+                    - generic [ref=f9e100]:
+                      - generic [ref=f9e101]:
+                        - generic [ref=f9e102]: Автоматические цели
+                        - generic [ref=f9e103]:
+                          - text: Метрика будет автоматически создавать цели на некоторые важные события на сайте — например, на клики по номеру телефона или email.
+                          - link "Подробнее" [ref=f9e104] [cursor=pointer]:
+                            - /url: https://yandex.ru/support/metrica/general/auto-goals.html
+                      - generic [ref=f9e109]:
+                        - generic [ref=f9e110] [cursor=pointer]:
+                          - generic [ref=f9e111]: Вкл
+                          - generic [ref=f9e113]: Откл
+                          - button [pressed] [ref=f9e114]
+                        - checkbox [checked] [ref=f9e115]
+                    - generic [ref=f9e117]:
+                      - generic [ref=f9e118]:
+                        - generic [ref=f9e119]: Вебвизор, карта скроллинга, аналитика форм
+                        - generic [ref=f9e120]: "Подробные записи действий посетителей на сайте: движения мышью, прокручивание страницы и клики."
+                        - generic [ref=f9e122]:
+                          - text: Включая Вебвизор, вы обязуетесь соблюдать
+                          - link "п. 5.2 пользовательского соглашения Яндекс.Метрики" [ref=f9e123] [cursor=pointer]:
+                            - /url: https://yandex.ru/legal/metrica_termsofuse
+                          - text: . Вебвизор записывает действия посетителей на сайте, в том числе содержимое полей форм — при этом данные в конфиденциальных полях автоматически заменяются на «звездочки». Отключить запись полей можно в настройках Вебвизора.
+                      - generic [ref=f9e128]:
+                        - generic [ref=f9e129] [cursor=pointer]:
+                          - generic [ref=f9e130]: Вкл
+                          - generic [ref=f9e132]: Откл
+                          - button [pressed] [ref=f9e133]
+                        - checkbox [checked] [ref=f9e134]
+                    - generic [ref=f9e136]:
+                      - generic [ref=f9e137]:
+                        - generic [ref=f9e138]: Электронная коммерция
+                        - generic [ref=f9e139]:
+                          - text: Опция позволяет отслеживать взаимодействие посетителей с товарами сайта. Чтобы статистика начала собираться,
+                          - link "настройте на сайте передачу данных." [ref=f9e140] [cursor=pointer]:
+                            - /url: https://yandex.ru/support/metrica/data/e-commerce.html
+                        - generic [ref=f9e141]:
+                          - generic [ref=f9e142]:
+                            - generic [ref=f9e143]: "Имя контейнера данных:"
+                            - textbox "dataLayer" [ref=f9e148]
+                          - generic [ref=f9e149]:
+                            - text: Не забудьте
+                            - link "выбрать подходящую валюту." [ref=f9e150] [cursor=pointer]:
+                              - /url: "#additional-settings"
+                      - generic [ref=f9e154]:
+                        - generic [ref=f9e155] [cursor=pointer]:
+                          - generic [ref=f9e156]: Вкл
+                          - generic [ref=f9e158]: Откл
+                          - button [pressed] [ref=f9e159]
+                        - checkbox [checked] [ref=f9e160]
+                    - generic [ref=f9e162]:
+                      - generic [ref=f9e163]:
+                        - generic [ref=f9e164]: Контентная аналитика
+                        - generic [ref=f9e165]:
+                          - text: Отчеты по текстовым материалам сайта. Помогают понять, какой контент нравится посетителям больше и какие источники приводят самую вовлеченную аудиторию.
+                          - link "Подробнее" [ref=f9e166] [cursor=pointer]:
+                            - /url: https://yandex.ru/support/metrica/publishers/reports/main.html#main
+                          - text: . Чтобы статистика начала собираться,
+                          - link "добавьте на сайт разметку." [ref=f9e167] [cursor=pointer]:
+                            - /url: https://yandex.ru/support/metrica/publishers/about.html#about__how-to
+                      - generic [ref=f9e171]:
+                        - generic [ref=f9e172] [cursor=pointer]:
+                          - generic [ref=f9e173]: Вкл
+                          - generic [ref=f9e174]: Откл
+                          - button [ref=f9e176]
+                        - checkbox [ref=f9e177]
+                    - generic [ref=f9e179]:
+                      - generic [ref=f9e180]:
+                        - generic [ref=f9e181]: Тег менеджер
+                        - generic [ref=f9e183]:
+                          - text: Опция позволяет централизованно управлять и отслеживать теги на сайте без необходимости изменения исходного кода, упрощая внедрение аналитических и маркетинговых инструментов.
+                          - link "Подробнее" [ref=f9e184] [cursor=pointer]:
+                            - /url: https://yandex.ru/support/ytm/ru/
+                          - text: . Пользовательское соглашение по
+                          - link "ссылке" [ref=f9e185] [cursor=pointer]:
+                            - /url: https://yandex.ru/legal/metrica_termsofuse/?lang=ru
+                          - text: .
+                      - generic [ref=f9e189]:
+                        - generic [ref=f9e190]:
+                          - generic [ref=f9e191]: Вкл
+                          - generic [ref=f9e193]: Откл
+                          - button [disabled] [pressed]
+                        - checkbox [checked] [disabled] [ref=f9e194]
+                  - generic [ref=f9e196]:
+                    - generic [ref=f9e197]:
+                      - button "Перенести на другой аккаунт" [disabled]
+                      - button "Удалить счетчик" [disabled]
+                    - generic [ref=f9e198]: Дополнительные условия обработки данных
+                    - generic [ref=f9e204]: Информация по Метрике Про
+                    - text: 👈🏼
+                - generic [ref=f9e211]:
+                  - generic [ref=f9e212]: Дополнительные настройки
+                  - generic [ref=f9e218]:
+                    - generic [ref=f9e219]:
+                      - generic [ref=f9e220]:
+                        - text: Код счетчика
+                        - button "Скопировать код" [ref=f9e221] [cursor=pointer]
+                      - generic [ref=f9e222]: При установке счетчика в HTML-код сайта, разместите код как можно ближе к началу страницы. Например, в пределах тегов <head></head> или <body></body>.
+                      - generic [ref=f9e223] [cursor=pointer]: Другие способы установки
+                      - generic [ref=f9e224]: "<!-- Yandex.Metrika counter --> <script type=\"text/javascript\"> (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date(); for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }} k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a) })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107236894', 'ym'); ym(107236894, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:\"dataLayer\", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true}); </script> <noscript><div><img src=\"https://mc.yandex.ru/watch/107236894\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript> <!-- /Yandex.Metrika counter -->"
+                    - generic [ref=f9e227]:
+                      - text: Устанавливая код счетчика на сайт, вы соглашаетесь со всеми условиями
+                      - link "Пользовательского соглашения" [ref=f9e228] [cursor=pointer]:
+                        - /url: //yandex.ru/legal/metrica_termsofuse/
+                      - text: .
+                  - generic [ref=f9e229]: Способы установки кода счетчика Метрики
+                - generic [ref=f9e236]:
+                  - generic [ref=f9e237]: Проверка счетчика
+                  - generic [ref=f9e241]:
+                    - generic [ref=f9e244]:
+                      - generic [ref=f9e245]: Укажите адрес страницы, на которой нужно проверить наличие счетчика
+                      - textbox "Укажите адрес страницы, на которой нужно проверить наличие счетчика" [ref=f9e248]: https://kumho-tires.ru/en
+                    - generic [ref=f9e249]:
+                      - table [ref=f9e253]:
+                        - rowgroup [ref=f9e254]:
+                          - row [ref=f9e255]:
+                            - cell "Убедитесь, что счетчик размещен на странице сайта" [ref=f9e256]
+                            - cell [ref=f9e258]:
+                              - button "Проверить" [ref=f9e259] [cursor=pointer]
+                          - row [ref=f9e260]:
+                            - 'cell "После нажатия кнопки «Проверить» страница сайта с результатами проверки откроется в новой вкладке: если код счетчика установлен корректно, появится уведомление; если счетчик не найден, уведомлений не будет. Возможные причины, по которым счетчик может быть не найден • на сайте используются блокировщики рекламы; • загрузка счетчика Метрики инициализируется каким-то действием на сайте; • счетчик не был установлен на странице или был удален с нее; • на сайте используется переадресация, при которой не передаются параметры URL. Справка" [ref=f9e261]':
+                              - generic [ref=f9e262]: "После нажатия кнопки «Проверить» страница сайта с результатами проверки откроется в новой вкладке:"
+                              - generic [ref=f9e263]:
+                                - generic [ref=f9e264]: если код счетчика установлен корректно, появится уведомление;
+                                - generic [ref=f9e267]: если счетчик не найден, уведомлений не будет.
+                              - generic [ref=f9e271]:
+                                - generic [ref=f9e272]: Возможные причины, по которым счетчик может быть не найден
+                                - generic [ref=f9e276]:
+                                  - generic [ref=f9e277]: • на сайте используются блокировщики рекламы;• загрузка счетчика Метрики инициализируется каким-то действием на сайте;• счетчик не был установлен на странице или был удален с нее;• на сайте используется переадресация, при которой не передаются параметры URL.
+                                  - link "Справка" [ref=f9e278] [cursor=pointer]:
+                                    - /url: https://yandex.ru/support/metrica/general/check-counter.html
+                      - table [ref=f9e284]:
+                        - rowgroup [ref=f9e285]:
+                          - row [ref=f9e286]:
+                            - cell "Используя инструкции, проверьте передачу данных на счетчик" [ref=f9e287]
+                            - cell [ref=f9e289]:
+                              - button "Проверить" [ref=f9e290] [cursor=pointer]
+                          - row [ref=f9e291]:
+                            - cell "После нажатия кнопки «Проверить», на открывшейся странице появится иконка в правом нижнем углу страницы. При нажатии на неё откроется панель для проверки. Далее, следуйте инструкциям по ссылкам ниже:" [ref=f9e292]
+                          - row [ref=f9e294]:
+                            - cell [ref=f9e295]:
+                              - generic [ref=f9e296]:
+                                - link "Проверка сбора данных счетчика" [ref=f9e297] [cursor=pointer]:
+                                  - /url: https://yandex.ru/support/metrica/general/check-counter.html#check-counter__check-data
+                                - text: •
+                                - link "Настройка целей" [ref=f9e298] [cursor=pointer]:
+                                  - /url: https://yandex.ru/support/metrica/general/check-goal.html
+                                - text: •
+                                - link "Электронная коммерция" [ref=f9e299] [cursor=pointer]:
+                                  - /url: https://yandex.ru/support/metrica/ecommerce/check.html
+                                - text: •
+                                - link "Контентная аналитика" [ref=f9e300] [cursor=pointer]:
+                                  - /url: https://yandex.ru/support/metrica/publishers/check-data.html
+                      - table [ref=f9e304]:
+                        - rowgroup [ref=f9e305]:
+                          - row [ref=f9e306]:
+                            - cell "Посмотрите, отображаются ли данные в отчетах" [ref=f9e307]
+                            - cell [ref=f9e309]:
+                              - link [ref=f9e310] [cursor=pointer]:
+                                - /url: /
+                                - button "Перейти к отчету" [ref=f9e311]
+                          - row [ref=f9e312]:
+                            - cell "Если счетчик настроен корректно, но в статистике все еще не отображаются данные, проверьте настройки фильтров. Слишком строгие фильтры могут отсеивать реальные посещения. Настроить фильтры" [ref=f9e313]:
+                              - generic [ref=f9e314]: Если счетчик настроен корректно, но в статистике все еще не отображаются данные, проверьте настройки фильтров. Слишком строгие фильтры могут отсеивать реальные посещения.
+                              - link "Настроить фильтры" [ref=f9e315] [cursor=pointer]:
+                                - /url: /settings?id=107236894&tab=filters
+            - text: 👈🏼
+        - generic [ref=f9e316]:
+          - button "Сохранить" [disabled]
+    - generic [ref=f8e224]:
+      - generic [ref=f8e225]:
+        - link "Пользовательское соглашение" [ref=f8e227] [cursor=pointer]:
+          - /url: https://yandex.ru/legal/metrica_termsofuse
+        - link "Политика конфиденциальности" [ref=f8e229] [cursor=pointer]:
+          - /url: https://yandex.ru/legal/confidential
+        - link "Справка" [ref=f8e231] [cursor=pointer]:
+          - /url: /support/metrica/ru/
+        - link "Задать вопрос" [ref=f8e233] [cursor=pointer]:
+          - /url: /support/metrica/ru/troubleshooting/
+        - link "Предложить идею" [ref=f8e235] [cursor=pointer]:
+          - /url: /support/metrica/ru/troubleshooting/idea
+      - generic [ref=f8e236]:
+        - generic [ref=f8e237]: Ru
+        - generic [ref=f8e246]:
+          - text: © 2008–2026 OOO «
+          - link "ЯНДЕКС" [ref=f8e247] [cursor=pointer]:
+            - /url: https://ya.ru
+          - text: »

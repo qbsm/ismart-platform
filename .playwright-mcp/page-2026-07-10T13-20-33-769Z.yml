@@ -1,0 +1,153 @@
+- generic [active] [ref=f4e1]:
+  - link "Перейти к контенту" [ref=f4e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f4e3]:
+    - generic [ref=f4e4]:
+      - generic [ref=f4e5]:
+        - link [ref=f4e6] [cursor=pointer]:
+          - /url: /
+          - img "HAVAL" [ref=f4e7]
+        - img "АВИЛОН — официальный дилер" [ref=f4e10]
+      - generic [ref=f4e13]:
+        - generic [ref=f4e14]: HAVAL City Авилон
+        - link "+7 (495) 730-00-55" [ref=f4e15] [cursor=pointer]:
+          - /url: tel:+74957300055
+        - link "Москва, Волгоградский проспект, 41, к. 1" [ref=f4e16] [cursor=pointer]:
+          - /url: "#map"
+      - link "Заказать звонок" [ref=f4e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f4e20]:
+      - link "Модельный ряд" [ref=f4e21] [cursor=pointer]:
+        - /url: "#range"
+      - link "Акции" [ref=f4e22] [cursor=pointer]:
+        - /url: "#actions"
+      - link "Тест-драйв" [ref=f4e23] [cursor=pointer]:
+        - /url: "#callback"
+      - link "Преимущества" [ref=f4e24] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f4e25] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f4e26] [cursor=pointer]:
+        - /url: "#map"
+  - main [ref=f4e27]:
+    - generic [ref=f4e29]:
+      - heading "HAVAL JOLION" [level=1] [ref=f4e30]
+      - paragraph [ref=f4e31]: Городской кроссовер HAVAL JOLION — 1.5T до 150 л.с., 2WD/4WD, клиренс 190 мм. Купить новый HAVAL JOLION у официального дилера Авилон HAVAL City.
+    - generic [ref=f4e33]:
+      - heading "HAVAL JOLION" [level=2] [ref=f4e35]
+      - navigation "Фильтр по моделям" [ref=f4e37]:
+        - button "Все модели" [ref=f4e38] [cursor=pointer]
+        - button "HAVAL JOLION" [ref=f4e39] [cursor=pointer]
+      - article [ref=f4e42]:
+        - generic [ref=f4e44]:
+          - generic [ref=f4e45]:
+            - img "HAVAL JOLION"
+          - generic [ref=f4e46]:
+            - button "Магматический красный" [ref=f4e47] [cursor=pointer]
+            - button "Небесный топаз" [ref=f4e49] [cursor=pointer]
+            - button "Галактический чёрный" [ref=f4e51] [cursor=pointer]
+            - button "Дымчатый жемчуг" [ref=f4e53] [cursor=pointer]
+            - button "Благородный агат" [ref=f4e55] [cursor=pointer]
+          - generic [ref=f4e57]: Магматический красный
+        - generic [ref=f4e58]:
+          - generic [ref=f4e59]:
+            - heading "HAVAL JOLION НОВЫЙ" [level=3] [ref=f4e60]:
+              - text: HAVAL JOLION
+              - generic [ref=f4e61]: НОВЫЙ
+            - paragraph [ref=f4e62]: Городской кроссовер
+            - generic [ref=f4e63]: от 4 645 ₽/мес.
+          - list [ref=f4e65]:
+            - listitem [ref=f4e66]:
+              - generic [ref=f4e70]:
+                - text: Цена от
+                - generic [ref=f4e71]: 2 049 000
+                - text: ₽
+            - listitem [ref=f4e72]:
+              - generic [ref=f4e76]: Двигатель 1.5T, до 150 л.с.
+            - listitem [ref=f4e77]:
+              - generic [ref=f4e81]: Привод 2WD / 4WD
+            - listitem [ref=f4e82]:
+              - generic [ref=f4e86]: Клиренс 190 мм
+          - generic [ref=f4e87]:
+            - link "Узнать цену" [ref=f4e88] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Кредит" [ref=f4e90] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Пройти тест-драйв" [ref=f4e92] [cursor=pointer]:
+              - /url: "#callback"
+        - generic [ref=f4e96]:
+          - link [ref=f4e98] [cursor=pointer]:
+            - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/1.webp
+            - img "HAVAL JOLION — фото 1" [ref=f4e100]
+          - link [ref=f4e102] [cursor=pointer]:
+            - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/2.webp
+            - img "HAVAL JOLION — фото 2" [ref=f4e104]
+          - link [ref=f4e106] [cursor=pointer]:
+            - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/3.webp
+            - img "HAVAL JOLION — фото 3" [ref=f4e108]
+          - link [ref=f4e110] [cursor=pointer]:
+            - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/4.webp
+            - img "HAVAL JOLION — фото 4" [ref=f4e112]
+          - link [ref=f4e114] [cursor=pointer]:
+            - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/5.webp
+            - img "HAVAL JOLION — фото 5" [ref=f4e116]
+          - link [ref=f4e118] [cursor=pointer]:
+            - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/6.webp
+            - img "HAVAL JOLION — фото 6" [ref=f4e120]
+          - link [ref=f4e122] [cursor=pointer]:
+            - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/7.webp
+            - img "HAVAL JOLION — фото 7" [ref=f4e124]
+          - link [ref=f4e126] [cursor=pointer]:
+            - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/8.webp
+            - img "HAVAL JOLION — фото 8" [ref=f4e128]
+    - generic [ref=f4e134]:
+      - generic [ref=f4e135]: Узнайте цену HAVAL JOLION
+      - generic [ref=f4e136]: Индивидуальное предложение от официального дилера Авилон
+      - link "Получить предложение" [ref=f4e138] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f4e143]:
+      - generic [ref=f4e144]:
+        - generic [ref=f4e145]: HAVAL City Авилон
+        - generic [ref=f4e146]: Официальный дилер HAVAL в Москве
+      - list [ref=f4e147]:
+        - listitem [ref=f4e148]:
+          - link "+7 (495) 730-00-55" [ref=f4e152] [cursor=pointer]:
+            - /url: tel:+74957300055
+        - listitem [ref=f4e153]:
+          - link "Москва, Волгоградский проспект, 41, к. 1" [ref=f4e158] [cursor=pointer]:
+            - /url: "#combomap-ymap"
+        - listitem [ref=f4e159]:
+          - generic [ref=f4e164]: "Пн–Вс: 09:00–21:40"
+      - link "Получить консультацию" [ref=f4e165] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f4e170]:
+    - link [ref=f4e172] [cursor=pointer]:
+      - /url: http://promo.havalavilon.ru.test/
+      - img "HAVAL" [ref=f4e173]
+    - generic [ref=f4e175]:
+      - link "ВКонтакте" [ref=f4e176] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f4e179] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f4e182] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f4e185]:
+      - link "Модельный ряд" [ref=f4e187] [cursor=pointer]:
+        - /url: "#range"
+      - link "Преимущества" [ref=f4e189] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f4e191] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f4e193] [cursor=pointer]:
+        - /url: "#map"
+    - generic [ref=f4e194]: © 2026. Авилон HAVAL City. Все права защищены
+    - generic [ref=f4e196]:
+      - link "Политика конфиденциальности" [ref=f4e197] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f4e198] [cursor=pointer]:
+        - /url: http://promo.havalavilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f4e199] [cursor=pointer]:
+        - /url: http://promo.havalavilon.ru.test/consent/
+      - link "Правовая информация" [ref=f4e200] [cursor=pointer]:
+        - /url: http://promo.havalavilon.ru.test/legal-info/
+    - paragraph [ref=f4e202]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.

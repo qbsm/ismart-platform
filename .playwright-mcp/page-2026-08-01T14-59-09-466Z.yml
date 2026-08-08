@@ -1,0 +1,170 @@
+- generic [active] [ref=f97e1]:
+  - generic [ref=f97e2]:
+    - banner [ref=f97e3]:
+      - generic [ref=f97e5]:
+        - generic [ref=f97e7]:
+          - paragraph [ref=f97e8]: г. Санкт-Петербург, Ленинский проспект, 146к1
+          - link "+7 (812) 223‑54‑73" [ref=f97e9] [cursor=pointer]:
+            - /url: tel:+78122235473
+        - button "Получить предложение" [ref=f97e11] [cursor=pointer]
+    - generic [ref=f97e16]:
+      - heading "ROX ADAMAS – роскошный внедорожник с выгодой до 700 000 ₽* в июле" [level=1] [ref=f97e17]
+      - paragraph [ref=f97e18]: Получите персональное предложение уже сегодня, количество автомобилей ограничено
+      - button "Зафиксировать выгоду" [ref=f97e19] [cursor=pointer]
+    - paragraph [ref=f97e22]: "ROX Motor – высокотехнологичная компания, основанная в 2021 году. Ее миссия — создание интеллектуальных автомобилей на новых источниках энергии, которые идеально подходят для любителей активного отдыха. ROX 01 — премиальный внедорожник c увеличенным запасом хода и лидер рейтинга АВТО.РУ 2025 Он сочетает комфорт электромобиля и уверенность в дальних поездках: вы получаете современную динамику, тишину в салоне и продуманную систему работы в холодном климате. ROX 01 создан для тех, кому важны надежность и стабильность на трассе, вне города и в зимние холода, когда под колесами снег и лед.Электромобиль или гибрид? Решать вам! Благодаря прогрессивной последовательной гибридной схеме, ROX 01 может использоваться как чистый электроавтомобиль, а при необходимости зарядки батареи, электроника сама подключит ДВС-генератор, который восполнит её заряд."
+    - generic [ref=f97e24]:
+      - heading "Наши преимущества" [level=2] [ref=f97e25]
+      - list [ref=f97e26]:
+        - listitem [ref=f97e27] [cursor=pointer]:
+          - paragraph [ref=f97e29]: Белые поставкив РФ от импортера
+        - listitem [ref=f97e30] [cursor=pointer]:
+          - paragraph [ref=f97e32]: Особые спецпредложенияот официального дилера
+        - listitem [ref=f97e33] [cursor=pointer]:
+          - paragraph [ref=f97e35]: Гарантийная поддержка5 лет или 150 000 км
+        - listitem [ref=f97e36] [cursor=pointer]:
+          - paragraph [ref=f97e38]: Честный кредитбез навязанных услуг
+        - listitem [ref=f97e39] [cursor=pointer]:
+          - paragraph [ref=f97e41]: Высокое качествосервисных работ и послегарантийное обслуживание
+        - listitem [ref=f97e42] [cursor=pointer]:
+          - paragraph [ref=f97e44]: Удобное расположениешоурума в Санкт-Петербурге
+    - generic [ref=f97e46]:
+      - heading "Модельный ряд" [level=2] [ref=f97e47]
+      - generic [ref=f97e48]:
+        - generic [ref=f97e49]:
+          - heading "АДАМАС / ADAMAS" [level=3] [ref=f97e50]
+          - generic [ref=f97e51]:
+            - paragraph [ref=f97e54] [cursor=pointer]: В наличии
+            - list [ref=f97e55]:
+              - listitem [ref=f97e56] [cursor=pointer]:
+                - paragraph [ref=f97e57]: Персональные условия при покупке
+            - list [ref=f97e58]:
+              - listitem [ref=f97e59] [cursor=pointer]:
+                - paragraph [ref=f97e60]: Максимальная выгода до 700 000 ₽*
+        - generic [ref=f97e61]:
+          - list [ref=f97e67]:
+            - listitem [ref=f97e68]:
+              - generic [ref=f97e69]: 5,5 сек.
+              - paragraph [ref=f97e70]: Разгон до 100 км/ч
+            - listitem [ref=f97e71]:
+              - generic [ref=f97e72]: 350 кВт/ч
+              - paragraph [ref=f97e73]: Мощность
+            - listitem [ref=f97e74]:
+              - generic [ref=f97e75]: 1405 км
+              - paragraph [ref=f97e76]: Дальность хода
+          - generic [ref=f97e77]:
+            - list [ref=f97e78]:
+              - listitem [ref=f97e79]:
+                - paragraph [ref=f97e80]: Гарантия 5 лет или 150 000 км
+              - listitem [ref=f97e81]:
+                - paragraph [ref=f97e82]: Гарантия на батарею 8 лет или 240 000 км
+              - listitem [ref=f97e83]:
+                - paragraph [ref=f97e84]: Адаптация батареи к холодному климату
+              - listitem [ref=f97e85]:
+                - paragraph [ref=f97e86]: Гибридный кузов из алюминия и стали
+              - listitem [ref=f97e87]:
+                - paragraph [ref=f97e88]: Отделка премиальными материалами:кожа Nappa, вставки из натурального дерева
+            - generic [ref=f97e89]:
+              - button "Получить предложение" [ref=f97e90] [cursor=pointer]
+              - button "Записаться на тест-драйв" [ref=f97e91] [cursor=pointer]
+      - generic [ref=f97e119]:
+        - generic [ref=f97e120]:
+          - heading "ROX 01" [level=3] [ref=f97e121]
+          - generic [ref=f97e122]:
+            - paragraph [ref=f97e125] [cursor=pointer]: В пути
+            - list [ref=f97e126]:
+              - listitem [ref=f97e127] [cursor=pointer]:
+                - paragraph [ref=f97e128]: Персональные условия при покупке
+            - list [ref=f97e129]:
+              - listitem [ref=f97e130] [cursor=pointer]:
+                - paragraph [ref=f97e131]: Максимальная выгода до 1 500 000 ₽*
+        - generic [ref=f97e132]:
+          - list [ref=f97e139]:
+            - listitem [ref=f97e140]:
+              - generic [ref=f97e141]: 5,5 сек.
+              - paragraph [ref=f97e142]: Разгон до 100 км/ч
+            - listitem [ref=f97e143]:
+              - generic [ref=f97e144]: 320 кВт/ч
+              - paragraph [ref=f97e145]: Мощность
+            - listitem [ref=f97e146]:
+              - generic [ref=f97e147]: 1338 км
+              - paragraph [ref=f97e148]: Дальность хода
+          - generic [ref=f97e149]:
+            - list [ref=f97e150]:
+              - listitem [ref=f97e151]:
+                - paragraph [ref=f97e152]: Гарантия 5 лет или 150 000 км
+              - listitem [ref=f97e153]:
+                - paragraph [ref=f97e154]: Гарантия на батарею 8 лет или 240 000 км
+              - listitem [ref=f97e155]:
+                - paragraph [ref=f97e156]: Адаптация батареи к холодному климату
+              - listitem [ref=f97e157]:
+                - paragraph [ref=f97e158]: Гибридный кузов из алюминия и стали
+              - listitem [ref=f97e159]:
+                - paragraph [ref=f97e160]: Отделка премиальными материалами:кожа Nappa, вставки из натурального дерева
+            - generic [ref=f97e161]:
+              - button "Получить предложение" [ref=f97e162] [cursor=pointer]
+              - button "Узнать о поступлении" [ref=f97e163] [cursor=pointer]
+    - generic [ref=f97e182]:
+      - generic [ref=f97e183] [cursor=pointer]:
+        - heading "Мультимедийная система" [level=4] [ref=f97e184]
+        - paragraph [ref=f97e185]: Цифровая приборная панель с диагональю 12,3 дюйма, центральный дисплей с диагональю 15,7 дюймов и разрешением 3К, встроенный в зеркало заднего вида 9-дюймовый дисплей.
+      - generic [ref=f97e186] [cursor=pointer]:
+        - heading "Вместительная 7-местная версия" [level=4] [ref=f97e187]
+        - paragraph [ref=f97e188]: При сложенных сиденьях второго и третьего рядов в салоне помещается матрас размером 2 x 1,3 метра, при этом до потолка останется запас в 80 см. А площадь остекления в 6,54 квадратных метра является одной из максимальных в классе.
+      - generic [ref=f97e189] [cursor=pointer]:
+        - heading "Мощный электродвигатель" [level=4] [ref=f97e190]
+        - paragraph [ref=f97e191]: Два электромотора развивают совокупную мощность 476 л.с. и крутящий момент 740 Нм. С 0 до 100 км/ч внедорожник разгоняется всего за 5,5 секунды.
+      - generic [ref=f97e192] [cursor=pointer]:
+        - heading "Большой запас хода" [level=4] [ref=f97e193]
+        - paragraph [ref=f97e194]: Полный запас хода составляет 1115 км по циклу WLTC и 1338 км по циклу CLTC
+      - generic [ref=f97e195] [cursor=pointer]:
+        - heading "Комфорт" [level=4] [ref=f97e196]
+        - paragraph [ref=f97e197]: Вентиляция сидений с тремя режимами интенсивности, обогрев и 8-точечный массаж
+      - generic [ref=f97e198] [cursor=pointer]:
+        - heading "Идеально для семейного отдыха" [level=4] [ref=f97e199]
+        - paragraph [ref=f97e200]: При отдыхе на природе можно воспользоваться семью розетками и двумя беспроводными интерфейсами, чтобы подзарядить мобильные устройства или запитать туристическое оборудование. Совокупная выходная мощность — 4,4 кВт.
+    - list [ref=f97e206]:
+      - listitem [ref=f97e207]:
+        - heading "Специальные финансовые предложения от Официального Дилера" [level=4] [ref=f97e208]
+        - paragraph [ref=f97e209]: Подберем персональные условия покупки ROX 01 и подготовим самое выгодное коммерческое предложение
+        - button "Получить расчет" [ref=f97e210] [cursor=pointer]
+      - listitem [ref=f97e211]:
+        - heading "Протестируйте автомобиль на улицах города" [level=4] [ref=f97e212]
+        - paragraph [ref=f97e213]: Ощутите захватывающую динамику с передовой гибридной технологией
+        - button "Записаться на тест-драйв" [ref=f97e214] [cursor=pointer]
+      - listitem [ref=f97e215]:
+        - heading "Обменяйте ваш авто по Трейд-ин" [level=4] [ref=f97e216]
+        - paragraph [ref=f97e217]: Получите дополнительную выгоду при обмене вашего автомобиля
+        - button "Оценить Трейд-ин" [ref=f97e218] [cursor=pointer]
+    - generic [ref=f97e220]:
+      - paragraph [ref=f97e221]: Автомобили в наличии
+      - generic [ref=f97e238]:
+        - paragraph [ref=f97e239]: Rox Adamas
+        - generic [ref=f97e240]:
+          - paragraph [ref=f97e241]: "Комплектация: Семейная версия"
+          - paragraph [ref=f97e242]:
+            - generic [ref=f97e243]: 1.5 л. / 476 л.с. / hybrid
+          - paragraph [ref=f97e244]:
+            - generic [ref=f97e245]: full_4wd
+          - generic [ref=f97e246]:
+            - generic [ref=f97e247]: "2026"
+            - generic [ref=f97e248]: black
+        - button "Получить предложение" [ref=f97e249] [cursor=pointer]
+    - generic [ref=f97e251]:
+      - img "РОЛЬФ" [ref=f97e253]
+      - generic [ref=f97e255]:
+        - paragraph [ref=f97e256]: г. Санкт-Петербург, Ленинский проспект, 146к1
+        - link "+7 (812) 223‑54‑73" [ref=f97e257] [cursor=pointer]:
+          - /url: tel:+78122235473
+      - paragraph [ref=f97e259]: "Пн-Вс: c 9:00 до 21:00"
+      - button "Заказать звонок" [ref=f97e260] [cursor=pointer]
+    - contentinfo [ref=f97e262]:
+      - generic [ref=f97e264]:
+        - generic [ref=f97e265]:
+          - link "Правовая информация" [ref=f97e266] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/
+          - link "Политика конфиденциальности" [ref=f97e267] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/personal-information/
+        - paragraph [ref=f97e268]:
+          - text: "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"БОРИСХОФ ХОЛДИНГ\" Факт. адрес: 123290, город Москва, 2-Я Магистральная ул, д. 18 стр. 22 ИНН: 7714700709 ОГРН: 5077746977930"
+          - button "Дисклеймер" [ref=f97e269] [cursor=pointer]
+  - iframe

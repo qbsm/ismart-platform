@@ -1,0 +1,184 @@
+- generic [ref=f2e1]:
+  - link "Перейти к контенту" [ref=f2e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f2e3]:
+    - generic [ref=f2e4]:
+      - generic [ref=f2e5]:
+        - link [ref=f2e6] [cursor=pointer]:
+          - /url: /
+          - img "SOLLERS" [ref=f2e7]
+        - img "АВИЛОН — официальный дилер" [ref=f2e10]
+      - generic [ref=f2e13]:
+        - generic [ref=f2e14]: Sollers Авилон
+        - link "+7 (495) 183-57-86" [ref=f2e15] [cursor=pointer]:
+          - /url: tel:+74951835786
+        - link "Котельники, Белая Дача, Коммерческий пр-д, 10" [ref=f2e16] [cursor=pointer]:
+          - /url: http://promo.sollers-avilon.ru.test/#map
+      - link "Заказать звонок" [ref=f2e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f2e20]:
+      - link "Модельный ряд" [ref=f2e21] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#range
+      - link "Акции" [ref=f2e22] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#actions
+      - link "Тест-драйв" [ref=f2e23] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#testdrive
+      - link "Преимущества" [ref=f2e24] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#profits
+      - link "Способы покупки" [ref=f2e25] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#finance
+      - link "Контакты" [ref=f2e26] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#map
+  - main [ref=f2e27]:
+    - generic [ref=f2e29]:
+      - heading "SOLLERS SP7" [level=1] [ref=f2e30]
+      - paragraph [ref=f2e31]: Семиместный премиальный минивэн. SOLLERS SP7 у официального дилера Sollers Авилон.
+    - generic [ref=f2e33]:
+      - heading "SOLLERS SP7" [level=2] [ref=f2e35]
+      - navigation "Фильтр по моделям" [ref=f2e37]:
+        - button "Все модели" [ref=f2e38] [cursor=pointer]
+        - button "SOLLERS SP7" [ref=f2e39] [cursor=pointer]
+      - article [ref=f2e42]:
+        - generic [ref=f2e44]:
+          - generic [ref=f2e45]:
+            - img "SOLLERS SP7"
+          - generic [ref=f2e46]:
+            - button "Белый" [ref=f2e47] [cursor=pointer]
+            - button "Тёмно-синий" [active] [ref=f2e49] [cursor=pointer]
+            - button "Серебристый (металлик)" [ref=f2e51] [cursor=pointer]
+            - button "Тёмно-серый (металлик)" [ref=f2e53] [cursor=pointer]
+            - button "Чёрный (металлик)" [ref=f2e55] [cursor=pointer]
+          - generic [ref=f2e57]: Тёмно-синий
+        - generic [ref=f2e58]:
+          - generic [ref=f2e59]:
+            - heading "SOLLERS SP7 ПРЕМИУМ" [level=3] [ref=f2e60]:
+              - text: SOLLERS SP7
+              - generic [ref=f2e61]: ПРЕМИУМ
+            - paragraph [ref=f2e62]: Семиместный премиальный минивэн
+            - generic [ref=f2e64]:
+              - text: от
+              - generic [ref=f2e65]: 4 775 000
+              - text: ₽
+          - list [ref=f2e66]:
+            - listitem [ref=f2e67]:
+              - generic [ref=f2e71]: Бензин, 236,6 л.с.
+            - listitem [ref=f2e72]:
+              - generic [ref=f2e76]: Трансмиссия 8AT
+            - listitem [ref=f2e77]:
+              - generic [ref=f2e81]: 7 мест, схема 2+2+3
+          - generic [ref=f2e82]:
+            - link "Узнать цену" [ref=f2e83] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Кредит" [ref=f2e85] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Лизинг" [ref=f2e87] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Пройти тест-драйв" [ref=f2e89] [cursor=pointer]:
+              - /url: "#callback"
+        - generic [ref=f2e91]:
+          - generic [ref=f2e92]:
+            - generic [ref=f2e93]: Габаритные размеры
+            - list [ref=f2e94]:
+              - listitem [ref=f2e95]:
+                - generic [ref=f2e96]: 5 215
+                - generic [ref=f2e97]: Общая длина, мм
+              - listitem [ref=f2e98]:
+                - generic [ref=f2e99]: 1 895
+                - generic [ref=f2e100]: Общая ширина, мм
+              - listitem [ref=f2e101]:
+                - generic [ref=f2e102]: 1 830
+                - generic [ref=f2e103]: Общая высота, мм
+          - generic [ref=f2e104]:
+            - generic [ref=f2e105]: Двигатель и трансмиссия
+            - list [ref=f2e106]:
+              - listitem [ref=f2e107]:
+                - generic [ref=f2e108]: 236,6 л.с.
+                - generic [ref=f2e109]: Максимальная мощность
+              - listitem [ref=f2e110]:
+                - generic [ref=f2e111]: 8АТ
+                - generic [ref=f2e112]: Коробка передач
+          - generic [ref=f2e113]:
+            - generic [ref=f2e114]: Вместимость
+            - list [ref=f2e115]:
+              - listitem [ref=f2e116]:
+                - generic [ref=f2e117]: "7"
+                - generic [ref=f2e118]: Количество мест
+              - listitem [ref=f2e119]:
+                - generic [ref=f2e120]: 2+2+3
+                - generic [ref=f2e121]: Схема расположения сидений
+              - listitem [ref=f2e122]:
+                - generic [ref=f2e123]: 700 / 2 500
+                - generic [ref=f2e124]: Объём багажника, л
+        - generic [ref=f2e127]:
+          - link [ref=f2e129] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/1.webp
+            - img "SOLLERS SP7 — фото 1" [ref=f2e131]
+          - link [ref=f2e133] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/2.webp
+            - img "SOLLERS SP7 — фото 2" [ref=f2e135]
+          - link [ref=f2e137] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/3.webp
+            - img "SOLLERS SP7 — фото 3" [ref=f2e139]
+          - link [ref=f2e141] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/4.webp
+            - img "SOLLERS SP7 — фото 4" [ref=f2e143]
+          - link [ref=f2e145] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/5.webp
+            - img "SOLLERS SP7 — фото 5" [ref=f2e147]
+    - generic [ref=f2e153]:
+      - generic [ref=f2e154]: Узнайте цену SOLLERS SP7
+      - generic [ref=f2e155]: Индивидуальное предложение от официального дилера Sollers Авилон
+      - link "Получить предложение" [ref=f2e157] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f2e162]:
+      - generic [ref=f2e163]:
+        - generic [ref=f2e164]: Sollers Авилон
+        - generic [ref=f2e165]: Официальный дилер SOLLERS в Москве
+      - list [ref=f2e166]:
+        - listitem [ref=f2e167]:
+          - link "+7 (495) 183-57-86" [ref=f2e171] [cursor=pointer]:
+            - /url: tel:+74951835786
+        - listitem [ref=f2e172]:
+          - generic [ref=f2e177]: Котельники, Белая Дача, Коммерческий пр-д, 10
+        - listitem [ref=f2e178]:
+          - generic [ref=f2e183]: "Пн–Вс: 09:00–21:00"
+      - link "Получить консультацию" [ref=f2e184] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f2e189]:
+    - link [ref=f2e191] [cursor=pointer]:
+      - /url: http://promo.sollers-avilon.ru.test/
+      - img "SOLLERS" [ref=f2e192]
+    - generic [ref=f2e194]:
+      - link "ВКонтакте" [ref=f2e195] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f2e198] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f2e201] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f2e204]:
+      - link "Модельный ряд" [ref=f2e206] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#range
+      - link "Преимущества" [ref=f2e208] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#profits
+      - link "Способы покупки" [ref=f2e210] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#finance
+      - link "Контакты" [ref=f2e212] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#map
+    - generic [ref=f2e213]: © 2026 Sollers Авилон. Все права защищены
+    - generic [ref=f2e215]:
+      - link "Политика конфиденциальности" [ref=f2e216] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f2e217] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f2e218] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/consent/
+      - link "Правовая информация" [ref=f2e219] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/legal-info/
+    - paragraph [ref=f2e221]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f2e224]:
+    - generic [ref=f2e226]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f2e227] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f2e229] [cursor=pointer]

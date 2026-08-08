@@ -1,0 +1,256 @@
+- generic [active] [ref=f1e1]:
+  - link "Перейти к контенту" [ref=f1e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - link [ref=f1e6] [cursor=pointer]:
+        - /url: /
+        - img "Бизнес Кар Орёл" [ref=f1e7]
+      - generic [ref=f1e10]:
+        - generic [ref=f1e11]: Бизнес Кар Орёл
+        - link "+7 (4862) 44-24-25" [ref=f1e12] [cursor=pointer]:
+          - /url: tel:+74862442425
+        - link "Орёл, Карачевское шоссе, д. 77, к. 1" [ref=f1e13] [cursor=pointer]:
+          - /url: "#map"
+      - link "Заказать звонок" [ref=f1e15] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f1e16]:
+      - link "Модельный ряд" [ref=f1e17] [cursor=pointer]:
+        - /url: "#range"
+      - link "Кредит" [ref=f1e18] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Трейд-ин" [ref=f1e19] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Тест-драйв" [ref=f1e20] [cursor=pointer]:
+        - /url: "#callback"
+      - link "Отзывы" [ref=f1e21] [cursor=pointer]:
+        - /url: "#owners"
+      - link "Контакты" [ref=f1e22] [cursor=pointer]:
+        - /url: "#map"
+  - main [ref=f1e23]:
+    - generic [ref=f1e32]:
+      - generic [ref=f1e33]:
+        - heading "Официальный дилер OMODA, JAECOO и JELAND в Орле" [level=1] [ref=f1e34]
+        - paragraph [ref=f1e35]: Кредит от 0,01% · выгода до 700 000 ₽ при покупке в кредит с трейд-ин · специальные условия для льготных категорий граждан
+        - link "Выбрать автомобиль" [ref=f1e37] [cursor=pointer]:
+          - /url: "#range"
+      - generic [ref=f1e39]:
+        - generic [ref=f1e40]:
+          - generic [ref=f1e41]: 7 моделей
+          - generic [ref=f1e42]: кроссоверов и SUV
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]: от 0,01%
+          - generic [ref=f1e46]: кредит от банков-партнёров
+        - generic [ref=f1e48]:
+          - generic [ref=f1e49]: до 700 000 ₽
+          - generic [ref=f1e50]: выгода в кредит + трейд-ин
+    - generic [ref=f1e53]:
+      - generic [ref=f1e54]: Официальный дилер в Орле
+      - generic [ref=f1e56]: Кредит от 0,01%
+      - generic [ref=f1e58]: Выгода до 700 000 ₽
+      - generic [ref=f1e60]: Трейд-ин — оценка в день обращения
+      - generic [ref=f1e62]: Специальные условия для льготных категорий
+      - generic [ref=f1e64]: Тест-драйв любой модели
+      - generic [ref=f1e66]: Официальный дилер в Орле
+      - generic [ref=f1e68]: Кредит от 0,01%
+      - generic [ref=f1e70]: Выгода до 700 000 ₽
+      - generic [ref=f1e72]: Трейд-ин — оценка в день обращения
+      - generic [ref=f1e74]: Специальные условия для льготных категорий
+      - generic [ref=f1e76]: Тест-драйв любой модели
+      - generic [ref=f1e78]: Официальный дилер в Орле
+      - generic [ref=f1e80]: Кредит от 0,01%
+      - generic [ref=f1e82]: Выгода до 700 000 ₽
+      - generic [ref=f1e84]: Трейд-ин — оценка в день обращения
+      - generic [ref=f1e86]: Специальные условия для льготных категорий
+      - generic [ref=f1e88]: Тест-драйв любой модели
+    - generic [ref=f1e91]:
+      - heading "Выберите свой автомобиль" [level=2] [ref=f1e93]
+      - tablist "Марка автомобиля" [ref=f1e94]:
+        - tab "OMODA" [selected] [ref=f1e95] [cursor=pointer]
+        - tab "JAECOO" [ref=f1e96] [cursor=pointer]
+        - tab "JELAND" [ref=f1e97] [cursor=pointer]
+      - generic [ref=f1e98]:
+        - tablist "Модель OMODA" [ref=f1e99]:
+          - tab "C5" [selected] [ref=f1e100] [cursor=pointer]
+          - tab "C7" [ref=f1e101] [cursor=pointer]
+        - article [ref=f1e104]:
+          - generic [ref=f1e105]:
+            - generic [ref=f1e106]:
+              - heading "OMODA C5" [level=3] [ref=f1e107]
+              - paragraph [ref=f1e108]: Городской кроссовер
+            - generic [ref=f1e109]:
+              - generic [ref=f1e110]: от 1 850 000 ₽
+              - generic [ref=f1e111]: выгода до 500 000 ₽
+              - generic [ref=f1e112]: при покупке в кредит + трейд-ин
+            - generic [ref=f1e113]: В наличии в Орле
+            - list [ref=f1e114]:
+              - listitem [ref=f1e115]:
+                - generic [ref=f1e116]:
+                  - text: "147"
+                  - generic [ref=f1e117]: л.с.
+                - generic [ref=f1e118]: Мощность
+              - listitem [ref=f1e119]:
+                - generic [ref=f1e120]: CVT9
+                - generic [ref=f1e121]: Коробка
+              - listitem [ref=f1e122]:
+                - generic [ref=f1e123]: 2WD
+                - generic [ref=f1e124]: Привод
+              - listitem [ref=f1e125]:
+                - generic [ref=f1e126]:
+                  - text: 7,1
+                  - generic [ref=f1e127]: л/100 км
+                - generic [ref=f1e128]: Расход
+            - generic [ref=f1e129]:
+              - link "Получить предложение" [ref=f1e130] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f1e131] [cursor=pointer]:
+                - /url: "#callback"
+            - generic [ref=f1e132]:
+              - generic [ref=f1e133]: "Цвета:"
+              - generic [ref=f1e134]:
+                - generic "Белый" [ref=f1e135]
+                - generic "Серебристый" [ref=f1e136]
+                - generic "Серый" [ref=f1e137]
+                - generic "Чёрный" [ref=f1e138]
+                - generic "Красный" [ref=f1e139]
+                - generic "Синий" [ref=f1e140]
+          - generic [ref=f1e141]:
+            - link [ref=f1e143] [cursor=pointer]:
+              - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/cover/1600/omoda-c5.webp
+              - img "OMODA C5 у дилерского центра Бизнес Кар Орёл" [ref=f1e145]
+            - generic [ref=f1e148]:
+              - link [ref=f1e150] [cursor=pointer]:
+                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/1.webp
+                - img "OMODA C5 — вид спереди" [ref=f1e152]
+              - link [ref=f1e154] [cursor=pointer]:
+                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/2.webp
+                - img "OMODA C5 в красном цвете — вид сбоку" [ref=f1e156]
+              - link [ref=f1e158] [cursor=pointer]:
+                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/3.webp
+                - img "OMODA C5 — интерьер, передняя панель" [ref=f1e160]
+              - link [ref=f1e162] [cursor=pointer]:
+                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/4.webp
+                - img "OMODA C5 — интерьер, салон" [ref=f1e164]
+              - link [ref=f1e166] [cursor=pointer]:
+                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/5.webp
+                - img "OMODA C5 в красном цвете — вид спереди" [ref=f1e168]
+              - link [ref=f1e170] [cursor=pointer]:
+                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/6.webp
+                - img "OMODA C5 — багажник" [ref=f1e172]
+    - generic [ref=f1e176]:
+      - generic [ref=f1e177]:
+        - heading "Кредит и трейд-ин" [level=2] [ref=f1e178]
+        - paragraph [ref=f1e179]: Максимальная выгода — при покупке в кредит со сдачей автомобиля в трейд-ин
+      - generic [ref=f1e180]:
+        - article [ref=f1e182]:
+          - generic [ref=f1e186]:
+            - heading "Кредит от 0,01%" [level=3] [ref=f1e187]
+            - list [ref=f1e189]:
+              - listitem [ref=f1e190]:
+                - text: Ставка от
+                - generic [ref=f1e191]: 0,01%
+                - text: годовых у банков-партнёров
+              - listitem [ref=f1e192]: Решение по заявке — от 30 минут
+              - listitem [ref=f1e193]: Специальные условия для льготных категорий граждан
+            - link "Рассчитать кредит" [ref=f1e195] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f1e197]:
+          - generic [ref=f1e201]:
+            - heading "Трейд-ин" [level=3] [ref=f1e202]
+            - list [ref=f1e204]:
+              - listitem [ref=f1e205]:
+                - text: Выгода до
+                - generic [ref=f1e206]: 700 000 ₽
+                - text: при покупке в кредит
+              - listitem [ref=f1e207]: Бесплатная оценка и диагностика в день обращения
+              - listitem [ref=f1e208]: Зачёт стоимости сразу в сделку
+            - link "Оценить свой автомобиль" [ref=f1e210] [cursor=pointer]:
+              - /url: "#callback"
+    - generic [ref=f1e214]:
+      - generic [ref=f1e215]: Тест-драйв в день обращения
+      - generic [ref=f1e216]: Запишитесь онлайн — подготовим автомобиль и подберём удобное время
+      - link "Записаться на тест-драйв" [ref=f1e218] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f1e220]:
+      - generic [ref=f1e221]:
+        - heading "Отзывы владельцев" [level=2] [ref=f1e222]
+        - paragraph [ref=f1e223]: Покупатели дилерского центра на Карачевском шоссе
+      - generic [ref=f1e224]:
+        - article [ref=f1e225]:
+          - generic "Оценка 5 из 5" [ref=f1e226]
+          - paragraph [ref=f1e237]: Выбирал между несколькими кроссоверами, в итоге взял C5 в кредит с трейд-ин — по деньгам вышло заметно выгоднее, чем ожидал. Оценили мою машину быстро, доплату оформили в тот же день.
+          - generic [ref=f1e238]:
+            - generic [ref=f1e239]: Сергей
+            - generic [ref=f1e240]: OMODA C5
+        - article [ref=f1e241]:
+          - generic "Оценка 5 из 5" [ref=f1e242]
+          - paragraph [ref=f1e253]: "Спасибо менеджерам за спокойный тест-драйв без навязывания. J7 понравился сразу: тихий салон, панорамная крыша. Кредит одобрили за полчаса прямо в салоне."
+          - generic [ref=f1e254]:
+            - generic [ref=f1e255]: Екатерина
+            - generic [ref=f1e256]: JAECOO J7
+        - article [ref=f1e257]:
+          - generic "Оценка 5 из 5" [ref=f1e258]
+          - paragraph [ref=f1e269]: Пересел на J8 с семилетнего кроссовера. Машину показали и на подъёмнике — ничего не скрывали. Комплектация топовая, 249 сил, полный привод. Доволен покупкой и отношением.
+          - generic [ref=f1e270]:
+            - generic [ref=f1e271]: Андрей
+            - generic [ref=f1e272]: JAECOO J8
+        - article [ref=f1e273]:
+          - generic "Оценка 5 из 5" [ref=f1e274]
+          - paragraph [ref=f1e285]: Брали C7 всей семьёй, сравнивали с одноклассниками. Понравилось, что дали спокойно посидеть во всех машинах и посчитали несколько вариантов кредита. Забрали автомобиль через два дня.
+          - generic [ref=f1e286]:
+            - generic [ref=f1e287]: Марина
+            - generic [ref=f1e288]: OMODA C7
+    - generic [ref=f1e293]:
+      - img "Бизнес Кар Орёл" [ref=f1e296]
+      - generic [ref=f1e297]:
+        - generic [ref=f1e298]: Бизнес Кар Орёл
+        - generic [ref=f1e299]: Официальный дилер OMODA, JAECOO и JELAND в Орле
+      - list [ref=f1e300]:
+        - listitem [ref=f1e301]:
+          - link "+7 (4862) 44-24-25" [ref=f1e305] [cursor=pointer]:
+            - /url: tel:+74862442425
+        - listitem [ref=f1e306]:
+          - link "Орёл, Карачевское шоссе, д. 77, к. 1" [ref=f1e311] [cursor=pointer]:
+            - /url: "#combomap-ymap"
+        - listitem [ref=f1e312]:
+          - generic [ref=f1e317]: "Пн–Вс: 09:00–20:00"
+      - generic [ref=f1e318]:
+        - generic [ref=f1e319]: Услуги
+        - generic [ref=f1e320]:
+          - generic [ref=f1e321]: Продажа новых автомобилей
+          - generic [ref=f1e322]: Трейд-ин
+          - generic [ref=f1e323]: Кредит
+          - generic [ref=f1e324]: Тест-драйв
+      - link "Получить консультацию" [ref=f1e325] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f1e329]:
+    - link [ref=f1e331] [cursor=pointer]:
+      - /url: http://sales.businesscar-orel.ru.test/
+      - img "Бизнес Кар Орёл" [ref=f1e332]
+    - generic [ref=f1e333]:
+      - link "Модельный ряд" [ref=f1e335] [cursor=pointer]:
+        - /url: "#range"
+      - link "Способы покупки" [ref=f1e337] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Отзывы" [ref=f1e339] [cursor=pointer]:
+        - /url: "#owners"
+      - link "Контакты" [ref=f1e341] [cursor=pointer]:
+        - /url: "#map"
+    - generic [ref=f1e342]: © 2026. Бизнес Кар Орёл. Все права защищены
+    - generic [ref=f1e344]:
+      - link "Политика конфиденциальности" [ref=f1e345] [cursor=pointer]:
+        - /url: http://sales.businesscar-orel.ru.test/consent/
+      - link "Политика использования файлов cookie" [ref=f1e346] [cursor=pointer]:
+        - /url: http://sales.businesscar-orel.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f1e347] [cursor=pointer]:
+        - /url: http://sales.businesscar-orel.ru.test/consent/
+      - link "Правовая информация" [ref=f1e348] [cursor=pointer]:
+        - /url: http://sales.businesscar-orel.ru.test/legal-info/
+    - paragraph [ref=f1e350]: Вся представленная на данном сайте информация, касающаяся автомобилей и цен, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Указанные цены действительны при покупке автомобиля в кредит с одновременной сдачей автомобиля в трейд-ин; размер выгоды зависит от модели и комплектации.Кредит от 0,01% годовых предоставляется банками-партнёрами дилерского центра; условия определяются банком индивидуально. Специальные условия для льготных категорий граждан — подробности у менеджеров отдела продаж. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f1e353]:
+    - generic [ref=f1e355]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f1e356] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f1e358] [cursor=pointer]

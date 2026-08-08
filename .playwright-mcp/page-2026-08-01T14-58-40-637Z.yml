@@ -1,0 +1,553 @@
+- generic [ref=f91e2]:
+  - generic [ref=f91e4]:
+    - link [ref=f91e6] [cursor=pointer]:
+      - /url: ""
+    - generic [ref=f91e8]:
+      - link "Услуги" [ref=f91e10] [cursor=pointer]:
+        - /url: ""
+      - link "Cпецпредложения" [ref=f91e12] [cursor=pointer]:
+        - /url: ""
+      - link "Видеообзор" [ref=f91e14] [cursor=pointer]:
+        - /url: ""
+      - link "Контакты" [ref=f91e16] [cursor=pointer]:
+        - /url: ""
+    - generic [ref=f91e17]:
+      - link "+7 (495) 646-14-58" [ref=f91e19] [cursor=pointer]:
+        - /url: tel:+74956461458
+      - button [ref=f91e20] [cursor=pointer]
+  - generic [ref=f91e21]:
+    - generic [ref=f91e22]:
+      - generic [ref=f91e23]:
+        - group "1 / 2" [ref=f91e24]:
+          - generic [ref=f91e26]:
+            - generic [ref=f91e27]:
+              - heading "Нулевое техническое обслуживание (ТО-0)" [level=2] [ref=f91e28]
+              - heading "Только в TANK БорисХоф" [level=4] [ref=f91e29]
+            - button "Записаться на сервис" [ref=f91e30] [cursor=pointer]
+        - group "2 / 2":
+          - generic:
+            - generic:
+              - generic:
+                - heading "Масляный сервис TANK" [level=2]
+                - heading "по специальной цене от 8 500 ₽ !" [level=4]
+              - button "Записаться на сервис"
+      - button "Next slide" [ref=f91e31] [cursor=pointer]: next
+      - button "Previous slide" [ref=f91e32] [cursor=pointer]: prev
+    - generic [ref=f91e34]:
+      - button "Go to slide 1" [ref=f91e35] [cursor=pointer]
+      - button "Go to slide 2" [ref=f91e36] [cursor=pointer]
+    - generic [ref=f91e37]: БорисХоф. Официальный дилер TANK в Москве.
+  - generic [ref=f91e40]:
+    - generic [ref=f91e42]:
+      - generic [ref=f91e43]:
+        - img "Техническое обслуживание автомобилей, как по регламенту, так и внеочередное"
+      - generic [ref=f91e44]: Техническое обслуживание автомобилей, как по регламенту, так и внеочередное
+    - generic [ref=f91e47]:
+      - generic [ref=f91e48]:
+        - img "Все виды ремонта, предусмотренные производителем"
+      - generic [ref=f91e49]: Все виды ремонта, предусмотренные производителем
+    - generic [ref=f91e52]:
+      - generic [ref=f91e53]:
+        - img "Программирование базовых и дополнительных функций автомобиля"
+      - generic [ref=f91e54]: Программирование базовых и дополнительных функций автомобиля
+  - generic [ref=f91e55]:
+    - generic [ref=f91e57]:
+      - heading "Cпециальные предложения" [level=3] [ref=f91e59]
+      - generic [ref=f91e60]:
+        - generic [ref=f91e67]:
+          - heading "Управляемость и тяга TANK без компромиссов" [level=5] [ref=f91e68]
+          - link "Узнать подробнее" [ref=f91e70] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f91e77]:
+          - heading "Чистый климат — уверенный комфорт вашего TANK" [level=5] [ref=f91e78]
+          - link "Узнать подробнее" [ref=f91e80] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f91e87]:
+          - heading "Максимальная эффективность охлаждения TANK. Абсолютная чистота" [level=5] [ref=f91e88]
+          - link "Узнать подробнее" [ref=f91e90] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f91e97]:
+          - heading "Безупречная видимость для TANK. В любую погоду" [level=5] [ref=f91e98]: Безупречная видимость для TANK.В любую погоду
+          - link "Узнать подробнее" [ref=f91e100] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f91e107]:
+          - heading "Замена масла TANK по специальной цене от 8 500 ₽" [level=5] [ref=f91e108]
+          - link "Узнать подробнее" [ref=f91e110] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f91e117]:
+          - heading "Сервисные работы TANK по специальной цене" [level=5] [ref=f91e118]
+          - link "Узнать подробнее" [ref=f91e120] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f91e127]:
+          - heading "Нулевое техническое обслуживание (ТО-0)" [level=5] [ref=f91e128]
+          - link "Узнать подробнее" [ref=f91e130] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f91e137]:
+          - heading "Выгода 50% на работы по техническому обслуживанию" [level=5] [ref=f91e138]
+          - link "Узнать подробнее" [ref=f91e140] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=f91e142]:
+      - heading "Услуги" [level=3] [ref=f91e144]
+      - generic [ref=f91e146]:
+        - generic [ref=f91e147]: Техническое обслуживание
+        - generic [ref=f91e148]: Слесарный ремонт
+        - generic [ref=f91e149]: Кузовной ремонт
+        - generic [ref=f91e150]: Дополнительные услуги
+        - generic [ref=f91e151]: Детейлинг
+      - generic [ref=f91e152]:
+        - generic [ref=f91e154]:
+          - generic [ref=f91e155]: Название услуги Замена фильтра
+          - generic [ref=f91e156]:
+            - text: Цена
+            - generic [ref=f91e157]: от 1 200 ₽
+        - generic [ref=f91e159]:
+          - generic [ref=f91e160]: Название услуги Замена топливного фильтра
+          - generic [ref=f91e161]:
+            - text: Цена
+            - generic [ref=f91e162]: от 1 800 ₽
+        - generic [ref=f91e164]:
+          - generic [ref=f91e165]: Название услуги Замена воздушного фильтра
+          - generic [ref=f91e166]:
+            - text: Цена
+            - generic [ref=f91e167]: от 1 200 ₽
+        - generic [ref=f91e169]:
+          - generic [ref=f91e170]: Название услуги Замена масла в двигателе и замена фильтров
+          - generic [ref=f91e171]:
+            - text: Цена
+            - generic [ref=f91e172]: от 1 800 ₽
+        - generic [ref=f91e174]:
+          - generic [ref=f91e175]: Название услуги Замена фильтра воздуха
+          - generic [ref=f91e176]:
+            - text: Цена
+            - generic [ref=f91e177]: от 1 200 ₽
+        - button "Показать еще" [ref=f91e179] [cursor=pointer]
+      - generic [ref=f91e180]:
+        - generic [ref=f91e182]:
+          - generic [ref=f91e183]: Название услуги Ремонт кондиционера
+          - generic [ref=f91e184]:
+            - text: Цена
+            - generic [ref=f91e185]: от 6 000 ₽
+        - generic [ref=f91e187]:
+          - generic [ref=f91e188]: Название услуги Замена подшипника задней ступицы
+          - generic [ref=f91e189]:
+            - text: Цена
+            - generic [ref=f91e190]: от 6 000 ₽
+        - generic [ref=f91e192]:
+          - generic [ref=f91e193]: Название услуги Замена рычага передней подвески (макферсон)
+          - generic [ref=f91e194]:
+            - text: Цена
+            - generic [ref=f91e195]: от 6 600 ₽
+        - generic [ref=f91e197]:
+          - generic [ref=f91e198]: Название услуги Установка компрессора кондиционера
+          - generic [ref=f91e199]:
+            - text: Цена
+            - generic [ref=f91e200]: от 7 800 ₽
+        - generic [ref=f91e202]:
+          - generic [ref=f91e203]: Название услуги Замена двигателя
+          - generic [ref=f91e204]:
+            - text: Цена
+            - generic [ref=f91e205]: от 100 000 ₽
+        - button "Показать еще" [ref=f91e207] [cursor=pointer]
+      - generic [ref=f91e208]:
+        - generic [ref=f91e210]:
+          - generic [ref=f91e211]: Название услуги Покраска 1 элемента
+          - generic [ref=f91e212]:
+            - text: Цена
+            - generic [ref=f91e213]: от 18 000 ₽
+        - generic [ref=f91e215]:
+          - generic [ref=f91e216]: Название услуги Замена ветрового стекла
+          - generic [ref=f91e217]:
+            - text: Цена
+            - generic [ref=f91e218]: от 13 500 ₽
+        - generic [ref=f91e220]:
+          - generic [ref=f91e221]: Название услуги Замена боковых стекол
+          - generic [ref=f91e222]:
+            - text: Цена
+            - generic [ref=f91e223]: от 9 500 ₽
+        - generic [ref=f91e225]:
+          - generic [ref=f91e226]: Название услуги Замена фары с регулировкой и адаптацией
+          - generic [ref=f91e227]:
+            - text: Цена
+            - generic [ref=f91e228]: от 15 000 ₽
+        - generic [ref=f91e230]:
+          - generic [ref=f91e231]: Название услуги Замена фонаря
+          - generic [ref=f91e232]:
+            - text: Цена
+            - generic [ref=f91e233]: от 5 500 ₽
+        - button "Показать еще" [ref=f91e235] [cursor=pointer]
+      - generic [ref=f91e236]:
+        - generic [ref=f91e238]:
+          - generic [ref=f91e239]: Название услуги Диагностика турбокомпрессора
+          - generic [ref=f91e240]:
+            - text: Цена
+            - generic [ref=f91e241]: от 12 000 ₽
+        - generic [ref=f91e243]:
+          - generic [ref=f91e244]: Название услуги Замена стекла двери передней правой
+          - generic [ref=f91e245]:
+            - text: Цена
+            - generic [ref=f91e246]: от 6 000 ₽
+        - generic [ref=f91e248]:
+          - generic [ref=f91e249]: Название услуги Шиномонтаж
+          - generic [ref=f91e250]:
+            - text: Цена
+            - generic [ref=f91e251]: от 5 500 ₽
+        - generic [ref=f91e253]:
+          - generic [ref=f91e254]: Название услуги Замер компрессии двигателя
+          - generic [ref=f91e255]:
+            - text: Цена
+            - generic [ref=f91e256]: от 10 000 ₽
+        - generic [ref=f91e258]:
+          - generic [ref=f91e259]: Название услуги Промывка масляной системы ДВС
+          - generic [ref=f91e260]:
+            - text: Цена
+            - generic [ref=f91e261]: от 3 000 ₽
+        - button "Показать еще" [ref=f91e263] [cursor=pointer]
+      - generic [ref=f91e264]:
+        - generic [ref=f91e266]:
+          - generic [ref=f91e267]: Название услуги Мойка «Премиум» с защитным покрытием (кварц)
+          - generic [ref=f91e268]:
+            - text: Малый класс
+            - generic [ref=f91e269]: 4 000 ₽
+          - generic [ref=f91e270]:
+            - text: Средний класс
+            - generic [ref=f91e271]: 4 000 ₽
+          - generic [ref=f91e272]:
+            - text: Большой класс
+            - generic [ref=f91e273]: 4 000 ₽
+        - generic [ref=f91e275]:
+          - generic [ref=f91e276]: Название услуги Мойка «Детейлинг Экстра» с защитным покрытием (жидкое стекло)
+          - generic [ref=f91e277]:
+            - text: Малый класс
+            - generic [ref=f91e278]: 14 000 ₽
+          - generic [ref=f91e279]:
+            - text: Средний класс
+            - generic [ref=f91e280]: 14 000 ₽
+          - generic [ref=f91e281]:
+            - text: Большой класс
+            - generic [ref=f91e282]: 14 000 ₽
+        - generic [ref=f91e284]:
+          - generic [ref=f91e285]: Название услуги Антидождь (передняя полусфера)
+          - generic [ref=f91e286]:
+            - text: Малый класс
+            - generic [ref=f91e287]: 2 500 ₽
+          - generic [ref=f91e288]:
+            - text: Средний класс
+            - generic [ref=f91e289]: 2 500 ₽
+          - generic [ref=f91e290]:
+            - text: Большой класс
+            - generic [ref=f91e291]: 2 500 ₽
+        - generic [ref=f91e293]:
+          - generic [ref=f91e294]: Название услуги Химчистка салона
+          - generic [ref=f91e295]:
+            - text: Малый класс
+            - generic [ref=f91e296]: 17 000 ₽
+          - generic [ref=f91e297]:
+            - text: Средний класс
+            - generic [ref=f91e298]: 17 000 ₽
+          - generic [ref=f91e299]:
+            - text: Большой класс
+            - generic [ref=f91e300]: 17 000 ₽
+        - generic [ref=f91e302]:
+          - generic [ref=f91e303]: Название услуги Химчистка всех сидений
+          - generic [ref=f91e304]:
+            - text: Малый класс
+            - generic [ref=f91e305]: 10 000 ₽
+          - generic [ref=f91e306]:
+            - text: Средний класс
+            - generic [ref=f91e307]: 10 000 ₽
+          - generic [ref=f91e308]:
+            - text: Большой класс
+            - generic [ref=f91e309]: 10 000 ₽
+        - button "Показать еще" [ref=f91e311] [cursor=pointer]
+      - generic [ref=f91e313]:
+        - heading "Запишитесь на техническое обслуживание." [level=5] [ref=f91e315]
+        - generic [ref=f91e318]:
+          - generic [ref=f91e319]:
+            - generic [ref=f91e320]: Ваш телефон*
+            - textbox "Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон*" [ref=f91e321]:
+              - /placeholder: +7 (___) ___-__-__
+          - button "Отправить заявку Успешно отправлена" [ref=f91e323] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f91e328]: Успешно отправлена
+          - generic [ref=f91e330]:
+            - text: Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных. С
+            - link "данными условиями" [ref=f91e332] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f91e335] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+      - generic [ref=f91e337]:
+        - heading "Запишитесь на слесарный ремонт." [level=5] [ref=f91e339]
+        - generic [ref=f91e342]:
+          - generic [ref=f91e343]:
+            - generic [ref=f91e344]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f91e345]
+          - button "Отправить заявку Успешно отправлена" [ref=f91e347] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f91e352]: Успешно отправлена
+          - generic [ref=f91e354]:
+            - text: Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных. С
+            - link "данными условиями" [ref=f91e356] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f91e359] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+      - generic [ref=f91e361]:
+        - heading "Запишитесь на кузовной ремонт." [level=5] [ref=f91e363]
+        - generic [ref=f91e366]:
+          - generic [ref=f91e367]:
+            - generic [ref=f91e368]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f91e369]
+          - button "Отправить заявку Успешно отправлена" [ref=f91e371] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f91e376]: Успешно отправлена
+          - generic [ref=f91e378]:
+            - text: Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных. С
+            - link "данными условиями" [ref=f91e380] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f91e383] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+      - generic [ref=f91e385]:
+        - heading "Запишитесь на дополнительные услуги." [level=5] [ref=f91e387]
+        - generic [ref=f91e390]:
+          - generic [ref=f91e391]:
+            - generic [ref=f91e392]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f91e393]
+          - button "Отправить заявку Успешно отправлена" [ref=f91e395] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f91e400]: Успешно отправлена
+          - generic [ref=f91e402]:
+            - text: Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных. С
+            - link "данными условиями" [ref=f91e404] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f91e407] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+      - generic [ref=f91e409]:
+        - heading "Запишитесь на детейлинг." [level=5] [ref=f91e411]
+        - generic [ref=f91e414]:
+          - generic [ref=f91e415]:
+            - generic [ref=f91e416]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f91e417]
+          - button "Отправить заявку Успешно отправлена" [ref=f91e419] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f91e424]: Успешно отправлена
+          - generic [ref=f91e426]:
+            - text: Нажав на кнопку "Отправить заявку", я даю согласие на обработку моих персональных данных. С
+            - link "данными условиями" [ref=f91e428] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f91e431] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+    - generic [ref=f91e433]:
+      - generic [ref=f91e434]:
+        - heading "Видеообзор" [level=3] [ref=f91e436]
+        - generic [ref=f91e437]: Видеообзор делает процесс обслуживания автомобиля полностью прозрачным для Вас. Во время технического обслуживания мастер-консультант отправит Вам подробный видеообзор технического состояния автомобиля. Контролировать процесс и согласовывать работы можно прямо со смартфона.
+        - generic [ref=f91e438]: Тег video не поддерживается вашим браузером.
+        - generic [ref=f91e441]:
+          - generic [ref=f91e442]:
+            - generic [ref=f91e443]:
+              - text: 1. Фиксация отклонений
+              - generic [ref=f91e444]:
+                - img "Аккордеон"
+            - generic [ref=f91e445]: Наш технический специалист сделает видеозапись любых дополнительных отклонений с цветовым индикатором Желтый или Красный.
+          - generic [ref=f91e447]:
+            - generic [ref=f91e448]:
+              - text: 2. Уведомление
+              - generic [ref=f91e449]:
+                - img "Аккордеон"
+            - generic: Вы получите письмо с уникальной ссылкой на просмотр видео по Вашему автомобилю.
+          - generic [ref=f91e451]:
+            - generic [ref=f91e452]:
+              - text: 3. Просмотр
+              - generic [ref=f91e453]:
+                - img "Аккордеон"
+            - generic: Пройдя по уникальной ссылке, вы попадаете на персональную веб-страницу с видео-роликом и фотографиями с графическими аннотациями.
+          - generic [ref=f91e455]:
+            - generic [ref=f91e456]:
+              - text: 4. Согласование
+              - generic [ref=f91e457]:
+                - img "Аккордеон"
+            - generic: Каждое выявленное отклонение сопровождается калькуляцией, учитывающей Ваши индивидуальные условия. Просто выберите «Согласовать» для авторизации работ или «Заказать обратный звонок», если Вы хотите, чтобы наш специалист связался с Вами для дополнительных разъяснений.
+      - generic [ref=f91e459]:
+        - generic [ref=f91e460]:
+          - generic [ref=f91e461]:
+            - img "Логотип Яндекс Сплит"
+          - heading "Делите оплату на части в БорисХоф с Яндекс Сплит" [level=4] [ref=f91e462]
+          - text: На 2 месяца без переплат, до 2-х лет — с небольшой доплатой
+        - generic [ref=f91e463]:
+          - generic [ref=f91e464]:
+            - img "Обложка блока"
+          - generic [ref=f91e465]:
+            - generic [ref=f91e467]:
+              - generic [ref=f91e468]:
+                - img "Заплатите 1/4 цены сегодня, остальное — потом"
+              - generic [ref=f91e469]: Заплатите 1/4 цены сегодня, остальное — потом
+            - generic [ref=f91e471]:
+              - generic [ref=f91e472]:
+                - img "Наведите камеру и узнайте, сколько можете потратить"
+              - generic [ref=f91e473]: Наведите камеру и узнайте, сколько можете потратить
+            - generic [ref=f91e475]:
+              - img "QR-код"
+    - generic [ref=f91e477]:
+      - generic [ref=f91e478]:
+        - generic [ref=f91e480]:
+          - generic [ref=f91e481]: БорисХоф TANK Москва
+          - generic [ref=f91e482]:
+            - link "+7 (495) 646-14-58" [ref=f91e484] [cursor=pointer]:
+              - /url: tel:+74956461458
+            - generic [ref=f91e485]: Москва, 29 км МКАД, уч. 1, лит. Б
+            - generic [ref=f91e486]: Пн-Вс 09:00-21:00
+          - generic [ref=f91e487]:
+            - generic [ref=f91e488]: Доступны услуги
+            - generic [ref=f91e489]: Экспресс обслуживание, Слесарный ремонт, Шиномонтаж, Запчасти, Аренда авто
+          - button "Записаться на сервис" [ref=f91e491] [cursor=pointer]
+        - generic [ref=f91e493]:
+          - generic [ref=f91e494]: БорисХоф TANK Москва
+          - generic [ref=f91e495]:
+            - link "+7 (495) 646-14-58" [ref=f91e497] [cursor=pointer]:
+              - /url: tel:+74956461458
+            - generic [ref=f91e498]: Москва, 2-я Магистральная ул., 18, стр. 22
+            - generic [ref=f91e499]: Пн-Вс 09:00-21:00
+          - generic [ref=f91e500]:
+            - generic [ref=f91e501]: Доступны услуги
+            - generic [ref=f91e502]: Экспресс обслуживание, Слесарный ремонт, Шиномонтаж, Запчасти, Аренда авто
+          - button "Записаться на сервис" [ref=f91e504] [cursor=pointer]
+      - generic [ref=f91e505]:
+        - generic [ref=f91e506]:
+          - text: 29 км МКАД
+          - button "Переключить дилерский центр" [ref=f91e507]
+          - text: 2-я Магистральная
+        - generic [ref=f91e508]:
+          - generic [ref=f91e509]:
+            - iframe [ref=f91e510]:
+              - generic [ref=f92e2]:
+                - generic [ref=f92e3]:
+                  - link "БорисХоф Tank" [ref=f92e4] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+                  - generic [ref=f92e5]:
+                    - paragraph [ref=f92e6]: 5,0
+                    - generic [ref=f92e7]:
+                      - list [ref=f92e9]:
+                        - listitem [ref=f92e10]
+                        - listitem [ref=f92e11]
+                        - listitem [ref=f92e12]
+                        - listitem [ref=f92e13]
+                        - listitem [ref=f92e14]
+                      - link "1335 отзывов • 2178 оценок" [ref=f92e15] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+                  - link [ref=f92e17] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+                - generic [ref=f92e18]:
+                  - paragraph [ref=f92e19]: Поставьте нам оценку
+                  - link "Оставить отзыв" [ref=f92e20] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+                - generic:
+                  - generic [ref=f92e21]:
+                    - generic [ref=f92e23]:
+                      - paragraph [ref=f92e24]: Роман А.
+                      - paragraph [ref=f92e25]: 20 мая
+                    - list [ref=f92e27]:
+                      - listitem [ref=f92e28]
+                      - listitem [ref=f92e29]
+                      - listitem [ref=f92e30]
+                      - listitem [ref=f92e31]
+                      - listitem [ref=f92e32]
+                    - paragraph [ref=f92e33]:
+                      - text: Покупал тут Танк 300. Покупка с учетом трейд-ин и доплатой. Остался очень доволен. Все прошло максимально быстро и прозрачно. Персонал отзывчивый, ненавязчивый и профессиональный. За мой автомобиль предложили устраивающую меня цену, все обещанные скидки и подарки получил, допы не навязывали (сделали только то, что сам просил). Отдельная благодарность менеджеру по продажам Амину, менеджеру по трейд-ин Вадиму и девушкам из кредитного отдела за подбор наиболее выгодного предложения по КАСКО.был на ремонте Был на ремонте колеса у Евгения. Все отлично и оперативно сделали!
+                      - paragraph [ref=f92e34]:
+                        - text: ...
+                        - link "ещё" [ref=f92e35] [cursor=pointer]:
+                          - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                  - generic [ref=f92e36]:
+                    - generic [ref=f92e38]:
+                      - paragraph [ref=f92e39]: Артур Асриян
+                      - paragraph [ref=f92e40]: 1 апреля
+                    - list [ref=f92e42]:
+                      - listitem [ref=f92e43]
+                      - listitem [ref=f92e44]
+                      - listitem [ref=f92e45]
+                      - listitem [ref=f92e46]
+                      - listitem [ref=f92e47]
+                    - paragraph [ref=f92e48]:
+                      - text: купил тут танк 300. остался очень доволен. покупал с менеджером Дмитрием Прудниковым. на всех этапах получил полные исчерпывающие ответы. прокатился на тест драйве. сдал свой авто в трейд ин (цена с учетом скидки вышла хорошая). взял автокредит. всё успел за 2 дня (тест драйв + сомнения в 1 день, трейд ин, покупка и автокредит во второй день). никаких доп услуг не навязывали. по цене как договорились так и было, никаких уловок. плюс получил подарки, даже часть тех о которых не договаривались)). однозначно рекоменую данного дилера и особенно Дмитрия.
+                      - paragraph [ref=f92e49]:
+                        - text: ...
+                        - link "ещё" [ref=f92e50] [cursor=pointer]:
+                          - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                  - generic [ref=f92e51]:
+                    - generic [ref=f92e53]:
+                      - paragraph [ref=f92e54]: Лебедько Егор Сергеевич
+                      - paragraph [ref=f92e55]: 15 апреля
+                    - list [ref=f92e57]:
+                      - listitem [ref=f92e58]
+                      - listitem [ref=f92e59]
+                      - listitem [ref=f92e60]
+                      - listitem [ref=f92e61]
+                      - listitem [ref=f92e62]
+                    - paragraph [ref=f92e63]:
+                      - text: Приобрел в этом салоне TANK 500. Впечатления только положительные. Очень квалифицированные менеджеры, все подробно объяснили. Отдельное спасибо Дмитрию Прудникову. Приехал в первый день, обговорили условия, пообщались по поводу комплектаций на авто, а на следущий день уже приехал за своим новым автомобилем. Скорость и качество проделанной работы заслуживает наивысшей оценки!!! Был на плановом техническом обслуживании у Евгения и Сергея. Все сделано в лучшем виде. Сервис высылает видео об осмотре авто и, если требуется, дают рекомендации по обслуживанию. Работа сервиса более чем устраивает. Езжу только сюда.
+                      - paragraph [ref=f92e64]:
+                        - text: ...
+                        - link "ещё" [ref=f92e65] [cursor=pointer]:
+                          - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                  - generic [ref=f92e66]:
+                    - generic [ref=f92e68]:
+                      - paragraph [ref=f92e69]: Александр Калашников
+                      - paragraph [ref=f92e70]: 15 февраля
+                    - list [ref=f92e72]:
+                      - listitem [ref=f92e73]
+                      - listitem [ref=f92e74]
+                      - listitem [ref=f92e75]
+                      - listitem [ref=f92e76]
+                      - listitem [ref=f92e77]
+                    - paragraph [ref=f92e78]:
+                      - text: "Увидел в интернете рекламу про привлекательные условия обмена автомобиля на новые машины Tank. Обратился по телефону и работал с Романом Соколовым - исключительно положительные эмоции: - показал машину и рассказал про особенности Tank 300, включая информацию о различиях между дорестайлингом и рестайлингом - оперативно организовал тест-драйв - отлично оценил текущую машину (и, что важно, машину качественно помыли - было приятно уезжать подумать о покупке) В итоге вышли на сделку и это тоже было приятно: быстро, удобно, комфортно. Все вовлеченные специалисты также были доброжелательны и нацелены на успешный результат в комфортной обстановке. К машине дали зимнюю резину, коврики, сетку в бампер, антикоррозионную обработку. Отдельно поставили еще пластиковые подкрылки. Надеюсь на долгосрочное сотрудничество (сервисный контракт же тоже оформил, чтобы закрепить стоимость ТО на ближайшие 3 года)! PS: с другими дилерами пытался побеседовать в формате «есть такое предложение - сможете предложить лучше?», но улучшить предложение БорисХоф никто не смог 😁"
+                      - paragraph [ref=f92e79]:
+                        - text: ...
+                        - link "ещё" [ref=f92e80] [cursor=pointer]:
+                          - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                  - generic [ref=f92e81]:
+                    - generic [ref=f92e83]:
+                      - paragraph [ref=f92e84]: Иванов Ю.
+                      - paragraph [ref=f92e85]: 1 марта
+                    - list [ref=f92e87]:
+                      - listitem [ref=f92e88]
+                      - listitem [ref=f92e89]
+                      - listitem [ref=f92e90]
+                      - listitem [ref=f92e91]
+                      - listitem [ref=f92e92]
+                    - paragraph [ref=f92e93]:
+                      - text: "Хочу поделиться отличным опытом покупки автомобиля в автосалоне «БорисХоф»! Особую благодарность хочу выразить Алексею Суракову, менеджеру автосалона. Он вёл сделку с самого начала и до момента моего выезда с территории автосалона на новом Tank 300. Благодаря его профессионализму, вежливости и пониманию, я приехал в этот автосалон из соседней области и ни разу не пожалел потраченного времени. Я сдавал свою машину по программе трейд‑ин и был приятно удивлён предложенной ценой за мой автомобиль: она оказалась действительно хорошей,честной без занижений и скрытых условий, а также условиями покупки нового. Алексей проявил высокий профессионализм: подробно рассказал о модели Tank 300, ответил на все, интересуюшие меня вопросы максимально подробно и предложил оптимальный для меня вариант его приобретения, учитывая все мои пожелания. Общение было комфортным и вежливым никаких попыток навязать лишние услуги, только чёткие и понятные консультации на всех этапах. Благодаря его вовлечённости и внимательности процесс прошёл максимально гладко и прозрачно. Пакет документов был подготовлен безупречно. Также хочу отметить работу Надежды из отдела кредитования. Она не только оперативно рассчитала условия и помогла быстро оформить кредит, но и профессионально занялась страхованием: оформила полисы КАСКО и ОСАГО, предложив лучшие варианты по соотношению цены и покрытия. Все нюансы были доходчиво объяснены, документы подготовлены вовремя никаких задержек или сложностей. В итоге я стал счастливым обладателем Tank 300 — и всё благодаря слаженной работе команды «БорисХоф». Очень доволен результатом: от первой консультации до выезда на новом авто всё было чётко, профессионально и с заботой о клиенте. С радостью порекомендую этот автосалон друзьям и знакомым!"
+                      - paragraph [ref=f92e94]:
+                        - text: ...
+                        - link "ещё" [ref=f92e95] [cursor=pointer]:
+                          - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - link "Больше отзывов на Яндекс Картах" [ref=f92e97] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=more-reviews
+            - link "БорисХоф Tank на карте Москвы и Московской области — Яндекс Карты" [ref=f91e511] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/boriskhof_tank/191525017147/
+          - generic [ref=f91e512]:
+            - iframe [ref=f91e513]:
+              
+            - link "БорисХоф Tank на карте Москвы и Московской области — Яндекс Карты" [ref=f91e514] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/boriskhof_ofitsialny_diler_tank/105725548815/
+    - generic [ref=f91e516]:
+      - link "Правовая информация" [ref=f91e520] [cursor=pointer]:
+        - /url: https://borishof.ru/legal/
+      - generic [ref=f91e522]:
+        - superscript [ref=f91e523]: "*"
+        - text: Рассрочка - это форма кредита (займа), при которой переплаты по кредиту (займу) не возникает за счет скидки на товар или услугу, предоставляемой продавцом. За детальной информацией условия предоставления «Рассрочки» обращайтесь к сервис менеджеру дилерского центра. Вся информация носит справочный характер и не является публичной офертой (ст. 437 ГК РФ). При поддержке Тинькофф Кредит Брокер. Подробнее на сайте www.tinkoff.ru. AO «Тинькофф Банк» лицензия ЦБ РФ №2673, 00О «Микрофинансовая компания «Т-Финанс».Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+      - generic [ref=f91e524]: Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930), тел. +7 (495) 646-14-58
+      - generic [ref=f91e526]: © ООО «БорисХоф Холдинг». Все права защищены 2026

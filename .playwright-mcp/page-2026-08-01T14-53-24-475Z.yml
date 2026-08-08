@@ -1,0 +1,443 @@
+- generic [active] [ref=f59e1]:
+  - banner [ref=f59e2]:
+    - generic [ref=f59e3]:
+      - link "БорисХоф VOYAH — на главную" [ref=f59e5] [cursor=pointer]:
+        - /url: ""
+      - generic [ref=f59e7]:
+        - generic [ref=f59e8]: БорисХоф VOYAH Восток
+        - generic [ref=f59e9] [cursor=pointer]:
+          - generic [ref=f59e10]: 󰟙
+          - text: МО, Балашиха, микрорайон ЦОВБ, д.21
+      - generic [ref=f59e11]:
+        - generic [ref=f59e12]: БорисХоф VOYAH Юг
+        - generic [ref=f59e13] [cursor=pointer]:
+          - generic [ref=f59e14]: 󰟙
+          - text: Москва, 29 км МКАД, вл1Б
+      - generic [ref=f59e15]:
+        - 'link "Позвонить: +7 (495) 011-53-10" [ref=f59e17] [cursor=pointer]':
+          - /url: tel:+74950115310
+          - generic [ref=f59e18]: 󰏻
+          - text: +7 (495) 011-53-10
+        - button "Заказать обратный звонок" [ref=f59e19] [cursor=pointer]:
+          - generic [ref=f59e20]: 󰏷
+      - text: 󰏻 󰍜
+  - text: 󰅖 󰟙 󰟙 󰏻
+  - main [ref=f59e21]:
+    - generic [ref=f59e23]:
+      - generic [ref=f59e24]:
+        - group "1 / 4" [ref=f59e25]:
+          - generic [ref=f59e27]:
+            - generic [ref=f59e28]:
+              - heading "Премиальные электромобили VOYAH" [level=2] [ref=f59e29]
+              - heading "Госпрограмма 925 000 ₽" [level=4] [ref=f59e30] [cursor=pointer]:
+                - text: Госпрограмма
+                - generic [ref=f59e31]: 925 000 ₽
+            - generic [ref=f59e32]:
+              - generic [ref=f59e33] [cursor=pointer]: Крупный склад
+              - generic [ref=f59e36] [cursor=pointer]: Выездной тест-драйв
+        - group "2 / 4" [ref=f59e40]:
+          - generic [ref=f59e42]:
+            - generic [ref=f59e43]:
+              - heading "VOYAH PASSION EVR" [level=2] [ref=f59e44]
+              - heading "Дополнительное преимущество до 470 000 ₽" [level=4] [ref=f59e45] [cursor=pointer]
+            - generic [ref=f59e46]:
+              - generic [ref=f59e47] [cursor=pointer]: Крупный склад
+              - generic [ref=f59e50] [cursor=pointer]: Выездной тест-драйв
+        - group "3 / 4" [ref=f59e54]:
+          - generic [ref=f59e56]:
+            - generic [ref=f59e57]:
+              - heading "VOYAH FREE EVR Sport Edition" [level=2] [ref=f59e58]
+              - heading "госпрограмма 925 000 ₽ + дополнительное преимущество до 450 000 ₽ + рассрочка 0,01%*" [level=4] [ref=f59e59] [cursor=pointer]:
+                - text: госпрограмма
+                - generic [ref=f59e60]: 925 000 ₽
+                - text: + дополнительное преимущество до
+                - generic [ref=f59e61]: 450 000 ₽
+                - text: + рассрочка 0,01%*
+            - generic [ref=f59e62]:
+              - generic [ref=f59e63] [cursor=pointer]: Крупный склад
+              - generic [ref=f59e66] [cursor=pointer]: Выездной тест-драйв
+        - group "4 / 4" [ref=f59e70]:
+          - generic [ref=f59e72]:
+            - generic [ref=f59e73]:
+              - heading "Флагманский минивэн Voyah Dream" [level=2] [ref=f59e74]
+              - heading "госпрограмма 925 000 ₽ + дополнительное преимущество до 615 000 ₽" [level=4] [ref=f59e75] [cursor=pointer]:
+                - text: госпрограмма
+                - generic [ref=f59e76]: 925 000 ₽
+                - text: + дополнительное преимущество до
+                - generic [ref=f59e77]: 615 000 ₽
+            - generic [ref=f59e78]:
+              - generic [ref=f59e79] [cursor=pointer]: Крупный склад
+              - generic [ref=f59e82] [cursor=pointer]: Зимние шины в подарок
+      - generic [ref=f59e85]:
+        - button "Go to slide 1" [ref=f59e86] [cursor=pointer]
+        - button "Go to slide 2" [ref=f59e87] [cursor=pointer]
+        - button "Go to slide 3" [ref=f59e88] [cursor=pointer]
+        - button "Go to slide 4" [ref=f59e89] [cursor=pointer]
+      - button "Previous slide" [ref=f59e90] [cursor=pointer]: prev
+      - button "Next slide" [ref=f59e91] [cursor=pointer]: next
+    - generic [ref=f59e92]:
+      - generic [ref=f59e94]:
+        - heading "Наши преимущества" [level=3] [ref=f59e96]
+        - generic [ref=f59e97]:
+          - generic [ref=f59e98]:
+            - generic [ref=f59e99]:
+              - img "Честный кредит без навязанных услуг"
+            - generic [ref=f59e100]: Честный кредит без навязанных услуг
+          - generic [ref=f59e101]:
+            - generic [ref=f59e102]:
+              - img "Специальные условия корпоративным клиентам"
+            - generic [ref=f59e103]: Специальные условия корпоративным клиентам
+          - generic [ref=f59e104]:
+            - generic [ref=f59e105]:
+              - img "Штат высококлассных специалистов"
+            - generic [ref=f59e106]: Штат высококлассных специалистов
+          - generic [ref=f59e107]:
+            - generic [ref=f59e108]:
+              - img "Удобное расположение в Москве"
+            - generic [ref=f59e109]: Удобное расположение в Москве
+          - generic [ref=f59e111]:
+            - generic [ref=f59e112]:
+              - img "Крупнейший склад автомобилей в наличии"
+            - generic [ref=f59e113]: Крупнейший склад автомобилей в наличии
+      - generic [ref=f59e115]:
+        - heading "Специальные предложения официального дилера VOYAH БорисХоф" [level=3] [ref=f59e117]: Специальные предложения официального дилераVOYAH БорисХоф
+        - generic [ref=f59e118]:
+          - generic [ref=f59e119] [cursor=pointer]:
+            - generic [ref=f59e120]:
+              - img "VOYAH FREE EVR Sport Edition"
+            - generic [ref=f59e121]: VOYAH FREE EVR Sport Edition
+          - generic [ref=f59e123] [cursor=pointer]:
+            - generic [ref=f59e124]:
+              - img "VOYAH Passion EVR"
+            - generic [ref=f59e125]: VOYAH Passion EVR
+          - generic [ref=f59e126] [cursor=pointer]:
+            - generic [ref=f59e127]:
+              - img "VOYAH Dream"
+            - generic [ref=f59e128]: VOYAH Dream
+          - generic [ref=f59e129] [cursor=pointer]:
+            - generic [ref=f59e130]:
+              - img "M-Hero"
+            - generic [ref=f59e131]: M-Hero
+        - generic [ref=f59e132]:
+          - generic [ref=f59e134]:
+            - generic [ref=f59e135]:
+              - generic [ref=f59e136]:
+                - generic [ref=f59e137]: VOYAH FREE EVR Sport EditionVOYAH ФРИ версия Спорт
+                - generic [ref=f59e138]: Гибридная версия
+                - generic [ref=f59e139]: В наличии
+              - generic [ref=f59e142]:
+                - generic [ref=f59e143]: Зеленый шелк
+                - generic [ref=f59e144] [cursor=pointer]:
+                  - 'button "Цвет: Зеленый шелк" [ref=f59e145]'
+                  - 'button "Цвет: Серый титан" [ref=f59e148]'
+                  - 'button "Цвет: Арктический белый" [ref=f59e151]'
+                  - 'button "Цвет: Бронзовый" [ref=f59e154]'
+                  - 'button "Цвет: Небесно-голубой" [ref=f59e157]'
+                  - 'button "Цвет: Искрящийся черный" [ref=f59e160]'
+                - generic [ref=f59e163]:
+                  - img "VOYAH FREE EVR Sport EditionVOYAH ФРИ версия Спорт"
+            - generic [ref=f59e164]:
+              - generic [ref=f59e166] [cursor=pointer]:
+                - text: Дополнительное преимущество до
+                - generic [ref=f59e167]: 450 000 ₽
+              - generic [ref=f59e168]:
+                - generic [ref=f59e169] [cursor=pointer]: рассрочка 0,01%*
+                - generic [ref=f59e173] [cursor=pointer]: Подарки от БорисХоф
+                - generic [ref=f59e179] [cursor=pointer]:
+                  - text: Госпрограмма
+                  - generic [ref=f59e180]: 925 000 ₽
+              - generic [ref=f59e181]: Гарантия 5 лет
+              - generic [ref=f59e185]:
+                - button "Получить предложение" [ref=f59e186] [cursor=pointer]
+                - button "Купить в кредит" [ref=f59e187] [cursor=pointer]
+          - generic [ref=f59e189]:
+            - generic [ref=f59e190]:
+              - generic [ref=f59e191]:
+                - generic [ref=f59e192]: VOYAH PASSION EVRVOYAH СТРАСТЬ
+                - generic [ref=f59e193]: Премиальный электроседан
+              - generic [ref=f59e194]:
+                - generic [ref=f59e195]: Черный-аметист
+                - generic [ref=f59e196] [cursor=pointer]:
+                  - 'button "Цвет: Черный-аметист" [ref=f59e197]'
+                  - 'button "Цвет: Арктический белый" [ref=f59e200]'
+                  - 'button "Цвет: Искрящийся черный" [ref=f59e203]'
+                - generic [ref=f59e206]:
+                  - img "VOYAH PASSION EVRVOYAH СТРАСТЬ"
+            - generic [ref=f59e207]:
+              - generic [ref=f59e208] [cursor=pointer]: Дополнительное преимуществодо 470 000 ₽
+              - generic [ref=f59e210]:
+                - generic [ref=f59e211] [cursor=pointer]: Доп. выгода при покупке в кредит
+                - generic [ref=f59e214] [cursor=pointer]: Подарки от БорисХоф
+                - generic [ref=f59e217] [cursor=pointer]: Персональные условия приобретения
+              - generic [ref=f59e220]: Гарантия 5 лет
+              - generic [ref=f59e224]:
+                - button "Получить предложение" [ref=f59e225] [cursor=pointer]
+                - button "Купить в кредит" [ref=f59e226] [cursor=pointer]
+          - generic [ref=f59e228]:
+            - generic [ref=f59e229]:
+              - generic [ref=f59e230]:
+                - generic [ref=f59e231]: VOYAH DREAMVOYAH МЕЧТА
+                - generic [ref=f59e232]: Премиальный седан
+                - generic [ref=f59e233]: В наличии
+              - generic [ref=f59e236]:
+                - generic [ref=f59e237]: Черный
+                - generic [ref=f59e238] [cursor=pointer]:
+                  - 'button "Цвет: Черный" [ref=f59e239]'
+                  - 'button "Цвет: Черный аметист" [ref=f59e242]'
+                - generic [ref=f59e245]:
+                  - img "VOYAH DREAMVOYAH МЕЧТА"
+            - generic [ref=f59e246]:
+              - generic [ref=f59e248] [cursor=pointer]:
+                - text: Дополнительное преимущество до
+                - generic [ref=f59e249]: 615 000 ₽
+              - generic [ref=f59e250]:
+                - generic [ref=f59e251] [cursor=pointer]: Доп. выгода при покупке в кредит
+                - generic [ref=f59e254] [cursor=pointer]: Подарки от БорисХоф
+                - generic [ref=f59e260] [cursor=pointer]:
+                  - text: Госпрограмма
+                  - generic [ref=f59e261]: 925 000 ₽
+              - generic [ref=f59e262]: Гарантия 5 лет
+              - generic [ref=f59e266]:
+                - button "Получить предложение" [ref=f59e267] [cursor=pointer]
+                - button "Купить в кредит" [ref=f59e268] [cursor=pointer]
+          - generic [ref=f59e270]:
+            - generic [ref=f59e271]:
+              - generic [ref=f59e272]:
+                - generic [ref=f59e273]: M-HERO
+                - generic [ref=f59e274]: Хайтек внедорожник
+                - generic [ref=f59e275]: Под заказ
+              - generic [ref=f59e278]:
+                - generic [ref=f59e279]: Хаки
+                - generic [ref=f59e280] [cursor=pointer]:
+                  - 'button "Цвет: Хаки" [ref=f59e281]'
+                  - 'button "Цвет: Серый титан" [ref=f59e284]'
+                  - 'button "Цвет: Черный" [ref=f59e287]'
+                - generic [ref=f59e290]:
+                  - img "M-HERO"
+            - generic [ref=f59e291]:
+              - generic [ref=f59e293] [cursor=pointer]:
+                - text: Преимущество
+                - generic [ref=f59e294]: до 800 000 ₽
+              - generic [ref=f59e295]:
+                - generic [ref=f59e296] [cursor=pointer]: Доп. выгода при покупке в кредит
+                - generic [ref=f59e299] [cursor=pointer]: Подарки от БорисХоф
+                - generic [ref=f59e302] [cursor=pointer]: Доп. бонус при покупке в БорисХоф
+              - generic [ref=f59e305]:
+                - generic [ref=f59e306]: Персональные условия приобретения
+                - generic [ref=f59e309]: Гарантия 5 лет
+              - generic [ref=f59e312]:
+                - button "Получить предложение" [ref=f59e313] [cursor=pointer]
+                - button "Купить в кредит" [ref=f59e314] [cursor=pointer]
+      - generic [ref=f59e318]:
+        - generic [ref=f59e319]:
+          - heading "Познакомьтесь поближе" [level=1] [ref=f59e320]
+          - heading "Запишитесь на тест-драйв" [level=2] [ref=f59e321]
+        - button "Записаться" [ref=f59e323] [cursor=pointer]
+      - generic [ref=f59e325]:
+        - generic [ref=f59e326]:
+          - heading "Старт программы «Гарантия + Поддержка»" [level=2] [ref=f59e327]
+          - heading "Для автомобилей приобретенных неофициально до 1 сентября 2024 года." [level=3] [ref=f59e328]
+        - list [ref=f59e332]:
+          - listitem [ref=f59e333]: 1 или 3 года заводской гарантии на кроссоверы FREE и минивэны DREAM, приобретенные неофициально.
+          - listitem [ref=f59e334]: Дополнительные преимущества с включенными в «пакет» услугами технической поддержки «VOYAH – ПОМОЩЬ НА ДОРОГЕ».
+          - listitem [ref=f59e335]: Обновление прошивки, установка новейшей версии русификации, а также доступ в магазин приложений VOYAH STORE.
+        - generic [ref=f59e336]:
+          - text: Премиальный бренд VOYAH запускает новую сервисную программу «ГАРАНТИЯ + ПОДДЕРЖКА» для российских автовладельцев, приобретших автомобили до 1 сентября 2024 года неофициально. Программа предназначена для владельцев моделей DREAM и FREE и предлагает возможность оформить заводскую гарантию сроком на 1 или 3 года (до 100 000 км пробега). Условие — пробег автомобиля не должен превышать 80 000 км. Варианты программы включают гарантии на основные узлы (двигатель, батарея, тормозная система и др.) или полное гарантийное покрытие.Стоимость программы начинается от
+          - generic [ref=f59e337]: 135 000 ₽
+          - text: "и включает обновление ПО, установку русификации и доступ к VOYAH STORE для установки локальных сервисов. В пакет входит экстренная техническая помощь: ремонт шин, запуск двигателя, эвакуация и транспортировка автомобиля при разрядке батареи или авариях. Услуги доступны на территории России, Беларуси и Казахстана."
+        - button "Получить консультацию" [ref=f59e339] [cursor=pointer]
+      - generic [ref=f59e341]:
+        - generic [ref=f59e342]:
+          - heading "Конкурентное предложение" [level=2] [ref=f59e343]
+          - heading "Есть предложение от другого дилера?" [level=3] [ref=f59e344]
+        - generic [ref=f59e345]: Отправьте заявку, мы уточним условия и сделаем предложение.Конкуренты не догонят!
+        - generic [ref=f59e347]: Отправить заявку
+        - generic:
+          - img "Конкурентное предложение"
+      - generic:
+        - generic:
+          - img "VOYAH — фотогалерея"
+        - generic:
+          - img "VOYAH — фотогалерея"
+        - generic:
+          - img "VOYAH — фотогалерея"
+        - generic:
+          - img "VOYAH — фотогалерея"
+      - generic [ref=f59e350]:
+        - heading "Выберите действие" [level=2] [ref=f59e352]
+        - generic [ref=f59e353]:
+          - generic [ref=f59e354] [cursor=pointer]:
+            - generic:
+              - img "Получить информацию по наличию"
+            - generic [ref=f59e355]:
+              - generic [ref=f59e356]: Получить информацию по наличию
+              - generic [ref=f59e357]: Узнайте об автомобилях в наличии и тех, которые находятся уже в пути.
+          - generic [ref=f59e358] [cursor=pointer]:
+            - generic:
+              - img "Получить консультацию специалиста"
+            - generic [ref=f59e359]:
+              - generic [ref=f59e360]: Получить консультацию специалиста
+              - generic [ref=f59e361]: Получите ответ нашего сотрудника на любой интересующий Вас вопрос.
+          - generic [ref=f59e362] [cursor=pointer]:
+            - generic:
+              - img "Записаться на сервисное обслуживание"
+            - generic [ref=f59e363]:
+              - generic [ref=f59e364]: Записаться на сервисное обслуживание
+              - generic [ref=f59e365]: Отправьте заявку если Вас интересует сервисное обслуживание вашего VOYAH.
+      - generic [ref=f59e367]:
+        - generic [ref=f59e368]:
+          - generic [ref=f59e371]:
+            - generic [ref=f59e372]:
+              - generic [ref=f59e373]: БорисХоф VOYAH Восток
+              - generic [ref=f59e374]: Москва
+            - generic [ref=f59e375]:
+              - link "󱆓 +7 (495) 011-53-10" [ref=f59e377] [cursor=pointer]:
+                - /url: tel:+74950115310
+                - generic [ref=f59e378]: 󱆓
+                - text: +7 (495) 011-53-10
+              - generic [ref=f59e379]:
+                - generic [ref=f59e380]: 󰟙
+                - text: Москва, Балашиха, микрорайон ЦОВБ, д.21
+              - generic [ref=f59e381]:
+                - generic [ref=f59e382]: 󰅐
+                - text: Пн-Вс 09:00-21:00
+            - generic [ref=f59e383]:
+              - generic [ref=f59e384]: Доступны услуги
+              - generic [ref=f59e385]: Продажа автомобилей, Установка зарядных станций, Кредитование, Страхование, Сервисное обслуживание
+            - button "Заказать звонок" [ref=f59e387] [cursor=pointer]
+          - generic [ref=f59e391]:
+            - generic [ref=f59e392]:
+              - generic [ref=f59e393]: БорисХоф VOYAH Юг
+              - generic [ref=f59e394]: Москва
+            - generic [ref=f59e395]:
+              - link "󱆓 +7 (495) 011-53-10" [ref=f59e397] [cursor=pointer]:
+                - /url: tel:+74950115310
+                - generic [ref=f59e398]: 󱆓
+                - text: +7 (495) 011-53-10
+              - generic [ref=f59e399]:
+                - generic [ref=f59e400]: 󰟙
+                - text: Москва, 29 км МКАД, вл1Б
+              - generic [ref=f59e401]:
+                - generic [ref=f59e402]: 󰅐
+                - text: Пн-Вс 09:00-21:00
+            - generic [ref=f59e403]:
+              - generic [ref=f59e404]: Доступны услуги
+              - generic [ref=f59e405]: Продажа автомобилей, Установка зарядных станций, Кредитование, Страхование, Сервисное обслуживание
+            - button "Заказать звонок" [ref=f59e407] [cursor=pointer]
+        - generic [ref=f59e409]:
+          - iframe [ref=f59e410]:
+            - generic [ref=f60e2]:
+              - generic [ref=f60e3]:
+                - link "БорисХоф Voyah Восток" [ref=f60e4] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+                - generic [ref=f60e5]:
+                  - paragraph [ref=f60e6]: 5,0
+                  - generic [ref=f60e7]:
+                    - list [ref=f60e9]:
+                      - listitem [ref=f60e10]
+                      - listitem [ref=f60e11]
+                      - listitem [ref=f60e12]
+                      - listitem [ref=f60e13]
+                      - listitem [ref=f60e14]
+                    - link "292 отзыва • 420 оценок" [ref=f60e15] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+                - link [ref=f60e17] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+              - generic [ref=f60e18]:
+                - paragraph [ref=f60e19]: Поставьте нам оценку
+                - link "Оставить отзыв" [ref=f60e20] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+              - generic [ref=f60e21]:
+                - generic [ref=f60e22]:
+                  - generic [ref=f60e24]:
+                    - paragraph [ref=f60e25]: Сергей Криворот
+                    - paragraph [ref=f60e26]: 15 марта
+                  - list [ref=f60e28]:
+                    - listitem [ref=f60e29]
+                    - listitem [ref=f60e30]
+                    - listitem [ref=f60e31]
+                    - listitem [ref=f60e32]
+                    - listitem [ref=f60e33]
+                  - paragraph [ref=f60e34]:
+                    - text: Посетил Evolute & Voyah Балашиха, хоть и далеко от меня (на другой стороне Москвы), но поехал и не прогадал. Выбирал этого дилера по цене за проведение технического обслуживания, цена оказалась лучшая по Москве. Кстати, не только цена самих работ, но и оригинальных комплектующих. Что порадовало (я думаю про лояльность к посетителям, чистоту, порядок и отличное место для ожидания писать не буду здесь все на высоте, видно, что уважают клиента и себя) приняли вовремя, внимательно выслушали все замечания по машине, разрешили посещение ремонтной зоны, где мастер рассказал, что сделал по замечаниям. До этого был в Мейджер на Новой Риге с теми же замечаниями, но там ничего не нашли, а здесь определили незатянутые элементы подвески передней (это автомобилю 3 месяца, так собирают в Липечке) и проблема с рулевым управлением, то же не затянуто было (при повороте руля в лево в право обнаруживался люфт и стук). Есть одно предложение почему бы в зону ожидания не вывести видео с рем. зоны, я бы ч удовольствием наблюдал за процессом. Короче рекомендую владельцам Evolute этот сервис. Хочу выразить благодарность мастеру приемщику Елене Крутецкой и мастеру Дмитрию. Если все так и будет продолжаться я буду обращаться к Вам.
+                    - paragraph [ref=f60e35]:
+                      - text: ...
+                      - link "ещё" [ref=f60e36] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - generic [ref=f60e37]:
+                  - generic [ref=f60e39]:
+                    - paragraph [ref=f60e40]: Виталий Чечин
+                    - paragraph [ref=f60e41]: 16 февраля
+                  - list [ref=f60e43]:
+                    - listitem [ref=f60e44]
+                    - listitem [ref=f60e45]
+                    - listitem [ref=f60e46]
+                    - listitem [ref=f60e47]
+                    - listitem [ref=f60e48]
+                  - paragraph [ref=f60e49]:
+                    - text: Приехав в салон Voyah в Балашихе с высокой долей вероятности Вы выберете именно этот бренд как свой следующий автомобиль. В этом салоне работают профессионалы, которые создают уютную атмосферу для покупателей, ответят на все Ваши вопросы, помогут подобрать Вам новый автомобиль и здесь же находится склад новых автомобилей, что позволит Вам увидеть весь модельный ряд и разные сочетания цветов кузова и салона. Интересный маршрут тест-драйва. И конечно же самые лучшие условия покупки в России. Если выбираете себе Voyah, то обязательно посетите этот салон. Ваш автомобиль находится именно в нём и ждёт Вас.
+                    - paragraph [ref=f60e50]:
+                      - text: ...
+                      - link "ещё" [ref=f60e51] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - generic [ref=f60e52]:
+                  - generic [ref=f60e54]:
+                    - paragraph [ref=f60e55]: Александр К.
+                    - paragraph [ref=f60e56]: 25 апреля
+                  - list [ref=f60e58]:
+                    - listitem [ref=f60e59]
+                    - listitem [ref=f60e60]
+                    - listitem [ref=f60e61]
+                    - listitem [ref=f60e62]
+                    - listitem [ref=f60e63]
+                  - paragraph [ref=f60e64]:
+                    - text: Проделанной работой доволен. Все рассказали, сделали. От обещанного времени машину выдали не много раньше. До работ по первому ТО, обращался по вопросу сход-развала. Сход-развал сделали с первого раза. При этом ранее обращался к другому дилеру, сказали, что сделать не могут. Отдельная благодарность мастеру приемщику Крутецкой Елене. Готова ответить на вопросы и рассказать. По стоимости думаю как и у всех, так как акция от Моторинвеста.
+                    - paragraph [ref=f60e65]:
+                      - text: ...
+                      - link "ещё" [ref=f60e66] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - generic [ref=f60e67]:
+                  - generic [ref=f60e69]:
+                    - paragraph [ref=f60e70]: Александр Б.
+                    - paragraph [ref=f60e71]: 29 марта
+                  - list [ref=f60e73]:
+                    - listitem [ref=f60e74]
+                    - listitem [ref=f60e75]
+                    - listitem [ref=f60e76]
+                    - listitem [ref=f60e77]
+                    - listitem [ref=f60e78]
+                  - paragraph [ref=f60e79]:
+                    - text: Приветствую всех читающих мой отзыв! Перед новым годом озадачился вопросом смены авто в силу изменений с утильсбором. Решил попробовать тест драйв Voyah Free, попытался записаться в несколько салонов диллеров, без результата. Оставил заявку в БорисХоф, через несколько минут перезвонила девушка и сообщила, что передала мою заявку менеджеру, так началось наше знакомство с Юрием Хатько и Voyah Free. В последствии его работы, профессионализма и клиентоориентированности был приобретен Voyah Free. Машину готовили неделю к выдаче. При получении никаких нюансов! Юрий спасибо за вашу работу и то что поддерживаете связь с клиентами даже после сделки! Я специально выждал время с момента покупки, чтобы сформировать мнение для отзыва. Сегодня посещал БорисХоф снова для прохождения ТО-0, тысяча километров позади. При визите меня встретил, Юрий и отвел к Антону Шеремету. Антон максимально профессионально все объяснил, дал советы по маслу и оперативно принял машину в работу! Ранее озвучивали сроки работ приблизительно в 3-4 часа, но все работы выполнили за 2, отличный подход! Антон вам так же выражаю благодарность за профессионализм и сервис! По окончании получил смс с ссылкой на видео о проведенных работах и диагностике. Очень впечатлило) Ребята спасибо вам за работу, обязательно приеду к вам снова!
+                    - paragraph [ref=f60e80]:
+                      - text: ...
+                      - link "ещё" [ref=f60e81] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - generic [ref=f60e82]:
+                  - generic [ref=f60e84]:
+                    - paragraph [ref=f60e85]: Иван Красиков
+                    - paragraph [ref=f60e86]: 25 июня
+                  - list [ref=f60e88]:
+                    - listitem [ref=f60e89]
+                    - listitem [ref=f60e90]
+                    - listitem [ref=f60e91]
+                    - listitem [ref=f60e92]
+                    - listitem [ref=f60e93]
+                  - paragraph [ref=f60e94]:
+                    - text: Добрый день,хочу поблагодарить менеджера Юрия за его опыт,потдержку ,и за помощь в приобретение автомобиля Voyah . Приехал с другом просто посмотреть машину,нас встретил Юрий,угостил вкусным кофе,все показал,все рассказал ,тут же договорился на тестдрайв.Автомобиль мне зашел сразу,в наличие автомобилей небыло,но благодаря Юрию его привезли на следующий день. Всей суммы небыло для покупки авто,юрий предложил много вариантов как сделать ,чтоб авто всетаки я приобрел. Помог с кредитом,все разжувал до мелочей,принял машину в трыйдын. Даже после сделки,не отпустил меня пока я полностью не разобрался с авто,так как впервые имею такой космический корабль. Огромное человеческое спасибо за такой теплый прием Юрию Хатько. От себя просьба к его руководству,выписать огроменную премию такому замечательному сотруднику.
+                    - paragraph [ref=f60e95]:
+                      - text: ...
+                      - link "ещё" [ref=f60e96] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - link "Больше отзывов на Яндекс Картах" [ref=f60e98] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_voyah_vostok/174809539865/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=more-reviews
+          - link "БорисХоф Voyah на карте Москвы — Яндекс Карты" [ref=f59e411] [cursor=pointer]:
+            - /url: https://yandex.ru/maps/org/boriskhof_voyah/174809539865/
+  - contentinfo [ref=f59e414]:
+    - generic [ref=f59e415]:
+      - generic [ref=f59e416]:
+        - img "БорисХоф VOYAH"
+      - link "Подробные условия акции" [ref=f59e419] [cursor=pointer]:
+        - /url: ""
+      - generic [ref=f59e420]: Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+      - generic [ref=f59e421]: Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930), тел. +7 (495) 011-54-20
+      - generic [ref=f59e423]: © ООО «БорисХоф Холдинг». Все права защищены 2026

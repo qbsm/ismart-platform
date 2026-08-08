@@ -1,0 +1,136 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e5]:
+        - img "HAVAL Pro" [ref=e7]
+        - generic [ref=e8]:
+          - generic [ref=e9]: БорисХоф
+          - text: Официальный дилер
+        - generic [ref=e10]:
+          - iframe [ref=e12]:
+            - link [ref=f2e2] [cursor=pointer]:
+              - /url: //yandex.ru/maps/org/189160678103/reviews?utm_source=badge&utm_medium=rating&utm_campaign=v1
+          - generic [ref=e13]: Москва, 2я Магистральная, 18, стр. 22
+          - link "+7 (495) 241-53-84" [ref=e95] [cursor=pointer]:
+            - /url: tel:+74952415384
+    - generic [ref=e17]:
+      - generic [ref=e18]: Держим цены
+      - generic [ref=e19]: В наличии от 18 500 ₽/мес
+      - generic [ref=e20]: Обновлённые HAVAL H7 и H9 в наличии
+      - generic [ref=e21]: Зимняя резина в подарок
+      - generic [ref=e22]: Выгодный trade-in
+      - generic [ref=e23]: Модельный ряд H3 · H5 · H7 · H9
+      - generic [ref=e24]: Держим цены
+      - generic [ref=e25]: В наличии от 18 500 ₽/мес
+      - generic [ref=e26]: Обновлённые HAVAL H7 и H9 в наличии
+      - generic [ref=e27]: Зимняя резина в подарок
+      - generic [ref=e28]: Выгодный trade-in
+      - generic [ref=e29]: Модельный ряд H3 · H5 · H7 · H9
+    - main [ref=e30]:
+      - generic [ref=e32]:
+        - generic:
+          - heading "Официальный дилер HAVAL PRO в Москве" [level=1]
+          - heading "Держим цены! В наличии от 18 500 ₽/мес. Обновленные HAVAL H7 и H9 уже в наличии!" [level=2]: Держим цены! В наличии от 18 500 ₽/мес.Обновленные HAVAL H7 и H9 уже в наличии!
+        - generic [ref=e33]:
+          - generic [ref=e34]: Предложение действует
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]: "03"
+              - generic [ref=e38]: Дней
+            - generic [ref=e39]:
+              - generic [ref=e40]: "17"
+              - generic [ref=e41]: Часов
+            - generic [ref=e42]:
+              - generic [ref=e43]: "05"
+              - generic [ref=e44]: Минут
+            - generic [ref=e45]:
+              - generic [ref=e46]: "13"
+              - generic [ref=e47]: Секунд
+      - generic [ref=e48]:
+        - generic [ref=e50]:
+          - generic [ref=e51]: Мария
+          - text: Менеджер отдела продаж
+        - generic [ref=e52]:
+          - text: "Позвонить:"
+          - link "+7 (495) 241-53-84" [ref=e96] [cursor=pointer]:
+            - /url: tel:+74952415384
+      - generic [ref=e56]:
+        - generic [ref=e58]:
+          - generic [ref=e59]: MAX выгода в августе!
+          - generic [ref=e69]: Ежемесячный платеж до 31 100 ₽
+          - generic [ref=e77]: Зимняя резина в подарок
+        - generic [ref=e97]:
+          - generic [ref=e98]: Здравствуйте!Меня зовут Мария. Я онлайн-консультант официального дилера Haval.
+          - generic [ref=e103]: Пожалуйста, ответьте на пару вопросов - я составлю для вас предложение с вариантами комплектации и стоимостью.
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - text: Какую модель вы рассматриваете?
+              - generic [ref=e110]:
+                - generic [ref=e111] [cursor=pointer]:
+                  - generic [ref=e113]: H3
+                  - generic [ref=e114]: Ежемесячный платеж 18 500 ₽
+                - generic [ref=e115] [cursor=pointer]:
+                  - generic [ref=e117]: H5
+                  - generic [ref=e118]: Ежемесячный платеж 25 300 ₽
+                - generic [ref=e119] [cursor=pointer]:
+                  - generic [ref=e121]: H7
+                  - generic [ref=e122]: Ежемесячный платеж 24 300 ₽
+                - generic [ref=e123] [cursor=pointer]:
+                  - generic [ref=e125]: H9
+                  - generic [ref=e126]: Ежемесячный платеж 31 100 ₽
+            - generic [ref=e127]: Выберите автомобиль из списка выше
+          - generic [ref=e129]: H3
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - text: Выберите комплектацию H3
+              - generic [ref=e135]:
+                - generic [ref=e137] [cursor=pointer]:
+                  - checkbox "1.5T (143 л.с.) DCT 2х4 (Premium)" [checked] [ref=e138]
+                  - text: 1.5T (143 л.с.) DCT 2х4 (Premium)
+                - generic [ref=e140] [cursor=pointer]:
+                  - checkbox "1.5T (143 л.с.) DCT 2х4 (Tech+)" [ref=e141]
+                  - text: 1.5T (143 л.с.) DCT 2х4 (Tech+)
+                - generic [ref=e143] [cursor=pointer]:
+                  - checkbox "1.5T (177 л.с.) DCT 4х4 (Tech+)" [ref=e144]
+                  - text: 1.5T (177 л.с.) DCT 4х4 (Tech+)
+                - generic [ref=e146] [cursor=pointer]:
+                  - checkbox "Не определился" [ref=e147]
+                  - text: Не определился
+            - button "Продолжить" [ref=e148] [cursor=pointer]
+            - generic [ref=e149]: Выберите комплектацию из списка выше
+          - generic [ref=e150]: 1.5T (143 л.с.) DCT 2х4 (Premium)
+          - generic [ref=e174]:
+            - text: Выберите цвет автомобиля
+            - generic [ref=e176]:
+              - generic [ref=e177] [cursor=pointer]: Синий
+              - generic [ref=e180] [cursor=pointer]: Черный
+              - generic [ref=e183] [cursor=pointer]: Серый
+              - generic [ref=e186] [cursor=pointer]: Белый
+              - generic [ref=e189] [cursor=pointer]: Другой
+          - generic [ref=e191]: Синий
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - text: Как планируете приобретать автомобиль?
+              - generic [ref=e197]:
+                - generic [ref=e199] [cursor=pointer]:
+                  - checkbox "Наличные" [checked] [active] [ref=e200]
+                  - text: Наличные
+                - generic [ref=e202] [cursor=pointer]:
+                  - checkbox "Кредит" [ref=e203]
+                  - text: Кредит
+                - generic [ref=e205] [cursor=pointer]:
+                  - checkbox "Trade-in" [ref=e206]
+                  - text: Trade-in
+                - generic [ref=e208] [cursor=pointer]:
+                  - checkbox "Авторассрочка" [ref=e209]
+                  - text: Авторассрочка
+                - generic [ref=e211] [cursor=pointer]:
+                  - checkbox "Не определился" [ref=e212]
+                  - text: Не определился
+            - button "Продолжить" [ref=e213] [cursor=pointer]
+    - contentinfo [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]: 2026 © ООО «БОРИСХОФ ХОЛДИНГ» ИНН 7714700709 ОГРН 5077746977930
+        - generic [ref=e93]: Подробные условия акции
+  - iframe [ref=e128]:
+    - button [ref=f4e28] [cursor=pointer]

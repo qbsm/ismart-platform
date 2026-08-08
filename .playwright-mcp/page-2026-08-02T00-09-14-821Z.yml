@@ -1,0 +1,729 @@
+- generic [ref=f13e2]:
+  - generic [ref=f13e4]:
+    - generic [ref=f13e5]:
+      - link [ref=f13e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f13e8]: Звезда Невы
+    - generic [ref=f13e10]:
+      - link "Модельный ряд" [ref=f13e12] [cursor=pointer]:
+        - /url: "#range"
+      - link "Авто в наличии" [ref=f13e14] [cursor=pointer]:
+        - /url: "#stocks"
+      - link "Покупателям" [ref=f13e16] [cursor=pointer]:
+        - /url: ""
+      - link "Владельцам" [ref=f13e18] [cursor=pointer]:
+        - /url: ""
+    - link "󰏻 +7 (812) 566-75-71" [ref=f13e21] [cursor=pointer]:
+      - /url: tel:+78125667571
+      - generic [ref=f13e22]: 󰏻
+      - text: +7 (812) 566-75-71
+    - text: 󰏻
+  - generic [ref=f13e24]:
+    - generic [ref=f13e25]:
+      - group "1 / 6" [ref=f13e26]:
+        - generic [ref=f13e28]:
+          - generic [ref=f13e29]: SOLLERS SF5 (СФ5)
+          - list [ref=f13e32]:
+            - listitem [ref=f13e33]: ВЕЗИ. КАЙФУЙ. ЗАРАБАТЫВАЙ
+            - listitem [ref=f13e34]: С АВТОМАТИЧЕСКОЙ КОРОБКОЙ ПЕРЕДАЧ
+            - listitem [ref=f13e35]: от 2 745 000 ₽
+          - button "Получить предложение" [ref=f13e37] [cursor=pointer]
+      - group "2 / 6" [ref=f13e38]:
+        - generic [ref=f13e40]:
+          - generic [ref=f13e41]: Минивен Sollers SF1 - в наличии
+          - list [ref=f13e44]:
+            - listitem [ref=f13e45]: VIP-условия в июне!
+          - button "Получить предложение" [ref=f13e47] [cursor=pointer]
+      - group "3 / 6" [ref=f13e48]:
+        - generic [ref=f13e50]:
+          - generic [ref=f13e51]: Минивэн бизнес-класса
+          - list [ref=f13e54]:
+            - listitem [ref=f13e55]: от 4 775 000 ₽
+            - listitem [ref=f13e56]: Выгода в июне до 250 000 ₽
+          - button "Получить предложение" [ref=f13e58] [cursor=pointer]
+      - group "4 / 6" [ref=f13e59]:
+        - generic [ref=f13e61]:
+          - generic [ref=f13e62]: Только в июне
+          - list [ref=f13e65]:
+            - listitem [ref=f13e66]: Бонус до 300 000 ₽ на пикапы в наличии!
+          - button "Получить предложение" [ref=f13e68] [cursor=pointer]
+      - group "5 / 6" [ref=f13e69]:
+        - generic [ref=f13e71]:
+          - generic [ref=f13e72]: Специальные цены на авто в наличии
+          - list [ref=f13e75]:
+            - listitem [ref=f13e76]: Sollers ST8 и ST6 - полноприводные пикапы
+          - button "Получить предложение" [ref=f13e78] [cursor=pointer]
+      - group "6 / 6" [ref=f13e79]:
+        - generic [ref=f13e81]:
+          - generic [ref=f13e82]: Скидка до 500 000 ₽
+          - list [ref=f13e85]:
+            - listitem [ref=f13e86]: При покупке в лизинг
+          - button "Получить предложение" [ref=f13e88] [cursor=pointer]
+    - button "Previous slide" [ref=f13e89] [cursor=pointer]: prev
+    - button "Next slide" [ref=f13e90] [cursor=pointer]: next
+    - generic [ref=f13e91]:
+      - button "Go to slide 1" [ref=f13e92] [cursor=pointer]
+      - button "Go to slide 2" [ref=f13e93] [cursor=pointer]
+      - button "Go to slide 3" [ref=f13e94] [cursor=pointer]
+      - button "Go to slide 4" [ref=f13e95] [cursor=pointer]
+      - button "Go to slide 5" [ref=f13e96] [cursor=pointer]
+      - button "Go to slide 6" [ref=f13e97] [cursor=pointer]
+  - generic [ref=f13e99]:
+    - generic [ref=f13e101]:
+      - generic [ref=f13e102]:
+        - img "VIP-условия для автопарков"
+      - generic [ref=f13e103]: VIP-условия для автопарков
+    - generic [ref=f13e106]:
+      - generic [ref=f13e107]:
+        - img "20% субсидия. ГосЛизинг"
+      - generic [ref=f13e108]: 20% субсидия. ГосЛизинг
+    - generic [ref=f13e111]:
+      - generic [ref=f13e112]:
+        - img "Субсидированный кредит от 0,01%"
+      - generic [ref=f13e113]: Субсидированный кредит от 0,01%
+  - generic [ref=f13e114]:
+    - generic [ref=f13e116]:
+      - heading "Модельный ряд Sollers" [level=3] [ref=f13e118]
+      - generic [ref=f13e120]:
+        - link "Грузовые авто":
+          - /url: https://sollers-nevastar.ru/cargo/
+      - generic [ref=f13e121] [cursor=pointer]:
+        - generic [ref=f13e122]: Sollers ST6
+        - generic [ref=f13e124]: Sollers ST8
+        - generic [ref=f13e126]: Sollers ST9
+        - generic [ref=f13e128]: Sollers SP7
+        - generic [ref=f13e130]: Sollers SF1
+        - generic [ref=f13e132]: Sollers SF5
+      - generic [ref=f13e134]:
+        - generic [ref=f13e135]:
+          - generic [ref=f13e136]: ST6
+          - generic [ref=f13e140]:
+            - generic [ref=f13e141]: Черный (металлик)
+            - generic [ref=f13e142]:
+              - generic "Белый" [ref=f13e143] [cursor=pointer]
+              - generic "Серебристый (металлик)" [ref=f13e144] [cursor=pointer]
+              - generic "Серый графит (металлик)" [ref=f13e145] [cursor=pointer]
+              - generic "Зеленый (металлик)" [ref=f13e146] [cursor=pointer]
+              - generic "Коричневый (металлик)" [ref=f13e147] [cursor=pointer]
+              - generic "Синий (металлик)" [ref=f13e148] [cursor=pointer]
+              - generic "Красный (металлик)" [ref=f13e149] [cursor=pointer]
+              - generic "Черный (металлик)" [ref=f13e150]
+          - generic [ref=f13e151]:
+            - generic [ref=f13e152]: от 2 380 000 ₽
+            - generic [ref=f13e154]:
+              - generic [ref=f13e156]:
+                - generic [ref=f13e157]: 󰄯
+                - generic [ref=f13e160]:
+                  - text: от
+                  - generic [ref=f13e161]: 2 755 000
+                  - text: ₽
+              - generic [ref=f13e163]:
+                - generic [ref=f13e164]: 󰄯
+                - generic [ref=f13e166]: Рассрочка от 0,01%*
+              - generic [ref=f13e168]:
+                - generic [ref=f13e169]: 󰄯
+                - generic [ref=f13e171]: Лизинг с авансом 10%
+              - generic [ref=f13e173]:
+                - generic [ref=f13e174]: 󰄯
+                - generic [ref=f13e176]: Трейд-Ин на Ваших условиях
+              - generic [ref=f13e178]:
+                - generic [ref=f13e179]: 󰄯
+                - generic [ref=f13e181]: Минус 20 000 ₽ от любого предложения конкурента
+            - button "Получить предложение" [ref=f13e183] [cursor=pointer]
+            - generic [ref=f13e185]:
+              - link "Комплектации" [ref=f13e186] [cursor=pointer]:
+                - /url: data/pdf/st6/price-list-st6-2025-05-01.pdf
+              - link "Брошюра" [ref=f13e189] [cursor=pointer]:
+                - /url: data/pdf/st6/brochure.pdf
+              - link "Аксессуары" [ref=f13e192] [cursor=pointer]:
+                - /url: data/pdf/st6/accessories.pdf
+          - generic [ref=f13e196]:
+            - generic [ref=f13e197]:
+              - generic [ref=f13e198]: Габаритные размеры
+              - generic [ref=f13e199]:
+                - generic [ref=f13e200]:
+                  - generic [ref=f13e201]: "5315"
+                  - generic [ref=f13e202]: Общая длина, мм
+                - generic [ref=f13e203]:
+                  - generic [ref=f13e204]: "1830"
+                  - generic [ref=f13e205]: Общая ширина, мм
+                - generic [ref=f13e206]:
+                  - generic [ref=f13e207]: "1815"
+                  - generic [ref=f13e208]: Общая высота, мм
+            - generic [ref=f13e209]:
+              - generic [ref=f13e210]: Грузовой отсек
+              - generic [ref=f13e211]:
+                - generic [ref=f13e212]:
+                  - generic [ref=f13e213]: "1520"
+                  - generic [ref=f13e214]: Длина на уровне пола, мм
+                - generic [ref=f13e215]:
+                  - generic [ref=f13e216]: "1520"
+                  - generic [ref=f13e217]: Ширина, мм
+                - generic [ref=f13e218]:
+                  - generic [ref=f13e219]: "470"
+                  - generic [ref=f13e220]: Высота бортов, мм
+            - generic [ref=f13e221]:
+              - generic [ref=f13e222]: Вместимость
+              - generic [ref=f13e223]:
+                - generic [ref=f13e224]:
+                  - generic [ref=f13e225]: "5"
+                  - generic [ref=f13e226]: Пассажирских мест
+                - generic [ref=f13e227]:
+                  - generic [ref=f13e228]: до 900
+                  - generic [ref=f13e229]: Грузоподъемность, кг
+                - generic [ref=f13e230]:
+                  - generic [ref=f13e231]: "860"
+                  - generic [ref=f13e232]: Погрузочная высота, мм
+          - generic [ref=f13e235]:
+            - generic [ref=f13e236]:
+              - group "1 / 7" [ref=f13e237]
+              - group "2 / 7" [ref=f13e239]
+              - group "3 / 7" [ref=f13e241]
+              - group "4 / 7" [ref=f13e243]
+              - group "5 / 7" [ref=f13e245]
+              - group "6 / 7" [ref=f13e247]
+              - group "7 / 7" [ref=f13e249]
+            - button "Previous slide" [disabled]: prev
+            - button "Next slide" [ref=f13e251] [cursor=pointer]: next
+          - iframe [ref=f13e254]:
+            - region "Видеоплеер" [ref=f14e9]:
+              - button "Смотреть" [ref=f14e12] [cursor=pointer]
+        - generic [ref=f13e256]:
+          - generic [ref=f13e257]: ST8
+          - generic [ref=f13e269]:
+            - generic [ref=f13e270]: от 2 095 000 ₽
+            - generic [ref=f13e272]:
+              - generic [ref=f13e274]:
+                - generic [ref=f13e275]: 󰄯
+                - generic [ref=f13e278]:
+                  - text: от
+                  - generic [ref=f13e279]: 2 770 000
+                  - text: ₽
+              - generic [ref=f13e281]:
+                - generic [ref=f13e282]: 󰄯
+                - generic [ref=f13e284]: Рассрочка от 0,01%*
+              - generic [ref=f13e286]:
+                - generic [ref=f13e287]: 󰄯
+                - generic [ref=f13e289]: Лизинг с авансом 10%
+              - generic [ref=f13e291]:
+                - generic [ref=f13e292]: 󰄯
+                - generic [ref=f13e294]: Трейд-Ин на Ваших условиях
+              - generic [ref=f13e296]:
+                - generic [ref=f13e297]: 󰄯
+                - generic [ref=f13e299]: Минус 20 000 ₽ от любого предложения конкурента
+            - button "Получить предложение" [ref=f13e301] [cursor=pointer]
+            - link "Комплектации" [ref=f13e304] [cursor=pointer]:
+              - /url: data/pdf/st8/price-list-st8-2025-10-01.pdf
+          - generic [ref=f13e308]:
+            - generic [ref=f13e309]:
+              - generic [ref=f13e310]: Габаритные размеры
+              - generic [ref=f13e311]:
+                - generic [ref=f13e312]:
+                  - generic [ref=f13e313]: "5325"
+                  - generic [ref=f13e314]: Общая длина, мм
+                - generic [ref=f13e315]:
+                  - generic [ref=f13e316]: "1880"
+                  - generic [ref=f13e317]: Общая ширина, мм
+                - generic [ref=f13e318]:
+                  - generic [ref=f13e319]: "1830"
+                  - generic [ref=f13e320]: Общая высота, мм
+            - generic [ref=f13e321]:
+              - generic [ref=f13e322]: Грузовой отсек
+              - generic [ref=f13e323]:
+                - generic [ref=f13e324]:
+                  - generic [ref=f13e325]: "1520"
+                  - generic [ref=f13e326]: Длина на уровне пола, мм
+                - generic [ref=f13e327]:
+                  - generic [ref=f13e328]: "1520"
+                  - generic [ref=f13e329]: Ширина, мм
+                - generic [ref=f13e330]:
+                  - generic [ref=f13e331]: "470"
+                  - generic [ref=f13e332]: Высота бортов, мм
+            - generic [ref=f13e333]:
+              - generic [ref=f13e334]: Вместимость
+              - generic [ref=f13e335]:
+                - generic [ref=f13e336]:
+                  - generic [ref=f13e337]: "5"
+                  - generic [ref=f13e338]: Пассажирских мест
+                - generic [ref=f13e339]:
+                  - generic [ref=f13e340]: до 900
+                  - generic [ref=f13e341]: Грузоподъёмность, кг
+                - generic [ref=f13e342]:
+                  - generic [ref=f13e343]: "890"
+                  - generic [ref=f13e344]: Погрузочная высота, мм
+          - generic [ref=f13e347]:
+            - generic [ref=f13e348]:
+              - group "1 / 7" [ref=f13e349]
+              - group "2 / 7" [ref=f13e351]
+              - group "3 / 7" [ref=f13e353]
+              - group "4 / 7" [ref=f13e355]
+              - group "5 / 7" [ref=f13e357]
+              - group "6 / 7" [ref=f13e359]
+              - group "7 / 7" [ref=f13e361]
+            - button "Previous slide" [disabled]: prev
+            - button "Next slide" [ref=f13e363] [cursor=pointer]: next
+        - generic [ref=f13e365]:
+          - generic [ref=f13e366]: ST9
+          - generic [ref=f13e370]:
+            - generic [ref=f13e371]: Черный (металлик)
+            - generic [ref=f13e372]:
+              - generic "Белый" [ref=f13e373] [cursor=pointer]
+              - generic "Черный (металлик)" [ref=f13e374]
+          - generic [ref=f13e375]:
+            - generic [ref=f13e376]: от 3 425 000 ₽
+            - generic [ref=f13e378]:
+              - generic [ref=f13e380]:
+                - generic [ref=f13e381]: 󰄯
+                - generic [ref=f13e384]:
+                  - text: от
+                  - generic [ref=f13e385]: 3 575 000
+                  - text: ₽
+              - generic [ref=f13e387]:
+                - generic [ref=f13e388]: 󰄯
+                - generic [ref=f13e390]: Рассрочка от 0,01%*
+              - generic [ref=f13e392]:
+                - generic [ref=f13e393]: 󰄯
+                - generic [ref=f13e395]: Лизинг с авансом 10%
+              - generic [ref=f13e397]:
+                - generic [ref=f13e398]: 󰄯
+                - generic [ref=f13e400]: Трейд-Ин на Ваших условиях
+              - generic [ref=f13e402]:
+                - generic [ref=f13e403]: 󰄯
+                - generic [ref=f13e405]: Минус 20 000 ₽ от любого предложения конкурента
+            - button "Получить предложение" [ref=f13e407] [cursor=pointer]
+          - generic [ref=f13e409]:
+            - generic [ref=f13e410]:
+              - generic [ref=f13e411]: Габаритные размеры
+              - generic [ref=f13e412]:
+                - generic [ref=f13e413]:
+                  - generic [ref=f13e414]: "5330"
+                  - generic [ref=f13e415]: Общая длина, мм
+                - generic [ref=f13e416]:
+                  - generic [ref=f13e417]: "1965"
+                  - generic [ref=f13e418]: Общая ширина, мм
+                - generic [ref=f13e419]:
+                  - generic [ref=f13e420]: "1880"
+                  - generic [ref=f13e421]: Общая высота, мм
+            - generic [ref=f13e422]:
+              - generic [ref=f13e423]: Грузовой отсек
+              - generic [ref=f13e424]:
+                - generic [ref=f13e425]:
+                  - generic [ref=f13e426]: "1520"
+                  - generic [ref=f13e427]: Длина на уровне пола, мм
+                - generic [ref=f13e428]:
+                  - generic [ref=f13e429]: "1590"
+                  - generic [ref=f13e430]: Ширина, мм
+                - generic [ref=f13e431]:
+                  - generic [ref=f13e432]: "470"
+                  - generic [ref=f13e433]: Высота бортов, мм
+            - generic [ref=f13e434]:
+              - generic [ref=f13e435]: Вместимость
+              - generic [ref=f13e436]:
+                - generic [ref=f13e437]:
+                  - generic [ref=f13e438]: "5"
+                  - generic [ref=f13e439]: Пассажирских мест
+                - generic [ref=f13e440]:
+                  - generic [ref=f13e441]: до 980
+                  - generic [ref=f13e442]: Грузоподъемность, кг
+          - generic [ref=f13e445]:
+            - generic [ref=f13e446]:
+              - group "1 / 4" [ref=f13e447]
+              - group "2 / 4" [ref=f13e449]
+              - group "3 / 4" [ref=f13e451]
+              - group "4 / 4" [ref=f13e453]
+            - text: prev next
+          - iframe [ref=f13e457]:
+            - region "Видеоплеер" [ref=f15e9]:
+              - button "Смотреть" [ref=f15e12] [cursor=pointer]
+        - generic [ref=f13e459]:
+          - generic [ref=f13e460]: SP7
+          - generic [ref=f13e471]:
+            - generic [ref=f13e472]: от 4 775 000 ₽
+            - generic [ref=f13e474]:
+              - generic [ref=f13e476]:
+                - generic [ref=f13e477]: 󰄯
+                - generic [ref=f13e479]: Лизинг с авансом 10%
+              - generic [ref=f13e481]:
+                - generic [ref=f13e482]: 󰄯
+                - generic [ref=f13e484]: Трейд-Ин на Ваших условиях
+              - generic [ref=f13e486]:
+                - generic [ref=f13e487]: 󰄯
+                - generic [ref=f13e489]: Минус 20 000 ₽ от любого предложения конкурента
+            - button "Получить предложение" [ref=f13e491] [cursor=pointer]
+          - generic [ref=f13e493]:
+            - generic [ref=f13e494]:
+              - generic [ref=f13e495]: Габаритные размеры
+              - generic [ref=f13e496]:
+                - generic [ref=f13e497]:
+                  - generic [ref=f13e498]: 5 215
+                  - generic [ref=f13e499]: Общая длина, мм
+                - generic [ref=f13e500]:
+                  - generic [ref=f13e501]: 1 895
+                  - generic [ref=f13e502]: Общая ширина, мм
+                - generic [ref=f13e503]:
+                  - generic [ref=f13e504]: 1 830
+                  - generic [ref=f13e505]: Общая высота, мм
+            - generic [ref=f13e506]:
+              - generic [ref=f13e507]: Двигатель и трансмиссия
+              - generic [ref=f13e508]:
+                - generic [ref=f13e509]:
+                  - generic [ref=f13e510]: 236,6 л.с.
+                  - generic [ref=f13e511]: Максимальная мощность, л.с.
+                - generic [ref=f13e512]:
+                  - generic [ref=f13e513]: 8АТ
+                  - generic [ref=f13e514]: Коробка передач
+            - generic [ref=f13e515]:
+              - generic [ref=f13e516]: Вместимость
+              - generic [ref=f13e517]:
+                - generic [ref=f13e518]:
+                  - generic [ref=f13e519]: "7"
+                  - generic [ref=f13e520]: Количество мест
+                - generic [ref=f13e521]:
+                  - generic [ref=f13e522]: 2+2+3
+                  - generic [ref=f13e523]: Схема расположения сидений
+                - generic [ref=f13e524]:
+                  - generic [ref=f13e525]: 700/2 500
+                  - generic [ref=f13e526]: Объём багажника, л
+          - generic [ref=f13e529]:
+            - generic [ref=f13e530]:
+              - group "1 / 5" [ref=f13e531]
+              - group "2 / 5" [ref=f13e533]
+              - group "3 / 5" [ref=f13e535]
+              - group "4 / 5" [ref=f13e537]
+              - group "5 / 5" [ref=f13e539]
+            - button "Previous slide" [disabled]: prev
+            - button "Next slide" [ref=f13e541] [cursor=pointer]: next
+        - generic [ref=f13e543]:
+          - generic [ref=f13e544]: SF1
+          - generic [ref=f13e545]:
+            - generic [ref=f13e546]: Минивэн
+            - generic [ref=f13e548] [cursor=pointer]: Цельнометаллический
+            - generic [ref=f13e550] [cursor=pointer]: Грузопассажирский фургон
+          - generic [ref=f13e555]:
+            - generic [ref=f13e556]: Белый
+            - generic [ref=f13e557]:
+              - generic "Белый" [ref=f13e558]
+              - generic "Тёмно-синий" [ref=f13e559] [cursor=pointer]
+              - generic "Красный" [ref=f13e560] [cursor=pointer]
+              - generic "Серебристый (металлик)" [ref=f13e561] [cursor=pointer]
+              - generic "Тёмно-серый (металлик)" [ref=f13e562] [cursor=pointer]
+              - generic "Чёрный (металлик)" [ref=f13e563] [cursor=pointer]
+          - generic [ref=f13e564]:
+            - generic [ref=f13e565]: от 2 276 000 ₽
+            - generic [ref=f13e567]:
+              - generic [ref=f13e569]:
+                - generic [ref=f13e570]: 󰄯
+                - generic [ref=f13e572]: Лизинг с авансом 10%
+              - generic [ref=f13e574]:
+                - generic [ref=f13e575]: 󰄯
+                - generic [ref=f13e577]: Трейд-Ин на Ваших условиях
+              - generic [ref=f13e579]:
+                - generic [ref=f13e580]: 󰄯
+                - generic [ref=f13e582]: Минус 20 000 ₽ от любого предложения конкурента
+            - button "Получить предложение" [ref=f13e584] [cursor=pointer]
+            - generic [ref=f13e586]:
+              - link "Комплектации" [ref=f13e587] [cursor=pointer]:
+                - /url: data/pdf/sf1/price-list-sf1-2025-08-26.pdf
+              - link "Аксессуары" [ref=f13e590] [cursor=pointer]:
+                - /url: data/pdf/sf1/accessories.pdf
+          - generic [ref=f13e594]:
+            - generic [ref=f13e595]:
+              - generic [ref=f13e596]: Габаритные размеры
+              - generic [ref=f13e597]:
+                - generic [ref=f13e598]:
+                  - generic [ref=f13e599]: 5 115
+                  - generic [ref=f13e600]: Общая длина, мм
+                - generic [ref=f13e601]:
+                  - generic [ref=f13e602]: 1 900
+                  - generic [ref=f13e603]: Общая высота, мм
+            - generic [ref=f13e604]:
+              - generic [ref=f13e605]: Вместимость
+              - generic [ref=f13e606]:
+                - generic [ref=f13e607]:
+                  - generic [ref=f13e608]: "6"
+                  - generic [ref=f13e609]: Количество мест
+                - generic [ref=f13e610]:
+                  - generic [ref=f13e611]: 2+2+3
+                  - generic [ref=f13e612]: Схема расположения сидений
+                - generic [ref=f13e613]:
+                  - generic [ref=f13e614]: 2 510
+                  - generic [ref=f13e615]: Полная масса, кг
+          - generic [ref=f13e618]:
+            - generic [ref=f13e619]:
+              - group "1 / 4" [ref=f13e620]
+              - group "2 / 4" [ref=f13e622]
+              - group "3 / 4" [ref=f13e624]
+              - group "4 / 4" [ref=f13e626]
+            - text: prev next
+        - generic [ref=f13e629]:
+          - generic [ref=f13e630]: SF5
+          - generic [ref=f13e631]:
+            - generic [ref=f13e632]: Цельнометаллический
+            - generic [ref=f13e634] [cursor=pointer]: Грузопассажирский фургон
+            - generic [ref=f13e636] [cursor=pointer]: Автобус
+            - generic [ref=f13e638] [cursor=pointer]: Грузовой автомобиль
+          - generic [ref=f13e640]:
+            - generic [ref=f13e643]:
+              - generic [ref=f13e644]: Белый
+              - generic "Белый" [ref=f13e646]
+            - generic [ref=f13e648]:
+              - generic [ref=f13e649]: Средняя L2
+              - generic [ref=f13e651] [cursor=pointer]: Длинная L3
+          - generic [ref=f13e653]:
+            - generic [ref=f13e654]: от 2 745 000 ₽
+            - generic [ref=f13e656]:
+              - generic [ref=f13e658]:
+                - generic [ref=f13e659]: 󰄯
+                - generic [ref=f13e661]: Лизинг с авансом 10%
+              - generic [ref=f13e663]:
+                - generic [ref=f13e664]: 󰄯
+                - generic [ref=f13e666]: Трейд-Ин на Ваших условиях
+              - generic [ref=f13e668]:
+                - generic [ref=f13e669]: 󰄯
+                - generic [ref=f13e671]: Минус 20 000 ₽ от любого предложения конкурента
+            - button "Получить предложение" [ref=f13e673] [cursor=pointer]
+          - generic [ref=f13e675]:
+            - generic [ref=f13e676]:
+              - generic [ref=f13e677]: Габаритные размеры
+              - generic [ref=f13e678]:
+                - generic [ref=f13e679]:
+                  - generic [ref=f13e680]: 5 650
+                  - generic [ref=f13e681]: Общая длина, мм
+                - generic [ref=f13e682]:
+                  - generic [ref=f13e683]: 2 405
+                  - generic [ref=f13e684]: Общая высота, мм
+            - generic [ref=f13e685]:
+              - generic [ref=f13e686]: Грузовой отсек
+              - generic [ref=f13e687]:
+                - generic [ref=f13e688]:
+                  - generic [ref=f13e689]: 3 220
+                  - generic [ref=f13e690]: Длина на уровне пола, мм
+                - generic [ref=f13e691]:
+                  - generic [ref=f13e692]: 1 630
+                  - generic [ref=f13e693]: Высота, мм
+                - generic [ref=f13e694]:
+                  - generic [ref=f13e695]: 1 850
+                  - generic [ref=f13e696]: Ширина, мм
+                - generic [ref=f13e697]:
+                  - generic [ref=f13e698]: 9,7
+                  - generic [ref=f13e699]: Объём грузового отсека, м³
+                - generic [ref=f13e700]:
+                  - generic [ref=f13e701]: "4"
+                  - generic [ref=f13e702]: Палеты (1200×800мм)
+            - generic [ref=f13e703]:
+              - generic [ref=f13e704]: Масса и шасси
+              - generic [ref=f13e705]:
+                - generic [ref=f13e706]:
+                  - generic [ref=f13e707]: 3 490
+                  - generic [ref=f13e708]: Полная масса, кг
+                - generic [ref=f13e709]:
+                  - generic [ref=f13e710]: Односкатные
+                  - generic [ref=f13e711]: Тип задних колёс
+            - generic [ref=f13e712]:
+              - generic [ref=f13e713]: Двигатель и трансмиссия
+              - generic [ref=f13e714]:
+                - generic [ref=f13e715]:
+                  - generic [ref=f13e716]: Дизельный
+                  - generic [ref=f13e717]: Тип двигателя
+                - generic [ref=f13e718]:
+                  - generic [ref=f13e719]: 6АТ
+                  - generic [ref=f13e720]: Коробка передач
+                - generic [ref=f13e721]:
+                  - generic [ref=f13e722]: "80"
+                  - generic [ref=f13e723]: Объём топливного бака, л
+          - generic [ref=f13e726]:
+            - generic [ref=f13e727]:
+              - group "1 / 5" [ref=f13e728]
+              - group "2 / 5" [ref=f13e730]
+              - group "3 / 5" [ref=f13e732]
+              - group "4 / 5" [ref=f13e734]
+              - group "5 / 5" [ref=f13e736]
+            - button "Previous slide" [disabled]: prev
+            - button "Next slide" [ref=f13e738] [cursor=pointer]: next
+    - generic [ref=f13e741]:
+      - heading "Автомобили в наличии" [level=3] [ref=f13e743]
+      - generic [ref=f13e745]:
+        - generic [ref=f13e746]:
+          - link "Sollers SF1 VAN" [ref=f13e748] [cursor=pointer]:
+            - /url: /data/img/range/sf1/sf1_black.webp
+          - generic [ref=f13e749]:
+            - generic [ref=f13e750]: Sollers SF1 VAN 2026
+            - generic [ref=f13e751]: SF1 ЦМФ 2.5T 1.5бенз. 136л.с. Мех 5
+            - generic [ref=f13e752]: 2 150 000 ₽
+            - button "Получить предложение" [ref=f13e753] [cursor=pointer]
+        - generic [ref=f13e754]:
+          - generic [ref=f13e755]:
+            - link "Sollers SF5 VAN L2H1 3.5T 2.7D 150PS MT6 RWD SRW" [ref=f13e756] [cursor=pointer]:
+              - /url: https://sollers-nevastar.ru/fid/img_zn/EBEVXM209T0027208_1.jpg
+            - generic [ref=f13e757]: Выгода до 370 000 ₽
+          - generic [ref=f13e758]:
+            - generic [ref=f13e759]: Sollers SF5 VAN L2H1 3.5T 2.7D 150PS MT6 RWD SRW 2026
+            - generic [ref=f13e760]: SF5 Фургон L2 3.5т 2.7диз 150лс МT6
+            - generic [ref=f13e761]: 2 900 000 ₽
+            - button "Получить предложение" [ref=f13e762] [cursor=pointer]
+        - generic [ref=f13e763]:
+          - generic [ref=f13e764]:
+            - link "Sollers SF5 VAN L3H2 3.5T 2.7D 150PS AT6 RWD SRW" [ref=f13e765] [cursor=pointer]:
+              - /url: /data/img/range/sf5/bus.webp
+            - generic [ref=f13e766]: Выгода до 370 000 ₽
+          - generic [ref=f13e767]:
+            - generic [ref=f13e768]: Sollers SF5 VAN L3H2 3.5T 2.7D 150PS AT6 RWD SRW 2026
+            - generic [ref=f13e769]: Цвет БЕЛЫЙ
+            - generic [ref=f13e770]: 3 105 000 ₽
+            - button "Получить предложение" [ref=f13e771] [cursor=pointer]
+        - generic [ref=f13e772]:
+          - generic [ref=f13e773]:
+            - link "Sollers SF5 VAN L3H2 3.5T 2.7D 150PS AT6 RWD SRW" [ref=f13e774] [cursor=pointer]:
+              - /url: /data/img/range/sf5/bus.webp
+            - generic [ref=f13e775]: Выгода до 370 000 ₽
+          - generic [ref=f13e776]:
+            - generic [ref=f13e777]: Sollers SF5 VAN L3H2 3.5T 2.7D 150PS AT6 RWD SRW 2026
+            - generic [ref=f13e778]: Цвет БЕЛЫЙ
+            - generic [ref=f13e779]: 3 105 000 ₽
+            - button "Получить предложение" [ref=f13e780] [cursor=pointer]
+        - generic [ref=f13e781]:
+          - generic [ref=f13e782]:
+            - link "Sollers SF5 VAN L3H2 3.5T 2.7D 150PS AT6 RWD SRW" [ref=f13e783] [cursor=pointer]:
+              - /url: /data/img/range/sf5/bus.webp
+            - generic [ref=f13e784]: Выгода до 370 000 ₽
+          - generic [ref=f13e785]:
+            - generic [ref=f13e786]: Sollers SF5 VAN L3H2 3.5T 2.7D 150PS AT6 RWD SRW 2026
+            - generic [ref=f13e787]: Цвет БЕЛЫЙ
+            - generic [ref=f13e788]: 3 105 000 ₽
+            - button "Получить предложение" [ref=f13e789] [cursor=pointer]
+        - generic [ref=f13e790]:
+          - generic [ref=f13e791]:
+            - link "Sollers SF5 VAN L3H2 3.5T 2.7D 150PS AT6 RWD SRW" [ref=f13e792] [cursor=pointer]:
+              - /url: /data/img/range/sf5/bus.webp
+            - generic [ref=f13e793]: Выгода до 370 000 ₽
+          - generic [ref=f13e794]:
+            - generic [ref=f13e795]: Sollers SF5 VAN L3H2 3.5T 2.7D 150PS AT6 RWD SRW 2026
+            - generic [ref=f13e796]: Цвет СЕРЕБРИСТЫЙ (металлик)
+            - generic [ref=f13e797]: 3 131 000 ₽
+            - button "Получить предложение" [ref=f13e798] [cursor=pointer]
+        - generic [ref=f13e799]:
+          - generic [ref=f13e800]:
+            - link "Sollers SP7" [ref=f13e801] [cursor=pointer]:
+              - /url: https://sollers-nevastar.ru/fid/img_zn/EBEMASP7XT0026161_1.jpg
+            - generic [ref=f13e802]: Выгода до 500 000 ₽
+          - generic [ref=f13e803]:
+            - generic [ref=f13e804]: Sollers SP7 2026
+            - generic [ref=f13e805]: SP7 MPV 2.0TGDI 237PS 8AT FWD
+            - generic [ref=f13e806]: 4 575 000 ₽
+            - button "Получить предложение" [ref=f13e807] [cursor=pointer]
+        - generic [ref=f13e808]:
+          - generic [ref=f13e809]:
+            - link "Sollers ST8" [ref=f13e810] [cursor=pointer]:
+              - /url: /data/img/range/st8/ST8-black_2.webp
+            - generic [ref=f13e811]: Выгода до 150 000 ₽
+          - generic [ref=f13e812]:
+            - generic [ref=f13e813]: Sollers ST8 2026
+            - generic [ref=f13e814]: ST8 DCAB LUXE 2.4T 204PS MT6 AWD
+            - generic [ref=f13e815]: 2 870 000 ₽
+            - button "Получить предложение" [ref=f13e816] [cursor=pointer]
+      - button "Показать ещё" [ref=f13e817] [cursor=pointer]
+    - generic [ref=f13e821]:
+      - generic [ref=f13e822]: Воспользуйтесь услугой Лизинга для любой модели Sollers
+      - generic [ref=f13e824]: Специальные условия лизинга для физических и юридических лиц.
+      - button "Заявку на лизинг" [ref=f13e826] [cursor=pointer]
+    - generic [ref=f13e832]:
+      - generic [ref=f13e833]: Тест-драйв любой модели Sollers
+      - generic [ref=f13e835]: Пройдите тест-драйв любой модели Sollers и получите подарок на выбор.
+      - button "Пройти тест-драйв" [ref=f13e837] [cursor=pointer]
+    - generic [ref=f13e843]:
+      - generic [ref=f13e844]: Интересует сервисное обслуживание Sollers?
+      - generic [ref=f13e846]: Проведение планового ТО в строгом соответствии с регламентом производителя с использованием оригинальных запчастей является гарантией надежной работы и повышает остаточную стоимость автомобиля Sollers.
+      - button "Записаться на сервис" [ref=f13e848] [cursor=pointer]
+    - generic [ref=f13e852]:
+      - heading "Преимущества Звезда Невы Sollers" [level=3] [ref=f13e854]
+      - generic [ref=f13e856]:
+        - generic [ref=f13e857]: Экспертная диагностика и ремонт автомобиля
+        - generic [ref=f13e860]: Использование современного оборудования
+        - generic [ref=f13e863]: Высокая квалификация персонала
+        - generic [ref=f13e866]: Соблюдение регламентов производителя
+        - generic [ref=f13e869]: Экономия времени и удобное расположение
+        - generic [ref=f13e872]: Гарантия на выполненные работы
+    - generic [ref=f13e876]:
+      - generic [ref=f13e881]:
+        - generic [ref=f13e882]:
+          - generic [ref=f13e883]: Звезда Невы Sollers
+          - generic [ref=f13e884]: Санкт-Петербург
+          - generic [ref=f13e885]:
+            - link "󱆓 +7 (812) 566-75-71" [ref=f13e887] [cursor=pointer]:
+              - /url: tel:+78125667571
+              - generic [ref=f13e888]: 󱆓
+              - text: +7 (812) 566-75-71
+            - generic [ref=f13e889]:
+              - generic [ref=f13e890]: 󰟙
+              - text: Санкт-Петербург, Витебский просп., 17, корп. 1
+            - generic [ref=f13e891]:
+              - generic [ref=f13e892]: 󰅐
+              - text: Пн-Вс 09:00-21:00
+        - generic [ref=f13e893]:
+          - generic [ref=f13e894]: Доступны услуги
+          - generic [ref=f13e895]: Продажа авто, Кредитный брокер, Страхование, Сервисное обслуживание
+        - button "Получить консультацию" [ref=f13e897] [cursor=pointer]
+      - generic [ref=f13e899]:
+        - iframe [ref=f13e900]:
+          - generic [ref=f16e2]:
+            - generic [ref=f16e3]:
+              - link "Звезда Невы" [ref=f16e4] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/zvezda_nevy/117009426618?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+              - generic [ref=f16e5]:
+                - paragraph [ref=f16e6]: 3,9
+                - generic [ref=f16e7]:
+                  - list [ref=f16e9]:
+                    - listitem [ref=f16e10]
+                    - listitem [ref=f16e11]
+                    - listitem [ref=f16e12]
+                    - listitem [ref=f16e13]
+                    - listitem [ref=f16e14]
+                  - link "2 отзыва • 5 оценок" [ref=f16e15] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/zvezda_nevy/117009426618/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+              - link [ref=f16e17] [cursor=pointer]:
+                - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+            - generic [ref=f16e18]:
+              - paragraph [ref=f16e19]: Поставьте нам оценку
+              - link "Оставить отзыв" [ref=f16e20] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/zvezda_nevy/117009426618/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+            - generic [ref=f16e21]:
+              - generic [ref=f16e22]:
+                - generic [ref=f16e24]:
+                  - paragraph [ref=f16e25]: Даниил С.
+                  - paragraph [ref=f16e26]: 4 сентября 2025
+                - list [ref=f16e28]:
+                  - listitem [ref=f16e29]
+                  - listitem [ref=f16e30]
+                  - listitem [ref=f16e31]
+                  - listitem [ref=f16e32]
+                  - listitem [ref=f16e33]
+                - paragraph [ref=f16e34]: Обслуживал Атлант. Все понравилось. Быстро. Грамотно. Оригинальные запчасти и масла, в наличии.
+              - generic [ref=f16e35]:
+                - generic [ref=f16e37]:
+                  - paragraph [ref=f16e38]: Павел Павлюченко
+                  - paragraph [ref=f16e39]: 12 апреля
+                - list [ref=f16e41]:
+                  - listitem [ref=f16e42]
+                  - listitem [ref=f16e43]
+                  - listitem [ref=f16e44]
+                  - listitem [ref=f16e45]
+                  - listitem [ref=f16e46]
+                - paragraph [ref=f16e47]:
+                  - text: 12.04 записался для прохождения ТО1 Солерс SF1. Сходу мастер озвучил стоимость 20700р. На мой вопрос - почему на информационном стенде указа цена 14700, начал мямлить что-то про изменившиеся расценки. Когда задал вопрос о том, что входит в ТО, мастер начал путаться в показаниях. Потом кому-то позвонил и сообщил, что , якобы , мне посчитали дорогое масло в канистры, а если залить бочковое, то ТО будет как раз- 14700р. Потом мастер встал, обрадовал меня, что по времени ТО займет 3-4часа и куда-то вышел. А вернувшись сообщил, что стоимость будет всё таки 17700!) Тут я окончательно понял, что нахожусь на базаре, а не у официального дилера. Дальше торговаться не стал, и забрав документы, удалился. Было, конечно, весело, но жаль потраченного времени.
+                  - paragraph [ref=f16e48]:
+                    - text: ...
+                    - link "ещё" [ref=f16e49] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/zvezda_nevy/117009426618/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+        - link "Звезда Невы Sollers на карте Санкт‑Петербурга — Яндекс Карты" [ref=f13e901] [cursor=pointer]:
+          - /url: https://yandex.ru/maps/org/zvezda_nevy_sollers/117009426618/
+    - generic [ref=f13e905]:
+      - link [ref=f13e906] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f13e908]: Вся информация, размещенная на настоящем интернет-сайте, носит исключительно информационный характер и ни при каких условиях не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Для получения точной информации о стоимости товаров и услуг, пожалуйста, обращайтесь к менеджерам компании АО «Звезда Невы Sollers»
+      - generic [ref=f13e910]:
+        - text: Вы можете купить новый автомобиль Sollers в автосалоне официального дилера – Звезда Невы Sollers, актуальную цену моделей и комплектаций можно узнать, связавшись с нами по телефону
+        - link "+7 (812) 566-75-71" [ref=f13e911] [cursor=pointer]:
+          - /url: tel:+78125667571
+        - text: .
+      - generic [ref=f13e912]: Права на сайт принадлежат ООО «Звезда Невы (ИНН 7810285325, ОГРН 1037821066480).
+      - generic [ref=f13e913]: © ООО «Звезда Невы. Все права защищены 2026

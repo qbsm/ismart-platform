@@ -1,0 +1,281 @@
+- generic [ref=e2]:
+  - banner:
+    - generic:
+      - generic [ref=e5]:
+        - link "KUMHO TIRE" [ref=e8] [cursor=pointer]:
+          - /url: /UK/index.do
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "OUR TYRES" [ref=e14] [cursor=pointer]:
+              - /url: /uk/eu/tire/list.do?menuCd=MN000421&idcate=MC000583
+          - listitem [ref=e15]:
+            - link "NEWS AND EVENTS" [ref=e16] [cursor=pointer]:
+              - /url: /uk/brd/press/list.do?menuCd=MN000427
+          - listitem [ref=e17]:
+            - link "ABOUT US" [ref=e18] [cursor=pointer]:
+              - /url: /uk/cont/content.do?menuCd=MN000431
+          - listitem [ref=e19]:
+            - link "CONTACT US" [ref=e20] [cursor=pointer]:
+              - /url: /uk/cont/content.do?menuCd=MN000434
+          - listitem [ref=e21]:
+            - link "DEALER LOCATOR" [ref=e22] [cursor=pointer]:
+              - /url: /uk/global/tire/agnc/list.do
+        - generic [ref=e24]:
+          - button "UK" [ref=e28] [cursor=pointer]
+          - button [ref=e29] [cursor=pointer]
+      - generic:
+        - generic:
+          - generic:
+            - list
+  - generic [ref=e32]:
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - list [ref=e42]:
+          - listitem
+          - listitem [ref=e43]
+          - listitem
+          - listitem
+        - button [ref=e45] [cursor=pointer]
+      - generic:
+        - button [ref=e50] [cursor=pointer]
+        - button [ref=e52] [cursor=pointer]
+    - generic [ref=e57]:
+      - list [ref=e58]:
+        - listitem [ref=e59]:
+          - generic [ref=e60]:
+            - link "NEWS" [ref=e62] [cursor=pointer]:
+              - /url: "#"
+            - link "MOTORSPORTS MORE" [ref=e66] [cursor=pointer]:
+              - /url: /uk/brd/press/list.do?menuCd=MN000432
+              - generic [ref=e67]: MOTORSPORTS
+              - generic [ref=e68]: MORE
+            - link "TYRES" [ref=e71] [cursor=pointer]:
+              - /url: "#"
+        - listitem [ref=e74]:
+          - generic [ref=e75]:
+            - link "MOTORSPORTS" [ref=e77] [cursor=pointer]:
+              - /url: "#"
+            - link "TYRES MORE" [ref=e81] [cursor=pointer]:
+              - /url: /uk/eu/tire/list.do?menuCd=MN000421&idcate=MC000583
+              - generic [ref=e82]: TYRES
+              - generic [ref=e83]: MORE
+            - link "NEWS" [ref=e86] [cursor=pointer]:
+              - /url: "#"
+        - listitem [ref=e89]:
+          - generic [ref=e90]:
+            - link "TYRES" [ref=e92] [cursor=pointer]:
+              - /url: "#"
+            - link "NEWS MORE" [ref=e96] [cursor=pointer]:
+              - /url: /uk/brd/press/list.do?menuCd=MN000427
+              - generic [ref=e97]: NEWS
+              - generic [ref=e98]: MORE
+            - link "MOTORSPORTS" [ref=e101] [cursor=pointer]:
+              - /url: "#"
+        - listitem [ref=e104]:
+          - generic [ref=e105]:
+            - link "NEWS" [ref=e107] [cursor=pointer]:
+              - /url: "#"
+            - link "MOTORSPORTS MORE" [ref=e111] [cursor=pointer]:
+              - /url: /uk/brd/press/list.do?menuCd=MN000432
+              - generic [ref=e112]: MOTORSPORTS
+              - generic [ref=e113]: MORE
+            - link "TYRES" [ref=e116] [cursor=pointer]:
+              - /url: "#"
+        - listitem [ref=e119]:
+          - generic [ref=e120]:
+            - link "MOTORSPORTS" [ref=e122] [cursor=pointer]:
+              - /url: "#"
+            - link "TYRES MORE" [ref=e126] [cursor=pointer]:
+              - /url: /uk/eu/tire/list.do?menuCd=MN000421&idcate=MC000583
+              - generic [ref=e127]: TYRES
+              - generic [ref=e128]: MORE
+            - link "NEWS" [ref=e131] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e134]:
+        - button "Go to slide 1" [ref=e135] [cursor=pointer]
+        - button "Go to slide 2" [ref=e136] [cursor=pointer]
+        - button "Go to slide 3" [ref=e137] [cursor=pointer]
+    - generic [ref=e140]:
+      - generic [ref=e141]: COMMUNITY
+      - list [ref=e145]:
+        - listitem [ref=e146]:
+          - link "ABOUT US" [ref=e147] [cursor=pointer]:
+            - /url: /uk/cont/content.do?menuCd=MN000431
+        - listitem [ref=e150]:
+          - link "YOUTUBE" [ref=e151] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UC6msG91eP9YGjEsejlVEJoA
+        - listitem [ref=e154]:
+          - link "INSTAGRAM" [ref=e155] [cursor=pointer]:
+            - /url: https://www.Instagram.com/kumhotyre_uk
+        - listitem [ref=e158]:
+          - link "TWITTER" [ref=e159] [cursor=pointer]:
+            - /url: https://twitter.com/kumhotyreuk
+        - listitem [ref=e162]:
+          - link "FACEBOOK" [ref=e163] [cursor=pointer]:
+            - /url: https://en-gb.facebook.com/KumhoTyresUK/
+    - generic [ref=e166]:
+      - generic [ref=e168]:
+        - generic [ref=e169]: LOCATE NEARBY DEALERS
+        - link "MORE" [ref=e170] [cursor=pointer]:
+          - /url: javascript:;
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - combobox [ref=e177]
+          - combobox [ref=e180] [cursor=pointer]:
+            - textbox "10KM" [ref=e181]
+        - button "SEARCH" [ref=e183] [cursor=pointer]
+    - generic [ref=e187]:
+      - generic [ref=e188]: COMMUNITY
+      - list [ref=e190]:
+        - listitem [ref=e191]:
+          - link [ref=e192] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=9ZmEkljyv1U&feature=emb_title
+        - listitem [ref=e199]:
+          - link [ref=e200] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=LlYQ4GPhIH4&feature=emb_title
+        - listitem [ref=e207]:
+          - link [ref=e208] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=KJ0eNcpTRNk&feature=emb_title
+        - listitem [ref=e215]:
+          - link [ref=e216] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/CCRklevFf8c/?utm_source=ig_web_button_share_sheet
+        - listitem [ref=e222]:
+          - link [ref=e223] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/CCMK-SoFtU5/?utm_source=ig_web_copy_link
+        - listitem [ref=e229]:
+          - link [ref=e230] [cursor=pointer]:
+            - /url: https://www.instagram.com/p/CCJi-iWFdz0/?utm_source=ig_web_copy_link
+  - contentinfo [ref=e236]:
+    - generic [ref=e239]:
+      - generic [ref=e240]:
+        - generic [ref=e241]: KUMHO TIRE GLOBAL SITE
+        - generic [ref=e242]:
+          - combobox [ref=e243]
+          - combobox [ref=e246] [cursor=pointer]:
+            - textbox "International (ENGLISH)" [ref=e247]
+      - generic [ref=e248]:
+        - generic [ref=e249]:
+          - list [ref=e251]:
+            - listitem [ref=e252]:
+              - link "PRIVACY POLICY" [ref=e253] [cursor=pointer]:
+                - /url: /uk/utility/privacy/index.do
+            - listitem [ref=e254]:
+              - link "TIRE SAFE" [ref=e255] [cursor=pointer]:
+                - /url: "https://www.tyresafe.org/ "
+          - generic [ref=e256]: COPYRIGHT© KUMHO TIRE CO., INC. ALL RIGHT RESERVED
+        - list [ref=e257]:
+          - listitem [ref=e258]:
+            - link:
+              - /url: https://en-gb.facebook.com/KumhoTyresUK/
+          - listitem [ref=e260]:
+            - link:
+              - /url: https://twitter.com/kumhotyreuk
+          - listitem [ref=e262]:
+            - link:
+              - /url: https://www.instagram.com/kumhotyre_uk/
+    - generic [ref=e267]:
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - text: SPECIFIC VEHICLE
+          - button "SPECIFIC VEHICLE" [ref=e273] [cursor=pointer]
+          - combobox "SPECIFIC VEHICLE" [ref=e275]:
+            - option "SPECIFIC VEHICLE" [selected]
+            - option "TYRE SIZE"
+            - option "SEASON"
+        - generic [ref=e276]:
+          - text: MAKE
+          - button "MAKE" [ref=e277] [cursor=pointer]
+          - combobox "MAKE" [ref=e279]:
+            - option "MAKE" [disabled] [selected]
+            - option "Alfa Romeo"
+            - option "Alpina"
+            - option "Aston Martin"
+            - option "Audi"
+            - option "Bentley"
+            - option "BMW"
+            - option "Bugatti"
+            - option "BYD"
+            - option "Cadillac"
+            - option "Chevrolet"
+            - option "Chrysler"
+            - option "Citroen"
+            - option "Dacia"
+            - option "Daewoo"
+            - option "Daihatsu"
+            - option "Dodge"
+            - option "Ferrari"
+            - option "Fiat"
+            - option "Fisker"
+            - option "Ford"
+            - option "General Motors"
+            - option "Genesis"
+            - option "Honda"
+            - option "Hummer"
+            - option "Hyundai"
+            - option "IBC"
+            - option "Ineos"
+            - option "Infiniti"
+            - option "Isuzu"
+            - option "Jaguar"
+            - option "Jeep"
+            - option "Kia"
+            - option "Lada"
+            - option "Lamborghini"
+            - option "Lancia"
+            - option "Land Rover"
+            - option "Lexus"
+            - option "Lotus"
+            - option "Lucid"
+            - option "MAN"
+            - option "Maserati"
+            - option "Mazda"
+            - option "MCC-Smart"
+            - option "Mercedes Benz"
+            - option "Mercedes-EQ"
+            - option "MG"
+            - option "Mini"
+            - option "Mitsubishi"
+            - option "Nio"
+            - option "Nissan"
+            - option "Opel"
+            - option "Pagani"
+            - option "Peugeot"
+            - option "Piaggio"
+            - option "Polestar"
+            - option "Porsche"
+            - option "Proton"
+            - option "Renault"
+            - option "Rolls Royce"
+            - option "Rover"
+            - option "Saab"
+            - option "Santana"
+            - option "Seat"
+            - option "Skoda"
+            - option "Ssangyong"
+            - option "Subaru"
+            - option "Suzuki"
+            - option "Talbot"
+            - option "Tesla"
+            - option "Toyota"
+            - option "Volvo"
+            - option "VW"
+        - generic [ref=e280]:
+          - text: MODEL
+          - button "MODEL" [ref=e281] [cursor=pointer]
+          - combobox "MODEL" [ref=e283]:
+            - option "MODEL" [disabled] [selected]
+        - generic [ref=e284]:
+          - text: YEAR
+          - button "YEAR" [ref=e285] [cursor=pointer]
+          - combobox "YEAR" [ref=e287]:
+            - option "YEAR" [disabled] [selected]
+        - generic [ref=e288]:
+          - text: TRIM
+          - button "TRIM" [ref=e289] [cursor=pointer]
+          - combobox "TRIM" [ref=e291]:
+            - option "TRIM" [disabled] [selected]
+      - generic [ref=e292]:
+        - link "SEARCH" [ref=e293] [cursor=pointer]:
+          - /url: "#"
+        - link [ref=e294] [cursor=pointer]:
+          - /url: "#"

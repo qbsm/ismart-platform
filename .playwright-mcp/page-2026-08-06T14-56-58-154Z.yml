@@ -1,0 +1,141 @@
+- generic [active] [ref=f6e1]:
+  - link "Перейти к контенту" [ref=f6e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f6e3]:
+    - banner [ref=f6e4]:
+      - generic [ref=f6e5]:
+        - link [ref=f6e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f6e8]
+        - navigation "Основное меню" [ref=f6e9]:
+          - link "Главная" [ref=f6e11] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/
+          - link "О компании" [ref=f6e13] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/about
+          - link "Шины" [ref=f6e15] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/tires
+          - link "Подбор шин" [ref=f6e17] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/podbor
+          - link "Расширенная гарантия" [ref=f6e19] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/warranty
+          - link "Где купить" [ref=f6e21] [cursor=pointer]:
+            - /url: http://kumho-tires.ru.test/buy
+    - generic [ref=f6e27]:
+      - heading "Подбор шин Kumho" [level=1] [ref=f6e30]
+      - generic [ref=f6e32]:
+        - generic [ref=f6e33]:
+          - generic [ref=f6e34]: Шаг 1 из 4
+          - heading "Какой у вас автомобиль?" [level=2] [ref=f6e35]
+          - generic [ref=f6e36]: От типа кузова зависит конструкция каркаса и индекс нагрузки.
+        - group [ref=f6e37]:
+          - button "Легковой Седаны, хэтчбеки, универсалы" [ref=f6e38] [cursor=pointer]:
+            - generic [ref=f6e40]: Легковой
+            - generic [ref=f6e41]: Седаны, хэтчбеки, универсалы
+          - button "Кроссовер и внедорожник SUV и пикапы" [ref=f6e44] [cursor=pointer]:
+            - generic [ref=f6e46]: Кроссовер и внедорожник
+            - generic [ref=f6e47]: SUV и пикапы
+          - button "Коммерческий Фургоны и микроавтобусы" [ref=f6e50] [cursor=pointer]:
+            - generic [ref=f6e52]: Коммерческий
+            - generic [ref=f6e53]: Фургоны и микроавтобусы
+        - generic [ref=f6e56]:
+          - button "Далее" [disabled]
+    - generic [ref=f6e59]:
+      - generic [ref=f6e60]:
+        - heading "Как подбирать шины" [level=2] [ref=f6e63]
+        - paragraph [ref=f6e66]:
+          - text: "Подбор опирается на четыре параметра:"
+          - generic [ref=f6e67]: тип автомобиля
+          - text: ","
+          - generic [ref=f6e68]: сезон
+          - text: ","
+          - generic [ref=f6e69]: приоритет в поведении шины
+          - text: и
+          - generic [ref=f6e70]: типоразмер
+          - text: . Первые два отсекают неподходящие модели, приоритет поднимает выше те, что настроены под вашу задачу, размер сужает выдачу до конкретных позиций. Размер можно пропустить — тогда конфигуратор покажет все подходящие модели.
+      - generic [ref=f6e71]:
+        - heading "Где посмотреть размер шины" [level=2] [ref=f6e74]
+        - paragraph [ref=f6e77]:
+          - text: "Размер написан на боковине и выглядит так:"
+          - generic [ref=f6e78]: 205/55 R16 91V
+          - text: . Первое число —
+          - generic [ref=f6e79]: ширина протектора
+          - text: в миллиметрах, второе —
+          - generic [ref=f6e80]: высота профиля
+          - text: в процентах от ширины, число после R —
+          - generic [ref=f6e81]: посадочный диаметр
+          - text: в дюймах, он должен совпадать с диаметром диска. Дальше идут
+          - generic [ref=f6e82]: индекс нагрузки
+          - text: (91 — 615 кг на колесо) и
+          - generic [ref=f6e83]: индекс скорости
+          - text: "(V — до 240 км/ч): брать ниже заводских значений нельзя. Заводские размеры для вашей машины указаны в руководстве по эксплуатации и на табличке в проёме водительской двери или на лючке бензобака."
+      - generic [ref=f6e84]:
+        - heading "Какой сезон выбрать" [level=2] [ref=f6e87]
+        - generic [ref=f6e89]:
+          - paragraph [ref=f6e90]:
+            - generic [ref=f6e91]: Летние
+            - text: "шины рассчитаны на температуру примерно от +7 °C: их состав твердеет на холоде и теряет сцепление."
+            - generic [ref=f6e92]: Зимние шипованные
+            - text: держат лёд и укатанный снег — им место там, где зима настоящая и дороги чистят не всегда.
+            - generic [ref=f6e93]: Зимние нешипованные
+            - text: (липучка) тише и лучше для города с реагентами и частыми переходами через ноль.
+            - generic [ref=f6e94]: Всесезонные
+            - text: — компромисс для мягкой зимы и межсезонья; в сильный мороз и на льду они уступают зимним.
+          - paragraph [ref=f6e95]: "Менять комплект стоит по устойчивой погоде, а не по календарю: ориентир — среднесуточные +7 °C."
+      - generic [ref=f6e96]:
+        - heading "Легковые, внедорожные и коммерческие" [level=2] [ref=f6e99]
+        - paragraph [ref=f6e102]:
+          - text: Для
+          - generic [ref=f6e103]: кроссоверов и внедорожников
+          - text: нужен каркас, рассчитанный на большую массу и центр тяжести выше — это линейки
+          - link "Road Venture" [ref=f6e104] [cursor=pointer]:
+            - /url: /tires/at52
+          - text: и CRUGEN. Для
+          - generic [ref=f6e105]: фургонов и микроавтобусов
+          - text: выпускаются усиленные типоразмеры с индексом
+          - generic [ref=f6e106]: C
+          - text: "и повышенным индексом нагрузки — семейство PorTran. Ставить на коммерческий транспорт легковую шину нельзя: она не рассчитана на постоянную загрузку."
+      - generic [ref=f6e107]:
+        - heading "Что даёт приоритет" [level=2] [ref=f6e110]
+        - paragraph [ref=f6e113]:
+          - generic [ref=f6e114]: Комфорт и тишина
+          - text: — плавность хода и низкий уровень шума, для города и трассы.
+          - generic [ref=f6e115]: Управляемость
+          - text: — точность реакций на руль и сцепление в поворотах, для динамичной езды.
+          - generic [ref=f6e116]: Экономичность
+          - text: — низкое сопротивление качению и меньший расход топлива.
+          - generic [ref=f6e117]: Проходимость и нагрузка
+          - text: — грунт, лёгкое бездорожье и работа под весом. Приоритет не отсекает модели, а поднимает подходящие выше в подборке, поэтому можно отметить несколько.
+    - generic [ref=f6e119]:
+      - link [ref=f6e122] [cursor=pointer]:
+        - /url: http://kumho-tires.ru.test/
+        - img "Logo" [ref=f6e123]
+      - generic [ref=f6e124]:
+        - link "Главная" [ref=f6e126] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/
+        - link "О компании" [ref=f6e128] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/about
+        - link "Шины" [ref=f6e130] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/tires
+        - link "Подбор шин" [ref=f6e132] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/podbor
+        - link "Расширенная гарантия" [ref=f6e134] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/warranty
+        - link "Где купить" [ref=f6e136] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/buy
+        - link "Контакты" [ref=f6e138] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/contacts
+      - generic [ref=f6e139]:
+        - generic [ref=f6e140]: Права на сайт принадлежат ООО «Сталкер» (ИНН 7719614965, ОГРН 1067761249654).
+        - generic [ref=f6e141]: © 2026 Север Авто. Все права защищены
+      - generic [ref=f6e142]:
+        - link "Политика обработки персональных данных" [ref=f6e143] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/data/docs/personal-data-policy.pdf
+        - link "Политика использования cookie-файлов" [ref=f6e144] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/cookies-policy
+  - generic [ref=f6e147]:
+    - generic [ref=f6e149]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f6e150] [cursor=pointer]:
+        - /url: /cookies-policy/
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f6e152] [cursor=pointer]

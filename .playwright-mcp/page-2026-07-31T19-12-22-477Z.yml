@@ -1,0 +1,709 @@
+- generic [ref=f1e4]:
+  - navigation [ref=f1e5]:
+    - generic [ref=f1e6]:
+      - generic [ref=f1e7]:
+        - img "iSmart" [ref=f1e8]:
+          - img "iSmart" [ref=f1e9]
+        - generic [ref=f1e10]: iSmart ERP
+      - generic [ref=f1e11]: Дашборды
+      - list [ref=f1e13]:
+        - link " Обзор" [ref=f1e14] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=f1e15]: 
+          - generic [ref=f1e17]: Обзор
+        - link " Финансы" [ref=f1e19] [cursor=pointer]:
+          - /url: /dashboards/finance
+          - generic [ref=f1e20]: 
+          - generic [ref=f1e22]: Финансы
+        - link " Заказчики" [ref=f1e24] [cursor=pointer]:
+          - /url: /dashboards/clients
+          - generic [ref=f1e25]: 
+          - generic [ref=f1e27]: Заказчики
+        - link " Проекты" [ref=f1e29] [cursor=pointer]:
+          - /url: /dashboards/projects
+          - generic [ref=f1e30]: 
+          - generic [ref=f1e32]: Проекты
+        - link " Документы" [ref=f1e34] [cursor=pointer]:
+          - /url: /dashboards/docs
+          - generic [ref=f1e35]: 
+          - generic [ref=f1e37]: Документы
+        - link " Исполнители" [ref=f1e39] [cursor=pointer]:
+          - /url: /dashboards/executors
+          - generic [ref=f1e40]: 
+          - generic [ref=f1e42]: Исполнители
+      - generic [ref=f1e44]: Аналитика
+      - list [ref=f1e46]:
+        - link " За месяц" [ref=f1e47] [cursor=pointer]:
+          - /url: /analytics/month
+          - generic [ref=f1e48]: 
+          - generic [ref=f1e50]: За месяц
+        - link " Общая" [ref=f1e52] [cursor=pointer]:
+          - /url: /analytics/overall
+          - generic [ref=f1e53]: 
+          - generic [ref=f1e55]: Общая
+      - generic [ref=f1e57]: Финансы
+      - list [ref=f1e59]:
+        - link " Счета" [ref=f1e60] [cursor=pointer]:
+          - /url: /invoices
+          - generic [ref=f1e61]: 
+          - generic [ref=f1e63]: Счета
+        - link " УПД" [ref=f1e65] [cursor=pointer]:
+          - /url: /upds
+          - generic [ref=f1e66]: 
+          - generic [ref=f1e68]: УПД
+        - link " Работы" [ref=f1e70] [cursor=pointer]:
+          - /url: /works
+          - generic [ref=f1e71]: 
+          - generic [ref=f1e73]: Работы
+        - link " Расходы" [ref=f1e75] [cursor=pointer]:
+          - /url: /expenses
+          - generic [ref=f1e76]: 
+          - generic [ref=f1e78]: Расходы
+        - link " Документы ЭДО" [ref=f1e80] [cursor=pointer]:
+          - /url: /diadoc
+          - generic [ref=f1e81]: 
+          - generic [ref=f1e83]: Документы ЭДО
+        - link " Акт сверки" [ref=f1e85] [cursor=pointer]:
+          - /url: /reconciliation
+          - generic [ref=f1e86]: 
+          - generic [ref=f1e88]: Акт сверки
+      - generic [ref=f1e90]: Справочники
+      - list [ref=f1e92]:
+        - link " Заказчики" [ref=f1e93] [cursor=pointer]:
+          - /url: /counterparties
+          - generic [ref=f1e94]: 
+          - generic [ref=f1e96]: Заказчики
+        - link " Проекты" [ref=f1e98] [cursor=pointer]:
+          - /url: /projects
+          - generic [ref=f1e99]: 
+          - generic [ref=f1e101]: Проекты
+        - link " Организации" [ref=f1e103] [cursor=pointer]:
+          - /url: /settings
+          - generic [ref=f1e104]: 
+          - generic [ref=f1e106]: Организации
+  - main [ref=f1e108]:
+    - generic [ref=f1e109]:
+      - generic [ref=f1e110]:
+        - button "" [ref=f1e111] [cursor=pointer]
+        - generic [ref=f1e116]:
+          - generic [ref=f1e117]: 
+          - textbox "Поиск…" [ref=f1e120]
+        - button "" [ref=f1e121] [cursor=pointer]
+        - button " Знак" [ref=f1e124] [cursor=pointer]:
+          - generic [ref=f1e127]:
+            - generic [ref=f1e128]: 
+            - status "Знак" [ref=f1e129]
+        - generic [ref=f1e130]:
+          - generic [ref=f1e131]: Владелец
+          - generic [ref=f1e132]: Владелец
+        - button "" [ref=f1e133] [cursor=pointer]
+      - generic [ref=f1e138]:
+        - heading "Работы" [level=1] [ref=f1e139]
+        - paragraph [ref=f1e140]: "Выполненные работы по сайтам: конвейер трекер-бота и внесённые вручную — сырьё для счетов и отчётов к актам"
+        - generic [ref=f1e141]:
+          - generic [ref=f1e144]:
+            - generic [ref=f1e145]: Работ
+            - generic [ref=f1e146]: "181"
+          - generic [ref=f1e149]:
+            - generic [ref=f1e150]: Трудозатраты
+            - generic [ref=f1e151]: 55.52 ч
+          - generic [ref=f1e154]:
+            - generic [ref=f1e155]: Сдельных
+            - generic [ref=f1e156]: "51"
+          - generic [ref=f1e159]:
+            - generic [ref=f1e160]: Сдельные с ценой, на сумму
+            - generic [ref=f1e161]: 266 575 ₽
+        - generic [ref=f1e163]:
+          - generic [ref=f1e164]:
+            - combobox [ref=f1e167] [cursor=pointer]:
+              - generic [ref=f1e169]:
+                - generic [ref=f1e170]: Все сайты
+                - combobox "Сайт": Все сайты
+              - generic [ref=f1e172]: 󰍝
+              - generic: Сайт
+            - generic [ref=f1e176]:
+              - textbox "С" [ref=f1e178]: 2026-07-01
+              - button "Очистить С" [ref=f1e180] [cursor=pointer]: 󰅙
+              - generic: С
+            - generic [ref=f1e183]:
+              - textbox "По" [ref=f1e185]: 2026-07-31
+              - button "Очистить По" [ref=f1e187] [cursor=pointer]: 󰅙
+              - generic: По
+            - generic [ref=f1e190]:
+              - checkbox "Только сдельные" [ref=f1e194] [cursor=pointer]
+              - generic [ref=f1e195] [cursor=pointer]: Только сдельные
+          - generic [ref=f1e196]:
+            - table [ref=f1e198]:
+              - rowgroup [ref=f1e199]:
+                - row [ref=f1e200]:
+                  - columnheader "ID" [ref=f1e201]:
+                    - generic [ref=f1e202]:
+                      - generic [ref=f1e203]: ID
+                      - generic [ref=f1e204]: 󰁝
+                  - columnheader "Дата" [ref=f1e205]:
+                    - generic [ref=f1e206]:
+                      - generic [ref=f1e207]: Дата
+                      - generic [ref=f1e208]: 󰁝
+                  - columnheader "Сайт" [ref=f1e209]:
+                    - generic [ref=f1e210]:
+                      - generic [ref=f1e211]: Сайт
+                      - generic [ref=f1e212]: 󰁝
+                  - columnheader "Что сделано" [ref=f1e213]:
+                    - generic [ref=f1e214]:
+                      - generic [ref=f1e215]: Что сделано
+                      - generic [ref=f1e216]: 󰁝
+                  - columnheader "Кол-во" [ref=f1e217]:
+                    - generic [ref=f1e218]:
+                      - generic [ref=f1e219]: Кол-во
+                      - generic [ref=f1e220]: 󰁝
+                  - columnheader "Цена" [ref=f1e221]:
+                    - generic [ref=f1e222]:
+                      - generic [ref=f1e223]: Цена
+                      - generic [ref=f1e224]: 󰁝
+                  - columnheader "Сумма" [ref=f1e225]:
+                    - generic [ref=f1e226]:
+                      - generic [ref=f1e227]: Сумма
+                      - generic [ref=f1e228]: 󰁝
+                  - columnheader "Оплата" [ref=f1e229]:
+                    - generic [ref=f1e230]:
+                      - generic [ref=f1e231]: Оплата
+                      - generic [ref=f1e232]: 󰁝
+                  - columnheader "Источник" [ref=f1e233]:
+                    - generic [ref=f1e234]:
+                      - generic [ref=f1e235]: Источник
+                      - generic [ref=f1e236]: 󰁝
+              - rowgroup [ref=f1e237]:
+                - row [ref=f1e238]:
+                  - cell "#363 tt-205" [ref=f1e239]:
+                    - generic "tt-205" [ref=f1e240]:
+                      - generic [ref=f1e241]: "#363"
+                      - link "tt-205" [ref=f1e242] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2149
+                  - cell "30.07.2026" [ref=f1e243]
+                  - cell "sales.bmw-avtoport.ru" [ref=f1e244]
+                  - 'cell "Обновлён раздел «Модельный ряд» лендинга BMW Автопорт — заменены BMW 5, 7 серии, X3 и X7 на актуальные автомобили с качественными галереями из фида и обновлена сноска по ценам X5 30Li и 740i в подвале.  На лендинге BMW Автопорт в разделе «Модельный ряд» нужно заменить несколько автомобилей на актуальные: - 5 серия — заменить на автомобиль с присланного фото; - 7 серия — заменить на автомобиль с присланного фото; - X3 — заменить на автомобиль с присланного фото; - X7 — заменить на автомобиль с присланного фото. Фотографии автомобилей для замены — во вложениях к сообщению. Всего 6 изображений: 1785502286002-photo.jpg, 1785502286565-photo.jpg, 1785502287092-photo.jpg, 1785502287646-photo.jpg, 1785502288137-photo.jpg, а также новый материал от заказчика — 1785506450081-photo.jpg. Какое фото к какой модели относится — смотреть по подписям заказчика. 📸 было 📸 стало" [ref=f1e245]':
+                    - generic [ref=f1e246]:
+                      - link "Обновлён раздел «Модельный ряд» лендинга BMW Автопорт — заменены BMW 5, 7 серии, X3 и X7 на актуальные автомобили с качественными галереями из фида и обновлена сноска по ценам X5 30Li и 740i в подвале. " [ref=f1e247] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2149
+                        - text: Обновлён раздел «Модельный ряд» лендинга BMW Автопорт — заменены BMW 5, 7 серии, X3 и X7 на актуальные автомобили с качественными галереями из фида и обновлена сноска по ценам X5 30Li и 740i в подвале.
+                        - generic [ref=f1e248]: 
+                      - generic [ref=f1e249]: "На лендинге BMW Автопорт в разделе «Модельный ряд» нужно заменить несколько автомобилей на актуальные: - 5 серия — заменить на автомобиль с присланного фото; - 7 серия — заменить на автомобиль с присланного фото; - X3 — заменить на автомобиль с присланного фото; - X7 — заменить на автомобиль с присланного фото. Фотографии автомобилей для замены — во вложениях к сообщению. Всего 6 изображений: 1785502286002-photo.jpg, 1785502286565-photo.jpg, 1785502287092-photo.jpg, 1785502287646-photo.jpg, 1785502288137-photo.jpg, а также новый материал от заказчика — 1785506450081-photo.jpg. Какое фото к какой модели относится — смотреть по подписям заказчика."
+                      - generic [ref=f1e250]:
+                        - link "📸 было" [ref=f1e251] [cursor=pointer]:
+                          - /url: https://static.ismart.pro/task-shots/sales.bmw-avtoport.ru/2026-07-31-task205-before.png
+                        - link "📸 стало" [ref=f1e252] [cursor=pointer]:
+                          - /url: https://static.ismart.pro/task-shots/sales.bmw-avtoport.ru/2026-07-31-task205-after.png
+                  - cell "1 ч" [ref=f1e253]
+                  - cell "—" [ref=f1e254]
+                  - cell "—" [ref=f1e255]
+                  - cell "абонемент" [ref=f1e256]
+                  - cell "Трекер" [ref=f1e259]
+                - row [ref=f1e262]:
+                  - cell "#362 tt-206" [ref=f1e263]:
+                    - generic "tt-206" [ref=f1e264]:
+                      - generic [ref=f1e265]: "#362"
+                      - link "tt-206" [ref=f1e266] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2155
+                  - cell "30.07.2026" [ref=f1e267]
+                  - cell [ref=f1e268]:
+                    - link "tank-borishof.ru" [ref=f1e269] [cursor=pointer]:
+                      - /url: /projects/32
+                  - cell "Заменить контент на промо-сайте TANK БорисХоф до 31.08  Заказчик просит выполнить замену на сайте tank-borishof.ru в срок до 31.08. Что именно менять — в сообщении не уточнено (вероятно, был приложен материал/макет); нужно уточнить у заказчика, что заменить." [ref=f1e270]:
+                    - generic [ref=f1e271]:
+                      - link "Заменить контент на промо-сайте TANK БорисХоф до 31.08 " [ref=f1e272] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2155
+                        - text: Заменить контент на промо-сайте TANK БорисХоф до 31.08
+                        - generic [ref=f1e273]: 
+                      - generic [ref=f1e274]: Заказчик просит выполнить замену на сайте tank-borishof.ru в срок до 31.08. Что именно менять — в сообщении не уточнено (вероятно, был приложен материал/макет); нужно уточнить у заказчика, что заменить.
+                  - cell "1 ч" [ref=f1e275]
+                  - cell "—" [ref=f1e276]
+                  - cell "—" [ref=f1e277]
+                  - cell "абонемент" [ref=f1e278]
+                  - cell "Трекер" [ref=f1e281]
+                - row [ref=f1e284]:
+                  - cell "#361 tt-204" [ref=f1e285]:
+                    - generic "tt-204" [ref=f1e286]:
+                      - generic [ref=f1e287]: "#361"
+                      - link "tt-204" [ref=f1e288] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2133
+                  - cell "30.07.2026" [ref=f1e289]
+                  - cell [ref=f1e290]:
+                    - link "promo.wey-avilon.ru" [ref=f1e291] [cursor=pointer]:
+                      - /url: /projects/63
+                  - 'cell "Правки цен и выгод на промо-сайте WEY Авилон  Корректировки по WEY: 1. Вместо цен указать ежемесячные платежи (ЕП): - WEY 07 — 40 000 руб. - WEY 80 — 18 200 руб. - WEY 80 Лаундж — 22 900 руб. 2. Скорректировать выгоды: - 07 — 450 000 руб. (без изменений) - 80 — 450 000 руб. - 80 Лаундж — 500 000 руб." [ref=f1e292]':
+                    - generic [ref=f1e293]:
+                      - link "Правки цен и выгод на промо-сайте WEY Авилон " [ref=f1e294] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2133
+                        - text: Правки цен и выгод на промо-сайте WEY Авилон
+                        - generic [ref=f1e295]: 
+                      - generic [ref=f1e296]: "Корректировки по WEY: 1. Вместо цен указать ежемесячные платежи (ЕП): - WEY 07 — 40 000 руб. - WEY 80 — 18 200 руб. - WEY 80 Лаундж — 22 900 руб. 2. Скорректировать выгоды: - 07 — 450 000 руб. (без изменений) - 80 — 450 000 руб. - 80 Лаундж — 500 000 руб."
+                  - cell "1 ч" [ref=f1e297]
+                  - cell "—" [ref=f1e298]
+                  - cell "—" [ref=f1e299]
+                  - cell "абонемент" [ref=f1e300]
+                  - cell "Трекер" [ref=f1e303]
+                - row [ref=f1e306]:
+                  - cell "#360 tt-203" [ref=f1e307]:
+                    - generic "tt-203" [ref=f1e308]:
+                      - generic [ref=f1e309]: "#360"
+                      - link "tt-203" [ref=f1e310] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2102
+                  - cell "30.07.2026" [ref=f1e311]
+                  - cell "ооо «эмджиком»" [ref=f1e312]
+                  - 'cell "Заменить заглушки в секции «Акции и предложения» на реальные акции (промо-посадки Авилон)  На промо-посадках Авилон в секции «Акции и предложения» сейчас стоят заглушки, которые дублируют раздел «Способы покупки». Подразумевалось, что там будут настоящие акции — как реализовано на promo.moskvich-avilon.ru. Фактически реальная акция есть только на promo.sollers-avilon.ru. Нужно уточнить, на каких именно посадках заменить заглушки на реальные акции, и внести правки. Референс: https://promo.moskvich-avilon.ru/ Федорович Д.И." [ref=f1e313]':
+                    - generic [ref=f1e314]:
+                      - link "Заменить заглушки в секции «Акции и предложения» на реальные акции (промо-посадки Авилон) " [ref=f1e315] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2102
+                        - text: Заменить заглушки в секции «Акции и предложения» на реальные акции (промо-посадки Авилон)
+                        - generic [ref=f1e316]: 
+                      - generic [ref=f1e317]: "На промо-посадках Авилон в секции «Акции и предложения» сейчас стоят заглушки, которые дублируют раздел «Способы покупки». Подразумевалось, что там будут настоящие акции — как реализовано на promo.moskvich-avilon.ru. Фактически реальная акция есть только на promo.sollers-avilon.ru. Нужно уточнить, на каких именно посадках заменить заглушки на реальные акции, и внести правки. Референс: https://promo.moskvich-avilon.ru/"
+                      - generic [ref=f1e318]: Федорович Д.И.
+                  - cell "2.5 ч" [ref=f1e319]
+                  - cell "2 500 ₽" [ref=f1e320]
+                  - cell "6 250 ₽" [ref=f1e321]
+                  - cell "сдельная" [ref=f1e322]
+                  - cell "Трекер" [ref=f1e325]
+                - row [ref=f1e328]:
+                  - cell "#359 tt-202" [ref=f1e329]:
+                    - generic "tt-202" [ref=f1e330]:
+                      - generic [ref=f1e331]: "#359"
+                      - link "tt-202" [ref=f1e332] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2092
+                  - cell "30.07.2026" [ref=f1e333]
+                  - cell "promo.foton-avilon.ru" [ref=f1e334]
+                  - 'cell "Изменить текст на главном баннере FOTON Авилон  На главном баннере сайта FOTON поменять текст на: «Официальный дилер FOTON в Москве» «Переоборудованные автомобили VIEW в АВИЛОН» Кнопку/плашку «Получить предложение» оставить как есть." [ref=f1e335]':
+                    - generic [ref=f1e336]:
+                      - link "Изменить текст на главном баннере FOTON Авилон " [ref=f1e337] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2092
+                        - text: Изменить текст на главном баннере FOTON Авилон
+                        - generic [ref=f1e338]: 
+                      - generic [ref=f1e339]: "На главном баннере сайта FOTON поменять текст на: «Официальный дилер FOTON в Москве» «Переоборудованные автомобили VIEW в АВИЛОН» Кнопку/плашку «Получить предложение» оставить как есть."
+                  - cell "0.25 ч" [ref=f1e340]
+                  - cell "—" [ref=f1e341]
+                  - cell "—" [ref=f1e342]
+                  - cell "абонемент" [ref=f1e343]
+                  - cell "Трекер" [ref=f1e346]
+                - row [ref=f1e349]:
+                  - cell "#358 tt-165" [ref=f1e350]:
+                    - generic "tt-165" [ref=f1e351]:
+                      - generic [ref=f1e352]: "#358"
+                      - link "tt-165" [ref=f1e353] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1703
+                  - cell "29.07.2026" [ref=f1e354]
+                  - cell "vechervosobnyake-italy.ru" [ref=f1e355]
+                  - cell "Перенести визуал-лендинг на домен vechervosobnyake-italy.ru и создать ссылку  Перенести готовый визуал-лендинг на наш домен vechervosobnyake-italy.ru и сформировать ссылку. Нужно, чтобы всё было готово к моменту согласования и ссылку можно было сразу дать в анонсы. Заказчик просит сделать сегодня, берёт под свою ответственность (параллельно финализирует вопрос комиссии с Верой). Федорович Д.И." [ref=f1e356]:
+                    - generic [ref=f1e357]:
+                      - link "Перенести визуал-лендинг на домен vechervosobnyake-italy.ru и создать ссылку " [ref=f1e358] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1703
+                        - text: Перенести визуал-лендинг на домен vechervosobnyake-italy.ru и создать ссылку
+                        - generic [ref=f1e359]: 
+                      - generic [ref=f1e360]: Перенести готовый визуал-лендинг на наш домен vechervosobnyake-italy.ru и сформировать ссылку. Нужно, чтобы всё было готово к моменту согласования и ссылку можно было сразу дать в анонсы. Заказчик просит сделать сегодня, берёт под свою ответственность (параллельно финализирует вопрос комиссии с Верой).
+                      - generic [ref=f1e361]: Федорович Д.И.
+                  - cell "—" [ref=f1e362]
+                  - cell "2 500 ₽" [ref=f1e363]
+                  - cell "—" [ref=f1e364]
+                  - cell "сдельная" [ref=f1e365]
+                  - cell "Трекер" [ref=f1e368]
+                - row [ref=f1e371]:
+                  - cell "#357 tt-155" [ref=f1e372]:
+                    - generic "tt-155" [ref=f1e373]:
+                      - generic [ref=f1e374]: "#357"
+                      - link "tt-155" [ref=f1e375] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1598
+                  - cell "29.07.2026" [ref=f1e376]
+                  - cell "promo.moskvich-avilon.ru" [ref=f1e377]
+                  - 'cell "Подключить боевой домен promo.moskvich-avilon.ru к сайту Москвич Авилон  Заказчик разместил А-запись на поддомен promo.moskvich-avilon.ru. Нужно настроить сайт на этом боевом домене (ранее сайт был доступен только на тестовом адресе moskvich-m-avilon.ru.ismart.pro, боевого домена не было): привязать домен на сервере, выпустить SSL-сертификат и опубликовать сайт. Федорович Д.И." [ref=f1e378]':
+                    - generic [ref=f1e379]:
+                      - link "Подключить боевой домен promo.moskvich-avilon.ru к сайту Москвич Авилон " [ref=f1e380] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1598
+                        - text: Подключить боевой домен promo.moskvich-avilon.ru к сайту Москвич Авилон
+                        - generic [ref=f1e381]: 
+                      - generic [ref=f1e382]: "Заказчик разместил А-запись на поддомен promo.moskvich-avilon.ru. Нужно настроить сайт на этом боевом домене (ранее сайт был доступен только на тестовом адресе moskvich-m-avilon.ru.ismart.pro, боевого домена не было): привязать домен на сервере, выпустить SSL-сертификат и опубликовать сайт."
+                      - generic [ref=f1e383]: Федорович Д.И.
+                  - cell "—" [ref=f1e384]
+                  - cell "2 500 ₽" [ref=f1e385]
+                  - cell "—" [ref=f1e386]
+                  - cell "сдельная" [ref=f1e387]
+                  - cell "Трекер" [ref=f1e390]
+                - row [ref=f1e393]:
+                  - cell "#356 tt-193" [ref=f1e394]:
+                    - generic "tt-193" [ref=f1e395]:
+                      - generic [ref=f1e396]: "#356"
+                      - link "tt-193" [ref=f1e397] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1990
+                  - cell "29.07.2026" [ref=f1e398]
+                  - cell "promo.sollers-avilon.ru" [ref=f1e399]
+                  - 'cell "Добавить модель Атлант и изменить порядок моделей в модельном ряду (Sollers)  На лендинге Sollers: 1) Добавить в модельный ряд модель «Атлант» (согласована с импортером). Фото Атланта заказчик добавит в ту же папку на диске. 2) Изменить порядок моделей в ленте на: Все модели, SF5, Atlant, SF1, SF1, SP7, ST8, ST9, Argo. Лушакова Ю.В." [ref=f1e400]':
+                    - generic [ref=f1e401]:
+                      - link "Добавить модель Атлант и изменить порядок моделей в модельном ряду (Sollers) " [ref=f1e402] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1990
+                        - text: Добавить модель Атлант и изменить порядок моделей в модельном ряду (Sollers)
+                        - generic [ref=f1e403]: 
+                      - generic [ref=f1e404]: "На лендинге Sollers: 1) Добавить в модельный ряд модель «Атлант» (согласована с импортером). Фото Атланта заказчик добавит в ту же папку на диске. 2) Изменить порядок моделей в ленте на: Все модели, SF5, Atlant, SF1, SF1, SP7, ST8, ST9, Argo."
+                      - generic [ref=f1e405]: Лушакова Ю.В.
+                  - cell "1.5 ч" [ref=f1e406]
+                  - cell "—" [ref=f1e407]
+                  - cell "—" [ref=f1e408]
+                  - cell "абонемент" [ref=f1e409]
+                  - cell "Трекер" [ref=f1e412]
+                - row [ref=f1e415]:
+                  - cell "#355 tt-196" [ref=f1e416]:
+                    - generic "tt-196" [ref=f1e417]:
+                      - generic [ref=f1e418]: "#355"
+                      - link "tt-196" [ref=f1e419] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1997
+                  - cell "29.07.2026" [ref=f1e420]
+                  - cell [ref=f1e421]:
+                    - link "promo.havalavilon.ru" [ref=f1e422] [cursor=pointer]:
+                      - /url: /projects/65
+                  - 'cell "Баннеры для Haval PRO и Haval City  Сделать баннеры для двух сайтов одного заказчика: - Haval City (promo.havalavilon.ru) - Haval PRO (havalpro) Баннеры без текста, но на самом баннере надо указать то, что показано на приложенных скриншотах с текстом (материалы заказчика: «1785414380161-сайт_3_дня.png», «1785414380903-сайт_про_3_дня.png», «1785414381796-ChatGPT_Image_29_июл._2026_г.__16_28_06.png», «1785414382785-ChatGPT_Image_30_июл._2026_г.__10_02_12.png»). - На Haval PRO в счётчике времени (обратный отсчёт) указать «Только 3 дня!». Лушакова Ю.В." [ref=f1e423]':
+                    - generic [ref=f1e424]:
+                      - link "Баннеры для Haval PRO и Haval City " [ref=f1e425] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1997
+                        - text: Баннеры для Haval PRO и Haval City
+                        - generic [ref=f1e426]: 
+                      - generic [ref=f1e427]: "Сделать баннеры для двух сайтов одного заказчика: - Haval City (promo.havalavilon.ru) - Haval PRO (havalpro) Баннеры без текста, но на самом баннере надо указать то, что показано на приложенных скриншотах с текстом (материалы заказчика: «1785414380161-сайт_3_дня.png», «1785414380903-сайт_про_3_дня.png», «1785414381796-ChatGPT_Image_29_июл._2026_г.__16_28_06.png», «1785414382785-ChatGPT_Image_30_июл._2026_г.__10_02_12.png»). - На Haval PRO в счётчике времени (обратный отсчёт) указать «Только 3 дня!»."
+                      - generic [ref=f1e428]: Лушакова Ю.В.
+                  - cell "1 ч" [ref=f1e429]
+                  - cell "—" [ref=f1e430]
+                  - cell "—" [ref=f1e431]
+                  - cell "абонемент" [ref=f1e432]
+                  - cell "Трекер" [ref=f1e435]
+                - row [ref=f1e438]:
+                  - cell "#354 tt-201" [ref=f1e439]:
+                    - generic "tt-201" [ref=f1e440]:
+                      - generic [ref=f1e441]: "#354"
+                      - link "tt-201" [ref=f1e442] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2061
+                  - cell "29.07.2026" [ref=f1e443]
+                  - cell [ref=f1e444]:
+                    - link "promo.wey-avilon.ru" [ref=f1e445] [cursor=pointer]:
+                      - /url: /projects/63
+                  - cell "Установить метрику на promo.wey-avilon.ru  На сайте promo.wey-avilon.ru (WEY, дилер Авилон) не установлена метрика — нужно добавить/настроить счётчик аналитики." [ref=f1e446]:
+                    - generic [ref=f1e447]:
+                      - link "Установить метрику на promo.wey-avilon.ru " [ref=f1e448] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2061
+                        - text: Установить метрику на promo.wey-avilon.ru
+                        - generic [ref=f1e449]: 
+                      - generic [ref=f1e450]: На сайте promo.wey-avilon.ru (WEY, дилер Авилон) не установлена метрика — нужно добавить/настроить счётчик аналитики.
+                  - cell "0.5 ч" [ref=f1e451]
+                  - cell "—" [ref=f1e452]
+                  - cell "—" [ref=f1e453]
+                  - cell "абонемент" [ref=f1e454]
+                  - cell "Трекер" [ref=f1e457]
+                - row [ref=f1e460]:
+                  - cell "#353 tt-194" [ref=f1e461]:
+                    - generic "tt-194" [ref=f1e462]:
+                      - generic [ref=f1e463]: "#353"
+                      - link "tt-194" [ref=f1e464] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1992
+                  - cell "29.07.2026" [ref=f1e465]
+                  - cell "promo.foton-avilon.ru" [ref=f1e466]
+                  - 'cell "Замена главного баннера на лендинге Foton  Заменить главный баннер на новый. Материал заказчика: файл «1785411165688-2560х1440_foton_city_river.jpg» (2560×1440) — два фургона FOTON VIEW (белый и голубой) на фоне вечернего города у реки. Лушакова Ю.В." [ref=f1e467]':
+                    - generic [ref=f1e468]:
+                      - link "Замена главного баннера на лендинге Foton " [ref=f1e469] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1992
+                        - text: Замена главного баннера на лендинге Foton
+                        - generic [ref=f1e470]: 
+                      - generic [ref=f1e471]: "Заменить главный баннер на новый. Материал заказчика: файл «1785411165688-2560х1440_foton_city_river.jpg» (2560×1440) — два фургона FOTON VIEW (белый и голубой) на фоне вечернего города у реки."
+                      - generic [ref=f1e472]: Лушакова Ю.В.
+                  - cell "0.25 ч" [ref=f1e473]
+                  - cell "—" [ref=f1e474]
+                  - cell "—" [ref=f1e475]
+                  - cell "абонемент" [ref=f1e476]
+                  - cell "Трекер" [ref=f1e479]
+                - row [ref=f1e482]:
+                  - cell "#352 tt-199" [ref=f1e483]:
+                    - generic "tt-199" [ref=f1e484]:
+                      - generic [ref=f1e485]: "#352"
+                      - link "tt-199" [ref=f1e486] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2020
+                  - cell "29.07.2026" [ref=f1e487]
+                  - cell [ref=f1e488]:
+                    - link "promo.havalpro-avilon.ru" [ref=f1e489] [cursor=pointer]:
+                      - /url: /projects/3
+                  - 'cell "Не показывается виджет при клике на кнопку на лендинге HAVAL PRO (Авилон)  На боевом сайте promo.havalpro-avilon.ru при нажатии на кнопку не появляется виджет (колтач). Подмена номера при этом срабатывает. Та же проблема на Changan (#197) и TANK (#198). Сайты, где работает: promo.foton-avilon.ru, promo.havalavilon.ru, promo.sollers-avilon.ru, promo.moskvich-avilon.ru, promo.wey-avilon.ru, sales.avatr-avilon-moscow.ru. Федорович Д.И." [ref=f1e490]':
+                    - generic [ref=f1e491]:
+                      - link "Не показывается виджет при клике на кнопку на лендинге HAVAL PRO (Авилон) " [ref=f1e492] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2020
+                        - text: Не показывается виджет при клике на кнопку на лендинге HAVAL PRO (Авилон)
+                        - generic [ref=f1e493]: 
+                      - generic [ref=f1e494]: "На боевом сайте promo.havalpro-avilon.ru при нажатии на кнопку не появляется виджет (колтач). Подмена номера при этом срабатывает. Та же проблема на Changan (#197) и TANK (#198). Сайты, где работает: promo.foton-avilon.ru, promo.havalavilon.ru, promo.sollers-avilon.ru, promo.moskvich-avilon.ru, promo.wey-avilon.ru, sales.avatr-avilon-moscow.ru."
+                      - generic [ref=f1e495]: Федорович Д.И.
+                  - cell "1 ч" [ref=f1e496]
+                  - cell "2 500 ₽" [ref=f1e497]
+                  - cell "2 500 ₽" [ref=f1e498]
+                  - cell "сдельная" [ref=f1e499]
+                  - cell "Трекер" [ref=f1e502]
+                - row [ref=f1e505]:
+                  - cell "#351 tt-198" [ref=f1e506]:
+                    - generic "tt-198" [ref=f1e507]:
+                      - generic [ref=f1e508]: "#351"
+                      - link "tt-198" [ref=f1e509] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2012
+                  - cell "29.07.2026" [ref=f1e510]
+                  - cell [ref=f1e511]:
+                    - link "promo.tank-avilon.ru" [ref=f1e512] [cursor=pointer]:
+                      - /url: /projects/2
+                  - cell "Не открываются формы на сайте TANK (Авилон)  На промо-лендинге TANK Авилон также не открываются формы — та же проблема, что и на Changan Авилон. Проверить и починить срочно. Федорович Д.И." [ref=f1e513]:
+                    - generic [ref=f1e514]:
+                      - link "Не открываются формы на сайте TANK (Авилон) " [ref=f1e515] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/2012
+                        - text: Не открываются формы на сайте TANK (Авилон)
+                        - generic [ref=f1e516]: 
+                      - generic [ref=f1e517]: На промо-лендинге TANK Авилон также не открываются формы — та же проблема, что и на Changan Авилон. Проверить и починить срочно.
+                      - generic [ref=f1e518]: Федорович Д.И.
+                  - cell "1 ч" [ref=f1e519]
+                  - cell "2 500 ₽" [ref=f1e520]
+                  - cell "2 500 ₽" [ref=f1e521]
+                  - cell "сдельная" [ref=f1e522]
+                  - cell "Трекер" [ref=f1e525]
+                - row [ref=f1e528]:
+                  - cell "#350 tt-195" [ref=f1e529]:
+                    - generic "tt-195" [ref=f1e530]:
+                      - generic [ref=f1e531]: "#350"
+                      - link "tt-195" [ref=f1e532] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1994
+                  - cell "29.07.2026" [ref=f1e533]
+                  - cell [ref=f1e534]:
+                    - link "service.belgee-borishof.ru" [ref=f1e535] [cursor=pointer]:
+                      - /url: /projects/49
+                  - cell "Убрать акцию на сервисном сайте Belgee БорисХоф  Заказчик просит убрать одну акцию на сайте https://service.belgee-borishof.ru 📸 было 📸 стало" [ref=f1e536]:
+                    - generic [ref=f1e537]:
+                      - link "Убрать акцию на сервисном сайте Belgee БорисХоф " [ref=f1e538] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1994
+                        - text: Убрать акцию на сервисном сайте Belgee БорисХоф
+                        - generic [ref=f1e539]: 
+                      - generic [ref=f1e540]: Заказчик просит убрать одну акцию на сайте https://service.belgee-borishof.ru
+                      - generic [ref=f1e541]:
+                        - link "📸 было" [ref=f1e542] [cursor=pointer]:
+                          - /url: https://static.ismart.pro/task-shots/service.belgee-borishof.ru/2026-07-30-task195-before.png
+                        - link "📸 стало" [ref=f1e543] [cursor=pointer]:
+                          - /url: https://static.ismart.pro/task-shots/service.belgee-borishof.ru/2026-07-30-task195-after.png
+                  - cell "0.25 ч" [ref=f1e544]
+                  - cell "—" [ref=f1e545]
+                  - cell "—" [ref=f1e546]
+                  - cell "абонемент" [ref=f1e547]
+                  - cell "Трекер" [ref=f1e550]
+                - row [ref=f1e553]:
+                  - cell "#349 tt-190" [ref=f1e554]:
+                    - generic "tt-190" [ref=f1e555]:
+                      - generic [ref=f1e556]: "#349"
+                      - link "tt-190" [ref=f1e557] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1928
+                  - cell "29.07.2026" [ref=f1e558]
+                  - cell "promo.moskvich-avilon.ru" [ref=f1e559]
+                  - cell "Добавить живые фото по моделям М70 и М90 на промо-сайте Москвич (Авилон)  Клиент сообщил, что на сайте не добавлены живые фото по моделям Москвич М70 и М90 — нужно добавить. Лушакова Ю.В." [ref=f1e560]:
+                    - generic [ref=f1e561]:
+                      - link "Добавить живые фото по моделям М70 и М90 на промо-сайте Москвич (Авилон) " [ref=f1e562] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1928
+                        - text: Добавить живые фото по моделям М70 и М90 на промо-сайте Москвич (Авилон)
+                        - generic [ref=f1e563]: 
+                      - generic [ref=f1e564]: Клиент сообщил, что на сайте не добавлены живые фото по моделям Москвич М70 и М90 — нужно добавить.
+                      - generic [ref=f1e565]: Лушакова Ю.В.
+                  - cell "0.5 ч" [ref=f1e566]
+                  - cell "—" [ref=f1e567]
+                  - cell "—" [ref=f1e568]
+                  - cell "абонемент" [ref=f1e569]
+                  - cell "Трекер" [ref=f1e572]
+                - row [ref=f1e575]:
+                  - cell "#348 tt-191" [ref=f1e576]:
+                    - generic "tt-191" [ref=f1e577]:
+                      - generic [ref=f1e578]: "#348"
+                      - link "tt-191" [ref=f1e579] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1931
+                  - cell "29.07.2026" [ref=f1e580]
+                  - cell [ref=f1e581]:
+                    - link "kumho-tires.ru" [ref=f1e582] [cursor=pointer]:
+                      - /url: /projects/59
+                  - 'cell "Правка блока «Авторизованные шинные центры» на странице гарантии Kumho  На странице https://kumho-tires.ru/warranty скорректировать строку про авторизованные шинные центры на новый текст: «Авторизованные шинные центры по приему обращений по гарантийным случаям отмечены значком эмблемой \"Расширенная гарантия\" и их можно отфильтровать по соответствующей кнопке над картой в разделе Где купить по ссылке https://kumho-tires.ru/buy». Добавить кнопку с переходом на страницу «Где купить» (https://kumho-tires.ru/buy) с надписью «Выбрать авторизованный центр». Текущий вид строки — на приложенном скриншоте (1785392151375-photo.jpg)." [ref=f1e583]':
+                    - generic [ref=f1e584]:
+                      - link "Правка блока «Авторизованные шинные центры» на странице гарантии Kumho " [ref=f1e585] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1931
+                        - text: Правка блока «Авторизованные шинные центры» на странице гарантии Kumho
+                        - generic [ref=f1e586]: 
+                      - generic [ref=f1e587]: "На странице https://kumho-tires.ru/warranty скорректировать строку про авторизованные шинные центры на новый текст: «Авторизованные шинные центры по приему обращений по гарантийным случаям отмечены значком эмблемой \"Расширенная гарантия\" и их можно отфильтровать по соответствующей кнопке над картой в разделе Где купить по ссылке https://kumho-tires.ru/buy». Добавить кнопку с переходом на страницу «Где купить» (https://kumho-tires.ru/buy) с надписью «Выбрать авторизованный центр». Текущий вид строки — на приложенном скриншоте (1785392151375-photo.jpg)."
+                  - cell "0.5 ч" [ref=f1e588]
+                  - cell "—" [ref=f1e589]
+                  - cell "—" [ref=f1e590]
+                  - cell "абонемент" [ref=f1e591]
+                  - cell "Трекер" [ref=f1e594]
+                - row [ref=f1e597]:
+                  - cell "#347 tt-177" [ref=f1e598]:
+                    - generic "tt-177" [ref=f1e599]:
+                      - generic [ref=f1e600]: "#347"
+                      - link "tt-177" [ref=f1e601] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1791
+                  - cell "29.07.2026" [ref=f1e602]
+                  - cell "promo.sollers-avilon.ru" [ref=f1e603]
+                  - 'cell "Замена главного баннера promo.sollers-avilon.ru на баннер заказчика (линейка SF5/SF1/ST8/ST9)  Заказчик прислал баннер для лендинга Sollers (модельный ряд коммерческого транспорта: фургоны SF5, SF1 и пикапы ST8, ST9). Нужно разместить его на лендинге. ВНИМАНИЕ: у нас два проекта Sollers — sollers-nevastar.ru (Звезда Невы) и promo.sollers-avilon.ru (MGCom/Авилон); из сообщения непонятно, на какой именно ставить — уточнить у заказчика. Материал заказчика (баннер): 1785244624839-Баннер_на_лендинг.jpg (папка вложений ismart-tt-downloads). Федорович Д.И." [ref=f1e604]':
+                    - generic [ref=f1e605]:
+                      - link "Замена главного баннера promo.sollers-avilon.ru на баннер заказчика (линейка SF5/SF1/ST8/ST9) " [ref=f1e606] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1791
+                        - text: Замена главного баннера promo.sollers-avilon.ru на баннер заказчика (линейка SF5/SF1/ST8/ST9)
+                        - generic [ref=f1e607]: 
+                      - generic [ref=f1e608]: "Заказчик прислал баннер для лендинга Sollers (модельный ряд коммерческого транспорта: фургоны SF5, SF1 и пикапы ST8, ST9). Нужно разместить его на лендинге. ВНИМАНИЕ: у нас два проекта Sollers — sollers-nevastar.ru (Звезда Невы) и promo.sollers-avilon.ru (MGCom/Авилон); из сообщения непонятно, на какой именно ставить — уточнить у заказчика. Материал заказчика (баннер): 1785244624839-Баннер_на_лендинг.jpg (папка вложений ismart-tt-downloads)."
+                      - generic [ref=f1e609]: Федорович Д.И.
+                  - cell "0.5 ч" [ref=f1e610]
+                  - cell "2 500 ₽" [ref=f1e611]
+                  - cell "1 250 ₽" [ref=f1e612]
+                  - cell "сдельная" [ref=f1e613]
+                  - cell "Трекер" [ref=f1e616]
+                - row [ref=f1e619]:
+                  - cell "#346" [ref=f1e620]:
+                    - generic "manual-havalpro-chat-deploy-202607" [ref=f1e621]: "#346"
+                  - cell "28.07.2026" [ref=f1e623]
+                  - cell [ref=f1e624]:
+                    - link "chat.havalpro-borishof.ru" [ref=f1e625] [cursor=pointer]:
+                      - /url: /projects/43
+                  - cell "Выкладка на рабочий сайт и проверка Лушакова Ю.В." [ref=f1e626]:
+                    - generic [ref=f1e627]:
+                      - text: Выкладка на рабочий сайт и проверка
+                      - generic [ref=f1e628]: Лушакова Ю.В.
+                  - cell "0.25 ч" [ref=f1e629]
+                  - cell "1 500 ₽" [ref=f1e630]
+                  - cell "375 ₽" [ref=f1e631]
+                  - cell "сдельная" [ref=f1e632]
+                  - cell "Вручную" [ref=f1e635]
+                - row [ref=f1e638]:
+                  - cell "#345" [ref=f1e639]:
+                    - generic "manual-havalpro-chat-input-textcolor-202607" [ref=f1e640]: "#345"
+                  - cell "28.07.2026" [ref=f1e642]
+                  - cell [ref=f1e643]:
+                    - link "chat.havalpro-borishof.ru" [ref=f1e644] [cursor=pointer]:
+                      - /url: /projects/43
+                  - cell "Цвет текста в полях ввода Лушакова Ю.В." [ref=f1e645]:
+                    - generic [ref=f1e646]:
+                      - text: Цвет текста в полях ввода
+                      - generic [ref=f1e647]: Лушакова Ю.В.
+                  - cell "0.17 ч" [ref=f1e648]
+                  - cell "1 500 ₽" [ref=f1e649]
+                  - cell "255 ₽" [ref=f1e650]
+                  - cell "сдельная" [ref=f1e651]
+                  - cell "Вручную" [ref=f1e654]
+                - row [ref=f1e657]:
+                  - cell "#344" [ref=f1e658]:
+                    - generic "manual-havalpro-chat-header-narrow-202607" [ref=f1e659]: "#344"
+                  - cell "28.07.2026" [ref=f1e661]
+                  - cell [ref=f1e662]:
+                    - link "chat.havalpro-borishof.ru" [ref=f1e663] [cursor=pointer]:
+                      - /url: /projects/43
+                  - cell "Шапка на узких экранах Лушакова Ю.В." [ref=f1e664]:
+                    - generic [ref=f1e665]:
+                      - text: Шапка на узких экранах
+                      - generic [ref=f1e666]: Лушакова Ю.В.
+                  - cell "0.25 ч" [ref=f1e667]
+                  - cell "1 500 ₽" [ref=f1e668]
+                  - cell "375 ₽" [ref=f1e669]
+                  - cell "сдельная" [ref=f1e670]
+                  - cell "Вручную" [ref=f1e673]
+                - row [ref=f1e676]:
+                  - cell "#343" [ref=f1e677]:
+                    - generic "manual-havalpro-chat-logo-pro-202607" [ref=f1e678]: "#343"
+                  - cell "28.07.2026" [ref=f1e680]
+                  - cell [ref=f1e681]:
+                    - link "chat.havalpro-borishof.ru" [ref=f1e682] [cursor=pointer]:
+                      - /url: /projects/43
+                  - cell "Логотип HAVAL Pro Лушакова Ю.В." [ref=f1e683]:
+                    - generic [ref=f1e684]:
+                      - text: Логотип HAVAL Pro
+                      - generic [ref=f1e685]: Лушакова Ю.В.
+                  - cell "0.25 ч" [ref=f1e686]
+                  - cell "1 500 ₽" [ref=f1e687]
+                  - cell "375 ₽" [ref=f1e688]
+                  - cell "сдельная" [ref=f1e689]
+                  - cell "Вручную" [ref=f1e692]
+                - row [ref=f1e695]:
+                  - cell "#342" [ref=f1e696]:
+                    - generic "manual-havalpro-chat-modals-checkboxes-202607" [ref=f1e697]: "#342"
+                  - cell "28.07.2026" [ref=f1e699]
+                  - cell [ref=f1e700]:
+                    - link "chat.havalpro-borishof.ru" [ref=f1e701] [cursor=pointer]:
+                      - /url: /projects/43
+                  - cell "Всплывающие окна и чекбоксы Лушакова Ю.В." [ref=f1e702]:
+                    - generic [ref=f1e703]:
+                      - text: Всплывающие окна и чекбоксы
+                      - generic [ref=f1e704]: Лушакова Ю.В.
+                  - cell "0.42 ч" [ref=f1e705]
+                  - cell "1 500 ₽" [ref=f1e706]
+                  - cell "630 ₽" [ref=f1e707]
+                  - cell "сдельная" [ref=f1e708]
+                  - cell "Вручную" [ref=f1e711]
+                - row [ref=f1e714]:
+                  - cell "#341" [ref=f1e715]:
+                    - generic "manual-havalpro-chat-cta-rub-fields-202607" [ref=f1e716]: "#341"
+                  - cell "28.07.2026" [ref=f1e718]
+                  - cell [ref=f1e719]:
+                    - link "chat.havalpro-borishof.ru" [ref=f1e720] [cursor=pointer]:
+                      - /url: /projects/43
+                  - cell "Кнопка перехода к чату, знак рубля, поля формы Лушакова Ю.В." [ref=f1e721]:
+                    - generic [ref=f1e722]:
+                      - text: Кнопка перехода к чату, знак рубля, поля формы
+                      - generic [ref=f1e723]: Лушакова Ю.В.
+                  - cell "0.5 ч" [ref=f1e724]
+                  - cell "1 500 ₽" [ref=f1e725]
+                  - cell "750 ₽" [ref=f1e726]
+                  - cell "сдельная" [ref=f1e727]
+                  - cell "Вручную" [ref=f1e730]
+                - row [ref=f1e733]:
+                  - cell "#340 tt-188" [ref=f1e734]:
+                    - generic "tt-188" [ref=f1e735]:
+                      - generic [ref=f1e736]: "#340"
+                      - link "tt-188" [ref=f1e737] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1885
+                  - cell "28.07.2026" [ref=f1e738]
+                  - cell [ref=f1e739]:
+                    - link "sale.borishof-esteo.ru" [ref=f1e740] [cursor=pointer]:
+                      - /url: /projects/67
+                  - cell [ref=f1e741]:
+                    - generic [ref=f1e742]:
+                      - link "Правки лендинга продаж ESTEO — преимущества и выгоды по четырём моделям, вторая карточка EXLANTIX ET 2026 с палитрой цветов, 4-й цвет ESTEO MX, новый дисклеймер. " [ref=f1e743] [cursor=pointer]:
+                        - /url: https://t.me/c/4472693173/1885
+                        - text: Правки лендинга продаж ESTEO — преимущества и выгоды по четырём моделям, вторая карточка EXLANTIX ET 2026 с палитрой цветов, 4-й цвет ESTEO MX, новый дисклеймер.
+                        - generic [ref=f1e744]: 
+                      - generic [ref=f1e745]: "Внести правки на лендинг продаж ESTEO по ТЗ от 29.07: — Общая цена: от 3 890 000 р. Модель 1: убрать УТП «Цифровая приборная панель»; добавить УТП «Выгода 100 000 р. по программе трейд-ин» и поставить его первым, заменить иконку на соответствующую ценовой выгоде; иконку последнего УТП «Ощутите возможности…» сделать отличной от остальных, выражающей действие. Модель (выгода 1 085 000 р): в УТП добавить «с учётом государственной субсидии 925 000* р.» и «выгода 160 000 р по программе трейд-ин», поставить их первыми; убрать «Тяговые электродвигатели…» и «Строгие геометрические линии…»; иконки аналогично п.1. Модель (выгода 1 085 000 р): в УТП добавить «с учётом государственной субсидии 925 000* р.» и «выгода 160 000 р по программе трейд-ин», поставить их первыми; убрать «Последовательный гибрид…» и «Передовые технологии…»; иконки аналогично. Модель (выгода 1 125 000 р): в УТП добавить «с учётом государственной субсидии 925 000* р.» и «выгода 200 000 р по программе трейд-ин», поставить их первыми; убрать «Доп оборудование…» и «Привилегии на сервисное…». — В карточке EXLANTIX ET подписать год модели: EXLANTIX ET 2025; добавить варианты цветов (по https://borishof-esteo.ru/exlantix/et/). — Добавить вторую карточку EXLANTIX ET 2026: те же варианты цветов, картинку взять ту же машину, но другого цвета (можно Серый бамбук), остальное аналогично — просто добавляем вариант с годом выпуска. — В ESTEO MX добавить 4-й цвет: https://1.cdn.perxis.ru/originals/d97oaa2to5r6hlpds8tg/original — Заменить дисклеймер на новый (текст в sourceText). Полезные ссылки: цвета EXLANTIX ET — https://borishof-esteo.ru/exlantix/et/ ; 4-й цвет MX — https://1.cdn.perxis.ru/originals/d97oaa2to5r6hlpds8tg/original ; условия кредита — https://www.tbank.ru/loans/auto-loan/programs/gosprogramma"
+                      - generic [ref=f1e746]:
+                        - link "📸 было" [ref=f1e747] [cursor=pointer]:
+                          - /url: https://static.ismart.pro/task-shots/sale.borishof-esteo.ru/2026-07-29-task188-before.png
+                        - link "📸 стало" [ref=f1e748] [cursor=pointer]:
+                          - /url: https://static.ismart.pro/task-shots/sale.borishof-esteo.ru/2026-07-29-task188-after.png
+                  - cell "3 ч" [ref=f1e749]
+                  - cell "—" [ref=f1e750]
+                  - cell "—" [ref=f1e751]
+                  - cell "абонемент" [ref=f1e752]
+                  - cell "Трекер" [ref=f1e755]
+                - row [ref=f1e758]:
+                  - cell "#339" [ref=f1e759]:
+                    - generic "csv-68d4c33a6167" [ref=f1e760]: "#339"
+                  - cell "28.07.2026" [ref=f1e762]
+                  - cell "beepitron.com" [ref=f1e763]
+                  - cell "BP 79→100 (гейт замерщика для Метрики — third-party cookies), A11y 95→100 (alt-дубли карточек, тап-цели футера), SEO 100; Perf 85→94-96 (hero-cover 269→31КиБ, preload hero, УБРАН preload шрифтов — душил LCP; потолок — сеть Sprinthost). Деплой FTP + чистка twig-кэша прода" [ref=f1e764]
+                  - cell "—" [ref=f1e766]
+                  - cell "—" [ref=f1e767]
+                  - cell "—" [ref=f1e768]
+                  - cell "абонемент" [ref=f1e769]
+                  - cell "Трекер" [ref=f1e772]
+            - separator [ref=f1e775]
+            - generic [ref=f1e776]:
+              - generic [ref=f1e777]:
+                - generic [ref=f1e778]: "Записей на странице:"
+                - combobox [ref=f1e781] [cursor=pointer]:
+                  - generic [ref=f1e783]:
+                    - generic [ref=f1e784]: "25"
+                    - combobox "Записей на странице:": "25"
+                  - generic [ref=f1e786]: 󰍝
+              - generic [ref=f1e788]: 1-25 из 181
+              - navigation "Навигация по страницам" [ref=f1e791]:
+                - list [ref=f1e792]:
+                  - listitem [ref=f1e793]:
+                    - button "Первая страница" [disabled]:
+                      - generic: 󰘀
+                  - listitem [ref=f1e794]:
+                    - button "Предыдущая страница" [disabled]:
+                      - generic: 󰅁
+                  - listitem [ref=f1e795]:
+                    - button "Следующая страница" [ref=f1e796] [cursor=pointer]:
+                      - generic [ref=f1e797]: 󰅂
+                  - listitem [ref=f1e799]:
+                    - button "Последняя страница" [ref=f1e800] [cursor=pointer]:
+                      - generic [ref=f1e801]: 󰘁

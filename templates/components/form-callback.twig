@@ -23,7 +23,7 @@
 
       {# --- Checkbox --- #}
       {% elseif field.type == 'checkbox' %}
-        <div class="form-callback__field form-callback__field--checkbox">
+        <div class="form-callback__field field-checkbox">
           <label class="form-callback__checkbox-wrap" for="{{ fieldId }}">
             <input id="{{ fieldId }}" type="checkbox" name="{{ field.name }}" class="form-callback__checkbox-input"{% if isRequired %} aria-required="true"{% endif %}>
             <span class="form-callback__checkbox-box" aria-hidden="true">
@@ -40,7 +40,7 @@
       {% elseif field.type == 'select' %}
         <div class="form-callback__field">
           <div class="form-callback__input-wrap">
-            <select id="{{ fieldId }}" name="{{ field.name }}" class="form-callback__control form-callback__control--select"{% if isRequired %} aria-required="true"{% endif %}>
+            <select id="{{ fieldId }}" name="{{ field.name }}" class="form-callback__control control-select"{% if isRequired %} aria-required="true"{% endif %}>
               {% for option in field.options | default([]) %}
                 <option value="{{ option.value }}">{{ option.label[lang_code] | default(option.label.ru | default('')) }}</option>
               {% endfor %}
@@ -55,9 +55,9 @@
 
       {# --- Textarea --- #}
       {% elseif field.type == 'textarea' %}
-        <div class="form-callback__field form-callback__field--full">
+        <div class="form-callback__field field-full">
           <div class="form-callback__input-wrap">
-            <textarea id="{{ fieldId }}" name="{{ field.name }}" class="form-callback__control form-callback__control--textarea" placeholder=" "{% if isRequired %} aria-required="true"{% endif %}{% if field.validation.maxLength is defined %} maxlength="{{ field.validation.maxLength }}"{% endif %}></textarea>
+            <textarea id="{{ fieldId }}" name="{{ field.name }}" class="form-callback__control control-textarea" placeholder=" "{% if isRequired %} aria-required="true"{% endif %}{% if field.validation.maxLength is defined %} maxlength="{{ field.validation.maxLength }}"{% endif %}></textarea>
             <label class="form-callback__label" for="{{ fieldId }}">
               {{ fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
             </label>
@@ -68,7 +68,7 @@
 
       {# --- File --- #}
       {% elseif field.type == 'file' %}
-        <div class="form-callback__field form-callback__field--full">
+        <div class="form-callback__field field-full">
           <label class="form-callback__file-zone" for="{{ fieldId }}">
             <input id="{{ fieldId }}" type="file" name="{{ field.name }}" class="form-callback__file-input"{% if field.accept is defined %} accept="{{ field.accept }}"{% endif %}{% if field.multiple | default(false) %} multiple{% endif %}{% if isRequired %} aria-required="true"{% endif %}>
             <span class="form-callback__file-icon" aria-hidden="true">
@@ -88,7 +88,7 @@
 
       {# --- Radio --- #}
       {% elseif field.type == 'radio' %}
-        <fieldset class="form-callback__field form-callback__field--full"{% if isRequired %} aria-required="true"{% endif %}>
+        <fieldset class="form-callback__field field-full"{% if isRequired %} aria-required="true"{% endif %}>
           <legend class="form-callback__legend">
             {{ fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
           </legend>
@@ -122,7 +122,7 @@
     {% endfor %}
 
     {# --- Submit --- #}
-    <div class="form-callback__field form-callback__field--submit">
+    <div class="form-callback__field field-submit">
       <button class="button button-md button-3 form-callback__submit" type="submit">
         <span class="form-callback__submit-text">
           {% if data.button is defined and data.button.title is defined %}
@@ -148,13 +148,13 @@
       {% endif %}
     {% endfor %}
     {% if not hasPolicyCheckbox %}
-    <div class="form-callback__field form-callback__field--full form-callback__field--rules">
+    <div class="form-callback__field field-full field-rules">
       <span class="form-callback__rules-text">{{ formConfig.rules[lang_code].policy | raw }}</span>
     </div>
     {% endif %}
 
     {# --- Error banner --- #}
-    <div class="form-callback__field form-callback__field--full form-callback__error-banner hidden" aria-live="polite" aria-atomic="true">
+    <div class="form-callback__field field-full form-callback__error-banner hidden" aria-live="polite" aria-atomic="true">
       <span id="{{ formId }}Error" class="form-callback__error-text" role="alert" aria-live="assertive">{{ formConfig.error[lang_code].title }}</span>
     </div>
   </div>
