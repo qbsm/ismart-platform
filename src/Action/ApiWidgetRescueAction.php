@@ -53,7 +53,7 @@ final class ApiWidgetRescueAction
         }
 
         if (!$this->rescue->isEnabled()) {
-            return $this->json($response, 200, ['success' => true, 'stored' => false, 'request_id' => $requestId]);
+            return $this->json($response, 200, ['success' => true, 'registered' => false, 'request_id' => $requestId]);
         }
 
         $payload = $data;
@@ -68,12 +68,12 @@ final class ApiWidgetRescueAction
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
             ]);
-            return $this->json($response, 200, ['success' => true, 'stored' => false, 'request_id' => $requestId]);
+            return $this->json($response, 200, ['success' => true, 'registered' => false, 'request_id' => $requestId]);
         }
 
         return $this->json($response, 200, [
             'success' => true,
-            'stored' => $result->status === 'success',
+            'registered' => $result->status === 'success',
             'request_id' => $requestId,
         ]);
     }
