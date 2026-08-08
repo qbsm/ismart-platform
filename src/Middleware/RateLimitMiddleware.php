@@ -57,7 +57,9 @@ final class RateLimitMiddleware implements MiddlewareInterface
         }
 
         $ip = $this->getClientIp($request);
-        $key = md5($ip);
+        // Счётчик свой на каждый путь: иначе копии контакта из виджета съедали бы лимит
+        // обычной формы, и человек, потыкав виджет, не смог бы отправить заявку.
+        $key = md5($ip . '|' . (rtrim($path, '/') ?: '/'));
         $file = $this->cacheDir . '/' . $key . '.json';
 
         if (!is_dir($this->cacheDir)) {
