@@ -40,16 +40,16 @@ final class RescueChannelTest extends TestCase
 
     public function testУспешныйПриём(): void
     {
-        $http = new MockHttpClient(new MockResponse('{"ok":true,"lead":42}', ['http_code' => 201]));
+        $http = new MockHttpClient(new MockResponse('{"ok":true,"id":42}', ['http_code' => 201]));
         $r = $this->channel($http)->send(['phone' => '+79990000000'], [], 'req-1');
         $this->assertSame('success', $r->status);
-        $this->assertSame('42', $r->meta['lead']);
+        $this->assertSame('42', $r->meta['id']);
     }
 
     public function testПовторСТемЖеRequestIdСчитаетсяУспехом(): void
     {
         // Приёмник распознал дубль — заявка у него, создавать вторую не нужно.
-        $http = new MockHttpClient(new MockResponse('{"ok":true,"lead":42,"duplicate":true}', ['http_code' => 200]));
+        $http = new MockHttpClient(new MockResponse('{"ok":true,"id":42,"duplicate":true}', ['http_code' => 200]));
         $r = $this->channel($http)->send(['phone' => '+79990000000'], [], 'req-1');
         $this->assertSame('success', $r->status);
     }
@@ -74,7 +74,7 @@ final class RescueChannelTest extends TestCase
         $captured = null;
         $http = new MockHttpClient(function (string $method, string $url, array $options) use (&$captured) {
             $captured = json_decode($options['body'], true);
-            return new MockResponse('{"ok":true,"lead":1}', ['http_code' => 201]);
+            return new MockResponse('{"ok":true,"id":1}', ['http_code' => 201]);
         });
         $this->channel($http)->send(['phone' => '+79990000000', 'Имя' => 'Пётр'], [], 'req-7');
         $this->assertSame('example.ru', $captured['site']);
@@ -88,7 +88,7 @@ final class RescueChannelTest extends TestCase
         $captured = null;
         $http = new MockHttpClient(function (string $method, string $url, array $options) use (&$captured) {
             $captured = json_decode($options['body'], true);
-            return new MockResponse('{"ok":true,"lead":1}', ['http_code' => 201]);
+            return new MockResponse('{"ok":true,"id":1}', ['http_code' => 201]);
         });
         $this->channel($http)->send(['phone' => '+79990000000'], [], 'req-1');
         $this->assertArrayNotHasKey('key', $captured);

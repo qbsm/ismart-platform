@@ -90,7 +90,7 @@ return [
         'allow_credentials' => false,
     ],
     'mail' => [
-        'dsn' => Env::get('MAIL_DSN', 'MAILER_DSN') ?: 'sendmail://default',
+        'dsn' => Env::get('MAIL_DSN') ?: 'sendmail://default',
         'to' => Env::get('MAIL_TO'),
         'from' => Env::get('MAIL_FROM') ?: 'noreply@localhost',
         'from_name' => Env::get('MAIL_FROM_NAME'),
@@ -109,27 +109,27 @@ return [
     ],
 
     'calltouch' => [
-        'enable' => Env::bool('CALLTOUCH_ENABLE', 'CT_ENABLE'),
-        'route_key' => Env::get('CALLTOUCH_ROUTE_KEY', 'CT_ROUTE_KEY'),
-        'token' => Env::get('CALLTOUCH_TOKEN', 'CT_TOKEN'),
+        'enable' => Env::bool('CALLTOUCH_ENABLE'),
+        'route_key' => Env::get('CALLTOUCH_ROUTE_KEY'),
+        'token' => Env::get('CALLTOUCH_TOKEN'),
         // Числовой ID личного кабинета (Интеграции → Отправка данных во внешние
         // системы → API). Включает режим регистрации заявки — без токена.
-        'site_id' => Env::get('CALLTOUCH_SITE_ID', 'CT_SITE_ID'),
-        'timeout' => Env::int('CALLTOUCH_TIMEOUT', 10, 'CT_TIMEOUT'),
+        'site_id' => Env::get('CALLTOUCH_SITE_ID'),
+        'timeout' => Env::int('CALLTOUCH_TIMEOUT', 10),
     ],
     'telegram' => [
-        'enable' => Env::bool('TELEGRAM_ENABLE', 'TG_ENABLE'),
-        'bot_token' => Env::get('TELEGRAM_BOT_TOKEN', 'TG_BOT_TOKEN'),
-        'chat_id' => Env::get('TELEGRAM_CHAT_ID', 'TG_CHAT_ID'),
-        'timeout' => Env::int('TELEGRAM_TIMEOUT', 10, 'TG_TIMEOUT'),
+        'enable' => Env::bool('TELEGRAM_ENABLE'),
+        'bot_token' => Env::get('TELEGRAM_BOT_TOKEN'),
+        'chat_id' => Env::get('TELEGRAM_CHAT_ID'),
+        'timeout' => Env::int('TELEGRAM_TIMEOUT', 10),
     ],
     'google_sheets' => [
-        'enable' => Env::bool('SHEETS_ENABLE', 'GS_ENABLE'),
-        'spreadsheet_id' => Env::get('SHEETS_SPREADSHEET_ID', 'GS_SPREADSHEET_ID'),
-        'sheet_name' => Env::get('SHEETS_SHEET_NAME', 'GS_SHEET_NAME') ?: 'Заявки',
-        'credentials_path' => Env::get('SHEETS_CREDENTIALS_PATH', 'GS_CREDENTIALS_PATH')
+        'enable' => Env::bool('SHEETS_ENABLE'),
+        'spreadsheet_id' => Env::get('SHEETS_SPREADSHEET_ID'),
+        'sheet_name' => Env::get('SHEETS_SHEET_NAME') ?: 'Заявки',
+        'credentials_path' => Env::get('SHEETS_CREDENTIALS_PATH')
             ?: 'config/secrets/google-service-account.json',
-        'timeout' => Env::int('SHEETS_TIMEOUT', 10, 'GS_TIMEOUT'),
+        'timeout' => Env::int('SHEETS_TIMEOUT', 10),
     ],
     'errors' => require __DIR__ . '/errors.php',
     'twig' => [

@@ -77,15 +77,15 @@ final class RescueChannel implements ChannelInterface
         }
 
         if ($httpCode >= 200 && $httpCode < 300 && ($decoded['ok'] ?? false)) {
-            $leadId = (string) ($decoded['lead'] ?? '');
+            $id = (string) ($decoded['id'] ?? '');
             // duplicate=true — повтор с тем же request_id, приёмник его распознал. Это успех:
-            // заявка уже у него, дубля не создалось.
+            // обращение уже у него, дубля не создалось.
             $this->logger->info('Rescue: принято', [
                 'request_id' => $requestId,
-                'lead' => $leadId,
+                'id' => $id,
                 'duplicate' => (bool) ($decoded['duplicate'] ?? false),
             ]);
-            return ChannelResult::success($this->name(), ['lead' => $leadId]);
+            return ChannelResult::success($this->name(), ['id' => $id]);
         }
 
         $message = (string) ($decoded['error'] ?? 'unknown_error');
