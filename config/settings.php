@@ -81,7 +81,7 @@ return [
     'rate_limit_api_send' => [
         'max_requests' => 10,
         'window_seconds' => 60,
-        'paths' => ['/api/send'],
+        'paths' => ['/api/send', '/api/widget-lead'],
     ],
     'cors' => [
         'allowed_origins' => [], // например ['https://example.com'] или ['*'] для любого
