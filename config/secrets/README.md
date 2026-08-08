@@ -27,11 +27,11 @@
 ## Конфигурация в `.env`
 
 ```
-GS_ENABLE=true
-GS_SPREADSHEET_ID=<id из URL таблицы: docs.google.com/spreadsheets/d/{ID}/edit>
-GS_SHEET_NAME=Заявки
-GS_CREDENTIALS_PATH=config/secrets/google-service-account.json
-GS_TIMEOUT=10
+SHEETS_ENABLE=true
+SHEETS_SPREADSHEET_ID=<id из URL таблицы: docs.google.com/spreadsheets/d/{ID}/edit>
+SHEETS_SHEET_NAME=Заявки
+SHEETS_CREDENTIALS_PATH=config/secrets/google-service-account.json
+SHEETS_TIMEOUT=10
 ```
 
 ## Структура таблицы

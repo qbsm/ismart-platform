@@ -13,8 +13,8 @@
 | Префикс | Назначение | Примеры |
 |---|---|---|
 | `APP_*` | Глобальные настройки приложения | `APP_ENV`, `APP_DEBUG`, `APP_BASE_URL`, `APP_DEFAULT_LANG` |
-| `MAILER_*` | Транспорт (Symfony Mailer) | `MAILER_DSN` |
-| `MAIL_*` | Параметры письма (отправитель, получатель) | `MAIL_TO`, `MAIL_FROM`, `MAIL_FROM_NAME`, `MAIL_SUBJECT_PREFIX` |
+| `MAIL_*` | Канал почты целиком: транспорт и параметры письма | `MAIL_DSN`, `MAIL_TO`, `MAIL_FROM`, `MAIL_FROM_NAME`, `MAIL_SUBJECT_PREFIX` |
+| `CALLTOUCH_*`, `TELEGRAM_*`, `SHEETS_*`, `RESCUE_*` | Остальные каналы уведомлений: префикс = имя канала | `CALLTOUCH_ROUTE_KEY`, `TELEGRAM_CHAT_ID`, `SHEETS_SPREADSHEET_ID`, `RESCUE_SITE` |
 | `YANDEX_*` | Яндекс-сервисы (метрика и т.д.) | `YANDEX_METRIC_ID` |
 | `<VENDOR>_*` | Интеграция со сторонним API (по имени вендора) | `PHOTOROOM_API_KEY` (kumho-only), `N8N_BASE_URL` (этап 4) |
 | `DJANGO_*` | Будущая Django-подсистема (этап 4) | `DJANGO_CORE_URL`, `DJANGO_SERVICE_TOKEN` |
@@ -30,7 +30,7 @@ APP_DEFAULT_LANG=ru          # код языка по умолчанию
 APP_BASE_URL=https://example.test/   # базовый URL (с trailing slash)
 
 # Mailer
-MAILER_DSN=smtp://localhost:25       # или sendmail://default, native://default
+MAIL_DSN=smtp://localhost:25       # или sendmail://default, native://default
 MAIL_TO=info@example.com
 MAIL_FROM=noreply@example.com
 MAIL_FROM_NAME="Site Name"

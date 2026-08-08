@@ -238,7 +238,7 @@ cp .env.example .env
 APP_ENV=development
 APP_BASE_URL=http://<deployment-slug>.test
 APP_LOCALE=ru
-MAILER_DSN=sendmail://default
+MAIL_DSN=sendmail://default
 MAIL_TO=info@<domain>
 MAIL_FROM=noreply@<domain>
 MAIL_FROM_NAME=<Brand>
@@ -277,7 +277,7 @@ GOOGLE_CREDENTIALS_PATH=
 | `project/index.php` (vanilla router) | Slim 4: `public/index.php` (bootstrap) + `config/routes.php` + `src/Action/PageAction.php` |
 | `project/form.php` (vanilla + Guzzle) | `src/Action/ApiSendAction.php` + `src/Notification/NotificationDispatcher.php` + 4 channels |
 | `project/json.php`, `read-json.php`, `copy.php` | удалить — `DataLoaderService` |
-| `project/config.php` | разнести: пути → `config/settings.php`, mail → `.env::MAILER_DSN` |
+| `project/config.php` | разнести: пути → `config/settings.php`, mail → `.env::MAIL_DSN` |
 | `project/vendor/` (committed) | удалить, `composer install` |
 | `project/cache/twig/` | `cache/twig/` (имя совпадает) — путь из `settings.php` |
 | `dev/gulpfile.js`, `dev/ismart-gulp.js` | удалить — `npm run build` через webpack + postcss |
@@ -790,7 +790,7 @@ $client->post('/calls-service/RestAPI/requests/orders/register', [
 В `.env`:
 
 ```
-MAILER_DSN=sendmail://default
+MAIL_DSN=sendmail://default
 MAIL_TO=info@<domain>
 MAIL_FROM=noreply@<domain>
 MAIL_FROM_NAME=<Brand>

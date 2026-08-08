@@ -471,7 +471,7 @@ EventDispatcherInterface::class => function ($c) {
   1. CSRF-токен совпадает с сессионным.
   2. Yandex.SmartCaptcha валидна (если настроена).
   3. Rate limit (10 req / 60s по IP, см. `rate_limit_api_send` в settings).
-- Mailer: Symfony Mailer DSN из env (`MAILER_DSN=smtp://...` или `sendmail://default`). Конфиг `mail.to / mail.from / mail.from_name / mail.subject_prefix` в settings.
+- Mailer: Symfony Mailer DSN из env (`MAIL_DSN=smtp://...` или `sendmail://default`). Конфиг `mail.to / mail.from / mail.from_name / mail.subject_prefix` в settings.
 
 ---
 
@@ -561,7 +561,7 @@ EventDispatcherInterface::class => function ($c) {
 ## 22. Запуск нового проекта (быстрый чек-лист)
 
 1. `composer create-project` или клон template-репозитория (если есть).
-2. `cp .env.example .env`, заполнить `MAILER_DSN`, `APP_ENV`.
+2. `cp .env.example .env`, заполнить `MAIL_DSN`, `APP_ENV`.
 3. `composer install`, `npm install`.
 4. `npm run build` — соберёт CSS/JS в `public/assets/build/`.
 5. `php tools/build/setup-public-links.php` — создаст `public/data` и `public/assets` симлинки.
