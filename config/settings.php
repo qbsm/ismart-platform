@@ -96,15 +96,16 @@ return [
         'from_name' => Env::get('MAIL_FROM_NAME'),
         'subject_prefix' => Env::get('MAIL_SUBJECT_PREFIX'),
     ],
-    // Сервис доставки заявок: забирает на себя почту, телеграм и таблицы.
+    // Резервный сбор заявок (rescue-канал): дублирует заявку в наш сервис, который сначала её
+    // сохраняет, а потом раздаёт по каналам с повторами — упавший канал не теряет лид.
     // Подтверждение отправителя — по домену: заявку шлёт бэкенд, значит с адреса, на который
-    // домен и резолвится. Ключ нужен только хостингам вне нашего периметра.
-    'leads' => [
-        'enable' => Env::bool('LEADS_ENABLE', 'API_ENABLE', 'LEADS_API_ENABLE'),
-        'url' => Env::get('LEADS_URL', 'API_URL', 'LEADS_API_URL') ?: 'https://api.ismart.pro/v1/collect',
-        'site' => Env::get('LEADS_SITE', 'API_SITE', 'LEADS_API_SITE'),
-        'key' => Env::get('LEADS_KEY', 'API_KEY', 'LEADS_API_KEY'),
-        'timeout' => Env::int('LEADS_TIMEOUT', 10, 'API_TIMEOUT', 'LEADS_API_TIMEOUT'),
+    // домен резолвится. Секрета в .env нет; ключ нужен только хостингам вне нашего периметра.
+    'rescue' => [
+        'enable' => Env::bool('RESCUE_ENABLE'),
+        'url' => Env::get('RESCUE_URL') ?: 'https://api.ismart.pro/v1/rescue',
+        'site' => Env::get('RESCUE_SITE'),
+        'key' => Env::get('RESCUE_KEY'),
+        'timeout' => Env::int('RESCUE_TIMEOUT', 10),
     ],
 
     'calltouch' => [

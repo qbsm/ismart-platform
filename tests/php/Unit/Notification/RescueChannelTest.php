@@ -4,18 +4,18 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Notification;
 
-use App\Notification\Channel\LeadsChannel;
+use App\Notification\Channel\RescueChannel;
 use PHPUnit\Framework\TestCase;
 use Psr\Log\NullLogger;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
 
-final class LeadsChannelTest extends TestCase
+final class RescueChannelTest extends TestCase
 {
     /** @param array<string,mixed> $config */
-    private function channel(MockHttpClient $http, array $config = []): LeadsChannel
+    private function channel(MockHttpClient $http, array $config = []): RescueChannel
     {
-        return new LeadsChannel($http, new NullLogger(), $config + [
+        return new RescueChannel($http, new NullLogger(), $config + [
             'enable' => true,
             'url' => 'https://api.example/v1/lead',
             'site' => 'example.ru',
@@ -24,7 +24,7 @@ final class LeadsChannelTest extends TestCase
 
     public function testВыключенБезСайта(): void
     {
-        $c = new LeadsChannel(new MockHttpClient(), new NullLogger(), [
+        $c = new RescueChannel(new MockHttpClient(), new NullLogger(), [
             'enable' => true,
             'url' => 'https://api.example/v1/lead',
             'site' => '',

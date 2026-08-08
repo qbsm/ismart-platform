@@ -12,7 +12,7 @@ use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 /**
- * Отправка заявки в наш сервис доставки заявок.
+ * Резервная отправка заявки в наш сервис (rescue-канал).
  *
  * Забирает на себя всё, кроме CallTouch: почту, телеграм, таблицы. Смысл в том, что приёмник
  * сначала сохраняет заявку, и только потом раздаёт её по каналам с повторами — упавший канал
@@ -31,7 +31,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  * заявку шлёт бэкенд сайта, значит с того же IP, на который резолвится домен. Ключ нужен
  * только там, где это не так (хостинг клиента за CDN или общим адресом).
  */
-final class LeadsChannel implements ChannelInterface
+final class RescueChannel implements ChannelInterface
 {
     /**
      * @param array{enable?: bool, url?: string, site?: string, key?: string, timeout?: int} $config
@@ -44,7 +44,7 @@ final class LeadsChannel implements ChannelInterface
 
     public function name(): string
     {
-        return 'leads';
+        return 'rescue';
     }
 
     public function isEnabled(): bool
@@ -69,7 +69,7 @@ final class LeadsChannel implements ChannelInterface
             $httpCode = $response->getStatusCode();
             $decoded = $response->toArray(false);
         } catch (TransportException | ExceptionInterface $e) {
-            $this->logger->error('Сервис заявок: запрос не прошёл', [
+            $this->logger->error('Rescue: запрос не прошёл', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
             ]);
@@ -80,7 +80,7 @@ final class LeadsChannel implements ChannelInterface
             $leadId = (string) ($decoded['lead'] ?? '');
             // duplicate=true — повтор с тем же request_id, приёмник его распознал. Это успех:
             // заявка уже у него, дубля не создалось.
-            $this->logger->info('Сервис заявок: принято', [
+            $this->logger->info('Rescue: принято', [
                 'request_id' => $requestId,
                 'lead' => $leadId,
                 'duplicate' => (bool) ($decoded['duplicate'] ?? false),
@@ -93,11 +93,11 @@ final class LeadsChannel implements ChannelInterface
 
         // 4xx — приёмник данные не принял, повтор не поможет: это предупреждение, не отказ канала.
         if ($httpCode >= 400 && $httpCode < 500) {
-            $this->logger->warning('Сервис заявок: отклонено', $context);
+            $this->logger->warning('Rescue: отклонено', $context);
             return ChannelResult::warning($this->name(), $message, ['http_code' => $httpCode]);
         }
 
-        $this->logger->error('Сервис заявок: не доставлено', $context);
+        $this->logger->error('Rescue: не доставлено', $context);
         return ChannelResult::failed($this->name(), $message, ['http_code' => $httpCode]);
     }
 

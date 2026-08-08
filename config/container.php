@@ -14,7 +14,7 @@ use App\Middleware\RateLimitMiddleware;
 use App\Middleware\RedirectMiddleware;
 use App\Middleware\RequestDurationMiddleware;
 use App\Middleware\SecurityHeadersMiddleware;
-use App\Notification\Channel\LeadsChannel;
+use App\Notification\Channel\RescueChannel;
 use App\Notification\Channel\CallTouchChannel;
 use App\Notification\Channel\GoogleSheetsChannel;
 use App\Notification\Channel\MailChannel;
@@ -196,15 +196,15 @@ return static function (): ContainerInterface {
             (string) ($c->get('settings')['project_root'] ?? ''),
         ),
 
-        LeadsChannel::class => static fn(ContainerInterface $c) => new LeadsChannel(
+        RescueChannel::class => static fn(ContainerInterface $c) => new RescueChannel(
             $c->get(HttpClientInterface::class),
             $c->get(LoggerInterface::class),
-            $c->get('settings')['leads'] ?? [],
+            $c->get('settings')['rescue'] ?? [],
         ),
 
         NotificationDispatcher::class => static fn(ContainerInterface $c) => new NotificationDispatcher(
             [
-                $c->get(LeadsChannel::class),
+                $c->get(RescueChannel::class),
                 $c->get(MailChannel::class),
                 $c->get(CallTouchChannel::class),
                 $c->get(TelegramChannel::class),

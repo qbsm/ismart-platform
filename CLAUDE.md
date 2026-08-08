@@ -45,7 +45,7 @@ public/index.php → DI Container → Middleware Stack → Routes → PageAction
 ### Конфигурация проекта (два уровня)
 
 - **`config/settings.php`** — ядро платформы (пути, кэш, Twig, rate limit, CORS, языки из global.json)
-- **`.env`** — секреты и параметры deployment'а. Полный справочник — `docs/reference/env.md`; правило имён: префикс = имя канала (`MAIL_`, `CALLTOUCH_`, `TELEGRAM_`, `SHEETS_`, `LEADS_`)
+- **`.env`** — секреты и параметры deployment'а. Полный справочник — `docs/reference/env.md`; правило имён: префикс = имя канала (`MAIL_`, `CALLTOUCH_`, `TELEGRAM_`, `SHEETS_`, `RESCUE_`)
 - **`config/project.php`** — конфигурация конкретного deployment'а (route_map, collections, sitemap_pages, integrations). Шаблон: `config/project.php.dist`
 
 ### Структура данных (JSON)
