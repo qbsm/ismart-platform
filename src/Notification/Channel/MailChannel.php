@@ -23,8 +23,20 @@ final class MailChannel implements ChannelInterface
         return 'mail';
     }
 
+    /**
+     * Флаг решает, если задан явно; иначе канал включён при наличии адреса — так он вёл себя
+     * до появления `MAIL_ENABLE`, и молча выключать почту на deployment'ах, где флага ещё нет,
+     * нельзя: это тихо оставило бы клиента без заявок.
+     */
     public function isEnabled(): bool
     {
+        $flag = (string) ($this->config['enable'] ?? '');
+
+        if ($flag !== '') {
+            return filter_var($flag, FILTER_VALIDATE_BOOL) === true
+                && (string) ($this->config['to'] ?? '') !== '';
+        }
+
         return (string) ($this->config['to'] ?? '') !== '';
     }
 
