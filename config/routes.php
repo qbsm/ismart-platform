@@ -13,6 +13,9 @@ return static function (App $app): void {
     $app->get('/health', HealthAction::class);
     $app->post('/api/send[/]', ApiSendAction::class);
     $app->post('/api/widget-rescue[/]', ApiWidgetRescueAction::class);
+    // Приёмник событий воронки для площадок, где nginx не наш: сам факт запроса уже попал
+    // в access-лог, приложению остаётся ответить пустым 204.
+    $app->get('/_f', static fn($request, $response) => $response->withStatus(204));
     $app->get('/sitemap.xml', SitemapAction::class);
     $app->get('/', PageAction::class);
     $app->get('/{page}[/{params:.*}]', PageAction::class);
