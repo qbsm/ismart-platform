@@ -48,7 +48,7 @@ import './components/features-list.js';
 import './components/card-number.js';
 import setupSliders from './components/slider.js';
 import './components/burger-icon.js';
-import { initCalltouchWidgetCapture } from './components/calltouch-widget-capture.js';
+import { initCalltouchWidgetCapture } from './components/calltouch-widget-check.js';
 import { initLeadContext } from './components/lead-context.js';
 import { initFunnel } from './components/funnel.js';
 
