@@ -22,7 +22,6 @@ use App\Notification\Channel\GoogleSheetsChannel;
 use App\Notification\Channel\MailChannel;
 use App\Notification\Channel\TelegramChannel;
 use App\Notification\NotificationDispatcher;
-use App\Support\Env;
 use App\Support\FormToken;
 use App\Service\DataLoaderService;
 use App\Service\DefaultSeoBuilder;
@@ -223,7 +222,7 @@ return static function (): ContainerInterface {
             $settings = $c->get('settings');
             $config = (array) ($settings['form_token'] ?? []);
             $file = (string) ($config['secret_file'] ?? '');
-            $secret = Env::get('APP_SECRET');
+            $secret = (string) (getenv('APP_SECRET') ?: '');
 
             if ($secret === '' && $file !== '') {
                 if (is_file($file)) {
