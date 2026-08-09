@@ -28,6 +28,8 @@ final class TelegramChannel implements ChannelInterface
 
     private const SKIP_FIELDS = [
         'csrf_token',
+        'form_token',
+        'company_site',
         'idempotency_key',
         'policy',
         'session_id',

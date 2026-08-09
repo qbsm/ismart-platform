@@ -1,4 +1,5 @@
 import { FormApi } from './api.js';
+import { primeFormToken, ensureFormToken } from './token.js';
 import { FormValidator } from './validation.js';
 import { PhoneMask } from './mask.js';
 import { FormUI } from './ui.js';
@@ -27,6 +28,7 @@ export class CallbackForm {
   init() {
     this.mask.init();
     this._setCurrentUrl();
+    primeFormToken(this.form);
     this.form.addEventListener('submit', this._boundHandleSubmit);
     this.form.addEventListener('input', this._boundHandleInput);
 
@@ -93,6 +95,7 @@ export class CallbackForm {
     try {
       this._setCurrentUrl();
       const formData = this._buildFormData();
+      await ensureFormToken(formData, this.form);
       const response = await this.api.send(formData, this.abortController.signal);
 
       if (response.processing === true) {

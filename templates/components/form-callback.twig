@@ -3,6 +3,10 @@
 {% set fields = data.fields | default(formConfig.fields | default([])) %}
 
 <form class="form-callback js-form-callback" novalidate method="post" action="" id="{{ formId }}">
+  <div class="form-callback__trap" aria-hidden="true">
+    <input type="text" name="company_site" tabindex="-1" autocomplete="off">
+  </div>
+  <input type="hidden" name="form_token" value="">
   <div class="form-callback__grid">
 
     {% for field in fields %}

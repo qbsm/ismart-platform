@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Action\ApiFormTokenAction;
 use App\Action\ApiSendAction;
 use App\Action\ApiWidgetRescueAction;
 use App\Action\HealthAction;
@@ -21,6 +22,8 @@ use App\Notification\Channel\GoogleSheetsChannel;
 use App\Notification\Channel\MailChannel;
 use App\Notification\Channel\TelegramChannel;
 use App\Notification\NotificationDispatcher;
+use App\Support\Env;
+use App\Support\FormToken;
 use App\Service\DataLoaderService;
 use App\Service\DefaultSeoBuilder;
 use App\Service\MailService;
@@ -214,6 +217,34 @@ return static function (): ContainerInterface {
             $c->get(LoggerInterface::class),
         ),
 
+        // Секрет подписи живёт в cache и заводится сам: иначе каждый deployment пришлось бы
+        // править вручную, а забытый ключ означал бы неотправляемые формы.
+        FormToken::class => static function (ContainerInterface $c) {
+            $settings = $c->get('settings');
+            $config = (array) ($settings['form_token'] ?? []);
+            $file = (string) ($config['secret_file'] ?? '');
+            $secret = Env::get('APP_SECRET');
+
+            if ($secret === '' && $file !== '') {
+                if (is_file($file)) {
+                    $secret = trim((string) file_get_contents($file));
+                }
+                if ($secret === '') {
+                    $secret = bin2hex(random_bytes(32));
+                    @mkdir(dirname($file), 0775, true);
+                    @file_put_contents($file, $secret, LOCK_EX);
+                    @chmod($file, 0600);
+                }
+            }
+
+            return new FormToken(
+                $secret !== '' ? $secret : 'insecure-fallback',
+                (int) ($config['min_age'] ?? 3),
+                (int) ($config['max_age'] ?? 7200),
+            );
+        },
+
+        ApiFormTokenAction::class => \DI\autowire(),
         ApiSendAction::class => \DI\autowire(),
         ApiWidgetRescueAction::class => \DI\autowire(),
     ]);

@@ -4,6 +4,14 @@
    Базовый размер: 1rem = 10px
    ========================================================================== */
 
+.form-callback__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .form-callback {
   --fc-radius: 0.4rem;
   --fc-border: 1px solid rgb(0 0 0 / 6%);

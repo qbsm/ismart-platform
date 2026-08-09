@@ -8,16 +8,71 @@ use App\Middleware\CorrelationIdMiddleware;
 use App\Notification\ChannelResult;
 use App\Notification\NotificationDispatcher;
 use App\Support\Arr;
+use App\Support\FormToken;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
 
 final class ApiSendAction
 {
+    /** Имя выбрано правдоподобным: робот заполняет то, что похоже на обычное поле. */
+    private const TRAP_FIELD = 'company_site';
+
     public function __construct(
         private readonly NotificationDispatcher $dispatcher,
         private readonly LoggerInterface $logger,
+        private readonly FormToken $formToken,
     ) {}
+
+    /**
+     * Заявка принимается, если подтверждён хотя бы один токен: новый (с временем выдачи) или
+     * сессионный. Отказ — только когда не подошёл ни один; тогда причина уходит в лог, чтобы
+     * молчаливых потерь не было.
+     *
+     * @param array<string,mixed> $data
+     * @return array{status: int, payload: array<string,mixed>}|null
+     */
+    private function checkTokens(array $data, string $requestId, ServerRequestInterface $request): ?array
+    {
+        $formToken = Arr::str($data, 'form_token');
+        $reason = 'missing';
+
+        if ($formToken !== '') {
+            $verdict = $this->formToken->inspect($formToken);
+            if ($verdict['valid']) {
+                return null;
+            }
+            $reason = $verdict['reason'];
+        }
+
+        $csrfToken = Arr::str($data, 'csrf_token');
+        $sessionToken = isset($_SESSION['csrf_token']) && is_string($_SESSION['csrf_token'])
+            ? $_SESSION['csrf_token']
+            : '';
+
+        // Форма набрана мгновенно — сессионный токен этого не оправдывает.
+        if ($reason !== 'too_fast' && $csrfToken !== '' && $sessionToken !== '' && hash_equals($sessionToken, $csrfToken)) {
+            return null;
+        }
+
+        $this->logger->warning('Заявка отклонена проверкой токена', [
+            'request_id' => $requestId,
+            'reason' => $reason,
+            'has_session_token' => $sessionToken !== '',
+            'ip' => $this->clientIp($request),
+            'user_agent' => $request->getHeaderLine('User-Agent'),
+        ]);
+
+        return [
+            'status' => 419,
+            'payload' => [
+                'success' => false,
+                'code' => 'CSRF_INVALID',
+                'message' => 'Сессия истекла. Обновите страницу и попробуйте снова.',
+                'request_id' => $requestId,
+            ],
+        ];
+    }
 
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface
     {
@@ -32,17 +87,28 @@ final class ApiSendAction
         $data = is_array($parsed) ? $parsed : [];
         $idempotencyKey = Arr::str($data, 'idempotency_key');
 
-        // CSRF
-        $csrfToken = Arr::str($data, 'csrf_token');
-        $sessionToken = isset($_SESSION['csrf_token']) && is_string($_SESSION['csrf_token']) ? $_SESSION['csrf_token'] : '';
-
-        if ($csrfToken === '' || $sessionToken === '' || !hash_equals($sessionToken, $csrfToken)) {
-            return $this->json($response, 419, [
-                'success' => false,
-                'code' => 'CSRF_INVALID',
-                'message' => 'Сессия истекла. Обновите страницу и попробуйте снова.',
+        // Ловушка: поле спрятано от человека, робот заполняет всё подряд. Отвечаем как при
+        // успехе — иначе робот подберёт набор полей и вернётся.
+        if (Arr::str($data, self::TRAP_FIELD) !== '') {
+            $this->logger->warning('Заявка отброшена ловушкой', [
+                'request_id' => $requestId,
+                'ip' => $this->clientIp($request),
+                'user_agent' => $request->getHeaderLine('User-Agent'),
+            ]);
+            return $this->json($response, 200, [
+                'success' => true,
+                'message' => 'Заявка успешно отправлена',
+                'channels' => [],
                 'request_id' => $requestId,
             ]);
+        }
+
+        // Подтверждение источника. Токен формы выдаётся браузеру по запросу и несёт время
+        // выдачи; сессионный остаётся как запасной путь, пока новый JS расходится по парку,
+        // и на случай страницы, открытой до выкладки.
+        $tokenError = $this->checkTokens($data, $requestId, $request);
+        if ($tokenError !== null) {
+            return $this->json($response, $tokenError['status'], $tokenError['payload']);
         }
 
         // Идемпотентность

@@ -26,7 +26,7 @@ final class MailService
     ];
 
     /** @var string[] */
-    private const SKIP_FIELDS = ['csrf_token', 'current_url', 'policy', 'lang', 'idempotency_key'];
+    private const SKIP_FIELDS = ['csrf_token', 'form_token', 'company_site', 'current_url', 'policy', 'lang', 'idempotency_key'];
 
     /**
      * @param array{

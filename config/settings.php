@@ -83,6 +83,14 @@ return [
         'window_seconds' => 60,
         'paths' => ['/api/send', '/api/widget-rescue'],
     ],
+    // Токен формы выдаётся браузеру по запросу, а не вместе с HTML: страница, скачанная
+    // роботом, не даёт возможности отправить заявку. min_age — сколько секунд между выдачей
+    // токена и отправкой считаем нижней границей для живого человека.
+    'form_token' => [
+        'min_age' => 3,
+        'max_age' => 7200,
+        'secret_file' => $cacheDir . '/form-token-secret',
+    ],
     'cors' => [
         'allowed_origins' => [], // например ['https://example.com'] или ['*'] для любого
         'allowed_methods' => ['GET', 'POST', 'OPTIONS', 'PUT', 'PATCH', 'DELETE'],

@@ -1,6 +1,7 @@
 // Копия контакта из виджета — docs.ismart.pro/api.ismart.pro.
 
 import { appendTrigger, leadTrigger } from './lead-context.js';
+import { fetchFormToken } from './form-callback/token.js';
 
 import { funnelStep } from './funnel.js';
 
@@ -41,6 +42,8 @@ async function send(phone) {
 
   const body = new FormData();
   body.set('csrf_token', (window.appConfig && window.appConfig.csrfToken) || '');
+  const formToken = await fetchFormToken();
+  if (formToken) body.set('form_token', formToken);
   body.set('phone', phone);
   body.set('page_url', window.location.href);
   body.set('referrer', document.referrer || '');
@@ -106,7 +109,9 @@ function reportHealth() {
 
 export function initCalltouchWidgetCheck() {
   setTimeout(reportHealth, HEALTH_DELAY_MS);
-  if (!window.appConfig || !window.appConfig.csrfToken) return;
+  // Токен берём заранее: виджет всплывает через десятки секунд, и к моменту перехвата у
+  // токена уже есть возраст — иначе отправка выглядела бы мгновенной, как у робота.
+  fetchFormToken();
   scan();
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
   setInterval(scan, RESCAN_MS);
