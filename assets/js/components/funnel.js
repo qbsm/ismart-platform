@@ -1,26 +1,12 @@
-/*
- * Воронка заявки: где именно обрывается путь от «увидел форму» до «отправил».
- *
- * Сейчас в аналитике видны только концы — визит и заявка, — а между ними чёрный ящик. Из-за
- * этого непонятно, почему формы сайта почти не дают заявок, а виджет даёт: люди их не видят,
- * не открывают или бросают на середине заполнения.
- *
- * События уходят пикселем на `/_f`, который nginx отдаёт как 204 не поднимая PHP. Своего
- * хранилища у воронки нет вовсе: строка падает в access-лог, который и так пишется и
- * ротируется, а ночной монитор конверсии её оттуда читает. Постоянная нагрузка — один
- * короткий GET на событие, максимум пять за визит.
- *
- * Содержимое полей не передаётся и не хранится: нужен факт «начал вводить», а не то, что
- * человек напечатал. Для разбора конкретных сеансов есть Вебвизор Метрики.
- */
+// Воронка заявки — docs.ismart.pro/api.ismart.pro, раздел «Аналитика конверсии».
 
 const SENT_KEY = 'funnel_sent';
 const STEPS = {
-  seen: 'seen',       // форма или виджет попали в область видимости
-  open: 'open',       // форму открыли
-  input: 'input',     // начали заполнять
-  abandon: 'abandon', // начали заполнять и ушли, не отправив
-  submit: 'submit',   // отправили
+  seen: 'seen',
+  open: 'open',
+  input: 'input',
+  abandon: 'abandon',
+  submit: 'submit',
 };
 
 const startedAt = Date.now();
@@ -41,24 +27,16 @@ function alreadySent(step) {
   }
 }
 
-/**
- * Отправляет шаг воронки. Каждый шаг — один раз за визит: нас интересует, дошёл ли человек
- * до этапа, а не сколько раз он туда возвращался.
- * @param {string} step одно из STEPS
- * @param {string} where секция или источник события
- */
 export function funnelStep(step, where = '') {
   if (!step || alreadySent(step)) return;
   const params = new URLSearchParams({ s: step, t: String(sinceStart()) });
   if (where) params.set('w', where.slice(0, 40));
   const url = `/_f?${params.toString()}`;
   try {
-    // sendBeacon переживает уход со страницы — иначе шаг «бросил заполнение» терялся бы
-    // ровно в тот момент, ради которого он и нужен.
     if (navigator.sendBeacon) navigator.sendBeacon(url);
     else new Image().src = url;
   } catch {
-    // Аналитика не должна ничего ломать на сайте.
+    return;
   }
 }
 
@@ -68,7 +46,6 @@ function sectionOf(el) {
   return (section.dataset.section || section.id || section.className.split(' ')[0] || '').slice(0, 40);
 }
 
-/** Форма или виджет в зоне видимости — значит человек их как минимум мог заметить. */
 function watchVisibility() {
   const targets = [...document.querySelectorAll('form, .form-callback, [data-form]')];
   if (!targets.length) return;
@@ -92,7 +69,6 @@ function watchForms() {
     funnelStep(STEPS.open, sectionOf(el));
   }, true);
 
-  // Именно факт ввода, без содержимого: важно, что человек начал заполнять.
   document.addEventListener('input', () => {
     inputStarted = true;
     funnelStep(STEPS.input);
@@ -104,7 +80,6 @@ function watchForms() {
   }, true);
 }
 
-/** Виджет CallTouch живёт в своём iframe — его события ловим отдельно. */
 function watchWidget() {
   const seen = new WeakSet();
   const scan = () => {
@@ -142,8 +117,6 @@ export function initFunnel() {
   watchForms();
   watchWidget();
 
-  // Уход со страницы: если человек начал заполнять и не отправил — это и есть обрыв,
-  // который надо чинить. Через pagehide, потому что beforeunload не срабатывает на мобильных.
   window.addEventListener('pagehide', () => {
     if (inputStarted && !submitted) funnelStep(STEPS.abandon);
   });

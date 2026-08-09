@@ -1,18 +1,4 @@
-/*
- * Копия контакта из виджета обратного звонка CallTouch.
- *
- * Виджет постит заявку напрямую в CallTouch, минуя наш бэкенд: в базе заявок и в аналитике
- * этих обращений нет вовсе. Здесь мы снимаем номер, который человек ввёл в поле виджета, и шлём
- * копию на свой эндпоинт — звонок при этом инициирует сам виджет, мы в его работу не лезем.
- *
- * Виджет рисуется в iframe без src (about:blank), то есть same-origin: его документ доступен.
- * Слушаем в capture-фазе, чтобы событие дошло до нас раньше обработчиков SDK и мы успели
- * прочитать поле до того, как виджет его очистит.
- *
- * Селекторы SDK намеренно не завязаны на имена классов — они собраны с хэшами
- * (styles__SingleButton-sc-1a0aa892-0) и меняются с каждой их сборкой. Ищем поле по типу и
- * содержимому, а отправку ловим по любому клику или Enter внутри виджета.
- */
+// Копия контакта из виджета — docs.ismart.pro/api.ismart.pro.
 
 import { appendTrigger } from './lead-context.js';
 
@@ -46,8 +32,6 @@ const sent = new Set();
 
 async function send(phone) {
   const key = digits(phone);
-  // Один и тот же номер шлём один раз: клик и Enter приходят парой, да и человек нередко
-  // жмёт кнопку дважды.
   if (sent.has(key)) return;
   sent.add(key);
 
@@ -61,15 +45,12 @@ async function send(phone) {
   if (ctSession) body.set('ct_session_id', ctSession);
   const ymUid = cookie('_ym_uid');
   if (ymUid) body.set('ym_uid', ymUid);
-  // Что человек нажал перед тем, как открыть виджет: виджет своей формой этого не знает,
-  // а логика сайта живёт отдельно — связать их можно только здесь.
   appendTrigger(body);
 
   const base = (window.appConfig && window.appConfig.baseUrl) || '/';
   try {
     await fetch(base.replace(/\/?$/, '/') + ENDPOINT, { method: 'POST', body, credentials: 'same-origin' });
   } catch {
-    // Молча: копия — дополнение к работе виджета, её отказ не должен ничего ломать у клиента.
     sent.delete(key);
   }
 }
@@ -85,7 +66,6 @@ function attach(doc) {
 
   doc.addEventListener('click', grab, true);
   doc.addEventListener('keydown', (e) => { if (e.key === 'Enter') grab(); }, true);
-  // Виджет закрывается после отправки — забираем номер и на этом переходе.
   doc.addEventListener('submit', grab, true);
 }
 
@@ -95,7 +75,7 @@ function scan() {
     try {
       doc = frame.contentDocument;
     } catch {
-      return; // чужой origin — не наш случай, виджет CallTouch рисуется в about:blank
+      return;
     }
     if (doc && phoneField(doc)) attach(doc);
   });
@@ -104,7 +84,6 @@ function scan() {
 export function initCalltouchWidgetCapture() {
   if (!window.appConfig || !window.appConfig.csrfToken) return;
   scan();
-  // Виджет появляется асинхронно и пересобирает свой DOM при каждом открытии.
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
   setInterval(scan, RESCAN_MS);
 }

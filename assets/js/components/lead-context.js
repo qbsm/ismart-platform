@@ -1,18 +1,4 @@
-/*
- * Контекст заявки: что человек нажал прямо перед тем, как её оставить.
- *
- * Без этого в аналитике видно только «заявка с виджета» — и непонятно, привела к ней карточка
- * модели, блок кредита или баннер акции. Данные о кликах есть только на фронте: виджет
- * CallTouch рисует свою форму сам, а логика сайта живёт отдельно от неё, и связать их можно
- * лишь здесь, в браузере.
- *
- * Запоминаем последний осмысленный клик — текст кнопки и секцию, в которой она стоит.
- * `data-tag` на кнопках предусмотрен шаблоном, но проставлен не везде, поэтому опираемся на
- * текст: он переживает переверстку лучше, чем классы с хэшами.
- *
- * Живёт в sessionStorage, а не в localStorage: контекст имеет смысл в пределах одного визита,
- * а вчерашняя кнопка к сегодняшней заявке отношения не имеет.
- */
+// Контекст заявки — docs.ismart.pro/api.ismart.pro, раздел «Аналитика конверсии».
 
 const KEY = 'lead_trigger';
 const MAX_AGE_SEC = 600;
@@ -36,11 +22,10 @@ function remember(el) {
       at: Math.floor(Date.now() / 1000),
     }));
   } catch {
-    // Приватный режим — контекст просто не соберётся, заявка от этого не пострадает.
+    return;
   }
 }
 
-/** Последний клик, если он ещё актуален. @returns {{text:string, section:string, age:number}|null} */
 export function leadTrigger() {
   try {
     const raw = sessionStorage.getItem(KEY);
@@ -54,7 +39,6 @@ export function leadTrigger() {
   }
 }
 
-/** Кладёт контекст в FormData — для отправок, которые идут мимо разметки формы. */
 export function appendTrigger(body) {
   const t = leadTrigger();
   if (!t) return;
@@ -84,14 +68,10 @@ function attachToForm(form) {
 export function initLeadContext() {
   document.addEventListener('click', (e) => {
     const el = e.target.closest('button, a, [role="button"], .btn, [data-tag]');
-    // Кнопку отправки самой формы не запоминаем: она и так известна из факта заявки, а нужен
-    // тот клик, что привёл человека к форме.
     if (!el || el.type === 'submit') return;
     remember(el);
   }, true);
 
-  // Обычные формы платформы отправляются своим кодом — дописываем поля перед сабмитом,
-  // не трогая его логику.
   document.addEventListener('submit', (e) => {
     if (e.target instanceof HTMLFormElement) attachToForm(e.target);
   }, true);
