@@ -7,6 +7,9 @@ const STEPS = {
   input: 'input',
   abandon: 'abandon',
   submit: 'submit',
+  ct_ready: 'ct_ready',
+  ct_nowidget: 'ct_nowidget',
+  ct_missing: 'ct_missing',
 };
 
 const startedAt = Date.now();

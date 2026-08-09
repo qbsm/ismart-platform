@@ -2,7 +2,10 @@
 
 import { appendTrigger } from './lead-context.js';
 
+import { funnelStep } from './funnel.js';
+
 const ENDPOINT = 'api/widget-rescue';
+const HEALTH_DELAY_MS = 10000;
 const MIN_DIGITS = 10;
 const RESCAN_MS = 2000;
 
@@ -81,7 +84,23 @@ function scan() {
   });
 }
 
+function reportHealth() {
+  const hasSdk = typeof window.ct === 'function' || !!window.CalltouchDataObject;
+  const hasWidget = [...document.querySelectorAll('iframe')].some((f) => {
+    try {
+      return !!(f.contentDocument && f.contentDocument.querySelector('input, button'));
+    } catch {
+      return false;
+    }
+  });
+
+  if (hasSdk && hasWidget) funnelStep('ct_ready', 'widget');
+  else if (hasSdk) funnelStep('ct_nowidget', 'widget');
+  else funnelStep('ct_missing', 'widget');
+}
+
 export function initCalltouchWidgetCheck() {
+  setTimeout(reportHealth, HEALTH_DELAY_MS);
   if (!window.appConfig || !window.appConfig.csrfToken) return;
   scan();
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
