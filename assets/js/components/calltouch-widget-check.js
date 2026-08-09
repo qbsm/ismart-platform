@@ -1,11 +1,12 @@
 // Копия контакта из виджета — docs.ismart.pro/api.ismart.pro.
 
-import { appendTrigger } from './lead-context.js';
+import { appendTrigger, leadTrigger } from './lead-context.js';
 
 import { funnelStep } from './funnel.js';
 
 const ENDPOINT = 'api/widget-rescue';
 const HEALTH_DELAY_MS = 10000;
+const AUTO_OPEN_SEC = 5;
 const MIN_DIGITS = 10;
 const RESCAN_MS = 2000;
 
@@ -49,6 +50,10 @@ async function send(phone) {
   const ymUid = cookie('_ym_uid');
   if (ymUid) body.set('ym_uid', ymUid);
   appendTrigger(body);
+  // Виджет всплывает и сам, по таймеру. Без пометки пустой контекст неотличим от «не собрали»,
+  // а это разные вещи: у показа по таймеру и у клика по кнопке разная конверсия.
+  const trigger = leadTrigger();
+  body.set('open_type', trigger && trigger.age <= AUTO_OPEN_SEC ? 'click' : 'auto');
 
   const base = (window.appConfig && window.appConfig.baseUrl) || '/';
   try {
