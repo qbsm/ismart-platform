@@ -54,6 +54,7 @@ export class PhoneMask {
     this._onInput = this._handleInput.bind(this);
     this._onFocus = this._handleFocus.bind(this);
     this._onBlur = this._handleBlur.bind(this);
+    this._onCaret = this._guardCaret.bind(this);
   }
 
   init() {
@@ -62,6 +63,8 @@ export class PhoneMask {
     this.input.addEventListener('input', this._onInput);
     this.input.addEventListener('focus', this._onFocus);
     this.input.addEventListener('blur', this._onBlur);
+    this.input.addEventListener('click', this._onCaret);
+    this.input.addEventListener('keyup', this._onCaret);
     if (this.input.value) this._handleInput();
   }
 
@@ -70,6 +73,8 @@ export class PhoneMask {
     this.input.removeEventListener('input', this._onInput);
     this.input.removeEventListener('focus', this._onFocus);
     this.input.removeEventListener('blur', this._onBlur);
+    this.input.removeEventListener('click', this._onCaret);
+    this.input.removeEventListener('keyup', this._onCaret);
   }
 
   reset() {
@@ -89,11 +94,29 @@ export class PhoneMask {
   }
 
   _handleFocus() {
-    if (!this.input.value) {
-      this.input.value = TRUNK;
-      const end = TRUNK.length;
-      this.input.setSelectionRange(end, end);
-    }
+    if (!this.input.value) this.input.value = TRUNK;
+    // Каретку ставим после отрисовки: браузер обрабатывает клик по полю уже после focus и
+    // иначе возвращает её туда, куда пришёлся клик, — то есть перед «+7».
+    this._caretToEnd();
+  }
+
+  _caretToEnd() {
+    const end = this.input.value.length;
+    requestAnimationFrame(() => {
+      try {
+        this.input.setSelectionRange(end, end);
+      } catch {
+        // поле уже потеряло фокус — ставить нечего
+      }
+    });
+  }
+
+  /** Внутрь «+7 » каретке делать нечего: там нечего править. Выделение не трогаем. */
+  _guardCaret() {
+    const { selectionStart, selectionEnd, value } = this.input;
+    if (selectionStart !== selectionEnd || selectionStart >= TRUNK.length) return;
+    const pos = Math.max(TRUNK.length, Math.min(selectionStart, value.length));
+    this.input.setSelectionRange(pos, pos);
   }
 
   /**
