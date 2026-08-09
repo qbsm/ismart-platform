@@ -6,7 +6,8 @@ import { fetchFormToken } from './form-callback/token.js';
 import { funnelStep } from './funnel.js';
 
 const ENDPOINT = 'api/widget-rescue';
-const HEALTH_DELAY_MS = 10000;
+const HEALTH_MAX_MS = 60000;
+const HEALTH_STEP_MS = 500;
 const AUTO_OPEN_SEC = 5;
 const MIN_DIGITS = 10;
 const RESCAN_MS = 2000;
@@ -91,23 +92,40 @@ function scan() {
   });
 }
 
-function reportHealth() {
-  const hasSdk = typeof window.ct === 'function' || !!window.CalltouchDataObject;
-  const hasWidget = [...document.querySelectorAll('iframe')].some((f) => {
-    try {
-      return !!(f.contentDocument && f.contentDocument.querySelector('input, button'));
-    } catch {
-      return false;
-    }
-  });
+const hasSdk = () => typeof window.ct === 'function' || !!window.CalltouchDataObject;
 
-  if (hasSdk && hasWidget) funnelStep('ct_ready', 'widget');
-  else if (hasSdk) funnelStep('ct_nowidget', 'widget');
-  else funnelStep('ct_missing', 'widget');
+// Готовность виджета — по скрипту, который CallTouch подгружает, когда виджет привязан к
+// счётчику. Прежняя проверка искала iframe с полями внутри, но форма виджета рисуется только
+// при открытии: на странице, где виджет исправен, её нет, и почти каждый визит уходил в
+// ct_nowidget. Спрашивать сам CallTouch через openExternal нельзя — этот вызов открывает
+// форму посетителю.
+const widgetReady = () => !!document.querySelector('script[src*="init-widget.js"]');
+
+/**
+ * Ждём готовности до минуты и сообщаем момент, когда она наступила: `t` в событии — это
+ * секунды с начала визита, то есть сразу видно не только «поднялся ли виджет», но и через
+ * сколько. Фиксированный порог в 10 секунд отвечал на этот вопрос неверно — виджет нередко
+ * готов позже, особенно на мобильных.
+ */
+function watchWidgetHealth() {
+  const startedAt = Date.now();
+
+  const timer = setInterval(() => {
+    if (widgetReady()) {
+      clearInterval(timer);
+      funnelStep('ct_ready', 'widget');
+      return;
+    }
+
+    if (Date.now() - startedAt >= HEALTH_MAX_MS) {
+      clearInterval(timer);
+      funnelStep(hasSdk() ? 'ct_nowidget' : 'ct_missing', 'widget');
+    }
+  }, HEALTH_STEP_MS);
 }
 
 export function initCalltouchWidgetCheck() {
-  setTimeout(reportHealth, HEALTH_DELAY_MS);
+  watchWidgetHealth();
   // Токен берём заранее: виджет всплывает через десятки секунд, и к моменту перехвата у
   // токена уже есть возраст — иначе отправка выглядела бы мгновенной, как у робота.
   fetchFormToken();
