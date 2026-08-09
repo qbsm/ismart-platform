@@ -56,8 +56,8 @@ async function send(phone) {
 }
 
 function attach(doc) {
-  if (doc.__ctCaptureAttached) return;
-  doc.__ctCaptureAttached = true;
+  if (doc.__ctChecked) return;
+  doc.__ctChecked = true;
 
   const grab = () => {
     const field = phoneField(doc);
@@ -81,7 +81,7 @@ function scan() {
   });
 }
 
-export function initCalltouchWidgetCapture() {
+export function initCalltouchWidgetCheck() {
   if (!window.appConfig || !window.appConfig.csrfToken) return;
   scan();
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });

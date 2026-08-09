@@ -1,6 +1,6 @@
 // Воронка заявки — docs.ismart.pro/api.ismart.pro, раздел «Аналитика конверсии».
 
-const SENT_KEY = 'funnel_sent';
+const SENT_KEY = 'fn_state';
 const STEPS = {
   seen: 'seen',
   open: 'open',

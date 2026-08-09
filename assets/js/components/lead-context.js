@@ -1,6 +1,6 @@
 // Контекст заявки — docs.ismart.pro/api.ismart.pro, раздел «Аналитика конверсии».
 
-const KEY = 'lead_trigger';
+const KEY = 'ls_ctx';
 const MAX_AGE_SEC = 600;
 const TEXT_LIMIT = 80;
 
