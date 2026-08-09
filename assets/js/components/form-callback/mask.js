@@ -5,6 +5,9 @@ const MASKS = {
 };
 
 const DEFAULT_COUNTRY = 'RU';
+// Код страны из поля не убирается: стерев всё, человек видит «+7 » и продолжает набор с той
+// же точки, а не с пустого места. Так ведут себя формы, у которых номер вводят чаще всего.
+const TRUNK = '+7 ';
 const PREFIX_RE = /^(\+\s*7|8|7)/;
 const DIGIT_SLOT = /9/g;
 
@@ -75,7 +78,7 @@ export class PhoneMask {
 
   _handleInput() {
     const atEnd = this.input.selectionStart === this.input.value.length;
-    const formatted = formatPhone(this.input.value);
+    const formatted = formatPhone(this.input.value) || TRUNK;
     if (formatted === this.input.value) return;
 
     this.input.value = formatted;
@@ -86,9 +89,17 @@ export class PhoneMask {
   }
 
   _handleFocus() {
-    if (!this.input.value) this.input.value = '+7 (';
+    if (!this.input.value) {
+      this.input.value = TRUNK;
+      const end = TRUNK.length;
+      this.input.setSelectionRange(end, end);
+    }
   }
 
+  /**
+   * Поле, покинутое без единой цифры, очищаем полностью: иначе плавающая подпись остаётся
+   * поднятой и форма выглядит начатой, хотя телефона в ней нет.
+   */
   _handleBlur() {
     if (nationalDigits(this.input.value).length === 0) this.input.value = '';
   }
