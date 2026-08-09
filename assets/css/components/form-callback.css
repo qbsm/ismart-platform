@@ -208,9 +208,10 @@
   background: var(--fc-bg-hover);
 }
 
+/* Фокус меняет цвет самой границы. Кольцо box-shadow поверх неё читается как вторая рамка —
+   поле выглядит обведённым дважды, особенно на select со стрелкой. */
 .form-callback__control:focus {
   border-color: rgb(0 0 0 / 15%);
-  box-shadow: 0 0 0 2px rgb(0 0 0 / 3%);
 }
 
 /* ==========================================================================
@@ -705,8 +706,9 @@
   animation: fcShake 0.4s var(--fc-ease);
 }
 
+/* У поля с ошибкой граница и так красная — кольцо поверх неё давало вторую рамку. */
 .form-callback__field.error .form-callback__control:focus {
-  box-shadow: 0 0 0 3px rgb(244 67 54 / 12%);
+  border-color: var(--color-error);
 }
 
 .form-callback__field.error .form-callback__label {
