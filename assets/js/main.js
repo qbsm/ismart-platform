@@ -49,6 +49,7 @@ import './components/card-number.js';
 import setupSliders from './components/slider.js';
 import './components/burger-icon.js';
 import { initCalltouchWidgetCapture } from './components/calltouch-widget-capture.js';
+import { initLeadContext } from './components/lead-context.js';
 
 // --- Pages ---
 import './pages/404.js';
@@ -62,5 +63,6 @@ onReady(() => {
   if (typeof setupSliders === 'function') {
     setupSliders();
   }
+  initLeadContext();
   initCalltouchWidgetCapture();
 });

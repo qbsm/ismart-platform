@@ -14,6 +14,8 @@
  * содержимому, а отправку ловим по любому клику или Enter внутри виджета.
  */
 
+import { appendTrigger } from './lead-context.js';
+
 const ENDPOINT = 'api/widget-rescue';
 const MIN_DIGITS = 10;
 const RESCAN_MS = 2000;
@@ -59,6 +61,9 @@ async function send(phone) {
   if (ctSession) body.set('ct_session_id', ctSession);
   const ymUid = cookie('_ym_uid');
   if (ymUid) body.set('ym_uid', ymUid);
+  // Что человек нажал перед тем, как открыть виджет: виджет своей формой этого не знает,
+  // а логика сайта живёт отдельно — связать их можно только здесь.
+  appendTrigger(body);
 
   const base = (window.appConfig && window.appConfig.baseUrl) || '/';
   try {
