@@ -1,6 +1,8 @@
 // Контекст заявки — docs.ismart.pro/api.ismart.pro, раздел «Аналитика конверсии».
 
 const KEY = 'ls_ctx';
+const PATH_KEY = 'ls_path';
+const PATH_LIMIT = 8;
 const MAX_AGE_SEC = 600;
 const TEXT_LIMIT = 80;
 
@@ -15,14 +17,31 @@ function sectionOf(el) {
 function remember(el) {
   const text = clean(el.dataset.tag || el.getAttribute('aria-label') || el.textContent);
   if (!text) return;
+  const step = { text, section: sectionOf(el), at: Math.floor(Date.now() / 1000) };
   try {
-    sessionStorage.setItem(KEY, JSON.stringify({
-      text,
-      section: sectionOf(el),
-      at: Math.floor(Date.now() / 1000),
-    }));
+    sessionStorage.setItem(KEY, JSON.stringify(step));
+    const path = JSON.parse(sessionStorage.getItem(PATH_KEY) || '[]');
+    const last = path[path.length - 1];
+    if (!last || last.text !== step.text || step.at - last.at > 2) {
+      path.push(step);
+      sessionStorage.setItem(PATH_KEY, JSON.stringify(path.slice(-PATH_LIMIT)));
+    }
   } catch {
     return;
+  }
+}
+
+export function leadPath() {
+  try {
+    const path = JSON.parse(sessionStorage.getItem(PATH_KEY) || '[]');
+    if (!path.length) return '';
+    const start = path[0].at;
+    return path
+      .map((s) => `${s.text}${s.section ? '/' + s.section : ''}@${s.at - start}с`)
+      .join(' → ')
+      .slice(0, 400);
+  } catch {
+    return '';
   }
 }
 
@@ -45,6 +64,8 @@ export function appendTrigger(body) {
   body.set('trigger_text', t.text);
   if (t.section) body.set('trigger_section', t.section);
   body.set('trigger_age_sec', String(t.age));
+  const path = leadPath();
+  if (path) body.set('trigger_path', path);
 }
 
 function attachToForm(form) {
@@ -63,6 +84,8 @@ function attachToForm(form) {
   put('trigger_text', t.text);
   if (t.section) put('trigger_section', t.section);
   put('trigger_age_sec', String(t.age));
+  const path = leadPath();
+  if (path) put('trigger_path', path);
 }
 
 export function initLeadContext() {
