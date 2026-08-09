@@ -796,9 +796,11 @@
    Focus-visible
    ========================================================================== */
 
+/* Фокус у поля показывает его собственная граница. Отдельный outline с отступом ложился
+   поверх неё второй рамкой — на мобильных особенно заметно. У кнопки outline остаётся:
+   границы у неё нет, и без него фокус с клавиатуры не виден. */
 .form-callback__control:focus-visible {
-  outline: 1px solid var(--color-5);
-  outline-offset: 1px;
+  border-color: var(--color-5);
 }
 
 .form-callback__submit:focus-visible {
