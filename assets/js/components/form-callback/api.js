@@ -42,6 +42,7 @@ export class FormApi {
         error.errors = normalized.errors || {};
         error.status = response.status;
         error.requestId = normalized.requestId || null;
+        error.retryAfter = normalized.retryAfter;
         throw error;
       }
 
@@ -119,6 +120,7 @@ export class FormApi {
       errors: data.errors && typeof data.errors === 'object' ? data.errors : {},
       code: typeof data.code === 'string' ? data.code : '',
       requestId: typeof data.request_id === 'string' ? data.request_id : '',
+      retryAfter: typeof data.retry_after === 'number' ? data.retry_after : undefined,
       processing: data.processing === true,
       raw: data,
     };

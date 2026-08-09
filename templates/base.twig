@@ -133,9 +133,6 @@
     window.appConfig = {
       baseUrl: "{{ base_url | e('js') }}",
       langCode: "{{ lang_code | e('js') }}",
-      {# Тот же токен, что в скрытом поле формы: нужен скриптам, которые шлют заявку
-         вне формы — например копии контакта из виджета обратного звонка. #}
-      csrfToken: "{{ csrf_token | default('') | e('js') }}",
       YANDEX_METRIC_ID: {{ config.settings.yandex_metric_id|default(0) }}
     };
   </script>

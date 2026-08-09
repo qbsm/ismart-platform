@@ -41,7 +41,6 @@ async function send(phone) {
   sent.add(key);
 
   const body = new FormData();
-  body.set('csrf_token', (window.appConfig && window.appConfig.csrfToken) || '');
   const formToken = await fetchFormToken();
   if (formToken) body.set('form_token', formToken);
   body.set('phone', phone);

@@ -42,19 +42,8 @@ final class ApiWidgetRescueAction
         $parsed = $request->getParsedBody();
         $data = is_array($parsed) ? $parsed : [];
 
-        // Токен формы или сессионный — достаточно любого: контакт из виджета перехватывается
-        // один раз, и потерять его из-за строгости проверки хуже, чем принять лишний.
-        $formToken = Arr::str($data, 'form_token');
-        $verified = $formToken !== '' && $this->formToken->inspect($formToken)['valid'];
-
-        if (!$verified) {
-            $csrfToken = Arr::str($data, 'csrf_token');
-            $sessionToken = isset($_SESSION['csrf_token']) && is_string($_SESSION['csrf_token']) ? $_SESSION['csrf_token'] : '';
-            $verified = $csrfToken !== '' && $sessionToken !== '' && hash_equals($sessionToken, $csrfToken);
-        }
-
-        if (!$verified) {
-            return $this->json($response, 419, ['success' => false, 'code' => 'CSRF_INVALID', 'request_id' => $requestId]);
+        if (!$this->formToken->inspect(Arr::str($data, 'form_token'))['valid']) {
+            return $this->json($response, 419, ['success' => false, 'code' => 'TOKEN_INVALID', 'request_id' => $requestId]);
         }
 
         $digits = preg_replace('/\D+/', '', Arr::str($data, 'phone')) ?? '';

@@ -55,6 +55,13 @@ export function fetchFormToken() {
   return pending;
 }
 
+/** Токен просрочен или потерян — берём новый, забыв прежний. */
+export function refreshFormToken() {
+  cached = '';
+  pending = null;
+  return fetchFormToken();
+}
+
 export function primeFormToken(form) {
   if (!form) return;
   const arm = () => {

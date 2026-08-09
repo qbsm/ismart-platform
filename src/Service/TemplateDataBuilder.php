@@ -8,14 +8,14 @@ final class TemplateDataBuilder
      * Собирает финальный массив данных для Twig-шаблона.
      *
      * Объединяет настройки, глобальные данные, данные страницы, SEO,
-     * контекст запроса (язык, base_url, csrf) и дополнительные данные (entity, breadcrumb).
+     * контекст запроса (язык, base_url) и дополнительные данные (entity, breadcrumb).
      * Извлекает hero-изображение для preload и пути шрифтов из fonts.css.
      *
      * @param array<string,mixed>      $settings Конфигурация приложения
      * @param array<string,mixed>      $global   Глобальные данные (навигация, контакты)
      * @param array<string,mixed>|null $pageData Данные страницы (sections, items)
      * @param array<string,mixed>|null $seo      SEO-данные (title, meta, json_ld)
-     * @param array<string,mixed>      $ctx      Контекст запроса (lang_code, page_id, base_url, csrf_token)
+     * @param array<string,mixed>      $ctx      Контекст запроса (lang_code, page_id, base_url)
      * @param array<string,mixed>      $extras   Дополнительные данные (entity, breadcrumb, tire, news и т.д.)
      * @return array<string,mixed> Готовые данные для передачи в Twig
      */
@@ -43,7 +43,6 @@ final class TemplateDataBuilder
             'route_params' => $ctx['route_params'] ?? [],
             'base_url' => $ctx['base_url'] ?? '/',
             'is_lang_in_url' => $ctx['is_lang_in_url'] ?? false,
-            'csrf_token' => $ctx['csrf_token'] ?? '',
             'pageData' => $pageData,
             'pageSeoData' => $seo,
             'pageTitle' => $pageTitle,

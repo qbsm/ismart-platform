@@ -6,6 +6,7 @@ namespace App\Action;
 
 use App\Middleware\CorrelationIdMiddleware;
 use App\Notification\ChannelResult;
+use App\Notification\Channel\RescueChannel;
 use App\Notification\NotificationDispatcher;
 use App\Support\Arr;
 use App\Support\FormToken;
@@ -22,43 +23,28 @@ final class ApiSendAction
         private readonly NotificationDispatcher $dispatcher,
         private readonly LoggerInterface $logger,
         private readonly FormToken $formToken,
+        private readonly RescueChannel $rescue,
     ) {}
 
     /**
-     * Заявка принимается, если подтверждён хотя бы один токен: новый (с временем выдачи) или
-     * сессионный. Отказ — только когда не подошёл ни один; тогда причина уходит в лог, чтобы
-     * молчаливых потерь не было.
+     * Источник заявки подтверждает токен, выданный по запросу браузера: он несёт время
+     * выдачи, поэтому мгновенная отправка отсекается вместе с подделкой подписи. Причина
+     * отказа уходит в лог — молчаливых потерь быть не должно.
      *
      * @param array<string,mixed> $data
      * @return array{status: int, payload: array<string,mixed>}|null
      */
-    private function checkTokens(array $data, string $requestId, ServerRequestInterface $request): ?array
+    private function checkToken(array $data, string $requestId, ServerRequestInterface $request): ?array
     {
-        $formToken = Arr::str($data, 'form_token');
-        $reason = 'missing';
+        $verdict = $this->formToken->inspect(Arr::str($data, 'form_token'));
 
-        if ($formToken !== '') {
-            $verdict = $this->formToken->inspect($formToken);
-            if ($verdict['valid']) {
-                return null;
-            }
-            $reason = $verdict['reason'];
-        }
-
-        $csrfToken = Arr::str($data, 'csrf_token');
-        $sessionToken = isset($_SESSION['csrf_token']) && is_string($_SESSION['csrf_token'])
-            ? $_SESSION['csrf_token']
-            : '';
-
-        // Форма набрана мгновенно — сессионный токен этого не оправдывает.
-        if ($reason !== 'too_fast' && $csrfToken !== '' && $sessionToken !== '' && hash_equals($sessionToken, $csrfToken)) {
+        if ($verdict['valid']) {
             return null;
         }
 
         $this->logger->warning('Заявка отклонена проверкой токена', [
             'request_id' => $requestId,
-            'reason' => $reason,
-            'has_session_token' => $sessionToken !== '',
+            'reason' => $verdict['reason'],
             'ip' => $this->clientIp($request),
             'user_agent' => $request->getHeaderLine('User-Agent'),
         ]);
@@ -67,8 +53,9 @@ final class ApiSendAction
             'status' => 419,
             'payload' => [
                 'success' => false,
-                'code' => 'CSRF_INVALID',
-                'message' => 'Сессия истекла. Обновите страницу и попробуйте снова.',
+                'code' => 'TOKEN_INVALID',
+                'message' => 'Не удалось подтвердить отправку. Попробуйте ещё раз.',
+                'retry_after' => max(1, $this->formToken->minAge()),
                 'request_id' => $requestId,
             ],
         ];
@@ -103,10 +90,8 @@ final class ApiSendAction
             ]);
         }
 
-        // Подтверждение источника. Токен формы выдаётся браузеру по запросу и несёт время
-        // выдачи; сессионный остаётся как запасной путь, пока новый JS расходится по парку,
-        // и на случай страницы, открытой до выкладки.
-        $tokenError = $this->checkTokens($data, $requestId, $request);
+        // Подтверждение источника.
+        $tokenError = $this->checkToken($data, $requestId, $request);
         if ($tokenError !== null) {
             return $this->json($response, $tokenError['status'], $tokenError['payload']);
         }
@@ -151,6 +136,10 @@ final class ApiSendAction
                 ]);
             }
         }
+
+        // Итоги остальных каналов уходят в приёмник: без этого «дошло ли до CallTouch на
+        // прозвон» не видно нигде — в логи попадают только отказы.
+        $this->rescue->reportChannels($channels, $requestId);
 
         $payload = [
             'success' => true,

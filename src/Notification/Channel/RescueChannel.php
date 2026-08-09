@@ -102,6 +102,50 @@ final class RescueChannel implements ChannelInterface
     }
 
     /**
+     * Досылает итоги остальных каналов: ушла ли заявка в CallTouch на прозвон, дошло ли
+     * письмо. Отдельным запросом, потому что rescue вызывается первым — заявка должна быть
+     * сохранена раньше любых попыток доставки, и в тот момент итогов ещё нет.
+     *
+     * Ошибки здесь не влияют ни на что: заявка уже принята, это только пометка для отчётности.
+     *
+     * @param array<string,string> $channels
+     */
+    public function reportChannels(array $channels, string $requestId): void
+    {
+        if (!$this->isEnabled() || $requestId === '' || $channels === []) {
+            return;
+        }
+
+        $payload = [
+            'site' => (string) $this->config['site'],
+            'request_id' => $requestId,
+            'channels' => $channels,
+        ];
+        if (($this->config['key'] ?? '') !== '') {
+            $payload['key'] = (string) $this->config['key'];
+        }
+
+        try {
+            $this->httpClient->request('POST', $this->channelsUrl(), [
+                'headers' => ['Content-Type' => 'application/json'],
+                'body' => (string) json_encode($payload, JSON_UNESCAPED_UNICODE),
+                'timeout' => 3,
+                'max_duration' => 3,
+            ])->getStatusCode();
+        } catch (TransportException | ExceptionInterface $e) {
+            $this->logger->info('Rescue: итоги каналов не доехали', [
+                'request_id' => $requestId,
+                'error' => $e->getMessage(),
+            ]);
+        }
+    }
+
+    private function channelsUrl(): string
+    {
+        return rtrim((string) $this->config['url'], '/') . '/channels';
+    }
+
+    /**
      * @param array<string,mixed> $formData
      * @return array<string,mixed>
      */

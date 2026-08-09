@@ -1,5 +1,5 @@
 import { FormApi } from './api.js';
-import { primeFormToken, ensureFormToken } from './token.js';
+import { primeFormToken, ensureFormToken, refreshFormToken } from './token.js';
 import { FormValidator } from './validation.js';
 import { PhoneMask } from './mask.js';
 import { FormUI } from './ui.js';
@@ -96,7 +96,7 @@ export class CallbackForm {
       this._setCurrentUrl();
       const formData = this._buildFormData();
       await ensureFormToken(formData, this.form);
-      const response = await this.api.send(formData, this.abortController.signal);
+      const response = await this._sendWithRetry(formData);
 
       if (response.processing === true) {
         this._handleSuccess(formData, {
@@ -184,6 +184,27 @@ export class CallbackForm {
     const currentUrlField = this.form.querySelector('input[name="current_url"]');
     if (currentUrlField) {
       currentUrlField.value = window.location.href;
+    }
+  }
+
+  /**
+   * Заявка не должна теряться из-за нашей же защиты: если сервер не принял токен (вкладка
+   * висела сутки, токен просрочен, ответ на выдачу не дошёл), берём свежий, выжидаем
+   * положенный возраст и отправляем ещё раз. Ключ идемпотентности тот же, дубля не будет.
+   */
+  async _sendWithRetry(formData) {
+    try {
+      return await this.api.send(formData, this.abortController.signal);
+    } catch (error) {
+      if (!error || error.code !== 'TOKEN_INVALID') throw error;
+
+      const token = await refreshFormToken();
+      if (!token) throw error;
+
+      formData.set('form_token', token);
+      const wait = Number(error.retryAfter) > 0 ? Number(error.retryAfter) : 3;
+      await new Promise((resolve) => setTimeout(resolve, (wait + 0.5) * 1000));
+      return this.api.send(formData, this.abortController.signal);
     }
   }
 
