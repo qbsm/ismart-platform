@@ -12,6 +12,7 @@ const STEPS = {
 const startedAt = Date.now();
 let inputStarted = false;
 let submitted = false;
+let widgetTouched = false;
 
 const sinceStart = () => Math.round((Date.now() - startedAt) / 1000);
 
@@ -27,9 +28,9 @@ function alreadySent(step) {
   }
 }
 
-export function funnelStep(step, where = '') {
-  if (!step || alreadySent(step)) return;
-  const params = new URLSearchParams({ s: step, t: String(sinceStart()) });
+export function funnelStep(step, channel = 'form', where = '') {
+  if (!step || alreadySent(`${channel}:${step}`)) return;
+  const params = new URLSearchParams({ s: step, c: channel, t: String(sinceStart()) });
   if (where) params.set('w', where.slice(0, 40));
   const url = `/_f?${params.toString()}`;
   try {
@@ -52,7 +53,7 @@ function watchVisibility() {
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {
       if (e.isIntersecting) {
-        funnelStep(STEPS.seen, sectionOf(e.target));
+        funnelStep(STEPS.seen, 'form', sectionOf(e.target));
         io.disconnect();
         return;
       }
@@ -66,17 +67,17 @@ function watchForms() {
     const el = e.target;
     if (!el.matches || !el.matches('input, textarea, select')) return;
     if (el.type === 'hidden') return;
-    funnelStep(STEPS.open, sectionOf(el));
+    funnelStep(STEPS.open, 'form', sectionOf(el));
   }, true);
 
   document.addEventListener('input', () => {
     inputStarted = true;
-    funnelStep(STEPS.input);
+    funnelStep(STEPS.input, 'form');
   }, true);
 
   document.addEventListener('submit', () => {
     submitted = true;
-    funnelStep(STEPS.submit);
+    funnelStep(STEPS.submit, 'form');
   }, true);
 }
 
@@ -95,8 +96,10 @@ function watchWidget() {
       if (!field) continue;
       seen.add(doc);
       funnelStep(STEPS.open, 'widget');
+      widgetTouched = true;
       doc.addEventListener('input', () => {
         inputStarted = true;
+        widgetTouched = true;
         funnelStep(STEPS.input, 'widget');
       }, true);
       doc.addEventListener('click', () => {
@@ -118,6 +121,6 @@ export function initFunnel() {
   watchWidget();
 
   window.addEventListener('pagehide', () => {
-    if (inputStarted && !submitted) funnelStep(STEPS.abandon);
+    if (inputStarted && !submitted) funnelStep(STEPS.abandon, widgetTouched ? 'widget' : 'form');
   });
 }
