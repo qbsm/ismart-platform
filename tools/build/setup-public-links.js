@@ -59,6 +59,40 @@ function createSymlink(linkPath, targetRel, type) {
   console.log(`  ${path.relative(projectRoot, linkPath)} → ${targetRel}`);
 }
 
+// Убрать из LINKS мало: на деплойментах, собранных до этого, симлинки уже лежат в докруте
+// и сами не исчезнут. Сборка обязана их вычищать, иначе секрет остаётся открытым до тех пор,
+// пока кто-нибудь не заметит его руками.
+const LEGACY_LINKS = ['.env', 'composer.json', 'composer.lock'];
+
+function removeLegacyLinks() {
+  for (const link of LEGACY_LINKS) {
+    const linkPath = path.join(publicDir, link);
+    if (!fs.existsSync(linkPath) && !isSymlink(linkPath)) {
+      continue;
+    }
+    // Трогаем только симлинки: на плоских хостах докрут совпадает с корнем проекта,
+    // и там это реальные файлы самого проекта.
+    if (!isSymlink(linkPath)) {
+      continue;
+    }
+    try {
+      fs.unlinkSync(linkPath);
+      console.log(`  удалён устаревший симлинк: public/${link}`);
+    } catch (err) {
+      console.error(`Не удалось удалить public/${link}:`, err.message);
+      process.exitCode = 1;
+    }
+  }
+}
+
+function isSymlink(targetPath) {
+  try {
+    return fs.lstatSync(targetPath).isSymbolicLink();
+  } catch {
+    return false;
+  }
+}
+
 function main() {
   ensurePublicDir();
   console.log('Симлинки в public/:');
@@ -71,6 +105,7 @@ function main() {
       process.exitCode = 1;
     }
   }
+  removeLegacyLinks();
 }
 
 main();
