@@ -16,7 +16,7 @@
  *   node tools/distill/distill.mjs <command> [args]
  *   npm run distill -- <command> [args]
  *
- * Документация: docs/architecture/distillation.md, §6.
+ * Документация: architecture/distillation.md на docs.ismart.pro, §6.
  */
 
 import { writeFile, mkdir, readFile } from 'node:fs/promises';
@@ -268,7 +268,7 @@ async function cmdMarkOverride(deploymentPath, file, reason) {
 
   if (!existsSync(statePath)) {
     console.error(`state.json не найден: ${statePath}`);
-    console.error("Создайте через 'distill init' или скопируйте схему из docs/architecture/distillation.md §5.");
+    console.error("Создайте через 'distill init' или скопируйте схему из architecture/distillation.md на docs.ismart.pro §5.");
     process.exit(1);
   }
 
@@ -471,7 +471,7 @@ function printHelp() {
   npm run distill -- init retail-logistik --name "Ритейл Логистик" --domain retail-logistik.ru
   npm run distill -- mark-override ../kumho-tires.ru src/Action/PhotoroomRemoveBackgroundAction.php "kumho-only Photoroom"
 
-Документация: docs/architecture/distillation.md §6, tools/distill/README.md.
+Документация: architecture/distillation.md на docs.ismart.pro §6, tools/distill/README.md.
 `);
 }
 

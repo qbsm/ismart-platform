@@ -145,7 +145,7 @@ const twigContent = `{% extends 'base.twig' %}
 writeIfNotExists(path.join(PROJECT_ROOT, 'templates', 'pages', `${singular}.twig`), twigContent);
 
 // --- Stub кастомного SeoBuilder'а (опционально — для Schema.org/JSON-LD per collection) ---
-// См. ADR-0003 и docs/guides/seo-add.md. Если кастомный SEO не нужен — DefaultSeoBuilder подхватит.
+// См. ADR-0003 и guides/seo-add.md на docs.ismart.pro. Если кастомный SEO не нужен — DefaultSeoBuilder подхватит.
 const builderClass = `${capitalize(singular)}SeoBuilder`;
 const builderContent = `<?php
 
@@ -223,7 +223,7 @@ console.log('// sitemap_pages — добавить:');
 console.log(`'${slug}',\n`);
 
 console.log('========================================');
-console.log('SeoBuilder (опционально, см. docs/guides/seo-add.md):');
+console.log('SeoBuilder (опционально, см. guides/seo-add.md на docs.ismart.pro):');
 console.log('========================================\n');
 console.log(`// Если хотите Schema.org для коллекции — добавьте в config/container.php:`);
 console.log(`// ${builderClass}::class => \\DI\\autowire(),`);

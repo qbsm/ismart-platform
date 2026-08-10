@@ -5,7 +5,7 @@
 // Зачем: PHP-роут может отдавать 200, пока JS/CSS-сборка падает (частый кейс —
 // divergence: assets/js/main.js или assets/css/main.css импортируют модули других
 // деплоев/baseline, которых в этом репо нет). Такой провал ловит ТОЛЬКО сборка.
-// «Verified» без зелёной сборки — недопустимо. См. docs/roles/orchestrator.md §Verify.
+// «Verified» без зелёной сборки — недопустимо. См. roles/orchestrator.md на docs.ismart.pro §Verify.
 //
 // Использование:
 //   node tools/distill/verify-deployment.mjs [path-to-deployment]   (по умолчанию cwd)

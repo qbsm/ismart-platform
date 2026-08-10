@@ -9,7 +9,7 @@ namespace App\Support;
  *
  * Имена — по единому правилу: префикс совпадает с именем канала или подсистемы
  * (`APP_`, `MAIL_`, `CALLTOUCH_`, `TELEGRAM_`, `SHEETS_`, `RESCUE_`), дальше параметр,
- * у каждого канала есть `_ENABLE` и `_TIMEOUT`. Полный список — docs/reference/env.md.
+ * у каждого канала есть `_ENABLE` и `_TIMEOUT`. Полный список — reference/env.md на docs.ismart.pro.
  */
 final class Env
 {

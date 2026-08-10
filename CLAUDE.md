@@ -10,7 +10,7 @@ All responses, questions, and explanations must be in Russian (русский я
 
 **iSmart Platform** — тиражируемая многоязычная веб-платформа на PHP 8.5+ (Slim 4, Twig 3, Webpack 5, PostCSS). JSON-управляемый контент, content-agnostic ядро.
 
-Этот репозиторий — **canonical baseline** платформы. Конкретные production deployment'ы (kumho-tires.ru, italycommunity.ru, beepitron.com и т.д.) — отдельные репозитории, дистиллированные от этого baseline'а. Стратегия дистилляции и инструменты sync описаны в `docs/architecture/distillation.md`. Соглашения по нейму и стилю — в `docs/conventions/`. Живой журнал улучшений — в `docs/notes/improvements.md`.
+Этот репозиторий — **canonical baseline** платформы. Конкретные production deployment'ы (kumho-tires.ru, italycommunity.ru, beepitron.com и т.д.) — отдельные репозитории, дистиллированные от этого baseline'а. Документация платформы — на docs.ismart.pro (раздел `ismart-platform`), в репозитории её не держим: стратегия дистилляции и инструменты sync — `architecture/distillation.md`, соглашения по нейму и стилю — `conventions/`, живой журнал улучшений — `notes/improvements.md`.
 
 Три компонента целевой системы:
 - **PHP (этот репозиторий)** — UI, контент, SEO, формы, API-прокси
@@ -45,7 +45,7 @@ public/index.php → DI Container → Middleware Stack → Routes → PageAction
 ### Конфигурация проекта (два уровня)
 
 - **`config/settings.php`** — ядро платформы (пути, кэш, Twig, rate limit, CORS, языки из global.json)
-- **`.env`** — секреты и параметры deployment'а. Полный справочник — `docs/reference/env.md`; правило имён: префикс = имя канала (`MAIL_`, `CALLTOUCH_`, `TELEGRAM_`, `SHEETS_`, `RESCUE_`)
+- **`.env`** — секреты и параметры deployment'а. Полный справочник — `reference/env.md` на docs.ismart.pro; правило имён: префикс = имя канала (`MAIL_`, `CALLTOUCH_`, `TELEGRAM_`, `SHEETS_`, `RESCUE_`)
 - **`config/project.php`** — конфигурация конкретного deployment'а (route_map, collections, sitemap_pages, integrations). Шаблон: `config/project.php.dist`
 
 ### Структура данных (JSON)

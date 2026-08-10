@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Генератор docs/inventory/core.md: per-file карта ядра baseline'а +
+ * Генератор карты ядра (inventory/core.md на docs.ismart.pro): per-file карта ядра baseline'а +
  * статус (✓/M/✗) в kumho/italy/beepitron.
  *
  * Запуск: npm run distill:inventory
- *   (или: node tools/distill/build-inventory.mjs > docs/inventory/core.md)
+ *   (или: node tools/distill/build-inventory.mjs > <архив>/ismart-platform/inventory/core.md)
  */
 
 import { readdir, stat } from 'node:fs/promises';
@@ -44,7 +44,7 @@ const GROUPS = [
   { title: 'tools/utils — утилиты', glob: 'tools/utils/' },
   { title: 'tools/distill — CLI трекинга', glob: 'tools/distill/' },
   { title: 'Корневые конфиги', paths: ['composer.json', 'package.json', 'webpack.config.js', 'postcss.config.js', 'eslint.config.js', 'stylelint.config.mjs', 'vitest.config.js', 'phpunit.xml', 'phpstan.neon', '.gitignore', '.htaccess', '.env.example'] },
-  { title: 'Документация и базовые шаблоны', paths: ['README.md', 'CLAUDE.md', 'docs/README.md', 'docs/architecture/distillation.md', 'docs/inventory/core.md', 'docs/conventions/best-practices.md', 'docs/conventions/naming.md', 'docs/notes/improvements.md', 'templates/base.twig', 'templates/pages/page.twig'] },
+  { title: 'Документация и базовые шаблоны', paths: ['README.md', 'CLAUDE.md', 'templates/base.twig', 'templates/pages/page.twig'] },
 ];
 
 async function* listFiles(absDir, rel = '') {

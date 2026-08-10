@@ -4,7 +4,7 @@
 // Назначение: не дать агенту «завершить», если в платформенном деплое изменены
 // высокорисковые build-файлы (config/project.php, assets/js/main.*, assets/css/main.*),
 // но сборка падает. Это институционализация урока инцидента 2026-05-29 (см.
-// docs/roles/orchestrator.md §Verify): «PHP-200 ≠ деплой работает; assets-divergence
+// roles/orchestrator.md на docs.ismart.pro §Verify): «PHP-200 ≠ деплой работает; assets-divergence
 // ловит только сборка».
 //
 // Логика (быстрая — билдит ТОЛЬКО когда рискованные файлы реально изменены):

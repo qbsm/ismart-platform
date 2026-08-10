@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
-  Проверяет единицы измерения в CSS согласно docs/conventions/css-naming.md §4:
+  Проверяет единицы измерения в CSS согласно conventions/css-naming.md на docs.ismart.pro §4:
     - Layout-свойства блоков (отступы, размеры, gap, радиусы и т.п.) → rem
     - Размеры текста (font-size)                                    → em
 
