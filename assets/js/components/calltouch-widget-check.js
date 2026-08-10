@@ -1,6 +1,6 @@
 // Копия контакта из виджета — docs.ismart.pro/api.ismart.pro.
 
-import { appendTrigger, leadTrigger } from './lead-context.js';
+import { appendTrigger } from './lead-context.js';
 import { fetchFormToken } from './form-callback/token.js';
 
 import { funnelStep } from './funnel.js';
@@ -8,7 +8,12 @@ import { funnelStep } from './funnel.js';
 const ENDPOINT = 'api/widget-rescue';
 const HEALTH_MAX_MS = 60000;
 const HEALTH_STEP_MS = 500;
-const AUTO_OPEN_SEC = 5;
+// Сколько ждём от клика по кнопке до контакта из виджета. Человек успевает посмотреть форму
+// и набрать номер, поэтому окно щедрое: важно отличить открытие по кнопке от показа по
+// таймеру, а не измерить скорость набора.
+const CLICK_WINDOW_MS = 600000;
+const CLICK_KEY = 'ct_opened_by_click';
+const CTA = 'a[href="#callback"], [data-modal-target], [data-modal], [data-modal-source], .js-show-modal';
 const MIN_DIGITS = 10;
 const RESCAN_MS = 2000;
 
@@ -36,6 +41,23 @@ const utm = () => {
 
 const sent = new Set();
 
+function markClick() {
+  try {
+    sessionStorage.setItem(CLICK_KEY, String(Date.now()));
+  } catch {
+    // приватный режим — обойдёмся без пометки
+  }
+}
+
+function openedByClick() {
+  try {
+    const at = Number(sessionStorage.getItem(CLICK_KEY) || 0);
+    return at > 0 && Date.now() - at <= CLICK_WINDOW_MS;
+  } catch {
+    return false;
+  }
+}
+
 async function send(phone) {
   const key = digits(phone);
   if (sent.has(key)) return;
@@ -53,10 +75,11 @@ async function send(phone) {
   const ymUid = cookie('_ym_uid');
   if (ymUid) body.set('ym_uid', ymUid);
   appendTrigger(body);
-  // Виджет всплывает и сам, по таймеру. Без пометки пустой контекст неотличим от «не собрали»,
-  // а это разные вещи: у показа по таймеру и у клика по кнопке разная конверсия.
-  const trigger = leadTrigger();
-  body.set('open_type', trigger && trigger.age <= AUTO_OPEN_SEC ? 'click' : 'auto');
+  // Виджет всплывает и сам, по таймеру, — у показа по таймеру и у открытия кнопкой разная
+  // конверсия, и путать их нельзя. Считаем по метке, поставленной в момент клика: раньше
+  // смотрели, давно ли был последний клик к моменту отправки, и почти каждая заявка получала
+  // «сам» — между кнопкой и введённым номером всегда проходит больше нескольких секунд.
+  body.set('open_type', openedByClick() ? 'click' : 'auto');
 
   const base = (window.appConfig && window.appConfig.baseUrl) || '/';
   try {
@@ -129,6 +152,9 @@ export function initCalltouchWidgetCheck() {
   // Токен берём заранее: виджет всплывает через десятки секунд, и к моменту перехвата у
   // токена уже есть возраст — иначе отправка выглядела бы мгновенной, как у робота.
   fetchFormToken();
+  document.addEventListener('click', (e) => {
+    if (e.target.closest && e.target.closest(CTA)) markClick();
+  }, true);
   scan();
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
   setInterval(scan, RESCAN_MS);
