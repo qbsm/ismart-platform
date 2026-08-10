@@ -111,15 +111,30 @@ FTP-площадках уехал новый `ApiSendAction` без зависи
 | `smtp://sel.ismart.pro:25` | `No route to host` — хостинг режет исходящий 25-й порт |
 | `sendmail://default` | `550 Administrative prohibition` |
 
-Хостинг — REG.RU (`31.31.196.254`, тот же, что у kumho), и рабочая схема там одна: авторизованная
-отправка с ящика своего домена, как у kumho
-(`smtps://noreply%40kumho-tires.ru:…@mail.hosting.reg.ru:465`). Нужен ящик на `beepitron.com` с
-паролем — без него почту не поднять. Сейчас стоит `sendmail://default`: он честно пишет ошибку в
-лог, в отличие от `null`, а заявки доходят телеграмом и rescue.
+Хостинг — REG.RU (`31.31.196.254`, тот же, что у kumho). Ответ нашёлся в бэкапе: досплатформенная
+версия сайта слала **через наш mailcow с авторизацией по 465-му порту** — REG.RU режет только
+25-й. Настройки лежали в `config.php` коммита «Отправка форм обратной связи» от 18.11.2024
+(PHPMailer, `SMTPAuth`, `ENCRYPTION_SMTPS`, ящик `no-reply@ismart.pro`).
+
+Поставлено то же самое:
+
+```
+MAIL_DSN=smtps://no-reply%40ismart.pro:…@webmail.ismart.pro:465
+MAIL_FROM=no-reply@ismart.pro
+```
+
+Проверено доставкой: письмо прошло весь путь и легло в ящик получателя —
+
+```
+client=server257.hosting.reg.ru, sasl_username=no-reply@ismart.pro
+to=<leads@ismart.pro>, status=sent (250 2.0.0 Saved)
+```
+
+Почта на beepitron работает впервые за неизвестно сколько: `null://null` стоял неизвестно с
+какого дня, а до него транспорт отвечал `550`.
 
 ## Что осталось
 
-- Ящик и пароль для почты beepitron (панель REG.RU).
 - `route_key` CallTouch для foton, havalavilon, wey, sollers и businesscar — заявки с форм там
   в кабинет дилера не попадают.
 - FTP-креды `auchan-promo.svr-avto.ru` — единственная площадка вне общего состояния.
