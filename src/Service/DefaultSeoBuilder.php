@@ -44,6 +44,16 @@ final class DefaultSeoBuilder implements SeoBuilderInterface
         if ($siteName !== '') {
             $meta[] = ['property' => 'og:site_name', 'content' => $siteName];
         }
+        // Страницы задают og:url в своём seo-JSON, у сущностей коллекций такого файла нет —
+        // без этого репост карточки уводит на превью без адреса.
+        $slug = (string) ($entity['slug'] ?? '');
+        $navSlug = trim((string) ($config['nav_slug'] ?? ''), '/');
+        if ($slug !== '' && $navSlug !== '') {
+            $meta[] = [
+                'property' => 'og:url',
+                'content' => rtrim($baseUrl, '/') . '/' . $navSlug . '/' . $slug,
+            ];
+        }
 
         return [
             'title' => $name,
