@@ -30,6 +30,7 @@ final class TelegramChannel implements ChannelInterface
         'csrf_token',
         'form_token',
         'company_site',
+        'smart-token',
         'idempotency_key',
         'policy',
         'session_id',

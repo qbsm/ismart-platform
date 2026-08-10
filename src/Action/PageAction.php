@@ -171,6 +171,11 @@ final class PageAction
                 'route_params' => $routeParams,
                 'base_url' => $baseUrl,
                 'is_lang_in_url' => $isLangInUrl,
+                // Ключ капчи публичный: он встраивается в страницу и без него виджет не
+                // построить. Секретный ключ живёт только на сервере.
+                'captcha_client_key' => ($this->settings['captcha']['enable'] ?? false)
+                    ? (string) ($this->settings['captcha']['client_key'] ?? '')
+                    : '',
             ], $twigEnv);
         } else {
             $seoData = ['title' => '', 'meta' => [], 'json_ld' => null];

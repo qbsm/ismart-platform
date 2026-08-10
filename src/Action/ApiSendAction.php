@@ -8,6 +8,7 @@ use App\Middleware\CorrelationIdMiddleware;
 use App\Notification\ChannelResult;
 use App\Notification\Channel\RescueChannel;
 use App\Notification\NotificationDispatcher;
+use App\Security\CaptchaVerifier;
 use App\Support\Arr;
 use App\Support\FormToken;
 use Psr\Http\Message\ResponseInterface;
@@ -19,11 +20,15 @@ final class ApiSendAction
     /** Имя выбрано правдоподобным: робот заполняет то, что похоже на обычное поле. */
     private const TRAP_FIELD = 'company_site';
 
+    /** Имя поля задано самой SmartCaptcha — виджет кладёт ответ именно в него. */
+    private const CAPTCHA_FIELD = 'smart-token';
+
     public function __construct(
         private readonly NotificationDispatcher $dispatcher,
         private readonly LoggerInterface $logger,
         private readonly FormToken $formToken,
         private readonly RescueChannel $rescue,
+        private readonly CaptchaVerifier $captcha,
     ) {}
 
     /**
@@ -94,6 +99,22 @@ final class ApiSendAction
         $tokenError = $this->checkToken($data, $requestId, $request);
         if ($tokenError !== null) {
             return $this->json($response, $tokenError['status'], $tokenError['payload']);
+        }
+
+        // Капча, если включена на этом сайте. Отказ выносится только по явному вердикту
+        // сервиса; его недоступность заявку не отменяет — см. CaptchaVerifier.
+        $verdict = $this->captcha->verify(
+            Arr::str($data, self::CAPTCHA_FIELD),
+            $this->clientIp($request),
+            $requestId,
+        );
+        if (!$verdict['passed']) {
+            return $this->json($response, 422, [
+                'success' => false,
+                'code' => 'CAPTCHA_INVALID',
+                'message' => 'Не удалось подтвердить, что вы человек. Обновите страницу и попробуйте снова.',
+                'request_id' => $requestId,
+            ]);
         }
 
         // Идемпотентность

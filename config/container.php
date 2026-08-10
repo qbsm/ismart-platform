@@ -22,6 +22,7 @@ use App\Notification\Channel\GoogleSheetsChannel;
 use App\Notification\Channel\MailChannel;
 use App\Notification\Channel\TelegramChannel;
 use App\Notification\NotificationDispatcher;
+use App\Security\CaptchaVerifier;
 use App\Support\FormToken;
 use App\Service\DataLoaderService;
 use App\Service\DefaultSeoBuilder;
@@ -242,6 +243,12 @@ return static function (): ContainerInterface {
                 (int) ($config['max_age'] ?? 7200),
             );
         },
+
+        CaptchaVerifier::class => static fn(ContainerInterface $c) => new CaptchaVerifier(
+            $c->get(HttpClientInterface::class),
+            $c->get(LoggerInterface::class),
+            $c->get('settings')['captcha'] ?? [],
+        ),
 
         ApiFormTokenAction::class => \DI\autowire(),
         ApiSendAction::class => \DI\autowire(),

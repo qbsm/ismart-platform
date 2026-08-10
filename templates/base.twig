@@ -133,7 +133,10 @@
     window.appConfig = {
       baseUrl: "{{ base_url | e('js') }}",
       langCode: "{{ lang_code | e('js') }}",
-      YANDEX_METRIC_ID: {{ config.settings.yandex_metric_id|default(0) }}
+      YANDEX_METRIC_ID: {{ config.settings.yandex_metric_id|default(0) }},
+      {# Ключ капчи публичный по своей природе — он и должен быть в разметке. Пусто на
+         сайтах, где капча не включена: тогда скрипт SmartCaptcha даже не загружается. #}
+      CAPTCHA_CLIENT_KEY: "{{ captcha_client_key | default('') | e('js') }}"
     };
   </script>
   

@@ -1,6 +1,7 @@
 import { FormApi } from './api.js';
 import { primeFormToken, primeAllTokenFields, ensureFormToken, refreshFormToken } from './token.js';
 import { formTitle } from './form-title.js';
+import { initCaptcha, appendCaptchaToken } from './captcha.js';
 import { FormValidator } from './validation.js';
 import { PhoneMask } from './mask.js';
 import { FormUI } from './ui.js';
@@ -97,6 +98,7 @@ export class CallbackForm {
       this._setCurrentUrl();
       const formData = this._buildFormData();
       await ensureFormToken(formData, this.form);
+      await appendCaptchaToken(formData);
       const response = await this._sendWithRetry(formData);
 
       if (response.processing === true) {
@@ -337,4 +339,5 @@ function bootstrapCallbackForms() {
 
 window.initCallbackForms = initCallbackForms;
 primeAllTokenFields();
+initCaptcha();
 document.addEventListener('DOMContentLoaded', bootstrapCallbackForms);

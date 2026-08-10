@@ -91,6 +91,15 @@ return [
         'max_age' => 7200,
         'secret_file' => $cacheDir . '/form-token-secret',
     ],
+    // Капча Yandex SmartCaptcha. По умолчанию выключена: на большинстве сайтов роботов
+    // отсекают токен формы и ловушка, а лишний барьер стоит конверсии. Включается точечно —
+    // там, где спам действительно идёт.
+    'captcha' => [
+        'enable' => Env::bool('CAPTCHA_ENABLE'),
+        'client_key' => Env::get('CAPTCHA_CLIENT_KEY'),
+        'server_key' => Env::get('CAPTCHA_SERVER_KEY'),
+        'timeout' => Env::int('CAPTCHA_TIMEOUT', 5),
+    ],
     'cors' => [
         'allowed_origins' => [], // например ['https://example.com'] или ['*'] для любого
         'allowed_methods' => ['GET', 'POST', 'OPTIONS', 'PUT', 'PATCH', 'DELETE'],
