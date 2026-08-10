@@ -1,9 +1,15 @@
 const SCRIPT_URL = 'https://smartcaptcha.yandexcloud.net/captcha.js?render=onload&onload=__onSmartCaptcha';
 const FIELD = 'smart-token';
+// Маркер вместо ответа капчи: домен сайта не значится в разрешённых, виджет отказался
+// строиться. Сервер такую заявку пропускает — иначе неверная настройка в кабинете тихо
+// отрезала бы все обращения.
+export const HOST_ERROR = 'host-not-allowed';
 const EXECUTE_TIMEOUT_MS = 8000;
 
 let widgetId = null;
 let ready = null;
+let pendingResolve = null;
+let hostRejected = false;
 
 const siteKey = () => (window.appConfig && window.appConfig.CAPTCHA_CLIENT_KEY) || '';
 
@@ -16,10 +22,21 @@ function loadWidget() {
   if (ready) return ready;
 
   ready = new Promise((resolve) => {
+    // Контейнер не прячем: в display:none SmartCaptcha не инициализируется и не отдаёт токен.
+    // В невидимом режиме она и так ничего не рисует, а «щит» отключён при рендере.
     const container = document.createElement('div');
     container.id = 'smartcaptcha-container';
-    container.style.display = 'none';
     document.body.appendChild(container);
+
+    window.addEventListener('error', (event) => {
+      if (event.message && event.message.includes('cannot be used in the host')) {
+        hostRejected = true;
+        if (pendingResolve) {
+          pendingResolve(HOST_ERROR);
+          pendingResolve = null;
+        }
+      }
+    });
 
     window.__onSmartCaptcha = () => {
       try {
@@ -27,6 +44,12 @@ function loadWidget() {
           sitekey: siteKey(),
           invisible: true,
           hideShield: true,
+          callback: (token) => {
+            if (pendingResolve) {
+              pendingResolve(token || '');
+              pendingResolve = null;
+            }
+          },
         });
         resolve(true);
       } catch {
@@ -55,21 +78,26 @@ export function initCaptcha() {
  */
 export async function captchaToken() {
   if (!siteKey()) return '';
-  if (!(await loadWidget()) || widgetId === null) return '';
+  if (!(await loadWidget()) || widgetId === null) return hostRejected ? HOST_ERROR : '';
+  if (hostRejected) return HOST_ERROR;
 
   return new Promise((resolve) => {
-    const timer = setTimeout(() => resolve(''), EXECUTE_TIMEOUT_MS);
-    const finish = (value) => {
+    const timer = setTimeout(() => {
+      pendingResolve = null;
+      resolve('');
+    }, EXECUTE_TIMEOUT_MS);
+
+    pendingResolve = (token) => {
       clearTimeout(timer);
-      resolve(value || '');
+      resolve(token || '');
     };
 
     try {
-      window.smartCaptcha.subscribe(widgetId, 'success', finish);
-      window.smartCaptcha.subscribe(widgetId, 'javascript-error', () => finish(''));
       window.smartCaptcha.execute(widgetId);
     } catch {
-      finish('');
+      clearTimeout(timer);
+      pendingResolve = null;
+      resolve('');
     }
   });
 }

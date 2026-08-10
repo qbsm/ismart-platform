@@ -23,6 +23,9 @@ final class CaptchaVerifier
 {
     private const ENDPOINT = 'https://smartcaptcha.yandexcloud.net/validate';
 
+    /** Тем же значением фронт сообщает, что виджет не построился из-за настроек кабинета. */
+    public const HOST_ERROR = 'host-not-allowed';
+
     /**
      * @param array{enable?: bool, server_key?: string, client_key?: string, timeout?: int} $config
      */
@@ -50,6 +53,16 @@ final class CaptchaVerifier
 
         if ($token === '') {
             return ['passed' => false, 'reason' => 'empty'];
+        }
+
+        // Виджет сообщил, что домен не в списке разрешённых в кабинете. Это ошибка настройки,
+        // а не признак робота: пропускаем и пишем в лог, иначе одна забытая строка в консоли
+        // Yandex Cloud тихо отрезала бы все заявки сайта.
+        if ($token === self::HOST_ERROR) {
+            $this->logger->error('Капча: домен не разрешён в кабинете, проверка пропущена', [
+                'request_id' => $requestId,
+            ]);
+            return ['passed' => true, 'reason' => 'host_not_allowed'];
         }
 
         $timeout = (float) ($this->config['timeout'] ?? 5);

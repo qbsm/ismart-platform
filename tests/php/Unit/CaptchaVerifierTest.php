@@ -81,6 +81,17 @@ final class CaptchaVerifierTest extends TestCase
         self::assertSame('unavailable', $verdict['reason']);
     }
 
+    /**
+     * Домен не внесён в кабинет — это забытая настройка, а не робот: заявка должна пройти.
+     */
+    public function testHostErrorPasses(): void
+    {
+        $verdict = $this->verifier(new MockHttpClient())->verify(CaptchaVerifier::HOST_ERROR, '127.0.0.1', 'req');
+
+        self::assertTrue($verdict['passed']);
+        self::assertSame('host_not_allowed', $verdict['reason']);
+    }
+
     public function testGarbageAnswerPasses(): void
     {
         $client = new MockHttpClient(new MockResponse('не json', ['http_code' => 502]));
