@@ -1,5 +1,5 @@
 import { FormApi } from './api.js';
-import { primeFormToken, ensureFormToken, refreshFormToken } from './token.js';
+import { primeFormToken, primeAllTokenFields, ensureFormToken, refreshFormToken } from './token.js';
 import { FormValidator } from './validation.js';
 import { PhoneMask } from './mask.js';
 import { FormUI } from './ui.js';
@@ -324,4 +324,5 @@ function bootstrapCallbackForms() {
 }
 
 window.initCallbackForms = initCallbackForms;
+primeAllTokenFields();
 document.addEventListener('DOMContentLoaded', bootstrapCallbackForms);

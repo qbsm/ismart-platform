@@ -62,6 +62,28 @@ export function refreshFormToken() {
   return fetchFormToken();
 }
 
+/**
+ * Заполняет поле токена во всех формах страницы, включая те, что уходят обычным POST без
+ * нашего скрипта, — например форма оплаты. У них нет шанса дождаться ответа при отправке:
+ * браузер уходит на сервер сразу, поэтому токен должен лежать в поле заранее.
+ */
+export function primeAllTokenFields() {
+  const fill = () => {
+    fetchFormToken().then((token) => {
+      if (!token) return;
+      document.querySelectorAll('input[name="form_token"]').forEach((field) => {
+        if (!field.value) field.value = token;
+      });
+    });
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fill, { once: true });
+  } else {
+    fill();
+  }
+}
+
 export function primeFormToken(form) {
   if (!form) return;
   const arm = () => {
