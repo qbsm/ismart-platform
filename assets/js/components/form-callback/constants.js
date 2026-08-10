@@ -3,6 +3,7 @@ export const SUCCESS_RESTORE_DELAY_MS = 4000;
 export const MIN_PHONE_LENGTH_AFTER_CODE = 5;
 
 export const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+export const AD_KEYS = ['yclid', 'gclid', 'ysclid'];
 
 export const COUNTRY_CODES = {
   1: { code: '+1', country: 'us', format: 'north-america', name: 'USA, Canada' },

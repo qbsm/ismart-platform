@@ -1,4 +1,4 @@
-import { API_TIMEOUT_MS, UTM_KEYS } from './constants.js';
+import { AD_KEYS, API_TIMEOUT_MS, UTM_KEYS } from './constants.js';
 
 export class FormApi {
   constructor(baseUrl) {
@@ -17,7 +17,7 @@ export class FormApi {
       formData.set('idempotency_key', FormApi.generateIdempotencyKey());
     }
 
-    this._appendUtmParams(formData);
+    this._appendAnalytics(formData);
 
     const sendUrl = this._buildSendUrl();
     const { signal, cleanup } = this._createTimeoutSignal(externalSignal, API_TIMEOUT_MS);
@@ -126,37 +126,50 @@ export class FormApi {
     };
   }
 
-  _appendUtmParams(formData) {
+  _appendAnalytics(formData) {
     const urlParams = new URLSearchParams(window.location.search);
+    const helper = window.utmHelper;
+    const cookie = (name) =>
+      helper && typeof helper.getCookie === 'function' ? helper.getCookie(name) || '' : '';
 
-    const hasUtmInUrl = UTM_KEYS.some((key) => {
-      const value = urlParams.get(key);
-      return typeof value === 'string' && value.trim() !== '';
-    });
-
-    const hasUtmSession = this._safeSessionGet('utm_session') === '1';
-
-    if (!hasUtmSession && !hasUtmInUrl) {
-      return;
-    }
-
+    // Метка берётся и из живой куки, а не только из текущей сессии: реклама привела человека
+    // на прошлой неделе, заявку он оставил сегодня — источник у неё тот же, не прямой заход.
     UTM_KEYS.forEach((key) => {
-      let value = this._safeSessionGet(key);
-
-      if (!value) {
-        value = urlParams.get(key) || '';
-      }
-
-      if (!value && window.utmHelper && typeof window.utmHelper.getCookie === 'function') {
-        value = window.utmHelper.getCookie(key) || '';
-      }
-
+      const value = urlParams.get(key) || this._safeSessionGet(key) || cookie(key);
       if (value) {
         formData.set(key, value);
       }
     });
 
-    formData.set('utm_session', '1');
+    AD_KEYS.forEach((key) => {
+      const value = urlParams.get(key) || cookie(key);
+      if (value) {
+        formData.set(key, value);
+      }
+    });
+
+    if (document.referrer) {
+      formData.set('referrer', document.referrer);
+    }
+
+    const ymUid = cookie('_ym_uid');
+    if (ymUid) {
+      formData.set('ym_uid', ymUid);
+    }
+
+    const first = helper && typeof helper.getFirstTouch === 'function' ? helper.getFirstTouch() : {};
+    const firstMap = {
+      first_utm_source: first.utm_source,
+      first_utm_medium: first.utm_medium,
+      first_utm_campaign: first.utm_campaign,
+      landing_page: first.landing,
+      first_referrer: first.referrer,
+    };
+    Object.entries(firstMap).forEach(([key, value]) => {
+      if (value) {
+        formData.set(key, value);
+      }
+    });
   }
 
   _buildSendUrl() {

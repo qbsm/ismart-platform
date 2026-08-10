@@ -4,7 +4,10 @@
  */
 (function () {
   const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+  const AD_KEYS = ['yclid', 'gclid', 'ysclid'];
+  const FIRST_TOUCH = 'first_touch';
   const COOKIE_DAYS = 30;
+  const VALUE_LIMIT = 500;
 
   function getCookie(name) {
     const nameEQ = name + '=';
@@ -48,10 +51,41 @@
     });
   }
 
+  AD_KEYS.forEach(function (key) {
+    const val = params.get(key);
+    if (val) setCookie(key, val, COOKIE_DAYS);
+  });
+
+  // Первое касание пишется один раз и живёт 30 дней: метки выше перебиваются каждым визитом,
+  // и заявка человека, пришедшего по рекламе неделю назад, выглядела бы прямым заходом.
+  if (!getCookie(FIRST_TOUCH)) {
+    setCookie(
+      FIRST_TOUCH,
+      JSON.stringify({
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        landing: window.location.href.split('#')[0].slice(0, VALUE_LIMIT),
+        referrer: (document.referrer || '').slice(0, VALUE_LIMIT),
+      }),
+      COOKIE_DAYS
+    );
+  }
+
   window.utmHelper = {
     getCookie: getCookie,
     getKeys: function () {
       return UTM_KEYS.slice();
+    },
+    getAdKeys: function () {
+      return AD_KEYS.slice();
+    },
+    getFirstTouch: function () {
+      try {
+        return JSON.parse(getCookie(FIRST_TOUCH) || '{}');
+      } catch {
+        return {};
+      }
     },
   };
 })();
