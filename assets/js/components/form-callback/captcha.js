@@ -4,7 +4,9 @@ const FIELD = 'smart-token';
 // строиться. Сервер такую заявку пропускает — иначе неверная настройка в кабинете тихо
 // отрезала бы все обращения.
 export const HOST_ERROR = 'host-not-allowed';
-const EXECUTE_TIMEOUT_MS = 8000;
+// Столько ждём тихую проверку. Если капча показала картинку, ожидание снимается совсем:
+// человек решает её десятки секунд, и обрывать его — значит отказать живому посетителю.
+const SILENT_TIMEOUT_MS = 10000;
 
 let widgetId = null;
 let ready = null;
@@ -82,10 +84,10 @@ export async function captchaToken() {
   if (hostRejected) return HOST_ERROR;
 
   return new Promise((resolve) => {
-    const timer = setTimeout(() => {
+    let timer = setTimeout(() => {
       pendingResolve = null;
       resolve('');
-    }, EXECUTE_TIMEOUT_MS);
+    }, SILENT_TIMEOUT_MS);
 
     pendingResolve = (token) => {
       clearTimeout(timer);
@@ -93,6 +95,15 @@ export async function captchaToken() {
     };
 
     try {
+      // Картинка на экране — ждём человека сколько понадобится; закрыл окно, не решив, —
+      // отпускаем отправку, решение примет сервер.
+      window.smartCaptcha.subscribe(widgetId, 'challenge-visible', () => clearTimeout(timer));
+      window.smartCaptcha.subscribe(widgetId, 'challenge-hidden', () => {
+        timer = setTimeout(() => {
+          pendingResolve = null;
+          resolve('');
+        }, 1500);
+      });
       window.smartCaptcha.execute(widgetId);
     } catch {
       clearTimeout(timer);
