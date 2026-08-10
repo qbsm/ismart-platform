@@ -69,7 +69,6 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background: var(--color-1);
   border-radius: var(--fc-radius);
   opacity: 0;
   visibility: hidden;
