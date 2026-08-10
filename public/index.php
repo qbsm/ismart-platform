@@ -10,6 +10,10 @@ require $projectRoot . '/vendor/autoload.php';
 
 Dotenv::createUnsafeImmutable($projectRoot)->safeLoad();
 
+// Часовое пояс приложения. Серверы живут в UTC, и без этого письмо о заявке приходило со
+// временем на три часа раньше, чем человек её отправил.
+date_default_timezone_set((string) (getenv('APP_TIMEZONE') ?: 'Europe/Moscow'));
+
 $containerFactory = require $projectRoot . '/config/container.php';
 $container = $containerFactory();
 
