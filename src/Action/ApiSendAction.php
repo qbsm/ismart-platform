@@ -145,6 +145,13 @@ final class ApiSendAction
         $data['_user_agent'] = (string) ($request->getHeaderLine('User-Agent') ?: '');
         $data['_ip'] = $this->clientIp($request);
 
+        // Сессия CallTouch живёт в куке браузера. Сам канал её оттуда и берёт, но остальным
+        // получателям заявки она не видна — без неё лид не сшивается с визитом в кабинете.
+        $ctSession = (string) ($request->getCookieParams()['_ct_session_id'] ?? '');
+        if ($ctSession !== '' && Arr::str($data, 'session_id') === '') {
+            $data['session_id'] = $ctSession;
+        }
+
         $results = $this->dispatcher->dispatch($data, $uploadedFiles, $requestId);
         $channels = [];
         foreach ($results as $result) {

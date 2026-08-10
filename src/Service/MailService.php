@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Service;
 
 use App\Support\Arr;
+use App\Support\Phone;
 use Psr\Http\Message\UploadedFileInterface;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
@@ -23,10 +24,28 @@ final class MailService
         'message' => 'Сообщение',
         'company' => 'Компания',
         'city' => 'Город',
+        'source' => 'Форма',
+        'trigger_text' => 'Кнопка',
+        'trigger_section' => 'Секция',
+        'trigger_age_sec' => 'Секунд до отправки',
+        'referrer' => 'Переход с',
+        'utm_source' => 'utm_source',
+        'utm_medium' => 'utm_medium',
+        'utm_campaign' => 'utm_campaign',
+        'utm_content' => 'utm_content',
+        'utm_term' => 'utm_term',
     ];
 
-    /** @var string[] */
-    private const SKIP_FIELDS = ['csrf_token', 'form_token', 'company_site', 'smart-token', 'current_url', 'policy', 'lang', 'idempotency_key'];
+    /**
+     * Служебное в перечень полей не идёт: часть уходит в подвал письма (страница, IP,
+     * браузер, sessionId), остальное менеджеру не говорит ничего.
+     *
+     * @var string[]
+     */
+    private const SKIP_FIELDS = [
+        'csrf_token', 'form_token', 'company_site', 'smart-token', 'current_url', 'policy',
+        'lang', 'idempotency_key', 'utm_session', 'session_id', 'sessionId', '_ip', '_user_agent',
+    ];
 
     /**
      * @param array{
@@ -132,7 +151,15 @@ final class MailService
         $lines[] = str_repeat('—', 40);
         $lines[] = 'Страница: ' . $currentUrl;
         $lines[] = 'Время: ' . date('d.m.Y H:i:s');
-        $lines[] = 'IP: ' . ($_SERVER['REMOTE_ADDR'] ?? 'unknown');
+        $lines[] = 'IP: ' . $this->clientIp($formData);
+        $userAgent = Arr::str($formData, '_user_agent');
+        if ($userAgent !== '') {
+            $lines[] = 'Браузер: ' . $userAgent;
+        }
+        $ctSession = $this->ctSession($formData);
+        if ($ctSession !== '') {
+            $lines[] = 'CallTouch sessionId: ' . $ctSession;
+        }
         if ($requestId !== '') {
             $lines[] = 'Request ID: ' . $requestId;
         }
@@ -169,7 +196,16 @@ final class MailService
 
         $pageHtml = htmlspecialchars($currentUrl, ENT_QUOTES, 'UTF-8');
         $time = date('d.m.Y H:i:s');
-        $ip = htmlspecialchars($_SERVER['REMOTE_ADDR'] ?? 'unknown', ENT_QUOTES, 'UTF-8');
+        $ip = htmlspecialchars($this->clientIp($formData), ENT_QUOTES, 'UTF-8');
+        $techHtml = '';
+        $userAgent = Arr::str($formData, '_user_agent');
+        if ($userAgent !== '') {
+            $techHtml .= '<br>Браузер: ' . htmlspecialchars($userAgent, ENT_QUOTES, 'UTF-8');
+        }
+        $ctSession = $this->ctSession($formData);
+        if ($ctSession !== '') {
+            $techHtml .= '<br>CallTouch sessionId: ' . htmlspecialchars($ctSession, ENT_QUOTES, 'UTF-8');
+        }
 
         return <<<HTML
             <!DOCTYPE html>
@@ -184,7 +220,7 @@ final class MailService
               </div>
               <div style="padding:12px 24px;background:#f9f9f9;font-size:12px;color:#999;border-top:1px solid #eee">
                 Страница: <a href="{$pageHtml}" style="color:#999">{$pageHtml}</a><br>
-                {$time} &middot; IP: {$ip}{$this->requestIdHtml($requestId)}
+                {$time} &middot; IP: {$ip}{$this->requestIdHtml($requestId)}{$techHtml}
               </div>
             </div>
             </body>
@@ -249,10 +285,31 @@ final class MailService
 
     private function formatValue(string $key, string $value): string
     {
-        if ($key === 'phone' && $value !== '' && $value[0] !== '+' && ctype_digit($value)) {
-            return '+' . $value;
+        if ($key === 'phone' && $value !== '') {
+            return Phone::format($value);
         }
         return $value;
+    }
+
+    /**
+     * @param array<string,mixed> $formData
+     */
+    private function clientIp(array $formData): string
+    {
+        $ip = Arr::str($formData, '_ip');
+        if ($ip !== '') {
+            return $ip;
+        }
+        return (string) ($_SERVER['REMOTE_ADDR'] ?? 'unknown');
+    }
+
+    /**
+     * @param array<string,mixed> $formData
+     */
+    private function ctSession(array $formData): string
+    {
+        $id = Arr::str($formData, 'session_id');
+        return $id !== '' ? $id : Arr::str($formData, 'sessionId');
     }
 
 }

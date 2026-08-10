@@ -230,7 +230,7 @@ final class CallTouchChannel implements ChannelInterface
             'email' => trim((string) ($formData['email'] ?? '')),
         ];
 
-        $subject = trim((string) ($formData['form_name'] ?? $formData['subject'] ?? ''));
+        $subject = trim((string) ($formData['form_name'] ?? $formData['subject'] ?? $formData['source'] ?? ''));
         if ($subject !== '') {
             $payload['subject'] = mb_substr($subject, 0, 256);
         }
@@ -240,7 +240,14 @@ final class CallTouchChannel implements ChannelInterface
             $payload['comment'] = $comment;
         }
 
-        $requestUrl = trim((string) ($formData['request_url'] ?? $formData['requestUrl'] ?? $formData['page_url'] ?? ''));
+        // current_url — имя, под которым страницу заявки шлёт форма платформы.
+        $requestUrl = trim((string) (
+            $formData['request_url']
+            ?? $formData['requestUrl']
+            ?? $formData['page_url']
+            ?? $formData['current_url']
+            ?? ''
+        ));
         if ($requestUrl !== '') {
             $payload['requestUrl'] = $requestUrl;
         }
