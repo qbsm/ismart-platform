@@ -17,10 +17,26 @@ const COLOR_SELECTOR = '[data-color], [class*="color-item"], [class*="colorpicke
 const clean = (s) => (s || '').replace(/\s+/g, ' ').trim().slice(0, TEXT_LIMIT);
 const now = () => Math.floor(Date.now() / 1000);
 
+// Секция пишется всегда. Кнопки шапки, подвала и модалок лежат вне <section>, и без запасного
+// имени путь получался вида «Заказать звонок@270с» — непонятно, откуда нажали.
 function sectionOf(el) {
   const section = el.closest('section, [data-section], .section');
-  if (!section) return '';
-  return clean(section.dataset.section || section.id || section.className.split(' ')[0]);
+  if (section) {
+    return clean(section.dataset.section || section.id || section.className.split(' ')[0]);
+  }
+
+  const landmark = el.closest('header, footer, nav, aside, [class*="modal"], [class*="popup"], [class*="header"], [class*="footer"], [class*="menu"]');
+  if (!landmark) return 'page';
+
+  const byTag = { HEADER: 'header', FOOTER: 'footer', NAV: 'nav', ASIDE: 'aside' };
+  if (byTag[landmark.tagName]) return byTag[landmark.tagName];
+
+  const cls = String(landmark.className);
+  if (/modal|popup/i.test(cls)) return 'modal';
+  if (/header/i.test(cls)) return 'header';
+  if (/footer/i.test(cls)) return 'footer';
+  if (/menu/i.test(cls)) return 'nav';
+  return 'page';
 }
 
 // Кнопка «Узнать цену» сама по себе не говорит, о какой машине речь. Модель берём из
