@@ -11,7 +11,7 @@ use App\Service\MailService;
 final class MailChannel implements ChannelInterface
 {
     /**
-     * @param array{to?: string} $config Секция settings['mail']
+     * @param array{to?: string, enable?: string} $config Секция settings['mail']
      */
     public function __construct(
         private readonly MailService $mailService,
