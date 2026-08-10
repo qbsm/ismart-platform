@@ -116,26 +116,26 @@
                 - generic "Синий" [ref=f1e140]
           - generic [ref=f1e141]:
             - link [ref=f1e143] [cursor=pointer]:
-              - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/cover/1600/omoda-c5.webp
+              - /url: http://businesscar-orel.ru.test/data/img/range/omoda-c5/cover/1600/omoda-c5.webp
               - img "OMODA C5 у дилерского центра Бизнес Кар Орёл" [ref=f1e145]
             - generic [ref=f1e148]:
               - link [ref=f1e150] [cursor=pointer]:
-                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/1.webp
+                - /url: http://businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/1.webp
                 - img "OMODA C5 — вид спереди" [ref=f1e152]
               - link [ref=f1e154] [cursor=pointer]:
-                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/2.webp
+                - /url: http://businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/2.webp
                 - img "OMODA C5 в красном цвете — вид сбоку" [ref=f1e156]
               - link [ref=f1e158] [cursor=pointer]:
-                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/3.webp
+                - /url: http://businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/3.webp
                 - img "OMODA C5 — интерьер, передняя панель" [ref=f1e160]
               - link [ref=f1e162] [cursor=pointer]:
-                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/4.webp
+                - /url: http://businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/4.webp
                 - img "OMODA C5 — интерьер, салон" [ref=f1e164]
               - link [ref=f1e166] [cursor=pointer]:
-                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/5.webp
+                - /url: http://businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/5.webp
                 - img "OMODA C5 в красном цвете — вид спереди" [ref=f1e168]
               - link [ref=f1e170] [cursor=pointer]:
-                - /url: http://sales.businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/6.webp
+                - /url: http://businesscar-orel.ru.test/data/img/range/omoda-c5/gallery/1280/6.webp
                 - img "OMODA C5 — багажник" [ref=f1e172]
     - generic [ref=f1e176]:
       - generic [ref=f1e177]:
@@ -225,7 +225,7 @@
         - /url: "#callback"
   - generic [ref=f1e329]:
     - link [ref=f1e331] [cursor=pointer]:
-      - /url: http://sales.businesscar-orel.ru.test/
+      - /url: http://businesscar-orel.ru.test/
       - img "Бизнес Кар Орёл" [ref=f1e332]
     - generic [ref=f1e333]:
       - link "Модельный ряд" [ref=f1e335] [cursor=pointer]:
@@ -239,13 +239,13 @@
     - generic [ref=f1e342]: © 2026. Бизнес Кар Орёл. Все права защищены
     - generic [ref=f1e344]:
       - link "Политика конфиденциальности" [ref=f1e345] [cursor=pointer]:
-        - /url: http://sales.businesscar-orel.ru.test/consent/
+        - /url: http://businesscar-orel.ru.test/consent/
       - link "Политика использования файлов cookie" [ref=f1e346] [cursor=pointer]:
-        - /url: http://sales.businesscar-orel.ru.test/cookies-policy/
+        - /url: http://businesscar-orel.ru.test/cookies-policy/
       - link "Согласие на обработку персональных данных" [ref=f1e347] [cursor=pointer]:
-        - /url: http://sales.businesscar-orel.ru.test/consent/
+        - /url: http://businesscar-orel.ru.test/consent/
       - link "Правовая информация" [ref=f1e348] [cursor=pointer]:
-        - /url: http://sales.businesscar-orel.ru.test/legal-info/
+        - /url: http://businesscar-orel.ru.test/legal-info/
     - paragraph [ref=f1e350]: Вся представленная на данном сайте информация, касающаяся автомобилей и цен, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Указанные цены действительны при покупке автомобиля в кредит с одновременной сдачей автомобиля в трейд-ин; размер выгоды зависит от модели и комплектации.Кредит от 0,01% годовых предоставляется банками-партнёрами дилерского центра; условия определяются банком индивидуально. Специальные условия для льготных категорий граждан — подробности у менеджеров отдела продаж. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
   - generic [ref=f1e353]:
     - generic [ref=f1e355]:

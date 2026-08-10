@@ -44,7 +44,7 @@ m[i](107236894, 'init', { defer: true, webvisor: true, ... });
 - `armstrongtire.ru` + `landsail.ru` + `landsailtyres.ru` делят счётчик 97672640 — разные бренды, стоит проверить осознанность.
 - Без счётчика вовсе (проверено браузером, т.к. текстовый скан даёт ложные негативы на GTM/SPA): `auchan-promo.svr-avto.ru`, `ismart.pro`, `medvokatura.ru`, `mirage-russia.ru`, `nordcross.borishof.ru`, `pr.svrauto.ru`, `sales.bmw-borishof.ru`.
 - `sales.bmw-borishof.ru` — в репозитории на sel счётчик `17737411` есть, на живом сайте его нет: прод отстаёт от репо.
-- `sales.businesscar-orel.ru` — домен не отвечает.
+- `businesscar-orel.ru` — на момент проверки домен не отвечал: сайт ещё не был выложен.
 
 ### Методика проверки
 
