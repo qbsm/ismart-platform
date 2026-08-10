@@ -1,7 +1,9 @@
 /**
  * deployment-proposals analyzer (ADR-0008)
  *
- * Сканирует <deployment>/docs/proposals/*.md во всех siblings'ах,
+ * Сканирует proposals деплойментов. Документация переехала на docs.ismart.pro, поэтому
+ * путь к архиву задаётся переменной DOCS_ARCHIVE (локальная копия архива);
+ * без неё анализатор смотрит старое место в соседних репозиториях.
  * извлекает title + Status, группирует по похожим темам (keyword overlap)
  * — выявляет паттерны для cross-deployment baseline proposal или ADR.
  *
@@ -62,7 +64,10 @@ export async function analyzeDeploymentProposals() {
   const all = [];
 
   for (const slug of SIBLING_DEPLOYMENTS) {
-    const proposalsDir = join(parent, slug, 'docs', 'proposals');
+    const archive = process.env.DOCS_ARCHIVE;
+    const proposalsDir = archive
+      ? join(archive, slug, 'proposals')
+      : join(parent, slug, 'docs', 'proposals');
     if (!existsSync(proposalsDir)) continue;
     let files;
     try {
@@ -75,7 +80,7 @@ export async function analyzeDeploymentProposals() {
       if (data === null) continue;
       all.push({
         deployment: slug,
-        file: `${slug}/docs/proposals/${file}`,
+        file: `${slug}/proposals/${file}`,
         ...data,
       });
     }

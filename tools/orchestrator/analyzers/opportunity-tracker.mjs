@@ -1,7 +1,7 @@
 /**
  * Opportunity tracker — обновляет «Встречалось» для open opportunities на основе
  * findings других analyzer'ов через маркеры `<!-- tracks: <kind>[:<value>] -->`
- * в строках таблицы `docs/orchestrator/opportunities.md`.
+ * в строках таблицы `logs/orchestrator/opportunities.md` (копия реестра из архива docs.ismart.pro).
  *
  * Поддерживаемые kinds:
  *   data-flow                 — соответствует любому data-flow finding
@@ -23,7 +23,7 @@ const TRACKS_RE = /<!--\s*tracks:\s*([^>]+?)\s*-->/g;
  * @param {{dataFlow?: any[], patterns?: any[], commits?: any[]}} analyzerResults
  */
 export async function opportunityTracker(platformDir, analyzerResults) {
-  const md = await safeRead(join(platformDir, 'docs/orchestrator/opportunities.md'));
+  const md = await safeRead(join(platformDir, 'logs/orchestrator/opportunities.md'));
   if (!md) return [];
 
   const rows = [];

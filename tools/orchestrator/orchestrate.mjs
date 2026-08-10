@@ -7,7 +7,7 @@
  * Запуск: npm run orchestrate
  * Также: npm run orchestrate -- --only=data-flow
  *
- * См. docs/architecture/orchestrator-role.md.
+ * См. architecture/orchestrator-role.md на docs.ismart.pro.
  */
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
@@ -69,7 +69,8 @@ async function main() {
   }
 
   // Сборка report'а
-  const reportDir = join(PLATFORM, 'docs/orchestrator');
+  // Документация живёт на docs.ismart.pro; отчёт пишем в logs/ (вне git) и оттуда кладём в архив
+  const reportDir = join(PLATFORM, 'logs/orchestrator');
   if (!existsSync(reportDir)) mkdirSync(reportDir, { recursive: true });
   const date = new Date().toISOString().slice(0, 10);
   const reportPath = join(reportDir, `health-${date}.md`);
@@ -93,7 +94,7 @@ function renderReport(results, date, deployments) {
   for (const d of deployments) lines.push(`- \`${d.slug}\``);
   lines.push('');
   lines.push(`Сгенерирован: \`npm run orchestrate\``);
-  lines.push(`См. концепцию: [docs/architecture/orchestrator-role.md](../architecture/orchestrator-role.md)`);
+  lines.push('См. концепцию: architecture/orchestrator-role.md на docs.ismart.pro');
   lines.push('');
 
   if (results.dataFlow) {
