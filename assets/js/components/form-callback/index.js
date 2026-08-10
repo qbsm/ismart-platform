@@ -1,5 +1,6 @@
 import { FormApi } from './api.js';
 import { primeFormToken, primeAllTokenFields, ensureFormToken, refreshFormToken } from './token.js';
+import { formTitle } from './form-title.js';
 import { FormValidator } from './validation.js';
 import { PhoneMask } from './mask.js';
 import { FormUI } from './ui.js';
@@ -217,6 +218,17 @@ export class CallbackForm {
 
     const policyField = this.form.querySelector('input[name="policy"]');
     formData.set('policy', policyField && policyField.checked ? 'on' : 'off');
+
+    // Форму могли открыть не кнопкой — тогда названия неоткуда взяться, и в заявке остаётся
+    // пустая графа. Подставляем то, что видит человек: заголовок модалки или секции.
+    const named = ['form_name', 'source', 'subject'].some((key) => {
+      const value = formData.get(key);
+      return typeof value === 'string' && value.trim() !== '';
+    });
+    if (!named) {
+      const title = formTitle(this.form);
+      if (title) formData.set('form_name', title);
+    }
 
     formData.set('lang', this.lang);
 
