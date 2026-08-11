@@ -10,18 +10,43 @@
  *   node tools/ops/check-permissions.js          # проверить, вернуть код 1 при находках
  *   node tools/ops/check-permissions.js --fix    # заодно выдать группе право записи
  */
-import { existsSync, readdirSync, statSync, chmodSync } from 'node:fs';
+import { existsSync, readdirSync, statSync, chmodSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import process from 'node:process';
 
 const ROOT = process.cwd();
 const TARGETS = ['logs', 'cache'];
-const GROUP_WRITE = 0o020;
+const WEB_USER = process.env.WEB_USER || 'www-data';
 const FIX = process.argv.includes('--fix');
 
 // На Windows и macOS модель прав другая, а боевые площадки — Linux: там и проверяем.
 if (process.platform !== 'linux') {
   process.exit(0);
+}
+
+function idOf(file, name) {
+  try {
+    for (const line of readFileSync(file, 'utf8').split('\n')) {
+      const parts = line.split(':');
+      if (parts[0] === name) return Number(parts[2]);
+    }
+  } catch {
+    /* нет файла — значит и пользователя нет */
+  }
+  return null;
+}
+
+const webUid = idOf('/etc/passwd', WEB_USER);
+const webGid = idOf('/etc/group', WEB_USER);
+if (webUid === null) {
+  process.exit(0);
+}
+
+// Писать сможет владелец-веб-сервер, либо его группа при бите записи, либо кто угодно.
+function writableByWeb(stat) {
+  if (stat.uid === webUid) return Boolean(stat.mode & 0o200);
+  if (stat.gid === webGid) return Boolean(stat.mode & 0o020);
+  return Boolean(stat.mode & 0o002);
 }
 
 function walk(path, found, depth = 0) {
@@ -32,11 +57,11 @@ function walk(path, found, depth = 0) {
     return;
   }
 
-  if (!(entry.mode & GROUP_WRITE)) {
+  if (!writableByWeb(entry)) {
     found.push(path);
     if (FIX) {
       try {
-        chmodSync(path, entry.mode | GROUP_WRITE);
+        chmodSync(path, entry.mode | 0o020);
       } catch {
         /* право менять чужое есть не всегда — покажем в отчёте */
       }
@@ -68,7 +93,7 @@ if (FIX) {
 }
 
 console.error(
-  `Веб-сервер не сможет писать сюда (нет права записи у группы), путей: ${found.length}\n` +
+  `Веб-сервер (${WEB_USER}) не сможет писать сюда, путей: ${found.length}\n` +
     shown.join('\n') +
     tail +
     '\n\nЛечится: npm run check:permissions -- --fix'
