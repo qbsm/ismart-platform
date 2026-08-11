@@ -5,7 +5,11 @@ declare(strict_types=1);
 use DI\Bridge\Slim\Bridge;
 use Dotenv\Dotenv;
 
-$projectRoot = is_dir(__DIR__ . '/config') ? __DIR__ : dirname(__DIR__);
+// Корень ищем по маркеру уровнем выше, а не по наличию config рядом: в докруте лежит симлинк
+// `config -> ../config`, is_dir() идёт по нему, и корнем становился сам public/. Пока рядом был
+// симлинк на .env, это сходилось; после его удаления из докрута (утечка .env, 09.08.2026)
+// конфиг перестал читаться вовсе. На плоском проде родителя-проекта нет — корнем остаётся docroot.
+$projectRoot = is_file(dirname(__DIR__) . '/composer.json') ? dirname(__DIR__) : __DIR__;
 require $projectRoot . '/vendor/autoload.php';
 
 Dotenv::createUnsafeImmutable($projectRoot)->safeLoad();
