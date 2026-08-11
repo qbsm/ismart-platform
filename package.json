@@ -31,8 +31,8 @@
     "check": "npm run check:base && npm run check:css-units",
     "check:env": "node tools/build/check-env-build.js",
     "channels:check": "php tools/build/check-notification-channels.php",
-    "build:dev": "npm run build:critical && npm run build:css && npm run build:js && npm run clean:assets && npm run setup:public-links && npm run channels:check",
-    "build": "node tools/build/check-env-build.js && npm run check:base && npm run build:critical && cross-env NODE_ENV=production npm run build:css && cross-env NODE_ENV=production npm run build:js && npm run clean:assets && npm run setup:public-links && npm run channels:check",
+    "build:dev": "npm run build:critical && npm run build:css && npm run build:js && npm run clean:assets && npm run setup:public-links && npm run channels:check && npm run check:permissions",
+    "build": "node tools/build/check-env-build.js && npm run check:base && npm run build:critical && cross-env NODE_ENV=production npm run build:css && cross-env NODE_ENV=production npm run build:js && npm run clean:assets && npm run setup:public-links && npm run channels:check && npm run check:permissions",
     "create-section": "node tools/scaffold/create-section.js",
     "create-component": "node tools/scaffold/create-component.js",
     "create-collection": "node tools/scaffold/create-collection.js",
@@ -48,7 +48,8 @@
     "distill:inventory": "node tools/distill/build-inventory.mjs",
     "verify": "node tools/distill/verify-deployment.mjs",
     "orchestrate": "node tools/orchestrator/orchestrate.mjs",
-    "prepare": "husky"
+    "prepare": "husky",
+    "check:permissions": "node tools/ops/check-permissions.js"
   },
   "lint-staged": {
     "*.{js,mjs}": "eslint --fix",
