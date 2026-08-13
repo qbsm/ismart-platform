@@ -82,8 +82,10 @@ async function generateFavicons() {
     ];
 
     // Удаляем старые ненужные файлы (кроме SVG и site.webmanifest)
-    const existingFiles = fs.readdirSync(OUTPUT_DIR);
-    for (const file of existingFiles) {
+    const existingFiles = fs.readdirSync(OUTPUT_DIR, { withFileTypes: true });
+    for (const entry of existingFiles) {
+      if (!entry.isFile()) continue;
+      const file = entry.name;
       const keepFile = file === 'favicon.svg' || file === 'site.webmanifest' || essentialImages.includes(file);
 
       if (!keepFile) {

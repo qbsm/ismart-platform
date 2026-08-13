@@ -12,6 +12,14 @@ module.exports = [
     },
   },
   {
+    files: ['tools/ops/check-permissions.js', 'tools/ops/check-favicons.js'],
+    languageOptions: {
+      sourceType: 'module',
+      ecmaVersion: 'latest',
+      globals: { ...globals.node },
+    },
+  },
+  {
     files: ['tests/js/**/*.js'],
     languageOptions: {
       sourceType: 'module',
