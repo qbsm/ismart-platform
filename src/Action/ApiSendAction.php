@@ -178,7 +178,14 @@ final class ApiSendAction
 
         // Итоги остальных каналов уходят в приёмник: без этого «дошло ли до CallTouch на
         // прозвон» не видно нигде — в логи попадают только отказы.
-        $this->rescue->reportChannels($channels, $requestId);
+        //
+        // Выключенные каналы не отправляем: их не звали, и в статусах они только шум —
+        // строка «calltouch: успешно» читается, а та же строка среди четырёх «выключен» нет.
+        $reported = array_filter(
+            $channels,
+            static fn (string $status): bool => $status !== ChannelResult::STATUS_DISABLED,
+        );
+        $this->rescue->reportChannels($reported, $requestId);
 
         // Посетителю ошибка нужна, только если заявка не ушла НИ В ОДИН канал: отказ
         // отдельного канала он всё равно не исправит, а лид уже сохранён и его наберут.
