@@ -17,8 +17,8 @@ use Psr\Log\LoggerInterface;
 
 final class ApiSendAction
 {
-    /** Имя выбрано правдоподобным: робот заполняет то, что похоже на обычное поле. */
-    private const TRAP_FIELD = 'company_site';
+    /** Имена выбраны правдоподобными: робот заполняет то, что похоже на обычное поле. */
+    private const TRAP_FIELD = 'company_site, website';
 
     /** Имя поля задано самой SmartCaptcha — виджет кладёт ответ именно в него. */
     private const CAPTCHA_FIELD = 'smart-token';
@@ -71,6 +71,13 @@ final class ApiSendAction
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface
     {
         if (session_status() !== PHP_SESSION_ACTIVE) {
+            // Кука сессии закрыта от скриптов и от чужих сайтов: на ней держится защита формы,
+            // а на боевом домене она вдобавок не ходит по открытому HTTP.
+            session_set_cookie_params([
+                'secure' => getenv('APP_ENV') === 'production',
+                'httponly' => true,
+                'samesite' => 'Lax',
+            ]);
             session_start(['cache_limiter' => '']);
         }
 
@@ -87,11 +94,19 @@ final class ApiSendAction
         // Выключатель гасит только отказ, но не наблюдение: при разборе жалоб «форма не
         // отправляется» защиту снимают одной переменной и по логу сразу видно, была ли она
         // причиной. Молча переставать замечать роботов нельзя.
-        $trapField = (string) ($this->formGuard['trap_field'] ?? self::TRAP_FIELD);
-        if (Arr::str($data, $trapField) !== '') {
+        $trapped = '';
+        foreach ($this->trapFields() as $field) {
+            if (Arr::str($data, $field) !== '') {
+                $trapped = $field;
+                break;
+            }
+        }
+
+        if ($trapped !== '') {
             $guardEnabled = (bool) ($this->formGuard['enable'] ?? true);
             $this->logger->warning('Заявка отброшена ловушкой', [
                 'request_id' => $requestId,
+                'field' => $trapped,
                 'ip' => $this->clientIp($request),
                 'user_agent' => $request->getHeaderLine('User-Agent'),
                 'guard_enabled' => $guardEnabled,
@@ -190,15 +205,24 @@ final class ApiSendAction
         // Посетителю ошибка нужна, только если заявка не ушла НИ В ОДИН канал: отказ
         // отдельного канала он всё равно не исправит, а лид уже сохранён и его наберут.
         // Разбор отказов — на нас: они видны в логе выше, в статусах каналов и в мониторинге.
+        //
+        // Выключенный канал доставкой не считается: он ничего не принял. Иначе площадка с
+        // одним включённым каналом отвечала бы «отправлено» и при его отказе — заявка теряется
+        // молча, а это ровно то, ради чего проверка и заведена.
+        $attempted = array_filter(
+            $results,
+            static fn (ChannelResult $r): bool => $r->status !== ChannelResult::STATUS_DISABLED,
+        );
+
         $delivered = false;
-        foreach ($results as $result) {
+        foreach ($attempted as $result) {
             if ($result->status !== ChannelResult::STATUS_FAILED) {
                 $delivered = true;
                 break;
             }
         }
 
-        if (!$delivered && $results !== []) {
+        if (!$delivered && $attempted !== []) {
             $this->logger->error('Заявка не ушла ни в один канал', [
                 'request_id' => $requestId,
                 'channels' => $channels,
@@ -222,6 +246,15 @@ final class ApiSendAction
         ];
         $this->cacheResponse($idempotencyKey, 200, $payload);
         return $this->json($response, 200, $payload);
+    }
+
+    /** @return list<string> */
+    private function trapFields(): array
+    {
+        $raw = (string) ($this->formGuard['trap_field'] ?? self::TRAP_FIELD);
+        $fields = array_filter(array_map('trim', explode(',', $raw)), static fn (string $f): bool => $f !== '');
+
+        return array_values($fields !== [] ? $fields : ['company_site']);
     }
 
     private function clientIp(ServerRequestInterface $request): string

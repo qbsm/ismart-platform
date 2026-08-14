@@ -237,9 +237,13 @@ return static function (): ContainerInterface {
                 }
             }
 
+            // Порог «слишком быстро» — общий с ловушкой: две настройки одного смысла рано или
+            // поздно разъезжаются, и тогда токен выдан с одним порогом, а проверен по другому.
+            $guard = (array) ($settings['form_guard'] ?? []);
+
             return new FormToken(
                 $secret !== '' ? $secret : 'insecure-fallback',
-                (int) ($config['min_age'] ?? 3),
+                (int) ($guard['min_age_sec'] ?? 3),
                 (int) ($config['max_age'] ?? 7200),
             );
         },
