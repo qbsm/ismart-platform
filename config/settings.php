@@ -124,7 +124,7 @@ return [
         'url' => Env::get('RESCUE_URL') ?: 'https://api.ismart.pro/v1/rescue',
         'site' => Env::get('RESCUE_SITE'),
         'key' => Env::get('RESCUE_KEY'),
-        'timeout' => Env::int('RESCUE_TIMEOUT', 10),
+        'timeout' => Env::int('RESCUE_TIMEOUT', 3),
     ],
 
     'calltouch' => [
