@@ -180,6 +180,33 @@ final class ApiSendAction
         // прозвон» не видно нигде — в логи попадают только отказы.
         $this->rescue->reportChannels($channels, $requestId);
 
+        // Посетителю ошибка нужна, только если заявка не ушла НИ В ОДИН канал: отказ
+        // отдельного канала он всё равно не исправит, а лид уже сохранён и его наберут.
+        // Разбор отказов — на нас: они видны в логе выше, в статусах каналов и в мониторинге.
+        $delivered = false;
+        foreach ($results as $result) {
+            if ($result->status !== ChannelResult::STATUS_FAILED) {
+                $delivered = true;
+                break;
+            }
+        }
+
+        if (!$delivered && $results !== []) {
+            $this->logger->error('Заявка не ушла ни в один канал', [
+                'request_id' => $requestId,
+                'channels' => $channels,
+            ]);
+            $payload = [
+                'success' => false,
+                'code' => 'DELIVERY_FAILED',
+                'message' => 'Не получилось отправить заявку. Позвоните нам или попробуйте позже.',
+                'channels' => $channels,
+                'request_id' => $requestId,
+            ];
+            // Неуспех не кэшируем: повтор должен пойти в каналы заново.
+            return $this->json($response, 502, $payload);
+        }
+
         $payload = [
             'success' => true,
             'message' => 'Заявка успешно отправлена',
