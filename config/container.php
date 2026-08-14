@@ -251,7 +251,8 @@ return static function (): ContainerInterface {
         ),
 
         ApiFormTokenAction::class => \DI\autowire(),
-        ApiSendAction::class => \DI\autowire(),
+        ApiSendAction::class => \DI\autowire()
+            ->constructorParameter('formGuard', \DI\factory(static fn ($c) => $c->get('settings')['form_guard'] ?? [])),
         ApiWidgetRescueAction::class => \DI\autowire(),
     ]);
 

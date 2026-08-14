@@ -29,6 +29,8 @@ final class ApiSendAction
         private readonly FormToken $formToken,
         private readonly RescueChannel $rescue,
         private readonly CaptchaVerifier $captcha,
+        /** @var array{enable?: bool, trap_field?: string, min_age_sec?: int} */
+        private readonly array $formGuard = [],
     ) {}
 
     /**
@@ -81,18 +83,27 @@ final class ApiSendAction
 
         // Ловушка: поле спрятано от человека, робот заполняет всё подряд. Отвечаем как при
         // успехе — иначе робот подберёт набор полей и вернётся.
-        if (Arr::str($data, self::TRAP_FIELD) !== '') {
+        //
+        // Выключатель гасит только отказ, но не наблюдение: при разборе жалоб «форма не
+        // отправляется» защиту снимают одной переменной и по логу сразу видно, была ли она
+        // причиной. Молча переставать замечать роботов нельзя.
+        $trapField = (string) ($this->formGuard['trap_field'] ?? self::TRAP_FIELD);
+        if (Arr::str($data, $trapField) !== '') {
+            $guardEnabled = (bool) ($this->formGuard['enable'] ?? true);
             $this->logger->warning('Заявка отброшена ловушкой', [
                 'request_id' => $requestId,
                 'ip' => $this->clientIp($request),
                 'user_agent' => $request->getHeaderLine('User-Agent'),
+                'guard_enabled' => $guardEnabled,
             ]);
-            return $this->json($response, 200, [
-                'success' => true,
-                'message' => 'Заявка успешно отправлена',
-                'channels' => [],
-                'request_id' => $requestId,
-            ]);
+            if ($guardEnabled) {
+                return $this->json($response, 200, [
+                    'success' => true,
+                    'message' => 'Заявка успешно отправлена',
+                    'channels' => [],
+                    'request_id' => $requestId,
+                ]);
+            }
         }
 
         // Подтверждение источника.

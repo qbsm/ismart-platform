@@ -94,6 +94,15 @@ return [
     // Капча Yandex SmartCaptcha. По умолчанию выключена: на большинстве сайтов роботов
     // отсекают токен формы и ловушка, а лишний барьер стоит конверсии. Включается точечно —
     // там, где спам действительно идёт.
+    // Отсев роботов на форме. Значения зашиты в ядро и работают без .env; переопределяются
+    // переменными точечно. Выключатель нужен для разбора жалоб «форма не отправляется»:
+    // при `false` отказ не выносится, но срабатывание всё равно пишется в лог.
+    'form_guard' => [
+        'enable' => Env::bool('FORM_GUARD_ENABLE', true),
+        'trap_field' => Env::get('FORM_GUARD_TRAP_FIELD') ?: 'company_site',
+        'min_age_sec' => Env::int('FORM_GUARD_MIN_AGE_SEC', 3),
+    ],
+
     'captcha' => [
         'enable' => Env::bool('CAPTCHA_ENABLE'),
         'client_key' => Env::get('CAPTCHA_CLIENT_KEY'),
