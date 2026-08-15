@@ -55,6 +55,8 @@ export class PhoneMask {
     this._onFocus = this._handleFocus.bind(this);
     this._onBlur = this._handleBlur.bind(this);
     this._onCaret = this._guardCaret.bind(this);
+    this._onChange = this._syncDigits.bind(this);
+    this._onSubmit = this._handleSubmit.bind(this);
   }
 
   init() {
@@ -66,6 +68,12 @@ export class PhoneMask {
     this.input.addEventListener('blur', this._onBlur);
     this.input.addEventListener('click', this._onCaret);
     this.input.addEventListener('keyup', this._onCaret);
+    // Автозаполнение не всегда доходит до `input`: Chrome не шлёт его для своих подсказок,
+    // Safari шлёт недоверенное событие. Поэтому цифры пересчитываем ещё и на `change`, и
+    // перед самой отправкой — в фазе перехвата на документе, то есть раньше любого
+    // обработчика формы. Иначе на сервер уехали бы цифры, отставшие от показанного.
+    this.input.addEventListener('change', this._onChange);
+    document.addEventListener('submit', this._onSubmit, true);
     if (this.input.value) this._handleInput();
     this._syncDigits();
   }
@@ -73,9 +81,10 @@ export class PhoneMask {
   /**
    * Скрытое поле с чистыми цифрами рядом с видимым.
    *
-   * Отображаемое значение — это то, что нарисовала маска, и полагаться на него нельзя: любая
-   * её ошибка едет в заявку молча. Цифры считаются из того же источника, что и формат, и
-   * уходят на сервер отдельным полем — обработчик берёт номер из него.
+   * Отображаемое значение — это то, что нарисовала маска, и разбирать его на сервере обратно
+   * значит держать второй разборщик: пока они согласны, это незаметно, а разойдясь они молча
+   * меняют номер в заявке. Цифры считаются из того же ввода, что и формат, и уходят отдельным
+   * полем — обработчик берёт номер из него.
    */
   _ensureDigitsField() {
     const form = this.input.form;
@@ -91,7 +100,12 @@ export class PhoneMask {
   }
 
   _syncDigits() {
-    if (this.digitsField) this.digitsField.value = phoneDigits(this.input.value);
+    this.lastDigits = phoneDigits(this.input.value);
+    if (this.digitsField) this.digitsField.value = this.lastDigits;
+  }
+
+  _handleSubmit(event) {
+    if (event.target === this.input.form) this._syncDigits();
   }
 
   destroy() {
@@ -101,6 +115,8 @@ export class PhoneMask {
     this.input.removeEventListener('blur', this._onBlur);
     this.input.removeEventListener('click', this._onCaret);
     this.input.removeEventListener('keyup', this._onCaret);
+    this.input.removeEventListener('change', this._onChange);
+    document.removeEventListener('submit', this._onSubmit, true);
   }
 
   reset() {
@@ -122,6 +138,14 @@ export class PhoneMask {
     return digits;
   }
 
+  /** Ближайшая цифра справа: за ней каретке и место, когда слева от неё разделитель. */
+  static _nextDigitPos(value, from) {
+    for (let i = Math.max(from, 0); i < value.length; i += 1) {
+      if (value[i] >= '0' && value[i] <= '9') return i;
+    }
+    return value.length;
+  }
+
   /** Обратный перевод: позиция в строке, левее которой стоит ровно столько цифр. */
   static _caretAfterDigits(value, digits) {
     if (digits <= 0) return 0;
@@ -135,9 +159,10 @@ export class PhoneMask {
     return value.length;
   }
 
-  _handleInput() {
+  _handleInput(event) {
     const before = this.input.value;
     const caret = this.input.selectionStart;
+    const previous = this.lastDigits;
     const formatted = formatPhone(before) || TRUNK;
 
     // Цифры обновляем до выхода: когда символ встал ровно по маске, переформатировать нечего,
@@ -151,9 +176,17 @@ export class PhoneMask {
     const digitsLeft = PhoneMask._digitsBefore(before, caret);
     this.input.value = formatted;
 
-    const pos = Math.max(TRUNK.length, PhoneMask._caretAfterDigits(formatted, digitsLeft));
+    let pos = Math.max(TRUNK.length, PhoneMask._caretAfterDigits(formatted, digitsLeft));
+
+    // Delete через разделитель: цифр не убавилось — значит стёрли скобку или дефис, а маска
+    // вернула их на место. Оставить каретку где была значит запереть человека: сколько ни жми
+    // Delete, номер не изменится. Переносим её к следующей цифре — приём из maskito, который
+    // на такой же случай двигает каретку за неизменяемый символ.
+    if (event && event.inputType === 'deleteContentForward' && this.lastDigits === previous) {
+      pos = PhoneMask._nextDigitPos(formatted, pos);
+    }
+
     this._setCaret(pos);
-    this._syncDigits();
   }
 
   /**
