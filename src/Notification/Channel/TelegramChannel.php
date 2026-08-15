@@ -39,6 +39,8 @@ final class TelegramChannel implements ChannelInterface
         'policy',
         'session_id',
         'sessionId',
+        'phone_shown',
+        'phone_digits',
     ];
 
     /**

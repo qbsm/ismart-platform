@@ -215,7 +215,15 @@ export class CallbackForm {
     const formData = new FormData(this.form);
     const phoneField = this.form.querySelector('input[name="phone"]');
     if (phoneField) {
-      formData.set('phone', normalizePhone(phoneField.value));
+      // Номер берём из скрытого поля, которое ведёт маска: там цифры, посчитанные из того же
+      // ввода, что и показанный формат. Разбирать показанное второй раз на сервере — значит
+      // держать второй разборщик, который рано или поздно разойдётся с первым.
+      const digits = String(formData.get('phone_digits') || '');
+      formData.set('phone', digits || normalizePhone(phoneField.value));
+      // Показанное едет рядом и дальше приёмника не идёт: по расхождению с цифрами видно,
+      // что поле меняли мимо маски, — иначе про такое узнаёшь от заказчика.
+      formData.set('phone_shown', phoneField.value);
+      formData.delete('phone_digits');
     }
 
     const policyField = this.form.querySelector('input[name="policy"]');

@@ -45,6 +45,7 @@ final class MailService
     private const SKIP_FIELDS = [
         'csrf_token', 'form_token', 'company_site', 'smart-token', 'current_url', 'policy',
         'lang', 'idempotency_key', 'utm_session', 'session_id', 'sessionId', '_ip', '_user_agent',
+        'phone_shown', 'phone_digits',
     ];
 
     /**

@@ -60,12 +60,38 @@ export class PhoneMask {
   init() {
     if (!this.input) return;
     this.input.setAttribute('inputmode', 'tel');
+    this._ensureDigitsField();
     this.input.addEventListener('input', this._onInput);
     this.input.addEventListener('focus', this._onFocus);
     this.input.addEventListener('blur', this._onBlur);
     this.input.addEventListener('click', this._onCaret);
     this.input.addEventListener('keyup', this._onCaret);
     if (this.input.value) this._handleInput();
+    this._syncDigits();
+  }
+
+  /**
+   * Скрытое поле с чистыми цифрами рядом с видимым.
+   *
+   * Отображаемое значение — это то, что нарисовала маска, и полагаться на него нельзя: любая
+   * её ошибка едет в заявку молча. Цифры считаются из того же источника, что и формат, и
+   * уходят на сервер отдельным полем — обработчик берёт номер из него.
+   */
+  _ensureDigitsField() {
+    const form = this.input.form;
+    if (!form) return;
+    let field = form.querySelector('input[name="phone_digits"]');
+    if (!field) {
+      field = document.createElement('input');
+      field.type = 'hidden';
+      field.name = 'phone_digits';
+      form.appendChild(field);
+    }
+    this.digitsField = field;
+  }
+
+  _syncDigits() {
+    if (this.digitsField) this.digitsField.value = phoneDigits(this.input.value);
   }
 
   destroy() {
@@ -113,6 +139,10 @@ export class PhoneMask {
     const before = this.input.value;
     const caret = this.input.selectionStart;
     const formatted = formatPhone(before) || TRUNK;
+
+    // Цифры обновляем до выхода: когда символ встал ровно по маске, переформатировать нечего,
+    // и на этой ветке скрытое поле осталось бы на цифру позади показанного.
+    this._syncDigits();
     if (formatted === before) return;
 
     // Присваивание value уносит каретку в конец, поэтому возвращаем её сами — и делаем это
@@ -123,6 +153,7 @@ export class PhoneMask {
 
     const pos = Math.max(TRUNK.length, PhoneMask._caretAfterDigits(formatted, digitsLeft));
     this._setCaret(pos);
+    this._syncDigits();
   }
 
   /**
@@ -168,5 +199,6 @@ export class PhoneMask {
    */
   _handleBlur() {
     if (nationalDigits(this.input.value).length === 0) this.input.value = '';
+    this._syncDigits();
   }
 }
