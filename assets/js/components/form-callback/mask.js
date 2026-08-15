@@ -81,16 +81,66 @@ export class PhoneMask {
     if (this.input) this.input.value = '';
   }
 
-  _handleInput() {
-    const atEnd = this.input.selectionStart === this.input.value.length;
-    const formatted = formatPhone(this.input.value) || TRUNK;
-    if (formatted === this.input.value) return;
-
-    this.input.value = formatted;
-    if (atEnd) {
-      const end = formatted.length;
-      this.input.setSelectionRange(end, end);
+  /**
+   * Позиция каретки в цифрах, а не в символах.
+   *
+   * Разделители маски при переформатировании съезжают, поэтому запоминать индекс в строке
+   * бессмысленно: после правки в середине он указывает уже на другое место. Считаем, сколько
+   * цифр стоит левее каретки, — это число переживает любое переформатирование.
+   */
+  static _digitsBefore(value, caret) {
+    let digits = 0;
+    for (let i = 0; i < caret && i < value.length; i += 1) {
+      if (value[i] >= '0' && value[i] <= '9') digits += 1;
     }
+    return digits;
+  }
+
+  /** Обратный перевод: позиция в строке, левее которой стоит ровно столько цифр. */
+  static _caretAfterDigits(value, digits) {
+    if (digits <= 0) return 0;
+    let seen = 0;
+    for (let i = 0; i < value.length; i += 1) {
+      if (value[i] >= '0' && value[i] <= '9') {
+        seen += 1;
+        if (seen === digits) return i + 1;
+      }
+    }
+    return value.length;
+  }
+
+  _handleInput() {
+    const before = this.input.value;
+    const caret = this.input.selectionStart;
+    const formatted = formatPhone(before) || TRUNK;
+    if (formatted === before) return;
+
+    // Присваивание value уносит каретку в конец, поэтому возвращаем её сами — и делаем это
+    // всегда, а не только когда правили в конце строки. Иначе следующий символ уходит не туда
+    // и цифры перемешиваются: человек правит третью цифру, а получает другой номер.
+    const digitsLeft = PhoneMask._digitsBefore(before, caret);
+    this.input.value = formatted;
+
+    const pos = Math.max(TRUNK.length, PhoneMask._caretAfterDigits(formatted, digitsLeft));
+    this._setCaret(pos);
+  }
+
+  /**
+   * Каретку ставим дважды: сразу и следующим кадром. Мобильные браузеры после программной
+   * замены значения возвращают её в конец уже после нашего вызова.
+   */
+  _setCaret(pos) {
+    const place = () => {
+      try {
+        const limit = this.input.value.length;
+        const at = Math.min(pos, limit);
+        this.input.setSelectionRange(at, at);
+      } catch {
+        // поле уже потеряло фокус — ставить нечего
+      }
+    };
+    place();
+    requestAnimationFrame(place);
   }
 
   _handleFocus() {
@@ -101,14 +151,7 @@ export class PhoneMask {
   }
 
   _caretToEnd() {
-    const end = this.input.value.length;
-    requestAnimationFrame(() => {
-      try {
-        this.input.setSelectionRange(end, end);
-      } catch {
-        // поле уже потеряло фокус — ставить нечего
-      }
-    });
+    this._setCaret(this.input.value.length);
   }
 
   /** Внутрь «+7 » каретке делать нечего: там нечего править. Выделение не трогаем. */
