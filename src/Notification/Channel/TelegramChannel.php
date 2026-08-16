@@ -30,7 +30,7 @@ final class TelegramChannel implements ChannelInterface
         'trigger_section' => 'Секция',
     ];
 
-    private const SKIP_FIELDS = [
+    private const SKIP_FIELDS = ['phone_shown', 'phone_digits', 
         'csrf_token',
         'form_token',
         'company_site',

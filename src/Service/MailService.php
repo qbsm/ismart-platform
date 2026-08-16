@@ -42,7 +42,7 @@ final class MailService
      *
      * @var string[]
      */
-    private const SKIP_FIELDS = [
+    private const SKIP_FIELDS = ['phone_shown', 'phone_digits', 
         'csrf_token', 'form_token', 'company_site', 'smart-token', 'current_url', 'policy',
         'lang', 'idempotency_key', 'utm_session', 'session_id', 'sessionId', '_ip', '_user_agent',
     ];
