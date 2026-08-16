@@ -60,8 +60,8 @@ async function main() {
 
   for (const rel of filtered) {
     const abs = path.join(imgDir, rel);
-    let w = 0;
-    let h = 0;
+    let w;
+    let h;
     try {
       const meta = await sharp(abs).metadata();
       w = meta.width || 0;

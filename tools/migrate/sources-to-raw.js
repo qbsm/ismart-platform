@@ -90,7 +90,7 @@ async function widthOf(filePath) {
   try {
     const meta = await sharp(filePath).metadata();
     return meta.width || 0;
-  } catch (e) {
+  } catch {
     return 0;
   }
 }
