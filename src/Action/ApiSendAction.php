@@ -178,7 +178,8 @@ final class ApiSendAction
                 'errors' => $errors,
                 'request_id' => $requestId,
             ];
-            $this->cacheResponse($idempotencyKey, 422, $payload);
+            // Ошибку валидации не кэшируем: ключ идемпотентности живёт весь сеанс формы,
+            // и исправленные поля должны проверяться заново, а не получать старый отказ.
             return $this->json($response, 422, $payload);
         }
 

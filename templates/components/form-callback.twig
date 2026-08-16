@@ -162,3 +162,59 @@
     </div>
   </div>
 </form>
+
+{# Маячок попыток: нарочно inline и отдельно от бандла — он обязан пережить смерть JS
+   и увезти «нажал, а запроса нет» в приёмник. Поля — только при отмеченном согласии.
+   Скрипт один на страницу, сколько бы форм ни отрендерилось. #}
+<script>
+(function () {
+  if (window.__ismartAttempt) return;
+  window.__ismartAttempt = 1;
+  var EP = 'https://api.ismart.pro/v1/attempt';
+  function sid() {
+    try { if (window.crypto && crypto.randomUUID) return crypto.randomUUID().replace(/-/g, ''); } catch (e) {}
+    return 'a' + Date.now().toString(36) + Math.random().toString(36).slice(2, 12);
+  }
+  function send(o) {
+    try {
+      var b = JSON.stringify(o);
+      if (navigator.sendBeacon) { navigator.sendBeacon(EP, new Blob([b], { type: 'text/plain' })); }
+      else if (window.fetch) { fetch(EP, { method: 'POST', body: b, keepalive: true }); }
+    } catch (e) {}
+  }
+  function ensure(f) {
+    if (!f.dataset.ismartSession) f.dataset.ismartSession = sid();
+    return f.dataset.ismartSession;
+  }
+  function onStart(e) {
+    var t = e.target;
+    var f = t && t.closest ? t.closest('form.js-form-callback') : null;
+    if (!f || f.dataset.ismartStarted) return;
+    f.dataset.ismartStarted = '1';
+    send({ kind: 'form_start', session_id: ensure(f), page_url: location.href });
+  }
+  ['pointerdown', 'focusin', 'keydown'].forEach(function (n) { document.addEventListener(n, onStart, true); });
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (!f || !f.matches || !f.matches('form.js-form-callback')) return;
+    var d = { kind: 'attempt', session_id: ensure(f), page_url: location.href };
+    var consent = f.querySelector('input[name="policy"]');
+    if (consent && consent.checked) {
+      var fields = {};
+      ['phone', 'name', 'email'].forEach(function (n) {
+        var i = f.querySelector('[name="' + n + '"]');
+        if (i && i.value) fields[n] = i.value;
+      });
+      d.fields = fields;
+    }
+    send(d);
+  }, true);
+  document.addEventListener('ismart:send-result', function (e) {
+    var f = e.target;
+    var det = e.detail || {};
+    if (!f || !f.dataset || !f.dataset.ismartSession) return;
+    send({ kind: 'result', session_id: f.dataset.ismartSession, outcome: det.outcome || '', error: det.error || '' });
+    if (det.outcome === 'sent') { delete f.dataset.ismartSession; delete f.dataset.ismartStarted; }
+  }, true);
+})();
+</script>
