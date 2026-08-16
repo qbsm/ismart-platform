@@ -30,7 +30,7 @@ final class ApiSendAction
         private readonly FormToken $formToken,
         private readonly RescueChannel $rescue,
         private readonly CaptchaVerifier $captcha,
-        /** @var array{enable?: bool, trap_field?: string, min_age_sec?: int} */
+        /** @var array{enable?: bool, trap_field?: string, min_age_sec?: int, required_fields?: string} */
         private readonly array $formGuard = [],
     ) {}
 
