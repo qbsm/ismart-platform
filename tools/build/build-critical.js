@@ -16,6 +16,12 @@ if (!fs.existsSync(outputDir)) {
 }
 
 async function build() {
+  // assets deployment-local (ADR-0009): не у каждой площадки есть критический CSS,
+  // и его отсутствие — не поломка сборки, а просто пропуск шага.
+  if (!fs.existsSync(inputFile)) {
+    console.log('build:critical: assets/css/critical.css нет — пропуск');
+    return;
+  }
   const css = fs.readFileSync(inputFile, 'utf8');
 
   const result = await postcss([
