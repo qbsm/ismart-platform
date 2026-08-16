@@ -224,7 +224,8 @@ final class ApiSendAction
                 $channels,
                 static fn (string $status): bool => $status !== ChannelResult::STATUS_DISABLED,
             );
-            $this->rescue->reportChannels($reported, $requestId);
+            // Тот же ключ, что у заявки в приёмнике: итоги каналов ищут её по нему.
+            $this->rescue->reportChannels($reported, $idempotencyKey !== '' ? $idempotencyKey : $requestId);
         }
 
         // Посетителю ошибка нужна, только если заявка не ушла НИ В ОДИН канал: отказ
