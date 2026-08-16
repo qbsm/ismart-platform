@@ -56,6 +56,7 @@ final class ApiSendAction
             'ip' => $this->clientIp($request),
             'user_agent' => $request->getHeaderLine('User-Agent'),
         ]);
+        $this->reportRejected($data, 'token:' . $verdict['reason'], $requestId);
 
         return [
             'status' => 419,
@@ -121,6 +122,7 @@ final class ApiSendAction
                 'guard_enabled' => $guardEnabled,
             ]);
             if ($guardEnabled) {
+                $this->reportRejected($data, 'trap:' . $trapped, $requestId);
                 return $this->json($response, 200, [
                     'success' => true,
                     'message' => 'Заявка успешно отправлена',
@@ -128,6 +130,9 @@ final class ApiSendAction
                     'request_id' => $requestId,
                 ]);
             }
+            // Отсев выключен — заявка едет дальше, но пометка о сработавшей ловушке
+            // остаётся: без неё включать отсев обратно пришлось бы вслепую.
+            $data['guard_observed'] = 'trap:' . $trapped;
         }
 
         // Подтверждение источника.
@@ -145,6 +150,7 @@ final class ApiSendAction
                 $requestId,
             );
             if (!$verdict['passed']) {
+                $this->reportRejected($data, 'captcha', $requestId);
                 return $this->json($response, 422, [
                     'success' => false,
                     'code' => 'CAPTCHA_INVALID',
@@ -270,6 +276,27 @@ final class ApiSendAction
         }
         $this->cacheResponse($idempotencyKey, 200, $payload);
         return $this->json($response, 200, $payload);
+    }
+
+    /**
+     * Отсев уходит в приёмник с причиной: жалоба «я отправлял, а вы не позвонили»
+     * разбирается поиском по номеру на служебном листе, а не по логам площадки.
+     * Неудача отправки сам отсев не меняет — решение уже принято.
+     */
+    private function reportRejected(array $data, string $reason, string $requestId): void
+    {
+        if (!$this->rescue->isEnabled()) {
+            return;
+        }
+        $data['rejected'] = $reason;
+        try {
+            $this->rescue->send($data, [], $requestId);
+        } catch (Throwable $e) {
+            $this->logger->warning('Отсев не доехал до приёмника', [
+                'request_id' => $requestId,
+                'error' => $e->getMessage(),
+            ]);
+        }
     }
 
     /**
