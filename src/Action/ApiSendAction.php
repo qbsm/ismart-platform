@@ -350,10 +350,14 @@ final class ApiSendAction
     private function validate(array $data): array
     {
         $errors = [];
+        $required = $this->requiredFields();
 
-        $phoneRaw = Arr::str($data, 'phone');
-        $phone = preg_replace('/\D+/', '', $phoneRaw) ?? '';
-        if ($phone === '' || strlen($phone) < 7 || strlen($phone) > 15) {
+        // Набор обязательных полей — свойство площадки, а не ядра: форма подписки живёт
+        // без телефона, форма звонка — без почты. Незаполненное необязательное не ошибка,
+        // но заполненное проверяется всегда.
+        $phone = preg_replace('/\D+/', '', Arr::str($data, 'phone')) ?? '';
+        $phoneBad = $phone === '' || strlen($phone) < 7 || strlen($phone) > 15;
+        if ($phoneBad && (in_array('phone', $required, true) || $phone !== '')) {
             $errors['phone'] = 'Неверный телефон';
         }
 
@@ -363,11 +367,25 @@ final class ApiSendAction
         }
 
         $email = Arr::str($data, 'email');
-        if ($email !== '' && filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        $emailBad = $email === '' || filter_var($email, FILTER_VALIDATE_EMAIL) === false;
+        if ($emailBad && (in_array('email', $required, true) || $email !== '')) {
             $errors['email'] = 'Неверный E-mail';
         }
 
+        if (in_array('name', $required, true) && mb_strlen(trim(Arr::str($data, 'name'))) < 2) {
+            $errors['name'] = 'Укажите имя';
+        }
+
         return $errors;
+    }
+
+    /** @return list<string> */
+    private function requiredFields(): array
+    {
+        $raw = (string) ($this->formGuard['required_fields'] ?? 'phone');
+        $fields = array_values(array_filter(array_map('trim', explode(',', $raw))));
+
+        return $fields !== [] ? $fields : ['phone'];
     }
 
     /**

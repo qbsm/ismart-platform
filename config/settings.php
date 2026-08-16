@@ -97,6 +97,8 @@ return [
         'enable' => Env::bool('FORM_GUARD_ENABLE', true),
         'trap_field' => Env::get('FORM_GUARD_TRAP_FIELD') ?: 'company_site, website',
         'min_age_sec' => Env::int('FORM_GUARD_MIN_AGE_SEC', 3),
+        // Обязательные поля формы — свойство площадки: форма подписки живёт без телефона.
+        'required_fields' => Env::get('FORM_REQUIRED_FIELDS') ?: 'phone',
     ],
     // Токен формы выдаётся браузеру по запросу, а не вместе с HTML: страница, скачанная
     // роботом, не даёт возможности отправить заявку.
