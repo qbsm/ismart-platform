@@ -14,6 +14,7 @@ use App\Support\FormToken;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
+use Throwable;
 
 final class ApiSendAction
 {
@@ -88,6 +89,14 @@ final class ApiSendAction
         $data = is_array($parsed) ? $parsed : [];
         $idempotencyKey = Arr::str($data, 'idempotency_key');
 
+        // Служебный прогон (канарейка, сквозной мониторинг): токен и капча обходятся — их
+        // у робота нет по построению, а проверяет он остальной путь. Заявка помечается
+        // тестовой и едет только в приёмник: каналы заказчика не должны видеть прогоны.
+        $isTest = $this->formToken->serviceKeyMatches(
+            $request->getHeaderLine('X-Ismart-Key'),
+            $request->getUri()->getHost(),
+        );
+
         // Ловушка: поле спрятано от человека, робот заполняет всё подряд. Отвечаем как при
         // успехе — иначе робот подберёт набор полей и вернётся.
         //
@@ -122,25 +131,27 @@ final class ApiSendAction
         }
 
         // Подтверждение источника.
-        $tokenError = $this->checkToken($data, $requestId, $request);
-        if ($tokenError !== null) {
-            return $this->json($response, $tokenError['status'], $tokenError['payload']);
-        }
+        if (!$isTest) {
+            $tokenError = $this->checkToken($data, $requestId, $request);
+            if ($tokenError !== null) {
+                return $this->json($response, $tokenError['status'], $tokenError['payload']);
+            }
 
-        // Капча, если включена на этом сайте. Отказ выносится только по явному вердикту
-        // сервиса; его недоступность заявку не отменяет — см. CaptchaVerifier.
-        $verdict = $this->captcha->verify(
-            Arr::str($data, self::CAPTCHA_FIELD),
-            $this->clientIp($request),
-            $requestId,
-        );
-        if (!$verdict['passed']) {
-            return $this->json($response, 422, [
-                'success' => false,
-                'code' => 'CAPTCHA_INVALID',
-                'message' => 'Не удалось подтвердить, что вы человек. Обновите страницу и попробуйте снова.',
-                'request_id' => $requestId,
-            ]);
+            // Капча, если включена на этом сайте. Отказ выносится только по явному вердикту
+            // сервиса; его недоступность заявку не отменяет — см. CaptchaVerifier.
+            $verdict = $this->captcha->verify(
+                Arr::str($data, self::CAPTCHA_FIELD),
+                $this->clientIp($request),
+                $requestId,
+            );
+            if (!$verdict['passed']) {
+                return $this->json($response, 422, [
+                    'success' => false,
+                    'code' => 'CAPTCHA_INVALID',
+                    'message' => 'Не удалось подтвердить, что вы человек. Обновите страницу и попробуйте снова.',
+                    'request_id' => $requestId,
+                ]);
+            }
         }
 
         // Идемпотентность
@@ -178,7 +189,12 @@ final class ApiSendAction
             $data['session_id'] = $ctSession;
         }
 
-        $results = $this->dispatcher->dispatch($data, $uploadedFiles, $requestId);
+        if ($isTest) {
+            $data['is_test'] = '1';
+            $results = [$this->sendTestToRescue($data, $uploadedFiles, $requestId)];
+        } else {
+            $results = $this->dispatcher->dispatch($data, $uploadedFiles, $requestId);
+        }
         $channels = [];
         foreach ($results as $result) {
             $channels[$result->channel] = $result->status;
@@ -196,11 +212,13 @@ final class ApiSendAction
         //
         // Выключенные каналы не отправляем: их не звали, и в статусах они только шум —
         // строка «calltouch: успешно» читается, а та же строка среди четырёх «выключен» нет.
-        $reported = array_filter(
-            $channels,
-            static fn (string $status): bool => $status !== ChannelResult::STATUS_DISABLED,
-        );
-        $this->rescue->reportChannels($reported, $requestId);
+        if (!$isTest) {
+            $reported = array_filter(
+                $channels,
+                static fn (string $status): bool => $status !== ChannelResult::STATUS_DISABLED,
+            );
+            $this->rescue->reportChannels($reported, $requestId);
+        }
 
         // Посетителю ошибка нужна, только если заявка не ушла НИ В ОДИН канал: отказ
         // отдельного канала он всё равно не исправит, а лид уже сохранён и его наберут.
@@ -234,6 +252,9 @@ final class ApiSendAction
                 'channels' => $channels,
                 'request_id' => $requestId,
             ];
+            if ($isTest) {
+                $payload['test'] = true;
+            }
             // Неуспех не кэшируем: повтор должен пойти в каналы заново.
             return $this->json($response, 502, $payload);
         }
@@ -244,8 +265,32 @@ final class ApiSendAction
             'channels' => $channels,
             'request_id' => $requestId,
         ];
+        if ($isTest) {
+            $payload['test'] = true;
+        }
         $this->cacheResponse($idempotencyKey, 200, $payload);
         return $this->json($response, 200, $payload);
+    }
+
+    /**
+     * Тестовая заявка едет только в приёмник: канал зовётся напрямую, минуя диспетчер,
+     * чтобы почта/CallTouch/телеграм заказчика даже не перебирались.
+     */
+    private function sendTestToRescue(array $data, array $uploadedFiles, string $requestId): ChannelResult
+    {
+        if (!$this->rescue->isEnabled()) {
+            return ChannelResult::disabled($this->rescue->name());
+        }
+
+        try {
+            return $this->rescue->send($data, $uploadedFiles, $requestId);
+        } catch (Throwable $e) {
+            $this->logger->error('Rescue не принял тестовую заявку', [
+                'request_id' => $requestId,
+                'error' => $e->getMessage(),
+            ]);
+            return ChannelResult::failed($this->rescue->name(), $e->getMessage());
+        }
     }
 
     /** @return list<string> */

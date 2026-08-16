@@ -79,4 +79,30 @@ final class FormTokenTest extends TestCase
         self::assertFalse($verdict['valid']);
         self::assertSame('expired', $verdict['reason']);
     }
+
+    public function testServiceKeyMatchesForOwnHost(): void
+    {
+        $token = new FormToken(self::SECRET, 3);
+
+        self::assertTrue($token->serviceKeyMatches($token->serviceKey('example.com'), 'example.com'));
+    }
+
+    /** Ключ привязан к домену: с чужой площадки он не проходит, порт и регистр не мешают. */
+    public function testServiceKeyBoundToHost(): void
+    {
+        $token = new FormToken(self::SECRET, 3);
+        $key = $token->serviceKey('example.com');
+
+        self::assertFalse($token->serviceKeyMatches($key, 'other.com'));
+        self::assertTrue($token->serviceKeyMatches($key, 'EXAMPLE.com:8080'));
+    }
+
+    public function testServiceKeyRejectedWithoutSecretOrKey(): void
+    {
+        $token = new FormToken(self::SECRET, 3);
+        $empty = new FormToken('', 3);
+
+        self::assertFalse($token->serviceKeyMatches('', 'example.com'));
+        self::assertFalse($empty->serviceKeyMatches($empty->serviceKey('example.com'), 'example.com'));
+    }
 }

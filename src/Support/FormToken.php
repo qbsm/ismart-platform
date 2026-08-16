@@ -66,6 +66,28 @@ final class FormToken
         return $this->minAge;
     }
 
+    /**
+     * Служебный ключ iSmart: канарейка и сквозные прогоны ходят мимо фронта, токена и капчи
+     * у них нет. Ключ выводится из того же секрета площадки и домена, поэтому не хранится
+     * и не раскатывается: hmac(host, secret). Заявка с верным ключом помечается тестовой —
+     * приёмник такие заказчику не показывает. Механизм общий с парком БорисХоф.
+     */
+    public function serviceKey(string $host): string
+    {
+        $site = strtolower(explode(':', $host)[0]);
+        return $this->sign($site);
+    }
+
+    public function serviceKeyMatches(string $given, string $host): bool
+    {
+        $given = trim($given);
+        if ($this->secret === '' || $given === '' || $host === '') {
+            return false;
+        }
+
+        return hash_equals($this->serviceKey($host), $given);
+    }
+
     private function sign(string $payload): string
     {
         return substr(hash_hmac('sha256', $payload, $this->secret), 0, self::SIGNATURE_LENGTH);
