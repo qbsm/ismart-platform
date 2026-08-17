@@ -8,6 +8,22 @@
 {% if _ym_ids is not empty %}
 <!-- Yandex.Metrika counter -->
 <script>
+  window.dataLayer = window.dataLayer || [];
+  window.ymIds = {{ _ym_ids|json_encode|raw }};
+  // Цель должна доехать до всех счётчиков площадки, а не только до первого.
+  window.ymGoal = function(name, params) {
+    if (typeof window.ym !== 'function' || !name) { return; }
+    window.ymIds.forEach(function(id) { window.ym(id, 'reachGoal', name, params); });
+  };
+  window.ymEcommerce = function(payload) {
+    if (payload) { window.dataLayer.push(payload); }
+  };
+  // Разметка целей атрибутом: <a data-ym-goal="menu_click"> — без правки бандлов.
+  document.addEventListener('click', function(event) {
+    var el = event.target.closest && event.target.closest('[data-ym-goal]');
+    if (el) { window.ymGoal(el.getAttribute('data-ym-goal')); }
+  });
+
   (function() {
     function initMetrika() {
       var m = window, e = document, t = 'script',
@@ -34,6 +50,24 @@
       {% for _id in _ym_ids %}
       m[i]({{ _id }}, 'init', opts);
       {% endfor %}
+
+      // Готовый код площадки зовёт ym(<первый счётчик>, 'reachGoal', ...) — разводим такие
+      // вызовы по всем счётчикам, чтобы цели не терялись на втором.
+      if (window.ymIds.length > 1 && !m[i].__goalFanout) {
+        var original = m[i];
+        var fanout = function(id, action) {
+          var rest = Array.prototype.slice.call(arguments, 1);
+          if (action === 'reachGoal') {
+            window.ymIds.forEach(function(cid) { original.apply(null, [cid].concat(rest)); });
+            return;
+          }
+          return original.apply(null, arguments);
+        };
+        fanout.a = original.a;
+        fanout.l = original.l;
+        fanout.__goalFanout = true;
+        m[i] = fanout;
+      }
     }
 
     function deferInit() {
