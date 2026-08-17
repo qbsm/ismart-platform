@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Action;
 
+use App\Service\DataLoaderService;
 use App\Support\CitySlugger;
 use App\Support\Json;
 use App\Support\PlatformSettings;
@@ -12,17 +13,22 @@ use Psr\Http\Message\ServerRequestInterface;
 
 /**
  * Генерация sitemap.xml с учётом мультиязычности и hreflang.
- * Список страниц берётся из config: settings['sitemap_pages'] (массив page_id).
+ * Статические страницы — settings['sitemap_pages'] (массив page_id),
+ * сущности коллекций — settings['collections'] (те же slug'и, что раздаёт PageAction),
+ * динамические подпути вроде /buy/<city> — settings['sitemap_dynamic_pages'].
  */
 final class SitemapAction
 {
     /** @var array<string, mixed> */
     private array $settings;
 
+    private DataLoaderService $dataLoader;
+
     /** @param array<string, mixed> $settings */
-    public function __construct(array $settings)
+    public function __construct(array $settings, DataLoaderService $dataLoader)
     {
         $this->settings = $settings;
+        $this->dataLoader = $dataLoader;
     }
 
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response): ResponseInterface
@@ -42,8 +48,17 @@ final class SitemapAction
         $sitemapPages = (array) ($this->settings['sitemap_pages'] ?? []);
         $urls = $this->buildUrls($base, $langs, $defaultLang, $routeMap, $sitemapPages);
 
-        $dynamicPages = (array) ($this->settings['sitemap_dynamic_pages'] ?? []);
         $jsonBaseDir = (string) ($this->settings['paths']['json_base'] ?? '');
+
+        $collections = PlatformSettings::collections($this->settings);
+        if ($collections !== [] && $jsonBaseDir !== '') {
+            $urls = array_merge(
+                $urls,
+                $this->buildCollectionUrls($base, $langs, $defaultLang, $collections, $jsonBaseDir)
+            );
+        }
+
+        $dynamicPages = (array) ($this->settings['sitemap_dynamic_pages'] ?? []);
         if ($dynamicPages !== [] && $jsonBaseDir !== '') {
             $urls = array_merge(
                 $urls,
@@ -51,7 +66,7 @@ final class SitemapAction
             );
         }
 
-        $xml = $this->renderSitemap($base, $urls);
+        $xml = $this->renderSitemap($base, $this->dedupeByLoc($urls));
 
         $response->getBody()->write($xml);
 
@@ -93,6 +108,75 @@ final class SitemapAction
             return '';
         }
         return (string) ($reverseMap[$pageId] ?? $pageId);
+    }
+
+    /**
+     * Раскрывает сущности коллекций (например, /restaurants/<slug>) для каждого языка.
+     * Slug'и берутся тем же загрузчиком, что раздаёт страницы сущностей, — sitemap и роутинг
+     * не могут разойтись. Набор одинаков для всех языков: имя файла сущности не переводится.
+     *
+     * @param array<int, string> $langs
+     * @param array<string, array<string, mixed>> $collections
+     * @return array<int, array{loc: string, alternates: array<string, string>}>
+     */
+    private function buildCollectionUrls(
+        string $base,
+        array $langs,
+        string $defaultLang,
+        array $collections,
+        string $jsonBaseDir
+    ): array {
+        $urls = [];
+
+        foreach ($collections as $config) {
+            $navSlug = trim((string) ($config['nav_slug'] ?? ''), '/');
+            if ($navSlug === '') {
+                continue;
+            }
+
+            $slugs = $this->dataLoader->loadEntitySlugs($jsonBaseDir, $defaultLang, $config);
+            if ($slugs === null || $slugs === []) {
+                continue;
+            }
+
+            foreach ($slugs as $slug) {
+                $slug = trim((string) $slug, '/');
+                if ($slug === '') {
+                    continue;
+                }
+                $pathSegment = $navSlug . '/' . $slug;
+                foreach ($langs as $lang) {
+                    $alternates = [];
+                    foreach ($langs as $altLang) {
+                        $alternates[$altLang] = $this->buildLangPath($base, $altLang, $defaultLang, $pathSegment);
+                    }
+                    $urls[] = [
+                        'loc' => $this->buildLangPath($base, $lang, $defaultLang, $pathSegment),
+                        'alternates' => $alternates,
+                    ];
+                }
+            }
+        }
+
+        return $urls;
+    }
+
+    /**
+     * @param array<int, array{loc: string, alternates: array<string, string>}> $urls
+     * @return array<int, array{loc: string, alternates: array<string, string>}>
+     */
+    private function dedupeByLoc(array $urls): array
+    {
+        $seen = [];
+        $out = [];
+        foreach ($urls as $u) {
+            if (isset($seen[$u['loc']])) {
+                continue;
+            }
+            $seen[$u['loc']] = true;
+            $out[] = $u;
+        }
+        return $out;
     }
 
     /**
@@ -212,7 +296,9 @@ final class SitemapAction
         foreach ($urls as $u) {
             $out .= '  <url>' . "\n";
             $out .= '    <loc>' . htmlspecialchars($u['loc'], ENT_XML1, 'UTF-8') . '</loc>' . "\n";
-            foreach ($u['alternates'] as $hreflang => $href) {
+            // Одноязычному сайту alternate не нужен: ссылка сама на себя только путает валидаторы
+            $alternates = count($u['alternates']) > 1 ? $u['alternates'] : [];
+            foreach ($alternates as $hreflang => $href) {
                 $out .= '    <xhtml:link rel="alternate" hreflang="' . htmlspecialchars($hreflang, ENT_XML1, 'UTF-8') . '" href="' . htmlspecialchars($href, ENT_XML1, 'UTF-8') . '"/>' . "\n";
             }
             $out .= '  </url>' . "\n";
