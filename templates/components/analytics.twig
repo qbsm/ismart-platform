@@ -1,7 +1,11 @@
 {# Yandex.Metrika — отложенная загрузка после load + requestIdleCallback.
-   Не блокирует FCP/LCP/TBT. ID из YANDEX_METRIC_ID; без него счётчик не выводится. #}
-{% set _ym_id = config.settings.yandex_metric_id|default(0) %}
-{% if _ym_id %}
+   Не блокирует FCP/LCP/TBT. ID из YANDEX_METRIC_ID (можно несколько через запятую);
+   без него счётчик не выводится. tag.js грузится один раз, init — на каждый счётчик. #}
+{% set _ym_ids = config.settings.yandex_metric_ids|default([]) %}
+{% if _ym_ids is empty and config.settings.yandex_metric_id|default(0) %}
+  {% set _ym_ids = [config.settings.yandex_metric_id] %}
+{% endif %}
+{% if _ym_ids is not empty %}
 <!-- Yandex.Metrika counter -->
 <script>
   (function() {
@@ -11,11 +15,14 @@
           i = 'ym';
       m[i] = m[i] || function() { (m[i].a = m[i].a || []).push(arguments); };
       m[i].l = 1 * new Date();
-      for (var j = 0; j < e.scripts.length; j++) { if (e.scripts[j].src === r) return; }
-      var k = e.createElement(t); k.async = 1; k.src = r;
-      var a = e.getElementsByTagName(t)[0]; a.parentNode.insertBefore(k, a);
+      var loaded = false;
+      for (var j = 0; j < e.scripts.length; j++) { if (e.scripts[j].src === r) { loaded = true; break; } }
+      if (!loaded) {
+        var k = e.createElement(t); k.async = 1; k.src = r;
+        var a = e.getElementsByTagName(t)[0]; a.parentNode.insertBefore(k, a);
+      }
 
-      m[i]({{ _ym_id }}, 'init', {
+      var opts = {
         webvisor: true,
         clickmap: true,
         ecommerce: "dataLayer",
@@ -23,7 +30,10 @@
         url: location.href,
         accurateTrackBounce: true,
         trackLinks: true
-      });
+      };
+      {% for _id in _ym_ids %}
+      m[i]({{ _id }}, 'init', opts);
+      {% endfor %}
     }
 
     function deferInit() {

@@ -39,6 +39,11 @@ if ($envDefaultLang !== false && $envDefaultLang !== '') {
     $default_lang = (string) $envDefaultLang;
 }
 
+$yandex_metric_ids = array_values(array_filter(array_map(
+    static fn(string $id): int => (int) trim($id),
+    explode(',', (string) (getenv('YANDEX_METRIC_ID') ?: ''))
+)));
+
 // Ключи и ширины для адаптивных изображений (picture.twig, tools/build) — единый источник
 // Проектная конфигурация (route_map, collections, sitemap_pages, integrations)
 $projectConfigPath = __DIR__ . '/project.php';
@@ -75,7 +80,11 @@ return $projectExtraSettings + [
     'debug' => $isDebug,
     'default_lang' => $default_lang,
     'available_langs' => $available_langs,
-    'yandex_metric_id' => (int) (getenv('YANDEX_METRIC_ID') ?: 0),
+    // YANDEX_METRIC_ID принимает один счётчик или несколько через запятую: у площадки
+    // может быть свой счётчик и общий счётчик сети. Первый остаётся основным — он уходит
+    // в appConfig, по нему JS шлёт цели.
+    'yandex_metric_id' => $yandex_metric_ids[0] ?? 0,
+    'yandex_metric_ids' => $yandex_metric_ids,
     // slug в URL => page_id (из project.php)
     'route_map' => (array) ($projectConfig['route_map'] ?? []),
     // Конфигурация коллекций (из project.php)
