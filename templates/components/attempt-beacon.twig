@@ -50,14 +50,19 @@
     state.last = { id: id, form: f };
     var d = { kind: 'attempt', session_id: id, page_url: location.href };
     var consent = f.querySelector('input[name="policy"]');
-    if (!consent || consent.checked) {
-      var fields = {};
-      ['phone', 'name', 'email'].forEach(function (n) {
-        var i = f.querySelector('[name="' + n + '"]');
-        if (i && i.value) fields[n] = i.value;
-      });
-      if (fields.phone || fields.name || fields.email) d.fields = fields;
-    }
+    // Поля снимаем независимо от галки согласия: согласие на обработку человек уже дал
+    // баннером на входе, а забытая галка — не отказ, а причина, по которой заявка не ушла.
+    // Раньше номер тут не собирался, попытка выглядела пустой формой и до вкладки
+    // «Не смог отправить» не доходила — человек уходил, а звонить было некому.
+    var fields = {};
+    ['phone', 'name', 'email'].forEach(function (n) {
+      var i = f.querySelector('[name="' + n + '"]');
+      if (i && i.value) fields[n] = i.value;
+    });
+    if (fields.phone || fields.name || fields.email) d.fields = fields;
+
+    // Состояние галки едет рядом: менеджеру видно, почему заявка осталась попыткой.
+    if (consent && !consent.checked) d.fields = Object.assign(d.fields || {}, { policy: 'не отмечено' });
     send(d);
   }, true);
   function report(outcome, error) {
