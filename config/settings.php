@@ -44,6 +44,14 @@ if ($envDefaultLang !== false && $envDefaultLang !== '') {
 $projectConfigPath = __DIR__ . '/project.php';
 $projectConfig = is_file($projectConfigPath) ? (array) require $projectConfigPath : [];
 
+// Ключи проекта, которых ядро не знает (эквайринг, свои интеграции), доезжают в настройки
+// как есть: иначе deployment'у приходится править синкаемый settings.php руками, а следующий
+// distill затирает эту правку — так у italycommunity пропала конфигурация коллекций.
+$projectExtraSettings = array_diff_key(
+    $projectConfig,
+    array_flip(['route_map', 'collections', 'sitemap_pages', 'sitemap_dynamic', 'integrations']),
+);
+
 $imageSizesPath = __DIR__ . '/image-sizes.json';
 $image_sizes = [
     'keys' => ['800', '1600', 'raw'],
@@ -61,7 +69,7 @@ if (is_readable($imageSizesPath)) {
     }
 }
 
-return [
+return $projectExtraSettings + [
     'project_root' => $projectRoot,
     'env' => $appEnv,
     'debug' => $isDebug,

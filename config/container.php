@@ -260,5 +260,17 @@ return static function (): ContainerInterface {
         ApiWidgetRescueAction::class => \DI\autowire(),
     ]);
 
+    // Свои сервисы деплоймента (эквайринг, отдельные SEO-строители, интеграции) описываются
+    // в config/project-di.php и подмешиваются здесь. Без этой точки расширения такие
+    // определения приходилось вписывать в синкаемый container.php, и следующий distill их
+    // затирал — именно так у italycommunity пропал реестр SEO ресторанов.
+    $projectDiPath = __DIR__ . '/project-di.php';
+    if (is_file($projectDiPath)) {
+        $projectDefinitions = require $projectDiPath;
+        if (is_array($projectDefinitions) && $projectDefinitions !== []) {
+            $builder->addDefinitions($projectDefinitions);
+        }
+    }
+
     return $builder->build();
 };

@@ -326,7 +326,10 @@ async function cmdSync(deploymentPath, opts) {
   // docs/, tests/, README, кэши — НЕ синкаем (deployment может вести свою историю).
   const SKIP_PREFIXES = [
     // Brand-specific (deployment-only)
-    'config/project.php', 'config/llms-full.php', 'config/llms-full.php.dist',
+    'config/project.php',
+    // Свои сервисы и маршруты деплоймента: точки расширения ядра (см. container.php/routes.php).
+    'config/project-di.php',
+    'config/project-routes.php', 'config/llms-full.php', 'config/llms-full.php.dist',
     'config/project.php.dist',
     'data/',
     // ADR-0009: вёрсточные ассеты целиком deployment-local. Точечный sync
