@@ -63,6 +63,26 @@ final class RedirectMiddlewareTest extends TestCase
         self::assertStringEndsWith('/buy/saint-petersburg', $response->getHeaderLine('Location'));
     }
 
+    public function testПравилоСрабатываетНезависимоОтРегистра(): void
+    {
+        $response = $this->handle('/JOLI', [
+            ['from' => '/joli', 'to' => '/restaurants/joli-grand-bistrot'],
+        ]);
+
+        self::assertSame(301, $response->getStatusCode());
+        self::assertStringEndsWith('/restaurants/joli-grand-bistrot', $response->getHeaderLine('Location'));
+    }
+
+    public function testПрефиксТожеБезРегистра(): void
+    {
+        $response = $this->handle('/Tires-List/WP52', [
+            ['from_prefix' => '/tires-list/', 'to_prefix' => '/tires'],
+        ]);
+
+        self::assertSame(301, $response->getStatusCode());
+        self::assertStringEndsWith('/tires/WP52', $response->getHeaderLine('Location'));
+    }
+
     public function testIncompleteRuleIsIgnored(): void
     {
         $response = $this->handle('/tires-list/at52', [

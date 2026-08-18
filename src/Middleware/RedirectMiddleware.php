@@ -52,16 +52,20 @@ final class RedirectMiddleware implements MiddlewareInterface
 
             // Префиксное правило переносит на новый раздел весь хвост пути: устаревшую
             // структуру адресов не приходится перечислять по одному URL.
+            // Регистр в правилах не учитываем: старые ссылки и набранные руками адреса
+            // часто приходят как /JOLI или /Bist, а отдавать по ним 404 незачем.
+            $requestLower = mb_strtolower($requestPath);
+
             if (isset($rule['from_prefix'], $rule['to_prefix'])) {
-                $prefix = rtrim((string) $rule['from_prefix'], '/');
-                if ($prefix === '' || ($requestPath !== $prefix && !str_starts_with($requestPath, $prefix . '/'))) {
+                $prefix = mb_strtolower(rtrim((string) $rule['from_prefix'], '/'));
+                if ($prefix === '' || ($requestLower !== $prefix && !str_starts_with($requestLower, $prefix . '/'))) {
                     continue;
                 }
                 $to = rtrim((string) $rule['to_prefix'], '/') . substr($requestPath, strlen($prefix));
             } elseif (isset($rule['from'], $rule['to'])) {
-                $from = rtrim((string) $rule['from'], '/');
+                $from = mb_strtolower(rtrim((string) $rule['from'], '/'));
                 $from = $from === '' ? '/' : $from;
-                if ($from !== $requestPath) {
+                if ($from !== $requestLower) {
                     continue;
                 }
                 $to = (string) $rule['to'];
