@@ -37,6 +37,7 @@ class DataExtension extends AbstractExtension
             new TwigFunction('city_to_slug', [CitySlugger::class, 'slug']),
             new TwigFunction('resolve_city_by_slug', [$this, 'resolveCityBySlug']),
             new TwigFunction('resolve_section_meta', [$this, 'resolveSectionMeta']),
+            new TwigFunction('inline_svg', [$this, 'inlineSvg'], ['is_safe' => ['html']]),
         ];
     }
 
@@ -198,6 +199,44 @@ class DataExtension extends AbstractExtension
      *
      * @return array<string, array{webp: ?string, avif: ?string}|null>
      */
+    /**
+     * Вставляет SVG в разметку как есть — чтобы его внутренности были доступны CSS.
+     * Через <img> покрасить отдельный элемент логотипа нельзя.
+     *
+     * Читает только .svg из data/img: подставлять сюда произвольные пути незачем.
+     */
+    public function inlineSvg(string $path, string $class = ''): string
+    {
+        $relative = ltrim(str_replace('\\', '/', $path), '/');
+        if (!str_starts_with($relative, 'data/img/') || !str_ends_with($relative, '.svg')) {
+            return '';
+        }
+        if (str_contains($relative, '..')) {
+            return '';
+        }
+
+        $file = $this->baseDir . '/' . $relative;
+        if (!is_file($file)) {
+            return '';
+        }
+
+        $svg = (string) file_get_contents($file);
+        if ($svg === '') {
+            return '';
+        }
+
+        if ($class !== '') {
+            $svg = preg_replace(
+                '/<svg\b/',
+                '<svg class="' . htmlspecialchars($class, ENT_QUOTES, 'UTF-8') . '"',
+                $svg,
+                1
+            ) ?? $svg;
+        }
+
+        return $svg;
+    }
+
     public function imageVariants(string $rawPath): array
     {
         $pattern = $this->extractPatternFromRawPath($rawPath);
