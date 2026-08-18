@@ -33,10 +33,25 @@ final class RedirectMiddleware implements MiddlewareInterface
         $path = rtrim($request->getUri()->getPath(), '/');
         $path = $path === '' ? '/' : $path;
 
-        $redirect = $this->getRedirectTarget($path, $this->baseUrlResolver->resolve($request));
+        $baseUrl = $this->baseUrlResolver->resolve($request);
+
+        // Карта правил идёт первой: иначе /JOLI сперва уехал бы на /joli и только потом
+        // на карточку — лишний переход в цепочке.
+        $redirect = $this->getRedirectTarget($path, $baseUrl);
         if ($redirect !== null) {
             $response = $this->responseFactory->createResponse($redirect['status']);
             return $response->withHeader('Location', $redirect['to']);
+        }
+
+        // Слаги на сайте всегда в нижнем регистре. Адрес, набранный капсом (/Restaurants/JOLI),
+        // ведёт на ту же страницу — отдаём её каноническим адресом, а не 404.
+        $lower = mb_strtolower($path);
+        if ($lower !== $path) {
+            $response = $this->responseFactory->createResponse(301);
+            $query = $request->getUri()->getQuery();
+            $target = rtrim($baseUrl, '/') . $lower;
+
+            return $response->withHeader('Location', $query === '' ? $target : $target . '?' . $query);
         }
 
         return $handler->handle($request);

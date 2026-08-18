@@ -63,6 +63,14 @@ final class RedirectMiddlewareTest extends TestCase
         self::assertStringEndsWith('/buy/saint-petersburg', $response->getHeaderLine('Location'));
     }
 
+    public function testАдресВВерхнемРегистреВедётНаКанонический(): void
+    {
+        $response = $this->handle('/restaurants/JOLI', []);
+
+        self::assertSame(301, $response->getStatusCode());
+        self::assertStringEndsWith('/restaurants/joli', $response->getHeaderLine('Location'));
+    }
+
     public function testПравилоСрабатываетНезависимоОтРегистра(): void
     {
         $response = $this->handle('/JOLI', [
