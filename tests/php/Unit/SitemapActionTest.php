@@ -131,6 +131,21 @@ final class SitemapActionTest extends TestCase
         self::assertSame(1, substr_count($xml, '<loc>https://example.com/restaurants/hitch</loc>'));
     }
 
+    public function testКоллекциюМожноСкрытьИзSitemap(): void
+    {
+        file_put_contents(
+            $this->jsonBase . '/ru/pages/restaurants.json',
+            json_encode(['items' => ['hitch']])
+        );
+
+        $xml = $this->render($this->settings([
+            'collections' => $this->collection(['sitemap' => false]),
+        ]));
+
+        self::assertStringNotContainsString('/restaurants/hitch', $xml);
+        self::assertStringContainsString('<loc>https://example.com/restaurants</loc>', $xml);
+    }
+
     public function testВторойЯзыкПолучаетСвойПрефиксИAlternate(): void
     {
         file_put_contents(

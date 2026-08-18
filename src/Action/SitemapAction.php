@@ -133,6 +133,10 @@ final class SitemapAction
             if ($navSlug === '') {
                 continue;
             }
+            // Раздел можно временно спрятать из выдачи, не ломая роутинг: 'sitemap' => false
+            if (array_key_exists('sitemap', $config) && !$config['sitemap']) {
+                continue;
+            }
 
             $slugs = $this->dataLoader->loadEntitySlugs($jsonBaseDir, $defaultLang, $config);
             if ($slugs === null || $slugs === []) {
