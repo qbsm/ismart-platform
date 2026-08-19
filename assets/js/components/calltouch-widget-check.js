@@ -19,6 +19,16 @@ const RESCAN_MS = 2000;
 
 const digits = (value) => (value || '').replace(/\D+/g, '');
 
+/**
+ * Номер набран до конца. Порог зависит от того, есть ли код страны: «9851500847» — это уже
+ * готовые десять цифр, а «7985150084» — те же десять, но человек ещё дописывает последнюю.
+ * Без такой проверки ловец снимал номер на середине набора и заявка уходила короче на цифру.
+ */
+const phoneReady = (value) => {
+  const only = digits(value);
+  return only.length >= (/^[78]/.test(only) ? MIN_DIGITS + 1 : MIN_DIGITS);
+};
+
 const phoneField = (doc) => {
   const inputs = [...doc.querySelectorAll('input')];
   return inputs.find((i) => /тел|phone/i.test(`${i.placeholder} ${i.name} ${i.type}`)) || inputs[0] || null;
@@ -95,7 +105,7 @@ function attach(doc) {
 
   const grab = () => {
     const field = phoneField(doc);
-    if (field && digits(field.value).length >= MIN_DIGITS) send(field.value);
+    if (field && phoneReady(field.value)) send(field.value);
   };
 
   doc.addEventListener('click', grab, true);
