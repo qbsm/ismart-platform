@@ -34,6 +34,7 @@ class DataExtension extends AbstractExtension
             new TwigFunction('image_has', [$this, 'imageHas']),
             new TwigFunction('image_variants', [$this, 'imageVariants']),
             new TwigFunction('image_fallback', [$this, 'imageFallback']),
+            new TwigFunction('image_largest', [$this, 'imageLargest']),
             new TwigFunction('city_to_slug', [CitySlugger::class, 'slug']),
             new TwigFunction('resolve_city_by_slug', [$this, 'resolveCityBySlug']),
             new TwigFunction('resolve_section_meta', [$this, 'resolveSectionMeta']),
@@ -284,6 +285,26 @@ class DataExtension extends AbstractExtension
             }
         }
         return '';
+    }
+
+    /**
+     * Возвращает наибольший доступный webp-вариант для raw-path.
+     *
+     * Нужен там, где снимок открывают целиком — лайтбокс галереи, ссылка «во весь
+     * экран». Исходник в `raw/` для этого не годится: он есть не у всех кадров, а
+     * где есть — весит в разы больше собранного webp.
+     *
+     * Если raw не валиден или manifest пуст → ''.
+     */
+    public function imageLargest(string $rawPath): string
+    {
+        $largest = '';
+        foreach ($this->imageVariants($rawPath) as $variant) {
+            if (is_array($variant) && !empty($variant['webp'])) {
+                $largest = $variant['webp'];
+            }
+        }
+        return $largest;
     }
 
     /**

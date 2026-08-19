@@ -64,7 +64,12 @@ function findSourceFiles(keys) {
     return !parts.some((p) => keyDirs.has(p));
   });
 
-  return [...new Set([...webpFiles, ...filtered])];
+  // Картинки для соцсетей (`*-og.jpg`) — уже готовый продукт build-og-images.js:
+  // жёсткие 1200×630 под требования мессенджеров. Гонять их через ресайз незачем —
+  // получим лишние варианты, которые никто не запрашивает.
+  const isSocial = (f) => /-og\.[a-z0-9]+$/i.test(path.basename(f));
+
+  return [...new Set([...webpFiles, ...filtered])].filter((f) => !isSocial(f));
 }
 
 /**
@@ -238,6 +243,37 @@ async function processImage(inputPath, keys, widths, manifest, options, stats) {
   }
 }
 
+/**
+ * Доиндексирует уже собранные варианты, у которых не осталось исходника.
+ *
+ * Съёмку иногда отдают сразу подготовленной, а `raw/` чистят — файлы в 800/, 1600/
+ * лежат, но обходу исходников не видны, и в манифест не попадают. Для шаблонов это
+ * равносильно отсутствию кадра: picture.twig гейтит `<source>` по манифесту.
+ * Манифест обязан описывать то, что есть на диске, поэтому досканируем варианты.
+ */
+async function indexOrphanVariants(keys, manifest) {
+  let added = 0;
+  for (const key of keys) {
+    const pattern = path.join(imgDir, `**/${key}/*.{webp,avif}`).replace(/\\/g, '/');
+    for (const file of glob.sync(pattern, { nodir: true })) {
+      const relKey = path.relative(imgDir, file).replace(/\\/g, '/');
+      if (manifest[relKey]) {
+        continue;
+      }
+      try {
+        const meta = await sharp(file).metadata();
+        if (meta.width && meta.height) {
+          manifest[relKey] = { width: meta.width, height: meta.height };
+          added += 1;
+        }
+      } catch {
+        // битый файл — в манифест не попадает, шаблон его просто не покажет
+      }
+    }
+  }
+  return added;
+}
+
 async function main() {
   if (!fs.existsSync(imgDir)) {
     console.log('data/img не найден, пропуск build:images');
@@ -289,8 +325,13 @@ async function main() {
     }
   }
 
+  const orphans = await indexOrphanVariants(keys, manifest);
+
   fs.mkdirSync(manifestDir, { recursive: true });
   fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2), 'utf8');
+  if (orphans > 0) {
+    console.log('build:images: доиндексировано вариантов без исходника:', orphans);
+  }
   console.log(
     'build:images: исходников:',
     files.length,
