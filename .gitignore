@@ -124,6 +124,14 @@ logs/
 public/assets
 public/data
 public/robots.txt
+public/favicon.ico
+# Остатки прежних сборок: PHP-рантайму докрут не нужен, наружу его отдавать нельзя
+public/src
+public/config
+public/templates
+public/vendor
+public/cache
+public/logs
 
 
 # Контентные медиа-файлы лежат в git (full dataset).
