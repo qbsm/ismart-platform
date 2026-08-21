@@ -57,7 +57,8 @@
               {% endfor %}
             </select>
             <label class="form-callback__label" for="{{ fieldId }}">
-              {{ fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
+              {# Подсказка внутри поля обычно написана примером («ваша@почта.ru»), метка — словом. #}
+              {{ labelStyle == 'hint' ? (fieldPlaceholder | default(fieldLabel)) : fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
             </label>
 
           </div>
@@ -70,7 +71,8 @@
           <div class="form-callback__input-wrap">
             <textarea id="{{ fieldId }}" name="{{ field.name }}" class="form-callback__control control-textarea" placeholder=" "{% if isRequired %} aria-required="true"{% endif %}{% if field.validation.maxLength is defined %} maxlength="{{ field.validation.maxLength }}"{% endif %}></textarea>
             <label class="form-callback__label" for="{{ fieldId }}">
-              {{ fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
+              {# Подсказка внутри поля обычно написана примером («ваша@почта.ru»), метка — словом. #}
+              {{ labelStyle == 'hint' ? (fieldPlaceholder | default(fieldLabel)) : fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
             </label>
 
           </div>
@@ -122,7 +124,8 @@
           <div class="form-callback__input-wrap">
             <input id="{{ fieldId }}" type="{{ field.type | default('text') }}" class="form-callback__control" name="{{ field.name }}" placeholder=" "{% if field.inputmode is defined %} inputmode="{{ field.inputmode }}"{% endif %}{% if field.autocomplete is defined %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if isRequired %} aria-required="true"{% endif %}{% if field.validation.maxLength is defined %} maxlength="{{ field.validation.maxLength }}"{% endif %}>
             <label class="form-callback__label" for="{{ fieldId }}">
-              {{ fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
+              {# Подсказка внутри поля обычно написана примером («ваша@почта.ru»), метка — словом. #}
+              {{ labelStyle == 'hint' ? (fieldPlaceholder | default(fieldLabel)) : fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
             </label>
 
           </div>

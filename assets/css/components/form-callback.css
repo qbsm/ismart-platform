@@ -862,3 +862,19 @@
 .form-callback--hint .form-callback__asterisk {
   display: none;
 }
+
+/* Порядок «кнопка, затем согласие» — так свёрстаны площадки, где подпись стоит подсказкой:
+   действие ближе к полям, юридический текст уходит вниз. */
+.form-callback--hint .form-callback__grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-callback--hint .form-callback__field.field-submit {
+  order: 1;
+}
+
+.form-callback--hint .form-callback__field.field-checkbox,
+.form-callback--hint .form-callback__field.field-rules {
+  order: 2;
+}
