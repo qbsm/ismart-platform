@@ -19,7 +19,7 @@ final class SecurityHeadersMiddleware implements MiddlewareInterface
      * подключаются без правки ядра, см. ADR-0012). object-src и form-action закрыты:
      * плагинов на страницах нет, а action формы приходит из JSON-контента.
      */
-    private const DEFAULT_CSP = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: wss:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'";
+    private const DEFAULT_CSP = "default-src 'self' https:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https: wss:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self' https://metrika.yandex.ru https://metrika.yandex.by https://metrika.yandex.kz https://metrica.yandex.com https://metrica.yandex.com.tr https://*.webvisor.com";
 
     public function __construct(
         private readonly bool $addHsts = true,
