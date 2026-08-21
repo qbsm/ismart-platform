@@ -196,7 +196,7 @@ return $projectExtraSettings + [
         'auto_reload' => !$isProduction,
     ],
     'paths' => [
-        'templates' => $projectRoot . '/templates',
+        'templates' => is_dir($projectRoot . '/.templates') ? $projectRoot . '/.templates' : $projectRoot . '/templates',
         'json_base' => $projectRoot . '/data/json',
         'json_global' => $projectRoot . '/data/json/global.json',
         'json_pages_dir' => $projectRoot . '/data/json/{lang}/pages',

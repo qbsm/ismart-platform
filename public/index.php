@@ -10,7 +10,10 @@ use Dotenv\Dotenv;
 // симлинк на .env, это сходилось; после его удаления из докрута (утечка .env, 09.08.2026)
 // конфиг перестал читаться вовсе. На плоском проде родителя-проекта нет — корнем остаётся docroot.
 $projectRoot = is_file(dirname(__DIR__) . '/composer.json') ? dirname(__DIR__) : __DIR__;
-require $projectRoot . '/vendor/autoload.php';
+// На плоских хостах докрут = корень проекта, и `vendor/` читается из интернета. Там каталог
+// прячут точкой (веб-сервер такие пути не отдаёт) — если он есть, автозагрузка идёт оттуда.
+$vendorDir = is_file($projectRoot . '/.vendor/autoload.php') ? '/.vendor' : '/vendor';
+require $projectRoot . $vendorDir . '/autoload.php';
 
 Dotenv::createUnsafeImmutable($projectRoot)->safeLoad();
 
