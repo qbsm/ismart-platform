@@ -44,6 +44,11 @@
         <div class="form-callback__field">
           <div class="form-callback__input-wrap">
             <select id="{{ fieldId }}" name="{{ field.name }}" class="form-callback__control control-select"{% if isRequired %} aria-required="true"{% endif %}>
+              {# Первой строкой — подсказка: без неё список открывается уже выбранным, и человек
+                 не понимает, что выбор за ним. Значение пустое, отправить её нельзя. #}
+              {% if fieldPlaceholder %}
+                <option value="" disabled selected>{{ fieldPlaceholder }}</option>
+              {% endif %}
               {% for option in field.options | default([]) %}
                 <option value="{{ option.value }}">{{ option.label[lang_code] | default(option.label.ru | default('')) }}</option>
               {% endfor %}
