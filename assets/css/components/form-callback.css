@@ -830,3 +830,35 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ==========================================================================
+   Подсказка вместо плавающей метки
+   Часть площадок так задумана дизайном: подпись стоит внутри поля и исчезает,
+   когда человек начинает писать. Разметка та же, меняется только оформление.
+   ========================================================================== */
+
+.form-callback--hint .form-callback__label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--fc-font-size);
+  color: var(--fc-label);
+}
+
+.form-callback--hint .form-callback__control:focus ~ .form-callback__label,
+.form-callback--hint .form-callback__control:not(:placeholder-shown) ~ .form-callback__label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--fc-font-size);
+  opacity: 0;
+}
+
+/* Поле в этом режиме не оставляет места под поднятую подпись. */
+.form-callback--hint .form-callback__control {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Обязательность в таком оформлении не показывают звёздочкой: подпись исчезает при вводе. */
+.form-callback--hint .form-callback__asterisk {
+  display: none;
+}

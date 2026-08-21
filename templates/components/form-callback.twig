@@ -1,8 +1,11 @@
 {% set formId = 'formCallback' ~ random(1000000) %}
 {% set formConfig = global['form-callback'] %}
 {% set fields = data.fields | default(formConfig.fields | default([])) %}
+{# Оформление подписей: 'label' — плавающая метка (по умолчанию), 'hint' — подсказка внутри
+   поля, как на площадках, где так задуман дизайн. Логика и разметка от этого не меняются. #}
+{% set labelStyle = data.labelStyle | default(formConfig.labelStyle | default('label')) %}
 
-<form class="form-callback js-form-callback" novalidate method="post" action="" id="{{ formId }}">
+<form class="form-callback js-form-callback{% if labelStyle == 'hint' %} form-callback--hint{% endif %}" novalidate method="post" action="" id="{{ formId }}">
   <div class="form-callback__trap" aria-hidden="true">
     <input type="text" name="company_site" tabindex="-1" autocomplete="off">
   </div>
