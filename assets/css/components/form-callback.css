@@ -20,7 +20,17 @@
   --fc-bg-hover: rgb(0 0 0 / 4%);
   --fc-font: var(--font-1);
   --fc-text: var(--color-2);
-  --fc-label: var(--color-5);
+  --fc-label: var(--fc-accent);
+  /* Состояния вынесены в переменные: площадка с тёмной темой не может переопределить
+     жёстко прописанный цвет, и у неё метка светилась жёлтым, а галочка терялась. */
+  --fc-label-active: var(--fc-accent);
+  --fc-border-hover: rgb(0 0 0 / 15%);
+  --fc-checked-bg: var(--fc-muted);
+  --fc-checked-border: var(--fc-muted);
+  --fc-checked-mark: var(--color-1);
+  --fc-accent: var(--fc-accent);
+  --fc-muted: var(--fc-muted);
+  --fc-focus-ring: var(--fc-accent);
   --fc-speed: 0.2s;
   --fc-ease: cubic-bezier(0.4, 0, 0.2, 1);
   --fc-height: 5.6rem;
@@ -244,7 +254,7 @@
   top: 1rem;
   transform: translateY(0);
   font-size: var(--fc-font-size-xs);
-  color: var(--color-5);
+  color: var(--fc-label-active);
 }
 
 /* Label для select — всегда поднят */
@@ -329,7 +339,7 @@
 }
 
 .form-callback__file-zone.dragover {
-  border-color: var(--color-5);
+  border-color: var(--fc-accent);
   background: rgb(0 0 0 / 3%);
 }
 
@@ -349,7 +359,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-5);
+  color: var(--fc-accent);
   background: rgb(0 0 0 / 4%);
   border-radius: 0.8rem;
   transition: color var(--fc-speed) var(--fc-ease), background-color var(--fc-speed) var(--fc-ease);
@@ -361,7 +371,7 @@
 }
 
 .form-callback__file-zone:hover .form-callback__file-icon {
-  color: var(--color-6);
+  color: var(--fc-muted);
   background: rgb(0 0 0 / 8%);
 }
 
@@ -388,7 +398,7 @@
   gap: 0.8rem;
   margin-top: 0.4rem;
   font-size: var(--fc-font-size-sm);
-  color: var(--color-5);
+  color: var(--fc-accent);
 }
 
 .form-callback__file-list:empty {
@@ -451,9 +461,9 @@
 }
 
 .form-callback__checkbox-input:checked + .form-callback__checkbox-box {
-  background: var(--color-6);
-  border-color: var(--color-6);
-  color: var(--color-1);
+  background: var(--fc-checked-bg);
+  border-color: var(--fc-checked-border);
+  color: var(--fc-checked-mark);
   animation: checkPop 0.3s var(--fc-ease);
 }
 
@@ -462,18 +472,18 @@
 }
 
 .form-callback__checkbox-wrap:hover .form-callback__checkbox-box {
-  border-color: rgb(0 0 0 / 15%);
+  border-color: var(--fc-border-hover);
 }
 
 .form-callback__checkbox-text {
   font-size: 1.4rem;
-  color: var(--color-5);
+  color: var(--fc-accent);
   line-height: 1.5;
   padding-top: 0.2rem;
 }
 
 .form-callback__checkbox-text a {
-  color: var(--color-6);
+  color: var(--fc-muted);
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   transition: color var(--fc-speed) var(--fc-ease);
@@ -545,14 +555,14 @@
   left: 50%;
   width: 0;
   height: 0;
-  background: var(--color-6);
+  background: var(--fc-muted);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: width var(--fc-speed) var(--fc-ease), height var(--fc-speed) var(--fc-ease);
 }
 
 .form-callback__radio-input:checked + .form-callback__radio-dot {
-  border-color: var(--color-6);
+  border-color: var(--fc-muted);
 }
 
 .form-callback__radio-input:checked + .form-callback__radio-dot::after {
@@ -665,11 +675,11 @@
   display: block;
   font-size: var(--fc-font-size-sm);
   line-height: 1.5;
-  color: var(--color-5);
+  color: var(--fc-accent);
 }
 
 .form-callback__rules-text a {
-  color: var(--color-6);
+  color: var(--fc-muted);
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   transition: color var(--fc-speed) var(--fc-ease);
@@ -799,11 +809,11 @@
    поверх неё второй рамкой — на мобильных особенно заметно. У кнопки outline остаётся:
    границы у неё нет, и без него фокус с клавиатуры не виден. */
 .form-callback__control:focus-visible {
-  border-color: var(--color-5);
+  border-color: var(--fc-accent);
 }
 
 .form-callback__submit:focus-visible {
-  outline: 1px solid var(--color-5);
+  outline: 1px solid var(--fc-accent);
   outline-offset: 2px;
 }
 
