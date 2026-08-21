@@ -9,6 +9,7 @@
 {% set layout = data.layout | default(formConfig.layout | default('')) %}
 {# Класс кнопки — тоже дело оформления площадки: где-то она скруглённая, где-то нет. #}
 {% set submitClass = data.buttonClass | default(formConfig.buttonClass | default('button-md button-3')) %}
+{% set submitIcon = data.buttonIcon | default(formConfig.buttonIcon ?? true) %}
 
 <form class="form-callback js-form-callback{% if labelStyle == 'hint' %} form-callback--hint{% endif %}{% if layout %} form-callback-{{ layout }}{% endif %}" novalidate method="post" action="" id="{{ formId }}">
   <div class="form-callback__trap" aria-hidden="true">
@@ -150,11 +151,13 @@
             {{ formConfig.button[lang_code].title }}
           {% endif %}
         </span>
-        <span class="form-callback__submit-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
+        {% if submitIcon %}
+          <span class="form-callback__submit-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        {% endif %}
         <span class="form-callback__submit-spinner" aria-hidden="true"></span>
       </button>
     </div>
