@@ -13,6 +13,11 @@ $isDebug = in_array(strtolower($debugValue), ['1', 'true', 'yes', 'on'], true);
 
 $cacheDir = $projectRoot . '/cache';
 
+// На плоских хостах докрут совпадает с корнем проекта, и журнал приложения читается
+// из интернета по /logs/app-<дата>.log. LOG_DIR уводит его туда, куда веб-сервер не пускает.
+$logDir = (string) (getenv('LOG_DIR') ?: '');
+$logDir = $logDir !== '' ? rtrim($logDir, '/') : $projectRoot . '/logs';
+
 // Единый источник языков — data/json/global.json → lang (code, title, direction)
 $jsonGlobalPath = $projectRoot . '/data/json/global.json';
 $available_langs = ['ru', 'en'];
@@ -85,6 +90,8 @@ return $projectExtraSettings + [
     // в appConfig, по нему JS шлёт цели.
     'yandex_metric_id' => $yandex_metric_ids[0] ?? 0,
     'yandex_metric_ids' => $yandex_metric_ids,
+    // Имя сайта: подставляется в <title>, если у страницы нет своего заголовка
+    'site_name' => (string) ($projectConfig['site_name'] ?? ''),
     // slug в URL => page_id (из project.php)
     'route_map' => (array) ($projectConfig['route_map'] ?? []),
     // Конфигурация коллекций (из project.php)
@@ -195,7 +202,7 @@ return $projectExtraSettings + [
         'json_pages_dir' => $projectRoot . '/data/json/{lang}/pages',
         'redirects' => $projectRoot . '/config/redirects.json',
         'cache' => $cacheDir,
-        'logs' => $projectRoot . '/logs',
+        'logs' => $logDir,
     ],
     'image_sizes' => $image_sizes,
     'resource_hints' => [
