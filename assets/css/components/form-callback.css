@@ -477,20 +477,20 @@
 
 .form-callback__checkbox-text {
   font-size: 1.4rem;
-  color: var(--fc-accent);
+  color: var(--fc-muted);
   line-height: 1.5;
   padding-top: 0.2rem;
 }
 
 .form-callback__checkbox-text a {
-  color: var(--fc-muted);
+  color: var(--fc-accent);
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   transition: color var(--fc-speed) var(--fc-ease);
 }
 
 .form-callback__checkbox-text a:hover {
-  color: var(--color-3);
+  color: var(--fc-accent-hover, var(--fc-accent));
 }
 
 @keyframes checkPop {
