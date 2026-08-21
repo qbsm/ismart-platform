@@ -4,8 +4,13 @@
 {# Оформление подписей: 'label' — плавающая метка (по умолчанию), 'hint' — подсказка внутри
    поля, как на площадках, где так задуман дизайн. Логика и разметка от этого не меняются. #}
 {% set labelStyle = data.labelStyle | default(formConfig.labelStyle | default('label')) %}
+{# Раскладка секции: площадка ставит форму то колонкой, то строкой рядом с кнопкой.
+   Имя модификатора приходит данными, чтобы шаблон оставался общим. #}
+{% set layout = data.layout | default(formConfig.layout | default('')) %}
+{# Класс кнопки — тоже дело оформления площадки: где-то она скруглённая, где-то нет. #}
+{% set submitClass = data.buttonClass | default(formConfig.buttonClass | default('button-md button-3')) %}
 
-<form class="form-callback js-form-callback{% if labelStyle == 'hint' %} form-callback--hint{% endif %}" novalidate method="post" action="" id="{{ formId }}">
+<form class="form-callback js-form-callback{% if labelStyle == 'hint' %} form-callback--hint{% endif %}{% if layout %} form-callback-{{ layout }}{% endif %}" novalidate method="post" action="" id="{{ formId }}">
   <div class="form-callback__trap" aria-hidden="true">
     <input type="text" name="company_site" tabindex="-1" autocomplete="off">
   </div>
@@ -137,7 +142,7 @@
 
     {# --- Submit --- #}
     <div class="form-callback__field field-submit">
-      <button class="button button-md button-3 form-callback__submit" type="submit">
+      <button class="button {{ submitClass }} form-callback__submit" type="submit">
         <span class="form-callback__submit-text">
           {% if data.button is defined and data.button.title is defined %}
             {{ data.button.title }}
