@@ -286,17 +286,33 @@
    Select
    ========================================================================== */
 
+/* Стрелка селекта рисуется отдельным элементом поверх поля, а не фоном.
+   Фоном она уже дважды ломалась: любая площадка, переопределившая background
+   сокращённой записью, сбрасывала background-repeat — и стрелка размножалась
+   по всей ширине поля. Здесь её нельзя сбросить случайно. */
 .form-callback__control.control-select {
   cursor: pointer;
   padding-right: 4rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236e6e6e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1.6rem center;
-  background-size: 1.2rem;
 }
 
-.form-callback__control.control-select:focus {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236e6e6e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+.form-callback__input-wrap:has(.control-select)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1.6rem;
+  width: 1.2rem;
+  height: 0.7rem;
+  pointer-events: none;
+  background-color: currentcolor;
+  opacity: 0.55;
+  transform: translateY(-50%);
+  transition: opacity var(--fc-speed) var(--fc-ease);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.form-callback__input-wrap:has(.control-select:hover)::after,
+.form-callback__input-wrap:has(.control-select:focus)::after {
+  opacity: 1;
 }
 
 /* ==========================================================================
