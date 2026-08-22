@@ -8,7 +8,9 @@
   {# iOS сам делает ссылки из длинных числовых последовательностей: ИНН и ОГРН в подвале
      подсвечивались как телефоны. Явные tel:-ссылки продолжают работать. #}
   <meta name="format-detection" content="telephone=no">
-  <title>{{ pageTitle|default('Заголовок страницы по умолчанию')|raw }}</title>
+  {# Заглушка на случай, если у страницы не оказалось своего заголовка: техническая фраза
+     в выдаче выглядит как недосмотр, название сайта — просто скупо. #}
+  <title>{{ pageTitle|default(config.settings.site_name|default(''))|raw }}</title>
   
   {% if pageSeoData and pageSeoData.meta %}
     {% set _og_title = pageTitle|default('') %}
