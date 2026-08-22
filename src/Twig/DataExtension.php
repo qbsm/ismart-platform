@@ -35,6 +35,8 @@ class DataExtension extends AbstractExtension
             new TwigFunction('image_variants', [$this, 'imageVariants']),
             new TwigFunction('image_fallback', [$this, 'imageFallback']),
             new TwigFunction('image_largest', [$this, 'imageLargest']),
+            new TwigFunction('gallery_layout', [$this, 'galleryLayout']),
+            new TwigFunction('gallery_visible_count', [$this, 'galleryVisibleCount']),
             new TwigFunction('city_to_slug', [CitySlugger::class, 'slug']),
             new TwigFunction('resolve_city_by_slug', [$this, 'resolveCityBySlug']),
             new TwigFunction('resolve_section_meta', [$this, 'resolveSectionMeta']),
@@ -305,6 +307,172 @@ class DataExtension extends AbstractExtension
             }
         }
         return $largest;
+    }
+
+    /**
+     * Сколько кадров галереи показать до кнопки «показать ещё».
+     *
+     * Резать по счёту нельзя: если обрыв приходится на середину ряда, последний видимый
+     * кадр повисает один. Отсчитываем целыми рядами — ширины кадров заданы в данных.
+     *
+     * @param array<int, mixed> $items
+     */
+    public function galleryVisibleCount(array $items, int $rows = 3): int
+    {
+        $shown = 0;
+        $filled = 0;
+        $width = 0;
+
+        foreach ($items as $item) {
+            $span = is_array($item) ? (int) ($item['span'] ?? 4) : 4;
+            $shown++;
+            $width += $span;
+
+            if ($width >= 12) {
+                $filled++;
+                $width = 0;
+                if ($filled >= $rows) {
+                    return $shown;
+                }
+            }
+        }
+
+        return $shown;
+    }
+
+    /**
+     * Типичное соотношение сторон съёмки — медиана по кадрам.
+     *
+     * Среднее подводит: один панорамный кадр среди дюжины обычных сдвинул бы всю раскладку.
+     *
+     * @param array<int, mixed> $items
+     */
+    private function typicalRatio(array $items): float
+    {
+        $ratios = [];
+        foreach ($items as $item) {
+            $src = is_array($item) ? (string) ($item['src'] ?? '') : (string) $item;
+            if ($src === '') {
+                continue;
+            }
+            $variant = $this->imageFallback($src);
+            $dims = $variant !== '' ? $this->getImageDimensions($variant) : null;
+            if ($dims !== null && $dims['height'] > 0) {
+                $ratios[] = $dims['width'] / $dims['height'];
+            }
+        }
+
+        if ($ratios === []) {
+            return 1.6;
+        }
+
+        sort($ratios);
+
+        return $ratios[intdiv(count($ratios), 2)];
+    }
+
+    /**
+     * Раскладка галереи: ширины кадров по двенадцатиколоночной сетке.
+     *
+     * Ряды намеренно смешанные — крупный кадр рядом с мелкими, а не «все по трети».
+     * $ratio — типичное соотношение сторон съёмки: под кадры 4:3 берётся набор рядов
+     * с ячейками поспокойнее, иначе широкая ячейка срежет у кадра половину высоты.
+     * Внутри ряда высота одна: соотношение сторон каждого кадра считается как его ширина,
+     * делённая на общий для ряда коэффициент, поэтому ряд читается как одна полоса.
+     * Набор рядов подобран так, что любое количество кадров укладывается без остатка.
+     *
+     * @param array<int, mixed> $items кадры галереи
+     * @return array<int, array{span: int, lead: bool, ratio: string}>
+     */
+    public function galleryLayout(array $items): array
+    {
+        $count = count($items);
+        if ($count < 1) {
+            return [];
+        }
+
+        $ratio = $this->typicalRatio($items);
+
+        // Ряды: [ширины кадров, коэффициент высоты]. Соотношение ячейки — ширина / коэффициент,
+        // поэтому внутри ряда высота одна.
+        //
+        // Наборов два. Широкий — для съёмки в 16:9, там панорама во всю ширину смотрится
+        // как задумано. Спокойный — для кадров 4:3: растянутая на всю ширину ячейка срезала
+        // бы у такого кадра почти половину высоты, поэтому ячейки в нём заметно ближе
+        // к исходной пропорции.
+        // Внутри ряда ячейки одинаковой ширины: в ряду «широкая плюс узкая» при общей высоте
+        // узкая неизбежно становится квадратной, и кадр 4:3 теряет в ней половину высоты.
+        // Разнокалиберность даёт чередование рядов — полоса во всю ширину, пара, тройка,
+        // четвёрка, — а пропорция ячейки подгоняется под саму съёмку.
+        $wide = $ratio >= 1.6;
+
+        $rows = $wide ? [
+            [[12], 5.0],
+            [[6, 6], 3.4],
+            [[4, 4, 4], 2.4],
+            [[3, 3, 3, 3], 1.8],
+        ] : [
+            [[12], 8.0],
+            [[6, 6], 4.0],
+            [[4, 4, 4], 3.0],
+            [[3, 3, 3, 3], 2.25],
+        ];
+
+        $pick = static fn(int $width): array => array_values(array_filter(
+            $rows,
+            static fn(array $row): bool => count($row[0]) === $width
+        ))[0];
+
+        // Хвосты: чем закрыть последние кадры, чтобы ряд не остался неполным
+        $tails = [
+            1 => [$pick(1)],
+            2 => [$pick(2)],
+            3 => [$pick(3)],
+            4 => [$pick(2), $pick(2)],  // не четыре марки в ряд, а две пары крупных
+            5 => [$pick(2), $pick(3)],  // пара и тройка читаются лучше, чем полоса и четыре марки
+            6 => [$pick(3), $pick(3)],
+            7 => [$pick(3), $pick(4)],
+            8 => [$pick(4), $pick(4)],
+            9 => [$pick(2), $pick(3), $pick(4)],
+        ];
+
+        $out = [];
+        $left = $count;
+        $cursor = 0;
+
+        while ($left > 0) {
+            if ($left <= 9) {
+                foreach ($tails[$left] as $row) {
+                    $out[] = $row;
+                }
+                break;
+            }
+
+            // Остаток в девять кадров и меньше закрывает хвост выше, поэтому здесь
+            // любой ряд заведомо помещается.
+            $row = $rows[$cursor % count($rows)];
+            $cursor++;
+            $out[] = $row;
+            $left -= count($row[0]);
+        }
+
+        $items = [];
+        foreach ($out as [$widths, $k]) {
+            foreach ($widths as $i => $span) {
+                // Высоту ряда задаёт первый кадр своим соотношением, остальные тянутся до неё.
+                // Считать соотношение каждому нельзя: ширина ячейки включает зазоры между
+                // колонками, и у кадров разной ширины высота разошлась бы на несколько пикселей.
+                $items[] = [
+                    'span' => $span,
+                    'lead' => $i === 0,
+                    'ratio' => $i === 0
+                        ? $span . ' / ' . rtrim(rtrim(number_format($k, 2, '.', ''), '0'), '.')
+                        : '',
+                ];
+            }
+        }
+
+        return $items;
     }
 
     /**
