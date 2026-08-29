@@ -1,0 +1,11 @@
+- main [ref=e5]:
+  - generic [ref=e6]:
+    - generic [ref=e7]: iSmart ERP
+    - generic [ref=e9]:
+      - generic [ref=e12]:
+        - textbox "Почта" [ref=e14]: llm@ismart.pro
+        - generic: Почта
+      - generic [ref=e18]:
+        - generic: Пароль
+        - textbox "Пароль" [ref=e19]
+      - button "Войти" [ref=e20] [cursor=pointer]

@@ -1,0 +1,290 @@
+- generic [ref=e1]:
+  - link "Перейти к контенту" [ref=e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=e8]
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - button "Забронировать" [ref=e11] [cursor=pointer]
+            - button "Закрыть меню" [expanded] [active] [ref=e343] [cursor=pointer]
+          - generic [ref=e17]:
+            - generic [ref=e18]:
+              - generic [ref=e19]: Приложение
+              - generic [ref=e20]: italy touch
+            - link "Скачать" [ref=e21] [cursor=pointer]:
+              - /url: https://redirect.appmetrica.yandex.com/serve/966450630770056189
+      - navigation "Открыть меню" [ref=e344]:
+        - generic [ref=e345]:
+          - link "Доставка" [ref=e346] [cursor=pointer]:
+            - /url: https://italytouch.ru
+          - link "Рестораны" [ref=e348] [cursor=pointer]:
+            - /url: https://italycommunity.ru/restaurants/
+          - link "Афиша" [ref=e350] [cursor=pointer]:
+            - /url: https://italycommunity.ru/events/
+          - link "О нас" [ref=e352] [cursor=pointer]:
+            - /url: https://italycommunity.ru/about/
+          - link "Программа лояльности" [ref=e354] [cursor=pointer]:
+            - /url: https://italycommunity.online/loyaltyprogram
+          - link "Ресторанам Надо" [ref=e356] [cursor=pointer]:
+            - /url: https://restoranamnado.ru
+          - link "Банкеты и кейтеринг" [ref=e358] [cursor=pointer]:
+            - /url: https://italyco.tilda.ws/banket
+          - link "Ресторанный консалтинг" [ref=e360] [cursor=pointer]:
+            - /url: https://italycommunity.online/consulting
+          - link "Работай с нами" [ref=e362] [cursor=pointer]:
+            - /url: https://italycommunity.online/work
+          - link "люди итали" [ref=e364] [cursor=pointer]:
+            - /url: https://italycommunity.online
+    - generic [ref=e25]:
+      - generic [ref=e29]:
+        - img "Logo" [ref=e31]
+        - generic [ref=e33]:
+          - generic [ref=e34]: Наполняем смыслом места встреч, где
+          - generic [ref=e35]: каждый человек чувствует свою ценность
+      - generic [ref=e36]:
+        - img "Logo" [ref=e38]
+        - generic [ref=e40]:
+          - generic [ref=e41]: Наполняем смыслом места встреч, где
+          - generic [ref=e42]: каждый человек чувствует свою ценность
+      - generic [ref=e43]:
+        - img "Logo" [ref=e45]
+        - generic [ref=e47]:
+          - generic [ref=e48]: Наполняем смыслом места встреч, где
+          - generic [ref=e49]: каждый человек чувствует свою ценность
+      - generic [ref=e50]:
+        - img "Logo" [ref=e52]
+        - generic [ref=e54]:
+          - generic [ref=e55]: Наполняем смыслом места встреч, где
+          - generic [ref=e56]: каждый человек чувствует свою ценность
+      - generic [ref=e57]:
+        - img "Logo" [ref=e59]
+        - generic [ref=e61]:
+          - generic [ref=e62]: Наполняем смыслом места встреч, где
+          - generic [ref=e63]: каждый человек чувствует свою ценность
+      - generic [ref=e64]:
+        - img "Logo" [ref=e66]
+        - generic [ref=e68]:
+          - generic [ref=e69]: Наполняем смыслом места встреч, где
+          - generic [ref=e70]: каждый человек чувствует свою ценность
+      - generic [ref=e71]:
+        - img "Logo" [ref=e73]
+        - generic [ref=e75]:
+          - generic [ref=e76]: Наполняем смыслом места встреч, где
+          - generic [ref=e77]: каждый человек чувствует свою ценность
+    - generic [ref=e90]:
+      - link "«Итали» на Большой Морской чёрный лого" [ref=e92] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italy-bolshaya-morskaya/
+        - img "«Итали» на Большой Морской чёрный лого"
+      - link "«Итали» на Большом чёрный лого" [ref=e94] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italy-bolshoy/
+        - img "«Итали» на Большом чёрный лого"
+      - link "«Итали» на Московском чёрный лого" [ref=e96] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italy-moskovskiy/
+        - img "«Итали» на Московском чёрный лого"
+      - link "«Итали» в Виленском чёрный лого" [ref=e98] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italy-vilenskiy/
+        - img "«Итали» в Виленском чёрный лого"
+      - link "«Джем кафе» чёрный лого" [ref=e100] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/jam-cafe/
+        - img "«Джем кафе» чёрный лого"
+      - link "Joli СПб чёрный лого" [ref=e102] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/joli-grand-bistrot/
+        - img "Joli СПб чёрный лого"
+      - link "Joli Москва чёрный лого" [ref=e104] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/joli-moscow/
+        - img "Joli Москва чёрный лого"
+      - link "Juan Санкт-Петербург чёрный лого" [ref=e106] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/juan-cantina-espanola/
+        - img "Juan Санкт-Петербург чёрный лого"
+      - link "Juan Москва чёрный лого" [ref=e108] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/juan-moscow/
+        - img "Juan Москва чёрный лого"
+      - link "Salone pasta&bar Санкт-Петербург чёрный лого" [ref=e110] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/salone-pasta-bar/
+        - img "Salone pasta&bar Санкт-Петербург чёрный лого"
+      - link "Salone pasta&bar Москва чёрный лого" [ref=e112] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/salone-pasta-bar-moscow/
+        - img "Salone pasta&bar Москва чёрный лого"
+      - link "Bist чёрный лого" [ref=e114] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/bist/
+        - img "Bist чёрный лого"
+      - link "Бар «Легендарный медведь» чёрный лого" [ref=e116] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/bear/
+        - img "Бар «Легендарный медведь» чёрный лого"
+      - link "«Ателье тапас и бар» чёрный лого" [ref=e118] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/atelier/
+        - img "«Ателье тапас и бар» чёрный лого"
+      - link "Goosegoose чёрный лого" [ref=e120] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/goose-goose/
+        - img "Goosegoose чёрный лого"
+      - link "«ХИТЧ» чёрный лого" [ref=e122] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/hitch/
+        - img "«ХИТЧ» чёрный лого"
+      - link "«Италиани» чёрный лого" [ref=e124] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italiani/
+        - img "«Италиани» чёрный лого"
+      - link [ref=e126] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italy-bolshaya-morskaya/
+      - link [ref=e128] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italy-bolshoy/
+      - link [ref=e130] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italy-moskovskiy/
+      - link [ref=e132] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italy-vilenskiy/
+      - link [ref=e134] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/jam-cafe/
+      - link [ref=e136] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/joli-grand-bistrot/
+      - link [ref=e138] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/joli-moscow/
+      - link [ref=e140] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/juan-cantina-espanola/
+      - link [ref=e142] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/juan-moscow/
+      - link [ref=e144] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/salone-pasta-bar/
+      - link [ref=e146] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/salone-pasta-bar-moscow/
+      - link [ref=e148] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/bist/
+      - link [ref=e150] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/bear/
+      - link [ref=e152] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/atelier/
+      - link [ref=e154] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/goose-goose/
+      - link [ref=e156] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/hitch/
+      - link [ref=e158] [cursor=pointer]:
+        - /url: https://italycommunity.ru/restaurants/italiani/
+    - heading "Гастрономическое сообщество italy — рестораны, сервис, гостеприимство, проекты, экспертиза, поддержка талантов." [level=1] [ref=e162]
+    - generic [ref=e165]:
+      - heading "Основатели" [level=2] [ref=e167]
+      - generic [ref=e168]:
+        - generic [ref=e170]:
+          - img "<span>Михаил</span> <span>Соколов</span>" [ref=e172]
+          - generic [ref=e174]:
+            - generic [ref=e175]: Михаил
+            - generic [ref=e176]: Соколов
+        - generic [ref=e178]:
+          - img "<span>Тимур</span> <span>Дмитриев</span>" [ref=e180]
+          - generic [ref=e182]:
+            - generic [ref=e183]: Тимур
+            - generic [ref=e184]: Дмитриев
+    - generic [ref=e185]:
+      - generic [ref=e187]:
+        - generic [ref=e190]: Наши ценности — доверие, уникальность, самореализация, страсть, результат и удовольствие
+        - generic [ref=e192]: Мы развиваем таланты, создаем нейросеть партнерских отношений и открываем возможности для новых достижений и впечатлений, раскрывая вкус жизни.
+      - generic [ref=e195]:
+        - generic [ref=e197]:
+          - generic [ref=e198]: "0"
+          - generic [ref=e200]: лет на рынке
+        - generic [ref=e203]:
+          - generic [ref=e205]:
+            - text: "0"
+            - generic [ref=e206]: +
+          - generic [ref=e207]: проектов
+        - generic [ref=e210]:
+          - generic [ref=e212]:
+            - text: "0"
+            - generic [ref=e213]: +
+          - generic [ref=e214]: сотрудников
+    - generic [ref=e218]:
+      - link "Доставка" [ref=e220] [cursor=pointer]:
+        - /url: https://italytouch.ru
+      - link "Рестораны" [ref=e226] [cursor=pointer]:
+        - /url: /restaurants
+      - generic [ref=e233]:
+        - generic:
+          - link "Приветственные бонусы":
+            - /url: https://app.italydomoy.ru/app?utm_source=mainsite&utm_medium=banner_plwelcomebon&utm_campaign=apptouch&utm_content=link&utm_term=promo
+        - generic:
+          - link "Сертификат":
+            - /url: https://app.italydomoy.ru/app?utm_source=mainsite&utm_medium=banner_certificate&utm_campaign=apptouch&utm_content=link&utm_term=promo
+        - generic:
+          - link "Spaghettata":
+            - /url: https://italytouch.ru/app/events/82?utm_source=banner_spagettata&utm_medium=mainsite&utm_campaign=prmo
+        - link "Баланс" [ref=e338] [cursor=pointer]:
+          - /url: https://italycommunity.online/balance?utm_source=mainsite&utm_medium=banner_balance&utm_campaign=balancemenu&utm_content=link&utm_term=promo
+      - link "Программа лояльности" [ref=e245] [cursor=pointer]:
+        - /url: https://italycommunity.online/loyaltyprogram
+      - generic [ref=e249]:
+        - link "Ресторанам Надо" [ref=e250] [cursor=pointer]:
+          - /url: https://restoranamnado.ru
+        - link "Банкеты и кейтеринг" [ref=e254] [cursor=pointer]:
+          - /url: https://italyco.tilda.ws/banket
+        - link "Ресторанный консалтинг" [ref=e258] [cursor=pointer]:
+          - /url: https://italycommunity.online/consulting
+        - link "Работай с нами" [ref=e262] [cursor=pointer]:
+          - /url: https://italycommunity.online/work
+      - link "люди итали italy people" [ref=e267] [cursor=pointer]:
+        - /url: https://italycommunity.online
+        - generic [ref=e270]:
+          - generic [ref=e271]: люди итали
+          - generic [ref=e272]: "|"
+          - generic [ref=e273]: italy people
+    - generic [ref=e275]:
+      - generic [ref=e276]:
+        - generic [ref=e277]: Будьте в курсе
+        - generic [ref=e281]:
+          - textbox "Почта" [ref=e283]:
+            - /placeholder: ваша@почта.ru
+          - textbox "Имя" [ref=e285]:
+            - /placeholder: Ваше имя
+          - combobox "Город" [ref=e287] [cursor=pointer]:
+            - option "Ваш город" [disabled] [selected]
+            - option "Санкт-Петербург"
+            - option "Москва"
+          - generic [ref=e289] [cursor=pointer]:
+            - checkbox "Согласен(-сна) на обработку персональных данных и с пользовательским соглашением."
+            - generic [ref=e291]: Согласен(-сна) на обработку персональных данных и с пользовательским соглашением.
+          - button "Подписаться" [ref=e293] [cursor=pointer]
+      - generic [ref=e294]:
+        - generic [ref=e295]:
+          - link "Доставка" [ref=e297] [cursor=pointer]:
+            - /url: https://italytouch.ru
+          - link "Рестораны" [ref=e299] [cursor=pointer]:
+            - /url: https://italycommunity.ru/restaurants/
+          - link "Афиша" [ref=e301] [cursor=pointer]:
+            - /url: https://italycommunity.ru/events/
+          - link "О нас" [ref=e303] [cursor=pointer]:
+            - /url: https://italycommunity.ru/about/
+          - link "Программа лояльности" [ref=e305] [cursor=pointer]:
+            - /url: https://italycommunity.online/loyaltyprogram
+          - link "Ресторанам Надо" [ref=e307] [cursor=pointer]:
+            - /url: https://restoranamnado.ru
+          - link "Банкеты и кейтеринг" [ref=e309] [cursor=pointer]:
+            - /url: https://italyco.tilda.ws/banket
+          - link "Ресторанный консалтинг" [ref=e311] [cursor=pointer]:
+            - /url: https://italycommunity.online/consulting
+          - link "Работай с нами" [ref=e313] [cursor=pointer]:
+            - /url: https://italycommunity.online/work
+          - link "люди итали" [ref=e315] [cursor=pointer]:
+            - /url: https://italycommunity.online
+        - generic [ref=e316]:
+          - link "VK" [ref=e317] [cursor=pointer]:
+            - /url: https://vk.com/italy.community
+            - img "VK"
+          - link "Telegram" [ref=e318] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+            - img "Telegram"
+          - link "@MS_italycommunity" [ref=e319] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - link "Политика в отношении обработки персональных данных" [ref=e322] [cursor=pointer]:
+            - /url: https://italycommunity.ru/policy/
+          - link "Пользовательское соглашение" [ref=e323] [cursor=pointer]:
+            - /url: https://italycommunity.ru/agree/
+        - generic [ref=e324]: © 2020-2026. Все права защищены.
+  - generic [ref=e328]:
+    - generic [ref=e330]:
+      - text: Наш сайт использует файлы cookie для улучшения работы сайта —
+      - link "подробнее" [ref=e331] [cursor=pointer]:
+        - /url: /policy/
+      - text: .
+    - button "Принимаю" [ref=e333] [cursor=pointer]

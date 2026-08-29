@@ -1,0 +1,49 @@
+.card-dealer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  border: 0.1rem solid var(--color-4);
+  border-radius: 1rem;
+  background: var(--color-1);
+
+  @media (--lg) {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.card-dealer__item.title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-dealer .card__title {
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.card-dealer__subitem.badges-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-dealer__badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999rem;
+  font-size: 0.75em;
+  line-height: 1.2;
+  border: 0.1rem solid var(--color-4);
+  color: var(--color-3);
+}
+
+.card-dealer__subitem.address-wrap {
+  margin: 0;
+}

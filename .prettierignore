@@ -1,0 +1,11 @@
+assets/js/vendor/
+assets/js/build/
+assets/css/build/
+node_modules/
+vendor/
+cache/
+logs/
+public/assets
+public/data
+*.min.js
+*.min.css

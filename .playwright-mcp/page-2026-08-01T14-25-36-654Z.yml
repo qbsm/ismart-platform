@@ -1,0 +1,372 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - link [ref=e6] [cursor=pointer]:
+      - /url: ""
+    - generic [ref=e8]:
+      - link "Преимущества" [ref=e10] [cursor=pointer]:
+        - /url: ""
+      - link "Акции" [ref=e12] [cursor=pointer]:
+        - /url: ""
+      - link "Услуги" [ref=e14] [cursor=pointer]:
+        - /url: ""
+      - link "ТО" [ref=e16] [cursor=pointer]:
+        - /url: ""
+      - link "Контакты" [ref=e18] [cursor=pointer]:
+        - /url: ""
+    - generic [ref=e19]:
+      - link "󱆓 +7 (495) 787-99-99" [ref=e21] [cursor=pointer]:
+        - /url: tel:+74957879999
+        - generic [ref=e22]: 󱆓
+        - text: +7 (495) 787-99-99
+      - button "Заказать звонок" [ref=e23] [cursor=pointer]
+    - text: 󰏷 󰍜
+  - generic [ref=e25]:
+    - generic [ref=e26]: Тойота Центр Внуково — официальный дилер в Москве
+    - generic [ref=e29]:
+      - group "1 / 3" [ref=e30]
+      - group "2 / 3" [ref=e32]
+      - group "3 / 3" [ref=e34]
+    - button "Записаться на сервис" [ref=e37] [cursor=pointer]
+  - generic [ref=e43]:
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - img "Техническое обслуживание автомобилей, как по регламенту, так и внеочередное"
+      - generic [ref=e47]: Техническое обслуживание автомобилей, как по регламенту, так и внеочередное
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - img "Все виды ремонта, предусмотренные производителем"
+      - generic [ref=e52]: Все виды ремонта, предусмотренные производителем
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - img "Программирование базовых и дополнительных функций автомобиля"
+      - generic [ref=e57]: Программирование базовых и дополнительных функций автомобиля
+  - generic [ref=e58]:
+    - generic [ref=e60]:
+      - generic [ref=e61]:
+        - heading "Сервисные предложения" [level=4] [ref=e62]
+        - generic [ref=e64]: Актуальные акции и специальные предложения
+      - generic [ref=e65]:
+        - generic [ref=e68] [cursor=pointer]:
+          - heading "При посещении сервиса в июле — хранение резины выгоднее чашки кофе" [level=5] [ref=e70]
+          - link "Узнать подробнее" [ref=e72]:
+            - /url: "#"
+        - generic [ref=e75] [cursor=pointer]:
+          - heading "Вечерняя запись в сервис" [level=5] [ref=e77]
+          - link "Узнать подробнее" [ref=e79]:
+            - /url: "#"
+        - generic [ref=e82] [cursor=pointer]:
+          - heading "Пакетное обслуживание Toyota" [level=5] [ref=e84]
+          - link "Узнать подробнее" [ref=e86]:
+            - /url: "#"
+        - generic [ref=e89] [cursor=pointer]:
+          - heading "Скидка 25% на первый визит в Детейлинг БорисХоф" [level=5] [ref=e91]
+          - link "Узнать подробнее" [ref=e93]:
+            - /url: "#"
+        - generic [ref=e96] [cursor=pointer]:
+          - heading "Масляный Сервис TOYOTA" [level=5] [ref=e98]
+          - link "Узнать подробнее" [ref=e100]:
+            - /url: "#"
+        - generic [ref=e103] [cursor=pointer]:
+          - heading "Подарок к вашему Дню рождения" [level=5] [ref=e105]
+          - link "Узнать подробнее" [ref=e107]:
+            - /url: "#"
+        - generic [ref=e110] [cursor=pointer]:
+          - heading "Замена масла в АКПП" [level=5] [ref=e112]
+          - link "Узнать подробнее" [ref=e114]:
+            - /url: "#"
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - heading "Услуги" [level=4] [ref=e118]
+        - heading "Широкий спектр услуг для обслуживания и ремонта вашего автомобиля" [level=5] [ref=e120]
+      - generic [ref=e122]:
+        - generic [ref=e123]: Техническое обслуживание
+        - generic [ref=e125]: Слесарный ремонт
+        - generic [ref=e127]: Кузовной ремонт
+        - generic [ref=e129]: Дополнительные услуги
+      - generic [ref=e131]:
+        - generic [ref=e133] [cursor=pointer]:
+          - generic [ref=e134]:
+            - generic [ref=e135]: Название услуги
+            - generic [ref=e136]: Замена шаровых опор
+          - generic [ref=e137]:
+            - generic [ref=e138]: Цена
+            - generic [ref=e139]: от 4 350 ₽
+        - generic [ref=e141] [cursor=pointer]:
+          - generic [ref=e142]:
+            - generic [ref=e143]: Название услуги
+            - generic [ref=e144]: Промывка масляной системы двс
+          - generic [ref=e145]:
+            - generic [ref=e146]: Цена
+            - generic [ref=e147]: от 8 700 ₽
+        - generic [ref=e149] [cursor=pointer]:
+          - generic [ref=e150]:
+            - generic [ref=e151]: Название услуги
+            - generic [ref=e152]: Замена антифриза
+          - generic [ref=e153]:
+            - generic [ref=e154]: Цена
+            - generic [ref=e155]: от 5 220 ₽
+        - generic [ref=e157] [cursor=pointer]:
+          - generic [ref=e158]:
+            - generic [ref=e159]: Название услуги
+            - generic [ref=e160]: Замена воздушного фильтра
+          - generic [ref=e161]:
+            - generic [ref=e162]: Цена
+            - generic [ref=e163]: от 435 ₽
+        - generic [ref=e165] [cursor=pointer]:
+          - generic [ref=e166]:
+            - generic [ref=e167]: Название услуги
+            - generic [ref=e168]: Замена масла в двигателе
+          - generic [ref=e169]:
+            - generic [ref=e170]: Цена
+            - generic [ref=e171]: от 2 175 ₽
+        - button "Показать еще" [ref=e173] [cursor=pointer]
+      - generic [ref=e177]:
+        - heading "Запишитесь на техническое обслуживание." [level=5] [ref=e179]
+        - generic [ref=e182]:
+          - generic [ref=e184]:
+            - textbox "Телефон Телефон Телефон Телефон Телефон Телефон Телефон Телефон" [ref=e185]:
+              - /placeholder: +7 (___) ___-__-__
+            - generic: Телефон
+          - generic [ref=e187] [cursor=pointer]:
+            - checkbox "Я ознакомился с Политикой обработки персональных данных клиентов и Пользовательским соглашением сервисов БорисХоф принимаю условия Согласия на обработку персональных данных группы БорисХоф. Даю согласие на обработку персональных данных и соглашаюсь с Политикой обработки персональных данных Даю согласие на получение информации об акциях, скидках, мероприятиях о товарах/услугах БорисХоф по телефону/электронной почте" [ref=e188]
+            - text: Я ознакомился с
+            - link "Политикой обработки персональных данных клиентов" [ref=e189]:
+              - /url: https://borishof.ru/legal/personal-information/
+            - text: и
+            - link "Пользовательским соглашением сервисов БорисХоф" [ref=e190]:
+              - /url: https://borishof.ru/legal/user_agreement/
+            - text: принимаю условия
+            - link "Согласия на обработку персональных данных" [ref=e191]:
+              - /url: https://borishof.ru/legal/personal-data/
+            - text: группы БорисХоф.
+            - list [ref=e192]:
+              - listitem [ref=e193]:
+                - text: Даю согласие на обработку персональных данных и соглашаюсь с
+                - link "Политикой обработки персональных данных" [ref=e194]:
+                  - /url: https://borishof.ru/legal/personal-information/
+              - listitem [ref=e195]: Даю согласие на получение информации об акциях, скидках, мероприятиях о товарах/услугах БорисХоф по телефону/электронной почте
+          - button "Отправить заявку" [ref=e197] [cursor=pointer]
+    - generic [ref=e200]:
+      - generic [ref=e201]:
+        - heading "Записаться на сервис" [level=4] [ref=e202]
+        - heading "Заполните форму чтобы записаться на сервис или получить консультацию" [level=5] [ref=e204]
+      - button "Записаться на сервис" [ref=e206] [cursor=pointer]
+    - generic [ref=e208]:
+      - generic [ref=e209]:
+        - heading "Видеообзор" [level=4] [ref=e211]
+        - generic [ref=e213]: Видеообзор делает процесс обслуживания автомобиля полностью прозрачным для Вас. Во время технического обслуживания мастер-консультант отправит Вам подробный видеообзор технического состояния автомобиля. Контролировать процесс и согласовывать работы можно прямо со смартфона.
+        - generic [ref=e214]: Тег video не поддерживается вашим браузером.
+        - generic [ref=e217]:
+          - generic [ref=e218]:
+            - generic [ref=e219] [cursor=pointer]:
+              - generic [ref=e220]: 1. Фиксация отклонений
+              - generic [ref=e221]:
+                - img "Аккордеон"
+            - generic [ref=e222]: Наш технический специалист сделает видеозапись любых дополнительных отклонений с цветовым индикатором Желтый или Красный.
+          - generic [ref=e224]:
+            - generic [ref=e225] [cursor=pointer]:
+              - generic [ref=e226]: 2. Уведомление
+              - generic [ref=e227]:
+                - img "Аккордеон"
+            - generic [ref=e228]: Вы получите письмо с уникальной ссылкой на просмотр видео по Вашему автомобилю.
+          - generic [ref=e230]:
+            - generic [ref=e231] [cursor=pointer]:
+              - generic [ref=e232]: 3. Просмотр
+              - generic [ref=e233]:
+                - img "Аккордеон"
+            - generic [ref=e234]: Пройдя по уникальной ссылке, вы попадаете на персональную веб-страницу с видео-роликом и фотографиями с графическими аннотациями.
+          - generic [ref=e236]:
+            - generic [ref=e237] [cursor=pointer]:
+              - generic [ref=e238]: 4. Согласование
+              - generic [ref=e239]:
+                - img "Аккордеон"
+            - generic [ref=e240]: Каждое выявленное отклонение сопровождается калькуляцией, учитывающей Ваши индивидуальные условия. Просто выберите «Согласовать» для авторизации работ или «Заказать обратный звонок», если Вы хотите, чтобы наш специалист связался с Вами для дополнительных разъяснений.
+      - generic [ref=e242]:
+        - generic [ref=e243]:
+          - heading "Выгодная программа лояльности" [level=4] [ref=e244]
+          - button "Записаться" [ref=e247] [cursor=pointer]
+        - generic [ref=e248]: Уважаемые владельцы! БорисХоф запускает выгодное предложение по сервису «Программу лояльности». Предлагаем вам воспользоваться специальными привилегиями наших официальных сервисных центров.Специальная программа на обслуживание вашего автомобиля позволит вам сэкономить на ремонте и пройти техническое обслуживание выгодно, а специалисты наших официальных сервисных центров обслужат ваши автомобили по всем необходимым стандартам и дадут дополнительные рекомендации в случае необходимости.
+        - generic [ref=e250]:
+          - generic [ref=e252]:
+            - generic [ref=e253]:
+              - img "Последующие ТО с выгодой на работы и запасные части"
+            - generic [ref=e254]: Последующие ТО с выгодой на работы и запасные части
+          - generic [ref=e256]:
+            - generic [ref=e257]:
+              - img "Безвозмездное устранение неисправностей"
+            - generic [ref=e258]: Безвозмездное устранение неисправностей
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - img "Ремонт узлов и агрегатов с выгодой"
+            - generic [ref=e262]: Ремонт узлов и агрегатов с выгодой
+      - generic [ref=e263]:
+        - generic [ref=e264]:
+          - img "Обложка блока"
+        - generic [ref=e265]:
+          - heading "Бесконтактная приемка" [level=4] [ref=e267]
+          - generic [ref=e269]: "Бесконтактная приемка в Тойота Центр Внуково - это современный сервис для клиентов, ценящих свое время. Сдача автомобиля происходит быстро и безопасно через специальный терминал без личного контакта с мастером.Процесс прост: после записи вы получаете SMS с PIN-кодом. Подойдите к терминалу, введите код, подтвердите данные автомобиля и поместите ключи в открывшуюся ячейку. Мастер заберет их ко времени вашей записи.Услуга доступна только в Тойота Центр Внуково. Чтобы ей воспользоваться, сообщите о Вашем желании мастеру при записи или запросите бесконтактную приемку через Навигатор «Борисхоф»."
+        - generic [ref=e271]:
+          - generic [ref=e272]:
+            - generic [ref=e273]:
+              - img "Логотип Яндекс Сплит"
+            - heading "Делите оплату на части в БорисХоф с Яндекс Сплит" [level=4] [ref=e274]
+            - generic [ref=e276]: На 2 месяца без переплат, до 2-х лет — с небольшой доплатой
+          - generic [ref=e277]:
+            - generic [ref=e278]:
+              - img "Обложка блока"
+            - generic [ref=e279]:
+              - generic [ref=e281]:
+                - generic [ref=e282]:
+                  - img "Заплатите 1/4 цены сегодня, остальное — потом"
+                - generic [ref=e283]: Заплатите 1/4 цены сегодня, остальное — потом
+              - generic [ref=e285]:
+                - generic [ref=e286]:
+                  - img "Наведите камеру и узнайте, сколько можете потратить"
+                - generic [ref=e287]: Наведите камеру и узнайте, сколько можете потратить
+              - generic [ref=e289]:
+                - img "QR-код"
+    - generic [ref=e291]:
+      - generic [ref=e292]:
+        - heading "Преимущества Тойота Центр Внуково" [level=4] [ref=e293]
+        - generic [ref=e295]: Мы являемся официальным дилерским центром Тойота
+      - generic [ref=e296]:
+        - generic [ref=e297]: Экспертная диагностика и ремонт автомобиля
+        - generic [ref=e300]: Использование современного оборудования
+        - generic [ref=e303]: Высокая квалификация персонала
+        - generic [ref=e306]: Соблюдение регламентов производителя
+        - generic [ref=e309]: Экономия времени и удобное расположение
+        - generic [ref=e312]: Гарантия на выполненные работы
+    - generic [ref=e316]:
+      - generic [ref=e320]:
+        - generic [ref=e321]:
+          - generic [ref=e322]: Тойота Центр Внуково
+          - generic [ref=e323]: Москва
+          - generic [ref=e324]:
+            - link "󱆓 +7 (495) 787-99-99" [ref=e326] [cursor=pointer]:
+              - /url: tel:+74957879999
+              - generic [ref=e327]: 󱆓
+              - text: +7 (495) 787-99-99
+            - generic [ref=e328]:
+              - generic [ref=e329]: 󰟙
+              - text: Москва, р-н Ново-Переделкино, кв-л 2, д. 2, стр. 1.
+            - generic [ref=e330]:
+              - generic [ref=e331]: 󰅐
+              - text: Пн-Вс 09:00-21:00
+        - generic [ref=e332]:
+          - generic [ref=e333]: Доступны услуги
+          - generic [ref=e334]: Экспресс обслуживание, Слесарный ремонт, Шиномонтаж, Запчасти, Аренда авто
+        - button "Записаться на сервис" [ref=e336] [cursor=pointer]
+      - generic [ref=e338]:
+        - iframe [ref=e339]:
+          - generic [ref=f1e2]:
+            - generic [ref=f1e3]:
+              - link "Тойота центр Внуково" [ref=f1e4] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+              - generic [ref=f1e5]:
+                - paragraph [ref=f1e6]: 5,0
+                - generic [ref=f1e7]:
+                  - list [ref=f1e9]:
+                    - listitem [ref=f1e10]
+                    - listitem [ref=f1e11]
+                    - listitem [ref=f1e12]
+                    - listitem [ref=f1e13]
+                    - listitem [ref=f1e14]
+                  - link "3072 отзыва • 7169 оценок" [ref=f1e15] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+              - link [ref=f1e17] [cursor=pointer]:
+                - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+            - generic [ref=f1e18]:
+              - paragraph [ref=f1e19]: Поставьте нам оценку
+              - link "Оставить отзыв" [ref=f1e20] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+            - generic [ref=f1e21]:
+              - generic [ref=f1e22]:
+                - generic [ref=f1e24]:
+                  - paragraph [ref=f1e25]: Евгения Эм
+                  - paragraph [ref=f1e26]: 11 февраля
+                - list [ref=f1e28]:
+                  - listitem [ref=f1e29]
+                  - listitem [ref=f1e30]
+                  - listitem [ref=f1e31]
+                  - listitem [ref=f1e32]
+                  - listitem [ref=f1e33]
+                - paragraph [ref=f1e34]:
+                  - text: В течение трех лет обслуживаю свой автомобиль в этом центре. Все ТО прохожу здесь. Все всегда четко и понятно. Записываться нужно только заранее. Недавно пришлось побывать на кузовном ремонте - замена стекла. Познакомилась и с этой частью сервиса. Специалист Андрей Буланов сначала проконсультировал по телефону, при личной встрече обсудили все детали, нашли компромисс по цене и через два дня заказанное стекло было в центре. Оставила автомобиль и получила его готовым в обговоренный день даже с небольшими приятными "плюшками". Благодарю мастеров и Андрея Буланова за приятное сотрудничество 🤝
+                  - paragraph [ref=f1e35]:
+                    - text: ...
+                    - link "ещё" [ref=f1e36] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f1e37]:
+                - generic [ref=f1e39]:
+                  - paragraph [ref=f1e40]: Сергей Головченко
+                  - paragraph [ref=f1e41]: 22 февраля
+                - list [ref=f1e43]:
+                  - listitem [ref=f1e44]
+                  - listitem [ref=f1e45]
+                  - listitem [ref=f1e46]
+                  - listitem [ref=f1e47]
+                  - listitem [ref=f1e48]
+                - paragraph [ref=f1e49]:
+                  - text: Отличный салон. Очень приятная атмосфера. Являюсь владельцем автомобиля фольксваген каравелла. Появилась необходимость покрасить передние крылья (появились признаки коррозии). Почитав отзывы, решил сдать автомобиль в Тойота центр Внуково, машину принимал Сергей Соловьев. Ребята - отличные специалисты, все работы были выполнены быстро и качественно. Крашенные детали не отличить от окрашенных на заводе. Сравнивать есть с чем, приходилось красить в другом месте, качество покраски было не то, чтобы прямо плохое, но очень посредственное. Всё покрасочные работы буду делать только здесь. Огромное спасибо всему коллективу.
+                  - paragraph [ref=f1e50]:
+                    - text: ...
+                    - link "ещё" [ref=f1e51] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f1e52]:
+                - generic [ref=f1e54]:
+                  - paragraph [ref=f1e55]: давид а.
+                  - paragraph [ref=f1e56]: 21 февраля
+                - list [ref=f1e58]:
+                  - listitem [ref=f1e59]
+                  - listitem [ref=f1e60]
+                  - listitem [ref=f1e61]
+                  - listitem [ref=f1e62]
+                  - listitem [ref=f1e63]
+                - paragraph [ref=f1e64]:
+                  - text: Регулярно обслуживаюсь в Тойота центре. Каждое посещение оставляет только положительные впечатления. Благодарен за возмность получать качественный сервис без навязывания ненужных доп. услуг. Очень удобная история с фото/видео отчетами по авто, направляемыми в телеграм. Все ясно и наглядно. Так же отмечу момент с предоплатным договором на ТО, позволяющим пользоваться скидкой на работы и запчасти, отличная опция. Отдельная большая благодарность мастеру-приемщику Зубареву Руслану за развернутые комментарии по состоянию автомобиля и рекомендации по эксплуатации! Еще раз больше спасибо вашему сервису, всегда рад вернуться на плановое обслуживание.
+                  - paragraph [ref=f1e65]:
+                    - text: ...
+                    - link "ещё" [ref=f1e66] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f1e67]:
+                - generic [ref=f1e69]:
+                  - paragraph [ref=f1e70]: Валерия К
+                  - paragraph [ref=f1e71]: 3 февраля
+                - list [ref=f1e73]:
+                  - listitem [ref=f1e74]
+                  - listitem [ref=f1e75]
+                  - listitem [ref=f1e76]
+                  - listitem [ref=f1e77]
+                  - listitem [ref=f1e78]
+                - paragraph [ref=f1e79]:
+                  - text: Все очень прошло на очень хорошем уровне. В этот центр приехала в первый раз, обслуживание отличное и быстрое. Работа на качество, а не на скорость. Когда отдала машину на ремонт бампера, спустя время мне позвонили и сказали, что есть задиры и они заказали текстурированную часть заднего бампера, хотя сама я этого изначально не заметила за это отдельное спасибо. Ремонт был по КАСКО. Хоть машина не их марки, отношение было очень хорошее. Давали четкие сроки и машину отдали даже раньше. При полном осмотре машину помыли и после ремонта помыли, очень приятный бонус после ожидания моей любимой машинки☺️(не все СТО это делают, бывало такое что просили привозить в чистом виде). Очень довольна этим центром, спасибо за сервис🤩 Отдельно хочется поблагодарить мастера Максима Чернышева. За работу, внимательность и приятное общение.
+                  - paragraph [ref=f1e80]:
+                    - text: ...
+                    - link "ещё" [ref=f1e81] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f1e82]:
+                - generic [ref=f1e84]:
+                  - paragraph [ref=f1e85]: Валентина Ф.
+                  - paragraph [ref=f1e86]: 30 марта
+                - list [ref=f1e88]:
+                  - listitem [ref=f1e89]
+                  - listitem [ref=f1e90]
+                  - listitem [ref=f1e91]
+                  - listitem [ref=f1e92]
+                  - listitem [ref=f1e93]
+                - paragraph [ref=f1e94]:
+                  - text: Пользуюсь данным сервисом уже более 15 лет. За все время только положительные эмоции. 2 раза в год прохожу ТО только здесь. Всегда уверена в качестве выполненной работы. Очень радуют скидки на работу и запчасти. Очень внимательное отношение мастера приёмки Д. Ворожбит. Всегда объяснит, что необходимо сделать сегодня, а что может подождать до следующего ТО. И самое главное - здесь нет разводов на дополнительные и ненужные услуги. Так что свой автомобиль ( Тойота) буду и дальше обслуживать только здесь, потому что всегда уверена в качестве ремонта и запчастей. Удачи и процветания вам❤️
+                  - paragraph [ref=f1e95]:
+                    - text: ...
+                    - link "ещё" [ref=f1e96] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+            - link "Больше отзывов на Яндекс Картах" [ref=f1e98] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=more-reviews
+        - link "Тойота центр Внуково на карте Москвы — Яндекс Карты" [ref=e340] [cursor=pointer]:
+          - /url: https://yandex.ru/maps/org/toyota_tsentr_vnukovo/1362952193/
+    - generic [ref=e344]:
+      - link "Правовая информация" [ref=e348] [cursor=pointer]:
+        - /url: https://borishof.ru/legal/
+      - generic [ref=e349]: Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наш дилерский центр. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+      - generic [ref=e350]: Права на сайт принадлежат ООО «БорисХоф Т» (ИНН 7743601124, ОГРН 1067746751324), тел. +7 (495) 787-99-99
+      - generic [ref=e352]: © ООО «БорисХоф Т». Все права защищены 2026

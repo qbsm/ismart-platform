@@ -1,0 +1,3655 @@
+- generic [ref=f2e3]:
+  - generic [ref=f2e7]:
+    - button "Москва и регионы" [ref=f2e9] [cursor=pointer]
+    - generic [ref=f2e10]:
+      - button "Для бизнеса" [ref=f2e13] [cursor=pointer]
+      - button "Магазины" [ref=f2e15] [cursor=pointer]
+      - button "Служба поддержки" [ref=f2e18] [cursor=pointer]
+      - link "ru" [ref=f2e22] [cursor=pointer]:
+        - /url: https://eng.winestyle.ru/
+  - banner [ref=f2e23]:
+    - generic [ref=f2e24]:
+      - generic [ref=f2e26]:
+        - link [ref=f2e27] [cursor=pointer]:
+          - /url: /
+          - generic [ref=f2e28]:
+            - img "Изображение WineStyle - Сеть винных магазинов"
+        - button "Каталог" [ref=f2e29] [cursor=pointer]
+      - search [ref=f2e31]:
+        - generic "Искать на Winestyle" [ref=f2e32]:
+          - generic [ref=f2e33]:
+            - group
+            - searchbox "Искать на Winestyle" [ref=f2e34]
+        - button "Кнопка поиска" [ref=f2e35] [cursor=pointer]
+      - generic [ref=f2e37]:
+        - link "Войти" [ref=f2e40] [cursor=pointer]:
+          - /url: /login/
+        - link "Избранное" [ref=f2e42] [cursor=pointer]:
+          - /url: /wishlist.php
+        - link "Корзина" [ref=f2e45] [cursor=pointer]:
+          - /url: /cart.php
+  - navigation "Навигация по категориям заголовков" [ref=f2e48]:
+    - generic [ref=f2e49]:
+      - generic [ref=f2e50]:
+        - menubar [ref=f2e51]:
+          - menuitem "Акции" [ref=f2e52] [cursor=pointer]
+        - menubar [ref=f2e53]:
+          - menuitem "Вино" [ref=f2e54] [cursor=pointer]
+        - menubar [ref=f2e55]:
+          - menuitem "Шампанское" [ref=f2e56] [cursor=pointer]
+        - menubar [ref=f2e57]:
+          - menuitem "Виски" [ref=f2e58] [cursor=pointer]
+        - menubar [ref=f2e59]:
+          - menuitem "Коньяк" [ref=f2e60] [cursor=pointer]
+        - menubar [ref=f2e61]:
+          - menuitem "Пиво" [ref=f2e62] [cursor=pointer]
+        - menubar [ref=f2e63]:
+          - menuitem "Ликер" [ref=f2e64] [cursor=pointer]
+        - menubar [ref=f2e65]:
+          - menuitem "Водка" [ref=f2e66] [cursor=pointer]
+        - menubar [ref=f2e67]:
+          - menuitem "Вода" [ref=f2e68] [cursor=pointer]
+        - menubar [ref=f2e69]:
+          - menuitem "Подарки" [ref=f2e70] [cursor=pointer]
+        - menubar [ref=f2e71]:
+          - menuitem "Бакалея" [ref=f2e72] [cursor=pointer]
+        - menubar [ref=f2e73]:
+          - menuitem "Посуда" [ref=f2e74] [cursor=pointer]
+        - menubar [ref=f2e75]:
+          - menuitem "Аксессуары" [ref=f2e76] [cursor=pointer]
+        - menubar [ref=f2e77]:
+          - menuitem "Сидр" [ref=f2e78] [cursor=pointer]
+        - menubar [ref=f2e79]:
+          - menuitem "Ром" [ref=f2e80] [cursor=pointer]
+        - menubar [ref=f2e81]:
+          - menuitem "Джин" [ref=f2e82] [cursor=pointer]
+        - menubar [ref=f2e83]:
+          - menuitem "Текила" [ref=f2e84] [cursor=pointer]
+        - button "Ещё категории" [ref=f2e86] [cursor=pointer]
+      - button "Next slide" [ref=f2e87] [cursor=pointer]
+  - main [ref=f2e90]:
+    - generic [ref=f2e91]:
+      - heading "WineStyle — сеть винных магазинов" [level=1]
+      - generic [ref=f2e97]:
+        - generic [ref=f2e98]:
+          - generic [ref=f2e99]:
+            - img "Изображение Сеть винных магазинов"
+          - generic [ref=f2e100]: Сеть винных магазинов
+        - generic [ref=f2e102]:
+          - generic [ref=f2e103]:
+            - img "Изображение 150 000 напитков на сайте"
+          - generic [ref=f2e104]: 150 000 напитков на сайте
+        - generic [ref=f2e106]:
+          - generic [ref=f2e107]:
+            - img "Изображение 52 000 отзывов покупателей"
+          - generic [ref=f2e108]: 52 000 отзывов покупателей
+        - generic [ref=f2e110]:
+          - generic [ref=f2e111]:
+            - img "Изображение Выгодные цены"
+          - generic [ref=f2e112]: Выгодные цены
+      - generic [ref=f2e116]:
+        - heading "Планы на выходные?" [level=2] [ref=f2e119]
+        - generic [ref=f2e120]:
+          - generic [ref=f2e121]:
+            - generic [ref=f2e122]:
+              - generic [ref=f2e123]:
+                - link "\"GreenLife\" Sauvignon Blanc, Western Cape WO, 2025" [ref=f2e124] [cursor=pointer]:
+                  - /url: /products/GreenLife-Sauvignon-Blanc-Western-Cape-WO-2025.html
+                  - generic [ref=f2e125]:
+                    - img "Белое вино \"GreenLife\" Sauvignon Blanc, Western Cape WO, 2025 — ЮАР, Западный Кейп, 750 мл."
+                - generic [ref=f2e127]:
+                  - paragraph [ref=f2e128]: 899 ₽
+                  - paragraph [ref=f2e129]: 1 280 ₽
+                - link "\"GreenLife\" Sauvignon Blanc, Western Cape WO, 2025" [ref=f2e130] [cursor=pointer]:
+                  - /url: /products/GreenLife-Sauvignon-Blanc-Western-Cape-WO-2025.html
+                  - paragraph [ref=f2e131]: "\"GreenLife\" Sauvignon Blanc, Western Cape WO, 2025"
+                - table [ref=f2e132]:
+                  - rowgroup [ref=f2e133]:
+                    - row [ref=f2e134]:
+                      - rowheader "Регион:" [ref=f2e135]
+                      - cell "ЮАР Западный Кейп" [ref=f2e136]:
+                        - list [ref=f2e137]:
+                          - listitem [ref=f2e138]:
+                            - generic [ref=f2e139]: ЮАР
+                          - listitem [ref=f2e140]:
+                            - generic [ref=f2e141]: Западный Кейп
+                  - rowgroup [ref=f2e142]:
+                    - row [ref=f2e143]:
+                      - rowheader "Вино:" [ref=f2e144]
+                      - cell "Белое , Сухое" [ref=f2e145]:
+                        - list [ref=f2e146]:
+                          - listitem [ref=f2e147]:
+                            - generic [ref=f2e148]: Белое
+                            - generic [ref=f2e149]: ","
+                          - listitem [ref=f2e150]:
+                            - generic [ref=f2e151]: Сухое
+                    - row [ref=f2e152]:
+                      - rowheader "Сорта винограда:" [ref=f2e153]
+                      - cell "Совиньон Блан" [ref=f2e154]:
+                        - list [ref=f2e155]:
+                          - listitem [ref=f2e156]:
+                            - generic [ref=f2e157]: Совиньон Блан
+                    - row [ref=f2e158]:
+                      - rowheader "Бренд:" [ref=f2e159]
+                      - cell "GreenLife" [ref=f2e160]:
+                        - list [ref=f2e161]:
+                          - listitem [ref=f2e162]:
+                            - generic [ref=f2e163]: GreenLife
+                - generic [ref=f2e164]:
+                  - 'meter "Рейтинг: 4.8 из 5" [ref=f2e167]': "4.8"
+                  - region "7 оценок" [ref=f2e168]
+              - button "Добавить в корзину" [ref=f2e169]: В корзину
+              - button "Добавить в избранное" [ref=f2e176] [cursor=pointer]
+              - generic [ref=f2e178]: "-30%"
+            - generic [ref=f2e180]:
+              - generic [ref=f2e181]:
+                - link "\"Bruni\" Prosecco DOC Brut" [ref=f2e182] [cursor=pointer]:
+                  - /url: /products/Bruni-Prosecco-DOC-Brut.html
+                  - generic [ref=f2e183]:
+                    - img "Изображение"
+                - paragraph [ref=f2e185]: 2 400 ₽
+                - link "\"Bruni\" Prosecco DOC Brut" [ref=f2e186] [cursor=pointer]:
+                  - /url: /products/Bruni-Prosecco-DOC-Brut.html
+                  - paragraph [ref=f2e187]: "\"Bruni\" Prosecco DOC Brut"
+                - table [ref=f2e188]:
+                  - rowgroup [ref=f2e189]:
+                    - row [ref=f2e190]:
+                      - rowheader "Регион:" [ref=f2e191]
+                      - cell "Италия Венето" [ref=f2e192]:
+                        - list [ref=f2e193]:
+                          - listitem [ref=f2e194]:
+                            - generic [ref=f2e195]: Италия
+                          - listitem [ref=f2e196]:
+                            - generic [ref=f2e197]: Венето
+                  - rowgroup [ref=f2e198]:
+                    - row [ref=f2e199]:
+                      - rowheader "Игристое вино/шампанское:" [ref=f2e200]
+                      - cell "Игристое-белое , Сухое , Брют" [ref=f2e201]:
+                        - list [ref=f2e202]:
+                          - listitem [ref=f2e203]:
+                            - generic [ref=f2e204]: Игристое-белое
+                            - generic [ref=f2e205]: ","
+                          - listitem [ref=f2e206]:
+                            - generic [ref=f2e207]: Сухое
+                            - generic [ref=f2e208]: ","
+                          - listitem [ref=f2e209]:
+                            - generic [ref=f2e210]: Брют
+                    - row [ref=f2e211]:
+                      - rowheader "Сорта винограда:" [ref=f2e212]
+                      - cell "Глера (Просекко)" [ref=f2e213]:
+                        - list [ref=f2e214]:
+                          - listitem [ref=f2e215]:
+                            - generic [ref=f2e216]: Глера (Просекко)
+                    - row [ref=f2e217]:
+                      - rowheader "Бренд:" [ref=f2e218]
+                      - cell "Bruni" [ref=f2e219]:
+                        - list [ref=f2e220]:
+                          - listitem [ref=f2e221]:
+                            - generic [ref=f2e222]: Bruni
+                - generic [ref=f2e223]:
+                  - 'meter "Рейтинг: 4.6 из 5" [ref=f2e226]': "4.6"
+                  - region "18 оценок" [ref=f2e227]
+              - button "Добавить в корзину" [ref=f2e228]: В корзину
+              - button "Добавить в избранное" [ref=f2e235] [cursor=pointer]
+            - generic [ref=f2e237]:
+              - generic [ref=f2e238]:
+                - link "\"Te Toa\" Sauvignon Blanc, 2025" [ref=f2e239] [cursor=pointer]:
+                  - /url: /products/Te-Toa-Sauvignon-Blanc-2025.html
+                  - generic [ref=f2e240]:
+                    - img "Белое вино \"Te Toa\" Sauvignon Blanc, 2025 — Франция, 750 мл."
+                - generic [ref=f2e242]:
+                  - paragraph [ref=f2e243]: 799 ₽
+                  - paragraph [ref=f2e244]: 1 180 ₽
+                - link "\"Te Toa\" Sauvignon Blanc, 2025" [ref=f2e245] [cursor=pointer]:
+                  - /url: /products/Te-Toa-Sauvignon-Blanc-2025.html
+                  - paragraph [ref=f2e246]: "\"Te Toa\" Sauvignon Blanc, 2025"
+                - table [ref=f2e247]:
+                  - rowgroup [ref=f2e248]:
+                    - row [ref=f2e249]:
+                      - rowheader "Регион:" [ref=f2e250]
+                      - cell "Франция" [ref=f2e251]:
+                        - list [ref=f2e252]:
+                          - listitem [ref=f2e253]:
+                            - generic [ref=f2e254]: Франция
+                  - rowgroup [ref=f2e255]:
+                    - row [ref=f2e256]:
+                      - rowheader "Вино:" [ref=f2e257]
+                      - cell "Белое , Сухое" [ref=f2e258]:
+                        - list [ref=f2e259]:
+                          - listitem [ref=f2e260]:
+                            - generic [ref=f2e261]: Белое
+                            - generic [ref=f2e262]: ","
+                          - listitem [ref=f2e263]:
+                            - generic [ref=f2e264]: Сухое
+                    - row [ref=f2e265]:
+                      - rowheader "Сорта винограда:" [ref=f2e266]
+                      - cell "Совиньон Блан" [ref=f2e267]:
+                        - list [ref=f2e268]:
+                          - listitem [ref=f2e269]:
+                            - generic [ref=f2e270]: Совиньон Блан
+                    - row [ref=f2e271]:
+                      - rowheader "Бренд:" [ref=f2e272]
+                      - cell "Te Toa" [ref=f2e273]:
+                        - list [ref=f2e274]:
+                          - listitem [ref=f2e275]:
+                            - generic [ref=f2e276]: Te Toa
+                - generic [ref=f2e277]:
+                  - 'meter "Рейтинг: 4.8 из 5" [ref=f2e280]': "4.8"
+                  - region "6 оценок" [ref=f2e281]
+              - button "Добавить в корзину" [ref=f2e282]: В корзину
+              - button "Добавить в избранное" [ref=f2e289] [cursor=pointer]
+              - generic [ref=f2e291]: "-32%"
+            - generic [ref=f2e293]:
+              - generic [ref=f2e294]:
+                - link "\"Martini\" Prosecco DOC" [ref=f2e295] [cursor=pointer]:
+                  - /url: /products/Martini-Prosecco-DOC.html
+                  - generic [ref=f2e296]:
+                    - img "Изображение"
+                - generic [ref=f2e298]:
+                  - paragraph [ref=f2e299]: 1 599 ₽
+                  - paragraph [ref=f2e300]: 2 540 ₽
+                - link "\"Martini\" Prosecco DOC" [ref=f2e301] [cursor=pointer]:
+                  - /url: /products/Martini-Prosecco-DOC.html
+                  - paragraph [ref=f2e302]: "\"Martini\" Prosecco DOC"
+                - table [ref=f2e303]:
+                  - rowgroup [ref=f2e304]:
+                    - row [ref=f2e305]:
+                      - rowheader "Регион:" [ref=f2e306]
+                      - cell "Италия Венето" [ref=f2e307]:
+                        - list [ref=f2e308]:
+                          - listitem [ref=f2e309]:
+                            - generic [ref=f2e310]: Италия
+                          - listitem [ref=f2e311]:
+                            - generic [ref=f2e312]: Венето
+                  - rowgroup [ref=f2e313]:
+                    - row [ref=f2e314]:
+                      - rowheader "Игристое вино/шампанское:" [ref=f2e315]
+                      - cell "Игристое-белое , Сухое" [ref=f2e316]:
+                        - list [ref=f2e317]:
+                          - listitem [ref=f2e318]:
+                            - generic [ref=f2e319]: Игристое-белое
+                            - generic [ref=f2e320]: ","
+                          - listitem [ref=f2e321]:
+                            - generic [ref=f2e322]: Сухое
+                    - row [ref=f2e323]:
+                      - rowheader "Сорта винограда:" [ref=f2e324]
+                      - cell "Глера (Просекко)" [ref=f2e325]:
+                        - list [ref=f2e326]:
+                          - listitem [ref=f2e327]:
+                            - generic [ref=f2e328]: Глера (Просекко)
+                    - row [ref=f2e329]:
+                      - rowheader "Бренд:" [ref=f2e330]
+                      - cell "Martini" [ref=f2e331]:
+                        - list [ref=f2e332]:
+                          - listitem [ref=f2e333]:
+                            - generic [ref=f2e334]: Martini
+                - generic [ref=f2e335]:
+                  - 'meter "Рейтинг: 4.6 из 5" [ref=f2e338]': "4.6"
+                  - region "98 оценок" [ref=f2e339]
+              - button "Добавить в корзину" [ref=f2e340]: В корзину
+              - button "Добавить в избранное" [ref=f2e347] [cursor=pointer]
+              - generic [ref=f2e353]:
+                - generic [ref=f2e354]: WS
+                - generic [ref=f2e355]: "81"
+              - generic [ref=f2e356]: "-37%"
+            - generic [ref=f2e358]:
+              - generic [ref=f2e359]:
+                - link "Brancott Estate, Marlborough Sauvignon Blanc" [ref=f2e360] [cursor=pointer]:
+                  - /url: /products/Brancott-Estate-Marlborough-Sauvignon-Blanc.html
+                  - generic [ref=f2e361]:
+                    - img "Белое вино Brancott Estate, Marlborough Sauvignon Blanc — Новая Зеландия, Мальборо, 750 мл."
+                - generic [ref=f2e363]:
+                  - paragraph [ref=f2e364]: 1 899 ₽
+                  - paragraph [ref=f2e365]: 2 200 ₽
+                - link "Brancott Estate, Marlborough Sauvignon Blanc" [ref=f2e366] [cursor=pointer]:
+                  - /url: /products/Brancott-Estate-Marlborough-Sauvignon-Blanc.html
+                  - paragraph [ref=f2e367]: Brancott Estate, Marlborough Sauvignon Blanc
+                - table [ref=f2e368]:
+                  - rowgroup [ref=f2e369]:
+                    - row [ref=f2e370]:
+                      - rowheader "Регион:" [ref=f2e371]
+                      - cell "Новая Зеландия Мальборо" [ref=f2e372]:
+                        - list [ref=f2e373]:
+                          - listitem [ref=f2e374]:
+                            - generic [ref=f2e375]: Новая Зеландия
+                          - listitem [ref=f2e376]:
+                            - generic [ref=f2e377]: Мальборо
+                  - rowgroup [ref=f2e378]:
+                    - row [ref=f2e379]:
+                      - rowheader "Вино:" [ref=f2e380]
+                      - cell "Белое , Сухое" [ref=f2e381]:
+                        - list [ref=f2e382]:
+                          - listitem [ref=f2e383]:
+                            - generic [ref=f2e384]: Белое
+                            - generic [ref=f2e385]: ","
+                          - listitem [ref=f2e386]:
+                            - generic [ref=f2e387]: Сухое
+                    - row [ref=f2e388]:
+                      - rowheader "Сорта винограда:" [ref=f2e389]
+                      - cell "Совиньон Блан" [ref=f2e390]:
+                        - list [ref=f2e391]:
+                          - listitem [ref=f2e392]:
+                            - generic [ref=f2e393]: Совиньон Блан
+                    - row [ref=f2e394]:
+                      - rowheader "Бренд:" [ref=f2e395]
+                      - cell "Brancott Estate" [ref=f2e396]:
+                        - list [ref=f2e397]:
+                          - listitem [ref=f2e398]:
+                            - generic [ref=f2e399]: Brancott Estate
+                - generic [ref=f2e400]:
+                  - 'meter "Рейтинг: 4.5 из 5" [ref=f2e403]': "4.5"
+                  - region "354 оценки" [ref=f2e404]
+              - button "Добавить в корзину" [ref=f2e405]: В корзину
+              - button "Добавить в избранное" [ref=f2e412] [cursor=pointer]
+              - generic [ref=f2e418]:
+                - generic [ref=f2e419]: Vivino
+                - generic [ref=f2e420]: "4"
+              - generic [ref=f2e421]: "-14%"
+            - generic [ref=f2e423]:
+              - generic [ref=f2e424]:
+                - link "Renacer, \"Punto Final\" Malbec, 2025" [ref=f2e425] [cursor=pointer]:
+                  - /url: /products/Renacer-Punto-Final-Malbec-2025.html
+                  - generic [ref=f2e426]:
+                    - img "Красное вино Renacer, \"Punto Final\" Malbec, 2025 — Аргентина, Мендоса, 750 мл."
+                - generic [ref=f2e428]:
+                  - paragraph [ref=f2e429]: 999 ₽
+                  - paragraph [ref=f2e430]: 1 360 ₽
+                - link "Renacer, \"Punto Final\" Malbec, 2025" [ref=f2e431] [cursor=pointer]:
+                  - /url: /products/Renacer-Punto-Final-Malbec-2025.html
+                  - paragraph [ref=f2e432]: Renacer, "Punto Final" Malbec, 2025
+                - table [ref=f2e433]:
+                  - rowgroup [ref=f2e434]:
+                    - row [ref=f2e435]:
+                      - rowheader "Регион:" [ref=f2e436]
+                      - cell "Аргентина Мендоса" [ref=f2e437]:
+                        - list [ref=f2e438]:
+                          - listitem [ref=f2e439]:
+                            - generic [ref=f2e440]: Аргентина
+                          - listitem [ref=f2e441]:
+                            - generic [ref=f2e442]: Мендоса
+                  - rowgroup [ref=f2e443]:
+                    - row [ref=f2e444]:
+                      - rowheader "Вино:" [ref=f2e445]
+                      - cell "Красное , Сухое" [ref=f2e446]:
+                        - list [ref=f2e447]:
+                          - listitem [ref=f2e448]:
+                            - generic [ref=f2e449]: Красное
+                            - generic [ref=f2e450]: ","
+                          - listitem [ref=f2e451]:
+                            - generic [ref=f2e452]: Сухое
+                    - row [ref=f2e453]:
+                      - rowheader "Сорта винограда:" [ref=f2e454]
+                      - cell "Мальбек" [ref=f2e455]:
+                        - list [ref=f2e456]:
+                          - listitem [ref=f2e457]:
+                            - generic [ref=f2e458]: Мальбек
+                    - row [ref=f2e459]:
+                      - rowheader "Бренд:" [ref=f2e460]
+                      - cell "Punto Final" [ref=f2e461]:
+                        - list [ref=f2e462]:
+                          - listitem [ref=f2e463]:
+                            - generic [ref=f2e464]: Punto Final
+                - generic [ref=f2e465]:
+                  - 'meter "Рейтинг: 4.6 из 5" [ref=f2e468]': "4.6"
+                  - region "47 оценок" [ref=f2e469]
+              - button "Добавить в корзину" [ref=f2e470]: В корзину
+              - button "Добавить в избранное" [ref=f2e477] [cursor=pointer]
+              - generic [ref=f2e479]: "-27%"
+            - generic [ref=f2e481]:
+              - generic [ref=f2e482]:
+                - link "\"Chateau Tamagne\" Select Blanc Brut" [ref=f2e483] [cursor=pointer]:
+                  - /url: /products/Chateau-Tamagne-Select-Blanc-Brut.html
+                  - generic [ref=f2e484]:
+                    - img "Изображение"
+                - generic [ref=f2e486]:
+                  - paragraph [ref=f2e487]: 699 ₽
+                  - paragraph [ref=f2e488]: 830 ₽
+                - link "\"Chateau Tamagne\" Select Blanc Brut" [ref=f2e489] [cursor=pointer]:
+                  - /url: /products/Chateau-Tamagne-Select-Blanc-Brut.html
+                  - paragraph [ref=f2e490]: "\"Chateau Tamagne\" Select Blanc Brut"
+                - table [ref=f2e491]:
+                  - rowgroup [ref=f2e492]:
+                    - row [ref=f2e493]:
+                      - rowheader "Регион:" [ref=f2e494]
+                      - cell "Россия Краснодарский край" [ref=f2e495]:
+                        - list [ref=f2e496]:
+                          - listitem [ref=f2e497]:
+                            - generic [ref=f2e498]: Россия
+                          - listitem [ref=f2e499]:
+                            - generic [ref=f2e500]: Краснодарский край
+                  - rowgroup [ref=f2e501]:
+                    - row [ref=f2e502]:
+                      - rowheader "Игристое вино/шампанское:" [ref=f2e503]
+                      - cell "Игристое-белое , Сухое , Брют" [ref=f2e504]:
+                        - list [ref=f2e505]:
+                          - listitem [ref=f2e506]:
+                            - generic [ref=f2e507]: Игристое-белое
+                            - generic [ref=f2e508]: ","
+                          - listitem [ref=f2e509]:
+                            - generic [ref=f2e510]: Сухое
+                            - generic [ref=f2e511]: ","
+                          - listitem [ref=f2e512]:
+                            - generic [ref=f2e513]: Брют
+                    - row [ref=f2e514]:
+                      - rowheader "Сорта винограда:" [ref=f2e515]
+                      - cell "Пино Блан , Бианка , Мускат , Алиготе" [ref=f2e516]:
+                        - list [ref=f2e517]:
+                          - listitem [ref=f2e518]:
+                            - generic [ref=f2e519]: Пино Блан
+                            - generic [ref=f2e520]: ","
+                          - listitem [ref=f2e521]:
+                            - generic [ref=f2e522]: Бианка
+                            - generic [ref=f2e523]: ","
+                          - listitem [ref=f2e524]:
+                            - generic [ref=f2e525]: Мускат
+                            - generic [ref=f2e526]: ","
+                          - listitem [ref=f2e527]:
+                            - generic [ref=f2e528]: Алиготе
+                    - row [ref=f2e529]:
+                      - rowheader "Бренд:" [ref=f2e530]
+                      - cell "Chateau Tamagne , Селект" [ref=f2e531]:
+                        - list [ref=f2e532]:
+                          - listitem [ref=f2e533]:
+                            - generic [ref=f2e534]: Chateau Tamagne
+                            - generic [ref=f2e535]: ","
+                          - listitem [ref=f2e536]:
+                            - generic [ref=f2e537]: Селект
+                - generic [ref=f2e538]:
+                  - 'meter "Рейтинг: 4.8 из 5" [ref=f2e541]': "4.8"
+                  - region "123 оценки" [ref=f2e542]
+              - button "Добавить в корзину" [ref=f2e543]: В корзину
+              - button "Добавить в избранное" [ref=f2e550] [cursor=pointer]
+              - generic [ref=f2e552]: "-16%"
+            - generic [ref=f2e554]:
+              - generic [ref=f2e555]:
+                - link "\"Ocean Buffet\" Vinho Verde Branco DOC, 2025" [ref=f2e556] [cursor=pointer]:
+                  - /url: /products/Ocean-Buffet-Vinho-Verde-Branco-DOC-2025.html
+                  - generic [ref=f2e557]:
+                    - img "Белое вино \"Ocean Buffet\" Vinho Verde Branco DOC, 2025 — Португалия, Винью Верде, 750 мл."
+                - generic [ref=f2e559]:
+                  - paragraph [ref=f2e560]: 999 ₽
+                  - paragraph [ref=f2e561]: 1 530 ₽
+                - link "\"Ocean Buffet\" Vinho Verde Branco DOC, 2025" [ref=f2e562] [cursor=pointer]:
+                  - /url: /products/Ocean-Buffet-Vinho-Verde-Branco-DOC-2025.html
+                  - paragraph [ref=f2e563]: "\"Ocean Buffet\" Vinho Verde Branco DOC, 2025"
+                - table [ref=f2e564]:
+                  - rowgroup [ref=f2e565]:
+                    - row [ref=f2e566]:
+                      - rowheader "Регион:" [ref=f2e567]
+                      - cell "Португалия Винью Верде" [ref=f2e568]:
+                        - list [ref=f2e569]:
+                          - listitem [ref=f2e570]:
+                            - generic [ref=f2e571]: Португалия
+                          - listitem [ref=f2e572]:
+                            - generic [ref=f2e573]: Винью Верде
+                  - rowgroup [ref=f2e574]:
+                    - row [ref=f2e575]:
+                      - rowheader "Вино:" [ref=f2e576]
+                      - cell "Белое , Полусухое" [ref=f2e577]:
+                        - list [ref=f2e578]:
+                          - listitem [ref=f2e579]:
+                            - generic [ref=f2e580]: Белое
+                            - generic [ref=f2e581]: ","
+                          - listitem [ref=f2e582]:
+                            - generic [ref=f2e583]: Полусухое
+                    - row [ref=f2e584]:
+                      - rowheader "Сорта винограда:" [ref=f2e585]
+                      - cell "Лоурейру , Аринту" [ref=f2e586]:
+                        - list [ref=f2e587]:
+                          - listitem [ref=f2e588]:
+                            - generic [ref=f2e589]: Лоурейру
+                            - generic [ref=f2e590]: ","
+                          - listitem [ref=f2e591]:
+                            - generic [ref=f2e592]: Аринту
+                - generic [ref=f2e593]:
+                  - 'meter "Рейтинг: 4.5 из 5" [ref=f2e596]': "4.5"
+                  - region "6 оценок" [ref=f2e597]
+              - button "Добавить в корзину" [ref=f2e598]: В корзину
+              - button "Добавить в избранное" [ref=f2e605] [cursor=pointer]
+              - generic [ref=f2e607]: "-35%"
+            - generic [ref=f2e609]:
+              - generic [ref=f2e610]:
+                - link "\"Sempre\" Prosecco Treviso DOC Brut" [ref=f2e611] [cursor=pointer]:
+                  - /url: /products/Sempre-Prosecco-Treviso-DOC-Brut.html
+                  - generic [ref=f2e612]:
+                    - img "Изображение"
+                - generic [ref=f2e614]:
+                  - paragraph [ref=f2e615]: 1 199 ₽
+                  - paragraph [ref=f2e616]: 2 220 ₽
+                - link "\"Sempre\" Prosecco Treviso DOC Brut" [ref=f2e617] [cursor=pointer]:
+                  - /url: /products/Sempre-Prosecco-Treviso-DOC-Brut.html
+                  - paragraph [ref=f2e618]: "\"Sempre\" Prosecco Treviso DOC Brut"
+                - table [ref=f2e619]:
+                  - rowgroup [ref=f2e620]:
+                    - row [ref=f2e621]:
+                      - rowheader "Регион:" [ref=f2e622]
+                      - cell "Италия Венето Тревизо" [ref=f2e623]:
+                        - list [ref=f2e624]:
+                          - listitem [ref=f2e625]:
+                            - generic [ref=f2e626]: Италия
+                          - listitem [ref=f2e627]:
+                            - generic [ref=f2e628]: Венето
+                          - listitem [ref=f2e629]:
+                            - generic [ref=f2e630]: Тревизо
+                  - rowgroup [ref=f2e631]:
+                    - row [ref=f2e632]:
+                      - rowheader "Игристое вино/шампанское:" [ref=f2e633]
+                      - cell "Игристое-белое , Сухое , Брют" [ref=f2e634]:
+                        - list [ref=f2e635]:
+                          - listitem [ref=f2e636]:
+                            - generic [ref=f2e637]: Игристое-белое
+                            - generic [ref=f2e638]: ","
+                          - listitem [ref=f2e639]:
+                            - generic [ref=f2e640]: Сухое
+                            - generic [ref=f2e641]: ","
+                          - listitem [ref=f2e642]:
+                            - generic [ref=f2e643]: Брют
+                    - row [ref=f2e644]:
+                      - rowheader "Сорта винограда:" [ref=f2e645]
+                      - cell "Глера (Просекко)" [ref=f2e646]:
+                        - list [ref=f2e647]:
+                          - listitem [ref=f2e648]:
+                            - generic [ref=f2e649]: Глера (Просекко)
+                    - row [ref=f2e650]:
+                      - rowheader "Бренд:" [ref=f2e651]
+                      - cell "Sempre" [ref=f2e652]:
+                        - list [ref=f2e653]:
+                          - listitem [ref=f2e654]:
+                            - generic [ref=f2e655]: Sempre
+              - button "Добавить в корзину" [ref=f2e656]: В корзину
+              - button "Добавить в избранное" [ref=f2e663] [cursor=pointer]
+              - generic [ref=f2e665]: "-46%"
+            - generic [ref=f2e667]:
+              - generic [ref=f2e668]:
+                - link "Nik Weis, Urban Riesling, 2024" [ref=f2e669] [cursor=pointer]:
+                  - /url: /products/Nik-Weis-Urban-Riesling-2024.html
+                  - generic [ref=f2e670]:
+                    - img "Белое вино Nik Weis, Urban Riesling, 2024 — Германия, Мозель-Саар-Рувер, 750 мл."
+                - paragraph [ref=f2e672]: 2 499 ₽
+                - link "Nik Weis, Urban Riesling, 2024" [ref=f2e673] [cursor=pointer]:
+                  - /url: /products/Nik-Weis-Urban-Riesling-2024.html
+                  - paragraph [ref=f2e674]: Nik Weis, Urban Riesling, 2024
+                - table [ref=f2e675]:
+                  - rowgroup [ref=f2e676]:
+                    - row [ref=f2e677]:
+                      - rowheader "Регион:" [ref=f2e678]
+                      - cell "Германия Мозель-Саар-Рувер" [ref=f2e679]:
+                        - list [ref=f2e680]:
+                          - listitem [ref=f2e681]:
+                            - generic [ref=f2e682]: Германия
+                          - listitem [ref=f2e683]:
+                            - generic [ref=f2e684]: Мозель-Саар-Рувер
+                  - rowgroup [ref=f2e685]:
+                    - row [ref=f2e686]:
+                      - rowheader "Вино:" [ref=f2e687]
+                      - cell "Белое , Полусухое" [ref=f2e688]:
+                        - list [ref=f2e689]:
+                          - listitem [ref=f2e690]:
+                            - generic [ref=f2e691]: Белое
+                            - generic [ref=f2e692]: ","
+                          - listitem [ref=f2e693]:
+                            - generic [ref=f2e694]: Полусухое
+                    - row [ref=f2e695]:
+                      - rowheader "Сорта винограда:" [ref=f2e696]
+                      - cell "Рислинг" [ref=f2e697]:
+                        - list [ref=f2e698]:
+                          - listitem [ref=f2e699]:
+                            - generic [ref=f2e700]: Рислинг
+                - generic [ref=f2e701]:
+                  - 'meter "Рейтинг: 4.8 из 5" [ref=f2e704]': "4.8"
+                  - region "27 оценок" [ref=f2e705]
+              - button "Добавить в корзину" [ref=f2e706]: В корзину
+              - button "Добавить в избранное" [ref=f2e713] [cursor=pointer]
+              - generic [ref=f2e715]:
+                - generic [ref=f2e719]:
+                  - generic [ref=f2e720]: JS
+                  - generic [ref=f2e721]: "90"
+                - generic [ref=f2e725]:
+                  - generic [ref=f2e726]: Vivino
+                  - generic [ref=f2e727]: "3.9"
+            - generic [ref=f2e728]:
+              - generic [ref=f2e729]:
+                - link "Aristov, \"Anima\" Millesimato Brut" [ref=f2e730] [cursor=pointer]:
+                  - /url: /products/Aristov-Anima-Millesimato-Brut.html
+                  - generic [ref=f2e731]:
+                    - img "Изображение"
+                - generic [ref=f2e733]:
+                  - paragraph [ref=f2e734]: 790 ₽
+                  - paragraph [ref=f2e735]: 1 149 ₽
+                - link "Aristov, \"Anima\" Millesimato Brut" [ref=f2e736] [cursor=pointer]:
+                  - /url: /products/Aristov-Anima-Millesimato-Brut.html
+                  - paragraph [ref=f2e737]: Aristov, "Anima" Millesimato Brut
+                - table [ref=f2e738]:
+                  - rowgroup [ref=f2e739]:
+                    - row [ref=f2e740]:
+                      - rowheader "Регион:" [ref=f2e741]
+                      - cell "Россия Краснодарский край" [ref=f2e742]:
+                        - list [ref=f2e743]:
+                          - listitem [ref=f2e744]:
+                            - generic [ref=f2e745]: Россия
+                          - listitem [ref=f2e746]:
+                            - generic [ref=f2e747]: Краснодарский край
+                  - rowgroup [ref=f2e748]:
+                    - row [ref=f2e749]:
+                      - rowheader "Игристое вино/шампанское:" [ref=f2e750]
+                      - cell "Игристое-белое , Сухое , Брют" [ref=f2e751]:
+                        - list [ref=f2e752]:
+                          - listitem [ref=f2e753]:
+                            - generic [ref=f2e754]: Игристое-белое
+                            - generic [ref=f2e755]: ","
+                          - listitem [ref=f2e756]:
+                            - generic [ref=f2e757]: Сухое
+                            - generic [ref=f2e758]: ","
+                          - listitem [ref=f2e759]:
+                            - generic [ref=f2e760]: Брют
+                    - row [ref=f2e761]:
+                      - rowheader "Сорта винограда:" [ref=f2e762]
+                      - cell "Шардоне , Алиготе , Пино Блан , Рейнрислинг , Мюллер-Тургау" [ref=f2e763]:
+                        - list [ref=f2e764]:
+                          - listitem [ref=f2e765]:
+                            - generic [ref=f2e766]: Шардоне
+                            - generic [ref=f2e767]: ","
+                          - listitem [ref=f2e768]:
+                            - generic [ref=f2e769]: Алиготе
+                            - generic [ref=f2e770]: ","
+                          - listitem [ref=f2e771]:
+                            - generic [ref=f2e772]: Пино Блан
+                            - generic [ref=f2e773]: ","
+                          - listitem [ref=f2e774]:
+                            - generic [ref=f2e775]: Рейнрислинг
+                            - generic [ref=f2e776]: ","
+                          - listitem [ref=f2e777]:
+                            - generic [ref=f2e778]: Мюллер-Тургау
+                    - row [ref=f2e779]:
+                      - rowheader "Бренд:" [ref=f2e780]
+                      - cell "Aristov , Anima" [ref=f2e781]:
+                        - list [ref=f2e782]:
+                          - listitem [ref=f2e783]:
+                            - generic [ref=f2e784]: Aristov
+                            - generic [ref=f2e785]: ","
+                          - listitem [ref=f2e786]:
+                            - generic [ref=f2e787]: Anima
+                - generic [ref=f2e788]:
+                  - 'meter "Рейтинг: 4.7 из 5" [ref=f2e791]': "4.7"
+                  - region "43 оценки" [ref=f2e792]
+              - button "Добавить в корзину" [ref=f2e793]: В корзину
+              - button "Добавить в избранное" [ref=f2e800] [cursor=pointer]
+              - generic [ref=f2e802]: "-31%"
+            - generic [ref=f2e804]:
+              - generic [ref=f2e805]:
+                - link "\"Alma Valley\" Riesling, 2025" [ref=f2e806] [cursor=pointer]:
+                  - /url: /products/Alma-Valley-Riesling-2025.html
+                  - generic [ref=f2e807]:
+                    - img "Белое вино \"Alma Valley\" Riesling, 2025 — Россия, Крым, 750 мл."
+                - generic [ref=f2e809]:
+                  - paragraph [ref=f2e810]: 1 149 ₽
+                  - paragraph [ref=f2e811]: 1 639 ₽
+                - link "\"Alma Valley\" Riesling, 2025" [ref=f2e812] [cursor=pointer]:
+                  - /url: /products/Alma-Valley-Riesling-2025.html
+                  - paragraph [ref=f2e813]: "\"Alma Valley\" Riesling, 2025"
+                - table [ref=f2e814]:
+                  - rowgroup [ref=f2e815]:
+                    - row [ref=f2e816]:
+                      - rowheader "Регион:" [ref=f2e817]
+                      - cell "Россия Крым" [ref=f2e818]:
+                        - list [ref=f2e819]:
+                          - listitem [ref=f2e820]:
+                            - generic [ref=f2e821]: Россия
+                          - listitem [ref=f2e822]:
+                            - generic [ref=f2e823]: Крым
+                  - rowgroup [ref=f2e824]:
+                    - row [ref=f2e825]:
+                      - rowheader "Вино:" [ref=f2e826]
+                      - cell "Белое , Полусухое" [ref=f2e827]:
+                        - list [ref=f2e828]:
+                          - listitem [ref=f2e829]:
+                            - generic [ref=f2e830]: Белое
+                            - generic [ref=f2e831]: ","
+                          - listitem [ref=f2e832]:
+                            - generic [ref=f2e833]: Полусухое
+                    - row [ref=f2e834]:
+                      - rowheader "Сорта винограда:" [ref=f2e835]
+                      - cell "Рислинг" [ref=f2e836]:
+                        - list [ref=f2e837]:
+                          - listitem [ref=f2e838]:
+                            - generic [ref=f2e839]: Рислинг
+                - generic [ref=f2e840]:
+                  - 'meter "Рейтинг: 4.8 из 5" [ref=f2e843]': "4.8"
+                  - region "15 оценок" [ref=f2e844]
+              - button "Добавить в корзину" [ref=f2e845]: В корзину
+              - button "Добавить в избранное" [ref=f2e852] [cursor=pointer]
+              - generic [ref=f2e854]: "-30%"
+          - button "Next slide" [ref=f2e856] [cursor=pointer]
+      - link [ref=f2e862] [cursor=pointer]:
+        - /url: /vodka/soju/
+        - generic [ref=f2e863]:
+          - img "Яркий вкус Соджу"
+      - generic [ref=f2e865]:
+        - generic [ref=f2e867]:
+          - img "Интересные факты"
+        - paragraph [ref=f2e870]:
+          - text: На сайте представлена информация об ассортименте магазинов WineStyle (включает более 70 000 наименований). Возможность купить доступные и элитные
+          - link "вина" [ref=f2e871] [cursor=pointer]:
+            - /url: /wine/
+          - text: ","
+          - link "шампанское" [ref=f2e872] [cursor=pointer]:
+            - /url: /champagnes-and-sparkling/
+          - text: ", крепкий алкоголь,"
+          - link "воду" [ref=f2e873] [cursor=pointer]:
+            - /url: /water/
+          - text: ". Консультации опытного сомелье. Гарантия подлинности: сертификаты на всю продукцию по запросу. Все материалы, размещенные на сайте, носят информационный характер и не являются рекламой"
+      - generic [ref=f2e875]:
+        - heading "Актуальное" [level=2] [ref=f2e878]
+        - generic [ref=f2e880]:
+          - link [ref=f2e881] [cursor=pointer]:
+            - /url: /promo/exclusive-strong/
+            - generic [ref=f2e882]:
+              - img "Изображение"
+          - link [ref=f2e883] [cursor=pointer]:
+            - /url: /promo/
+            - generic [ref=f2e884]:
+              - img "Изображение"
+          - link [ref=f2e885] [cursor=pointer]:
+            - /url: /novelty/
+            - generic [ref=f2e886]:
+              - img "Изображение"
+          - link [ref=f2e887] [cursor=pointer]:
+            - /url: /wine/new-world-wines/
+            - generic [ref=f2e888]:
+              - img "Изображение"
+          - link [ref=f2e889] [cursor=pointer]:
+            - /url: /wine/90-rating/
+            - generic [ref=f2e890]:
+              - img "Изображение"
+          - link [ref=f2e891] [cursor=pointer]:
+            - /url: /spirit/
+            - generic [ref=f2e892]:
+              - img "Изображение"
+          - generic [ref=f2e894]:
+            - img "Изображение"
+          - link [ref=f2e895] [cursor=pointer]:
+            - /url: /liqueur/with-cocktails/
+            - generic [ref=f2e896]:
+              - img "Изображение"
+          - link [ref=f2e897] [cursor=pointer]:
+            - /url: /wine-set/
+            - generic [ref=f2e898]:
+              - img "Изображение"
+          - link [ref=f2e899] [cursor=pointer]:
+            - /url: /promo/wine-set-new/
+            - generic [ref=f2e900]:
+              - img "Изображение"
+          - link [ref=f2e901] [cursor=pointer]:
+            - /url: /pages/franchise.html
+            - generic [ref=f2e902]:
+              - img "Изображение"
+      - generic [ref=f2e904]:
+        - heading "Портал в Лето открыт" [level=2] [ref=f2e905]
+        - generic [ref=f2e906]:
+          - generic [ref=f2e907]:
+            - generic [ref=f2e908]:
+              - link "\"Baileys\" Original, 0.7 л" [ref=f2e909] [cursor=pointer]:
+                - /url: /products/Baileys-Original-700.html
+                - generic [ref=f2e910]:
+                  - img "Изображение"
+              - generic [ref=f2e912]:
+                - paragraph [ref=f2e913]: 1 690 ₽
+                - paragraph [ref=f2e914]: 2 290 ₽
+              - link "\"Baileys\" Original, 0.7 л" [ref=f2e915] [cursor=pointer]:
+                - /url: /products/Baileys-Original-700.html
+                - paragraph [ref=f2e916]: "\"Baileys\" Original, 0.7 л"
+              - generic [ref=f2e917]:
+                - 'meter "Рейтинг: 4.8 из 5" [ref=f2e920]': "4.8"
+                - region "194 оценки" [ref=f2e921]
+            - button "Добавить в избранное" [ref=f2e924] [cursor=pointer]
+            - generic [ref=f2e926]: "-26%"
+          - generic [ref=f2e928]:
+            - generic [ref=f2e929]:
+              - link "\"Jagermeister\" Orange, 0.7 л" [ref=f2e930] [cursor=pointer]:
+                - /url: /products/Jagermeister-Orange.html
+                - generic [ref=f2e931]:
+                  - img "Изображение"
+              - generic [ref=f2e933]:
+                - paragraph [ref=f2e934]: 1 990 ₽
+                - paragraph [ref=f2e935]: 2 619 ₽
+              - link "\"Jagermeister\" Orange, 0.7 л" [ref=f2e936] [cursor=pointer]:
+                - /url: /products/Jagermeister-Orange.html
+                - paragraph [ref=f2e937]: "\"Jagermeister\" Orange, 0.7 л"
+              - generic [ref=f2e938]:
+                - 'meter "Рейтинг: 5.0 из 5" [ref=f2e941]': "5.0"
+                - region "8 оценок" [ref=f2e942]
+            - button "Добавить в избранное" [ref=f2e945] [cursor=pointer]
+            - generic [ref=f2e947]: "-24%"
+          - generic [ref=f2e949]:
+            - generic [ref=f2e950]:
+              - link "Chateau Pinot, \"Exclusive\" Belenkoe" [ref=f2e951] [cursor=pointer]:
+                - /url: /products/Chateau-Pinot-Exclusive-Belenkoe.html
+                - generic [ref=f2e952]:
+                  - img "Изображение"
+              - generic [ref=f2e954]:
+                - paragraph [ref=f2e955]: 699 ₽
+                - paragraph [ref=f2e956]: 919 ₽
+              - link "Chateau Pinot, \"Exclusive\" Belenkoe" [ref=f2e957] [cursor=pointer]:
+                - /url: /products/Chateau-Pinot-Exclusive-Belenkoe.html
+                - paragraph [ref=f2e958]: Chateau Pinot, "Exclusive" Belenkoe
+            - button "Добавить в избранное" [ref=f2e961] [cursor=pointer]
+            - generic [ref=f2e963]: "-24%"
+          - generic [ref=f2e965]:
+            - generic [ref=f2e966]:
+              - link "\"Bacardi\" Passion Fruit, 0.7 л" [ref=f2e967] [cursor=pointer]:
+                - /url: /products/Bacardi-Passion-Fruit.html
+                - generic [ref=f2e968]:
+                  - img "Изображение"
+              - generic [ref=f2e970]:
+                - paragraph [ref=f2e971]: 2 290 ₽
+                - paragraph [ref=f2e972]: 3 690 ₽
+              - link "\"Bacardi\" Passion Fruit, 0.7 л" [ref=f2e973] [cursor=pointer]:
+                - /url: /products/Bacardi-Passion-Fruit.html
+                - paragraph [ref=f2e974]: "\"Bacardi\" Passion Fruit, 0.7 л"
+            - button "Добавить в избранное" [ref=f2e977] [cursor=pointer]
+            - generic [ref=f2e979]: "-38%"
+          - generic [ref=f2e981]:
+            - generic [ref=f2e982]:
+              - link "Zwack Unicum, 0.7 л" [ref=f2e983] [cursor=pointer]:
+                - /url: /products/Zwack-Unicum.html
+                - generic [ref=f2e984]:
+                  - img "Изображение"
+              - generic [ref=f2e986]:
+                - paragraph [ref=f2e987]: 2 849 ₽
+                - paragraph [ref=f2e988]: 3 799 ₽
+              - link "Zwack Unicum, 0.7 л" [ref=f2e989] [cursor=pointer]:
+                - /url: /products/Zwack-Unicum.html
+                - paragraph [ref=f2e990]: Zwack Unicum, 0.7 л
+              - generic [ref=f2e991]:
+                - 'meter "Рейтинг: 4.7 из 5" [ref=f2e994]': "4.7"
+                - region "35 оценок" [ref=f2e995]
+            - button "Добавить в избранное" [ref=f2e998] [cursor=pointer]
+            - generic [ref=f2e1000]: "-25%"
+        - navigation [ref=f2e1002]:
+          - link "Красное вино Красное вино" [ref=f2e1003] [cursor=pointer]:
+            - /url: /wine/red/
+            - generic [ref=f2e1004]: Красное вино
+            - generic [ref=f2e1005]:
+              - img "Красное вино"
+          - link "Белое вино Белое вино" [ref=f2e1006] [cursor=pointer]:
+            - /url: /wine/white/
+            - generic [ref=f2e1007]: Белое вино
+            - generic [ref=f2e1008]:
+              - img "Белое вино"
+          - link "Виски Виски" [ref=f2e1009] [cursor=pointer]:
+            - /url: /whisky/
+            - generic [ref=f2e1010]: Виски
+            - generic [ref=f2e1011]:
+              - img "Виски"
+          - link "Коньяк Коньяк" [ref=f2e1012] [cursor=pointer]:
+            - /url: /cognac/
+            - generic [ref=f2e1013]: Коньяк
+            - generic [ref=f2e1014]:
+              - img "Коньяк"
+          - link "Пиво Пиво" [ref=f2e1015] [cursor=pointer]:
+            - /url: /beer/
+            - generic [ref=f2e1016]: Пиво
+            - generic [ref=f2e1017]:
+              - img "Пиво"
+          - link "Игристое Игристое" [ref=f2e1018] [cursor=pointer]:
+            - /url: /champagnes-and-sparkling/
+            - generic [ref=f2e1019]: Игристое
+            - generic [ref=f2e1020]:
+              - img "Игристое"
+        - link [ref=f2e1022] [cursor=pointer]:
+          - /url: /pages/loyalty_program.html?utm_source=website&utm_campaign=right_vertical_banner&utm_content=loyalty_program_banner_50%
+          - generic [ref=f2e1023]:
+            - img "Изображение"
+      - generic [ref=f2e1025]:
+        - heading "Возможно вы искали" [level=2] [ref=f2e1028]
+        - generic "Возможно вы искали" [ref=f2e1029]:
+          - list [ref=f2e1030]:
+            - listitem [ref=f2e1031]:
+              - link "Отзывы о вине" [ref=f2e1032] [cursor=pointer]:
+                - /url: /wine/reviews/
+            - listitem [ref=f2e1033]:
+              - link "Виски Macallan" [ref=f2e1034] [cursor=pointer]:
+                - /url: /whisky/macallan/
+            - listitem [ref=f2e1035]:
+              - link "Виски Jack Daniels" [ref=f2e1036] [cursor=pointer]:
+                - /url: /whisky/jack-daniels/
+            - listitem [ref=f2e1037]:
+              - link "Виски Chivas Regal" [ref=f2e1038] [cursor=pointer]:
+                - /url: /whisky/chivas-regal/
+            - listitem [ref=f2e1039]:
+              - link "Виски Джеймсон" [ref=f2e1040] [cursor=pointer]:
+                - /url: /whisky/jameson/
+            - listitem [ref=f2e1041]:
+              - link "Виски Laphroaig" [ref=f2e1042] [cursor=pointer]:
+                - /url: /whisky/laphroaig/
+            - listitem [ref=f2e1043]:
+              - link "Виски Auchentoshan" [ref=f2e1044] [cursor=pointer]:
+                - /url: /whisky/auchentoshan/
+            - listitem [ref=f2e1045]:
+              - link "Вода San Benedetto" [ref=f2e1046] [cursor=pointer]:
+                - /url: /water/san-benedetto/
+            - listitem [ref=f2e1047]:
+              - link "Вода Vittel" [ref=f2e1048] [cursor=pointer]:
+                - /url: /water/vittel/
+            - listitem [ref=f2e1049]:
+              - link "Вода Aqua Vilajuiga" [ref=f2e1050] [cursor=pointer]:
+                - /url: /water/aqua-vilajuiga/
+          - list [ref=f2e1051]:
+            - listitem [ref=f2e1052]:
+              - link "Вода Sairme" [ref=f2e1053] [cursor=pointer]:
+                - /url: /water/sairme/
+            - listitem [ref=f2e1054]:
+              - link "Вода Borjomi" [ref=f2e1055] [cursor=pointer]:
+                - /url: /water/borjomi/
+            - listitem [ref=f2e1056]:
+              - link "Вода Evian" [ref=f2e1057] [cursor=pointer]:
+                - /url: /water/evian/
+            - listitem [ref=f2e1058]:
+              - link "Водка Русский Стандарт" [ref=f2e1059] [cursor=pointer]:
+                - /url: /vodka/russian-standard/
+            - listitem [ref=f2e1060]:
+              - link "Водка Finlandia" [ref=f2e1061] [cursor=pointer]:
+                - /url: /vodka/finlandia/
+            - listitem [ref=f2e1062]:
+              - link "Водка Абсолют" [ref=f2e1063] [cursor=pointer]:
+                - /url: /vodka/absolut/
+            - listitem [ref=f2e1064]:
+              - link "Водка Белуга" [ref=f2e1065] [cursor=pointer]:
+                - /url: /vodka/beluga/
+            - listitem [ref=f2e1066]:
+              - link "Водка Кауфман" [ref=f2e1067] [cursor=pointer]:
+                - /url: /vodka/kauffman/
+            - listitem [ref=f2e1068]:
+              - link "Водка Kremlin Award" [ref=f2e1069] [cursor=pointer]:
+                - /url: /vodka/kremlin-award/
+            - listitem [ref=f2e1070]:
+              - link "Ром Бакарди" [ref=f2e1071] [cursor=pointer]:
+                - /url: /rum/bacardi/
+      - generic [ref=f2e1074]:
+        - heading "Для дачи и шашлыка" [level=2] [ref=f2e1077]
+        - generic [ref=f2e1079]:
+          - generic [ref=f2e1080]:
+            - generic [ref=f2e1081]:
+              - link "Schmitt Sohne, Riesling Medium Dry, Landwein Rhein, 2024" [ref=f2e1082] [cursor=pointer]:
+                - /url: /products/Schmitt-Sohne-Riesling-Medium-Dry-Landwein-Rhein-2024.html
+                - generic [ref=f2e1083]:
+                  - img "Белое вино Schmitt Sohne, Riesling Medium Dry, Landwein Rhein, 2024 — Германия, Рейнгау, 750 мл."
+              - generic [ref=f2e1085]:
+                - paragraph [ref=f2e1086]: 999 ₽
+                - paragraph [ref=f2e1087]: 1 449 ₽
+              - link "Schmitt Sohne, Riesling Medium Dry, Landwein Rhein, 2024" [ref=f2e1088] [cursor=pointer]:
+                - /url: /products/Schmitt-Sohne-Riesling-Medium-Dry-Landwein-Rhein-2024.html
+                - paragraph [ref=f2e1089]: Schmitt Sohne, Riesling Medium Dry, Landwein Rhein, 2024
+              - table [ref=f2e1090]:
+                - rowgroup [ref=f2e1091]:
+                  - row [ref=f2e1092]:
+                    - rowheader "Регион:" [ref=f2e1093]
+                    - cell "Германия Рейнгау" [ref=f2e1094]:
+                      - list [ref=f2e1095]:
+                        - listitem [ref=f2e1096]:
+                          - generic [ref=f2e1097]: Германия
+                        - listitem [ref=f2e1098]:
+                          - generic [ref=f2e1099]: Рейнгау
+                - rowgroup [ref=f2e1100]:
+                  - row [ref=f2e1101]:
+                    - rowheader "Вино:" [ref=f2e1102]
+                    - cell "Белое , Полусухое" [ref=f2e1103]:
+                      - list [ref=f2e1104]:
+                        - listitem [ref=f2e1105]:
+                          - generic [ref=f2e1106]: Белое
+                          - generic [ref=f2e1107]: ","
+                        - listitem [ref=f2e1108]:
+                          - generic [ref=f2e1109]: Полусухое
+                  - row [ref=f2e1110]:
+                    - rowheader "Сорта винограда:" [ref=f2e1111]
+                    - cell "Рислинг" [ref=f2e1112]:
+                      - list [ref=f2e1113]:
+                        - listitem [ref=f2e1114]:
+                          - generic [ref=f2e1115]: Рислинг
+            - button "Добавить в корзину" [ref=f2e1116]: В корзину
+            - button "Добавить в избранное" [ref=f2e1123] [cursor=pointer]
+            - generic [ref=f2e1125]: "-31%"
+          - generic [ref=f2e1127]:
+            - generic [ref=f2e1128]:
+              - link "Concha y Toro, \"Frontera\" Cabernet Sauvignon, 2024" [ref=f2e1129] [cursor=pointer]:
+                - /url: /products/Concha-y-Toro-Frontera-Cabernet-Sauvignon-2024-750.html
+                - generic [ref=f2e1130]:
+                  - img "Красное вино Concha y Toro, \"Frontera\" Cabernet Sauvignon, 2024 — Чили, Центральная Долина, 750 мл."
+              - generic [ref=f2e1132]:
+                - paragraph [ref=f2e1133]: 749 ₽
+                - paragraph [ref=f2e1134]: 1 099 ₽
+              - link "Concha y Toro, \"Frontera\" Cabernet Sauvignon, 2024" [ref=f2e1135] [cursor=pointer]:
+                - /url: /products/Concha-y-Toro-Frontera-Cabernet-Sauvignon-2024-750.html
+                - paragraph [ref=f2e1136]: Concha y Toro, "Frontera" Cabernet Sauvignon, 2024
+              - table [ref=f2e1137]:
+                - rowgroup [ref=f2e1138]:
+                  - row [ref=f2e1139]:
+                    - rowheader "Регион:" [ref=f2e1140]
+                    - cell "Чили Центральная Долина" [ref=f2e1141]:
+                      - list [ref=f2e1142]:
+                        - listitem [ref=f2e1143]:
+                          - generic [ref=f2e1144]: Чили
+                        - listitem [ref=f2e1145]:
+                          - generic [ref=f2e1146]: Центральная Долина
+                - rowgroup [ref=f2e1147]:
+                  - row [ref=f2e1148]:
+                    - rowheader "Вино:" [ref=f2e1149]
+                    - cell "Красное , Полусухое" [ref=f2e1150]:
+                      - list [ref=f2e1151]:
+                        - listitem [ref=f2e1152]:
+                          - generic [ref=f2e1153]: Красное
+                          - generic [ref=f2e1154]: ","
+                        - listitem [ref=f2e1155]:
+                          - generic [ref=f2e1156]: Полусухое
+                  - row [ref=f2e1157]:
+                    - rowheader "Сорта винограда:" [ref=f2e1158]
+                    - cell "Каберне Совиньон , Сира" [ref=f2e1159]:
+                      - list [ref=f2e1160]:
+                        - listitem [ref=f2e1161]:
+                          - generic [ref=f2e1162]: Каберне Совиньон
+                          - generic [ref=f2e1163]: ","
+                        - listitem [ref=f2e1164]:
+                          - generic [ref=f2e1165]: Сира
+                  - row [ref=f2e1166]:
+                    - rowheader "Бренд:" [ref=f2e1167]
+                    - cell "Frontera" [ref=f2e1168]:
+                      - list [ref=f2e1169]:
+                        - listitem [ref=f2e1170]:
+                          - generic [ref=f2e1171]: Frontera
+              - generic [ref=f2e1172]:
+                - 'meter "Рейтинг: 4.8 из 5" [ref=f2e1175]': "4.8"
+                - region "13 оценок" [ref=f2e1176]
+            - button "Добавить в корзину" [ref=f2e1177]: В корзину
+            - button "Добавить в избранное" [ref=f2e1184] [cursor=pointer]
+            - generic [ref=f2e1190]:
+              - generic [ref=f2e1191]: Vivino
+              - generic [ref=f2e1192]: "3.3"
+            - generic [ref=f2e1193]: "-32%"
+          - generic [ref=f2e1195]:
+            - generic [ref=f2e1196]:
+              - link "\"Sangre de Toro\" Blanco De-Alcoholised, 2025" [ref=f2e1197] [cursor=pointer]:
+                - /url: /products/Sangre-de-Toro-Blanco-De-Alcoholised-2025.html
+                - generic [ref=f2e1198]:
+                  - img "Белое вино \"Sangre de Toro\" Blanco De-Alcoholised, 2025 — Испания, Ла Манча, 750 мл."
+              - generic [ref=f2e1200]:
+                - paragraph [ref=f2e1201]: 799 ₽
+                - paragraph [ref=f2e1202]: 1 399 ₽
+              - link "\"Sangre de Toro\" Blanco De-Alcoholised, 2025" [ref=f2e1203] [cursor=pointer]:
+                - /url: /products/Sangre-de-Toro-Blanco-De-Alcoholised-2025.html
+                - paragraph [ref=f2e1204]: "\"Sangre de Toro\" Blanco De-Alcoholised, 2025"
+              - table [ref=f2e1205]:
+                - rowgroup [ref=f2e1206]:
+                  - row [ref=f2e1207]:
+                    - rowheader "Регион:" [ref=f2e1208]
+                    - cell "Испания Ла Манча" [ref=f2e1209]:
+                      - list [ref=f2e1210]:
+                        - listitem [ref=f2e1211]:
+                          - generic [ref=f2e1212]: Испания
+                        - listitem [ref=f2e1213]:
+                          - generic [ref=f2e1214]: Ла Манча
+                - rowgroup [ref=f2e1215]:
+                  - row [ref=f2e1216]:
+                    - rowheader "Вино:" [ref=f2e1217]
+                    - cell "Белое , Полусладкое" [ref=f2e1218]:
+                      - list [ref=f2e1219]:
+                        - listitem [ref=f2e1220]:
+                          - generic [ref=f2e1221]: Белое
+                          - generic [ref=f2e1222]: ","
+                        - listitem [ref=f2e1223]:
+                          - generic [ref=f2e1224]: Полусладкое
+                  - row [ref=f2e1225]:
+                    - rowheader "Сорта винограда:" [ref=f2e1226]
+                    - cell "Мускат Александрийский" [ref=f2e1227]:
+                      - list [ref=f2e1228]:
+                        - listitem [ref=f2e1229]:
+                          - generic [ref=f2e1230]: Мускат Александрийский
+                  - row [ref=f2e1231]:
+                    - rowheader "Бренд:" [ref=f2e1232]
+                    - cell "Torres , Sangre de Toro" [ref=f2e1233]:
+                      - list [ref=f2e1234]:
+                        - listitem [ref=f2e1235]:
+                          - generic [ref=f2e1236]: Torres
+                          - generic [ref=f2e1237]: ","
+                        - listitem [ref=f2e1238]:
+                          - generic [ref=f2e1239]: Sangre de Toro
+              - generic [ref=f2e1240]:
+                - 'meter "Рейтинг: 5.0 из 5" [ref=f2e1243]': "5.0"
+                - region "8 оценок" [ref=f2e1244]
+            - button "Добавить в корзину" [ref=f2e1245]: В корзину
+            - button "Добавить в избранное" [ref=f2e1252] [cursor=pointer]
+            - generic [ref=f2e1254]: "-43%"
+          - generic [ref=f2e1256]:
+            - generic [ref=f2e1257]:
+              - link "Golubitskoe Estate, Cabernet Sauvignon, 2024" [ref=f2e1258] [cursor=pointer]:
+                - /url: /products/Golubitskoe-Estate-Cabernet-Sauvignon-2024.html
+                - generic [ref=f2e1259]:
+                  - img "Красное вино Golubitskoe Estate, Cabernet Sauvignon, 2024 — Россия, Краснодарский край, 750 мл."
+              - generic [ref=f2e1261]:
+                - paragraph [ref=f2e1262]: 1 099 ₽
+                - paragraph [ref=f2e1263]: 1 639 ₽
+              - link "Golubitskoe Estate, Cabernet Sauvignon, 2024" [ref=f2e1264] [cursor=pointer]:
+                - /url: /products/Golubitskoe-Estate-Cabernet-Sauvignon-2024.html
+                - paragraph [ref=f2e1265]: Golubitskoe Estate, Cabernet Sauvignon, 2024
+              - table [ref=f2e1266]:
+                - rowgroup [ref=f2e1267]:
+                  - row [ref=f2e1268]:
+                    - rowheader "Регион:" [ref=f2e1269]
+                    - cell "Россия Краснодарский край" [ref=f2e1270]:
+                      - list [ref=f2e1271]:
+                        - listitem [ref=f2e1272]:
+                          - generic [ref=f2e1273]: Россия
+                        - listitem [ref=f2e1274]:
+                          - generic [ref=f2e1275]: Краснодарский край
+                - rowgroup [ref=f2e1276]:
+                  - row [ref=f2e1277]:
+                    - rowheader "Вино:" [ref=f2e1278]
+                    - cell "Красное , Сухое" [ref=f2e1279]:
+                      - list [ref=f2e1280]:
+                        - listitem [ref=f2e1281]:
+                          - generic [ref=f2e1282]: Красное
+                          - generic [ref=f2e1283]: ","
+                        - listitem [ref=f2e1284]:
+                          - generic [ref=f2e1285]: Сухое
+                  - row [ref=f2e1286]:
+                    - rowheader "Сорта винограда:" [ref=f2e1287]
+                    - cell "Каберне Совиньон" [ref=f2e1288]:
+                      - list [ref=f2e1289]:
+                        - listitem [ref=f2e1290]:
+                          - generic [ref=f2e1291]: Каберне Совиньон
+              - generic [ref=f2e1292]:
+                - 'meter "Рейтинг: 4.5 из 5" [ref=f2e1295]': "4.5"
+                - region "36 оценок" [ref=f2e1296]
+            - button "Добавить в корзину" [ref=f2e1297]: В корзину
+            - button "Добавить в избранное" [ref=f2e1304] [cursor=pointer]
+            - generic [ref=f2e1306]: "-33%"
+          - generic [ref=f2e1308]:
+            - generic [ref=f2e1309]:
+              - link "Cono Sur, \"Bicicleta\" Gewurztraminer, 2024" [ref=f2e1310] [cursor=pointer]:
+                - /url: /products/Cono-Sur-Bicicleta-Gewurztraminer-2024.html
+                - generic [ref=f2e1311]:
+                  - img "Белое вино Cono Sur, \"Bicicleta\" Gewurztraminer, 2024 — Чили, Южный Регион, 750 мл."
+              - generic [ref=f2e1313]:
+                - paragraph [ref=f2e1314]: 899 ₽
+                - paragraph [ref=f2e1315]: 1 380 ₽
+              - link "Cono Sur, \"Bicicleta\" Gewurztraminer, 2024" [ref=f2e1316] [cursor=pointer]:
+                - /url: /products/Cono-Sur-Bicicleta-Gewurztraminer-2024.html
+                - paragraph [ref=f2e1317]: Cono Sur, "Bicicleta" Gewurztraminer, 2024
+              - table [ref=f2e1318]:
+                - rowgroup [ref=f2e1319]:
+                  - row [ref=f2e1320]:
+                    - rowheader "Регион:" [ref=f2e1321]
+                    - cell "Чили Южный Регион Долина Био-Био" [ref=f2e1322]:
+                      - list [ref=f2e1323]:
+                        - listitem [ref=f2e1324]:
+                          - generic [ref=f2e1325]: Чили
+                        - listitem [ref=f2e1326]:
+                          - generic [ref=f2e1327]: Южный Регион
+                        - listitem [ref=f2e1328]:
+                          - generic [ref=f2e1329]: Долина Био-Био
+                - rowgroup [ref=f2e1330]:
+                  - row [ref=f2e1331]:
+                    - rowheader "Вино:" [ref=f2e1332]
+                    - cell "Белое , Полусухое" [ref=f2e1333]:
+                      - list [ref=f2e1334]:
+                        - listitem [ref=f2e1335]:
+                          - generic [ref=f2e1336]: Белое
+                          - generic [ref=f2e1337]: ","
+                        - listitem [ref=f2e1338]:
+                          - generic [ref=f2e1339]: Полусухое
+                  - row [ref=f2e1340]:
+                    - rowheader "Сорта винограда:" [ref=f2e1341]
+                    - cell "Гевюрцтраминер" [ref=f2e1342]:
+                      - list [ref=f2e1343]:
+                        - listitem [ref=f2e1344]:
+                          - generic [ref=f2e1345]: Гевюрцтраминер
+                  - row [ref=f2e1346]:
+                    - rowheader "Бренд:" [ref=f2e1347]
+                    - cell "Cono Sur , Bicicleta" [ref=f2e1348]:
+                      - list [ref=f2e1349]:
+                        - listitem [ref=f2e1350]:
+                          - generic [ref=f2e1351]: Cono Sur
+                          - generic [ref=f2e1352]: ","
+                        - listitem [ref=f2e1353]:
+                          - generic [ref=f2e1354]: Bicicleta
+              - generic [ref=f2e1355]:
+                - 'meter "Рейтинг: 4.0 из 5" [ref=f2e1358]': "4.0"
+                - region "12 оценок" [ref=f2e1359]
+            - button "Добавить в корзину" [ref=f2e1360]: В корзину
+            - button "Добавить в избранное" [ref=f2e1367] [cursor=pointer]
+            - generic [ref=f2e1369]: "-35%"
+          - generic [ref=f2e1371]:
+            - generic [ref=f2e1372]:
+              - link "\"Casillero del Diablo\" Merlot, 2023" [ref=f2e1373] [cursor=pointer]:
+                - /url: /products/Casillero-del-Diablo-Merlot-2023.html
+                - generic [ref=f2e1374]:
+                  - img "Красное вино \"Casillero del Diablo\" Merlot, 2023 — Чили, Центральная Долина, 750 мл."
+              - generic [ref=f2e1376]:
+                - paragraph [ref=f2e1377]: 999 ₽
+                - paragraph [ref=f2e1378]: 1 480 ₽
+              - link "\"Casillero del Diablo\" Merlot, 2023" [ref=f2e1379] [cursor=pointer]:
+                - /url: /products/Casillero-del-Diablo-Merlot-2023.html
+                - paragraph [ref=f2e1380]: "\"Casillero del Diablo\" Merlot, 2023"
+              - table [ref=f2e1381]:
+                - rowgroup [ref=f2e1382]:
+                  - row [ref=f2e1383]:
+                    - rowheader "Регион:" [ref=f2e1384]
+                    - cell "Чили Центральная Долина" [ref=f2e1385]:
+                      - list [ref=f2e1386]:
+                        - listitem [ref=f2e1387]:
+                          - generic [ref=f2e1388]: Чили
+                        - listitem [ref=f2e1389]:
+                          - generic [ref=f2e1390]: Центральная Долина
+                - rowgroup [ref=f2e1391]:
+                  - row [ref=f2e1392]:
+                    - rowheader "Вино:" [ref=f2e1393]
+                    - cell "Красное , Сухое" [ref=f2e1394]:
+                      - list [ref=f2e1395]:
+                        - listitem [ref=f2e1396]:
+                          - generic [ref=f2e1397]: Красное
+                          - generic [ref=f2e1398]: ","
+                        - listitem [ref=f2e1399]:
+                          - generic [ref=f2e1400]: Сухое
+                  - row [ref=f2e1401]:
+                    - rowheader "Сорта винограда:" [ref=f2e1402]
+                    - cell "Мерло" [ref=f2e1403]:
+                      - list [ref=f2e1404]:
+                        - listitem [ref=f2e1405]:
+                          - generic [ref=f2e1406]: Мерло
+                  - row [ref=f2e1407]:
+                    - rowheader "Бренд:" [ref=f2e1408]
+                    - cell "Casillero del Diablo" [ref=f2e1409]:
+                      - list [ref=f2e1410]:
+                        - listitem [ref=f2e1411]:
+                          - generic [ref=f2e1412]: Casillero del Diablo
+            - button "Добавить в корзину" [ref=f2e1413]: В корзину
+            - button "Добавить в избранное" [ref=f2e1420] [cursor=pointer]
+            - generic [ref=f2e1426]:
+              - generic [ref=f2e1427]: Vivino
+              - generic [ref=f2e1428]: "3.6"
+            - generic [ref=f2e1429]: "-33%"
+          - generic [ref=f2e1431]:
+            - generic [ref=f2e1432]:
+              - link "Las Moras, \"Intis\" Torrontes, San Juan, 2025" [ref=f2e1433] [cursor=pointer]:
+                - /url: /products/Las-Moras-Intis-Torrontes-San-Juan-2025.html
+                - generic [ref=f2e1434]:
+                  - img "Белое вино Las Moras, \"Intis\" Torrontes, San Juan, 2025 — Аргентина, Сан-Хуан, 750 мл."
+              - generic [ref=f2e1436]:
+                - paragraph [ref=f2e1437]: 799 ₽
+                - paragraph [ref=f2e1438]: 1 160 ₽
+              - link "Las Moras, \"Intis\" Torrontes, San Juan, 2025" [ref=f2e1439] [cursor=pointer]:
+                - /url: /products/Las-Moras-Intis-Torrontes-San-Juan-2025.html
+                - paragraph [ref=f2e1440]: Las Moras, "Intis" Torrontes, San Juan, 2025
+              - table [ref=f2e1441]:
+                - rowgroup [ref=f2e1442]:
+                  - row [ref=f2e1443]:
+                    - rowheader "Регион:" [ref=f2e1444]
+                    - cell "Аргентина Сан-Хуан" [ref=f2e1445]:
+                      - list [ref=f2e1446]:
+                        - listitem [ref=f2e1447]:
+                          - generic [ref=f2e1448]: Аргентина
+                        - listitem [ref=f2e1449]:
+                          - generic [ref=f2e1450]: Сан-Хуан
+                - rowgroup [ref=f2e1451]:
+                  - row [ref=f2e1452]:
+                    - rowheader "Вино:" [ref=f2e1453]
+                    - cell "Белое , Сухое" [ref=f2e1454]:
+                      - list [ref=f2e1455]:
+                        - listitem [ref=f2e1456]:
+                          - generic [ref=f2e1457]: Белое
+                          - generic [ref=f2e1458]: ","
+                        - listitem [ref=f2e1459]:
+                          - generic [ref=f2e1460]: Сухое
+                  - row [ref=f2e1461]:
+                    - rowheader "Сорта винограда:" [ref=f2e1462]
+                    - cell "Торронтес" [ref=f2e1463]:
+                      - list [ref=f2e1464]:
+                        - listitem [ref=f2e1465]:
+                          - generic [ref=f2e1466]: Торронтес
+                  - row [ref=f2e1467]:
+                    - rowheader "Бренд:" [ref=f2e1468]
+                    - cell "Intis" [ref=f2e1469]:
+                      - list [ref=f2e1470]:
+                        - listitem [ref=f2e1471]:
+                          - generic [ref=f2e1472]: Intis
+            - button "Добавить в корзину" [ref=f2e1473]: В корзину
+            - button "Добавить в избранное" [ref=f2e1480] [cursor=pointer]
+            - generic [ref=f2e1482]: "-31%"
+          - generic [ref=f2e1484]:
+            - generic [ref=f2e1485]:
+              - link "Natale Verga, \"Il Gaggio\" Montepulciano d'Abruzzo DOC, 2024" [ref=f2e1486] [cursor=pointer]:
+                - /url: /products/Natale-Verga-Il-Gaggio-Montepulciano-d-Abruzzo-DOC-2024.html
+                - generic [ref=f2e1487]:
+                  - img "Красное вино Natale Verga, \"Il Gaggio\" Montepulciano d'Abruzzo DOC, 2024 — Италия, Абруццо, 750 мл."
+              - paragraph [ref=f2e1489]: 1 880 ₽
+              - link "Natale Verga, \"Il Gaggio\" Montepulciano d'Abruzzo DOC, 2024" [ref=f2e1490] [cursor=pointer]:
+                - /url: /products/Natale-Verga-Il-Gaggio-Montepulciano-d-Abruzzo-DOC-2024.html
+                - paragraph [ref=f2e1491]: Natale Verga, "Il Gaggio" Montepulciano d'Abruzzo DOC, 2024
+              - table [ref=f2e1492]:
+                - rowgroup [ref=f2e1493]:
+                  - row [ref=f2e1494]:
+                    - rowheader "Регион:" [ref=f2e1495]
+                    - cell "Италия Абруццо Монтепульчано д'Абруццо" [ref=f2e1496]:
+                      - list [ref=f2e1497]:
+                        - listitem [ref=f2e1498]:
+                          - generic [ref=f2e1499]: Италия
+                        - listitem [ref=f2e1500]:
+                          - generic [ref=f2e1501]: Абруццо
+                        - listitem [ref=f2e1502]:
+                          - generic [ref=f2e1503]: Монтепульчано д'Абруццо
+                - rowgroup [ref=f2e1504]:
+                  - row [ref=f2e1505]:
+                    - rowheader "Вино:" [ref=f2e1506]
+                    - cell "Красное , Сухое" [ref=f2e1507]:
+                      - list [ref=f2e1508]:
+                        - listitem [ref=f2e1509]:
+                          - generic [ref=f2e1510]: Красное
+                          - generic [ref=f2e1511]: ","
+                        - listitem [ref=f2e1512]:
+                          - generic [ref=f2e1513]: Сухое
+                  - row [ref=f2e1514]:
+                    - rowheader "Сорта винограда:" [ref=f2e1515]
+                    - cell "Монтепульчано" [ref=f2e1516]:
+                      - list [ref=f2e1517]:
+                        - listitem [ref=f2e1518]:
+                          - generic [ref=f2e1519]: Монтепульчано
+                  - row [ref=f2e1520]:
+                    - rowheader "Бренд:" [ref=f2e1521]
+                    - cell "Il Gaggio" [ref=f2e1522]:
+                      - list [ref=f2e1523]:
+                        - listitem [ref=f2e1524]:
+                          - generic [ref=f2e1525]: Il Gaggio
+            - button "Добавить в корзину" [ref=f2e1526]: В корзину
+            - button "Добавить в избранное" [ref=f2e1533] [cursor=pointer]
+          - generic [ref=f2e1535]:
+            - generic [ref=f2e1536]:
+              - link "J. P. Chenet, Pinotage-Merlot, Pays d'Oc IGP, 2025" [ref=f2e1537] [cursor=pointer]:
+                - /url: /products/J-P-Chenet-Pinotage-Merlot-Pays-d-Oc-IGP-2025.html
+                - generic [ref=f2e1538]:
+                  - img "Красное вино J. P. Chenet, Pinotage-Merlot, Pays d'Oc IGP, 2025 — Франция, Лангедок-Руссильон, 750 мл."
+              - generic [ref=f2e1540]:
+                - paragraph [ref=f2e1541]: 899 ₽
+                - paragraph [ref=f2e1542]: 1 309 ₽
+              - link "J. P. Chenet, Pinotage-Merlot, Pays d'Oc IGP, 2025" [ref=f2e1543] [cursor=pointer]:
+                - /url: /products/J-P-Chenet-Pinotage-Merlot-Pays-d-Oc-IGP-2025.html
+                - paragraph [ref=f2e1544]: J. P. Chenet, Pinotage-Merlot, Pays d'Oc IGP, 2025
+              - table [ref=f2e1545]:
+                - rowgroup [ref=f2e1546]:
+                  - row [ref=f2e1547]:
+                    - rowheader "Регион:" [ref=f2e1548]
+                    - cell "Франция Лангедок-Руссильон Кото дю Лангедок" [ref=f2e1549]:
+                      - list [ref=f2e1550]:
+                        - listitem [ref=f2e1551]:
+                          - generic [ref=f2e1552]: Франция
+                        - listitem [ref=f2e1553]:
+                          - generic [ref=f2e1554]: Лангедок-Руссильон
+                        - listitem [ref=f2e1555]:
+                          - generic [ref=f2e1556]: Кото дю Лангедок
+                - rowgroup [ref=f2e1557]:
+                  - row [ref=f2e1558]:
+                    - rowheader "Вино:" [ref=f2e1559]
+                    - cell "Красное , Полусухое" [ref=f2e1560]:
+                      - list [ref=f2e1561]:
+                        - listitem [ref=f2e1562]:
+                          - generic [ref=f2e1563]: Красное
+                          - generic [ref=f2e1564]: ","
+                        - listitem [ref=f2e1565]:
+                          - generic [ref=f2e1566]: Полусухое
+                  - row [ref=f2e1567]:
+                    - rowheader "Сорта винограда:" [ref=f2e1568]
+                    - cell "Пинотаж , Мерло" [ref=f2e1569]:
+                      - list [ref=f2e1570]:
+                        - listitem [ref=f2e1571]:
+                          - generic [ref=f2e1572]: Пинотаж
+                          - generic [ref=f2e1573]: ","
+                        - listitem [ref=f2e1574]:
+                          - generic [ref=f2e1575]: Мерло
+              - generic [ref=f2e1576]:
+                - 'meter "Рейтинг: 3.5 из 5" [ref=f2e1579]': "3.5"
+                - region "2 оценки" [ref=f2e1580]
+            - button "Добавить в корзину" [ref=f2e1581]: В корзину
+            - button "Добавить в избранное" [ref=f2e1588] [cursor=pointer]
+            - generic [ref=f2e1590]: "-31%"
+          - generic [ref=f2e1592]:
+            - generic [ref=f2e1593]:
+              - link "\"Dr. Schmitt\" Gewurztraminer, 2025" [ref=f2e1594] [cursor=pointer]:
+                - /url: /products/Dr-Schmitt-Gewurztraminer-2025.html
+                - generic [ref=f2e1595]:
+                  - img "Белое вино \"Dr. Schmitt\" Gewurztraminer, 2025 — Германия, Рейнхессен, 750 мл."
+              - generic [ref=f2e1597]:
+                - paragraph [ref=f2e1598]: 999 ₽
+                - paragraph [ref=f2e1599]: 1 590 ₽
+              - link "\"Dr. Schmitt\" Gewurztraminer, 2025" [ref=f2e1600] [cursor=pointer]:
+                - /url: /products/Dr-Schmitt-Gewurztraminer-2025.html
+                - paragraph [ref=f2e1601]: "\"Dr. Schmitt\" Gewurztraminer, 2025"
+              - table [ref=f2e1602]:
+                - rowgroup [ref=f2e1603]:
+                  - row [ref=f2e1604]:
+                    - rowheader "Регион:" [ref=f2e1605]
+                    - cell "Германия Рейнхессен" [ref=f2e1606]:
+                      - list [ref=f2e1607]:
+                        - listitem [ref=f2e1608]:
+                          - generic [ref=f2e1609]: Германия
+                        - listitem [ref=f2e1610]:
+                          - generic [ref=f2e1611]: Рейнхессен
+                - rowgroup [ref=f2e1612]:
+                  - row [ref=f2e1613]:
+                    - rowheader "Вино:" [ref=f2e1614]
+                    - cell "Белое , Полусухое" [ref=f2e1615]:
+                      - list [ref=f2e1616]:
+                        - listitem [ref=f2e1617]:
+                          - generic [ref=f2e1618]: Белое
+                          - generic [ref=f2e1619]: ","
+                        - listitem [ref=f2e1620]:
+                          - generic [ref=f2e1621]: Полусухое
+                  - row [ref=f2e1622]:
+                    - rowheader "Сорта винограда:" [ref=f2e1623]
+                    - cell "Гевюрцтраминер" [ref=f2e1624]:
+                      - list [ref=f2e1625]:
+                        - listitem [ref=f2e1626]:
+                          - generic [ref=f2e1627]: Гевюрцтраминер
+            - button "Добавить в корзину" [ref=f2e1628]: В корзину
+            - button "Добавить в избранное" [ref=f2e1635] [cursor=pointer]
+            - generic [ref=f2e1637]: "-37%"
+          - generic [ref=f2e1639]:
+            - generic [ref=f2e1640]:
+              - link "Gran Castillo, Tempranillo, Valencia DOP, 2024" [ref=f2e1641] [cursor=pointer]:
+                - /url: /products/Gran-Castillo-Tempranillo-Valencia-DOP-2024.html
+                - generic [ref=f2e1642]:
+                  - img "Красное вино Gran Castillo, Tempranillo, Valencia DOP, 2024 — Испания, Валенсия, 750 мл."
+              - generic [ref=f2e1644]:
+                - paragraph [ref=f2e1645]: 999 ₽
+                - paragraph [ref=f2e1646]: 1 519 ₽
+              - link "Gran Castillo, Tempranillo, Valencia DOP, 2024" [ref=f2e1647] [cursor=pointer]:
+                - /url: /products/Gran-Castillo-Tempranillo-Valencia-DOP-2024.html
+                - paragraph [ref=f2e1648]: Gran Castillo, Tempranillo, Valencia DOP, 2024
+              - table [ref=f2e1649]:
+                - rowgroup [ref=f2e1650]:
+                  - row [ref=f2e1651]:
+                    - rowheader "Регион:" [ref=f2e1652]
+                    - cell "Испания Валенсия" [ref=f2e1653]:
+                      - list [ref=f2e1654]:
+                        - listitem [ref=f2e1655]:
+                          - generic [ref=f2e1656]: Испания
+                        - listitem [ref=f2e1657]:
+                          - generic [ref=f2e1658]: Валенсия
+                - rowgroup [ref=f2e1659]:
+                  - row [ref=f2e1660]:
+                    - rowheader "Вино:" [ref=f2e1661]
+                    - cell "Красное , Сухое" [ref=f2e1662]:
+                      - list [ref=f2e1663]:
+                        - listitem [ref=f2e1664]:
+                          - generic [ref=f2e1665]: Красное
+                          - generic [ref=f2e1666]: ","
+                        - listitem [ref=f2e1667]:
+                          - generic [ref=f2e1668]: Сухое
+                  - row [ref=f2e1669]:
+                    - rowheader "Сорта винограда:" [ref=f2e1670]
+                    - cell "Темпранильо" [ref=f2e1671]:
+                      - list [ref=f2e1672]:
+                        - listitem [ref=f2e1673]:
+                          - generic [ref=f2e1674]: Темпранильо
+                  - row [ref=f2e1675]:
+                    - rowheader "Бренд:" [ref=f2e1676]
+                    - cell "Gran Castillo" [ref=f2e1677]:
+                      - list [ref=f2e1678]:
+                        - listitem [ref=f2e1679]:
+                          - generic [ref=f2e1680]: Gran Castillo
+            - button "Добавить в корзину" [ref=f2e1681]: В корзину
+            - button "Добавить в избранное" [ref=f2e1688] [cursor=pointer]
+            - generic [ref=f2e1690]: "-34%"
+          - generic [ref=f2e1692]:
+            - generic [ref=f2e1693]:
+              - link "\"Garca Azul\" Rose, Vinho Verde DOC, 2025" [ref=f2e1694] [cursor=pointer]:
+                - /url: /products/Garca-Azul-Rose-Vinho-Verde-DOC-2025.html
+                - generic [ref=f2e1695]:
+                  - img "Розовое вино \"Garca Azul\" Rose, Vinho Verde DOC, 2025 — Португалия, Винью Верде, 750 мл."
+              - generic [ref=f2e1697]:
+                - paragraph [ref=f2e1698]: 899 ₽
+                - paragraph [ref=f2e1699]: 1 449 ₽
+              - link "\"Garca Azul\" Rose, Vinho Verde DOC, 2025" [ref=f2e1700] [cursor=pointer]:
+                - /url: /products/Garca-Azul-Rose-Vinho-Verde-DOC-2025.html
+                - paragraph [ref=f2e1701]: "\"Garca Azul\" Rose, Vinho Verde DOC, 2025"
+              - table [ref=f2e1702]:
+                - rowgroup [ref=f2e1703]:
+                  - row [ref=f2e1704]:
+                    - rowheader "Регион:" [ref=f2e1705]
+                    - cell "Португалия Винью Верде" [ref=f2e1706]:
+                      - list [ref=f2e1707]:
+                        - listitem [ref=f2e1708]:
+                          - generic [ref=f2e1709]: Португалия
+                        - listitem [ref=f2e1710]:
+                          - generic [ref=f2e1711]: Винью Верде
+                - rowgroup [ref=f2e1712]:
+                  - row [ref=f2e1713]:
+                    - rowheader "Вино:" [ref=f2e1714]
+                    - cell "Розовое , Полусухое" [ref=f2e1715]:
+                      - list [ref=f2e1716]:
+                        - listitem [ref=f2e1717]:
+                          - generic [ref=f2e1718]: Розовое
+                          - generic [ref=f2e1719]: ","
+                        - listitem [ref=f2e1720]:
+                          - generic [ref=f2e1721]: Полусухое
+                  - row [ref=f2e1722]:
+                    - rowheader "Сорта винограда:" [ref=f2e1723]
+                    - cell "Виньяо , Амарал , Борракал" [ref=f2e1724]:
+                      - list [ref=f2e1725]:
+                        - listitem [ref=f2e1726]:
+                          - generic [ref=f2e1727]: Виньяо
+                          - generic [ref=f2e1728]: ","
+                        - listitem [ref=f2e1729]:
+                          - generic [ref=f2e1730]: Амарал
+                          - generic [ref=f2e1731]: ","
+                        - listitem [ref=f2e1732]:
+                          - generic [ref=f2e1733]: Борракал
+                  - row [ref=f2e1734]:
+                    - rowheader "Бренд:" [ref=f2e1735]
+                    - cell "Garca Azul" [ref=f2e1736]:
+                      - list [ref=f2e1737]:
+                        - listitem [ref=f2e1738]:
+                          - generic [ref=f2e1739]: Garca Azul
+            - button "Добавить в корзину" [ref=f2e1740]: В корзину
+            - button "Добавить в избранное" [ref=f2e1747] [cursor=pointer]
+            - generic [ref=f2e1749]: "-38%"
+      - generic [ref=f2e1753]:
+        - heading "Идеально для компании" [level=2] [ref=f2e1756]
+        - generic [ref=f2e1758]:
+          - generic [ref=f2e1759]:
+            - generic [ref=f2e1760]:
+              - link "\"Jack Daniels\", 0.7 л" [ref=f2e1761] [cursor=pointer]:
+                - /url: /products/Jack-Daniels-700.html
+                - generic [ref=f2e1762]:
+                  - img "Изображение"
+              - generic [ref=f2e1764]:
+                - paragraph [ref=f2e1765]: 2 190 ₽
+                - paragraph [ref=f2e1766]: 2 739 ₽
+              - link "\"Jack Daniels\", 0.7 л" [ref=f2e1767] [cursor=pointer]:
+                - /url: /products/Jack-Daniels-700.html
+                - paragraph [ref=f2e1768]: "\"Jack Daniels\", 0.7 л"
+              - table [ref=f2e1769]:
+                - rowgroup [ref=f2e1770]:
+                  - row [ref=f2e1771]:
+                    - rowheader "Регион:" [ref=f2e1772]
+                    - cell "США" [ref=f2e1773]:
+                      - list [ref=f2e1774]:
+                        - listitem [ref=f2e1775]:
+                          - generic [ref=f2e1776]: США
+                - rowgroup [ref=f2e1777]:
+                  - row [ref=f2e1778]:
+                    - rowheader "Тип:" [ref=f2e1779]
+                    - cell "Теннесси" [ref=f2e1780]:
+                      - list [ref=f2e1781]:
+                        - listitem [ref=f2e1782]:
+                          - generic [ref=f2e1783]: Теннесси
+                  - row [ref=f2e1784]:
+                    - rowheader "Бренд:" [ref=f2e1785]
+                    - cell "Jack Daniels" [ref=f2e1786]:
+                      - list [ref=f2e1787]:
+                        - listitem [ref=f2e1788]:
+                          - generic [ref=f2e1789]: Jack Daniels
+                  - row [ref=f2e1790]:
+                    - rowheader "Крепость:" [ref=f2e1791]
+                    - cell "40 %" [ref=f2e1792]:
+                      - list [ref=f2e1793]:
+                        - listitem [ref=f2e1794]:
+                          - generic [ref=f2e1795]: 40 %
+              - generic [ref=f2e1796]:
+                - 'meter "Рейтинг: 4.5 из 5" [ref=f2e1799]': "4.5"
+                - region "163 оценки" [ref=f2e1800]
+            - button "Добавить в корзину" [ref=f2e1801]: В корзину
+            - button "Добавить в избранное" [ref=f2e1808] [cursor=pointer]
+            - generic [ref=f2e1810]: "-20%"
+          - generic [ref=f2e1812]:
+            - generic [ref=f2e1813]:
+              - link "\"Jagermeister\", 0.7 л" [ref=f2e1814] [cursor=pointer]:
+                - /url: /products/Jagermeister-700.html
+                - generic [ref=f2e1815]:
+                  - img "Изображение"
+              - generic [ref=f2e1817]:
+                - paragraph [ref=f2e1818]: 1 690 ₽
+                - paragraph [ref=f2e1819]: 2 029 ₽
+              - link "\"Jagermeister\", 0.7 л" [ref=f2e1820] [cursor=pointer]:
+                - /url: /products/Jagermeister-700.html
+                - paragraph [ref=f2e1821]: "\"Jagermeister\", 0.7 л"
+              - table [ref=f2e1822]:
+                - rowgroup [ref=f2e1823]:
+                  - row [ref=f2e1824]:
+                    - rowheader "Регион:" [ref=f2e1825]
+                    - cell "Германия" [ref=f2e1826]:
+                      - list [ref=f2e1827]:
+                        - listitem [ref=f2e1828]:
+                          - generic [ref=f2e1829]: Германия
+                - rowgroup [ref=f2e1830]:
+                  - row [ref=f2e1831]:
+                    - rowheader "Тип:" [ref=f2e1832]
+                    - cell "Биттер" [ref=f2e1833]:
+                      - list [ref=f2e1834]:
+                        - listitem [ref=f2e1835]:
+                          - generic [ref=f2e1836]: Биттер
+                  - row [ref=f2e1837]:
+                    - rowheader "Бренд:" [ref=f2e1838]
+                    - cell "Jagermeister" [ref=f2e1839]:
+                      - list [ref=f2e1840]:
+                        - listitem [ref=f2e1841]:
+                          - generic [ref=f2e1842]: Jagermeister
+                  - row [ref=f2e1843]:
+                    - rowheader "Крепость:" [ref=f2e1844]
+                    - cell "35 %" [ref=f2e1845]:
+                      - list [ref=f2e1846]:
+                        - listitem [ref=f2e1847]:
+                          - generic [ref=f2e1848]: 35 %
+              - generic [ref=f2e1849]:
+                - 'meter "Рейтинг: 4.6 из 5" [ref=f2e1852]': "4.6"
+                - region "244 оценки" [ref=f2e1853]
+            - button "Добавить в корзину" [ref=f2e1854]: В корзину
+            - button "Добавить в избранное" [ref=f2e1861] [cursor=pointer]
+            - generic [ref=f2e1867]:
+              - generic [ref=f2e1868]: WE
+              - generic [ref=f2e1869]: "91"
+            - generic [ref=f2e1870]: "-17%"
+          - generic [ref=f2e1872]:
+            - generic [ref=f2e1873]:
+              - link "\"Jim Beam\", 0.7 л" [ref=f2e1874] [cursor=pointer]:
+                - /url: /products/Jim-Beam-700.html
+                - generic [ref=f2e1875]:
+                  - img "Изображение"
+              - generic [ref=f2e1877]:
+                - paragraph [ref=f2e1878]: 1 690 ₽
+                - paragraph [ref=f2e1879]: 1 890 ₽
+              - link "\"Jim Beam\", 0.7 л" [ref=f2e1880] [cursor=pointer]:
+                - /url: /products/Jim-Beam-700.html
+                - paragraph [ref=f2e1881]: "\"Jim Beam\", 0.7 л"
+              - table [ref=f2e1882]:
+                - rowgroup [ref=f2e1883]:
+                  - row [ref=f2e1884]:
+                    - rowheader "Регион:" [ref=f2e1885]
+                    - cell "США Кентукки" [ref=f2e1886]:
+                      - list [ref=f2e1887]:
+                        - listitem [ref=f2e1888]:
+                          - generic [ref=f2e1889]: США
+                        - listitem [ref=f2e1890]:
+                          - generic [ref=f2e1891]: Кентукки
+                - rowgroup [ref=f2e1892]:
+                  - row [ref=f2e1893]:
+                    - rowheader "Тип:" [ref=f2e1894]
+                    - cell "Бурбон , Стрейт" [ref=f2e1895]:
+                      - list [ref=f2e1896]:
+                        - listitem [ref=f2e1897]:
+                          - generic [ref=f2e1898]: Бурбон
+                          - generic [ref=f2e1899]: ","
+                        - listitem [ref=f2e1900]:
+                          - generic [ref=f2e1901]: Стрейт
+                  - row [ref=f2e1902]:
+                    - rowheader "Выдержка:" [ref=f2e1903]
+                    - cell "4 года" [ref=f2e1904]:
+                      - list [ref=f2e1905]:
+                        - listitem [ref=f2e1906]:
+                          - generic [ref=f2e1907]: 4 года
+                  - row [ref=f2e1908]:
+                    - rowheader "Бренд:" [ref=f2e1909]
+                    - cell "Jim Beam" [ref=f2e1910]:
+                      - list [ref=f2e1911]:
+                        - listitem [ref=f2e1912]:
+                          - generic [ref=f2e1913]: Jim Beam
+              - generic [ref=f2e1914]:
+                - 'meter "Рейтинг: 4.9 из 5" [ref=f2e1917]': "4.9"
+                - region "173 оценки" [ref=f2e1918]
+            - button "Добавить в корзину" [ref=f2e1919]: В корзину
+            - button "Добавить в избранное" [ref=f2e1926] [cursor=pointer]
+            - generic [ref=f2e1928]: "-11%"
+          - generic [ref=f2e1930]:
+            - generic [ref=f2e1931]:
+              - link "\"Ballantine's\" Finest, 0.7 л" [ref=f2e1932] [cursor=pointer]:
+                - /url: /products/Ballantine-s-Finest.html
+                - generic [ref=f2e1933]:
+                  - img "Изображение"
+              - generic [ref=f2e1935]:
+                - paragraph [ref=f2e1936]: 1 690 ₽
+                - paragraph [ref=f2e1937]: 1 980 ₽
+              - link "\"Ballantine's\" Finest, 0.7 л" [ref=f2e1938] [cursor=pointer]:
+                - /url: /products/Ballantine-s-Finest.html
+                - paragraph [ref=f2e1939]: "\"Ballantine's\" Finest, 0.7 л"
+              - table [ref=f2e1940]:
+                - rowgroup [ref=f2e1941]:
+                  - row [ref=f2e1942]:
+                    - rowheader "Регион:" [ref=f2e1943]
+                    - cell "Шотландия" [ref=f2e1944]:
+                      - list [ref=f2e1945]:
+                        - listitem [ref=f2e1946]:
+                          - generic [ref=f2e1947]: Шотландия
+                - rowgroup [ref=f2e1948]:
+                  - row [ref=f2e1949]:
+                    - rowheader "Тип:" [ref=f2e1950]
+                    - cell "Купажированный" [ref=f2e1951]:
+                      - list [ref=f2e1952]:
+                        - listitem [ref=f2e1953]:
+                          - generic [ref=f2e1954]: Купажированный
+                  - row [ref=f2e1955]:
+                    - rowheader "Бренд:" [ref=f2e1956]
+                    - cell "Ballantine's" [ref=f2e1957]:
+                      - list [ref=f2e1958]:
+                        - listitem [ref=f2e1959]:
+                          - generic [ref=f2e1960]: Ballantine's
+                  - row [ref=f2e1961]:
+                    - rowheader "Крепость:" [ref=f2e1962]
+                    - cell "40 %" [ref=f2e1963]:
+                      - list [ref=f2e1964]:
+                        - listitem [ref=f2e1965]:
+                          - generic [ref=f2e1966]: 40 %
+              - generic [ref=f2e1967]:
+                - 'meter "Рейтинг: 4.3 из 5" [ref=f2e1970]': "4.3"
+                - region "99 оценок" [ref=f2e1971]
+            - button "Добавить в корзину" [ref=f2e1972]: В корзину
+            - button "Добавить в избранное" [ref=f2e1979] [cursor=pointer]
+            - generic [ref=f2e1981]: "-15%"
+          - generic [ref=f2e1983]:
+            - generic [ref=f2e1984]:
+              - link "\"Jameson\", 0.7 л" [ref=f2e1985] [cursor=pointer]:
+                - /url: /products/Jameson-700.html
+                - generic [ref=f2e1986]:
+                  - img "Изображение"
+              - generic [ref=f2e1988]:
+                - paragraph [ref=f2e1989]: 1 990 ₽
+                - paragraph [ref=f2e1990]: 2 490 ₽
+              - link "\"Jameson\", 0.7 л" [ref=f2e1991] [cursor=pointer]:
+                - /url: /products/Jameson-700.html
+                - paragraph [ref=f2e1992]: "\"Jameson\", 0.7 л"
+              - table [ref=f2e1993]:
+                - rowgroup [ref=f2e1994]:
+                  - row [ref=f2e1995]:
+                    - rowheader "Регион:" [ref=f2e1996]
+                    - cell "Ирландия" [ref=f2e1997]:
+                      - list [ref=f2e1998]:
+                        - listitem [ref=f2e1999]:
+                          - generic [ref=f2e2000]: Ирландия
+                - rowgroup [ref=f2e2001]:
+                  - row [ref=f2e2002]:
+                    - rowheader "Тип:" [ref=f2e2003]
+                    - cell "Купажированный" [ref=f2e2004]:
+                      - list [ref=f2e2005]:
+                        - listitem [ref=f2e2006]:
+                          - generic [ref=f2e2007]: Купажированный
+                  - row [ref=f2e2008]:
+                    - rowheader "Выдержка:" [ref=f2e2009]
+                    - cell "4 года" [ref=f2e2010]:
+                      - list [ref=f2e2011]:
+                        - listitem [ref=f2e2012]:
+                          - generic [ref=f2e2013]: 4 года
+                  - row [ref=f2e2014]:
+                    - rowheader "Бренд:" [ref=f2e2015]
+                    - cell "Jameson" [ref=f2e2016]:
+                      - list [ref=f2e2017]:
+                        - listitem [ref=f2e2018]:
+                          - generic [ref=f2e2019]: Jameson
+              - generic [ref=f2e2020]:
+                - 'meter "Рейтинг: 4.5 из 5" [ref=f2e2023]': "4.5"
+                - region "144 оценки" [ref=f2e2024]
+            - button "Добавить в корзину" [ref=f2e2025]: В корзину
+            - button "Добавить в избранное" [ref=f2e2032] [cursor=pointer]
+            - generic [ref=f2e2034]: "-20%"
+          - generic [ref=f2e2036]:
+            - generic [ref=f2e2037]:
+              - link "\"Sheridan's\", 0.5 л" [ref=f2e2038] [cursor=pointer]:
+                - /url: /products/Sheridans.html
+                - generic [ref=f2e2039]:
+                  - img "Изображение"
+              - generic [ref=f2e2041]:
+                - paragraph [ref=f2e2042]: 1 890 ₽
+                - paragraph [ref=f2e2043]: 2 049 ₽
+              - link "\"Sheridan's\", 0.5 л" [ref=f2e2044] [cursor=pointer]:
+                - /url: /products/Sheridans.html
+                - paragraph [ref=f2e2045]: "\"Sheridan's\", 0.5 л"
+              - table [ref=f2e2046]:
+                - rowgroup [ref=f2e2047]:
+                  - row [ref=f2e2048]:
+                    - rowheader "Регион:" [ref=f2e2049]
+                    - cell "Ирландия Дублин" [ref=f2e2050]:
+                      - list [ref=f2e2051]:
+                        - listitem [ref=f2e2052]:
+                          - generic [ref=f2e2053]: Ирландия
+                        - listitem [ref=f2e2054]:
+                          - generic [ref=f2e2055]: Дублин
+                - rowgroup [ref=f2e2056]:
+                  - row [ref=f2e2057]:
+                    - rowheader "Тип:" [ref=f2e2058]
+                    - cell "Сливочный" [ref=f2e2059]:
+                      - list [ref=f2e2060]:
+                        - listitem [ref=f2e2061]:
+                          - generic [ref=f2e2062]: Сливочный
+                  - row [ref=f2e2063]:
+                    - rowheader "Бренд:" [ref=f2e2064]
+                    - cell "Sheridan's" [ref=f2e2065]:
+                      - list [ref=f2e2066]:
+                        - listitem [ref=f2e2067]:
+                          - generic [ref=f2e2068]: Sheridan's
+                  - row [ref=f2e2069]:
+                    - rowheader "Крепость:" [ref=f2e2070]
+                    - cell "15.5 %" [ref=f2e2071]:
+                      - list [ref=f2e2072]:
+                        - listitem [ref=f2e2073]:
+                          - generic [ref=f2e2074]: 15.5 %
+              - generic [ref=f2e2075]:
+                - 'meter "Рейтинг: 4.8 из 5" [ref=f2e2078]': "4.8"
+                - region "75 оценок" [ref=f2e2079]
+            - button "Добавить в корзину" [ref=f2e2080]: В корзину
+            - button "Добавить в избранное" [ref=f2e2087] [cursor=pointer]
+            - generic [ref=f2e2089]: "-8%"
+          - generic [ref=f2e2091]:
+            - generic [ref=f2e2092]:
+              - link "\"Red Label\", 0.7 л" [ref=f2e2093] [cursor=pointer]:
+                - /url: /products/Red-Label-700.html
+                - generic [ref=f2e2094]:
+                  - img "Изображение"
+              - generic [ref=f2e2096]:
+                - paragraph [ref=f2e2097]: 1 620 ₽
+                - paragraph [ref=f2e2098]: 1 800 ₽
+              - link "\"Red Label\", 0.7 л" [ref=f2e2099] [cursor=pointer]:
+                - /url: /products/Red-Label-700.html
+                - paragraph [ref=f2e2100]: "\"Red Label\", 0.7 л"
+              - table [ref=f2e2101]:
+                - rowgroup [ref=f2e2102]:
+                  - row [ref=f2e2103]:
+                    - rowheader "Регион:" [ref=f2e2104]
+                    - cell "Шотландия" [ref=f2e2105]:
+                      - list [ref=f2e2106]:
+                        - listitem [ref=f2e2107]:
+                          - generic [ref=f2e2108]: Шотландия
+                - rowgroup [ref=f2e2109]:
+                  - row [ref=f2e2110]:
+                    - rowheader "Тип:" [ref=f2e2111]
+                    - cell "Купажированный" [ref=f2e2112]:
+                      - list [ref=f2e2113]:
+                        - listitem [ref=f2e2114]:
+                          - generic [ref=f2e2115]: Купажированный
+                  - row [ref=f2e2116]:
+                    - rowheader "Бренд:" [ref=f2e2117]
+                    - cell "Johnnie Walker , Red Label" [ref=f2e2118]:
+                      - list [ref=f2e2119]:
+                        - listitem [ref=f2e2120]:
+                          - generic [ref=f2e2121]: Johnnie Walker
+                          - generic [ref=f2e2122]: ","
+                        - listitem [ref=f2e2123]:
+                          - generic [ref=f2e2124]: Red Label
+                  - row [ref=f2e2125]:
+                    - rowheader "Крепость:" [ref=f2e2126]
+                    - cell "40 %" [ref=f2e2127]:
+                      - list [ref=f2e2128]:
+                        - listitem [ref=f2e2129]:
+                          - generic [ref=f2e2130]: 40 %
+              - generic [ref=f2e2131]:
+                - 'meter "Рейтинг: 3.8 из 5" [ref=f2e2134]': "3.8"
+                - region "57 оценок" [ref=f2e2135]
+            - button "Добавить в корзину" [ref=f2e2136]: В корзину
+            - button "Добавить в избранное" [ref=f2e2143] [cursor=pointer]
+            - generic [ref=f2e2145]: "-10%"
+          - generic [ref=f2e2147]:
+            - generic [ref=f2e2148]:
+              - link "\"Chivas Regal\" 12 years old, 0.7 л" [ref=f2e2149] [cursor=pointer]:
+                - /url: /products/Chivas-Regal-12-yeras-old-700.html
+                - generic [ref=f2e2150]:
+                  - img "Изображение"
+              - generic [ref=f2e2152]:
+                - paragraph [ref=f2e2153]: 2 990 ₽
+                - paragraph [ref=f2e2154]: 3 649 ₽
+              - link "\"Chivas Regal\" 12 years old, 0.7 л" [ref=f2e2155] [cursor=pointer]:
+                - /url: /products/Chivas-Regal-12-yeras-old-700.html
+                - paragraph [ref=f2e2156]: "\"Chivas Regal\" 12 years old, 0.7 л"
+              - table [ref=f2e2157]:
+                - rowgroup [ref=f2e2158]:
+                  - row [ref=f2e2159]:
+                    - rowheader "Регион:" [ref=f2e2160]
+                    - cell "Шотландия Спейсайд" [ref=f2e2161]:
+                      - list [ref=f2e2162]:
+                        - listitem [ref=f2e2163]:
+                          - generic [ref=f2e2164]: Шотландия
+                        - listitem [ref=f2e2165]:
+                          - generic [ref=f2e2166]: Спейсайд
+                - rowgroup [ref=f2e2167]:
+                  - row [ref=f2e2168]:
+                    - rowheader "Тип:" [ref=f2e2169]
+                    - cell "Купажированный , Премиум" [ref=f2e2170]:
+                      - list [ref=f2e2171]:
+                        - listitem [ref=f2e2172]:
+                          - generic [ref=f2e2173]: Купажированный
+                          - generic [ref=f2e2174]: ","
+                        - listitem [ref=f2e2175]:
+                          - generic [ref=f2e2176]: Премиум
+                  - row [ref=f2e2177]:
+                    - rowheader "Выдержка:" [ref=f2e2178]
+                    - cell "12 лет" [ref=f2e2179]:
+                      - list [ref=f2e2180]:
+                        - listitem [ref=f2e2181]:
+                          - generic [ref=f2e2182]: 12 лет
+                  - row [ref=f2e2183]:
+                    - rowheader "Бренд:" [ref=f2e2184]
+                    - cell "Chivas Regal" [ref=f2e2185]:
+                      - list [ref=f2e2186]:
+                        - listitem [ref=f2e2187]:
+                          - generic [ref=f2e2188]: Chivas Regal
+              - generic [ref=f2e2189]:
+                - 'meter "Рейтинг: 4.6 из 5" [ref=f2e2192]': "4.6"
+                - region "208 оценок" [ref=f2e2193]
+            - button "Добавить в корзину" [ref=f2e2194]: В корзину
+            - button "Добавить в избранное" [ref=f2e2201] [cursor=pointer]
+            - generic [ref=f2e2203]: "-18%"
+          - generic [ref=f2e2205]:
+            - generic [ref=f2e2206]:
+              - link "\"Hennessy\" V.S, 0.7 л" [ref=f2e2207] [cursor=pointer]:
+                - /url: /products/Hennessy-V-S-700.html
+                - generic [ref=f2e2208]:
+                  - img "Изображение"
+              - paragraph [ref=f2e2210]: 5 990 ₽
+              - link "\"Hennessy\" V.S, 0.7 л" [ref=f2e2211] [cursor=pointer]:
+                - /url: /products/Hennessy-V-S-700.html
+                - paragraph [ref=f2e2212]: "\"Hennessy\" V.S, 0.7 л"
+              - table [ref=f2e2213]:
+                - rowgroup [ref=f2e2214]:
+                  - row [ref=f2e2215]:
+                    - rowheader "Регион:" [ref=f2e2216]
+                    - cell "Франция Коньяк" [ref=f2e2217]:
+                      - list [ref=f2e2218]:
+                        - listitem [ref=f2e2219]:
+                          - generic [ref=f2e2220]: Франция
+                        - listitem [ref=f2e2221]:
+                          - generic [ref=f2e2222]: Коньяк
+                - rowgroup [ref=f2e2223]:
+                  - row [ref=f2e2224]:
+                    - rowheader "Класс коньяка:" [ref=f2e2225]
+                    - cell "VS" [ref=f2e2226]:
+                      - list [ref=f2e2227]:
+                        - listitem [ref=f2e2228]:
+                          - generic [ref=f2e2229]: VS
+                  - row [ref=f2e2230]:
+                    - rowheader "Выдержка:" [ref=f2e2231]
+                    - cell "2.5 года" [ref=f2e2232]:
+                      - list [ref=f2e2233]:
+                        - listitem [ref=f2e2234]:
+                          - generic [ref=f2e2235]: 2.5 года
+                  - row [ref=f2e2236]:
+                    - rowheader "Бренд:" [ref=f2e2237]
+                    - cell "Hennessy" [ref=f2e2238]:
+                      - list [ref=f2e2239]:
+                        - listitem [ref=f2e2240]:
+                          - generic [ref=f2e2241]: Hennessy
+              - generic [ref=f2e2242]:
+                - 'meter "Рейтинг: 4.9 из 5" [ref=f2e2245]': "4.9"
+                - region "79 оценок" [ref=f2e2246]
+            - button "Добавить в корзину" [ref=f2e2247]: В корзину
+            - button "Добавить в избранное" [ref=f2e2254] [cursor=pointer]
+          - generic [ref=f2e2256]:
+            - generic [ref=f2e2257]:
+              - link "\"Dewar's\" White Label, 0.7 л" [ref=f2e2258] [cursor=pointer]:
+                - /url: /products/Dewars-White-Label-750.html
+                - generic [ref=f2e2259]:
+                  - img "Изображение"
+              - generic [ref=f2e2261]:
+                - paragraph [ref=f2e2262]: 1 699 ₽
+                - paragraph [ref=f2e2263]: 2 460 ₽
+              - link "\"Dewar's\" White Label, 0.7 л" [ref=f2e2264] [cursor=pointer]:
+                - /url: /products/Dewars-White-Label-750.html
+                - paragraph [ref=f2e2265]: "\"Dewar's\" White Label, 0.7 л"
+              - table [ref=f2e2266]:
+                - rowgroup [ref=f2e2267]:
+                  - row [ref=f2e2268]:
+                    - rowheader "Регион:" [ref=f2e2269]
+                    - cell "Шотландия Прибрежный Хайленд Восточное побережье" [ref=f2e2270]:
+                      - list [ref=f2e2271]:
+                        - listitem [ref=f2e2272]:
+                          - generic [ref=f2e2273]: Шотландия
+                        - listitem [ref=f2e2274]:
+                          - generic [ref=f2e2275]: Прибрежный Хайленд
+                        - listitem [ref=f2e2276]:
+                          - generic [ref=f2e2277]: Восточное побережье
+                - rowgroup [ref=f2e2278]:
+                  - row [ref=f2e2279]:
+                    - rowheader "Тип:" [ref=f2e2280]
+                    - cell "Купажированный" [ref=f2e2281]:
+                      - list [ref=f2e2282]:
+                        - listitem [ref=f2e2283]:
+                          - generic [ref=f2e2284]: Купажированный
+                  - row [ref=f2e2285]:
+                    - rowheader "Бренд:" [ref=f2e2286]
+                    - cell "Dewar's , White Label" [ref=f2e2287]:
+                      - list [ref=f2e2288]:
+                        - listitem [ref=f2e2289]:
+                          - generic [ref=f2e2290]: Dewar's
+                          - generic [ref=f2e2291]: ","
+                        - listitem [ref=f2e2292]:
+                          - generic [ref=f2e2293]: White Label
+                  - row [ref=f2e2294]:
+                    - rowheader "Крепость:" [ref=f2e2295]
+                    - cell "40 %" [ref=f2e2296]:
+                      - list [ref=f2e2297]:
+                        - listitem [ref=f2e2298]:
+                          - generic [ref=f2e2299]: 40 %
+              - generic [ref=f2e2300]:
+                - 'meter "Рейтинг: 4.3 из 5" [ref=f2e2303]': "4.3"
+                - region "77 оценок" [ref=f2e2304]
+            - button "Добавить в корзину" [ref=f2e2305]: В корзину
+            - button "Добавить в избранное" [ref=f2e2312] [cursor=pointer]
+            - generic [ref=f2e2314]: "-31%"
+          - generic [ref=f2e2316]:
+            - generic [ref=f2e2317]:
+              - link "\"Cointreau\", 0.7 л" [ref=f2e2318] [cursor=pointer]:
+                - /url: /products/Kuantro-700.html
+                - generic [ref=f2e2319]:
+                  - img "Изображение"
+              - generic [ref=f2e2321]:
+                - paragraph [ref=f2e2322]: 2 090 ₽
+                - paragraph [ref=f2e2323]: 2 409 ₽
+              - link "\"Cointreau\", 0.7 л" [ref=f2e2324] [cursor=pointer]:
+                - /url: /products/Kuantro-700.html
+                - paragraph [ref=f2e2325]: "\"Cointreau\", 0.7 л"
+              - table [ref=f2e2326]:
+                - rowgroup [ref=f2e2327]:
+                  - row [ref=f2e2328]:
+                    - rowheader "Регион:" [ref=f2e2329]
+                    - cell "Франция Анжера" [ref=f2e2330]:
+                      - list [ref=f2e2331]:
+                        - listitem [ref=f2e2332]:
+                          - generic [ref=f2e2333]: Франция
+                        - listitem [ref=f2e2334]:
+                          - generic [ref=f2e2335]: Анжера
+                - rowgroup [ref=f2e2336]:
+                  - row [ref=f2e2337]:
+                    - rowheader "Тип:" [ref=f2e2338]
+                    - cell "Фруктовый" [ref=f2e2339]:
+                      - list [ref=f2e2340]:
+                        - listitem [ref=f2e2341]:
+                          - generic [ref=f2e2342]: Фруктовый
+                  - row [ref=f2e2343]:
+                    - rowheader "Производитель:" [ref=f2e2344]
+                    - cell "Cointreau" [ref=f2e2345]:
+                      - list [ref=f2e2346]:
+                        - listitem [ref=f2e2347]:
+                          - generic [ref=f2e2348]: Cointreau
+                  - row [ref=f2e2349]:
+                    - rowheader "Крепость:" [ref=f2e2350]
+                    - cell "40 %" [ref=f2e2351]:
+                      - list [ref=f2e2352]:
+                        - listitem [ref=f2e2353]:
+                          - generic [ref=f2e2354]: 40 %
+              - generic [ref=f2e2355]:
+                - 'meter "Рейтинг: 4.8 из 5" [ref=f2e2358]': "4.8"
+                - region "202 оценки" [ref=f2e2359]
+            - button "Добавить в корзину" [ref=f2e2360]: В корзину
+            - button "Добавить в избранное" [ref=f2e2367] [cursor=pointer]
+            - generic [ref=f2e2369]: "-13%"
+          - generic [ref=f2e2371]:
+            - generic [ref=f2e2372]:
+              - link "\"Becherovka\", 0.7 л" [ref=f2e2373] [cursor=pointer]:
+                - /url: /products/Becherovka-700.html
+                - generic [ref=f2e2374]:
+                  - img "Изображение"
+              - generic [ref=f2e2376]:
+                - paragraph [ref=f2e2377]: 1 690 ₽
+                - paragraph [ref=f2e2378]: 1 939 ₽
+              - link "\"Becherovka\", 0.7 л" [ref=f2e2379] [cursor=pointer]:
+                - /url: /products/Becherovka-700.html
+                - paragraph [ref=f2e2380]: "\"Becherovka\", 0.7 л"
+              - table [ref=f2e2381]:
+                - rowgroup [ref=f2e2382]:
+                  - row [ref=f2e2383]:
+                    - rowheader "Регион:" [ref=f2e2384]
+                    - cell "Чехия Карловы Вары" [ref=f2e2385]:
+                      - list [ref=f2e2386]:
+                        - listitem [ref=f2e2387]:
+                          - generic [ref=f2e2388]: Чехия
+                        - listitem [ref=f2e2389]:
+                          - generic [ref=f2e2390]: Карловы Вары
+                - rowgroup [ref=f2e2391]:
+                  - row [ref=f2e2392]:
+                    - rowheader "Тип:" [ref=f2e2393]
+                    - cell "Травяной (на травах)" [ref=f2e2394]:
+                      - list [ref=f2e2395]:
+                        - listitem [ref=f2e2396]:
+                          - generic [ref=f2e2397]: Травяной (на травах)
+                  - row [ref=f2e2398]:
+                    - rowheader "Бренд:" [ref=f2e2399]
+                    - cell "Becherovka" [ref=f2e2400]:
+                      - list [ref=f2e2401]:
+                        - listitem [ref=f2e2402]:
+                          - generic [ref=f2e2403]: Becherovka
+                  - row [ref=f2e2404]:
+                    - rowheader "Крепость:" [ref=f2e2405]
+                    - cell "38 %" [ref=f2e2406]:
+                      - list [ref=f2e2407]:
+                        - listitem [ref=f2e2408]:
+                          - generic [ref=f2e2409]: 38 %
+              - generic [ref=f2e2410]:
+                - 'meter "Рейтинг: 4.8 из 5" [ref=f2e2413]': "4.8"
+                - region "56 оценок" [ref=f2e2414]
+            - button "Добавить в корзину" [ref=f2e2415]: В корзину
+            - button "Добавить в избранное" [ref=f2e2422] [cursor=pointer]
+            - generic [ref=f2e2424]: "-13%"
+      - generic [ref=f2e2428]:
+        - heading "Наши магазины" [level=2] [ref=f2e2431]
+        - generic [ref=f2e2433]:
+          - generic [ref=f2e2434]:
+            - generic [ref=f2e2435]:
+              - paragraph [ref=f2e2436]: "57"
+              - paragraph [ref=f2e2437]: магазинов в Москве
+            - button "На карте" [ref=f2e2439] [cursor=pointer]
+          - generic [ref=f2e2440]:
+            - link "Водный стадион" [ref=f2e2441] [cursor=pointer]:
+              - /url: /leningradskoe68-shop/
+            - generic [ref=f2e2443]:
+              - img "Изображение"
+            - generic [ref=f2e2444]:
+              - generic [ref=f2e2445]:
+                - generic [ref=f2e2447]:
+                  - img "Изображение"
+                - generic [ref=f2e2448]: Водный стадион
+              - paragraph [ref=f2e2449]: г. Москва, Ленинградское шоссе, д. 68
+              - paragraph [ref=f2e2450]: Откроется в 11:00
+          - generic [ref=f2e2451]:
+            - link "Первомайская" [ref=f2e2452] [cursor=pointer]:
+              - /url: /izmailovsky-shop/
+            - generic [ref=f2e2453]:
+              - generic [ref=f2e2454]:
+                - img "Изображение"
+              - generic [ref=f2e2455]: "4.7"
+            - generic [ref=f2e2456]:
+              - generic [ref=f2e2457]:
+                - generic [ref=f2e2459]:
+                  - img "Изображение"
+                - generic [ref=f2e2460]: Первомайская
+              - paragraph [ref=f2e2461]: г. Москва, Измайловский бульвар, д. 1/28
+              - paragraph [ref=f2e2462]: Откроется в 11:00
+          - generic [ref=f2e2463]:
+            - link "Варшавская" [ref=f2e2464] [cursor=pointer]:
+              - /url: /varshavskoe-shop/
+            - generic [ref=f2e2465]:
+              - generic [ref=f2e2466]:
+                - img "Изображение"
+              - generic [ref=f2e2467]: "4.5"
+            - generic [ref=f2e2468]:
+              - generic [ref=f2e2469]:
+                - generic [ref=f2e2471]:
+                  - img "Изображение"
+                - generic [ref=f2e2472]: Варшавская
+              - paragraph [ref=f2e2473]: г. Москва, Варшавское шоссе 72, корпус 3
+              - paragraph [ref=f2e2474]: Откроется в 11:00
+          - generic [ref=f2e2475]:
+            - link "Сухаревская" [ref=f2e2476] [cursor=pointer]:
+              - /url: /sadovaya-shop/
+            - generic [ref=f2e2477]:
+              - generic [ref=f2e2478]:
+                - img "Изображение"
+              - generic [ref=f2e2479]: "4.6"
+            - generic [ref=f2e2480]:
+              - generic [ref=f2e2481]:
+                - generic [ref=f2e2483]:
+                  - img "Изображение"
+                - generic [ref=f2e2484]: Сухаревская
+              - paragraph [ref=f2e2485]: г. Москва, ул. Садовая-Сухаревская, д.13/15
+              - paragraph [ref=f2e2486]: Откроется в 11:00
+          - generic [ref=f2e2487]:
+            - link "Ленинский проспект" [ref=f2e2488] [cursor=pointer]:
+              - /url: /leninsky-shop/
+            - generic [ref=f2e2489]:
+              - generic [ref=f2e2490]:
+                - img "Изображение"
+              - generic [ref=f2e2491]: "4.6"
+            - generic [ref=f2e2492]:
+              - generic [ref=f2e2493]:
+                - generic [ref=f2e2495]:
+                  - img "Изображение"
+                - generic [ref=f2e2496]: Ленинский проспект
+              - paragraph [ref=f2e2497]: г. Москва, Ленинский проспект, д.52
+              - paragraph [ref=f2e2498]: Откроется в 11:00
+          - generic [ref=f2e2499]:
+            - link "Бульвар Рокоссовского" [ref=f2e2500] [cursor=pointer]:
+              - /url: /rokossovskogo-shop/
+            - generic [ref=f2e2502]:
+              - img "Изображение"
+            - generic [ref=f2e2503]:
+              - generic [ref=f2e2504]:
+                - generic [ref=f2e2506]:
+                  - img "Изображение"
+                - generic [ref=f2e2507]: Бульвар Рокоссовского
+              - paragraph [ref=f2e2508]: г. Москва, бульвар Маршала Рокоссовского, д. 33/12, помещение 6/1
+              - paragraph [ref=f2e2509]: Откроется в 11:00
+          - generic [ref=f2e2510]:
+            - link "Коньково" [ref=f2e2511] [cursor=pointer]:
+              - /url: /profsoyuznaya-shop/
+            - generic [ref=f2e2512]:
+              - generic [ref=f2e2513]:
+                - img "Изображение"
+              - generic [ref=f2e2514]: Новый
+            - generic [ref=f2e2516]:
+              - generic [ref=f2e2517]:
+                - generic [ref=f2e2519]:
+                  - img "Изображение"
+                - generic [ref=f2e2520]: Коньково
+              - paragraph [ref=f2e2521]: 117321, г. Москва, ул. Профсоюзная, д. 126, корп. 2
+              - paragraph [ref=f2e2522]: Откроется в 11:00
+          - generic [ref=f2e2523]:
+            - link "Полежаевская" [ref=f2e2524] [cursor=pointer]:
+              - /url: /khoroshevskoe-shop/
+            - generic [ref=f2e2526]:
+              - img "Изображение"
+            - generic [ref=f2e2527]:
+              - generic [ref=f2e2528]:
+                - generic [ref=f2e2530]:
+                  - img "Изображение"
+                - generic [ref=f2e2531]: Полежаевская
+              - paragraph [ref=f2e2532]: г. Москва, Хорошёвское шоссе, д. 68, помещ. 2/1
+              - paragraph [ref=f2e2533]: Откроется в 11:00
+          - generic [ref=f2e2534]:
+            - link "Парк Культуры" [ref=f2e2535] [cursor=pointer]:
+              - /url: /komsomolskiy-shop/
+            - generic [ref=f2e2537]:
+              - img "Изображение"
+            - generic [ref=f2e2538]:
+              - generic [ref=f2e2539]:
+                - generic [ref=f2e2541]:
+                  - img "Изображение"
+                - generic [ref=f2e2542]: Парк Культуры
+              - paragraph [ref=f2e2543]: г. Москва, Комсомольский проспект, д. 14/1, к. 1, помещ. 3/1
+              - paragraph [ref=f2e2544]: Откроется в 11:00
+          - generic [ref=f2e2545]:
+            - link "Медведково" [ref=f2e2546] [cursor=pointer]:
+              - /url: /rozhdestvenskaya-shop/
+            - generic [ref=f2e2548]:
+              - img "Изображение"
+            - generic [ref=f2e2549]:
+              - generic [ref=f2e2550]:
+                - generic [ref=f2e2552]:
+                  - img "Изображение"
+                - generic [ref=f2e2553]: Медведково
+              - paragraph [ref=f2e2554]: г. Мытищи, ул. Рождественская, с8
+              - paragraph [ref=f2e2555]: Откроется в 10:00
+          - generic [ref=f2e2556]:
+            - link "Бауманская" [ref=f2e2557] [cursor=pointer]:
+              - /url: /bakuninskaya-shop/
+            - generic [ref=f2e2559]:
+              - img "Изображение"
+            - generic [ref=f2e2560]:
+              - generic [ref=f2e2561]:
+                - generic [ref=f2e2563]:
+                  - img "Изображение"
+                - generic [ref=f2e2564]: Бауманская
+              - paragraph [ref=f2e2565]: г. Москва, ул. Бакунинская, д. 26-30
+              - paragraph [ref=f2e2566]: Откроется в 11:00
+          - generic [ref=f2e2567]:
+            - link "Новые Черёмушки" [ref=f2e2568] [cursor=pointer]:
+              - /url: /vlasova-shop/
+            - generic [ref=f2e2570]:
+              - img "Изображение"
+            - generic [ref=f2e2571]:
+              - generic [ref=f2e2572]:
+                - generic [ref=f2e2574]:
+                  - img "Изображение"
+                - generic [ref=f2e2575]: Новые Черёмушки
+              - paragraph [ref=f2e2576]: г. Москва, ул. Архитектора Власова, д. 39
+              - paragraph [ref=f2e2577]: Откроется в 11:00
+          - generic [ref=f2e2578]:
+            - link "Бабушкинская" [ref=f2e2579] [cursor=pointer]:
+              - /url: /dezhneva-shop/
+            - generic [ref=f2e2581]:
+              - img "Изображение"
+            - generic [ref=f2e2582]:
+              - generic [ref=f2e2583]:
+                - generic [ref=f2e2585]:
+                  - img "Изображение"
+                - generic [ref=f2e2586]: Бабушкинская
+              - paragraph [ref=f2e2587]: г. Москва, Проезд Дежнёва, д. 30
+              - paragraph [ref=f2e2588]: Откроется в 11:00
+          - generic [ref=f2e2589]:
+            - link "Люблино" [ref=f2e2590] [cursor=pointer]:
+              - /url: /verkhniye-shop/
+            - generic [ref=f2e2592]:
+              - img "Изображение"
+            - generic [ref=f2e2593]:
+              - generic [ref=f2e2594]:
+                - generic [ref=f2e2596]:
+                  - img "Изображение"
+                - generic [ref=f2e2597]: Люблино
+              - paragraph [ref=f2e2598]: г. Москва, ул. Верхние Поля, д. 35, к.3
+              - paragraph [ref=f2e2599]: Откроется в 11:00
+          - generic [ref=f2e2600]:
+            - link "Скобелевская" [ref=f2e2601] [cursor=pointer]:
+              - /url: /skobelevskaya-shop/
+            - generic [ref=f2e2603]:
+              - img "Изображение"
+            - generic [ref=f2e2604]:
+              - generic [ref=f2e2605]:
+                - generic [ref=f2e2607]:
+                  - img "Изображение"
+                - generic [ref=f2e2608]: Скобелевская
+              - paragraph [ref=f2e2609]: г. Москва, ул. Скобелевская, д. 25
+              - paragraph [ref=f2e2610]: Откроется в 11:00
+          - generic [ref=f2e2611]:
+            - link "Яхромская" [ref=f2e2612] [cursor=pointer]:
+              - /url: /dmitrovskoe-shop/
+            - generic [ref=f2e2614]:
+              - img "Изображение"
+            - generic [ref=f2e2615]:
+              - generic [ref=f2e2616]:
+                - generic [ref=f2e2618]:
+                  - img "Изображение"
+                - generic [ref=f2e2619]: Яхромская
+              - paragraph [ref=f2e2620]: г. Москва, Дмитровское шоссе, д. 107, к. 2
+              - paragraph [ref=f2e2621]: Откроется в 11:00
+          - generic [ref=f2e2622]:
+            - link "г. Одинцово" [ref=f2e2623] [cursor=pointer]:
+              - /url: /mozhaiskoe-shop/
+            - generic [ref=f2e2624]:
+              - generic [ref=f2e2625]:
+                - img "Изображение"
+              - generic [ref=f2e2626]: "4.5"
+            - generic [ref=f2e2627]:
+              - generic [ref=f2e2628]: г. Одинцово
+              - paragraph [ref=f2e2629]: г. Одинцово, ш. Можайское, д. 153г
+              - paragraph [ref=f2e2630]: Откроется в 11:00
+          - generic [ref=f2e2631]:
+            - link "Пролетарская" [ref=f2e2632] [cursor=pointer]:
+              - /url: /dubrovskaya-shop/
+            - generic [ref=f2e2633]:
+              - generic [ref=f2e2634]:
+                - img "Изображение"
+              - generic [ref=f2e2635]: "4.6"
+            - generic [ref=f2e2636]:
+              - generic [ref=f2e2637]:
+                - generic [ref=f2e2639]:
+                  - img "Изображение"
+                - generic [ref=f2e2640]: Пролетарская
+              - paragraph [ref=f2e2641]: г. Москва, ул. 1-я Дубровская, д. 8/12
+              - paragraph [ref=f2e2642]: Откроется в 11:00
+          - generic [ref=f2e2643]:
+            - link "ВДНХ" [ref=f2e2644] [cursor=pointer]:
+              - /url: /mira-shop/
+            - generic [ref=f2e2645]:
+              - generic [ref=f2e2646]:
+                - img "Изображение"
+              - generic [ref=f2e2647]: "4.7"
+            - generic [ref=f2e2648]:
+              - generic [ref=f2e2649]:
+                - generic [ref=f2e2651]:
+                  - img "Изображение"
+                - generic [ref=f2e2652]: ВДНХ
+              - paragraph [ref=f2e2653]: г. Москва, проспект Мира, д. 124, к. 5
+              - paragraph [ref=f2e2654]: Откроется в 11:00
+          - generic [ref=f2e2655]:
+            - link "Марьино" [ref=f2e2656] [cursor=pointer]:
+              - /url: /donetskaya-shop/
+            - generic [ref=f2e2657]:
+              - generic [ref=f2e2658]:
+                - img "Изображение"
+              - generic [ref=f2e2659]: "4.5"
+            - generic [ref=f2e2660]:
+              - generic [ref=f2e2661]:
+                - generic [ref=f2e2663]:
+                  - img "Изображение"
+                - generic [ref=f2e2664]: Марьино
+              - paragraph [ref=f2e2665]: г. Москва, ул. Донецкая, д.34, корп. 1
+              - paragraph [ref=f2e2666]: Откроется в 11:00
+          - generic [ref=f2e2667]:
+            - link "Новокосино" [ref=f2e2668] [cursor=pointer]:
+              - /url: /yubileyny-shop/
+            - generic [ref=f2e2669]:
+              - generic [ref=f2e2670]:
+                - img "Изображение"
+              - generic [ref=f2e2671]: "4.6"
+            - generic [ref=f2e2672]:
+              - generic [ref=f2e2673]: Новокосино
+              - paragraph [ref=f2e2674]: г. Реутов, Юбилейный проспект, д. 67
+              - paragraph [ref=f2e2675]: Откроется в 11:00
+          - generic [ref=f2e2676]:
+            - link "Жулебино" [ref=f2e2677] [cursor=pointer]:
+              - /url: /kirova-shop/
+            - generic [ref=f2e2678]:
+              - generic [ref=f2e2679]:
+                - img "Изображение"
+              - generic [ref=f2e2680]: "4.7"
+            - generic [ref=f2e2681]:
+              - generic [ref=f2e2682]:
+                - generic [ref=f2e2684]:
+                  - img "Изображение"
+                - generic [ref=f2e2685]: Жулебино
+              - paragraph [ref=f2e2686]: г. Люберцы, ул. Кирова, д.9, к. 2
+              - paragraph [ref=f2e2687]: Откроется в 11:00
+          - generic [ref=f2e2688]:
+            - link "Улица Ак. Янгеля" [ref=f2e2689] [cursor=pointer]:
+              - /url: /yangelya-shop/
+            - generic [ref=f2e2690]:
+              - generic [ref=f2e2691]:
+                - img "Изображение"
+              - generic [ref=f2e2692]: "4.6"
+            - generic [ref=f2e2693]:
+              - generic [ref=f2e2694]:
+                - generic [ref=f2e2696]:
+                  - img "Изображение"
+                - generic [ref=f2e2697]: Улица Ак. Янгеля
+              - paragraph [ref=f2e2698]: г. Москва, ул. Академика Янгеля, д. 2
+              - paragraph [ref=f2e2699]: Откроется в 11:00
+          - generic [ref=f2e2700]:
+            - link "Красногорск (м.Мякинино)" [ref=f2e2701] [cursor=pointer]:
+              - /url: /podmoskovny-shop/
+            - generic [ref=f2e2702]:
+              - generic [ref=f2e2703]:
+                - img "Изображение"
+              - generic [ref=f2e2704]: "4.4"
+            - generic [ref=f2e2705]:
+              - generic [ref=f2e2706]:
+                - generic [ref=f2e2708]:
+                  - img "Изображение"
+                - generic [ref=f2e2709]: Красногорск (м.Мякинино)
+              - paragraph [ref=f2e2710]: г. Красногорск, Подмосковный бульвар, д. 13
+              - paragraph [ref=f2e2711]: Откроется в 11:00
+          - generic [ref=f2e2712]:
+            - link "Строгино" [ref=f2e2713] [cursor=pointer]:
+              - /url: /stroginsky-shop/
+            - generic [ref=f2e2714]:
+              - generic [ref=f2e2715]:
+                - img "Изображение"
+              - generic [ref=f2e2716]: "4.6"
+            - generic [ref=f2e2717]:
+              - generic [ref=f2e2718]:
+                - generic [ref=f2e2720]:
+                  - img "Изображение"
+                - generic [ref=f2e2721]: Строгино
+              - paragraph [ref=f2e2722]: г. Москва, Строгинский бульвар, д. 26, корпус 2
+              - paragraph [ref=f2e2723]: Откроется в 11:00
+          - generic [ref=f2e2724]:
+            - link "Филевский парк" [ref=f2e2725] [cursor=pointer]:
+              - /url: /kastanaevskaya-shop/
+            - generic [ref=f2e2726]:
+              - generic [ref=f2e2727]:
+                - img "Изображение"
+              - generic [ref=f2e2728]: "4.5"
+            - generic [ref=f2e2729]:
+              - generic [ref=f2e2730]:
+                - generic [ref=f2e2732]:
+                  - img "Изображение"
+                - generic [ref=f2e2733]: Филевский парк
+              - paragraph [ref=f2e2734]: г. Москва, ул. Кастанаевская, д. 17
+              - paragraph [ref=f2e2735]: Откроется в 11:00
+          - generic [ref=f2e2736]:
+            - link "Крылатское" [ref=f2e2737] [cursor=pointer]:
+              - /url: /osenny-shop/
+            - generic [ref=f2e2738]:
+              - generic [ref=f2e2739]:
+                - img "Изображение"
+              - generic [ref=f2e2740]: "4.6"
+            - generic [ref=f2e2741]:
+              - generic [ref=f2e2742]:
+                - generic [ref=f2e2744]:
+                  - img "Изображение"
+                - generic [ref=f2e2745]: Крылатское
+              - paragraph [ref=f2e2746]: г. Москва, Осенний бульвар, д.20, корп.1.
+              - paragraph [ref=f2e2747]: Откроется в 11:00
+          - generic [ref=f2e2748]:
+            - link "Шоссе Энтузиастов" [ref=f2e2749] [cursor=pointer]:
+              - /url: /entuziastov-shop/
+            - generic [ref=f2e2750]:
+              - generic [ref=f2e2751]:
+                - img "Изображение"
+              - generic [ref=f2e2752]: "4.7"
+            - generic [ref=f2e2753]:
+              - generic [ref=f2e2754]:
+                - generic [ref=f2e2756]:
+                  - img "Изображение"
+                - generic [ref=f2e2757]: Шоссе Энтузиастов
+              - paragraph [ref=f2e2758]: г. Москва, шоссе Энтузиастов, д.74/2
+              - paragraph [ref=f2e2759]: Откроется в 11:00
+          - generic [ref=f2e2760]:
+            - link "Серпуховская" [ref=f2e2761] [cursor=pointer]:
+              - /url: /lyusinovskaya-shop/
+            - generic [ref=f2e2762]:
+              - generic [ref=f2e2763]:
+                - img "Изображение"
+              - generic [ref=f2e2764]: "4.6"
+            - generic [ref=f2e2765]:
+              - generic [ref=f2e2766]:
+                - generic [ref=f2e2768]:
+                  - img "Изображение"
+                - generic [ref=f2e2769]: Серпуховская
+              - paragraph [ref=f2e2770]: г. Москва, ул. Люсиновская, д.53
+              - paragraph [ref=f2e2771]: Откроется в 11:00
+          - generic [ref=f2e2772]:
+            - link "Савеловская" [ref=f2e2773] [cursor=pointer]:
+              - /url: /savelovskaya-shop/
+            - generic [ref=f2e2774]:
+              - generic [ref=f2e2775]:
+                - img "Изображение"
+              - generic [ref=f2e2776]: "4.5"
+            - generic [ref=f2e2777]:
+              - generic [ref=f2e2778]:
+                - generic [ref=f2e2780]:
+                  - img "Изображение"
+                - generic [ref=f2e2781]: Савеловская
+              - paragraph [ref=f2e2782]: г. Москва, ул. Складочная, д.1, стр.1
+              - paragraph [ref=f2e2783]: Откроется в 11:00
+          - generic [ref=f2e2784]:
+            - link "Семёновская" [ref=f2e2785] [cursor=pointer]:
+              - /url: /scherbakovka-shop/
+            - generic [ref=f2e2786]:
+              - generic [ref=f2e2787]:
+                - img "Изображение"
+              - generic [ref=f2e2788]: Новый
+            - generic [ref=f2e2790]:
+              - generic [ref=f2e2791]: Семёновская
+              - paragraph [ref=f2e2792]: БонВин — партнёрский магазин
+              - paragraph [ref=f2e2793]: г. Москва, ул. Щербаковская, д. 40
+              - paragraph [ref=f2e2794]: Откроется в 10:00
+          - generic [ref=f2e2795]:
+            - link "Вёшки" [ref=f2e2796] [cursor=pointer]:
+              - /url: /veshky-shop/
+            - generic [ref=f2e2797]:
+              - generic [ref=f2e2798]:
+                - img "Изображение"
+              - generic [ref=f2e2799]: Новый
+            - generic [ref=f2e2801]:
+              - generic [ref=f2e2802]: Вёшки
+              - paragraph [ref=f2e2803]: Vine Space — партнёрский магазин
+              - paragraph [ref=f2e2804]: Московская область, посёлок Вёшки, Зелёный бульвар, д. 1
+              - paragraph [ref=f2e2805]: Откроется в 11:00
+          - generic [ref=f2e2806]:
+            - link "Румянцево" [ref=f2e2807] [cursor=pointer]:
+              - /url: /kiyevskoye-shop/
+            - generic [ref=f2e2808]:
+              - generic [ref=f2e2809]:
+                - img "Изображение"
+              - generic [ref=f2e2810]: Новый
+            - generic [ref=f2e2812]:
+              - generic [ref=f2e2813]: Румянцево
+              - paragraph [ref=f2e2814]: Vine Space — партнёрский магазин
+              - paragraph [ref=f2e2815]: г. Москва, Киевское шоссе, 22-й километр, д. 6, стр. 1
+              - paragraph [ref=f2e2816]: Откроется в 10:00
+          - generic [ref=f2e2817]:
+            - link "Спартак" [ref=f2e2818] [cursor=pointer]:
+              - /url: /lyotnaya-shop/
+            - generic [ref=f2e2819]:
+              - generic [ref=f2e2820]:
+                - img "Изображение"
+              - generic [ref=f2e2821]: Новый
+            - generic [ref=f2e2823]:
+              - generic [ref=f2e2824]: Спартак
+              - paragraph [ref=f2e2825]: AVDrinks — партнёрский магазин
+              - paragraph [ref=f2e2826]: г. Москва, ул. Летная 95Бк2
+              - paragraph [ref=f2e2827]: Откроется в 10:00
+          - generic [ref=f2e2828]:
+            - link "Островцы" [ref=f2e2829] [cursor=pointer]:
+              - /url: /ostrovcy-shop/
+            - generic [ref=f2e2830]:
+              - generic [ref=f2e2831]:
+                - img "Изображение"
+              - generic [ref=f2e2832]: Новый
+            - generic [ref=f2e2834]:
+              - generic [ref=f2e2835]: Островцы
+              - paragraph [ref=f2e2836]: Алкобренд — партнёрский магазин
+              - paragraph [ref=f2e2837]: д. Островцы, ул. Школьная, д. 18А
+              - paragraph [ref=f2e2838]: Откроется в 10:00
+          - generic [ref=f2e2839]:
+            - link "ТЦ Рига Star Новорижское шоссе" [ref=f2e2840] [cursor=pointer]:
+              - /url: /novorizhskoeshosse-shop/
+            - generic [ref=f2e2841]:
+              - generic [ref=f2e2842]:
+                - img "Изображение"
+              - generic [ref=f2e2843]: Новый
+            - generic [ref=f2e2845]:
+              - generic [ref=f2e2846]: ТЦ Рига Star Новорижское шоссе
+              - paragraph [ref=f2e2847]: Крепкий Стиль — партнёрский магазин
+              - paragraph [ref=f2e2848]: Московская область, городской округ Красногорск, М-9 Балтия, 21-й километр, с1
+              - paragraph [ref=f2e2849]: Откроется в 10:00
+          - generic [ref=f2e2850]:
+            - link "Пушкино" [ref=f2e2851] [cursor=pointer]:
+              - /url: /pushkino-shop/
+            - generic [ref=f2e2853]:
+              - img "Изображение"
+            - generic [ref=f2e2854]:
+              - generic [ref=f2e2855]: Пушкино
+              - paragraph [ref=f2e2856]: Фанагория — партнёрский магазин
+              - paragraph [ref=f2e2857]: г. Пушкино, Московский проспект, д. 55
+              - paragraph [ref=f2e2858]: Откроется в 10:00
+          - generic [ref=f2e2859]:
+            - link "Видное" [ref=f2e2860] [cursor=pointer]:
+              - /url: /vidnoye-shop/
+            - generic [ref=f2e2861]:
+              - generic [ref=f2e2862]:
+                - img "Изображение"
+              - generic [ref=f2e2863]: Новый
+            - generic [ref=f2e2865]:
+              - generic [ref=f2e2866]: Видное
+              - paragraph [ref=f2e2867]: БонВин — партнёрский магазин
+              - paragraph [ref=f2e2868]: г. Видное, ул. Ольховая, д. 2
+              - paragraph [ref=f2e2869]: Откроется в 09:00
+          - generic [ref=f2e2870]:
+            - link "Коломна" [ref=f2e2871] [cursor=pointer]:
+              - /url: /kolomna-shop/
+            - generic [ref=f2e2872]:
+              - generic [ref=f2e2873]:
+                - img "Изображение"
+              - generic [ref=f2e2874]: Новый
+            - generic [ref=f2e2876]:
+              - generic [ref=f2e2877]: Коломна
+              - paragraph [ref=f2e2878]: Ренсковый погребъ имени А. С. Левина — партнёрский магазин
+              - paragraph [ref=f2e2879]: г. Коломна, Уманская улица, д. 3Д
+              - paragraph [ref=f2e2880]: Откроется в 10:00
+          - generic [ref=f2e2881]:
+            - link "Успенское" [ref=f2e2882] [cursor=pointer]:
+              - /url: /uspenskoye-shop/
+            - generic [ref=f2e2883]:
+              - generic [ref=f2e2884]:
+                - img "Изображение"
+              - generic [ref=f2e2885]: Новый
+            - generic [ref=f2e2887]:
+              - generic [ref=f2e2888]: Успенское
+              - paragraph [ref=f2e2889]: Vinoccio — партнёрский магазин
+              - paragraph [ref=f2e2890]: Московская область, село Успенское, д. 31А
+              - paragraph [ref=f2e2891]: Откроется в 11:00
+          - generic [ref=f2e2892]:
+            - link "Грибки Загородная" [ref=f2e2893] [cursor=pointer]:
+              - /url: /gribki-shop/
+            - generic [ref=f2e2894]:
+              - generic [ref=f2e2895]:
+                - img "Изображение"
+              - generic [ref=f2e2896]: Новый
+            - generic [ref=f2e2898]:
+              - generic [ref=f2e2899]: Грибки Загородная
+              - paragraph [ref=f2e2900]: Маркет 22 — партнёрский магазин
+              - paragraph [ref=f2e2901]: Загородная ул., 38В, д. Грибки
+              - paragraph [ref=f2e2902]: Откроется в 08:00
+          - generic [ref=f2e2903]:
+            - link "Грибки Промышленная" [ref=f2e2904] [cursor=pointer]:
+              - /url: /promyshlennaya-shop/
+            - generic [ref=f2e2905]:
+              - generic [ref=f2e2906]:
+                - img "Изображение"
+              - generic [ref=f2e2907]: Новый
+            - generic [ref=f2e2909]:
+              - generic [ref=f2e2910]: Грибки Промышленная
+              - paragraph [ref=f2e2911]: Маркет 22 — партнёрский магазин
+              - paragraph [ref=f2e2912]: МО, г.о. Мытищи, д. Грибки, ул. Промышленная, стр. 2
+              - paragraph [ref=f2e2913]: Откроется в 08:00
+          - generic [ref=f2e2914]:
+            - link "Афанасово" [ref=f2e2915] [cursor=pointer]:
+              - /url: /afanasovo-shop/
+            - generic [ref=f2e2916]:
+              - generic [ref=f2e2917]:
+                - img "Изображение"
+              - generic [ref=f2e2918]: Новый
+            - generic [ref=f2e2920]:
+              - generic [ref=f2e2921]: Афанасово
+              - paragraph [ref=f2e2922]: Маркет 22 — партнёрский магазин
+              - paragraph [ref=f2e2923]: Афанасово, ул. Северная кольцевая ,стр 2а.
+              - paragraph [ref=f2e2924]: Откроется в 08:00
+          - generic [ref=f2e2925]:
+            - link "г. Долгопрудный" [ref=f2e2926] [cursor=pointer]:
+              - /url: /staroedmitrovskoeshosse-shop/
+            - generic [ref=f2e2927]:
+              - generic [ref=f2e2928]:
+                - img "Изображение"
+              - generic [ref=f2e2929]: Новый
+            - generic [ref=f2e2931]:
+              - generic [ref=f2e2932]: г. Долгопрудный
+              - paragraph [ref=f2e2933]: Маркет 22 — партнёрский магазин
+              - paragraph [ref=f2e2934]: г. Долгопрудный, Старое Дмитровское шоссе 11
+              - paragraph [ref=f2e2935]: Откроется в 08:00
+          - generic [ref=f2e2936]:
+            - link "Падиково" [ref=f2e2937] [cursor=pointer]:
+              - /url: /padikovo-shop/
+            - generic [ref=f2e2938]:
+              - generic [ref=f2e2939]:
+                - img "Изображение"
+              - generic [ref=f2e2940]: Новый
+            - generic [ref=f2e2942]:
+              - generic [ref=f2e2943]: Падиково
+              - paragraph [ref=f2e2944]: Премье Крю — партнёрский магазин
+              - paragraph [ref=f2e2945]: Московская Область, Истра, дер. Падиково, тер. ДЗ Русская Деревня, ул. Восточная, д .1А
+              - paragraph [ref=f2e2946]: Откроется в 11:00
+          - generic [ref=f2e2947]:
+            - link "Раменское" [ref=f2e2948] [cursor=pointer]:
+              - /url: /ramenskoye-shop/
+            - generic [ref=f2e2949]:
+              - generic [ref=f2e2950]:
+                - img "Изображение"
+              - generic [ref=f2e2951]: Новый
+            - generic [ref=f2e2953]:
+              - generic [ref=f2e2954]: Раменское
+              - paragraph [ref=f2e2955]: Алкобренд — партнёрский магазин
+              - paragraph [ref=f2e2956]: г. Раменское, ул. Молодежная, д. 26а
+              - paragraph [ref=f2e2957]: Откроется в 10:00
+          - generic [ref=f2e2958]:
+            - link "Химки" [ref=f2e2959] [cursor=pointer]:
+              - /url: /khimki-shop/
+            - generic [ref=f2e2960]:
+              - generic [ref=f2e2961]:
+                - img "Изображение"
+              - generic [ref=f2e2962]: Новый
+            - generic [ref=f2e2964]:
+              - generic [ref=f2e2965]: Химки
+              - paragraph [ref=f2e2966]: Алкобренд — партнёрский магазин
+              - paragraph [ref=f2e2967]: г. Химки, Тепличный проезд, д. 4
+              - paragraph [ref=f2e2968]: Откроется в 10:00
+          - generic [ref=f2e2969]:
+            - link "Новохаритоново" [ref=f2e2970] [cursor=pointer]:
+              - /url: /novokharitonovo-shop/
+            - generic [ref=f2e2971]:
+              - generic [ref=f2e2972]:
+                - img "Изображение"
+              - generic [ref=f2e2973]: Новый
+            - generic [ref=f2e2975]:
+              - generic [ref=f2e2976]: Новохаритоново
+              - paragraph [ref=f2e2977]: Алкобренд — партнёрский магазин
+              - paragraph [ref=f2e2978]: Г.о. Раменскиий, Речицы, село Новохаритоново, д. 202/1
+              - paragraph [ref=f2e2979]: Откроется в 10:00
+          - generic [ref=f2e2980]:
+            - link "Зеленоград" [ref=f2e2981] [cursor=pointer]:
+              - /url: /zelenograd-shop/
+            - generic [ref=f2e2982]:
+              - generic [ref=f2e2983]:
+                - img "Изображение"
+              - generic [ref=f2e2984]: Новый
+            - generic [ref=f2e2986]:
+              - generic [ref=f2e2987]: Зеленоград
+              - paragraph [ref=f2e2988]: Алкобренд — партнёрский магазин
+              - paragraph [ref=f2e2989]: Зеленоград, к1824
+              - paragraph [ref=f2e2990]: Откроется в 10:00
+          - generic [ref=f2e2991]:
+            - link "Новогорск" [ref=f2e2992] [cursor=pointer]:
+              - /url: /novogorsk-shop/
+            - generic [ref=f2e2993]:
+              - generic [ref=f2e2994]:
+                - img "Изображение"
+              - generic [ref=f2e2995]: Новый
+            - generic [ref=f2e2997]:
+              - generic [ref=f2e2998]: Новогорск
+              - paragraph [ref=f2e2999]: Винотека — партнёрский магазин
+              - paragraph [ref=f2e3000]: Олимпийская ул., 28, микрорайон Новогорск, Химки
+              - paragraph [ref=f2e3001]: Откроется в 11:00
+          - generic [ref=f2e3002]:
+            - link "Пыхтино" [ref=f2e3003] [cursor=pointer]:
+              - /url: /pyhtino-shop/
+            - generic [ref=f2e3004]:
+              - generic [ref=f2e3005]:
+                - img "Изображение"
+              - generic [ref=f2e3006]: Новый
+            - generic [ref=f2e3008]:
+              - generic [ref=f2e3009]: Пыхтино
+              - paragraph [ref=f2e3010]: Фанагория — партнёрский магазин
+              - paragraph [ref=f2e3011]: г. Москва, п. Внуковское, ул Лётчика Ульянина, дом 2
+              - paragraph [ref=f2e3012]: Откроется в 10:00
+          - generic [ref=f2e3013]:
+            - link "Физтех (ТЦ Бухта)" [ref=f2e3014] [cursor=pointer]:
+              - /url: /tcbuhta-shop/
+            - generic [ref=f2e3015]:
+              - generic [ref=f2e3016]:
+                - img "Изображение"
+              - generic [ref=f2e3017]: Новый
+            - generic [ref=f2e3019]:
+              - generic [ref=f2e3020]: Физтех (ТЦ Бухта)
+              - paragraph [ref=f2e3021]: ТД Реноме — партнёрский магазин
+              - paragraph [ref=f2e3022]: г. Москва, Дмитровское шоссе, д. 165, к.1
+              - paragraph [ref=f2e3023]: Откроется в 08:00
+          - generic [ref=f2e3024]:
+            - link "Физтех" [ref=f2e3025] [cursor=pointer]:
+              - /url: /landau-shop/
+            - generic [ref=f2e3026]:
+              - generic [ref=f2e3027]:
+                - img "Изображение"
+              - generic [ref=f2e3028]: Новый
+            - generic [ref=f2e3030]:
+              - generic [ref=f2e3031]: Физтех
+              - paragraph [ref=f2e3032]: Маркет 22 — партнёрский магазин
+              - paragraph [ref=f2e3033]: г. Москва, бульвар академика Ландау, д.1
+              - paragraph [ref=f2e3034]: Откроется в 08:00
+          - generic [ref=f2e3035]:
+            - link "г. Подольск" [ref=f2e3036] [cursor=pointer]:
+              - /url: /podolsk-shop/
+            - generic [ref=f2e3037]:
+              - generic [ref=f2e3038]:
+                - img "Изображение"
+              - generic [ref=f2e3039]: Новый
+            - generic [ref=f2e3041]:
+              - generic [ref=f2e3042]: г. Подольск
+              - paragraph [ref=f2e3043]: Энотека — партнёрский магазин
+              - paragraph [ref=f2e3044]: г. Подольск, ул. Большая Серпуховская, д. 28
+              - paragraph [ref=f2e3045]: Откроется в 10:00
+          - generic [ref=f2e3046]:
+            - link "г. Серпухов" [ref=f2e3047] [cursor=pointer]:
+              - /url: /serpuhov-shop/
+            - generic [ref=f2e3048]:
+              - generic [ref=f2e3049]:
+                - img "Изображение"
+              - generic [ref=f2e3050]: Новый
+            - generic [ref=f2e3052]:
+              - generic [ref=f2e3053]: г. Серпухов
+              - paragraph [ref=f2e3054]: 300 сортов — партнёрский магазин
+              - paragraph [ref=f2e3055]: г. Серпухов, Московское шоссе, д. 53
+              - paragraph [ref=f2e3056]: Откроется в 11:00
+          - generic [ref=f2e3057]:
+            - link "Митино" [ref=f2e3058] [cursor=pointer]:
+              - /url: /mitino-shop/
+            - generic [ref=f2e3059]:
+              - generic [ref=f2e3060]:
+                - img "Изображение"
+              - generic [ref=f2e3061]: Новый
+            - generic [ref=f2e3063]:
+              - generic [ref=f2e3064]: Митино
+              - paragraph [ref=f2e3065]: Алкостудия — партнёрский магазин
+              - paragraph [ref=f2e3066]: г. Москва, ул. Митинская, д. 25
+              - paragraph [ref=f2e3067]: Откроется в 09:00
+          - generic [ref=f2e3068]:
+            - link "г. Балашиха" [ref=f2e3069] [cursor=pointer]:
+              - /url: /balashiha-shop/
+            - generic [ref=f2e3070]:
+              - generic [ref=f2e3071]:
+                - img "Изображение"
+              - generic [ref=f2e3072]: Новый
+            - generic [ref=f2e3074]:
+              - generic [ref=f2e3075]: г. Балашиха
+              - paragraph [ref=f2e3076]: Алкостудия — партнёрский магазин
+              - paragraph [ref=f2e3077]: г. Балашиха, ул. Трубецкая, д. 102
+              - paragraph [ref=f2e3078]: Откроется в 09:00
+      - generic [ref=f2e3081]:
+        - heading "Готовые решения" [level=2] [ref=f2e3084]
+        - generic [ref=f2e3086]:
+          - generic [ref=f2e3087]:
+            - generic [ref=f2e3088]:
+              - link "Маскио Просекко 5+1" [ref=f2e3089] [cursor=pointer]:
+                - /url: /products/Maschio-Prosecco-5-1.html
+                - generic [ref=f2e3090]:
+                  - img "Изображение"
+              - generic [ref=f2e3092]:
+                - paragraph [ref=f2e3093]: 6 990 ₽
+                - paragraph [ref=f2e3094]: 8 399 ₽
+              - link "Маскио Просекко 5+1" [ref=f2e3095] [cursor=pointer]:
+                - /url: /products/Maschio-Prosecco-5-1.html
+                - paragraph [ref=f2e3096]: Маскио Просекко 5+1
+            - button "Добавить в корзину" [ref=f2e3097]: В корзину
+            - button "Добавить в избранное" [ref=f2e3104] [cursor=pointer]
+            - generic [ref=f2e3106]: "-17%"
+          - generic [ref=f2e3108]:
+            - generic [ref=f2e3109]:
+              - link "Негрони" [ref=f2e3110] [cursor=pointer]:
+                - /url: /products/Negroni.html
+                - generic [ref=f2e3111]:
+                  - img "Изображение"
+              - generic [ref=f2e3113]:
+                - paragraph [ref=f2e3114]: 4 599 ₽
+                - paragraph [ref=f2e3115]: 4 890 ₽
+              - link "Негрони" [ref=f2e3116] [cursor=pointer]:
+                - /url: /products/Negroni.html
+                - paragraph [ref=f2e3117]: Негрони
+            - button "Добавить в корзину" [ref=f2e3118]: В корзину
+            - button "Добавить в избранное" [ref=f2e3125] [cursor=pointer]
+            - generic [ref=f2e3127]: "-6%"
+          - generic [ref=f2e3129]:
+            - generic [ref=f2e3130]:
+              - link "Тет де Шеваль Брют 5+1" [ref=f2e3131] [cursor=pointer]:
+                - /url: /products/Tete-de-Cheval-Brut-5-1.html
+                - generic [ref=f2e3132]:
+                  - img "Изображение"
+              - generic [ref=f2e3134]:
+                - paragraph [ref=f2e3135]: 7 490 ₽
+                - paragraph [ref=f2e3136]: 8 999 ₽
+              - link "Тет де Шеваль Брют 5+1" [ref=f2e3137] [cursor=pointer]:
+                - /url: /products/Tete-de-Cheval-Brut-5-1.html
+                - paragraph [ref=f2e3138]: Тет де Шеваль Брют 5+1
+            - button "Добавить в корзину" [ref=f2e3139]: В корзину
+            - button "Добавить в избранное" [ref=f2e3146] [cursor=pointer]
+            - generic [ref=f2e3148]: "-17%"
+          - generic [ref=f2e3150]:
+            - generic [ref=f2e3151]:
+              - link "Драй Мартини" [ref=f2e3152] [cursor=pointer]:
+                - /url: /products/Dry-Martini.html
+                - generic [ref=f2e3153]:
+                  - img "Изображение"
+              - generic [ref=f2e3155]:
+                - paragraph [ref=f2e3156]: 2 090 ₽
+                - paragraph [ref=f2e3157]: 2 550 ₽
+              - link "Драй Мартини" [ref=f2e3158] [cursor=pointer]:
+                - /url: /products/Dry-Martini.html
+                - paragraph [ref=f2e3159]: Драй Мартини
+            - button "Добавить в корзину" [ref=f2e3160]: В корзину
+            - button "Добавить в избранное" [ref=f2e3167] [cursor=pointer]
+            - generic [ref=f2e3169]: "-18%"
+          - generic [ref=f2e3171]:
+            - generic [ref=f2e3172]:
+              - link "Ягодный БУМ! Пушкина" [ref=f2e3173] [cursor=pointer]:
+                - /url: /products/Berry-BOOM-Pushkin-s.html
+                - generic [ref=f2e3174]:
+                  - img "Изображение"
+              - generic [ref=f2e3176]:
+                - paragraph [ref=f2e3177]: 4 190 ₽
+                - paragraph [ref=f2e3178]: 4 890 ₽
+              - link "Ягодный БУМ! Пушкина" [ref=f2e3179] [cursor=pointer]:
+                - /url: /products/Berry-BOOM-Pushkin-s.html
+                - paragraph [ref=f2e3180]: Ягодный БУМ! Пушкина
+            - button "Добавить в корзину" [ref=f2e3181]: В корзину
+            - button "Добавить в избранное" [ref=f2e3188] [cursor=pointer]
+            - generic [ref=f2e3190]: "-14%"
+          - generic [ref=f2e3192]:
+            - generic [ref=f2e3193]:
+              - link "Маскио Розе Экстра Драй 5+1" [ref=f2e3194] [cursor=pointer]:
+                - /url: /products/Maschio-Rose-Extra-Dry-5-1.html
+                - generic [ref=f2e3195]:
+                  - img "Изображение"
+              - generic [ref=f2e3197]:
+                - paragraph [ref=f2e3198]: 6 950 ₽
+                - paragraph [ref=f2e3199]: 8 340 ₽
+              - link "Маскио Розе Экстра Драй 5+1" [ref=f2e3200] [cursor=pointer]:
+                - /url: /products/Maschio-Rose-Extra-Dry-5-1.html
+                - paragraph [ref=f2e3201]: Маскио Розе Экстра Драй 5+1
+            - button "Добавить в корзину" [ref=f2e3202]: В корзину
+            - button "Добавить в избранное" [ref=f2e3209] [cursor=pointer]
+            - generic [ref=f2e3211]: "-17%"
+          - generic [ref=f2e3213]:
+            - generic [ref=f2e3214]:
+              - link "Б-52" [ref=f2e3215] [cursor=pointer]:
+                - /url: /products/B-52.html
+                - generic [ref=f2e3216]:
+                  - img "Изображение"
+              - generic [ref=f2e3218]:
+                - paragraph [ref=f2e3219]: 3 550 ₽
+                - paragraph [ref=f2e3220]: 4 050 ₽
+              - link "Б-52" [ref=f2e3221] [cursor=pointer]:
+                - /url: /products/B-52.html
+                - paragraph [ref=f2e3222]: Б-52
+            - button "Добавить в корзину" [ref=f2e3223]: В корзину
+            - button "Добавить в избранное" [ref=f2e3230] [cursor=pointer]
+            - generic [ref=f2e3232]: "-12%"
+          - generic [ref=f2e3234]:
+            - generic [ref=f2e3235]:
+              - link "Бла-бла-блан" [ref=f2e3236] [cursor=pointer]:
+                - /url: /products/Blah-blah-blanc.html
+                - generic [ref=f2e3237]:
+                  - img "Изображение"
+              - generic [ref=f2e3239]:
+                - paragraph [ref=f2e3240]: 3 990 ₽
+                - paragraph [ref=f2e3241]: 5 090 ₽
+              - link "Бла-бла-блан" [ref=f2e3242] [cursor=pointer]:
+                - /url: /products/Blah-blah-blanc.html
+                - paragraph [ref=f2e3243]: Бла-бла-блан
+            - button "Добавить в корзину" [ref=f2e3244]: В корзину
+            - button "Добавить в избранное" [ref=f2e3251] [cursor=pointer]
+            - generic [ref=f2e3253]: "-22%"
+      - generic [ref=f2e3256]:
+        - heading "Классика крепких до 35%" [level=2] [ref=f2e3257]
+        - generic [ref=f2e3258]:
+          - generic [ref=f2e3259]:
+            - generic [ref=f2e3260]:
+              - link "\"Ardbeg\" 10 YO, in gift box, 0.7 л" [ref=f2e3261] [cursor=pointer]:
+                - /url: /products/Ardbeg-10-YO-in-gift-box.html
+                - generic [ref=f2e3262]:
+                  - img "Изображение"
+              - generic [ref=f2e3264]:
+                - paragraph [ref=f2e3265]: 7 090 ₽
+                - paragraph [ref=f2e3266]: 9 090 ₽
+              - link "\"Ardbeg\" 10 YO, in gift box, 0.7 л" [ref=f2e3267] [cursor=pointer]:
+                - /url: /products/Ardbeg-10-YO-in-gift-box.html
+                - paragraph [ref=f2e3268]: "\"Ardbeg\" 10 YO, in gift box, 0.7 л"
+              - generic [ref=f2e3269]:
+                - 'meter "Рейтинг: 4.7 из 5" [ref=f2e3272]': "4.7"
+                - region "109 оценок" [ref=f2e3273]
+            - button "Добавить в избранное" [ref=f2e3276] [cursor=pointer]
+            - generic [ref=f2e3278]: "-22%"
+          - generic [ref=f2e3280]:
+            - generic [ref=f2e3281]:
+              - link "\"Hennessy\" V.S, 0.5 л" [ref=f2e3282] [cursor=pointer]:
+                - /url: /products/Hennessy-VS.html
+                - generic [ref=f2e3283]:
+                  - img "Изображение"
+              - generic [ref=f2e3285]:
+                - paragraph [ref=f2e3286]: 3 849 ₽
+                - paragraph [ref=f2e3287]: 5 990 ₽
+              - link "\"Hennessy\" V.S, 0.5 л" [ref=f2e3288] [cursor=pointer]:
+                - /url: /products/Hennessy-VS.html
+                - paragraph [ref=f2e3289]: "\"Hennessy\" V.S, 0.5 л"
+              - generic [ref=f2e3290]:
+                - 'meter "Рейтинг: 4.8 из 5" [ref=f2e3293]': "4.8"
+                - region "79 оценок" [ref=f2e3294]
+            - button "Добавить в избранное" [ref=f2e3297] [cursor=pointer]
+            - generic [ref=f2e3299]: "-36%"
+          - generic [ref=f2e3301]:
+            - generic [ref=f2e3302]:
+              - link "\"Singleton\" of Dufftown 12 Years Old, gift box, 0.7 л" [ref=f2e3303] [cursor=pointer]:
+                - /url: /products/Singleton-of-Dufftown-12-Years-Old-gift-box.html
+                - generic [ref=f2e3304]:
+                  - img "Изображение"
+              - generic [ref=f2e3306]:
+                - paragraph [ref=f2e3307]: 3 690 ₽
+                - paragraph [ref=f2e3308]: 4 149 ₽
+              - link "\"Singleton\" of Dufftown 12 Years Old, gift box, 0.7 л" [ref=f2e3309] [cursor=pointer]:
+                - /url: /products/Singleton-of-Dufftown-12-Years-Old-gift-box.html
+                - paragraph [ref=f2e3310]: "\"Singleton\" of Dufftown 12 Years Old, gift box, 0.7 л"
+              - generic [ref=f2e3311]:
+                - 'meter "Рейтинг: 3.7 из 5" [ref=f2e3314]': "3.7"
+                - region "127 оценок" [ref=f2e3315]
+            - button "Добавить в избранное" [ref=f2e3318] [cursor=pointer]
+            - generic [ref=f2e3320]: "-11%"
+          - generic [ref=f2e3322]:
+            - generic [ref=f2e3323]:
+              - link "\"Connemara\" Distillers Edition, in tube, 0.7 л" [ref=f2e3324] [cursor=pointer]:
+                - /url: /products/Connemara-Distillers-Edition-in-tube.html
+                - generic [ref=f2e3325]:
+                  - img "Изображение"
+              - generic [ref=f2e3327]:
+                - paragraph [ref=f2e3328]: 5 290 ₽
+                - paragraph [ref=f2e3329]: 8 400 ₽
+              - link "\"Connemara\" Distillers Edition, in tube, 0.7 л" [ref=f2e3330] [cursor=pointer]:
+                - /url: /products/Connemara-Distillers-Edition-in-tube.html
+                - paragraph [ref=f2e3331]: "\"Connemara\" Distillers Edition, in tube, 0.7 л"
+            - button "Добавить в избранное" [ref=f2e3334] [cursor=pointer]
+            - generic [ref=f2e3336]: "-37%"
+          - generic [ref=f2e3338]:
+            - generic [ref=f2e3339]:
+              - link "\"Courvoisier\" VS, gift box, 0.7 л" [ref=f2e3340] [cursor=pointer]:
+                - /url: /products/Courvoisier-VS-gift-box.html
+                - generic [ref=f2e3341]:
+                  - img "Изображение"
+              - generic [ref=f2e3343]:
+                - paragraph [ref=f2e3344]: 4 449 ₽
+                - paragraph [ref=f2e3345]: 6 190 ₽
+              - link "\"Courvoisier\" VS, gift box, 0.7 л" [ref=f2e3346] [cursor=pointer]:
+                - /url: /products/Courvoisier-VS-gift-box.html
+                - paragraph [ref=f2e3347]: "\"Courvoisier\" VS, gift box, 0.7 л"
+              - generic [ref=f2e3348]:
+                - 'meter "Рейтинг: 4.8 из 5" [ref=f2e3351]': "4.8"
+                - region "242 оценки" [ref=f2e3352]
+            - button "Добавить в избранное" [ref=f2e3355] [cursor=pointer]
+            - generic [ref=f2e3357]: "-28%"
+        - navigation [ref=f2e3359]:
+          - link "Французский коньяк Французский коньяк" [ref=f2e3360] [cursor=pointer]:
+            - /url: /cognac/france/
+            - generic [ref=f2e3361]: Французский коньяк
+            - generic [ref=f2e3362]:
+              - img "Французский коньяк"
+          - link "Водка Водка" [ref=f2e3363] [cursor=pointer]:
+            - /url: /vodka/all/
+            - generic [ref=f2e3364]: Водка
+            - generic [ref=f2e3365]:
+              - img "Водка"
+          - link "Настойки Настойки" [ref=f2e3366] [cursor=pointer]:
+            - /url: /liqueur/tincture/
+            - generic [ref=f2e3367]: Настойки
+            - generic [ref=f2e3368]:
+              - img "Настойки"
+          - link "Текила Текила" [ref=f2e3369] [cursor=pointer]:
+            - /url: /tequila/all/
+            - generic [ref=f2e3370]: Текила
+            - generic [ref=f2e3371]:
+              - img "Текила"
+          - link "Ром Ром" [ref=f2e3372] [cursor=pointer]:
+            - /url: /rum/all/
+            - generic [ref=f2e3373]: Ром
+            - generic [ref=f2e3374]:
+              - img "Ром"
+        - link [ref=f2e3376] [cursor=pointer]:
+          - /url: /spirit/
+          - generic [ref=f2e3377]:
+            - img "Изображение"
+      - generic [ref=f2e3379]:
+        - heading "Высокий рейтинг" [level=2] [ref=f2e3382]
+        - generic [ref=f2e3384]:
+          - link "Красное вино Красное вино" [ref=f2e3385] [cursor=pointer]:
+            - /url: /wine/red/?sorting=reviewDESCnew
+            - generic [ref=f2e3386]:
+              - img "Красное вино"
+            - generic [ref=f2e3387]: Красное вино
+          - link "Белое вино Белое вино" [ref=f2e3388] [cursor=pointer]:
+            - /url: /wine/white/?sorting=reviewDESCnew
+            - generic [ref=f2e3389]:
+              - img "Белое вино"
+            - generic [ref=f2e3390]: Белое вино
+          - link "Шампанское Шампанское" [ref=f2e3391] [cursor=pointer]:
+            - /url: /champagnes-and-sparkling/
+            - generic [ref=f2e3392]:
+              - img "Шампанское"
+            - generic [ref=f2e3393]: Шампанское
+          - link "Виски Виски" [ref=f2e3394] [cursor=pointer]:
+            - /url: /whisky/
+            - generic [ref=f2e3395]:
+              - img "Виски"
+            - generic [ref=f2e3396]: Виски
+          - link "Коньяк Коньяк" [ref=f2e3397] [cursor=pointer]:
+            - /url: /cognac/
+            - generic [ref=f2e3398]:
+              - img "Коньяк"
+            - generic [ref=f2e3399]: Коньяк
+          - link "Пиво Пиво" [ref=f2e3400] [cursor=pointer]:
+            - /url: /beer/
+            - generic [ref=f2e3401]:
+              - img "Пиво"
+            - generic [ref=f2e3402]: Пиво
+      - generic [ref=f2e3404]:
+        - heading "Нам доверяют — у нас 52000 отзывов" [level=2] [ref=f2e3405]:
+          - text: Нам доверяют — у нас
+          - generic [ref=f2e3406]: "52000"
+          - text: отзывов
+        - generic [ref=f2e3408]:
+          - generic [ref=f2e3409]:
+            - generic [ref=f2e3410]:
+              - paragraph [ref=f2e3411]: "4.75"
+              - paragraph [ref=f2e3412]: Средняя оценка покупок
+            - generic [ref=f2e3413]:
+              - paragraph [ref=f2e3414]: на основе отзывов сайта
+              - generic [ref=f2e3415]:
+                - img "Изображение"
+          - generic [ref=f2e3416]:
+            - generic [ref=f2e3417]:
+              - link [ref=f2e3419] [cursor=pointer]:
+                - /url: /products/Roullet-VS-Fine-Cognac-AOC.html
+                - paragraph [ref=f2e3420]: "\"Рулле\" ВС"
+              - link [ref=f2e3427] [cursor=pointer]:
+                - /url: /products/Roullet-VS-Fine-Cognac-AOC.html
+                - generic [ref=f2e3428]:
+                  - img "Изображение"
+            - generic [ref=f2e3429]:
+              - paragraph [ref=f2e3430]: “Вкусный коньяк, хоть и молодой. Свежий приятный букет, фруктовое послевкусие.
+              - generic [ref=f2e3431]: Марсель С,20 мая
+          - generic [ref=f2e3432]:
+            - generic [ref=f2e3433]:
+              - link [ref=f2e3435] [cursor=pointer]:
+                - /url: /products/Ligare-Aperitivo-Spritz.html
+                - paragraph [ref=f2e3436]: "\"Лигаре\" Аперитиво Спритц"
+              - link [ref=f2e3443] [cursor=pointer]:
+                - /url: /products/Ligare-Aperitivo-Spritz.html
+                - generic [ref=f2e3444]:
+                  - img "Изображение"
+            - generic [ref=f2e3445]:
+              - paragraph [ref=f2e3446]: “Горчинка пикантная, приятный травянистый с цитрусовыми нотками аромат. Если разбавить тоником или минералкой с долькой лимона, дает мягкий освежающий вкус.
+              - generic [ref=f2e3447]: Эльза Ч,20 мая
+          - generic [ref=f2e3448]:
+            - generic [ref=f2e3449]:
+              - link [ref=f2e3451] [cursor=pointer]:
+                - /url: /products/Trenel-Beaujolais-Villages-AOC-2022.html
+                - paragraph [ref=f2e3452]: Тренель, Божоле Вилляж, 2022
+              - link [ref=f2e3459] [cursor=pointer]:
+                - /url: /products/Trenel-Beaujolais-Villages-AOC-2022.html
+                - generic [ref=f2e3460]:
+                  - img "Изображение"
+            - generic [ref=f2e3461]:
+              - paragraph [ref=f2e3462]: “Вино приятно удивило. У меня винтаж 2022 Яркий рубиновый цвет, блестящее. Сочное, ягодное, с аккуратным танинами. Сбалансированное и гастронмичное. Цена приятная. Брала на дегустацию и всем гостям, даже не любителям красных вин, вино понравилось. Повторю лично для себя
+              - generic [ref=f2e3463]: Татьяна К,20 мая
+          - generic [ref=f2e3464]:
+            - generic [ref=f2e3465]:
+              - link [ref=f2e3467] [cursor=pointer]:
+                - /url: /products/Dvorcovaya-Kollekciya-Rubinovaya.html
+                - paragraph [ref=f2e3468]: "\"Дворцовая Коллекция\" Рубиновая, настойка сладкая"
+              - link [ref=f2e3475] [cursor=pointer]:
+                - /url: /products/Dvorcovaya-Kollekciya-Rubinovaya.html
+                - generic [ref=f2e3476]:
+                  - img "Изображение"
+            - generic [ref=f2e3477]:
+              - paragraph [ref=f2e3478]: “Эта настойка наш с подругами фаворит. Ее можно пить просто, можно с тоником или соком. Под шашлыки просто шик! Специально берем по несколько бутылок с запасом, когда попадается на глаза в магазине, потому что точно знаем - пригодится
+              - generic [ref=f2e3479]: Марина У,17 мая
+          - generic [ref=f2e3480]:
+            - generic [ref=f2e3481]:
+              - link [ref=f2e3483] [cursor=pointer]:
+                - /url: /products/Pum-Purum-Soju-Strawberry-and-Cream.html
+                - paragraph [ref=f2e3484]: "\"Пум Пурум\" Соджу Клубника со Сливками"
+              - link [ref=f2e3491] [cursor=pointer]:
+                - /url: /products/Pum-Purum-Soju-Strawberry-and-Cream.html
+                - generic [ref=f2e3492]:
+                  - img "Изображение"
+            - generic [ref=f2e3493]:
+              - paragraph [ref=f2e3494]: "“Из всех соджу, что я пробовала, самый вкусный соджу: аромат и вкус приятный и нежный благодаря сливкам, не приторно, нет подсластителей, которые обычно портят вкус. Идеальный баланс."
+              - generic [ref=f2e3495]: Екатерина С,15 мая
+          - generic [ref=f2e3496]:
+            - generic [ref=f2e3497]:
+              - link [ref=f2e3499] [cursor=pointer]:
+                - /url: /products/Monkey-Shoulder.html
+                - paragraph [ref=f2e3500]: "\"Манки Шоулдер\""
+              - link [ref=f2e3507] [cursor=pointer]:
+                - /url: /products/Monkey-Shoulder.html
+                - generic [ref=f2e3508]:
+                  - img "Изображение"
+            - generic [ref=f2e3509]:
+              - paragraph [ref=f2e3510]: “Мягкий виски, с тонким шоколадным послевкусием. Очень приятно пьется.
+              - generic [ref=f2e3511]: Михаил С,15 мая
+          - generic [ref=f2e3512]:
+            - generic [ref=f2e3513]:
+              - link [ref=f2e3515] [cursor=pointer]:
+                - /url: /products/Ligare-Black-Currant-Spritz.html
+                - paragraph [ref=f2e3516]: "\"Лигаре\" Черная Смородина Спритц"
+              - link [ref=f2e3523] [cursor=pointer]:
+                - /url: /products/Ligare-Black-Currant-Spritz.html
+                - generic [ref=f2e3524]:
+                  - img "Изображение"
+            - generic [ref=f2e3525]:
+              - paragraph [ref=f2e3526]: “Аперитив супер. Ощущается натуральный смородиновый вкус с легкой ноткой алкоголя. Мне нравится пить чистым.
+              - generic [ref=f2e3527]: Яна М,15 мая
+          - generic [ref=f2e3528]:
+            - generic [ref=f2e3529]:
+              - link [ref=f2e3531] [cursor=pointer]:
+                - /url: /products/Ligare-Alla-Lavanda-Spritz.html
+                - paragraph [ref=f2e3532]: "\"Лигаре\" Лаванда Спритц"
+              - link [ref=f2e3539] [cursor=pointer]:
+                - /url: /products/Ligare-Alla-Lavanda-Spritz.html
+                - generic [ref=f2e3540]:
+                  - img "Изображение"
+            - generic [ref=f2e3541]:
+              - paragraph [ref=f2e3542]: “Для разнообразия самое то! Запах лаванды приятный, не тяжелый. С вином вкусный коктейль получается
+              - generic [ref=f2e3543]: Маргарита Л,14 мая
+          - generic [ref=f2e3544]:
+            - generic [ref=f2e3545]:
+              - link [ref=f2e3547] [cursor=pointer]:
+                - /url: /products/Roullet-Cadet-XO-gift-box.html
+                - paragraph [ref=f2e3548]: "\"Рулле\" Кадет ХО, в подарочной коробке"
+              - link [ref=f2e3555] [cursor=pointer]:
+                - /url: /products/Roullet-Cadet-XO-gift-box.html
+                - generic [ref=f2e3556]:
+                  - img "Изображение"
+            - generic [ref=f2e3557]:
+              - paragraph [ref=f2e3558]: “Очень достойный коньяк для особого случая. Полное приятное послевкусие, тонкий аромат, вкус с оттенками ванили и сухофруктов.
+              - generic [ref=f2e3559]: Сергей Ж,13 мая
+          - generic [ref=f2e3560]:
+            - generic [ref=f2e3561]:
+              - link [ref=f2e3563] [cursor=pointer]:
+                - /url: /products/Roullet-VS-Fine-Cognac-AOC.html
+                - paragraph [ref=f2e3564]: "\"Рулле\" ВС"
+              - link [ref=f2e3571] [cursor=pointer]:
+                - /url: /products/Roullet-VS-Fine-Cognac-AOC.html
+                - generic [ref=f2e3572]:
+                  - img "Изображение"
+            - generic [ref=f2e3573]:
+              - paragraph [ref=f2e3574]: “Хорошее сочетание цитрусово-яблочных нот, фруктовый аромат. Отлично к сыру и шоколаду.
+              - generic [ref=f2e3575]: Эвелина Т,12 мая
+          - generic [ref=f2e3576]:
+            - generic [ref=f2e3577]:
+              - link [ref=f2e3579] [cursor=pointer]:
+                - /url: /products/Ligare-Limoncello-Spritz.html
+                - paragraph [ref=f2e3580]: "\"Лигаре\" Лимончелло Спритц"
+              - link [ref=f2e3587] [cursor=pointer]:
+                - /url: /products/Ligare-Limoncello-Spritz.html
+                - generic [ref=f2e3588]:
+                  - img "Изображение"
+            - generic [ref=f2e3589]:
+              - paragraph [ref=f2e3590]: “Легкий, свежий вкус. Кислинка бодрит, слегка улавливается медовая сладость. Делала с содовой и льдом, вкусно и настроение поднимает
+              - generic [ref=f2e3591]: Александра С,12 мая
+          - generic [ref=f2e3592]:
+            - generic [ref=f2e3593]:
+              - link [ref=f2e3595] [cursor=pointer]:
+                - /url: /products/Ligare-Aperitivo-Spritz.html
+                - paragraph [ref=f2e3596]: "\"Лигаре\" Аперитиво Спритц"
+              - link [ref=f2e3603] [cursor=pointer]:
+                - /url: /products/Ligare-Aperitivo-Spritz.html
+                - generic [ref=f2e3604]:
+                  - img "Изображение"
+            - generic [ref=f2e3605]:
+              - paragraph [ref=f2e3606]: “Приятный цитрусовый напиток) С белым вином классно комбинируется))
+              - generic [ref=f2e3607]: Ева Б,11 мая
+          - generic [ref=f2e3608]:
+            - generic [ref=f2e3609]:
+              - link [ref=f2e3611] [cursor=pointer]:
+                - /url: /products/Ligare-Frutto-della-Passione-Spritz.html
+                - paragraph [ref=f2e3612]: "\"Лигаре\" Маракуйя Спритц"
+              - link [ref=f2e3619] [cursor=pointer]:
+                - /url: /products/Ligare-Frutto-della-Passione-Spritz.html
+                - generic [ref=f2e3620]:
+                  - img "Изображение"
+            - generic [ref=f2e3621]:
+              - paragraph [ref=f2e3622]: “Вкус маракуйи и манго узнаваем, хороший баланс кислинки и сладости. С игристым и льдом симпатичный летний фруктовый коктейльчик.
+              - generic [ref=f2e3623]: Виктория К,8 мая
+          - generic [ref=f2e3624]:
+            - generic [ref=f2e3625]:
+              - link [ref=f2e3627] [cursor=pointer]:
+                - /url: /products/Ligare-Fruto-Strawberry.html
+                - paragraph [ref=f2e3628]: "\"Лигаре\" Фруто Клубника"
+              - link [ref=f2e3635] [cursor=pointer]:
+                - /url: /products/Ligare-Fruto-Strawberry.html
+                - generic [ref=f2e3636]:
+                  - img "Изображение"
+            - generic [ref=f2e3637]:
+              - paragraph [ref=f2e3638]: “Натуральный ягодный вкус, не приторный. Крепость чувствуется, но мягко. Хорош как аперитив с игристым, но я его в десерты тоже добавляю.
+              - generic [ref=f2e3639]: Лилия Б,8 мая
+          - generic [ref=f2e3640]:
+            - generic [ref=f2e3641]:
+              - link [ref=f2e3643] [cursor=pointer]:
+                - /url: /products/Brancott-Estate-Marlborough-Sauvignon-Blanc.html
+                - paragraph [ref=f2e3644]: Бранкотт Истейт, Мальборо Совиньон Блан
+              - link [ref=f2e3651] [cursor=pointer]:
+                - /url: /products/Brancott-Estate-Marlborough-Sauvignon-Blanc.html
+                - generic [ref=f2e3652]:
+                  - img "Изображение"
+            - generic [ref=f2e3653]:
+              - paragraph [ref=f2e3654]: “Отличное вино, легкое и одновременно насыщенное, прекрасный аромат. Для себя, пока лучшее не нашла, всегда возвращаюсь к нему, очень рекомендую пробовать)
+              - generic [ref=f2e3655]: Наталья Н,8 мая
+          - generic [ref=f2e3656]:
+            - generic [ref=f2e3657]:
+              - link [ref=f2e3659] [cursor=pointer]:
+                - /url: /products/Cantine-Lunae-Labianca-Liguria-di-Levante-IGT-2024.html
+                - paragraph [ref=f2e3660]: Кантине Лунае, "Лабьянка", 2024
+              - link [ref=f2e3667] [cursor=pointer]:
+                - /url: /products/Cantine-Lunae-Labianca-Liguria-di-Levante-IGT-2024.html
+                - generic [ref=f2e3668]:
+                  - img "Изображение"
+            - generic [ref=f2e3669]:
+              - paragraph [ref=f2e3670]: “отличное вино! лёгкое, ароматная мальвазия задает основной тон. обязательно куплю ещё
+              - generic [ref=f2e3671]: Олег Н,7 мая
+          - generic [ref=f2e3672]:
+            - generic [ref=f2e3673]:
+              - link [ref=f2e3675] [cursor=pointer]:
+                - /url: /products/Vasileostrovskaya-Pivovarnya-Puare-Sweet.html
+                - paragraph [ref=f2e3676]: Василеостровская Пивоварня, Пуаре сладкий
+              - link [ref=f2e3683] [cursor=pointer]:
+                - /url: /products/Vasileostrovskaya-Pivovarnya-Puare-Sweet.html
+                - generic [ref=f2e3684]:
+                  - img "Изображение"
+            - generic [ref=f2e3685]:
+              - paragraph [ref=f2e3686]: “Отличный сидр с отличным составом я бы даже сказал идеальным, нету аромок,красителей и eшек, также написано на этикетке , что он именно сладкий, но он вообще не приторный + алкоголь вообще не чувствуется, для девочек самое оно.
+              - generic [ref=f2e3687]: Евгений7 мая
+      - generic [ref=f2e3689]:
+        - generic [ref=f2e3691]:
+          - img "Интересные факты"
+        - generic [ref=f2e3693]:
+          - paragraph [ref=f2e3694]:
+            - text: "Купить вино в сети магазинов WineStyle — вас ждет широкий выбор алкогольных напитков со всего света: вы можете купить вино классическое"
+            - link "французское" [ref=f2e3695] [cursor=pointer]:
+              - /url: /wine/france/
+            - text: (
+            - link "белое французское" [ref=f2e3696] [cursor=pointer]:
+              - /url: /wine/france/white/
+            - text: ","
+            - link "красное французское" [ref=f2e3697] [cursor=pointer]:
+              - /url: /wine/france/red/
+            - text: ", замковые"
+            - link "вина шато" [ref=f2e3698] [cursor=pointer]:
+              - /url: /wine/chateau-wines/
+            - text: ","
+            - link "бургундское вино" [ref=f2e3699] [cursor=pointer]:
+              - /url: /wine/burgundy/
+            - text: ","
+            - link "вина бордо" [ref=f2e3700] [cursor=pointer]:
+              - /url: /wine/bordeaux/
+            - text: ) и
+            - link "итальянское вино" [ref=f2e3701] [cursor=pointer]:
+              - /url: /wine/italy/
+            - text: (
+            - link "вино кьянти" [ref=f2e3702] [cursor=pointer]:
+              - /url: /wine/chianti/
+            - text: ","
+            - link "тоскана" [ref=f2e3703] [cursor=pointer]:
+              - /url: /wine/tuscany/
+            - text: ), вино Нового света, демократичное и элитное вино, коньяк, виски и подарочные наборы, ну и, разумеется, шампанское и игристые вина.
+          - paragraph [ref=f2e3704]:
+            - text: Купить алкоголь — в нашем ассортименте коньяк
+            - link "Хеннесси" [ref=f2e3705] [cursor=pointer]:
+              - /url: /cognac/hennessy/
+            - text: ", виски"
+            - link "Чивас ригал" [ref=f2e3706] [cursor=pointer]:
+              - /url: /whisky/chivas-regal/
+            - text: . В сети винных магазинов WineStyle соблюдаются все условия хранения вин и крепких спиртных напитков, поэтому наши товары всегда отличаются высочайшим качеством. Поиск алкогольных напитков в нашем каталоге — это быстро, современно, удобно!
+  - list [ref=f2e3707]:
+    - listitem [ref=f2e3708]:
+      - link "Москва" [ref=f2e3709] [cursor=pointer]:
+        - /url: https://winestyle.ru/
+    - listitem [ref=f2e3710]:
+      - link "Екатеринбург" [ref=f2e3711] [cursor=pointer]:
+        - /url: https://ekb.winestyle.ru/
+    - listitem [ref=f2e3712]:
+      - link "Санкт-Петербург" [ref=f2e3713] [cursor=pointer]:
+        - /url: https://spb.winestyle.ru/
+    - listitem [ref=f2e3714]:
+      - link "Нижний Новгород" [ref=f2e3715] [cursor=pointer]:
+        - /url: https://nn.winestyle.ru/
+    - listitem [ref=f2e3716]:
+      - link "Тюмень" [ref=f2e3717] [cursor=pointer]:
+        - /url: https://tyumen.winestyle.ru/
+    - listitem [ref=f2e3718]:
+      - link "Ростов-на-Дону" [ref=f2e3719] [cursor=pointer]:
+        - /url: https://rostov.winestyle.ru/
+    - listitem [ref=f2e3720]:
+      - link "Краснодар" [ref=f2e3721] [cursor=pointer]:
+        - /url: https://krasnodar.winestyle.ru/
+    - listitem [ref=f2e3722]:
+      - link "Ярославль" [ref=f2e3723] [cursor=pointer]:
+        - /url: https://yaroslavl.winestyle.ru/
+    - listitem [ref=f2e3724]:
+      - link "Самара" [ref=f2e3725] [cursor=pointer]:
+        - /url: https://samara.winestyle.ru/
+    - listitem [ref=f2e3726]:
+      - link "Уфа" [ref=f2e3727] [cursor=pointer]:
+        - /url: https://ufa.winestyle.ru/
+    - listitem [ref=f2e3728]:
+      - link "Воронеж" [ref=f2e3729] [cursor=pointer]:
+        - /url: https://voronezh.winestyle.ru/
+    - listitem [ref=f2e3730]:
+      - link "Волгоград" [ref=f2e3731] [cursor=pointer]:
+        - /url: https://volgograd.winestyle.ru/
+    - listitem [ref=f2e3732]:
+      - link "Новороссийск" [ref=f2e3733] [cursor=pointer]:
+        - /url: https://novorossiysk.winestyle.ru/
+    - listitem [ref=f2e3734]:
+      - link "Владимир" [ref=f2e3735] [cursor=pointer]:
+        - /url: https://vladimir.winestyle.ru/
+    - listitem [ref=f2e3736]:
+      - link "Тверь" [ref=f2e3737] [cursor=pointer]:
+        - /url: https://tver.winestyle.ru/
+    - listitem [ref=f2e3738]:
+      - link "Новосибирск" [ref=f2e3739] [cursor=pointer]:
+        - /url: https://nsk.winestyle.ru/
+    - listitem [ref=f2e3740]:
+      - link "Иваново" [ref=f2e3741] [cursor=pointer]:
+        - /url: https://ivanovo.winestyle.ru/
+    - listitem [ref=f2e3742]:
+      - link "Сочи" [ref=f2e3743] [cursor=pointer]:
+        - /url: https://sochi.winestyle.ru/
+    - listitem [ref=f2e3744]:
+      - link "Мурманск" [ref=f2e3745] [cursor=pointer]:
+        - /url: https://murmansk.winestyle.ru/
+    - listitem [ref=f2e3746]:
+      - link "Брянск" [ref=f2e3747] [cursor=pointer]:
+        - /url: https://bryansk.winestyle.ru/
+    - listitem [ref=f2e3748]:
+      - link "Вологда" [ref=f2e3749] [cursor=pointer]:
+        - /url: https://vologda.winestyle.ru/
+    - listitem [ref=f2e3750]:
+      - link "Великий Новгород" [ref=f2e3751] [cursor=pointer]:
+        - /url: https://vn.winestyle.ru/
+    - listitem [ref=f2e3752]:
+      - link "Рязань" [ref=f2e3753] [cursor=pointer]:
+        - /url: https://ryazan.winestyle.ru/
+    - listitem [ref=f2e3754]:
+      - link "Тула" [ref=f2e3755] [cursor=pointer]:
+        - /url: https://tula.winestyle.ru/
+    - listitem [ref=f2e3756]:
+      - link "Тольятти" [ref=f2e3757] [cursor=pointer]:
+        - /url: https://tolyatti.winestyle.ru/
+    - listitem [ref=f2e3758]:
+      - link "Пермь" [ref=f2e3759] [cursor=pointer]:
+        - /url: https://perm.winestyle.ru/
+    - listitem [ref=f2e3760]:
+      - link "Челябинск" [ref=f2e3761] [cursor=pointer]:
+        - /url: https://chel.winestyle.ru/
+    - listitem [ref=f2e3762]:
+      - link "Тамбов" [ref=f2e3763] [cursor=pointer]:
+        - /url: https://tambov.winestyle.ru/
+    - listitem [ref=f2e3764]:
+      - link "Архангельск" [ref=f2e3765] [cursor=pointer]:
+        - /url: https://arkhangelsk.winestyle.ru/
+    - listitem [ref=f2e3766]:
+      - link "Липецк" [ref=f2e3767] [cursor=pointer]:
+        - /url: https://lipetsk.winestyle.ru/
+    - listitem [ref=f2e3768]:
+      - link "Пенза" [ref=f2e3769] [cursor=pointer]:
+        - /url: https://penza.winestyle.ru/
+    - listitem [ref=f2e3770]:
+      - link "Ульяновск" [ref=f2e3771] [cursor=pointer]:
+        - /url: https://uln.winestyle.ru/
+    - listitem [ref=f2e3772]:
+      - link "Кострома" [ref=f2e3773] [cursor=pointer]:
+        - /url: https://kostroma.winestyle.ru/
+    - listitem [ref=f2e3774]:
+      - link "Курган" [ref=f2e3775] [cursor=pointer]:
+        - /url: https://kurgan.winestyle.ru/
+    - listitem [ref=f2e3776]:
+      - link "Смоленск" [ref=f2e3777] [cursor=pointer]:
+        - /url: https://smolensk.winestyle.ru/
+    - listitem [ref=f2e3778]:
+      - link "Новокузнецк" [ref=f2e3779] [cursor=pointer]:
+        - /url: https://kemerovo.winestyle.ru/
+    - listitem [ref=f2e3780]:
+      - link "Карелия" [ref=f2e3781] [cursor=pointer]:
+        - /url: https://karelia.winestyle.ru/
+  - contentinfo [ref=f2e3782]:
+    - generic [ref=f2e3783]:
+      - navigation [ref=f2e3784]:
+        - generic [ref=f2e3785]:
+          - generic [ref=f2e3786]:
+            - paragraph [ref=f2e3787]: Покупателям
+            - list [ref=f2e3788]:
+              - listitem [ref=f2e3789]:
+                - link "Покупка и оплата" [ref=f2e3790] [cursor=pointer]:
+                  - /url: /pages/delivery.html
+              - listitem [ref=f2e3791]:
+                - link "Гарантии" [ref=f2e3792] [cursor=pointer]:
+                  - /url: /pages/warranty.html
+              - listitem [ref=f2e3793]:
+                - link "Контакты" [ref=f2e3794] [cursor=pointer]:
+                  - /url: /pages/contacts.html
+              - listitem [ref=f2e3795]:
+                - link "Программа лояльности" [ref=f2e3796] [cursor=pointer]:
+                  - /url: /pages/loyalty_program.html
+          - generic [ref=f2e3797]:
+            - paragraph [ref=f2e3798]: Для бизнеса
+            - list [ref=f2e3799]:
+              - listitem [ref=f2e3800]:
+                - link "Корпоративным клиентам" [ref=f2e3801] [cursor=pointer]:
+                  - /url: /pages/corporate.html
+              - listitem [ref=f2e3802]:
+                - link "Франшиза New" [ref=f2e3803] [cursor=pointer]:
+                  - /url: /pages/franchise.html
+                  - text: Франшиза
+                  - generic [ref=f2e3804]: New
+              - listitem [ref=f2e3805]:
+                - link "Ресторанам, магазинам" [ref=f2e3806] [cursor=pointer]:
+                  - /url: /opt/
+              - listitem [ref=f2e3807]:
+                - link "Арендодателям" [ref=f2e3808] [cursor=pointer]:
+                  - /url: /pages/for_lessors.html
+              - listitem [ref=f2e3809]:
+                - link "Партнерам" [ref=f2e3810] [cursor=pointer]:
+                  - /url: /pages/partners.html
+              - listitem:
+                - list [ref=f2e3811]:
+                  - listitem [ref=f2e3812]:
+                    - link "Поставщикам" [ref=f2e3813] [cursor=pointer]:
+                      - /url: /pages/suppliers.html
+              - listitem [ref=f2e3814]:
+                - button [ref=f2e3815] [cursor=pointer]:
+                  - paragraph [ref=f2e3817]: Ещё
+          - generic [ref=f2e3818]:
+            - paragraph [ref=f2e3819]: Предложения
+            - list [ref=f2e3820]:
+              - listitem [ref=f2e3821]:
+                - link "Бестселлеры" [ref=f2e3822] [cursor=pointer]:
+                  - /url: /pages/bestsellers.html
+              - listitem [ref=f2e3823]:
+                - link "Новинки" [ref=f2e3824] [cursor=pointer]:
+                  - /url: /novelty/
+              - listitem [ref=f2e3825]:
+                - link "Акции" [ref=f2e3826] [cursor=pointer]:
+                  - /url: /promo/discount/
+              - listitem [ref=f2e3827]:
+                - link "Рейтинговые вина до 1000 ₽" [ref=f2e3828] [cursor=pointer]:
+                  - /url: /wine/cheap-and-best/
+              - listitem [ref=f2e3829]:
+                - link "Рейтинговые вина до 3000 ₽" [ref=f2e3830] [cursor=pointer]:
+                  - /url: /wine/90-rating/
+              - listitem:
+                - list [ref=f2e3831]:
+                  - listitem [ref=f2e3832]:
+                    - link "Вино в подарочной коробке" [ref=f2e3833] [cursor=pointer]:
+                      - /url: /wine/inbox-packing/
+                  - listitem [ref=f2e3834]:
+                    - link "Французский коньяк" [ref=f2e3835] [cursor=pointer]:
+                      - /url: /cognac/france/
+                  - listitem [ref=f2e3836]:
+                    - link "Армянский коньяк" [ref=f2e3837] [cursor=pointer]:
+                      - /url: /cognac/armenia/
+                  - listitem [ref=f2e3838]:
+                    - link "Hennessy" [ref=f2e3839] [cursor=pointer]:
+                      - /url: /cognac/hennessy/
+                  - listitem [ref=f2e3840]:
+                    - link "Courvoisier" [ref=f2e3841] [cursor=pointer]:
+                      - /url: /cognac/courvoisier/
+                  - listitem [ref=f2e3842]:
+                    - link "Чешское пиво" [ref=f2e3843] [cursor=pointer]:
+                      - /url: /beer/czech/
+                  - listitem [ref=f2e3844]:
+                    - link "Немецкое пиво" [ref=f2e3845] [cursor=pointer]:
+                      - /url: /beer/germany/
+                  - listitem [ref=f2e3846]:
+                    - link "Крафтовое пиво" [ref=f2e3847] [cursor=pointer]:
+                      - /url: /beer/craft/
+                  - listitem [ref=f2e3848]:
+                    - link "Шотландский виски" [ref=f2e3849] [cursor=pointer]:
+                      - /url: /whisky/scotland/
+                  - listitem [ref=f2e3850]:
+                    - link "Односолодовый виски" [ref=f2e3851] [cursor=pointer]:
+                      - /url: /whisky/single-malt/
+                  - listitem [ref=f2e3852]:
+                    - link "Бурбон" [ref=f2e3853] [cursor=pointer]:
+                      - /url: /whisky/bourbon/
+                  - listitem [ref=f2e3854]:
+                    - link "Виски Jack Daniels" [ref=f2e3855] [cursor=pointer]:
+                      - /url: /whisky/jack-daniels/
+                  - listitem [ref=f2e3856]:
+                    - link "Виски Johnnie Walker" [ref=f2e3857] [cursor=pointer]:
+                      - /url: /whisky/johnnie-walker/
+                  - listitem [ref=f2e3858]:
+                    - link "Ром Bacardi" [ref=f2e3859] [cursor=pointer]:
+                      - /url: /rum/bacardi/
+                  - listitem [ref=f2e3860]:
+                    - link "Ликер Jagermeister" [ref=f2e3861] [cursor=pointer]:
+                      - /url: /liqueur/jagermeister/
+              - listitem [ref=f2e3862]:
+                - button [ref=f2e3863] [cursor=pointer]:
+                  - paragraph [ref=f2e3865]: Ещё
+          - generic [ref=f2e3866]:
+            - paragraph [ref=f2e3867]: WineStyle
+            - list [ref=f2e3868]:
+              - listitem [ref=f2e3869]:
+                - link "О компании" [ref=f2e3870] [cursor=pointer]:
+                  - /url: /pages/about.html
+              - listitem [ref=f2e3871]:
+                - link "Один день с WineStyle" [ref=f2e3872] [cursor=pointer]:
+                  - /url: /pages/oneday.html
+              - listitem [ref=f2e3873]:
+                - link "Вакансии" [ref=f2e3874] [cursor=pointer]:
+                  - /url: /pages/vacancy/
+              - listitem [ref=f2e3875]:
+                - link "Блог Winestyle" [ref=f2e3876] [cursor=pointer]:
+                  - /url: /articles/
+              - listitem [ref=f2e3877]:
+                - link "Благотворительность" [ref=f2e3878] [cursor=pointer]:
+                  - /url: /pages/charity/
+        - generic [ref=f2e3879]:
+          - paragraph [ref=f2e3880]: Поддержка
+          - list [ref=f2e3881]:
+            - listitem [ref=f2e3882]:
+              - link "+7 (499) 703-51-51" [ref=f2e3883] [cursor=pointer]:
+                - /url: tel:+74997035151
+            - listitem [ref=f2e3884]:
+              - button "Заказать звонок" [ref=f2e3885] [cursor=pointer]
+            - listitem [ref=f2e3886]:
+              - button "Telegram" [ref=f2e3887] [cursor=pointer]
+            - listitem [ref=f2e3888]:
+              - link "ВКонтакте" [ref=f2e3889] [cursor=pointer]:
+                - /url: https://vk.com/winestyle
+      - button "Карта магазинов" [ref=f2e3890] [cursor=pointer]
+      - generic [ref=f2e3891]:
+        - generic [ref=f2e3892]: © WineStyle 2006 — 2026
+        - list [ref=f2e3893]:
+          - listitem [ref=f2e3894]:
+            - link "Пользовательское соглашение" [ref=f2e3895] [cursor=pointer]:
+              - /url: /pages/legal.html
+          - listitem [ref=f2e3896]:
+            - link "Карта сайта" [ref=f2e3897] [cursor=pointer]:
+              - /url: /pages/map.html
+          - listitem [ref=f2e3898]:
+            - generic [ref=f2e3899]: Россия
+            - link "ru" [ref=f2e3907] [cursor=pointer]:
+              - /url: https://eng.winestyle.ru/
+    - generic [ref=f2e3910]:
+      - generic [ref=f2e3911]:
+        - generic [ref=f2e3912]: 18+
+        - text: "МИНЗДРАВ ПРЕДУПРЕЖДАЕТ: ЧРЕЗМЕРНОЕ УПОТРЕБЛЕНИЕ АЛКОГОЛЯ ВРЕДИТ ВАШЕМУ ЗДОРОВЬЮ"
+      - generic [ref=f2e3913]: "ООО «СТОР ВАЙНСТАЙЛ», ИНН: 9717017438, ЛИЦЕНЗИЯ: 77РПА0012229 ОТ 08.06.2016 ДЕЙСТВУЕТ С 06.08.2021 ПО 07.06.2026, Г. МОСКВА, УЛ. ЛЮСИНОВСКАЯ, Д. 53, ЭТАЖ 1, ПОМЕЩЕНИЕ VI ОТГРУЗКА ПРОДУКЦИИ ЮРИДИЧЕСКИМ ЛИЦАМ ОСУЩЕСТВЛЯЕТСЯ В СООТВЕТСТВИИ С ДЕЙСТВУЮЩИМ ЗАКОНОДАТЕЛЬСТВОМ. В СООТВЕТСТВИИ С РЕКОМЕНДАЦИЯМИ ФС РАР УВЕДОМЛЯЕМ: АЛКОГОЛЬНАЯ ПРОДУКЦИЯ МОЖЕТ БЫТЬ ПРИОБРЕТЕНА В МАГАЗИНАХ СЕТИ WINESTYLE."
+  - generic [ref=f2e3917]:
+    - paragraph [ref=f2e3918]: Для просмотра контента на сайте нужно подтвердить своё совершеннолетие
+    - button "Подтверждаю" [ref=f2e3919] [cursor=pointer]

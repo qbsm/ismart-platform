@@ -1,0 +1,15 @@
+- generic [ref=f4e3]:
+  - generic [ref=f4e5]:
+    - link [ref=f4e8] [cursor=pointer]:
+      - /url: /list
+    - generic [ref=f4e28] [cursor=pointer]:
+      - img "fedorovich-d" [ref=f4e31]
+      - generic [ref=f4e32]: fedorovich-d
+  - generic [ref=f4e34]:
+    - generic [ref=f4e35]:
+      - generic [ref=f4e36]: "4"
+      - generic [ref=f4e37]: "0"
+      - generic [ref=f4e38]: "4"
+    - generic [ref=f4e39]:
+      - generic [ref=f4e40]: Страница не найдена
+      - generic [ref=f4e41]: Возможно, она была перемещена, или неверно указан адрес страницы.

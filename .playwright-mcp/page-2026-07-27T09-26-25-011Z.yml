@@ -1,0 +1,180 @@
+- generic [ref=f7e1]:
+  - link "Перейти к контенту" [ref=f7e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f7e3]:
+    - generic [ref=f7e4]:
+      - generic [ref=f7e5]:
+        - link [ref=f7e6] [cursor=pointer]:
+          - /url: /
+          - img "SOLLERS" [ref=f7e7]
+        - img "АВИЛОН — официальный дилер" [ref=f7e10]
+      - generic [ref=f7e13]:
+        - generic [ref=f7e14]: Sollers Авилон
+        - link "+7 (495) 183-57-86" [ref=f7e15] [cursor=pointer]:
+          - /url: tel:+74951835786
+        - link "Котельники, Белая Дача, Коммерческий пр-д, 10" [ref=f7e16] [cursor=pointer]:
+          - /url: http://promo.sollers-avilon.ru.test/#map
+      - link "Заказать звонок" [ref=f7e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f7e20]:
+      - link "Модельный ряд" [ref=f7e21] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#range
+      - link "Акции" [ref=f7e22] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#actions
+      - link "Тест-драйв" [ref=f7e23] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#testdrive
+      - link "Преимущества" [ref=f7e24] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#profits
+      - link "Способы покупки" [ref=f7e25] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#finance
+      - link "Контакты" [ref=f7e26] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#map
+  - main [ref=f7e27]:
+    - generic [ref=f7e29]:
+      - heading "SOLLERS SF1" [level=1] [ref=f7e30]
+      - paragraph [ref=f7e31]: Цельнометаллический фургон. SOLLERS SF1 у официального дилера Sollers Авилон.
+    - generic [ref=f7e33]:
+      - heading "SOLLERS SF1" [level=2] [ref=f7e35]
+      - navigation "Фильтр по моделям" [ref=f7e37]:
+        - button "Все модели" [ref=f7e38] [cursor=pointer]
+        - button "SOLLERS SF1" [ref=f7e39] [cursor=pointer]
+      - article [ref=f7e42]:
+        - generic [ref=f7e44]:
+          - generic [ref=f7e45]:
+            - img "SOLLERS SF1"
+          - generic [ref=f7e46]:
+            - button "Минивэн" [expanded] [active] [ref=f7e231] [cursor=pointer]
+            - listbox [ref=f7e227]:
+              - option "Цельнометаллический" [ref=f7e228] [cursor=pointer]
+              - option "Минивэн" [ref=f7e229] [cursor=pointer]
+              - option "Грузопассажирский фургон" [ref=f7e230] [cursor=pointer]
+          - generic [ref=f7e52]:
+            - button "Белый" [ref=f7e53] [cursor=pointer]
+            - button "Тёмно-синий" [ref=f7e55] [cursor=pointer]
+            - button "Красный" [ref=f7e57] [cursor=pointer]
+            - button "Серебристый (металлик)" [ref=f7e59] [cursor=pointer]
+            - button "Тёмно-серый (металлик)" [ref=f7e61] [cursor=pointer]
+            - button "Чёрный (металлик)" [ref=f7e63] [cursor=pointer]
+          - generic [ref=f7e65]: Белый
+        - generic [ref=f7e66]:
+          - generic [ref=f7e67]:
+            - heading "SOLLERS SF1" [level=3] [ref=f7e68]
+            - paragraph [ref=f7e69]: Цельнометаллический фургон
+            - generic [ref=f7e71]:
+              - text: от
+              - generic [ref=f7e72]: 2 115 000
+              - text: ₽
+          - list [ref=f7e73]:
+            - listitem [ref=f7e74]:
+              - generic [ref=f7e78]: Объём отсека 5,2 м³
+            - listitem [ref=f7e79]:
+              - generic [ref=f7e83]: До 2 палет 1200×800 мм
+            - listitem [ref=f7e84]:
+              - generic [ref=f7e88]: Цельнометаллический фургон
+          - generic [ref=f7e89]:
+            - link "Узнать цену" [ref=f7e90] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Кредит" [ref=f7e92] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Лизинг" [ref=f7e94] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Пройти тест-драйв" [ref=f7e96] [cursor=pointer]:
+              - /url: "#callback"
+        - generic [ref=f7e98]:
+          - generic [ref=f7e99]:
+            - generic [ref=f7e100]: Габаритные размеры
+            - list [ref=f7e101]:
+              - listitem [ref=f7e102]:
+                - generic [ref=f7e103]: 5 115
+                - generic [ref=f7e104]: Общая длина, мм
+              - listitem [ref=f7e105]:
+                - generic [ref=f7e106]: 1 900
+                - generic [ref=f7e107]: Общая высота, мм
+          - generic [ref=f7e108]:
+            - generic [ref=f7e109]: Грузовой отсек
+            - list [ref=f7e110]:
+              - listitem [ref=f7e111]:
+                - generic [ref=f7e112]: 2 600
+                - generic [ref=f7e113]: Длина на уровне пола, мм
+              - listitem [ref=f7e114]:
+                - generic [ref=f7e115]: 1 530
+                - generic [ref=f7e116]: Ширина, мм
+              - listitem [ref=f7e117]:
+                - generic [ref=f7e118]: 1 295
+                - generic [ref=f7e119]: Высота, мм
+              - listitem [ref=f7e120]:
+                - generic [ref=f7e121]: "2"
+                - generic [ref=f7e122]: Палеты (1200×800 мм)
+              - listitem [ref=f7e123]:
+                - generic [ref=f7e124]: 5,2
+                - generic [ref=f7e125]: Объём грузового отсека, м³
+        - generic [ref=f7e128]:
+          - link [ref=f7e130] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/1280/1.webp
+            - img "SOLLERS SF1 — фото 1" [ref=f7e132]
+          - link [ref=f7e134] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/1280/2.webp
+            - img "SOLLERS SF1 — фото 2" [ref=f7e136]
+          - link [ref=f7e138] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/1280/3.webp
+            - img "SOLLERS SF1 — фото 3" [ref=f7e140]
+          - link [ref=f7e142] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/1280/4.webp
+            - img "SOLLERS SF1 — фото 4" [ref=f7e144]
+    - generic [ref=f7e150]:
+      - generic [ref=f7e151]: Узнайте цену SOLLERS SF1
+      - generic [ref=f7e152]: Индивидуальное предложение от официального дилера Sollers Авилон
+      - link "Получить предложение" [ref=f7e154] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f7e159]:
+      - generic [ref=f7e160]:
+        - generic [ref=f7e161]: Sollers Авилон
+        - generic [ref=f7e162]: Официальный дилер SOLLERS в Москве
+      - list [ref=f7e163]:
+        - listitem [ref=f7e164]:
+          - link "+7 (495) 183-57-86" [ref=f7e168] [cursor=pointer]:
+            - /url: tel:+74951835786
+        - listitem [ref=f7e169]:
+          - generic [ref=f7e174]: Котельники, Белая Дача, Коммерческий пр-д, 10
+        - listitem [ref=f7e175]:
+          - generic [ref=f7e180]: "Пн–Вс: 09:00–21:00"
+      - link "Получить консультацию" [ref=f7e181] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f7e186]:
+    - link [ref=f7e188] [cursor=pointer]:
+      - /url: http://promo.sollers-avilon.ru.test/
+      - img "SOLLERS" [ref=f7e189]
+    - generic [ref=f7e191]:
+      - link "ВКонтакте" [ref=f7e192] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f7e195] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f7e198] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f7e201]:
+      - link "Модельный ряд" [ref=f7e203] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#range
+      - link "Преимущества" [ref=f7e205] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#profits
+      - link "Способы покупки" [ref=f7e207] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#finance
+      - link "Контакты" [ref=f7e209] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#map
+    - generic [ref=f7e210]: © 2026 Sollers Авилон. Все права защищены
+    - generic [ref=f7e212]:
+      - link "Политика конфиденциальности" [ref=f7e213] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f7e214] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f7e215] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/consent/
+      - link "Правовая информация" [ref=f7e216] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/legal-info/
+    - paragraph [ref=f7e218]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f7e221]:
+    - generic [ref=f7e223]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f7e224] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f7e226] [cursor=pointer]

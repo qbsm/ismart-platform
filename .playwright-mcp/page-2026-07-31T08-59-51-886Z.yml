@@ -1,0 +1,294 @@
+- generic [ref=f249e2]:
+  - region "Notifications alt+T"
+  - generic:
+    - status
+    - generic: Loading
+  - banner [ref=f249e3]:
+    - generic [ref=f249e4]:
+      - link "Uiverse Design Uiverse Design" [ref=f249e5] [cursor=pointer]:
+        - /url: /design
+        - img "Uiverse Design" [ref=f249e6]
+        - generic [ref=f249e7]: Uiverse Design
+      - generic [ref=f249e8]:
+        - navigation [ref=f249e9]:
+          - link "What is DESIGN.md?" [ref=f249e10] [cursor=pointer]:
+            - /url: /design/what-is-design
+          - link "How to use" [ref=f249e11] [cursor=pointer]:
+            - /url: /design/how-to-use-design-systems
+        - button "Log in / Sign up" [ref=f249e12] [cursor=pointer]
+  - main [ref=f249e15]:
+    - generic [ref=f249e18]:
+      - generic [ref=f249e19]: Tutorial · 4 steps
+      - heading "Achieve consistent UI in four steps." [level=1] [ref=f249e22]: Achieve consistent UIin four steps.
+      - paragraph [ref=f249e23]: Drop two files into your project, run one prompt, and let your coding agent build every new screen from the same design system.
+      - generic [ref=f249e24]:
+        - link "Browse design systems" [ref=f249e25] [cursor=pointer]:
+          - /url: /design
+        - link "What is DESIGN.md?" [ref=f249e26] [cursor=pointer]:
+          - /url: /design/what-is-design
+    - generic [ref=f249e28]:
+      - article [ref=f249e29]:
+        - generic [ref=f249e30]: "01"
+        - generic [ref=f249e32]:
+          - heading "Download the design system pack." [level=2] [ref=f249e33]
+          - generic [ref=f249e34]:
+            - paragraph [ref=f249e35]: After purchase, your account download page gives you a ZIP containing everything you need. Free systems expose the same files directly from the detail page.
+            - generic [ref=f249e36]:
+              - generic [ref=f249e37]:
+                - paragraph [ref=f249e38]: design-system.zip
+                - list [ref=f249e39]:
+                  - listitem [ref=f249e40]:
+                    - generic [ref=f249e44]: DESIGN.md
+                    - generic [ref=f249e45]: agent guidance
+                  - listitem [ref=f249e46]:
+                    - generic [ref=f249e50]: css/system.css
+                    - generic [ref=f249e51]: tokens + styles
+                  - listitem [ref=f249e52]:
+                    - generic [ref=f249e56]: html/preview.html
+                    - generic [ref=f249e57]: reference
+              - generic [ref=f249e61]:
+                - paragraph [ref=f249e62]: "You only need two files to actually integrate:"
+                - list [ref=f249e63]:
+                  - listitem [ref=f249e64]:
+                    - code [ref=f249e66]: DESIGN.md
+                    - text: ", the rules"
+                  - listitem [ref=f249e67]:
+                    - code [ref=f249e69]: system.css
+                    - text: ", the tokens"
+      - article [ref=f249e70]:
+        - generic [ref=f249e71]: "02"
+        - generic [ref=f249e73]:
+          - heading "Drop DESIGN.md and the stylesheet into your project." [level=2] [ref=f249e74]
+          - generic [ref=f249e75]:
+            - paragraph [ref=f249e76]:
+              - text: Keep
+              - code [ref=f249e77]: DESIGN.md
+              - text: at the project root so coding agents pick it up as project context. Move the generated stylesheet,
+              - code [ref=f249e78]: system.css
+              - text: ", anywhere in your project. Your agent will wire it up in the next step."
+            - generic [ref=f249e79]:
+              - generic [ref=f249e80]: your-app/
+              - list [ref=f249e83]:
+                - listitem [ref=f249e84]:
+                  - generic [ref=f249e85]: ·
+                  - generic [ref=f249e86]: DESIGN.md
+                - listitem [ref=f249e87]:
+                  - generic [ref=f249e88]: ·
+                  - generic [ref=f249e89]: package.json
+                - listitem [ref=f249e90]:
+                  - generic [ref=f249e91]: ▸
+                  - generic [ref=f249e92]: src/
+                - listitem [ref=f249e93]:
+                  - generic [ref=f249e94]: ·
+                  - generic [ref=f249e95]: App.tsx
+                - listitem [ref=f249e96]:
+                  - generic [ref=f249e97]: ·
+                  - generic [ref=f249e98]: index.css
+                - listitem [ref=f249e99]:
+                  - generic [ref=f249e100]: ▸
+                  - generic [ref=f249e101]: styles/
+                - listitem [ref=f249e102]:
+                  - generic [ref=f249e103]: ·
+                  - generic [ref=f249e104]: system.css
+            - paragraph [ref=f249e105]: The folder doesn't matter. The agent finds the stylesheet and imports it correctly for your framework.
+      - article [ref=f249e106]:
+        - generic [ref=f249e107]: "03"
+        - generic [ref=f249e109]:
+          - heading "Run the integration prompt in your coding agent." [level=2] [ref=f249e110]
+          - generic [ref=f249e111]:
+            - paragraph [ref=f249e112]: Open your agent of choice (Cursor, Claude Code, Codex, or another) and paste this prompt. It tells the agent to treat DESIGN.md as the source of truth, wire up the stylesheet for you, and refactor your UI to match, with no manual CSS import required.
+            - generic [ref=f249e114]:
+              - generic [ref=f249e115]:
+                - generic [ref=f249e119]: PROMPT.md
+                - generic [ref=f249e122]: markdown
+                - button "Copy to clipboard" [ref=f249e123]: Copy
+              - code [ref=f249e127]: Read DESIGN.md in the project root before changing UI. 1. Find the design system stylesheet (css/system.css) and wire it up for me. Detect my framework (Vite, Next.js, Remix/React Router, plain HTML, or whatever this project uses) and import the stylesheet exactly once from the app's main/global CSS, or add a <link> in the HTML head for plain HTML. Move the file somewhere sensible if needed. 2. Use the tokens, utilities, component anatomy, spacing, typography, and states described in DESIGN.md. 3. Refactor the requested UI to match the system instead of inventing a new visual style. 4. If existing components conflict with DESIGN.md, explain the conflict and choose the option that keeps the interface most consistent. 5. If html/preview.html exists, read it as a visual reference and match the structure, spacing, and component styling shown there.
+      - article [ref=f249e128]:
+        - generic [ref=f249e129]: "04"
+        - generic [ref=f249e131]:
+          - heading "Keep DESIGN.md in the loop for every new UI." [level=2] [ref=f249e132]
+          - generic [ref=f249e133]:
+            - paragraph [ref=f249e134]: For long-term consistency, mention DESIGN.md in your agent's global instructions so every future UI request starts from the same rules. When you can't, append a short reminder to the prompt itself.
+            - generic [ref=f249e135]:
+              - generic [ref=f249e136]:
+                - paragraph [ref=f249e137]: Option A · Global instructions
+                - list [ref=f249e138]:
+                  - listitem [ref=f249e139]:
+                    - generic [ref=f249e141]:
+                      - text: "Cursor: add a rule in"
+                      - code [ref=f249e142]: .cursor/rules
+                      - text: or
+                      - code [ref=f249e143]: AGENTS.md
+                  - listitem [ref=f249e144]:
+                    - generic [ref=f249e146]:
+                      - text: "Claude Code: add to"
+                      - code [ref=f249e147]: CLAUDE.md
+                  - listitem [ref=f249e148]:
+                    - generic [ref=f249e150]:
+                      - text: "Codex: add to"
+                      - code [ref=f249e151]: AGENTS.md
+                  - listitem [ref=f249e152]:
+                    - generic [ref=f249e154]: "Tell the agent: \"Always read DESIGN.md before UI work.\""
+              - generic [ref=f249e155]:
+                - paragraph [ref=f249e156]: Option B · Per-prompt reminder
+                - generic [ref=f249e157]:
+                  - generic [ref=f249e158]:
+                    - generic [ref=f249e162]: PROMPT.md
+                    - generic [ref=f249e165]: markdown
+                    - button "Copy to clipboard" [ref=f249e166]: Copy
+                  - code [ref=f249e170]: Build the requested UI using DESIGN.md as the visual source of truth. Follow its color tokens, typography, spacing scale, component patterns, interaction states, and accessibility guidance. Reuse styles from the imported primary stylesheet before writing new CSS.
+    - generic [ref=f249e171]:
+      - generic [ref=f249e172]:
+        - generic [ref=f249e173]:
+          - heading "Now pick a design system and try the tutorial." [level=2] [ref=f249e174]
+          - paragraph [ref=f249e175]: The tutorial is the same for every system in the catalog. Start with one of these or browse the full library.
+        - link "Browse all" [ref=f249e176] [cursor=pointer]:
+          - /url: /design
+      - generic [ref=f249e177]:
+        - generic [ref=f249e179]:
+          - link "View Halo" [ref=f249e180] [cursor=pointer]:
+            - /url: /design/systems/halo
+          - img "Halo cover screenshot" [ref=f249e182]
+          - generic [ref=f249e183]:
+            - generic [ref=f249e184]:
+              - button "Show Halo cover image" [pressed] [ref=f249e185]
+              - button "Show Halo preview section 1" [ref=f249e186]
+              - button "Show Halo preview section 2" [ref=f249e187]
+              - button "Show Halo preview section 3" [ref=f249e188]
+              - button "Show Halo preview section 4" [ref=f249e189]
+              - button "Show Halo preview section 5" [ref=f249e190]
+            - generic [ref=f249e191]:
+              - generic [ref=f249e192]:
+                - heading "Halo" [level=2] [ref=f249e194]
+                - generic [ref=f249e195]: Free
+              - paragraph [ref=f249e197]: A modern, minimal, and scalable dark design system that pairs an architectural near-black canvas with precise typography and a tight palette of vibrant signal colors for product-grade interfaces.
+            - paragraph [ref=f249e198]:
+              - generic [ref=f249e199]: 5 files
+              - generic [ref=f249e200]: 12 components
+              - generic [ref=f249e201]: 2 fonts
+              - generic [ref=f249e202]: 10 colors
+        - generic [ref=f249e204]:
+          - link "View Dithersmith" [ref=f249e205] [cursor=pointer]:
+            - /url: /design/systems/dithersmith
+          - img "Dithersmith cover screenshot" [ref=f249e207]
+          - generic [ref=f249e208]:
+            - generic [ref=f249e209]:
+              - button "Show Dithersmith cover image" [pressed] [ref=f249e210]
+              - button "Show Dithersmith preview section 1" [ref=f249e211]
+              - button "Show Dithersmith preview section 2" [ref=f249e212]
+              - button "Show Dithersmith preview section 3" [ref=f249e213]
+              - button "Show Dithersmith preview section 4" [ref=f249e214]
+              - button "Show Dithersmith preview section 5" [ref=f249e215]
+              - button "Show Dithersmith preview section 6" [ref=f249e216]
+            - generic [ref=f249e217]:
+              - generic [ref=f249e218]:
+                - heading "Dithersmith" [level=2] [ref=f249e220]
+                - generic [ref=f249e221]: Premium
+              - paragraph [ref=f249e223]: A forge-dark product system that renders a single ember hue as visible pixels, dissolving solid color into black through ordered dither ramps.
+            - paragraph [ref=f249e224]:
+              - generic [ref=f249e225]: 5 files
+              - generic [ref=f249e226]: 1 logo
+              - generic [ref=f249e227]: 2 fonts
+              - generic [ref=f249e228]: 8 colors
+        - generic [ref=f249e230]:
+          - link "View Intaglio" [ref=f249e231] [cursor=pointer]:
+            - /url: /design/systems/intaglio
+          - img "Intaglio cover screenshot" [ref=f249e233]
+          - generic [ref=f249e234]:
+            - generic [ref=f249e235]:
+              - button "Show Intaglio cover image" [pressed] [ref=f249e236]
+              - button "Show Intaglio preview section 1" [ref=f249e237]
+              - button "Show Intaglio preview section 2" [ref=f249e238]
+              - button "Show Intaglio preview section 3" [ref=f249e239]
+              - button "Show Intaglio preview section 4" [ref=f249e240]
+              - button "Show Intaglio preview section 5" [ref=f249e241]
+              - button "Show Intaglio preview section 6" [ref=f249e242]
+            - generic [ref=f249e243]:
+              - generic [ref=f249e244]:
+                - heading "Intaglio" [level=2] [ref=f249e246]
+                - generic [ref=f249e247]: Premium
+              - paragraph [ref=f249e249]: An engraved-print design system for research, analysis, and archive products. Warm parchment, cut hairlines, inscriptional capitals, and a single marigold field used at panel scale.
+            - paragraph [ref=f249e250]:
+              - generic [ref=f249e251]: 5 files
+              - generic [ref=f249e252]: 1 logo
+              - generic [ref=f249e253]: 3 fonts
+              - generic [ref=f249e254]: 6 colors
+    - generic [ref=f249e255]:
+      - heading "That's the whole loop." [level=2] [ref=f249e258]
+      - paragraph [ref=f249e259]: Two files, one prompt, and a permanent reference for every new screen. Pick a system and try it on a real project.
+      - generic [ref=f249e260]:
+        - link "Browse design systems" [ref=f249e261] [cursor=pointer]:
+          - /url: /design
+        - link "Learn about DESIGN.md" [ref=f249e262] [cursor=pointer]:
+          - /url: /design/what-is-design
+  - contentinfo [ref=f249e263]:
+    - generic [ref=f249e264]:
+      - generic [ref=f249e265]:
+        - generic [ref=f249e266]:
+          - link [ref=f249e267] [cursor=pointer]:
+            - /url: /design
+            - img "Uiverse Design" [ref=f249e268]
+            - text: Uiverse Design
+          - paragraph [ref=f249e269]: Framework-agnostic design systems with portable CSS, DESIGN.md guidance, and components. Built for AI-assisted workflows.
+          - generic [ref=f249e270]:
+            - link "GitHub" [ref=f249e271] [cursor=pointer]:
+              - /url: https://github.com/uiverse-io
+              - img "GitHub" [ref=f249e272]
+            - link "X" [ref=f249e274] [cursor=pointer]:
+              - /url: https://x.com/uiverse_io
+              - img "X" [ref=f249e275]
+            - link "Discord" [ref=f249e277] [cursor=pointer]:
+              - /url: https://discord.gg/uiverse
+              - img "Discord" [ref=f249e278]
+        - generic [ref=f249e280]:
+          - heading "Product" [level=3] [ref=f249e281]
+          - list [ref=f249e282]:
+            - listitem [ref=f249e283]:
+              - link "Design systems" [ref=f249e284] [cursor=pointer]:
+                - /url: /design
+            - listitem [ref=f249e285]:
+              - link "What is DESIGN.md?" [ref=f249e286] [cursor=pointer]:
+                - /url: /design/what-is-design
+            - listitem [ref=f249e287]:
+              - link "How to use" [ref=f249e288] [cursor=pointer]:
+                - /url: /design/how-to-use-design-systems
+            - listitem [ref=f249e289]:
+              - link "Uiverse.io" [ref=f249e290] [cursor=pointer]:
+                - /url: https://uiverse.io
+        - generic [ref=f249e291]:
+          - heading "Resources" [level=3] [ref=f249e292]
+          - list [ref=f249e293]:
+            - listitem [ref=f249e294]:
+              - link "Documentation" [ref=f249e295] [cursor=pointer]:
+                - /url: /design/what-is-design
+            - listitem [ref=f249e296]:
+              - link "Setup tutorial" [ref=f249e297] [cursor=pointer]:
+                - /url: /design/how-to-use-design-systems
+            - listitem [ref=f249e298]:
+              - link "Component library" [ref=f249e299] [cursor=pointer]:
+                - /url: https://uiverse.io/elements
+            - listitem [ref=f249e300]:
+              - link "Blog" [ref=f249e301] [cursor=pointer]:
+                - /url: https://uiverse.io/blog
+        - generic [ref=f249e302]:
+          - heading "Company" [level=3] [ref=f249e303]
+          - list [ref=f249e304]:
+            - listitem [ref=f249e305]:
+              - link "hello@uiverse.io" [ref=f249e306] [cursor=pointer]:
+                - /url: mailto:hello@uiverse.io
+            - listitem [ref=f249e307]:
+              - link "Terms of service" [ref=f249e308] [cursor=pointer]:
+                - /url: https://app.termly.io/document/terms-of-service/bdc0e7cf-cb88-4f24-9cb5-13761e20dedb
+            - listitem [ref=f249e309]:
+              - link "Privacy policy" [ref=f249e310] [cursor=pointer]:
+                - /url: https://app.termly.io/document/privacy-policy/fe317b39-7972-4f85-b7c6-d4f562e429d4
+      - generic [ref=f249e311]:
+        - paragraph [ref=f249e312]:
+          - text: 2026 Pixel Galaxies. All rights reserved. —
+          - link "Uiverse.io" [ref=f249e313] [cursor=pointer]:
+            - /url: https://uiverse.io
+        - generic [ref=f249e314]:
+          - link "Terms" [ref=f249e315] [cursor=pointer]:
+            - /url: https://app.termly.io/document/terms-of-service/bdc0e7cf-cb88-4f24-9cb5-13761e20dedb
+          - link "Privacy" [ref=f249e316] [cursor=pointer]:
+            - /url: https://app.termly.io/document/privacy-policy/fe317b39-7972-4f85-b7c6-d4f562e429d4

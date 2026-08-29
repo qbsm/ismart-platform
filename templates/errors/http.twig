@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title|default('Ошибка') }}</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 32rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    h1 { font-size: 1.5rem; }
+    a { color: #0066cc; }
+  </style>
+</head>
+<body>
+  <h1>{{ title|default('Ошибка') }}</h1>
+  <p>{{ message|default('Произошла ошибка.') }}</p>
+  <p><a href="{{ base_url|default('/') }}">Вернуться на главную</a></p>
+</body>
+</html>

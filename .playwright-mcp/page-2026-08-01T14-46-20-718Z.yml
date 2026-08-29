@@ -1,0 +1,1156 @@
+- generic [active] [ref=f37e1]:
+  - main [ref=f37e2]:
+    - generic [ref=f37e3]:
+      - generic [ref=f37e5]:
+        - generic [ref=f37e6]:
+          - link [ref=f37e8] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f37e10]:
+            - img "БорисХоф 34 года"
+            - generic [ref=f37e11]: Официальный дилер TANK в Москве
+        - generic [ref=f37e12]:
+          - generic [ref=f37e13]:
+            - generic [ref=f37e14]: TANK БорисХоф МКАД
+            - generic [ref=f37e15]:
+              - link "+7 (495) 011-11-03" [ref=f37e16] [cursor=pointer]:
+                - /url: tel:+74950111103
+              - generic [ref=f37e17]: 29 км МКАД, уч. 1, лит. Б
+          - generic [ref=f37e18]:
+            - generic [ref=f37e19]: TANK БорисХоф Сити
+            - generic [ref=f37e20]:
+              - link "+7 (495) 011-11-02" [ref=f37e21] [cursor=pointer]:
+                - /url: tel:+74950111102
+              - generic [ref=f37e22]: 2-я Магистральная ул., 18, стр. 22
+        - link "Заказать звонок" [ref=f37e24] [cursor=pointer]:
+          - /url: "#call"
+        - text: 󰏷
+      - generic [ref=f37e26]:
+        - link "TANK 300" [ref=f37e27] [cursor=pointer]:
+          - /url: /tank-300
+        - link "TANK 400" [ref=f37e29] [cursor=pointer]:
+          - /url: /tank-400
+        - link "TANK 500" [ref=f37e31] [cursor=pointer]:
+          - /url: /tank-500
+        - link "TANK 700" [ref=f37e33] [cursor=pointer]:
+          - /url: /tank-700
+        - link "Комплектации" [ref=f37e35] [cursor=pointer]:
+          - /url: "#complectations-wrap"
+        - link "Авто в наличии" [ref=f37e37] [cursor=pointer]:
+          - /url: /cars
+        - link "Сервис" [ref=f37e39] [cursor=pointer]:
+          - /url: /service
+        - link "Новости" [ref=f37e41] [cursor=pointer]:
+          - /url: /news
+        - link "Контакты" [ref=f37e43] [cursor=pointer]:
+          - /url: "#combomap"
+      - generic [ref=f37e46]:
+        - group "1 / 1" [ref=f37e48]:
+          - generic [ref=f37e52]:
+            - generic [ref=f37e53]:
+              - paragraph [ref=f37e54]: Гибридные TANK с выгодой до 850 000 ₽*
+              - paragraph [ref=f37e55]: Бак бензина в подарок до 31.08*
+            - generic [ref=f37e56]:
+              - generic [ref=f37e57]: Шины в подарок
+              - generic [ref=f37e59]: Аксессуары в подарок на выбор
+              - generic [ref=f37e61]: Керамическое покрытие в подарок
+            - generic [ref=f37e62]:
+              - generic [ref=f37e63]: Предложение действует
+              - generic [ref=f37e66]:
+                - generic [ref=f37e67]:
+                  - generic [ref=f37e68]: "00"
+                  - generic [ref=f37e69]: Дней
+                - generic [ref=f37e70]:
+                  - generic [ref=f37e71]: "05"
+                  - generic [ref=f37e72]: Часов
+                - generic [ref=f37e73]:
+                  - generic [ref=f37e74]: "08"
+                  - generic [ref=f37e75]: Минут
+                - generic [ref=f37e76]:
+                  - generic [ref=f37e77]: "39"
+                  - generic [ref=f37e78]: Секунд
+              - link "Получить предложение" [ref=f37e80] [cursor=pointer]:
+                - /url: "#call"
+        - button "Previous slide" [ref=f37e81] [cursor=pointer]: prev
+        - button "Next slide" [ref=f37e82] [cursor=pointer]: next
+      - generic [ref=f37e83]:
+        - generic [ref=f37e85]:
+          - heading "Модельный ряд TANK" [level=1] [ref=f37e87]
+          - generic [ref=f37e88]:
+            - link "TANK 300 TANK 300" [ref=f37e89] [cursor=pointer]:
+              - /url: "#tank-300"
+              - generic [ref=f37e90]:
+                - generic [ref=f37e91]:
+                  - img "TANK 300"
+                - generic [ref=f37e92]: TANK 300
+            - link "TANK 400 TANK 400" [ref=f37e93] [cursor=pointer]:
+              - /url: "#tank-400"
+              - generic [ref=f37e94]:
+                - generic [ref=f37e95]:
+                  - img "TANK 400"
+                - generic [ref=f37e96]: TANK 400
+            - link "TANK 500 TANK 500" [ref=f37e97] [cursor=pointer]:
+              - /url: "#tank-500"
+              - generic [ref=f37e98]:
+                - generic [ref=f37e99]:
+                  - img "TANK 500"
+                - generic [ref=f37e100]: TANK 500
+            - link "TANK 700 TANK 700" [ref=f37e101] [cursor=pointer]:
+              - /url: "#tank-700"
+              - generic [ref=f37e102]:
+                - generic [ref=f37e103]:
+                  - img "TANK 700"
+                - generic [ref=f37e104]: TANK 700
+          - generic [ref=f37e106]:
+            - generic [ref=f37e107]:
+              - generic [ref=f37e108]:
+                - generic [ref=f37e109]:
+                  - heading "АВТОМОБИЛЬ TANK 300" [level=2] [ref=f37e110]
+                  - generic [ref=f37e111]: Премиальный среднеразмерный SUV
+                  - link "Комплектации TANK 300" [ref=f37e112] [cursor=pointer]:
+                    - /url: "#complectations-wrap"
+                - group "Выбор цвета автомобиля" [ref=f37e119]:
+                  - 'button "Цвет: red" [pressed] [ref=f37e120] [cursor=pointer]'
+                  - 'button "Цвет: orange" [ref=f37e122] [cursor=pointer]'
+                  - 'button "Цвет: gray" [ref=f37e124] [cursor=pointer]'
+                  - 'button "Цвет: black" [ref=f37e126] [cursor=pointer]'
+                  - 'button "Цвет: white" [ref=f37e128] [cursor=pointer]'
+                - generic [ref=f37e131]:
+                  - generic [ref=f37e132]:
+                    - generic [ref=f37e133]: Объём двигателя, л.
+                    - generic [ref=f37e134]: "2.0"
+                  - generic [ref=f37e136]:
+                    - generic [ref=f37e137]: Мощность, л.с.
+                    - generic [ref=f37e138]: "220"
+                  - generic [ref=f37e140]:
+                    - generic [ref=f37e141]: Крутящий момент, Нм
+                    - generic [ref=f37e142]: "380"
+              - generic [ref=f37e143]:
+                - generic [ref=f37e144]:
+                  - generic [ref=f37e145]: Дополнительный бонуспри покупке в БорисХоф
+                  - generic [ref=f37e146]: Выгода до 500 000 ₽
+                - generic [ref=f37e147]:
+                  - generic [ref=f37e148]:
+                    - generic [ref=f37e149]: 󰄯
+                    - generic [ref=f37e150]: Шины в подарок
+                  - generic [ref=f37e151]:
+                    - generic [ref=f37e152]: 󰄯
+                    - generic [ref=f37e153]: Аксессуары в подарок на выбор
+                  - generic [ref=f37e154]:
+                    - generic [ref=f37e155]: 󰄯
+                    - generic [ref=f37e156]: Керамическое покрытие в подарок
+                  - generic [ref=f37e157]:
+                    - generic [ref=f37e158]: 󰄯
+                    - generic [ref=f37e159]: Гарантия от производителя 5 лет
+                  - generic [ref=f37e160]:
+                    - generic [ref=f37e161]: 󰄯
+                    - generic [ref=f37e162]: Привилегии на сервисное обслуживание
+                  - generic [ref=f37e163]:
+                    - generic [ref=f37e164]: 󰄯
+                    - generic [ref=f37e165]: Выгода на ТО до 50%
+                - generic [ref=f37e166]:
+                  - link "Узнать цену с максимальной выгодой" [ref=f37e167] [cursor=pointer]:
+                    - /url: "#300"
+                    - text: Узнать ценус максимальной выгодой
+                  - generic [ref=f37e168]:
+                    - link "Пройти Тест-драйв" [ref=f37e169] [cursor=pointer]:
+                      - /url: "#300"
+                    - link "Заявка на кредит" [ref=f37e170] [cursor=pointer]:
+                      - /url: "#300"
+              - text: 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀
+              - generic [ref=f37e171]:
+                - heading "Автомобили TANK 300 в наличии" [level=2] [ref=f37e173]
+                - generic [ref=f37e174]:
+                  - generic [ref=f37e175]:
+                    - generic [ref=f37e176]:
+                      - generic: 󰋯
+                      - link [ref=f37e177] [cursor=pointer]:
+                        - /url: data/stocks/images/8758919/701ea015237c9f861e15f5d6566b5625.jpg
+                    - generic [ref=f37e178]: TANK 300
+                    - generic [ref=f37e181]:
+                      - generic [ref=f37e182]: Комплектация
+                      - generic [ref=f37e183]: Сити Драйв (2025)
+                    - generic [ref=f37e187]:
+                      - generic [ref=f37e188]: Модификация
+                      - generic [ref=f37e189]: 2.0 AT (220 л.с.) 4WD
+                    - generic [ref=f37e193]:
+                      - generic [ref=f37e194]: Топливо
+                      - generic [ref=f37e195]: Бензин
+                    - generic [ref=f37e199]:
+                      - generic [ref=f37e200]: Цвет
+                      - generic [ref=f37e201]: Серый
+                    - link "Получить предложение" [ref=f37e205] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e206]:
+                    - generic [ref=f37e207]:
+                      - generic: 󰋯
+                      - link [ref=f37e208] [cursor=pointer]:
+                        - /url: data/stocks/images/8867385/e7245b1cd424c21d17f76dbd973ddfe0.jpg
+                    - generic [ref=f37e209]: TANK 300
+                    - generic [ref=f37e212]:
+                      - generic [ref=f37e213]: Комплектация
+                      - generic [ref=f37e214]: Сити Драйв (2025)
+                    - generic [ref=f37e218]:
+                      - generic [ref=f37e219]: Модификация
+                      - generic [ref=f37e220]: 2.0 AT (220 л.с.) 4WD
+                    - generic [ref=f37e224]:
+                      - generic [ref=f37e225]: Топливо
+                      - generic [ref=f37e226]: Бензин
+                    - generic [ref=f37e230]:
+                      - generic [ref=f37e231]: Цвет
+                      - generic [ref=f37e232]: Черный
+                    - link "Получить предложение" [ref=f37e236] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e237]:
+                    - generic [ref=f37e238]:
+                      - generic: 󰋯
+                      - link [ref=f37e239] [cursor=pointer]:
+                        - /url: data/stocks/images/9093985/685b5ec4ae0c4be02d3b23c28ab0d6c2.jpg
+                    - generic [ref=f37e240]: TANK 300
+                    - generic [ref=f37e243]:
+                      - generic [ref=f37e244]: Комплектация
+                      - generic [ref=f37e245]: Сити Премиум (2025)
+                    - generic [ref=f37e249]:
+                      - generic [ref=f37e250]: Модификация
+                      - generic [ref=f37e251]: 2.0 AT (220 л.с.) 4WD
+                    - generic [ref=f37e255]:
+                      - generic [ref=f37e256]: Топливо
+                      - generic [ref=f37e257]: Бензин
+                    - generic [ref=f37e261]:
+                      - generic [ref=f37e262]: Цвет
+                      - generic [ref=f37e263]: Серый
+                    - link "Получить предложение" [ref=f37e267] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e268]:
+                    - generic [ref=f37e269]:
+                      - generic: 󰋯
+                      - link [ref=f37e270] [cursor=pointer]:
+                        - /url: data/stocks/images/9093990/c37936a99eec3afe0e37d690695622a0.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/b563760abc91a7983d629af0bc15f922.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/e5c4177134907b1bcc9847940273abc7.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/cbb3cac2336d1d43c175a2c26d9d26b4.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/90bf475a3332ae443c950ff0e674cd89.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/bf593baf54cde337c81535dec826302b.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/627fb428040534a8865334d84118625f.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/78a67f154482a427e12faf75ff955b7d.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/dbf7eff6347410e87796ef80e1bc03b1.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/3a00d27be4e7d1b891ac81db127ffe40.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/8095c5b206a14184ba66947a3412fa9b.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/4fcfc766be96bbd50ef4fadf9baf0b52.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/a3dbed9c1cc9aaaae4f26b8465737622.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/8f21bb9696c402f850ce8656bb7a5ae8.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/d403a4c8195920aa2a228d058dbcd600.jpg
+                      - link:
+                        - /url: data/stocks/images/9093990/bb1473ed8d5eee847b7ad287c3be039c.jpg
+                    - generic [ref=f37e271]: TANK 300
+                    - generic [ref=f37e274]:
+                      - generic [ref=f37e275]: Комплектация
+                      - generic [ref=f37e276]: Сити Премиум (2025)
+                    - generic [ref=f37e280]:
+                      - generic [ref=f37e281]: Модификация
+                      - generic [ref=f37e282]: 2.0 AT (220 л.с.) 4WD
+                    - generic [ref=f37e286]:
+                      - generic [ref=f37e287]: Топливо
+                      - generic [ref=f37e288]: Бензин
+                    - generic [ref=f37e292]:
+                      - generic [ref=f37e293]: Цвет
+                      - generic [ref=f37e294]: Черный
+                    - link "Получить предложение" [ref=f37e298] [cursor=pointer]:
+                      - /url: "#call"
+                  - text: 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯
+                  - button "Загрузить еще" [ref=f37e300] [cursor=pointer]
+            - generic [ref=f37e301]:
+              - generic [ref=f37e302]:
+                - generic [ref=f37e303]:
+                  - heading "АВТОМОБИЛЬ TANK 400" [level=2] [ref=f37e304]
+                  - generic [ref=f37e305]: Мощный рамный внедорожник
+                  - link "Комплектации TANK 400" [ref=f37e306] [cursor=pointer]:
+                    - /url: "#complectations-wrap"
+                - generic [ref=f37e314]:
+                  - generic [ref=f37e315]:
+                    - generic [ref=f37e316]: Объём двигателя, л.
+                    - generic [ref=f37e317]: "2.0"
+                  - generic [ref=f37e319]:
+                    - generic [ref=f37e320]: Мощность, л.с.
+                    - generic [ref=f37e321]: "245"
+                  - generic [ref=f37e323]:
+                    - generic [ref=f37e324]: Крутящий момент, Нм
+                    - generic [ref=f37e325]: "380"
+              - generic [ref=f37e326]:
+                - generic [ref=f37e327]:
+                  - generic [ref=f37e328]: Дополнительный бонуспри покупке в БорисХоф
+                  - generic [ref=f37e329]: Выгода до 700 000 ₽
+                - generic [ref=f37e330]:
+                  - generic [ref=f37e331]:
+                    - generic [ref=f37e332]: 󰄯
+                    - generic [ref=f37e333]: Шины в подарок
+                  - generic [ref=f37e334]:
+                    - generic [ref=f37e335]: 󰄯
+                    - generic [ref=f37e336]: Аксессуары в подарок на выбор
+                  - generic [ref=f37e337]:
+                    - generic [ref=f37e338]: 󰄯
+                    - generic [ref=f37e339]: Керамическое покрытие в подарок
+                  - generic [ref=f37e340]:
+                    - generic [ref=f37e341]: 󰄯
+                    - generic [ref=f37e342]: Гарантия от производителя 5 лет
+                  - generic [ref=f37e343]:
+                    - generic [ref=f37e344]: 󰄯
+                    - generic [ref=f37e345]: Привилегии на сервисное обслуживание
+                  - generic [ref=f37e346]:
+                    - generic [ref=f37e347]: 󰄯
+                    - generic [ref=f37e348]: Выгода на ТО до 50%
+                - generic [ref=f37e349]:
+                  - link "Узнать цену с максимальной выгодой" [ref=f37e350] [cursor=pointer]:
+                    - /url: "#400"
+                    - text: Узнать ценус максимальной выгодой
+                  - generic [ref=f37e351]:
+                    - link "Пройти Тест-драйв" [ref=f37e352] [cursor=pointer]:
+                      - /url: "#400"
+                    - link "Заявка на кредит" [ref=f37e353] [cursor=pointer]:
+                      - /url: "#400"
+              - text: 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀
+              - generic [ref=f37e354]:
+                - heading "Автомобили TANK 400 в наличии" [level=2] [ref=f37e356]
+                - generic [ref=f37e357]:
+                  - generic [ref=f37e358]:
+                    - generic [ref=f37e359]:
+                      - generic: 󰋯
+                      - link [ref=f37e360] [cursor=pointer]:
+                        - /url: data/stocks/images/9094005/3d22304ca66fecd77aed2688cbe59294.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/4ad24fdf58cebe48ad8c2081d88ecbe1.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/b8b3be34abbd7e8b5e0ea53dec4b2d62.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/04dba0b9e2a8ffbb13ede57f561529a8.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/60be03f05c1b3b1d414b7b6621cac651.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/2e5eea3af570cdc4634107f554cd4433.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/9f2e95f77955da290997106e6fd070d3.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/635924a7c85b2b1e1fe2820d877f0f27.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/9038b36cfdc6b8450e7a276dd3c6647b.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/72791da0c6c63b60ec0fa9ab0bea1da9.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/c158de31e70f37f3a266594d1c1d8dad.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/4dda1d2a494e16a730b8df36d4e02f48.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/4a33212ee49ee10814ff736353f337a0.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/4937a30f6f312b958749bd3e6ae313bf.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/9e91bc87307a790031e4c1f0d40a2e18.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/63f63c3f8e8e09fc685db0403cccad8b.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/ba5c1998420fb34a81312fe503419e91.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/96172d3bb0081d69df080e6bd74db6de.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/8a87a681da8538aa593cee093ab343d5.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/f5626dd73bc289840acdaa830168c11e.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/9b9e894bbc1e581fb842919ae62d60cf.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/307374a8cba1e1a873a74eb0869d1241.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/74434fb597fab76010a11725036ccd02.jpg
+                      - link:
+                        - /url: data/stocks/images/9094005/61f7e686cc5a06ffcbb8fe20e6356c46.jpg
+                    - generic [ref=f37e361]: TANK 400
+                    - generic [ref=f37e364]:
+                      - generic [ref=f37e365]: Комплектация
+                      - generic [ref=f37e366]: Премиум
+                    - generic [ref=f37e370]:
+                      - generic [ref=f37e371]: Модификация
+                      - generic [ref=f37e372]: 2.0 AT (245 л.с.) 4WD
+                    - generic [ref=f37e376]:
+                      - generic [ref=f37e377]: Топливо
+                      - generic [ref=f37e378]: Бензин
+                    - generic [ref=f37e382]:
+                      - generic [ref=f37e383]: Цвет
+                      - generic [ref=f37e384]: Черный
+                    - link "Получить предложение" [ref=f37e388] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e389]:
+                    - generic [ref=f37e390]:
+                      - generic: 󰋯
+                      - link [ref=f37e391] [cursor=pointer]:
+                        - /url: data/stocks/images/9094013/3a15f9bd211b44343dc2b445f22bd41f.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/d6d186b84f5fce49f1b331f0a11cbb3a.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/52e1764201923ecb09fbf664afac6d37.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/911d178d41abf5d03b3dc61c81f5c0df.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/865acceaf90ad1e6ff3ee736ea3d6ae2.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/6525ff5f13b0db41d8912ace5d0df5a0.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/fa7997b01f527df3372fe6aa31525c38.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/86a2157a77873d11d850d5930d1e364a.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/1173ad76b62b0d5c71c3f05ef3cbaa1b.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/65700593e49ebbda80849079bc7887b7.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/026119073f64c8083fc811b40fcb5ac0.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/8cc2d13daff86bb97decfee75c6691e1.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/e3cf3d8e3f1236aec5bf77e432db6478.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/15f00221e90863291fea7afe42a10123.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/b3e236fea543c8397066499c2f852dc1.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/811570bb21165ba8ca098736e18cd22c.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/253509c1ce90358a44ac0a2aaab98535.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/f9af45fe7b33962349ea2261d870cd05.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/567b9e4907a37d7544236ea2812bd941.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/7195d2c68e93f72da7fae31e29184551.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/f942e21965de009eb11c99f528fd1f36.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/ada9e93bb7cf6875970f47f94d702eb1.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/722f55fc80a87947256345f17f2c6806.jpg
+                      - link:
+                        - /url: data/stocks/images/9094013/b4549266726b29f5ee518778d22616ef.jpg
+                    - generic [ref=f37e392]: TANK 400
+                    - generic [ref=f37e395]:
+                      - generic [ref=f37e396]: Комплектация
+                      - generic [ref=f37e397]: Премиум
+                    - generic [ref=f37e401]:
+                      - generic [ref=f37e402]: Модификация
+                      - generic [ref=f37e403]: 2.0 AT (245 л.с.) 4WD
+                    - generic [ref=f37e407]:
+                      - generic [ref=f37e408]: Топливо
+                      - generic [ref=f37e409]: Бензин
+                    - generic [ref=f37e413]:
+                      - generic [ref=f37e414]: Цвет
+                      - generic [ref=f37e415]: Черный
+                    - link "Получить предложение" [ref=f37e419] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e420]:
+                    - generic [ref=f37e421]:
+                      - generic: 󰋯
+                      - link [ref=f37e422] [cursor=pointer]:
+                        - /url: data/stocks/images/9309110/259ffc144413e4be414f1e0d7505c955.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/8f45060fe138881abacacd8e15f9d1c8.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/ae9bbb33993032171ae8ec49d28a548d.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/837f8117ddb80081ad91369a2c8d4bf3.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/8536cc25c4d1243222a89a9618da80ba.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/8691303f3f6724266880f262838e2b28.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/43918a426bd81e306d586bb5661c16a4.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/0c6ad340b4047b3bf392de72c02c5a1f.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/e0e8ddbaf420d0974720623108c9ad8e.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/989b46bea577a16c329e629c0560a932.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/6080411fc968c3f3d589574bce465742.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/489703ce37715b7f81ee4200a95a9aa0.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/2b4047429090bf5fcb5e3ab751ebd331.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/65db2759fab3c2135ceb817b7f96654c.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/a9ffbcdddf83860342f5da5bf85f87e3.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/f2cf676bc3f672b35517fe2e5f6192f1.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/9dd59083cfe19249a33518404301446f.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/23364f623f5e3b7b3de6bdc8f33e06f4.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/36e15250d07b5b374699551f9cbdab14.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/4e50f23f0d2c4e66877a92677adf27c0.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/1abadadc69936640aa55070b55385ed8.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/2c071c9d02581b02e59d52adcf984985.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/0c1511127baec842b964ea36eb0dc580.jpg
+                      - link:
+                        - /url: data/stocks/images/9309110/79493bf0182c8c8f95fdb95d2aa1a4bb.jpg
+                    - generic [ref=f37e423]: TANK 400
+                    - generic [ref=f37e426]:
+                      - generic [ref=f37e427]: Комплектация
+                      - generic [ref=f37e428]: Премиум
+                    - generic [ref=f37e432]:
+                      - generic [ref=f37e433]: Модификация
+                      - generic [ref=f37e434]: 2.0 AT (245 л.с.) 4WD
+                    - generic [ref=f37e438]:
+                      - generic [ref=f37e439]: Топливо
+                      - generic [ref=f37e440]: Бензин
+                    - generic [ref=f37e444]:
+                      - generic [ref=f37e445]: Цвет
+                      - generic [ref=f37e446]: Черный
+                    - link "Получить предложение" [ref=f37e450] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e451]:
+                    - generic [ref=f37e452]:
+                      - generic: 󰋯
+                      - link [ref=f37e453] [cursor=pointer]:
+                        - /url: data/stocks/images/9309113/c8748fcaef81ad3205dc719f2738005c.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/8162282a2da34c406e86c0b818f77425.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/32f55ede72cf41f07d96ae0d82d929fc.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/d4a5b1015d7fb9653b2c20bc253e797c.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/e5cbbdb37d562df5806ba51c5dfbb438.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/c05a490d790ce34fc6e655a9f52fe2ea.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/e79c4390f7db96eff51b26f2b5092dd0.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/853e2287a83c6f0f001c66e1bc30f31c.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/f77fac48244449081974c493e2240e99.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/cb85e085787b0a348baf8347dc847112.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/94f3ee02561ddc60e3be09498f77fe34.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/9f343dadd59684fad3cc3103dae58c9f.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/46946583a9516794382933f4618c78d5.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/59f815284b73d16de45a60d14753d511.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/45cbf052da4f44212f0c535ea2edbabb.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/36f92ee8df0578faa74861b5b7ba1181.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/1da854d17e7a89df13322f1a92b5613d.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/616141bd66b6a428e2cb3367759e956b.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/54a90d4f78d62829bc001c0f10732997.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/14355cd76da54ffcc09016c844efc6e0.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/8f5ee6943b0a5066e13ebb4c4de09ec4.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/9a7e720adab0e72052f7e09d91243789.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/3829e7fe5ac94359aa824c2c2c2b4528.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/6a425808a0ef80940efb7aa3b1298816.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/ef64c47f7a1a689a05b0d6af5bd528cb.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/dcd2dd673d2735891432da5706692ef7.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/7c662506f40ca2962e034f4b6cdc30ce.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/fb5eac1f2fa8da01442a877e8ae6de18.jpg
+                      - link:
+                        - /url: data/stocks/images/9309113/7ec499d4df9f42b3d05c76a6f19d4f86.jpg
+                    - generic [ref=f37e454]: TANK 400
+                    - generic [ref=f37e457]:
+                      - generic [ref=f37e458]: Комплектация
+                      - generic [ref=f37e459]: Премиум
+                    - generic [ref=f37e463]:
+                      - generic [ref=f37e464]: Модификация
+                      - generic [ref=f37e465]: 2.0 AT (245 л.с.) 4WD
+                    - generic [ref=f37e469]:
+                      - generic [ref=f37e470]: Топливо
+                      - generic [ref=f37e471]: Бензин
+                    - generic [ref=f37e475]:
+                      - generic [ref=f37e476]: Цвет
+                      - generic [ref=f37e477]: Зеленый
+                    - link "Получить предложение" [ref=f37e481] [cursor=pointer]:
+                      - /url: "#call"
+                  - text: 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯
+                  - button "Загрузить еще" [ref=f37e483] [cursor=pointer]
+              - generic [ref=f37e485]:
+                - generic [ref=f37e486]:
+                  - heading "Видеообзор TANK 400" [level=2] [ref=f37e487]
+                  - paragraph [ref=f37e488]: Видео поможет оценить характер TANK 400, понять его сильные стороны и разобраться, чего ждать от рамного внедорожника с серьёзным внедорожным потенциалом.
+                - generic [ref=f37e489]:
+                  - iframe [ref=f37e491]:
+                    
+                  - list [ref=f37e492]:
+                    - listitem [ref=f37e493]:
+                      - generic [ref=f37e494]: 󰗡
+                      - generic [ref=f37e495]: Что входит в комплектацию Премиум и как она оснащена
+                    - listitem [ref=f37e496]:
+                      - generic [ref=f37e497]: 󰗡
+                      - generic [ref=f37e498]: Что даёт полный привод TOD с понижающей передачей
+                    - listitem [ref=f37e499]:
+                      - generic [ref=f37e500]: 󰗡
+                      - generic [ref=f37e501]: Какие опции и элементы оснащения выделяют TANK 400
+                    - listitem [ref=f37e502]:
+                      - generic [ref=f37e503]: 󰗡
+                      - generic [ref=f37e504]: На что автомобиль похож по ощущениям и восприятию
+            - generic [ref=f37e505]:
+              - generic [ref=f37e506]:
+                - generic [ref=f37e507]:
+                  - heading "АВТОМОБИЛЬ TANK 500" [level=2] [ref=f37e508]
+                  - generic [ref=f37e509]: Премиальный полноразмерный SUV
+                  - link "Комплектации TANK 500" [ref=f37e510] [cursor=pointer]:
+                    - /url: "#complectations-wrap"
+                - group "Выбор цвета автомобиля" [ref=f37e517]:
+                  - 'button "Цвет: gold" [pressed] [ref=f37e518] [cursor=pointer]'
+                  - 'button "Цвет: black" [ref=f37e520] [cursor=pointer]'
+                  - 'button "Цвет: silver" [ref=f37e522] [cursor=pointer]'
+                  - 'button "Цвет: snow" [ref=f37e524] [cursor=pointer]'
+                - generic [ref=f37e527]:
+                  - generic [ref=f37e528]:
+                    - generic [ref=f37e529]: Объём двигателя, л.
+                    - generic [ref=f37e530]: "3.0"
+                  - generic [ref=f37e532]:
+                    - generic [ref=f37e533]: Мощность, л.с.
+                    - generic [ref=f37e534]: "299"
+                  - generic [ref=f37e536]:
+                    - generic [ref=f37e537]: Крутящий момент, Нм
+                    - generic [ref=f37e538]: "500"
+              - generic [ref=f37e539]:
+                - generic [ref=f37e540]:
+                  - generic [ref=f37e541]: Дополнительный бонуспри покупке в БорисХоф
+                  - generic [ref=f37e542]: Выгода до 850 000 ₽
+                - generic [ref=f37e543]:
+                  - generic [ref=f37e544]:
+                    - generic [ref=f37e545]: 󰄯
+                    - generic [ref=f37e546]: Шины в подарок
+                  - generic [ref=f37e547]:
+                    - generic [ref=f37e548]: 󰄯
+                    - generic [ref=f37e549]: Аксессуары в подарок на выбор
+                  - generic [ref=f37e550]:
+                    - generic [ref=f37e551]: 󰄯
+                    - generic [ref=f37e552]: Керамическое покрытие в подарок
+                  - generic [ref=f37e553]:
+                    - generic [ref=f37e554]: 󰄯
+                    - generic [ref=f37e555]: Гарантия от производителя 5 лет
+                  - generic [ref=f37e556]:
+                    - generic [ref=f37e557]: 󰄯
+                    - generic [ref=f37e558]: Привилегии на сервисное обслуживание
+                  - generic [ref=f37e559]:
+                    - generic [ref=f37e560]: 󰄯
+                    - generic [ref=f37e561]: Выгода на ТО до 50%
+                - generic [ref=f37e562]:
+                  - link "Узнать цену с максимальной выгодой" [ref=f37e563] [cursor=pointer]:
+                    - /url: "#500"
+                    - text: Узнать ценус максимальной выгодой
+                  - generic [ref=f37e564]:
+                    - link "Пройти Тест-драйв" [ref=f37e565] [cursor=pointer]:
+                      - /url: "#500"
+                    - link "Заявка на кредит" [ref=f37e566] [cursor=pointer]:
+                      - /url: "#500"
+              - text: 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀
+              - generic [ref=f37e567]:
+                - heading "Автомобили TANK 500 в наличии" [level=2] [ref=f37e569]
+                - generic [ref=f37e570]:
+                  - generic [ref=f37e571]:
+                    - generic [ref=f37e572]:
+                      - generic: 󰋯
+                      - link [ref=f37e573] [cursor=pointer]:
+                        - /url: data/stocks/images/9093980/5823e2dad06fce661f391d9709d22818.jpg
+                    - generic [ref=f37e574]: TANK 500
+                    - generic [ref=f37e577]:
+                      - generic [ref=f37e578]: Комплектация
+                      - generic [ref=f37e579]: Сити Премиум
+                    - generic [ref=f37e583]:
+                      - generic [ref=f37e584]: Модификация
+                      - generic [ref=f37e585]: 2.0hyb AT (299 л.с.) 4WD
+                    - generic [ref=f37e589]:
+                      - generic [ref=f37e590]: Топливо
+                      - generic [ref=f37e591]: Гибрид
+                    - generic [ref=f37e595]:
+                      - generic [ref=f37e596]: Цвет
+                      - generic [ref=f37e597]: Серебряный
+                    - link "Получить предложение" [ref=f37e601] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e602]:
+                    - generic [ref=f37e603]:
+                      - generic: 󰋯
+                      - link [ref=f37e604] [cursor=pointer]:
+                        - /url: data/stocks/images/9093986/bed2c8f9e76f9dbbdb8bdd08ab360fd5.jpg
+                    - generic [ref=f37e605]: TANK 500
+                    - generic [ref=f37e608]:
+                      - generic [ref=f37e609]: Комплектация
+                      - generic [ref=f37e610]: Сити Премиум
+                    - generic [ref=f37e614]:
+                      - generic [ref=f37e615]: Модификация
+                      - generic [ref=f37e616]: 2.0hyb AT (299 л.с.) 4WD
+                    - generic [ref=f37e620]:
+                      - generic [ref=f37e621]: Топливо
+                      - generic [ref=f37e622]: Гибрид
+                    - generic [ref=f37e626]:
+                      - generic [ref=f37e627]: Цвет
+                      - generic [ref=f37e628]: Черный
+                    - link "Получить предложение" [ref=f37e632] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e633]:
+                    - generic [ref=f37e634]:
+                      - generic: 󰋯
+                      - link [ref=f37e635] [cursor=pointer]:
+                        - /url: data/stocks/images/9093987/696d7d313b154cc640ef4a5bbcc77f99.jpg
+                    - generic [ref=f37e636]: TANK 500
+                    - generic [ref=f37e639]:
+                      - generic [ref=f37e640]: Комплектация
+                      - generic [ref=f37e641]: Сити Премиум
+                    - generic [ref=f37e645]:
+                      - generic [ref=f37e646]: Модификация
+                      - generic [ref=f37e647]: 2.0hyb AT (299 л.с.) 4WD
+                    - generic [ref=f37e651]:
+                      - generic [ref=f37e652]: Топливо
+                      - generic [ref=f37e653]: Гибрид
+                    - generic [ref=f37e657]:
+                      - generic [ref=f37e658]: Цвет
+                      - generic [ref=f37e659]: Черный
+                    - link "Получить предложение" [ref=f37e663] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e664]:
+                    - generic [ref=f37e665]:
+                      - generic: 󰋯
+                      - link [ref=f37e666] [cursor=pointer]:
+                        - /url: data/stocks/images/9093989/146d3fb315e5d93645c3d121ee4ed5f3.jpg
+                    - generic [ref=f37e667]: TANK 500
+                    - generic [ref=f37e670]:
+                      - generic [ref=f37e671]: Комплектация
+                      - generic [ref=f37e672]: Техно Премиум
+                    - generic [ref=f37e676]:
+                      - generic [ref=f37e677]: Модификация
+                      - generic [ref=f37e678]: Hi-Charge 2.0hyb AT (299 л.с.) 4WD
+                    - generic [ref=f37e682]:
+                      - generic [ref=f37e683]: Топливо
+                      - generic [ref=f37e684]: Гибрид
+                    - generic [ref=f37e688]:
+                      - generic [ref=f37e689]: Цвет
+                      - generic [ref=f37e690]: Золотой
+                    - link "Получить предложение" [ref=f37e694] [cursor=pointer]:
+                      - /url: "#call"
+                  - text: 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯 󰋯
+                  - button "Загрузить еще" [ref=f37e696] [cursor=pointer]
+            - generic [ref=f37e697]:
+              - generic [ref=f37e698]:
+                - generic [ref=f37e699]:
+                  - heading "АВТОМОБИЛЬ TANK 700" [level=2] [ref=f37e700]
+                  - generic [ref=f37e701]: Премиальный внедорожник
+                  - link "Комплектации TANK 700" [ref=f37e702] [cursor=pointer]:
+                    - /url: "#complectations-wrap"
+                - generic [ref=f37e710]:
+                  - generic [ref=f37e711]:
+                    - generic [ref=f37e712]: Объём двигателя, л.
+                    - generic [ref=f37e713]: "3.0"
+                  - generic [ref=f37e715]:
+                    - generic [ref=f37e716]: Мощность, л.с.
+                    - generic [ref=f37e717]: "354"
+                  - generic [ref=f37e719]:
+                    - generic [ref=f37e720]: Крутящий момент, Нм
+                    - generic [ref=f37e721]: "560"
+              - generic [ref=f37e722]:
+                - generic [ref=f37e723]:
+                  - generic [ref=f37e724]: Дополнительный бонуспри покупке в БорисХоф
+                  - generic [ref=f37e725]: Выгода до 500 000 ₽
+                - generic [ref=f37e726]:
+                  - generic [ref=f37e727]:
+                    - generic [ref=f37e728]: 󰄯
+                    - generic [ref=f37e729]: Шины в подарок
+                  - generic [ref=f37e730]:
+                    - generic [ref=f37e731]: 󰄯
+                    - generic [ref=f37e732]: Аксессуары в подарок на выбор
+                  - generic [ref=f37e733]:
+                    - generic [ref=f37e734]: 󰄯
+                    - generic [ref=f37e735]: Керамическое покрытие в подарок
+                  - generic [ref=f37e736]:
+                    - generic [ref=f37e737]: 󰄯
+                    - generic [ref=f37e738]: Гарантия от производителя 5 лет
+                  - generic [ref=f37e739]:
+                    - generic [ref=f37e740]: 󰄯
+                    - generic [ref=f37e741]: Привилегии на сервисное обслуживание
+                  - generic [ref=f37e742]:
+                    - generic [ref=f37e743]: 󰄯
+                    - generic [ref=f37e744]: Выгода на ТО до 50%
+                - generic [ref=f37e745]:
+                  - link "Узнать цену с максимальной выгодой" [ref=f37e746] [cursor=pointer]:
+                    - /url: "#700"
+                    - text: Узнать ценус максимальной выгодой
+                  - generic [ref=f37e747]:
+                    - link "Пройти Тест-драйв" [ref=f37e748] [cursor=pointer]:
+                      - /url: "#700"
+                    - link "Заявка на кредит" [ref=f37e749] [cursor=pointer]:
+                      - /url: "#700"
+              - text: 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀 󰅀
+              - generic [ref=f37e750]:
+                - heading "Автомобили TANK 700 в наличии" [level=2] [ref=f37e752]
+                - generic [ref=f37e753]:
+                  - generic [ref=f37e754]:
+                    - generic [ref=f37e755]:
+                      - generic: 󰋯
+                      - link [ref=f37e756] [cursor=pointer]:
+                        - /url: data/stocks/images/9309128/6c47407bf0d4b9b95bb63aae4d90cbef.jpg
+                    - generic [ref=f37e757]: TANK 700
+                    - generic [ref=f37e760]:
+                      - generic [ref=f37e761]: Комплектация
+                      - generic [ref=f37e762]: Премиум
+                    - generic [ref=f37e766]:
+                      - generic [ref=f37e767]: Модификация
+                      - generic [ref=f37e768]: 3.0 AT (354 л.с.) 4WD
+                    - generic [ref=f37e772]:
+                      - generic [ref=f37e773]: Топливо
+                      - generic [ref=f37e774]: Бензин
+                    - generic [ref=f37e778]:
+                      - generic [ref=f37e779]: Цвет
+                      - generic [ref=f37e780]: Серый
+                    - link "Получить предложение" [ref=f37e784] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e785]:
+                    - generic [ref=f37e786]:
+                      - generic: 󰋯
+                      - link [ref=f37e787] [cursor=pointer]:
+                        - /url: data/stocks/images/9309138/1f98cc04a7265b50aac09d7cf37bd9d9.jpg
+                    - generic [ref=f37e788]: TANK 700
+                    - generic [ref=f37e791]:
+                      - generic [ref=f37e792]: Комплектация
+                      - generic [ref=f37e793]: Премиум
+                    - generic [ref=f37e797]:
+                      - generic [ref=f37e798]: Модификация
+                      - generic [ref=f37e799]: 3.0 AT (354 л.с.) 4WD
+                    - generic [ref=f37e803]:
+                      - generic [ref=f37e804]: Топливо
+                      - generic [ref=f37e805]: Бензин
+                    - generic [ref=f37e809]:
+                      - generic [ref=f37e810]: Цвет
+                      - generic [ref=f37e811]: Черный
+                    - link "Получить предложение" [ref=f37e815] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e816]:
+                    - generic [ref=f37e817]:
+                      - generic: 󰋯
+                      - link [ref=f37e818] [cursor=pointer]:
+                        - /url: data/stocks/images/9529699/b9e6eee189956b480da56b115a41f4a9.jpg
+                    - generic [ref=f37e819]: TANK 700
+                    - generic [ref=f37e822]:
+                      - generic [ref=f37e823]: Комплектация
+                      - generic [ref=f37e824]: Премиум
+                    - generic [ref=f37e828]:
+                      - generic [ref=f37e829]: Модификация
+                      - generic [ref=f37e830]: 3.0 AT (354 л.с.) 4WD
+                    - generic [ref=f37e834]:
+                      - generic [ref=f37e835]: Топливо
+                      - generic [ref=f37e836]: Бензин
+                    - generic [ref=f37e840]:
+                      - generic [ref=f37e841]: Цвет
+                      - generic [ref=f37e842]: Черный
+                    - link "Получить предложение" [ref=f37e846] [cursor=pointer]:
+                      - /url: "#call"
+                  - generic [ref=f37e847]:
+                    - generic [ref=f37e848]:
+                      - generic: 󰋯
+                      - link [ref=f37e849] [cursor=pointer]:
+                        - /url: data/stocks/images/9529700/d0c224e05f2680dcb990396bcd804dcb.jpg
+                    - generic [ref=f37e850]: TANK 700
+                    - generic [ref=f37e853]:
+                      - generic [ref=f37e854]: Комплектация
+                      - generic [ref=f37e855]: Премиум
+                    - generic [ref=f37e859]:
+                      - generic [ref=f37e860]: Модификация
+                      - generic [ref=f37e861]: 3.0 AT (354 л.с.) 4WD
+                    - generic [ref=f37e865]:
+                      - generic [ref=f37e866]: Топливо
+                      - generic [ref=f37e867]: Бензин
+                    - generic [ref=f37e871]:
+                      - generic [ref=f37e872]: Цвет
+                      - generic [ref=f37e873]: Серый
+                    - link "Получить предложение" [ref=f37e877] [cursor=pointer]:
+                      - /url: "#call"
+              - generic [ref=f37e879]:
+                - generic [ref=f37e880]:
+                  - heading "Видеообзор TANK 700" [level=2] [ref=f37e881]
+                  - paragraph [ref=f37e882]: Видео поможет оценить характер TANK 700, понять его сильные стороны и разобраться, чего ждать от флагманского гибридного внедорожника в премиальном исполнении.
+                - generic [ref=f37e883]:
+                  - iframe [ref=f37e885]:
+                    
+                  - list [ref=f37e886]:
+                    - listitem [ref=f37e887]:
+                      - generic [ref=f37e888]: 󰗡
+                      - generic [ref=f37e889]: Чем отличаются комплектации Edition One и Superior
+                    - listitem [ref=f37e890]:
+                      - generic [ref=f37e891]: 󰗡
+                      - generic [ref=f37e892]: Что даёт гибридная система в этой модели
+                    - listitem [ref=f37e893]:
+                      - generic [ref=f37e894]: 󰗡
+                      - generic [ref=f37e895]: Какие опции и элементы оснащения выделяют TANK 700
+                    - listitem [ref=f37e896]:
+                      - generic [ref=f37e897]: 󰗡
+                      - generic [ref=f37e898]: На что автомобиль похож по ощущениям и восприятию
+        - generic [ref=f37e900]:
+          - heading "Комплектации TANK 300" [level=2] [ref=f37e902]
+          - generic [ref=f37e903]:
+            - combobox [ref=f37e905] [cursor=pointer]:
+              - option "TANK 300" [selected]
+              - option "TANK 400"
+              - option "TANK 500"
+              - option "TANK 700"
+            - combobox [ref=f37e907] [cursor=pointer]:
+              - option "Все комплектации" [selected]
+              - option "Драйв"
+              - option "Сити Драйв"
+              - option "Премиум"
+              - option "Сити Премиум"
+          - generic [ref=f37e909]:
+            - generic [ref=f37e910]: TANK 300
+            - generic [ref=f37e911]:
+              - generic [ref=f37e912]:
+                - generic [ref=f37e914]:
+                  - generic [ref=f37e915]: Драйв
+                  - generic [ref=f37e916]:
+                    - generic [ref=f37e917]: от
+                    - text: 3 999 000 ₽
+                    - generic [ref=f37e918]: i
+                - generic [ref=f37e920]:
+                  - generic [ref=f37e921]: Основное оборудование
+                  - list [ref=f37e923]:
+                    - listitem [ref=f37e924]: Система подключаемого полного привода (Part-Time)
+                    - listitem [ref=f37e925]: Блокировка заднего межколёсного дифференциала
+                    - listitem [ref=f37e926]: Отделка сидений искусственной кожей
+                - link [ref=f37e928] [cursor=pointer]:
+                  - /url: "#300"
+                  - generic [ref=f37e929]: Узнать ценус максимальной выгодой
+              - generic [ref=f37e931]:
+                - generic [ref=f37e933]:
+                  - generic [ref=f37e934]: Сити Драйв
+                  - generic [ref=f37e935]:
+                    - generic [ref=f37e936]: от
+                    - text: 4 299 000 ₽
+                    - generic [ref=f37e937]: i
+                - generic [ref=f37e939]:
+                  - generic [ref=f37e940]: Основное оборудование
+                  - list [ref=f37e942]:
+                    - listitem [ref=f37e943]: Система интеллектуального полного привода (Torque-On-Demand)
+                    - listitem [ref=f37e944]: Блокировка заднего межколёсного дифференциала
+                    - listitem [ref=f37e945]: Адаптивный круиз-контроль (ACC)
+                - link [ref=f37e947] [cursor=pointer]:
+                  - /url: "#300"
+                  - generic [ref=f37e948]: Узнать ценус максимальной выгодой
+              - generic [ref=f37e950]:
+                - generic [ref=f37e952]:
+                  - generic [ref=f37e953]: Премиум
+                  - generic [ref=f37e954]:
+                    - generic [ref=f37e955]: от
+                    - text: 4 399 000 ₽
+                    - generic [ref=f37e956]: i
+                - generic [ref=f37e958]:
+                  - generic [ref=f37e959]: Основное оборудование
+                  - list [ref=f37e961]:
+                    - listitem [ref=f37e962]: Система подключаемого полного привода (Part-Time)
+                    - listitem [ref=f37e963]: Блокировка заднего и переднего межколёсного дифференциала
+                    - listitem [ref=f37e964]: Отделка сидений кожей NAPPA
+                - link [ref=f37e966] [cursor=pointer]:
+                  - /url: "#300"
+                  - generic [ref=f37e967]: Узнать ценус максимальной выгодой
+              - generic [ref=f37e969]:
+                - generic [ref=f37e971]:
+                  - generic [ref=f37e972]: Сити Премиум
+                  - generic [ref=f37e973]:
+                    - generic [ref=f37e974]: от
+                    - text: 4 749 000 ₽
+                    - generic [ref=f37e975]: i
+                - generic [ref=f37e977]:
+                  - generic [ref=f37e978]: Основное оборудование
+                  - list [ref=f37e980]:
+                    - listitem [ref=f37e981]: Система интеллектуального полного привода (Torque-On-Demand)
+                    - listitem [ref=f37e982]: Блокировка заднего и переднего межколёсного дифференциала
+                    - listitem [ref=f37e983]: Адаптивный круиз-контроль с функцией интеллектуального круиз-контроля (ICA) с функцией ассистента движения в пробке (TJA)
+                - link [ref=f37e985] [cursor=pointer]:
+                  - /url: "#300"
+                  - generic [ref=f37e986]: Узнать ценус максимальной выгодой
+        - generic [ref=f37e988]:
+          - generic [ref=f37e989]: Cпециальные предложения дилера БорисХоф
+          - generic [ref=f37e991]:
+            - generic [ref=f37e1000]:
+              - generic [ref=f37e1001]:
+                - text: Программа кредитования TANK BASIC
+                - superscript [ref=f37e1002]: "*"
+              - generic [ref=f37e1003]: TANK в кредит по ставке 0.01% годовых
+              - link "Оставить заявку" [ref=f37e1004] [cursor=pointer]:
+                - /url: "#kredit"
+            - generic [ref=f37e1013]:
+              - generic [ref=f37e1014]:
+                - text: Программа кредитования TANK STANDART
+                - superscript [ref=f37e1015]: "*"
+              - generic [ref=f37e1016]: TANK в кредит по ставке 16.9% годовых
+              - link "Оставить заявку" [ref=f37e1017] [cursor=pointer]:
+                - /url: "#kredit"
+            - generic [ref=f37e1026]:
+              - generic [ref=f37e1027]: Трейд-ин по цене выше рынка
+              - generic [ref=f37e1028]: Оставьте заявку, мы предложим Вам лучшие условия и забронируем выбранную модель
+              - link "Оставить заявку" [ref=f37e1029] [cursor=pointer]:
+                - /url: "#call"
+            - generic [ref=f37e1038]:
+              - generic [ref=f37e1039]: TANK Лизинг
+              - generic [ref=f37e1040]: Сниженная ставка | Прозрачные условия | Быстрое принятие решения
+              - link "Оставить заявку" [ref=f37e1041] [cursor=pointer]:
+                - /url: "#kredit"
+        - generic [ref=f37e1044]:
+          - heading "Требуется консультация официального дилера?" [level=3] [ref=f37e1045]
+          - heading "Звоните или оставьте заявку и мы ответим на все Ваши вопросы" [level=4] [ref=f37e1046]
+          - link "Получить консультацию" [ref=f37e1047] [cursor=pointer]:
+            - /url: "#call"
+          - link "Или запишитесь на сервис TANK онлайн" [ref=f37e1048] [cursor=pointer]:
+            - /url: /service
+        - generic [ref=f37e1051]:
+          - generic [ref=f37e1052]:
+            - heading "Отзывы" [level=3] [ref=f37e1054]
+            - generic [ref=f37e1055]:
+              - button "Previous slide" [ref=f37e1056] [cursor=pointer]: prev
+              - button "Next slide" [ref=f37e1057] [cursor=pointer]: next
+          - generic [ref=f37e1059]:
+            - group "1 / 3" [ref=f37e1060]:
+              - generic [ref=f37e1062]:
+                - generic [ref=f37e1063]: 󰀉
+                - generic [ref=f37e1065]: Александра
+                - generic [ref=f37e1066]:
+                  - generic [ref=f37e1067]: 󰓎
+                  - generic [ref=f37e1069]: 󰓎
+                  - generic [ref=f37e1071]: 󰓎
+                  - generic [ref=f37e1073]: 󰓎
+                  - generic [ref=f37e1075]: 󰓎
+                - generic [ref=f37e1077]: "Покупала TANK 300 в БорисХоф: быстро согласовали цену, честно оценили trade-in и оформили сделку за один день. Менеджер всегда был на связи, впечатления только положительные."
+            - group "2 / 3" [ref=f37e1079]:
+              - generic [ref=f37e1081]:
+                - generic [ref=f37e1082]: 󰀉
+                - generic [ref=f37e1084]: Олег
+                - generic [ref=f37e1085]:
+                  - generic [ref=f37e1086]: 󰓎
+                  - generic [ref=f37e1088]: 󰓎
+                  - generic [ref=f37e1090]: 󰓎
+                  - generic [ref=f37e1092]: 󰓎
+                  - generic [ref=f37e1094]: 󰓎
+                - generic [ref=f37e1096]: Взял новый TANK 500 для семьи. Понравился тест-драйв, прозрачные условия по кредиту и отсутствие навязанных услуг. Автомобиль выдали в срок, с подробной консультацией по всем функциям.
+            - group "3 / 3" [ref=f37e1098]:
+              - generic [ref=f37e1100]:
+                - generic [ref=f37e1101]: 󰀉
+                - generic [ref=f37e1103]: Яна
+                - generic [ref=f37e1104]:
+                  - generic [ref=f37e1105]: 󰓎
+                  - generic [ref=f37e1107]: 󰓎
+                  - generic [ref=f37e1109]: 󰓎
+                  - generic [ref=f37e1111]: 󰓎
+                  - generic [ref=f37e1113]: 󰓎
+                - generic [ref=f37e1115]: Долго выбирали между моделями, в итоге остановились на TANK 700. Спасибо команде БорисХоф за терпение и грамотный подбор комплектации под наш бюджет. Покупка прошла комфортно и спокойно.
+        - generic [ref=f37e1119]:
+          - generic [ref=f37e1122]:
+            - generic [ref=f37e1123]:
+              - generic [ref=f37e1124]: TANK БорисХоф МКАД
+              - generic [ref=f37e1125]: Москва
+            - generic [ref=f37e1126]:
+              - link "󱆓 +7 (495) 011-11-03" [ref=f37e1128] [cursor=pointer]:
+                - /url: tel:+74950111103
+                - generic [ref=f37e1129]: 󱆓
+                - text: +7 (495) 011-11-03
+              - generic [ref=f37e1130]:
+                - generic [ref=f37e1131]: 󰟙
+                - text: Москва, 29 км МКАД, уч. 1, лит. Б
+              - generic [ref=f37e1132]:
+                - generic [ref=f37e1133]: 󰅐
+                - text: Пн-Вс 09:00-21:00
+            - generic [ref=f37e1134]:
+              - generic [ref=f37e1135]: Доступны услуги
+              - generic [ref=f37e1136]: Продажа авто, Кредитный брокер, Сервисное обслуживание, Аренда авто
+            - link "Получить консультацию" [ref=f37e1138] [cursor=pointer]:
+              - /url: "#call"
+          - generic [ref=f37e1142]:
+            - generic [ref=f37e1143]:
+              - generic [ref=f37e1144]: TANK БорисХоф Сити
+              - generic [ref=f37e1145]: Москва
+            - generic [ref=f37e1146]:
+              - link "󱆓 +7 (495) 011-11-02" [ref=f37e1148] [cursor=pointer]:
+                - /url: tel:+74950111102
+                - generic [ref=f37e1149]: 󱆓
+                - text: +7 (495) 011-11-02
+              - generic [ref=f37e1150]:
+                - generic [ref=f37e1151]: 󰟙
+                - text: Москва, 2-я Магистральная ул., 18, стр. 22
+              - generic [ref=f37e1152]:
+                - generic [ref=f37e1153]: 󰅐
+                - text: Пн-Вс 09:00-21:00
+            - generic [ref=f37e1154]:
+              - generic [ref=f37e1155]: Доступны услуги
+              - generic [ref=f37e1156]: Продажа авто, Кредитный брокер, Сервисное обслуживание, Аренда авто
+            - link "Получить консультацию" [ref=f37e1158] [cursor=pointer]:
+              - /url: "#call"
+        - generic [ref=f37e1162]:
+          - generic [ref=f37e1165]:
+            - link "VK" [ref=f37e1167] [cursor=pointer]:
+              - /url: https://vk.ru/tank_borishoff
+            - link "Telegram" [ref=f37e1171] [cursor=pointer]:
+              - /url: https://t.me/borishof_official
+            - link "Youtube" [ref=f37e1178] [cursor=pointer]:
+              - /url: https://rutube.ru/channel/46485799/videos/
+          - generic [ref=f37e1182]: Подробные условия акции
+          - generic [ref=f37e1184]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой. Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+          - generic [ref=f37e1187]:
+            - text: Вы можете купить новый TANK (ТЭНК) в автосалоне официального дилера ТАНК – БорисХоф, примерную актуальную цену моделей и комплектаций можно узнать, связавшись с нами по телефону
+            - link "+7 (495) 492-39-03" [ref=f37e1188] [cursor=pointer]:
+              - /url: tel:+74954923903
+            - text: .
+          - generic [ref=f37e1189]: Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930).
+          - generic [ref=f37e1190]: © ООО «БорисХоф Холдинг». Все права защищены 2026
+          - navigation "Навигация в подвале" [ref=f37e1191]:
+            - link "Автомобили TANK в наличии" [ref=f37e1193] [cursor=pointer]:
+              - /url: /cars
+            - link "TANK 300" [ref=f37e1195] [cursor=pointer]:
+              - /url: /tank-300
+            - link "TANK 400" [ref=f37e1197] [cursor=pointer]:
+              - /url: /tank-400
+            - link "TANK 500" [ref=f37e1199] [cursor=pointer]:
+              - /url: /tank-500
+            - link "TANK 700" [ref=f37e1201] [cursor=pointer]:
+              - /url: /tank-700
+            - link "Сервис TANK" [ref=f37e1203] [cursor=pointer]:
+              - /url: /service
+            - link "Новости" [ref=f37e1205] [cursor=pointer]:
+              - /url: /news
+            - link "Контакты" [ref=f37e1207] [cursor=pointer]:
+              - /url: /contacts
+  - dialog "Использование cookie-файлов":
+    - generic [ref=f37e1211]:
+      - generic [ref=f37e1212]:
+        - text: Мы используем
+        - link "cookie-файлы" [ref=f37e1213] [cursor=pointer]:
+          - /url: https://tank.ru/privacy-policy
+        - text: для вашего удобства пользования сайтом
+      - button "Принять" [ref=f37e1214] [cursor=pointer]
+  - generic [ref=f37e1215] [cursor=pointer]: Выгодный обмен автомобиля
+  - button [ref=f37e1220] [cursor=pointer]

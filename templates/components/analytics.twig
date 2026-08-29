@@ -1,57 +1,45 @@
+{# Yandex.Metrika — отложенная загрузка после load + requestIdleCallback.
+   Не блокирует FCP/LCP/TBT. ID из YANDEX_METRIC_ID; без него счётчик не выводится. #}
+{% set _ym_id = config.settings.yandex_metric_id|default(0) %}
+{% if _ym_id %}
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();
-  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
- 
-  ym(75033004, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true,
-       trackHash:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/75033004" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-<!-- Roistat Counter Start -->
 <script>
-  (function(w, d, s, h, id) {
-    w.roistatProjectId = id; w.roistatHost = h;
-    var p = d.location.protocol == "https:" ? "https://" : "http://";
-    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init?referrer="+encodeURIComponent(d.location.href);
-    var js = d.createElement(s); js.charset="UTF-8"; js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
-  })(window, document, 'script', 'cloud.roistat.com', '0b0d6f2c37f3b5d080e04078ea932ff7');
-</script>
-<!-- Roistat Counter End -->
+  (function() {
+    function initMetrika() {
+      var m = window, e = document, t = 'script',
+          r = 'https://mc.yandex.ru/metrika/tag.js',
+          i = 'ym';
+      m[i] = m[i] || function() { (m[i].a = m[i].a || []).push(arguments); };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < e.scripts.length; j++) { if (e.scripts[j].src === r) return; }
+      var k = e.createElement(t); k.async = 1; k.src = r;
+      var a = e.getElementsByTagName(t)[0]; a.parentNode.insertBefore(k, a);
 
-<!-- Top.Mail.Ru counter -->
-<script type="text/javascript">
-var _tmr = window._tmr || (window._tmr = []);
-_tmr.push({id: "3518051", type: "pageView", start: (new Date()).getTime(), pid: "USER_ID"});
-(function (d, w, id) {
-  if (d.getElementById(id)) return;
-  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
-  ts.src = "https://top-fwz1.mail.ru/js/code.js";
-  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
-  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
-})(document, window, "tmr-code");
-</script>
-<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3518051;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
-<!-- /Top.Mail.Ru counter -->
+      m[i]({{ _ym_id }}, 'init', {
+        webvisor: true,
+        clickmap: true,
+        ecommerce: "dataLayer",
+        referrer: e.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true
+      });
+    }
 
-<link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
-<script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=4f3abc22cacd0548f31f51aae9f8c267" charset="UTF-8" async></script>
+    function deferInit() {
+      if (typeof requestIdleCallback === 'function') {
+        requestIdleCallback(initMetrika, { timeout: 3000 });
+      } else {
+        setTimeout(initMetrika, 3000);
+      }
+    }
 
-{# Schema.org JSON-LD разметка #}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SiteNavigationElement",
-  "name": ["Главная", "Скандинавский сад", "Команда", "Портфолио", "Услуги", "Контакты"],
-  "url": ["https://example.com/", "https://example.com/skandinavskiy-sad/", "https://example.com/team/", "https://example.com/portfolio/", "https://example.com/services/", "https://example.com/contacts/"]
-}
+    if (document.readyState === 'complete') {
+      deferInit();
+    } else {
+      window.addEventListener('load', deferInit, { once: true });
+    }
+  })();
 </script>
+<!-- /Yandex.Metrika counter -->
+{% endif %}

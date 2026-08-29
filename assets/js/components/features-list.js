@@ -1,5 +1,6 @@
 // JavaScript для features-list
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('features-list загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для features-list
 });

@@ -1,0 +1,109 @@
+{# Маячок попыток: нарочно inline и отдельно от бандла — он обязан пережить смерть JS
+   и увезти «нажал, а запроса нет» в приёмник. Поля — только при отмеченном согласии.
+   Ключ сессии кладётся скрытым полем idempotency_key: бандл отправит его как есть, а
+   приёмник сошьёт попытку с заявкой — правка бандла для этого не нужна. Исход берётся
+   из события бандла, а где его нет — из наблюдения за самим запросом отправки. #}
+<script>
+(function () {
+  if (window.__ismartAttempt) return;
+  var EP = 'https://api.ismart.pro/v1/attempt';
+  var SEND_RE = /\/api\/send/;
+  var state = { last: null };
+  window.__ismartAttempt = state;
+  function hex() {
+    try { if (window.crypto && crypto.randomUUID) return crypto.randomUUID().replace(/-/g, ''); } catch (e) {}
+    var s = '';
+    while (s.length < 32) s += Math.floor(Math.random() * 16).toString(16);
+    return s;
+  }
+  function send(o) {
+    try {
+      var b = JSON.stringify(o);
+      if (navigator.sendBeacon) navigator.sendBeacon(EP, new Blob([b], { type: 'text/plain' }));
+      else if (window.fetch) fetch(EP, { method: 'POST', body: b, keepalive: true });
+    } catch (e) {}
+  }
+  function ensure(f) {
+    if (!f.dataset.ismartSession) f.dataset.ismartSession = hex();
+    var h = f.querySelector('input[name="idempotency_key"]');
+    if (!h) {
+      h = document.createElement('input');
+      h.type = 'hidden';
+      h.name = 'idempotency_key';
+      f.appendChild(h);
+    }
+    h.value = f.dataset.ismartSession;
+    return f.dataset.ismartSession;
+  }
+  function onStart(e) {
+    var t = e.target;
+    var f = t && t.closest ? t.closest('form.js-form-callback') : null;
+    if (!f || f.dataset.ismartStarted) return;
+    f.dataset.ismartStarted = '1';
+    send({ kind: 'form_start', session_id: ensure(f), page_url: location.href });
+  }
+  ['pointerdown', 'focusin', 'keydown'].forEach(function (n) { document.addEventListener(n, onStart, true); });
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (!f || !f.matches || !f.matches('form.js-form-callback')) return;
+    var id = ensure(f);
+    state.last = { id: id, form: f };
+    var d = { kind: 'attempt', session_id: id, page_url: location.href };
+    var consent = f.querySelector('input[name="policy"]');
+    // Поля снимаем независимо от галки согласия: согласие на обработку человек уже дал
+    // баннером на входе, а забытая галка — не отказ, а причина, по которой заявка не ушла.
+    // Раньше номер тут не собирался, попытка выглядела пустой формой и до вкладки
+    // «Не смог отправить» не доходила — человек уходил, а звонить было некому.
+    var fields = {};
+    ['phone', 'name', 'email'].forEach(function (n) {
+      var i = f.querySelector('[name="' + n + '"]');
+      if (i && i.value) fields[n] = i.value;
+    });
+    if (fields.phone || fields.name || fields.email) d.fields = fields;
+
+    // Состояние галки едет рядом: менеджеру видно, почему заявка осталась попыткой.
+    if (consent && !consent.checked) d.fields = Object.assign(d.fields || {}, { policy: 'не отмечено' });
+    send(d);
+  }, true);
+  function report(outcome, error) {
+    if (!state.last) return;
+    send({ kind: 'result', session_id: state.last.id, outcome: outcome, error: error || '' });
+    if (outcome === 'sent') {
+      var f = state.last.form;
+      if (f && f.dataset) { delete f.dataset.ismartSession; delete f.dataset.ismartStarted; }
+      state.last = null;
+    }
+  }
+  document.addEventListener('ismart:send-result', function (e) {
+    var det = e.detail || {};
+    report(det.outcome || '', det.error || '');
+  }, true);
+  function classify(status, text) {
+    if (status >= 200 && status < 300) report('sent');
+    else if (status === 0) report('network_error', 'нет ответа');
+    else report('http_' + status, String(text || '').slice(0, 120));
+  }
+  var xopen = XMLHttpRequest.prototype.open;
+  var xsend = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.open = function (m, u) {
+    this.__ismartUrl = String(u || '');
+    return xopen.apply(this, arguments);
+  };
+  XMLHttpRequest.prototype.send = function () {
+    var x = this;
+    if (x.__ismartUrl && SEND_RE.test(x.__ismartUrl)) {
+      x.addEventListener('loadend', function () { classify(x.status, x.responseText); });
+    }
+    return xsend.apply(this, arguments);
+  };
+  if (window.fetch) {
+    var ofetch = window.fetch;
+    window.fetch = function (input) {
+      var url = String((input && input.url) || input || '');
+      var p = ofetch.apply(this, arguments);
+      if (SEND_RE.test(url)) p.then(function (r) { classify(r.status); }, function () { classify(0); });
+      return p;
+    };
+  }
+})();
+</script>

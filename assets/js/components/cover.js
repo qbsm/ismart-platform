@@ -1,5 +1,6 @@
 // JavaScript для cover
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('cover загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для cover
 });

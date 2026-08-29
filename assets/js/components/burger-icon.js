@@ -1,38 +1,44 @@
 // Обработка клика по иконке бургера
-document.addEventListener('DOMContentLoaded', function() {
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   const burgerIcon = document.getElementById('burgerIcon');
-  let scrollPosition = 0;
-  
+  const burgerMenu = document.getElementById('burgerMenu');
+
+  // Блокировка фона — overflow на html. Прежний вариант (body: fixed +
+  // top: -scrollY + scrollTo при закрытии) рассчитывал на то, что скролл-контейнер —
+  // body: при документ-скроллере он сдвигал страницу и уносил из вида липкую шапку,
+  // а сохранённая позиция сбрасывала скролл в начало.
+  function lockScroll(lock) {
+    document.documentElement.style.overflow = lock ? 'hidden' : '';
+  }
+
+  function setMenuState(isOpen) {
+    if (burgerIcon) {
+      burgerIcon.classList.toggle('active', isOpen);
+      burgerIcon.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      burgerIcon.setAttribute(
+        'aria-label',
+        isOpen
+          ? burgerIcon.dataset.labelClose || 'Close menu'
+          : burgerIcon.dataset.labelOpen || 'Open menu'
+      );
+    }
+
+    if (burgerMenu) {
+      burgerMenu.classList.toggle('active', isOpen);
+      burgerMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+    }
+
+    lockScroll(isOpen);
+  }
+
   if (burgerIcon) {
-    burgerIcon.addEventListener('click', function(e) {
-      this.classList.toggle('active');
-      
-      const burgerMenu = document.getElementById('burgerMenu');
-      if (burgerMenu) {
-        burgerMenu.classList.toggle('active');
-        
-        // Блокировка/разблокировка прокрутки страницы
-        if (burgerMenu.classList.contains('active')) {
-          // Сохраняем текущую позицию прокрутки
-          scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-          document.body.style.overflow = 'hidden'; // Блокируем прокрутку
-          document.body.style.position = 'fixed';
-          document.body.style.top = `-${scrollPosition}px`;
-          document.body.style.width = '100%';
-        } else {
-          // Восстанавливаем прокрутку
-          document.body.style.overflow = '';
-          document.body.style.position = '';
-          document.body.style.top = '';
-          document.body.style.width = '';
-          window.scrollTo(0, scrollPosition);
-        }
-      }
+    burgerIcon.addEventListener('click', function () {
+      setMenuState(!this.classList.contains('active'));
     });
   }
 
-  // Обработка клика по меню
-  const burgerMenu = document.getElementById('burgerMenu');
   if (burgerMenu) {
     burgerMenu.addEventListener('click', function (e) {
       // Не закрываем меню при клике на сам контейнер меню, но не блокируем ссылки
@@ -40,42 +46,22 @@ document.addEventListener('DOMContentLoaded', function() {
         e.stopPropagation();
       }
     });
-  }
 
-  // Закрытие меню при клике на пункты меню
-  const menuItems = document.querySelectorAll('#burgerMenu a');
-  if (menuItems.length > 0) {
-    menuItems.forEach(item => {
+    burgerMenu.querySelectorAll('a').forEach((item) => {
       item.addEventListener('click', function () {
-        if (burgerIcon) {
-          burgerIcon.classList.remove('active');
-        }
-        if (burgerMenu) {
-          burgerMenu.classList.remove('active');
-          // Восстанавливаем прокрутку
-          document.body.style.overflow = '';
-          document.body.style.position = '';
-          document.body.style.top = '';
-          document.body.style.width = '';
-          window.scrollTo(0, scrollPosition);
-        }
+        setMenuState(false);
       });
     });
   }
 
-  // Закрытие меню при клике вне меню
+  // Закрытие меню при клике вне меню — только когда оно открыто
   document.addEventListener('click', function (e) {
-    if (burgerIcon && burgerMenu) {
-      if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target)) {
-        burgerIcon.classList.remove('active');
-        burgerMenu.classList.remove('active');
-        // Восстанавливаем прокрутку
-        document.body.style.overflow = '';
-        document.body.style.position = '';
-        document.body.style.top = '';
-        document.body.style.width = '';
-        window.scrollTo(0, scrollPosition);
-      }
+    if (!burgerIcon || !burgerMenu || !burgerMenu.classList.contains('active')) {
+      return;
+    }
+
+    if (!burgerIcon.contains(e.target) && !burgerMenu.contains(e.target)) {
+      setMenuState(false);
     }
   });
 });

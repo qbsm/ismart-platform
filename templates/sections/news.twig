@@ -1,0 +1,27 @@
+<section class="news section">
+  <div class="container">
+    <div class="section__item block-wrap">
+      <div class="section__subitem news__header">
+        {% if data.heading is defined %}
+          <div class="heading-wrap">
+            <span class="heading-accent self-start" aria-hidden="true"></span>
+            {% include 'components/heading.twig' with {'item': data.heading} %}
+          </div>
+        {% endif %}
+        {% if page_id is defined and page_id != 'news' and data.all_news_link is defined %}
+          <a href="{{ url(data.all_news_link.href | default('/news/')) }}" class="link underline-center news__all-link">{{ data.all_news_link.title | default('Все новости') }}</a>
+        {% endif %}
+      </div>
+      {% if data.items is defined and data.items is not empty %}
+        <div class="section__subitem cards-news-wrap">
+          {% for item in data.items %}
+            <div class="section__inner card-news-wrap">
+              {% include 'components/card-news.twig' with {'item': item} %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+

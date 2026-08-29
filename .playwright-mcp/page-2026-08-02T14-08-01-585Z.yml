@@ -1,0 +1,293 @@
+- generic [ref=f7e2]:
+  - generic [ref=f7e4]:
+    - generic [ref=f7e6]:
+      - generic [ref=f7e8]:
+        - img "Brand logo" [ref=f7e9]
+        - img "Brand logo"
+      - generic [ref=f7e10]:
+        - generic [ref=f7e11]:
+          - button [ref=f7e12]
+          - tablist [ref=f7e16]:
+            - tab [ref=f7e18]
+            - generic [ref=f7e24]:
+              - tab "Управление DNS" [ref=f7e25]:
+                - generic [ref=f7e26] [cursor=pointer]:
+                  - generic [ref=f7e27]: Управление DNS
+                  - button [ref=f7e29]
+              - tab "Управление записями домена - kumho-tires.ru" [selected] [ref=f7e30]:
+                - generic [ref=f7e31] [cursor=pointer]:
+                  - generic [ref=f7e32]: Управление записями домена - kumho-tires.ru
+                  - button [ref=f7e34]
+          - button [ref=f7e35]
+        - generic [ref=f7e39]:
+          - button "Настройка темы" [ref=f7e41] [cursor=pointer]
+          - button "Загрузка файлов" [ref=f7e47] [cursor=pointer]
+          - button "Уведомления" [ref=f7e52] [cursor=pointer]
+          - button "Меню пользователя u2238570" [ref=f7e57] [cursor=pointer]:
+            - generic [ref=f7e61]: u2238570
+    - generic [ref=f7e67]:
+      - complementary [ref=f7e68]:
+        - generic [ref=f7e69]:
+          - generic [ref=f7e71]:
+            - button "Свернуть меню" [ref=f7e73] [cursor=pointer]
+            - button "Поиск по меню" [ref=f7e80] [cursor=pointer]
+          - navigation [ref=f7e85]:
+            - generic [ref=f7e86]:
+              - button "Дашборд" [ref=f7e89] [cursor=pointer]
+              - button "Сайты" [ref=f7e97] [cursor=pointer]
+              - button "WordPress НОВОЕ" [ref=f7e105] [cursor=pointer]:
+                - generic [ref=f7e110]: WordPress
+                - generic [ref=f7e111]: НОВОЕ
+              - button "Базы данных" [ref=f7e114] [cursor=pointer]
+              - button "Почта" [ref=f7e122] [cursor=pointer]
+              - button "SSL-сертификаты" [ref=f7e130] [cursor=pointer]
+              - button "Управление DNS" [ref=f7e138] [cursor=pointer]
+            - generic [ref=f7e144]:
+              - button "Планировщик CRON" [ref=f7e147] [cursor=pointer]
+              - button "Менеджер файлов" [ref=f7e155] [cursor=pointer]
+            - button "FTP-пользователи" [ref=f7e164] [cursor=pointer]
+            - generic [ref=f7e170]:
+              - button "Журнал операций" [ref=f7e173] [cursor=pointer]
+              - button "Журнал посещений" [ref=f7e181] [cursor=pointer]
+              - button "Журналы WWW-запросов" [ref=f7e189] [cursor=pointer]
+            - generic [ref=f7e195]:
+              - button "Уведомления" [ref=f7e198] [cursor=pointer]
+              - button "Использование диска" [ref=f7e206] [cursor=pointer]
+              - button "PHP" [ref=f7e214] [cursor=pointer]
+              - button "Shell-клиент" [ref=f7e222] [cursor=pointer]
+            - generic [ref=f7e228]:
+              - button "Открыть почту" [ref=f7e231] [cursor=pointer]
+              - button "Письмо в поддержку" [ref=f7e239] [cursor=pointer]
+              - button "Memcached" [ref=f7e247] [cursor=pointer]
+              - button "Резервные копии" [ref=f7e255] [cursor=pointer]
+              - button "phpMyAdmin" [ref=f7e263] [cursor=pointer]
+              - button "Продлить хостинг" [ref=f7e271] [cursor=pointer]
+      - tabpanel [ref=f7e277]:
+        - generic [ref=f7e278]:
+          - generic [ref=f7e279]:
+            - generic [ref=f7e281]:
+              - heading "Управление записями домена - kumho-tires.ru" [level=1] [ref=f7e282] [cursor=pointer]
+              - list [ref=f7e285]:
+                - listitem [ref=f7e286]:
+                  - button [ref=f7e288] [cursor=pointer]
+                - listitem [ref=f7e292]:
+                  - button [ref=f7e294] [cursor=pointer]
+            - button [ref=f7e300]:
+              - textbox "Ctrl + Shift + F" [ref=f7e305]
+          - toolbar [ref=f7e308]:
+            - button [ref=f7e311] [cursor=pointer]
+            - button "Создать запись" [ref=f7e318] [cursor=pointer]
+            - generic [ref=f7e324]:
+              - button [disabled] [ref=f7e326]
+              - button [disabled] [ref=f7e332]
+          - generic [ref=f7e337]:
+            - generic [ref=f7e338]:
+              - table [ref=f7e340]:
+                - rowgroup [ref=f7e341]:
+                  - row [ref=f7e342]:
+                    - columnheader [ref=f7e343]
+                    - columnheader "Имя" [ref=f7e345]:
+                      - generic [ref=f7e348]:
+                        - generic [ref=f7e349] [cursor=pointer]: Имя
+                        - button
+                    - columnheader "TTL, сек" [ref=f7e355]:
+                      - generic [ref=f7e358]:
+                        - generic [ref=f7e359] [cursor=pointer]: TTL, сек
+                        - button
+                    - columnheader "Тип" [ref=f7e365]:
+                      - generic [ref=f7e368]:
+                        - generic [ref=f7e369] [cursor=pointer]: Тип
+                        - button [ref=f7e370] [cursor=pointer]
+                    - columnheader "Значение" [ref=f7e376]:
+                      - generic [ref=f7e379]:
+                        - generic [ref=f7e380] [cursor=pointer]: Значение
+                        - button
+                    - columnheader "Дополнительно" [ref=f7e386]:
+                      - generic [ref=f7e389]:
+                        - generic [ref=f7e390] [cursor=pointer]: Дополнительно
+                        - button
+                    - columnheader [ref=f7e395]
+              - table [ref=f7e402]:
+                - rowgroup:
+                  - row:
+                    - columnheader
+                    - columnheader
+                    - columnheader
+                    - columnheader
+                    - columnheader
+                    - columnheader
+                    - columnheader
+                - rowgroup [ref=f7e403]:
+                  - row "kumho-tires.ru. 3600 A (адрес Internet v4) 31.31.196.72" [ref=f7e404]:
+                    - cell [ref=f7e405]
+                    - cell "kumho-tires.ru." [ref=f7e407]
+                    - cell "3600" [ref=f7e410]
+                    - cell "A (адрес Internet v4)" [ref=f7e413]
+                    - cell "31.31.196.72" [ref=f7e416]
+                    - cell [ref=f7e419]
+                    - cell [ref=f7e420]
+                  - row "www.kumho-tires.ru. 3600 A (адрес Internet v4) 31.31.196.72" [ref=f7e423]:
+                    - cell [ref=f7e424]
+                    - cell "www.kumho-tires.ru." [ref=f7e426]
+                    - cell "3600" [ref=f7e429]
+                    - cell "A (адрес Internet v4)" [ref=f7e432]
+                    - cell "31.31.196.72" [ref=f7e435]
+                    - cell [ref=f7e438]
+                    - cell [ref=f7e439]
+                  - row "ftp.kumho-tires.ru. 3600 A (адрес Internet v4) 31.31.196.72" [ref=f7e442]:
+                    - cell [ref=f7e443]
+                    - cell "ftp.kumho-tires.ru." [ref=f7e445]
+                    - cell "3600" [ref=f7e448]
+                    - cell "A (адрес Internet v4)" [ref=f7e451]
+                    - cell "31.31.196.72" [ref=f7e454]
+                    - cell [ref=f7e457]
+                    - cell [ref=f7e458]
+                  - row "mail.kumho-tires.ru. 3600 A (адрес Internet v4) 31.31.196.72" [ref=f7e461]:
+                    - cell [ref=f7e462]
+                    - cell "mail.kumho-tires.ru." [ref=f7e464]
+                    - cell "3600" [ref=f7e467]
+                    - cell "A (адрес Internet v4)" [ref=f7e470]
+                    - cell "31.31.196.72" [ref=f7e473]
+                    - cell [ref=f7e476]
+                    - cell [ref=f7e477]
+                  - row "smtp.kumho-tires.ru. 3600 A (адрес Internet v4) 31.31.196.72" [ref=f7e480]:
+                    - cell [ref=f7e481]
+                    - cell "smtp.kumho-tires.ru." [ref=f7e483]
+                    - cell "3600" [ref=f7e486]
+                    - cell "A (адрес Internet v4)" [ref=f7e489]
+                    - cell "31.31.196.72" [ref=f7e492]
+                    - cell [ref=f7e495]
+                    - cell [ref=f7e496]
+                  - row "pop.kumho-tires.ru. 3600 A (адрес Internet v4) 31.31.196.72" [ref=f7e499]:
+                    - cell [ref=f7e500]
+                    - cell "pop.kumho-tires.ru." [ref=f7e502]
+                    - cell "3600" [ref=f7e505]
+                    - cell "A (адрес Internet v4)" [ref=f7e508]
+                    - cell "31.31.196.72" [ref=f7e511]
+                    - cell [ref=f7e514]
+                    - cell [ref=f7e515]
+                  - row "billing-ping.kumho-tires.ru. 3600 A (адрес Internet v4) 127.0.0.1" [ref=f7e518]:
+                    - cell [ref=f7e519]
+                    - cell "billing-ping.kumho-tires.ru." [ref=f7e521]
+                    - cell "3600" [ref=f7e524]
+                    - cell "A (адрес Internet v4)" [ref=f7e527]
+                    - cell "127.0.0.1" [ref=f7e530]
+                    - cell [ref=f7e533]
+                    - cell [ref=f7e534]
+                  - row "kumho-tires.ru. 3600 AAAA (адрес Internet v6) 2a00:f940:2:2:1:3:0:237" [ref=f7e537]:
+                    - cell [ref=f7e538]
+                    - cell "kumho-tires.ru." [ref=f7e540]
+                    - cell "3600" [ref=f7e543]
+                    - cell "AAAA (адрес Internet v6)" [ref=f7e546]
+                    - cell "2a00:f940:2:2:1:3:0:237" [ref=f7e549]
+                    - cell [ref=f7e552]
+                    - cell [ref=f7e553]
+                  - row "www.kumho-tires.ru. 3600 AAAA (адрес Internet v6) 2a00:f940:2:2:1:3:0:237" [ref=f7e556]:
+                    - cell [ref=f7e557]
+                    - cell "www.kumho-tires.ru." [ref=f7e559]
+                    - cell "3600" [ref=f7e562]
+                    - cell "AAAA (адрес Internet v6)" [ref=f7e565]
+                    - cell "2a00:f940:2:2:1:3:0:237" [ref=f7e568]
+                    - cell [ref=f7e571]
+                    - cell [ref=f7e572]
+                  - row "ftp.kumho-tires.ru. 3600 AAAA (адрес Internet v6) 2a00:f940:2:2:1:3:0:237" [ref=f7e575]:
+                    - cell [ref=f7e576]
+                    - cell "ftp.kumho-tires.ru." [ref=f7e578]
+                    - cell "3600" [ref=f7e581]
+                    - cell "AAAA (адрес Internet v6)" [ref=f7e584]
+                    - cell "2a00:f940:2:2:1:3:0:237" [ref=f7e587]
+                    - cell [ref=f7e590]
+                    - cell [ref=f7e591]
+                  - row "mail.kumho-tires.ru. 3600 AAAA (адрес Internet v6) 2a00:f940:2:2:1:3:0:237" [ref=f7e594]:
+                    - cell [ref=f7e595]
+                    - cell "mail.kumho-tires.ru." [ref=f7e597]
+                    - cell "3600" [ref=f7e600]
+                    - cell "AAAA (адрес Internet v6)" [ref=f7e603]
+                    - cell "2a00:f940:2:2:1:3:0:237" [ref=f7e606]
+                    - cell [ref=f7e609]
+                    - cell [ref=f7e610]
+                  - row "smtp.kumho-tires.ru. 3600 AAAA (адрес Internet v6) 2a00:f940:2:2:1:3:0:237" [ref=f7e613]:
+                    - cell [ref=f7e614]
+                    - cell "smtp.kumho-tires.ru." [ref=f7e616]
+                    - cell "3600" [ref=f7e619]
+                    - cell "AAAA (адрес Internet v6)" [ref=f7e622]
+                    - cell "2a00:f940:2:2:1:3:0:237" [ref=f7e625]
+                    - cell [ref=f7e628]
+                    - cell [ref=f7e629]
+                  - row "pop.kumho-tires.ru. 3600 AAAA (адрес Internet v6) 2a00:f940:2:2:1:3:0:237" [ref=f7e632]:
+                    - cell [ref=f7e633]
+                    - cell "pop.kumho-tires.ru." [ref=f7e635]
+                    - cell "3600" [ref=f7e638]
+                    - cell "AAAA (адрес Internet v6)" [ref=f7e641]
+                    - cell "2a00:f940:2:2:1:3:0:237" [ref=f7e644]
+                    - cell [ref=f7e647]
+                    - cell [ref=f7e648]
+                  - row "kumho-tires.ru. 3600 MX (почтовый сервер) mx1.hosting.reg.ru. priority = 10" [ref=f7e651]:
+                    - cell [ref=f7e652]
+                    - cell "kumho-tires.ru." [ref=f7e654]
+                    - cell "3600" [ref=f7e657]
+                    - cell "MX (почтовый сервер)" [ref=f7e660]
+                    - cell "mx1.hosting.reg.ru." [ref=f7e663]
+                    - cell "priority = 10" [ref=f7e666]
+                    - cell [ref=f7e669]
+                  - row "kumho-tires.ru. 3600 MX (почтовый сервер) mx2.hosting.reg.ru. priority = 20" [ref=f7e672]:
+                    - cell [ref=f7e673]
+                    - cell "kumho-tires.ru." [ref=f7e675]
+                    - cell "3600" [ref=f7e678]
+                    - cell "MX (почтовый сервер)" [ref=f7e681]
+                    - cell "mx2.hosting.reg.ru." [ref=f7e684]
+                    - cell "priority = 20" [ref=f7e687]
+                    - cell [ref=f7e690]
+                  - row "kumho-tires.ru. 3600 NS (сервер имён) ns1.hosting.reg.ru." [ref=f7e693]:
+                    - cell [ref=f7e694]
+                    - cell "kumho-tires.ru." [ref=f7e696]
+                    - cell "3600" [ref=f7e699]
+                    - cell "NS (сервер имён)" [ref=f7e702]
+                    - cell "ns1.hosting.reg.ru." [ref=f7e705]
+                    - cell [ref=f7e708]
+                    - cell [ref=f7e709]
+                  - row "kumho-tires.ru. 3600 NS (сервер имён) ns2.hosting.reg.ru." [ref=f7e712]:
+                    - cell [ref=f7e713]
+                    - cell "kumho-tires.ru." [ref=f7e715]
+                    - cell "3600" [ref=f7e718]
+                    - cell "NS (сервер имён)" [ref=f7e721]
+                    - cell "ns2.hosting.reg.ru." [ref=f7e724]
+                    - cell [ref=f7e727]
+                    - cell [ref=f7e728]
+                  - row "kumho-tires.ru. 3600 SOA (начальная запись зоны) support.reg.ru. mname = vip237.hosting.reg.ru.; serial = 2026021869" [ref=f7e731]:
+                    - cell [ref=f7e732]
+                    - cell "kumho-tires.ru." [ref=f7e734]
+                    - cell "3600" [ref=f7e737]
+                    - cell "SOA (начальная запись зоны)" [ref=f7e740]
+                    - cell "support.reg.ru." [ref=f7e743]
+                    - cell "mname = vip237.hosting.reg.ru.; serial = 2026021869" [ref=f7e746]
+                    - cell [ref=f7e749]
+                  - row "kumho-tires.ru. 3600 TXT (текстовая запись) v=spf1 ip4:31.31.196.72 a mx include:_spf.hosting.reg.ru ~all" [ref=f7e752]:
+                    - cell [ref=f7e753]
+                    - cell "kumho-tires.ru." [ref=f7e755]
+                    - cell "3600" [ref=f7e758]
+                    - cell "TXT (текстовая запись)" [ref=f7e761]
+                    - cell "v=spf1 ip4:31.31.196.72 a mx include:_spf.hosting.reg.ru ~all" [ref=f7e764]
+                    - cell [ref=f7e767]
+                    - cell [ref=f7e768]
+                  - row "dkim._domainkey.kumho-tires.ru. 3600 TXT (текстовая запись) v=DKIM1; k=rsa; s=email; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAysz18TGHplkc6krZeHp/7NqY01LoB46v6qLCch70fBgxRukNTqDEtonIxCIkkCE985ogkga0h1Ex9TV32C2YGGbEgqAR3xZbNBO8YYNwU12Hf12V2RmHXyt3ifhRnsVop6vlIHFpgLjcBAmFFvsKq/Ag765ro1M1P+bxjBk2NmiiH0+L5VnQyW8CvrlLfqEW9FEN/Hch2NqxXgI9L34Omp4eOKAxkFSqE/BfpyE75fTLBBG/qkIKhnWgXvIMmlaIqfQoJE6bBIyDahslw67rjD8OvkO9Ftpn+P4YIf45xW6DOT3MLE+DGSvjjIal6XBb7ze1YYSBMrwdBZ8lrZyHtwIDAQAB" [ref=f7e771]:
+                    - cell [ref=f7e772]
+                    - cell "dkim._domainkey.kumho-tires.ru." [ref=f7e774]
+                    - cell "3600" [ref=f7e777]
+                    - cell "TXT (текстовая запись)" [ref=f7e780]
+                    - cell "v=DKIM1; k=rsa; s=email; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAysz18TGHplkc6krZeHp/7NqY01LoB46v6qLCch70fBgxRukNTqDEtonIxCIkkCE985ogkga0h1Ex9TV32C2YGGbEgqAR3xZbNBO8YYNwU12Hf12V2RmHXyt3ifhRnsVop6vlIHFpgLjcBAmFFvsKq/Ag765ro1M1P+bxjBk2NmiiH0+L5VnQyW8CvrlLfqEW9FEN/Hch2NqxXgI9L34Omp4eOKAxkFSqE/BfpyE75fTLBBG/qkIKhnWgXvIMmlaIqfQoJE6bBIyDahslw67rjD8OvkO9Ftpn+P4YIf45xW6DOT3MLE+DGSvjjIal6XBb7ze1YYSBMrwdBZ8lrZyHtwIDAQAB" [ref=f7e783]
+                    - cell [ref=f7e786]
+                    - cell [ref=f7e787]
+                  - row "_dmarc.kumho-tires.ru. 3600 TXT (текстовая запись) v=DMARC1; p=none; aspf=r; sp=none" [ref=f7e790]:
+                    - cell [ref=f7e791]
+                    - cell "_dmarc.kumho-tires.ru." [ref=f7e793]
+                    - cell "3600" [ref=f7e796]
+                    - cell "TXT (текстовая запись)" [ref=f7e799]
+                    - cell "v=DMARC1; p=none; aspf=r; sp=none" [ref=f7e802]
+                    - cell [ref=f7e805]
+                    - cell [ref=f7e806]
+            - generic [ref=f7e810]: "Всего: 21"
+  - generic:
+    - generic:
+      - img:
+        - generic: ",,,"

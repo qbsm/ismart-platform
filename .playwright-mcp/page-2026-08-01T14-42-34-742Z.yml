@@ -1,0 +1,276 @@
+- generic [ref=f13e2]:
+  - generic [ref=f13e5]:
+    - paragraph [ref=f13e7] [cursor=pointer]
+    - iframe [ref=f13e70]:
+      - link [ref=f14e2] [cursor=pointer]:
+        - /url: //yandex.ru/maps/org/27859391124/reviews?utm_source=badge&utm_medium=rating&utm_campaign=v1
+    - generic [ref=f13e71]:
+      - link [ref=f13e72] [cursor=pointer]:
+        - /url: tel:+74950331616
+        - img "+7 (495) 033‑16‑16" [ref=f13e73]
+      - link [ref=f13e74] [cursor=pointer]:
+        - /url: https://yandex.com/maps/-/CPWNrNnV
+  - generic [ref=f13e80]:
+    - generic [ref=f13e81]:
+      - heading "Автомобили, созданные для российских дорог" [level=1] [ref=f13e82]
+      - paragraph [ref=f13e83]: Новый BELGEE с честной выгодой до 600 000 ₽
+    - button [ref=f13e84] [cursor=pointer]:
+      - paragraph [ref=f13e85]: Получить предложение
+  - generic [ref=f13e87]:
+    - generic [ref=f13e88]: Официальныйдилер
+    - generic [ref=f13e93]: Гарантия5 лет
+    - generic [ref=f13e98]: Выгодныйкредит
+    - generic [ref=f13e103]: Покупказа 1 день
+  - generic [ref=f13e109]:
+    - generic [ref=f13e110]:
+      - generic [ref=f13e111]:
+        - heading "Belgee X50+" [level=3] [ref=f13e112]
+        - generic [ref=f13e124]:
+          - generic: ❮
+          - generic [ref=f13e134] [cursor=pointer]: ❯
+      - generic [ref=f13e135]:
+        - generic [ref=f13e136]: Выгода до 200 000 ₽*
+        - generic [ref=f13e137]: Доп. оборудование на 100 000 ₽ в подарок
+        - generic [ref=f13e138]:
+          - paragraph [ref=f13e140]:
+            - text: Программа
+            - generic [ref=f13e141]: трейд-ин¹
+          - paragraph [ref=f13e143]:
+            - text: Оплата
+            - generic [ref=f13e144]: частями²
+        - generic [ref=f13e145]:
+          - button [ref=f13e146] [cursor=pointer]:
+            - paragraph [ref=f13e147]: Рассчитать кредит
+          - button [ref=f13e148] [cursor=pointer]:
+            - paragraph [ref=f13e149]: Узнать стоимость
+    - generic [ref=f13e150]:
+      - heading "Belgee S50" [level=3] [ref=f13e152]
+      - generic [ref=f13e170]:
+        - generic [ref=f13e171]: Выгода до 200 000 ₽*
+        - generic [ref=f13e172]: Доп. оборудование на 100 000 ₽ в подарок
+        - generic [ref=f13e173]:
+          - paragraph [ref=f13e175]:
+            - text: Программа
+            - generic [ref=f13e176]: трейд-ин¹
+          - paragraph [ref=f13e178]:
+            - text: Оплата
+            - generic [ref=f13e179]: частями²
+        - generic [ref=f13e180]:
+          - button [ref=f13e181] [cursor=pointer]:
+            - paragraph [ref=f13e182]: Рассчитать кредит
+          - button [ref=f13e183] [cursor=pointer]:
+            - paragraph [ref=f13e184]: Узнать стоимость
+    - generic [ref=f13e185]:
+      - generic [ref=f13e186]:
+        - heading "Belgee X70" [level=3] [ref=f13e187]
+        - generic [ref=f13e201]:
+          - generic: ❮
+          - generic [ref=f13e211] [cursor=pointer]: ❯
+      - generic [ref=f13e212]:
+        - generic [ref=f13e213]: Выгода до 600 000 ₽*
+        - generic [ref=f13e214]: Доп. оборудование на 100 000 ₽ в подарок
+        - generic [ref=f13e215]:
+          - paragraph [ref=f13e217]:
+            - text: Программа
+            - generic [ref=f13e218]: трейд-ин¹
+          - paragraph [ref=f13e220]:
+            - text: Оплата
+            - generic [ref=f13e221]: частями²
+        - generic [ref=f13e222]:
+          - button [ref=f13e223] [cursor=pointer]:
+            - paragraph [ref=f13e224]: Рассчитать кредит
+          - button [ref=f13e225] [cursor=pointer]:
+            - paragraph [ref=f13e226]: Узнать стоимость
+  - generic [ref=f13e228]:
+    - generic [ref=f13e229]:
+      - heading "Автомобили в наличии" [level=2] [ref=f13e230]
+      - generic [ref=f13e231]:
+        - generic: Все
+        - generic [ref=f13e232] [cursor=pointer]: S50
+        - generic [ref=f13e233] [cursor=pointer]: X50+
+        - generic [ref=f13e234] [cursor=pointer]: X70
+    - generic [ref=f13e235]:
+      - generic [ref=f13e236]:
+        - generic [ref=f13e237]:
+          - generic [ref=f13e238]:
+            - generic: prev
+            - generic [ref=f13e239] [cursor=pointer]: next
+          - generic [ref=f13e247]:
+            - generic: prev
+            - generic [ref=f13e248] [cursor=pointer]: next
+        - generic [ref=f13e256]:
+          - generic [ref=f13e257]:
+            - generic [ref=f13e258]: Belgee S50
+            - generic [ref=f13e259]: Престиж (2025)
+          - list [ref=f13e260]:
+            - listitem [ref=f13e261]: 1.5 AT (122 л.с.)
+            - listitem [ref=f13e262]: automatic КПП
+            - listitem [ref=f13e263]: Передний привод
+          - generic [ref=f13e264]: цена без переплаты
+          - generic [ref=f13e267]: от 2 315 990 ₽
+          - button [ref=f13e268] [cursor=pointer]:
+            - paragraph [ref=f13e269]: Получить предложение
+      - generic [ref=f13e270]:
+        - generic [ref=f13e271]:
+          - generic [ref=f13e272]:
+            - generic: prev
+            - generic [ref=f13e273] [cursor=pointer]: next
+          - generic [ref=f13e281]:
+            - generic: prev
+            - generic [ref=f13e282] [cursor=pointer]: next
+        - generic [ref=f13e290]:
+          - generic [ref=f13e291]:
+            - generic [ref=f13e292]: Belgee X70
+            - generic [ref=f13e293]: Престиж
+          - list [ref=f13e294]:
+            - listitem [ref=f13e295]: 1.5 AMT (150 л.с.) 4WD
+            - listitem [ref=f13e296]: Роботизированная КПП
+            - listitem [ref=f13e297]: Полный привод
+          - generic [ref=f13e298]: цена без переплаты
+          - generic [ref=f13e301]: от 3 009 990 ₽
+          - button [ref=f13e302] [cursor=pointer]:
+            - paragraph [ref=f13e303]: Получить предложение
+      - generic [ref=f13e304]:
+        - generic [ref=f13e305]:
+          - generic [ref=f13e306]:
+            - generic: prev
+            - generic [ref=f13e307] [cursor=pointer]: next
+          - generic [ref=f13e315]:
+            - generic: prev
+            - generic [ref=f13e316] [cursor=pointer]: next
+        - generic [ref=f13e324]:
+          - generic [ref=f13e325]:
+            - generic [ref=f13e326]: Belgee X50+
+            - generic [ref=f13e327]: Престиж
+          - list [ref=f13e328]:
+            - listitem [ref=f13e329]: 1.5 AMT (147 л.с.)
+            - listitem [ref=f13e330]: Роботизированная КПП
+            - listitem [ref=f13e331]: Передний привод
+          - generic [ref=f13e332]: цена без переплаты
+          - generic [ref=f13e335]: от 2 675 990 ₽
+          - button [ref=f13e336] [cursor=pointer]:
+            - paragraph [ref=f13e337]: Получить предложение
+    - button [ref=f13e338] [cursor=pointer]:
+      - paragraph [ref=f13e339]: Показать ещё
+  - generic [ref=f13e345]:
+    - generic [ref=f13e348]:
+      - heading "Кредит" [level=3] [ref=f13e349]
+      - generic [ref=f13e350]: Наши специалисты быстро рассчитают доступные кредитные предложения под минимальный процент с поддержкой от производителя. Также доступна рассрочка под 0%.
+      - button "Получить предложение" [ref=f13e351] [cursor=pointer]:
+        - paragraph [ref=f13e352]:
+          - generic [ref=f13e353]: Получить предложение
+    - generic [ref=f13e356]:
+      - heading "Трейд-ин" [level=3] [ref=f13e357]
+      - generic [ref=f13e358]: Наши специалисты оценят старый автомобиль по рыночной стоимости, и Вам не придётся искать покупателя. Также цену Вашего старого автомобиля можно будет внести как первый взнос по кредиту на новый автомобиль Belgee.
+      - button "Получить предложение" [ref=f13e359] [cursor=pointer]:
+        - paragraph [ref=f13e360]:
+          - generic [ref=f13e361]: Получить предложение
+    - generic [ref=f13e364]:
+      - heading "Страхование" [level=3] [ref=f13e365]
+      - generic [ref=f13e366]: Программа Belgee Insurance подготовлена и реализуется в сотрудничестве с ведущими российскими страховщиками, и направлена на предоставление владельцам автомобилей Belgee качественной страховой защиты на всей территории Российской Федерации и ряда стран СНГ.
+      - button "Получить предложение" [ref=f13e367] [cursor=pointer]:
+        - paragraph [ref=f13e368]:
+          - generic [ref=f13e369]: Получить предложение
+    - generic [ref=f13e372]:
+      - heading "Лизинг" [level=3] [ref=f13e373]
+      - generic [ref=f13e374]: Особые условия лизинга для юридических лиц. Теперь лизинг доступен и для физических лиц! Более подробно Вас сможет проконсультировать наш сотрудник.
+      - button "Получить предложение" [ref=f13e375] [cursor=pointer]:
+        - paragraph [ref=f13e376]:
+          - generic [ref=f13e377]: Получить предложение
+  - generic [ref=f13e380]:
+    - generic [ref=f13e382]:
+      - generic [ref=f13e384]:
+        - generic [ref=f13e385]: Чуженьков Михаил Евгеньевич
+        - generic [ref=f13e386]: Руководитель отдела продаж
+      - generic [ref=f13e388]:
+        - generic [ref=f13e389]: Медников Руслан Геннадьевич
+        - generic [ref=f13e390]: Продавец-консультант
+      - generic [ref=f13e392]:
+        - generic [ref=f13e393]: Морозов Максим Олегович
+        - generic [ref=f13e394]: Продавец-консультант
+    - list [ref=f13e397]:
+      - listitem [ref=f13e398]:
+        - paragraph [ref=f13e402]: Крупнейший дилер России
+      - listitem [ref=f13e403]:
+        - paragraph [ref=f13e407]: Прозрачные условия сделки
+      - listitem [ref=f13e408]:
+        - paragraph [ref=f13e412]: 10 локаций в 3 городах
+      - listitem [ref=f13e413]:
+        - paragraph [ref=f13e417]: 30 лет на автомобильном рынке
+    - generic [ref=f13e418]:
+      - heading "Отзывы" [level=2] [ref=f13e419]
+      - generic [ref=f13e422]:
+        - generic [ref=f13e424]:
+          - generic [ref=f13e426]:
+            - paragraph [ref=f13e427]: Ольга Бурая
+            - paragraph [ref=f13e428]: Знаток города 4 уровня
+          - generic [ref=f13e429]: 1 октября 2024
+          - paragraph [ref=f13e433] [cursor=pointer]:
+            - text: Отлично! Четкая, профессиональная, командная работа сотрудников центра помогла мне купить автомобиль в максимально сжатые сроки при т...
+            - generic [ref=f13e434]: ещё
+        - generic [ref=f13e436]:
+          - generic [ref=f13e438]:
+            - paragraph [ref=f13e439]: Наталья З.
+            - paragraph [ref=f13e440]: Знаток города 5 уровня
+          - generic [ref=f13e441]: 10 декабря 2024
+          - paragraph [ref=f13e445] [cursor=pointer]:
+            - text: Положительные впечатления остались после посещения салона БорисХоф Belgee на Киевском шоссе. Приятное и комфортное место...
+            - generic [ref=f13e446]: ещё
+        - generic [ref=f13e448]:
+          - generic [ref=f13e450]:
+            - paragraph [ref=f13e451]: денис криволуцкий
+            - paragraph [ref=f13e452]: Знаток города 3 уровня
+          - generic [ref=f13e453]: 12 октября 2024
+          - paragraph [ref=f13e457] [cursor=pointer]:
+            - text: Салон очень понравился. Персонал приветливый, вежливый, улыбчивый и отзывчивый. Сделка состоялась. Сделали хорошую скидочку. Спасибо...
+            - generic [ref=f13e458]: ещё
+        - generic [ref=f13e460]:
+          - generic [ref=f13e462]:
+            - paragraph [ref=f13e463]: Инкогнито 3612
+            - paragraph [ref=f13e464]: Знаток города 3 уровня
+          - generic [ref=f13e465]: 27 января 2025
+          - paragraph [ref=f13e469] [cursor=pointer]:
+            - text: Добрый день! Решили приобрести автомобиль и выбрали салон БорисХоф Belgee, так как рассматривали данную марку авто. Прекрасный менедж...
+            - generic [ref=f13e470]: ещё
+        - generic [ref=f13e472]:
+          - generic [ref=f13e474]:
+            - paragraph [ref=f13e475]: Андрей А.
+            - paragraph [ref=f13e476]: Знаток города 4 уровня
+          - generic [ref=f13e477]: 25 ноября 2024
+          - paragraph [ref=f13e481] [cursor=pointer]:
+            - text: Хороший салон, отличный персонал, все цены прозрачные, нет никаких скрытых комиссий салона как в "автомире" на Дмитровке. Вся сделка ...
+            - generic [ref=f13e482]: ещё
+    - generic [ref=f13e490]:
+      - heading [level=2] [ref=f13e492]:
+        - paragraph [ref=f13e494]: Тест-драйв
+      - generic [ref=f13e496]:
+        - generic [ref=f13e497]: Оставьте свои контакты, чтобы записаться на тест-драйв
+        - generic [ref=f13e499]:
+          - textbox "Телефон" [ref=f13e503]
+          - button [disabled] [ref=f13e504]:
+            - paragraph [ref=f13e505]: Записаться на тест-драйв
+          - generic [ref=f13e506] [cursor=pointer]:
+            - checkbox "Согласен с условиями обработки персональных данных" [checked] [ref=f13e507]
+            - generic [ref=f13e509]:
+              - text: Согласен с
+              - link "условиями обработки персональных данных" [ref=f13e510]:
+                - /url: https://borishof.ru/legal/personal-information/
+    - generic [ref=f13e511]:
+      - heading "Контакты" [level=2] [ref=f13e512]
+      - generic [ref=f13e514]:
+        - paragraph [ref=f13e516]
+        - list [ref=f13e579]:
+          - listitem [ref=f13e580]:
+            - generic [ref=f13e581]: Адрес
+            - paragraph [ref=f13e582]: г. Москва, 24-й км Киевского шоссе, стр. 8
+          - listitem [ref=f13e583]:
+            - generic [ref=f13e584]: Время работы
+            - paragraph [ref=f13e585]: С 09.00 до 21.00
+          - listitem [ref=f13e586]:
+            - generic [ref=f13e587]: Телефон
+            - link "+7 (495) 033‑16‑16" [ref=f13e588] [cursor=pointer]:
+              - /url: tel:+74950331616
+  - contentinfo [ref=f13e590]:
+    - generic [ref=f13e591]:
+      - button "Подробные условия акции" [ref=f13e592] [cursor=pointer]
+      - generic [ref=f13e593]: Права на сайт принадлежат ООО «БОРИСХОФ ХОЛДИНГ» (ИНН 7714700709, ОГРН 5077746977930) 123290, Россия, г. Москва, 2-я Магистральная ул., д. 18, стр. 22, ООО «БОРИСХОФ ХОЛДИНГ», ИНН 7714700709, ОГРН 5077746977930, +74951536873, info@borishof.ru

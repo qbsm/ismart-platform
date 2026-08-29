@@ -1,0 +1,765 @@
+- generic [active] [ref=f3e1]:
+  - link "Перейти к контенту" [ref=f3e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - generic [ref=f3e5]:
+        - link [ref=f3e6] [cursor=pointer]:
+          - /url: /
+          - img "SOLLERS" [ref=f3e7]
+        - img "АВИЛОН — официальный дилер" [ref=f3e10]
+      - generic [ref=f3e13]:
+        - generic [ref=f3e14]: Sollers Авилон
+        - link "+7 (495) 183-57-86" [ref=f3e15] [cursor=pointer]:
+          - /url: tel:+74951835786
+        - link "Котельники, Белая Дача, Коммерческий пр-д, 10" [ref=f3e16] [cursor=pointer]:
+          - /url: "#map"
+      - link "Заказать звонок" [ref=f3e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f3e20]:
+      - link "Модельный ряд" [ref=f3e21] [cursor=pointer]:
+        - /url: "#range"
+      - link "Акции" [ref=f3e22] [cursor=pointer]:
+        - /url: "#actions"
+      - link "Тест-драйв" [ref=f3e23] [cursor=pointer]:
+        - /url: "#testdrive"
+      - link "Преимущества" [ref=f3e24] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f3e25] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f3e26] [cursor=pointer]:
+        - /url: "#map"
+  - main [ref=f3e27]:
+    - generic [ref=f3e36]:
+      - generic [ref=f3e37]:
+        - heading "Sollers Авилон" [level=1] [ref=f3e38]
+        - paragraph [ref=f3e39]: Официальный дилер SOLLERS в Москве — минивэны, фургоны и коммерческий транспорт SOLLERS
+        - link "Получить предложение" [ref=f3e41] [cursor=pointer]:
+          - /url: "#callback"
+      - generic [ref=f3e44]:
+        - generic [ref=f3e45]:
+          - generic [ref=f3e46]: 9 моделей
+          - generic [ref=f3e47]: минивэны и фургоны
+        - generic [ref=f3e49]:
+          - generic [ref=f3e50]: 0%
+          - generic [ref=f3e51]: переплат по кредиту
+        - generic [ref=f3e53]:
+          - generic [ref=f3e54]: Трейд-ин
+          - generic [ref=f3e55]: выгодный обмен
+    - generic [ref=f3e58]:
+      - generic [ref=f3e59]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f3e61]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=f3e64]:
+        - text: МИНИВЭН SOLLERS SP7 — ОТ
+        - generic [ref=f3e65]: 4 775 000 ₽
+      - generic [ref=f3e67]:
+        - text: ФУРГОНЫ SOLLERS SF1 — ОТ
+        - generic [ref=f3e68]: 2 115 000 ₽
+      - generic [ref=f3e69]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f3e71]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+      - generic [ref=f3e73]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f3e75]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=f3e78]:
+        - text: МИНИВЭН SOLLERS SP7 — ОТ
+        - generic [ref=f3e79]: 4 775 000 ₽
+      - generic [ref=f3e81]:
+        - text: ФУРГОНЫ SOLLERS SF1 — ОТ
+        - generic [ref=f3e82]: 2 115 000 ₽
+      - generic [ref=f3e83]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f3e85]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+      - generic [ref=f3e87]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f3e89]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=f3e92]:
+        - text: МИНИВЭН SOLLERS SP7 — ОТ
+        - generic [ref=f3e93]: 4 775 000 ₽
+      - generic [ref=f3e95]:
+        - text: ФУРГОНЫ SOLLERS SF1 — ОТ
+        - generic [ref=f3e96]: 2 115 000 ₽
+      - generic [ref=f3e97]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f3e99]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+    - generic [ref=f3e103]:
+      - generic [ref=f3e104]: Специальные условия
+      - generic [ref=f3e107]:
+        - generic [ref=f3e108]:
+          - generic [ref=f3e109]: "00"
+          - generic [ref=f3e110]: дней
+        - generic [ref=f3e111]:
+          - generic [ref=f3e112]: "13"
+          - generic [ref=f3e113]: часов
+        - generic [ref=f3e114]:
+          - generic [ref=f3e115]: "00"
+          - generic [ref=f3e116]: минут
+        - generic [ref=f3e117]:
+          - generic [ref=f3e118]: "59"
+          - generic [ref=f3e119]: секунд
+      - link "Получить предложение" [ref=f3e121] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f3e124]:
+      - heading "Модельный ряд" [level=2] [ref=f3e126]
+      - navigation "Фильтр по моделям" [ref=f3e128]:
+        - button "Все модели" [ref=f3e129] [cursor=pointer]
+        - button "SOLLERS SP7" [ref=f3e130] [cursor=pointer]
+        - button "SOLLERS ST9" [ref=f3e131] [cursor=pointer]
+        - button "SOLLERS SF1 Цельнометаллический фургон" [ref=f3e132] [cursor=pointer]
+        - button "SOLLERS SF5 VAN L2H1" [ref=f3e133] [cursor=pointer]
+        - button "SOLLERS SF5 VAN L3H2" [ref=f3e134] [cursor=pointer]
+        - button "SOLLERS Atlant Грузопассажирский" [ref=f3e135] [cursor=pointer]
+        - button "SOLLERS Atlant VAN L3" [ref=f3e136] [cursor=pointer]
+        - button "SOLLERS Atlant VAN L3H2" [ref=f3e137] [cursor=pointer]
+        - button "SOLLERS Argo" [ref=f3e138] [cursor=pointer]
+      - generic [ref=f3e139]:
+        - article [ref=f3e141]:
+          - generic [ref=f3e143]:
+            - generic [ref=f3e144]:
+              - img "SOLLERS SP7"
+            - generic [ref=f3e145]:
+              - button "Белый" [ref=f3e146] [cursor=pointer]
+              - button "Тёмно-синий" [ref=f3e148] [cursor=pointer]
+              - button "Серебристый (металлик)" [ref=f3e150] [cursor=pointer]
+              - button "Тёмно-серый (металлик)" [ref=f3e152] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=f3e154] [cursor=pointer]
+            - generic [ref=f3e156]: Белый
+          - generic [ref=f3e157]:
+            - generic [ref=f3e158]:
+              - heading "SOLLERS SP7 ПРЕМИУМ" [level=3] [ref=f3e159]:
+                - text: SOLLERS SP7
+                - generic [ref=f3e160]: ПРЕМИУМ
+              - paragraph [ref=f3e161]: Семиместный премиальный минивэн
+              - generic [ref=f3e163]:
+                - text: от
+                - generic [ref=f3e164]: 4 775 000
+                - text: ₽
+            - list [ref=f3e165]:
+              - listitem [ref=f3e166]:
+                - generic [ref=f3e170]: Бензин, 236,6 л.с.
+              - listitem [ref=f3e171]:
+                - generic [ref=f3e175]: Трансмиссия 8AT
+              - listitem [ref=f3e176]:
+                - generic [ref=f3e180]: 7 мест, схема 2+2+3
+            - generic [ref=f3e181]:
+              - link "Узнать цену" [ref=f3e182] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e184] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e186] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e188]:
+            - generic [ref=f3e189]:
+              - generic [ref=f3e190]: Габаритные размеры
+              - list [ref=f3e191]:
+                - listitem [ref=f3e192]:
+                  - generic [ref=f3e193]: 5 215
+                  - generic [ref=f3e194]: Общая длина, мм
+                - listitem [ref=f3e195]:
+                  - generic [ref=f3e196]: 1 895
+                  - generic [ref=f3e197]: Общая ширина, мм
+                - listitem [ref=f3e198]:
+                  - generic [ref=f3e199]: 1 830
+                  - generic [ref=f3e200]: Общая высота, мм
+            - generic [ref=f3e201]:
+              - generic [ref=f3e202]: Двигатель и трансмиссия
+              - list [ref=f3e203]:
+                - listitem [ref=f3e204]:
+                  - generic [ref=f3e205]: 236,6 л.с.
+                  - generic [ref=f3e206]: Максимальная мощность
+                - listitem [ref=f3e207]:
+                  - generic [ref=f3e208]: 8АТ
+                  - generic [ref=f3e209]: Коробка передач
+            - generic [ref=f3e210]:
+              - generic [ref=f3e211]: Вместимость
+              - list [ref=f3e212]:
+                - listitem [ref=f3e213]:
+                  - generic [ref=f3e214]: "7"
+                  - generic [ref=f3e215]: Количество мест
+                - listitem [ref=f3e216]:
+                  - generic [ref=f3e217]: 2+2+3
+                  - generic [ref=f3e218]: Схема расположения сидений
+                - listitem [ref=f3e219]:
+                  - generic [ref=f3e220]: 700 / 2 500
+                  - generic [ref=f3e221]: Объём багажника, л
+          - generic [ref=f3e224]:
+            - link [ref=f3e226] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/1.webp
+              - img "SOLLERS SP7 — фото 1" [ref=f3e228]
+            - link [ref=f3e230] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/2.webp
+              - img "SOLLERS SP7 — фото 2" [ref=f3e232]
+            - link [ref=f3e234] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/3.webp
+              - img "SOLLERS SP7 — фото 3" [ref=f3e236]
+            - link [ref=f3e238] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/4.webp
+              - img "SOLLERS SP7 — фото 4" [ref=f3e240]
+            - link [ref=f3e242] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/1280/5.webp
+              - img "SOLLERS SP7 — фото 5" [ref=f3e244]
+        - article [ref=f3e248]:
+          - generic [ref=f3e250]:
+            - generic [ref=f3e251]:
+              - img "SOLLERS ST9"
+            - generic [ref=f3e252]:
+              - button "Белый" [ref=f3e253] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=f3e255] [cursor=pointer]
+            - generic [ref=f3e257]: Чёрный (металлик)
+          - generic [ref=f3e258]:
+            - generic [ref=f3e259]:
+              - heading "SOLLERS ST9 НОВЫЙ" [level=3] [ref=f3e260]:
+                - text: SOLLERS ST9
+                - generic [ref=f3e261]: НОВЫЙ
+              - paragraph [ref=f3e262]: Грузопассажирский фургон
+              - generic [ref=f3e264]:
+                - text: от
+                - generic [ref=f3e265]: 3 425 000
+                - text: ₽
+            - list [ref=f3e266]:
+              - listitem [ref=f3e267]:
+                - generic [ref=f3e271]: Грузопассажирский фургон
+              - listitem [ref=f3e272]:
+                - generic [ref=f3e276]: Грузоподъёмность до 980 кг
+              - listitem [ref=f3e277]:
+                - generic [ref=f3e281]: 5 пассажирских мест
+            - generic [ref=f3e282]:
+              - link "Узнать цену" [ref=f3e283] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e285] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e287] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e289]:
+            - generic [ref=f3e290]:
+              - generic [ref=f3e291]: Габаритные размеры
+              - list [ref=f3e292]:
+                - listitem [ref=f3e293]:
+                  - generic [ref=f3e294]: 5 330
+                  - generic [ref=f3e295]: Общая длина, мм
+                - listitem [ref=f3e296]:
+                  - generic [ref=f3e297]: 1 965
+                  - generic [ref=f3e298]: Общая ширина, мм
+                - listitem [ref=f3e299]:
+                  - generic [ref=f3e300]: 1 880
+                  - generic [ref=f3e301]: Общая высота, мм
+            - generic [ref=f3e302]:
+              - generic [ref=f3e303]: Грузовой отсек
+              - list [ref=f3e304]:
+                - listitem [ref=f3e305]:
+                  - generic [ref=f3e306]: 1 520
+                  - generic [ref=f3e307]: Длина на уровне пола, мм
+                - listitem [ref=f3e308]:
+                  - generic [ref=f3e309]: 1 590
+                  - generic [ref=f3e310]: Ширина, мм
+                - listitem [ref=f3e311]:
+                  - generic [ref=f3e312]: "470"
+                  - generic [ref=f3e313]: Высота бортов, мм
+            - generic [ref=f3e314]:
+              - generic [ref=f3e315]: Вместимость
+              - list [ref=f3e316]:
+                - listitem [ref=f3e317]:
+                  - generic [ref=f3e318]: "5"
+                  - generic [ref=f3e319]: Пассажирских мест
+                - listitem [ref=f3e320]:
+                  - generic [ref=f3e321]: до 980
+                  - generic [ref=f3e322]: Грузоподъёмность, кг
+          - generic [ref=f3e325]:
+            - link [ref=f3e327] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/1280/1.webp
+              - img "SOLLERS ST9 — фото 1" [ref=f3e329]
+            - link [ref=f3e331] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/1280/2.webp
+              - img "SOLLERS ST9 — фото 2" [ref=f3e333]
+            - link [ref=f3e335] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/1280/3.webp
+              - img "SOLLERS ST9 — фото 3" [ref=f3e337]
+            - link [ref=f3e339] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/1280/4.webp
+              - img "SOLLERS ST9 — фото 4" [ref=f3e341]
+        - article [ref=f3e345]:
+          - generic [ref=f3e347]:
+            - generic [ref=f3e348]:
+              - img "SOLLERS SF1 Цельнометаллический фургон"
+            - generic [ref=f3e349]:
+              - button "Белый" [ref=f3e350] [cursor=pointer]
+              - button "Тёмно-синий" [ref=f3e352] [cursor=pointer]
+              - button "Красный" [ref=f3e354] [cursor=pointer]
+              - button "Серебристый (металлик)" [ref=f3e356] [cursor=pointer]
+              - button "Тёмно-серый (металлик)" [ref=f3e358] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=f3e360] [cursor=pointer]
+            - generic [ref=f3e362]: Белый
+          - generic [ref=f3e363]:
+            - generic [ref=f3e364]:
+              - heading "SOLLERS SF1 Цельнометаллический фургон" [level=3] [ref=f3e365]
+              - paragraph [ref=f3e366]: Цельнометаллический фургон
+              - generic [ref=f3e368]:
+                - text: от
+                - generic [ref=f3e369]: 2 115 000
+                - text: ₽
+            - list [ref=f3e370]:
+              - listitem [ref=f3e371]:
+                - generic [ref=f3e375]: Объём отсека 5,2 м³
+              - listitem [ref=f3e376]:
+                - generic [ref=f3e380]: До 2 палет 1200×800 мм
+              - listitem [ref=f3e381]:
+                - generic [ref=f3e385]: Цельнометаллический фургон
+            - generic [ref=f3e386]:
+              - link "Узнать цену" [ref=f3e387] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e389] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e391] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e393]:
+            - generic [ref=f3e394]:
+              - generic [ref=f3e395]: Габаритные размеры
+              - list [ref=f3e396]:
+                - listitem [ref=f3e397]:
+                  - generic [ref=f3e398]: 5 115
+                  - generic [ref=f3e399]: Общая длина, мм
+                - listitem [ref=f3e400]:
+                  - generic [ref=f3e401]: 1 900
+                  - generic [ref=f3e402]: Общая высота, мм
+            - generic [ref=f3e403]:
+              - generic [ref=f3e404]: Грузовой отсек
+              - list [ref=f3e405]:
+                - listitem [ref=f3e406]:
+                  - generic [ref=f3e407]: 2 600
+                  - generic [ref=f3e408]: Длина на уровне пола, мм
+                - listitem [ref=f3e409]:
+                  - generic [ref=f3e410]: 1 530
+                  - generic [ref=f3e411]: Ширина, мм
+                - listitem [ref=f3e412]:
+                  - generic [ref=f3e413]: 1 295
+                  - generic [ref=f3e414]: Высота, мм
+                - listitem [ref=f3e415]:
+                  - generic [ref=f3e416]: "2"
+                  - generic [ref=f3e417]: Палеты (1200×800 мм)
+                - listitem [ref=f3e418]:
+                  - generic [ref=f3e419]: 5,2
+                  - generic [ref=f3e420]: Объём грузового отсека, м³
+          - generic [ref=f3e423]:
+            - link [ref=f3e425] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/1280/1.webp
+              - img "SOLLERS SF1 — фото 1" [ref=f3e427]
+            - link [ref=f3e429] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/1280/2.webp
+              - img "SOLLERS SF1 — фото 2" [ref=f3e431]
+            - link [ref=f3e433] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/1280/3.webp
+              - img "SOLLERS SF1 — фото 3" [ref=f3e435]
+            - link [ref=f3e437] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/1280/4.webp
+              - img "SOLLERS SF1 — фото 4" [ref=f3e439]
+        - article [ref=f3e443]:
+          - generic [ref=f3e446]:
+            - img "SOLLERS SF5 VAN L2H1"
+          - generic [ref=f3e447]:
+            - generic [ref=f3e448]:
+              - heading "SOLLERS SF5 VAN L2H1" [level=3] [ref=f3e449]
+              - paragraph [ref=f3e450]: Цельнометаллический фургон SF5, база L2H1
+              - generic [ref=f3e452]:
+                - text: от
+                - generic [ref=f3e453]: Цена по
+                - text: запросу
+            - list [ref=f3e454]:
+              - listitem [ref=f3e455]:
+                - generic [ref=f3e459]: Цельнометаллический фургон SF5
+              - listitem [ref=f3e460]:
+                - generic [ref=f3e464]: База L2, стандартная крыша H1
+              - listitem [ref=f3e465]:
+                - generic [ref=f3e469]: Городская развозная логистика
+            - generic [ref=f3e470]:
+              - link "Узнать цену" [ref=f3e471] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e473] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e475] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e478]:
+            - generic [ref=f3e479]: Кузов
+            - list [ref=f3e480]:
+              - listitem [ref=f3e481]:
+                - generic [ref=f3e482]: Цельнометаллический фургон
+                - generic [ref=f3e483]: Тип
+              - listitem [ref=f3e484]:
+                - generic [ref=f3e485]: L2 / стандартная H1
+                - generic [ref=f3e486]: База / крыша
+          - link [ref=f3e491] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5-van-l2h1/gallery/1280/1.webp
+            - img "SOLLERS SF5 — фото 1" [ref=f3e493]
+        - article [ref=f3e497]:
+          - generic [ref=f3e500]:
+            - img "SOLLERS SF5 VAN L3H2"
+          - generic [ref=f3e501]:
+            - generic [ref=f3e502]:
+              - heading "SOLLERS SF5 VAN L3H2" [level=3] [ref=f3e503]
+              - paragraph [ref=f3e504]: Цельнометаллический фургон SF5, база L3H2
+              - generic [ref=f3e506]:
+                - text: от
+                - generic [ref=f3e507]: Цена по
+                - text: запросу
+            - list [ref=f3e508]:
+              - listitem [ref=f3e509]:
+                - generic [ref=f3e513]: Цельнометаллический фургон SF5
+              - listitem [ref=f3e514]:
+                - generic [ref=f3e518]: Удлинённая база L3, высокая крыша H2
+              - listitem [ref=f3e519]:
+                - generic [ref=f3e523]: Максимальный грузовой объём
+            - generic [ref=f3e524]:
+              - link "Узнать цену" [ref=f3e525] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e527] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e529] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e532]:
+            - generic [ref=f3e533]: Кузов
+            - list [ref=f3e534]:
+              - listitem [ref=f3e535]:
+                - generic [ref=f3e536]: Цельнометаллический фургон
+                - generic [ref=f3e537]: Тип
+              - listitem [ref=f3e538]:
+                - generic [ref=f3e539]: L3 (удлинённая) / высокая H2
+                - generic [ref=f3e540]: База / крыша
+          - link [ref=f3e545] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5-van-l3h2/gallery/1280/1.webp
+            - img "SOLLERS SF5 — фото 1" [ref=f3e547]
+        - article [ref=f3e551]:
+          - generic [ref=f3e554]:
+            - img "SOLLERS Atlant Грузопассажирский"
+          - generic [ref=f3e555]:
+            - generic [ref=f3e556]:
+              - heading "SOLLERS Atlant Грузопассажирский" [level=3] [ref=f3e557]
+              - paragraph [ref=f3e558]: Грузопассажирский фургон Atlant
+              - generic [ref=f3e560]:
+                - text: от
+                - generic [ref=f3e561]: Цена по
+                - text: запросу
+            - list [ref=f3e562]:
+              - listitem [ref=f3e563]:
+                - generic [ref=f3e567]: Грузопассажирская компоновка
+              - listitem [ref=f3e568]:
+                - generic [ref=f3e572]: Пассажиры и груз
+              - listitem [ref=f3e573]:
+                - generic [ref=f3e577]: Вместительный отсек
+            - generic [ref=f3e578]:
+              - link "Узнать цену" [ref=f3e579] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e581] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e583] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e586]:
+            - generic [ref=f3e587]: Кузов
+            - list [ref=f3e588]:
+              - listitem [ref=f3e589]:
+                - generic [ref=f3e590]: Грузопассажирский фургон
+                - generic [ref=f3e591]: Тип
+              - listitem [ref=f3e592]:
+                - generic [ref=f3e593]: SOLLERS Atlant
+                - generic [ref=f3e594]: Платформа
+          - generic [ref=f3e597]:
+            - link [ref=f3e599] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-gruzpass/gallery/1280/1.webp
+              - img "SOLLERS Atlant — фото 1" [ref=f3e601]
+            - link [ref=f3e603] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-gruzpass/gallery/1280/2.webp
+              - img "SOLLERS Atlant — фото 2" [ref=f3e605]
+            - link [ref=f3e607] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-gruzpass/gallery/1280/3.webp
+              - img "SOLLERS Atlant — фото 3" [ref=f3e609]
+            - link [ref=f3e611] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-gruzpass/gallery/1280/4.webp
+              - img "SOLLERS Atlant — фото 4" [ref=f3e613]
+        - article [ref=f3e617]:
+          - generic [ref=f3e620]:
+            - img "SOLLERS Atlant VAN L3"
+          - generic [ref=f3e621]:
+            - generic [ref=f3e622]:
+              - heading "SOLLERS Atlant VAN L3" [level=3] [ref=f3e623]
+              - paragraph [ref=f3e624]: Цельнометаллический фургон Atlant, база L3
+              - generic [ref=f3e626]:
+                - text: от
+                - generic [ref=f3e627]: Цена по
+                - text: запросу
+            - list [ref=f3e628]:
+              - listitem [ref=f3e629]:
+                - generic [ref=f3e633]: Цельнометаллический фургон
+              - listitem [ref=f3e634]:
+                - generic [ref=f3e638]: Удлинённая база L3
+              - listitem [ref=f3e639]:
+                - generic [ref=f3e643]: Большой грузовой объём
+            - generic [ref=f3e644]:
+              - link "Узнать цену" [ref=f3e645] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e647] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e649] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e652]:
+            - generic [ref=f3e653]: Кузов
+            - list [ref=f3e654]:
+              - listitem [ref=f3e655]:
+                - generic [ref=f3e656]: Цельнометаллический фургон
+                - generic [ref=f3e657]: Тип
+              - listitem [ref=f3e658]:
+                - generic [ref=f3e659]: L3 (удлинённая)
+                - generic [ref=f3e660]: База
+          - generic [ref=f3e663]:
+            - link [ref=f3e665] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-van-l3/gallery/1280/1.webp
+              - img "SOLLERS Atlant — фото 1" [ref=f3e667]
+            - link [ref=f3e669] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-van-l3/gallery/1280/2.webp
+              - img "SOLLERS Atlant — фото 2" [ref=f3e671]
+            - link [ref=f3e673] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-van-l3/gallery/1280/3.webp
+              - img "SOLLERS Atlant — фото 3" [ref=f3e675]
+            - link [ref=f3e677] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-van-l3/gallery/1280/4.webp
+              - img "SOLLERS Atlant — фото 4" [ref=f3e679]
+        - article [ref=f3e683]:
+          - generic [ref=f3e686]:
+            - img "SOLLERS Atlant VAN L3H2"
+          - generic [ref=f3e687]:
+            - generic [ref=f3e688]:
+              - heading "SOLLERS Atlant VAN L3H2" [level=3] [ref=f3e689]
+              - paragraph [ref=f3e690]: Цельнометаллический фургон Atlant, база L3, высокая крыша H2
+              - generic [ref=f3e692]:
+                - text: от
+                - generic [ref=f3e693]: Цена по
+                - text: запросу
+            - list [ref=f3e694]:
+              - listitem [ref=f3e695]:
+                - generic [ref=f3e699]: Цельнометаллический фургон
+              - listitem [ref=f3e700]:
+                - generic [ref=f3e704]: Высокая крыша H2
+              - listitem [ref=f3e705]:
+                - generic [ref=f3e709]: Максимальный объём отсека
+            - generic [ref=f3e710]:
+              - link "Узнать цену" [ref=f3e711] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e713] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e715] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e718]:
+            - generic [ref=f3e719]: Кузов
+            - list [ref=f3e720]:
+              - listitem [ref=f3e721]:
+                - generic [ref=f3e722]: Цельнометаллический фургон
+                - generic [ref=f3e723]: Тип
+              - listitem [ref=f3e724]:
+                - generic [ref=f3e725]: L3 / высокая H2
+                - generic [ref=f3e726]: База / крыша
+          - generic [ref=f3e729]:
+            - link [ref=f3e731] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-van-l3h2/gallery/1280/1.webp
+              - img "SOLLERS Atlant — фото 1" [ref=f3e733]
+            - link [ref=f3e735] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-van-l3h2/gallery/1280/2.webp
+              - img "SOLLERS Atlant — фото 2" [ref=f3e737]
+            - link [ref=f3e739] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-van-l3h2/gallery/1280/3.webp
+              - img "SOLLERS Atlant — фото 3" [ref=f3e741]
+            - link [ref=f3e743] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant-van-l3h2/gallery/1280/4.webp
+              - img "SOLLERS Atlant — фото 4" [ref=f3e745]
+        - article [ref=f3e749]:
+          - generic [ref=f3e752]:
+            - img "SOLLERS Argo"
+          - generic [ref=f3e753]:
+            - generic [ref=f3e754]:
+              - heading "SOLLERS Argo" [level=3] [ref=f3e755]
+              - paragraph [ref=f3e756]: Малотоннажный грузовик
+              - generic [ref=f3e758]:
+                - text: от
+                - generic [ref=f3e759]: Цена по
+                - text: запросу
+            - list [ref=f3e760]:
+              - listitem [ref=f3e761]:
+                - generic [ref=f3e765]: Бортовой, тент, рефрижератор
+              - listitem [ref=f3e766]:
+                - generic [ref=f3e770]: Высокая грузоподъёмность
+              - listitem [ref=f3e771]:
+                - generic [ref=f3e775]: Надёжная рамная конструкция
+            - generic [ref=f3e776]:
+              - link "Узнать цену" [ref=f3e777] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f3e779] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f3e781] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f3e784]:
+            - generic [ref=f3e785]: Кузов и надстройки
+            - list [ref=f3e786]:
+              - listitem [ref=f3e787]:
+                - generic [ref=f3e788]: Малотоннажный грузовик
+                - generic [ref=f3e789]: Тип
+              - listitem [ref=f3e790]:
+                - generic [ref=f3e791]: Бортовой, тент, промтоварный, рефрижератор
+                - generic [ref=f3e792]: Надстройки
+          - generic [ref=f3e795]:
+            - link [ref=f3e797] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/1.webp
+              - img "SOLLERS Argo — фото 1" [ref=f3e799]
+            - link [ref=f3e801] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/2.webp
+              - img "SOLLERS Argo — фото 2" [ref=f3e803]
+            - link [ref=f3e805] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/3.webp
+              - img "SOLLERS Argo — фото 3" [ref=f3e807]
+            - link [ref=f3e809] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/4.webp
+              - img "SOLLERS Argo — фото 4" [ref=f3e811]
+            - link [ref=f3e813] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/5.webp
+              - img "SOLLERS Argo — фото 5" [ref=f3e815]
+            - link [ref=f3e817] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/6.webp
+              - img "SOLLERS Argo — фото 6" [ref=f3e819]
+    - generic [ref=f3e823]:
+      - generic [ref=f3e824]:
+        - heading "Акции и предложения" [level=2] [ref=f3e825]
+        - paragraph [ref=f3e826]: Выгодные программы покупки SOLLERS в АВИЛОН
+      - generic [ref=f3e827]:
+        - 'link "Лизинг SOLLERS Лизинг для бизнеса Лизинг коммерческого транспорта SOLLERS для юридических лиц и ИП: гибкие платежи, НДС к зачёту." [ref=f3e829] [cursor=pointer]':
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Лизинг"
+          - img "SOLLERS" [ref=f3e831]
+          - generic [ref=f3e832]:
+            - generic [ref=f3e833]: Лизинг для бизнеса
+            - generic [ref=f3e835]: "Лизинг коммерческого транспорта SOLLERS для юридических лиц и ИП: гибкие платежи, НДС к зачёту."
+        - link "Выгодный обмен SOLLERS Трейд-ин Обменяйте ваш автомобиль и получите дополнительную выгоду на SOLLERS." [ref=f3e837] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Выгодный обмен"
+          - img "SOLLERS" [ref=f3e839]
+          - generic [ref=f3e840]:
+            - generic [ref=f3e841]: Трейд-ин
+            - generic [ref=f3e843]: Обменяйте ваш автомобиль и получите дополнительную выгоду на SOLLERS.
+        - link "Кредит SOLLERS Кредит Кредит на минивэны и фургоны SOLLERS — без скрытых платежей. Расчёт за 10 минут." [ref=f3e845] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Кредит"
+          - img "SOLLERS" [ref=f3e847]
+          - generic [ref=f3e848]:
+            - generic [ref=f3e849]: Кредит
+            - generic [ref=f3e851]: Кредит на минивэны и фургоны SOLLERS — без скрытых платежей. Расчёт за 10 минут.
+    - generic [ref=f3e855]:
+      - generic [ref=f3e856]: Индивидуальная поездка
+      - generic [ref=f3e857]: Не нужно ждать — просто запишитесь на тест-драйв онлайн
+      - link "Выбрать дату и время" [ref=f3e859] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f3e862]:
+      - generic [ref=f3e863]:
+        - heading "Преимущества Sollers Авилон" [level=2] [ref=f3e864]
+        - paragraph [ref=f3e865]: Официальный дилер SOLLERS в Москве
+      - generic [ref=f3e866]:
+        - link "Минивэны и фургоны в наличии" [ref=f3e867] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Полная линейка SOLLERS — SP7, ST9, SF1, SF5, Atlant, Argo" [ref=f3e870] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Выгодный обмен автомобиля" [ref=f3e873] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Привилегии официального дилера" [ref=f3e876] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Кредит и лизинг для бизнеса" [ref=f3e879] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Гарантия официального дилера" [ref=f3e882] [cursor=pointer]:
+          - /url: "#callback"
+    - generic [ref=f3e886]:
+      - generic [ref=f3e887]:
+        - heading "Способы покупки" [level=2] [ref=f3e888]
+        - paragraph [ref=f3e889]: Трейд-ин, кредит и лизинг на выгодных условиях
+      - generic [ref=f3e890]:
+        - article [ref=f3e892]:
+          - generic [ref=f3e896]:
+            - heading "Трейд-ин" [level=3] [ref=f3e897]
+            - list [ref=f3e899]:
+              - listitem [ref=f3e900]: Бесплатная диагностика и оценка за 30 минут
+              - listitem [ref=f3e901]:
+                - text: Лояльный трейд-ин — выгода до
+                - generic [ref=f3e902]: 200 000 ₽
+            - link "Получить оценку" [ref=f3e904] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f3e907]:
+          - generic [ref=f3e911]:
+            - heading "Кредит" [level=3] [ref=f3e912]
+            - list [ref=f3e914]:
+              - listitem [ref=f3e915]:
+                - generic [ref=f3e916]: 0% переплат
+                - text: по программам дилера
+              - listitem [ref=f3e917]: Первоначальный взнос от 10%
+              - listitem [ref=f3e918]: Срок до 84 месяцев
+            - link "Рассчитать условия" [ref=f3e920] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f3e923]:
+          - generic [ref=f3e927]:
+            - heading "Лизинг" [level=3] [ref=f3e928]
+            - list [ref=f3e930]:
+              - listitem [ref=f3e931]: Лизинг с авансом от 10%
+              - listitem [ref=f3e932]: Сохранение денежных средств в обороте
+              - listitem [ref=f3e933]: Лизинговый платёж без НДС на затраты организации
+            - link "Рассчитать условия" [ref=f3e935] [cursor=pointer]:
+              - /url: "#callback"
+    - generic [ref=f3e940]:
+      - generic [ref=f3e941]:
+        - generic [ref=f3e942]: Sollers Авилон
+        - generic [ref=f3e943]: Официальный дилер SOLLERS в Москве
+      - list [ref=f3e944]:
+        - listitem [ref=f3e945]:
+          - link "+7 (495) 183-57-86" [ref=f3e949] [cursor=pointer]:
+            - /url: tel:+74951835786
+        - listitem [ref=f3e950]:
+          - generic [ref=f3e955]: Котельники, Белая Дача, Коммерческий пр-д, 10
+        - listitem [ref=f3e956]:
+          - generic [ref=f3e961]: "Пн–Вс: 09:00–21:00"
+      - generic [ref=f3e962]:
+        - generic [ref=f3e963]: Услуги
+        - generic [ref=f3e964]:
+          - generic [ref=f3e965]: Продажа
+          - generic [ref=f3e966]: Трейд-ин
+          - generic [ref=f3e967]: Кредит
+          - generic [ref=f3e968]: Лизинг
+      - link "Получить консультацию" [ref=f3e969] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f3e974]:
+    - link [ref=f3e976] [cursor=pointer]:
+      - /url: http://promo.sollers-avilon.ru.test/
+      - img "SOLLERS" [ref=f3e977]
+    - generic [ref=f3e979]:
+      - link "ВКонтакте" [ref=f3e980] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f3e983] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f3e986] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f3e989]:
+      - link "Модельный ряд" [ref=f3e991] [cursor=pointer]:
+        - /url: "#range"
+      - link "Преимущества" [ref=f3e993] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f3e995] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f3e997] [cursor=pointer]:
+        - /url: "#map"
+    - generic [ref=f3e998]: © 2026 Sollers Авилон. Все права защищены
+    - generic [ref=f3e1000]:
+      - link "Политика конфиденциальности" [ref=f3e1001] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f3e1002] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f3e1003] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/consent/
+      - link "Правовая информация" [ref=f3e1004] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/legal-info/
+    - paragraph [ref=f3e1006]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f3e1009]:
+    - generic [ref=f3e1011]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f3e1012] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f3e1014] [cursor=pointer]

@@ -1,0 +1,194 @@
+- generic [active] [ref=f10e1]:
+  - link "Перейти к контенту" [ref=f10e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f10e3]:
+    - generic [ref=f10e4]:
+      - generic [ref=f10e5]:
+        - link [ref=f10e6] [cursor=pointer]:
+          - /url: /
+          - img "SOLLERS" [ref=f10e7]
+        - img "АВИЛОН — официальный дилер" [ref=f10e10]
+      - generic [ref=f10e13]:
+        - generic [ref=f10e14]: Sollers Авилон
+        - link "+7 (495) 183-57-86" [ref=f10e15] [cursor=pointer]:
+          - /url: tel:+74951835786
+        - link "Котельники, Белая Дача, Коммерческий пр-д, 10" [ref=f10e16] [cursor=pointer]:
+          - /url: http://promo.sollers-avilon.ru.test/#map
+      - link "Заказать звонок" [ref=f10e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f10e20]:
+      - link "Модельный ряд" [ref=f10e21] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#range
+      - link "Акции" [ref=f10e22] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#actions
+      - link "Тест-драйв" [ref=f10e23] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#testdrive
+      - link "Преимущества" [ref=f10e24] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#profits
+      - link "Способы покупки" [ref=f10e25] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#finance
+      - link "Контакты" [ref=f10e26] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#map
+  - main [ref=f10e27]:
+    - generic [ref=f10e29]:
+      - heading "SOLLERS SF5 VAN" [level=1] [ref=f10e30]
+      - paragraph [ref=f10e31]: Цельнометаллический фургон. SOLLERS SF5 VAN у официального дилера Sollers Авилон.
+    - generic [ref=f10e33]:
+      - heading "SOLLERS SF5 VAN" [level=2] [ref=f10e35]
+      - navigation "Фильтр по моделям" [ref=f10e37]:
+        - button "Все модели" [ref=f10e38] [cursor=pointer]
+        - button "SOLLERS SF5 VAN" [ref=f10e39] [cursor=pointer]
+      - article [ref=f10e42]:
+        - generic [ref=f10e44]:
+          - generic [ref=f10e45]:
+            - button "VAN L2H1" [ref=f10e46] [cursor=pointer]
+            - button "VAN L3H2" [ref=f10e47] [cursor=pointer]
+          - img "SOLLERS SF5 VAN — VAN L2H1" [ref=f10e49]
+        - generic [ref=f10e50]:
+          - generic [ref=f10e51]:
+            - heading "SOLLERS SF5 VAN НОВЫЙ" [level=3] [ref=f10e52]:
+              - text: SOLLERS SF5 VAN
+              - generic [ref=f10e53]: НОВЫЙ
+            - paragraph [ref=f10e54]: Цельнометаллический фургон
+            - generic [ref=f10e56]:
+              - text: от
+              - generic [ref=f10e57]: 2 745 000
+              - text: ₽
+          - list [ref=f10e58]:
+            - listitem [ref=f10e59]:
+              - generic [ref=f10e63]: Цельнометаллический фургон
+            - listitem [ref=f10e64]:
+              - generic [ref=f10e68]: До 12,4 м³, 4 европалеты
+            - listitem [ref=f10e69]:
+              - generic [ref=f10e73]: Дизель, 6АТ
+          - generic [ref=f10e74]:
+            - link "Узнать цену" [ref=f10e75] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Кредит" [ref=f10e77] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Лизинг" [ref=f10e79] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Пройти тест-драйв" [ref=f10e81] [cursor=pointer]:
+              - /url: "#callback"
+        - generic [ref=f10e83]:
+          - generic [ref=f10e84]:
+            - generic [ref=f10e85]: Габаритные размеры
+            - list [ref=f10e86]:
+              - listitem [ref=f10e87]:
+                - generic [ref=f10e88]: 5 650
+                - generic [ref=f10e89]: Общая длина, мм
+              - listitem [ref=f10e90]:
+                - generic [ref=f10e91]: 2 405
+                - generic [ref=f10e92]: Общая высота, мм
+          - generic [ref=f10e93]:
+            - generic [ref=f10e94]: Грузовой отсек
+            - list [ref=f10e95]:
+              - listitem [ref=f10e96]:
+                - generic [ref=f10e97]: 3 220
+                - generic [ref=f10e98]: Длина на уровне пола, мм
+              - listitem [ref=f10e99]:
+                - generic [ref=f10e100]: 1 630
+                - generic [ref=f10e101]: Высота, мм
+              - listitem [ref=f10e102]:
+                - generic [ref=f10e103]: 1 850
+                - generic [ref=f10e104]: Ширина, мм
+              - listitem [ref=f10e105]:
+                - generic [ref=f10e106]: 9,7
+                - generic [ref=f10e107]: Объём грузового отсека, м³
+              - listitem [ref=f10e108]:
+                - generic [ref=f10e109]: "4"
+                - generic [ref=f10e110]: Палеты (1200×800 мм)
+          - generic [ref=f10e111]:
+            - generic [ref=f10e112]: Масса и шасси
+            - list [ref=f10e113]:
+              - listitem [ref=f10e114]:
+                - generic [ref=f10e115]: 3 490
+                - generic [ref=f10e116]: Полная масса, кг
+              - listitem [ref=f10e117]:
+                - generic [ref=f10e118]: Односкатные
+                - generic [ref=f10e119]: Тип задних колёс
+          - generic [ref=f10e120]:
+            - generic [ref=f10e121]: Двигатель и трансмиссия
+            - list [ref=f10e122]:
+              - listitem [ref=f10e123]:
+                - generic [ref=f10e124]: Дизельный
+                - generic [ref=f10e125]: Тип двигателя
+              - listitem [ref=f10e126]:
+                - generic [ref=f10e127]: 6АТ
+                - generic [ref=f10e128]: Коробка передач
+              - listitem [ref=f10e129]:
+                - generic [ref=f10e130]: "80"
+                - generic [ref=f10e131]: Объём топливного бака, л
+        - generic [ref=f10e134]:
+          - link [ref=f10e136] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/1280/1.webp
+            - img "SOLLERS SF5 VAN — фото 1" [ref=f10e138]
+          - link [ref=f10e140] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/1280/2.webp
+            - img "SOLLERS SF5 VAN — фото 2" [ref=f10e142]
+          - link [ref=f10e144] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/1280/3.webp
+            - img "SOLLERS SF5 VAN — фото 3" [ref=f10e146]
+          - link [ref=f10e148] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/1280/4.webp
+            - img "SOLLERS SF5 VAN — фото 4" [ref=f10e150]
+          - link [ref=f10e152] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/1280/5.webp
+            - img "SOLLERS SF5 VAN — фото 5" [ref=f10e154]
+    - generic [ref=f10e160]:
+      - generic [ref=f10e161]: Узнайте цену SOLLERS SF5 VAN
+      - generic [ref=f10e162]: Индивидуальное предложение от официального дилера Sollers Авилон
+      - link "Получить предложение" [ref=f10e164] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f10e169]:
+      - generic [ref=f10e170]:
+        - generic [ref=f10e171]: Sollers Авилон
+        - generic [ref=f10e172]: Официальный дилер SOLLERS в Москве
+      - list [ref=f10e173]:
+        - listitem [ref=f10e174]:
+          - link "+7 (495) 183-57-86" [ref=f10e178] [cursor=pointer]:
+            - /url: tel:+74951835786
+        - listitem [ref=f10e179]:
+          - generic [ref=f10e184]: Котельники, Белая Дача, Коммерческий пр-д, 10
+        - listitem [ref=f10e185]:
+          - generic [ref=f10e190]: "Пн–Вс: 09:00–21:00"
+      - link "Получить консультацию" [ref=f10e191] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f10e196]:
+    - link [ref=f10e198] [cursor=pointer]:
+      - /url: http://promo.sollers-avilon.ru.test/
+      - img "SOLLERS" [ref=f10e199]
+    - generic [ref=f10e201]:
+      - link "ВКонтакте" [ref=f10e202] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f10e205] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f10e208] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f10e211]:
+      - link "Модельный ряд" [ref=f10e213] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#range
+      - link "Преимущества" [ref=f10e215] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#profits
+      - link "Способы покупки" [ref=f10e217] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#finance
+      - link "Контакты" [ref=f10e219] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#map
+    - generic [ref=f10e220]: © 2026 Sollers Авилон. Все права защищены
+    - generic [ref=f10e222]:
+      - link "Политика конфиденциальности" [ref=f10e223] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f10e224] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f10e225] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/consent/
+      - link "Правовая информация" [ref=f10e226] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/legal-info/
+    - paragraph [ref=f10e228]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f10e231]:
+    - generic [ref=f10e233]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f10e234] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f10e236] [cursor=pointer]

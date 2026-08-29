@@ -1,41 +1,67 @@
+/* Source Sans 3 (основной текст) — variable font */
 @font-face {
-  font-family: 'TT-Commons-Pro-Expanded-Regular';
-  src:
-    url('../../fonts/tt-commons-pro-expanded/tt-commons-pro-expanded-regular.woff2') format('woff2');
+  font-family: 'Source Sans 3';
+  src: url('../../fonts/source-sans-3/SourceSans3VF-Upright.ttf.woff2') format('woff2-variations');
+  font-weight: 200 900;
   font-style: normal;
+  font-display: swap;
+}
+
+/* Manrope (заголовки) — variable font */
+@font-face {
+  font-family: Manrope;
+  src: url('../../fonts/manrope/ManropeVariable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TT Norms Pro — variable font (все начертания 100–900 в одном файле) */
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('../../fonts/tt-norms-pro-variable/TTNormsProVariable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TT Norms Pro Expanded — отдельные начертания (нет variable-версии) */
+@font-face {
+  font-family: 'TT Norms Pro Expanded';
+  src: url('../../fonts/tt-norms-pro-expanded/TTNormsProExpanded-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'TT-Commons-Pro-Expanded-Normal';
-  src:
-    url('../../fonts/tt-commons-pro-expanded/tt-commons-pro-expanded-normal.woff2') format('woff2');
+  font-family: 'TT Norms Pro Expanded';
+  src: url('../../fonts/tt-norms-pro-expanded/TTNormsProExpanded-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'TT-Commons-Pro-Expanded-Medium';
-  src:
-    url('../../fonts/tt-commons-pro-expanded/tt-commons-pro-expanded-medium.woff2') format('woff2');
+  font-family: 'TT Norms Pro Expanded';
+  src: url('../../fonts/tt-norms-pro-expanded/TTNormsProExpanded-Medium.woff2') format('woff2');
+  font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'TT-Commons-Pro-Expanded-Light';
-  src:
-    url('../../fonts/tt-commons-pro-expanded/tt-commons-pro-expanded-light.woff2') format('woff2');
+  font-family: 'TT Norms Pro Expanded';
+  src: url('../../fonts/tt-norms-pro-expanded/TTNormsProExpanded-DemiBold.woff2') format('woff2');
+  font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'TT-Commons-Pro-Expanded-DemiBold';
-  src:
-    url('../../fonts/tt-commons-pro-expanded/tt-commons-pro-expanded-demibold.woff2') format('woff2');
+  font-family: 'TT Norms Pro Expanded';
+  src: url('../../fonts/tt-norms-pro-expanded/TTNormsProExpanded-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'TT-Commons-Pro-Expanded-Bold';
-  src:
-    url('../../fonts/tt-commons-pro-expanded/tt-commons-pro-expanded-bold.woff2') format('woff2');
-  font-style: normal;
+  font-display: swap;
 }

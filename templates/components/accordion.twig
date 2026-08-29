@@ -1,18 +1,39 @@
-<div class="accordion" itemscope itemtype="https://schema.org/FAQPage">
+{% if items is defined and items|length > 0 %}
+{# JSON-LD FAQPage для GEO / LLM (дублирует микроданные ниже) #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+  {% for item in items %}
+    {
+      "@type": "Question",
+      "name": {{ (item.title|striptags|trim)|json_encode|raw }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ (item.answerText|default(item.desc|striptags|trim))|json_encode|raw }}
+      }
+    }{% if not loop.last %},{% endif %}
+  {% endfor %}
+  ]
+}
+</script>
+{% endif %}
+<div class="accordion" itemscope itemtype="https://schema.org/FAQPage" id="accordion-{{ accordion_id|default('faq') }}">
   {% for item in items %}
     <div class="accordion__item question-wrap" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <div class="accordion__subitem title-wrap">
+      <button type="button" class="accordion__subitem title-wrap" aria-expanded="false" aria-controls="accordion-panel-{{ accordion_id|default('faq') }}-{{ loop.index0 }}" id="accordion-trigger-{{ accordion_id|default('faq') }}-{{ loop.index0 }}">
         <span class="accordion__title uppercase" itemprop="name">{{ item.title | raw }}</span>
-        <div class="accordion__icon-wrap">
-          <img src="{{ item.icon.src }}" alt="{{ item.icon.alt }}" class="img-responsive">
+        <div class="accordion__icon-wrap" aria-hidden="true">
+          <img src="{{ item.icon.src }}" alt="" class="img-responsive" role="presentation" loading="lazy">
         </div>
-      </div>
-      <div class="accordion__subitem desc-wrap" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+      </button>
+      <div class="accordion__subitem desc-wrap" id="accordion-panel-{{ accordion_id|default('faq') }}-{{ loop.index0 }}" role="region" aria-labelledby="accordion-trigger-{{ accordion_id|default('faq') }}-{{ loop.index0 }}" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
         <div class="accordion__desc" itemprop="text">{{ include(template_from_string(item.desc)) }}</div>
       </div>
     </div>
   {% endfor %}
   <div class="accordion__item show-all">
-    <a href="javascript:void(0)" class="accordion__show-all link link-color-2 font-1-medium uppercase">{{ global.accordion['show-all'][currentLang.code] }}</a>
+    <button type="button" class="accordion__show-all link color-2 weight-500 uppercase">{{ global.accordion['show-all'][lang_code]|default(global.accordion['show-all'].ru) }}</button>
   </div>
 </div>

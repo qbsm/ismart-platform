@@ -1,0 +1,211 @@
+- generic [ref=f59e3]:
+  - generic [ref=f59e4]:
+    - link "OMODA & JAECOO Saudi Arabia home" [ref=f59e5] [cursor=pointer]:
+      - /url: /en/
+    - navigation [ref=f59e6]:
+      - list [ref=f59e7]:
+        - listitem [ref=f59e8]:
+          - generic [ref=f59e9] [cursor=pointer]: ABOUT US
+        - listitem [ref=f59e11]:
+          - generic [ref=f59e12] [cursor=pointer]: MODELS
+        - listitem [ref=f59e14]:
+          - generic [ref=f59e15] [cursor=pointer]: TECHNOLOGY
+        - listitem [ref=f59e17]:
+          - generic [ref=f59e18] [cursor=pointer]: SERVICE
+        - listitem [ref=f59e20]:
+          - generic [ref=f59e21] [cursor=pointer]: OFFERS
+        - listitem [ref=f59e23]:
+          - generic [ref=f59e24] [cursor=pointer]: CONTACT US
+    - generic [ref=f59e26]:
+      - generic [ref=f59e27] [cursor=pointer]:
+        - img "Test Drive" [ref=f59e28]
+        - generic [ref=f59e29]: BOOK NOW
+      - generic [ref=f59e30] [cursor=pointer]:
+        - img "Language" [ref=f59e31]
+        - generic [ref=f59e100]:
+          - generic:
+            - combobox "Select language" [ref=f59e102]
+            - generic [ref=f59e103]: عربي
+  - generic [ref=f59e146]:
+    - generic [ref=f59e149]:
+      - heading "Sporty. Smart. Diamond-styled. A compact SUV built for the future." [level=5] [ref=f59e152]
+      - generic [ref=f59e153]:
+        - paragraph [ref=f59e154]: Starting Price
+        - paragraph [ref=f59e155]: 74,635
+        - paragraph [ref=f59e160]: (Incl. VAT)
+      - button "Book Now" [ref=f59e162] [cursor=pointer]
+    - generic [ref=f59e166]:
+      - generic [ref=f59e168]:
+        - heading "STYLE REDEFINED. TECH ENHANCED. YOUR CITY, ELEVATED" [level=1] [ref=f59e169]
+        - heading "Introducing the Omoda 5, the crossover SUV designed for dynamic urban living. It's a bold extension of your personal style, skillfully combining eye-catching design with technologically advanced features to redefine and elevate your city driving experience." [level=5] [ref=f59e170]
+      - button "Watch Video" [ref=f59e171] [cursor=pointer]
+    - generic [ref=f59e177]:
+      - heading "ART IN MOTION" [level=1] [ref=f59e178]
+      - heading "The Omoda 5 is Art In Motion, a captivating blend of urban aesthetics and dynamic design. Its commanding Star Diamond Grille, sporty 18\" two-tone alloy wheels, sleek dynamic fastback bodywork, and distinctive floating roof design unite to create an unforgettable, stylish presence on every road." [level=5] [ref=f59e179]
+    - generic [ref=f59e181]:
+      - generic [ref=f59e184]:
+        - generic [ref=f59e185] [cursor=pointer]: Striking Urban Design
+        - generic [ref=f59e186] [cursor=pointer]: Advanced Intelligent Technology
+        - generic [ref=f59e187] [cursor=pointer]: Dynamic & Sporty Performance
+      - generic [ref=f59e189]:
+        - paragraph [ref=f59e190]: Be Noticed Wherever You Go
+        - paragraph [ref=f59e191]: The Omoda 5 sculpts a unique presence, defining urban aesthetics with captivating style. Its bold Star Diamond Grille, aerodynamic fastback bodywork, and signature floating roof design unite to command attention and make an undeniable stylish statement on every road.
+    - generic [ref=f59e197]:
+      - heading "DYNAMIC COCKPIT. INTUITIVE COMMAND." [level=1] [ref=f59e198]
+      - heading "The Omoda 5's driver-centric cabin, with its intelligent layout and premium finishes, fosters immediate connection by placing every control within natural reach, creating a technologically advanced and exhilarating environment that invites engagement." [level=5] [ref=f59e199]
+    - generic [ref=f59e201]:
+      - generic [ref=f59e203]:
+        - heading "Sport bucket seats" [level=1] [ref=f59e204]
+        - heading "Designed for dynamic driving, the Sport Bucket Seats offer exceptional support and comfort, enhancing the cockpit's engaging, performance-oriented feel." [level=5]
+      - generic [ref=f59e205]:
+        - generic [ref=f59e207]:
+          - heading "Dual 12.3-inch Digital Displays" [level=1] [ref=f59e208]
+          - heading "Gain intuitive control and unparalleled clarity with the seamlessly integrated Dual 12.3-inch Instrument Cluster and Touchscreen Infotainment System, centralizing all driving information and entertainment." [level=5]
+        - generic [ref=f59e210]:
+          - heading "Immersive 8-Speaker Sony Sound System" [level=1] [ref=f59e211]
+          - heading "Transform your drives with the premium 8-Speaker Sony Sound System, delivering rich, crystal-clear audio for an immersive, concert-like experience." [level=5]
+    - generic [ref=f59e214]:
+      - heading "SMART TECHNOLOGIES" [level=1] [ref=f59e215]
+      - 'heading "The tech interior of the new OMODA has many advanced features: 2 high-resolution dual screens of 12.3\" each, multi-color atmospheric interior lighting, wireless charging, high-quality acoustics and much more." [level=5] [ref=f59e216]'
+    - generic [ref=f59e219]:
+      - generic:
+        - generic [ref=f59e222]:
+          - heading "Performance and environmental friendliness" [level=2] [ref=f59e223]
+          - heading "The maximum power of the 1.5T+CVT25 Turbo engine is 197 hp, the maximum torque is 290 Nm." [level=2] [ref=f59e224]
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading "Intelligent ADAS systems" [level=2]
+    - generic [ref=f59e238]:
+      - generic [ref=f59e241]:
+        - generic [ref=f59e242] [cursor=pointer]: 5-Star ANCAP and Euro NCAP Ratings
+        - generic [ref=f59e243] [cursor=pointer]: Reinforced with 78% High-Strength Steel
+        - generic [ref=f59e244] [cursor=pointer]: Comprehensive ADAS Suite
+      - paragraph [ref=f59e247]: The Omoda 5 has earned top 5-Star safety ratings from both ANCAP and Euro-NCAP, two of the world's most stringent independent crash test authorities. This global recognition underscores its exceptional structural integrity and occupant protection.
+    - generic [ref=f59e248]:
+      - generic [ref=f59e249]:
+        - heading "OMODA 5 SPECS" [level=1] [ref=f59e250]
+        - generic [ref=f59e251]:
+          - generic [ref=f59e253] [cursor=pointer]: Comfort
+          - generic [ref=f59e254] [cursor=pointer]: Luxury
+      - generic [ref=f59e256]:
+        - heading "Powertrain" [level=2] [ref=f59e257]
+        - generic [ref=f59e258]:
+          - generic [ref=f59e259]:
+            - heading "Drivetrain" [level=2] [ref=f59e260]
+            - heading "Front Wheel Drive" [level=2] [ref=f59e261]
+          - generic [ref=f59e262]:
+            - heading "Engine Type" [level=2] [ref=f59e263]
+            - heading "1.5T" [level=2] [ref=f59e264]
+          - generic [ref=f59e265]:
+            - heading "Transmission" [level=2] [ref=f59e266]
+            - heading "CVT" [level=2] [ref=f59e267]
+          - generic [ref=f59e268]:
+            - heading "Max Power (hp)" [level=2] [ref=f59e269]
+            - heading "156" [level=2] [ref=f59e270]
+          - generic [ref=f59e271]:
+            - heading "Max Torque (Nm)" [level=2] [ref=f59e272]
+            - heading "230" [level=2] [ref=f59e273]
+          - generic [ref=f59e274]:
+            - heading "Maximum Speed (km/h)" [level=2] [ref=f59e275]
+            - heading "180" [level=2] [ref=f59e276]
+      - generic [ref=f59e278]:
+        - heading "Dimensions" [level=2] [ref=f59e279]
+        - generic [ref=f59e280]:
+          - generic [ref=f59e281]:
+            - heading "Length(mm)" [level=2] [ref=f59e282]
+            - heading "4,400" [level=2] [ref=f59e283]
+          - generic [ref=f59e284]:
+            - heading "Width(mm)" [level=2] [ref=f59e285]
+            - heading "1,830" [level=2] [ref=f59e286]
+          - generic [ref=f59e287]:
+            - heading "Height(mm)" [level=2] [ref=f59e288]
+            - heading "1,588" [level=2] [ref=f59e289]
+          - generic [ref=f59e290]:
+            - heading "Wheelbase(mm)" [level=2] [ref=f59e291]
+            - heading "2,630" [level=2] [ref=f59e292]
+          - generic [ref=f59e293]:
+            - heading "Fuel Capacity(l)" [level=2] [ref=f59e294]
+            - heading "51" [level=2] [ref=f59e295]
+      - generic [ref=f59e298]:
+        - heading "Chassis" [level=2] [ref=f59e299]
+        - generic [ref=f59e300]:
+          - generic [ref=f59e301]:
+            - heading "Suspension" [level=2] [ref=f59e302]
+            - 'heading "Front: McPherson / Rear: Torsion Beam" [level=2] [ref=f59e303]'
+          - generic [ref=f59e304]:
+            - heading "Brake" [level=2] [ref=f59e305]
+            - 'heading "Front: Ventilated disc / Rear: Solid disc" [level=2] [ref=f59e306]'
+          - generic [ref=f59e307]:
+            - heading "Wheels & Tires" [level=2] [ref=f59e308]
+            - heading "215/60 R17" [level=2] [ref=f59e309]
+      - generic [ref=f59e312]:
+        - heading "Advanced Driver Assistance System & Safety" [level=2] [ref=f59e313]
+        - generic [ref=f59e314]:
+          - generic [ref=f59e315]:
+            - heading "Airbags" [level=2] [ref=f59e316]
+            - heading "4" [level=2] [ref=f59e317]
+          - generic [ref=f59e318]:
+            - heading "360° Hd Panoramic Camera+Under Chassis View" [level=2] [ref=f59e319]
+            - heading "Rear Camera" [level=2] [ref=f59e320]
+          - generic [ref=f59e321]:
+            - heading "Advanced Driver Assistance System & Safety" [level=2] [ref=f59e322]
+            - heading "-" [level=2] [ref=f59e323]
+      - generic [ref=f59e326]:
+        - heading "Comfort & Convenience" [level=2] [ref=f59e327]
+        - generic [ref=f59e328]:
+          - generic [ref=f59e329]:
+            - heading "Heated And Ventilated Seats" [level=2] [ref=f59e330]
+            - heading "-" [level=2] [ref=f59e331]
+          - generic [ref=f59e332]:
+            - heading "Wireless Apple CarPlay&Android Auto" [level=2] [ref=f59e333]
+            - heading "With" [level=2] [ref=f59e334]
+          - generic [ref=f59e335]:
+            - heading "Instrument Cluster&Infotainment" [level=2] [ref=f59e336]
+            - heading "10.25-Inch Display" [level=2] [ref=f59e337]
+          - generic [ref=f59e338]:
+            - heading "Speakers" [level=2] [ref=f59e339]
+            - heading "6" [level=2] [ref=f59e340]
+          - generic [ref=f59e341]:
+            - heading "Intelligent Voice Control" [level=2] [ref=f59e342]
+            - heading "With" [level=2] [ref=f59e343]
+          - generic [ref=f59e344]:
+            - heading "Sunroof" [level=2] [ref=f59e345]
+            - heading "-" [level=2] [ref=f59e346]
+          - generic [ref=f59e347]:
+            - heading "Seat Material" [level=2] [ref=f59e348]
+            - heading "Leather" [level=2] [ref=f59e349]
+  - generic [ref=f59e73]:
+    - generic [ref=f59e74]:
+      - generic [ref=f59e75]:
+        - heading "Models" [level=2] [ref=f59e76]
+        - generic [ref=f59e77]:
+          - heading "OMODA C5" [level=3] [ref=f59e78] [cursor=pointer]
+          - heading "OMODA C7" [level=3] [ref=f59e79] [cursor=pointer]
+          - heading "JAECOO J5" [level=3] [ref=f59e80] [cursor=pointer]
+          - heading "JAECOO J7" [level=3] [ref=f59e81] [cursor=pointer]
+          - heading "JAECOO J7 SHS" [level=3] [ref=f59e82] [cursor=pointer]
+          - heading "JAECOO J8" [level=3] [ref=f59e83] [cursor=pointer]
+      - generic [ref=f59e84]:
+        - heading "Service" [level=2] [ref=f59e85]
+        - generic [ref=f59e86]:
+          - heading "Service Policy" [level=3] [ref=f59e87] [cursor=pointer]
+          - heading "Book Service" [level=3] [ref=f59e88] [cursor=pointer]
+          - heading "Spare Part" [level=3] [ref=f59e89] [cursor=pointer]
+          - heading "Warranty Terms" [level=3] [ref=f59e90] [cursor=pointer]
+    - generic [ref=f59e91]:
+      - generic [ref=f59e92]:
+        - img "OMODA & JAECOO logo" [ref=f59e93]
+        - generic [ref=f59e94]:
+          - generic [ref=f59e95] [cursor=pointer]: Privacy & Legal
+          - generic [ref=f59e96] [cursor=pointer]: Cookies
+      - generic [ref=f59e126]:
+        - img "logo" [ref=f59e127] [cursor=pointer]
+        - img "logo" [ref=f59e128] [cursor=pointer]
+        - img "logo" [ref=f59e129] [cursor=pointer]
+        - img "logo" [ref=f59e130] [cursor=pointer]
+        - img "logo" [ref=f59e131] [cursor=pointer]
+        - link [ref=f59e132] [cursor=pointer]:
+          - /url: https://www.linkedin.com/company/omoda-jaecoo-ksa/
+          - img "logo" [ref=f59e133]

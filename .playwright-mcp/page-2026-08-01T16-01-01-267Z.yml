@@ -1,0 +1,235 @@
+- generic [ref=f123e2]:
+  - generic [ref=f123e4]:
+    - generic [ref=f123e5]:
+      - link [ref=f123e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f123e8]: Звезда Невы
+    - generic [ref=f123e10]:
+      - link "Модельный ряд" [ref=f123e12] [cursor=pointer]:
+        - /url: "#range"
+      - link "Авто в наличии" [ref=f123e14] [cursor=pointer]:
+        - /url: "#stocks"
+      - link "Покупателям" [ref=f123e16] [cursor=pointer]:
+        - /url: ""
+      - link "Владельцам" [ref=f123e18] [cursor=pointer]:
+        - /url: ""
+    - link "󰏻 +7 (812) 565-84-10" [ref=f123e21] [cursor=pointer]:
+      - /url: tel:+78125658410
+      - generic [ref=f123e22]: 󰏻
+      - text: +7 (812) 565-84-10
+    - text: 󰏻
+  - generic [ref=f123e28]:
+    - generic [ref=f123e29]: SOLLERS SF5 (СФ5)
+    - list [ref=f123e32]:
+      - listitem [ref=f123e33]: ВЕЗИ. КАЙФУЙ. ЗАРАБАТЫВАЙ
+      - listitem [ref=f123e34]: от 2 745 000 ₽
+      - listitem [ref=f123e35]: Автоматическая коробка передач
+      - listitem [ref=f123e36]: 2 года гарантии без ограничения пробега
+      - listitem [ref=f123e37]: Произведён в России
+    - button "Получить предложение" [ref=f123e39] [cursor=pointer]
+  - generic [ref=f123e41]:
+    - generic [ref=f123e43]:
+      - generic [ref=f123e44]:
+        - img "VIP-условия для автопарков"
+      - generic [ref=f123e45]: VIP-условия для автопарков
+    - generic [ref=f123e48]:
+      - generic [ref=f123e49]:
+        - img "20% субсидия. ГосЛизинг"
+      - generic [ref=f123e50]: 20% субсидия. ГосЛизинг
+    - generic [ref=f123e53]:
+      - generic [ref=f123e54]:
+        - img "Субсидированный кредит от 0,01%"
+      - generic [ref=f123e55]: Субсидированный кредит от 0,01%
+  - generic [ref=f123e56]:
+    - generic [ref=f123e58]:
+      - heading "Sollers SF5" [level=3] [ref=f123e60]
+      - generic [ref=f123e63]:
+        - generic [ref=f123e64]: SF5
+        - generic [ref=f123e65]:
+          - generic [ref=f123e66]: Цельнометаллический
+          - generic [ref=f123e68] [cursor=pointer]: Грузопассажирский фургон
+          - generic [ref=f123e70] [cursor=pointer]: Автобус
+          - generic [ref=f123e72] [cursor=pointer]: Грузовой автомобиль
+        - generic [ref=f123e74]:
+          - generic [ref=f123e77]:
+            - generic [ref=f123e78]: Белый
+            - generic "Белый" [ref=f123e80]
+          - generic [ref=f123e82]:
+            - generic [ref=f123e83]: Средняя L2
+            - generic [ref=f123e85] [cursor=pointer]: Длинная L3
+        - generic [ref=f123e87]:
+          - generic [ref=f123e88]: от 2 745 000 ₽
+          - generic [ref=f123e90]:
+            - generic [ref=f123e92]:
+              - generic [ref=f123e93]: 󰄯
+              - generic [ref=f123e95]: Лизинг с авансом 10%
+            - generic [ref=f123e97]:
+              - generic [ref=f123e98]: 󰄯
+              - generic [ref=f123e100]: Трейд-Ин на Ваших условиях
+            - generic [ref=f123e102]:
+              - generic [ref=f123e103]: 󰄯
+              - generic [ref=f123e105]: Минус 20 000 ₽ от любого предложения конкурента
+          - button "Получить предложение" [ref=f123e107] [cursor=pointer]
+        - generic [ref=f123e109]:
+          - generic [ref=f123e110]:
+            - generic [ref=f123e111]: Габаритные размеры
+            - generic [ref=f123e112]:
+              - generic [ref=f123e113]:
+                - generic [ref=f123e114]: 5 650
+                - generic [ref=f123e115]: Общая длина, мм
+              - generic [ref=f123e116]:
+                - generic [ref=f123e117]: 2 405
+                - generic [ref=f123e118]: Общая высота, мм
+          - generic [ref=f123e119]:
+            - generic [ref=f123e120]: Грузовой отсек
+            - generic [ref=f123e121]:
+              - generic [ref=f123e122]:
+                - generic [ref=f123e123]: 3 220
+                - generic [ref=f123e124]: Длина на уровне пола, мм
+              - generic [ref=f123e125]:
+                - generic [ref=f123e126]: 1 630
+                - generic [ref=f123e127]: Высота, мм
+              - generic [ref=f123e128]:
+                - generic [ref=f123e129]: 1 850
+                - generic [ref=f123e130]: Ширина, мм
+              - generic [ref=f123e131]:
+                - generic [ref=f123e132]: 9,7
+                - generic [ref=f123e133]: Объём грузового отсека, м³
+              - generic [ref=f123e134]:
+                - generic [ref=f123e135]: "4"
+                - generic [ref=f123e136]: Палеты (1200×800мм)
+          - generic [ref=f123e137]:
+            - generic [ref=f123e138]: Масса и шасси
+            - generic [ref=f123e139]:
+              - generic [ref=f123e140]:
+                - generic [ref=f123e141]: 3 490
+                - generic [ref=f123e142]: Полная масса, кг
+              - generic [ref=f123e143]:
+                - generic [ref=f123e144]: Односкатные
+                - generic [ref=f123e145]: Тип задних колёс
+          - generic [ref=f123e146]:
+            - generic [ref=f123e147]: Двигатель и трансмиссия
+            - generic [ref=f123e148]:
+              - generic [ref=f123e149]:
+                - generic [ref=f123e150]: Дизельный
+                - generic [ref=f123e151]: Тип двигателя
+              - generic [ref=f123e152]:
+                - generic [ref=f123e153]: 6АТ
+                - generic [ref=f123e154]: Коробка передач
+              - generic [ref=f123e155]:
+                - generic [ref=f123e156]: "80"
+                - generic [ref=f123e157]: Объём топливного бака, л
+        - generic [ref=f123e160]:
+          - generic [ref=f123e161]:
+            - group "1 / 5" [ref=f123e162]
+            - group "2 / 5" [ref=f123e164]
+            - group "3 / 5" [ref=f123e166]
+            - group "4 / 5" [ref=f123e168]
+            - group "5 / 5" [ref=f123e170]
+          - button "Previous slide" [disabled]: prev
+          - button "Next slide" [ref=f123e172] [cursor=pointer]: next
+    - generic [ref=f123e177]:
+      - generic [ref=f123e178]: Воспользуйтесь услугой Лизинга для любой модели Sollers
+      - generic [ref=f123e180]: Специальные условия лизинга для физических и юридических лиц.
+      - button "Заявку на лизинг" [ref=f123e182] [cursor=pointer]
+    - generic [ref=f123e188]:
+      - generic [ref=f123e189]: Тест-драйв любой модели Sollers
+      - generic [ref=f123e191]: Пройдите тест-драйв любой модели Sollers и получите подарок на выбор.
+      - button "Пройти тест-драйв" [ref=f123e193] [cursor=pointer]
+    - generic [ref=f123e199]:
+      - generic [ref=f123e200]: Интересует сервисное обслуживание Sollers?
+      - generic [ref=f123e202]: Проведение планового ТО в строгом соответствии с регламентом производителя с использованием оригинальных запчастей является гарантией надежной работы и повышает остаточную стоимость автомобиля Sollers.
+      - button "Записаться на сервис" [ref=f123e204] [cursor=pointer]
+    - generic [ref=f123e208]:
+      - heading "Преимущества Звезда Невы Sollers" [level=3] [ref=f123e210]
+      - generic [ref=f123e212]:
+        - generic [ref=f123e213]: Экспертная диагностика и ремонт автомобиля
+        - generic [ref=f123e216]: Использование современного оборудования
+        - generic [ref=f123e219]: Высокая квалификация персонала
+        - generic [ref=f123e222]: Соблюдение регламентов производителя
+        - generic [ref=f123e225]: Экономия времени и удобное расположение
+        - generic [ref=f123e228]: Гарантия на выполненные работы
+    - generic [ref=f123e232]:
+      - generic [ref=f123e237]:
+        - generic [ref=f123e238]:
+          - generic [ref=f123e239]: Звезда Невы Sollers
+          - generic [ref=f123e240]: Санкт-Петербург
+          - generic [ref=f123e241]:
+            - link "󱆓 +7 (812) 565-84-10" [ref=f123e243] [cursor=pointer]:
+              - /url: tel:+78125658410
+              - generic [ref=f123e244]: 󱆓
+              - text: +7 (812) 565-84-10
+            - generic [ref=f123e245]:
+              - generic [ref=f123e246]: 󰟙
+              - text: Санкт-Петербург, Витебский просп., 17, корп. 1
+            - generic [ref=f123e247]:
+              - generic [ref=f123e248]: 󰅐
+              - text: Пн-Вс 09:00-21:00
+        - generic [ref=f123e249]:
+          - generic [ref=f123e250]: Доступны услуги
+          - generic [ref=f123e251]: Продажа авто, Кредитный брокер, Страхование, Сервисное обслуживание
+        - button "Получить консультацию" [ref=f123e253] [cursor=pointer]
+      - generic [ref=f123e255]:
+        - iframe [ref=f123e256]:
+          - generic [ref=f124e2]:
+            - generic [ref=f124e3]:
+              - link "Звезда Невы" [ref=f124e4] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/zvezda_nevy/117009426618?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+              - generic [ref=f124e5]:
+                - paragraph [ref=f124e6]: 3,9
+                - generic [ref=f124e7]:
+                  - list [ref=f124e9]:
+                    - listitem [ref=f124e10]
+                    - listitem [ref=f124e11]
+                    - listitem [ref=f124e12]
+                    - listitem [ref=f124e13]
+                    - listitem [ref=f124e14]
+                  - link "2 отзыва • 5 оценок" [ref=f124e15] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/zvezda_nevy/117009426618/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+              - link [ref=f124e17] [cursor=pointer]:
+                - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+            - generic [ref=f124e18]:
+              - paragraph [ref=f124e19]: Поставьте нам оценку
+              - link "Оставить отзыв" [ref=f124e20] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/zvezda_nevy/117009426618/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+            - generic [ref=f124e21]:
+              - generic [ref=f124e22]:
+                - generic [ref=f124e24]:
+                  - paragraph [ref=f124e25]: Даниил С.
+                  - paragraph [ref=f124e26]: 4 сентября 2025
+                - list [ref=f124e28]:
+                  - listitem [ref=f124e29]
+                  - listitem [ref=f124e30]
+                  - listitem [ref=f124e31]
+                  - listitem [ref=f124e32]
+                  - listitem [ref=f124e33]
+                - paragraph [ref=f124e34]: Обслуживал Атлант. Все понравилось. Быстро. Грамотно. Оригинальные запчасти и масла, в наличии.
+              - generic [ref=f124e35]:
+                - generic [ref=f124e37]:
+                  - paragraph [ref=f124e38]: Павел Павлюченко
+                  - paragraph [ref=f124e39]: 12 апреля
+                - list [ref=f124e41]:
+                  - listitem [ref=f124e42]
+                  - listitem [ref=f124e43]
+                  - listitem [ref=f124e44]
+                  - listitem [ref=f124e45]
+                  - listitem [ref=f124e46]
+                - paragraph [ref=f124e47]:
+                  - text: 12.04 записался для прохождения ТО1 Солерс SF1. Сходу мастер озвучил стоимость 20700р. На мой вопрос - почему на информационном стенде указа цена 14700, начал мямлить что-то про изменившиеся расценки. Когда задал вопрос о том, что входит в ТО, мастер начал путаться в показаниях. Потом кому-то позвонил и сообщил, что , якобы , мне посчитали дорогое масло в канистры, а если залить бочковое, то ТО будет как раз- 14700р. Потом мастер встал, обрадовал меня, что по времени ТО займет 3-4часа и куда-то вышел. А вернувшись сообщил, что стоимость будет всё таки 17700!) Тут я окончательно понял, что нахожусь на базаре, а не у официального дилера. Дальше торговаться не стал, и забрав документы, удалился. Было, конечно, весело, но жаль потраченного времени.
+                  - paragraph [ref=f124e48]:
+                    - text: ...
+                    - link "ещё" [ref=f124e49] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/zvezda_nevy/117009426618/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+        - link "Звезда Невы Sollers на карте Санкт‑Петербурга — Яндекс Карты" [ref=f123e257] [cursor=pointer]:
+          - /url: https://yandex.ru/maps/org/zvezda_nevy_sollers/117009426618/
+    - generic [ref=f123e261]:
+      - link [ref=f123e262] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f123e264]: Вся информация, размещенная на настоящем интернет-сайте, носит исключительно информационный характер и ни при каких условиях не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Для получения точной информации о стоимости товаров и услуг, пожалуйста, обращайтесь к менеджерам компании АО «Звезда Невы Sollers»
+      - generic [ref=f123e266]:
+        - text: Вы можете купить новый автомобиль Sollers в автосалоне официального дилера – Звезда Невы Sollers, актуальную цену моделей и комплектаций можно узнать, связавшись с нами по телефону
+        - link "+7 (812) 565-84-10" [ref=f123e267] [cursor=pointer]:
+          - /url: tel:+78125658410
+        - text: .
+      - generic [ref=f123e268]: Права на сайт принадлежат ООО «Звезда Невы (ИНН 7810285325, ОГРН 1037821066480).
+      - generic [ref=f123e269]: © ООО «Звезда Невы. Все права защищены 2026

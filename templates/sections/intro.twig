@@ -1,98 +1,54 @@
 <section class="intro">
-  {% if project is defined and project.gallery is defined %}
-    {% set slider_items = [] %}
-    
-    {% if project.gallery[0] is defined %}
-      {% if project.gallery[0].horizontal is defined or project.gallery[0].vertical is defined %}
-        {% set horizontal_items = [] %}
-        {% set vertical_items = [] %}
-        
-        {% set found_horizontal = false %}
-        {% if project.gallery[0].horizontal is defined %}
-          {% for image in project.gallery[0].horizontal %}
-            {% if image.cover is defined and image.cover and not found_horizontal %}
-              {% set horizontal_items = horizontal_items|merge([{
-                'image': {
-                  'raw': image.raw,
-                  '800': image['800']|default(null),
-                  '1600': image['1600']|default(null)
-                },
-                'alt': image.alt|default(project.title),
-                'type': 'horizontal'
-              }]) %}
-              {% set found_horizontal = true %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        
-        {% set found_vertical = false %}
-        {% if project.gallery[0].vertical is defined %}
-          {% for image in project.gallery[0].vertical %}
-            {% if image.cover is defined and image.cover and not found_vertical %}
-              {% set vertical_items = vertical_items|merge([{
-                'image': {
-                  'raw': image.raw,
-                  '800': image['800']|default(null),
-                  '1600': image['1600']|default(null)
-                },
-                'alt': image.alt|default(project.title),
-                'type': 'vertical'
-              }]) %}
-              {% set found_vertical = true %}
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        
-        {% if horizontal_items|length > 0 %}
-          {% set slider_items = horizontal_items %}
-        {% elseif vertical_items|length > 0 %}
-          {% set slider_items = vertical_items %}
-        {% endif %}
-      {% else %}
-        {% for image in project.gallery %}
-          {% if image.cover is defined and image.cover %}
-            {% set slider_items = slider_items|merge([{
-              'image': {
-                'raw': image.raw,
-                '800': image['800']|default(null),
-                '1600': image['1600']|default(null)
-              },
-              'alt': image.alt|default(project.title)
-            }]) %}
-          {% endif %}
+  <div class="swiper" id="{{ data.slider.id|default('introSlider') }}" data-settings="{{ data.slider.settings|default({})|json_encode }}">
+    <div class="swiper-wrapper">
+      {% if data.slider.items is defined and data.slider.items is not empty %}
+        {% for slide in data.slider.items %}
+          <div class="section__item slide-wrap swiper-slide">
+              <div class="section__subitem cover-wrap">
+                {% if slide.video is defined %}
+                  <video class="intro__video cover" autoplay muted loop playsinline webkit-playsinline disableRemotePlayback preload="auto" poster="{{ slide.cover is defined ? url(slide.cover) : '' }}">
+                    <source src="{{ url(slide.video) }}" type="video/mp4">
+                  </video>
+                {% elseif slide.image is defined %}
+                  {% include 'components/picture.twig' with {
+                    image: slide.image,
+                    alt: slide.alt|default(''),
+                    class: 'img-responsive',
+                    style: 'width: 100%; height: 100%; object-fit: cover;',
+                    picture_style: 'display: block; width: 100%; height: 100%;',
+                    sizes_preset: 'hero',
+                    loading: loop.first ? 'eager' : 'lazy'
+                  } %}
+                {% elseif slide.cover is defined %}
+                  <div class="cover" style="background-image: url('{{ url(slide.cover) }}');"></div>
+                {% endif %}
+              </div>
+              {% if data.heading is defined and (loop.first or not data.slider.items is defined) %}
+                <div class="container">
+                  <div class="section__item heading-wrap text-center">
+                    {% include 'components/heading.twig' with {'item': data.heading} %}
+                  </div>
+                </div>
+              {% endif %}
+          </div>
         {% endfor %}
+      {% else %}
+        <div class="section__item slide-wrap swiper-slide">
+            <div class="section__subitem cover-wrap">
+              <div class="cover" style="--bg-color: {{ data.background|default('transparent') }};"></div>
+            </div>
+            {% if data.heading is defined %}
+              <div class="container">
+                <div class="section__item heading-wrap text-center">
+                  {% include 'components/heading.twig' with {'item': data.heading} %}
+                </div>
+              </div>
+            {% endif %}
+        </div>
       {% endif %}
-    {% endif %}
-    
-    {% if slider_items|length > 0 %}
-      {% set slider_navigation_enabled = slider_items|length > 1 %}
-      {% set slider_pagination_enabled = slider_items|length > 1 %}
-      {% include 'components/slider.twig' with { 
-        items: slider_items, 
-        slider_id: 'projectSlider',
-        slider_settings: {
-          'navigation': {'enabled': slider_navigation_enabled, 'color': '#fff', 'size': '3rem'},
-          'pagination': {'enabled': slider_pagination_enabled, 'color': '#fff'},
-          'loop': slider_items|length > 1,
-          'allowTouchMove': slider_items|length > 1
-        }
-      } %}
-    {% elseif data is defined and data.slider is defined and data.slider.items is defined %}
-      {% include 'components/slider.twig' with { 
-        items: data.slider.items, 
-        slider_id: data.slider.id|default('introSlider'),
-        slider_settings: data.slider
-      } %}
-    {% else %}
-      <p>Ошибка: данные для слайдера не найдены</p>
-    {% endif %}
-  {% elseif data is defined and data.slider is defined and data.slider.items is defined %}
-    {% include 'components/slider.twig' with { 
-      items: data.slider.items, 
-      slider_id: data.slider.id|default('introSlider'),
-      slider_settings: data.slider
-    } %}
-  {% else %}
-    <p>Ошибка: данные для слайдера не найдены</p>
-  {% endif %}
-</section> 
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>

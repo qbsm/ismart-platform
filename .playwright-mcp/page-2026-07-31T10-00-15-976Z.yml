@@ -1,0 +1,356 @@
+- generic "Google Карты" [ref=f459e2]:
+  - generic [ref=f459e3]:
+    - application "Карта·Используйте клавиши со стрелками, чтобы перемещаться по карте.·Чтобы получить подробную информацию о месте, нажмите клавишу с соответствующим номером." [ref=f459e8]
+    - search [ref=f459e14]:
+      - generic [ref=f459e15]:
+        - combobox [ref=f459e17]: БИЗНЕС КАР ОРЁЛ
+        - button "Поиск" [ref=f459e19] [cursor=pointer]:
+          - generic [ref=f459e20]: 
+        - button "Закрыть" [ref=f459e22] [cursor=pointer]:
+          - generic [ref=f459e23]: 
+    - generic [ref=f459e24]:
+      - generic [ref=f459e25]:
+        - list [ref=f459e27]:
+          - listitem [ref=f459e28]:
+            - button "Меню" [ref=f459e29] [cursor=pointer]:
+              - generic [ref=f459e30]: 
+          - listitem [ref=f459e32]:
+            - button "Сохранено" [ref=f459e33] [cursor=pointer]:
+              - generic [ref=f459e34]: 
+          - listitem [ref=f459e38]:
+            - button "Недавние" [disabled] [ref=f459e39]:
+              - generic [ref=f459e40]: 
+          - listitem [ref=f459e45]:
+            - button "Скачать приложение" [ref=f459e46] [cursor=pointer]:
+              - generic [ref=f459e47]: 
+        - main "БИЗНЕС КАР ОРЁЛ" [ref=f459e55]:
+          - generic [ref=f459e56]:
+            - generic [ref=f459e57]:
+              - 'button "Фото: БИЗНЕС КАР ОРЁЛ" [active] [ref=f459e59] [cursor=pointer]'
+              - button "Посмотреть фото" [ref=f459e60] [cursor=pointer]:
+                - generic [ref=f459e61]: 
+            - generic [ref=f459e65]:
+              - heading "БИЗНЕС КАР ОРЁЛ" [level=1] [ref=f459e67]
+              - generic [ref=f459e69]:
+                - generic [ref=f459e70]:
+                  - generic [ref=f459e71]:
+                    - generic [ref=f459e72]:
+                      - text: 4,4
+                      - img "4,4-звездочные" [ref=f459e73]
+                    - img "150 отзывов" [ref=f459e81]: (150)
+                  - button "Подробнее о раскрытии по юридическим причинам информации касательно общедоступных отзывов на Google Картах" [ref=f459e87]:
+                    - generic [ref=f459e90]: 
+                - generic [ref=f459e92]:
+                  - button "Автосалон" [ref=f459e95]
+                  - text: ·
+                  - img "Вход для инвалидов-колясочников" [ref=f459e96]: 
+            - tablist [ref=f459e99]:
+              - tab "Обзор места \"БИЗНЕС КАР ОРЁЛ\"" [selected] [ref=f459e100]:
+                - generic [ref=f459e101]: Обзор
+              - tab "Отзывы о месте \"БИЗНЕС КАР ОРЁЛ\"" [ref=f459e104]:
+                - generic [ref=f459e105]: Отзывы
+              - tab "О месте \"БИЗНЕС КАР ОРЁЛ\"" [ref=f459e108]:
+                - generic [ref=f459e109]: Информация
+            - region "Действия для места \"БИЗНЕС КАР ОРЁЛ\"" [ref=f459e112]:
+              - button "Проложить маршрут" [ref=f459e114] [cursor=pointer]:
+                - generic [ref=f459e115]: 
+              - button "Сохранить" [ref=f459e119] [cursor=pointer]:
+                - generic [ref=f459e120]: 
+              - button "Искать поблизости" [ref=f459e124] [cursor=pointer]:
+                - generic [ref=f459e125]: 
+              - button "Отправить на телефон" [ref=f459e129] [cursor=pointer]:
+                - generic [ref=f459e130]: 
+              - button "Поделиться" [ref=f459e134] [cursor=pointer]:
+                - generic [ref=f459e135]: 
+            - region "О месте \"БИЗНЕС КАР ОРЁЛ\"" [ref=f459e139]:
+              - button [ref=f459e140] [cursor=pointer]:
+                - generic [ref=f459e142]:
+                  - group "Можно посетить магазин." [ref=f459e145]:
+                    - text: ·
+                    - generic [ref=f459e146]: 
+                    - generic [ref=f459e147]: Посещение магазина
+                  - generic [ref=f459e148]: 
+            - region "Информация о месте \"БИЗНЕС КАР ОРЁЛ\"" [ref=f459e151]:
+              - generic [ref=f459e152]:
+                - 'button "Адрес: Карачевское ш., 77 корп. 1, Орёл, Орловская обл., Россия, 302005" [ref=f459e153] [cursor=pointer]':
+                  - generic [ref=f459e154]:
+                    - generic [ref=f459e155]: 
+                    - generic [ref=f459e157]: Карачевское ш., 77 корп. 1, Орёл, Орловская обл., Россия, 302005
+                - button "Скопировать адрес" [ref=f459e161] [cursor=pointer]:
+                  - generic [ref=f459e162]: 
+              - button "Часы работы Открыто · Закроется в 20:30 Показать часы работы за неделю Обновлено компанией 6 недель назад" [ref=f459e165] [cursor=pointer]:
+                - img "Часы работы" [ref=f459e166]: 
+                - generic [ref=f459e167]:
+                  - generic [ref=f459e168]:
+                    - generic [ref=f459e169]: Открыто · Закроется в 20:30
+                    - img "Показать часы работы за неделю" [ref=f459e171]: 
+                  - generic [ref=f459e172]: Обновлено компанией 6 недель назад
+              - generic [ref=f459e173]:
+                - 'link "Сайт: business-car.ru" [ref=f459e174] [cursor=pointer]':
+                  - /url: http://business-car.ru/
+                  - generic [ref=f459e175]:
+                    - generic [ref=f459e176]: 
+                    - generic [ref=f459e178]: business-car.ru
+                - generic [ref=f459e180]:
+                  - link "Перейти на сайт" [ref=f459e182] [cursor=pointer]:
+                    - /url: http://business-car.ru/
+                    - generic [ref=f459e183]: 
+                  - button "Скопировать ссылку на сайт" [ref=f459e186] [cursor=pointer]:
+                    - generic [ref=f459e187]: 
+              - generic [ref=f459e189]:
+                - 'button "Телефон: +7 486 222-25-71" [ref=f459e190] [cursor=pointer]':
+                  - generic [ref=f459e191]:
+                    - generic [ref=f459e192]: 
+                    - generic [ref=f459e194]: +7 486 222-25-71
+                - generic [ref=f459e196]:
+                  - button "Скопировать номер" [ref=f459e198] [cursor=pointer]:
+                    - generic [ref=f459e199]: 
+                  - link "Позвонить по этому номеру" [ref=f459e202] [cursor=pointer]:
+                    - /url: tel:+74862222571
+                    - generic [ref=f459e203]: 
+              - generic [ref=f459e205]:
+                - 'button "Код Plus Code: W2WJ+F5 Орёл, Россия" [ref=f459e206] [cursor=pointer]':
+                  - generic [ref=f459e207]:
+                    - generic [ref=f459e208]: 
+                    - generic [ref=f459e210]: W2WJ+F5 Орёл, Россия
+                - generic [ref=f459e212]:
+                  - button "Копировать код Plus Code" [ref=f459e214] [cursor=pointer]:
+                    - generic [ref=f459e215]: 
+                  - button "Подробнее о +кодах" [ref=f459e218] [cursor=pointer]:
+                    - generic [ref=f459e219]: 
+              - button "Ваша история Карт" [ref=f459e222] [cursor=pointer]:
+                - generic [ref=f459e223]:
+                  - generic [ref=f459e224]: 
+                  - generic [ref=f459e226]: Ваша история Карт
+            - button "Добавить ярлык" [ref=f459e229]:
+              - generic [ref=f459e230]:
+                - generic [ref=f459e231]: 
+                - generic [ref=f459e232]: Добавить ярлык
+            - region "Посещаемость места \"БИЗНЕС КАР ОРЁЛ\"" [ref=f459e235]:
+              - generic [ref=f459e236]:
+                - heading "Посещаемость" [level=2] [ref=f459e237]
+                - button "по пятницам" [ref=f459e240] [cursor=pointer]:
+                  - generic [ref=f459e241]:
+                    - generic [ref=f459e242]: по пятницам
+                    - generic [ref=f459e243]: 
+                - button "Информация о посещаемости" [ref=f459e244] [cursor=pointer]:
+                  - generic [ref=f459e245]: 
+              - button "Предыдущий день" [ref=f459e247] [cursor=pointer]:
+                - generic [ref=f459e248]: 
+              - generic [ref=f459e249]:
+                - 'img "Загруженность в 06:00: 0 %." [ref=f459e250]':
+                  - generic [ref=f459e252]: "6"
+                - 'img "Загруженность в 07:00: 0 %." [ref=f459e253]'
+                - 'img "Загруженность в 08:00: 39 %." [ref=f459e255]'
+                - 'img "Загруженность в 09:00: 60 %." [ref=f459e257]':
+                  - generic [ref=f459e259]: "9"
+                - 'img "Загруженность в 10:00: 76 %." [ref=f459e260]'
+                - 'img "Загруженность в 11:00: 79 %." [ref=f459e262]'
+                - 'img "Загруженность в 12:00: 76 %." [ref=f459e264]':
+                  - generic [ref=f459e266]: "12"
+                - 'img "Загруженность в 13:00: 67 %." [ref=f459e267]'
+                - 'img "Загруженность в 14:00: 72 %." [ref=f459e269]'
+                - 'img "Загруженность в 15:00: 67 %." [ref=f459e271]':
+                  - generic [ref=f459e273]: "15"
+                - 'img "Загруженность в 16:00: 69 %." [ref=f459e274]'
+                - 'img "Загруженность в 17:00: 69 %." [ref=f459e276]'
+                - 'img "Загруженность в 18:00: 76 %." [ref=f459e278]':
+                  - generic [ref=f459e280]: "18"
+                - 'img "Загруженность в 19:00: 60 %." [ref=f459e281]'
+                - 'img "Загруженность в 20:00: 48 %." [ref=f459e283]'
+                - 'img "Загруженность в 21:00: 0 %." [ref=f459e285]':
+                  - generic [ref=f459e287]: "21"
+                - 'img "Загруженность в 22:00: 0 %." [ref=f459e288]'
+                - 'img "Загруженность в 23:00: 0 %." [ref=f459e290]'
+              - button "Следующий день" [ref=f459e292] [cursor=pointer]:
+                - generic [ref=f459e293]: 
+            - generic [ref=f459e295]:
+              - heading "Фото и видео" [level=2] [ref=f459e297]
+              - region "БИЗНЕС КАР ОРЁЛ на фото" [ref=f459e298]:
+                - generic [ref=f459e301]:
+                  - generic [ref=f459e302] [cursor=pointer]:
+                    - button "Все" [ref=f459e303]
+                    - generic: Все
+                  - generic [ref=f459e304] [cursor=pointer]:
+                    - button "Внутри" [ref=f459e305]
+                    - generic: Внутри
+                  - generic [ref=f459e306] [cursor=pointer]:
+                    - button "Автомобильный дилер" [ref=f459e307]
+                    - generic: Автомобильный дилер
+                  - generic [ref=f459e308] [cursor=pointer]:
+                    - button "Панорамы и Просмотр улиц" [ref=f459e309]
+                    - generic: Панорамы и Просмотр улиц
+            - button "Добавить фото и видео" [ref=f459e314] [cursor=pointer]:
+              - generic [ref=f459e315]:
+                - generic [ref=f459e316]: 
+                - generic [ref=f459e317]: Добавить фото и видео
+            - heading "Средняя оценка" [level=2] [ref=f459e321]
+            - generic [ref=f459e323] [cursor=pointer]:
+              - table [ref=f459e325]:
+                - rowgroup [ref=f459e326]:
+                  - img "5-звездочные,105 отзывов" [ref=f459e327]: "5"
+                  - img "4-звездочные,21 отзыв" [ref=f459e330]: "4"
+                  - img "3-звездочные,10 отзывов" [ref=f459e333]: "3"
+                  - img "2-звездочные,8 отзывов" [ref=f459e336]: "2"
+                  - img "1-звездочные,6 отзывов" [ref=f459e339]: "1"
+              - generic [ref=f459e342]:
+                - generic [ref=f459e343]: 4,4
+                - img "4,4-звездочные" [ref=f459e344]
+                - 'button "Отзывов: 150" [ref=f459e350]'
+            - generic [ref=f459e354]:
+              - generic [ref=f459e355]: Отзывы не подтверждены.
+              - button "Подробнее о раскрытии по юридическим причинам информации касательно общедоступных отзывов на Google Картах" [ref=f459e359]:
+                - generic [ref=f459e362]: 
+            - generic [ref=f459e365]:
+              - link "Фото автора отзыва \"\"Спасибо огромное персоналу Тайота центр Орел.\"\"" [ref=f459e366] [cursor=pointer]:
+                - /url: https://www.google.com/maps/contrib/110598468432700815194?hl=ru-FI
+              - button "\"Спасибо огромное персоналу Тайота центр Орел.\"" [ref=f459e367] [cursor=pointer]
+            - generic [ref=f459e370]:
+              - link "Фото автора отзыва \"\"Я очень доволен ремонтом авто.\"\"" [ref=f459e371] [cursor=pointer]:
+                - /url: https://www.google.com/maps/contrib/117093676341353751291?hl=ru-FI
+              - button "\"Я очень доволен ремонтом авто.\"" [ref=f459e372] [cursor=pointer]
+            - generic [ref=f459e375]:
+              - link "Фото автора отзыва \"\"Просто масленный сервис сделать после гарантии подойдёт и по цене и качеству.\"\"" [ref=f459e376] [cursor=pointer]:
+                - /url: https://www.google.com/maps/contrib/109774133331884663206?hl=ru-FI
+              - button "\"Просто масленный сервис сделать после гарантии подойдёт и по цене и качеству.\"" [ref=f459e377] [cursor=pointer]
+            - button "Оставить отзыв" [ref=f459e382] [cursor=pointer]:
+              - generic [ref=f459e383]:
+                - generic [ref=f459e384]: 
+                - generic [ref=f459e385]: Оставить отзыв
+            - generic [ref=f459e388]:
+              - heading "Все отзывы" [level=2] [ref=f459e390]
+              - button "Поиск отзывов" [ref=f459e392] [cursor=pointer]:
+                - generic [ref=f459e393]: 
+            - generic "Илона Арнаутова" [ref=f459e395]:
+              - generic [ref=f459e397]:
+                - 'button "Илона Арнаутова: фото" [ref=f459e398]'
+                - generic [ref=f459e400]:
+                  - button "Илона Арнаутова Местный эксперт · 223 отзыва · 358 фото" [ref=f459e402]:
+                    - generic [ref=f459e403]: Илона Арнаутова
+                    - generic [ref=f459e404]: Местный эксперт · 223 отзыва · 358 фото
+                  - button "Действия с отзывом пользователя Илона Арнаутова" [ref=f459e405] [cursor=pointer]:
+                    - generic [ref=f459e406]: 
+                - generic [ref=f459e408]:
+                  - generic [ref=f459e409]:
+                    - img "5 звезд" [ref=f459e410]:
+                      - generic [ref=f459e411]: 
+                      - generic [ref=f459e412]: 
+                      - generic [ref=f459e413]: 
+                      - generic [ref=f459e414]: 
+                      - generic [ref=f459e415]: 
+                    - generic [ref=f459e416]: 4 года назад
+                  - generic [ref=f459e417]: Отличный салон,очень приятный персонал, давно уже не видела подобного,спасибо ещё раз за машину,всем рекомендую. Не пожалели что с другой области приехали )
+                  - button "Фото 1 в отзыве пользователя Илона Арнаутова" [ref=f459e420] [cursor=pointer]
+                  - generic [ref=f459e421]:
+                    - button "Лайк" [ref=f459e422]:
+                      - generic [ref=f459e423] [cursor=pointer]:
+                        - generic [ref=f459e424]: 
+                        - generic [ref=f459e425]: Нравится
+                    - button "Поделиться отзывом пользователя Илона Арнаутова" [ref=f459e427]:
+                      - generic [ref=f459e428] [cursor=pointer]:
+                        - generic [ref=f459e429]: 
+                        - generic [ref=f459e430]: Поделиться
+            - generic "Алексей Жуков" [ref=f459e434]:
+              - generic [ref=f459e436]:
+                - 'button "Алексей Жуков: фото" [ref=f459e437]'
+                - generic [ref=f459e439]:
+                  - button "Алексей Жуков 7 отзывов" [ref=f459e441]:
+                    - generic [ref=f459e442]: Алексей Жуков
+                    - generic [ref=f459e443]: 7 отзывов
+                  - button "Действия с отзывом пользователя Алексей Жуков" [ref=f459e444] [cursor=pointer]:
+                    - generic [ref=f459e445]: 
+                - generic [ref=f459e447]:
+                  - generic [ref=f459e448]:
+                    - img "4 звезды" [ref=f459e449]:
+                      - generic [ref=f459e450]: 
+                      - generic [ref=f459e451]: 
+                      - generic [ref=f459e452]: 
+                      - generic [ref=f459e453]: 
+                      - generic [ref=f459e454]: 
+                    - generic [ref=f459e455]: 5 лет назад
+                  - generic [ref=f459e457]:
+                    - text: Все вроде ок, но несколько раз приезжал и ни разу на тест драйв не удалось на месте записаться. С учётом того что человек хочет купить автомобиль как можно быстрее ему даже не дают без предварительной записи проехаться. Дают визитку на …
+                    - button "Ещё" [ref=f459e459] [cursor=pointer]
+                  - generic [ref=f459e460]:
+                    - button "Лайк" [ref=f459e461]:
+                      - generic [ref=f459e462] [cursor=pointer]:
+                        - generic [ref=f459e463]: 
+                        - generic [ref=f459e464]: Нравится
+                    - button "Поделиться отзывом пользователя Алексей Жуков" [ref=f459e466]:
+                      - generic [ref=f459e467] [cursor=pointer]:
+                        - generic [ref=f459e468]: 
+                        - generic [ref=f459e469]: Поделиться
+            - generic "Ярослав Морозов" [ref=f459e473]:
+              - generic [ref=f459e475]:
+                - 'button "Ярослав Морозов: фото" [ref=f459e476]'
+                - generic [ref=f459e478]:
+                  - button "Ярослав Морозов 2 отзыва · 1 фото" [ref=f459e480]:
+                    - generic [ref=f459e481]: Ярослав Морозов
+                    - generic [ref=f459e482]: 2 отзыва · 1 фото
+                  - button "Действия с отзывом пользователя Ярослав Морозов" [ref=f459e483] [cursor=pointer]:
+                    - generic [ref=f459e484]: 
+                - generic [ref=f459e486]:
+                  - generic [ref=f459e487]:
+                    - img "5 звезд" [ref=f459e488]:
+                      - generic [ref=f459e489]: 
+                      - generic [ref=f459e490]: 
+                      - generic [ref=f459e491]: 
+                      - generic [ref=f459e492]: 
+                      - generic [ref=f459e493]: 
+                    - generic [ref=f459e494]: 5 лет назад
+                  - generic [ref=f459e496]:
+                    - text: Я, владелец а/м TOYOTA обратился для покраски задней правой двери к официальному дилеру TOYOTA в Орле ООО «БИЗНЕС КАР ОРЕЛ». …
+                    - button "Ещё" [ref=f459e498] [cursor=pointer]
+                  - generic [ref=f459e499]:
+                    - button "1 лайк" [ref=f459e500]:
+                      - generic [ref=f459e501] [cursor=pointer]:
+                        - generic [ref=f459e502]: 
+                        - generic [ref=f459e503]: "1"
+                    - button "Поделиться отзывом пользователя Ярослав Морозов" [ref=f459e505]:
+                      - generic [ref=f459e506] [cursor=pointer]:
+                        - generic [ref=f459e507]: 
+                        - generic [ref=f459e508]: Поделиться
+            - button "Ещё отзывы (147)" [ref=f459e512]
+            - heading "Похожие запросы" [level=2] [ref=f459e518]
+            - generic [ref=f459e522]:
+              - link "ВЧ Сервис·3,9-звездочные·228 отзывов·Автосалон" [ref=f459e523] [cursor=pointer]:
+                - generic [ref=f459e526]:
+                  - generic [ref=f459e527]: ВЧ Сервис
+                  - 'img "3,9-звездочные Отзывов: 228" [ref=f459e531]':
+                    - text: 3,9(228)
+                    - img "Подробнее о юридически обязательном раскрытии информации для общедоступных отзывов на Google Картах" [ref=f459e533]: 
+                  - generic [ref=f459e534]: Автосалон
+              - link "Официальный дилер LADA БН-Моторс·4,5-звездочные·445 отзывов·Автосалон" [ref=f459e535] [cursor=pointer]:
+                - generic [ref=f459e538]:
+                  - generic [ref=f459e539]: Официальный дилер LADA БН-Моторс
+                  - 'img "4,5-звездочные Отзывов: 445" [ref=f459e543]':
+                    - text: 4,5(445)
+                    - img "Подробнее о юридически обязательном раскрытии информации для общедоступных отзывов на Google Картах" [ref=f459e545]: 
+                  - generic [ref=f459e546]: Автосалон
+              - link "Автомобили с пробегом БН-Моторс·4,6-звездочные·49 отзывов·Продажа автомобилей" [ref=f459e547] [cursor=pointer]:
+                - generic [ref=f459e550]:
+                  - generic [ref=f459e551]: Автомобили с пробегом БН-Моторс
+                  - 'img "4,6-звездочные Отзывов: 49" [ref=f459e555]':
+                    - text: 4,6(49)
+                    - img "Подробнее о юридически обязательном раскрытии информации для общедоступных отзывов на Google Картах" [ref=f459e557]: 
+                  - generic [ref=f459e558]: Продажа автомобилей
+              - link "КорсГрупп, официальный дилер Geely·3,6-звездочные·19 отзывов·Автосалон" [ref=f459e559] [cursor=pointer]:
+                - generic [ref=f459e562]:
+                  - generic [ref=f459e563]: КорсГрупп, официальный дилер Geely
+                  - 'img "3,6-звездочные Отзывов: 19" [ref=f459e567]':
+                    - text: 3,6(19)
+                    - img "Подробнее о юридически обязательном раскрытии информации для общедоступных отзывов на Google Картах" [ref=f459e569]: 
+                  - generic [ref=f459e570]: Автосалон
+              - link "Бриллианс Мотор·0,0-звездочные·Автосалон" [ref=f459e571] [cursor=pointer]:
+                - generic [ref=f459e574]:
+                  - generic [ref=f459e575]: Бриллианс Мотор
+                  - generic [ref=f459e577]: Отзывов нет
+                  - generic [ref=f459e578]: Автосалон
+            - heading "Результаты поиска в Интернете" [level=2] [ref=f459e583]
+            - region [ref=f459e586]
+            - link "Об этих данных" [ref=f459e625] [cursor=pointer]:
+              - /url: https://support.google.com/local-listings?p=how_google_sources&authuser=0&hl=ru
+      - generic [ref=f459e628]:
+        - button "Скрыть боковую панель" [ref=f459e629] [cursor=pointer]:
+          - generic [ref=f459e630]: 
+        - generic [ref=f459e631]: Скрыть боковую панель

@@ -1,0 +1,198 @@
+- generic [active] [ref=f273e1]:
+  - generic [ref=f273e2]:
+    - generic:
+      - generic:
+        - banner:
+          - generic [ref=f273e10]:
+            - generic [ref=f273e16]:
+              - textbox "Search for and select places" [ref=f273e19]: OMODA Бизнес Кар
+              - iframe [ref=f273e20]:
+                
+            - button "Search" [ref=f273e22] [cursor=pointer]
+            - button "Close" [ref=f273e29] [cursor=pointer]
+      - complementary [ref=f273e34]:
+        - generic [ref=f273e37]:
+          - generic [ref=f273e38]:
+            - generic [ref=f273e39]:
+              - heading "OMODA Бизнес Кар" [level=1] [ref=f273e41]
+              - generic [ref=f273e42]:
+                - list [ref=f273e43]:
+                  - listitem [ref=f273e44]:
+                    - button "Jaecoo Business Car Jaecoo Business Car Rating 5 Out of 5 Rating 5.0 52 ratings Open until 8:30 PM · ," [ref=f273e45] [cursor=pointer]:
+                      - link "Jaecoo Business Car" [ref=f273e46]:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/
+                      - generic [ref=f273e48]:
+                        - link [ref=f273e51]:
+                          - /url: /maps/org/jaecoo_business_car/198721291868/gallery/
+                          - text: Photos
+                        - generic [ref=f273e54]: Jaecoo Business Car
+                        - link "Rating 5 Out of 5 Rating 5.0 52 ratings" [ref=f273e60]:
+                          - /url: /maps/org/jaecoo_business_car/198721291868/reviews/
+                          - generic [ref=f273e61]:
+                            - generic [ref=f273e62]:
+                              - generic "Rating 5 Out of 5" [ref=f273e63]
+                              - generic [ref=f273e74]:
+                                - generic [ref=f273e75]: Rating
+                                - text: "5.0"
+                            - generic [ref=f273e76]: 52 ratings
+                            - generic [ref=f273e77]: 52 ratings
+                        - generic [ref=f273e79]:
+                          - generic [ref=f273e80]: Open until 8:30 PM
+                          - generic [ref=f273e82]:
+                            - text: ·
+                            - generic [ref=f273e83]:
+                              - link [ref=f273e84]:
+                                - /url: /maps/10/orel/category/car_dealership/184105322/
+                                - text: Car dealership
+                              - text: ","
+                              - link [ref=f273e85]:
+                                - /url: /maps/10/orel/category/car_service_auto_repair/184105246/
+                                - text: car service, auto repair
+                  - listitem [ref=f273e86]:
+                    - button "Omoda Business Car Omoda Business Car Rating 4.6 Out of 5 Rating 4.6 127 ratings Open until 8:30 PM · ," [ref=f273e87] [cursor=pointer]:
+                      - link "Omoda Business Car" [ref=f273e88]:
+                        - /url: /maps/org/omoda_business_car/145511778215/
+                      - generic [ref=f273e90]:
+                        - link [ref=f273e93]:
+                          - /url: /maps/org/omoda_business_car/145511778215/gallery/
+                          - text: Photos
+                        - generic [ref=f273e96]: Omoda Business Car
+                        - link "Rating 4.6 Out of 5 Rating 4.6 127 ratings" [ref=f273e102]:
+                          - /url: /maps/org/omoda_business_car/145511778215/reviews/
+                          - generic [ref=f273e103]:
+                            - generic [ref=f273e104]:
+                              - generic "Rating 4.6 Out of 5" [ref=f273e105]
+                              - generic [ref=f273e116]:
+                                - generic [ref=f273e117]: Rating
+                                - text: "4.6"
+                            - generic [ref=f273e118]: 127 ratings
+                            - generic [ref=f273e119]: 127 ratings
+                        - generic [ref=f273e121]:
+                          - generic [ref=f273e122]: Open until 8:30 PM
+                          - generic [ref=f273e124]:
+                            - text: ·
+                            - generic [ref=f273e125]:
+                              - link [ref=f273e126]:
+                                - /url: /maps/10/orel/category/car_dealership/184105322/
+                                - text: Car dealership
+                              - text: ","
+                              - link [ref=f273e127]:
+                                - /url: /maps/10/orel/category/car_service_auto_repair/184105246/
+                                - text: car service, auto repair
+                  - listitem [ref=f273e128]:
+                    - button "Business Car Trade-In Business Car Trade-In Rating 4.3 Out of 5 Rating 4.3 38 ratings Open until 8:30 PM · , Karachevskoye shosse, 77к1" [ref=f273e129] [cursor=pointer]:
+                      - link "Business Car Trade-In" [ref=f273e130]:
+                        - /url: /maps/org/business_car_trade_in/179431394516/
+                      - generic [ref=f273e132]:
+                        - link [ref=f273e135]:
+                          - /url: /maps/org/business_car_trade_in/179431394516/gallery/
+                          - text: Photos
+                        - generic [ref=f273e138]: Business Car Trade-In
+                        - link "Rating 4.3 Out of 5 Rating 4.3 38 ratings" [ref=f273e144]:
+                          - /url: /maps/org/business_car_trade_in/179431394516/reviews/
+                          - generic [ref=f273e145]:
+                            - generic [ref=f273e146]:
+                              - generic "Rating 4.3 Out of 5" [ref=f273e147]
+                              - generic [ref=f273e158]:
+                                - generic [ref=f273e159]: Rating
+                                - text: "4.3"
+                            - generic [ref=f273e160]: 38 ratings
+                            - generic [ref=f273e161]: 38 ratings
+                        - generic [ref=f273e163]:
+                          - generic [ref=f273e164]: Open until 8:30 PM
+                          - generic [ref=f273e166]:
+                            - text: ·
+                            - generic [ref=f273e167]:
+                              - link [ref=f273e168]:
+                                - /url: /maps/10/orel/category/sale_of_used_cars/190246757599/
+                                - text: Sale of used cars
+                              - text: ","
+                              - link [ref=f273e169]:
+                                - /url: /maps/10/orel/category/used_car_dealer/255605347/
+                                - text: used car dealer
+                        - link "Karachevskoye shosse, 77к1" [ref=f273e172]:
+                          - /url: /maps/10/orel/house/Z08YdgRgTUcHQFtofXV1dHVnbQ==/
+                  - listitem [ref=f273e173]:
+                    - button "Jeland, Business Car Jeland, Business Car Open until 8:30 PM · ," [ref=f273e174] [cursor=pointer]:
+                      - link "Jeland, Business Car" [ref=f273e175]:
+                        - /url: /maps/org/jeland_business_car/92738572151/
+                      - generic [ref=f273e177]:
+                        - link [ref=f273e180]:
+                          - /url: /maps/org/jeland_business_car/92738572151/gallery/
+                          - text: Photos
+                        - generic [ref=f273e183]: Jeland, Business Car
+                        - generic [ref=f273e185]:
+                          - generic [ref=f273e186]: Open until 8:30 PM
+                          - generic [ref=f273e188]:
+                            - text: ·
+                            - generic [ref=f273e189]:
+                              - link [ref=f273e190]:
+                                - /url: /maps/10/orel/category/car_dealership/184105322/
+                                - text: Car dealership
+                              - text: ","
+                              - link [ref=f273e191]:
+                                - /url: /maps/10/orel/category/car_service_auto_repair/184105246/
+                                - text: car service, auto repair
+                - generic [ref=f273e192]:
+                  - text: Add a
+                  - link "business" [ref=f273e194] [cursor=pointer]
+                  - text: or
+                  - generic [ref=f273e195]: object
+                  - text: if it's missing from the map.
+                - text: "1"
+                - link [ref=f273e196] [cursor=pointer]:
+                  - /url: https://yandex.com/maps/10/orel/search/OMODA%20%D0%91%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%20%D0%9A%D0%B0%D1%80/?page=2
+                  - text: "2"
+                - generic [ref=f273e199]:
+                  - link "Maps" [ref=f273e200] [cursor=pointer]:
+                    - /url: https://yandex.com/maps/
+                  - text: ·
+                  - link "Orel" [ref=f273e201] [cursor=pointer]:
+                    - /url: https://yandex.com/maps/10/orel/
+            - iframe [ref=f273e202]:
+              
+          - iframe [ref=f273e203]:
+            
+      - navigation:
+        - button [ref=f273e208]:
+          - generic [ref=f273e209]:
+            - generic [ref=f273e210]:
+              - button "All filters" [ref=f273e214] [cursor=pointer]
+              - button "Open" [expanded] [ref=f273e217] [cursor=pointer]
+            - iframe [ref=f273e219]:
+              
+        - generic [ref=f273e221]:
+          - button "Traffic conditions in Orel" [ref=f273e224] [cursor=pointer]
+          - button "Street panoramas and photos" [ref=f273e229] [cursor=pointer]
+          - button "Mirrors" [ref=f273e232] [cursor=pointer]
+          - button "Public transport moving in real time" [ref=f273e235] [cursor=pointer]
+          - button "Layers" [ref=f273e238] [cursor=pointer]
+        - generic [ref=f273e240]:
+          - button "Ruler and planimeter" [ref=f273e243] [cursor=pointer]
+          - button "Details" [ref=f273e246] [cursor=pointer]
+        - button "Profile" [ref=f273e249] [cursor=pointer]
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=f273e253]:
+                - button "Zoom in" [ref=f273e255] [cursor=pointer]
+                - button "Zoom out" [ref=f273e257] [cursor=pointer]
+              - button "Use my location" [ref=f273e261] [cursor=pointer]
+      - contentinfo:
+        - generic [ref=f273e265]:
+          - generic [ref=f273e266]: © Yandex
+          - link "Terms of Use" [ref=f273e267] [cursor=pointer]:
+            - /url: https://yandex.com/legal/maps_termsofuse/?lang=en
+          - link "Privacy Policy" [ref=f273e268] [cursor=pointer]:
+            - /url: https://yandex.com/legal/confidential/?lang=en
+        - link "Yandex" [ref=f273e271] [cursor=pointer]:
+          - /url: https://yandex.com
+        - generic: 100 m
+      - iframe [ref=f273e274]:
+        
+    - iframe [ref=f273e275]:
+      
+  - iframe [ref=f273e276]:
+    
+  - iframe [ref=f273e277]:
+    

@@ -1,0 +1,165 @@
+- generic [active] [ref=f260e1]:
+  - progressbar [ref=f260e2]
+  - generic [ref=f260e3]:
+    - banner [ref=f260e4]:
+      - link [ref=f260e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f260e6]:
+        - generic [ref=f260e7]:
+          - link "Elements" [ref=f260e9] [cursor=pointer]:
+            - /url: /elements
+          - link "Challenges" [ref=f260e13] [cursor=pointer]:
+            - /url: /challenges
+          - link "Blog" [ref=f260e14] [cursor=pointer]:
+            - /url: /blog
+          - link "Design" [ref=f260e15] [cursor=pointer]:
+            - /url: /design
+        - generic [ref=f260e16]:
+          - generic [ref=f260e17]: "0"
+          - link "Create" [ref=f260e22] [cursor=pointer]:
+            - /url: /create
+          - button [ref=f260e25] [cursor=pointer]
+          - menubar [ref=f260e28]:
+            - menuitem "danil_7493 danil_7493" [ref=f260e29] [cursor=pointer]:
+              - generic [ref=f260e33]: danil_7493
+              - img "danil_7493" [ref=f260e35]
+    - generic [ref=f260e36]:
+      - generic [ref=f260e38]:
+        - navigation [ref=f260e40]:
+          - link "UI Kits New" [ref=f260e41] [cursor=pointer]:
+            - /url: /ui-kits
+            - generic [ref=f260e42]: UI Kits
+            - generic [ref=f260e48]: New
+          - link [ref=f260e49] [cursor=pointer]:
+            - /url: /elements
+          - link [ref=f260e53] [cursor=pointer]:
+            - /url: /buttons
+          - link [ref=f260e58] [cursor=pointer]:
+            - /url: /checkboxes
+          - link [ref=f260e62] [cursor=pointer]:
+            - /url: /switches
+          - link [ref=f260e66] [cursor=pointer]:
+            - /url: /cards
+          - link [ref=f260e70] [cursor=pointer]:
+            - /url: /loaders
+          - link [ref=f260e74] [cursor=pointer]:
+            - /url: /inputs
+          - link [ref=f260e78] [cursor=pointer]:
+            - /url: /radio-buttons
+          - link [ref=f260e83] [cursor=pointer]:
+            - /url: /forms
+          - link [ref=f260e87] [cursor=pointer]:
+            - /url: /patterns
+          - link [ref=f260e91] [cursor=pointer]:
+            - /url: /tooltips
+          - link [ref=f260e95] [cursor=pointer]:
+            - /url: /favorites
+        - generic [ref=f260e103]:
+          - generic [ref=f260e104]:
+            - link [ref=f260e105] [cursor=pointer]:
+              - /url: https://server.ethicalads.io/proxy/click/10718/019fb76d-42ea-78a0-ad43-81b9aed527e9/
+              - 'img "Sponsored: TinyMCE" [ref=f260e106]'
+            - link [ref=f260e108] [cursor=pointer]:
+              - /url: https://server.ethicalads.io/proxy/click/10718/019fb76d-42ea-78a0-ad43-81b9aed527e9/
+              - strong [ref=f260e109]: TinyMCE
+              - text: 14-day free trial of all advanced features. Includes one domain + subdomains.
+              - strong [ref=f260e110]: Sign up now
+            - generic [ref=f260e111]: www.tiny.cloud
+          - link "Ads by EthicalAds" [ref=f260e113] [cursor=pointer]:
+            - /url: https://www.ethicalads.io/advertisers/topics/frontend-web/?ref=ea-image
+      - generic [ref=f260e116]:
+        - generic [ref=f260e117]:
+          - heading "404" [level=1] [ref=f260e120]
+          - paragraph [ref=f260e121]: Not Found
+          - link "Back to Homepage" [ref=f260e122] [cursor=pointer]:
+            - /url: /
+        - generic [ref=f260e123]:
+          - paragraph [ref=f260e124]: Get in touch
+          - link "Discord" [ref=f260e125] [cursor=pointer]:
+            - /url: https://discord.gg/KD8ba2uUpT
+          - link "Instagram" [ref=f260e129] [cursor=pointer]:
+            - /url: https://www.instagram.com/uiverse.io/
+          - link "Twitter/X" [ref=f260e134] [cursor=pointer]:
+            - /url: https://twitter.com/uiverse_io
+    - contentinfo "Site Footer" [ref=f260e139]:
+      - generic [ref=f260e140]:
+        - generic [ref=f260e141]:
+          - generic [ref=f260e142]:
+            - paragraph [ref=f260e144]: Uiverse | The universe of UI
+            - generic [ref=f260e145]:
+              - paragraph [ref=f260e146]: MIT License
+              - paragraph [ref=f260e149]:
+                - text: All content (UI elements) on this site are published under the
+                - link "MIT License" [ref=f260e150] [cursor=pointer]:
+                  - /url: https://opensource.org/license/mit
+                - text: .
+            - list [ref=f260e151]:
+              - listitem [ref=f260e152]:
+                - link "Instagram" [ref=f260e153] [cursor=pointer]:
+                  - /url: https://www.instagram.com/uiverse.io/
+              - listitem [ref=f260e157]:
+                - link "Twitter" [ref=f260e158] [cursor=pointer]:
+                  - /url: https://twitter.com/uiverse_io
+              - listitem [ref=f260e162]:
+                - link "Discord" [ref=f260e163] [cursor=pointer]:
+                  - /url: https://discord.gg/KD8ba2uUpT
+          - generic [ref=f260e167]:
+            - generic [ref=f260e168]:
+              - paragraph [ref=f260e169]: Games
+              - navigation "Footer Navigation - Legal" [ref=f260e170]:
+                - list [ref=f260e171]:
+                  - listitem [ref=f260e172]:
+                    - link "Azeron.ai" [ref=f260e173] [cursor=pointer]:
+                      - /url: https://azeron.ai
+                  - listitem [ref=f260e174]:
+                    - link "Tavernia.io" [ref=f260e175] [cursor=pointer]:
+                      - /url: https://tavernia.io
+            - generic [ref=f260e176]:
+              - paragraph [ref=f260e177]: Resources
+              - navigation "Footer Navigation - Legal" [ref=f260e178]:
+                - list [ref=f260e179]:
+                  - listitem [ref=f260e180]:
+                    - link "Design Systems" [ref=f260e181] [cursor=pointer]:
+                      - /url: https://uiverse.io/design
+                  - listitem [ref=f260e182]:
+                    - link "Cssbuttons.io" [ref=f260e183] [cursor=pointer]:
+                      - /url: https://cssbuttons.io
+                  - listitem [ref=f260e184]:
+                    - link "Neumorphism.io" [ref=f260e185] [cursor=pointer]:
+                      - /url: https://neumorphism.io
+                  - listitem [ref=f260e186]:
+                    - link "Browsergames.gg" [ref=f260e187] [cursor=pointer]:
+                      - /url: https://browsergames.gg
+            - generic [ref=f260e188]:
+              - paragraph [ref=f260e189]: Information
+              - navigation "Footer Navigation - Legal" [ref=f260e190]:
+                - list [ref=f260e191]:
+                  - listitem [ref=f260e192]:
+                    - link "Blog" [ref=f260e193] [cursor=pointer]:
+                      - /url: /blog
+                  - listitem [ref=f260e194]:
+                    - link "Post Guidelines" [ref=f260e195] [cursor=pointer]:
+                      - /url: /guidelines
+                  - listitem [ref=f260e196]:
+                    - link "Give feedback" [ref=f260e197] [cursor=pointer]:
+                      - /url: /feedback
+                  - listitem [ref=f260e198]:
+                    - link "Report bug" [ref=f260e199] [cursor=pointer]:
+                      - /url: /bug
+            - generic [ref=f260e200]:
+              - paragraph [ref=f260e201]: Legal
+              - navigation "Footer Navigation - Company" [ref=f260e202]:
+                - list [ref=f260e203]:
+                  - listitem [ref=f260e204]:
+                    - link "Terms and Conditions" [ref=f260e205] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/terms-of-service/bdc0e7cf-cb88-4f24-9cb5-13761e20dedb
+                  - listitem [ref=f260e206]:
+                    - link "Privacy policy" [ref=f260e207] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/privacy-policy/fe317b39-7972-4f85-b7c6-d4f562e429d4
+                  - listitem [ref=f260e208]:
+                    - link "Cookie policy" [ref=f260e209] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/cookie-policy/4e4bbc89-b80d-43d6-98bc-02ee075cc311
+                  - listitem [ref=f260e210]:
+                    - link "Disclaimer" [ref=f260e211] [cursor=pointer]:
+                      - /url: https://app.termly.io/document/disclaimer/eabc96f8-640d-4858-aadc-c30f646265ed
+        - paragraph [ref=f260e212]: 2026 Pixel Galaxies. All rights reserved. - Uiverse.io

@@ -1,0 +1,12 @@
+<div class="card-owner">
+  {% if item.cover is defined %}
+    <div class="card__item cover-wrap">
+      <img src="{{ item.cover.src }}" alt="{{ item.title|default('') }}" class="img-responsive" loading="lazy">
+    </div>
+  {% endif %}
+  {% if item.title is defined %}
+  <div class="card__item title-wrap">
+    <span class="title">{{ item.title | raw }}</span>
+  </div>
+  {% endif %}
+</div>

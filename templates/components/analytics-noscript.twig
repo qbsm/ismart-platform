@@ -1,0 +1,3 @@
+{# Yandex.Metrika — noscript fallback в body (для пользователей без JS) #}
+{% set _ym_id = config.settings.yandex_metric_id|default(0) %}
+{% if _ym_id %}<noscript><div><img src="https://mc.yandex.ru/watch/{{ _ym_id }}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>{% endif %}

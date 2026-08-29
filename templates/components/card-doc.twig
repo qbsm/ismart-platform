@@ -1,0 +1,12 @@
+<div class="card-doc">
+  {% if item.title is defined %}
+    <div class="card-doc__item title-wrap">
+      <span class="card-doc__title">{{ item.title|raw }}</span>
+    </div>
+  {% endif %}
+  {% if item.desc is defined %}
+    <div class="card-doc__item desc-wrap">
+      <span class="card-doc__desc">{{ item.desc|raw }}</span>
+    </div>
+  {% endif %}
+</div>

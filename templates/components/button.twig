@@ -1,6 +1,12 @@
+{% set content %}
+  {{ item.title | raw }}
+  {% if item.icon is defined and item.icon and item.icon.src is defined and item.icon.src %}
+    <img src="{{ item.icon.src }}" alt="{{ item.icon.alt | default('') }}" class="button__icon {{ item.icon.class | default('') }}" loading="lazy">
+  {% endif %}
+{% endset %}
 {% if item.href %}
 {% set is_static_file = item.href matches '/.*\\.(pdf|doc|docx|xls|xlsx|zip|rar|jpg|jpeg|png|gif|webp)$/' or item.href starts with 'data/' %}
-<a href="{{ (item.href starts with 'http' or item.href starts with 'mailto:' or item.href starts with 'tel:' or is_static_file) ? item.href : (currentLang.code == 'ru' ? item.href : '/' ~ currentLang.code ~ item.href) }}" target="{{ item.target }}" class="{{ item.class }}">{{ item.title | raw }}</a>
+<a href="{{ (item.href starts with 'http' or item.href starts with 'mailto:' or item.href starts with 'tel:' or is_static_file) ? item.href : (currentLang.code == 'ru' ? item.href : '/' ~ currentLang.code ~ item.href) }}" target="{{ item.target }}" class="{{ item.class }}">{{ content }}</a>
 {% else %}
-<button class="{{ item.class }}">{{ item.title | raw }}</button>
+<button class="{{ item.class }}"{% if item.data_tag is defined %} data-tag="{{ item.data_tag }}"{% endif %}>{{ content }}</button>
 {% endif %}

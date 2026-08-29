@@ -1,0 +1,363 @@
+- generic [active] [ref=f56e1]:
+  - banner [ref=f56e2]:
+    - paragraph [ref=f56e4]:
+      - text: Want to see what we're up to?
+      - link "Get updates from JAECOO" [ref=f56e5] [cursor=pointer]:
+        - /url: /connect
+      - text: .
+    - generic [ref=f56e7]:
+      - link [ref=f56e8] [cursor=pointer]:
+        - /url: /
+        - img "JAECOO Logo" [ref=f56e10]
+      - navigation [ref=f56e11]:
+        - list [ref=f56e12]:
+          - listitem [ref=f56e13]:
+            - generic [ref=f56e14] [cursor=pointer]: Models
+          - listitem [ref=f56e15]:
+            - link "Finance" [ref=f56e16] [cursor=pointer]:
+              - /url: /finance
+          - listitem [ref=f56e18]:
+            - generic [ref=f56e19] [cursor=pointer]: About
+          - listitem [ref=f56e20]:
+            - generic [ref=f56e21] [cursor=pointer]: Owners
+          - listitem [ref=f56e22]:
+            - link "Offers" [ref=f56e23] [cursor=pointer]:
+              - /url: /promotions
+          - listitem [ref=f56e25]:
+            - link "EV Survey" [ref=f56e26] [cursor=pointer]:
+              - /url: /survey
+        - generic [ref=f56e28]:
+          - link "Locate a Dealer" [ref=f56e29] [cursor=pointer]:
+            - /url: /dealers
+          - link "Book a Test Drive" [ref=f56e44] [cursor=pointer]:
+            - /url: /test-drive
+  - main [ref=f56e52]:
+    - generic [ref=f56e53]:
+      - img "Video Frame" [ref=f56e54]
+      - generic [ref=f56e55]: Your browser does not support the video tag.
+    - generic [ref=f56e56]:
+      - navigation [ref=f56e57]:
+        - generic [ref=f56e58]:
+          - paragraph [ref=f56e59] [cursor=pointer]: J7
+          - list [ref=f56e60]:
+            - listitem [ref=f56e61]:
+              - generic [ref=f56e62] [cursor=pointer]: Design
+            - listitem [ref=f56e63]:
+              - generic [ref=f56e64] [cursor=pointer]: Interior
+            - listitem [ref=f56e65]:
+              - generic [ref=f56e66] [cursor=pointer]: Safety
+            - listitem [ref=f56e67]:
+              - generic [ref=f56e68] [cursor=pointer]: Specs
+        - generic [ref=f56e69]:
+          - link "Brochure" [ref=f56e70] [cursor=pointer]:
+            - /url: /brochure/jaecoo-j7-brochure.pdf
+          - link "Spec sheet" [ref=f56e72] [cursor=pointer]:
+            - /url: /specsheet/jaecoo-j7-specsheet.pdf
+          - link "Test Drive" [ref=f56e74] [cursor=pointer]:
+            - /url: /test-drive
+      - heading "Discover Discover the the JAECOO JAECOO J7, J7, an an embodiment embodiment of of elegance elegance and and power. power. Crafted Crafted for for adventure, adventure, it it combines combines luxury luxury with with rugged rugged capability. capability." [level=1] [ref=f56e79]:
+        - generic [ref=f56e80]:
+          - generic [ref=f56e81]: Discover
+          - text: Discover
+        - generic [ref=f56e82]:
+          - generic [ref=f56e83]: the
+          - text: the
+        - generic [ref=f56e84]:
+          - generic [ref=f56e85]: JAECOO
+          - text: JAECOO
+        - generic [ref=f56e86]:
+          - generic [ref=f56e87]: J7,
+          - text: J7,
+        - generic [ref=f56e88]:
+          - generic [ref=f56e89]: an
+          - text: an
+        - generic [ref=f56e90]:
+          - generic [ref=f56e91]: embodiment
+          - text: embodiment
+        - generic [ref=f56e92]:
+          - generic [ref=f56e93]: of
+          - text: of
+        - generic [ref=f56e94]:
+          - generic [ref=f56e95]: elegance
+          - text: elegance
+        - generic [ref=f56e96]:
+          - generic [ref=f56e97]: and
+          - text: and
+        - generic [ref=f56e98]:
+          - generic [ref=f56e99]: power.
+          - text: power.
+        - generic [ref=f56e100]:
+          - generic [ref=f56e101]: Crafted
+          - text: Crafted
+        - generic [ref=f56e102]:
+          - generic [ref=f56e103]: for
+          - text: for
+        - generic [ref=f56e104]:
+          - generic [ref=f56e105]: adventure,
+          - text: adventure,
+        - generic [ref=f56e106]:
+          - generic [ref=f56e107]: it
+          - text: it
+        - generic [ref=f56e108]:
+          - generic [ref=f56e109]: combines
+          - text: combines
+        - generic [ref=f56e110]:
+          - generic [ref=f56e111]: luxury
+          - text: luxury
+        - generic [ref=f56e112]:
+          - generic [ref=f56e113]: with
+          - text: with
+        - generic [ref=f56e114]:
+          - generic [ref=f56e115]: rugged
+          - text: rugged
+        - generic [ref=f56e116]:
+          - generic [ref=f56e117]: capability.
+          - text: capability.
+      - generic [ref=f56e120]:
+        - img "JAECOO Carbon Crystal Black" [ref=f56e121]
+        - generic [ref=f56e122]: Carbon Crystal Black
+        - generic [ref=f56e123]:
+          - img "JAECOO Carbon Crystal Black" [ref=f56e126] [cursor=pointer]
+          - img "JAECOO Model Green" [ref=f56e129] [cursor=pointer]
+          - img "JAECOO Carbon Crystal Black + Model Green" [ref=f56e132] [cursor=pointer]
+          - img "JAECOO Moonlight Silver" [ref=f56e135] [cursor=pointer]
+          - img "JAECOO Carbon Crystal Black + Moonlight Silver" [ref=f56e138] [cursor=pointer]
+          - img "JAECOO Khaki White" [ref=f56e141] [cursor=pointer]
+      - generic [ref=f56e142]:
+        - generic [ref=f56e145]:
+          - heading "Technological design" [level=2] [ref=f56e146]
+          - paragraph [ref=f56e147]: Our design philosophy melds technology with aesthetics, transforming vehicles into art. We focus on functional elegance and innovative user experiences. Every curve and feature is engineered for sophistication and ease, promising an unmatched driving experience. Discover the intersection of elegance and innovation in automotive design.
+        - generic [ref=f56e149]:
+          - generic [ref=f56e150]:
+            - img "Rear View Mirrors" [ref=f56e152]
+            - generic [ref=f56e153]:
+              - heading "Rear view mirrors" [level=2] [ref=f56e155]
+              - paragraph [ref=f56e157]: The mirrors on the pillars are a discreet but aesthetic design detail of the J7. Their contrasting inserts harmoniously resonate with other accent touches of the exterior.
+          - generic [ref=f56e158]:
+            - img "Retractable handles" [ref=f56e160]
+            - generic [ref=f56e161]:
+              - heading "Retractable handles" [level=2] [ref=f56e163]
+              - paragraph [ref=f56e165]: The designers used a spectacular solution - door handles that automatically extend using an electric drive. Minimal force is required to open the door. The handles are not afraid of icing, even at the lowest temperatures.
+          - generic [ref=f56e166]:
+            - img "Wheels 19”" [ref=f56e168]
+            - generic [ref=f56e169]:
+              - heading "Wheels 19”" [level=2] [ref=f56e171]
+              - paragraph [ref=f56e173]: Large 19-inch cast aluminum alloy wheels look stylish and impressive. The design of their pattern is made taking into account aerodynamic qualities and contributes to more efficient cooling of the brakes.
+          - generic [ref=f56e174]:
+            - img "Remote trunk release" [ref=f56e176]
+            - generic [ref=f56e177]:
+              - heading "Remote trunk release" [level=2] [ref=f56e179]
+              - paragraph [ref=f56e181]: The hands-free trunk opening function is convenient and necessary if your hands are busy and the key is in your pocket. The rear door opening angle can be adjusted individually and the setting saved in the vehicle's memory.
+      - img "JAECOO J7" [ref=f56e183]
+      - generic [ref=f56e187]:
+        - heading "Comfortable SUV" [level=2] [ref=f56e188]
+        - paragraph [ref=f56e189]: The interior of the JAECOO J7 is carefully thought out and balanced. It combines classic touches with cutting-edge technology, and SUV-specific features with luxury touches.
+      - generic [ref=f56e205]:
+        - button [ref=f56e209] [cursor=pointer]:
+          - generic [ref=f56e210]:
+            - img "JAECOO" [ref=f56e211]
+            - button "Open lightbox" [ref=f56e212]
+          - paragraph [ref=f56e220]: Spacious interior with panoramic roof - The panoramic roof fills the car with light and visually enlarges the already spacious interior, increasing the comfort of the driver and passengers.
+        - button [ref=f56e224] [cursor=pointer]:
+          - generic [ref=f56e225]:
+            - img "JAECOO" [ref=f56e226]
+            - button "Open lightbox" [ref=f56e227]
+          - paragraph [ref=f56e235]: "Interior: modern minimalism - The modern interior of the JAECOO J7 offers an atmosphere of comfort and tranquility. The comfortable, well-equipped and stylish interior provides a high level of comfort for the driver and passengers."
+        - button [ref=f56e239] [cursor=pointer]:
+          - generic [ref=f56e240]:
+            - img "JAECOO" [ref=f56e241]
+            - button "Open lightbox" [ref=f56e242]
+          - paragraph [ref=f56e250]: Comfortable chairs - The seats, with well-developed lateral support, are made of faux leather with accent stitching. The seats provide a comfortable fit and are heated and ventilated. The driver can save the usual seat position settings in the memory of his JAECOO J7.
+        - button [ref=f56e254] [cursor=pointer]:
+          - generic [ref=f56e255]:
+            - img "JAECOO" [ref=f56e256]
+            - button "Open lightbox" [ref=f56e257]
+          - paragraph [ref=f56e265]: Multifunction steering wheel - The steering wheel with a truncated rim is easy to control and has a number of functions useful for the driver.
+        - button [ref=f56e269] [cursor=pointer]:
+          - generic [ref=f56e270]:
+            - img "JAECOO" [ref=f56e271]
+            - button "Open lightbox" [ref=f56e272]
+          - paragraph [ref=f56e280]: Spacious luggage compartment - Wide possibilities for organizing space for transportation and storage. Two-level organization of the luggage compartment.
+      - generic [ref=f56e283]:
+        - generic [ref=f56e286]:
+          - heading "Dynamics and safety" [level=2] [ref=f56e287]
+          - paragraph [ref=f56e288]: A durable and safe body, a powerful high-torque engine and an excellent transmission, all-wheel drive and good cross-country ability - the JAECOO J7 is ready to become a reliable and convenient partner on daily trips or exciting long-distance journeys.
+        - generic [ref=f56e290]:
+          - img "Modern engine and reliable transmission" [ref=f56e292]
+          - heading "Modern engine" [level=3] [ref=f56e293]
+          - paragraph [ref=f56e295]: JAECOO J7 is equipped with a modern turbocharged engine. With a working volume of 1.6 liters, its characteristics are close to those of two-liter engines. Power is 186 hp. With. (145 kW), and the torque reaches an impressive 290 Nm. The engine is paired with a 7DCT robotic transmission with two clutches. This 98% efficient transmission delivers shifts in just 0.2 seconds and ranks among the top 10 best transmissions in the world.
+        - generic [ref=f56e297]:
+          - generic [ref=f56e299]:
+            - img "Intelligent all-wheel drive" [ref=f56e302]
+            - generic [ref=f56e304]:
+              - heading "Intelligent all-wheel drive" [level=2] [ref=f56e305]
+              - paragraph [ref=f56e306]: One of the main advantages of JAECOO J7 is its intelligent all-wheel drive system, which can provide maximum driving efficiency in any conditions. The system instantly reacts to changes in road surface and adapts accordingly. Reaction time is only 0.1 s.
+          - generic [ref=f56e308]:
+            - img "7 driving modes" [ref=f56e311]
+            - generic [ref=f56e313]:
+              - heading "7 driving modes" [level=2] [ref=f56e314]
+              - paragraph [ref=f56e315]: "JAECOO J7 presents seven driving modes: Economy, Standard, Sport, Sand, Mud, Snow, or Off-Road. Each mode is crafted to enhance vehicle performance and the driving experience on diverse terrains, ensuring optimal control and efficiency."
+      - generic [ref=f56e316]:
+        - generic [ref=f56e319]:
+          - heading "Specifications" [level=2] [ref=f56e320]
+          - paragraph [ref=f56e321]: Dive into the core of our engineering excellence with the detailed specifications of our models. Each figure reflects our commitment to performance, efficiency, and innovation. Explore the precision behind our design, from dynamic acceleration to fuel economy, and understand what sets our vehicles apart in the realm of automotive engineering.
+        - generic [ref=f56e324]:
+          - generic [ref=f56e325]:
+            - heading "Vortex - R519,900" [level=3] [ref=f56e327]
+            - generic [ref=f56e328]:
+              - generic [ref=f56e329]:
+                - paragraph [ref=f56e330]: ARDIS Driving Modes
+                - paragraph [ref=f56e331]: 2WD
+                - paragraph [ref=f56e332]: Eco, Standard, Sport
+              - generic [ref=f56e333]:
+                - paragraph [ref=f56e334]: Power and Drive Train
+                - paragraph [ref=f56e335]: 1.6 TGDI Engine
+                - paragraph [ref=f56e336]: 7DCT Transmission
+              - generic [ref=f56e337]:
+                - paragraph [ref=f56e338]: Maximum power kW/rpm
+                - paragraph [ref=f56e339]: 145 / 5500
+              - generic [ref=f56e340]:
+                - paragraph [ref=f56e341]: Fuel consumption (combined) (l/100km)
+                - paragraph [ref=f56e342]: "7.0"
+              - generic [ref=f56e343]:
+                - paragraph [ref=f56e344]: Tire size
+                - paragraph [ref=f56e345]: 235/55 R18,235/55 R18
+              - generic [ref=f56e346]:
+                - paragraph [ref=f56e347]: Maximum torque (Nm/rpm)
+                - paragraph [ref=f56e348]: 290 (2000 - 4000)
+          - generic [ref=f56e349]:
+            - heading "Glacier - R579 900" [level=3] [ref=f56e351]
+            - generic [ref=f56e352]:
+              - generic [ref=f56e353]:
+                - paragraph [ref=f56e354]: ARDIS Driving Modes
+                - paragraph [ref=f56e355]: 2WD
+                - paragraph [ref=f56e356]: Eco, Standard, Sport
+              - generic [ref=f56e357]:
+                - paragraph [ref=f56e358]: Power and Drive Train
+                - paragraph [ref=f56e359]: 1.6 TGDI Engine
+                - paragraph [ref=f56e360]: 7DCT Transmission
+              - generic [ref=f56e361]:
+                - paragraph [ref=f56e362]: Maximum power kW/rpm
+                - paragraph [ref=f56e363]: 145 / 5500
+              - generic [ref=f56e364]:
+                - paragraph [ref=f56e365]: Fuel consumption (combined) (l/100km)
+                - paragraph [ref=f56e366]: "7.0"
+              - generic [ref=f56e367]:
+                - paragraph [ref=f56e368]: Tire size
+                - paragraph [ref=f56e369]: 235/50 R19, 235/50 R19
+              - generic [ref=f56e370]:
+                - paragraph [ref=f56e371]: Maximum torque (Nm/rpm)
+                - paragraph [ref=f56e372]: 290 (2000 - 4000)
+          - generic [ref=f56e373]:
+            - heading "Inferno - R679 900" [level=3] [ref=f56e375]
+            - generic [ref=f56e376]:
+              - generic [ref=f56e377]:
+                - paragraph [ref=f56e378]: ARDIS Driving Modes
+                - paragraph [ref=f56e379]: AWD
+                - paragraph [ref=f56e380]: Eco, Standard, Sport, Sand, Mud, Snow, Off-Road
+              - generic [ref=f56e381]:
+                - paragraph [ref=f56e382]: Power and Drive Train
+                - paragraph [ref=f56e383]: 1.6 TGDI Engine
+                - paragraph [ref=f56e384]: 7DCT Transmission
+              - generic [ref=f56e385]:
+                - paragraph [ref=f56e386]: Maximum power kW/rpm
+                - paragraph [ref=f56e387]: 145 / 5500
+              - generic [ref=f56e388]:
+                - paragraph [ref=f56e389]: Fuel consumption (combined) (l/100km)
+                - paragraph [ref=f56e390]: "7.8"
+              - generic [ref=f56e391]:
+                - paragraph [ref=f56e392]: Tire size
+                - paragraph [ref=f56e393]: 235/50 R19, 235/50 R19
+              - generic [ref=f56e394]:
+                - paragraph [ref=f56e395]: Maximum torque (Nm/rpm)
+                - paragraph [ref=f56e396]: 290 (2000 - 4000)
+    - link [ref=f56e397] [cursor=pointer]:
+      - /url: https://wa.me/+27104429714
+  - contentinfo [ref=f56e400]:
+    - generic [ref=f56e403]:
+      - link "Locate a Dealer Find your nearest JAECOO dealer" [ref=f56e405] [cursor=pointer]:
+        - /url: /dealers
+        - generic [ref=f56e414]: Locate a Dealer
+        - generic [ref=f56e415]: Find your nearest JAECOO dealer
+      - link "Book a Test Drive Experience the thrill of driving a JAECOO" [ref=f56e417] [cursor=pointer]:
+        - /url: /test-drive
+        - generic [ref=f56e423]: Book a Test Drive
+        - generic [ref=f56e424]: Experience the thrill of driving a JAECOO
+      - link "Offers Explore our latest promotions and deals" [ref=f56e426] [cursor=pointer]:
+        - /url: /promotions
+        - generic [ref=f56e436]: Offers
+        - generic [ref=f56e437]: Explore our latest promotions and deals
+      - link "Finance Flexible finance options for your JAECOO" [ref=f56e439] [cursor=pointer]:
+        - /url: /finance
+        - generic [ref=f56e443]: Finance
+        - generic [ref=f56e444]: Flexible finance options for your JAECOO
+    - generic [ref=f56e446]:
+      - generic [ref=f56e448]:
+        - img "JAECOO Logo" [ref=f56e450]
+        - generic [ref=f56e451]:
+          - link "010 448 5388" [ref=f56e452] [cursor=pointer]:
+            - /url: tel:0104485388
+          - link "customercare@jaecoo.co.za" [ref=f56e453] [cursor=pointer]:
+            - /url: mailto:customercare@jaecoo.co.za
+      - generic [ref=f56e454]:
+        - navigation [ref=f56e455]:
+          - link "J5" [ref=f56e457] [cursor=pointer]:
+            - /url: /models/jaecoo-j5
+          - link "J5 EV / SHS" [ref=f56e459] [cursor=pointer]:
+            - /url: /models/jaecoo-j5-shs
+          - link "J7" [ref=f56e461] [cursor=pointer]:
+            - /url: /models/jaecoo-j7
+          - link "J7 SHS" [ref=f56e463] [cursor=pointer]:
+            - /url: /models/jaecoo-j7-shs
+          - link "Finance" [ref=f56e465] [cursor=pointer]:
+            - /url: /finance
+          - link "About" [ref=f56e467] [cursor=pointer]:
+            - /url: /about
+          - link "News" [ref=f56e469] [cursor=pointer]:
+            - /url: /news
+          - link "Connect" [ref=f56e471] [cursor=pointer]:
+            - /url: /connect
+          - link "Survey" [ref=f56e473] [cursor=pointer]:
+            - /url: /survey
+          - link "J-Extender" [ref=f56e475] [cursor=pointer]:
+            - /url: /owners-guide/j-extender
+          - link "Warranty" [ref=f56e477] [cursor=pointer]:
+            - /url: /owners-guide/warranty
+          - link "Panel Shops" [ref=f56e479] [cursor=pointer]:
+            - /url: /owners-guide/panel-shops
+          - link "Offers" [ref=f56e481] [cursor=pointer]:
+            - /url: /promotions
+          - link "Locate a Dealer" [ref=f56e483] [cursor=pointer]:
+            - /url: /dealers
+          - link "Book a Test Drive" [ref=f56e485] [cursor=pointer]:
+            - /url: /test-drive
+        - generic [ref=f56e486]:
+          - link [ref=f56e487] [cursor=pointer]:
+            - /url: https://www.facebook.com/JaecooSouthAfrica
+            - img "JAECOO Facebook" [ref=f56e488]
+          - link [ref=f56e489] [cursor=pointer]:
+            - /url: https://www.instagram.com/jaecoosouthafrica/
+            - img "JAECOO Instagram" [ref=f56e490]
+          - link [ref=f56e491] [cursor=pointer]:
+            - /url: https://twitter.com/Jaecoosa
+            - img "JAECOO X" [ref=f56e492]
+          - link [ref=f56e493] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@jaecoosouthafrica
+            - img "JAECOO YouTube" [ref=f56e494]
+      - generic [ref=f56e495]:
+        - generic [ref=f56e496]: Cookies
+        - paragraph [ref=f56e497]: We use cookies to improve your experience. You can accept all, reject non-essential cookies, or change your preferences at any time.
+        - button "Cookie settings" [ref=f56e498] [cursor=pointer]
+      - generic [ref=f56e499]:
+        - generic [ref=f56e500]: © 2026 JAECOO South Africa
+        - navigation
+        - generic [ref=f56e501]:
+          - link "Terms & Conditions" [ref=f56e502] [cursor=pointer]:
+            - /url: /legal/terms-and-conditions
+          - link "Privacy Policy" [ref=f56e503] [cursor=pointer]:
+            - /url: /legal/privacy-policy
+          - link "Cookies notice" [ref=f56e504] [cursor=pointer]:
+            - /url: /legal/cookie-policy
+          - link "Privacy statement (non-EU)" [ref=f56e505] [cursor=pointer]:
+            - /url: /legal/jaecoo-privacy-statement-non-eu.pdf
+  - alert [ref=f56e506]

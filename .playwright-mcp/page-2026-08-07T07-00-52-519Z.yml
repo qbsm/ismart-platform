@@ -1,0 +1,136 @@
+- generic [active] [ref=f25e1]:
+  - link "Перейти к контенту" [ref=f25e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f25e3]:
+    - banner [ref=f25e4]:
+      - generic [ref=f25e5]:
+        - link [ref=f25e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f25e8]
+        - generic [ref=f25e9]:
+          - generic [ref=f25e10]:
+            - button "Забронировать" [ref=f25e11] [cursor=pointer]
+            - button "Открыть меню" [ref=f25e12] [cursor=pointer]
+          - generic [ref=f25e17]:
+            - generic [ref=f25e18]:
+              - generic [ref=f25e19]: Приложение
+              - generic [ref=f25e20]: italy touch
+            - link "Скачать" [ref=f25e21] [cursor=pointer]:
+              - /url: https://redirect.appmetrica.yandex.com/serve/966450630770056189
+    - main [ref=f25e23]:
+      - generic [ref=f25e24]:
+        - generic [ref=f25e26]:
+          - img "Бар «Медведь»" [ref=f25e28]
+          - generic:
+            - img "Бар «Медведь»"
+          - generic:
+            - img "Бар «Медведь»"
+          - generic:
+            - img "Бар «Медведь»"
+          - generic:
+            - img "Бар «Медведь»"
+        - generic [ref=f25e38]:
+          - heading "Бар «Легендарный медведь»" [level=1] [ref=f25e39]
+          - generic [ref=f25e40]:
+            - paragraph [ref=f25e41]: Санкт-Петербург, ул. Большая Конюшенная, 27
+            - link "+7 (911) 928-37-27" [ref=f25e42] [cursor=pointer]:
+              - /url: tel:+79119283727
+          - generic [ref=f25e43]:
+            - generic [ref=f25e44]: "Часы работы:"
+            - generic [ref=f25e47]: "Пн-Чт: 16:00–01:00"
+            - generic [ref=f25e48]: "Пт-Сб: 16:00–02:00"
+          - link "Меню" [ref=f25e50] [cursor=pointer]:
+            - /url: https://drive.google.com/file/d/1qMQlWZnajZNPxVkBt683xEwI6-d7qfkL/view?usp=sharing
+      - generic [ref=f25e52]:
+        - img "Бар «Легендарный медведь» белый лого" [ref=f25e54]
+        - paragraph [ref=f25e56]: Самый первый коктейльный бар Российской Империи, открытый в 1906 году
+        - paragraph [ref=f25e58]: Легендарный бар, который называли «американским» — потому что именно в нем жители города впервые увидели барную стойку и алкогольные миксы со льдом в стакане.
+        - generic [ref=f25e59]:
+          - heading "Команда" [level=2] [ref=f25e60]
+          - list [ref=f25e61]:
+            - listitem [ref=f25e62]:
+              - generic [ref=f25e63]: Управляющий
+              - generic [ref=f25e64]: Павел Шитов
+            - listitem [ref=f25e65]:
+              - generic [ref=f25e66]: Бренд-шеф
+              - generic [ref=f25e67]: Виктор Кислинский
+            - listitem [ref=f25e68]:
+              - generic [ref=f25e69]: Шеф-повар
+              - generic [ref=f25e70]: Василий Окулов
+        - generic [ref=f25e71]:
+          - figure [ref=f25e72]:
+            - link [ref=f25e73] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/bear/covers/raw/1.jpg
+              - img "Бар «Медведь»" [ref=f25e74]
+          - figure [ref=f25e75]:
+            - link [ref=f25e76] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/bear/covers/raw/2.jpg
+              - img "Бар «Медведь»" [ref=f25e77]
+          - figure [ref=f25e78]:
+            - link [ref=f25e79] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/bear/covers/raw/3.jpg
+              - img "Бар «Медведь»" [ref=f25e80]
+          - figure [ref=f25e81]:
+            - link [ref=f25e82] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/bear/covers/raw/4.jpg
+              - img "Бар «Медведь»" [ref=f25e83]
+    - generic [ref=f25e85]:
+      - generic [ref=f25e86]:
+        - generic [ref=f25e87]: Будьте в курсе
+        - generic [ref=f25e91]:
+          - textbox "Почта" [ref=f25e93]:
+            - /placeholder: ваша@почта.ru
+          - textbox "Имя" [ref=f25e95]:
+            - /placeholder: Ваше имя
+          - combobox "Город" [ref=f25e97] [cursor=pointer]:
+            - option "Ваш город" [disabled] [selected]
+            - option "Санкт-Петербург"
+            - option "Москва"
+          - generic [ref=f25e99] [cursor=pointer]:
+            - checkbox "Согласен(-сна) на обработку персональных данных и с пользовательским соглашением."
+            - generic [ref=f25e101]: Согласен(-сна) на обработку персональных данных и с пользовательским соглашением.
+          - button "Подписаться" [ref=f25e103] [cursor=pointer]
+      - generic [ref=f25e104]:
+        - generic [ref=f25e105]:
+          - link "Доставка" [ref=f25e107] [cursor=pointer]:
+            - /url: https://italytouch.ru
+          - link "Рестораны" [ref=f25e109] [cursor=pointer]:
+            - /url: https://italycommunity.ru/restaurants/
+          - link "О нас" [ref=f25e111] [cursor=pointer]:
+            - /url: https://italycommunity.ru/about/
+          - link "Программа лояльности" [ref=f25e113] [cursor=pointer]:
+            - /url: https://italycommunity.online/loyaltyprogram
+          - link "Ресторанам Надо" [ref=f25e115] [cursor=pointer]:
+            - /url: https://restoranamnado.ru
+          - link "Банкеты и кейтеринг" [ref=f25e117] [cursor=pointer]:
+            - /url: https://italyco.tilda.ws/banket
+          - link "Ресторанный консалтинг" [ref=f25e119] [cursor=pointer]:
+            - /url: https://italycommunity.online/consulting
+          - link "Работай с нами" [ref=f25e121] [cursor=pointer]:
+            - /url: https://italycommunity.online/work
+          - link "люди итали" [ref=f25e123] [cursor=pointer]:
+            - /url: https://italycommunity.online
+        - generic [ref=f25e124]:
+          - link "VK" [ref=f25e125] [cursor=pointer]:
+            - /url: https://vk.com/italy.community
+            - img "VK"
+          - link "Telegram" [ref=f25e126] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+            - img "Telegram"
+          - link "@MS_italycommunity" [ref=f25e127] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+      - generic [ref=f25e128]:
+        - generic [ref=f25e129]:
+          - link "Политика в отношении обработки персональных данных" [ref=f25e130] [cursor=pointer]:
+            - /url: https://italycommunity.ru/policy/
+          - link "Пользовательское соглашение" [ref=f25e131] [cursor=pointer]:
+            - /url: https://italycommunity.ru/agree/
+        - generic [ref=f25e132]: Права на сайт принадлежат ООО «ТЭД» (ИНН 7842232975, ОГРН 1257800112635).
+        - generic [ref=f25e134]: © 2020-2026. Все права защищены.
+  - generic [ref=f25e138]:
+    - generic [ref=f25e140]:
+      - text: Наш сайт использует файлы cookie для улучшения работы сайта —
+      - link "подробнее" [ref=f25e141] [cursor=pointer]:
+        - /url: /policy/
+      - text: .
+    - button "Принимаю" [ref=f25e143] [cursor=pointer]

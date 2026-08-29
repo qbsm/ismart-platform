@@ -1,0 +1,98 @@
+- generic [active] [ref=f6e1]:
+  - link "Перейти к контенту" [ref=f6e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f6e3]:
+    - banner [ref=f6e4]:
+      - generic [ref=f6e5]:
+        - link [ref=f6e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f6e8]
+        - generic [ref=f6e9]:
+          - generic [ref=f6e10]:
+            - button "Забронировать" [ref=f6e11] [cursor=pointer]
+            - button "Открыть меню" [ref=f6e12] [cursor=pointer]
+          - generic [ref=f6e17]:
+            - generic [ref=f6e18]:
+              - generic [ref=f6e19]: Приложение
+              - generic [ref=f6e20]: italy touch
+            - link "Скачать" [ref=f6e21] [cursor=pointer]:
+              - /url: https://redirect.appmetrica.yandex.com/serve/966450630770056189
+    - generic [ref=f6e24]:
+      - heading "Афиша событий" [level=1] [ref=f6e26]
+      - paragraph [ref=f6e28]: Гастроужины, дегустации и живая музыка в ресторанах Итали. Выбирайте вечер и бронируйте место по прямой ссылке.
+      - link "Ужин братьев Мясниковых при свечах — 23 августа, Особняк Мясникова" [ref=f6e31] [cursor=pointer]:
+        - /url: https://italycommunity.ru/events/uzhin-v-osobnyake/
+        - generic [ref=f6e32]:
+          - img "Особняк Мясникова вечером, двор с гирляндами" [ref=f6e33]
+          - generic [ref=f6e34]:
+            - generic [ref=f6e35]: "23"
+            - generic [ref=f6e36]: авг
+          - generic [ref=f6e37]: Ужин при свечах
+        - generic [ref=f6e38]:
+          - generic [ref=f6e39]: Особняк Мясникова
+          - heading "Ужин братьев Мясниковых при свечах" [level=3] [ref=f6e40]
+          - generic [ref=f6e41]: воскресенье, 19:00
+          - generic [ref=f6e42]:
+            - generic [ref=f6e43]: 15 000 ₽
+            - generic [ref=f6e45]: Подробнее
+    - generic [ref=f6e47]:
+      - generic [ref=f6e48]:
+        - generic [ref=f6e49]: Будьте в курсе событий
+        - generic [ref=f6e53]:
+          - textbox "Почта" [ref=f6e55]:
+            - /placeholder: ваша@почта.ru
+          - textbox "Имя" [ref=f6e57]:
+            - /placeholder: Ваше имя
+          - combobox "Город" [ref=f6e59] [cursor=pointer]:
+            - option "Ваш город" [disabled] [selected]
+            - option "Санкт-Петербург"
+            - option "Москва"
+          - generic [ref=f6e61] [cursor=pointer]:
+            - checkbox "Согласен(-сна) на обработку персональных данных и с пользовательским соглашением."
+            - generic [ref=f6e63]: Согласен(-сна) на обработку персональных данных и с пользовательским соглашением.
+          - button "Подписаться" [ref=f6e65] [cursor=pointer]
+      - generic [ref=f6e66]:
+        - generic [ref=f6e67]:
+          - link "Доставка" [ref=f6e69] [cursor=pointer]:
+            - /url: https://italytouch.ru
+          - link "Рестораны" [ref=f6e71] [cursor=pointer]:
+            - /url: https://italycommunity.ru/restaurants/
+          - link "Афиша" [ref=f6e73] [cursor=pointer]:
+            - /url: https://italycommunity.ru/events/
+          - link "О нас" [ref=f6e75] [cursor=pointer]:
+            - /url: https://italycommunity.ru/about/
+          - link "Программа лояльности" [ref=f6e77] [cursor=pointer]:
+            - /url: https://italycommunity.online/loyaltyprogram
+          - link "Ресторанам Надо" [ref=f6e79] [cursor=pointer]:
+            - /url: https://restoranamnado.ru
+          - link "Банкеты и кейтеринг" [ref=f6e81] [cursor=pointer]:
+            - /url: https://italyco.tilda.ws/banket
+          - link "Ресторанный консалтинг" [ref=f6e83] [cursor=pointer]:
+            - /url: https://italycommunity.online/consulting
+          - link "Работай с нами" [ref=f6e85] [cursor=pointer]:
+            - /url: https://italycommunity.online/work
+          - link "люди итали" [ref=f6e87] [cursor=pointer]:
+            - /url: https://italycommunity.online
+        - generic [ref=f6e88]:
+          - link [ref=f6e89] [cursor=pointer]:
+            - /url: https://vk.com/italy.community
+            - img "VK" [ref=f6e90]
+          - link [ref=f6e91] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+            - img "Telegram" [ref=f6e92]
+          - link "@MS_italycommunity" [ref=f6e93] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+      - generic [ref=f6e94]:
+        - generic [ref=f6e95]:
+          - link "Политика в отношении обработки персональных данных" [ref=f6e96] [cursor=pointer]:
+            - /url: https://italycommunity.ru/policy/
+          - link "Пользовательское соглашение" [ref=f6e97] [cursor=pointer]:
+            - /url: https://italycommunity.ru/agree/
+        - generic [ref=f6e98]: © 2020-2026. Все права защищены.
+  - generic [ref=f6e102]:
+    - generic [ref=f6e104]:
+      - text: Наш сайт использует файлы cookie для улучшения работы сайта —
+      - link "подробнее" [ref=f6e105] [cursor=pointer]:
+        - /url: /policy/
+      - text: .
+    - button "Принимаю" [ref=f6e107] [cursor=pointer]

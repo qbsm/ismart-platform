@@ -3,9 +3,9 @@
   <div class="mini-table__item">
     {% if item.href %} 
     {% set is_static_file = item.href matches '/.*\\.(pdf|doc|docx|xls|xlsx|zip|rar|jpg|jpeg|png|gif|webp)$/' or item.href starts with 'data/' %}
-    <a href="{{ (item.href starts with 'http' or item.href starts with 'mailto:' or item.href starts with 'tel:' or is_static_file) ? item.href : (currentLang.code == 'ru' ? item.href : '/' ~ currentLang.code ~ item.href) }}" target="_blank" class="link mini-table__title font-1-normal color-5 uppercase">{{ item.title | raw }}</a>
+    <a href="{{ (item.href starts with 'http' or item.href starts with 'mailto:' or item.href starts with 'tel:' or is_static_file) ? item.href : (currentLang.code == 'ru' ? item.href : '/' ~ currentLang.code ~ item.href) }}" target="_blank" class="link mini-table__title weight-400 color-2 uppercase">{{ item.title | raw }}</a>
     {% else %}
-    <span class="mini-table__title uppercase font-1-normal color-5">{{ item.title | raw }}</span>
+    <span class="mini-table__title uppercase weight-400 color-2">{{ item.title | raw }}</span>
     {% endif %}
     {% if item.value %}
     <span class="mini-table__value uppercase">{{ item.value | raw }}</span>

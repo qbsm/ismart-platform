@@ -1,0 +1,46 @@
+# Общие правила для всех краулеров
+User-agent: *
+Allow: /
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.gif
+Allow: /llms.txt
+Allow: /llms-full.txt
+# Собранные бандлы обязаны быть доступны краулерам: Google рендерит страницы и при
+# заблокированных CSS/JS считает их сломанными (правило длиннее Disallow — Allow побеждает)
+Allow: /assets/css/build/
+Allow: /assets/js/build/
+Allow: /assets/js/utils/
+Disallow: /src/
+Disallow: /config/
+Disallow: /tools/
+Disallow: /cache/
+Disallow: /node_modules/
+Disallow: /vendor/
+Disallow: /assets/js/components/
+Disallow: /assets/js/sections/
+Disallow: /assets/js/base/
+Disallow: /assets/css/
+Disallow: /data/json/
+Disallow: /.git/
+Disallow: *.php$
+Disallow: /.htaccess
+
+# Заменить на домен деплоймента
+Sitemap: https://example.com/sitemap.xml
+
+# AI / LLM-краулеры (GEO)
+# По умолчанию разрешаем индексацию для AI-поисковиков. Чтобы запретить бота — добавьте блок с Disallow: /
+# GPTBot (OpenAI), ChatGPT-User (браузерный доступ)
+# Google-Extended (Google AI)
+# PerplexityBot (Perplexity)
+# ClaudeBot (Anthropic)
+# Applebot-Extended (Apple Intelligence)
+# Cohere-AI (Cohere)
+# Все перечисленные боты наследуют правила User-agent: * выше. Специальные правила при необходимости:
+# User-agent: GPTBot
+# Allow: /
+# User-agent: Google-Extended
+# Allow: /

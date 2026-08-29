@@ -1,0 +1,41 @@
+{% set rootClass = filter.root_class | default('filter-wrap') %}
+<div class="filter {{ rootClass }}">
+  <div class="filter-container">
+    {% for group in filter.groups | default([]) %}
+      {% set groupClass = ('filter-group ' ~ (group.class | default(''))) | trim %}
+
+      {% if group.type == 'buttons' %}
+        <div class="{{ groupClass }}">
+          {% for button in group.buttons | default([]) %}
+            {% set buttonClass = ('filter__selector ' ~ (button.class | default('')) ~ (button.disabled ? ' disabled' : '')) | trim %}
+            <button
+              type="button"
+              class="{{ buttonClass }}"
+              {% if button.data_attr is defined and button.data_attr_name is defined %}
+                {{ button.data_attr_name }}="{{ button.data_attr }}"
+              {% endif %}
+              {% if button.disabled %}disabled{% endif %}
+            >{{ button.label | default('') }}</button>
+          {% endfor %}
+        </div>
+      {% elseif group.type == 'select' %}
+        <div class="{{ groupClass }}">
+          {% if group.label is defined and group.id is defined %}
+            <label class="filter__label" for="{{ group.id }}">{{ group.label }}</label>
+          {% endif %}
+          <select id="{{ group.id | default('') }}" class="{{ group.select_class | default('custom-select') }}">
+            {% for option in group.options | default([]) %}
+              <option value="{{ option.value | default('') }}">{{ option.label | default('') }}</option>
+            {% endfor %}
+          </select>
+        </div>
+      {% elseif group.type == 'toggle' %}
+        {% set toggleClass = (groupClass ~ ' filter__selector') | trim %}
+        <label class="{{ toggleClass }}">
+          <input type="checkbox" class="{{ group.input_class | default('filter__checkbox') }}">
+          <span class="filter__option-label">{{ group.label | default('') }}</span>
+        </label>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

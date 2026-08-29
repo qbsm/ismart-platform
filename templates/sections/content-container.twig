@@ -1,0 +1,7 @@
+{% if data.content is defined and data.content.items is defined %}
+  <section class="content-container section">
+    <div class="{% if data.container is defined and data.container %}{{ data.container }}{% else %}container{% endif %}">
+      {% include 'sections/content.twig' with {'data': data.content} %}
+    </div>
+  </section>
+{% endif %}

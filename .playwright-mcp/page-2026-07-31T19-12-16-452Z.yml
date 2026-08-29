@@ -1,0 +1,313 @@
+- generic [ref=e23]:
+  - navigation [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - img "iSmart" [ref=e27]:
+          - img "iSmart" [ref=e28]
+        - generic [ref=e29]: iSmart ERP
+      - generic [ref=e30]: Дашборды
+      - list [ref=e32]:
+        - link " Обзор" [ref=e33] [cursor=pointer]:
+          - /url: /dashboard
+          - generic [ref=e34]: 
+          - generic [ref=e36]: Обзор
+        - link " Финансы" [ref=e38] [cursor=pointer]:
+          - /url: /dashboards/finance
+          - generic [ref=e39]: 
+          - generic [ref=e41]: Финансы
+        - link " Заказчики" [ref=e43] [cursor=pointer]:
+          - /url: /dashboards/clients
+          - generic [ref=e44]: 
+          - generic [ref=e46]: Заказчики
+        - link " Проекты" [ref=e48] [cursor=pointer]:
+          - /url: /dashboards/projects
+          - generic [ref=e49]: 
+          - generic [ref=e51]: Проекты
+        - link " Документы" [ref=e53] [cursor=pointer]:
+          - /url: /dashboards/docs
+          - generic [ref=e54]: 
+          - generic [ref=e56]: Документы
+        - link " Исполнители" [ref=e58] [cursor=pointer]:
+          - /url: /dashboards/executors
+          - generic [ref=e59]: 
+          - generic [ref=e61]: Исполнители
+      - generic [ref=e63]: Аналитика
+      - list [ref=e65]:
+        - link " За месяц" [ref=e66] [cursor=pointer]:
+          - /url: /analytics/month
+          - generic [ref=e67]: 
+          - generic [ref=e69]: За месяц
+        - link " Общая" [ref=e71] [cursor=pointer]:
+          - /url: /analytics/overall
+          - generic [ref=e72]: 
+          - generic [ref=e74]: Общая
+      - generic [ref=e76]: Финансы
+      - list [ref=e78]:
+        - link " Счета" [ref=e79] [cursor=pointer]:
+          - /url: /invoices
+          - generic [ref=e80]: 
+          - generic [ref=e82]: Счета
+        - link " УПД" [ref=e84] [cursor=pointer]:
+          - /url: /upds
+          - generic [ref=e85]: 
+          - generic [ref=e87]: УПД
+        - link " Работы" [ref=e89] [cursor=pointer]:
+          - /url: /works
+          - generic [ref=e90]: 
+          - generic [ref=e92]: Работы
+        - link " Расходы" [ref=e94] [cursor=pointer]:
+          - /url: /expenses
+          - generic [ref=e95]: 
+          - generic [ref=e97]: Расходы
+        - link " Документы ЭДО" [ref=e99] [cursor=pointer]:
+          - /url: /diadoc
+          - generic [ref=e100]: 
+          - generic [ref=e102]: Документы ЭДО
+        - link " Акт сверки" [ref=e104] [cursor=pointer]:
+          - /url: /reconciliation
+          - generic [ref=e105]: 
+          - generic [ref=e107]: Акт сверки
+      - generic [ref=e109]: Справочники
+      - list [ref=e111]:
+        - link " Заказчики" [ref=e112] [cursor=pointer]:
+          - /url: /counterparties
+          - generic [ref=e113]: 
+          - generic [ref=e115]: Заказчики
+        - link " Проекты" [ref=e117] [cursor=pointer]:
+          - /url: /projects
+          - generic [ref=e118]: 
+          - generic [ref=e120]: Проекты
+        - link " Организации" [ref=e122] [cursor=pointer]:
+          - /url: /settings
+          - generic [ref=e123]: 
+          - generic [ref=e125]: Организации
+  - main [ref=e127]:
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - button "" [ref=e130] [cursor=pointer]
+        - generic [ref=e135]:
+          - generic [ref=e136]: 
+          - textbox "Поиск…" [ref=e139]
+        - button "" [ref=e140] [cursor=pointer]
+        - button " Знак" [ref=e143] [cursor=pointer]:
+          - generic [ref=e146]:
+            - generic [ref=e147]: 
+            - status "Знак" [ref=e148]
+        - generic [ref=e149]:
+          - generic [ref=e150]: Владелец
+          - generic [ref=e151]: Владелец
+        - button "" [ref=e152] [cursor=pointer]
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - heading "Обзор" [level=1] [ref=e159]
+          - generic [ref=e160]:
+            - button "Всё время" [ref=e161] [cursor=pointer]
+            - button "2026" [ref=e163] [cursor=pointer]
+            - button "2025" [ref=e165] [cursor=pointer]
+            - button "2024" [ref=e167] [cursor=pointer]
+            - button "2023" [ref=e169] [cursor=pointer]
+            - button "2022" [ref=e171] [cursor=pointer]
+            - button "2021" [ref=e173] [cursor=pointer]
+            - button "2020" [ref=e175] [cursor=pointer]
+            - button "2019" [ref=e177] [cursor=pointer]
+            - button "2018" [ref=e179] [cursor=pointer]
+            - button "2017" [ref=e181] [cursor=pointer]
+            - button "2016" [ref=e183] [cursor=pointer]
+            - button "2015" [ref=e185] [cursor=pointer]
+            - button "2014" [ref=e187] [cursor=pointer]
+            - button "2013" [ref=e189] [cursor=pointer]
+            - button "2012" [ref=e191] [cursor=pointer]
+        - generic [ref=e193]:
+          - generic [ref=e195]:
+            - button "" [ref=e197] [cursor=pointer]
+            - generic [ref=e200]:
+              - generic [ref=e201]:
+                - heading "Поступления · июль" [level=5] [ref=e202]
+                - generic [ref=e203]: iSmart · оплаты по выписке за месяц
+              - heading "262 980 ₽" [level=4] [ref=e204]
+              - generic [ref=e205]: в прошлом месяце 253 750 ₽
+              - button "Открыть аналитику" [ref=e206] [cursor=pointer]
+          - generic [ref=e211]:
+            - generic [ref=e212]:
+              - generic [ref=e213]:
+                - generic [ref=e214]: Показатели
+                - paragraph [ref=e216]:
+                  - generic [ref=e217]: Июль 2026
+                  - text: · к прошлому месяцу
+              - generic [ref=e219]:
+                - button "" [ref=e220] [cursor=pointer]
+                - button "" [ref=e223] [cursor=pointer]
+            - generic [ref=e227]:
+              - generic [ref=e229]:
+                - generic [ref=e230]: 
+                - generic [ref=e232]:
+                  - generic [ref=e233]: К выставлению
+                  - heading "587 575 ₽" [level=5] [ref=e234]
+                  - generic [ref=e235]: ▲ 16%
+                  - generic [ref=e237]: за июль · месяц идёт
+              - generic [ref=e239]:
+                - generic [ref=e240]: 
+                - generic [ref=e242]:
+                  - generic [ref=e243]: Сдельные работы
+                  - heading "266 575 ₽" [level=5] [ref=e244]
+                  - generic [ref=e245]: ▲ 44%
+                  - generic [ref=e247]: 51 работа за месяц
+              - generic [ref=e249]:
+                - generic [ref=e250]: 
+                - generic [ref=e252]:
+                  - generic [ref=e253]: Абонементы
+                  - heading "321 000 ₽" [level=5] [ref=e254]
+                  - generic [ref=e255]: ▲ 3%
+                  - generic [ref=e257]: +12 000 ₽/мес в июле
+              - generic [ref=e259]:
+                - generic [ref=e260]: 
+                - generic [ref=e262]:
+                  - generic [ref=e263]: Нам должны
+                  - heading "836 525 ₽" [level=5] [ref=e264]
+                  - generic [ref=e265]: 15 счетов не оплачено
+          - generic [ref=e267]:
+            - generic [ref=e269]:
+              - generic [ref=e270]: Ожидаемая прибыль
+              - generic [ref=e271]: Июль 2026 по активным проектам
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - heading "472 332 ₽" [level=3] [ref=e274]
+                - generic [ref=e275]: маржа 80%
+              - separator [ref=e277]
+              - generic [ref=e278]:
+                - generic [ref=e279]: Ожидаемая выручка
+                - generic [ref=e280]: +587 575 ₽
+              - generic [ref=e281]:
+                - generic [ref=e282]: Ожидаемые расходы
+                - generic [ref=e283]: −115 243 ₽
+          - generic [ref=e285]:
+            - generic [ref=e287]:
+              - generic [ref=e288]: Прогноз расходов
+              - generic [ref=e289]: Июль 2026
+            - generic [ref=e290]:
+              - heading "115 243 ₽" [level=3] [ref=e291]
+              - generic [ref=e292]: Начисление по модели, не факт
+            - generic [ref=e293]:
+              - generic [ref=e294]:
+                - generic [ref=e295]:
+                  - generic [ref=e297]: Доли участников с поддержки
+                  - heading "91 167 ₽" [level=6] [ref=e298]
+                  - heading "79%" [level=6] [ref=e299]
+                - separator [ref=e300]
+              - generic [ref=e301]:
+                - generic [ref=e302]:
+                  - generic [ref=e304]: Подписки / сервисы
+                  - heading "8 187 ₽" [level=6] [ref=e305]
+                  - heading "7%" [level=6] [ref=e306]
+                - separator [ref=e307]
+              - generic [ref=e308]:
+                - generic [ref=e309]:
+                  - generic [ref=e311]: Хостинг / инфраструктура
+                  - heading "6 760 ₽" [level=6] [ref=e312]
+                  - heading "6%" [level=6] [ref=e313]
+                - separator [ref=e314]
+              - generic [ref=e315]:
+                - generic [ref=e316]:
+                  - generic [ref=e318]: Накладные (бухгалтер)
+                  - heading "5 000 ₽" [level=6] [ref=e319]
+                  - heading "4%" [level=6] [ref=e320]
+                - separator [ref=e321]
+              - generic [ref=e323]:
+                - generic [ref=e325]: Доли участников со сдельных
+                - heading "4 130 ₽" [level=6] [ref=e326]
+                - heading "4%" [level=6] [ref=e327]
+          - generic [ref=e329]:
+            - generic [ref=e330]:
+              - generic [ref=e331]:
+                - generic [ref=e332]: Дебиторская задолженность
+                - generic [ref=e333]: Оплачено от выставленного · за 2026 год
+              - button "" [ref=e336] [cursor=pointer]
+            - generic [ref=e339]:
+              - generic [ref=e341]:
+                - application "radialBar chart with 1 data series" [ref=e342]:
+                  - generic [ref=e354]:
+                    - generic: Оплачено
+                    - generic: 71%
+                - status [ref=e355]
+              - generic [ref=e356]:
+                - generic [ref=e357]:
+                  - generic [ref=e358]: Выставлено
+                  - generic [ref=e359]: 2 868 405 ₽
+                - generic [ref=e360]:
+                  - generic [ref=e361]: Оплачено
+                  - generic [ref=e362]: 2 031 880 ₽
+          - generic [ref=e364]:
+            - generic [ref=e365]:
+              - generic [ref=e366]: Выручка по месяцам
+              - generic [ref=e369]:
+                - button "" [ref=e370] [cursor=pointer]
+                - button "" [ref=e373] [cursor=pointer]
+            - generic [ref=e376]:
+              - generic [ref=e378]:
+                - 'application "bar chart with 2 data series: Расходы, Прибыль" [ref=e379]':
+                  - generic [ref=e382]:
+                    - generic "800к" [ref=e383]
+                    - generic "600к" [ref=e384]
+                    - generic "400к" [ref=e385]
+                    - generic "200к" [ref=e386]
+                    - generic "0" [ref=e387]
+                  - generic [ref=e410]:
+                    - generic "Янв" [ref=e411]
+                    - generic "Фев" [ref=e412]
+                    - generic "Мар" [ref=e413]
+                    - generic "Апр" [ref=e414]
+                    - generic "Май" [ref=e415]
+                    - generic "Июн" [ref=e416]
+                    - generic "Июл" [ref=e417]
+                - generic [ref=e418]:
+                  - button "Расходы, visible. Press Enter or Space to toggle." [ref=e419] [cursor=pointer]:
+                    - generic [ref=e421]: Расходы
+                  - button "Прибыль, visible. Press Enter or Space to toggle." [ref=e422] [cursor=pointer]:
+                    - generic [ref=e424]: Прибыль
+                - status [ref=e425]
+                - tooltip
+              - generic [ref=e426]:
+                - heading "+16%" [level=4] [ref=e427]
+                - paragraph [ref=e428]: Выручка последнего месяца выше предыдущего на 16%
+              - button "Подробнее" [ref=e429] [cursor=pointer]
+          - generic [ref=e432]:
+            - generic [ref=e433]:
+              - generic [ref=e434]:
+                - generic [ref=e435]: Наша выручка
+                - generic [ref=e436]: Топ-6 ключевых заказчиков — не весь список
+              - generic [ref=e438]:
+                - button "" [ref=e439] [cursor=pointer]
+                - button "" [ref=e442] [cursor=pointer]
+            - generic [ref=e445]:
+              - heading "2 868 405 ₽" [level=3] [ref=e447]
+              - generic [ref=e448]: Выставлено по оказанным услугам · 2026 год
+              - list [ref=e449]:
+                - listitem [ref=e450]:
+                  - generic [ref=e454]:
+                    - generic [ref=e455]: ООО «ЭмДжиКом»
+                    - generic [ref=e456]: 38% выручки
+                  - generic [ref=e458]:
+                    - heading "1 090 280 ₽" [level=6] [ref=e459]
+                    - progressbar [ref=e460]
+                - listitem [ref=e463]:
+                  - generic [ref=e467]:
+                    - generic [ref=e468]: ООО «БорисХоф Холдинг»
+                    - generic [ref=e469]: 27% выручки
+                  - generic [ref=e471]:
+                    - heading "777 500 ₽" [level=6] [ref=e472]
+                    - progressbar [ref=e473]
+                - listitem [ref=e476]:
+                  - generic [ref=e477]: СТ
+                  - generic [ref=e480]:
+                    - generic [ref=e481]: ООО «Сталкер»
+                    - generic [ref=e482]: 17% выручки
+                  - generic [ref=e484]:
+                    - heading "480 000 ₽" [level=6] [ref=e485]
+                    - progressbar [ref=e486]
+                - listitem [ref=e489]:
+                  - generic [ref=e493]:
+                    - generic [ref=e494]: ООО «ТЭД»
+                    - generic [ref=e495]: 9% выручки
+                  - generic [ref=e497]:
+                    - heading "267 750 ₽" [level=6] [ref=e498]
+                    - progressbar [ref=e499]

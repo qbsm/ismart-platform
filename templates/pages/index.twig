@@ -1,9 +1,0 @@
-{% extends 'layout.twig' %}
-
-{% block content %}
-  {% if sections is defined %}
-    {% for section in sections %}
-      {% include 'sections/' ~ section.name ~ '.twig' ignore missing with {'data': section.data} %}
-    {% endfor %}
-  {% endif %}
-{% endblock %}

@@ -1,0 +1,379 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - banner [ref=f4e3]:
+      - generic [ref=f4e5]:
+        - img "лого" [ref=f4e7]
+        - navigation [ref=f4e8]:
+          - link [ref=f4e9] [cursor=pointer]:
+            - /url: "#services"
+            - paragraph [ref=f4e10]: Услуги
+          - link [ref=f4e11] [cursor=pointer]:
+            - /url: "#offers"
+            - paragraph [ref=f4e12]: Акции
+          - link [ref=f4e13] [cursor=pointer]:
+            - /url: "#info"
+            - paragraph [ref=f4e14]: О нас
+          - link [ref=f4e15] [cursor=pointer]:
+            - /url: "#contacts"
+            - paragraph [ref=f4e16]: Контакты
+        - paragraph [ref=f4e17]: Ежедневно с 09:00 до 21:00
+        - generic [ref=f4e18]:
+          - generic [ref=f4e19]:
+            - text: "Москва:"
+            - link [ref=f4e20] [cursor=pointer]:
+              - /url: tel:+74954808650
+              - paragraph [ref=f4e21]: +7 495 480 86 50
+          - generic [ref=f4e22]:
+            - text: "Санкт-Петербург:"
+            - link [ref=f4e23] [cursor=pointer]:
+              - /url: tel:+78122237682
+              - paragraph [ref=f4e24]: +7 812 223 76 82
+        - button [ref=f4e25] [cursor=pointer]:
+          - paragraph [ref=f4e26]: Заказать звонок
+    - generic [ref=f4e39]:
+      - generic [ref=f4e41]:
+        - heading "Новый ZEEKR 8X?" [level=1] [ref=f4e42]
+        - heading "Мы уже всё о нём знаем. Приезжайте на диагностику!" [level=3] [ref=f4e43]: Мы уже всё о нём знаем.Приезжайте на диагностику!
+        - button [ref=f4e44] [cursor=pointer]:
+          - paragraph [ref=f4e45]: Записаться на диагностику
+      - generic [ref=f4e48]:
+        - heading "Сервисный центр БорисХоф Вольт" [level=1] [ref=f4e49]
+        - heading "СЛОМАЛСЯ РЕДУКТОР? ЗВОНИ — ЗАМЕНИМ" [level=3] [ref=f4e50]: СЛОМАЛСЯ РЕДУКТОР?ЗВОНИ — ЗАМЕНИМ
+        - button [ref=f4e51] [cursor=pointer]:
+          - paragraph [ref=f4e52]: Записаться на сервис
+      - generic [ref=f4e53]:
+        - generic [ref=f4e55]:
+          - heading "Сервисный центр БорисХоф Вольт" [level=1] [ref=f4e56]
+          - heading "ШИНОМОНТАЖ" [level=3] [ref=f4e57]
+          - generic [ref=f4e58]:
+            - paragraph [ref=f4e60]: ТО + развал-схождение = озонирование салона в подарок + 50% скидка на развал-схождение
+            - paragraph [ref=f4e62]: ТО + шиномонтаж = Хранение колес в подарок
+          - button [ref=f4e63] [cursor=pointer]:
+            - paragraph [ref=f4e64]: Записаться на сервис
+        - list [ref=f4e65]:
+          - listitem [ref=f4e66] [cursor=pointer]:
+            - paragraph [ref=f4e67]: Гарантия на все виды работ
+          - listitem [ref=f4e68] [cursor=pointer]:
+            - paragraph [ref=f4e69]: Комплектующие в наличии
+          - listitem [ref=f4e70] [cursor=pointer]:
+            - paragraph [ref=f4e71]: Сертифицированный сервис электромобилей
+      - generic [ref=f4e74]:
+        - heading "БорисХоф Вольт Ленинский" [level=1] [ref=f4e80]
+        - heading "Арифметика Успеха" [level=3] [ref=f4e81]
+        - generic [ref=f4e82]:
+          - paragraph [ref=f4e84]: ТО + развал-схождение + озонирование салона = за 35 000 ₽
+          - paragraph [ref=f4e86]: Обслуживание выдвижных порогов (2 стороны) = 20 000 ₽ (полный разбор, чистка и смазка)
+        - button [ref=f4e87] [cursor=pointer]:
+          - paragraph [ref=f4e88]: Записаться на сервис
+      - generic [ref=f4e91]:
+        - heading "БорисХоф Вольт Ленинский" [level=1] [ref=f4e100]
+        - heading "Формула идеального хода" [level=3] [ref=f4e101]
+        - paragraph [ref=f4e104]: ТО + развал-схождение + озонирование салона = за 25 000 ₽
+        - button [ref=f4e105] [cursor=pointer]:
+          - paragraph [ref=f4e106]: Записаться на сервис
+      - generic [ref=f4e109]:
+        - heading "БорисХоф Вольт Ленинский" [level=1] [ref=f4e119]
+        - heading "Умная подготовка к сезону" [level=3] [ref=f4e120]
+        - generic [ref=f4e121]:
+          - paragraph [ref=f4e123]: ТО + мойка боковых радиаторов = 35 000 ₽
+          - paragraph [ref=f4e125]: Обслуживание выдвижных порогов (2 стороны) = 20 000 ₽ (полный разбор, чистка и смазка)
+        - button [ref=f4e126] [cursor=pointer]:
+          - paragraph [ref=f4e127]: Записаться на сервис
+      - generic [ref=f4e130]:
+        - heading "ОБНОВЛЕНИЕ ПО LYNK & CO 900 ЗА 45 000 ₽" [level=1] [ref=f4e140]: ОБНОВЛЕНИЕ ПО LYNK & CO 900ЗА 45 000 ₽
+        - heading "+ сезонное хранение колес" [level=3] [ref=f4e141]
+        - generic [ref=f4e142]:
+          - paragraph [ref=f4e144]: ТО + мойка боковых радиаторов = 25% скидка на мойку радиаторов
+          - paragraph [ref=f4e146]: ТО + шиномонтаж = Хранение колес в подарок
+        - button [ref=f4e147] [cursor=pointer]:
+          - paragraph [ref=f4e148]: Записаться на сервис
+        - paragraph [ref=f4e149]: Имеем новую версию обновления 2.2.6, которая вышла в начале апреля
+      - generic [ref=f4e152]:
+        - heading "ДИАГНОСТИКА БАТАРЕИ ZEEKR В ПОДАРОК ПРИ ТО" [level=1] [ref=f4e161]: ДИАГНОСТИКА БАТАРЕИ ZEEKRВ ПОДАРОК ПРИ ТО
+        - generic [ref=f4e162]:
+          - paragraph [ref=f4e164]: ТО + развал-схождение = озонирование салона в подарок+ 50% скидка на развал-схождение
+          - paragraph [ref=f4e166]: ТО + шиномонтаж = Хранение колес в подарок
+        - button [ref=f4e167] [cursor=pointer]:
+          - paragraph [ref=f4e168]: Записаться на сервис
+    - generic [ref=f4e190]:
+      - generic [ref=f4e191]: Спецпредложения
+      - generic [ref=f4e192]:
+        - generic [ref=f4e195]:
+          - generic [ref=f4e196] [cursor=pointer]:
+            - generic [ref=f4e198]:
+              - heading "Замена редуктора Zeekr 9X" [level=3] [ref=f4e199]: Замена редуктораZeekr 9X
+              - paragraph [ref=f4e200]: Цену от - уточняйте у консультантов
+            - generic [ref=f4e203]: гарантия
+          - generic [ref=f4e206] [cursor=pointer]:
+            - heading "Озоновая обработка салона профессиональным роботом (дезинфекция)" [level=3] [ref=f4e207]
+            - paragraph [ref=f4e208]: от 4 990₽
+          - generic [ref=f4e213] [cursor=pointer]:
+            - heading "Проверка и регулировка углов установки колес (сход-развал)" [level=3] [ref=f4e214]
+            - paragraph [ref=f4e215]: от 9 000₽
+          - generic [ref=f4e220] [cursor=pointer]:
+            - heading "Русификация автомобилей" [level=3] [ref=f4e221]
+            - paragraph [ref=f4e222]: от 100 000₽
+          - generic [ref=f4e225] [cursor=pointer]:
+            - generic [ref=f4e227]:
+              - heading "Шумоизоляция для шин" [level=3] [ref=f4e228]
+              - paragraph [ref=f4e229]: от 8 000₽
+              - paragraph [ref=f4e230]: без учета шиномонтажа
+            - generic [ref=f4e233]: хит
+          - heading "Шумоизоляция для кузова от 100 000₽ Шумоизоляция колесных арок от 45 200₽" [level=3] [ref=f4e237] [cursor=pointer]: Шумоизоляция для кузова от 100 000₽Шумоизоляция колесных арок от 45 200₽
+          - generic [ref=f4e242] [cursor=pointer]:
+            - heading "Проверка автомобиля" [level=3] [ref=f4e243]
+            - paragraph [ref=f4e244]: от 4 000₽
+          - generic [ref=f4e249] [cursor=pointer]:
+            - heading "Скидка на химчистку/ нанесение антидождя" [level=3] [ref=f4e250]: Скидка на химчистку/нанесение антидождя
+            - paragraph [ref=f4e251]: 10%
+          - generic [ref=f4e256] [cursor=pointer]:
+            - heading "Установка защит всего днища, включая батарею" [level=3] [ref=f4e257]
+            - paragraph [ref=f4e258]: от 36 000₽
+          - generic [ref=f4e263] [cursor=pointer]:
+            - heading "Замена 12v аккумулятора" [level=3] [ref=f4e264]
+            - paragraph [ref=f4e265]: от 10 000₽
+          - generic [ref=f4e268] [cursor=pointer]:
+            - generic [ref=f4e270]:
+              - heading "Замена масла в редукторах (с оригинальным маслом)" [level=3] [ref=f4e271]
+              - paragraph [ref=f4e272]: от 16 000₽
+            - generic [ref=f4e275]: скидка
+          - generic [ref=f4e278] [cursor=pointer]:
+            - heading "Дооснащение слотами под сим карту" [level=3] [ref=f4e279]
+            - paragraph [ref=f4e280]: от 30 000₽
+          - generic [ref=f4e285] [cursor=pointer]:
+            - heading "Замена ключей дистанционного управления" [level=3] [ref=f4e286]
+            - paragraph [ref=f4e287]: от 49 000₽
+          - generic [ref=f4e292] [cursor=pointer]:
+            - heading "Хранение автомобиля" [level=3] [ref=f4e293]
+            - paragraph [ref=f4e294]: от 5 000₽
+          - generic [ref=f4e299] [cursor=pointer]:
+            - heading "Шиномонтаж от 9 000 ₽" [level=3] [ref=f4e300]
+            - paragraph [ref=f4e301]: сезонное хранение в подарок при покупке шин
+        - generic [ref=f4e304]: 1 / 12
+    - generic [ref=f4e306]:
+      - heading "ЦЕНЫ НА УСЛУГИ" [level=2] [ref=f4e307]
+      - generic [ref=f4e308]:
+        - generic [ref=f4e311]:
+          - generic [ref=f4e312]:
+            - img "lynk_co" [ref=f4e314] [cursor=pointer]
+            - generic [ref=f4e315]:
+              - heading "Техническое обслуживание" [level=3] [ref=f4e316]
+              - img "lynk_co" [ref=f4e317]
+            - generic [ref=f4e318]:
+              - paragraph [ref=f4e321] [cursor=pointer]: Диагностика
+              - paragraph [ref=f4e326] [cursor=pointer]: Обслуживание и ремонт высоковольтной батареи (HV Battery)
+              - paragraph [ref=f4e331] [cursor=pointer]: Обслуживание и ремонт электродвигателя и инвертора
+              - paragraph [ref=f4e336] [cursor=pointer]: Система зарядки
+              - paragraph [ref=f4e341] [cursor=pointer]: Шасси и ходовая часть
+              - paragraph [ref=f4e346] [cursor=pointer]: Тормозная система
+              - paragraph [ref=f4e351] [cursor=pointer]: Климатическая система
+              - paragraph [ref=f4e356] [cursor=pointer]: Кузовной ремонт и остекление
+              - paragraph [ref=f4e361] [cursor=pointer]: Шиномонтаж и колеса
+              - paragraph [ref=f4e366] [cursor=pointer]: Программное обеспечение и электроника
+              - paragraph [ref=f4e371] [cursor=pointer]: Прочие услуги
+          - generic [ref=f4e374]:
+            - img "lixiang" [ref=f4e376] [cursor=pointer]
+            - generic [ref=f4e377]:
+              - heading "Техническое обслуживание" [level=3] [ref=f4e378]
+              - img "lixiang" [ref=f4e379]
+            - generic [ref=f4e380]:
+              - paragraph [ref=f4e383] [cursor=pointer]: Диагностика
+              - paragraph [ref=f4e388] [cursor=pointer]: Обслуживание и ремонт высоковольтной батареи (HV Battery)
+              - paragraph [ref=f4e393] [cursor=pointer]: Обслуживание и ремонт электродвигателя и инвертора
+              - paragraph [ref=f4e398] [cursor=pointer]: Система зарядки
+              - paragraph [ref=f4e403] [cursor=pointer]: Шасси и ходовая часть
+              - paragraph [ref=f4e408] [cursor=pointer]: Тормозная система
+              - paragraph [ref=f4e413] [cursor=pointer]: Климатическая система
+              - paragraph [ref=f4e418] [cursor=pointer]: Кузовной ремонт и остекление
+              - paragraph [ref=f4e423] [cursor=pointer]: Шиномонтаж и колеса
+              - paragraph [ref=f4e428] [cursor=pointer]: Программное обеспечение и электроника
+              - paragraph [ref=f4e433] [cursor=pointer]: Прочие услуги
+          - generic [ref=f4e436]:
+            - img "zeekr" [ref=f4e438] [cursor=pointer]
+            - generic [ref=f4e439]:
+              - heading "Техническое обслуживание" [level=3] [ref=f4e440]
+              - img "zeekr" [ref=f4e441]
+            - generic [ref=f4e442]:
+              - paragraph [ref=f4e445] [cursor=pointer]: Диагностика
+              - paragraph [ref=f4e450] [cursor=pointer]: Обслуживание и ремонт высоковольтной батареи (HV Battery)
+              - paragraph [ref=f4e455] [cursor=pointer]: Обслуживание и ремонт электродвигателя и инвертора
+              - paragraph [ref=f4e460] [cursor=pointer]: Система зарядки
+              - paragraph [ref=f4e465] [cursor=pointer]: Шасси и ходовая часть
+              - paragraph [ref=f4e470] [cursor=pointer]: Тормозная система
+              - paragraph [ref=f4e475] [cursor=pointer]: Климатическая система
+              - paragraph [ref=f4e480] [cursor=pointer]: Кузовной ремонт и остекление
+              - paragraph [ref=f4e485] [cursor=pointer]: Шиномонтаж и колеса
+              - paragraph [ref=f4e490] [cursor=pointer]: Программное обеспечение и электроника
+              - paragraph [ref=f4e495] [cursor=pointer]: Прочие услуги
+        - generic [ref=f4e498]: 1 / 2
+      - img "service" [ref=f4e502]
+    - generic [ref=f4e504]:
+      - heading "Частые причины обращения" [level=2] [ref=f4e505]
+      - generic [ref=f4e506]:
+        - paragraph [ref=f4e512] [cursor=pointer]: Зарядка и батарея
+        - paragraph [ref=f4e519] [cursor=pointer]: Ходовая часть, тормоза, управление
+        - paragraph [ref=f4e527] [cursor=pointer]: Запуск и работа авто
+        - paragraph [ref=f4e535] [cursor=pointer]: Климат и комфорт
+        - paragraph [ref=f4e543] [cursor=pointer]: Электроника и мультимедиа
+        - paragraph [ref=f4e551] [cursor=pointer]: Общие запросы "спасения"
+    - generic [ref=f4e555]:
+      - generic [ref=f4e556]:
+        - heading "Знаем все об электромобилях" [level=3] [ref=f4e560]: Знаем всеоб электромобилях
+        - generic [ref=f4e561]:
+          - paragraph [ref=f4e562]: Устраним любую неполадку
+          - paragraph [ref=f4e564]: кратчайшие сроки
+          - paragraph [ref=f4e566]: по оптимальной цене
+      - generic [ref=f4e567]:
+        - paragraph [ref=f4e568]: Оставьте заявку, мы перезвоним вам в ближайшее время
+        - generic [ref=f4e570]:
+          - generic [ref=f4e571]: Выберите город
+          - textbox "Ваш телефон" [ref=f4e579]
+          - button [ref=f4e580]:
+            - paragraph [ref=f4e581]:
+              - text: Записаться на сервис
+              - paragraph: Выберите город
+          - generic [ref=f4e582] [cursor=pointer]:
+            - checkbox "Согласие на обработку персональных данных" [ref=f4e583]
+            - generic [ref=f4e585]: Согласие на обработку персональных данных
+    - generic [ref=f4e587]:
+      - generic [ref=f4e588]: отзывы
+      - generic [ref=f4e592]:
+        - generic [ref=f4e593]:
+          - paragraph [ref=f4e594]: Отличная компания. Не первый од обслуживаюсь. Настоящие профессионалы своего дела. Всегда помогут в возникших проблемах автомобиля. Отдельное спасибо мастеру Вольнову Антону!
+          - paragraph [ref=f4e597]: Алексей Ар
+        - generic [ref=f4e600]:
+          - paragraph [ref=f4e601]: Делали сегодня ТО Zeekr, остались довольны. Отдельная благодарность Михаилу, быстро, вежливо и очень доступно все рассказал. Спасибо.
+          - paragraph [ref=f4e604]: Инкогнито 8129
+        - generic [ref=f4e607]:
+          - paragraph [ref=f4e608]: Отличный автосалон как в части приобретения (покупала свой Zeekr), так и в части обслуживания. Прекрасный вежливый персонал, все объясняют, рассказывают и вовремя информируют. Однозначно рекомендую!
+          - paragraph [ref=f4e611]: Анна Л.
+        - generic [ref=f4e614]:
+          - paragraph [ref=f4e615]: Была на ТО у Антона, потрясающий мастер, звонила не в один центр в Москве, это единственный человек, кто проконсультировал, предложил разные варианты по цене, и объяснил разницу! При визите все было потрясающе, угостили кофе, дали ответы на все вопросы по автомобилю, сделали ТО, напоили кофе! Вообщем все было на высоте! Теперь в другие места не ногой!)
+          - paragraph [ref=f4e618]: Полина Цацуа
+        - generic [ref=f4e621]:
+          - paragraph [ref=f4e622]: Была на то на zeekr 001, мастер был Антон Вольнов, помог с мастер акаутом, единственный кто доступно обьяснил все функции автомобиля, показал то что даже не сказали при продаже! Отличный мастер, очень довольна, очень класная зона ожидания, Борисхоф превысил все ожидания, теперь буду обслуживаться только здесь.
+          - paragraph [ref=f4e625]: Настя Можаева
+        - generic [ref=f4e628]:
+          - paragraph [ref=f4e629]: Все четко и быстро определили. Упала пневма на Zeekr009. Продиагностировали быстро и все устранили. Дело было в предохранителе на пневму
+          - paragraph [ref=f4e632]: zzzapchasti_vaz З.
+    - generic [ref=f4e635]:
+      - list [ref=f4e637]:
+        - listitem [ref=f4e638] [cursor=pointer]:
+          - heading "БорисХоф ВОЛЬТ" [level=4] [ref=f4e639]
+          - paragraph [ref=f4e640]: Москва, 2-я Магистральная, 18 стр. 22
+        - listitem [ref=f4e641] [cursor=pointer]:
+          - heading "БорисХоф ВОЛЬТ Ленинский" [level=4] [ref=f4e642]
+          - paragraph [ref=f4e643]: Санкт-Петербург, Ленинский просп., 146, корп. 1
+      - generic [ref=f4e646]:
+        - generic [ref=f4e647]:
+          - paragraph [ref=f4e648]: Сервисный центр
+          - heading "БорисХоф ВОЛЬТ" [level=3] [ref=f4e649]
+          - paragraph [ref=f4e650]: Москва, 2-я Магистральная, 18 стр. 22
+          - paragraph [ref=f4e651]: Ежедневно с 09:00 до 21:00
+          - link [ref=f4e652] [cursor=pointer]:
+            - /url: tel:+74954808650
+            - paragraph [ref=f4e653]: +7 495 480 86 50
+          - link "Построить маршрут" [ref=f4e654] [cursor=pointer]:
+            - /url: https://yandex.com/maps/-/CDFq5UlW
+        - generic [ref=f4e657]:
+          - generic [ref=f4e658]: Выберите город
+          - textbox "Ваш телефон" [ref=f4e666]
+          - button [ref=f4e667]:
+            - paragraph [ref=f4e668]:
+              - text: Записаться на сервис
+              - paragraph: Выберите город
+          - generic [ref=f4e669] [cursor=pointer]:
+            - checkbox "Согласие на обработку персональных данных" [ref=f4e670]
+            - generic [ref=f4e672]: Согласие на обработку персональных данных
+    - generic [ref=f4e674]:
+      - heading "Карта зарядных станций" [level=2] [ref=f4e675]
+      - iframe [ref=f4e676]:
+        - generic [ref=f5e3]:
+          - button
+          - generic:
+            - generic:
+              - generic:
+                - heading "Поиск" [level=1]
+                - button "Закрыть"
+              - generic:
+                - generic:
+                  - textbox "Адрес, город, локация..."
+            - generic:
+              - generic:
+                - paragraph: Найдите место для зарядки
+                - paragraph: Введите адрес, город или название станции
+          - button
+          - generic:
+            - generic:
+              - generic:
+                - heading "Поиск" [level=1]
+                - button "Закрыть"
+              - generic:
+                - generic:
+                  - textbox "Адрес, город, локация..."
+            - generic:
+              - generic:
+                - paragraph: Найдите место для зарядки
+                - paragraph: Введите адрес, город или название станции
+          - generic:
+            - button "Открыть авторизацию" [ref=f5e5]:
+              - generic [ref=f5e8]: Войти
+            - button "Показать QR-код для скачивания приложения" [ref=f5e10]:
+              - generic [ref=f5e11]: 2Chargers
+            - button "Настройки" [ref=f5e12]
+          - generic [ref=f5e16]:
+            - button "Поиск" [ref=f5e17]
+            - button "План маршрута" [ref=f5e20]
+            - button "Сообщения" [ref=f5e25]
+            - button "Коннекторы Все" [ref=f5e30]:
+              - generic [ref=f5e31]:
+                - generic [ref=f5e32]: Коннекторы
+                - generic [ref=f5e33]: Все
+            - button "Хабы" [ref=f5e36]
+            - button "Запуск через 2Chargers" [ref=f5e37]
+          - main [ref=f5e38]:
+            - generic [ref=f5e39]:
+              - generic [ref=f5e45]:
+                - generic [ref=f5e46]:
+                  - text: © Яндекс
+                  - link "Условия использования" [ref=f5e47] [cursor=pointer]:
+                    - /url: https://yandex.ru/legal/maps_termsofuse/?lang=ru_RU
+                - link [ref=f5e48] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps/?from=api-maps&utm_source=jsapi&ll=37.61729999999999%2C55.75579999999371&origin=jsapi_3&z=11&l=map
+              - button "Приблизить" [ref=f5e49] [cursor=pointer]: +
+              - button "Отдалить" [ref=f5e50] [cursor=pointer]: −
+              - button "Следить за машиной" [ref=f5e51] [cursor=pointer]:
+                - generic: 0 км/ч
+              - button "Моё местоположение" [ref=f5e54] [cursor=pointer]
+            - button "Сообщить об ошибке" [ref=f5e58]
+          - generic [ref=f5e59]: 2Chargers
+    - contentinfo [ref=f4e677]:
+      - generic [ref=f4e678]:
+        - generic [ref=f4e679]:
+          - img "лого" [ref=f4e681]
+          - heading "Сервисный центр БорисХоф Вольт" [level=3] [ref=f4e682]
+        - generic [ref=f4e683]:
+          - link [ref=f4e684] [cursor=pointer]:
+            - /url: tel:+74954808650
+            - paragraph [ref=f4e685]: +7 495 480 86 50
+          - paragraph [ref=f4e686] [cursor=pointer]: Заказать звонок
+      - generic [ref=f4e688]:
+        - generic [ref=f4e689]:
+          - link "Правовая информация" [ref=f4e690] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/
+          - button "Политика конфиденциальности" [ref=f4e691] [cursor=pointer]
+        - generic [ref=f4e692]:
+          - paragraph [ref=f4e693]: ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "БОРИСХОФ ХОЛДИНГ"
+          - paragraph [ref=f4e694]: "Факт. адрес: 123290, город Москва, 2-Я Магистральная ул, д. 18 стр. 22"
+          - paragraph [ref=f4e695]: "Тел: +7 495 480 86 50"
+          - paragraph [ref=f4e696]: "ИНН: 7714700709"
+          - paragraph [ref=f4e697]: "ОГРН: 5077746977930"
+      - generic [ref=f4e698]: Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наш дилерский центр.Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления. Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930), тел. +7 495 480 86 50
+    - generic [ref=f4e700]:
+      - paragraph [ref=f4e701]:
+        - text: БорисХоф использует файлы cookies (кукиc) для проведения аудита и сбора статистической информации, чтобы оптимизировать работу и функциональность этого сайта, сделать его более удобным для Вас. Продолжая пользоваться нашим сайтом, вы даете согласие на использование файлов cookies (кукиc). Подробнее о том, как мы используем эти данные, можно узнать в Политике cookies. Также Вы можете ознакомиться с используемыми на сайте
+        - link "рекомендательными технологиями." [ref=f4e702] [cursor=pointer]:
+          - /url: https://borishof.ru/algorithms/
+      - button [ref=f4e703] [cursor=pointer]:
+        - paragraph [ref=f4e704]: Принять
+  - iframe

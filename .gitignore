@@ -1,6 +1,7 @@
 # Зависимости
-vendor/
+/vendor/
 node_modules/
+package-lock.json
 
 # Служебные
 .npm/
@@ -13,20 +14,38 @@ node_modules/
 cache/
 *.cache
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Конфигурационные файлы окружения
 .env
 .env.*
 !.env.example
 
+# Service-account credentials (см. config/secrets/README.md)
+config/secrets/*.json
+
 # Системные файлы
 .DS_Store
 Thumbs.db
 desktop.ini
 
+# Локальные настройки Claude Code
+.claude/
+
+# Локальная рабочая зона: заметки/ad-hoc скилы (см. docs/local/README.md)
+# Содержимое не коммитится; README остаётся как маркер и описание конвенции.
+docs/local/*
+!docs/local/README.md
+
+# Личный gitconfig (email, имя)
+.gitconfig
+
 # Файлы IDE и редакторов
 .idea/
 .vscode/
+.cursor/
 *.sublime-project
 *.sublime-workspace
 *.komodoproject
@@ -34,6 +53,7 @@ desktop.ini
 .phpstorm.meta.php
 _ide_helper.php
 .phpunit.result.cache
+.php-cs-fixer.cache
 
 # Файлы загрузок (опционально, если есть директория для загрузок пользователей)
 uploads/
@@ -46,6 +66,10 @@ uploads/
 
 # Файлы сборки (если используется сборщик)
 build/
+!tools/build/
+!assets/css/build/
+!assets/js/build/
+!assets/img/build/
 dist/
 
 # Файлы сборки CSS и JS
@@ -53,12 +77,22 @@ assets/css/build/*
 !assets/css/build/.gitkeep
 assets/js/build/*
 !assets/js/build/.gitkeep
+assets/img/build/*
+!assets/img/build/.gitkeep
+!assets/img/build/image-dimensions.json
 
 # Хешированные файлы сборки
 *.bundle.js
 *.bundle.css
 *.[0-9a-f]*.css
 *.[0-9a-f]*.js
+# Исключения: корневые конфиги (паттерн выше ловит их из-за hex-символов c/d/e/f в имени)
+!webpack.config.js
+!postcss.config.js
+!eslint.config.js
+!eslint.config.mjs
+!stylelint.config.mjs
+!vitest.config.js
 
 # Файлы манифестов сборки
 *-manifest.json
@@ -68,19 +102,29 @@ css-manifest.json
 # Файлы композера
 composer.phar
 
+# Отчёты покрытия тестов
+coverage/
+
 # Другие файлы, которые не должны попасть в репозиторий
 error_log
 sitemap.xml
 sitemap.xml.gz
 sitemap-pages-*.xml
-sitemap-portfolio-*.xml
 
-# Проекты
-whatsapp
-telegram
+# Локальные проекты/папки (при необходимости добавьте свои)
+# whatsapp
+# telegram
 
 # Файлы конфигурации Apache (htaccess хранится в репозитории)
 
 # Добавляем папку logs/
 logs/
-robots.txt
+
+# Симлинки в public/ (создаются при сборке)
+public/assets
+public/data
+public/robots.txt
+
+
+# Контентные медиа-файлы лежат в git (full dataset).
+# Не добавлять сюда data/img/<section>/ — см. memory/project_full_media_in_git.

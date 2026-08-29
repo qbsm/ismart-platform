@@ -1,0 +1,870 @@
+- generic [active] [ref=f30e1]:
+  - link "Перейти к контенту" [ref=f30e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f30e3]:
+    - generic [ref=f30e4]:
+      - generic [ref=f30e5]:
+        - link [ref=f30e6] [cursor=pointer]:
+          - /url: /
+          - img "SOLLERS" [ref=f30e7]
+        - img "АВИЛОН — официальный дилер" [ref=f30e10]
+      - generic [ref=f30e13]:
+        - generic [ref=f30e14]: Sollers Авилон
+        - link "+7 (495) 183-57-86" [ref=f30e15] [cursor=pointer]:
+          - /url: tel:+74951835786
+        - link "Котельники, Белая Дача, Коммерческий пр-д, 10" [ref=f30e16] [cursor=pointer]:
+          - /url: "#map"
+      - link "Заказать звонок" [ref=f30e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f30e20]:
+      - link "Модельный ряд" [ref=f30e21] [cursor=pointer]:
+        - /url: "#range"
+      - link "Акции" [ref=f30e22] [cursor=pointer]:
+        - /url: "#actions"
+      - link "Тест-драйв" [ref=f30e23] [cursor=pointer]:
+        - /url: "#testdrive"
+      - link "Преимущества" [ref=f30e24] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f30e25] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f30e26] [cursor=pointer]:
+        - /url: "#map"
+  - main [ref=f30e27]:
+    - generic [ref=f30e36]:
+      - generic [ref=f30e37]:
+        - heading "Sollers Авилон" [level=1] [ref=f30e38]
+        - paragraph [ref=f30e39]: Официальный дилер SOLLERS в Москве — минивэны, фургоны и коммерческий транспорт SOLLERS
+        - link "Получить предложение" [ref=f30e41] [cursor=pointer]:
+          - /url: "#callback"
+      - generic [ref=f30e44]:
+        - generic [ref=f30e45]:
+          - generic [ref=f30e46]: 6 моделей
+          - generic [ref=f30e47]: минивэны, фургоны, грузовики
+        - generic [ref=f30e49]:
+          - generic [ref=f30e50]: 0%
+          - generic [ref=f30e51]: переплат по кредиту
+        - generic [ref=f30e53]:
+          - generic [ref=f30e54]: Трейд-ин
+          - generic [ref=f30e55]: выгодный обмен
+    - generic [ref=f30e58]:
+      - generic [ref=f30e59]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f30e61]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=f30e64]:
+        - text: МИНИВЭН SOLLERS SP7 | СП7 — ОТ
+        - generic [ref=f30e65]: 4 775 000 ₽
+      - generic [ref=f30e67]:
+        - text: ФУРГОНЫ SOLLERS SF1 | СФ1 — ОТ
+        - generic [ref=f30e68]: 1 990 000 ₽
+      - generic [ref=f30e69]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f30e71]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+      - generic [ref=f30e73]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f30e75]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=f30e78]:
+        - text: МИНИВЭН SOLLERS SP7 | СП7 — ОТ
+        - generic [ref=f30e79]: 4 775 000 ₽
+      - generic [ref=f30e81]:
+        - text: ФУРГОНЫ SOLLERS SF1 | СФ1 — ОТ
+        - generic [ref=f30e82]: 1 990 000 ₽
+      - generic [ref=f30e83]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f30e85]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+      - generic [ref=f30e87]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=f30e89]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=f30e92]:
+        - text: МИНИВЭН SOLLERS SP7 | СП7 — ОТ
+        - generic [ref=f30e93]: 4 775 000 ₽
+      - generic [ref=f30e95]:
+        - text: ФУРГОНЫ SOLLERS SF1 | СФ1 — ОТ
+        - generic [ref=f30e96]: 1 990 000 ₽
+      - generic [ref=f30e97]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=f30e99]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+    - generic [ref=f30e103]:
+      - generic [ref=f30e104]: Специальные условия
+      - generic [ref=f30e107]:
+        - generic [ref=f30e108]:
+          - generic [ref=f30e109]: "00"
+          - generic [ref=f30e110]: дней
+        - generic [ref=f30e111]:
+          - generic [ref=f30e112]: "06"
+          - generic [ref=f30e113]: часов
+        - generic [ref=f30e114]:
+          - generic [ref=f30e115]: "10"
+          - generic [ref=f30e116]: минут
+        - generic [ref=f30e117]:
+          - generic [ref=f30e118]: "37"
+          - generic [ref=f30e119]: секунд
+      - link "Получить предложение" [ref=f30e121] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f30e124]:
+      - heading "Модельный ряд" [level=2] [ref=f30e126]
+      - navigation "Фильтр по моделям" [ref=f30e128]:
+        - button "Все модели" [ref=f30e129] [cursor=pointer]
+        - button "SOLLERS SF1 | СФ1" [ref=f30e130] [cursor=pointer]
+        - button "SOLLERS SF4 | СФ4" [ref=f30e131] [cursor=pointer]
+        - button "SOLLERS SF5 | СФ5" [ref=f30e132] [cursor=pointer]
+        - button "SOLLERS SP7 | СП7" [ref=f30e133] [cursor=pointer]
+        - button "SOLLERS ST9 | СТ9" [ref=f30e134] [cursor=pointer]
+        - button "SOLLERS Argo | Арго" [ref=f30e135] [cursor=pointer]
+      - generic [ref=f30e136]:
+        - article [ref=f30e138]:
+          - generic [ref=f30e140]:
+            - generic [ref=f30e141]:
+              - button "Цельнометаллический" [ref=f30e142] [cursor=pointer]
+              - button "Минивэн" [ref=f30e143] [cursor=pointer]
+              - button "Грузопассажирский фургон" [ref=f30e144] [cursor=pointer]
+            - generic [ref=f30e145]:
+              - img "SOLLERS SF1 | СФ1"
+            - generic [ref=f30e146]:
+              - button "Белый" [ref=f30e147] [cursor=pointer]
+              - button "Тёмно-синий" [ref=f30e149] [cursor=pointer]
+              - button "Красный" [ref=f30e151] [cursor=pointer]
+              - button "Серебристый (металлик)" [ref=f30e153] [cursor=pointer]
+              - button "Тёмно-серый (металлик)" [ref=f30e155] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=f30e157] [cursor=pointer]
+            - generic [ref=f30e159]: Белый
+          - generic [ref=f30e160]:
+            - generic [ref=f30e161]:
+              - heading "SOLLERS SF1 | СФ1" [level=3] [ref=f30e162]
+              - paragraph [ref=f30e163]: Цельнометаллический фургон
+              - generic [ref=f30e165]:
+                - text: от
+                - generic [ref=f30e166]: 1 990 000
+                - text: ₽
+            - list [ref=f30e167]:
+              - listitem [ref=f30e168]:
+                - generic [ref=f30e172]: Объём отсека 5,2 м³
+              - listitem [ref=f30e173]:
+                - generic [ref=f30e177]: До 2 палет 1200×800 мм
+              - listitem [ref=f30e178]:
+                - generic [ref=f30e182]: Цельнометаллический фургон
+            - generic [ref=f30e183]:
+              - link "Узнать цену" [ref=f30e184] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f30e186] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f30e188] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f30e190]:
+            - generic [ref=f30e191]:
+              - generic [ref=f30e192]: Габаритные размеры
+              - list [ref=f30e193]:
+                - listitem [ref=f30e194]:
+                  - generic [ref=f30e195]: 5 115
+                  - generic [ref=f30e196]: Общая длина, мм
+                - listitem [ref=f30e197]:
+                  - generic [ref=f30e198]: 1 765
+                  - generic [ref=f30e199]: Общая ширина, мм
+                - listitem [ref=f30e200]:
+                  - generic [ref=f30e201]: 1 900
+                  - generic [ref=f30e202]: Общая высота, мм
+            - generic [ref=f30e203]:
+              - generic [ref=f30e204]: Грузовой отсек
+              - list [ref=f30e205]:
+                - listitem [ref=f30e206]:
+                  - generic [ref=f30e207]: 2 600
+                  - generic [ref=f30e208]: Длина на уровне пола, мм
+                - listitem [ref=f30e209]:
+                  - generic [ref=f30e210]: 1 530
+                  - generic [ref=f30e211]: Ширина, мм
+                - listitem [ref=f30e212]:
+                  - generic [ref=f30e213]: 1 295
+                  - generic [ref=f30e214]: Высота, мм
+                - listitem [ref=f30e215]:
+                  - generic [ref=f30e216]: 5,2
+                  - generic [ref=f30e217]: Объём грузового отсека, м³
+                - listitem [ref=f30e218]:
+                  - generic [ref=f30e219]: "2"
+                  - generic [ref=f30e220]: Палеты (1200×800 мм)
+            - generic [ref=f30e221]:
+              - generic [ref=f30e222]: Двигатель и трансмиссия
+              - list [ref=f30e223]:
+                - listitem [ref=f30e224]:
+                  - generic [ref=f30e225]: Бензин, 1,5 л
+                  - generic [ref=f30e226]: Двигатель
+                - listitem [ref=f30e227]:
+                  - generic [ref=f30e228]: 136 л.с. при 5500 об/мин
+                  - generic [ref=f30e229]: Максимальная мощность
+                - listitem [ref=f30e230]:
+                  - generic [ref=f30e231]: 175 Н·м при 1500–5500 об/мин
+                  - generic [ref=f30e232]: Крутящий момент
+                - listitem [ref=f30e233]:
+                  - generic [ref=f30e234]: 5МТ
+                  - generic [ref=f30e235]: Коробка передач
+                - listitem [ref=f30e236]:
+                  - generic [ref=f30e237]: Евро-5
+                  - generic [ref=f30e238]: Экологический класс
+                - listitem [ref=f30e239]:
+                  - generic [ref=f30e240]: "55"
+                  - generic [ref=f30e241]: Топливный бак, л
+          - generic [ref=f30e244]:
+            - link [ref=f30e246] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/1.webp
+              - img "SOLLERS SF1 — фото 1" [ref=f30e248]
+            - link [ref=f30e250] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/2.webp
+              - img "SOLLERS SF1 — фото 2" [ref=f30e252]
+            - link [ref=f30e254] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/3.webp
+              - img "SOLLERS SF1 — фото 3" [ref=f30e256]
+            - link [ref=f30e258] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/4.webp
+              - img "SOLLERS SF1 — фото 4" [ref=f30e260]
+        - article [ref=f30e264]:
+          - generic [ref=f30e266]:
+            - generic [ref=f30e267]:
+              - button "Цельнометаллический фургон" [ref=f30e268] [cursor=pointer]
+              - button "Грузопассажирский фургон" [ref=f30e269] [cursor=pointer]
+              - button "Автобус 15+1" [ref=f30e270] [cursor=pointer]
+            - img "SOLLERS SF4 | СФ4 — Цельнометаллический фургон" [ref=f30e272]
+            - generic [ref=f30e273]:
+              - button "Короткая L1" [ref=f30e274] [cursor=pointer]
+              - button "Средняя L2" [ref=f30e275] [cursor=pointer]
+              - button "Длинная L3" [ref=f30e276] [cursor=pointer]
+          - generic [ref=f30e277]:
+            - generic [ref=f30e278]:
+              - heading "SOLLERS SF4 | СФ4" [level=3] [ref=f30e279]
+              - paragraph [ref=f30e280]: "Фургоны SF4: грузопассажирский и цельнометаллические VAN"
+              - generic [ref=f30e282]:
+                - text: от
+                - generic [ref=f30e283]: 2 574 000
+                - text: ₽
+            - list [ref=f30e284]:
+              - listitem [ref=f30e285]:
+                - generic [ref=f30e289]: Цельнометаллический фургон
+              - listitem [ref=f30e290]:
+                - generic [ref=f30e294]: Грузопассажирская версия
+              - listitem [ref=f30e295]:
+                - generic [ref=f30e299]: База L3, крыша до H2
+            - generic [ref=f30e300]:
+              - link "Узнать цену" [ref=f30e301] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f30e303] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f30e305] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f30e307]:
+            - generic [ref=f30e308]:
+              - generic [ref=f30e309]: Габаритные размеры
+              - list [ref=f30e310]:
+                - listitem [ref=f30e311]:
+                  - generic [ref=f30e312]: 4 900
+                  - generic [ref=f30e313]: Общая длина, мм
+                - listitem [ref=f30e314]:
+                  - generic [ref=f30e315]: 2 395
+                  - generic [ref=f30e316]: Общая высота, мм
+                - listitem [ref=f30e317]:
+                  - generic [ref=f30e318]: 2 499 / 3 490
+                  - generic [ref=f30e319]: Полная масса, кг
+            - generic [ref=f30e320]:
+              - generic [ref=f30e321]: Грузовой отсек
+              - list [ref=f30e322]:
+                - listitem [ref=f30e323]:
+                  - generic [ref=f30e324]: 2 430
+                  - generic [ref=f30e325]: Длина на уровне пола, мм
+                - listitem [ref=f30e326]:
+                  - generic [ref=f30e327]: 1 780
+                  - generic [ref=f30e328]: Ширина, мм
+                - listitem [ref=f30e329]:
+                  - generic [ref=f30e330]: 1 630
+                  - generic [ref=f30e331]: Высота, мм
+                - listitem [ref=f30e332]:
+                  - generic [ref=f30e333]: 7,1
+                  - generic [ref=f30e334]: Объём грузового отсека, м³
+                - listitem [ref=f30e335]:
+                  - generic [ref=f30e336]: "3"
+                  - generic [ref=f30e337]: Палеты (1200×800 мм)
+            - generic [ref=f30e338]:
+              - generic [ref=f30e339]: Двигатель и трансмиссия
+              - list [ref=f30e340]:
+                - listitem [ref=f30e341]:
+                  - generic [ref=f30e342]: Дизель, 1,9 / 2,7 л
+                  - generic [ref=f30e343]: Двигатель
+                - listitem [ref=f30e344]:
+                  - generic [ref=f30e345]: 136 л.с. при 4000 об/мин
+                  - generic [ref=f30e346]: Максимальная мощность
+                - listitem [ref=f30e347]:
+                  - generic [ref=f30e348]: 310 Н·м при 1800–2800 об/мин
+                  - generic [ref=f30e349]: Крутящий момент
+                - listitem [ref=f30e350]:
+                  - generic [ref=f30e351]: Евро-5
+                  - generic [ref=f30e352]: Экологический класс
+                - listitem [ref=f30e353]:
+                  - generic [ref=f30e354]: "80"
+                  - generic [ref=f30e355]: Топливный бак, л
+                - listitem [ref=f30e356]:
+                  - generic [ref=f30e357]: Односкатные
+                  - generic [ref=f30e358]: Тип задних колёс
+          - generic [ref=f30e361]:
+            - link [ref=f30e363] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf4/gallery/raw/1.webp
+              - img "SOLLERS SF4 — фото 1" [ref=f30e365]
+            - link [ref=f30e367] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf4/gallery/raw/2.webp
+              - img "SOLLERS SF4 — фото 2" [ref=f30e369]
+            - link [ref=f30e371] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf4/gallery/raw/3.webp
+              - img "SOLLERS SF4 — фото 3" [ref=f30e373]
+            - link [ref=f30e375] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf4/gallery/raw/4.webp
+              - img "SOLLERS SF4 — фото 4" [ref=f30e377]
+            - link [ref=f30e379] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf4/gallery/raw/5.webp
+              - img "SOLLERS SF4 — фото 5" [ref=f30e381]
+            - link [ref=f30e383] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf4/gallery/raw/6.webp
+              - img "SOLLERS SF4 — фото 6" [ref=f30e385]
+        - article [ref=f30e389]:
+          - generic [ref=f30e391]:
+            - generic [ref=f30e392]:
+              - button "Цельнометаллический фургон" [ref=f30e393] [cursor=pointer]
+              - button "Грузопассажирский фургон" [ref=f30e394] [cursor=pointer]
+              - button "Автобус 15+1" [ref=f30e395] [cursor=pointer]
+            - img "SOLLERS SF5 | СФ5 — Цельнометаллический фургон" [ref=f30e397]
+            - generic [ref=f30e398]:
+              - button "Средняя L2" [ref=f30e399] [cursor=pointer]
+              - button "Длинная L3" [ref=f30e400] [cursor=pointer]
+          - generic [ref=f30e401]:
+            - generic [ref=f30e402]:
+              - heading "SOLLERS SF5 | СФ5 НОВЫЙ" [level=3] [ref=f30e403]:
+                - text: SOLLERS SF5 | СФ5
+                - generic [ref=f30e404]: НОВЫЙ
+              - paragraph [ref=f30e405]: Цельнометаллический фургон
+              - generic [ref=f30e407]:
+                - text: от
+                - generic [ref=f30e408]: 2 745 000
+                - text: ₽
+            - list [ref=f30e409]:
+              - listitem [ref=f30e410]:
+                - generic [ref=f30e414]: Цельнометаллический фургон
+              - listitem [ref=f30e415]:
+                - generic [ref=f30e419]: До 12,4 м³, 4 европалеты
+              - listitem [ref=f30e420]:
+                - generic [ref=f30e424]: Дизель, 6АТ
+            - generic [ref=f30e425]:
+              - link "Узнать цену" [ref=f30e426] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f30e428] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f30e430] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f30e432]:
+            - generic [ref=f30e433]:
+              - generic [ref=f30e434]: Габаритные размеры
+              - list [ref=f30e435]:
+                - listitem [ref=f30e436]:
+                  - generic [ref=f30e437]: 5 650
+                  - generic [ref=f30e438]: Общая длина, мм
+                - listitem [ref=f30e439]:
+                  - generic [ref=f30e440]: 2 405
+                  - generic [ref=f30e441]: Общая высота, мм
+            - generic [ref=f30e442]:
+              - generic [ref=f30e443]: Грузовой отсек
+              - list [ref=f30e444]:
+                - listitem [ref=f30e445]:
+                  - generic [ref=f30e446]: 3 220
+                  - generic [ref=f30e447]: Длина на уровне пола, мм
+                - listitem [ref=f30e448]:
+                  - generic [ref=f30e449]: 1 850
+                  - generic [ref=f30e450]: Ширина, мм
+                - listitem [ref=f30e451]:
+                  - generic [ref=f30e452]: 1 630
+                  - generic [ref=f30e453]: Высота, мм
+                - listitem [ref=f30e454]:
+                  - generic [ref=f30e455]: 9,7
+                  - generic [ref=f30e456]: Объём грузового отсека, м³
+                - listitem [ref=f30e457]:
+                  - generic [ref=f30e458]: "4"
+                  - generic [ref=f30e459]: Палеты (1200×800 мм)
+            - generic [ref=f30e460]:
+              - generic [ref=f30e461]: Двигатель и трансмиссия
+              - list [ref=f30e462]:
+                - listitem [ref=f30e463]:
+                  - generic [ref=f30e464]: Дизель
+                  - generic [ref=f30e465]: Двигатель
+                - listitem [ref=f30e466]:
+                  - generic [ref=f30e467]: 150 л.с. при 3200 об/мин
+                  - generic [ref=f30e468]: Максимальная мощность
+                - listitem [ref=f30e469]:
+                  - generic [ref=f30e470]: 355 Н·м при 1800–2600 об/мин
+                  - generic [ref=f30e471]: Крутящий момент
+                - listitem [ref=f30e472]:
+                  - generic [ref=f30e473]: 6АТ
+                  - generic [ref=f30e474]: Коробка передач
+                - listitem [ref=f30e475]:
+                  - generic [ref=f30e476]: Евро-5
+                  - generic [ref=f30e477]: Экологический класс
+                - listitem [ref=f30e478]:
+                  - generic [ref=f30e479]: "80"
+                  - generic [ref=f30e480]: Топливный бак, л
+            - generic [ref=f30e481]:
+              - generic [ref=f30e482]: Масса и шасси
+              - list [ref=f30e483]:
+                - listitem [ref=f30e484]:
+                  - generic [ref=f30e485]: 3 490
+                  - generic [ref=f30e486]: Полная масса, кг
+                - listitem [ref=f30e487]:
+                  - generic [ref=f30e488]: Односкатные
+                  - generic [ref=f30e489]: Тип задних колёс
+          - generic [ref=f30e492]:
+            - link [ref=f30e494] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/1.webp
+              - img "SOLLERS SF5 — фото 1" [ref=f30e496]
+            - link [ref=f30e498] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/2.webp
+              - img "SOLLERS SF5 — фото 2" [ref=f30e500]
+            - link [ref=f30e502] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/3.webp
+              - img "SOLLERS SF5 — фото 3" [ref=f30e504]
+            - link [ref=f30e506] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/4.webp
+              - img "SOLLERS SF5 — фото 4" [ref=f30e508]
+            - link [ref=f30e510] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/5.webp
+              - img "SOLLERS SF5 — фото 5" [ref=f30e512]
+            - link [ref=f30e514] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/6.webp
+              - img "SOLLERS SF5 — фото 6" [ref=f30e516]
+        - article [ref=f30e520]:
+          - generic [ref=f30e522]:
+            - generic [ref=f30e523]:
+              - img "SOLLERS SP7 | СП7"
+            - generic [ref=f30e524]:
+              - button "Белый" [ref=f30e525] [cursor=pointer]
+              - button "Тёмно-синий" [ref=f30e527] [cursor=pointer]
+              - button "Серебристый (металлик)" [ref=f30e529] [cursor=pointer]
+              - button "Тёмно-серый (металлик)" [ref=f30e531] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=f30e533] [cursor=pointer]
+            - generic [ref=f30e535]: Белый
+          - generic [ref=f30e536]:
+            - generic [ref=f30e537]:
+              - heading "SOLLERS SP7 | СП7 ПРЕМИУМ" [level=3] [ref=f30e538]:
+                - text: SOLLERS SP7 | СП7
+                - generic [ref=f30e539]: ПРЕМИУМ
+              - paragraph [ref=f30e540]: Семиместный премиальный минивэн
+              - generic [ref=f30e542]:
+                - text: от
+                - generic [ref=f30e543]: 4 775 000
+                - text: ₽
+            - list [ref=f30e544]:
+              - listitem [ref=f30e545]:
+                - generic [ref=f30e549]: Бензин, 236,6 л.с.
+              - listitem [ref=f30e550]:
+                - generic [ref=f30e554]: Трансмиссия 8AT
+              - listitem [ref=f30e555]:
+                - generic [ref=f30e559]: 7 мест, схема 2+2+3
+            - generic [ref=f30e560]:
+              - link "Узнать цену" [ref=f30e561] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f30e563] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f30e565] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f30e567]:
+            - generic [ref=f30e568]:
+              - generic [ref=f30e569]: Габаритные размеры
+              - list [ref=f30e570]:
+                - listitem [ref=f30e571]:
+                  - generic [ref=f30e572]: 5 215
+                  - generic [ref=f30e573]: Общая длина, мм
+                - listitem [ref=f30e574]:
+                  - generic [ref=f30e575]: 1 895
+                  - generic [ref=f30e576]: Общая ширина, мм
+                - listitem [ref=f30e577]:
+                  - generic [ref=f30e578]: 1 830
+                  - generic [ref=f30e579]: Общая высота, мм
+            - generic [ref=f30e580]:
+              - generic [ref=f30e581]: Двигатель и трансмиссия
+              - list [ref=f30e582]:
+                - listitem [ref=f30e583]:
+                  - generic [ref=f30e584]: Бензин, турбо, 2,0 л
+                  - generic [ref=f30e585]: Двигатель
+                - listitem [ref=f30e586]:
+                  - generic [ref=f30e587]: 237 л.с.
+                  - generic [ref=f30e588]: Максимальная мощность
+                - listitem [ref=f30e589]:
+                  - generic [ref=f30e590]: 8АТ
+                  - generic [ref=f30e591]: Коробка передач
+            - generic [ref=f30e592]:
+              - generic [ref=f30e593]: Вместимость
+              - list [ref=f30e594]:
+                - listitem [ref=f30e595]:
+                  - generic [ref=f30e596]: "7"
+                  - generic [ref=f30e597]: Количество мест
+                - listitem [ref=f30e598]:
+                  - generic [ref=f30e599]: 2+2+3
+                  - generic [ref=f30e600]: Схема расположения сидений
+                - listitem [ref=f30e601]:
+                  - generic [ref=f30e602]: 700 / 2 500
+                  - generic [ref=f30e603]: Объём багажника, л
+          - generic [ref=f30e606]:
+            - link [ref=f30e608] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/1.webp
+              - img "SOLLERS SP7 — фото 1" [ref=f30e610]
+            - link [ref=f30e612] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/2.webp
+              - img "SOLLERS SP7 — фото 2" [ref=f30e614]
+            - link [ref=f30e616] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/3.webp
+              - img "SOLLERS SP7 — фото 3" [ref=f30e618]
+            - link [ref=f30e620] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/4.webp
+              - img "SOLLERS SP7 — фото 4" [ref=f30e622]
+            - link [ref=f30e624] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/5.webp
+              - img "SOLLERS SP7 — фото 5" [ref=f30e626]
+            - link [ref=f30e628] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/6.webp
+              - img "SOLLERS SP7 — фото 6" [ref=f30e630]
+        - article [ref=f30e634]:
+          - generic [ref=f30e636]:
+            - generic [ref=f30e637]:
+              - img "SOLLERS ST9 | СТ9"
+            - generic [ref=f30e638]:
+              - button "Белый" [ref=f30e639] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=f30e641] [cursor=pointer]
+            - generic [ref=f30e643]: Чёрный (металлик)
+          - generic [ref=f30e644]:
+            - generic [ref=f30e645]:
+              - heading "SOLLERS ST9 | СТ9 НОВЫЙ" [level=3] [ref=f30e646]:
+                - text: SOLLERS ST9 | СТ9
+                - generic [ref=f30e647]: НОВЫЙ
+              - paragraph [ref=f30e648]: Пикап с двойной кабиной
+              - generic [ref=f30e650]:
+                - text: от
+                - generic [ref=f30e651]: 3 499 000
+                - text: ₽
+            - list [ref=f30e652]:
+              - listitem [ref=f30e653]:
+                - generic [ref=f30e657]: Грузовая платформа 1 520×1 590 мм
+              - listitem [ref=f30e658]:
+                - generic [ref=f30e662]: Грузоподъёмность до 980 кг
+              - listitem [ref=f30e663]:
+                - generic [ref=f30e667]: 5 пассажирских мест
+            - generic [ref=f30e668]:
+              - link "Узнать цену" [ref=f30e669] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f30e671] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f30e673] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f30e675]:
+            - generic [ref=f30e676]:
+              - generic [ref=f30e677]: Габаритные размеры
+              - list [ref=f30e678]:
+                - listitem [ref=f30e679]:
+                  - generic [ref=f30e680]: 5 330
+                  - generic [ref=f30e681]: Общая длина, мм
+                - listitem [ref=f30e682]:
+                  - generic [ref=f30e683]: 1 965
+                  - generic [ref=f30e684]: Общая ширина без зеркал, мм
+                - listitem [ref=f30e685]:
+                  - generic [ref=f30e686]: 1 920
+                  - generic [ref=f30e687]: Общая высота, мм
+            - generic [ref=f30e688]:
+              - generic [ref=f30e689]: Грузовой отсек
+              - list [ref=f30e690]:
+                - listitem [ref=f30e691]:
+                  - generic [ref=f30e692]: 1 520
+                  - generic [ref=f30e693]: Длина на уровне пола, мм
+                - listitem [ref=f30e694]:
+                  - generic [ref=f30e695]: 1 590
+                  - generic [ref=f30e696]: Ширина, мм
+                - listitem [ref=f30e697]:
+                  - generic [ref=f30e698]: "470"
+                  - generic [ref=f30e699]: Высота бортов, мм
+            - generic [ref=f30e700]:
+              - generic [ref=f30e701]: Двигатель и трансмиссия
+              - list [ref=f30e702]:
+                - listitem [ref=f30e703]:
+                  - generic [ref=f30e704]: Бензин, 2,0 л
+                  - generic [ref=f30e705]: Двигатель
+                - listitem [ref=f30e706]:
+                  - generic [ref=f30e707]: 224 л.с. при 5500 об/мин
+                  - generic [ref=f30e708]: Максимальная мощность
+                - listitem [ref=f30e709]:
+                  - generic [ref=f30e710]: 390 Н·м при 1900–3000 об/мин
+                  - generic [ref=f30e711]: Крутящий момент
+                - listitem [ref=f30e712]:
+                  - generic [ref=f30e713]: Евро-5
+                  - generic [ref=f30e714]: Экологический класс
+                - listitem [ref=f30e715]:
+                  - generic [ref=f30e716]: "76"
+                  - generic [ref=f30e717]: Топливный бак, л
+            - generic [ref=f30e718]:
+              - generic [ref=f30e719]: Уверенность в движении
+              - list [ref=f30e720]:
+                - listitem [ref=f30e721]:
+                  - generic [ref=f30e722]: до 980
+                  - generic [ref=f30e723]: Грузоподъёмность, кг
+                - listitem [ref=f30e724]:
+                  - generic [ref=f30e725]: "210"
+                  - generic [ref=f30e726]: Дорожный просвет, мм
+                - listitem [ref=f30e727]:
+                  - generic [ref=f30e728]: "800"
+                  - generic [ref=f30e729]: Глубина брода, мм
+                - listitem [ref=f30e730]:
+                  - generic [ref=f30e731]: "5"
+                  - generic [ref=f30e732]: Пассажирских мест
+          - generic [ref=f30e735]:
+            - link [ref=f30e737] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/1.webp
+              - img "SOLLERS ST9 — фото 1" [ref=f30e739]
+            - link [ref=f30e741] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/2.webp
+              - img "SOLLERS ST9 — фото 2" [ref=f30e743]
+            - link [ref=f30e745] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/3.webp
+              - img "SOLLERS ST9 — фото 3" [ref=f30e747]
+            - link [ref=f30e749] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/4.webp
+              - img "SOLLERS ST9 — фото 4" [ref=f30e751]
+        - article [ref=f30e755]:
+          - generic [ref=f30e757]:
+            - generic [ref=f30e758]:
+              - button "Бортовой с тентом" [ref=f30e759] [cursor=pointer]
+              - button "Изотермический фургон" [ref=f30e760] [cursor=pointer]
+              - button "Промтоварный фургон" [ref=f30e761] [cursor=pointer]
+            - img "SOLLERS Argo | Арго — Бортовой с тентом" [ref=f30e763]
+            - generic [ref=f30e764]:
+              - button "Стандартная" [ref=f30e765] [cursor=pointer]
+              - button "Удлинённая" [ref=f30e766] [cursor=pointer]
+          - generic [ref=f30e767]:
+            - generic [ref=f30e768]:
+              - heading "SOLLERS Argo | Арго" [level=3] [ref=f30e769]
+              - paragraph [ref=f30e770]: Малотоннажный грузовик с надстройками
+              - generic [ref=f30e772]:
+                - text: от
+                - generic [ref=f30e773]: 1 996 000
+                - text: ₽
+            - list [ref=f30e774]:
+              - listitem [ref=f30e775]:
+                - generic [ref=f30e779]: Надстройки под задачу
+              - listitem [ref=f30e780]:
+                - generic [ref=f30e784]: Высокая грузоподъёмность
+              - listitem [ref=f30e785]:
+                - generic [ref=f30e789]: Надёжная рамная конструкция
+            - generic [ref=f30e790]:
+              - link "Узнать цену" [ref=f30e791] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f30e793] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=f30e795] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f30e797]:
+            - generic [ref=f30e798]:
+              - generic [ref=f30e799]: Габаритные размеры
+              - list [ref=f30e800]:
+                - listitem [ref=f30e801]:
+                  - generic [ref=f30e802]: 5 300
+                  - generic [ref=f30e803]: Общая длина, мм
+                - listitem [ref=f30e804]:
+                  - generic [ref=f30e805]: 2 650
+                  - generic [ref=f30e806]: Общая высота, мм
+                - listitem [ref=f30e807]:
+                  - generic [ref=f30e808]: 2 495 / 3 490
+                  - generic [ref=f30e809]: Полная масса, кг
+            - generic [ref=f30e810]:
+              - generic [ref=f30e811]: Грузовой отсек
+              - list [ref=f30e812]:
+                - listitem [ref=f30e813]:
+                  - generic [ref=f30e814]: 3 120
+                  - generic [ref=f30e815]: Длина на уровне пола, мм
+                - listitem [ref=f30e816]:
+                  - generic [ref=f30e817]: 1 720
+                  - generic [ref=f30e818]: Ширина, мм
+                - listitem [ref=f30e819]:
+                  - generic [ref=f30e820]: 1 720
+                  - generic [ref=f30e821]: Высота, мм
+                - listitem [ref=f30e822]:
+                  - generic [ref=f30e823]: "4"
+                  - generic [ref=f30e824]: Палеты (1200×800 мм)
+                - listitem [ref=f30e825]:
+                  - generic [ref=f30e826]: "785"
+                  - generic [ref=f30e827]: Погрузочная высота, мм
+            - generic [ref=f30e828]:
+              - generic [ref=f30e829]: Двигатель и трансмиссия
+              - list [ref=f30e830]:
+                - listitem [ref=f30e831]:
+                  - generic [ref=f30e832]: Дизель, 2,0 л
+                  - generic [ref=f30e833]: Двигатель
+                - listitem [ref=f30e834]:
+                  - generic [ref=f30e835]: 130 л.с. при 3600 об/мин
+                  - generic [ref=f30e836]: Максимальная мощность
+                - listitem [ref=f30e837]:
+                  - generic [ref=f30e838]: 285 Н·м при 2200–2600 об/мин
+                  - generic [ref=f30e839]: Крутящий момент
+                - listitem [ref=f30e840]:
+                  - generic [ref=f30e841]: 6МТ
+                  - generic [ref=f30e842]: Коробка передач
+                - listitem [ref=f30e843]:
+                  - generic [ref=f30e844]: Евро-5
+                  - generic [ref=f30e845]: Экологический класс
+                - listitem [ref=f30e846]:
+                  - generic [ref=f30e847]: "65"
+                  - generic [ref=f30e848]: Топливный бак, л
+          - generic [ref=f30e851]:
+            - link [ref=f30e853] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/1.webp
+              - img "SOLLERS Argo — фото 1" [ref=f30e855]
+            - link [ref=f30e857] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/2.webp
+              - img "SOLLERS Argo — фото 2" [ref=f30e859]
+            - link [ref=f30e861] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/3.webp
+              - img "SOLLERS Argo — фото 3" [ref=f30e863]
+            - link [ref=f30e865] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/4.webp
+              - img "SOLLERS Argo — фото 4" [ref=f30e867]
+            - link [ref=f30e869] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/5.webp
+              - img "SOLLERS Argo — фото 5" [ref=f30e871]
+            - link [ref=f30e873] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/6.webp
+              - img "SOLLERS Argo — фото 6" [ref=f30e875]
+    - generic [ref=f30e879]:
+      - generic [ref=f30e880]:
+        - heading "Акции и предложения" [level=2] [ref=f30e881]
+        - paragraph [ref=f30e882]: Выгодные программы покупки SOLLERS в АВИЛОН
+      - generic [ref=f30e883]:
+        - 'link "Лизинг SOLLERS Лизинг для бизнеса Лизинг коммерческого транспорта SOLLERS для юридических лиц и ИП: гибкие платежи, НДС к зачёту." [ref=f30e885] [cursor=pointer]':
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Лизинг"
+          - img "SOLLERS" [ref=f30e887]
+          - generic [ref=f30e888]:
+            - generic [ref=f30e889]: Лизинг для бизнеса
+            - generic [ref=f30e891]: "Лизинг коммерческого транспорта SOLLERS для юридических лиц и ИП: гибкие платежи, НДС к зачёту."
+        - link "Выгодный обмен SOLLERS Трейд-ин Обменяйте ваш автомобиль и получите дополнительную выгоду на SOLLERS." [ref=f30e893] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Выгодный обмен"
+          - img "SOLLERS" [ref=f30e895]
+          - generic [ref=f30e896]:
+            - generic [ref=f30e897]: Трейд-ин
+            - generic [ref=f30e899]: Обменяйте ваш автомобиль и получите дополнительную выгоду на SOLLERS.
+        - link "Кредит SOLLERS Кредит Кредит на минивэны и фургоны SOLLERS — без скрытых платежей. Расчёт за 10 минут." [ref=f30e901] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Кредит"
+          - img "SOLLERS" [ref=f30e903]
+          - generic [ref=f30e904]:
+            - generic [ref=f30e905]: Кредит
+            - generic [ref=f30e907]: Кредит на минивэны и фургоны SOLLERS — без скрытых платежей. Расчёт за 10 минут.
+    - generic [ref=f30e911]:
+      - generic [ref=f30e912]: Индивидуальная поездка
+      - generic [ref=f30e913]: Не нужно ждать — просто запишитесь на тест-драйв онлайн
+      - link "Выбрать дату и время" [ref=f30e915] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f30e918]:
+      - generic [ref=f30e919]:
+        - heading "Преимущества Sollers Авилон" [level=2] [ref=f30e920]
+        - paragraph [ref=f30e921]: Официальный дилер SOLLERS в Москве
+      - generic [ref=f30e922]:
+        - link "Минивэны и фургоны в наличии" [ref=f30e923] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Полная линейка SOLLERS" [ref=f30e926] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Выгодный обмен автомобиля" [ref=f30e929] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Привилегии официального дилера" [ref=f30e932] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Кредит и лизинг для бизнеса" [ref=f30e935] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Гарантия официального дилера" [ref=f30e938] [cursor=pointer]:
+          - /url: "#callback"
+    - generic [ref=f30e942]:
+      - generic [ref=f30e943]:
+        - heading "Способы покупки" [level=2] [ref=f30e944]
+        - paragraph [ref=f30e945]: Трейд-ин, кредит и лизинг на выгодных условиях
+      - generic [ref=f30e946]:
+        - article [ref=f30e948]:
+          - generic [ref=f30e952]:
+            - heading "Трейд-ин" [level=3] [ref=f30e953]
+            - list [ref=f30e955]:
+              - listitem [ref=f30e956]: Бесплатная диагностика и оценка за 30 минут
+              - listitem [ref=f30e957]:
+                - text: Лояльный трейд-ин — выгода до
+                - generic [ref=f30e958]: 200 000 ₽
+            - link "Получить оценку" [ref=f30e960] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f30e963]:
+          - generic [ref=f30e967]:
+            - heading "Кредит" [level=3] [ref=f30e968]
+            - list [ref=f30e970]:
+              - listitem [ref=f30e971]:
+                - generic [ref=f30e972]: 0% переплат
+                - text: по программам дилера
+              - listitem [ref=f30e973]: Первоначальный взнос от 10%
+              - listitem [ref=f30e974]: Срок до 84 месяцев
+            - link "Рассчитать условия" [ref=f30e976] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f30e979]:
+          - generic [ref=f30e983]:
+            - heading "Лизинг" [level=3] [ref=f30e984]
+            - list [ref=f30e986]:
+              - listitem [ref=f30e987]: Лизинг с авансом от 10%
+              - listitem [ref=f30e988]: Сохранение денежных средств в обороте
+              - listitem [ref=f30e989]: Лизинговый платёж без НДС на затраты организации
+            - link "Рассчитать условия" [ref=f30e991] [cursor=pointer]:
+              - /url: "#callback"
+    - generic [ref=f30e996]:
+      - generic [ref=f30e997]:
+        - generic [ref=f30e998]: Sollers Авилон
+        - generic [ref=f30e999]: Официальный дилер SOLLERS в Москве
+      - list [ref=f30e1000]:
+        - listitem [ref=f30e1001]:
+          - link "+7 (495) 183-57-86" [ref=f30e1005] [cursor=pointer]:
+            - /url: tel:+74951835786
+        - listitem [ref=f30e1006]:
+          - generic [ref=f30e1011]: Котельники, Белая Дача, Коммерческий пр-д, 10
+        - listitem [ref=f30e1012]:
+          - generic [ref=f30e1017]: "Пн–Вс: 09:00–21:00"
+      - generic [ref=f30e1018]:
+        - generic [ref=f30e1019]: Услуги
+        - generic [ref=f30e1020]:
+          - generic [ref=f30e1021]: Продажа
+          - generic [ref=f30e1022]: Трейд-ин
+          - generic [ref=f30e1023]: Кредит
+          - generic [ref=f30e1024]: Лизинг
+      - link "Получить консультацию" [ref=f30e1025] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f30e1030]:
+    - link [ref=f30e1032] [cursor=pointer]:
+      - /url: http://promo.sollers-avilon.ru.test/
+      - img "SOLLERS" [ref=f30e1033]
+    - generic [ref=f30e1035]:
+      - link "ВКонтакте" [ref=f30e1036] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f30e1039] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f30e1042] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f30e1045]:
+      - link "Модельный ряд" [ref=f30e1047] [cursor=pointer]:
+        - /url: "#range"
+      - link "Преимущества" [ref=f30e1049] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f30e1051] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f30e1053] [cursor=pointer]:
+        - /url: "#map"
+    - generic [ref=f30e1054]: © 2026 Sollers Авилон. Все права защищены
+    - generic [ref=f30e1056]:
+      - link "Политика конфиденциальности" [ref=f30e1057] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f30e1058] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f30e1059] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/consent/
+      - link "Правовая информация" [ref=f30e1060] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/legal-info/
+    - paragraph [ref=f30e1062]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f30e1065]:
+    - generic [ref=f30e1067]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f30e1068] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f30e1070] [cursor=pointer]

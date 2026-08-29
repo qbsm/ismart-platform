@@ -1,0 +1,20 @@
+<section class="owners section">
+  <div class="container">
+    <div class="section__item block-wrap">
+      <div class="section__subitem heading-wrap">
+        {% if data.heading is defined %}
+          {% include 'components/heading.twig' with {'item': data.heading} %}
+        {% endif %}
+      </div>
+      <div class="section__subitem cards-owner-wrap">
+        {% if data.items is defined and data.items is not empty %}
+          {% for owner in data.items %}
+            <div class="section__inner card-owner-wrap">
+              {% include 'components/card-owner.twig' with {'item': owner} %}
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

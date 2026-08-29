@@ -1,0 +1,1010 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - navigation [ref=e4]:
+      - link "Авто в наличии" [ref=e5] [cursor=pointer]:
+        - /url: /online-stock/
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link "Модели" [ref=e11] [cursor=pointer]:
+            - /url: /models/
+        - listitem [ref=e12]:
+          - link "Покупателям" [ref=e13] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e14]:
+          - link "Владельцам" [ref=e15] [cursor=pointer]:
+            - /url: ""
+        - listitem [ref=e16]:
+          - link "О бренде" [ref=e17] [cursor=pointer]:
+            - /url: /about/
+      - navigation [ref=e19]:
+        - link "Тест-драйв" [ref=e20] [cursor=pointer]:
+          - /url: /purchase/choose-and-offer/test-drive/
+        - link "Найти дилера" [ref=e23] [cursor=pointer]:
+          - /url: /purchase/find-dealer/
+      - link [ref=e27] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e28]:
+          - img "GWM | HAVAL" [ref=e29]
+          - img "GWM | HAVAL" [ref=e32]
+  - main [ref=e34]:
+    - generic [ref=e35]:
+      - 'img "{{<h1inline>}}{{<small>}}Обновленный{{</small>}} HAVAL JOLION{{</h1inline>}}" [ref=e38]'
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - heading "Обновленный HAVAL JOLION" [level=1] [ref=e43]:
+            - generic [ref=e44]: Обновленный
+            - text: HAVAL JOLION
+          - generic [ref=e45]:
+            - text: Кроссовер №1 в
+            - generic [ref=e46]: России
+            - text: Рассрочка на 7
+            - generic [ref=e51]: лет
+        - generic [ref=e56]:
+          - link "Тест-драйв" [ref=e57] [cursor=pointer]:
+            - /url: /test-drive-new-jolion/
+          - link "Получить предложение" [ref=e62] [cursor=pointer]:
+            - /url: "#haval-widget-forms-request-offer"
+          - link "Рассчитать кредит" [ref=e67] [cursor=pointer]:
+            - /url: /purchase/credit/calculator/
+    - generic [ref=e76]:
+      - list [ref=e80]:
+        - listitem [ref=e81] [cursor=pointer]:
+          - link "Дизайн" [ref=e82]:
+            - /url: "#cppvul0beucc73eq8680"
+        - listitem [ref=e83] [cursor=pointer]:
+          - link "Интерьер" [ref=e84]:
+            - /url: "#cpp92o8beucc73emisp0"
+        - listitem [ref=e85] [cursor=pointer]:
+          - link "Технологии" [ref=e86]:
+            - /url: "#cpp98oobeucc73emj9q0"
+        - listitem [ref=e87] [cursor=pointer]:
+          - link "Безопасность" [ref=e88]:
+            - /url: "#cppfeuobeucc73eoba7g"
+        - listitem [ref=e89] [cursor=pointer]:
+          - link "Комфорт" [ref=e90]:
+            - /url: "#cpqmtv8beucc73estv80"
+        - listitem [ref=e91] [cursor=pointer]:
+          - link "Комплектации" [ref=e92]:
+            - /url: "#d6j8btobeucc73c28de0"
+      - link [ref=e94] [cursor=pointer]:
+        - /url: ""
+    - generic [ref=e98]:
+      - heading "Надежная поддержка на любом пути" [level=2] [ref=e99]
+      - generic [ref=e100]: Обновленный HAVAL JOLION стал ещё более динамичным, комфортным и функциональным в управлении. С новым интерьером и голосовым помощником вы получите удовольствие от каждой поездкой на HAVAL JOLION.
+    - 'link "Прайс-лист Модельный год: 2026 Год выпуска: 2026" [ref=e105] [cursor=pointer]':
+      - /url: https://cdn.perxis.ru/originals/d7kc9mobeucc73ceincg/original
+      - generic [ref=e106]:
+        - generic [ref=e107]: Прайс-лист
+        - generic [ref=e111]:
+          - text: "Модельный год:"
+          - strong [ref=e112]: "2026"
+          - text: "Год выпуска:"
+          - strong [ref=e113]: "2026"
+    - heading "Удобство на каждый день" [level=2] [ref=e118]
+    - generic [ref=e123]:
+      - group "1 / 4" [ref=e124]:
+        - generic [ref=e126]:
+          - img "Новый бензиновый двигатель 1,5 л. с турбонаддувом" [ref=e129]
+          - generic [ref=e130]:
+            - generic [ref=e131]: Новый бензиновый двигатель 1,5 л. с турбонаддувом
+            - generic [ref=e132]: Двигатель HAVAL JOLION обладает высокой мощностью и крутящим моментом 270 Нм. Силовой агрегат соответствует экологическому классу Евро-6 со сниженным расходом топлива, который в смешанном цикле составляет всего 7.6 л/100 км.
+      - group "2 / 4" [ref=e133]:
+        - generic [ref=e135]:
+          - img "Адаптация для России" [ref=e138]
+          - generic [ref=e139]:
+            - generic [ref=e140]: Адаптация для России
+            - generic [ref=e141]: "HAVAL Jolion разработан для российских условий. Полный зимний пакет: подогрев передних и задних сидений, руля, зеркал, лобового стекла и форсунок омывателя, двухзонный климат-контроль и адаптированная эргономика обеспечат максимальный комфорт в поездке вне зависимости от погодных условий за бортом."
+      - group "3 / 4" [ref=e142]:
+        - generic [ref=e144]:
+          - img "Технологии безопасности" [ref=e147]
+          - generic [ref=e148]:
+            - generic [ref=e149]: Технологии безопасности
+            - generic [ref=e150]: "Безопасность поездок в HAVAL JOLION обеспечена в помощью современного оснащения: шести подушек безопасности, кузова из высокопрочной стали, интеллектуальных систем безопасности (ADAS) и проекционного дисплея (HUD)."
+      - group "4 / 4" [ref=e151]:
+        - generic [ref=e153]:
+          - 'img "Обновленный интерьер{{< disclaimer position=\"up\" >}}Доступен для автомобилей 2026 модельного года.{{</ disclaimer >}}" [ref=e156]'
+          - generic [ref=e157]:
+            - generic [ref=e158]:
+              - text: Обновленный
+              - generic [ref=e159]: интерьер
+            - generic [ref=e164]: Усовершенствованная центральная консоль с эргономичным селектором АКПП, утолщенным рулем, беспроводной зарядкой 50Вт, обновленным интерфейсом системы мультимедиа, трансформируемыми местами для хранения делают поездки ещё приятнее.
+    - generic [ref=e173]:
+      - generic [ref=e174]:
+        - button "Previous slide" [ref=e175] [cursor=pointer]
+        - generic [ref=e177]:
+          - group "1 / 3" [ref=e178]:
+            - generic [ref=e179]: "Двигатель: 1.5T MT / Привод: 2WD"
+          - group "2 / 3" [ref=e180]:
+            - generic [ref=e181]: "Двигатель: 1.5T DCT / Привод: 2WD"
+          - group "3 / 3" [ref=e182]:
+            - generic [ref=e183]: "Двигатель: 1.5T DCT / Привод: 4WD"
+        - button "Next slide" [ref=e184] [cursor=pointer]
+      - generic [ref=e186]:
+        - group "1 / 3" [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]: "1497"
+            - generic [ref=e190]: Объем, см³
+          - generic [ref=e191]:
+            - generic [ref=e192]: "143"
+            - generic [ref=e193]: Мощность, л.с.
+          - generic [ref=e194]:
+            - generic [ref=e195]: "210"
+            - generic [ref=e196]: Крутящий момент, Нм
+        - group "2 / 3" [ref=e197]:
+          - generic [ref=e198]:
+            - generic [ref=e199]: "1497"
+            - generic [ref=e200]: Объем, см³
+          - generic [ref=e201]:
+            - generic [ref=e202]: "143"
+            - generic [ref=e203]: Мощность, л.с.
+          - generic [ref=e204]:
+            - generic [ref=e205]: "210"
+            - generic [ref=e206]: Крутящий момент, Нм
+        - group "3 / 3" [ref=e207]:
+          - generic [ref=e208]:
+            - generic [ref=e209]: "1499"
+            - generic [ref=e210]: Объем, см³
+          - generic [ref=e211]:
+            - generic [ref=e212]: "150"
+            - generic [ref=e213]: Мощность, л.с.
+          - generic [ref=e214]:
+            - generic [ref=e215]: "270"
+            - generic [ref=e216]: Крутящий момент, Нм
+    - paragraph [ref=e219]: Технические характеристики актуальны для автомобилей HAVAL Jolion 2026 модельного года.
+    - heading "Экстерьер HAVAL JOLION" [level=2] [ref=e224]
+    - generic [ref=e228]:
+      - group "1 / 3" [ref=e229]
+      - group "2 / 3" [ref=e233]
+      - group "3 / 3" [ref=e237]
+    - generic [ref=e244]:
+      - link "HAVAL JOLION в наличии Выберите подходящий автомобиль и забронируйте его онлайн Подробнее" [ref=e247] [cursor=pointer]:
+        - /url: /online-stock/#/?model=jolion-new
+        - generic [ref=e250]: HAVAL JOLION в наличии
+        - generic [ref=e251]: Выберите подходящий автомобиль и забронируйте его онлайн
+        - generic [ref=e252]: Подробнее
+      - link "Каталог HAVAL JOLION Скачайте брошюру, чтобы продолжить изучать HAVAL JOLION оффлайн Подробнее" [ref=e256] [cursor=pointer]:
+        - /url: https://cdn.perxis.ru/originals/d8fu078beucc73ceqpf0/original
+        - generic [ref=e259]: Каталог HAVAL JOLION
+        - generic [ref=e260]: Скачайте брошюру, чтобы продолжить изучать HAVAL JOLION оффлайн
+        - generic [ref=e261]: Подробнее
+      - link "Рассчитать кредит Выберите условия и отправьте заявку на кредит Подробнее" [ref=e265] [cursor=pointer]:
+        - /url: /purchase/credit/
+        - generic [ref=e268]: Рассчитать кредит
+        - generic [ref=e269]: Выберите условия и отправьте заявку на кредит
+        - generic [ref=e270]: Подробнее
+    - heading "Интерьер" [level=2] [ref=e276]
+    - generic [ref=e279]:
+      - generic [ref=e280]:
+        - group "1 / 6" [ref=e281]:
+          - generic [ref=e282]:
+            - img "СИДЕНЬЯ ИЗ ПЕРФОРИРОВАННОЙ ЭКО-КОЖИ" [ref=e285]
+            - generic [ref=e286]: СИДЕНЬЯ ИЗ ПЕРФОРИРОВАННОЙ ЭКО-КОЖИ
+            - generic [ref=e287]: Высокий уровень комфорта благодаря дышащему материалу обивки. Сиденья из эко-кожи доступны только для Премиум и Техно +.
+        - group "2 / 6" [ref=e288]:
+          - generic [ref=e289]:
+            - img "ЭЛЕКТРИЧЕСКАЯ РЕГУЛИРОВКА ПЕРЕДНИХ СИДЕНИЙ" [ref=e292]
+            - generic [ref=e293]: ЭЛЕКТРИЧЕСКАЯ РЕГУЛИРОВКА ПЕРЕДНИХ СИДЕНИЙ
+            - generic [ref=e294]: Электрорегулировка в 6 направлениях позволит идеально настроить водительское кресло до комфортного уровня. Кресло пассажира также располагает регулировкой в 4 направлениях. Функция доступна только для комплектаций Премиум и Техно.
+        - group "3 / 6" [ref=e295]:
+          - generic [ref=e296]:
+            - img "Вентиляция сиденья водителя" [ref=e299]
+            - generic [ref=e300]: Вентиляция сиденья водителя
+            - generic [ref=e301]: Функция обеспечивает комфорт и удобство в долгих поездках за рулем и при любых погодных условиях. Функция доступна только для комплектаций Премиум и Техно +.
+        - group "4 / 6" [ref=e302]:
+          - generic [ref=e303]:
+            - img "ОБНОВЛЕННАЯ ПОДСВЕТКА САЛОНА" [ref=e306]
+            - generic [ref=e307]: ОБНОВЛЕННАЯ ПОДСВЕТКА САЛОНА
+        - group "5 / 6" [ref=e308]:
+          - generic [ref=e309]:
+            - img "Полный пакет зимних опций и двухзонный климат-контроль" [ref=e312]
+            - generic [ref=e313]: Полный пакет зимних опций и двухзонный климат-контроль
+            - generic [ref=e314]: Наслаждайтесь поездкой, пока система заботится о вашем комфорте. Функции доступны для комплектаций Премиум и Техно +.
+        - group "6 / 6" [ref=e315]:
+          - generic [ref=e316]:
+            - img "Физические кнопки управления" [ref=e319]
+            - generic [ref=e320]: Физические кнопки управления
+      - generic [ref=e321]:
+        - generic:
+          - button "Previous slide" [disabled]
+          - button "Next slide" [ref=e322] [cursor=pointer]
+        - generic [ref=e324]:
+          - button "Go to slide 1" [ref=e325] [cursor=pointer]
+          - button "Go to slide 2" [ref=e326] [cursor=pointer]
+          - button "Go to slide 3" [ref=e327] [cursor=pointer]
+          - button "Go to slide 4" [ref=e328] [cursor=pointer]
+    - generic [ref=e331]:
+      - link "Найти дилера Найдите ближайший официальный дилерский центр Подробнее" [ref=e334] [cursor=pointer]:
+        - /url: https://haval.ru/purchase/find-dealer/
+        - generic [ref=e337]: Найти дилера
+        - generic [ref=e338]: Найдите ближайший официальный дилерский центр
+        - generic [ref=e339]: Подробнее
+      - link "Спецпредложения Оцените выгодные предложения для покупателей НОВОГО HAVAL JOLION Подробнее" [ref=e343] [cursor=pointer]:
+        - /url: /purchase/special-offer/
+        - generic [ref=e346]: Спецпредложения
+        - generic [ref=e347]: Оцените выгодные предложения для покупателей НОВОГО HAVAL JOLION
+        - generic [ref=e348]: Подробнее
+      - link "Пройти тест-драйв Запишитесь на пробную поездку в удобное для вас время Подробнее" [ref=e352] [cursor=pointer]:
+        - /url: /test-drive-new-jolion/
+        - generic [ref=e355]: Пройти тест-драйв
+        - generic [ref=e356]: Запишитесь на пробную поездку в удобное для вас время
+        - generic [ref=e357]: Подробнее
+    - generic [ref=e362]:
+      - group "1 / 2" [ref=e363]:
+        - generic [ref=e364]:
+          - img "ЧЕРНЫЙ" [ref=e368]
+          - generic [ref=e369]: ЧЕРНЫЙ
+      - group "2 / 2" [ref=e371]:
+        - generic [ref=e372]:
+          - img "КРАСНЫЙ" [ref=e376]
+          - generic [ref=e377]: КРАСНЫЙ
+    - heading "Технологии" [level=2] [ref=e383]
+    - generic [ref=e386]:
+      - generic [ref=e387]:
+        - group "1 / 6" [ref=e388]:
+          - generic [ref=e389]:
+            - 'img "Голосовой помощник{{< disclaimer position=\"up\" >}}Доступно при условии наличии интернета на борту или при раздаче с внешних устройств.{{</ disclaimer >}}" [ref=e392]'
+            - generic [ref=e393]:
+              - text: Голосовой
+              - generic [ref=e394]: помощник
+            - generic [ref=e399]: "Управление основными функциями автомобиля теперь доступно с помощью голоса. Система способна реагировать на голосовые команды и осуществлять управление функциями автомобиля: открывать и закрывать окна, регулировать микроклимат и обогревы сидений в салоне, управлять приводом панорамной крыши и многое другое."
+        - group "2 / 6" [ref=e400]:
+          - generic [ref=e401]:
+            - img "Обновленная мультимедийная система с 12.3\" сенсорным экраном" [ref=e404]
+            - generic [ref=e405]: Обновленная мультимедийная система с 12.3" сенсорным экраном
+            - generic [ref=e406]: Большой дисплей высокого разрешения позволяет с удобством управлять мультимедийной системой, климатом, опциями комфорта. При этом функции, требующие мгновенного доступа, вынесены отдельно в виде физических кнопок под экраном, а регулирование громкости возможно с помощью ротационной рукоятки. Мультимедиа поддерживает беспроводное подключение смартфона по протоколам Apple CarPlay и Android Auto
+        - group "3 / 6" [ref=e407]:
+          - generic [ref=e408]:
+            - img "Беспроводная зарядка 50Вт" [ref=e411]
+            - generic [ref=e412]: Беспроводная зарядка 50Вт
+            - generic [ref=e413]: Зарядка удобно располагается посередине центральной консоли. Смартфон надежно зафиксирован, даже в случае резких маневров.
+        - group "4 / 6" [ref=e414]:
+          - generic [ref=e415]:
+            - img "Дополнительные разъемы USB" [ref=e418]
+            - generic [ref=e419]: Дополнительные разъемы USB
+        - group "5 / 6" [ref=e420]:
+          - generic [ref=e421]:
+            - img "Цифровая приборная панель 7”" [ref=e424]
+            - generic [ref=e425]: Цифровая приборная панель 7”
+            - generic [ref=e426]: Экран высокого разрешения выводит всю необходимую информацию перед глазами водителя. Стиль и тема оформления выбираются пользователем.
+        - group "6 / 6" [ref=e427]:
+          - generic [ref=e428]:
+            - img "Проекционный дисплей" [ref=e431]
+            - generic [ref=e432]: Проекционный дисплей
+            - generic [ref=e433]: Дисплей выводит данные бортового компьютера на нижнюю часть лобового стекла. Яркость проекции регулируется, чтобы не утомлять глаза водителя.
+      - generic [ref=e434]:
+        - generic:
+          - button "Previous slide" [disabled]
+          - button "Next slide" [ref=e435] [cursor=pointer]
+        - generic [ref=e437]:
+          - button "Go to slide 1" [ref=e438] [cursor=pointer]
+          - button "Go to slide 2" [ref=e439] [cursor=pointer]
+          - button "Go to slide 3" [ref=e440] [cursor=pointer]
+          - button "Go to slide 4" [ref=e441] [cursor=pointer]
+    - generic [ref=e444]:
+      - 'img "Управляйте автомобилем с помощью сервисов дистанционного доступа к автомобилю (GWM Connection){{< disclaimer position=\"up\" >}}Для автомобилей 2026 модельного года 2026 года производства использование функций дистанционного управления предоставляется Владельцу Автомобиля с даты первой продажи официальным Дилером на территории Российской Федерации и доступно для Владельца Автомобиля без дополнительной оплаты частично сроком на 3 года (управление центральным замком, мониторинг статусов) и частично на 3 месяца (запуск двигателя, климат контроль и другие функции дистанционного управления автомобиля). Владельцу предоставляется возможность пользования Сервисами дистанционного доступа к автомобилю (GWM Connection) в пределах ограниченного объема передачи данных, который составляет 100 мегабайт в месяц.{{</ disclaimer >}}" [ref=e449]'
+      - generic [ref=e451]:
+        - generic [ref=e452]:
+          - text: Управляйте автомобилем с помощью сервисов дистанционного доступа к автомобилю (GWM
+          - generic [ref=e453]: Connection)
+        - generic [ref=e458]:
+          - paragraph [ref=e459]:
+            - text: Вместе с автомобилем
+            - generic [ref=e460]: HAVAL
+            - text: вы получаете целый набор интеллектуальных
+            - generic [ref=e465]: технологий
+            - text: "по дистанционному управлению и контролю статуса автомобиля, которые сделают каждое путешествие еще комфортнее:"
+          - list [ref=e470]:
+            - listitem [ref=e471]: запуск и остановка двигателя;
+            - listitem [ref=e472]: электроподогрев лобового стекла;
+            - listitem [ref=e473]: подогрев сидений;
+            - listitem [ref=e474]: климат-контроль;
+            - listitem [ref=e475]: блокировка замка;
+            - listitem [ref=e476]: оповещение об открытой двери;
+            - listitem [ref=e477]: помощь на дороге.
+        - link "Узнать подробнее" [ref=e479] [cursor=pointer]:
+          - /url: /owners/gwm-app/
+    - generic [ref=e486]:
+      - img "Дистанционное голосовое управление функциями автомобиля" [ref=e491]
+      - generic [ref=e493]:
+        - generic [ref=e494]: Дистанционное голосовое управление функциями автомобиля
+        - generic [ref=e495]:
+          - text: Дистанционное голосовое управление функциями автомобиля теперь доступно через Яндекс
+          - generic [ref=e496]: Станцию
+          - text: . Алиса может запустить двигатель, включить подогрев сидений, проверить статус дверей и запас хода. Просто скажите команду и автомобиль выполнит её, пока вы занимаетесь своими делами.
+        - link "Узнать подробнее" [ref=e502] [cursor=pointer]:
+          - /url: /owners/gwm-app/yandex-station/
+    - heading "Больше комфорта" [level=2] [ref=e511]
+    - generic [ref=e514]:
+      - generic [ref=e515]:
+        - group "1 / 6" [ref=e516]:
+          - generic [ref=e517]:
+            - img "Двухзонный климат-контроль и теплые опции" [ref=e520]
+            - generic [ref=e521]: Двухзонный климат-контроль и теплые опции
+            - generic [ref=e522]: В салоне HAVAL JOLION достаточно выбрать комфортную температуру и климат-контроль будет поддерживать ее автоматически. Пассажир может регулировать для себя температуру независимо от настроек водителя. Кроме того, все сиденья в автомобиле снабжены трехуровневым подогревом.
+        - group "2 / 6" [ref=e523]:
+          - generic [ref=e524]:
+            - img "Функция задержки света фар после закрытия центрального замка" [ref=e527]
+            - generic [ref=e528]: Функция задержки света фар после закрытия центрального замка
+            - generic [ref=e529]: Оставив автомобиль на темной парковке, вам не придется идти на ощупь - свет огней HAVAL JOLION будет освещать путь. Забота о безопасности и комфорте человека ярче всего проявляется в таких нюансах.
+        - group "3 / 6" [ref=e530]:
+          - generic [ref=e531]:
+            - img "Эргономика посадки" [ref=e534]
+            - generic [ref=e535]: Эргономика посадки
+            - generic [ref=e536]: Задние двери HAVAL JOLION широко открываются - это очень удобно при посадке, особенно если нужно разместить ребенка в детском кресле. В передних дверях сделаны объемные “карманы” для хранения. Ручка двери багажника расположена так, чтобы дорожная грязь не попадала на нее и не пачкала руки.
+        - group "4 / 6" [ref=e537]:
+          - generic [ref=e538]:
+            - img "Датчики света и дождя" [ref=e541]
+            - generic [ref=e542]: Датчики света и дождя
+            - generic [ref=e543]: Фотоэлементы фиксируют перемены в погоде и в естественном освещении. Начнется дождь или снег - HAVAL JOLION включит стеклоочистители, стемнеет - включит фары. Все происходит автоматически. Можно наслаждаться вождением, не отвлекаясь.
+        - group "5 / 6" [ref=e544]:
+          - generic [ref=e545]:
+            - img "Функция затемнения зеркала заднего вида" [ref=e548]
+            - generic [ref=e549]: Функция затемнения зеркала заднего вида
+            - generic [ref=e550]: При движении по трассе в темное время суток система автоматически затемняет зеркало заднего вида, если сзади появляется автомобиль, едущий с дальним светом.
+        - group "6 / 6" [ref=e551]:
+          - generic [ref=e552]:
+            - img "Задняя спинка, складывающаяся 60/40" [ref=e555]
+            - generic [ref=e556]: Задняя спинка, складывающаяся 60/40
+      - generic [ref=e557]:
+        - generic:
+          - button "Previous slide" [disabled]
+          - button "Next slide" [ref=e558] [cursor=pointer]
+        - generic [ref=e560]:
+          - button "Go to slide 1" [ref=e561] [cursor=pointer]
+          - button "Go to slide 2" [ref=e562] [cursor=pointer]
+          - button "Go to slide 3" [ref=e563] [cursor=pointer]
+          - button "Go to slide 4" [ref=e564] [cursor=pointer]
+    - heading "Интеллектуальные системы безопасности" [level=2] [ref=e569]
+    - generic [ref=e572]:
+      - generic [ref=e573]:
+        - group "1 / 7" [ref=e574]:
+          - generic [ref=e575]:
+            - img "Адаптивный круиз-контроль" [ref=e578]
+            - generic [ref=e579]: Адаптивный круиз-контроль
+            - generic [ref=e580]: Автоматически поддерживает заданную водителем скорость, так что водитель может не держать ногу на педалях в дальней дороге.
+        - group "2 / 7" [ref=e581]:
+          - generic [ref=e582]:
+            - img "Камера кругового обзора 360 градусов" [ref=e585]
+            - generic [ref=e586]: Камера кругового обзора 360 градусов
+            - generic [ref=e587]: Изображение с камеры легко настраивается под каждого водителя в любых сложных и порой нестандартных ситуациях.
+        - group "3 / 7" [ref=e588]:
+          - generic [ref=e589]:
+            - img "Система автоматической парковки" [ref=e592]
+            - generic [ref=e593]: Система автоматической парковки
+            - generic [ref=e594]: HAVAL JOLION способен найти подходящее место и аккуратно припарковаться в автоматическом режиме. Водителю нужно лишь включить режим автоматической парковки.
+        - group "4 / 7" [ref=e595]:
+          - generic [ref=e596]:
+            - img "Система сохранения и удержания автомобиля в центре полосы" [ref=e599]
+            - generic [ref=e600]: Система сохранения и удержания автомобиля в центре полосы
+            - generic [ref=e601]: Камера HAVAL JOLION видит разметку и бортовой компьютер следит, чтобы автомобиль не смещался из полосы движения, если водитель отвлечется.
+        - group "5 / 7" [ref=e602]:
+          - generic [ref=e603]:
+            - img "Функция движения на малых скоростях" [ref=e606]
+            - generic [ref=e607]: Функция движения на малых скоростях
+            - generic [ref=e608]: Совершенно незаменимая система в больших городах. При движении в пробке роль водителя сводится к контролю обстановки на дороге, пока автомобиль самостоятельно перемещается в медленном потоке.
+        - group "6 / 7" [ref=e609]:
+          - generic [ref=e610]:
+            - img "Система мониторинга \"слепых\" зон" [ref=e613]
+            - generic [ref=e614]: Система мониторинга “слепых” зон
+            - generic [ref=e615]: Справа и слева в задней части автомобиля есть слепые зоны, которые не видны в зеркала заднего вида. HAVAL JOLION контролирует эти зоны и предупреждает водителя, если там движется другой автомобиль.
+        - group "7 / 7" [ref=e616]:
+          - generic [ref=e617]:
+            - img "Распознавание дорожных знаков" [ref=e620]
+            - generic [ref=e621]: Распознавание дорожных знаков
+            - generic [ref=e622]: Камера HAVAL JOLION не позволяет пропустить ни один знак и выведет его изображение на цифровую приборную панель и на проекционный дисплей.
+      - generic [ref=e623]:
+        - generic:
+          - button "Previous slide" [disabled]
+          - button "Next slide" [ref=e624] [cursor=pointer]
+        - generic [ref=e626]:
+          - button "Go to slide 1" [ref=e627] [cursor=pointer]
+          - button "Go to slide 2" [ref=e628] [cursor=pointer]
+          - button "Go to slide 3" [ref=e629] [cursor=pointer]
+          - button "Go to slide 4" [ref=e630] [cursor=pointer]
+          - button "Go to slide 5" [ref=e631] [cursor=pointer]
+    - heading "Системы пассивной безопасности" [level=2] [ref=e636]
+    - generic [ref=e640]:
+      - group "1 / 2" [ref=e641]:
+        - generic [ref=e642]:
+          - img "Шесть подушек безопасности" [ref=e646]
+          - generic [ref=e647]:
+            - generic [ref=e648]: Шесть подушек безопасности
+            - generic [ref=e649]: Водитель и пассажир защищены фронтальными и боковыми подушками безопасности. Шторки безопасности защищают всех пассажиров от бокового удара.
+      - group "2 / 2" [ref=e650]:
+        - generic [ref=e651]:
+          - img "Кузов из высокопрочной стали" [ref=e655]
+          - generic [ref=e656]:
+            - generic [ref=e657]: Кузов из высокопрочной стали
+            - generic [ref=e658]: Салон HAVAL JOLION защищен устойчивым к деформации каркасом из высокопрочной стали. Внешние части кузова подготовлены к запрограммированной деформации, они поглощают энергию удара. В комплексе это обеспечивает высокий уровень защиты людей в салоне автомобиля.
+    - heading "ДОБАВЬ ДИНАМИКИ" [level=2] [ref=e663]
+    - generic [ref=e666]:
+      - generic [ref=e667]:
+        - group "1 / 4" [ref=e668]:
+          - generic [ref=e669]:
+            - img "Новый бензиновый двигатель 1,5 л. с турбонаддувом" [ref=e672]
+            - generic [ref=e673]: Новый бензиновый двигатель 1,5 л. с турбонаддувом
+            - generic [ref=e674]: Двигатель HAVAL JOLION обладает высокой мощностью и крутящим моментом 270 Нм. Силовой агрегат соответствует экологическому классу Евро-6 со сниженным расходом топлива, который в смешанном цикле составляет всего 7.6 л/100 км.
+        - group "2 / 4" [ref=e675]:
+          - generic [ref=e676]:
+            - img "Инновационная платформа L.E.M.O.N." [ref=e679]
+            - generic [ref=e680]: Инновационная платформа L.E.M.O.N.
+            - generic [ref=e681]: Платформа L.E.M.O.N., на которой создан HAVAL JOLION, обладает выдающейся эргономикой, легкостью и прочностью. Сниженный вес улучшает динамику и экономичность. А прочность гарантирует высокий уровень безопасности.
+        - group "3 / 4" [ref=e682]:
+          - generic [ref=e683]:
+            - img "Семиступенчатая коробка передач с двойным сцеплением" [ref=e686]
+            - generic [ref=e687]: Семиступенчатая коробка передач с двойным сцеплением
+            - generic [ref=e688]: Роботизированная коробка передач c двойным сцеплением «мокрого» типа – проверенное временем решение, зарекомендовавшее себя на рынке.
+        - group "4 / 4" [ref=e689]:
+          - generic [ref=e690]:
+            - img "Система полного привода" [ref=e693]
+            - generic [ref=e694]: Система полного привода
+            - generic [ref=e695]: Подключаемый полный привод значительно улучшает управляемость автомобиля, дает возможность легко выехать из сугроба на парковке и чувствовать себя уверенно как на проселочной дороге, так и на засыпанной снегом трассе. При этом, полный привод подключается автоматически только тогда, когда он нужен, что способствует экономии топлива.
+      - generic [ref=e696]:
+        - generic:
+          - button "Previous slide" [disabled]
+          - button "Next slide" [ref=e697] [cursor=pointer]
+        - generic [ref=e699]:
+          - button "Go to slide 1" [ref=e700] [cursor=pointer]
+          - button "Go to slide 2" [ref=e701] [cursor=pointer]
+    - generic [ref=e705]:
+      - heading "Сделано в России" [level=2] [ref=e706]
+      - generic [ref=e707]: HAVAL JOLION производится на заводе в России - там, где точно знают, каким должен быть автомобиль для наших дорог и условий. Локальное производство позволяет быстрее адаптировать решения, учитывать реальные сценарии эксплуатации и предлагать автомобиль, который отвечает ожиданиям водителей.
+    - heading "ПРЕИМУЩЕСТВА ВЛАДЕНИЯ HAVAL JOLION" [level=2] [ref=e712]
+    - generic [ref=e715]:
+      - generic [ref=e716]:
+        - group "1 / 4" [ref=e717]:
+          - generic [ref=e718]:
+            - link "Шаг ТО до 15 000 км Шаг ТО до 15 000 км" [ref=e719] [cursor=pointer]:
+              - /url: /owners/regulations-to/
+              - img "Шаг ТО до 15 000 км" [ref=e722]
+              - generic [ref=e723]: Шаг ТО до 15 000 км
+            - generic [ref=e724]: Прозрачный и прогнозированный график обслуживания в соответствии с проработанным регламентом и увеличенным интервалом обслуживания – 15 000 км.
+        - group "2 / 4" [ref=e725]:
+          - generic [ref=e726]:
+            - link "5 лет сервисной поддержки 5 лет сервисной поддержки" [ref=e727] [cursor=pointer]:
+              - /url: /owners/guarantee/
+              - img "5 лет сервисной поддержки" [ref=e730]
+              - generic [ref=e731]: 5 лет сервисной поддержки
+            - generic [ref=e732]: "Полная уверенность в наших автомобилях, а также высокое качество производства и компонентов позволяет нам гарантировать 5 лет поддержки для вашего автомобиля HAVAL: 3 года гарантии и 2 года дополнительной сервисной поддержки."
+        - group "3 / 4" [ref=e733]:
+          - generic [ref=e734]:
+            - img "Локализация моторного масла и шин" [ref=e737]
+            - generic [ref=e738]: Локализация моторного масла и шин
+            - generic [ref=e739]: Оптимизация стоимости обслуживания для клиентов HAVAL за счет локализации масел и шин без потери качества - они соответствуют техническим характеристикам зарубежных аналогов.
+        - group "4 / 4" [ref=e740]:
+          - generic [ref=e741]:
+            - link "Широкое покрытие услуги «Помощь на дороге» Широкое покрытие услуги «Помощь на дороге»" [ref=e742] [cursor=pointer]:
+              - /url: /owners/roadside-assistance/
+              - img "Широкое покрытие услуги «Помощь на дороге»" [ref=e745]
+              - generic [ref=e746]: Широкое покрытие услуги «Помощь на дороге»
+            - generic [ref=e747]: Перечень дополнительных услуг для клиентов, которые попали в сложную ситуацию на дороге. Покрытие 300 км от города с дилером для HAVAL.
+      - generic [ref=e748]:
+        - generic:
+          - button "Previous slide" [disabled]
+          - button "Next slide" [ref=e749] [cursor=pointer]
+        - generic [ref=e751]:
+          - button "Go to slide 1" [ref=e752] [cursor=pointer]
+          - button "Go to slide 2" [ref=e753] [cursor=pointer]
+    - heading [level=2] [ref=e758]:
+      - text: Тех.
+      - generic [ref=e759]: характеристики
+    - generic [ref=e765]:
+      - generic [ref=e770]:
+        - group "1 / 3" [ref=e771] [cursor=pointer]:
+          - generic [ref=e772]: 1.5 (143 л.с.) MT 4х2 (2026 модельный год)
+        - group "2 / 3" [ref=e773] [cursor=pointer]:
+          - generic [ref=e774]: 1.5 (143 л.с.) AT 4х2 (2026 модельный год)
+        - group "3 / 3" [ref=e775] [cursor=pointer]:
+          - generic [ref=e776]: 1.5 (150 л.с.) AT 4х4 (2026 модельный год)
+      - list [ref=e783]:
+        - listitem [ref=e784]:
+          - generic [ref=e785] [cursor=pointer]: Основные характеристики
+          - generic [ref=e793]:
+            - table [ref=e796]:
+              - rowgroup [ref=e797]:
+                - row [ref=e798]:
+                  - cell [ref=e799]
+                - row [ref=e800]:
+                  - cell "Тип двигателя" [ref=e801]
+                  - cell "бензиновый, с турбонаддувом" [ref=e802]
+                - row [ref=e803]:
+                  - cell "Рабочий объем, см3" [ref=e804]
+                  - cell "1497" [ref=e805]
+                - row [ref=e806]:
+                  - cell "Максимальная мощность, л.с. (кВт) / при об/мин." [ref=e807]
+                  - cell "143 (105) / 5600-6000" [ref=e808]
+            - table [ref=e811]:
+              - rowgroup [ref=e812]:
+                - row [ref=e813]:
+                  - cell [ref=e814]
+                - row [ref=e815]:
+                  - cell "Коробка передач" [ref=e816]
+                  - cell "Механическая" [ref=e817]
+                - row [ref=e818]:
+                  - cell "Тип привода" [ref=e819]
+                  - cell "Передний 2WD" [ref=e820]
+                - row [ref=e821]:
+                  - cell "Максимальная скорость, км/ч" [ref=e822]
+                  - cell "185" [ref=e823]
+        - listitem [ref=e824]:
+          - generic [ref=e825] [cursor=pointer]: Кузов
+          - generic [ref=e833]:
+            - table [ref=e836]:
+              - rowgroup [ref=e837]:
+                - row [ref=e838]:
+                  - cell "Тип кузова" [ref=e839]
+                  - cell "5-дверный универсал" [ref=e840]
+            - table [ref=e843]:
+              - rowgroup [ref=e844]:
+                - row [ref=e845]:
+                  - cell "Количество мест" [ref=e846]
+                  - cell "5" [ref=e847]
+        - listitem [ref=e848]:
+          - generic [ref=e849] [cursor=pointer]: Габаритные размеры
+          - generic [ref=e857]:
+            - table [ref=e860]:
+              - rowgroup [ref=e861]:
+                - row [ref=e862]:
+                  - cell [ref=e863]
+                - row [ref=e864]:
+                  - cell "Длина × Ширина × Высота, мм" [ref=e865]
+                  - cell "4472 × 1874 × 1581" [ref=e866]
+                - row [ref=e867]:
+                  - cell "Колесная база, мм" [ref=e868]
+                  - cell "2700" [ref=e869]
+            - table [ref=e872]:
+              - rowgroup [ref=e873]:
+                - row [ref=e874]:
+                  - cell [ref=e875]
+                - row [ref=e876]:
+                  - cell "Колея передних / задних колес, мм" [ref=e877]
+                  - cell "1577 / 1597" [ref=e878]
+                - row [ref=e879]:
+                  - cell "Клиренс, мм" [ref=e880]
+                  - cell "190 (в зависимости от версии)" [ref=e881]
+        - listitem [ref=e882]:
+          - generic [ref=e883] [cursor=pointer]: Двигатель
+          - generic [ref=e891]:
+            - table [ref=e894]:
+              - rowgroup [ref=e895]:
+                - row [ref=e896]:
+                  - cell [ref=e897]
+                - row [ref=e898]:
+                  - cell "Тип двигателя" [ref=e899]
+                  - cell "бензиновый, с турбонаддувом" [ref=e900]
+                - row [ref=e901]:
+                  - cell "Тип топлива" [ref=e902]
+                  - cell "бензин, не ниже АИ-92" [ref=e903]
+                - row [ref=e904]:
+                  - cell "Система питания" [ref=e905]
+                  - cell "Распределенный впрыск топлива с электронным управлением" [ref=e906]
+                - row [ref=e907]:
+                  - cell "Рабочий объем, см3" [ref=e908]
+                  - cell "1497" [ref=e909]
+                - row [ref=e910]:
+                  - cell "Число и расположение цилиндров" [ref=e911]
+                  - cell "4, рядное" [ref=e912]
+            - table [ref=e915]:
+              - rowgroup [ref=e916]:
+                - row [ref=e917]:
+                  - cell [ref=e918]
+                - row [ref=e919]:
+                  - cell "Максимальная мощность, л.с. (кВт) / при об/мин." [ref=e920]
+                  - cell "143 (105) / 5600-6000" [ref=e921]
+                - row [ref=e922]:
+                  - cell "Максимальный крутящий момент, Нм / при об/мин." [ref=e923]
+                  - cell "210 / 2000-4400" [ref=e924]
+                - row [ref=e925]:
+                  - cell "Степень сжатия" [ref=e926]
+                  - cell "9.3:1" [ref=e927]
+                - row [ref=e928]:
+                  - cell "Экологический класс" [ref=e929]
+                  - cell "5" [ref=e930]
+        - listitem [ref=e931]:
+          - generic [ref=e932] [cursor=pointer]: Трансмиссия
+          - generic [ref=e940]:
+            - table [ref=e943]:
+              - rowgroup [ref=e944]:
+                - row [ref=e945]:
+                  - cell "Коробка передач" [ref=e946]
+                  - cell "Механическая" [ref=e947]
+            - table [ref=e950]:
+              - rowgroup [ref=e951]:
+                - row [ref=e952]:
+                  - cell "Тип привода" [ref=e953]
+                  - cell "Передний 2WD" [ref=e954]
+        - listitem [ref=e955]:
+          - generic [ref=e956] [cursor=pointer]: Подвеска
+          - generic [ref=e964]:
+            - table [ref=e967]:
+              - rowgroup [ref=e968]:
+                - row [ref=e969]:
+                  - cell "Передняя" [ref=e970]
+                  - cell "независимая, типа McPherson, со стабилизатором поперечной устойчивости" [ref=e971]
+            - table [ref=e974]:
+              - rowgroup [ref=e975]:
+                - row [ref=e976]:
+                  - cell "Задняя" [ref=e977]
+                  - cell "полузависимая, пружинная, с гидравлическими телескопическими амортизаторами" [ref=e978]
+        - listitem [ref=e979]:
+          - generic [ref=e980] [cursor=pointer]: Тормозная система
+          - generic [ref=e988]:
+            - table [ref=e991]:
+              - rowgroup [ref=e992]:
+                - row [ref=e993]:
+                  - cell "Передние" [ref=e994]
+                  - cell "Вентилируемые, дисковые" [ref=e995]
+            - table [ref=e998]:
+              - rowgroup [ref=e999]:
+                - row [ref=e1000]:
+                  - cell "Задние" [ref=e1001]
+                  - cell "Дисковые" [ref=e1002]
+        - listitem [ref=e1003]:
+          - generic [ref=e1004] [cursor=pointer]: Рулевое управление
+          - table [ref=e1015]:
+            - rowgroup [ref=e1016]:
+              - row [ref=e1017]:
+                - cell "Усилитель руля" [ref=e1018]
+                - cell "Электрический" [ref=e1019]
+        - listitem [ref=e1020]:
+          - generic [ref=e1021] [cursor=pointer]: Масса и объем багажного отделения
+          - generic [ref=e1029]:
+            - table [ref=e1032]:
+              - rowgroup [ref=e1033]:
+                - row [ref=e1034]:
+                  - cell [ref=e1035]
+                - row [ref=e1036]:
+                  - cell "Снаряженная масса, кг (без люка/с люком)" [ref=e1037]
+                  - cell "1420" [ref=e1038]
+                - row [ref=e1039]:
+                  - cell "Полная масса, кг (без люка/с люком)" [ref=e1040]
+                  - cell "1740" [ref=e1041]
+                - row [ref=e1042]:
+                  - cell "Полезная нагрузка, кг" [ref=e1043]
+                  - cell "320" [ref=e1044]
+            - table [ref=e1047]:
+              - rowgroup [ref=e1048]:
+                - row [ref=e1049]:
+                  - cell [ref=e1050]
+                - row [ref=e1051]:
+                  - cell "Масса буксируемого прицепа (с тормозами/без тормозов), кг" [ref=e1052]
+                  - cell "1300/710" [ref=e1053]
+                - row [ref=e1054]:
+                  - cell "Емкость топливного бака, л" [ref=e1055]
+                  - cell "55" [ref=e1056]
+                - row [ref=e1057]:
+                  - cell "Объем багажника при сложенных задних сиденьях, л" [ref=e1058]
+                  - cell "1133" [ref=e1059]
+        - listitem [ref=e1060]:
+          - generic [ref=e1061] [cursor=pointer]: Шины и диски
+          - generic [ref=e1069]:
+            - table [ref=e1072]:
+              - rowgroup [ref=e1073]:
+                - row [ref=e1074]:
+                  - cell [ref=e1075]
+                - row [ref=e1076]:
+                  - cell "Шины" [ref=e1077]
+                  - cell "215 / 60 R17 96 H или 225 / 55 R18 98 V" [ref=e1078]
+                - row [ref=e1079]:
+                  - cell "Диски" [ref=e1080]
+                  - cell "Литые алюминиевые" [ref=e1081]
+            - table [ref=e1084]:
+              - rowgroup [ref=e1085]:
+                - row [ref=e1086]:
+                  - cell "Размер дисков" [ref=e1087]
+                  - cell "R17" [ref=e1088]
+        - listitem [ref=e1089]:
+          - generic [ref=e1090] [cursor=pointer]: Эксплуатационные характеристики
+          - generic [ref=e1098]:
+            - table [ref=e1101]:
+              - rowgroup [ref=e1102]:
+                - row [ref=e1103]:
+                  - cell "Время разгона 0 - 100 км/ч, с*" [ref=e1104]
+                  - cell "9,8" [ref=e1105]
+            - table [ref=e1108]:
+              - rowgroup [ref=e1109]:
+                - row [ref=e1110]:
+                  - cell "Максимальная скорость, км/ч" [ref=e1111]
+                  - cell "185" [ref=e1112]
+        - listitem [ref=e1113]:
+          - generic [ref=e1114] [cursor=pointer]: Расход топлива и содержание СО2
+          - generic [ref=e1122]:
+            - table [ref=e1125]:
+              - rowgroup [ref=e1126]:
+                - row [ref=e1127]:
+                  - cell [ref=e1128]
+                - row [ref=e1129]:
+                  - cell "Городской цикл, л/100 км" [ref=e1130]
+                  - cell "9,9" [ref=e1131]
+                - row [ref=e1132]:
+                  - cell "Загородный цикл, л/100 км" [ref=e1133]
+                  - cell "6,1" [ref=e1134]
+            - table [ref=e1137]:
+              - rowgroup [ref=e1138]:
+                - row [ref=e1139]:
+                  - cell [ref=e1140]
+                - row [ref=e1141]:
+                  - cell "Расход топлива, смешанный цикл, л/100 км" [ref=e1142]
+                  - cell "7,5" [ref=e1143]
+                - row [ref=e1144]:
+                  - cell "Содержание газов CO2 в смешанном цикле, г/км" [ref=e1145]
+                  - cell "172" [ref=e1146]
+    - heading "Комплектации HAVAL JOLION 2026" [level=2] [ref=e1151]
+    - generic [ref=e1153]:
+      - generic [ref=e1158]:
+        - group "1 / 6" [ref=e1159] [cursor=pointer]:
+          - generic [ref=e1160]: Комфорт 2WD
+        - group "2 / 6" [ref=e1161] [cursor=pointer]:
+          - generic [ref=e1162]: Оптимум 2WD
+        - group "3 / 6" [ref=e1163] [cursor=pointer]:
+          - generic [ref=e1164]: Оптимум 4WD
+        - group "4 / 6" [ref=e1165] [cursor=pointer]:
+          - generic [ref=e1166]: Премиум 2WD
+        - group "5 / 6" [ref=e1167] [cursor=pointer]:
+          - generic [ref=e1168]: Премиум 4WD
+        - group "6 / 6" [ref=e1169] [cursor=pointer]:
+          - generic [ref=e1170]: Техно + 4WD
+      - list [ref=e1177]:
+        - listitem [ref=e1178]:
+          - generic [ref=e1179] [cursor=pointer]: Экстерьер
+          - generic [ref=e1184]:
+            - paragraph [ref=e1185]: Окраска кузова металлик
+            - paragraph [ref=e1186]: "Внедорожный пакет: окрашенные в черный цвет решетка радиатора, колпаки зеркал заднего вида; пластиковые накладки бампера, расширители колесных арок, юбка, спойлер"
+            - paragraph [ref=e1187]: Окрашенные в цвет кузова ручки дверей
+            - paragraph [ref=e1188]: Укороченная антенна “акулий плавник”
+            - paragraph [ref=e1189]: Рейлинги на крыше
+        - listitem [ref=e1190]:
+          - generic [ref=e1191] [cursor=pointer]: Свет и обзор
+          - generic [ref=e1196]:
+            - paragraph [ref=e1197]: Галогеновые фары
+            - paragraph [ref=e1198]: Светодиодные дневные ходовые огни, интегрированные в блок фар
+            - paragraph [ref=e1199]: Светодиодные задние фонари
+            - paragraph [ref=e1200]: Задние противотуманные фонари
+            - paragraph [ref=e1201]: Функция задержки света фар после закрытия центрального замка
+            - paragraph [ref=e1202]: Датчик дождя и света
+        - listitem [ref=e1203]:
+          - generic [ref=e1204] [cursor=pointer]: Интерьер
+          - generic [ref=e1209]:
+            - paragraph [ref=e1210]: Черная обивка салона
+            - paragraph [ref=e1211]: Тканевая обивка сидений
+            - paragraph [ref=e1212]: Солнцезащитные козырьки водителя и пассажира с зеркалами
+            - paragraph [ref=e1213]: Центральный подлокотник с вещевым отделением
+            - paragraph [ref=e1214]: 2 передних подстаканника на центральном тоннеле
+            - paragraph [ref=e1215]: Задний подлокотник, 2 подстаканника
+            - paragraph [ref=e1216]: Потолочные ручки интерьера для посадки пассажиров
+            - paragraph [ref=e1217]: Механическая регулировка сиденья водителя в 6 направлениях
+            - paragraph [ref=e1218]: Механическая регулировка сиденья пассажира в 4 направлениях
+        - listitem [ref=e1219]:
+          - generic [ref=e1220] [cursor=pointer]: Безопасность
+          - generic [ref=e1225]:
+            - paragraph [ref=e1226]: "Системы стабилизации движения: Антиблокировочная система тормозов ABS. Электронная система контроля курсовой устойчивости ESС. Электронная система распределения тормозных усилий EBD с усилителем при экстренном торможении EBA"
+            - paragraph [ref=e1227]: Система стабилизации курсовой устойчивости TCS и система помощи стабилизации движения прицепа TSA
+            - paragraph [ref=e1228]: Система помощи при старте на подъеме и при движении под уклон
+            - paragraph [ref=e1229]: Электронный стояночный тормоз EPB с функцией автоматического удержания AutoHold
+            - paragraph [ref=e1230]: Автоматическое включение аварийного света при экстренном торможении
+            - paragraph [ref=e1231]: Круиз контроль
+            - paragraph [ref=e1232]: Фронтальные подушки безопасности
+            - paragraph [ref=e1233]: Боковые подушки и шторки безопасности
+            - paragraph [ref=e1234]: Индикатор предупреждения о непристегнутом ремне безопасности на передних сиденьях
+            - paragraph [ref=e1235]: Иммобилайзер
+            - paragraph [ref=e1236]: Система поиска автомобиля, дистанционная активация звукового сигнала
+            - paragraph [ref=e1237]: Разьем USB в зеркале, для подключения видео-регистратора
+            - paragraph [ref=e1238]: Крепления ISOFIX на задних сиденьях
+            - paragraph [ref=e1239]: Блокировка замков задних дверей от открывания изнутри (детский замок)
+            - paragraph [ref=e1240]: Система экстренного реагирования при авариях “ЭРА-ГЛОНАСС”
+            - paragraph [ref=e1241]: Аккумулятор увеличенной емкости
+            - paragraph [ref=e1242]: Увеличенный объем бачка омывателя, 4,5л
+        - listitem [ref=e1243]:
+          - generic [ref=e1244] [cursor=pointer]: Оборудование
+          - generic [ref=e1249]:
+            - paragraph [ref=e1250]: Автоматический климат-контроль 1-зонный
+            - paragraph [ref=e1251]: Электроусилитель рулевого управления
+            - paragraph [ref=e1252]: Регулировка руля по высоте и вылету
+            - paragraph [ref=e1253]: Подогрев и электрорегулировка зеркал заднего вида
+            - paragraph [ref=e1254]: Подогрев передних сидений
+            - paragraph [ref=e1255]: Электростеклоподъемники 4 дверей с автодоводчиком со стороны водителя
+            - paragraph [ref=e1256]: Задние датчики парковки
+            - paragraph [ref=e1257]: 2 смарт-ключа
+            - paragraph [ref=e1258]: Центральный замок с дистанционным управлением
+            - paragraph [ref=e1259]: Бесключевой доступ, кнопка запуска двигателя
+        - listitem [ref=e1260]:
+          - generic [ref=e1261] [cursor=pointer]: Аудио и электронные системы
+          - generic [ref=e1266]:
+            - paragraph [ref=e1267]: Мультимедийное устройство с беспроводным интерфейсом Android Auto/ Apple Carplay, Bluetooth
+            - paragraph [ref=e1268]: Сенсорный дисплей, 10"
+            - paragraph [ref=e1269]: Цветной дисплей бортового компьютера, 3,5''
+            - paragraph [ref=e1270]: Голосовое управление базовыми функциями автомобиля (оффлайн-доступ)
+            - paragraph [ref=e1271]: 4 аудио динамика
+            - paragraph [ref=e1272]: Автоматическое изменение громкости аудиосистемы при увеличении скорости
+            - paragraph [ref=e1273]: 2 USB спереди (1 Type-A и 1 Type-C) и 2 USB сзади (1 Type-A и 1 Type-C)
+            - paragraph [ref=e1274]: Розетка, 12В для передних пассажиров на центральном тоннеле
+        - listitem [ref=e1275]:
+          - generic [ref=e1276] [cursor=pointer]: Колеса
+          - generic [ref=e1281]:
+            - paragraph [ref=e1282]: 17" диски (шины 215/60)
+            - paragraph [ref=e1283]: Малоразмерное запасное колесо (докатка)
+            - paragraph [ref=e1284]: Система мониторинга давления в шинах TPMS
+        - listitem [ref=e1285]:
+          - generic [ref=e1286] [cursor=pointer]: Багажник и груз
+          - generic [ref=e1291]:
+            - paragraph [ref=e1292]: Задняя спинка, складывающаяся 60/40
+            - paragraph [ref=e1293]: Лампа в багажном отделении
+            - paragraph [ref=e1294]: Подготовка под установку ТСУ (фаркопа)
+    - heading "HAVAL JOLION В НАЛИЧИИ" [level=2] [ref=e1299]
+  - contentinfo [ref=e1303]:
+    - generic [ref=e1304]:
+      - generic [ref=e1306]:
+        - generic [ref=e1311]:
+          - link "M6" [ref=e1312] [cursor=pointer]:
+            - /url: /models/haval-m6/
+          - link "JOLION" [ref=e1313] [cursor=pointer]:
+            - /url: /models/haval-jolion/
+          - link "DARGO" [ref=e1314] [cursor=pointer]:
+            - /url: /models/haval-dargo/
+          - link "DARGO Х" [ref=e1315] [cursor=pointer]:
+            - /url: /models/new-haval-dargo
+          - link "F7" [ref=e1316] [cursor=pointer]:
+            - /url: /models/haval-f7/
+          - link "F7x" [ref=e1317] [cursor=pointer]:
+            - /url: /models/haval-f7x/
+          - link "POER" [ref=e1318] [cursor=pointer]:
+            - /url: /models/poer/
+        - generic [ref=e1323]:
+          - link "H3" [ref=e1324] [cursor=pointer]:
+            - /url: /models/haval-h3/
+          - link "H5" [ref=e1325] [cursor=pointer]:
+            - /url: /models/haval-h5/
+          - link "H7" [ref=e1326] [cursor=pointer]:
+            - /url: /models/haval-h7/
+          - link "H9" [ref=e1327] [cursor=pointer]:
+            - /url: /models/haval-h9/
+      - generic [ref=e1329]:
+        - navigation [ref=e1330]:
+          - generic [ref=e1331]:
+            - generic [ref=e1333]:
+              - generic [ref=e1334]: Онлайн-сервисы
+              - generic [ref=e1337]:
+                - generic [ref=e1338]: Покупка
+                - generic [ref=e1339]:
+                  - link "Автомобили в наличии" [ref=e1340] [cursor=pointer]:
+                    - /url: /online-stock/
+                  - link "Рассчитать кредит" [ref=e1344] [cursor=pointer]:
+                    - /url: /purchase/credit/calculator/
+                  - link "Оценить трейд-ин" [ref=e1348] [cursor=pointer]:
+                    - /url: /trade-in/
+                  - link "Конфигуратор модели" [ref=e1352] [cursor=pointer]:
+                    - /url: /configurator/
+                - generic [ref=e1356]: Владение
+                - generic [ref=e1357]:
+                  - link "Запись на сервис" [ref=e1358] [cursor=pointer]:
+                    - /url: /owners/service/request/
+                  - link "Все о сервисе" [ref=e1362] [cursor=pointer]:
+                    - /url: /all-about-the-service/
+                  - link "Калькулятор ТО" [ref=e1366] [cursor=pointer]:
+                    - /url: /owners/service/maintenance-calculator/
+                  - link "Найти дилера" [ref=e1370] [cursor=pointer]:
+                    - /url: /purchase/find-dealer/
+            - generic [ref=e1375]:
+              - generic [ref=e1376]: Покупателям
+              - generic [ref=e1379]:
+                - generic [ref=e1380]: Выбор
+                - generic [ref=e1381]:
+                  - link "Автомобили в наличии" [ref=e1382] [cursor=pointer]:
+                    - /url: /online-stock/
+                  - link "Специальные предложения" [ref=e1383] [cursor=pointer]:
+                    - /url: /purchase/special-offer/
+                  - link "Калькулятор выгод" [ref=e1384] [cursor=pointer]:
+                    - /url: /benefits-calculator/
+                  - link "Каталоги и прайс-листы" [ref=e1385] [cursor=pointer]:
+                    - /url: /purchase/catalogues/
+                  - link "Трейд-ин" [ref=e1386] [cursor=pointer]:
+                    - /url: /trade-in/
+                  - link "Аксессуары" [ref=e1387] [cursor=pointer]:
+                    - /url: /shop/
+                  - link "Найти дилера" [ref=e1388] [cursor=pointer]:
+                    - /url: /purchase/find-dealer/
+                - generic [ref=e1389]: Финансы
+                - generic [ref=e1390]:
+                  - link "Кредит" [ref=e1391] [cursor=pointer]:
+                    - /url: /purchase/credit/
+                  - link "Страхование" [ref=e1392] [cursor=pointer]:
+                    - /url: /purchase/insurance/
+                  - link "Лизинг" [ref=e1393] [cursor=pointer]:
+                    - /url: /purchase/corporate_clients/corporate-leasing/
+                - generic [ref=e1394]: Для бизнеса
+                - generic [ref=e1395]:
+                  - link "Корпоративным клиентам" [ref=e1396] [cursor=pointer]:
+                    - /url: /purchase/corporate_clients/
+                  - link "Система управления автопарком" [ref=e1397] [cursor=pointer]:
+                    - /url: /purchase/corporate_clients/platform/
+            - generic [ref=e1399]:
+              - generic [ref=e1400]: Владельцам
+              - generic [ref=e1403]:
+                - generic [ref=e1404]: Сервисные программы
+                - generic [ref=e1405]:
+                  - link "Нулевое ТО" [ref=e1406] [cursor=pointer]:
+                    - /url: /initial-maintenance/
+                  - link "Преимущество второго владельца" [ref=e1407] [cursor=pointer]:
+                    - /url: /second-owner-benefits/
+                  - link "HAVAL Защита+" [ref=e1408] [cursor=pointer]:
+                    - /url: /owners/haval-protection/
+                  - link "Помощь на дороге" [ref=e1409] [cursor=pointer]:
+                    - /url: /owners/roadside-assistance/
+                - generic [ref=e1410]: Запчасти и аксессуары
+                - generic [ref=e1411]:
+                  - link "Моторное масло" [ref=e1412] [cursor=pointer]:
+                    - /url: /owners/service/motornye-masla/
+                  - link "Оригинальные аксессуары" [ref=e1413] [cursor=pointer]:
+                    - /url: /owners/collection-for-cars/
+                  - link "Одежда и сувениры" [ref=e1414] [cursor=pointer]:
+                    - /url: /shop/
+                - generic [ref=e1415]: Поддержка
+                - generic [ref=e1416]:
+                  - link "Мобильное приложение" [ref=e1417] [cursor=pointer]:
+                    - /url: /owners/gwm-app/
+                  - link "Руководства по эксплуатации" [ref=e1418] [cursor=pointer]:
+                    - /url: /owners/instructions/
+                  - link "Регламенты ТО" [ref=e1419] [cursor=pointer]:
+                    - /url: /owners/regulations-to/
+                  - link "Электронный ПТС" [ref=e1420] [cursor=pointer]:
+                    - /url: /owners/epts/
+                  - link "Подписки" [ref=e1421] [cursor=pointer]:
+                    - /url: /multimedia-subscriptions/
+                  - link "Гарантия" [ref=e1422] [cursor=pointer]:
+                    - /url: /owners/guarantee/
+            - generic [ref=e1424]:
+              - generic [ref=e1425]: О бренде
+              - generic [ref=e1428]:
+                - generic [ref=e1429]: Дилерская сеть
+                - generic [ref=e1430]:
+                  - link "Официальные дилеры" [ref=e1431] [cursor=pointer]:
+                    - /url: /purchase/find-dealer/
+                  - link "Стать дилером CITY" [ref=e1432] [cursor=pointer]:
+                    - /url: /become_dealer/actual-dealer/
+                  - link "Стать дилером PRO" [ref=e1433] [cursor=pointer]:
+                    - /url: /become_dealer/become-new-dealer/
+                - generic [ref=e1434]: Бренд
+                - generic [ref=e1435]:
+                  - link "О бренде HAVAL" [ref=e1436] [cursor=pointer]:
+                    - /url: /about/brand/
+                  - link "История Great Wall Motor" [ref=e1437] [cursor=pointer]:
+                    - /url: /about/gwm/
+                  - link "Производство в России" [ref=e1438] [cursor=pointer]:
+                    - /url: /about/development/
+                - generic [ref=e1439]: О компании
+                - generic [ref=e1440]:
+                  - link "Вакансии" [ref=e1441] [cursor=pointer]:
+                    - /url: /vakansii/
+                  - link "Новости" [ref=e1442] [cursor=pointer]:
+                    - /url: /about/media/
+                  - link "Контакты" [ref=e1443] [cursor=pointer]:
+                    - /url: /about/contacts/
+        - generic [ref=e1445]:
+          - link "vk" [ref=e1446] [cursor=pointer]:
+            - /url: https://vk.com/havalrussia
+          - link "rutube" [ref=e1449] [cursor=pointer]:
+            - /url: https://rutube.ru/channel/48953335/
+          - link "Телеграм (При клике пользователь будет перенаправлен на зарубежный сервис)" [ref=e1452] [cursor=pointer]:
+            - /url: https://t.me/+Wg1zN8_m8Pg3ZThi
+          - link "max" [ref=e1455] [cursor=pointer]:
+            - /url: https://max.ru/HavalRussiaOfficial
+          - link "ok" [ref=e1458] [cursor=pointer]:
+            - /url: https://ok.ru/havalrussia
+          - link "dzen" [ref=e1461] [cursor=pointer]:
+            - /url: https://dzen.ru/havalrussia
+        - generic [ref=e1464]:
+          - list [ref=e1465]:
+            - listitem [ref=e1466] [cursor=pointer]: О продукте
+            - listitem [ref=e1467] [cursor=pointer]: Кредитные программы
+            - listitem [ref=e1468] [cursor=pointer]: Цены и выгоды
+          - generic [ref=e1470]:
+            - generic [ref=e1471]:
+              - paragraph [ref=e1472]: Вся представленная на сайте информация, касающаяся автомобилей и сервисного обслуживания, носит информационный характер и не является публичной офертой. Все цены, указанные на данном сайте, носят информационный характер и являются максимально рекомендуемыми розничными ценами по расчетам дистрибьютора (ООО «Грейт Волл Мотор Рус»). Для получения подробной информации просьба обращаться к ближайшему официальному дилеру ООО «Грейт Волл Мотор Рус» либо по телефону Горячей линии 8 (800) 511-59-86, либо на сайте. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+              - paragraph [ref=e1473]: "****На некоторых автомобилях HAVAL может отсутствовать система / устройство вызова экстренных оперативных служб (блок ЭРА-ГЛОНАСС)."
+            - button "Показать все" [ref=e1474] [cursor=pointer]
+        - generic [ref=e1476]:
+          - generic [ref=e1477]: © 2026 ООО «Грейт Волл Мотор Рус»
+          - link "Политика конфиденциальности" [ref=e1478] [cursor=pointer]:
+            - /url: /politika-obrabotki-personal-nykh-dannykh-ofitsial-nogo-saita/
+          - link "Юридическая информация" [ref=e1479] [cursor=pointer]:
+            - /url: /user-agreement/
