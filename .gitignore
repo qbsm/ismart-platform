@@ -128,3 +128,11 @@ public/robots.txt
 
 # Контентные медиа-файлы лежат в git (full dataset).
 # Не добавлять сюда data/img/<section>/ — см. memory/project_full_media_in_git.
+
+# Резервные копии рядом с кодом не версионируем: история правок есть в git
+*.bak
+*.bak-*
+*.bak.*
+*.orig
+*.save
+*~
