@@ -34,8 +34,8 @@ return static function (App $app): void {
 
     $app->addRoutingMiddleware();
 
-    $app->add(RedirectMiddleware::class);
     $app->add(TrailingSlashMiddleware::class);
+    $app->add(RedirectMiddleware::class);
 
     $errorMiddleware = $app->addErrorMiddleware($displayErrorDetails, true, true);
     $errorMiddleware->setErrorHandler(HttpException::class, $container->get(HttpErrorHandler::class), true);
