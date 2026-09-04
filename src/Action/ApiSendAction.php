@@ -203,8 +203,11 @@ final class ApiSendAction
             $results = $this->dispatcher->dispatch($data, $uploadedFiles, $requestId);
         }
         $channels = [];
+        // Для приёмника — статус с причиной отказа, для ответа посетителю — чистый статус.
+        $states = [];
         foreach ($results as $result) {
             $channels[$result->channel] = $result->status;
+            $states[$result->channel] = $result->state();
             if ($result->status === ChannelResult::STATUS_FAILED) {
                 $this->logger->warning('Канал не доставил', [
                     'channel' => $result->channel,
@@ -221,8 +224,8 @@ final class ApiSendAction
         // строка «calltouch: успешно» читается, а та же строка среди четырёх «выключен» нет.
         if (!$isTest) {
             $reported = array_filter(
-                $channels,
-                static fn (string $status): bool => $status !== ChannelResult::STATUS_DISABLED,
+                $states,
+                static fn (string $state): bool => $state !== ChannelResult::STATUS_DISABLED,
             );
             // Тот же ключ, что у заявки в приёмнике: итоги каналов ищут её по нему.
             $this->rescue->reportChannels($reported, $idempotencyKey !== '' ? $idempotencyKey : $requestId);

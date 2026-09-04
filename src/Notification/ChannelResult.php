@@ -54,4 +54,21 @@ final class ChannelResult
     {
         return $this->status === self::STATUS_SUCCESS;
     }
+
+    /**
+     * Статус с причиной: `failed (Ошибка валидации…)`.
+     *
+     * Приёмник хранит эту строку в колонке каналов и приводит причину к канону, поэтому
+     * голый `failed` читается там как «ОТКАЗ (причина не передана)» — по такой строке
+     * непонятно ни что чинить, ни видел ли кабинет заявку вообще. Посетителю причина не
+     * нужна: в ответ формы уходит чистый статус.
+     */
+    public function state(): string
+    {
+        if ($this->message === '' || $this->status === self::STATUS_SUCCESS) {
+            return $this->status;
+        }
+        $note = trim((string) preg_replace('/\s+/u', ' ', $this->message));
+        return $note === '' ? $this->status : $this->status . ' (' . mb_substr($note, 0, 120) . ')';
+    }
 }
