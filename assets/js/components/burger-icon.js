@@ -19,9 +19,7 @@ onReady(function () {
       burgerIcon.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       burgerIcon.setAttribute(
         'aria-label',
-        isOpen
-          ? burgerIcon.dataset.labelClose || 'Close menu'
-          : burgerIcon.dataset.labelOpen || 'Open menu'
+        isOpen ? burgerIcon.dataset.labelClose || 'Close menu' : burgerIcon.dataset.labelOpen || 'Open menu'
       );
     }
 

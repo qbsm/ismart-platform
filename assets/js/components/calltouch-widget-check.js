@@ -109,7 +109,13 @@ function attach(doc) {
   };
 
   doc.addEventListener('click', grab, true);
-  doc.addEventListener('keydown', (e) => { if (e.key === 'Enter') grab(); }, true);
+  doc.addEventListener(
+    'keydown',
+    (e) => {
+      if (e.key === 'Enter') grab();
+    },
+    true
+  );
   doc.addEventListener('submit', grab, true);
 }
 
@@ -162,9 +168,13 @@ export function initCalltouchWidgetCheck() {
   // Токен берём заранее: виджет всплывает через десятки секунд, и к моменту перехвата у
   // токена уже есть возраст — иначе отправка выглядела бы мгновенной, как у робота.
   fetchFormToken();
-  document.addEventListener('click', (e) => {
-    if (e.target.closest && e.target.closest(CTA)) markClick();
-  }, true);
+  document.addEventListener(
+    'click',
+    (e) => {
+      if (e.target.closest && e.target.closest(CTA)) markClick();
+    },
+    true
+  );
   scan();
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
   setInterval(scan, RESCAN_MS);

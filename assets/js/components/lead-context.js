@@ -10,9 +10,12 @@ const PATH_TAIL = 6;
 
 // Служебные кнопки в цепочку не идут: «Закрыть» и «Показать ещё» встречались чаще, чем
 // названия моделей, и вытесняли из пути то, ради чего он собирается.
-const SERVICE_TEXT = /^(закрыть|close|показать ещё|показать еще|ещё|наверх|принять|отклонить|согласен|хорошо|ок|ok|меню|menu|[×✕✖x])$/i;
-const SERVICE_SELECTOR = '[class*="close"], [class*="burger"], [class*="cookie"], [class*="to-top"], [class*="scroll-top"]';
-const COLOR_SELECTOR = '[data-color], [class*="color-item"], [class*="colorpicker"], [class*="color-pick"], [class*="colors__"]';
+const SERVICE_TEXT =
+  /^(закрыть|close|показать ещё|показать еще|ещё|наверх|принять|отклонить|согласен|хорошо|ок|ok|меню|menu|[×✕✖x])$/i;
+const SERVICE_SELECTOR =
+  '[class*="close"], [class*="burger"], [class*="cookie"], [class*="to-top"], [class*="scroll-top"]';
+const COLOR_SELECTOR =
+  '[data-color], [class*="color-item"], [class*="colorpicker"], [class*="color-pick"], [class*="colors__"]';
 
 const clean = (s) => (s || '').replace(/\s+/g, ' ').trim().slice(0, TEXT_LIMIT);
 const now = () => Math.floor(Date.now() / 1000);
@@ -25,7 +28,9 @@ function sectionOf(el) {
     return clean(section.dataset.section || section.id || section.className.split(' ')[0]);
   }
 
-  const landmark = el.closest('header, footer, nav, aside, [class*="modal"], [class*="popup"], [class*="header"], [class*="footer"], [class*="menu"]');
+  const landmark = el.closest(
+    'header, footer, nav, aside, [class*="modal"], [class*="popup"], [class*="header"], [class*="footer"], [class*="menu"]'
+  );
   if (!landmark) return 'page';
 
   const byTag = { HEADER: 'header', FOOTER: 'footer', NAV: 'nav', ASIDE: 'aside' };
@@ -199,13 +204,21 @@ function attachToForm(form) {
 export function initLeadContext() {
   startedAt();
 
-  document.addEventListener('click', (e) => {
-    const el = e.target.closest('button, a, [role="button"], .btn, [data-tag]');
-    if (!el || el.type === 'submit') return;
-    remember(el);
-  }, true);
+  document.addEventListener(
+    'click',
+    (e) => {
+      const el = e.target.closest('button, a, [role="button"], .btn, [data-tag]');
+      if (!el || el.type === 'submit') return;
+      remember(el);
+    },
+    true
+  );
 
-  document.addEventListener('submit', (e) => {
-    if (e.target instanceof HTMLFormElement) attachToForm(e.target);
-  }, true);
+  document.addEventListener(
+    'submit',
+    (e) => {
+      if (e.target instanceof HTMLFormElement) attachToForm(e.target);
+    },
+    true
+  );
 }
