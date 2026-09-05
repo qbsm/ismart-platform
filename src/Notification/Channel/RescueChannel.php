@@ -69,7 +69,7 @@ final class RescueChannel implements ChannelInterface
             ]);
             $httpCode = $response->getStatusCode();
             $decoded = $response->toArray(false);
-        } catch (TransportException | ExceptionInterface $e) {
+        } catch (TransportException|ExceptionInterface $e) {
             $this->logger->error('Rescue: запрос не прошёл', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
@@ -133,7 +133,7 @@ final class RescueChannel implements ChannelInterface
                 'timeout' => 3,
                 'max_duration' => 3,
             ])->getStatusCode();
-        } catch (TransportException | ExceptionInterface $e) {
+        } catch (TransportException|ExceptionInterface $e) {
             $this->logger->info('Rescue: итоги каналов не доехали', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),

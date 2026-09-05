@@ -44,8 +44,8 @@ final class SitemapActionTest extends TestCase
     private function render(array $settings): string
     {
         $action = new SitemapAction($settings, new DataLoaderService());
-        $request = (new ServerRequestFactory())->createServerRequest('GET', 'https://example.com/sitemap.xml');
-        $response = $action($request, (new ResponseFactory())->createResponse());
+        $request = new ServerRequestFactory()->createServerRequest('GET', 'https://example.com/sitemap.xml');
+        $response = $action($request, new ResponseFactory()->createResponse());
         $response->getBody()->rewind();
 
         return $response->getBody()->getContents();

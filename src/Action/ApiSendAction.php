@@ -225,7 +225,7 @@ final class ApiSendAction
         if (!$isTest) {
             $reported = array_filter(
                 $states,
-                static fn (string $state): bool => $state !== ChannelResult::STATUS_DISABLED,
+                static fn(string $state): bool => $state !== ChannelResult::STATUS_DISABLED,
             );
             // Тот же ключ, что у заявки в приёмнике: итоги каналов ищут её по нему.
             $this->rescue->reportChannels($reported, $idempotencyKey !== '' ? $idempotencyKey : $requestId);
@@ -240,7 +240,7 @@ final class ApiSendAction
         // молча, а это ровно то, ради чего проверка и заведена.
         $attempted = array_filter(
             $results,
-            static fn (ChannelResult $r): bool => $r->status !== ChannelResult::STATUS_DISABLED,
+            static fn(ChannelResult $r): bool => $r->status !== ChannelResult::STATUS_DISABLED,
         );
 
         $delivered = false;
@@ -329,7 +329,7 @@ final class ApiSendAction
     private function trapFields(): array
     {
         $raw = (string) ($this->formGuard['trap_field'] ?? self::TRAP_FIELD);
-        $fields = array_filter(array_map('trim', explode(',', $raw)), static fn (string $f): bool => $f !== '');
+        $fields = array_filter(array_map('trim', explode(',', $raw)), static fn(string $f): bool => $f !== '');
 
         return array_values($fields !== [] ? $fields : ['company_site']);
     }

@@ -92,7 +92,7 @@ final class CallTouchChannel implements ChannelInterface
             ]);
             $httpCode = $response->getStatusCode();
             $decoded = $response->toArray(false);
-        } catch (TransportException | ExceptionInterface $e) {
+        } catch (TransportException|ExceptionInterface $e) {
             $this->logger->error('CallTouch: ошибка запроса автопрозвона', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
@@ -153,7 +153,7 @@ final class CallTouchChannel implements ChannelInterface
             ]);
             $httpCode = $response->getStatusCode();
             $decoded = $response->toArray(false);
-        } catch (TransportException | ExceptionInterface $e) {
+        } catch (TransportException|ExceptionInterface $e) {
             $this->logger->error('CallTouch: ошибка запроса заявки', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
@@ -259,7 +259,7 @@ final class CallTouchChannel implements ChannelInterface
             $payload['sessionId'] = $sessionId;
         }
 
-        return array_filter($payload, static fn (string $v): bool => $v !== '');
+        return array_filter($payload, static fn(string $v): bool => $v !== '');
     }
 
     /**
