@@ -3,6 +3,7 @@
 const SENT_KEY = 'fn_state';
 const STEPS = {
   seen: 'seen',
+  cta: 'cta',
   modal: 'modal',
   open: 'open',
   input: 'input',
@@ -75,6 +76,23 @@ function watchVisibility() {
  * не бывает. Причина простая: шага «форму открыли» не было вовсе, и мы не знали, доходят ли
  * люди до неё вообще. Теперь ловим появление видимой модалки с полем ввода.
  */
+/**
+ * Клик по кнопке заявки — сам по себе, независимо от того, что открылось следом.
+ * Без него воронка начиналась там, где уже что-то показано, и «сколько людей вообще
+ * нажали» мы не знали: у виджета CallTouch есть автопоказ, и его открытия смешивались
+ * с нажатиями. Теперь видно: нажали → открылся виджет или наша форма → ввод → отправка.
+ */
+function watchCta() {
+  const CTA = '[data-modal-target], [data-modal], .js-show-modal, a[href="#callback"]';
+  document.addEventListener(
+    'click',
+    (e) => {
+      if (e.target.closest && e.target.closest(CTA)) funnelStep(STEPS.cta, 'form');
+    },
+    true
+  );
+}
+
 function watchModal() {
   const counted = new WeakSet();
   const check = () => {
@@ -174,6 +192,7 @@ function watchWidget() {
 
 export function initFunnel() {
   watchVisibility();
+  watchCta();
   watchModal();
   watchForms();
   watchWidget();
