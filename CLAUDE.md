@@ -75,6 +75,7 @@ RequestDuration → CorrelationId → SecurityHeaders → CORS → BodyParsing �
 ## Key Patterns
 
 - **Весь контент на русском** — UI, JSON-данные, документация
+- **Суммы — только знаком ₽** («12&nbsp;500&nbsp;₽»), никогда «руб.», «р.», «рублей». Цитируемые юридические тексты источника не переписываем
 - **Многоязычность** — языки из `global.json`, данные в `data/json/{lang}/`, middleware определяет язык из URL
 - **Progress хранится в localStorage** — нет бэкенда для пользовательского состояния
 - **Изображения** — адаптивные через `picture.twig`, размеры в `config/image-sizes.json`, dimensions в `data/img/image-dimensions.json`

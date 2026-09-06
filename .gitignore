@@ -136,3 +136,8 @@ public/logs
 
 # Контентные медиа-файлы лежат в git (full dataset).
 # Не добавлять сюда data/img/<section>/ — см. memory/project_full_media_in_git.
+
+# Кадры рабочих проверок: снимаются в корень и в .playwright-mcp/, в baseline не нужны
+/.playwright-mcp/
+/*.png
+/*.jpg
