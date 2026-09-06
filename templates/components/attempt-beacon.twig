@@ -252,13 +252,19 @@
 
   /* Поле телефона ищем только по явным признакам. Ловец виджета берёт первый input,
      если ничего не подошло, — здесь так нельзя: сессию завёл бы любой свой iframe с полем
-     (карта, оплата, чат), и в приёмник поехали бы чужие данные под видом виджета. */
+     (карта, оплата, чат), и в приёмник поехали бы чужие данные под видом виджета.
+     У самого виджета CallTouch поле без типа, имени и подписи — узнаём его по маске:
+     она начинается с плюса. Номер карты «0000 0000 0000 0000» так не выглядит. */
+  function phoneLike(el) {
+    if (el.type === 'tel' || el.getAttribute('inputmode') === 'tel') return true;
+    var ph = el.placeholder || '';
+    if (PHONE_RE.test(ph + ' ' + (el.name || '') + ' ' + (el.getAttribute('aria-label') || ''))) return true;
+    return ph.charAt(0) === '+' && (ph.replace(/\D+/g, '').length + (ph.match(/[_#]/g) || []).length) >= 6;
+  }
   function phoneField(doc) {
     var inputs = doc.querySelectorAll('input');
     for (var i = 0; i < inputs.length; i++) {
-      var it = inputs[i];
-      if (it.type === 'tel') return it;
-      if (PHONE_RE.test((it.placeholder || '') + ' ' + (it.name || '') + ' ' + (it.getAttribute('aria-label') || ''))) return it;
+      if (phoneLike(inputs[i])) return inputs[i];
     }
     return null;
   }
