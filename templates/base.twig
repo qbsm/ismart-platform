@@ -247,6 +247,9 @@
   {% block content %}{% endblock %}
   {# Глобальное подключение cookie-panel #}
   {% include 'sections/cookie-panel.twig' %}
+  {# Маячок — один на страницу и вне формы: он следит и за виджетом обратного звонка,
+     который живёт на страницах без наших форм. #}
+  {% include 'components/attempt-beacon.twig' %}
 </body>
 
 </html>
