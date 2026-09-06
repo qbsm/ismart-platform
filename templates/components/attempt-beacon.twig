@@ -1,28 +1,144 @@
-{# Маячок попыток: нарочно inline и отдельно от бандла — он обязан пережить смерть JS
-   и увезти «нажал, а запроса нет» в приёмник. Поля — только при отмеченном согласии.
-   Ключ сессии кладётся скрытым полем idempotency_key: бандл отправит его как есть, а
-   приёмник сошьёт попытку с заявкой — правка бандла для этого не нужна. Исход берётся
-   из события бандла, а где его нет — из наблюдения за самим запросом отправки. #}
+{# Маячок сессий формы и виджета CallTouch (proposals 0023, 0024). Нарочно inline и отдельно
+   от бандла: обязан пережить смерть JS. Ключ сессии кладётся скрытым полем idempotency_key —
+   бандл шлёт его как есть, приёмник сшивает попытку с заявкой. Номер уходит, как только
+   цифр хватает; каждая версия — со своим seq; события копятся пачками. #}
 <script>
 (function () {
   if (window.__ismartAttempt) return;
   var EP = 'https://api.ismart.pro/v1/attempt';
-  var SEND_RE = /\/api\/send/;
-  var state = { last: null };
+  var SEND_RE = /\/api\/(send|widget-rescue)/;
+  var PHONE_RE = /тел|phone/i;
+  var NAME_RE = /имя|name/i;
+  var TRAP = ['company_site', 'website'];
+  var FLUSH_MS = 5000;
+  var DEBOUNCE_MS = 500;
+  var CLICK_KEY = 'ct_opened_by_click';
+  var CLICK_WINDOW_MS = 600000;
+  var t0 = Date.now();
+  var lastPointer = 0;
+  var state = { version: 3, last: null, sessions: [] };
   window.__ismartAttempt = state;
+
+  function sec() { return Math.round((Date.now() - t0) / 100) / 10; }
   function hex() {
     try { if (window.crypto && crypto.randomUUID) return crypto.randomUUID().replace(/-/g, ''); } catch (e) {}
     var s = '';
     while (s.length < 32) s += Math.floor(Math.random() * 16).toString(16);
     return s;
   }
-  function send(o) {
+  function visitor() {
     try {
-      var b = JSON.stringify(o);
+      var v = localStorage.getItem('ismart_visitor');
+      if (!v) { v = hex(); localStorage.setItem('ismart_visitor', v); }
+      return v;
+    } catch (e) { return ''; }
+  }
+  function digitsOf(v) { return String(v || '').replace(/\D+/g, ''); }
+  function ready(d) { return d.length >= (/^[78]/.test(d) ? 11 : 10); }
+  function cookie(name) {
+    var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : '';
+  }
+  function openedByClick() {
+    try {
+      var at = Number(sessionStorage.getItem(CLICK_KEY) || 0);
+      return at > 0 && Date.now() - at <= CLICK_WINDOW_MS;
+    } catch (e) { return false; }
+  }
+  function post(body) {
+    try {
+      var b = JSON.stringify(body);
       if (navigator.sendBeacon) navigator.sendBeacon(EP, new Blob([b], { type: 'text/plain' }));
       else if (window.fetch) fetch(EP, { method: 'POST', body: b, keepalive: true });
     } catch (e) {}
   }
+  function value(root, selector) {
+    var i = root.querySelector(selector);
+    return i && i.value ? String(i.value).trim() : '';
+  }
+
+  function session(root, channel, id) {
+    if (root.__ismartSession) return root.__ismartSession;
+    var s = { id: id || hex(), channel: channel, root: root, buf: [], timer: null, seq: 0, key: '',
+      ready: false, input: 'typed', inputAt: 0, debounce: null, started: false, open: false, focused: false };
+    root.__ismartSession = s;
+    state.sessions.push(s);
+    return s;
+  }
+  function active(s) { return s.started || s.seq > 0; }
+  function drop(s) {
+    flush(s);
+    delete s.root.__ismartSession;
+    state.sessions = state.sessions.filter(function (x) { return x !== s; });
+  }
+  function push(s, ev, immediate) {
+    ev.t = sec();
+    s.buf.push(ev);
+    if (immediate) flush(s);
+    else if (active(s) && !s.timer) s.timer = setTimeout(function () { flush(s); }, FLUSH_MS);
+  }
+  function flush(s) {
+    if (s.timer) { clearTimeout(s.timer); s.timer = null; }
+    if (!s.buf.length || !active(s)) return;
+    var events = s.buf;
+    s.buf = [];
+    post({ session_id: s.id, channel: s.channel, page_url: location.href, events: events });
+  }
+  function begin(s, extra) {
+    if (s.started) return;
+    s.started = true;
+    var ev = { kind: 'form_start', referrer: String(document.referrer || '').slice(0, 300), vw: window.innerWidth, visitor: visitor() };
+    if (extra) for (var k in extra) ev[k] = extra[k];
+    push(s, ev, true);
+  }
+  function schedule(s, fn) {
+    if (s.debounce) clearTimeout(s.debounce);
+    s.debounce = setTimeout(function () { s.debounce = null; fn(); }, DEBOUNCE_MS);
+  }
+  /* Способ ввода: Chrome при автозаполнении шлёт input вообще без inputType, поэтому одного
+     типа события мало — смотрим ещё на прирост длины. Человек набирает по символу. */
+  function noteInput(s, e, len) {
+    var grew = len - (s.len || 0);
+    s.len = len;
+    if (e.type === 'input') {
+      s.inputAt = Date.now();
+      var it = e.inputType || '';
+      if (it === 'insertFromPaste') s.input = 'paste';
+      else if (it === 'insertReplacementText') s.input = 'autofill';
+      else if (!it && grew > 1) s.input = 'autofill';
+      else if (grew > 1) s.input = 'paste';
+      else s.input = 'typed';
+    } else if (e.type === 'change' && Date.now() - s.inputAt > 300) {
+      s.input = 'autofill';
+    }
+  }
+  function evalTouch(s, fields, trap) {
+    var d = fields.phone;
+    if (ready(d)) {
+      var key = [d, fields.name, fields.email, fields.policy].join('|');
+      if (key === s.key) return;
+      s.key = key;
+      s.ready = true;
+      push(s, { kind: 'touch', seq: ++s.seq, fields: fields, input: s.input, trap: trap || '',
+        ct_session_id: cookie('_ct_session_id'), ym_uid: cookie('_ym_uid') }, true);
+      return;
+    }
+    if (s.ready) {
+      s.ready = false;
+      s.key = '';
+      push(s, { kind: 'retract', seq: ++s.seq, digits: d.length }, true);
+    }
+  }
+  function focusPhone(s) {
+    if (s.focused) return;
+    s.focused = true;
+    push(s, { kind: 'phone_focus' });
+  }
+  function partial(s, d) {
+    if (d.length && !ready(d)) push(s, { kind: 'phone_partial', digits: d.length });
+  }
+
+  function formOf(t) { return t && t.closest ? t.closest('form.js-form-callback') : null; }
   function ensure(f) {
     if (!f.dataset.ismartSession) f.dataset.ismartSession = hex();
     var h = f.querySelector('input[name="idempotency_key"]');
@@ -33,45 +149,200 @@
       f.appendChild(h);
     }
     h.value = f.dataset.ismartSession;
-    return f.dataset.ismartSession;
+    return session(f, 'form', f.dataset.ismartSession);
   }
+  function formName(f) {
+    var v = value(f, '[name="form_name"]') || value(f, '[name="source"]') || value(f, '[name="subject"]');
+    if (v) return v.slice(0, 80);
+    var box = f.closest('.js-modal, section, [data-section]');
+    var h = box ? box.querySelector('h1, h2, h3, .modal__title') : null;
+    return h ? String(h.textContent || '').trim().slice(0, 80) : '';
+  }
+  function trapState(f) {
+    for (var i = 0; i < TRAP.length; i++) if (value(f, '[name="' + TRAP[i] + '"]')) return 'filled';
+    return '';
+  }
+  function formFields(f) {
+    var policy = f.querySelector('[name="policy"]');
+    return {
+      phone: value(f, '[name="phone_digits"]') || digitsOf(value(f, '[name="phone"]')),
+      name: value(f, '[name="name"]').slice(0, 80),
+      email: value(f, '[name="email"]').slice(0, 120),
+      policy: policy ? (policy.checked ? 'on' : 'off') : ''
+    };
+  }
+  function isPhone(el) { return !!el && el.name === 'phone'; }
+  function isExtraField(el) { return !!el && (el.name === 'name' || el.name === 'email' || el.name === 'policy'); }
+
   function onStart(e) {
-    var t = e.target;
-    var f = t && t.closest ? t.closest('form.js-form-callback') : null;
-    if (!f || f.dataset.ismartStarted) return;
-    f.dataset.ismartStarted = '1';
-    send({ kind: 'form_start', session_id: ensure(f), page_url: location.href });
+    var f = formOf(e.target);
+    if (f) begin(ensure(f), { form: formName(f) });
   }
   ['pointerdown', 'focusin', 'keydown'].forEach(function (n) { document.addEventListener(n, onStart, true); });
+
+  function onFormEdit(e) {
+    var el = e.target;
+    var f = formOf(el);
+    if (!f || !(isPhone(el) || isExtraField(el))) return;
+    var s = ensure(f);
+    begin(s, { form: formName(f) });
+    if (isPhone(el)) noteInput(s, e, digitsOf(el.value).length);
+    else if (!s.ready && e.type === 'change') push(s, { kind: 'field', name: el.name, filled: el.type === 'checkbox' ? el.checked : !!el.value });
+    var run = function () { evalTouch(s, formFields(f), trapState(f)); };
+    if (e.type === 'input') schedule(s, run); else run();
+  }
+  ['input', 'change'].forEach(function (n) { document.addEventListener(n, onFormEdit, true); });
+  document.addEventListener('focusin', function (e) {
+    var f = formOf(e.target);
+    if (f && isPhone(e.target)) focusPhone(ensure(f));
+  }, true);
+  document.addEventListener('focusout', function (e) {
+    var f = formOf(e.target);
+    if (!f || !isPhone(e.target)) return;
+    var s = ensure(f);
+    var fields = formFields(f);
+    partial(s, fields.phone);
+    evalTouch(s, fields, trapState(f));
+  }, true);
+
   document.addEventListener('submit', function (e) {
     var f = e.target;
     if (!f || !f.matches || !f.matches('form.js-form-callback')) return;
-    var id = ensure(f);
-    state.last = { id: id, form: f };
-    var d = { kind: 'attempt', session_id: id, page_url: location.href };
-    // Поля снимаем независимо от галки согласия: согласие на обработку человек уже дал
-    // баннером на входе, а забытая галка — это не отказ, а причина, по которой заявка не
-    // ушла. Раньше номер в таком случае не собирался, попытка выглядела пустой формой и до
-    // вкладки «Не смог отправить» не доходила — человек уходил, и звонить было некому.
-    var fields = {};
-    ['phone', 'name', 'email'].forEach(function (n) {
-      var i = f.querySelector('[name="' + n + '"]');
-      if (i && i.value) fields[n] = i.value;
-    });
-    if (fields.phone || fields.name || fields.email) d.fields = fields;
-    // Состояние галки едет рядом: менеджеру видно, почему заявка осталась попыткой.
-    var consent = f.querySelector('input[name="policy"]');
-    if (consent && !consent.checked) d.fields = Object.assign(d.fields || {}, { policy: 'не отмечено' });
-    send(d);
+    var s = ensure(f);
+    begin(s, { form: formName(f) });
+    state.last = s;
+    var fields = formFields(f);
+    var ev = { kind: 'attempt', fields: {}, trap: trapState(f), form: formName(f) };
+    ['phone', 'name', 'email'].forEach(function (n) { if (fields[n]) ev.fields[n] = fields[n]; });
+    if (fields.policy === 'off') ev.fields.policy = 'не отмечено';
+    push(s, ev, true);
   }, true);
-  function report(outcome, error) {
-    if (!state.last) return;
-    send({ kind: 'result', session_id: state.last.id, outcome: outcome, error: error || '' });
-    if (outcome === 'sent') {
-      var f = state.last.form;
-      if (f && f.dataset) { delete f.dataset.ismartSession; delete f.dataset.ismartStarted; }
-      state.last = null;
+
+  document.addEventListener('pointerdown', function () { lastPointer = Date.now(); }, true);
+  function watchForms() {
+    if (!window.IntersectionObserver) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        var f = en.target;
+        if (!f.closest('.js-modal')) return;
+        var s = ensure(f);
+        if (en.isIntersecting) {
+          if (s.open) return;
+          s.open = true;
+          push(s, { kind: 'open', channel: 'form', form: formName(f), open_type: Date.now() - lastPointer < 2000 ? 'click' : 'auto' });
+        } else if (s.open) {
+          s.open = false;
+          push(s, { kind: 'close' }, active(s));
+        }
+      });
+    }, { threshold: 0.3 });
+    var seen = [];
+    function scanForms() {
+      var forms = document.querySelectorAll('form.js-form-callback');
+      for (var i = 0; i < forms.length; i++) {
+        if (seen.indexOf(forms[i]) >= 0) continue;
+        seen.push(forms[i]);
+        io.observe(forms[i]);
+      }
     }
+    scanForms();
+    new MutationObserver(scanForms).observe(document.documentElement, { childList: true, subtree: true });
+  }
+  watchForms();
+
+  /* Поле телефона ищем только по явным признакам. Ловец виджета берёт первый input,
+     если ничего не подошло, — здесь так нельзя: сессию завёл бы любой свой iframe с полем
+     (карта, оплата, чат), и в приёмник поехали бы чужие данные под видом виджета. */
+  function phoneField(doc) {
+    var inputs = doc.querySelectorAll('input');
+    for (var i = 0; i < inputs.length; i++) {
+      var it = inputs[i];
+      if (it.type === 'tel') return it;
+      if (PHONE_RE.test((it.placeholder || '') + ' ' + (it.name || '') + ' ' + (it.getAttribute('aria-label') || ''))) return it;
+    }
+    return null;
+  }
+  function nameField(doc) {
+    var inputs = doc.querySelectorAll('input');
+    for (var i = 0; i < inputs.length; i++) {
+      var it = inputs[i];
+      if (it.type !== 'tel' && NAME_RE.test((it.placeholder || '') + ' ' + (it.name || ''))) return it;
+    }
+    return null;
+  }
+  function widgetFields(doc) {
+    var p = phoneField(doc);
+    var n = nameField(doc);
+    return { phone: digitsOf(p ? p.value : ''), name: n && n.value ? String(n.value).trim().slice(0, 80) : '', email: '', policy: '' };
+  }
+  var frames = [];
+  function attachWidget(frame, doc) {
+    if (doc.__ismartSession) return;
+    var s = session(doc, 'widget');
+    s.frame = frame;
+    frames.push(s);
+    push(s, { kind: 'open', channel: 'widget', form: 'Виджет обратного звонка CallTouch',
+      open_type: openedByClick() ? 'click' : 'auto', visitor: visitor(), vw: window.innerWidth });
+    function touch() {
+      if (s.started) return;
+      s.started = true;
+      focusPhone(s);
+    }
+    function edit(e) {
+      var el = e.target;
+      if (!el || el.tagName !== 'INPUT') return;
+      touch();
+      if (el === phoneField(doc)) noteInput(s, e, digitsOf(el.value).length);
+      var run = function () { evalTouch(s, widgetFields(doc), ''); };
+      if (e.type === 'input') schedule(s, run); else run();
+    }
+    doc.addEventListener('input', edit, true);
+    doc.addEventListener('change', edit, true);
+    doc.addEventListener('focusin', function (e) { if (e.target === phoneField(doc)) touch(); }, true);
+    doc.addEventListener('focusout', function (e) {
+      if (e.target !== phoneField(doc)) return;
+      var fields = widgetFields(doc);
+      partial(s, fields.phone);
+      evalTouch(s, fields, '');
+    }, true);
+    function submit() {
+      if (!s.ready) return;
+      state.last = s;
+      push(s, { kind: 'widget_submit', seq: ++s.seq }, true);
+    }
+    doc.addEventListener('click', function (e) {
+      var b = e.target && e.target.closest ? e.target.closest('button, [type="submit"], a') : null;
+      if (b) submit();
+    }, true);
+    doc.addEventListener('keydown', function (e) { if (e.key === 'Enter') submit(); }, true);
+    doc.addEventListener('submit', submit, true);
+  }
+  function scanWidgets() {
+    var list = document.querySelectorAll('iframe');
+    for (var i = 0; i < list.length; i++) {
+      var doc;
+      try { doc = list[i].contentDocument; } catch (e) { continue; }
+      if (doc && phoneField(doc)) attachWidget(list[i], doc);
+    }
+    frames.forEach(function (s) {
+      if (!s.closed && !document.documentElement.contains(s.frame)) {
+        s.closed = true;
+        push(s, { kind: 'close' }, active(s));
+      }
+    });
+  }
+  scanWidgets();
+  new MutationObserver(scanWidgets).observe(document.documentElement, { childList: true, subtree: true });
+  setInterval(scanWidgets, 2000);
+
+  function report(outcome, error) {
+    var s = state.last;
+    if (!s) return;
+    push(s, { kind: 'result', outcome: outcome, error: error || '' }, true);
+    if (outcome !== 'sent') return;
+    if (s.channel === 'form' && s.root.dataset) delete s.root.dataset.ismartSession;
+    drop(s);
+    state.last = null;
   }
   document.addEventListener('ismart:send-result', function (e) {
     var det = e.detail || {};
@@ -104,5 +375,17 @@
       return p;
     };
   }
+
+  document.addEventListener('visibilitychange', function () {
+    var kind = document.visibilityState === 'hidden' ? 'hide' : 'show';
+    state.sessions.forEach(function (s) { if (active(s)) push(s, { kind: kind }); });
+  });
+  window.addEventListener('error', function (e) {
+    var msg = String((e && e.message) || '').slice(0, 120);
+    state.sessions.forEach(function (s) { if (active(s)) push(s, { kind: 'js_error', error: msg }); });
+  });
+  window.addEventListener('pagehide', function () {
+    state.sessions.forEach(function (s) { if (active(s)) push(s, { kind: 'leave' }, true); });
+  });
 })();
 </script>
