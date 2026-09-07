@@ -312,16 +312,49 @@
       evalTouch(s, fields, '');
     }, true);
     function submit() {
-      if (!s.ready) return;
+      if (!s.ready || s.submitted) return;
+      s.submitted = true;
       state.last = s;
       push(s, { kind: 'widget_submit', seq: ++s.seq }, true);
     }
+    /* Кнопка отправки виджета — не button и не ссылка, а div с классом вида styles__Button:
+       прежний селектор её не находил, и нажатие в виджете до приёмника не доезжало.
+       Ищем по роли, типу и классу, а промах закрывает перехват самого запроса ниже. */
     doc.addEventListener('click', function (e) {
-      var b = e.target && e.target.closest ? e.target.closest('button, [type="submit"], a') : null;
-      if (b) submit();
+      var t = e.target;
+      if (!t || !t.closest) return;
+      if (t.closest('input, textarea, label, a[href]')) return;
+      if (t.closest('button, [type="submit"], [role="button"], [class*="utton"], [class*="btn" i]')) submit();
     }, true);
     doc.addEventListener('keydown', function (e) { if (e.key === 'Enter') submit(); }, true);
     doc.addEventListener('submit', submit, true);
+    /* Надёжнее клика: сам запрос виджета в CallTouch. Вёрстка у него меняется без нашего
+       ведома, а отправка заявки видна всегда. Обёртки прозрачные, отказ гасим — сломать
+       виджет нельзя. */
+    try {
+      var w = frame.contentWindow;
+      if (w && !w.__ismartHooked) {
+        w.__ismartHooked = 1;
+        var sent = function (url) { if (/calltouch|request|lead/i.test(String(url || ''))) submit(); };
+        if (w.XMLHttpRequest && w.XMLHttpRequest.prototype) {
+          var wopen = w.XMLHttpRequest.prototype.open;
+          w.XMLHttpRequest.prototype.open = function (m, u) {
+            try { if (String(m || '').toUpperCase() === 'POST') sent(u); } catch (err) {}
+            return wopen.apply(this, arguments);
+          };
+        }
+        if (w.fetch) {
+          var wfetch = w.fetch;
+          w.fetch = function (input, init) {
+            try {
+              var method = (init && init.method) || (input && input.method) || 'GET';
+              if (String(method).toUpperCase() === 'POST') sent((input && input.url) || input);
+            } catch (err) {}
+            return wfetch.apply(this, arguments);
+          };
+        }
+      }
+    } catch (e) {}
   }
   function scanWidgets() {
     var list = document.querySelectorAll('iframe');
