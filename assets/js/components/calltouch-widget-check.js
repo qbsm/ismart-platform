@@ -131,7 +131,16 @@ function scan() {
   });
 }
 
-const hasSdk = () => typeof window.ct === 'function' || !!window.CalltouchDataObject;
+// Заглушку `ct` с очередью вставка счётчика ставит синхронно, до всякой сети, поэтому
+// `typeof window.ct === 'function'` истинно и у посетителя с блокировщиком: прежний признак
+// не мог дать ct_missing ни разу, и каждый отказ уходил в ct_nowidget — «SDK есть, виджета
+// нет», то есть выглядел виной CallTouch. Загрузку доказывает onload тега счётчика
+// (`window.__ctLoad`), замена заглушки живым клиентом или поднявшийся `ctw`.
+const sdkLoaded = () =>
+  window.__ctLoad === 'loaded' ||
+  typeof window.ctw !== 'undefined' ||
+  (typeof window.ct === 'function' &&
+    (window.ct.loaded === true || (!!window.__ctStub && window.ct !== window.__ctStub)));
 
 // Готовность виджета — по скрипту, который CallTouch подгружает, когда виджет привязан к
 // счётчику. Прежняя проверка искала iframe с полями внутри, но форма виджета рисуется только
@@ -158,7 +167,7 @@ function watchWidgetHealth() {
 
     if (Date.now() - startedAt >= HEALTH_MAX_MS) {
       clearInterval(timer);
-      funnelStep(hasSdk() ? 'ct_nowidget' : 'ct_missing', 'widget');
+      funnelStep(sdkLoaded() ? 'ct_nowidget' : 'ct_missing', 'widget', window.__ctLoad || 'none');
     }
   }, HEALTH_STEP_MS);
 }
