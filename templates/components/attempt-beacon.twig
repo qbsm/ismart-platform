@@ -261,10 +261,24 @@
     if (PHONE_RE.test(ph + ' ' + (el.name || '') + ' ' + (el.getAttribute('aria-label') || ''))) return true;
     return ph.charAt(0) === '+' && (ph.replace(/\D+/g, '').length + (ph.match(/[_#]/g) || []).length) >= 6;
   }
-  function phoneField(doc) {
+  /* Фрейм самого CallTouch — единственное место, где можно взять поле без явных признаков:
+     у виджета Changan подписи нет вовсе (placeholder пустой, type=text, ни имени, ни маски),
+     и сессии там не заводились — восемь виджетных заявок за двое суток против двух сессий. */
+  function ctFrame(frame) {
+    try { return /calltouch/i.test(String(frame.id || frame.name || '')); } catch (e) { return false; }
+  }
+  function phoneField(doc, trusted) {
     var inputs = doc.querySelectorAll('input');
     for (var i = 0; i < inputs.length; i++) {
       if (phoneLike(inputs[i])) return inputs[i];
+    }
+    if (!trusted) return null;
+    for (var j = 0; j < inputs.length; j++) {
+      var it = inputs[j];
+      var type = (it.type || 'text').toLowerCase();
+      if (type !== 'text' && type !== 'tel') continue;
+      if (NAME_RE.test((it.placeholder || '') + ' ' + (it.name || ''))) continue;
+      return it;
     }
     return null;
   }
@@ -276,14 +290,16 @@
     }
     return null;
   }
-  function widgetFields(doc) {
-    var p = phoneField(doc);
+  function widgetFields(doc, trusted) {
+    var p = phoneField(doc, trusted);
     var n = nameField(doc);
     return { phone: digitsOf(p ? p.value : ''), name: n && n.value ? String(n.value).trim().slice(0, 80) : '', email: '', policy: '' };
   }
   var frames = [];
   function attachWidget(frame, doc) {
     if (doc.__ismartSession) return;
+    var trusted = ctFrame(frame);
+    var phone = function () { return phoneField(doc, trusted); };
     var s = session(doc, 'widget');
     s.frame = frame;
     frames.push(s);
@@ -298,16 +314,16 @@
       var el = e.target;
       if (!el || el.tagName !== 'INPUT') return;
       touch();
-      if (el === phoneField(doc)) noteInput(s, e, digitsOf(el.value).length);
-      var run = function () { evalTouch(s, widgetFields(doc), ''); };
+      if (el === phone()) noteInput(s, e, digitsOf(el.value).length);
+      var run = function () { evalTouch(s, widgetFields(doc, trusted), ''); };
       if (e.type === 'input') schedule(s, run); else run();
     }
     doc.addEventListener('input', edit, true);
     doc.addEventListener('change', edit, true);
-    doc.addEventListener('focusin', function (e) { if (e.target === phoneField(doc)) touch(); }, true);
+    doc.addEventListener('focusin', function (e) { if (e.target === phone()) touch(); }, true);
     doc.addEventListener('focusout', function (e) {
-      if (e.target !== phoneField(doc)) return;
-      var fields = widgetFields(doc);
+      if (e.target !== phone()) return;
+      var fields = widgetFields(doc, trusted);
       partial(s, fields.phone);
       evalTouch(s, fields, '');
     }, true);
@@ -361,7 +377,7 @@
     for (var i = 0; i < list.length; i++) {
       var doc;
       try { doc = list[i].contentDocument; } catch (e) { continue; }
-      if (doc && phoneField(doc)) attachWidget(list[i], doc);
+      if (doc && phoneField(doc, ctFrame(list[i]))) attachWidget(list[i], doc);
     }
     frames.forEach(function (s) {
       if (!s.closed && !document.documentElement.contains(s.frame)) {
