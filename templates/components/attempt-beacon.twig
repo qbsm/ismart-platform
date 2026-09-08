@@ -138,17 +138,39 @@
     if (d.length && !ready(d)) push(s, { kind: 'phone_partial', digits: d.length });
   }
 
-  function formOf(t) { return t && t.closest ? t.closest('form.js-form-callback') : null; }
+  /* Своя форма платформы — по классу; чужая (лендинги парка со своей вёрсткой) — по наличию
+     поля телефона. Иначе наблюдение видит только площадки на нашем стеке, а форменный
+     трафик парка остаётся неизмеренным: за двое суток на десяти площадках 0024 набралось
+     две форменные сессии. */
+  function ownForm(f) { return !!f && !!f.matches && f.matches('form.js-form-callback'); }
+  function phoneInput(f) {
+    var el = f.querySelector('[name="phone"]');
+    if (el) return el;
+    var inputs = f.querySelectorAll('input');
+    for (var i = 0; i < inputs.length; i++) if (phoneLike(inputs[i])) return inputs[i];
+    return null;
+  }
+  function formOf(t) {
+    if (!t || !t.closest) return null;
+    var own = t.closest('form.js-form-callback');
+    if (own) return own;
+    var f = t.closest('form');
+    return f && phoneInput(f) ? f : null;
+  }
   function ensure(f) {
     if (!f.dataset.ismartSession) f.dataset.ismartSession = hex();
-    var h = f.querySelector('input[name="idempotency_key"]');
-    if (!h) {
-      h = document.createElement('input');
-      h.type = 'hidden';
-      h.name = 'idempotency_key';
-      f.appendChild(h);
+    /* Разметку чужой формы не трогаем: лишнее поле уехало бы в их приёмник заявок.
+       Такие сессии сшиваются с заявкой по номеру, а не по ключу. */
+    if (ownForm(f)) {
+      var h = f.querySelector('input[name="idempotency_key"]');
+      if (!h) {
+        h = document.createElement('input');
+        h.type = 'hidden';
+        h.name = 'idempotency_key';
+        f.appendChild(h);
+      }
+      h.value = f.dataset.ismartSession;
     }
-    h.value = f.dataset.ismartSession;
     return session(f, 'form', f.dataset.ismartSession);
   }
   function formName(f) {
@@ -164,14 +186,20 @@
   }
   function formFields(f) {
     var policy = f.querySelector('[name="policy"]');
+    var tel = phoneInput(f);
     return {
-      phone: value(f, '[name="phone_digits"]') || digitsOf(value(f, '[name="phone"]')),
-      name: value(f, '[name="name"]').slice(0, 80),
-      email: value(f, '[name="email"]').slice(0, 120),
+      phone: value(f, '[name="phone_digits"]') || digitsOf(tel ? tel.value : ''),
+      name: (value(f, '[name="name"]') || (nameField(f) ? nameField(f).value : '')).slice(0, 80),
+      email: (value(f, '[name="email"]') || value(f, 'input[type="email"]')).slice(0, 120),
       policy: policy ? (policy.checked ? 'on' : 'off') : ''
     };
   }
-  function isPhone(el) { return !!el && el.name === 'phone'; }
+  function isPhone(el) {
+    if (!el) return false;
+    if (el.name === 'phone') return true;
+    var f = el.form || (el.closest ? el.closest('form') : null);
+    return !!f && phoneInput(f) === el;
+  }
   function isExtraField(el) { return !!el && (el.name === 'name' || el.name === 'email' || el.name === 'policy'); }
 
   function onStart(e) {
@@ -207,7 +235,8 @@
 
   document.addEventListener('submit', function (e) {
     var f = e.target;
-    if (!f || !f.matches || !f.matches('form.js-form-callback')) return;
+    if (!f || !f.matches || !f.matches('form')) return;
+    if (!ownForm(f) && !phoneInput(f)) return;
     var s = ensure(f);
     begin(s, { form: formName(f) });
     state.last = s;
@@ -238,9 +267,10 @@
     }, { threshold: 0.3 });
     var seen = [];
     function scanForms() {
-      var forms = document.querySelectorAll('form.js-form-callback');
+      var forms = document.querySelectorAll('form');
       for (var i = 0; i < forms.length; i++) {
         if (seen.indexOf(forms[i]) >= 0) continue;
+        if (!ownForm(forms[i]) && !phoneInput(forms[i])) continue;
         seen.push(forms[i]);
         io.observe(forms[i]);
       }
