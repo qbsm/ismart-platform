@@ -39,6 +39,8 @@
     var m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
     return m ? decodeURIComponent(m[1]) : '';
   }
+  /* Кука GA: `GA1.1.<clientId>.<timestamp>` — идентификатор это всё после префикса. */
+  function gaClientId() { return cookie('_ga').replace(/^GA\d+\.\d+\./, ''); }
   function openedByClick() {
     try {
       var at = Number(sessionStorage.getItem(CLICK_KEY) || 0);
@@ -120,7 +122,8 @@
       s.key = key;
       s.ready = true;
       push(s, { kind: 'touch', seq: ++s.seq, fields: fields, input: s.input, trap: trap || '',
-        ct_session_id: cookie('_ct_session_id'), ym_uid: cookie('_ym_uid') }, true);
+        ct_session_id: cookie('_ct_session_id'), ym_uid: cookie('_ym_uid'),
+        ct_client_id: cookie('_ct_client_global_id'), ga_client_id: gaClientId() }, true);
       return;
     }
     if (s.ready) {

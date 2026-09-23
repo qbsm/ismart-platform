@@ -10,6 +10,7 @@ use App\Notification\Channel\RescueChannel;
 use App\Notification\NotificationDispatcher;
 use App\Security\CaptchaVerifier;
 use App\Support\Arr;
+use App\Support\VisitorIds;
 use App\Support\FormToken;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -195,6 +196,9 @@ final class ApiSendAction
         if ($ctSession !== '' && Arr::str($data, 'session_id') === '') {
             $data['session_id'] = $ctSession;
         }
+
+        // Сквозные идентификаторы посетителя: сессия говорит только про текущий визит.
+        $data = VisitorIds::enrich($data, $request->getCookieParams());
 
         if ($isTest) {
             $data['is_test'] = '1';

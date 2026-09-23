@@ -7,6 +7,7 @@ namespace App\Action;
 use App\Middleware\CorrelationIdMiddleware;
 use App\Notification\Channel\RescueChannel;
 use App\Support\Arr;
+use App\Support\VisitorIds;
 use App\Support\FormToken;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -60,6 +61,7 @@ final class ApiWidgetRescueAction
         unset($payload['csrf_token'], $payload['form_token']);
         $payload['form_name'] = 'Виджет обратного звонка CallTouch';
         $payload['_user_agent'] = (string) ($request->getHeaderLine('User-Agent') ?: '');
+        $payload = VisitorIds::enrich($payload, $request->getCookieParams());
 
         try {
             $result = $this->rescue->send($payload, [], $requestId);
