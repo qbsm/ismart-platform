@@ -15,14 +15,6 @@ const CLICK_WINDOW_MS = 600000;
 const CLICK_KEY = 'ct_opened_by_click';
 const CTA = 'a[href="#callback"], [data-modal-target], [data-modal], [data-modal-source], .js-show-modal';
 const MIN_DIGITS = 10;
-/**
- * Номер набран до конца. С кодом страны нужна одиннадцатая цифра: «7985150084» — это не
- * готовый номер, а середина набора.
- */
-function phoneReady(value) {
-  var only = String(value || '').replace(/\D+/g, '');
-  return only.length >= (/^[78]/.test(only) ? MIN_DIGITS + 1 : MIN_DIGITS);
-}
 
 const RESCAN_MS = 2000;
 
