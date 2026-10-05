@@ -1,14 +1,11 @@
 /* Стили для GLightbox. !important — переопределение стилей библиотеки. */
 
-/* Блокировка скролла при открытом лайтбоксе */
-body.glightbox-open {
-  overflow: hidden !important;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
+/* Блокировка скролла при открытом лайтбоксе: overflow на html — документ
+   скролл-контейнер (sessions/2026-08-08-scroll-container-sticky-anchors).
+   Прежний вариант (body: fixed + top: 0) при закрытии возвращал body в поток
+   и уносил страницу в начало. */
+html:has(body.glightbox-open) {
+  overflow: hidden;
 }
 
 /* Дополнительные стили для GLightbox */
