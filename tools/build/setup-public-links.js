@@ -1,6 +1,5 @@
 /**
- * Создаёт в public/ симлинки на все директории и файлы из корня проекта,
- * необходимые для работы приложения (PHP runtime + статика).
+ * Создаёт в public/ симлинки на статику, которую отдаёт веб-сервер.
  * Запуск: npm run setup:public-links или при сборке (build/build:dev).
  */
 const path = require('path');
@@ -10,13 +9,6 @@ const projectRoot = path.resolve(__dirname, '../..');
 const publicDir = path.join(projectRoot, 'public');
 
 const LINKS = [
-  // PHP runtime
-  { link: 'src', target: '../src', type: 'dir' },
-  { link: 'config', target: '../config', type: 'dir' },
-  { link: 'templates', target: '../templates', type: 'dir' },
-  { link: 'vendor', target: '../vendor', type: 'dir' },
-  { link: 'cache', target: '../cache', type: 'dir' },
-  { link: 'logs', target: '../logs', type: 'dir' },
   // Статика
   { link: 'assets', target: '../assets', type: 'dir' },
   { link: 'data', target: '../data', type: 'dir' },
@@ -64,7 +56,20 @@ function createSymlink(linkPath, targetRel, type) {
 // Убрать из LINKS мало: на деплойментах, собранных до этого, симлинки уже лежат в докруте
 // и сами не исчезнут. Сборка обязана их вычищать, иначе секрет остаётся открытым до тех пор,
 // пока кто-нибудь не заметит его руками.
-const LEGACY_LINKS = ['.env', 'composer.json', 'composer.lock'];
+const LEGACY_LINKS = [
+  '.env',
+  'composer.json',
+  'composer.lock',
+  // PHP-рантайму докрут не нужен: index.php ищет корень проекта по файловой системе.
+  // Симлинки же отдавали его наружу — по /logs/app-<дата>.log журнал приложения читался
+  // из интернета, а /vendor/composer/installed.json показывал состав зависимостей.
+  'src',
+  'config',
+  'templates',
+  'vendor',
+  'cache',
+  'logs',
+];
 
 function removeLegacyLinks() {
   for (const link of LEGACY_LINKS) {

@@ -150,9 +150,7 @@ export class CallbackForm {
    * Исход попытки — сниппету маячков: он живёт отдельно от бандла и сам исхода не знает.
    */
   _reportOutcome(outcome, error = '') {
-    this.form.dispatchEvent(
-      new CustomEvent('ismart:send-result', { bubbles: true, detail: { outcome, error } })
-    );
+    this.form.dispatchEvent(new CustomEvent('ismart:send-result', { bubbles: true, detail: { outcome, error } }));
   }
 
   _handleInput(event) {

@@ -78,7 +78,7 @@ final class CaptchaVerifier
                 'max_duration' => $timeout,
             ]);
             $decoded = $response->toArray(false);
-        } catch (TransportException | ExceptionInterface $e) {
+        } catch (TransportException|ExceptionInterface $e) {
             $this->logger->warning('Капча: сервис не ответил, заявка пропущена', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),

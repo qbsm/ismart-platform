@@ -28,6 +28,16 @@ const RESCAN_MS = 2000;
 
 const digits = (value) => (value || '').replace(/\D+/g, '');
 
+/**
+ * Номер набран до конца. Порог зависит от того, есть ли код страны: «9851500847» — это уже
+ * готовые десять цифр, а «7985150084» — те же десять, но человек ещё дописывает последнюю.
+ * Без такой проверки ловец снимал номер на середине набора и заявка уходила короче на цифру.
+ */
+const phoneReady = (value) => {
+  const only = digits(value);
+  return only.length >= (/^[78]/.test(only) ? MIN_DIGITS + 1 : MIN_DIGITS);
+};
+
 const phoneField = (doc) => {
   const inputs = [...doc.querySelectorAll('input')];
   return inputs.find((i) => /тел|phone/i.test(`${i.placeholder} ${i.name} ${i.type}`)) || inputs[0] || null;
@@ -108,7 +118,13 @@ function attach(doc) {
   };
 
   doc.addEventListener('click', grab, true);
-  doc.addEventListener('keydown', (e) => { if (e.key === 'Enter') grab(); }, true);
+  doc.addEventListener(
+    'keydown',
+    (e) => {
+      if (e.key === 'Enter') grab();
+    },
+    true
+  );
   doc.addEventListener('submit', grab, true);
 }
 
@@ -124,7 +140,16 @@ function scan() {
   });
 }
 
-const hasSdk = () => typeof window.ct === 'function' || !!window.CalltouchDataObject;
+// Заглушку `ct` с очередью вставка счётчика ставит синхронно, до всякой сети, поэтому
+// `typeof window.ct === 'function'` истинно и у посетителя с блокировщиком: прежний признак
+// не мог дать ct_missing ни разу, и каждый отказ уходил в ct_nowidget — «SDK есть, виджета
+// нет», то есть выглядел виной CallTouch. Загрузку доказывает onload тега счётчика
+// (`window.__ctLoad`), замена заглушки живым клиентом или поднявшийся `ctw`.
+const sdkLoaded = () =>
+  window.__ctLoad === 'loaded' ||
+  typeof window.ctw !== 'undefined' ||
+  (typeof window.ct === 'function' &&
+    (window.ct.loaded === true || (!!window.__ctStub && window.ct !== window.__ctStub)));
 
 // Готовность виджета — по скрипту, который CallTouch подгружает, когда виджет привязан к
 // счётчику. Прежняя проверка искала iframe с полями внутри, но форма виджета рисуется только
@@ -151,7 +176,7 @@ function watchWidgetHealth() {
 
     if (Date.now() - startedAt >= HEALTH_MAX_MS) {
       clearInterval(timer);
-      funnelStep(hasSdk() ? 'ct_nowidget' : 'ct_missing', 'widget');
+      funnelStep(sdkLoaded() ? 'ct_nowidget' : 'ct_missing', 'widget', window.__ctLoad || 'none');
     }
   }, HEALTH_STEP_MS);
 }
@@ -161,9 +186,13 @@ export function initCalltouchWidgetCheck() {
   // Токен берём заранее: виджет всплывает через десятки секунд, и к моменту перехвата у
   // токена уже есть возраст — иначе отправка выглядела бы мгновенной, как у робота.
   fetchFormToken();
-  document.addEventListener('click', (e) => {
-    if (e.target.closest && e.target.closest(CTA)) markClick();
-  }, true);
+  document.addEventListener(
+    'click',
+    (e) => {
+      if (e.target.closest && e.target.closest(CTA)) markClick();
+    },
+    true
+  );
   scan();
   new MutationObserver(scan).observe(document.documentElement, { childList: true, subtree: true });
   setInterval(scan, RESCAN_MS);

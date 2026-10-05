@@ -10,9 +10,12 @@
  *   node tools/ops/check-permissions.js          # проверить, вернуть код 1 при находках
  *   node tools/ops/check-permissions.js --fix    # заодно выдать группе право записи
  */
-import { existsSync, readdirSync, statSync, chmodSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
-import process from 'node:process';
+// CommonJS, как и остальные скрипты tools/: eslint.config.js объявляет для них
+// sourceType 'commonjs', и на ESM-синтаксисе линт валил всю прод-сборку. Запуск
+// держался на автодетекции модулей Node 20+ — на более старом Node файл просто упал бы.
+const { existsSync, readdirSync, statSync, chmodSync, readFileSync } = require('node:fs');
+const { join } = require('node:path');
+const process = require('node:process');
 
 const ROOT = process.cwd();
 const TARGETS = ['logs', 'cache'];

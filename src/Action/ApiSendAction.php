@@ -10,6 +10,7 @@ use App\Notification\Channel\RescueChannel;
 use App\Notification\NotificationDispatcher;
 use App\Security\CaptchaVerifier;
 use App\Support\Arr;
+use App\Support\VisitorIds;
 use App\Support\FormToken;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
@@ -196,6 +197,9 @@ final class ApiSendAction
             $data['session_id'] = $ctSession;
         }
 
+        // Сквозные идентификаторы посетителя: сессия говорит только про текущий визит.
+        $data = VisitorIds::enrich($data, $request->getCookieParams());
+
         if ($isTest) {
             $data['is_test'] = '1';
             $results = [$this->sendTestToRescue($data, $uploadedFiles, $requestId)];
@@ -203,8 +207,11 @@ final class ApiSendAction
             $results = $this->dispatcher->dispatch($data, $uploadedFiles, $requestId);
         }
         $channels = [];
+        // Для приёмника — статус с причиной отказа, для ответа посетителю — чистый статус.
+        $states = [];
         foreach ($results as $result) {
             $channels[$result->channel] = $result->status;
+            $states[$result->channel] = $result->state();
             if ($result->status === ChannelResult::STATUS_FAILED) {
                 $this->logger->warning('Канал не доставил', [
                     'channel' => $result->channel,
@@ -221,8 +228,8 @@ final class ApiSendAction
         // строка «calltouch: успешно» читается, а та же строка среди четырёх «выключен» нет.
         if (!$isTest) {
             $reported = array_filter(
-                $channels,
-                static fn (string $status): bool => $status !== ChannelResult::STATUS_DISABLED,
+                $states,
+                static fn(string $state): bool => $state !== ChannelResult::STATUS_DISABLED,
             );
             // Тот же ключ, что у заявки в приёмнике: итоги каналов ищут её по нему.
             $this->rescue->reportChannels($reported, $idempotencyKey !== '' ? $idempotencyKey : $requestId);
@@ -237,7 +244,7 @@ final class ApiSendAction
         // молча, а это ровно то, ради чего проверка и заведена.
         $attempted = array_filter(
             $results,
-            static fn (ChannelResult $r): bool => $r->status !== ChannelResult::STATUS_DISABLED,
+            static fn(ChannelResult $r): bool => $r->status !== ChannelResult::STATUS_DISABLED,
         );
 
         $delivered = false;
@@ -326,7 +333,7 @@ final class ApiSendAction
     private function trapFields(): array
     {
         $raw = (string) ($this->formGuard['trap_field'] ?? self::TRAP_FIELD);
-        $fields = array_filter(array_map('trim', explode(',', $raw)), static fn (string $f): bool => $f !== '');
+        $fields = array_filter(array_map('trim', explode(',', $raw)), static fn(string $f): bool => $f !== '');
 
         return array_values($fields !== [] ? $fields : ['company_site']);
     }

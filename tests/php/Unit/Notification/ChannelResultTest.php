@@ -31,6 +31,34 @@ final class ChannelResultTest extends TestCase
         self::assertFalse($result->isSuccess());
     }
 
+    public function testStateCarriesReason(): void
+    {
+        // Приёмник кладёт эту строку в колонку каналов: голый `failed` читается там как
+        // «причина не передана», и по нему не отличить отказ кабинета от несостоявшейся отправки.
+        $result = ChannelResult::failed('calltouch', 'Ошибка валидации. Проверьте корректность введенного номера.');
+
+        self::assertSame(
+            'failed (Ошибка валидации. Проверьте корректность введенного номера.)',
+            $result->state(),
+        );
+    }
+
+    public function testStateWithoutReasonStaysBare(): void
+    {
+        self::assertSame('success', ChannelResult::success('mail')->state());
+        self::assertSame('disabled', ChannelResult::disabled('telegram')->state());
+        self::assertSame('failed', ChannelResult::failed('mail', '')->state());
+    }
+
+    public function testStateSquashesWhitespaceAndTrimsLongReason(): void
+    {
+        $result = ChannelResult::failed('calltouch', "  строка\n  вторая  " . str_repeat('х', 200));
+
+        $state = $result->state();
+        self::assertStringStartsWith('failed (строка вторая ', $state);
+        self::assertSame(120, mb_strlen(mb_substr($state, 8, -1)));
+    }
+
     public function testFailedFactory(): void
     {
         $result = ChannelResult::failed('telegram', 'transport_error');

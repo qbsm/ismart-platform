@@ -12,6 +12,8 @@ All responses, questions, and explanations must be in Russian (русский я
 
 Этот репозиторий — **canonical baseline** платформы. Конкретные production deployment'ы (kumho-tires.ru, italycommunity.ru, beepitron.com и т.д.) — отдельные репозитории, дистиллированные от этого baseline'а. Документация платформы — на docs.ismart.pro (раздел `ismart-platform`), в репозитории её не держим: стратегия дистилляции и инструменты sync — `architecture/distillation.md`, соглашения по нейму и стилю — `conventions/`, живой журнал улучшений — `notes/improvements.md`.
 
+Перед подтяжкой ядра на площадку — чек-лист соответствия `guides/core-parity-checklist.md` (что переносится комплектом, где живут дефолты настроек, как проверять и где искать ошибку). Общий DoD правки — `guides/checklist.md`.
+
 Три компонента целевой системы:
 - **PHP (этот репозиторий)** — UI, контент, SEO, формы, API-прокси
 - **n8n** (будущее) — маршрутизация, триггеры, интеграции (max 10-15 нод на workflow)
@@ -73,6 +75,7 @@ RequestDuration → CorrelationId → SecurityHeaders → CORS → BodyParsing �
 ## Key Patterns
 
 - **Весь контент на русском** — UI, JSON-данные, документация
+- **Суммы — только знаком ₽** («12&nbsp;500&nbsp;₽»), никогда «руб.», «р.», «рублей». Цитируемые юридические тексты источника не переписываем
 - **Многоязычность** — языки из `global.json`, данные в `data/json/{lang}/`, middleware определяет язык из URL
 - **Progress хранится в localStorage** — нет бэкенда для пользовательского состояния
 - **Изображения** — адаптивные через `picture.twig`, размеры в `config/image-sizes.json`, dimensions в `data/img/image-dimensions.json`

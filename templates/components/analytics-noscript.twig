@@ -1,3 +1,6 @@
-{# Yandex.Metrika — noscript fallback в body (для пользователей без JS) #}
-{% set _ym_id = config.settings.yandex_metric_id|default(0) %}
-{% if _ym_id %}<noscript><div><img src="https://mc.yandex.ru/watch/{{ _ym_id }}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>{% endif %}
+{# Yandex.Metrika — noscript fallback в body (для пользователей без JS); по пикселю на счётчик #}
+{% set _ym_ids = config.settings.yandex_metric_ids|default([]) %}
+{% if _ym_ids is empty and config.settings.yandex_metric_id|default(0) %}
+  {% set _ym_ids = [config.settings.yandex_metric_id] %}
+{% endif %}
+{% if _ym_ids is not empty %}<noscript><div>{% for _id in _ym_ids %}<img src="https://mc.yandex.ru/watch/{{ _id }}" style="position:absolute; left:-9999px;" alt="" />{% endfor %}</div></noscript>{% endif %}

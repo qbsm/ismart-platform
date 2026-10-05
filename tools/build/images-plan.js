@@ -43,14 +43,12 @@ async function main() {
     nocase: true,
   });
 
-  const filtered = onlyPrefix
-    ? sources.filter((p) => p.startsWith(onlyPrefix))
-    : sources;
+  const filtered = onlyPrefix ? sources.filter((p) => p.startsWith(onlyPrefix)) : sources;
 
   if (filtered.length === 0) {
-    console.log(onlyPrefix
-      ? `Нет raw-источников под префиксом '${onlyPrefix}'.`
-      : 'Нет raw-источников в data/img/**/raw/.');
+    console.log(
+      onlyPrefix ? `Нет raw-источников под префиксом '${onlyPrefix}'.` : 'Нет raw-источников в data/img/**/raw/.'
+    );
     return;
   }
 

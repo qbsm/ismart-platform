@@ -1,9 +1,29 @@
 {# Yandex.Metrika — отложенная загрузка после load + requestIdleCallback.
-   Не блокирует FCP/LCP/TBT. ID из YANDEX_METRIC_ID; без него счётчик не выводится. #}
-{% set _ym_id = config.settings.yandex_metric_id|default(0) %}
-{% if _ym_id %}
+   Не блокирует FCP/LCP/TBT. ID из YANDEX_METRIC_ID (можно несколько через запятую);
+   без него счётчик не выводится. tag.js грузится один раз, init — на каждый счётчик. #}
+{% set _ym_ids = config.settings.yandex_metric_ids|default([]) %}
+{% if _ym_ids is empty and config.settings.yandex_metric_id|default(0) %}
+  {% set _ym_ids = [config.settings.yandex_metric_id] %}
+{% endif %}
+{% if _ym_ids is not empty %}
 <!-- Yandex.Metrika counter -->
 <script>
+  window.dataLayer = window.dataLayer || [];
+  window.ymIds = {{ _ym_ids|json_encode|raw }};
+  // Цель должна доехать до всех счётчиков площадки, а не только до первого.
+  window.ymGoal = function(name, params) {
+    if (typeof window.ym !== 'function' || !name) { return; }
+    window.ymIds.forEach(function(id) { window.ym(id, 'reachGoal', name, params); });
+  };
+  window.ymEcommerce = function(payload) {
+    if (payload) { window.dataLayer.push(payload); }
+  };
+  // Разметка целей атрибутом: <a data-ym-goal="menu_click"> — без правки бандлов.
+  document.addEventListener('click', function(event) {
+    var el = event.target.closest && event.target.closest('[data-ym-goal]');
+    if (el) { window.ymGoal(el.getAttribute('data-ym-goal')); }
+  });
+
   (function() {
     function initMetrika() {
       var m = window, e = document, t = 'script',
@@ -11,11 +31,14 @@
           i = 'ym';
       m[i] = m[i] || function() { (m[i].a = m[i].a || []).push(arguments); };
       m[i].l = 1 * new Date();
-      for (var j = 0; j < e.scripts.length; j++) { if (e.scripts[j].src === r) return; }
-      var k = e.createElement(t); k.async = 1; k.src = r;
-      var a = e.getElementsByTagName(t)[0]; a.parentNode.insertBefore(k, a);
+      var loaded = false;
+      for (var j = 0; j < e.scripts.length; j++) { if (e.scripts[j].src === r) { loaded = true; break; } }
+      if (!loaded) {
+        var k = e.createElement(t); k.async = 1; k.src = r;
+        var a = e.getElementsByTagName(t)[0]; a.parentNode.insertBefore(k, a);
+      }
 
-      m[i]({{ _ym_id }}, 'init', {
+      var opts = {
         webvisor: true,
         clickmap: true,
         ecommerce: "dataLayer",
@@ -23,7 +46,28 @@
         url: location.href,
         accurateTrackBounce: true,
         trackLinks: true
-      });
+      };
+      {% for _id in _ym_ids %}
+      m[i]({{ _id }}, 'init', opts);
+      {% endfor %}
+
+      // Готовый код площадки зовёт ym(<первый счётчик>, 'reachGoal', ...) — разводим такие
+      // вызовы по всем счётчикам, чтобы цели не терялись на втором.
+      if (window.ymIds.length > 1 && !m[i].__goalFanout) {
+        var original = m[i];
+        var fanout = function(id, action) {
+          var rest = Array.prototype.slice.call(arguments, 1);
+          if (action === 'reachGoal') {
+            window.ymIds.forEach(function(cid) { original.apply(null, [cid].concat(rest)); });
+            return;
+          }
+          return original.apply(null, arguments);
+        };
+        fanout.a = original.a;
+        fanout.l = original.l;
+        fanout.__goalFanout = true;
+        m[i] = fanout;
+      }
     }
 
     function deferInit() {

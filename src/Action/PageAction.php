@@ -287,7 +287,7 @@ final class PageAction
         $nav = $global['nav'][$langCode]['items'] ?? [];
         $homeTitle = 'Главная';
         $listTitle = '';
-        $listHref = '/' . $navSlug . '/';
+        $listHref = '/' . $navSlug;
         foreach ($nav as $navItem) {
             if (!is_array($navItem)) {
                 continue;
@@ -298,7 +298,7 @@ final class PageAction
             }
             if ($href === $navSlug) {
                 $listTitle = (string) ($navItem['title'] ?? '');
-                $listHref = '/' . $href . '/';
+                $listHref = '/' . $href;
             }
         }
 
@@ -320,7 +320,7 @@ final class PageAction
         return [
             ['name' => $homeTitle, 'url' => '/'],
             ['name' => $listTitle, 'url' => $listHref],
-            ['name' => $name, 'url' => '/' . $slug . '/'],
+            ['name' => $name, 'url' => '/' . $navSlug . '/' . $slug],
         ];
     }
 

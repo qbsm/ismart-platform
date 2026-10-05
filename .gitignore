@@ -124,7 +124,20 @@ logs/
 public/assets
 public/data
 public/robots.txt
+public/favicon.ico
+# Остатки прежних сборок: PHP-рантайму докрут не нужен, наружу его отдавать нельзя
+public/src
+public/config
+public/templates
+public/vendor
+public/cache
+public/logs
 
 
 # Контентные медиа-файлы лежат в git (full dataset).
 # Не добавлять сюда data/img/<section>/ — см. memory/project_full_media_in_git.
+
+# Кадры рабочих проверок: снимаются в корень и в .playwright-mcp/, в baseline не нужны
+/.playwright-mcp/
+/*.png
+/*.jpg

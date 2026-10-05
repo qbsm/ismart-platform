@@ -1,8 +1,17 @@
 {% set formId = 'formCallback' ~ random(1000000) %}
 {% set formConfig = global['form-callback'] %}
 {% set fields = data.fields | default(formConfig.fields | default([])) %}
+{# Оформление подписей: 'label' — плавающая метка (по умолчанию), 'hint' — подсказка внутри
+   поля, как на площадках, где так задуман дизайн. Логика и разметка от этого не меняются. #}
+{% set labelStyle = data.labelStyle | default(formConfig.labelStyle | default('label')) %}
+{# Раскладка секции: площадка ставит форму то колонкой, то строкой рядом с кнопкой.
+   Имя модификатора приходит данными, чтобы шаблон оставался общим. #}
+{% set layout = data.layout | default(formConfig.layout | default('')) %}
+{# Класс кнопки — тоже дело оформления площадки: где-то она скруглённая, где-то нет. #}
+{% set submitClass = data.buttonClass | default(formConfig.buttonClass | default('button-md button-3')) %}
+{% set submitIcon = data.buttonIcon | default(formConfig.buttonIcon ?? true) %}
 
-<form class="form-callback js-form-callback" novalidate method="post" action="" id="{{ formId }}">
+<form class="form-callback js-form-callback{% if labelStyle == 'hint' %} form-callback--hint{% endif %}{% if layout %} form-callback-{{ layout }}{% endif %}" novalidate method="post" action="" id="{{ formId }}">
   <div class="form-callback__trap" aria-hidden="true">
     <input type="text" name="company_site" tabindex="-1" autocomplete="off">
   </div>
@@ -44,12 +53,18 @@
         <div class="form-callback__field">
           <div class="form-callback__input-wrap">
             <select id="{{ fieldId }}" name="{{ field.name }}" class="form-callback__control control-select"{% if isRequired %} aria-required="true"{% endif %}>
+              {# Первой строкой — подсказка: без неё список открывается уже выбранным, и человек
+                 не понимает, что выбор за ним. Значение пустое, отправить её нельзя. #}
+              {% if fieldPlaceholder %}
+                <option value="" disabled selected>{{ fieldPlaceholder }}</option>
+              {% endif %}
               {% for option in field.options | default([]) %}
                 <option value="{{ option.value }}">{{ option.label[lang_code] | default(option.label.ru | default('')) }}</option>
               {% endfor %}
             </select>
             <label class="form-callback__label" for="{{ fieldId }}">
-              {{ fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
+              {# Подсказка внутри поля обычно написана примером («ваша@почта.ru»), метка — словом. #}
+              {{ labelStyle == 'hint' ? (fieldPlaceholder | default(fieldLabel)) : fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
             </label>
 
           </div>
@@ -62,7 +77,8 @@
           <div class="form-callback__input-wrap">
             <textarea id="{{ fieldId }}" name="{{ field.name }}" class="form-callback__control control-textarea" placeholder=" "{% if isRequired %} aria-required="true"{% endif %}{% if field.validation.maxLength is defined %} maxlength="{{ field.validation.maxLength }}"{% endif %}></textarea>
             <label class="form-callback__label" for="{{ fieldId }}">
-              {{ fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
+              {# Подсказка внутри поля обычно написана примером («ваша@почта.ru»), метка — словом. #}
+              {{ labelStyle == 'hint' ? (fieldPlaceholder | default(fieldLabel)) : fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
             </label>
 
           </div>
@@ -114,7 +130,8 @@
           <div class="form-callback__input-wrap">
             <input id="{{ fieldId }}" type="{{ field.type | default('text') }}" class="form-callback__control" name="{{ field.name }}" placeholder=" "{% if field.inputmode is defined %} inputmode="{{ field.inputmode }}"{% endif %}{% if field.autocomplete is defined %} autocomplete="{{ field.autocomplete }}"{% endif %}{% if isRequired %} aria-required="true"{% endif %}{% if field.validation.maxLength is defined %} maxlength="{{ field.validation.maxLength }}"{% endif %}>
             <label class="form-callback__label" for="{{ fieldId }}">
-              {{ fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
+              {# Подсказка внутри поля обычно написана примером («ваша@почта.ru»), метка — словом. #}
+              {{ labelStyle == 'hint' ? (fieldPlaceholder | default(fieldLabel)) : fieldLabel }}{% if isRequired %}<span class="form-callback__asterisk">*</span>{% endif %}
             </label>
 
           </div>
@@ -126,7 +143,7 @@
 
     {# --- Submit --- #}
     <div class="form-callback__field field-submit">
-      <button class="button button-md button-3 form-callback__submit" type="submit">
+      <button class="button {{ submitClass }} form-callback__submit" type="submit">
         <span class="form-callback__submit-text">
           {% if data.button is defined and data.button.title is defined %}
             {{ data.button.title }}
@@ -134,11 +151,13 @@
             {{ formConfig.button[lang_code].title }}
           {% endif %}
         </span>
-        <span class="form-callback__submit-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
+        {% if submitIcon %}
+          <span class="form-callback__submit-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        {% endif %}
         <span class="form-callback__submit-spinner" aria-hidden="true"></span>
       </button>
     </div>
@@ -165,4 +184,3 @@
 
 {# Маячок попыток отдельным партиалом: кастомные формы деплойментов подключают его
    одной строкой, и синк платформы обновляет маячок у всех сразу. #}
-{% include 'components/attempt-beacon.twig' %}
