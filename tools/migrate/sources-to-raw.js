@@ -81,16 +81,14 @@ function hasAdaptiveSubdirs(dir) {
 
 function listDirectFiles(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
-  return entries
-    .filter((e) => e.isFile() && RAW_EXTENSIONS.test(e.name))
-    .map((e) => path.join(dir, e.name));
+  return entries.filter((e) => e.isFile() && RAW_EXTENSIONS.test(e.name)).map((e) => path.join(dir, e.name));
 }
 
 async function widthOf(filePath) {
   try {
     const meta = await sharp(filePath).metadata();
     return meta.width || 0;
-  } catch (e) {
+  } catch {
     return 0;
   }
 }
@@ -100,9 +98,7 @@ function rel(p) {
 }
 
 async function main() {
-  const adaptiveDirs = (
-    await glob('**/', { cwd: imgDir, absolute: true, dot: false })
-  ).filter(hasAdaptiveSubdirs);
+  const adaptiveDirs = (await glob('**/', { cwd: imgDir, absolute: true, dot: false })).filter(hasAdaptiveSubdirs);
 
   if (adaptiveDirs.length === 0) {
     console.log('Не найдено папок с adaptive {400,800,...} подпапками.');

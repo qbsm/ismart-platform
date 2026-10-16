@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Notification\Channel;
 
+use App\Support\Arr;
 use App\Notification\ChannelInterface;
 use App\Notification\ChannelResult;
 use Psr\Log\LoggerInterface;
@@ -68,7 +69,7 @@ final class RescueChannel implements ChannelInterface
             ]);
             $httpCode = $response->getStatusCode();
             $decoded = $response->toArray(false);
-        } catch (TransportException | ExceptionInterface $e) {
+        } catch (TransportException|ExceptionInterface $e) {
             $this->logger->error('Rescue: запрос не прошёл', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
@@ -132,7 +133,7 @@ final class RescueChannel implements ChannelInterface
                 'timeout' => 3,
                 'max_duration' => 3,
             ])->getStatusCode();
-        } catch (TransportException | ExceptionInterface $e) {
+        } catch (TransportException|ExceptionInterface $e) {
             $this->logger->info('Rescue: итоги каналов не доехали', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
@@ -153,8 +154,11 @@ final class RescueChannel implements ChannelInterface
     {
         $payload = [
             'site' => (string) $this->config['site'],
-            // request_id — идемпотентность: повтор при таймауте не создаст дубль заявки.
-            'request_id' => $requestId,
+            // request_id — идемпотентность и сшивка с маячками: ключ сессии формы живёт
+            // от первого касания до успешной отправки, по нему приёмник находит попытку.
+            // Повтор при таймауте несёт тот же ключ и дубля не создаст. Серверный
+            // correlation id — запасной путь для заявок мимо нашего фронта.
+            'request_id' => Arr::str($formData, 'idempotency_key') ?: $requestId,
         ];
 
         if (($this->config['key'] ?? '') !== '') {

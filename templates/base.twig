@@ -5,7 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>{{ pageTitle|default('Заголовок страницы по умолчанию')|raw }}</title>
+  {# iOS сам делает ссылки из длинных числовых последовательностей: ИНН и ОГРН в подвале
+     подсвечивались как телефоны. Явные tel:-ссылки продолжают работать. #}
+  <meta name="format-detection" content="telephone=no">
+  {# Заглушка на случай, если у страницы не оказалось своего заголовка: техническая фраза
+     в выдаче выглядит как недосмотр, название сайта — просто скупо. #}
+  <title>{{ pageTitle|default(config.settings.site_name|default(''))|raw }}</title>
   
   {% if pageSeoData and pageSeoData.meta %}
     {% set _og_title = pageTitle|default('') %}
@@ -242,6 +247,9 @@
   {% block content %}{% endblock %}
   {# Глобальное подключение cookie-panel #}
   {% include 'sections/cookie-panel.twig' %}
+  {# Маячок — один на страницу и вне формы: он следит и за виджетом обратного звонка,
+     который живёт на страницах без наших форм. #}
+  {% include 'components/attempt-beacon.twig' %}
 </body>
 
 </html>

@@ -7,6 +7,9 @@ export const HOST_ERROR = 'host-not-allowed';
 // Столько ждём тихую проверку. Если капча показала картинку, ожидание снимается совсем:
 // человек решает её десятки секунд, и обрывать его — значит отказать живому посетителю.
 const SILENT_TIMEOUT_MS = 10000;
+// Предел, который не снимается ничем. Даже если события капчи потерялись, форма обязана
+// получить ответ и отправиться: подвисшая кнопка хуже пропущенного робота.
+const HARD_LIMIT_MS = 60000;
 
 let widgetId = null;
 let ready = null;
@@ -84,31 +87,28 @@ export async function captchaToken() {
   if (hostRejected) return HOST_ERROR;
 
   return new Promise((resolve) => {
-    let timer = setTimeout(() => {
-      pendingResolve = null;
-      resolve('');
-    }, SILENT_TIMEOUT_MS);
+    let timer = setTimeout(() => finish(''), SILENT_TIMEOUT_MS);
+    const hard = setTimeout(() => finish(''), HARD_LIMIT_MS);
 
-    pendingResolve = (token) => {
+    function finish(token) {
       clearTimeout(timer);
+      clearTimeout(hard);
+      pendingResolve = null;
       resolve(token || '');
-    };
+    }
+
+    pendingResolve = finish;
 
     try {
       // Картинка на экране — ждём человека сколько понадобится; закрыл окно, не решив, —
       // отпускаем отправку, решение примет сервер.
       window.smartCaptcha.subscribe(widgetId, 'challenge-visible', () => clearTimeout(timer));
       window.smartCaptcha.subscribe(widgetId, 'challenge-hidden', () => {
-        timer = setTimeout(() => {
-          pendingResolve = null;
-          resolve('');
-        }, 1500);
+        timer = setTimeout(() => finish(''), 1500);
       });
       window.smartCaptcha.execute(widgetId);
     } catch {
-      clearTimeout(timer);
-      pendingResolve = null;
-      resolve('');
+      finish('');
     }
   });
 }

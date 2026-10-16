@@ -129,8 +129,7 @@ export class FormApi {
   _appendAnalytics(formData) {
     const urlParams = new URLSearchParams(window.location.search);
     const helper = window.utmHelper;
-    const cookie = (name) =>
-      helper && typeof helper.getCookie === 'function' ? helper.getCookie(name) || '' : '';
+    const cookie = (name) => (helper && typeof helper.getCookie === 'function' ? helper.getCookie(name) || '' : '');
 
     // Метка берётся и из живой куки, а не только из текущей сессии: реклама привела человека
     // на прошлой неделе, заявку он оставил сегодня — источник у неё тот же, не прямой заход.

@@ -231,15 +231,19 @@ return static function (): ContainerInterface {
                 }
                 if ($secret === '') {
                     $secret = bin2hex(random_bytes(32));
-                    @mkdir(dirname($file), 0775, true);
+                    @mkdir(dirname($file), 0o775, true);
                     @file_put_contents($file, $secret, LOCK_EX);
-                    @chmod($file, 0600);
+                    @chmod($file, 0o600);
                 }
             }
 
+            // Порог «слишком быстро» — общий с ловушкой: две настройки одного смысла рано или
+            // поздно разъезжаются, и тогда токен выдан с одним порогом, а проверен по другому.
+            $guard = (array) ($settings['form_guard'] ?? []);
+
             return new FormToken(
                 $secret !== '' ? $secret : 'insecure-fallback',
-                (int) ($config['min_age'] ?? 3),
+                (int) ($guard['min_age_sec'] ?? 3),
                 (int) ($config['max_age'] ?? 7200),
             );
         },
@@ -251,9 +255,22 @@ return static function (): ContainerInterface {
         ),
 
         ApiFormTokenAction::class => \DI\autowire(),
-        ApiSendAction::class => \DI\autowire(),
+        ApiSendAction::class => \DI\autowire()
+            ->constructorParameter('formGuard', \DI\factory(static fn($c) => $c->get('settings')['form_guard'] ?? [])),
         ApiWidgetRescueAction::class => \DI\autowire(),
     ]);
+
+    // Свои сервисы деплоймента (эквайринг, отдельные SEO-строители, интеграции) описываются
+    // в config/project-di.php и подмешиваются здесь. Без этой точки расширения такие
+    // определения приходилось вписывать в синкаемый container.php, и следующий distill их
+    // затирал — именно так у italycommunity пропал реестр SEO ресторанов.
+    $projectDiPath = __DIR__ . '/project-di.php';
+    if (is_file($projectDiPath)) {
+        $projectDefinitions = require $projectDiPath;
+        if (is_array($projectDefinitions) && $projectDefinitions !== []) {
+            $builder->addDefinitions($projectDefinitions);
+        }
+    }
 
     return $builder->build();
 };

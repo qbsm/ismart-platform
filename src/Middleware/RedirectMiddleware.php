@@ -33,10 +33,25 @@ final class RedirectMiddleware implements MiddlewareInterface
         $path = rtrim($request->getUri()->getPath(), '/');
         $path = $path === '' ? '/' : $path;
 
-        $redirect = $this->getRedirectTarget($path, $this->baseUrlResolver->resolve($request));
+        $baseUrl = $this->baseUrlResolver->resolve($request);
+
+        // Карта правил идёт первой: иначе /JOLI сперва уехал бы на /joli и только потом
+        // на карточку — лишний переход в цепочке.
+        $redirect = $this->getRedirectTarget($path, $baseUrl);
         if ($redirect !== null) {
             $response = $this->responseFactory->createResponse($redirect['status']);
             return $response->withHeader('Location', $redirect['to']);
+        }
+
+        // Слаги на сайте всегда в нижнем регистре. Адрес, набранный капсом (/Restaurants/JOLI),
+        // ведёт на ту же страницу — отдаём её каноническим адресом, а не 404.
+        $lower = mb_strtolower($path);
+        if ($lower !== $path) {
+            $response = $this->responseFactory->createResponse(301);
+            $query = $request->getUri()->getQuery();
+            $target = rtrim($baseUrl, '/') . $lower;
+
+            return $response->withHeader('Location', $query === '' ? $target : $target . '?' . $query);
         }
 
         return $handler->handle($request);
@@ -52,16 +67,20 @@ final class RedirectMiddleware implements MiddlewareInterface
 
             // Префиксное правило переносит на новый раздел весь хвост пути: устаревшую
             // структуру адресов не приходится перечислять по одному URL.
+            // Регистр в правилах не учитываем: старые ссылки и набранные руками адреса
+            // часто приходят как /JOLI или /Bist, а отдавать по ним 404 незачем.
+            $requestLower = mb_strtolower($requestPath);
+
             if (isset($rule['from_prefix'], $rule['to_prefix'])) {
-                $prefix = rtrim((string) $rule['from_prefix'], '/');
-                if ($prefix === '' || ($requestPath !== $prefix && !str_starts_with($requestPath, $prefix . '/'))) {
+                $prefix = mb_strtolower(rtrim((string) $rule['from_prefix'], '/'));
+                if ($prefix === '' || ($requestLower !== $prefix && !str_starts_with($requestLower, $prefix . '/'))) {
                     continue;
                 }
                 $to = rtrim((string) $rule['to_prefix'], '/') . substr($requestPath, strlen($prefix));
             } elseif (isset($rule['from'], $rule['to'])) {
-                $from = rtrim((string) $rule['from'], '/');
+                $from = mb_strtolower(rtrim((string) $rule['from'], '/'));
                 $from = $from === '' ? '/' : $from;
-                if ($from !== $requestPath) {
+                if ($from !== $requestLower) {
                     continue;
                 }
                 $to = (string) $rule['to'];

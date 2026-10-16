@@ -13,6 +13,11 @@ $isDebug = in_array(strtolower($debugValue), ['1', 'true', 'yes', 'on'], true);
 
 $cacheDir = $projectRoot . '/cache';
 
+// На плоских хостах докрут совпадает с корнем проекта, и журнал приложения читается
+// из интернета по /logs/app-<дата>.log. LOG_DIR уводит его туда, куда веб-сервер не пускает.
+$logDir = (string) (getenv('LOG_DIR') ?: '');
+$logDir = $logDir !== '' ? rtrim($logDir, '/') : $projectRoot . '/logs';
+
 // Единый источник языков — data/json/global.json → lang (code, title, direction)
 $jsonGlobalPath = $projectRoot . '/data/json/global.json';
 $available_langs = ['ru', 'en'];
@@ -39,10 +44,19 @@ if ($envDefaultLang !== false && $envDefaultLang !== '') {
     $default_lang = (string) $envDefaultLang;
 }
 
+
 // Ключи и ширины для адаптивных изображений (picture.twig, tools/build) — единый источник
 // Проектная конфигурация (route_map, collections, sitemap_pages, integrations)
 $projectConfigPath = __DIR__ . '/project.php';
 $projectConfig = is_file($projectConfigPath) ? (array) require $projectConfigPath : [];
+
+// Ключи проекта, которых ядро не знает (эквайринг, свои интеграции), доезжают в настройки
+// как есть: иначе deployment'у приходится править синкаемый settings.php руками, а следующий
+// distill затирает эту правку — так у italycommunity пропала конфигурация коллекций.
+$projectExtraSettings = array_diff_key(
+    $projectConfig,
+    array_flip(['route_map', 'collections', 'sitemap_pages', 'sitemap_dynamic', 'integrations']),
+);
 
 $imageSizesPath = __DIR__ . '/image-sizes.json';
 $image_sizes = [
@@ -61,20 +75,40 @@ if (is_readable($imageSizesPath)) {
     }
 }
 
-// ID основного счётчика Яндекс.Метрики: приоритет у окружения, фолбэк —
-// integrations.yandex_metric_id из project.php, чтобы ID ехал git-деплоем и не
-// зависел от .env (ID публичный, живёт в HTML страницы). Инцидент 05.10 (wey/avatr):
-// счётчик, прописанный только в стейдж-.env, на прод не приезжал.
-$ymPrimaryId = (int) (getenv('YANDEX_METRIC_ID')
-    ?: ($projectConfig['integrations']['yandex_metric_id'] ?? 0));
+// Счётчики Яндекс.Метрики — одно правило для всего парка (сведено 16.10.2026 из 6 вариантов площадок).
+// YANDEX_METRIC_ID — один счётчик или несколько через запятую (свой счётчик площадки и общий счётчик
+// сети); первый — основной: он уходит в appConfig, по нему JS шлёт цели. Пусто в окружении — фолбэк
+// из project.php: integrations.yandex_metric_ids (список) или integrations.yandex_metric_id, чтобы ID
+// ехали git-деплоем, а не только .env (инцидент 05.10 wey/avatr: счётчик был только в стейдж-.env).
+// Прежние имена площадок (YANDEX_METRIC_IDS, YANDEX_METRIC_IDS_EXTRA, YANDEX_METRIC_EXTRA_IDS)
+// читаются как дополнительные счётчики — для совместимости, в новых .env не использовать.
+$ymParse = static fn($value): array => array_values(array_filter(array_map(
+    static fn($id): int => (int) trim((string) $id),
+    is_array($value) ? $value : explode(',', (string) $value)
+)));
+$yandex_metric_ids = $ymParse(getenv('YANDEX_METRIC_ID') ?: '');
+if ($yandex_metric_ids === []) {
+    $integrations = (array) ($projectConfig['integrations'] ?? []);
+    $yandex_metric_ids = $ymParse($integrations['yandex_metric_ids'] ?? ($integrations['yandex_metric_id'] ?? ''));
+}
+foreach (['YANDEX_METRIC_IDS', 'YANDEX_METRIC_IDS_EXTRA', 'YANDEX_METRIC_EXTRA_IDS'] as $ymLegacyKey) {
+    $yandex_metric_ids = array_merge($yandex_metric_ids, $ymParse(getenv($ymLegacyKey) ?: ''));
+}
+$yandex_metric_ids = array_values(array_unique($yandex_metric_ids));
 
-return [
+return $projectExtraSettings + [
     'project_root' => $projectRoot,
     'env' => $appEnv,
     'debug' => $isDebug,
     'default_lang' => $default_lang,
     'available_langs' => $available_langs,
-    'yandex_metric_id' => $ymPrimaryId,
+    // YANDEX_METRIC_ID принимает один счётчик или несколько через запятую: у площадки
+    // может быть свой счётчик и общий счётчик сети. Первый остаётся основным — он уходит
+    // в appConfig, по нему JS шлёт цели.
+    'yandex_metric_id' => $yandex_metric_ids[0] ?? 0,
+    'yandex_metric_ids' => $yandex_metric_ids,
+    // Имя сайта: подставляется в <title>, если у страницы нет своего заголовка
+    'site_name' => (string) ($projectConfig['site_name'] ?? ''),
     // slug в URL => page_id (из project.php)
     'route_map' => (array) ($projectConfig['route_map'] ?? []),
     // Конфигурация коллекций (из project.php)
@@ -90,11 +124,26 @@ return [
         'window_seconds' => 60,
         'paths' => ['/api/send', '/api/widget-rescue'],
     ],
+    // Отсев роботов на форме. Значения зашиты в ядро и работают без .env; переопределяются
+    // переменными точечно. Выключатель нужен для разбора жалоб «форма не отправляется»:
+    // при `false` отказ не выносится, но срабатывание всё равно пишется в лог.
+    //
+    // trap_field принимает несколько имён через запятую: у части сайтов форм две и ловушки в
+    // них исторически названы по-разному. Ловим любое заполненное — робот не разбирает, какое
+    // из полей «настоящее».
+    //
+    // min_age_sec — единственный источник порога «набрано слишком быстро»; form_token берёт
+    // его отсюда, чтобы выданный токен и проверка на отправке не разъезжались.
+    'form_guard' => [
+        'enable' => Env::bool('FORM_GUARD_ENABLE', true),
+        'trap_field' => Env::get('FORM_GUARD_TRAP_FIELD') ?: 'company_site, website',
+        'min_age_sec' => Env::int('FORM_GUARD_MIN_AGE_SEC', 3),
+        // Обязательные поля формы — свойство площадки: форма подписки живёт без телефона.
+        'required_fields' => Env::get('FORM_REQUIRED_FIELDS') ?: 'phone',
+    ],
     // Токен формы выдаётся браузеру по запросу, а не вместе с HTML: страница, скачанная
-    // роботом, не даёт возможности отправить заявку. min_age — сколько секунд между выдачей
-    // токена и отправкой считаем нижней границей для живого человека.
+    // роботом, не даёт возможности отправить заявку.
     'form_token' => [
-        'min_age' => 3,
         'max_age' => 7200,
         'secret_file' => $cacheDir . '/form-token-secret',
     ],
@@ -131,7 +180,7 @@ return [
         'url' => Env::get('RESCUE_URL') ?: 'https://api.ismart.pro/v1/rescue',
         'site' => Env::get('RESCUE_SITE'),
         'key' => Env::get('RESCUE_KEY'),
-        'timeout' => Env::int('RESCUE_TIMEOUT', 10),
+        'timeout' => Env::int('RESCUE_TIMEOUT', 3),
     ],
 
     'calltouch' => [
@@ -164,13 +213,13 @@ return [
         'auto_reload' => !$isProduction,
     ],
     'paths' => [
-        'templates' => $projectRoot . '/templates',
+        'templates' => is_dir($projectRoot . '/.templates') ? $projectRoot . '/.templates' : $projectRoot . '/templates',
         'json_base' => $projectRoot . '/data/json',
         'json_global' => $projectRoot . '/data/json/global.json',
         'json_pages_dir' => $projectRoot . '/data/json/{lang}/pages',
         'redirects' => $projectRoot . '/config/redirects.json',
         'cache' => $cacheDir,
-        'logs' => $projectRoot . '/logs',
+        'logs' => $logDir,
     ],
     'image_sizes' => $image_sizes,
     'resource_hints' => [

@@ -21,6 +21,17 @@
   --fc-font: var(--font-1);
   --fc-text: var(--color-2);
   --fc-label: var(--color-5);
+
+  /* Состояния вынесены в переменные: площадка с тёмной темой не может переопределить
+     жёстко прописанный цвет, и у неё метка светилась жёлтым, а галочка терялась. */
+  --fc-label-active: var(--color-5);
+  --fc-border-hover: rgb(0 0 0 / 15%);
+  --fc-checked-bg: var(--color-6);
+  --fc-checked-border: var(--color-6);
+  --fc-checked-mark: var(--color-1);
+  --fc-accent: var(--color-5);
+  --fc-muted: var(--color-6);
+  --fc-focus-ring: var(--color-5);
   --fc-speed: 0.2s;
   --fc-ease: cubic-bezier(0.4, 0, 0.2, 1);
   --fc-height: 5.6rem;
@@ -244,7 +255,7 @@
   top: 1rem;
   transform: translateY(0);
   font-size: var(--fc-font-size-xs);
-  color: var(--color-5);
+  color: var(--fc-label-active);
 }
 
 /* Label для select — всегда поднят */
@@ -276,17 +287,33 @@
    Select
    ========================================================================== */
 
+/* Стрелка селекта рисуется отдельным элементом поверх поля, а не фоном.
+   Фоном она уже дважды ломалась: любая площадка, переопределившая background
+   сокращённой записью, сбрасывала background-repeat — и стрелка размножалась
+   по всей ширине поля. Здесь её нельзя сбросить случайно. */
 .form-callback__control.control-select {
   cursor: pointer;
   padding-right: 4rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236e6e6e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 1.6rem center;
-  background-size: 1.2rem;
 }
 
-.form-callback__control.control-select:focus {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236e6e6e' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+.form-callback__input-wrap:has(.control-select)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 1.6rem;
+  width: 1.2rem;
+  height: 0.7rem;
+  pointer-events: none;
+  background-color: currentcolor;
+  opacity: 0.55;
+  transform: translateY(-50%);
+  transition: opacity var(--fc-speed) var(--fc-ease);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+.form-callback__input-wrap:has(.control-select:hover)::after,
+.form-callback__input-wrap:has(.control-select:focus)::after {
+  opacity: 1;
 }
 
 /* ==========================================================================
@@ -329,7 +356,7 @@
 }
 
 .form-callback__file-zone.dragover {
-  border-color: var(--color-5);
+  border-color: var(--fc-accent);
   background: rgb(0 0 0 / 3%);
 }
 
@@ -349,7 +376,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-5);
+  color: var(--fc-accent);
   background: rgb(0 0 0 / 4%);
   border-radius: 0.8rem;
   transition: color var(--fc-speed) var(--fc-ease), background-color var(--fc-speed) var(--fc-ease);
@@ -361,7 +388,7 @@
 }
 
 .form-callback__file-zone:hover .form-callback__file-icon {
-  color: var(--color-6);
+  color: var(--fc-muted);
   background: rgb(0 0 0 / 8%);
 }
 
@@ -388,7 +415,7 @@
   gap: 0.8rem;
   margin-top: 0.4rem;
   font-size: var(--fc-font-size-sm);
-  color: var(--color-5);
+  color: var(--fc-accent);
 }
 
 .form-callback__file-list:empty {
@@ -451,9 +478,9 @@
 }
 
 .form-callback__checkbox-input:checked + .form-callback__checkbox-box {
-  background: var(--color-6);
-  border-color: var(--color-6);
-  color: var(--color-1);
+  background: var(--fc-checked-bg);
+  border-color: var(--fc-checked-border);
+  color: var(--fc-checked-mark);
   animation: checkPop 0.3s var(--fc-ease);
 }
 
@@ -462,25 +489,25 @@
 }
 
 .form-callback__checkbox-wrap:hover .form-callback__checkbox-box {
-  border-color: rgb(0 0 0 / 15%);
+  border-color: var(--fc-border-hover);
 }
 
 .form-callback__checkbox-text {
   font-size: 1.4rem;
-  color: var(--color-5);
+  color: var(--fc-muted);
   line-height: 1.5;
   padding-top: 0.2rem;
 }
 
 .form-callback__checkbox-text a {
-  color: var(--color-6);
+  color: var(--fc-accent);
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   transition: color var(--fc-speed) var(--fc-ease);
 }
 
 .form-callback__checkbox-text a:hover {
-  color: var(--color-3);
+  color: var(--fc-accent-hover, var(--fc-accent));
 }
 
 @keyframes checkPop {
@@ -545,14 +572,14 @@
   left: 50%;
   width: 0;
   height: 0;
-  background: var(--color-6);
+  background: var(--fc-muted);
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: width var(--fc-speed) var(--fc-ease), height var(--fc-speed) var(--fc-ease);
 }
 
 .form-callback__radio-input:checked + .form-callback__radio-dot {
-  border-color: var(--color-6);
+  border-color: var(--fc-muted);
 }
 
 .form-callback__radio-input:checked + .form-callback__radio-dot::after {
@@ -665,11 +692,11 @@
   display: block;
   font-size: var(--fc-font-size-sm);
   line-height: 1.5;
-  color: var(--color-5);
+  color: var(--fc-accent);
 }
 
 .form-callback__rules-text a {
-  color: var(--color-6);
+  color: var(--fc-muted);
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   transition: color var(--fc-speed) var(--fc-ease);
@@ -799,11 +826,11 @@
    поверх неё второй рамкой — на мобильных особенно заметно. У кнопки outline остаётся:
    границы у неё нет, и без него фокус с клавиатуры не виден. */
 .form-callback__control:focus-visible {
-  border-color: var(--color-5);
+  border-color: var(--fc-accent);
 }
 
 .form-callback__submit:focus-visible {
-  outline: 1px solid var(--color-5);
+  outline: 1px solid var(--fc-accent);
   outline-offset: 2px;
 }
 
@@ -819,4 +846,52 @@
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* ==========================================================================
+   Подсказка вместо плавающей метки
+   Часть площадок так задумана дизайном: подпись стоит внутри поля и исчезает,
+   когда человек начинает писать. Разметка та же, меняется только оформление.
+   ========================================================================== */
+
+.form-callback--hint .form-callback__label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--fc-font-size);
+  color: var(--fc-label);
+}
+
+.form-callback--hint .form-callback__control:focus ~ .form-callback__label,
+.form-callback--hint .form-callback__control:not(:placeholder-shown) ~ .form-callback__label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--fc-font-size);
+  opacity: 0;
+}
+
+/* Поле в этом режиме не оставляет места под поднятую подпись. */
+.form-callback--hint .form-callback__control {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Обязательность в таком оформлении не показывают звёздочкой: подпись исчезает при вводе. */
+.form-callback--hint .form-callback__asterisk {
+  display: none;
+}
+
+/* Порядок «кнопка, затем согласие» — так свёрстаны площадки, где подпись стоит подсказкой:
+   действие ближе к полям, юридический текст уходит вниз. */
+.form-callback--hint .form-callback__grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-callback--hint .form-callback__field.field-submit {
+  order: 1;
+}
+
+.form-callback--hint .form-callback__field.field-checkbox,
+.form-callback--hint .form-callback__field.field-rules {
+  order: 2;
 }

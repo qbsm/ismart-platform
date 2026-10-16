@@ -43,14 +43,12 @@ async function main() {
     nocase: true,
   });
 
-  const filtered = onlyPrefix
-    ? sources.filter((p) => p.startsWith(onlyPrefix))
-    : sources;
+  const filtered = onlyPrefix ? sources.filter((p) => p.startsWith(onlyPrefix)) : sources;
 
   if (filtered.length === 0) {
-    console.log(onlyPrefix
-      ? `Нет raw-источников под префиксом '${onlyPrefix}'.`
-      : 'Нет raw-источников в data/img/**/raw/.');
+    console.log(
+      onlyPrefix ? `Нет raw-источников под префиксом '${onlyPrefix}'.` : 'Нет raw-источников в data/img/**/raw/.'
+    );
     return;
   }
 
@@ -60,8 +58,8 @@ async function main() {
 
   for (const rel of filtered) {
     const abs = path.join(imgDir, rel);
-    let w = 0;
-    let h = 0;
+    let w;
+    let h;
     try {
       const meta = await sharp(abs).metadata();
       w = meta.width || 0;

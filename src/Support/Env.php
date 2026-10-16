@@ -21,10 +21,16 @@ final class Env
         return $value === false ? '' : (string) $value;
     }
 
-    /** Булево: 1/true/yes/on — истина, всё прочее — ложь. */
-    public static function bool(string $name): bool
+    /**
+     * Булево: 1/true/yes/on — истина, всё прочее — ложь. Незаданная переменная отдаёт
+     * $default: у защитных настроек значение по умолчанию — «включено», и молчаливое
+     * выключение из-за отсутствия строки в .env недопустимо.
+     */
+    public static function bool(string $name, bool $default = false): bool
     {
-        return filter_var(self::get($name), FILTER_VALIDATE_BOOLEAN);
+        $value = self::get($name);
+
+        return $value === '' ? $default : filter_var($value, FILTER_VALIDATE_BOOLEAN);
     }
 
     /** Целое, или $default, если переменная не задана. */

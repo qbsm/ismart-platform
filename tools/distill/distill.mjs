@@ -326,7 +326,10 @@ async function cmdSync(deploymentPath, opts) {
   // docs/, tests/, README, кэши — НЕ синкаем (deployment может вести свою историю).
   const SKIP_PREFIXES = [
     // Brand-specific (deployment-only)
-    'config/project.php', 'config/llms-full.php', 'config/llms-full.php.dist',
+    'config/project.php',
+    // Свои сервисы и маршруты деплоймента: точки расширения ядра (см. container.php/routes.php).
+    'config/project-di.php',
+    'config/project-routes.php', 'config/llms-full.php', 'config/llms-full.php.dist',
     'config/project.php.dist',
     'data/',
     // ADR-0009: вёрсточные ассеты целиком deployment-local. Точечный sync
@@ -415,9 +418,20 @@ async function cmdSync(deploymentPath, opts) {
   }
 
   let copied = 0;
+  const missing = [];
   for (const rel of toSync) {
+    // Файл из списка мог уехать из baseline (docs/ вынесены на docs.ismart.pro):
+    // пропуск с предупреждением, а не смерть на середине с полусинкованным деплойментом.
+    if (!existsSync(join(PLATFORM_ROOT, rel))) {
+      missing.push(rel);
+      continue;
+    }
     await copyFile(join(PLATFORM_ROOT, rel), join(depAbs, rel));
     copied++;
+  }
+  if (missing.length) {
+    console.log(`\n⚠ пропущено ${missing.length} файлов — их больше нет в baseline:`);
+    for (const rel of missing) console.log(`  ${rel}`);
   }
   console.log(`\n✓ синхронизировано ${copied} файлов`);
 

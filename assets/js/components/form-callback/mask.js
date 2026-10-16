@@ -13,7 +13,9 @@ const DIGIT_SLOT = /9/g;
 
 function nationalDigits(raw) {
   const slots = (MASKS[DEFAULT_COUNTRY].match(DIGIT_SLOT) || []).length;
-  let digits = String(raw || '').replace(PREFIX_RE, '').replace(/\D+/g, '');
+  let digits = String(raw || '')
+    .replace(PREFIX_RE, '')
+    .replace(/\D+/g, '');
 
   // Якорь снимает код только в начале строки, а он туда попадает не всегда: при вставке в поле
   // с готовым «+7 (» код страны идёт следом за префиксом. Лишние ведущие цифры отбрасываем по

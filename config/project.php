@@ -33,6 +33,8 @@ return [
     'integrations' => [
         // Основной счётчик Яндекс.Метрики: фолбэк, если YANDEX_METRIC_ID в .env пуст
         // (ID публичный, живёт в HTML страницы — см. config/settings.php).
-        // 'yandex_metric_id' => 12345678,
+        // Счётчики Метрики (ID публичные, едут git-деплоем; YANDEX_METRIC_ID в .env главнее):
+        // 'yandex_metric_ids' => [12345678, 87654321],   // несколько — первый основной
+        // 'yandex_metric_id' => 12345678,                 // или один
     ],
 ];

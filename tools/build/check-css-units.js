@@ -221,15 +221,11 @@ function main() {
     console.log(`\n${path.relative(process.cwd(), file)}`);
     for (const v of violations) {
       const where = v.kind === 'text' ? 'текст' : 'блок';
-      console.log(
-        `  ${v.line}: [${where}] ${v.prop}: ${v.value} — найдено ${v.found}, ожидается ${v.expected}`
-      );
+      console.log(`  ${v.line}: [${where}] ${v.prop}: ${v.value} — найдено ${v.found}, ожидается ${v.expected}`);
     }
   }
 
-  console.log(
-    `\nПроверено файлов: ${files.length}. Нарушений: ${totalViolations} в ${filesWithViolations} файл(ах).`
-  );
+  console.log(`\nПроверено файлов: ${files.length}. Нарушений: ${totalViolations} в ${filesWithViolations} файл(ах).`);
 
   if (totalViolations > 0 && !warnOnly) {
     console.log('\nПравило (css-naming.md §4): layout блоков → rem, font-size → em.');
