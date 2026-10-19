@@ -1,3 +1,5 @@
+import { createAbortController, withTimeout } from './abort.js';
+
 const ENDPOINT = 'api/form-token';
 const REQUEST_TIMEOUT_MS = 5000;
 const RETRY_DELAY_MS = 700;
@@ -11,21 +13,19 @@ function endpointUrl() {
 }
 
 async function request() {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  const controller = createAbortController();
   try {
-    const response = await fetch(endpointUrl(), {
+    const request = fetch(endpointUrl(), {
       headers: { Accept: 'application/json' },
       credentials: 'same-origin',
       signal: controller.signal,
     });
+    const response = await withTimeout(request, REQUEST_TIMEOUT_MS, () => controller.abort());
     if (!response.ok) return '';
     const payload = await response.json();
     return typeof payload.token === 'string' ? payload.token : '';
   } catch {
     return '';
-  } finally {
-    clearTimeout(timer);
   }
 }
 

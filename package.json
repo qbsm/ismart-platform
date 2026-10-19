@@ -109,7 +109,6 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
-    "core-js": "^3.51.0",
     "glightbox": "^3.3.1",
     "inputmask": "^5.0.9",
     "jquery": "^4.0.0",

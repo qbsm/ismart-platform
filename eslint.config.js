@@ -42,6 +42,27 @@ module.exports = [
         ym: 'readonly',
       },
     },
+    // API, которых нет в Chrome 61 / Safari 12 (browserslist): Babel их не заменяет, а core-js не
+    // подключаем. Падение такого вызова в форме — потерянная заявка.
+    rules: {
+      'no-restricted-globals': [
+        'error',
+        { name: 'AbortController', message: 'Нет до Chrome 66 / Safari 12.1 — createAbortController() из form-callback/abort.js' },
+      ],
+      'no-restricted-properties': [
+        'error',
+        { property: 'replaceAll', message: 'Нет до Chrome 85 / Safari 13.1 — replace(/…/g, …)' },
+        { object: 'Object', property: 'fromEntries', message: 'Нет до Chrome 73 / Safari 12.1' },
+        { property: 'flat', message: 'Нет до Chrome 69' },
+        { property: 'flatMap', message: 'Нет до Chrome 69' },
+        { object: 'Promise', property: 'allSettled', message: 'Нет до Chrome 76 / Safari 13' },
+        { object: 'window', property: 'structuredClone', message: 'Нет до Chrome 98' },
+      ],
+    },
+  },
+  {
+    files: ['assets/js/components/form-callback/abort.js'],
+    rules: { 'no-restricted-globals': 'off' },
   },
   // Подключаются <script> напрямую, мимо webpack и Babel (templates/components/scripts.twig) —
   // синтаксис не новее ES2018, иначе в Chrome 61–79 / Safari 12 файл не разбирается целиком.

@@ -1,4 +1,5 @@
 import { AD_KEYS, API_TIMEOUT_MS, UTM_KEYS } from './constants.js';
+import { createAbortController, withTimeout } from './abort.js';
 
 export class FormApi {
   constructor(baseUrl) {
@@ -20,18 +21,25 @@ export class FormApi {
     this._appendAnalytics(formData);
 
     const sendUrl = this._buildSendUrl();
-    const { signal, cleanup } = this._createTimeoutSignal(externalSignal, API_TIMEOUT_MS);
+    // Отмена — снаружи (форма закрыта) или по тайм-ауту. Где AbortController нет, тайм-аут всё
+    // равно срабатывает: withTimeout перестаёт ждать ответ (abort.js).
+    const controller = createAbortController();
+    const abortOnExternal = () => controller.abort();
+    if (externalSignal) {
+      externalSignal.addEventListener('abort', abortOnExternal, { once: true });
+    }
 
     try {
-      const response = await fetch(sendUrl, {
+      const request = fetch(sendUrl, {
         method: 'POST',
         body: formData,
         headers: {
           'X-Requested-With': 'XMLHttpRequest',
           Accept: 'application/json',
         },
-        signal,
+        signal: controller.signal,
       });
+      const response = await withTimeout(request, API_TIMEOUT_MS, () => controller.abort());
 
       const payload = await this._safeParseJson(response);
       const normalized = this._normalizeResponse(payload);
@@ -62,36 +70,10 @@ export class FormApi {
       networkError.status = 0;
       throw networkError;
     } finally {
-      cleanup();
-    }
-  }
-
-  _createTimeoutSignal(externalSignal, timeoutMs) {
-    const timeoutController = new AbortController();
-    const combinedController = new AbortController();
-
-    const abortCombined = () => {
-      if (!combinedController.signal.aborted) {
-        combinedController.abort();
+      if (externalSignal) {
+        externalSignal.removeEventListener('abort', abortOnExternal);
       }
-    };
-
-    const timerId = setTimeout(() => {
-      timeoutController.abort();
-      abortCombined();
-    }, timeoutMs);
-
-    timeoutController.signal.addEventListener('abort', abortCombined, { once: true });
-    if (externalSignal) {
-      externalSignal.addEventListener('abort', abortCombined, { once: true });
     }
-
-    return {
-      signal: combinedController.signal,
-      cleanup: () => {
-        clearTimeout(timerId);
-      },
-    };
   }
 
   async _safeParseJson(response) {

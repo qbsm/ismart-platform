@@ -17,8 +17,10 @@ module.exports = {
   },
   // Старые, но живые браузеры (встроенный браузер приложения «Яндекс» на Android 8 — Chrome 64) не
   // разбирают ES2019+ (`?.`, `??`, `catch {}`): бандл падал целиком, и формы не отправлялись — так
-  // avtofin.org потерял заявку 19.10.2026. Свой код — через Babel под browserslist из package.json,
-  // недостающие API — core-js по месту использования. Итог проверяет `npm run check:es`.
+  // avtofin.org потерял заявку 19.10.2026. Свой код — через Babel под browserslist из package.json:
+  // только синтаксис, +0,2 КБ. core-js не подключаем — он добавлял всем +33 КБ gzip ради ~0,05%
+  // визитов и не закрывал главного (AbortController); недостающее API — точечно в коде
+  // (form-callback/abort.js), запрет — в eslint.config.js. Итог проверяет `npm run check:es`.
   target: ['web', 'es2017'],
   module: {
     rules: [
@@ -28,7 +30,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [['@babel/preset-env', { useBuiltIns: 'usage', corejs: '3.51', bugfixes: true }]],
+            presets: [['@babel/preset-env', { bugfixes: true }]],
             sourceType: 'unambiguous',
             cacheDirectory: true,
           },

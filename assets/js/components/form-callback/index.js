@@ -1,4 +1,5 @@
 import { FormApi } from './api.js';
+import { createAbortController } from './abort.js';
 import { primeFormToken, primeAllTokenFields, ensureFormToken, refreshFormToken } from './token.js';
 import { formTitle } from './form-title.js';
 import { initCaptcha, appendCaptchaToken } from './captcha.js';
@@ -80,7 +81,7 @@ export class CallbackForm {
 
     this.isSubmitting = true;
     this.ui.setLoadingState();
-    this.abortController = new AbortController();
+    this.abortController = createAbortController();
     let hasSucceeded = false;
 
     try {
