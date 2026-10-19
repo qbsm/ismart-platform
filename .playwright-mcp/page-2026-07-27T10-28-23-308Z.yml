@@ -1,0 +1,195 @@
+- generic [active] [ref=f16e1]:
+  - link "Перейти к контенту" [ref=f16e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f16e3]:
+    - generic [ref=f16e4]:
+      - generic [ref=f16e5]:
+        - link [ref=f16e6] [cursor=pointer]:
+          - /url: /
+          - img "SOLLERS" [ref=f16e7]
+        - img "АВИЛОН — официальный дилер" [ref=f16e10]
+      - generic [ref=f16e13]:
+        - generic [ref=f16e14]: Sollers Авилон
+        - link "+7 (495) 183-57-86" [ref=f16e15] [cursor=pointer]:
+          - /url: tel:+74951835786
+        - link "Котельники, Белая Дача, Коммерческий пр-д, 10" [ref=f16e16] [cursor=pointer]:
+          - /url: http://promo.sollers-avilon.ru.test/#map
+      - link "Заказать звонок" [ref=f16e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f16e20]:
+      - link "Модельный ряд" [ref=f16e21] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#range
+      - link "Акции" [ref=f16e22] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#actions
+      - link "Тест-драйв" [ref=f16e23] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#testdrive
+      - link "Преимущества" [ref=f16e24] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#profits
+      - link "Способы покупки" [ref=f16e25] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#finance
+      - link "Контакты" [ref=f16e26] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#map
+  - main [ref=f16e27]:
+    - generic [ref=f16e29]:
+      - heading "SOLLERS Argo | Арго" [level=1] [ref=f16e30]
+      - paragraph [ref=f16e31]: Малотоннажный грузовик с надстройками. SOLLERS Argo | Арго у официального дилера Sollers Авилон.
+    - generic [ref=f16e33]:
+      - heading "SOLLERS Argo | Арго" [level=2] [ref=f16e35]
+      - navigation "Фильтр по моделям" [ref=f16e37]:
+        - button "Все модели" [ref=f16e38] [cursor=pointer]
+        - button "SOLLERS Argo | Арго" [ref=f16e39] [cursor=pointer]
+      - article [ref=f16e42]:
+        - generic [ref=f16e44]:
+          - generic [ref=f16e45]:
+            - button "Бортовой с тентом" [ref=f16e46] [cursor=pointer]
+            - button "Рефрижератор" [ref=f16e47] [cursor=pointer]
+            - button "Промтоварный" [ref=f16e48] [cursor=pointer]
+          - img "SOLLERS Argo | Арго — Бортовой с тентом" [ref=f16e50]
+        - generic [ref=f16e51]:
+          - generic [ref=f16e52]:
+            - heading "SOLLERS Argo | Арго" [level=3] [ref=f16e53]
+            - paragraph [ref=f16e54]: Малотоннажный грузовик с надстройками
+          - list [ref=f16e55]:
+            - listitem [ref=f16e56]:
+              - generic [ref=f16e60]: Надстройки под задачу
+            - listitem [ref=f16e61]:
+              - generic [ref=f16e65]: Высокая грузоподъёмность
+            - listitem [ref=f16e66]:
+              - generic [ref=f16e70]: Надёжная рамная конструкция
+          - generic [ref=f16e71]:
+            - link "Узнать цену" [ref=f16e72] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Кредит" [ref=f16e74] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Лизинг" [ref=f16e76] [cursor=pointer]:
+              - /url: "#callback"
+            - link "Пройти тест-драйв" [ref=f16e78] [cursor=pointer]:
+              - /url: "#callback"
+        - generic [ref=f16e80]:
+          - generic [ref=f16e81]:
+            - generic [ref=f16e82]: Габаритные размеры
+            - list [ref=f16e83]:
+              - listitem [ref=f16e84]:
+                - generic [ref=f16e85]: 5 300
+                - generic [ref=f16e86]: Общая длина, мм
+              - listitem [ref=f16e87]:
+                - generic [ref=f16e88]: 2 650
+                - generic [ref=f16e89]: Общая высота, мм
+              - listitem [ref=f16e90]:
+                - generic [ref=f16e91]: 2 495 / 3 490
+                - generic [ref=f16e92]: Полная масса, кг
+          - generic [ref=f16e93]:
+            - generic [ref=f16e94]: Грузовой отсек
+            - list [ref=f16e95]:
+              - listitem [ref=f16e96]:
+                - generic [ref=f16e97]: 3 120
+                - generic [ref=f16e98]: Длина на уровне пола, мм
+              - listitem [ref=f16e99]:
+                - generic [ref=f16e100]: 1 720
+                - generic [ref=f16e101]: Ширина, мм
+              - listitem [ref=f16e102]:
+                - generic [ref=f16e103]: 1 720
+                - generic [ref=f16e104]: Высота, мм
+              - listitem [ref=f16e105]:
+                - generic [ref=f16e106]: "4"
+                - generic [ref=f16e107]: Палеты (1200×800 мм)
+              - listitem [ref=f16e108]:
+                - generic [ref=f16e109]: "785"
+                - generic [ref=f16e110]: Погрузочная высота, мм
+          - generic [ref=f16e111]:
+            - generic [ref=f16e112]: Двигатель и трансмиссия
+            - list [ref=f16e113]:
+              - listitem [ref=f16e114]:
+                - generic [ref=f16e115]: Дизель, 2,0 л
+                - generic [ref=f16e116]: Двигатель
+              - listitem [ref=f16e117]:
+                - generic [ref=f16e118]: 130 л.с. при 3600 об/мин
+                - generic [ref=f16e119]: Максимальная мощность
+              - listitem [ref=f16e120]:
+                - generic [ref=f16e121]: 285 Н·м при 2200–2600 об/мин
+                - generic [ref=f16e122]: Крутящий момент
+              - listitem [ref=f16e123]:
+                - generic [ref=f16e124]: 6МТ
+                - generic [ref=f16e125]: Коробка передач
+              - listitem [ref=f16e126]:
+                - generic [ref=f16e127]: Евро-5
+                - generic [ref=f16e128]: Экологический класс
+              - listitem [ref=f16e129]:
+                - generic [ref=f16e130]: "65"
+                - generic [ref=f16e131]: Топливный бак, л
+        - generic [ref=f16e134]:
+          - link [ref=f16e136] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/1.webp
+            - img "SOLLERS Argo — фото 1" [ref=f16e138]
+          - link [ref=f16e140] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/2.webp
+            - img "SOLLERS Argo — фото 2" [ref=f16e142]
+          - link [ref=f16e144] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/3.webp
+            - img "SOLLERS Argo — фото 3" [ref=f16e146]
+          - link [ref=f16e148] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/4.webp
+            - img "SOLLERS Argo — фото 4" [ref=f16e150]
+          - link [ref=f16e152] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/5.webp
+            - img "SOLLERS Argo — фото 5" [ref=f16e154]
+          - link [ref=f16e156] [cursor=pointer]:
+            - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/1280/6.webp
+            - img "SOLLERS Argo — фото 6" [ref=f16e158]
+    - generic [ref=f16e164]:
+      - generic [ref=f16e165]: Узнайте цену SOLLERS Argo | Арго
+      - generic [ref=f16e166]: Индивидуальное предложение от официального дилера Sollers Авилон
+      - link "Получить предложение" [ref=f16e168] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f16e173]:
+      - generic [ref=f16e174]:
+        - generic [ref=f16e175]: Sollers Авилон
+        - generic [ref=f16e176]: Официальный дилер SOLLERS в Москве
+      - list [ref=f16e177]:
+        - listitem [ref=f16e178]:
+          - link "+7 (495) 183-57-86" [ref=f16e182] [cursor=pointer]:
+            - /url: tel:+74951835786
+        - listitem [ref=f16e183]:
+          - generic [ref=f16e188]: Котельники, Белая Дача, Коммерческий пр-д, 10
+        - listitem [ref=f16e189]:
+          - generic [ref=f16e194]: "Пн–Вс: 09:00–21:00"
+      - link "Получить консультацию" [ref=f16e195] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f16e200]:
+    - link [ref=f16e202] [cursor=pointer]:
+      - /url: http://promo.sollers-avilon.ru.test/
+      - img "SOLLERS" [ref=f16e203]
+    - generic [ref=f16e205]:
+      - link "ВКонтакте" [ref=f16e206] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f16e209] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f16e212] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f16e215]:
+      - link "Модельный ряд" [ref=f16e217] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#range
+      - link "Преимущества" [ref=f16e219] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#profits
+      - link "Способы покупки" [ref=f16e221] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#finance
+      - link "Контакты" [ref=f16e223] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/#map
+    - generic [ref=f16e224]: © 2026 Sollers Авилон. Все права защищены
+    - generic [ref=f16e226]:
+      - link "Политика конфиденциальности" [ref=f16e227] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f16e228] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f16e229] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/consent/
+      - link "Правовая информация" [ref=f16e230] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/legal-info/
+    - paragraph [ref=f16e232]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f16e235]:
+    - generic [ref=f16e237]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f16e238] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f16e240] [cursor=pointer]

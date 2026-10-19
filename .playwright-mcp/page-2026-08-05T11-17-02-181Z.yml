@@ -1,0 +1,1039 @@
+- generic [ref=e1]:
+  - link "Перейти к контенту" [ref=e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "SOLLERS" [ref=e7]
+        - img "АВИЛОН — официальный дилер" [ref=e10]
+        - img "Автодилер года" [ref=e12]
+      - generic [ref=e1359]:
+        - link "+7 (495) 730-00-44" [ref=e1360] [cursor=pointer]:
+          - /url: tel:+74957300044
+        - link "Котельники, Белая Дача, Коммерческий проезд, 10" [ref=e1361] [cursor=pointer]:
+          - /url: "#map"
+      - link "Заказать звонок" [ref=e1363] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=e1365]:
+      - link "Модельный ряд" [ref=e1366] [cursor=pointer]:
+        - /url: "#range"
+      - link "В наличии" [ref=e1367] [cursor=pointer]:
+        - /url: "#stock"
+      - link "Акции" [ref=e1368] [cursor=pointer]:
+        - /url: "#actions"
+      - link "Тест-драйв" [ref=e1369] [cursor=pointer]:
+        - /url: "#testdrive"
+      - link "Преимущества" [ref=e1370] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=e1371] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=e1372] [cursor=pointer]:
+        - /url: "#map"
+  - main [ref=e27]:
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - heading "Sollers Авилон" [level=1] [ref=e39]
+        - paragraph [ref=e40]: Официальный дилер SOLLERS в Москве — минивэны, фургоны и коммерческий транспорт SOLLERS
+        - link "Получить предложение" [ref=e42] [cursor=pointer]:
+          - /url: "#callback"
+      - generic [ref=e45]:
+        - generic [ref=e46]:
+          - generic [ref=e47]: 6 моделей
+          - generic [ref=e48]: минивэны и фургоны
+        - generic [ref=e50]:
+          - generic [ref=e51]: 0%
+          - generic [ref=e52]: переплат по кредиту
+        - generic [ref=e54]:
+          - generic [ref=e55]: Трейд-ин
+          - generic [ref=e56]: выгодный обмен
+    - generic [ref=e59]:
+      - generic [ref=e60]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=e62]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=e65]:
+        - text: МИНИВЭН SOLLERS SP7 | СП7 — ОТ
+        - generic [ref=e66]: 4 390 000
+        - text: ₽
+      - generic [ref=e68]:
+        - text: ФУРГОНЫ SOLLERS SF1 | СФ1 — ОТ
+        - generic [ref=e69]: 2 084 000
+        - text: ₽
+      - generic [ref=e70]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=e72]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+      - generic [ref=e74]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=e76]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=e79]:
+        - text: МИНИВЭН SOLLERS SP7 | СП7 — ОТ
+        - generic [ref=e80]: 4 390 000
+        - text: ₽
+      - generic [ref=e82]:
+        - text: ФУРГОНЫ SOLLERS SF1 | СФ1 — ОТ
+        - generic [ref=e83]: 2 084 000
+        - text: ₽
+      - generic [ref=e84]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=e86]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+      - generic [ref=e88]: ВСЕ ДОРОГИ ВЕДУТ В АВИЛОН
+      - generic [ref=e90]: ОФИЦИАЛЬНЫЙ ДИЛЕР SOLLERS
+      - generic [ref=e93]:
+        - text: МИНИВЭН SOLLERS SP7 | СП7 — ОТ
+        - generic [ref=e94]: 4 390 000
+        - text: ₽
+      - generic [ref=e96]:
+        - text: ФУРГОНЫ SOLLERS SF1 | СФ1 — ОТ
+        - generic [ref=e97]: 2 084 000
+        - text: ₽
+      - generic [ref=e98]: КРЕДИТ И ЛИЗИНГ ДЛЯ БИЗНЕСА
+      - generic [ref=e100]: ТЕСТ-ДРАЙВ В ДЕНЬ ОБРАЩЕНИЯ
+    - generic [ref=e104]:
+      - generic [ref=e105]: Специальные условия
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e110]: "00"
+          - generic [ref=e111]: дней
+        - generic [ref=e112]:
+          - generic [ref=e113]: "08"
+          - generic [ref=e114]: часов
+        - generic [ref=e115]:
+          - generic [ref=e116]: "42"
+          - generic [ref=e117]: минут
+        - generic [ref=e118]:
+          - generic [ref=e119]: "58"
+          - generic [ref=e120]: секунд
+      - link "Получить предложение" [ref=e122] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=e125]:
+      - heading "Модельный ряд" [level=2] [ref=e127]
+      - navigation "Фильтр по моделям" [ref=e129]:
+        - button "Все модели" [ref=e130] [cursor=pointer]
+        - button "SF5" [ref=e131] [cursor=pointer]
+        - button "Atlant" [ref=e132] [cursor=pointer]
+        - button "SF1" [ref=e133] [cursor=pointer]
+        - button "SP7" [ref=e134] [cursor=pointer]
+        - button "ST8" [ref=e135] [cursor=pointer]
+        - button "ST9" [ref=e136] [cursor=pointer]
+        - button "Argo" [ref=e137] [cursor=pointer]
+      - generic [ref=e138]:
+        - article [ref=e140]:
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - button "Цельнометаллический фургон" [ref=e144] [cursor=pointer]
+              - button "Грузопассажирский фургон" [ref=e145] [cursor=pointer]
+              - button "Автобус 15+1" [ref=e146] [cursor=pointer]
+            - img "SOLLERS SF5 | СФ5 — Цельнометаллический фургон" [ref=e148]
+            - generic [ref=e149]:
+              - button "Средняя L2H1" [ref=e150] [cursor=pointer]
+              - button "Длинная L3H2" [ref=e151] [cursor=pointer]
+          - generic [ref=e152]:
+            - generic [ref=e153]:
+              - heading "SOLLERS SF5 | СФ5 НОВЫЙ" [level=3] [ref=e154]:
+                - text: SOLLERS SF5 | СФ5
+                - generic [ref=e155]: НОВЫЙ
+              - paragraph [ref=e156]: Цельнометаллический фургон
+              - generic [ref=e158]:
+                - text: от
+                - generic [ref=e159]: 2 793 000
+                - text: ₽
+              - link "В наличии 2 автомобиля" [ref=e160] [cursor=pointer]:
+                - /url: http://promo.sollers-avilon.ru.test/#stock-sf5
+            - list [ref=e165]:
+              - listitem [ref=e166]:
+                - generic [ref=e170]:
+                  - text: Выгода до
+                  - generic [ref=e171]: 770 000
+                  - text: ₽
+              - listitem [ref=e172]:
+                - generic [ref=e176]:
+                  - text: Платёж от
+                  - generic [ref=e177]: 23 275
+                  - text: ₽/мес.
+              - listitem [ref=e178]:
+                - generic [ref=e182]: Цельнометаллический фургон
+              - listitem [ref=e183]:
+                - generic [ref=e187]: До 12.4 м³, 4 европалеты
+              - listitem [ref=e188]:
+                - generic [ref=e192]: Дизель, 6АТ
+            - generic [ref=e193]:
+              - link "Узнать цену" [ref=e194] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=e196] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=e198] [cursor=pointer]:
+                - /url: "#callback"
+          - button "Характеристики все параметры модели" [ref=e201] [cursor=pointer]:
+            - generic [ref=e205]: Характеристики
+            - generic [ref=e206]: все параметры модели
+          - generic [ref=e212]:
+            - link [ref=e214] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/1.webp
+              - img "SOLLERS SF5 | СФ5 — фото 1" [ref=e216]
+            - link [ref=e218] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/2.webp
+              - img "SOLLERS SF5 | СФ5 — фото 2" [ref=e220]
+            - link [ref=e222] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/3.webp
+              - img "SOLLERS SF5 | СФ5 — фото 3" [ref=e224]
+            - link [ref=e226] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/4.webp
+              - img "SOLLERS SF5 | СФ5 — фото 4" [ref=e228]
+            - link [ref=e230] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/5.webp
+              - img "SOLLERS SF5 | СФ5 — фото 5" [ref=e232]
+            - link [ref=e234] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/6.webp
+              - img "SOLLERS SF5 | СФ5 — фото 6" [ref=e236]
+            - link [ref=e238] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf5/gallery/raw/7.webp
+              - img "SOLLERS SF5 | СФ5 — фото 7" [ref=e240]
+        - article [ref=e244]:
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - button "Цельнометаллический фургон" [ref=e248] [cursor=pointer]
+              - button "Грузопассажирский фургон" [ref=e249] [cursor=pointer]
+              - button "Грузовой автомобиль" [ref=e250] [cursor=pointer]
+              - button "Автобус 15+1" [ref=e251] [cursor=pointer]
+            - img "SOLLERS Atlant | Атлант — Цельнометаллический фургон" [ref=e253]
+            - generic [ref=e254]:
+              - button "Короткая L1H1" [ref=e255] [cursor=pointer]
+              - button "Средняя L2H1" [ref=e256] [cursor=pointer]
+              - button "Длинная L3H2" [ref=e257] [cursor=pointer]
+          - generic [ref=e258]:
+            - generic [ref=e259]:
+              - heading "SOLLERS Atlant | Атлант" [level=3] [ref=e260]
+              - paragraph [ref=e261]: "Грузопассажирский автомобиль: фургон, автобус и грузовик"
+              - generic [ref=e263]:
+                - text: от
+                - generic [ref=e264]: 2 618 000
+                - text: ₽
+              - link "В наличии 14 автомобилей" [ref=e265] [cursor=pointer]:
+                - /url: http://promo.sollers-avilon.ru.test/#stock-atlant
+            - list [ref=e270]:
+              - listitem [ref=e271]:
+                - generic [ref=e275]:
+                  - text: Выгода до
+                  - generic [ref=e276]: 977 000
+                  - text: ₽
+              - listitem [ref=e277]:
+                - generic [ref=e281]:
+                  - text: Платёж от
+                  - generic [ref=e282]: 21 817
+                  - text: ₽/мес.
+              - listitem [ref=e283]:
+                - generic [ref=e287]: Объём кузова до 17,5 м³
+              - listitem [ref=e288]:
+                - generic [ref=e292]: Дизель 136 или 150 л.с.
+              - listitem [ref=e293]:
+                - generic [ref=e297]: Версии до 15+1 мест
+            - generic [ref=e298]:
+              - link "Узнать цену" [ref=e299] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=e301] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=e303] [cursor=pointer]:
+                - /url: "#callback"
+          - button "Характеристики все параметры модели" [ref=e306] [cursor=pointer]:
+            - generic [ref=e310]: Характеристики
+            - generic [ref=e311]: все параметры модели
+          - generic [ref=e317]:
+            - link [ref=e319] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant/gallery/raw/1.webp
+              - img "SOLLERS Atlant | Атлант — цельнометаллический фургон, вид спереди" [ref=e321]
+            - link [ref=e323] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant/gallery/raw/2.webp
+              - img "SOLLERS Atlant | Атлант — грузопассажирская версия с боковым остеклением" [ref=e325]
+            - link [ref=e327] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant/gallery/raw/3.webp
+              - img "SOLLERS Atlant | Атлант — вид сзади, распашные двери" [ref=e329]
+            - link [ref=e331] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant/gallery/raw/4.webp
+              - img "SOLLERS Atlant | Атлант — задний фонарь" [ref=e333]
+            - link [ref=e335] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant/gallery/raw/5.webp
+              - img "SOLLERS Atlant | Атлант — рабочее место водителя" [ref=e337]
+            - link [ref=e339] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant/gallery/raw/6.webp
+              - img "SOLLERS Atlant | Атлант — второй ряд сидений" [ref=e341]
+            - link [ref=e343] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/atlant/gallery/raw/7.webp
+              - img "SOLLERS Atlant | Атлант — грузовой отсек" [ref=e345]
+        - article [ref=e349]:
+          - generic [ref=e351]:
+            - generic [ref=e352]:
+              - button "Цельнометаллический" [ref=e353] [cursor=pointer]
+              - button "Минивэн" [ref=e354] [cursor=pointer]
+              - button "Грузопассажирский фургон" [ref=e355] [cursor=pointer]
+            - generic [ref=e356]:
+              - img "SOLLERS SF1 | СФ1"
+            - generic [ref=e357]:
+              - button "Белый" [ref=e358] [cursor=pointer]
+              - button "Тёмно-синий" [ref=e360] [cursor=pointer]
+              - button "Красный" [ref=e362] [cursor=pointer]
+              - button "Серебристый (металлик)" [ref=e364] [cursor=pointer]
+              - button "Тёмно-серый (металлик)" [ref=e366] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=e368] [cursor=pointer]
+            - generic [ref=e370]: Белый
+          - generic [ref=e371]:
+            - generic [ref=e372]:
+              - heading "SOLLERS SF1 | СФ1" [level=3] [ref=e373]
+              - paragraph [ref=e374]: Цельнометаллический фургон
+              - generic [ref=e376]:
+                - text: от
+                - generic [ref=e377]: 2 084 000
+                - text: ₽
+              - link "В наличии 25 автомобилей" [ref=e378] [cursor=pointer]:
+                - /url: http://promo.sollers-avilon.ru.test/#stock-sf1
+            - list [ref=e383]:
+              - listitem [ref=e384]:
+                - generic [ref=e388]:
+                  - text: Выгода до
+                  - generic [ref=e389]: 92 000
+                  - text: ₽
+              - listitem [ref=e390]:
+                - generic [ref=e394]:
+                  - text: Платёж от
+                  - generic [ref=e395]: 17 367
+                  - text: ₽/мес.
+              - listitem [ref=e396]:
+                - generic [ref=e400]: Объём отсека 5.2 м³
+              - listitem [ref=e401]:
+                - generic [ref=e405]: До 2 палет 1200×800 мм
+              - listitem [ref=e406]:
+                - generic [ref=e410]: Цельнометаллический фургон
+            - generic [ref=e411]:
+              - link "Узнать цену" [ref=e412] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=e414] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=e416] [cursor=pointer]:
+                - /url: "#callback"
+          - button "Характеристики все параметры модели" [ref=e419] [cursor=pointer]:
+            - generic [ref=e423]: Характеристики
+            - generic [ref=e424]: все параметры модели
+          - generic [ref=e430]:
+            - link [ref=e432] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/1.webp
+              - img "SOLLERS SF1 | СФ1 — фото 1" [ref=e434]
+            - link [ref=e436] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/2.webp
+              - img "SOLLERS SF1 | СФ1 — фото 2" [ref=e438]
+            - link [ref=e440] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/3.webp
+              - img "SOLLERS SF1 | СФ1 — фото 3" [ref=e442]
+            - link [ref=e444] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/4.webp
+              - img "SOLLERS SF1 | СФ1 — фото 4" [ref=e446]
+            - link [ref=e448] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/5.webp
+              - img "SOLLERS SF1 | СФ1 — фото 5" [ref=e450]
+            - link [ref=e452] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/6.webp
+              - img "SOLLERS SF1 | СФ1 — фото 6" [ref=e454]
+            - link [ref=e456] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sf1/gallery/raw/7.webp
+              - img "SOLLERS SF1 | СФ1 — фото 7" [ref=e458]
+        - article [ref=e462]:
+          - generic [ref=e464]:
+            - generic [ref=e465]:
+              - img "SOLLERS SP7 | СП7"
+            - generic [ref=e466]:
+              - button "Белый" [ref=e467] [cursor=pointer]
+              - button "Тёмно-синий" [ref=e469] [cursor=pointer]
+              - button "Серебристый (металлик)" [ref=e471] [cursor=pointer]
+              - button "Тёмно-серый (металлик)" [ref=e473] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=e475] [cursor=pointer]
+            - generic [ref=e477]: Белый
+          - generic [ref=e478]:
+            - generic [ref=e479]:
+              - heading "SOLLERS SP7 | СП7 ПРЕМИУМ" [level=3] [ref=e480]:
+                - text: SOLLERS SP7 | СП7
+                - generic [ref=e481]: ПРЕМИУМ
+              - paragraph [ref=e482]: Семиместный премиальный минивэн
+              - generic [ref=e484]:
+                - text: от
+                - generic [ref=e485]: 4 390 000
+                - text: ₽
+              - link "В наличии 3 автомобиля" [ref=e486] [cursor=pointer]:
+                - /url: http://promo.sollers-avilon.ru.test/#stock-sp7
+            - list [ref=e491]:
+              - listitem [ref=e492]:
+                - generic [ref=e496]:
+                  - text: Выгода до
+                  - generic [ref=e497]: 600 000
+                  - text: ₽
+              - listitem [ref=e498]:
+                - generic [ref=e502]:
+                  - text: Платёж от
+                  - generic [ref=e503]: 36 583
+                  - text: ₽/мес.
+              - listitem [ref=e504]:
+                - generic [ref=e508]:
+                  - text: Кредит от
+                  - generic [ref=e509]: 0,01%
+                  - text: — субсидированная ставка
+              - listitem [ref=e510]:
+                - generic [ref=e514]: Бензин, 237 л.с.
+              - listitem [ref=e515]:
+                - generic [ref=e519]: Трансмиссия 8AT
+              - listitem [ref=e520]:
+                - generic [ref=e524]: 7 мест, схема 2+2+3
+            - generic [ref=e525]:
+              - link "Узнать цену" [ref=e526] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=e528] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=e530] [cursor=pointer]:
+                - /url: "#callback"
+          - button "Характеристики все параметры модели" [ref=e533] [cursor=pointer]:
+            - generic [ref=e537]: Характеристики
+            - generic [ref=e538]: все параметры модели
+          - generic [ref=e544]:
+            - link [ref=e546] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/1.webp
+              - img "SOLLERS SP7 | СП7 — фото 1" [ref=e548]
+            - link [ref=e550] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/2.webp
+              - img "SOLLERS SP7 | СП7 — фото 2" [ref=e552]
+            - link [ref=e554] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/3.webp
+              - img "SOLLERS SP7 | СП7 — фото 3" [ref=e556]
+            - link [ref=e558] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/4.webp
+              - img "SOLLERS SP7 | СП7 — фото 4" [ref=e560]
+            - link [ref=e562] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/5.webp
+              - img "SOLLERS SP7 | СП7 — фото 5" [ref=e564]
+            - link [ref=e566] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/6.webp
+              - img "SOLLERS SP7 | СП7 — фото 6" [ref=e568]
+            - link [ref=e570] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/7.webp
+              - img "SOLLERS SP7 | СП7 — фото 7" [ref=e572]
+            - link [ref=e574] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/sp7/gallery/raw/8.webp
+              - img "SOLLERS SP7 | СП7 — фото 8" [ref=e576]
+        - article [ref=e580]:
+          - generic [ref=e582]:
+            - generic [ref=e583]:
+              - img "SOLLERS ST8 | СТ8"
+            - generic [ref=e584]:
+              - button "Белый" [ref=e585] [cursor=pointer]
+              - button "Серебристый (металлик)" [ref=e587] [cursor=pointer]
+              - button "Тёмно-серый (металлик)" [ref=e589] [cursor=pointer]
+              - button "Зелёный (металлик)" [ref=e591] [cursor=pointer]
+              - button "Коричневый (металлик)" [ref=e593] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=e595] [cursor=pointer]
+            - generic [ref=e597]: Чёрный (металлик)
+          - generic [ref=e598]:
+            - generic [ref=e599]:
+              - heading "SOLLERS ST8 | СТ8 НОВЫЙ" [level=3] [ref=e600]:
+                - text: SOLLERS ST8 | СТ8
+                - generic [ref=e601]: НОВЫЙ
+              - paragraph [ref=e602]: Полноприводный пикап
+              - generic [ref=e604]:
+                - text: от
+                - generic [ref=e605]: 3 122 000
+                - text: ₽
+            - list [ref=e606]:
+              - listitem [ref=e607]:
+                - generic [ref=e611]:
+                  - text: Кредит от
+                  - generic [ref=e612]: 0,01%
+                  - text: — субсидированная ставка
+              - listitem [ref=e613]:
+                - generic [ref=e617]: Подключаемый полный привод 2H/4H/4L
+              - listitem [ref=e618]:
+                - generic [ref=e622]: Грузоподъёмность до 900 кг
+              - listitem [ref=e623]:
+                - generic [ref=e627]: 5 пассажирских мест
+            - generic [ref=e628]:
+              - link "Узнать цену" [ref=e629] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=e631] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=e633] [cursor=pointer]:
+                - /url: "#callback"
+          - button "Характеристики все параметры модели" [ref=e636] [cursor=pointer]:
+            - generic [ref=e640]: Характеристики
+            - generic [ref=e641]: все параметры модели
+          - generic [ref=e647]:
+            - link [ref=e649] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st8/gallery/raw/1.webp
+              - img "SOLLERS ST8 | СТ8 — фото 1" [ref=e651]
+            - link [ref=e653] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st8/gallery/raw/2.webp
+              - img "SOLLERS ST8 | СТ8 — фото 2" [ref=e655]
+            - link [ref=e657] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st8/gallery/raw/3.webp
+              - img "SOLLERS ST8 | СТ8 — фото 3" [ref=e659]
+            - link [ref=e661] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st8/gallery/raw/4.webp
+              - img "SOLLERS ST8 | СТ8 — фото 4" [ref=e663]
+            - link [ref=e665] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st8/gallery/raw/5.webp
+              - img "SOLLERS ST8 | СТ8 — фото 5" [ref=e667]
+            - link [ref=e669] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st8/gallery/raw/6.webp
+              - img "SOLLERS ST8 | СТ8 — фото 6" [ref=e671]
+            - link [ref=e673] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st8/gallery/raw/7.webp
+              - img "SOLLERS ST8 | СТ8 — фото 7" [ref=e675]
+            - link [ref=e677] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st8/gallery/raw/8.webp
+              - img "SOLLERS ST8 | СТ8 — фото 8" [ref=e679]
+        - article [ref=e683]:
+          - generic [ref=e685]:
+            - generic [ref=e686]:
+              - img "SOLLERS ST9 | СТ9"
+            - generic [ref=e687]:
+              - button "Белый" [ref=e688] [cursor=pointer]
+              - button "Серебристый (металлик)" [ref=e690] [cursor=pointer]
+              - button "Красный" [ref=e692] [cursor=pointer]
+              - button "Тёмно-серый (металлик)" [ref=e694] [cursor=pointer]
+              - button "Тёмно-синий" [ref=e696] [cursor=pointer]
+              - button "Чёрный (металлик)" [ref=e698] [cursor=pointer]
+            - generic [ref=e700]: Чёрный (металлик)
+          - generic [ref=e701]:
+            - generic [ref=e702]:
+              - heading "SOLLERS ST9 | СТ9 НОВЫЙ" [level=3] [ref=e703]:
+                - text: SOLLERS ST9 | СТ9
+                - generic [ref=e704]: НОВЫЙ
+              - paragraph [ref=e705]: Пикап с двойной кабиной
+              - generic [ref=e707]:
+                - text: от
+                - generic [ref=e708]: 3 361 000
+                - text: ₽
+              - link "В наличии 11 автомобилей" [ref=e709] [cursor=pointer]:
+                - /url: http://promo.sollers-avilon.ru.test/#stock-st9
+            - list [ref=e714]:
+              - listitem [ref=e715]:
+                - generic [ref=e719]:
+                  - text: Выгода до
+                  - generic [ref=e720]: 300 000
+                  - text: ₽
+              - listitem [ref=e721]:
+                - generic [ref=e725]:
+                  - text: Платёж от
+                  - generic [ref=e726]: 28 008
+                  - text: ₽/мес.
+              - listitem [ref=e727]:
+                - generic [ref=e731]:
+                  - text: Кредит от
+                  - generic [ref=e732]: 0,01%
+                  - text: — субсидированная ставка
+              - listitem [ref=e733]:
+                - generic [ref=e737]: Грузовая платформа 1 520×1 590 мм
+              - listitem [ref=e738]:
+                - generic [ref=e742]: Грузоподъёмность до 980 кг
+              - listitem [ref=e743]:
+                - generic [ref=e747]: 5 пассажирских мест
+            - generic [ref=e748]:
+              - link "Узнать цену" [ref=e749] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=e751] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=e753] [cursor=pointer]:
+                - /url: "#callback"
+          - button "Характеристики все параметры модели" [ref=e756] [cursor=pointer]:
+            - generic [ref=e760]: Характеристики
+            - generic [ref=e761]: все параметры модели
+          - generic [ref=e767]:
+            - link [ref=e769] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/1.webp
+              - img "SOLLERS ST9 | СТ9 — фото 1" [ref=e771]
+            - link [ref=e773] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/2.webp
+              - img "SOLLERS ST9 | СТ9 — фото 2" [ref=e775]
+            - link [ref=e777] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/3.webp
+              - img "SOLLERS ST9 | СТ9 — фото 3" [ref=e779]
+            - link [ref=e781] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/4.webp
+              - img "SOLLERS ST9 | СТ9 — фото 4" [ref=e783]
+            - link [ref=e785] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/5.webp
+              - img "SOLLERS ST9 | СТ9 — фото 5" [ref=e787]
+            - link [ref=e789] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/6.webp
+              - img "SOLLERS ST9 | СТ9 — фото 6" [ref=e791]
+            - link [ref=e793] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/st9/gallery/raw/7.webp
+              - img "SOLLERS ST9 | СТ9 — фото 7" [ref=e795]
+        - article [ref=e799]:
+          - generic [ref=e801]:
+            - generic [ref=e802]:
+              - button "Бортовой с тентом" [ref=e803] [cursor=pointer]
+              - button "Изотермический фургон" [ref=e804] [cursor=pointer]
+              - button "Промтоварный фургон" [ref=e805] [cursor=pointer]
+            - img "SOLLERS Argo | Арго — Бортовой с тентом" [ref=e807]
+            - generic [ref=e808]:
+              - button "Стандартная" [ref=e809] [cursor=pointer]
+              - button "Удлинённая" [ref=e810] [cursor=pointer]
+          - generic [ref=e811]:
+            - generic [ref=e812]:
+              - heading "SOLLERS Argo | Арго" [level=3] [ref=e813]
+              - paragraph [ref=e814]: Малотоннажный грузовик с надстройками
+              - generic [ref=e816]:
+                - text: от
+                - generic [ref=e817]: 2 499 300
+                - text: ₽
+              - link "В наличии 2 автомобиля" [ref=e818] [cursor=pointer]:
+                - /url: http://promo.sollers-avilon.ru.test/#stock-argo
+            - list [ref=e823]:
+              - listitem [ref=e824]:
+                - generic [ref=e828]:
+                  - text: Выгода до
+                  - generic [ref=e829]: 380 000
+                  - text: ₽
+              - listitem [ref=e830]:
+                - generic [ref=e834]:
+                  - text: Платёж от
+                  - generic [ref=e835]: 20 828
+                  - text: ₽/мес.
+              - listitem [ref=e836]:
+                - generic [ref=e840]: Надстройки под задачу
+              - listitem [ref=e841]:
+                - generic [ref=e845]: Высокая грузоподъёмность
+              - listitem [ref=e846]:
+                - generic [ref=e850]: Надёжная рамная конструкция
+            - generic [ref=e851]:
+              - link "Узнать цену" [ref=e852] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=e854] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Лизинг" [ref=e856] [cursor=pointer]:
+                - /url: "#callback"
+          - button "Характеристики все параметры модели" [ref=e859] [cursor=pointer]:
+            - generic [ref=e863]: Характеристики
+            - generic [ref=e864]: все параметры модели
+          - generic [ref=e870]:
+            - link [ref=e872] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/1.webp
+              - img "SOLLERS Argo | Арго — фото 1" [ref=e874]
+            - link [ref=e876] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/2.webp
+              - img "SOLLERS Argo | Арго — фото 2" [ref=e878]
+            - link [ref=e880] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/3.webp
+              - img "SOLLERS Argo | Арго — фото 3" [ref=e882]
+            - link [ref=e884] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/4.webp
+              - img "SOLLERS Argo | Арго — фото 4" [ref=e886]
+            - link [ref=e888] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/5.webp
+              - img "SOLLERS Argo | Арго — фото 5" [ref=e890]
+            - link [ref=e892] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/6.webp
+              - img "SOLLERS Argo | Арго — фото 6" [ref=e894]
+            - link [ref=e896] [cursor=pointer]:
+              - /url: http://promo.sollers-avilon.ru.test/data/img/range/argo/gallery/raw/7.webp
+              - img "SOLLERS Argo | Арго — фото 7" [ref=e898]
+    - generic [ref=e901]:
+      - generic [ref=e902]:
+        - heading "Автомобили в наличии" [level=2] [ref=e903]
+        - paragraph [ref=e904]: Актуальный сток SOLLERS в АВИЛОН — цены и комплектации на сегодня
+      - navigation "Фильтр стока по моделям" [ref=e906]:
+        - button "Все 57" [ref=e907] [cursor=pointer]:
+          - text: Все
+          - generic [ref=e908]: "57"
+        - button "SF5 2" [ref=e909] [cursor=pointer]:
+          - text: SF5
+          - generic [ref=e910]: "2"
+        - button "Atlant 14" [ref=e911] [cursor=pointer]:
+          - text: Atlant
+          - generic [ref=e912]: "14"
+        - button "SF1 25" [active] [ref=e913] [cursor=pointer]:
+          - text: SF1
+          - generic [ref=e914]: "25"
+        - button "SP7 3" [ref=e915] [cursor=pointer]:
+          - text: SP7
+          - generic [ref=e916]: "3"
+        - button "ST9 11" [ref=e917] [cursor=pointer]:
+          - text: ST9
+          - generic [ref=e918]: "11"
+        - button "Argo 2" [ref=e919] [cursor=pointer]:
+          - text: Argo
+          - generic [ref=e920]: "2"
+      - generic [ref=e921]:
+        - article [ref=e1374]:
+          - link "SOLLERS SF1 — фотографии" [ref=e1376] [cursor=pointer]:
+            - /url: https://avatars.avto.ru/get-cme-media/16501878/edbec5a0-99a5-4df9-9bce-d1a88bfdf209/optimize
+            - img "SOLLERS SF1, Базовая" [ref=e1378]
+          - generic [ref=e1379]:
+            - heading "SOLLERS SF1 2026" [level=3] [ref=e1380]:
+              - text: SOLLERS SF1
+              - generic [ref=e1381]: "2026"
+            - paragraph [ref=e1382]: Базовая
+            - paragraph [ref=e1383]:
+              - generic [ref=e1384]: VIN
+              - generic [ref=e1385]: EBEVXSF1XT00*****
+            - list [ref=e1386]:
+              - listitem [ref=e1387]:
+                - generic [ref=e1388]: Двигатель
+                - generic [ref=e1389]: 1.5 л, 136 л.с., бензин
+              - listitem [ref=e1390]:
+                - generic [ref=e1391]: КПП
+                - generic [ref=e1392]: Механическая
+              - listitem [ref=e1393]:
+                - generic [ref=e1394]: Привод
+                - generic [ref=e1395]: Задний
+              - listitem [ref=e1396]:
+                - generic [ref=e1397]: Кузов
+                - generic [ref=e1398]: Цельнометаллический фургон
+              - listitem [ref=e1399]:
+                - generic [ref=e1400]: Цвет
+                - generic [ref=e1401]: Белый
+            - generic [ref=e1402]: 2 150 000 ₽
+            - link "Узнать цену" [ref=e1405] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1408]:
+          - link "SOLLERS SF1 — фотографии" [ref=e1410] [cursor=pointer]:
+            - /url: https://avatars.avto.ru/get-cme-media/16501878/edbec5a0-99a5-4df9-9bce-d1a88bfdf209/optimize
+            - img "SOLLERS SF1, Базовая" [ref=e1412]
+          - generic [ref=e1413]:
+            - heading "SOLLERS SF1 2026" [level=3] [ref=e1414]:
+              - text: SOLLERS SF1
+              - generic [ref=e1415]: "2026"
+            - paragraph [ref=e1416]: Базовая
+            - paragraph [ref=e1417]:
+              - generic [ref=e1418]: VIN
+              - generic [ref=e1419]: EBEVXSF1XT00*****
+            - list [ref=e1420]:
+              - listitem [ref=e1421]:
+                - generic [ref=e1422]: Двигатель
+                - generic [ref=e1423]: 1.5 л, 136 л.с., бензин
+              - listitem [ref=e1424]:
+                - generic [ref=e1425]: КПП
+                - generic [ref=e1426]: Механическая
+              - listitem [ref=e1427]:
+                - generic [ref=e1428]: Привод
+                - generic [ref=e1429]: Задний
+              - listitem [ref=e1430]:
+                - generic [ref=e1431]: Кузов
+                - generic [ref=e1432]: Цельнометаллический фургон
+              - listitem [ref=e1433]:
+                - generic [ref=e1434]: Цвет
+                - generic [ref=e1435]: Белый
+            - generic [ref=e1436]: 2 150 000 ₽
+            - link "Узнать цену" [ref=e1439] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1442]:
+          - link "SOLLERS SF1 — фотографии" [ref=e1444] [cursor=pointer]:
+            - /url: https://avatars.avto.ru/get-cme-media/16501878/edbec5a0-99a5-4df9-9bce-d1a88bfdf209/optimize
+            - img "SOLLERS SF1, Базовая" [ref=e1446]
+          - generic [ref=e1447]:
+            - heading "SOLLERS SF1 2026" [level=3] [ref=e1448]:
+              - text: SOLLERS SF1
+              - generic [ref=e1449]: "2026"
+            - paragraph [ref=e1450]: Базовая
+            - paragraph [ref=e1451]:
+              - generic [ref=e1452]: VIN
+              - generic [ref=e1453]: EBEVXSF1XT00*****
+            - list [ref=e1454]:
+              - listitem [ref=e1455]:
+                - generic [ref=e1456]: Двигатель
+                - generic [ref=e1457]: 1.5 л, 136 л.с., бензин
+              - listitem [ref=e1458]:
+                - generic [ref=e1459]: КПП
+                - generic [ref=e1460]: Механическая
+              - listitem [ref=e1461]:
+                - generic [ref=e1462]: Привод
+                - generic [ref=e1463]: Задний
+              - listitem [ref=e1464]:
+                - generic [ref=e1465]: Кузов
+                - generic [ref=e1466]: Цельнометаллический фургон
+              - listitem [ref=e1467]:
+                - generic [ref=e1468]: Цвет
+                - generic [ref=e1469]: Белый
+            - generic [ref=e1470]: 2 150 000 ₽
+            - link "Узнать цену" [ref=e1473] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1476]:
+          - link "SOLLERS SF1 — фотографии" [ref=e1478] [cursor=pointer]:
+            - /url: https://avatars.avto.ru/get-cme-media/16501878/edbec5a0-99a5-4df9-9bce-d1a88bfdf209/optimize
+            - img "SOLLERS SF1, Базовая" [ref=e1480]
+          - generic [ref=e1481]:
+            - heading "SOLLERS SF1 2026" [level=3] [ref=e1482]:
+              - text: SOLLERS SF1
+              - generic [ref=e1483]: "2026"
+            - paragraph [ref=e1484]: Базовая
+            - paragraph [ref=e1485]:
+              - generic [ref=e1486]: VIN
+              - generic [ref=e1487]: EBEVXSF1XT00*****
+            - list [ref=e1488]:
+              - listitem [ref=e1489]:
+                - generic [ref=e1490]: Двигатель
+                - generic [ref=e1491]: 1.5 л, 136 л.с., бензин
+              - listitem [ref=e1492]:
+                - generic [ref=e1493]: КПП
+                - generic [ref=e1494]: Механическая
+              - listitem [ref=e1495]:
+                - generic [ref=e1496]: Привод
+                - generic [ref=e1497]: Задний
+              - listitem [ref=e1498]:
+                - generic [ref=e1499]: Кузов
+                - generic [ref=e1500]: Цельнометаллический фургон
+              - listitem [ref=e1501]:
+                - generic [ref=e1502]: Цвет
+                - generic [ref=e1503]: Белый
+            - generic [ref=e1504]: 2 150 000 ₽
+            - link "Узнать цену" [ref=e1507] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1510]:
+          - link "SOLLERS SF1 — фотографии" [ref=e1512] [cursor=pointer]:
+            - /url: https://avatars.avto.ru/get-cme-media/16979590/dde74b89-e876-4db1-a4fa-6609dd8f69fa/optimize
+            - img "SOLLERS SF1, Базовая" [ref=e1514]
+          - generic [ref=e1515]:
+            - heading "SOLLERS SF1 2026" [level=3] [ref=e1516]:
+              - text: SOLLERS SF1
+              - generic [ref=e1517]: "2026"
+            - paragraph [ref=e1518]: Базовая
+            - paragraph [ref=e1519]:
+              - generic [ref=e1520]: VIN
+              - generic [ref=e1521]: EBEVXSF1XT00*****
+            - list [ref=e1522]:
+              - listitem [ref=e1523]:
+                - generic [ref=e1524]: Двигатель
+                - generic [ref=e1525]: 1.5 л, 136 л.с., бензин
+              - listitem [ref=e1526]:
+                - generic [ref=e1527]: КПП
+                - generic [ref=e1528]: Механическая
+              - listitem [ref=e1529]:
+                - generic [ref=e1530]: Привод
+                - generic [ref=e1531]: Задний
+              - listitem [ref=e1532]:
+                - generic [ref=e1533]: Кузов
+                - generic [ref=e1534]: Цельнометаллический фургон
+              - listitem [ref=e1535]:
+                - generic [ref=e1536]: Цвет
+                - generic [ref=e1537]: Серый
+            - generic [ref=e1538]: 2 176 000 ₽
+            - link "Узнать цену" [ref=e1541] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1544]:
+          - link "SOLLERS SF1 — фотографии" [ref=e1546] [cursor=pointer]:
+            - /url: https://avatars.avto.ru/get-cme-media/20442986/b4110d3b-a2de-45aa-b5e1-9d424d042391/optimize
+            - img "SOLLERS SF1, Базовая" [ref=e1548]
+          - generic [ref=e1549]:
+            - heading "SOLLERS SF1 2026" [level=3] [ref=e1550]:
+              - text: SOLLERS SF1
+              - generic [ref=e1551]: "2026"
+            - paragraph [ref=e1552]: Базовая
+            - paragraph [ref=e1553]:
+              - generic [ref=e1554]: VIN
+              - generic [ref=e1555]: EBEVXSF1XT00*****
+            - list [ref=e1556]:
+              - listitem [ref=e1557]:
+                - generic [ref=e1558]: Двигатель
+                - generic [ref=e1559]: 1.5 л, 136 л.с., бензин
+              - listitem [ref=e1560]:
+                - generic [ref=e1561]: КПП
+                - generic [ref=e1562]: Механическая
+              - listitem [ref=e1563]:
+                - generic [ref=e1564]: Привод
+                - generic [ref=e1565]: Задний
+              - listitem [ref=e1566]:
+                - generic [ref=e1567]: Кузов
+                - generic [ref=e1568]: Цельнометаллический фургон
+              - listitem [ref=e1569]:
+                - generic [ref=e1570]: Цвет
+                - generic [ref=e1571]: Серебряный
+            - generic [ref=e1572]: 2 176 000 ₽
+            - link "Узнать цену" [ref=e1575] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1578]:
+          - link "SOLLERS SF1 — фотографии" [ref=e1580] [cursor=pointer]:
+            - /url: https://avatars.avto.ru/get-cme-media/20291002/6c7e15d4-8caf-48a9-b2bf-0160aaf56c36/optimize
+            - img "SOLLERS SF1, Базовая" [ref=e1582]
+          - generic [ref=e1583]:
+            - heading "SOLLERS SF1 2026" [level=3] [ref=e1584]:
+              - text: SOLLERS SF1
+              - generic [ref=e1585]: "2026"
+            - paragraph [ref=e1586]: Базовая
+            - paragraph [ref=e1587]:
+              - generic [ref=e1588]: VIN
+              - generic [ref=e1589]: EBEVXSF1XT00*****
+            - list [ref=e1590]:
+              - listitem [ref=e1591]:
+                - generic [ref=e1592]: Двигатель
+                - generic [ref=e1593]: 1.5 л, 136 л.с., бензин
+              - listitem [ref=e1594]:
+                - generic [ref=e1595]: КПП
+                - generic [ref=e1596]: Механическая
+              - listitem [ref=e1597]:
+                - generic [ref=e1598]: Привод
+                - generic [ref=e1599]: Задний
+              - listitem [ref=e1600]:
+                - generic [ref=e1601]: Кузов
+                - generic [ref=e1602]: Цельнометаллический фургон
+              - listitem [ref=e1603]:
+                - generic [ref=e1604]: Цвет
+                - generic [ref=e1605]: Серый
+            - generic [ref=e1606]: 2 176 000 ₽
+            - link "Узнать цену" [ref=e1609] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1612]:
+          - link "SOLLERS SF1 — фотографии" [ref=e1614] [cursor=pointer]:
+            - /url: https://avatars.avto.ru/get-cme-media/20442986/ffafd320-5a4c-44cd-9e8a-bcf452cacfc6/optimize
+            - img "SOLLERS SF1, Базовая" [ref=e1616]
+          - generic [ref=e1617]:
+            - heading "SOLLERS SF1 2026" [level=3] [ref=e1618]:
+              - text: SOLLERS SF1
+              - generic [ref=e1619]: "2026"
+            - paragraph [ref=e1620]: Базовая
+            - paragraph [ref=e1621]:
+              - generic [ref=e1622]: VIN
+              - generic [ref=e1623]: EBEVXSF1XT00*****
+            - list [ref=e1624]:
+              - listitem [ref=e1625]:
+                - generic [ref=e1626]: Двигатель
+                - generic [ref=e1627]: 1.5 л, 136 л.с., бензин
+              - listitem [ref=e1628]:
+                - generic [ref=e1629]: КПП
+                - generic [ref=e1630]: Механическая
+              - listitem [ref=e1631]:
+                - generic [ref=e1632]: Привод
+                - generic [ref=e1633]: Задний
+              - listitem [ref=e1634]:
+                - generic [ref=e1635]: Кузов
+                - generic [ref=e1636]: Цельнометаллический фургон
+              - listitem [ref=e1637]:
+                - generic [ref=e1638]: Цвет
+                - generic [ref=e1639]: Синий
+            - generic [ref=e1640]: 2 176 000 ₽
+            - link "Узнать цену" [ref=e1643] [cursor=pointer]:
+              - /url: "#callback"
+      - button "Показать ещё" [ref=e1176] [cursor=pointer]
+      - paragraph [ref=e1178]: Наличие и цены обновляются автоматически. Актуальную стоимость и условия уточняйте у менеджеров отдела продаж.
+    - generic [ref=e1180]:
+      - generic [ref=e1181]:
+        - heading "Акции и предложения" [level=2] [ref=e1182]
+        - paragraph [ref=e1183]: Выгодные программы покупки SOLLERS в АВИЛОН
+      - link "3 × ТО в подарок SOLLERS 3 × ТО в подарок* Три технических обслуживания без оплаты работ и деталей при покупке SF5 или Argo у официального дилера SOLLERS." [ref=e1186] [cursor=pointer]:
+        - /url: "#callback"
+        - generic:
+          - generic:
+            - img "3 × ТО в подарок"
+        - img "SOLLERS" [ref=e1188]
+        - generic [ref=e1189]:
+          - generic [ref=e1190]: 3 × ТО в подарок*
+          - generic [ref=e1192]: Три технических обслуживания без оплаты работ и деталей при покупке SF5 или Argo у официального дилера SOLLERS.
+    - generic [ref=e1196]:
+      - generic [ref=e1197]: Индивидуальная поездка
+      - generic [ref=e1198]: Не нужно ждать — просто запишитесь на тест-драйв онлайн
+      - link "Выбрать дату и время" [ref=e1200] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=e1203]:
+      - generic [ref=e1204]:
+        - heading "Преимущества Sollers Авилон" [level=2] [ref=e1205]
+        - paragraph [ref=e1206]: Официальный дилер SOLLERS в Москве
+      - generic [ref=e1207]:
+        - link "Минивэны и фургоны в наличии" [ref=e1208] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Полная линейка SOLLERS" [ref=e1211] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Выгодный обмен автомобиля" [ref=e1214] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Привилегии официального дилера" [ref=e1217] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Кредит и лизинг для бизнеса" [ref=e1220] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Гарантия официального дилера" [ref=e1223] [cursor=pointer]:
+          - /url: "#callback"
+    - generic [ref=e1227]:
+      - generic [ref=e1228]:
+        - heading "Способы покупки" [level=2] [ref=e1229]
+        - paragraph [ref=e1230]: Трейд-ин, кредит и лизинг на выгодных условиях
+      - generic [ref=e1231]:
+        - article [ref=e1233]:
+          - generic [ref=e1237]:
+            - heading "Трейд-ин" [level=3] [ref=e1238]
+            - list [ref=e1240]:
+              - listitem [ref=e1241]: Бесплатная диагностика и оценка за 30 минут
+              - listitem [ref=e1242]:
+                - text: "Бонус за трейд-ин: выгода до"
+                - generic [ref=e1243]: 500 000
+                - text: ₽**
+            - link "Получить оценку" [ref=e1245] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1248]:
+          - generic [ref=e1252]:
+            - heading "Кредит" [level=3] [ref=e1253]
+            - list [ref=e1255]:
+              - listitem [ref=e1256]:
+                - generic [ref=e1257]: 0%
+                - text: переплат по программам дилера
+              - listitem [ref=e1258]: Первоначальный взнос от 10%
+              - listitem [ref=e1259]: Срок до 84 месяцев
+            - link "Рассчитать условия" [ref=e1261] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=e1264]:
+          - generic [ref=e1268]:
+            - heading "Лизинг" [level=3] [ref=e1269]
+            - list [ref=e1271]:
+              - listitem [ref=e1272]:
+                - text: "«Бонус за лизинг»: выгода до"
+                - generic [ref=e1273]: 500 000
+                - text: ₽***
+              - listitem [ref=e1274]: Лизинг с авансом от 10%
+              - listitem [ref=e1275]: Лизинговый платёж без НДС на затраты организации
+            - link "Рассчитать условия" [ref=e1277] [cursor=pointer]:
+              - /url: "#callback"
+    - generic [ref=e1282]:
+      - generic [ref=e1283]:
+        - generic [ref=e1284]: Sollers Авилон
+        - generic [ref=e1285]: Официальный дилер SOLLERS в Москве
+      - list [ref=e1286]:
+        - listitem [ref=e1287]:
+          - link "+7 (495) 730-00-44" [ref=e1291] [cursor=pointer]:
+            - /url: tel:+74957300044
+        - listitem [ref=e1292]:
+          - generic [ref=e1297]: Котельники, Белая Дача, Коммерческий проезд, 10
+        - listitem [ref=e1298]:
+          - generic [ref=e1303]: "Пн–Вс: 09:00–21:40"
+      - generic [ref=e1304]:
+        - generic [ref=e1305]: Услуги
+        - generic [ref=e1306]:
+          - generic [ref=e1307]: Продажа
+          - generic [ref=e1308]: Трейд-ин
+          - generic [ref=e1309]: Кредит
+          - generic [ref=e1310]: Лизинг
+      - link "Получить консультацию" [ref=e1311] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=e1316]:
+    - link [ref=e1318] [cursor=pointer]:
+      - /url: http://promo.sollers-avilon.ru.test/
+      - img "SOLLERS" [ref=e1319]
+    - generic [ref=e1321]:
+      - link "ВКонтакте" [ref=e1322] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=e1325] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=e1328] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=e1331]:
+      - link "Модельный ряд" [ref=e1333] [cursor=pointer]:
+        - /url: "#range"
+      - link "Преимущества" [ref=e1335] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=e1337] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=e1339] [cursor=pointer]:
+        - /url: "#map"
+    - generic [ref=e1340]: © 2026 Sollers Авилон. Все права защищены
+    - generic [ref=e1342]:
+      - link "Политика конфиденциальности" [ref=e1343] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=e1344] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=e1345] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/consent/
+      - link "Правовая информация" [ref=e1346] [cursor=pointer]:
+        - /url: http://promo.sollers-avilon.ru.test/legal-info/
+    - paragraph [ref=e1348]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.*Программа «3 × ТО в подарок» реализуется ООО «СОЛЛЕРС Карго» совместно с официальными дилерами SOLLERS. Программа действует для покупателей автомобилей Sollers SF4 (СФ4), Sollers SF5 (СФ5), Sollers SF7 (СФ7) и Sollers Argo (Арго) и позволяет в течение трёх лет или до наступления даты четвёртого ТО в соответствии с графиком и регламентом сервисного обслуживания автомобилей Sollers (в зависимости от того, какое из условий наступит ранее) произвести техническое обслуживание у официального дилера SOLLERS без оплаты работ и замены деталей, предусмотренных регламентом проведения работ ООО «СОЛЛЕРС Карго» в рамках технического обслуживания, при условии соблюдения всех условий программы, в том числе прохождения ТО-2 в соответствии с регламентом по коммерческой стоимости у любого официального дилера Sollers. Несовместима с другими маркетинговыми программами, кроме «Бонус за лизинг», «Бонус за трейд-ин». Предложение ограничено, действует по 31.08.2026, не является публичной офертой и может быть изменено в любое время. Подробности программы и наличие а/м — у вашего дилера и на www.sollers-cargo.ru.**Выгода при покупке автомобилей Sollers SF5 (СФ5) Автобусы и модификаций на его основе по программе «Бонус за трейд-ин», реализуемой дистрибьютором совместно с официальными дилерами. Указанная программа позволяет получить выгоду при покупке автомобиля у официального дилера Sollers в размере до 500 000 рублей с НДС при сдаче дилеру по системе трейд-ин другого подержанного автомобиля. Совместима только с программой «3×ТО в подарок». Предложение ограничено, не является офертой и действует по 31.08.2026 г. Подробности и актуальную информацию об условиях приобретения автомобиля уточняйте у официальных дилеров Sollers.***Выгода при покупке автомобилей под маркой Sollers TR (ТР) и Sollers SF5 (СФ5) в модификации автобус по программе «Бонус за лизинг», реализуемой дистрибьютором совместно с официальными дилерами. Указанная программа позволяет получить выгоду до 500 000 ₽ при приобретении автомобилей в лизинг через лизинговые компании-партнёры. Список лизинговых компаний-партнёров может различаться в зависимости от региона дилера — уточняйте у вашего дилера. Предложение ограничено, не является офертой и действует по 31.08.2026 на автомобили Sollers SF4 (СФ4), Sollers SF5 (СФ5), Sollers Argo (Арго), Sollers SP7 (СП7), Sollers ST6 (СТ6), Sollers ST8 (СТ8), Sollers ST9 (СТ9) и Sollers TR50 (ТР50), Sollers TR80 (ТР80), Sollers TR120 (ТР120), Sollers TR180 (ТР180). ООО «СОЛЛЕРС Карго» сохраняет за собой право вносить изменения в указанные предложения в любое время. Подробности, актуальные условия и наличие а/м — у дилера и на www.sollers-cargo.ru.
+  - generic [ref=e1351]:
+    - generic [ref=e1353]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=e1354] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=e1356] [cursor=pointer]

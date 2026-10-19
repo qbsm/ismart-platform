@@ -1,0 +1,56 @@
+- generic [active] [ref=f18e1]:
+  - link "Перейти к контенту" [ref=f18e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f18e3]:
+    - banner [ref=f18e4]:
+      - generic [ref=f18e5]:
+        - link [ref=f18e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f18e8]
+        - navigation "Основное меню" [ref=f18e9]:
+          - link "Главная" [ref=f18e11] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/
+          - link "О компании" [ref=f18e13] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/about/
+          - link "Шины" [ref=f18e15] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/tires/
+          - link "Расширенная гарантия" [ref=f18e17] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/warranty/
+          - link "Где купить" [ref=f18e19] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/buy/
+    - generic [ref=f18e21]:
+      - generic [ref=f18e23]:
+        - generic [ref=f18e24]: "4"
+        - generic [ref=f18e27]: "4"
+      - heading "Страница не найдена" [level=1] [ref=f18e29]:
+        - generic [ref=f18e30]: Страница
+        - generic [ref=f18e31]: не найдена
+      - generic [ref=f18e32]: "Такой страницы на сайте нет: её могли удалить или в адресе опечатка."
+      - generic [ref=f18e34]:
+        - link "В каталог шин" [ref=f18e35] [cursor=pointer]:
+          - /url: /tires
+        - link "Где купить" [ref=f18e36] [cursor=pointer]:
+          - /url: /buy
+    - generic [ref=f18e38]:
+      - link [ref=f18e41] [cursor=pointer]:
+        - /url: https://kumho-tires.ru/
+        - img "Logo" [ref=f18e42]
+      - generic [ref=f18e43]:
+        - link "Главная" [ref=f18e45] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/
+        - link "О компании" [ref=f18e47] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/about/
+        - link "Шины" [ref=f18e49] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires/
+        - link "Расширенная гарантия" [ref=f18e51] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/warranty/
+        - link "Где купить" [ref=f18e53] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/buy/
+      - generic [ref=f18e54]:
+        - generic [ref=f18e55]: Права на сайт принадлежат ООО «Сталкер» (ИНН 7719614965, ОГРН 1067761249654).
+        - generic [ref=f18e56]: © 2026 Север Авто. Все права защищены
+      - generic [ref=f18e57]:
+        - link "Политика обработки персональных данных" [ref=f18e58] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/data/docs/personal-data-policy.pdf
+        - link "Политика использования cookie-файлов" [ref=f18e59] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/cookies-policy/

@@ -1,33 +1,18 @@
-RewriteEngine On
-RewriteBase /
+# Защита при ошибочной настройке DocumentRoot на корень проекта вместо public/
+# Если DocumentRoot указан на эту папку, доступ к чувствительным путям запрещён.
 
-# Force HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+<IfModule mod_authz_core.c>
+    <FilesMatch "^\\.env">
+        Require all denied
+    </FilesMatch>
+    <FilesMatch "^(composer\\.(json|lock)|package(-lock)?\\.json)$">
+        Require all denied
+    </FilesMatch>
+</IfModule>
 
-# Redirect www to non-www
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
-
-# URL normalization — remove multiple slashes
-RewriteCond %{THE_REQUEST} \s/+([^?]\S*)\sHTTP
-RewriteRule ^.*$ /%1 [R=301,L]
-
-RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
-RewriteRule . %1/%2 [R=301,L]
-
-# Add trailing slash (except files)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_URI} !/$
-RewriteRule ^(.*)$ /$1/ [R=301,L]
-
-# Redirect /index to /
-RewriteRule ^index/?$ / [R=301,L]
-
-# Route all requests to index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [QSA,L]
-
-# UTF-8
-AddDefaultCharset UTF-8
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^\.env(\..*)?$ - [F,L]
+    RewriteRule ^\.git(/|$) - [F,L]
+    RewriteRule ^(config|src|tools|cache|logs|vendor|docs|assets|data)/ - [F,L]
+</IfModule>

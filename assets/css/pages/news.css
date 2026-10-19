@@ -1,0 +1,143 @@
+.news-detail__article {
+  padding-block: 2rem;
+}
+
+.news-detail__breadcrumb {
+  font-size: 0.9em;
+  margin-block-end: 1.5rem;
+}
+
+.news-detail__breadcrumb a {
+  color: var(--color-5);
+}
+
+.news-detail__breadcrumb-sep {
+  margin-inline: 0.25rem;
+  opacity: 0.6;
+}
+
+.news-detail__cover-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 2rem;
+  overflow: hidden;
+  margin-block-end: 1.5rem;
+}
+
+.news-detail__cover {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.news-detail__meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1rem;
+}
+
+.news-detail__hex {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  border-radius: 0.2rem;
+}
+
+.news-detail__title {
+  margin-block-end: 1rem;
+}
+
+.news-detail__lead {
+  font-size: 1.1em;
+  opacity: 0.9;
+  margin-block-end: 1.5rem;
+}
+
+.news-detail__body {
+  line-height: 1.6;
+}
+
+.news-detail__body p {
+  margin-block-end: 1rem;
+}
+
+.news-detail__body p:last-child {
+  margin-block-end: 0;
+}
+
+.news-detail__body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.2rem;
+  margin-block: 2rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.news-detail__body img:hover {
+  opacity: 0.85;
+}
+
+.news-detail__body a.glightbox {
+  display: block;
+}
+
+.news-detail__body figure {
+  margin: 2rem 0;
+}
+
+.news-detail__body figure img {
+  margin-block: 0;
+}
+
+.news-detail__body figcaption {
+  font-size: 0.85em;
+  color: var(--color-5);
+  margin-block-start: 0.6rem;
+  text-align: center;
+}
+
+.news-detail__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-block: 2rem;
+}
+
+.news-detail__gallery img {
+  margin-block: 0;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.news-detail__gallery--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (--xs) {
+  .news-detail__gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .news-detail__gallery--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.news-detail__body blockquote {
+  border-left: 3px solid var(--color-3);
+  padding-left: 2rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: var(--color-5);
+}
+
+.news-detail__body h3 {
+  margin-block: 2rem 1rem;
+  font-weight: 700;
+}

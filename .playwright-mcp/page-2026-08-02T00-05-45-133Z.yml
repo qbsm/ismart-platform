@@ -1,0 +1,142 @@
+- generic [active] [ref=f9e1]:
+  - link "Перейти к контенту" [ref=f9e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f9e3]:
+    - banner [ref=f9e4]:
+      - generic [ref=f9e5]:
+        - link [ref=f9e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f9e8]
+        - generic [ref=f9e9]:
+          - generic [ref=f9e10]:
+            - button "Забронировать" [ref=f9e11] [cursor=pointer]
+            - button "Открыть меню" [ref=f9e12] [cursor=pointer]
+          - generic [ref=f9e17]:
+            - generic [ref=f9e18]:
+              - generic [ref=f9e19]: Приложение
+              - generic [ref=f9e20]: italy touch
+            - link "Скачать" [ref=f9e21] [cursor=pointer]:
+              - /url: https://redirect.appmetrica.yandex.com/serve/966450630770056189
+    - main [ref=f9e23]:
+      - generic [ref=f9e24]:
+        - generic [ref=f9e26]:
+          - img "Bist meat & pasta bar" [ref=f9e28]
+          - generic:
+            - img "Bist meat & pasta bar"
+          - generic:
+            - img "Bist meat & pasta bar"
+          - generic:
+            - img "Bist meat & pasta bar"
+        - generic [ref=f9e37]:
+          - heading "Bist" [level=1] [ref=f9e38]
+          - generic [ref=f9e39]:
+            - paragraph [ref=f9e40]: Санкт-Петербург, «Андреевский двор», Большой пр-т В.О. 18 А
+            - link "+7 (931) 994-75-15" [ref=f9e41] [cursor=pointer]:
+              - /url: tel:+79319947515
+          - generic [ref=f9e42]:
+            - generic [ref=f9e43]: "Часы работы:"
+            - generic [ref=f9e46]: "Пн-Чт: 9:00–23:00"
+            - generic [ref=f9e47]: "Пт: 9:00–01:00"
+            - generic [ref=f9e48]: "Сб: 10:00–01:00"
+            - generic [ref=f9e49]: "Вс: 10:00–23:00"
+          - generic [ref=f9e50]:
+            - link "Меню" [ref=f9e51] [cursor=pointer]:
+              - /url: https://italyrestaurants.ru/bistmenu
+            - button "Забронировать" [ref=f9e52] [cursor=pointer]
+      - generic [ref=f9e54]:
+        - img "Bist белый лого" [ref=f9e56]
+        - paragraph [ref=f9e58]: Ресторан на Васильевском острове с мясными специалитетами и пастой, акцентом на вино и коктейли
+        - paragraph [ref=f9e60]: "Ресторан с фресками, витражными окнами и пересечением двух концептуальных линий: мясо и культура Италии. Название происходит от итальянского Bistecca alla Fiorentina, что означает «стейк из говядины жареный на углях». Блюдо является одним из основных специалитетов региона Тоскана, и именно оно отражает идею места."
+        - generic [ref=f9e61]:
+          - heading "Команда" [level=2] [ref=f9e62]
+          - list [ref=f9e63]:
+            - listitem [ref=f9e64]:
+              - generic [ref=f9e65]: Управляющий
+              - generic [ref=f9e66]: Татьяна Мазунина
+            - listitem [ref=f9e67]:
+              - generic [ref=f9e68]: Бренд-шеф
+              - generic [ref=f9e69]: Денис Лукьяненко
+            - listitem [ref=f9e70]:
+              - generic [ref=f9e71]: Шеф-кондитер
+              - generic [ref=f9e72]: Иван Бобров
+            - listitem [ref=f9e73]:
+              - generic [ref=f9e74]: Шеф-повар
+              - generic [ref=f9e75]: Владимир Полторацкий
+        - generic [ref=f9e76]:
+          - figure [ref=f9e77]:
+            - link [ref=f9e78] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/bist/covers/raw/1.jpg
+              - img "Bist meat & pasta bar" [ref=f9e79]
+          - figure [ref=f9e80]:
+            - link [ref=f9e81] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/bist/covers/raw/2.jpg
+              - img "Bist meat & pasta bar" [ref=f9e82]
+          - figure [ref=f9e83]:
+            - link [ref=f9e84] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/bist/covers/raw/3.jpg
+              - img "Bist meat & pasta bar" [ref=f9e85]
+          - figure [ref=f9e86]:
+            - link [ref=f9e87] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/bist/covers/raw/4.jpg
+              - img "Bist meat & pasta bar" [ref=f9e88]
+    - generic [ref=f9e90]:
+      - generic [ref=f9e91]:
+        - generic [ref=f9e92]: Будьте в курсе
+        - generic [ref=f9e96]:
+          - textbox "Почта" [ref=f9e98]:
+            - /placeholder: ваша@почта.ru
+          - textbox "Имя" [ref=f9e100]:
+            - /placeholder: Ваше имя
+          - combobox "Город" [ref=f9e102] [cursor=pointer]:
+            - option "Ваш город" [disabled] [selected]
+            - option "Санкт-Петербург"
+            - option "Москва"
+          - generic [ref=f9e104] [cursor=pointer]:
+            - checkbox "Согласен(-сна) на обработку персональных данных и с пользовательским соглашением."
+            - generic [ref=f9e106]: Согласен(-сна) на обработку персональных данных и с пользовательским соглашением.
+          - button "Подписаться" [ref=f9e108] [cursor=pointer]
+      - generic [ref=f9e109]:
+        - generic [ref=f9e110]:
+          - link "Доставка" [ref=f9e112] [cursor=pointer]:
+            - /url: https://italytouch.ru
+          - link "Рестораны" [ref=f9e114] [cursor=pointer]:
+            - /url: https://italycommunity.ru/restaurants/
+          - link "Афиша" [ref=f9e116] [cursor=pointer]:
+            - /url: https://italycommunity.ru/events/
+          - link "О нас" [ref=f9e118] [cursor=pointer]:
+            - /url: https://italycommunity.ru/about/
+          - link "Программа лояльности" [ref=f9e120] [cursor=pointer]:
+            - /url: https://italycommunity.online/loyaltyprogram
+          - link "Ресторанам Надо" [ref=f9e122] [cursor=pointer]:
+            - /url: https://restoranamnado.ru
+          - link "Банкеты и кейтеринг" [ref=f9e124] [cursor=pointer]:
+            - /url: https://italyco.tilda.ws/banket
+          - link "Ресторанный консалтинг" [ref=f9e126] [cursor=pointer]:
+            - /url: https://italycommunity.online/consulting
+          - link "Работай с нами" [ref=f9e128] [cursor=pointer]:
+            - /url: https://italycommunity.online/work
+          - link "люди итали" [ref=f9e130] [cursor=pointer]:
+            - /url: https://italycommunity.online
+        - generic [ref=f9e131]:
+          - link "VK" [ref=f9e132] [cursor=pointer]:
+            - /url: https://vk.com/italy.community
+            - img "VK"
+          - link "Telegram" [ref=f9e133] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+            - img "Telegram"
+          - link "@MS_italycommunity" [ref=f9e134] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+      - generic [ref=f9e135]:
+        - generic [ref=f9e136]:
+          - link "Политика в отношении обработки персональных данных" [ref=f9e137] [cursor=pointer]:
+            - /url: https://italycommunity.ru/policy/
+          - link "Пользовательское соглашение" [ref=f9e138] [cursor=pointer]:
+            - /url: https://italycommunity.ru/agree/
+        - generic [ref=f9e139]: © 2020-2026. Все права защищены.
+  - generic [ref=f9e143]:
+    - generic [ref=f9e145]:
+      - text: Наш сайт использует файлы cookie для улучшения работы сайта —
+      - link "подробнее" [ref=f9e146] [cursor=pointer]:
+        - /url: /policy/
+      - text: .
+    - button "Принимаю" [ref=f9e148] [cursor=pointer]

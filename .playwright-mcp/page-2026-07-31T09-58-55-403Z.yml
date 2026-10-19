@@ -1,0 +1,920 @@
+- generic [active] [ref=f421e1]:
+  - generic [ref=f421e2]:
+    - generic [ref=f421e9] [cursor=pointer]:
+      - generic [ref=f421e10]:
+        - generic [ref=f421e11]: Jaecoo Business Car
+        - generic [ref=f421e12]: "5"
+      - generic [ref=f421e16]: Until 8:30 PM
+    - generic:
+      - generic:
+        - banner
+      - complementary [ref=f421e18]:
+        - generic [ref=f421e21]:
+          - generic [ref=f421e22]:
+            - generic [ref=f421e23]:
+              - generic [ref=f421e25]:
+                - button "Back" [ref=f421e26] [cursor=pointer]
+                - generic [ref=f421e29]:
+                  - button "Yandex Maps" [ref=f421e30] [cursor=pointer]
+                  - generic [ref=f421e39]:
+                    - link "Search" [ref=f421e40] [cursor=pointer]
+                    - link "Directions" [ref=f421e45] [cursor=pointer]:
+                      - /url: /maps/10/orel/routes/
+                - button "Close" [ref=f421e52] [cursor=pointer]
+              - generic [ref=f421e57]:
+                - heading "Jaecoo Business Car" [level=1] [ref=f421e60]
+                - generic [ref=f421e68]:
+                  - tablist [ref=f421e73]:
+                    - tab "Overview," [ref=f421e75]:
+                      - link:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/
+                        - text: Overview
+                    - tab "Products and services," [ref=f421e77]:
+                      - link:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/prices/
+                        - text: Products and services
+                    - tab "News, 29" [ref=f421e79]:
+                      - link:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/?tab=posts
+                        - text: News
+                      - generic: "29"
+                    - tab "Photos, 166" [ref=f421e81]:
+                      - link:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/gallery/
+                        - text: Photos
+                      - generic: "166"
+                    - tab "Reviews, 38" [selected] [ref=f421e83]:
+                      - link:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/reviews/
+                        - text: Reviews
+                      - generic: "38"
+                    - tab "Branches," [ref=f421e85]:
+                      - link:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/?tab=chain
+                        - text: Branches
+                    - tab "Features," [ref=f421e87]:
+                      - link:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/?tab=features
+                        - text: Features
+                    - iframe [ref=f421e88]:
+                      
+                  - generic [ref=f421e97]:
+                    - generic [ref=f421e98]:
+                      - generic [ref=f421e103]:
+                        - generic [ref=f421e105]:
+                          - generic [ref=f421e106]:
+                            - generic [ref=f421e107]: Rating
+                            - text: "5.0"
+                          - generic [ref=f421e108]:
+                            - generic "Rating 5 Out of 5" [ref=f421e110]
+                            - generic [ref=f421e126]: 52 ratings
+                        - generic [ref=f421e131]:
+                          - generic [ref=f421e132]: Rate this place
+                          - generic [ref=f421e133]:
+                            - button "1 star" [ref=f421e134] [cursor=pointer]
+                            - button "2 stars" [ref=f421e137] [cursor=pointer]
+                            - button "3 stars" [ref=f421e140] [cursor=pointer]
+                            - button "4 stars" [ref=f421e143] [cursor=pointer]
+                            - button "5 stars" [ref=f421e146] [cursor=pointer]
+                      - generic [ref=f421e150]:
+                        - generic [ref=f421e154]:
+                          - heading "38 reviews" [level=2] [ref=f421e155]
+                          - button "By default" [ref=f421e158] [cursor=pointer]
+                        - list [ref=f421e162]:
+                          - listitem [ref=f421e164]:
+                            - generic [ref=f421e166]:
+                              - generic [ref=f421e167]:
+                                - link "Profile picture" [ref=f421e169] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/5cubxj8xb69bd0836tz580demg
+                                - generic [ref=f421e171]:
+                                  - link "Евгений Е." [ref=f421e173] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/5cubxj8xb69bd0836tz580demg
+                                  - generic [ref=f421e174]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e177] [cursor=pointer]
+                              - generic [ref=f421e180]:
+                                - generic "Rating 5 Out of 5" [ref=f421e183]
+                                - generic [ref=f421e199]: November 2, 2025
+                              - generic [ref=f421e201]:
+                                - generic [ref=f421e202]: Отличный автосалон! Каждое ТО моего Jaecoo проходит на 5 баллов!!! Были моменты гарантийного обращения и тут специалисты подошли с грамотным подходом к делу и в кратчайшие сроки всё устранили в лучшем виде. Особенно хотелось бы отметить Василат Николая по…
+                                - button "More" [ref=f421e204] [cursor=pointer]
+                              - list [ref=f421e207]:
+                                - listitem [ref=f421e208]
+                                - iframe [ref=f421e210]:
+                                  
+                              - generic [ref=f421e211]:
+                                - generic [ref=f421e212]:
+                                  - button "Like" [ref=f421e213] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e217] [cursor=pointer]:
+                                    - generic [ref=f421e221]: "1"
+                                - button "Share" [ref=f421e222] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e226] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e227]:
+                            - generic [ref=f421e229]:
+                              - generic [ref=f421e230]:
+                                - link "Profile picture" [ref=f421e232] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/4a4y8crq4fmw8agtm0fcq6ra34
+                                - generic [ref=f421e234]:
+                                  - link "Никита Носов" [ref=f421e236] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/4a4y8crq4fmw8agtm0fcq6ra34
+                                  - generic [ref=f421e237]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e240] [cursor=pointer]
+                              - generic [ref=f421e243]:
+                                - generic "Rating 5 Out of 5" [ref=f421e246]
+                                - generic [ref=f421e262]: June 22
+                              - generic [ref=f421e263]: Приобрели в данном автосалоне jaecoo j7 , приятно удивило вежливое отношение сотрудников и что не мало важно,не изменилась цена, общались дистанционно,цена осталась как мы и договаривались, огромное спасибо менеджеру Маргарите и кредитному специалисту Марте!!! однозначно рекомендую!!!
+                              - generic [ref=f421e266]:
+                                - generic [ref=f421e267]:
+                                  - button "Like" [ref=f421e268] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e272] [cursor=pointer]
+                                - button "Share" [ref=f421e276] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e280] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e281]:
+                            - generic [ref=f421e283]:
+                              - generic [ref=f421e284]:
+                                - link "Profile picture" [ref=f421e286] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/qy0zzpwtw53ntnj35387vmdbcm
+                                - generic [ref=f421e288]:
+                                  - link "света стручкова" [ref=f421e290] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/qy0zzpwtw53ntnj35387vmdbcm
+                                  - generic [ref=f421e291]: Level 3 Local Expert
+                                - button "Subscribe" [ref=f421e294] [cursor=pointer]
+                              - generic [ref=f421e297]:
+                                - generic "Rating 5 Out of 5" [ref=f421e300]
+                                - generic [ref=f421e316]: February 16, 2025
+                              - generic [ref=f421e317]: Посещение данного салона просто огонь. Сотрудники салона оказались вежливыми,все рассказали минусы и плюсы каждого автомобиля. Не в каждом салоне есть такое. Сам салон очень большой,выбора много. Под каждый бюджет можно выбрать машину. Остались довольны посещением салона 👍
+                              - generic [ref=f421e320]:
+                                - generic [ref=f421e321]:
+                                  - button "Like" [ref=f421e322] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e326] [cursor=pointer]:
+                                    - generic [ref=f421e330]: "1"
+                                - button "Share" [ref=f421e331] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e335] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e336]:
+                            - generic [ref=f421e338]:
+                              - generic [ref=f421e339]:
+                                - link "Profile picture" [ref=f421e341] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/malgina.nadeshda
+                                - generic [ref=f421e343]:
+                                  - link "Надежда" [ref=f421e345] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/malgina.nadeshda
+                                  - generic [ref=f421e346]: Level 7 Local Expert
+                                - button "Subscribe" [ref=f421e349] [cursor=pointer]
+                              - generic [ref=f421e352]:
+                                - generic "Rating 5 Out of 5" [ref=f421e355]
+                                - generic [ref=f421e371]: November 20, 2024
+                              - generic [ref=f421e372]: Автосалон «Бизнес Кар» оставил самые положительные впечатления. Отличный выбор новых и подержанных авто, внимательные менеджеры, готовые помочь с любым вопросом. Оформление сделки прошло быстро и без лишних хлопот. Отдельное спасибо за прозрачность условий и качественные консультации. Буду рекомендовать друзьям!
+                              - generic [ref=f421e375]:
+                                - generic [ref=f421e376]:
+                                  - button "Like" [ref=f421e377] [cursor=pointer]:
+                                    - generic [ref=f421e381]: "1"
+                                  - button "Dislike" [ref=f421e382] [cursor=pointer]:
+                                    - generic [ref=f421e386]: "1"
+                                - button "Share" [ref=f421e387] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e391] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e392]:
+                            - generic [ref=f421e394]:
+                              - generic [ref=f421e395]:
+                                - link "Profile picture" [ref=f421e397] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/zq55vjv9w1ywjddtj7p0jkx6wg
+                                - generic [ref=f421e399]:
+                                  - link "В. Л." [ref=f421e401] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/zq55vjv9w1ywjddtj7p0jkx6wg
+                                  - generic [ref=f421e402]: Level 7 Local Expert
+                                - button "Subscribe" [ref=f421e405] [cursor=pointer]
+                              - generic [ref=f421e408]:
+                                - generic "Rating 5 Out of 5" [ref=f421e411]
+                                - generic [ref=f421e427]: June 23
+                              - generic [ref=f421e428]: Отличный салон , менеджер Даниил настоящий специалист , показал все преимущества автомобиля , провел тест драйв , очень хороший специалист , рекомендую , благодаря Даниилу поменяли автомобиль
+                              - generic [ref=f421e431]:
+                                - generic [ref=f421e432]:
+                                  - button "Like" [ref=f421e433] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e437] [cursor=pointer]
+                                - button "Share" [ref=f421e441] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e445] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e446]:
+                            - generic [ref=f421e448]:
+                              - generic [ref=f421e449]:
+                                - link "Profile picture" [ref=f421e451] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/yyu40hgr4xgpfck3cjtvqykbbm
+                                - generic [ref=f421e453]:
+                                  - link "екатерина коюшева" [ref=f421e455] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/yyu40hgr4xgpfck3cjtvqykbbm
+                                  - generic [ref=f421e456]: Level 3 Local Expert
+                                - button "Subscribe" [ref=f421e459] [cursor=pointer]
+                              - generic [ref=f421e462]:
+                                - generic "Rating 5 Out of 5" [ref=f421e465]
+                                - generic [ref=f421e481]: November 1, 2024
+                              - generic [ref=f421e483]:
+                                - generic [ref=f421e484]: Я недавно посетила автосалон и осталась под впечатлением от уровня сервиса. Большой выбор автомобилей. Консультанты оказались настоящими знатоками своего дела, помогли мне подобрать идеальный автомобиль. Весь процесс покупки был максимально простым и…
+                                - button "More" [ref=f421e486] [cursor=pointer]
+                              - generic [ref=f421e487]:
+                                - generic [ref=f421e488]:
+                                  - button "Like" [ref=f421e489] [cursor=pointer]:
+                                    - generic [ref=f421e493]: "3"
+                                  - button "Dislike" [ref=f421e494] [cursor=pointer]:
+                                    - generic [ref=f421e498]: "1"
+                                - button "Share" [ref=f421e499] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e503] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e504]:
+                            - generic [ref=f421e506]:
+                              - generic [ref=f421e507]:
+                                - link "Profile picture" [ref=f421e509] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/yu7gpzt180wqh8g68b24r55c3c
+                                - generic [ref=f421e511]:
+                                  - link "Денис К." [ref=f421e513] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/yu7gpzt180wqh8g68b24r55c3c
+                                  - generic [ref=f421e514]: Level 10 Local Expert
+                                - button "Subscribe" [ref=f421e517] [cursor=pointer]
+                              - generic [ref=f421e520]:
+                                - generic "Rating 2 Out of 5" [ref=f421e523]
+                                - generic [ref=f421e539]: February 26
+                              - generic [ref=f421e541]:
+                                - generic [ref=f421e542]: Летом 2025 тестил Jaecoo j7. Как и в любом автомобиле, есть огрехи, ушёл в раздумьях. После теста никто не перезвонил, ничего не уточнил, ну да ладно. Видимо, так здесь выстроены продажи (борятся за клиента тихо, чтобы он не знал))). Купил этот авто с хорошей скидкой в Курске. Далее…
+                                - button "More" [ref=f421e544] [cursor=pointer]
+                              - generic [ref=f421e545]:
+                                - generic [ref=f421e546]:
+                                  - button "Like" [ref=f421e547] [cursor=pointer]:
+                                    - generic [ref=f421e551]: "1"
+                                  - button "Dislike" [ref=f421e552] [cursor=pointer]
+                                - button "Share" [ref=f421e556] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e560] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e561]:
+                            - generic [ref=f421e563]:
+                              - generic [ref=f421e564]:
+                                - link "Profile picture" [ref=f421e566] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/mt05t21yzg5hv6hfcxeefrye8m
+                                - generic [ref=f421e568]:
+                                  - link "Кирилл" [ref=f421e570] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/mt05t21yzg5hv6hfcxeefrye8m
+                                  - generic [ref=f421e571]: Level 3 Local Expert
+                                - button "Subscribe" [ref=f421e574] [cursor=pointer]
+                              - generic [ref=f421e577]:
+                                - generic "Rating 5 Out of 5" [ref=f421e580]
+                                - generic [ref=f421e596]: October 13, 2024
+                              - generic [ref=f421e597]: Перебрали подвеску за один день, запчасти были в наличии, некоторые заменили, что-то оставили. Вообщем, нормально подошли к моей проблеме. Ребятам спасибо!
+                              - generic [ref=f421e600]:
+                                - generic [ref=f421e601]:
+                                  - button "Like" [ref=f421e602] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e606] [cursor=pointer]:
+                                    - generic [ref=f421e610]: "1"
+                                - button "Share" [ref=f421e611] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e615] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e616]:
+                            - generic [ref=f421e618]:
+                              - generic [ref=f421e619]:
+                                - link "Profile picture" [ref=f421e621] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/m1v4a43qe1zv3wy3v02f6exzj4
+                                - generic [ref=f421e623]:
+                                  - link "Arsen Shpak" [ref=f421e625] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/m1v4a43qe1zv3wy3v02f6exzj4
+                                  - generic [ref=f421e626]: Level 8 Local Expert
+                                - button "Subscribe" [ref=f421e629] [cursor=pointer]
+                              - generic [ref=f421e632]:
+                                - generic "Rating 5 Out of 5" [ref=f421e635]
+                                - generic [ref=f421e651]: August 8, 2024
+                              - generic [ref=f421e652]: Обслуживание на твердую пятерку. Приезжал на тест-драйв, записывался заранее. Получилось попасть в свой выходной, пол дня провел в салоне, с удовольствием пообщался с сотрудниками. Получил полную информацию по машинам.
+                              - generic [ref=f421e655]:
+                                - generic [ref=f421e656]:
+                                  - button "Like" [ref=f421e657] [cursor=pointer]:
+                                    - generic [ref=f421e661]: "1"
+                                  - button "Dislike" [ref=f421e662] [cursor=pointer]:
+                                    - generic [ref=f421e666]: "1"
+                                - button "Share" [ref=f421e667] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e671] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e672]:
+                            - generic [ref=f421e674]:
+                              - generic [ref=f421e675]:
+                                - link "Profile picture" [ref=f421e677] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/whznzcx59ap0du60cuaybhzqrg
+                                - generic [ref=f421e679]:
+                                  - link "Ирина Клепальская" [ref=f421e681] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/whznzcx59ap0du60cuaybhzqrg
+                                  - generic [ref=f421e682]: Level 2 Local Expert
+                                - button "Subscribe" [ref=f421e685] [cursor=pointer]
+                              - generic [ref=f421e688]:
+                                - generic "Rating 5 Out of 5" [ref=f421e691]
+                                - generic [ref=f421e707]: January 18, 2025
+                              - generic [ref=f421e708]: Автосалон "Бизнес Кар" оставил массу положительных впечатлений. Широкий выбор, доброжелательный, отзывчивый персонал. Осталась довольна выбором. Спасибо за помощь в выборе автомобиля!
+                              - generic [ref=f421e711]:
+                                - generic [ref=f421e712]:
+                                  - button "Like" [ref=f421e713] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e717] [cursor=pointer]:
+                                    - generic [ref=f421e721]: "1"
+                                - button "Share" [ref=f421e722] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e726] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e727]:
+                            - generic [ref=f421e729]:
+                              - generic [ref=f421e730]:
+                                - link "Profile picture" [ref=f421e732] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/9v67enjme5c9d99m291zhgdryg
+                                - generic [ref=f421e734]:
+                                  - link "Диман Лиманский" [ref=f421e736] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/9v67enjme5c9d99m291zhgdryg
+                                  - generic [ref=f421e737]: Level 3 Local Expert
+                                - button "Subscribe" [ref=f421e740] [cursor=pointer]
+                              - generic [ref=f421e743]:
+                                - generic "Rating 5 Out of 5" [ref=f421e746]
+                                - generic [ref=f421e762]: October 14, 2024
+                              - generic [ref=f421e763]: Рекомендую посетить данный автосалон, хорошо оценили машину, которую сдавали. Менеджер донес всю информацию доступно, "подводных камней" не было. Дали хорошую скидку на новый автомобиль.
+                              - generic [ref=f421e766]:
+                                - generic [ref=f421e767]:
+                                  - button "Like" [ref=f421e768] [cursor=pointer]:
+                                    - generic [ref=f421e772]: "1"
+                                  - button "Dislike" [ref=f421e773] [cursor=pointer]:
+                                    - generic [ref=f421e777]: "1"
+                                - button "Share" [ref=f421e778] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e782] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e783]:
+                            - generic [ref=f421e785]:
+                              - generic [ref=f421e786]:
+                                - link "Profile picture" [ref=f421e788] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/cx28ygy3wtwqvdcfa34jnpdrbm
+                                - generic [ref=f421e790]:
+                                  - link "ИЛЬЯ А." [ref=f421e792] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/cx28ygy3wtwqvdcfa34jnpdrbm
+                                  - generic [ref=f421e793]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e796] [cursor=pointer]
+                              - generic [ref=f421e799]:
+                                - generic "Rating 5 Out of 5" [ref=f421e802]
+                                - generic [ref=f421e818]: October 8, 2024
+                              - generic [ref=f421e819]: В салоне хороший выбор китайских авто премиум класса. Тест-драйв прошел с ветерком. Машина понравилась. Подал заявку на кредит.
+                              - generic [ref=f421e822]:
+                                - generic [ref=f421e823]:
+                                  - button "Like" [ref=f421e824] [cursor=pointer]:
+                                    - generic [ref=f421e828]: "3"
+                                  - button "Dislike" [ref=f421e829] [cursor=pointer]
+                                - button "Share" [ref=f421e833] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e837] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e838]:
+                            - generic [ref=f421e840]:
+                              - generic [ref=f421e841]:
+                                - link "Profile picture" [ref=f421e843] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/kupmfm9wxzvb6zerncrnttkjtr
+                                - generic [ref=f421e845]:
+                                  - link "Кирилл К." [ref=f421e847] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/kupmfm9wxzvb6zerncrnttkjtr
+                                  - generic [ref=f421e848]: Level 5 Local Expert
+                                - button "Subscribe" [ref=f421e851] [cursor=pointer]
+                              - generic [ref=f421e854]:
+                                - generic "Rating 5 Out of 5" [ref=f421e857]
+                                - generic [ref=f421e873]: October 13, 2024
+                              - generic [ref=f421e874]: Благодаря компетентности менеджера и интересным предложениям по скидкам, я решил остановить свой выбор на покупке именно в этом салоне. При чем белее крутой комплектации выбранной модели, чем планировал до этого.
+                              - generic [ref=f421e877]:
+                                - generic [ref=f421e878]:
+                                  - button "Like" [ref=f421e879] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e883] [cursor=pointer]
+                                - button "Share" [ref=f421e887] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e891] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e892]:
+                            - generic [ref=f421e894]:
+                              - generic [ref=f421e895]:
+                                - link "Profile picture" [ref=f421e897] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/nwh6jj13jwurtz06wyy19bmgzw
+                                - generic [ref=f421e899]:
+                                  - link "юля кобелева" [ref=f421e901] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/nwh6jj13jwurtz06wyy19bmgzw
+                                  - generic [ref=f421e902]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e905] [cursor=pointer]
+                              - generic [ref=f421e908]:
+                                - generic "Rating 5 Out of 5" [ref=f421e911]
+                                - generic [ref=f421e927]: August 8, 2024
+                              - generic [ref=f421e928]: Отличное обслуживание. Уважительное отношение к покупателям. Менеджер ответил на все мои вопросы. За тест-драйв отдельное спасибо. Получила удовольствие от поездки
+                              - generic [ref=f421e931]:
+                                - generic [ref=f421e932]:
+                                  - button "Like" [ref=f421e933] [cursor=pointer]:
+                                    - generic [ref=f421e937]: "2"
+                                  - button "Dislike" [ref=f421e938] [cursor=pointer]
+                                - button "Share" [ref=f421e942] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e946] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e947]:
+                            - generic [ref=f421e949]:
+                              - generic [ref=f421e950]:
+                                - link "Profile picture" [ref=f421e952] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/6w1eafx2kuzpqmujpuhkkkuj78
+                                - generic [ref=f421e954]:
+                                  - link "Suspect" [ref=f421e956] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/6w1eafx2kuzpqmujpuhkkkuj78
+                                  - generic [ref=f421e957]: Level 3 Local Expert
+                                - button "Subscribe" [ref=f421e960] [cursor=pointer]
+                              - generic [ref=f421e963]:
+                                - generic "Rating 5 Out of 5" [ref=f421e966]
+                                - generic [ref=f421e982]: October 8, 2024
+                              - generic [ref=f421e983]: Мне понравилось качество оказываемых услуг. Быстро обнаружили причину поломки, быстро устранили. Приемлемо вышло по цене.
+                              - generic [ref=f421e986]:
+                                - generic [ref=f421e987]:
+                                  - button "Like" [ref=f421e988] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e992] [cursor=pointer]
+                                - button "Share" [ref=f421e996] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1000] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1001]:
+                            - generic [ref=f421e1003]:
+                              - generic [ref=f421e1004]:
+                                - link "Profile picture" [ref=f421e1006] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/98pzf3xa7va0jub7f3zxybcdn8
+                                - generic [ref=f421e1008]:
+                                  - link "игорь анатольевич" [ref=f421e1010] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/98pzf3xa7va0jub7f3zxybcdn8
+                                  - generic [ref=f421e1011]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e1014] [cursor=pointer]
+                              - generic [ref=f421e1017]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1020]
+                                - generic [ref=f421e1036]: April 10, 2024
+                              - generic [ref=f421e1037]: Приобрел здесь свой автомобиль, Jaecoo J7. Отдельное спасибо менеджеру Маргарите! Очень чистый, просторный салон. Опрятные сотрудники, от посещения до сделки весь процесс сопровождался обходительностью сотрудников.
+                              - generic [ref=f421e1040]:
+                                - generic [ref=f421e1041]:
+                                  - button "Like" [ref=f421e1042] [cursor=pointer]:
+                                    - generic [ref=f421e1046]: "2"
+                                  - button "Dislike" [ref=f421e1047] [cursor=pointer]
+                                - button "Share" [ref=f421e1051] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1055] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1056]:
+                            - generic [ref=f421e1058]:
+                              - generic [ref=f421e1059]:
+                                - link "Profile picture" [ref=f421e1061] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/1t23w45653nhn0c2ctk94bgpy0
+                                - generic [ref=f421e1063]:
+                                  - link "Елена Гургунаева" [ref=f421e1065] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/1t23w45653nhn0c2ctk94bgpy0
+                                  - generic [ref=f421e1066]: Level 7 Local Expert
+                                - button "Subscribe" [ref=f421e1069] [cursor=pointer]
+                              - generic [ref=f421e1072]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1075]
+                                - generic [ref=f421e1091]: May 9, 2024
+                              - generic [ref=f421e1092]: Отличные автомобили! Большой выбор комплектаций! Намного шире, чем у других дилеров.Приветливые и компетентные сотрудники!
+                              - generic [ref=f421e1095]:
+                                - generic [ref=f421e1096]:
+                                  - button "Like" [ref=f421e1097] [cursor=pointer]:
+                                    - generic [ref=f421e1101]: "2"
+                                  - button "Dislike" [ref=f421e1102] [cursor=pointer]
+                                - button "Share" [ref=f421e1106] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1110] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1111]:
+                            - generic [ref=f421e1113]:
+                              - generic [ref=f421e1114]:
+                                - link "Profile picture" [ref=f421e1116] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/xqj2hnd99zp18v4yn195q0n6r0
+                                - generic [ref=f421e1118]:
+                                  - link "Иван Е." [ref=f421e1120] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/xqj2hnd99zp18v4yn195q0n6r0
+                                  - generic [ref=f421e1121]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e1124] [cursor=pointer]
+                              - generic [ref=f421e1127]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1130]
+                                - generic [ref=f421e1146]: August 21, 2024
+                              - generic [ref=f421e1147]: Ремонт был сложный и дорогой после аварии. Минус - это долгое ожидание, плюс - качественно выполненная работа.
+                              - generic [ref=f421e1150]:
+                                - generic [ref=f421e1151]:
+                                  - button "Like" [ref=f421e1152] [cursor=pointer]:
+                                    - generic [ref=f421e1156]: "1"
+                                  - button "Dislike" [ref=f421e1157] [cursor=pointer]
+                                - button "Share" [ref=f421e1161] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1165] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1166]:
+                            - generic [ref=f421e1168]:
+                              - generic [ref=f421e1169]:
+                                - link "Profile picture" [ref=f421e1171]
+                                - generic [ref=f421e1173]:
+                                  - generic [ref=f421e1174]: М С
+                                  - generic [ref=f421e1175]: Level 5 Local Expert
+                              - generic [ref=f421e1177]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1180]
+                                - generic [ref=f421e1196]: September 11, 2025
+                              - generic [ref=f421e1197]: Отличный салон , Приветливые сотрудники ! Большой выбор авто , здесь и приобрели своего красавчика!
+                              - generic [ref=f421e1201]:
+                                - button "Like" [ref=f421e1202] [cursor=pointer]
+                                - button "Dislike" [ref=f421e1206] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1210] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1211]:
+                            - generic [ref=f421e1213]:
+                              - generic [ref=f421e1214]:
+                                - link "Profile picture" [ref=f421e1216] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/40nna2m1z82rqkpa5nb8m32g04
+                                - generic [ref=f421e1218]:
+                                  - link "Илья" [ref=f421e1220] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/40nna2m1z82rqkpa5nb8m32g04
+                                  - generic [ref=f421e1221]: Level 3 Local Expert
+                                - button "Subscribe" [ref=f421e1224] [cursor=pointer]
+                              - generic [ref=f421e1227]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1230]
+                                - generic [ref=f421e1246]: October 11, 2024
+                              - generic [ref=f421e1247]: Обслуживаю здесь свой автомобиль. Ребята слесаря адекватные, выполняют свою работу на все 100%, добросовестно и ответственно!
+                              - generic [ref=f421e1250]:
+                                - generic [ref=f421e1251]:
+                                  - button "Like" [ref=f421e1252] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e1256] [cursor=pointer]
+                                - button "Share" [ref=f421e1260] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1264] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1265]:
+                            - generic [ref=f421e1267]:
+                              - generic [ref=f421e1268]:
+                                - link "Profile picture" [ref=f421e1270] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/t36nkn8bdu75w9k04vb1zj3fxw
+                                - generic [ref=f421e1272]:
+                                  - link "аааа аааа" [ref=f421e1274] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/t36nkn8bdu75w9k04vb1zj3fxw
+                                  - generic [ref=f421e1275]: Level 2 Local Expert
+                                - button "Subscribe" [ref=f421e1278] [cursor=pointer]
+                              - generic [ref=f421e1281]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1284]
+                                - generic [ref=f421e1300]: September 18, 2024
+                              - generic [ref=f421e1301]: Благодарен за честную оценку моего автомобмля по прорамме трейд-ин. Благодаря этой программе смог существенно сэкономить при покупке на новый автомобиль.
+                              - generic [ref=f421e1304]:
+                                - generic [ref=f421e1305]:
+                                  - button "Like" [ref=f421e1306] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e1310] [cursor=pointer]
+                                - button "Share" [ref=f421e1314] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1318] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1319]:
+                            - generic [ref=f421e1321]:
+                              - generic [ref=f421e1322]:
+                                - link "Profile picture" [ref=f421e1324] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/539273619rcn5e237waeuv3jw0
+                                - generic [ref=f421e1326]:
+                                  - link "999999" [ref=f421e1328] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/539273619rcn5e237waeuv3jw0
+                                  - generic [ref=f421e1329]: Level 5 Local Expert
+                                - button "Subscribe" [ref=f421e1332] [cursor=pointer]
+                              - generic [ref=f421e1335]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1338]
+                                - generic [ref=f421e1354]: September 16, 2024
+                              - generic [ref=f421e1355]: Большое спасибо менеджерам за помощь в выборе авто. Трейд-ин согласован в срок.
+                              - generic [ref=f421e1358]:
+                                - generic [ref=f421e1359]:
+                                  - button "Like" [ref=f421e1360] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e1364] [cursor=pointer]
+                                - button "Share" [ref=f421e1368] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1372] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1373]:
+                            - generic [ref=f421e1375]:
+                              - generic [ref=f421e1376]:
+                                - link "Profile picture" [ref=f421e1378] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/31r430apghxgr3yykebqpnu6fc
+                                - generic [ref=f421e1380]:
+                                  - link "Екатерина М." [ref=f421e1382] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/31r430apghxgr3yykebqpnu6fc
+                                  - generic [ref=f421e1383]: Level 3 Local Expert
+                                - button "Subscribe" [ref=f421e1386] [cursor=pointer]
+                              - generic [ref=f421e1389]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1392]
+                                - generic [ref=f421e1408]: April 8, 2024
+                              - generic [ref=f421e1409]: Очень понравился данный ДЦ, начиная от тест-драйва, заканчивая сервисом по обслуживанию авто. Процветания и благородных клиентов, вам!
+                              - generic [ref=f421e1412]:
+                                - generic [ref=f421e1413]:
+                                  - button "Like" [ref=f421e1414] [cursor=pointer]:
+                                    - generic [ref=f421e1418]: "1"
+                                  - button "Dislike" [ref=f421e1419] [cursor=pointer]
+                                - button "Share" [ref=f421e1423] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1427] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1428]:
+                            - generic [ref=f421e1430]:
+                              - generic [ref=f421e1431]:
+                                - link "Profile picture" [ref=f421e1433]
+                                - generic [ref=f421e1435]:
+                                  - generic [ref=f421e1436]: Ирина
+                                  - generic [ref=f421e1437]: Level 17 Local Expert
+                              - generic [ref=f421e1439]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1442]
+                                - generic [ref=f421e1458]: October 10, 2024
+                              - generic [ref=f421e1459]: На мой взгляд - это самый адекватный дилер китайских авто. Понравилось отношение к клиенту в данном автосалоне! Подобрали нужный автомобиль, адекватно оценили мой авто в отделе трейд- ин.
+                              - generic [ref=f421e1463]:
+                                - button "Like" [ref=f421e1464] [cursor=pointer]
+                                - button "Dislike" [ref=f421e1468] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1472] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1473]:
+                            - generic [ref=f421e1475]:
+                              - generic [ref=f421e1476]:
+                                - link "Profile picture" [ref=f421e1478] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/uvww0wbgzbftkb3t89huzttgcm
+                                - generic [ref=f421e1480]:
+                                  - link "Игорь" [ref=f421e1482] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/uvww0wbgzbftkb3t89huzttgcm
+                                  - generic [ref=f421e1483]: Level 8 Local Expert
+                                - button "Subscribe" [ref=f421e1486] [cursor=pointer]
+                              - generic [ref=f421e1489]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1492]
+                                - generic [ref=f421e1508]: September 20, 2024
+                              - generic [ref=f421e1509]: Довольно приличный сервис. Посетил первый раз, получил скидку. Рад, что скидки у них реальные, а не в качестве рекламы.
+                              - generic [ref=f421e1512]:
+                                - generic [ref=f421e1513]:
+                                  - button "Like" [ref=f421e1514] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e1518] [cursor=pointer]
+                                - button "Share" [ref=f421e1522] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1526] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1527]:
+                            - generic [ref=f421e1529]:
+                              - generic [ref=f421e1530]:
+                                - link "Profile picture" [ref=f421e1532] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/bd8zd1nu046j06ynpz0vk8kqhw
+                                - generic [ref=f421e1534]:
+                                  - link "Наталия Баева" [ref=f421e1536] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/bd8zd1nu046j06ynpz0vk8kqhw
+                                  - generic [ref=f421e1537]: Level 8 Local Expert
+                                - button "Subscribe" [ref=f421e1540] [cursor=pointer]
+                              - generic [ref=f421e1543]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1546]
+                                - generic [ref=f421e1562]: April 8, 2024
+                              - generic [ref=f421e1563]: Хороший салон. Добродушные и профессиональные сотрудники. Подробно рассказали об автомобиле. Спасибо.
+                              - generic [ref=f421e1566]:
+                                - generic [ref=f421e1567]:
+                                  - button "Like" [ref=f421e1568] [cursor=pointer]:
+                                    - generic [ref=f421e1572]: "1"
+                                  - button "Dislike" [ref=f421e1573] [cursor=pointer]
+                                - button "Share" [ref=f421e1577] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1581] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1582]:
+                            - generic [ref=f421e1584]:
+                              - generic [ref=f421e1585]:
+                                - link "Profile picture" [ref=f421e1587] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/1ckkn1f662h07rphegqx26h9um
+                                - generic [ref=f421e1589]:
+                                  - link "Антон Глушенков" [ref=f421e1591] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/1ckkn1f662h07rphegqx26h9um
+                                  - generic [ref=f421e1592]: Level 6 Local Expert
+                                - button "Subscribe" [ref=f421e1595] [cursor=pointer]
+                              - generic [ref=f421e1598]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1601]
+                                - generic [ref=f421e1617]: January 26
+                              - generic [ref=f421e1618]: Хороший сервис, приветливый персонал! Качественное обслуживание!
+                              - generic [ref=f421e1621]:
+                                - generic [ref=f421e1622]:
+                                  - button "Like" [ref=f421e1623] [cursor=pointer]:
+                                    - generic [ref=f421e1627]: "1"
+                                  - button "Dislike" [ref=f421e1628] [cursor=pointer]
+                                - button "Share" [ref=f421e1632] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1636] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1637]:
+                            - generic [ref=f421e1639]:
+                              - generic [ref=f421e1640]:
+                                - link "Profile picture" [ref=f421e1642]
+                                - generic [ref=f421e1644]:
+                                  - generic [ref=f421e1645]: Ilya Georgov
+                                  - generic [ref=f421e1646]: Level 12 Local Expert
+                              - generic [ref=f421e1648]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1651]
+                                - generic [ref=f421e1667]: August 19, 2024
+                              - generic [ref=f421e1668]: Привет всем! Хороший сервис. Быстро, удобно, недорого. Мастера с руками и головой. Работают на совесть
+                              - generic [ref=f421e1672]:
+                                - button "Like" [ref=f421e1673] [cursor=pointer]:
+                                  - generic [ref=f421e1677]: "1"
+                                - button "Dislike" [ref=f421e1678] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1682] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1683]:
+                            - generic [ref=f421e1685]:
+                              - generic [ref=f421e1686]:
+                                - link "Profile picture" [ref=f421e1688] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/c9w7mq8ytj6why2zpk1q90d360
+                                - generic [ref=f421e1690]:
+                                  - link "Владимир Романов" [ref=f421e1692] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/c9w7mq8ytj6why2zpk1q90d360
+                                  - generic [ref=f421e1693]: Level 18 Local Expert
+                                - button "Subscribe" [ref=f421e1696] [cursor=pointer]
+                              - generic [ref=f421e1699]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1702]
+                                - generic [ref=f421e1718]: November 18, 2024
+                              - generic [ref=f421e1719]: Отличный уровень сервиса. Так держать. Остался доволен покупкой и последующим обслуживанием.
+                              - generic [ref=f421e1722]:
+                                - generic [ref=f421e1723]:
+                                  - button "Like" [ref=f421e1724] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e1728] [cursor=pointer]
+                                - button "Share" [ref=f421e1732] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1736] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1737]:
+                            - generic [ref=f421e1739]:
+                              - generic [ref=f421e1740]:
+                                - link "Profile picture" [ref=f421e1742] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/Solnechnaya0173
+                                - generic [ref=f421e1744]:
+                                  - link "Солнечная. Я пишу, что вижу вокруг" [ref=f421e1746] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/Solnechnaya0173
+                                  - generic [ref=f421e1747]: Level 11 Local Expert
+                                - button "Subscribe" [ref=f421e1750] [cursor=pointer]
+                              - generic [ref=f421e1753]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1756]
+                                - generic [ref=f421e1772]: June 1, 2025
+                              - generic [ref=f421e1773]: Хорошие менеджеры, все профессионально рассказали
+                              - generic [ref=f421e1776]:
+                                - generic [ref=f421e1777]:
+                                  - button "Like" [ref=f421e1778] [cursor=pointer]:
+                                    - generic [ref=f421e1782]: "1"
+                                  - button "Dislike" [ref=f421e1783] [cursor=pointer]
+                                - button "Share" [ref=f421e1787] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1791] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1792]:
+                            - generic [ref=f421e1794]:
+                              - generic [ref=f421e1795]:
+                                - link "Profile picture" [ref=f421e1797] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/wvh8vuq98pt3rvhtuvmq0mfc5m
+                                - generic [ref=f421e1799]:
+                                  - link "Jouner" [ref=f421e1801] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/wvh8vuq98pt3rvhtuvmq0mfc5m
+                                  - generic [ref=f421e1802]: Level 6 Local Expert
+                                - button "Subscribe" [ref=f421e1805] [cursor=pointer]
+                              - generic [ref=f421e1808]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1811]
+                                - generic [ref=f421e1827]: October 16, 2024
+                              - generic [ref=f421e1828]: Всегда есть в наличии нужные запчасти и оригинальные и аналоги.
+                              - generic [ref=f421e1831]:
+                                - generic [ref=f421e1832]:
+                                  - button "Like" [ref=f421e1833] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e1837] [cursor=pointer]
+                                - button "Share" [ref=f421e1841] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1845] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1846]:
+                            - generic [ref=f421e1848]:
+                              - generic [ref=f421e1849]:
+                                - link "Profile picture" [ref=f421e1851] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/2d3y5v7e17e5bnpthagj8w5x7w
+                                - generic [ref=f421e1853]:
+                                  - link "Rita M." [ref=f421e1855] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/2d3y5v7e17e5bnpthagj8w5x7w
+                                  - generic [ref=f421e1856]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e1859] [cursor=pointer]
+                              - generic [ref=f421e1862]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1865]
+                                - generic [ref=f421e1881]: April 10, 2024
+                              - generic [ref=f421e1882]: Приятная атмосфера, компетентные сотрудники , впечатление от салона создалось очень и очень прекрасное
+                              - list [ref=f421e1887]:
+                                - listitem [ref=f421e1888]
+                                - iframe [ref=f421e1890]:
+                                  
+                              - generic [ref=f421e1891]:
+                                - generic [ref=f421e1892]:
+                                  - button "Like" [ref=f421e1893] [cursor=pointer]:
+                                    - generic [ref=f421e1897]: "1"
+                                  - button "Dislike" [ref=f421e1898] [cursor=pointer]
+                                - button "Share" [ref=f421e1902] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1906] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1907]:
+                            - generic [ref=f421e1909]:
+                              - generic [ref=f421e1910]:
+                                - link "Profile picture" [ref=f421e1912] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/rgg8ynruberjpc9wh4cnr16drg
+                                - generic [ref=f421e1914]:
+                                  - link "Вероника Кефирова" [ref=f421e1916] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/rgg8ynruberjpc9wh4cnr16drg
+                                  - generic [ref=f421e1917]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e1920] [cursor=pointer]
+                              - generic [ref=f421e1923]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1926]
+                                - generic [ref=f421e1942]: September 18, 2024
+                              - generic [ref=f421e1943]: При покупке машины проблем не возникло. Персонал отзывчивый, вежливый.
+                              - generic [ref=f421e1946]:
+                                - generic [ref=f421e1947]:
+                                  - button "Like" [ref=f421e1948] [cursor=pointer]:
+                                    - generic [ref=f421e1952]: "2"
+                                  - button "Dislike" [ref=f421e1953] [cursor=pointer]
+                                - button "Share" [ref=f421e1957] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e1961] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e1962]:
+                            - generic [ref=f421e1964]:
+                              - generic [ref=f421e1965]:
+                                - link "Profile picture" [ref=f421e1967] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/5b67qg1kxrkb5nzt1gh50tnmzg
+                                - generic [ref=f421e1969]:
+                                  - link "Тимофей Леонов" [ref=f421e1971] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/5b67qg1kxrkb5nzt1gh50tnmzg
+                                  - generic [ref=f421e1972]: Level 8 Local Expert
+                                - button "Subscribe" [ref=f421e1975] [cursor=pointer]
+                              - generic [ref=f421e1978]:
+                                - generic "Rating 5 Out of 5" [ref=f421e1981]
+                                - generic [ref=f421e1997]: August 9, 2024
+                              - generic [ref=f421e1998]: Цены на машины были самые интересные из тех салонов, в которых я был.
+                              - generic [ref=f421e2001]:
+                                - generic [ref=f421e2002]:
+                                  - button "Like" [ref=f421e2003] [cursor=pointer]:
+                                    - generic [ref=f421e2007]: "1"
+                                  - button "Dislike" [ref=f421e2008] [cursor=pointer]
+                                - button "Share" [ref=f421e2012] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e2016] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e2017]:
+                            - generic [ref=f421e2019]:
+                              - generic [ref=f421e2020]:
+                                - link "Profile picture" [ref=f421e2022] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/mrk8cyjwwj2u9yw253f976u8h8
+                                - generic [ref=f421e2024]:
+                                  - link "Ксения" [ref=f421e2026] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/mrk8cyjwwj2u9yw253f976u8h8
+                                  - generic [ref=f421e2027]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e2030] [cursor=pointer]
+                              - generic [ref=f421e2033]:
+                                - generic "Rating 5 Out of 5" [ref=f421e2036]
+                                - generic [ref=f421e2052]: October 12, 2023
+                              - generic [ref=f421e2053]: Лучший автосалон! Грамотные сотрудники.
+                              - generic [ref=f421e2056]:
+                                - generic [ref=f421e2057]:
+                                  - button "Like" [ref=f421e2058] [cursor=pointer]:
+                                    - generic [ref=f421e2062]: "4"
+                                  - button "Dislike" [ref=f421e2063] [cursor=pointer]
+                                - button "Share" [ref=f421e2067] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e2071] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e2072]:
+                            - generic [ref=f421e2074]:
+                              - generic [ref=f421e2075]:
+                                - link "Profile picture" [ref=f421e2077] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/1y5hk7h499jn12avb6hkn8zjjm
+                                - generic [ref=f421e2079]:
+                                  - link "Инкогнито 8636" [ref=f421e2081] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/1y5hk7h499jn12avb6hkn8zjjm
+                                  - generic [ref=f421e2082]: Level 3 Local Expert
+                                - button "Subscribe" [ref=f421e2085] [cursor=pointer]
+                              - generic [ref=f421e2088]:
+                                - generic "Rating 5 Out of 5" [ref=f421e2091]
+                                - generic [ref=f421e2107]: August 22, 2024
+                              - generic [ref=f421e2108]: Жена припарковалась не удачно. Ребята привели в порядок. Теперь, как новая.
+                              - generic [ref=f421e2111]:
+                                - generic [ref=f421e2112]:
+                                  - button "Like" [ref=f421e2113] [cursor=pointer]:
+                                    - generic [ref=f421e2117]: "3"
+                                  - button "Dislike" [ref=f421e2118] [cursor=pointer]
+                                - button "Share" [ref=f421e2122] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e2126] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e2127]:
+                            - generic [ref=f421e2129]:
+                              - generic [ref=f421e2130]:
+                                - link "Profile picture" [ref=f421e2132] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/ycwcavrthn536wbah0edqbtxa4
+                                - generic [ref=f421e2134]:
+                                  - link "Константин Мосейкин" [ref=f421e2136] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/ycwcavrthn536wbah0edqbtxa4
+                                  - generic [ref=f421e2137]: Level 4 Local Expert
+                                - button "Subscribe" [ref=f421e2140] [cursor=pointer]
+                              - generic [ref=f421e2143]:
+                                - generic "Rating 5 Out of 5" [ref=f421e2146]
+                                - generic [ref=f421e2162]: November 17, 2024
+                              - generic [ref=f421e2163]: "Автосалон: китайские машины и Б/у"
+                              - generic [ref=f421e2166]:
+                                - generic [ref=f421e2167]:
+                                  - button "Like" [ref=f421e2168] [cursor=pointer]
+                                  - button "Dislike" [ref=f421e2172] [cursor=pointer]
+                                - button "Share" [ref=f421e2176] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e2180] [cursor=pointer]: — Show business's response
+                          - listitem [ref=f421e2181]:
+                            - generic [ref=f421e2183]:
+                              - generic [ref=f421e2184]:
+                                - link "Profile picture" [ref=f421e2186] [cursor=pointer]:
+                                  - /url: https://yandex.com/maps/user/v2h36k4mzkaxcbyvm4r2zaj0hr
+                                - generic [ref=f421e2188]:
+                                  - link "Елена Папенкова" [ref=f421e2190] [cursor=pointer]:
+                                    - /url: https://yandex.com/maps/user/v2h36k4mzkaxcbyvm4r2zaj0hr
+                                  - generic [ref=f421e2191]: Level 5 Local Expert
+                                - button "Subscribe" [ref=f421e2194] [cursor=pointer]
+                              - generic [ref=f421e2197]:
+                                - generic "Rating 5 Out of 5" [ref=f421e2200]
+                                - generic [ref=f421e2216]: April 21, 2024
+                              - generic [ref=f421e2217]: Хороший салон. Все на высшем уровне.
+                              - generic [ref=f421e2220]:
+                                - generic [ref=f421e2221]:
+                                  - button "Like" [ref=f421e2222] [cursor=pointer]:
+                                    - generic [ref=f421e2226]: "1"
+                                  - button "Dislike" [ref=f421e2227] [cursor=pointer]
+                                - button "Share" [ref=f421e2231] [cursor=pointer]
+                              - button "Show business's response" [ref=f421e2235] [cursor=pointer]: — Show business's response
+                      - text: "1"
+                      - link [ref=f421e2236] [cursor=pointer]:
+                        - /url: /maps/org/jaecoo_business_car/198721291868/reviews/?page=2
+                        - text: "2"
+                    - button "Write review" [ref=f421e2241] [cursor=pointer]
+            - iframe [ref=f421e2243]:
+              
+          - iframe [ref=f421e2244]:
+            
+      - navigation:
+        - generic [ref=f421e2253]:
+          - button "Traffic conditions in Orel" [ref=f421e2256] [cursor=pointer]
+          - button "Street panoramas and photos" [ref=f421e2261] [cursor=pointer]
+          - button "Mirrors" [ref=f421e2264] [cursor=pointer]
+          - button "Public transport moving in real time" [ref=f421e2267] [cursor=pointer]
+          - button "Layers" [ref=f421e2270] [cursor=pointer]
+        - generic [ref=f421e2272]:
+          - button "Ruler and planimeter" [ref=f421e2275] [cursor=pointer]
+          - button "Details" [ref=f421e2278] [cursor=pointer]
+        - button "Profile" [ref=f421e2281] [cursor=pointer]
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=f421e2285]:
+                - button "Zoom in" [ref=f421e2287] [cursor=pointer]
+                - button "Zoom out" [ref=f421e2289] [cursor=pointer]
+              - button "Use my location" [ref=f421e2293] [cursor=pointer]
+              - button "Map tilt" [ref=f421e2300] [cursor=pointer]: 3D
+      - contentinfo:
+        - generic [ref=f421e2302]:
+          - generic [ref=f421e2303]: © Yandex
+          - link "Terms of Use" [ref=f421e2304] [cursor=pointer]:
+            - /url: https://yandex.com/legal/maps_termsofuse/?lang=en
+          - link "Privacy Policy" [ref=f421e2305] [cursor=pointer]:
+            - /url: https://yandex.com/legal/confidential/?lang=en
+        - link "Yandex" [ref=f421e2308] [cursor=pointer]:
+          - /url: https://yandex.com
+        - generic: 100 m
+      - iframe [ref=f421e2311]:
+        
+    - iframe [ref=f421e2312]:
+      
+  - iframe [ref=f421e2313]:
+    
+  - generic [ref=f421e2316]:
+    - generic [ref=f421e2317]:
+      - generic [ref=f421e2318]: Jaecoo Business Car
+      - generic [ref=f421e2319]: "5"
+    - generic [ref=f421e2323]: Until 8:30 PM

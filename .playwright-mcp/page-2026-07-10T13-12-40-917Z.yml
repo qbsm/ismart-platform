@@ -1,0 +1,602 @@
+- generic [active] [ref=f1e1]:
+  - link "Перейти к контенту" [ref=f1e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - banner [ref=f1e3]:
+    - generic [ref=f1e4]:
+      - generic [ref=f1e5]:
+        - link [ref=f1e6] [cursor=pointer]:
+          - /url: /
+          - img "HAVAL" [ref=f1e7]
+        - img "АВИЛОН — официальный дилер" [ref=f1e10]
+      - generic [ref=f1e13]:
+        - generic [ref=f1e14]: HAVAL City Авилон
+        - link "+7 (495) 730-00-55" [ref=f1e15] [cursor=pointer]:
+          - /url: tel:+74957300055
+        - link "Москва, Волгоградский проспект, 41, к. 1" [ref=f1e16] [cursor=pointer]:
+          - /url: "#map"
+      - link "Заказать звонок" [ref=f1e18] [cursor=pointer]:
+        - /url: "#callback"
+    - navigation "Основное меню" [ref=f1e20]:
+      - link "Модельный ряд" [ref=f1e21] [cursor=pointer]:
+        - /url: "#range"
+      - link "Акции" [ref=f1e22] [cursor=pointer]:
+        - /url: "#actions"
+      - link "Тест-драйв" [ref=f1e23] [cursor=pointer]:
+        - /url: "#callback"
+      - link "Преимущества" [ref=f1e24] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f1e25] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f1e26] [cursor=pointer]:
+        - /url: "#map"
+  - main [ref=f1e27]:
+    - generic [ref=f1e36]:
+      - generic [ref=f1e37]:
+        - heading "Авилон HAVAL City" [level=1] [ref=f1e38]
+        - paragraph [ref=f1e39]: Официальный дилер HAVAL в Москве
+        - link "Получить предложение" [ref=f1e41] [cursor=pointer]:
+          - /url: "#callback"
+      - generic [ref=f1e44]:
+        - generic [ref=f1e45]:
+          - generic [ref=f1e46]: 5 лет
+          - generic [ref=f1e47]: гарантия HAVAL
+        - generic [ref=f1e49]:
+          - generic [ref=f1e50]: 30 мин
+          - generic [ref=f1e51]: оценка трейд-ин выше рынка
+        - generic [ref=f1e53]:
+          - generic [ref=f1e54]: ЭПТС
+          - generic [ref=f1e55]: автомобили в наличии
+    - generic [ref=f1e58]:
+      - generic [ref=f1e59]: АВТОМОБИЛИ С ЭПТС В НАЛИЧИИ
+      - generic [ref=f1e61]: ГАРАНТИЯ 5 ЛЕТ
+      - generic [ref=f1e63]: ТРЕЙД-ИН ВЫШЕ РЫНКА ЗА 30 МИНУТ
+      - generic [ref=f1e65]: УЛУЧШИМ ЛЮБОЕ ПРЕДЛОЖЕНИЕ КОНКУРЕНТОВ
+      - generic [ref=f1e67]: ПОДАРКИ ПРИ ПОКУПКЕ
+      - generic [ref=f1e69]: 1 ГОД ВЛАДЕНИЯ БЕЗ ЗАБОТ — ТО ЗА НАШ СЧЁТ
+      - generic [ref=f1e71]: АВТОМОБИЛИ С ЭПТС В НАЛИЧИИ
+      - generic [ref=f1e73]: ГАРАНТИЯ 5 ЛЕТ
+      - generic [ref=f1e75]: ТРЕЙД-ИН ВЫШЕ РЫНКА ЗА 30 МИНУТ
+      - generic [ref=f1e77]: УЛУЧШИМ ЛЮБОЕ ПРЕДЛОЖЕНИЕ КОНКУРЕНТОВ
+      - generic [ref=f1e79]: ПОДАРКИ ПРИ ПОКУПКЕ
+      - generic [ref=f1e81]: 1 ГОД ВЛАДЕНИЯ БЕЗ ЗАБОТ — ТО ЗА НАШ СЧЁТ
+      - generic [ref=f1e83]: АВТОМОБИЛИ С ЭПТС В НАЛИЧИИ
+      - generic [ref=f1e85]: ГАРАНТИЯ 5 ЛЕТ
+      - generic [ref=f1e87]: ТРЕЙД-ИН ВЫШЕ РЫНКА ЗА 30 МИНУТ
+      - generic [ref=f1e89]: УЛУЧШИМ ЛЮБОЕ ПРЕДЛОЖЕНИЕ КОНКУРЕНТОВ
+      - generic [ref=f1e91]: ПОДАРКИ ПРИ ПОКУПКЕ
+      - generic [ref=f1e93]: 1 ГОД ВЛАДЕНИЯ БЕЗ ЗАБОТ — ТО ЗА НАШ СЧЁТ
+    - generic [ref=f1e97]:
+      - generic [ref=f1e98]: Специальные условия
+      - generic [ref=f1e101]:
+        - generic [ref=f1e102]:
+          - generic [ref=f1e103]: "02"
+          - generic [ref=f1e104]: дней
+        - generic [ref=f1e105]:
+          - generic [ref=f1e106]: "06"
+          - generic [ref=f1e107]: часов
+        - generic [ref=f1e108]:
+          - generic [ref=f1e109]: "47"
+          - generic [ref=f1e110]: минут
+        - generic [ref=f1e111]:
+          - generic [ref=f1e112]: "19"
+          - generic [ref=f1e113]: секунд
+      - link "Получить предложение" [ref=f1e115] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f1e118]:
+      - heading "Модельный ряд" [level=2] [ref=f1e120]
+      - navigation "Фильтр по моделям" [ref=f1e122]:
+        - button "Все модели" [ref=f1e123] [cursor=pointer]
+        - button "HAVAL F7x" [ref=f1e124] [cursor=pointer]
+        - button "HAVAL F7" [ref=f1e125] [cursor=pointer]
+        - button "HAVAL JOLION" [ref=f1e126] [cursor=pointer]
+        - button "HAVAL M6" [ref=f1e127] [cursor=pointer]
+        - button "HAVAL DARGO" [ref=f1e128] [cursor=pointer]
+        - button "GWM POER" [ref=f1e129] [cursor=pointer]
+      - generic [ref=f1e130]:
+        - article [ref=f1e132]:
+          - generic [ref=f1e134]:
+            - generic [ref=f1e135]:
+              - img "HAVAL F7x"
+            - generic [ref=f1e136]:
+              - button "Океанический лазурит" [ref=f1e137] [cursor=pointer]
+              - button "Галактический чёрный" [ref=f1e139] [cursor=pointer]
+              - button "Дымчатый жемчуг" [ref=f1e141] [cursor=pointer]
+              - button "Благородный агат" [ref=f1e143] [cursor=pointer]
+            - generic [ref=f1e145]: Океанический лазурит
+          - generic [ref=f1e146]:
+            - generic [ref=f1e147]:
+              - heading "HAVAL F7x НОВЫЙ" [level=3] [ref=f1e148]:
+                - text: HAVAL F7x
+                - generic [ref=f1e149]: НОВЫЙ
+              - paragraph [ref=f1e150]: Спортивное кросс-купе
+              - generic [ref=f1e151]: от 9 719 ₽/мес.
+            - list [ref=f1e153]:
+              - listitem [ref=f1e154]:
+                - generic [ref=f1e158]:
+                  - text: Цена от
+                  - generic [ref=f1e159]: 3 799 000
+                  - text: ₽
+              - listitem [ref=f1e160]:
+                - generic [ref=f1e164]: Двигатель 2.0T, 231 л.с.
+              - listitem [ref=f1e165]:
+                - generic [ref=f1e169]: Разгон 0–100 км/ч — 7,8 с
+              - listitem [ref=f1e170]:
+                - generic [ref=f1e174]: Экономичный расход — 8 л/100 км
+            - generic [ref=f1e175]:
+              - link "Узнать цену" [ref=f1e176] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f1e178] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f1e182]:
+            - link [ref=f1e184] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/1.webp
+              - img "HAVAL F7x — фото 1" [ref=f1e186]
+            - link [ref=f1e188] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/2.webp
+              - img "HAVAL F7x — фото 2" [ref=f1e190]
+            - link [ref=f1e192] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/3.webp
+              - img "HAVAL F7x — фото 3" [ref=f1e194]
+            - link [ref=f1e196] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/4.webp
+              - img "HAVAL F7x — фото 4" [ref=f1e198]
+            - link [ref=f1e200] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/5.webp
+              - img "HAVAL F7x — фото 5" [ref=f1e202]
+            - link [ref=f1e204] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/6.webp
+              - img "HAVAL F7x — фото 6" [ref=f1e206]
+            - link [ref=f1e208] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/7.webp
+              - img "HAVAL F7x — фото 7" [ref=f1e210]
+            - link [ref=f1e212] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/8.webp
+              - img "HAVAL F7x — фото 8" [ref=f1e214]
+            - link [ref=f1e216] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7x/gallery/1280/9.webp
+              - img "HAVAL F7x — фото 9" [ref=f1e218]
+        - article [ref=f1e222]:
+          - generic [ref=f1e224]:
+            - generic [ref=f1e225]:
+              - img "HAVAL F7"
+            - generic [ref=f1e226]:
+              - button "Благородный агат" [ref=f1e227] [cursor=pointer]
+              - button "Океанический лазурит" [ref=f1e229] [cursor=pointer]
+              - button "Галактический чёрный" [ref=f1e231] [cursor=pointer]
+              - button "Дымчатый жемчуг" [ref=f1e233] [cursor=pointer]
+            - generic [ref=f1e235]: Благородный агат
+          - generic [ref=f1e236]:
+            - generic [ref=f1e237]:
+              - heading "HAVAL F7" [level=3] [ref=f1e238]
+              - paragraph [ref=f1e239]: Интеллектуальный кроссовер
+              - generic [ref=f1e240]: от 7 680 ₽/мес.
+            - list [ref=f1e242]:
+              - listitem [ref=f1e243]:
+                - generic [ref=f1e247]:
+                  - text: Цена от
+                  - generic [ref=f1e248]: 2 999 000
+                  - text: ₽
+              - listitem [ref=f1e249]:
+                - generic [ref=f1e253]: Двигатель 1.5T / 2.0T, до 200 л.с.
+              - listitem [ref=f1e254]:
+                - generic [ref=f1e258]: Привод 2WD / 4WD
+              - listitem [ref=f1e259]:
+                - generic [ref=f1e263]: Разгон 0–100 км/ч — от 8,7 с
+            - generic [ref=f1e264]:
+              - link "Узнать цену" [ref=f1e265] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f1e267] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f1e271]:
+            - link [ref=f1e273] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/1.webp
+              - img "HAVAL F7 — фото 1" [ref=f1e275]
+            - link [ref=f1e277] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/2.webp
+              - img "HAVAL F7 — фото 2" [ref=f1e279]
+            - link [ref=f1e281] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/3.webp
+              - img "HAVAL F7 — фото 3" [ref=f1e283]
+            - link [ref=f1e285] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/4.webp
+              - img "HAVAL F7 — фото 4" [ref=f1e287]
+            - link [ref=f1e289] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/5.webp
+              - img "HAVAL F7 — фото 5" [ref=f1e291]
+            - link [ref=f1e293] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/6.webp
+              - img "HAVAL F7 — фото 6" [ref=f1e295]
+            - link [ref=f1e297] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/7.webp
+              - img "HAVAL F7 — фото 7" [ref=f1e299]
+            - link [ref=f1e301] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/8.webp
+              - img "HAVAL F7 — фото 8" [ref=f1e303]
+            - link [ref=f1e305] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-f7/gallery/1280/9.webp
+              - img "HAVAL F7 — фото 9" [ref=f1e307]
+        - article [ref=f1e311]:
+          - generic [ref=f1e313]:
+            - generic [ref=f1e314]:
+              - img "HAVAL JOLION"
+            - generic [ref=f1e315]:
+              - button "Магматический красный" [ref=f1e316] [cursor=pointer]
+              - button "Небесный топаз" [ref=f1e318] [cursor=pointer]
+              - button "Галактический чёрный" [ref=f1e320] [cursor=pointer]
+              - button "Дымчатый жемчуг" [ref=f1e322] [cursor=pointer]
+              - button "Благородный агат" [ref=f1e324] [cursor=pointer]
+            - generic [ref=f1e326]: Магматический красный
+          - generic [ref=f1e327]:
+            - generic [ref=f1e328]:
+              - heading "HAVAL JOLION НОВЫЙ" [level=3] [ref=f1e329]:
+                - text: HAVAL JOLION
+                - generic [ref=f1e330]: НОВЫЙ
+              - paragraph [ref=f1e331]: Городской кроссовер
+              - generic [ref=f1e332]: от 4 645 ₽/мес.
+            - list [ref=f1e334]:
+              - listitem [ref=f1e335]:
+                - generic [ref=f1e339]:
+                  - text: Цена от
+                  - generic [ref=f1e340]: 2 049 000
+                  - text: ₽
+              - listitem [ref=f1e341]:
+                - generic [ref=f1e345]: Двигатель 1.5T, до 150 л.с.
+              - listitem [ref=f1e346]:
+                - generic [ref=f1e350]: Привод 2WD / 4WD
+              - listitem [ref=f1e351]:
+                - generic [ref=f1e355]: Клиренс 190 мм
+            - generic [ref=f1e356]:
+              - link "Узнать цену" [ref=f1e357] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f1e359] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f1e363]:
+            - link [ref=f1e365] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/1.webp
+              - img "HAVAL JOLION — фото 1" [ref=f1e367]
+            - link [ref=f1e369] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/2.webp
+              - img "HAVAL JOLION — фото 2" [ref=f1e371]
+            - link [ref=f1e373] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/3.webp
+              - img "HAVAL JOLION — фото 3" [ref=f1e375]
+            - link [ref=f1e377] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/4.webp
+              - img "HAVAL JOLION — фото 4" [ref=f1e379]
+            - link [ref=f1e381] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/5.webp
+              - img "HAVAL JOLION — фото 5" [ref=f1e383]
+            - link [ref=f1e385] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/6.webp
+              - img "HAVAL JOLION — фото 6" [ref=f1e387]
+            - link [ref=f1e389] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/7.webp
+              - img "HAVAL JOLION — фото 7" [ref=f1e391]
+            - link [ref=f1e393] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-jolion/gallery/1280/8.webp
+              - img "HAVAL JOLION — фото 8" [ref=f1e395]
+        - article [ref=f1e399]:
+          - generic [ref=f1e401]:
+            - generic [ref=f1e402]:
+              - img "HAVAL M6"
+            - generic [ref=f1e403]:
+              - button "Белый" [ref=f1e404] [cursor=pointer]
+              - button "Серый" [ref=f1e406] [cursor=pointer]
+              - button "Чёрный" [ref=f1e408] [cursor=pointer]
+            - generic [ref=f1e410]: Белый
+          - generic [ref=f1e411]:
+            - generic [ref=f1e412]:
+              - heading "HAVAL M6 НОВЫЙ" [level=3] [ref=f1e413]:
+                - text: HAVAL M6
+                - generic [ref=f1e414]: НОВЫЙ
+              - paragraph [ref=f1e415]: Практичный городской кроссовер
+              - generic [ref=f1e416]: от 5 349 ₽/мес.
+            - list [ref=f1e418]:
+              - listitem [ref=f1e419]:
+                - generic [ref=f1e423]:
+                  - text: Цена от
+                  - generic [ref=f1e424]: 2 049 000
+                  - text: ₽
+              - listitem [ref=f1e425]:
+                - generic [ref=f1e429]: Двигатель 1.5T, 143 л.с.
+              - listitem [ref=f1e430]:
+                - generic [ref=f1e434]: Багажник 808–1 700 л
+              - listitem [ref=f1e435]:
+                - generic [ref=f1e439]: МКПП или робот 7DCT
+            - generic [ref=f1e440]:
+              - link "Узнать цену" [ref=f1e441] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f1e443] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f1e447]:
+            - link [ref=f1e449] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-m6/gallery/1280/1.webp
+              - img "HAVAL M6 — фото 1" [ref=f1e451]
+            - link [ref=f1e453] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-m6/gallery/1280/2.webp
+              - img "HAVAL M6 — фото 2" [ref=f1e455]
+            - link [ref=f1e457] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-m6/gallery/1280/3.webp
+              - img "HAVAL M6 — фото 3" [ref=f1e459]
+            - link [ref=f1e461] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-m6/gallery/1280/4.webp
+              - img "HAVAL M6 — фото 4" [ref=f1e463]
+            - link [ref=f1e465] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-m6/gallery/1280/5.webp
+              - img "HAVAL M6 — фото 5" [ref=f1e467]
+            - link [ref=f1e469] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-m6/gallery/1280/6.webp
+              - img "HAVAL M6 — фото 6" [ref=f1e471]
+            - link [ref=f1e473] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-m6/gallery/1280/7.webp
+              - img "HAVAL M6 — фото 7" [ref=f1e475]
+            - link [ref=f1e477] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-m6/gallery/1280/8.webp
+              - img "HAVAL M6 — фото 8" [ref=f1e479]
+        - article [ref=f1e483]:
+          - generic [ref=f1e485]:
+            - generic [ref=f1e486]:
+              - img "HAVAL DARGO"
+            - generic [ref=f1e487]:
+              - button "Благородный агат" [ref=f1e488] [cursor=pointer]
+              - button "Терракотовый сапфир" [ref=f1e490] [cursor=pointer]
+              - button "Пепельный антрацит" [ref=f1e492] [cursor=pointer]
+              - button "Галактический чёрный" [ref=f1e494] [cursor=pointer]
+            - generic [ref=f1e496]: Благородный агат
+          - generic [ref=f1e497]:
+            - generic [ref=f1e498]:
+              - heading "HAVAL DARGO НОВЫЙ" [level=3] [ref=f1e499]:
+                - text: HAVAL DARGO
+                - generic [ref=f1e500]: НОВЫЙ
+              - paragraph [ref=f1e501]: Внедорожный кроссовер
+              - generic [ref=f1e502]: от 8 994 ₽/мес.
+            - list [ref=f1e504]:
+              - listitem [ref=f1e505]:
+                - generic [ref=f1e509]:
+                  - text: Цена от
+                  - generic [ref=f1e510]: 3 499 000
+                  - text: ₽
+              - listitem [ref=f1e511]:
+                - generic [ref=f1e515]: Двигатель 2.0T, 200 л.с.
+              - listitem [ref=f1e516]:
+                - generic [ref=f1e520]: Полный привод 4WD
+              - listitem [ref=f1e521]:
+                - generic [ref=f1e525]: Клиренс 200 мм
+            - generic [ref=f1e526]:
+              - link "Узнать цену" [ref=f1e527] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f1e529] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f1e533]:
+            - link [ref=f1e535] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/1.webp
+              - img "HAVAL DARGO — фото 1" [ref=f1e537]
+            - link [ref=f1e539] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/2.webp
+              - img "HAVAL DARGO — фото 2" [ref=f1e541]
+            - link [ref=f1e543] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/3.webp
+              - img "HAVAL DARGO — фото 3" [ref=f1e545]
+            - link [ref=f1e547] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/4.webp
+              - img "HAVAL DARGO — фото 4" [ref=f1e549]
+            - link [ref=f1e551] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/5.webp
+              - img "HAVAL DARGO — фото 5" [ref=f1e553]
+            - link [ref=f1e555] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/6.webp
+              - img "HAVAL DARGO — фото 6" [ref=f1e557]
+            - link [ref=f1e559] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/7.webp
+              - img "HAVAL DARGO — фото 7" [ref=f1e561]
+            - link [ref=f1e563] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/8.webp
+              - img "HAVAL DARGO — фото 8" [ref=f1e565]
+            - link [ref=f1e567] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/haval-dargo/gallery/1280/9.webp
+              - img "HAVAL DARGO — фото 9" [ref=f1e569]
+        - article [ref=f1e573]:
+          - generic [ref=f1e575]:
+            - generic [ref=f1e576]:
+              - img "GWM POER"
+            - generic [ref=f1e577]:
+              - button "Серый" [ref=f1e578] [cursor=pointer]
+              - button "Белый" [ref=f1e580] [cursor=pointer]
+              - button "Синий" [ref=f1e582] [cursor=pointer]
+              - button "Красный" [ref=f1e584] [cursor=pointer]
+              - button "Чёрный" [ref=f1e586] [cursor=pointer]
+            - generic [ref=f1e588]: Серый
+          - generic [ref=f1e589]:
+            - generic [ref=f1e590]:
+              - heading "GWM POER" [level=3] [ref=f1e591]
+              - paragraph [ref=f1e592]: Пикап для работы и путешествий
+            - list [ref=f1e593]:
+              - listitem [ref=f1e594]:
+                - generic [ref=f1e598]:
+                  - text: Цена от
+                  - generic [ref=f1e599]: 3 449 000
+                  - text: ₽
+              - listitem [ref=f1e600]:
+                - generic [ref=f1e604]: 2.0T 218 л.с. / дизель 2.4 184 л.с.
+              - listitem [ref=f1e605]:
+                - generic [ref=f1e609]: 4WD с блокировкой дифференциала
+              - listitem [ref=f1e610]:
+                - generic [ref=f1e614]: Грузоподъёмность 975 кг
+            - generic [ref=f1e615]:
+              - link "Узнать цену" [ref=f1e616] [cursor=pointer]:
+                - /url: "#callback"
+              - link "Рассчитать кредит" [ref=f1e618] [cursor=pointer]:
+                - /url: "#callback"
+          - generic [ref=f1e622]:
+            - link [ref=f1e624] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/gwm-poer/gallery/1280/1.webp
+              - img "GWM POER — фото 1" [ref=f1e626]
+            - link [ref=f1e628] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/gwm-poer/gallery/1280/2.webp
+              - img "GWM POER — фото 2" [ref=f1e630]
+            - link [ref=f1e632] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/gwm-poer/gallery/1280/3.webp
+              - img "GWM POER — фото 3" [ref=f1e634]
+            - link [ref=f1e636] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/gwm-poer/gallery/1280/4.webp
+              - img "GWM POER — фото 4" [ref=f1e638]
+            - link [ref=f1e640] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/gwm-poer/gallery/1280/5.webp
+              - img "GWM POER — фото 5" [ref=f1e642]
+            - link [ref=f1e644] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/gwm-poer/gallery/1280/6.webp
+              - img "GWM POER — фото 6" [ref=f1e646]
+            - link [ref=f1e648] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/gwm-poer/gallery/1280/7.webp
+              - img "GWM POER — фото 7" [ref=f1e650]
+            - link [ref=f1e652] [cursor=pointer]:
+              - /url: http://promo.havalavilon.ru.test/data/img/range/gwm-poer/gallery/1280/8.webp
+              - img "GWM POER — фото 8" [ref=f1e654]
+    - generic [ref=f1e658]:
+      - generic [ref=f1e659]:
+        - heading "Акции и предложения" [level=2] [ref=f1e660]
+        - paragraph [ref=f1e661]: Выгодные программы покупки HAVAL в Авилон
+      - generic [ref=f1e662]:
+        - link "Выгодный обмен HAVAL Трейд-ин выше рынка Бесплатная оценка за 30 минут и цена выше рынка за ваш автомобиль при обмене на новый HAVAL." [ref=f1e664] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Выгодный обмен"
+          - img "HAVAL" [ref=f1e666]
+          - generic [ref=f1e667]:
+            - generic [ref=f1e668]: Трейд-ин выше рынка
+            - generic [ref=f1e670]: Бесплатная оценка за 30 минут и цена выше рынка за ваш автомобиль при обмене на новый HAVAL.
+        - link "Кредит HAVAL Кредит Кредит с выгодной ставкой и платежом от 4 645 ₽/мес. Улучшим любое предложение конкурентов." [ref=f1e672] [cursor=pointer]:
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Кредит"
+          - img "HAVAL" [ref=f1e674]
+          - generic [ref=f1e675]:
+            - generic [ref=f1e676]: Кредит
+            - generic [ref=f1e678]: Кредит с выгодной ставкой и платежом от 4 645 ₽/мес. Улучшим любое предложение конкурентов.
+        - 'link "Лизинг HAVAL Лизинг Лизинг для юридических лиц: гибкий срок и структура платежей, платёж без НДС на затраты компании." [ref=f1e680] [cursor=pointer]':
+          - /url: "#callback"
+          - generic:
+            - generic:
+              - img "Лизинг"
+          - img "HAVAL" [ref=f1e682]
+          - generic [ref=f1e683]:
+            - generic [ref=f1e684]: Лизинг
+            - generic [ref=f1e686]: "Лизинг для юридических лиц: гибкий срок и структура платежей, платёж без НДС на затраты компании."
+    - generic [ref=f1e690]:
+      - generic [ref=f1e691]: Индивидуальная поездка
+      - generic [ref=f1e692]: Не нужно ждать — просто запишитесь на тест-драйв онлайн
+      - link "Выбрать дату и время" [ref=f1e694] [cursor=pointer]:
+        - /url: "#callback"
+    - generic [ref=f1e697]:
+      - generic [ref=f1e698]:
+        - heading "Преимущества Авилон HAVAL City" [level=2] [ref=f1e699]
+        - paragraph [ref=f1e700]: Официальный дилер HAVAL в Москве
+      - generic [ref=f1e701]:
+        - link "Автомобили с ЭПТС в наличии" [ref=f1e702] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Гарантия 5 лет" [ref=f1e705] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Трейд-ин выше рынка за 30 минут" [ref=f1e708] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Улучшим любое предложение конкурентов" [ref=f1e711] [cursor=pointer]:
+          - /url: "#callback"
+        - link "Подарки при покупке" [ref=f1e714] [cursor=pointer]:
+          - /url: "#callback"
+        - link "1 год владения без забот — ТО за наш счёт" [ref=f1e717] [cursor=pointer]:
+          - /url: "#callback"
+    - generic [ref=f1e721]:
+      - generic [ref=f1e722]:
+        - heading "Способы покупки" [level=2] [ref=f1e723]
+        - paragraph [ref=f1e724]: Трейд-ин, кредит и лизинг на выгодных условиях
+      - generic [ref=f1e725]:
+        - article [ref=f1e727]:
+          - generic [ref=f1e731]:
+            - heading "Трейд-ин" [level=3] [ref=f1e732]
+            - list [ref=f1e734]:
+              - listitem [ref=f1e735]: Бесплатная диагностика и оценка за 30 минут
+              - listitem [ref=f1e736]:
+                - text: Лояльный трейд-ин — выгода до
+                - generic [ref=f1e737]: 200 000 ₽
+            - link "Получить оценку" [ref=f1e739] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f1e742]:
+          - generic [ref=f1e746]:
+            - heading "Кредит" [level=3] [ref=f1e747]
+            - list [ref=f1e749]:
+              - listitem [ref=f1e750]:
+                - generic [ref=f1e751]: 0% переплат
+                - text: по программам дилера
+              - listitem [ref=f1e752]: Первоначальный взнос от 10%
+              - listitem [ref=f1e753]: Срок до 84 месяцев
+            - link "Рассчитать условия" [ref=f1e755] [cursor=pointer]:
+              - /url: "#callback"
+        - article [ref=f1e758]:
+          - generic [ref=f1e762]:
+            - heading "Лизинг" [level=3] [ref=f1e763]
+            - list [ref=f1e765]:
+              - listitem [ref=f1e766]: Гибкий выбор срока и структуры платежей
+              - listitem [ref=f1e767]: Сохранение денежных средств в обороте
+              - listitem [ref=f1e768]: Лизинговый платёж без НДС на затраты организации
+            - link "Рассчитать условия" [ref=f1e770] [cursor=pointer]:
+              - /url: "#callback"
+    - generic [ref=f1e775]:
+      - generic [ref=f1e776]:
+        - generic [ref=f1e777]: HAVAL City Авилон
+        - generic [ref=f1e778]: Официальный дилер HAVAL в Москве
+      - list [ref=f1e779]:
+        - listitem [ref=f1e780]:
+          - link "+7 (495) 730-00-55" [ref=f1e784] [cursor=pointer]:
+            - /url: tel:+74957300055
+        - listitem [ref=f1e785]:
+          - link "Москва, Волгоградский проспект, 41, к. 1" [ref=f1e790] [cursor=pointer]:
+            - /url: "#combomap-ymap"
+        - listitem [ref=f1e791]:
+          - generic [ref=f1e796]: "Пн–Вс: 09:00–21:40"
+      - generic [ref=f1e797]:
+        - generic [ref=f1e798]: Услуги
+        - generic [ref=f1e799]:
+          - generic [ref=f1e800]: Продажа
+          - generic [ref=f1e801]: Трейд-ин
+          - generic [ref=f1e802]: Кредит
+      - link "Получить консультацию" [ref=f1e803] [cursor=pointer]:
+        - /url: "#callback"
+  - generic [ref=f1e808]:
+    - link [ref=f1e810] [cursor=pointer]:
+      - /url: http://promo.havalavilon.ru.test/
+      - img "HAVAL" [ref=f1e811]
+    - generic [ref=f1e813]:
+      - link "ВКонтакте" [ref=f1e814] [cursor=pointer]:
+        - /url: https://vk.me/avilonofficial
+      - link "MAX" [ref=f1e817] [cursor=pointer]:
+        - /url: https://max.ru/id7705133757_bot
+      - link "Дзен" [ref=f1e820] [cursor=pointer]:
+        - /url: https://dzen.ru/avilongroup
+    - generic [ref=f1e823]:
+      - link "Модельный ряд" [ref=f1e825] [cursor=pointer]:
+        - /url: "#range"
+      - link "Преимущества" [ref=f1e827] [cursor=pointer]:
+        - /url: "#profits"
+      - link "Способы покупки" [ref=f1e829] [cursor=pointer]:
+        - /url: "#finance"
+      - link "Контакты" [ref=f1e831] [cursor=pointer]:
+        - /url: "#map"
+    - generic [ref=f1e832]: © 2026. Авилон HAVAL City. Все права защищены
+    - generic [ref=f1e834]:
+      - link "Политика конфиденциальности" [ref=f1e835] [cursor=pointer]:
+        - /url: https://avilon.ru/upload/legal/avilon-personal-data-policy.pdf
+      - link "Политика использования файлов cookie" [ref=f1e836] [cursor=pointer]:
+        - /url: http://promo.havalavilon.ru.test/cookies-policy/
+      - link "Согласие на обработку персональных данных" [ref=f1e837] [cursor=pointer]:
+        - /url: http://promo.havalavilon.ru.test/consent/
+      - link "Правовая информация" [ref=f1e838] [cursor=pointer]:
+        - /url: http://promo.havalavilon.ru.test/legal-info/
+    - paragraph [ref=f1e840]: Вся представленная на данном сайте информация, касающаяся автомобилей, цены автомобилей, носит информационный характер и не является публичной офертой.Подробности можно уточнить у консультантов отдела продаж. Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+  - generic [ref=f1e843]:
+    - generic [ref=f1e845]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f1e846] [cursor=pointer]:
+        - /url: /cookies-policy
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f1e848] [cursor=pointer]

@@ -1,0 +1,9 @@
+<section class="headline section">
+  <div class="container">
+    {% if data.heading is defined %}
+      <div class="section__item heading-wrap">
+        {% include 'components/heading.twig' with {'item': data.heading} %}
+      </div>
+    {% endif %}
+  </div>
+</section>

@@ -1,0 +1,140 @@
+- generic [ref=e6]:
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - link [ref=e12] [cursor=pointer]:
+        - /url: /list
+      - generic [ref=e32]:
+        - link "Настройка аккаунта" [ref=e33] [cursor=pointer]:
+          - /url: /preferences/subscriptions
+        - button "Помощь" [ref=e34]:
+          - generic "Помощь" [ref=e37] [cursor=pointer]
+        - generic [ref=e42]:
+          - button [ref=e43]
+          - generic [ref=e49]: "0"
+        - button [ref=e50]
+    - generic [ref=e59] [cursor=pointer]:
+      - img "fedorovich-d" [ref=e62]
+      - generic [ref=e63]: fedorovich-d
+  - iframe [ref=e68]:
+    - generic [ref=f1e1]:
+      - generic [ref=f1e2]:
+        - generic [ref=f1e3]:
+          - generic [ref=f1e5]: Подпишитесь на новости и советы по работе с Метрикой
+          - textbox "ваша почта" [ref=f1e9]
+          - button "Подписаться" [ref=f1e10] [cursor=pointer]
+          - button [ref=f1e11] [cursor=pointer]
+        - generic [ref=f1e13]:
+          - text: Нажимая кнопку «Подписаться», я подтверждаю свое согласие на получение рекламных и иных маркетинговых сообщений от ООО «ЯНДЕКС» (119021, г. Москва, ул. Льва Толстого, 16), на условиях
+          - link "Политики конфиденциальности" [ref=f1e14] [cursor=pointer]:
+            - /url: //yandex.ru/legal/confidential
+          - text: и
+          - link "Пользовательского соглашения" [ref=f1e15] [cursor=pointer]:
+            - /url: //yandex.ru/legal/metrica_termsofuse
+          - text: сервиса Яндекс.Метрика и AppMetrica.
+      - generic [ref=f1e21]:
+        - generic [ref=f1e22]:
+          - link "Добавить счетчик" [ref=f1e23] [cursor=pointer]:
+            - /url: "#"
+          - textbox "Найти счетчик" [ref=f1e26]
+        - menu [ref=f1e30]:
+          - menuitem "Мои счетчики 2" [ref=f1e31] [cursor=pointer]:
+            - generic [ref=f1e32]: Мои счетчики
+            - text: "2"
+          - menuitem "Удаленные" [ref=f1e33] [cursor=pointer]
+          - menuitem "Избранные" [ref=f1e35] [cursor=pointer]
+          - listitem [ref=f1e37]:
+            - button "Все метки" [ref=f1e38] [cursor=pointer]
+          - listitem [ref=f1e39]:
+            - link "Заказать настройку Метрики" [ref=f1e41] [cursor=pointer]:
+              - /url: https://yandex.ru/promo/freeservice/metrica
+        - table [ref=f1e43]:
+          - rowgroup [ref=f1e44]:
+            - row [ref=f1e45]:
+              - cell [ref=f1e46]
+              - cell "Визиты" [ref=f1e51]
+              - cell "Просмотры" [ref=f1e55]
+              - cell "Посетители" [ref=f1e59]
+              - cell "Достижения целей" [ref=f1e63]
+              - cell "Владелец" [ref=f1e67]
+              - cell [ref=f1e70]
+          - rowgroup [ref=f1e71]:
+            - row [ref=f1e72]:
+              - cell "93699016 AVTOFIN.ORG • 93699016" [ref=f1e73]:
+                - generic [ref=f1e76]:
+                  - link "93699016" [ref=f1e77] [cursor=pointer]:
+                    - /url: /overview?id=93699016
+                  - generic [ref=f1e78]:
+                    - link "AVTOFIN.ORG" [ref=f1e79] [cursor=pointer]:
+                      - /url: http://AVTOFIN.ORG
+                    - generic [ref=f1e80]: •
+                    - generic [ref=f1e81]: "93699016"
+              - cell "307 -4,23 %" [ref=f1e82]:
+                - generic [ref=f1e84]:
+                  - generic [ref=f1e85]: "307"
+                  - generic "Cравнивается количество за последние 24 часа с количеством за предыдущие 24 часа." [ref=f1e88]: "-4,23 %"
+              - cell "313 -5,7 %" [ref=f1e107]:
+                - generic [ref=f1e109]:
+                  - generic [ref=f1e110]: "313"
+                  - generic "Cравнивается количество за последние 24 часа с количеством за предыдущие 24 часа." [ref=f1e113]: "-5,7 %"
+              - cell "272 -6,46 %" [ref=f1e132]:
+                - generic [ref=f1e134]:
+                  - generic [ref=f1e135]: "272"
+                  - generic "Cравнивается количество за последние 24 часа с количеством за предыдущие 24 часа." [ref=f1e138]: "-6,46 %"
+              - cell [ref=f1e157]:
+                - generic "Количество достижений за сегодня" [ref=f1e158]:
+                  - button "!!!AZM-TG1/1 - FOS(modalForm) - ОТПРАВКА ФОРМЫ 15" [ref=f1e160] [cursor=pointer]:
+                    - generic:
+                      - generic:
+                        - generic: "!!!AZM-TG1/1 - FOS(modalForm) - ОТПРАВКА ФОРМЫ"
+                        - generic: "15"
+              - cell "autozaimorg" [ref=f1e161]
+              - cell [ref=f1e162]:
+                - link "Настройка" [ref=f1e164] [cursor=pointer]:
+                  - /url: /settings?id=93699016
+                - button "Метки" [ref=f1e167] [cursor=pointer]
+                - button "Еще" [ref=f1e171] [cursor=pointer]
+            - row [ref=f1e172]:
+              - cell "Kumho (kumho-tires.ru) kumho-tires.ru • 107236894" [ref=f1e173]:
+                - generic [ref=f1e176]:
+                  - link "Kumho (kumho-tires.ru)" [ref=f1e177] [cursor=pointer]:
+                    - /url: /overview?id=107236894
+                  - generic [ref=f1e178]:
+                    - link "kumho-tires.ru" [ref=f1e179] [cursor=pointer]:
+                      - /url: http://kumho-tires.ru
+                    - generic [ref=f1e180]: •
+                    - generic [ref=f1e181]: "107236894"
+              - cell "10" [ref=f1e182]
+              - cell "32" [ref=f1e205]
+              - cell "10" [ref=f1e228]
+              - cell [ref=f1e251]:
+                - generic "Количество достижений за сегодня" [ref=f1e252]:
+                  - 'button "Автоцель: отправка формы 0" [ref=f1e254] [cursor=pointer]':
+                    - generic:
+                      - generic:
+                        - generic: "Автоцель: отправка формы"
+                        - generic: "0"
+              - cell "jetmosquitoe" [ref=f1e255]
+              - cell [ref=f1e256]:
+                - link "Настройка" [ref=f1e258] [cursor=pointer]:
+                  - /url: /settings?id=107236894
+                - button "Метки" [ref=f1e261] [cursor=pointer]
+                - button "Еще" [ref=f1e265] [cursor=pointer]
+  - generic [ref=e71]:
+    - generic [ref=e72]:
+      - link "Пользовательское соглашение" [ref=e74] [cursor=pointer]:
+        - /url: https://yandex.ru/legal/metrica_termsofuse
+      - link "Политика конфиденциальности" [ref=e76] [cursor=pointer]:
+        - /url: https://yandex.ru/legal/confidential
+      - link "Справка" [ref=e78] [cursor=pointer]:
+        - /url: /support/metrica/ru/
+      - link "Задать вопрос" [ref=e80] [cursor=pointer]:
+        - /url: /support/metrica/ru/troubleshooting/
+      - link "Предложить идею" [ref=e82] [cursor=pointer]:
+        - /url: /support/metrica/ru/troubleshooting/idea
+    - generic [ref=e83]:
+      - generic [ref=e84]: Ru
+      - generic [ref=e93]:
+        - text: © 2008–2026 OOO «
+        - link "ЯНДЕКС" [ref=e94] [cursor=pointer]:
+          - /url: https://ya.ru
+        - text: »

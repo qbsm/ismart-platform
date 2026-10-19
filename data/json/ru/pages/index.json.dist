@@ -1,0 +1,15 @@
+{
+  "title": "Главная",
+  "sections": [
+    {
+      "name": "intro",
+      "type": "intro",
+      "data": {
+        "heading": {
+          "title": "iSmart Platform",
+          "subtitle": "Тиражируемая платформа на Slim 4 + Twig 3"
+        }
+      }
+    }
+  ]
+}

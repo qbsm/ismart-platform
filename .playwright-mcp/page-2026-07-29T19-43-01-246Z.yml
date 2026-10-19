@@ -1,0 +1,209 @@
+- generic [active] [ref=f58e1]:
+  - generic [ref=f58e2]:
+    - banner [ref=f58e4]:
+      - generic [ref=f58e6]:
+        - button [ref=f58e8] [cursor=pointer]
+        - link [ref=f58e13] [cursor=pointer]:
+          - /url: /nl
+        - generic [ref=f58e19]:
+          - link [ref=f58e20] [cursor=pointer]:
+            - /url: /nl/car-configurator
+            - button "Configurator" [ref=f58e21]
+          - link [ref=f58e22] [cursor=pointer]:
+            - /url: /nl/contact-us?type=testDrive
+            - button "Proefrit" [ref=f58e23]
+          - link [ref=f58e24] [cursor=pointer]:
+            - /url: /nl/find-a-dealer
+            - button "Zoek een Dealer" [ref=f58e25]
+          - button "Select language" [ref=f58e27] [cursor=pointer]:
+            - generic [ref=f58e28]: NL
+            - generic [ref=f58e29]: ▼
+    - main [ref=f58e3]:
+      - generic [ref=f58e30]:
+        - button "Back" [ref=f58e32] [cursor=pointer]: ←
+        - generic [ref=f58e33]:
+          - heading "Configureer uw OMODA" [level=1] [ref=f58e34]
+          - paragraph [ref=f58e314]: Stel uw perfecte OMODA samen. Kies uw versie en kleur.
+        - generic [ref=f58e40]:
+          - generic [ref=f58e41] [cursor=pointer]:
+            - generic [ref=f58e42]: "1"
+            - paragraph [ref=f58e43]: TYPE
+          - generic [ref=f58e46] [cursor=pointer]:
+            - generic [ref=f58e47]: "2"
+            - paragraph [ref=f58e48]: VERSIE
+          - generic [ref=f58e51] [cursor=pointer]:
+            - generic [ref=f58e52]: "3"
+            - paragraph [ref=f58e53]: KLEUR
+          - generic [ref=f58e56] [cursor=pointer]:
+            - generic [ref=f58e57]: "4"
+            - paragraph [ref=f58e58]: SAMENVATTING
+        - generic [ref=f58e59]:
+          - list [ref=f58e221]:
+            - listitem [ref=f58e222] [cursor=pointer]:
+              - generic [ref=f58e223]:
+                - heading "COMFORT" [level=4] [ref=f58e224]
+                - paragraph
+              - paragraph
+              - list [ref=f58e225]:
+                - listitem [ref=f58e316]: 17-inch wielen
+                - listitem [ref=f58e319]: Kinderslot (handmatig)
+                - listitem [ref=f58e322]: Achteruitrijcamera met parkeersensoren
+                - listitem [ref=f58e325]: BAS remassistentiesysteem
+                - listitem [ref=f58e328]: Cruisecontrol
+                - listitem [ref=f58e331]: Follow-me-home koplampfunctie
+                - listitem [ref=f58e334]: Multifunctioneel stuurwiel
+                - listitem [ref=f58e337]: Kledinghaak
+                - listitem [ref=f58e340]: 6 luidsprekers
+                - listitem [ref=f58e343]: 18 ADAS-rijhulpfuncties
+                - listitem [ref=f58e346]: 12,3-inch digitaal instrumentenpaneel
+                - listitem [ref=f58e349]: 12,3-inch centraal touchscreen-display
+            - listitem [ref=f58e262] [cursor=pointer]:
+              - generic [ref=f58e263]:
+                - heading "PREMIUM" [level=4] [ref=f58e264]
+                - paragraph [ref=f58e265]: €3.500
+              - paragraph
+              - list [ref=f58e266]:
+                - listitem [ref=f58e352]: 18-inch wielen
+                - listitem [ref=f58e355]: Dakdragers
+                - listitem [ref=f58e358]: Meerkleurige sfeerverlichting
+                - listitem [ref=f58e361]: Verwarmd stuurwiel
+                - listitem [ref=f58e364]: Voorstoelen met elektrische verstelling, verwarming en ventilatie
+                - listitem [ref=f58e367]: 360° HD-camera met rondomzicht
+                - listitem [ref=f58e370]: Elektrisch bedienbare achterklep
+                - listitem [ref=f58e373]: Getint privacyglas
+                - listitem [ref=f58e376]: Elektrisch schuifdak
+                - listitem [ref=f58e379]: Buitenspiegels elektrisch verstelbaar, inklapbaar en verwarmd
+                - listitem [ref=f58e382]: 8 luidsprekers
+                - listitem [ref=f58e385]: 50W draadloos opladen voor mobiele telefoon
+          - generic [ref=f58e303]:
+            - button [ref=f58e304] [cursor=pointer]
+            - button [ref=f58e310] [cursor=pointer]
+    - contentinfo [ref=f58e85]:
+      - generic [ref=f58e87]:
+        - link [ref=f58e90] [cursor=pointer]:
+          - /url: /nl/
+        - navigation [ref=f58e96]:
+          - generic [ref=f58e97]:
+            - heading "OMODA & JAECOO" [level=3] [ref=f58e98]
+            - list [ref=f58e99]:
+              - listitem [ref=f58e100]:
+                - link "Over het merk" [ref=f58e101] [cursor=pointer]:
+                  - /url: /nl/about-us
+              - listitem [ref=f58e102]:
+                - link "Nieuws" [ref=f58e103] [cursor=pointer]:
+                  - /url: /nl/news
+              - listitem [ref=f58e104]:
+                - link "Contact" [ref=f58e105] [cursor=pointer]:
+                  - /url: /nl/contact-us
+              - listitem [ref=f58e106]:
+                - link "Prijslijsten & Brochures" [ref=f58e107] [cursor=pointer]:
+                  - /url: /nl/download-center
+          - generic [ref=f58e108]:
+            - heading "Modellen" [level=3] [ref=f58e109]
+            - list [ref=f58e110]:
+              - listitem [ref=f58e111]:
+                - link "JAECOO 5 EV" [ref=f58e112] [cursor=pointer]:
+                  - /url: /nl/jaecoo-5-ev
+              - listitem [ref=f58e113]:
+                - link "JAECOO 5 SHS-H" [ref=f58e114] [cursor=pointer]:
+                  - /url: /nl/jaecoo-5-shs-h
+              - listitem [ref=f58e115]:
+                - link "JAECOO 7 SHS-P" [ref=f58e116] [cursor=pointer]:
+                  - /url: /nl/jaecoo-7-shs
+              - listitem [ref=f58e117]:
+                - link "JAECOO 8 SHS-P" [ref=f58e118] [cursor=pointer]:
+                  - /url: /nl/jaecoo-8-shs-p
+              - listitem [ref=f58e119]:
+                - link "OMODA 5 EV" [ref=f58e120] [cursor=pointer]:
+                  - /url: /nl/omoda-5-ev
+              - listitem [ref=f58e121]:
+                - link "OMODA 5 SHS-H" [ref=f58e122] [cursor=pointer]:
+                  - /url: /nl/omoda-5-shs-h
+              - listitem [ref=f58e123]:
+                - link "OMODA 9 SHS-P" [ref=f58e124] [cursor=pointer]:
+                  - /url: /nl/omoda-9-shs
+          - generic [ref=f58e125]:
+            - heading "Koop een auto" [level=3] [ref=f58e126]
+            - list [ref=f58e127]:
+              - listitem [ref=f58e128]:
+                - link "Proefrit" [ref=f58e129] [cursor=pointer]:
+                  - /url: /nl/contact-us?type=testDrive
+              - listitem [ref=f58e130]:
+                - link "Configurator" [ref=f58e131] [cursor=pointer]:
+                  - /url: /nl/car-configurator
+              - listitem [ref=f58e132]:
+                - link "Campagnes" [ref=f58e133] [cursor=pointer]:
+                  - /url: /nl/news/0211-meet-your-perfect-match
+              - listitem [ref=f58e134]:
+                - link "Dealer vinden" [ref=f58e135] [cursor=pointer]:
+                  - /url: /nl/find-a-dealer
+          - generic [ref=f58e136]:
+            - heading "Privé" [level=3] [ref=f58e137]
+            - list [ref=f58e138]:
+              - listitem [ref=f58e139]:
+                - link "Private Flex" [ref=f58e140] [cursor=pointer]:
+                  - /url: /nl/private-flex
+              - listitem [ref=f58e141]:
+                - link "Private Lease" [ref=f58e142] [cursor=pointer]:
+                  - /url: /nl/private-leasing
+              - listitem [ref=f58e143]:
+                - link "SHS Voordelen" [ref=f58e144] [cursor=pointer]:
+                  - /url: /nl/fleet-sales
+          - generic [ref=f58e145]:
+            - heading "Zakelijk" [level=3] [ref=f58e146]
+            - list [ref=f58e147]:
+              - listitem [ref=f58e148]:
+                - link "Fleet Sales" [ref=f58e149] [cursor=pointer]:
+                  - /url: /nl/fleet
+              - listitem [ref=f58e150]:
+                - link "SHS Voordelen" [ref=f58e151] [cursor=pointer]:
+                  - /url: /nl/fleet-sales
+              - listitem [ref=f58e152]:
+                - link "Zakelijke aanvraag" [ref=f58e153] [cursor=pointer]:
+                  - /url: /nl/fleet-business
+              - listitem [ref=f58e154]:
+                - link "Financial Lease" [ref=f58e155] [cursor=pointer]:
+                  - /url: /nl/financial-lease
+              - listitem [ref=f58e156]:
+                - link "Full Operational Lease" [ref=f58e157] [cursor=pointer]:
+                  - /url: /nl/full-operational-lease
+          - generic [ref=f58e158]:
+            - heading "Eigenaars" [level=3] [ref=f58e159]
+            - list [ref=f58e160]:
+              - listitem [ref=f58e161]:
+                - link "Garantie" [ref=f58e162] [cursor=pointer]:
+                  - /url: /nl/warranty
+              - listitem [ref=f58e163]:
+                - link "Onderhoud en service" [ref=f58e164] [cursor=pointer]:
+                  - /url: /nl/service-and-maintenance
+              - listitem [ref=f58e165]:
+                - link "Serviceplan" [ref=f58e166] [cursor=pointer]:
+                  - /url: /nl/service-plan
+              - listitem [ref=f58e167]:
+                - link "Roadside assistance" [ref=f58e168] [cursor=pointer]:
+                  - /url: /nl/roadside-assistance
+        - generic [ref=f58e169]:
+          - generic [ref=f58e170]:
+            - link [ref=f58e171] [cursor=pointer]:
+              - /url: https://www.facebook.com/omodajaecoonetherlands
+            - link [ref=f58e175] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/omodajaecoo-nederland
+            - link [ref=f58e180] [cursor=pointer]:
+              - /url: https://www.instagram.com/omodajaecoonederland/
+            - link [ref=f58e184] [cursor=pointer]:
+              - /url: https://www.youtube.com/@omodajaecoonederland/
+          - generic [ref=f58e188]:
+            - generic [ref=f58e189]: Service voor u
+            - link "+31 20 323 35 33" [ref=f58e190] [cursor=pointer]:
+              - /url: tel:+3120 323 35 33
+        - generic [ref=f58e192]:
+          - paragraph [ref=f58e193]: © 2025 OMODA & JAECOO. Alle rechten voorbehouden
+          - list [ref=f58e194]:
+            - listitem [ref=f58e195]:
+              - link "Privacybeleid" [ref=f58e196] [cursor=pointer]:
+                - /url: /nl/privacy-policy
+            - listitem [ref=f58e197]:
+              - link "Cookieverklaring" [ref=f58e198] [cursor=pointer]:
+                - /url: /nl/cookie-policy
+  - dialog "Cookie consent button" [ref=f58e214] [cursor=pointer]:
+    - generic [ref=f58e215]: Cookie-instellingen

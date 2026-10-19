@@ -1,20 +1,35 @@
 :root {
+    /* Базовые */
     --color-1: #fff;
     --color-2: #000;
-    --color-3: #000;
-    --color-4: #EBE8E6;
-    --color-5: #6C6B6B;
-    --color-6: #B9B3B3;
+
+    /* Фирменные */
+    --color-3: #ef0010;
+    --color-4: #d6d6d6;
+    --color-5: #6e6e6e;
+    --color-6: #4a4a49;
+    --color-7: #b4b7b9;
+    --color-8: #4c4c4e;
+
+    /* Карточка новости: маркер даты */
+    --color-news-hex: #CCD7E0;
+
+    /* Служебные: ошибки, статусы, подписи */
+    --color-error: #f44336;
+    --color-error-bg: rgb(244 67 54 / 5%);
+    --color-success: #4CAF50;
+    --color-placeholder: #6C6B6B;
+    --color-muted: #666;
+    --color-border: #888;
+    --gradient-1: linear-gradient(to bottom, hsl(0deg 0% 100% / 100%), hsl(0deg 0% 100% / 0%));
+    --gradient-2: linear-gradient(to bottom, hsl(0deg 0% 0% / 100%), hsl(0deg 0% 0% / 0%));
+    --gradient-3: linear-gradient(to left, #F1ECE4, #DAD8D7);
 }
 
 :root {
-    /* Семейство шрифтов TT Commons Pro Expanded (только существующие шрифты) */
-    --font-1-light: "TT-Commons-Pro-Expanded-Light", sans-serif;
-    --font-1-regular: "TT-Commons-Pro-Expanded-Regular", sans-serif;
-    --font-1-normal: "TT-Commons-Pro-Expanded-Normal", sans-serif;
-    --font-1-medium: "TT-Commons-Pro-Expanded-Medium", sans-serif;
-    --font-1-demibold: "TT-Commons-Pro-Expanded-DemiBold", sans-serif;
-    --font-1-bold: "TT-Commons-Pro-Expanded-Bold", sans-serif;
+    /* font-1: основной текст; font-2: заголовки */
+    --font-1: "Source Sans 3", sans-serif;
+    --font-2: "Manrope", sans-serif;
 }
 
 :root {

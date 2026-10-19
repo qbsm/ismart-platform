@@ -1,5 +1,6 @@
 // JavaScript для index
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('index загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для index
 });

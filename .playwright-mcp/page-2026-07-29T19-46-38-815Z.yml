@@ -1,0 +1,196 @@
+- generic [active] [ref=f63e1]:
+  - generic:
+    - generic:
+      - button "close popup button":
+        - img "close popup button"
+      - generic:
+        - heading "DOWNLOAD E-BROCHURE" [level=3]
+        - generic:
+          - generic:
+            - link "JAECOO J7 E-BROCHURE ":
+              - /url: /themes/demo/assets/brochure/J7_brochure_website.pdf
+            - link "OMODA C9 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/C9_Brochure.pdf
+            - link "JAECOO J7PHEV E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J7_PHEV_Brochure.pdf
+            - link "JAECOO J8 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J8_Brochure.pdf
+            - link "JAECOO J5 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J5_Brochure.pdf
+  - generic:
+    - generic:
+      - button "close popup button":
+        - img "close popup button"
+      - generic:
+        - generic:
+          - heading "Terms and Conditions" [level=3]
+          - paragraph: (OMODA & JAECOO Malaysia Professional Affiliate Programme)
+        - list:
+          - listitem: The list of eligible organisations, associations, institutions and/or corporation is subject to change at the sole discretion of JAECOO Auto Malaysia Sdn Bhd (“JAMSB”).
+          - listitem: In the case of an eligible corporation, the vehicle purchased must be registered under the company name.
+          - listitem: In the case of an eligible individual, the vehicle purchased must be registered under the individual's name or that of his immediate family member (spouse, parents or children).
+          - listitem: Registration under immediate family member will require documentation proof such as marriage certificate or birth certificate, whichever applicable.
+          - listitem: Customer shall submit all required documentations to JAMSB's authorised dealers, failing which the application will not be processed by JAMSB.
+          - listitem: Eligible customer shall only be entitled to all the benefits or the purchase of brand-new OMODA & JAECOO vehicle from JAMSB's authorised dealers.
+          - listitem: The applicability, computation and allowances of the benefits in each purchase shall be subject to approval by JAMSB at its absolute discretion.
+          - listitem: All decisions made by JAMSB are final and no appeals or discussions will be entertained.
+          - listitem: JAMSB reserves the right to terminate the Professional Affiliate Programme at any time without prior notice.
+          - listitem: By submitting the application to JAMSB's authorised dealers, the customer affirms that he has read, understood, and agreed to the policies in JAMSB's Privacy Policy and consent to his personal data being processed and used by JAMSB as stipulated in the said Privacy Policy in OMODA & JAECOO official website.
+          - listitem: Only cars manufactured in 2026 are eligible for PAP.
+          - listitem: These Terms and Conditions may be amended, replaced and/or deleted at any time in JAMSB's sole discretion.
+  - navigation [ref=f63e2]:
+    - link "Website Logo" [ref=f63e5] [cursor=pointer]:
+      - /url: /
+    - generic [ref=f63e33]:
+      - link "Models" [ref=f63e35] [cursor=pointer]:
+        - /url: "#"
+      - link "Services" [ref=f63e37] [cursor=pointer]:
+        - /url: "#"
+      - link "Super Hybrid System" [ref=f63e39] [cursor=pointer]:
+        - /url: /super-hybrid-system
+      - link "Book a Test Drive" [ref=f63e41] [cursor=pointer]:
+        - /url: /test-drive
+      - link "Dealer Locator" [ref=f63e43] [cursor=pointer]:
+        - /url: /dealer-locator
+      - link "About Us" [ref=f63e45] [cursor=pointer]:
+        - /url: /about-us
+      - link "Contact Us" [ref=f63e47] [cursor=pointer]:
+        - /url: /contact-us
+      - link "News & Events" [ref=f63e49] [cursor=pointer]:
+        - /url: /news-events
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button "JAECOO"
+              - button "OMODA"
+            - generic:
+              - link "J5":
+                - /url: /modelj5
+              - link "J7":
+                - /url: /modelj7
+              - link "J7 PHEV":
+                - /url: /modelj7phev
+              - link "J8":
+                - /url: /modelj8
+          - generic:
+            - link "Download E-Brochure":
+              - /url: "#"
+            - link "Book A Test Drive":
+              - /url: /test-drive
+            - link "Coming Soon Car Loan Calculator":
+              - /url: "#"
+              - text: Coming Soon
+              - generic: Car Loan Calculator
+      - generic:
+        - generic:
+          - generic:
+            - link "Overview":
+              - /url: /services
+            - link "Insurance":
+              - /url: /insurance
+            - link "Warranty":
+              - /url: /warranty
+            - link "PHEV Calculator":
+              - /url: /j7phev-calculator
+  - generic [ref=f63e50]:
+    - navigation [ref=f63e51]:
+      - link "Website Logo" [ref=f63e54] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f63e82]:
+        - link "Models" [ref=f63e84] [cursor=pointer]:
+          - /url: "#"
+        - link "Services" [ref=f63e86] [cursor=pointer]:
+          - /url: "#"
+        - link "Super Hybrid System" [ref=f63e88] [cursor=pointer]:
+          - /url: /super-hybrid-system
+        - link "Book a Test Drive" [ref=f63e90] [cursor=pointer]:
+          - /url: /test-drive
+        - link "Dealer Locator" [ref=f63e92] [cursor=pointer]:
+          - /url: /dealer-locator
+        - link "About Us" [ref=f63e94] [cursor=pointer]:
+          - /url: /about-us
+        - link "Contact Us" [ref=f63e96] [cursor=pointer]:
+          - /url: /contact-us
+        - link "News & Events" [ref=f63e98] [cursor=pointer]:
+          - /url: /news-events
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - button "JAECOO"
+                - button "OMODA"
+              - generic:
+                - link "J5":
+                  - /url: /modelj5
+                - link "J7":
+                  - /url: /modelj7
+                - link "J7 PHEV":
+                  - /url: /modelj7phev
+                - link "J8":
+                  - /url: /modelj8
+            - generic:
+              - link "Download E-Brochure":
+                - /url: "#"
+              - link "Book A Test Drive":
+                - /url: /test-drive
+              - link "Coming Soon Car Loan Calculator":
+                - /url: "#"
+                - text: Coming Soon
+                - generic: Car Loan Calculator
+        - generic:
+          - generic:
+            - generic:
+              - link "Overview":
+                - /url: /services
+              - link "Insurance":
+                - /url: /insurance
+              - link "Warranty":
+                - /url: /warranty
+              - link "PHEV Calculator":
+                - /url: /j7phev-calculator
+    - generic [ref=f63e100]:
+      - heading "Page Not Found" [level=1] [ref=f63e101]
+      - paragraph [ref=f63e102]: We're sorry, but the page you requested cannot be found.
+      - link "BACK TO HOME " [ref=f63e103] [cursor=pointer]:
+        - /url: /
+  - img "up arrow" [ref=f63e107] [cursor=pointer]
+  - generic [ref=f63e108]:
+    - img "close button" [ref=f63e109] [cursor=pointer]
+    - generic [ref=f63e110]:
+      - generic [ref=f63e111]:
+        - heading "Cookie Usage." [level=3] [ref=f63e112]
+        - paragraph [ref=f63e113]: We use cookies, including third-party cookies, for analytical purposes and to show you personalised advertising based on your browsing habits.
+        - paragraph [ref=f63e114]:
+          - text: Depending on the settings of your web browser, cookies may be stored. Cookies will only be stored when you allow this in the settings. To revoke your consent at any time, and for further information on the use of cookies, please click on "Manage My Cookies Settings".
+          - link "More Details" [ref=f63e115] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=f63e116]:
+        - link "ACCEPT ALL COOKIES " [ref=f63e117] [cursor=pointer]:
+          - /url: "#"
+        - link "REJECT ALL " [ref=f63e119] [cursor=pointer]:
+          - /url: "#"
+        - link "MANAGE MY COOKIES SETTINGS " [ref=f63e121] [cursor=pointer]:
+          - /url: "#"
+    - text:  
+  - generic [ref=f63e124]:
+    - heading "Copyright © 2025 OMODA JAECOO All Rights Reserved. JAECOO AUTO MALAYSIA SDN. BHD. 202501022926 (1624339-P)" [level=4] [ref=f63e126]
+    - heading [level=4] [ref=f63e128]:
+      - link "Privacy Notice" [ref=f63e130] [cursor=pointer]:
+        - /url: /privacy-notice
+      - text: "|"
+      - link "Legal Notice" [ref=f63e132] [cursor=pointer]:
+        - /url: /privacy-notice
+    - generic [ref=f63e133] [cursor=pointer]:
+      - link [ref=f63e134]:
+        - /url: https://www.facebook.com/omodajaecoomalaysia
+        - img "facebook icon" [ref=f63e135]
+      - link [ref=f63e136]:
+        - /url: https://www.instagram.com/omodajaecoo.malaysia/
+        - img "instagram icon" [ref=f63e137]
+      - link [ref=f63e138]:
+        - /url: https://www.youtube.com/@OMODAJAECOO.MALAYSIA
+        - img "youtube icon" [ref=f63e139]
+      - link [ref=f63e140]:
+        - /url: https://www.tiktok.com/@omodajaecoo.malaysia
+        - img "tiktok icon" [ref=f63e141]

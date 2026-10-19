@@ -1,0 +1,12 @@
+<div class="card-number">
+  {% if item.title is defined %}
+    <div class="card-number__item title-wrap" {% if item.time is defined %}data-time="{{ item.time }}"{% endif %}>
+      <span class="card-number__title">{{ item.title | raw }}</span>
+    </div>
+  {% endif %}
+  {% if item.label is defined %}
+    <div class="card-number__item label-wrap">
+      <span class="card-number__label">{{ item.label | raw }}</span>
+    </div>
+  {% endif %}
+</div>

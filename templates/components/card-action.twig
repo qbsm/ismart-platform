@@ -1,0 +1,40 @@
+{% if item.href is defined and item.href %}
+<a href="{{ url(item.href) }}" class="card-action link items-start {{ item.class|default('') }}"{% if item.target is defined %} target="{{ item.target }}"{% endif %}>
+{% else %}
+<div class="card-action items-start {{ item.class|default('') }}">
+{% endif %}
+  {% if item.cover is defined and item.cover %}
+    <div class="card-action__item cover-wrap">
+      {% if item.cover.src is defined %}
+        <img src="{{ url(item.cover.src) }}" alt="{{ item.cover.alt|default('') }}" class="card-action__cover img-responsive" loading="lazy">
+      {% else %}
+        {% include 'components/picture.twig' with {'image': item.cover, 'class': 'card-action__cover img-responsive', 'sizes_preset': 'content', 'loading': 'eager'} %}
+      {% endif %}
+    </div>
+  {% endif %}
+  {% if global.logo.horizontal.white is defined %}
+    <div class="card-action__item logo-wrap">
+      <img src="{{ url(global.logo.horizontal.white.src) }}" alt="{{ global.logo.horizontal.white.alt|default('') }}" class="card-action__logo img-responsive" loading="lazy" width="356" height="29">
+    </div>
+  {% endif %}
+  {% if item.icon is defined and item.icon %}
+    <div class="card-action__item icon-wrap">
+      <img src="{{ url(item.icon.src) }}" alt="{{ item.icon.alt|default('') }}" class="card-action__icon img-responsive" loading="lazy">
+    </div>
+  {% endif %}
+  {% if item.title is defined and item.title %}
+    <div class="card-action__item title-wrap text-left">
+      <span class="card-action__title uppercase">{{ item.title|raw }}</span>
+      <span class="card-action__line" aria-hidden="true"></span>
+    </div>
+  {% endif %}
+  {% if item.desc is defined and item.desc %}
+    <div class="card-action__item desc-wrap text-left">
+      <span class="card-action__desc">{{ item.desc|raw }}</span>
+    </div>
+  {% endif %}
+{% if item.href is defined and item.href %}
+</a>
+{% else %}
+</div>
+{% endif %}

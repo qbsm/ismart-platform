@@ -1,7 +1,7 @@
-<div class="burger-icon" id="burgerIcon">
-  <div class="burger-icon__container">
-    <div class="burger-icon__item"></div>
-    <div class="burger-icon__item"></div>
-    <div class="burger-icon__item"></div>
-  </div>
-</div>
+<button type="button" class="burger-icon" id="burgerIcon" aria-label="{{ global.burger.aria_open[lang_code]|default('Open menu') }}" aria-expanded="false" aria-controls="burgerMenu" data-label-open="{{ global.burger.aria_open[lang_code]|default('Open menu') }}" data-label-close="{{ global.burger.aria_close[lang_code]|default('Close menu') }}">
+  <span class="burger-icon__container" aria-hidden="true">
+    <span class="burger-icon__item"></span>
+    <span class="burger-icon__item"></span>
+    <span class="burger-icon__item"></span>
+  </span>
+</button>

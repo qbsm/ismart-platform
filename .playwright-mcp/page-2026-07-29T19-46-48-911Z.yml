@@ -1,0 +1,276 @@
+- generic [active] [ref=f64e1]:
+  - generic:
+    - generic:
+      - button "close popup button":
+        - img "close popup button"
+      - generic:
+        - heading "DOWNLOAD E-BROCHURE" [level=3]
+        - generic:
+          - generic:
+            - link "JAECOO J7 E-BROCHURE ":
+              - /url: /themes/demo/assets/brochure/J7_brochure_website.pdf
+            - link "OMODA C9 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/C9_Brochure.pdf
+            - link "JAECOO J7PHEV E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J7_PHEV_Brochure.pdf
+            - link "JAECOO J8 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J8_Brochure.pdf
+            - link "JAECOO J5 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J5_Brochure.pdf
+  - generic:
+    - generic:
+      - button "close popup button":
+        - img "close popup button"
+      - generic:
+        - generic:
+          - heading "Terms and Conditions" [level=3]
+          - paragraph: (OMODA & JAECOO Malaysia Professional Affiliate Programme)
+        - list:
+          - listitem: The list of eligible organisations, associations, institutions and/or corporation is subject to change at the sole discretion of JAECOO Auto Malaysia Sdn Bhd (“JAMSB”).
+          - listitem: In the case of an eligible corporation, the vehicle purchased must be registered under the company name.
+          - listitem: In the case of an eligible individual, the vehicle purchased must be registered under the individual's name or that of his immediate family member (spouse, parents or children).
+          - listitem: Registration under immediate family member will require documentation proof such as marriage certificate or birth certificate, whichever applicable.
+          - listitem: Customer shall submit all required documentations to JAMSB's authorised dealers, failing which the application will not be processed by JAMSB.
+          - listitem: Eligible customer shall only be entitled to all the benefits or the purchase of brand-new OMODA & JAECOO vehicle from JAMSB's authorised dealers.
+          - listitem: The applicability, computation and allowances of the benefits in each purchase shall be subject to approval by JAMSB at its absolute discretion.
+          - listitem: All decisions made by JAMSB are final and no appeals or discussions will be entertained.
+          - listitem: JAMSB reserves the right to terminate the Professional Affiliate Programme at any time without prior notice.
+          - listitem: By submitting the application to JAMSB's authorised dealers, the customer affirms that he has read, understood, and agreed to the policies in JAMSB's Privacy Policy and consent to his personal data being processed and used by JAMSB as stipulated in the said Privacy Policy in OMODA & JAECOO official website.
+          - listitem: Only cars manufactured in 2026 are eligible for PAP.
+          - listitem: These Terms and Conditions may be amended, replaced and/or deleted at any time in JAMSB's sole discretion.
+  - navigation [ref=f64e2]:
+    - link "Website Logo" [ref=f64e5] [cursor=pointer]:
+      - /url: /
+    - generic [ref=f64e33]:
+      - link "Models" [ref=f64e35] [cursor=pointer]:
+        - /url: "#"
+      - link "Services" [ref=f64e37] [cursor=pointer]:
+        - /url: "#"
+      - link "Super Hybrid System" [ref=f64e39] [cursor=pointer]:
+        - /url: /super-hybrid-system
+      - link "Book a Test Drive" [ref=f64e41] [cursor=pointer]:
+        - /url: /test-drive
+      - link "Dealer Locator" [ref=f64e43] [cursor=pointer]:
+        - /url: /dealer-locator
+      - link "About Us" [ref=f64e45] [cursor=pointer]:
+        - /url: /about-us
+      - link "Contact Us" [ref=f64e47] [cursor=pointer]:
+        - /url: /contact-us
+      - link "News & Events" [ref=f64e49] [cursor=pointer]:
+        - /url: /news-events
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button "JAECOO"
+              - button "OMODA"
+            - generic:
+              - link "J5":
+                - /url: /modelj5
+              - link "J7":
+                - /url: /modelj7
+              - link "J7 PHEV":
+                - /url: /modelj7phev
+              - link "J8":
+                - /url: /modelj8
+          - generic:
+            - link "Download E-Brochure":
+              - /url: "#"
+            - link "Book A Test Drive":
+              - /url: /test-drive
+            - link "Coming Soon Car Loan Calculator":
+              - /url: "#"
+              - text: Coming Soon
+              - generic: Car Loan Calculator
+      - generic:
+        - generic:
+          - generic:
+            - link "Overview":
+              - /url: /services
+            - link "Insurance":
+              - /url: /insurance
+            - link "Warranty":
+              - /url: /warranty
+            - link "PHEV Calculator":
+              - /url: /j7phev-calculator
+  - generic [ref=f64e50]:
+    - generic [ref=f64e51]:
+      - generic [ref=f64e52]:
+        - group "1 / 8" [ref=f64e53]:
+          - generic [ref=f64e54]:
+            - generic:
+              - img "Mid Year Kick Off Banner"
+            - generic [ref=f64e55]:
+              - img "Mid Year Kick Off Masthead" [ref=f64e58]
+              - link "Explore More " [ref=f64e61] [cursor=pointer]:
+                - /url: /julysales
+        - group "2 / 8" [ref=f64e63]:
+          - generic [ref=f64e64]:
+            - generic:
+              - img "J5BEV Banner"
+            - generic [ref=f64e65]:
+              - img "J5BEV Masthead" [ref=f64e68]
+              - generic [ref=f64e70]:
+                - link "Register For Interest " [ref=f64e71] [cursor=pointer]:
+                  - /url: /j5bev-register-interest
+                - link "Book a Test Drive " [ref=f64e73] [cursor=pointer]:
+                  - /url: /test-drive
+        - group "3 / 8" [ref=f64e75]:
+          - generic [ref=f64e76]:
+            - generic:
+              - img "C9 PHEV Banner"
+            - generic [ref=f64e78]:
+              - generic [ref=f64e79]:
+                - img "C9 PHEV Banner Masthead"
+              - generic [ref=f64e81]:
+                - link "LEARN MORE " [ref=f64e82] [cursor=pointer]:
+                  - /url: /modelc9phev
+                - link "Book A test Drive " [ref=f64e84] [cursor=pointer]:
+                  - /url: test-drive
+                - link "Download Brochure" [ref=f64e86] [cursor=pointer]:
+                  - /url: /themes/demo/assets/brochure/C9PHEV-Brochure.pdf
+        - group "4 / 8" [ref=f64e88]:
+          - generic [ref=f64e89]:
+            - generic:
+              - img "J5 Banner"
+            - generic [ref=f64e90]:
+              - generic [ref=f64e92]:
+                - img "J5 Banner Masthead"
+              - generic [ref=f64e93]:
+                - generic [ref=f64e94]:
+                  - generic [ref=f64e95]: Price At
+                  - paragraph [ref=f64e96]: RM 108,000
+                - generic [ref=f64e97]:
+                  - link "LEARN MORE " [ref=f64e98] [cursor=pointer]:
+                    - /url: /modelj5
+                  - link "BOOK A TEST DRIVE " [ref=f64e100] [cursor=pointer]:
+                    - /url: /test-drive
+                  - link "DOWNLOAD E-BROCHURE " [ref=f64e102] [cursor=pointer]:
+                    - /url: /themes/demo/assets/pdf/J5_Brochure.pdf
+        - group "5 / 8" [ref=f64e104]:
+          - generic [ref=f64e105]:
+            - generic:
+              - img "J8 Banner"
+            - generic [ref=f64e106]:
+              - generic [ref=f64e107]:
+                - img "J8 Banner Masthead"
+                - generic [ref=f64e108]:
+                  - link "LEARN MORE " [ref=f64e109] [cursor=pointer]:
+                    - /url: /j8-model
+                  - link "BOOK A TEST DRIVE " [ref=f64e111] [cursor=pointer]:
+                    - /url: /test-drive
+                  - link "DOWNLOAD E-BROCHURE " [ref=f64e113] [cursor=pointer]:
+                    - /url: /themes/demo/assets/pdf/J8_Brochure.pdf
+              - img "J8 Banner Masthead"
+        - group "6 / 8" [ref=f64e115]:
+          - generic [ref=f64e116]:
+            - generic:
+              - img "Jaecoo July Teaser"
+            - heading "All-New Premium Off-Road SUV" [level=1] [ref=f64e118]
+            - generic [ref=f64e119]:
+              - generic [ref=f64e120]: Starting from
+              - paragraph [ref=f64e121]: RM 138,800
+            - generic [ref=f64e122]:
+              - link "Learn More " [ref=f64e123] [cursor=pointer]:
+                - /url: /modelj7
+              - link "BOOK A TEST DRIVE " [ref=f64e125] [cursor=pointer]:
+                - /url: /test-drive
+              - link "FIND YOUR NEAREST DEALER " [ref=f64e127] [cursor=pointer]:
+                - /url: /dealer-locator
+        - group "7 / 8" [ref=f64e129]:
+          - generic [ref=f64e130]:
+            - generic:
+              - img "J7 Phev teaser"
+            - generic [ref=f64e131]:
+              - paragraph [ref=f64e132]: The All-New
+              - heading "Every Drive is a new milestone" [level=3] [ref=f64e134]
+              - generic [ref=f64e135]:
+                - generic [ref=f64e136]: Price At
+                - paragraph [ref=f64e137]: RM 158,800
+            - generic [ref=f64e138]:
+              - link "LEARN MORE " [ref=f64e139] [cursor=pointer]:
+                - /url: /modelj7phev
+              - link "BOOK A TEST DRIVE " [ref=f64e141] [cursor=pointer]:
+                - /url: /test-drive
+              - link "FIND YOUR NEAREST DEALER " [ref=f64e143] [cursor=pointer]:
+                - /url: /dealer-locator
+        - group "8 / 8" [ref=f64e145]:
+          - generic [ref=f64e146]:
+            - generic:
+              - img "Jaecoo July Teaser"
+            - generic [ref=f64e147]:
+              - heading "EXPLORE" [level=3] [ref=f64e148]
+              - paragraph [ref=f64e149]: Our first premium off road suv coupé
+              - generic [ref=f64e150]:
+                - generic [ref=f64e151]: Starting from
+                - paragraph [ref=f64e152]:
+                  - text: RM168,800
+                  - superscript [ref=f64e153]: "*"
+            - generic [ref=f64e154]:
+              - link "LEARN MORE " [ref=f64e155] [cursor=pointer]:
+                - /url: /modelc9
+              - link "BOOK A TEST DRIVE " [ref=f64e157] [cursor=pointer]:
+                - /url: /test-drive
+              - link "FIND YOUR NEAREST DEALER " [ref=f64e159] [cursor=pointer]:
+                - /url: /dealer-locator
+      - img "pause" [ref=f64e171] [cursor=pointer]
+    - generic [ref=f64e172]:
+      - generic:
+        - button [ref=f64e175] [cursor=pointer]
+        - button [ref=f64e177] [cursor=pointer]
+    - generic [ref=f64e179]:
+      - generic:
+        - button [ref=f64e182] [cursor=pointer]
+        - button [ref=f64e184] [cursor=pointer]
+    - generic [ref=f64e186]:
+      - generic:
+        - button [ref=f64e189] [cursor=pointer]
+        - button [ref=f64e191] [cursor=pointer]
+    - generic [ref=f64e193]:
+      - generic [ref=f64e196]:
+        - heading "JAECOO J7" [level=1] [ref=f64e197]
+        - heading "Off-road Drive Redefined in Premium Style." [level=2] [ref=f64e198]
+      - button [ref=f64e200] [cursor=pointer]
+  - generic [ref=f64e201]:
+    - img "up arrow" [ref=f64e203] [cursor=pointer]
+    - button [ref=f64e204] [cursor=pointer]:
+      - img "facebook messenger floating icon" [ref=f64e205]
+  - generic [ref=f64e206]:
+    - img "close button" [ref=f64e207] [cursor=pointer]
+    - generic [ref=f64e208]:
+      - generic [ref=f64e209]:
+        - heading "Cookie Usage." [level=3] [ref=f64e210]
+        - paragraph [ref=f64e211]: We use cookies, including third-party cookies, for analytical purposes and to show you personalised advertising based on your browsing habits.
+        - paragraph [ref=f64e212]:
+          - text: Depending on the settings of your web browser, cookies may be stored. Cookies will only be stored when you allow this in the settings. To revoke your consent at any time, and for further information on the use of cookies, please click on "Manage My Cookies Settings".
+          - link "More Details" [ref=f64e213] [cursor=pointer]:
+            - /url: /privacy-policy
+      - generic [ref=f64e214]:
+        - link "ACCEPT ALL COOKIES " [ref=f64e215] [cursor=pointer]:
+          - /url: "#"
+        - link "REJECT ALL " [ref=f64e217] [cursor=pointer]:
+          - /url: "#"
+        - link "MANAGE MY COOKIES SETTINGS " [ref=f64e219] [cursor=pointer]:
+          - /url: "#"
+    - text:  
+  - generic [ref=f64e222]:
+    - heading "Copyright © 2025 OMODA JAECOO All Rights Reserved. JAECOO AUTO MALAYSIA SDN. BHD. 202501022926 (1624339-P)" [level=4] [ref=f64e224]
+    - heading [level=4] [ref=f64e226]:
+      - link "Privacy Notice" [ref=f64e228] [cursor=pointer]:
+        - /url: /privacy-notice
+      - text: "|"
+      - link "Legal Notice" [ref=f64e230] [cursor=pointer]:
+        - /url: /privacy-notice
+    - generic [ref=f64e231] [cursor=pointer]:
+      - link [ref=f64e232]:
+        - /url: https://www.facebook.com/omodajaecoomalaysia
+        - img "facebook icon" [ref=f64e233]
+      - link [ref=f64e234]:
+        - /url: https://www.instagram.com/omodajaecoo.malaysia/
+        - img "instagram icon" [ref=f64e235]
+      - link [ref=f64e236]:
+        - /url: https://www.youtube.com/@OMODAJAECOO.MALAYSIA
+        - img "youtube icon" [ref=f64e237]
+      - link [ref=f64e238]:
+        - /url: https://www.tiktok.com/@omodajaecoo.malaysia
+        - img "tiktok icon" [ref=f64e239]

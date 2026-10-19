@@ -1,0 +1,373 @@
+- generic [active] [ref=f65e1]:
+  - generic [ref=f65e2]:
+    - generic [ref=f65e4]:
+      - link [ref=f65e6] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f65e7]:
+        - generic [ref=f65e9] [cursor=pointer]:
+          - generic [ref=f65e10]: 󰟙
+          - text: Москва, ул. 2-я Магистральная, 18с22
+        - generic [ref=f65e11]: Пн-Вс 09:00-21:00
+      - link "󰏻 +7 (495) 241-56-22" [ref=f65e16] [cursor=pointer]:
+        - /url: tel:+74952415622
+        - generic [ref=f65e17]: 󰏻
+        - text: +7 (495) 241-56-22
+      - text: 󰏻
+    - generic [ref=f65e25]:
+      - generic [ref=f65e26]:
+        - group "1 / 5" [ref=f65e27]:
+          - generic [ref=f65e30]:
+            - generic [ref=f65e31]:
+              - heading "ТО за 12 500 ₽" [level=2] [ref=f65e32]
+              - heading "в БорисХоф" [level=4] [ref=f65e33]
+            - button "Узнать подробности" [ref=f65e35] [cursor=pointer]
+        - group "2 / 5" [ref=f65e36]:
+          - generic [ref=f65e39]:
+            - generic [ref=f65e40]:
+              - heading "Выгодное ТО" [level=2] [ref=f65e41]
+              - heading "с подарком на выбор!" [level=4] [ref=f65e42]
+            - button "Узнать подробности" [ref=f65e44] [cursor=pointer]
+        - group "3 / 5" [ref=f65e45]:
+          - generic [ref=f65e48]:
+            - generic [ref=f65e49]:
+              - heading "Персональные цены на ТО" [level=2] [ref=f65e50]
+              - heading "Сделаем выгоднее, чем у другого дилера" [level=4] [ref=f65e51]
+            - button "Узнать подробности" [ref=f65e53] [cursor=pointer]
+        - group "4 / 5" [ref=f65e54]:
+          - generic [ref=f65e57]:
+            - generic [ref=f65e58]:
+              - heading "Привилегии для автомобилей старше 3-х лет." [level=2] [ref=f65e59]
+              - heading "И после гарантии - с нами легко." [level=4] [ref=f65e60]
+            - button "Узнать подробности" [ref=f65e62] [cursor=pointer]
+        - group "5 / 5" [ref=f65e63]:
+          - generic [ref=f65e66]:
+            - generic [ref=f65e67]:
+              - heading "Замена масла АКПП под ключ" [level=2] [ref=f65e68]
+              - heading "за 15 000 ₽" [level=4] [ref=f65e69]
+            - button "Узнать подробности" [ref=f65e71] [cursor=pointer]
+      - generic [ref=f65e72]:
+        - button "Previous slide" [ref=f65e73] [cursor=pointer]: prev
+        - button "Next slide" [ref=f65e74] [cursor=pointer]: next
+      - generic [ref=f65e75]:
+        - button "Go to slide 1" [ref=f65e76] [cursor=pointer]
+        - button "Go to slide 2" [ref=f65e77] [cursor=pointer]
+        - button "Go to slide 3" [ref=f65e78] [cursor=pointer]
+        - button "Go to slide 4" [ref=f65e79] [cursor=pointer]
+        - button "Go to slide 5" [ref=f65e80] [cursor=pointer]
+    - generic [ref=f65e82]:
+      - generic [ref=f65e84]:
+        - generic [ref=f65e85]:
+          - img "Техническое обслуживание автомобилей, как по регламенту, так и внеочередное"
+        - generic [ref=f65e86]: Техническое обслуживание автомобилей, как по регламенту, так и внеочередное
+      - generic [ref=f65e89]:
+        - generic [ref=f65e90]:
+          - img "Все виды ремонта, предусмотренные производителем"
+        - generic [ref=f65e91]: Все виды ремонта, предусмотренные производителем
+      - generic [ref=f65e94]:
+        - generic [ref=f65e95]:
+          - img "Программирование базовых и дополнительных функций автомобиля"
+        - generic [ref=f65e96]: Программирование базовых и дополнительных функций автомобиля
+    - generic [ref=f65e97]:
+      - generic [ref=f65e99]:
+        - heading "Спецпредложения" [level=3] [ref=f65e101]
+        - generic [ref=f65e102]:
+          - generic [ref=f65e103] [cursor=pointer]: Замена масла в АКПП от 26 900 ₽
+          - generic [ref=f65e106] [cursor=pointer]: Сезонный шиномонтаж
+          - generic [ref=f65e109] [cursor=pointer]: ТО за 12 500 ₽
+          - generic [ref=f65e112] [cursor=pointer]: Выгодное ТО с подарком на выбор
+          - generic [ref=f65e115] [cursor=pointer]: Выгода на ТО для Hyundai старше 3 лет
+          - generic [ref=f65e118] [cursor=pointer]: Подарок в честь вашего Дня Рождения
+      - generic [ref=f65e122]:
+        - heading "Услуги" [level=3] [ref=f65e124]
+        - generic [ref=f65e126]:
+          - generic [ref=f65e127]: Техническое обслуживание
+          - generic [ref=f65e129]: Слесарный ремонт
+          - generic [ref=f65e131]: Электрика
+          - generic [ref=f65e133]: Кузовной ремонт
+          - generic [ref=f65e135]: Дополнительные услуги
+        - generic [ref=f65e137]:
+          - generic [ref=f65e139] [cursor=pointer]:
+            - generic [ref=f65e140]:
+              - generic [ref=f65e141]: Название услуги
+              - generic [ref=f65e142]: Замена масла двигателя
+            - generic [ref=f65e143]:
+              - generic [ref=f65e144]: Цена
+              - generic [ref=f65e145]: от 5 000 ₽
+          - generic [ref=f65e147] [cursor=pointer]:
+            - generic [ref=f65e148]:
+              - generic [ref=f65e149]: Название услуги
+              - generic [ref=f65e150]: Замена воздушного фильтра
+            - generic [ref=f65e151]:
+              - generic [ref=f65e152]: Цена
+              - generic [ref=f65e153]: от 1 000 ₽
+          - generic [ref=f65e155] [cursor=pointer]:
+            - generic [ref=f65e156]:
+              - generic [ref=f65e157]: Название услуги
+              - generic [ref=f65e158]: Замена микрофильтра салона
+            - generic [ref=f65e159]:
+              - generic [ref=f65e160]: Цена
+              - generic [ref=f65e161]: от 1 000 ₽
+          - generic [ref=f65e163] [cursor=pointer]:
+            - generic [ref=f65e164]:
+              - generic [ref=f65e165]: Название услуги
+              - generic [ref=f65e166]: Замена передних тормозных колодок
+            - generic [ref=f65e167]:
+              - generic [ref=f65e168]: Цена
+              - generic [ref=f65e169]: от 7 500 ₽
+          - generic [ref=f65e171] [cursor=pointer]:
+            - generic [ref=f65e172]:
+              - generic [ref=f65e173]: Название услуги
+              - generic [ref=f65e174]: Замена задних тормозных колодок
+            - generic [ref=f65e175]:
+              - generic [ref=f65e176]: Цена
+              - generic [ref=f65e177]: от 7 500 ₽
+          - button "Показать еще" [ref=f65e179] [cursor=pointer]
+        - generic [ref=f65e183]:
+          - heading "Запишитесь на техническое обслуживание:" [level=5] [ref=f65e185]
+          - generic [ref=f65e188]:
+            - generic [ref=f65e189]:
+              - generic [ref=f65e190]: Ваш телефон*
+              - textbox "Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон*" [ref=f65e191]:
+                - /placeholder: +7 (___) ___-__-__
+            - button "Отправить заявку Успешно отправлена" [ref=f65e193] [cursor=pointer]:
+              - generic [ref=f65e194]: Отправить заявку
+              - generic [ref=f65e199]: Успешно отправлена
+            - generic [ref=f65e201]:
+              - checkbox [checked] [ref=f65e202]
+              - generic [ref=f65e203]:
+                - text: Я ознакомился с
+                - link "Политикой обработки персональных данных клиентов" [ref=f65e204] [cursor=pointer]:
+                  - /url: https://borishof.ru/legal/personal-information/
+                - text: и
+                - link "Пользовательским соглашением сервисов БорисХоф" [ref=f65e205] [cursor=pointer]:
+                  - /url: https://borishof.ru/legal/user_agreement/
+                - text: принимаю условия
+                - link "Согласия на обработку персональных данных" [ref=f65e206] [cursor=pointer]:
+                  - /url: https://borishof.ru/legal/personal-data/
+                - text: группы БорисХоф.
+                - list [ref=f65e207]:
+                  - listitem [ref=f65e208]:
+                    - text: Даю согласие на обработку персональных данных и соглашаюсь с
+                    - link "Политикой обработки персональных данных" [ref=f65e209] [cursor=pointer]:
+                      - /url: https://borishof.ru/legal/personal-information/
+                  - listitem [ref=f65e210]: Даю согласие на получение информации об акциях, скидках, мероприятиях о товарах/услугах БорисХоф по телефону/электронной почте
+          - link "icon Записаться через Telegram" [ref=f65e213] [cursor=pointer]:
+            - /url: https://t.me/myborishof_bot?start=utmsource-google_utmmedium-cpc
+            - img "icon"
+            - generic [ref=f65e214]: Записаться через Telegram
+      - generic [ref=f65e216]:
+        - generic [ref=f65e217]:
+          - heading "Видеообзор" [level=3] [ref=f65e219]
+          - generic [ref=f65e220]: Видеообзор делает процесс обслуживания автомобиля полностью прозрачным для Вас. Во время технического обслуживания мастер-консультант отправит Вам подробный видеообзор технического состояния автомобиля. Контролировать процесс и согласовывать работы можно прямо со смартфона.
+          - generic [ref=f65e221]: Тег video не поддерживается вашим браузером.
+          - generic [ref=f65e224]:
+            - generic [ref=f65e225]:
+              - generic [ref=f65e226] [cursor=pointer]:
+                - generic [ref=f65e227]: 1. Фиксация отклонений
+                - generic [ref=f65e228]:
+                  - img "Аккордеон"
+              - generic [ref=f65e229]: Наш технический специалист сделает видеозапись любых дополнительных отклонений с цветовым индикатором Желтый или Красный.
+            - generic [ref=f65e231]:
+              - generic [ref=f65e232] [cursor=pointer]:
+                - generic [ref=f65e233]: 2. Уведомление
+                - generic [ref=f65e234]:
+                  - img "Аккордеон"
+              - generic [ref=f65e235]: Вы получите письмо с уникальной ссылкой на просмотр видео по Вашему автомобилю.
+            - generic [ref=f65e237]:
+              - generic [ref=f65e238] [cursor=pointer]:
+                - generic [ref=f65e239]: 3. Просмотр
+                - generic [ref=f65e240]:
+                  - img "Аккордеон"
+              - generic [ref=f65e241]: Пройдя по уникальной ссылке, вы попадаете на персональную веб-страницу с видео-роликом и фотографиями с графическими аннотациями.
+            - generic [ref=f65e243]:
+              - generic [ref=f65e244] [cursor=pointer]:
+                - generic [ref=f65e245]: 4. Согласование
+                - generic [ref=f65e246]:
+                  - img "Аккордеон"
+              - generic [ref=f65e247]: Каждое выявленное отклонение сопровождается калькуляцией, учитывающей Ваши индивидуальные условия. Просто выберите «Согласовать» для авторизации работ или «Заказать обратный звонок», если Вы хотите, чтобы наш специалист связался с Вами для дополнительных разъяснений.
+        - generic [ref=f65e249]:
+          - generic [ref=f65e250]:
+            - heading "Выгодная программа лояльности" [level=4] [ref=f65e251]
+            - button "Записаться" [ref=f65e253] [cursor=pointer]
+          - generic [ref=f65e254]: Уважаемые владельцы! БорисХоф запускает выгодное предложение по сервису «Программу лояльности». Предлагаем вам воспользоваться специальными привилегиями наших официальных сервисных центров.Специальная программа на обслуживание вашего автомобиля позволит вам сэкономить на ремонте и пройти техническое обслуживание выгодно, а специалисты наших официальных сервисных центров обслужат ваши автомобили по всем необходимым стандартам и дадут дополнительные рекомендации в случае необходимости.
+          - generic [ref=f65e256]:
+            - generic [ref=f65e258]:
+              - generic [ref=f65e259]:
+                - img "Последующие ТО с выгодой на работы и запасные части"
+              - generic [ref=f65e260]: Последующие ТО с выгодой на работы и запасные части
+            - generic [ref=f65e262]:
+              - generic [ref=f65e263]:
+                - img "Безвозмездное устранение неисправностей"
+              - generic [ref=f65e264]: Безвозмездное устранение неисправностей
+            - generic [ref=f65e266]:
+              - generic [ref=f65e267]:
+                - img "Ремонт узлов и агрегатов с выгодой"
+              - generic [ref=f65e268]: Ремонт узлов и агрегатов с выгодой
+        - generic [ref=f65e269]:
+          - generic [ref=f65e270]:
+            - generic [ref=f65e271]:
+              - img "Логотип Яндекс Сплит"
+            - heading "Делите оплату на части в БорисХоф с Яндекс Сплит" [level=4] [ref=f65e272]
+            - generic [ref=f65e273]: На 2 месяца без переплат, до 2-х лет — с небольшой доплатой
+          - generic [ref=f65e274]:
+            - generic [ref=f65e275]:
+              - img "Обложка блока"
+            - generic [ref=f65e276]:
+              - generic [ref=f65e278]:
+                - generic [ref=f65e279]:
+                  - img "Заплатите 1/4 цены сегодня, остальное — потом"
+                - generic [ref=f65e280]: Заплатите 1/4 цены сегодня, остальное — потом
+              - generic [ref=f65e282]:
+                - generic [ref=f65e283]:
+                  - img "Наведите камеру и узнайте, сколько можете потратить"
+                - generic [ref=f65e284]: Наведите камеру и узнайте, сколько можете потратить
+              - generic [ref=f65e286]:
+                - img "QR-код"
+      - generic [ref=f65e288]:
+        - heading "Наши преимущества" [level=3] [ref=f65e290]
+        - generic [ref=f65e291]:
+          - generic [ref=f65e292] [cursor=pointer]: Лучшие цены на услуги гарантируем
+          - generic [ref=f65e296] [cursor=pointer]: Сертифицированные технические специалисты
+          - generic [ref=f65e300] [cursor=pointer]: Ремонт по стандартам производителя
+          - generic [ref=f65e304] [cursor=pointer]: Гарантия на все виды работ
+          - generic [ref=f65e308] [cursor=pointer]: Удобное расположение в Москве
+      - generic [ref=f65e313]:
+        - generic [ref=f65e317]:
+          - generic [ref=f65e318]:
+            - generic [ref=f65e319]:
+              - generic [ref=f65e320]: Hyundai БорисХоф
+              - generic [ref=f65e321]: Москва
+            - generic [ref=f65e322]:
+              - link "󱆓 +7 (495) 241-56-22" [ref=f65e324] [cursor=pointer]:
+                - /url: tel:+74952415622
+                - generic [ref=f65e325]: 󱆓
+                - text: +7 (495) 241-56-22
+              - generic [ref=f65e326]:
+                - generic [ref=f65e327]: 󰟙
+                - text: Москва, ул. 2-я Магистральная, 18с22
+              - generic [ref=f65e328]:
+                - generic [ref=f65e329]: 󰅐
+                - text: Пн-Вс 09:00-21:00
+          - generic [ref=f65e330]:
+            - generic [ref=f65e331]: Доступны услуги
+            - generic [ref=f65e332]: Экспресс обслуживание, Слесарный ремонт, Шиномонтаж, Запчасти, Аренда авто
+          - button "Записаться на сервис" [ref=f65e334] [cursor=pointer]
+        - generic [ref=f65e336]:
+          - iframe [ref=f65e337]:
+            - generic [ref=f66e2]:
+              - generic [ref=f66e3]:
+                - link "БорисХоф Hyundai" [ref=f66e4] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+                - generic [ref=f66e5]:
+                  - paragraph [ref=f66e6]: 4,7
+                  - generic [ref=f66e7]:
+                    - list [ref=f66e9]:
+                      - listitem [ref=f66e10]
+                      - listitem [ref=f66e11]
+                      - listitem [ref=f66e12]
+                      - listitem [ref=f66e13]
+                      - listitem [ref=f66e14]
+                    - link "947 отзывов • 2374 оценки" [ref=f66e15] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+                - link [ref=f66e17] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+              - generic [ref=f66e18]:
+                - paragraph [ref=f66e19]: Поставьте нам оценку
+                - link "Оставить отзыв" [ref=f66e20] [cursor=pointer]:
+                  - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+              - generic [ref=f66e21]:
+                - generic [ref=f66e22]:
+                  - generic [ref=f66e23]:
+                    - generic [ref=f66e24]: А
+                    - generic [ref=f66e25]:
+                      - paragraph [ref=f66e26]: Алсу
+                      - paragraph [ref=f66e27]: 23 февраля
+                  - list [ref=f66e29]:
+                    - listitem [ref=f66e30]
+                    - listitem [ref=f66e31]
+                    - listitem [ref=f66e32]
+                    - listitem [ref=f66e33]
+                    - listitem [ref=f66e34]
+                  - paragraph [ref=f66e35]:
+                    - text: Записывалась к Николаю на плановое обслуживание перед дальней поездкой. Хотела просто проверить машину для спокойствия. В итоге всё посмотрели внимательно, нашли пару моментов, которые лучше было сделать сейчас, и объяснили почему. Сделали аккуратно, по времени уложились, по стоимости всё как согласовали. После выдачи машины Николай коротко прошёлся по выполненным работам и ответил на пару моих вопросов. Спокойный, понятный рабочий подход, с качественным результатом.
+                    - paragraph [ref=f66e36]:
+                      - text: ...
+                      - link "ещё" [ref=f66e37] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - generic [ref=f66e38]:
+                  - generic [ref=f66e40]:
+                    - paragraph [ref=f66e41]: Равшан Муродов
+                    - paragraph [ref=f66e42]: 23 февраля
+                  - list [ref=f66e44]:
+                    - listitem [ref=f66e45]
+                    - listitem [ref=f66e46]
+                    - listitem [ref=f66e47]
+                    - listitem [ref=f66e48]
+                    - listitem [ref=f66e49]
+                  - paragraph [ref=f66e50]:
+                    - text: "В этот раз приезжал с конкретным вопросом по подвеске — появился посторонний звук, который уже начал напрягать. Николай предложил не гадать, а спокойно всё проверить по шагам. В итоге нашли причину быстрее, чем я ожидал, и без лишних «заодно давайте поменяем ещё вот это». Понравилось, что всё прошло без суеты: согласовали работы, обозначили стоимость, уложились в сроки. По факту объяснил, что сделали и почему именно так. Нормальный рабочий процесс без лишней драматизации — за это и ценю."
+                    - paragraph [ref=f66e51]:
+                      - text: ...
+                      - link "ещё" [ref=f66e52] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - generic [ref=f66e53]:
+                  - generic [ref=f66e55]:
+                    - paragraph [ref=f66e56]: Александр
+                    - paragraph [ref=f66e57]: 28 апреля
+                  - list [ref=f66e59]:
+                    - listitem [ref=f66e60]
+                    - listitem [ref=f66e61]
+                    - listitem [ref=f66e62]
+                    - listitem [ref=f66e63]
+                    - listitem [ref=f66e64]
+                  - paragraph [ref=f66e65]:
+                    - text: Перешел в ваш сервис . Мастер был Крюков Николай . Спасибо ему за то что учел мои пожелания и авто вылавалось пооностью обслужено ,чисто и даже раньше оговлренного времени при принятии авто .Буду теперь обслуживаться у вас и именно у данного мастера .
+                    - paragraph [ref=f66e66]:
+                      - text: ...
+                      - link "ещё" [ref=f66e67] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - generic [ref=f66e68]:
+                  - generic [ref=f66e70]:
+                    - paragraph [ref=f66e71]: Carrigan
+                    - paragraph [ref=f66e72]: 10 апреля 2025
+                  - list [ref=f66e74]:
+                    - listitem [ref=f66e75]
+                    - listitem [ref=f66e76]
+                    - listitem [ref=f66e77]
+                    - listitem [ref=f66e78]
+                    - listitem [ref=f66e79]
+                  - paragraph [ref=f66e80]:
+                    - text: Волею судьбы попал в этот сервис. Машина затроила в дороге,меня приняли без записи. Очень быстро загнали машину к мастеру и показали мне неисправность. Пробило свечу которую я менял месяц назад. По виду она старая, по ходу меня нагрели в прошлом сервисе где я был. Новые свечи у них оказались в наличии , машину помыли и пропылисосили бесплатно,угостили кофе. Заодно протестил новый авто на который положил глаз. Огромное спасибо мастеру Александру , что принял меня и починил мою старушку. Мастерам механикам также респект.
+                    - paragraph [ref=f66e81]:
+                      - text: ...
+                      - link "ещё" [ref=f66e82] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+                - generic [ref=f66e83]:
+                  - generic [ref=f66e85]:
+                    - paragraph [ref=f66e86]: Pavel K
+                    - paragraph [ref=f66e87]: 18 июня 2025
+                  - list [ref=f66e89]:
+                    - listitem [ref=f66e90]
+                    - listitem [ref=f66e91]
+                    - listitem [ref=f66e92]
+                    - listitem [ref=f66e93]
+                    - listitem [ref=f66e94]
+                  - paragraph [ref=f66e95]:
+                    - text: Обслуживал Танк. Приезжаю уже не первый раз. Хочу выразить благодарность Александру Корниенко, всегда на связи. Прием автомобиля прошел быстро, четко и очень информативно. Мастер внимательно выслушал все пожелания, подробно описал необходимые работы, назвал сроки и стоимость. Все вопросы решались оперативно. Приятно иметь дело с настоящим профессионалом, который знает свое дело и уважает время клиента. Рекомендую!
+                    - paragraph [ref=f66e96]:
+                      - text: ...
+                      - link "ещё" [ref=f66e97] [cursor=pointer]:
+                        - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - link "Больше отзывов на Яндекс Картах" [ref=f66e99] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=more-reviews
+          - link "БорисХоф Hyundai на карте Москвы — Яндекс Карты" [ref=f65e338] [cursor=pointer]:
+            - /url: https://yandex.ru/maps/org/boriskhof_hyundai/1001558220/
+      - generic [ref=f65e342]:
+        - link "Правовая информация" [ref=f65e346] [cursor=pointer]:
+          - /url: https://borishof.ru/legal/
+        - generic [ref=f65e348]:
+          - superscript [ref=f65e349]: "*"
+          - text: Рассрочка - это форма кредита (займа), при которой переплаты по кредиту (займу) не возникает за счет скидки на товар или услугу, предоставляемой продавцом. За детальной информацией условия предоставления «Рассрочки» обращайтесь к сервис менеджеру дилерского центра. Вся информация носит справочный характер и не является публичной офертой (ст. 437 ГК РФ). При поддержке Тинькофф Кредит Брокер. Подробнее на сайте www.tinkoff.ru. AO «Тинькофф Банк» лицензия ЦБ РФ №2673, 00О «Микрофинансовая компания «Т-Финанс».Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+        - generic [ref=f65e350]: Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930), тел. +7 (495) 646-14-58
+        - generic [ref=f65e352]: © ООО «БорисХоф Холдинг». Все права защищены 2026
+  - iframe

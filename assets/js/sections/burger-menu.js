@@ -1,5 +1,6 @@
 // JavaScript для burger-menu
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('burger-menu загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для burger-menu
 });

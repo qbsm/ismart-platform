@@ -1,119 +1,39 @@
 <section class="footer section" itemscope itemtype="https://schema.org/Organization">
-  {% if data.background.src is defined and data.background.src %}
-    <div class="section__item background-wrap">
-      <div class="background" style="background-image: url('{{ url(data.background.src) }}')"></div>
-    </div>
-  {% endif %}
   <div class="container">
     <div class="section__item logo-wrap">
-      <div class="section__subitem logo-wrap">
-        {% set scope_segment = (current_scope == 'op' ? 'op/' : '') %}
-        {% set home_path = (lang_code == config.settings.default_lang) ? scope_segment : lang_code ~ '/' ~ scope_segment %}
-        <a href="{{ url(home_path) }}" class="link footer__logo" itemprop="url">
-          {% if global.logo.black is defined %}
-            <img src="{{ url(global.logo.black.src) }}" alt="{{ global.logo.black.alt | default('Logo') }}" class="img-responsive" itemprop="logo">
-          {% else %}
-            <span class="heading h4 uppercase" itemprop="name">Company</span>
-          {% endif %}
-        </a>
-      </div>
-    </div>
-    <div class="section__item contacts-wrap">
-      <div class="section__subitem callback-wrap">
-        {% if global.phones is defined %}
-          {% for phone in global.phones %}
-            <a href="{{ phone.href }}" class="callback-link link font-1-medium " itemprop="telephone">{{ phone.title | raw }}</a>
-          {% endfor %}
+      <div class="section__subitem">
+        {% if global.logo.vertical.white is defined %}
+          <a href="{{ url('/') }}" class="link footer__logo-link" itemprop="url">
+            <img src="{{ url(global.logo.vertical.white.src) }}" alt="{{ global.logo.vertical.white.alt|default('') }}" class="footer__logo" loading="lazy" itemprop="logo" width="852" height="75">
+          </a>
         {% endif %}
       </div>
-      <div class="section__subitem email-wrap">
-         {% if global.email is defined %}
-          <a href="{{ global.email.href }}" class="email-link link font-1-medium" itemprop="email">{{ global.email.title | raw }}</a>
-         {% endif %}
-      </div>
     </div>
-    <div class="section__item social-wrap">
-      {% if global.socials is defined %}
-        {% for social in global.socials %}
-          {% if social.visible %}
-            <div class="section__subitem">
-              <a href="{{ social.href }}" target="_blank" rel="noopener noreferrer" class="icon-sm-wrap social-link link font-1-medium uppercase color-5" itemprop="sameAs">
-                <img src="{{ url(social.icon.src) }}" alt="{{ social.icon.alt | default(social.title | default('Social icon')) }}" class="icon-sm">
-              </a>
-            </div>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    </div>
-    <div class="section__item addresses-wrap">
-      {% if global.address[lang_code] is defined and global.address[lang_code] is iterable %}
-        {% for address in global.address[lang_code] %}
-          <div class="section__subitem address-item" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-            <span class="address" itemprop="streetAddress">{{ address.title | raw }}</span>
+    <div class="section__item nav-wrap">
+      {% if global.nav[lang_code].items is defined %}
+        {% for link in global.nav[lang_code].items %}
+          {% if link.visible is not defined or link.visible %}
+          <div class="footer__link-wrap">
+            <a href="{{ url(link.href) }}" class="link footer__link">{{ link.title }}</a>
           </div>
+          {% endif %}
         {% endfor %}
       {% endif %}
     </div>
-    <div class="section__item rules-wrap">
-      <div class="section__subitem policy-wrap">
-        {% if global.policy[lang_code] is defined %}
-          {% set policy_path = global.policy[lang_code].href | trim('/') %}
-          {% set scope_segment = (current_scope == 'op' ? 'op/' : '') %}
-          
-          {% if lang_code != config.settings.default_lang %}
-              {% set policy_path = lang_code ~ '/' ~ scope_segment ~ policy_path %}
-          {% else %}
-              {% set policy_path = scope_segment ~ policy_path %}
-          {% endif %}
-          
-          <a href="{{ url(policy_path ~ '/') }}" class="policy-link link font-1-medium">{{ global.policy[lang_code].title | raw }}</a>
-        {% endif %}
-      </div>
-      <div class="section__subitem agree-wrap">
-        {% if global.agree[lang_code] is defined %}
-          {% set agree_path = global.agree[lang_code].href | trim('/') %}
-          {% set scope_segment = (current_scope == 'op' ? 'op/' : '') %}
+    <div class="section__item copyright-wrap">
+      {% if global.copyright[lang_code] is defined %}
+        <span class="footer__copyright opacity-80">© {{ "now"|date("Y") }}. {{ global.copyright[lang_code] }}</span>
+      {% endif %}
+    </div>
+    <div class="section__item policy-agree-wrap">
+      {% if global.policy[lang_code] is defined %}
+<a href="{{ url(global.policy[lang_code].href) }}" class="link footer__disclaimer-link opacity-80"{% if global.policy[lang_code].target is defined %} target="{{ global.policy[lang_code].target }}" rel="noopener"{% endif %}>{{ global.policy[lang_code].title }}</a>
 
-          {% if lang_code != config.settings.default_lang %}
-              {% set agree_path = lang_code ~ '/' ~ scope_segment ~ agree_path %}
-          {% else %}
-              {% set agree_path = scope_segment ~ agree_path %}
-          {% endif %}
-          
-          <a href="{{ url(agree_path ~ '/') }}" class="policy-link link font-1-medium">{{ global.agree[lang_code].title | raw }}</a>
-        {% endif %}
-      </div>
-      <div class="section__subitem policy-yandex-wrap">
-        {% if global['policy-yandex'][lang_code] is defined %}
-          {% set policy_path = global['policy-yandex'][lang_code].href | trim('/') %}
-          {% set scope_segment = (current_scope == 'op' ? 'op/' : '') %}
+      {% endif %}
+      {% if global['cookies-policy'][lang_code] is defined %}
+<a href="{{ url(global['cookies-policy'][lang_code].href) }}" class="link footer__disclaimer-link opacity-80">{{ global['cookies-policy'][lang_code].title }}</a>
 
-          {% if lang_code != config.settings.default_lang %}
-              {% set policy_path = lang_code ~ '/' ~ scope_segment ~ policy_path %}
-          {% else %}
-              {% set policy_path = scope_segment ~ policy_path %}
-          {% endif %}
-          <a href="{{ url(policy_path ~ '/') }}" class="policy-link link font-1-medium">{{ global['policy-yandex'][lang_code].title | raw }}</a>
-        {% endif %}
-      </div>
-      <div class="section__subitem blog-wrap">
-        {% if lang_code == 'ru' and global.blog[lang_code] is defined %}
-          {% set blog_path = global.blog[lang_code].href | trim('/') %}
-          {% set scope_segment = (current_scope == 'op' ? 'op/' : '') %}
-
-          {% if lang_code != config.settings.default_lang %}
-              {% set blog_path = lang_code ~ '/' ~ scope_segment ~ blog_path %}
-          {% else %}
-              {% set blog_path = scope_segment ~ blog_path %}
-          {% endif %}
-          <a href="{{ url(blog_path ~ '/') }}" class="blog-link link font-1-medium">{{ global.blog[lang_code].title | raw }}</a>
-        {% endif %}
-      </div>
-      <div class="section__subitem copyright-wrap">
-         {% if global.copyright[lang_code] is defined %}
-          <span class="copyright color-5">© 2020-{{ "now"|date("Y") }}. {{ global.copyright[lang_code] }}</span>
-         {% endif %}
-      </div>
+      {% endif %}
     </div>
   </div>
 </section>

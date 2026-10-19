@@ -1,1 +1,21 @@
-<link rel="stylesheet" href="{{ assetUrl('main.css', 'css') }}" />
+{# Critical CSS inline — минимальный reset для быстрого FCP #}
+{% set criticalCssContent = inlineCss('critical.min.css') %}
+{% if criticalCssContent %}
+<style>{{ criticalCssContent|raw }}</style>
+{% endif %}
+
+{# Main CSS — синхронная загрузка (содержит layout-стили, async вызывает CLS) #}
+<link rel="stylesheet" href="{{ assetUrl('main.css', 'css') }}">
+
+{# Vendor CSS — async (Animate.css, Swiper, GLightbox — не нужны для первого экрана) #}
+{% set vendorCss = assetUrl('vendors.css', 'js', true) %}
+{% if vendorCss %}
+<link rel="stylesheet" href="{{ vendorCss }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ vendorCss }}"></noscript>
+{% endif %}
+
+{% set uiVendorCss = assetUrl('ui-vendors.css', 'js', true) %}
+{% if uiVendorCss %}
+<link rel="stylesheet" href="{{ uiVendorCss }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ uiVendorCss }}"></noscript>
+{% endif %}

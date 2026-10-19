@@ -1,0 +1,1178 @@
+- generic [active] [ref=f21e1]:
+  - generic [ref=f21e4]:
+    - generic [ref=f21e5]: Москва, 2-я Магистральная ул., д. 18, стр. 22
+    - generic [ref=f21e11]:
+      - generic [ref=f21e12] [cursor=pointer]: Тест-Драйв
+      - generic [ref=f21e16] [cursor=pointer]: Записаться на сервис
+  - banner [ref=f21e21]:
+    - generic [ref=f21e23]:
+      - generic [ref=f21e24]:
+        - img "Geely" [ref=f21e27]
+        - generic [ref=f21e29]:
+          - img "БОРИСХОФ 34 года" [ref=f21e30]
+          - generic [ref=f21e31]: Официальный дилер Geely
+      - 'link "Позвонить: +7(495) 230-01-10" [ref=f21e32] [cursor=pointer]':
+        - /url: tel:+74952300110
+        - generic [ref=f21e35]: +7(495) 230-01-10
+      - button "Заказать звонок" [ref=f21e36] [cursor=pointer]
+  - main [ref=f21e40]:
+    - generic [ref=f21e41]:
+      - group "1 / 1" [ref=f21e44]:
+        - img "Geely акция" [ref=f21e46]
+        - generic [ref=f21e47]:
+          - generic [ref=f21e48]: БорисХоф — 34 года с вами
+          - generic [ref=f21e49]: Успейте приобрести свой GEELY с выгодой до 650 000 рублей + ТО-1 при покупке любого авто в июле*
+      - generic [ref=f21e52]:
+        - generic [ref=f21e53]: До конца акции
+        - list [ref=f21e57]:
+          - listitem [ref=f21e58]:
+            - generic [ref=f21e59]:
+              - generic [ref=f21e60]: "30"
+              - generic [ref=f21e61]: дня
+          - listitem [ref=f21e62]: ":"
+          - listitem [ref=f21e63]:
+            - generic [ref=f21e64]:
+              - generic [ref=f21e65]: "05"
+              - generic [ref=f21e66]: часов
+          - listitem [ref=f21e67]: ":"
+          - listitem [ref=f21e68]:
+            - generic [ref=f21e69]:
+              - generic [ref=f21e70]: "15"
+              - generic [ref=f21e71]: минут
+          - listitem [ref=f21e72]: ":"
+          - listitem [ref=f21e73]:
+            - generic [ref=f21e74]:
+              - generic [ref=f21e75]: "25"
+              - generic [ref=f21e76]: секунд
+    - generic [ref=f21e79]:
+      - generic [ref=f21e80] [cursor=pointer]: Официальный дилер
+      - generic [ref=f21e82] [cursor=pointer]: Покупка одним днем
+      - generic [ref=f21e84] [cursor=pointer]: в наличии с ПТС
+      - generic [ref=f21e86] [cursor=pointer]: Бонусы при трейд-ин
+      - generic [ref=f21e88] [cursor=pointer]: Уникальные условия
+    - generic [ref=f21e91]:
+      - generic [ref=f21e92]: Модельный ряд
+      - generic [ref=f21e94]:
+        - generic [ref=f21e95] [cursor=pointer]: COOLRAY
+        - generic [ref=f21e99] [cursor=pointer]: CITYRAY
+        - generic [ref=f21e103] [cursor=pointer]: ATLAS
+        - generic [ref=f21e107] [cursor=pointer]: MONJARO
+        - generic [ref=f21e111] [cursor=pointer]: EX5 EM-I
+        - generic [ref=f21e115] [cursor=pointer]: PREFACE
+        - generic [ref=f21e119] [cursor=pointer]: EX5
+        - generic [ref=f21e123] [cursor=pointer]: OKAVANGO
+      - generic [ref=f21e127]:
+        - generic [ref=f21e129]:
+          - generic [ref=f21e130]:
+            - heading "НОВЫЙ GEELY COOLRAY" [level=3] [ref=f21e131]
+            - generic [ref=f21e132]: Выгода до 200 000 ₽
+            - generic [ref=f21e133]:
+              - generic [ref=f21e134]:
+                - generic [ref=f21e135]: Только до 31.08
+                - paragraph [ref=f21e139]: Доп. бонус за трейд-ин
+                - paragraph [ref=f21e142]: 5 лет поддержки
+                - paragraph [ref=f21e145]: Рассрочка 0%
+                - paragraph [ref=f21e148]: Подарки до 100 000 руб.
+              - button "Узнать цену по акции" [ref=f21e149] [cursor=pointer]
+              - button "Тест-Драйв" [ref=f21e150] [cursor=pointer]
+          - generic [ref=f21e151]:
+            - generic [ref=f21e152]: Уже в наличии
+            - generic [ref=f21e154]:
+              - generic [ref=f21e155]: Экстерьер
+              - generic [ref=f21e156] [cursor=pointer]: Цвета
+            - generic [ref=f21e157]: Новинка
+        - generic [ref=f21e160]:
+          - generic [ref=f21e161]:
+            - heading "НОВЫЙ GEELY CITYRAY" [level=3] [ref=f21e162]
+            - generic [ref=f21e163]: Выгода до 370 000 ₽
+            - generic [ref=f21e164]:
+              - generic [ref=f21e165]:
+                - generic [ref=f21e166]: Только до 31.08
+                - paragraph [ref=f21e170]: Доп. бонус за трейд-ин
+                - paragraph [ref=f21e173]: 5 лет поддержки
+                - paragraph [ref=f21e176]: Рассрочка 0%
+                - paragraph [ref=f21e179]: Подарки до 100 000 руб.
+              - button "Узнать цену по акции" [ref=f21e180] [cursor=pointer]
+              - button "Тест-Драйв" [ref=f21e181] [cursor=pointer]
+          - generic [ref=f21e182]:
+            - generic [ref=f21e183]: Цена от 2 490 000 руб.
+            - generic [ref=f21e185]:
+              - generic [ref=f21e186]: Экстерьер
+              - generic [ref=f21e187] [cursor=pointer]: Цвета
+            - generic [ref=f21e188]: Автомобиль месяца
+        - generic [ref=f21e191]:
+          - generic [ref=f21e192]:
+            - heading "НОВЫЙ GEELY ATLAS" [level=3] [ref=f21e193]
+            - generic [ref=f21e194]: Выгода до 460 000 ₽
+            - generic [ref=f21e195]:
+              - generic [ref=f21e196]:
+                - generic [ref=f21e197]: Только до 31.08
+                - paragraph [ref=f21e201]: Доп. бонус за трейд-ин
+                - paragraph [ref=f21e204]: 5 лет поддержки
+                - paragraph [ref=f21e207]: Рассрочка 0%
+                - paragraph [ref=f21e210]: Подарки до 100 000 руб.
+              - button "Узнать цену по акции" [ref=f21e211] [cursor=pointer]
+              - button "Тест-Драйв" [ref=f21e212] [cursor=pointer]
+          - generic [ref=f21e213]:
+            - generic [ref=f21e214]: 10 авто по спец. цене
+            - generic [ref=f21e216]:
+              - generic [ref=f21e217]: Экстерьер
+              - generic [ref=f21e218] [cursor=pointer]: Цвета
+        - generic [ref=f21e221]:
+          - generic [ref=f21e222]:
+            - heading "GEELY MONJARO" [level=3] [ref=f21e223]
+            - generic [ref=f21e224]: Выгода до 650 000 ₽
+            - generic [ref=f21e225]:
+              - generic [ref=f21e226]:
+                - generic [ref=f21e227]: Только до 31.08
+                - paragraph [ref=f21e231]: Доп. бонус за трейд-ин
+                - paragraph [ref=f21e234]: 5 лет поддержки
+                - paragraph [ref=f21e237]: Рассрочка 0%
+                - paragraph [ref=f21e240]: Подарки до 100 000 руб.
+              - button "Узнать цену по акции" [ref=f21e241] [cursor=pointer]
+              - button "Тест-Драйв" [ref=f21e242] [cursor=pointer]
+          - generic [ref=f21e243]:
+            - generic [ref=f21e244]: 10 авто по спец. цене
+            - generic [ref=f21e246]:
+              - generic [ref=f21e247]: Экстерьер
+              - generic [ref=f21e248] [cursor=pointer]: Цвета
+        - generic [ref=f21e251]:
+          - generic [ref=f21e252]:
+            - heading "GEELY EX5 EM-I" [level=3] [ref=f21e253]
+            - generic [ref=f21e254]: Выгода до 400 000 ₽
+            - generic [ref=f21e255]:
+              - generic [ref=f21e256]:
+                - generic [ref=f21e257]: Только до 31.08
+                - paragraph [ref=f21e261]: Доп. бонус за трейд-ин
+                - paragraph [ref=f21e264]: 5 лет поддержки
+                - paragraph [ref=f21e267]: Рассрочка 0%
+                - paragraph [ref=f21e270]: Подарки до 100 000 руб.
+              - button "Узнать цену по акции" [ref=f21e271] [cursor=pointer]
+              - button "Тест-Драйв" [ref=f21e272] [cursor=pointer]
+          - generic [ref=f21e273]:
+            - generic [ref=f21e274]: 10 авто по спец. цене
+            - generic [ref=f21e276]:
+              - generic [ref=f21e277]: Экстерьер
+              - generic [ref=f21e278] [cursor=pointer]: Цвета
+        - generic [ref=f21e281]:
+          - generic [ref=f21e282]:
+            - heading "GEELY PREFACE" [level=3] [ref=f21e283]
+            - generic [ref=f21e284]: Выгода до 350 000 ₽
+            - generic [ref=f21e285]:
+              - generic [ref=f21e286]:
+                - generic [ref=f21e287]: Только до 31.08
+                - paragraph [ref=f21e291]: Доп. бонус за трейд-ин
+                - paragraph [ref=f21e294]: 5 лет поддержки
+                - paragraph [ref=f21e297]: Рассрочка 0%
+                - paragraph [ref=f21e300]: Подарки до 100 000 руб.
+              - button "Узнать цену по акции" [ref=f21e301] [cursor=pointer]
+              - button "Тест-Драйв" [ref=f21e302] [cursor=pointer]
+          - generic [ref=f21e303]:
+            - generic [ref=f21e304]: 10 авто по спец. цене
+            - generic [ref=f21e306]:
+              - generic [ref=f21e307]: Экстерьер
+              - generic [ref=f21e308] [cursor=pointer]: Цвета
+        - generic [ref=f21e311]:
+          - generic [ref=f21e312]:
+            - heading "GEELY EX5" [level=3] [ref=f21e313]
+            - generic [ref=f21e314]: Выгода до 300 000 ₽
+            - generic [ref=f21e315]:
+              - generic [ref=f21e316]:
+                - generic [ref=f21e317]: Только до 31.08
+                - paragraph [ref=f21e321]: Доп. бонус за трейд-ин
+                - paragraph [ref=f21e324]: 5 лет поддержки
+                - paragraph [ref=f21e327]: Рассрочка 0%
+                - paragraph [ref=f21e330]: Подарки до 100 000 руб.
+              - button "Узнать цену по акции" [ref=f21e331] [cursor=pointer]
+              - button "Тест-Драйв" [ref=f21e332] [cursor=pointer]
+          - generic [ref=f21e333]:
+            - generic [ref=f21e334]: 10 авто по спец. цене
+            - generic [ref=f21e336]:
+              - generic [ref=f21e337]: Экстерьер
+              - generic [ref=f21e338] [cursor=pointer]: Цвета
+        - generic [ref=f21e341]:
+          - generic [ref=f21e342]:
+            - heading "GEELY OKAVANGO" [level=3] [ref=f21e343]
+            - generic [ref=f21e344]: Выгода до 450 000 ₽
+            - generic [ref=f21e345]:
+              - generic [ref=f21e346]:
+                - generic [ref=f21e347]: Только до 31.08
+                - paragraph [ref=f21e351]: Доп. бонус за трейд-ин
+                - paragraph [ref=f21e354]: 5 лет поддержки
+                - paragraph [ref=f21e357]: Рассрочка 0%
+                - paragraph [ref=f21e360]: Подарки до 100 000 руб.
+              - button "Узнать цену по акции" [ref=f21e361] [cursor=pointer]
+              - button "Тест-Драйв" [ref=f21e362] [cursor=pointer]
+          - generic [ref=f21e363]:
+            - generic [ref=f21e364]: 10 авто по спец. цене
+            - generic [ref=f21e366]:
+              - generic [ref=f21e367]: Экстерьер
+              - generic [ref=f21e368] [cursor=pointer]: Цвета
+    - generic [ref=f21e372]:
+      - generic [ref=f21e373]:
+        - generic [ref=f21e374]: ПОДБЕРИТЕ КОМПЛЕКТАЦИЮ
+        - generic [ref=f21e376]:
+          - textbox "Выберите модель" [ref=f21e378] [cursor=pointer]
+          - textbox "Выберите комплектацию" [ref=f21e382] [cursor=pointer]
+      - generic [ref=f21e385]:
+        - generic [ref=f21e386]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e388]
+          - generic [ref=f21e389]:
+            - generic [ref=f21e390]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e391]: Комфорт/Comfort, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e392]:
+            - button "Узнать стоимость по акции" [ref=f21e393] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e397] [cursor=pointer]
+        - generic [ref=f21e401]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e403]
+          - generic [ref=f21e404]:
+            - generic [ref=f21e405]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e406]: Комфорт/Comfort, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e407]:
+            - button "Узнать стоимость по акции" [ref=f21e408] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e412] [cursor=pointer]
+        - generic [ref=f21e416]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e418]
+          - generic [ref=f21e419]:
+            - generic [ref=f21e420]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e421]: Комфорт/Comfort, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e422]:
+            - button "Узнать стоимость по акции" [ref=f21e423] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e427] [cursor=pointer]
+        - generic [ref=f21e431]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e433]
+          - generic [ref=f21e434]:
+            - generic [ref=f21e435]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e436]: Люкс/Luxury, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e437]:
+            - button "Узнать стоимость по акции" [ref=f21e438] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e442] [cursor=pointer]
+        - generic [ref=f21e446]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e448]
+          - generic [ref=f21e449]:
+            - generic [ref=f21e450]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e451]: Люкс/Luxury, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e452]:
+            - button "Узнать стоимость по акции" [ref=f21e453] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e457] [cursor=pointer]
+        - generic [ref=f21e461]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e463]
+          - generic [ref=f21e464]:
+            - generic [ref=f21e465]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e466]: Люкс/Luxury, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e467]:
+            - button "Узнать стоимость по акции" [ref=f21e468] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e472] [cursor=pointer]
+        - generic [ref=f21e476]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e478]
+          - generic [ref=f21e479]:
+            - generic [ref=f21e480]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e481]: Флагман/Flagship, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e482]:
+            - button "Узнать стоимость по акции" [ref=f21e483] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e487] [cursor=pointer]
+        - generic [ref=f21e491]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e493]
+          - generic [ref=f21e494]:
+            - generic [ref=f21e495]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e496]: Флагман/Flagship, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e497]:
+            - button "Узнать стоимость по акции" [ref=f21e498] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e502] [cursor=pointer]
+        - generic [ref=f21e506]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e508]
+          - generic [ref=f21e509]:
+            - generic [ref=f21e510]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e511]: Флагман/Flagship, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e512]:
+            - button "Узнать стоимость по акции" [ref=f21e513] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e517] [cursor=pointer]
+        - generic [ref=f21e521]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e523]
+          - generic [ref=f21e524]:
+            - generic [ref=f21e525]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e526]: Флагман Спорт/Flagship Sport, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e527]:
+            - button "Узнать стоимость по акции" [ref=f21e528] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e532] [cursor=pointer]
+        - generic [ref=f21e536]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e538]
+          - generic [ref=f21e539]:
+            - generic [ref=f21e540]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e541]: Флагман Спорт/Flagship Sport, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e542]:
+            - button "Узнать стоимость по акции" [ref=f21e543] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e547] [cursor=pointer]
+        - generic [ref=f21e551]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f21e553]
+          - generic [ref=f21e554]:
+            - generic [ref=f21e555]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f21e556]: Флагман Спорт/Flagship Sport, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f21e557]:
+            - button "Узнать стоимость по акции" [ref=f21e558] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e562] [cursor=pointer]
+        - generic [ref=f21e566]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e568]
+          - generic [ref=f21e569]:
+            - generic [ref=f21e570]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e571]: Люкс/Luxury, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e572]:
+            - button "Узнать стоимость по акции" [ref=f21e573] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e577] [cursor=pointer]
+        - generic [ref=f21e581]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e583]
+          - generic [ref=f21e584]:
+            - generic [ref=f21e585]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e586]: Люкс/Luxury, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e587]:
+            - button "Узнать стоимость по акции" [ref=f21e588] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e592] [cursor=pointer]
+        - generic [ref=f21e596]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e598]
+          - generic [ref=f21e599]:
+            - generic [ref=f21e600]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e601]: Люкс/Luxury, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e602]:
+            - button "Узнать стоимость по акции" [ref=f21e603] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e607] [cursor=pointer]
+        - generic [ref=f21e611]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e613]
+          - generic [ref=f21e614]:
+            - generic [ref=f21e615]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e616]: Люкс/Luxury, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e617]:
+            - button "Узнать стоимость по акции" [ref=f21e618] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e622] [cursor=pointer]
+        - generic [ref=f21e626]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e628]
+          - generic [ref=f21e629]:
+            - generic [ref=f21e630]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e631]: Люкс/Luxury, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e632]:
+            - button "Узнать стоимость по акции" [ref=f21e633] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e637] [cursor=pointer]
+        - generic [ref=f21e641]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e643]
+          - generic [ref=f21e644]:
+            - generic [ref=f21e645]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e646]: Флагман/Flagship, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e647]:
+            - button "Узнать стоимость по акции" [ref=f21e648] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e652] [cursor=pointer]
+        - generic [ref=f21e656]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e658]
+          - generic [ref=f21e659]:
+            - generic [ref=f21e660]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e661]: Флагман/Flagship, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e662]:
+            - button "Узнать стоимость по акции" [ref=f21e663] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e667] [cursor=pointer]
+        - generic [ref=f21e671]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e673]
+          - generic [ref=f21e674]:
+            - generic [ref=f21e675]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e676]: Флагман/Flagship, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e677]:
+            - button "Узнать стоимость по акции" [ref=f21e678] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e682] [cursor=pointer]
+        - generic [ref=f21e686]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e688]
+          - generic [ref=f21e689]:
+            - generic [ref=f21e690]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e691]: Флагман/Flagship, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e692]:
+            - button "Узнать стоимость по акции" [ref=f21e693] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e697] [cursor=pointer]
+        - generic [ref=f21e701]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e703]
+          - generic [ref=f21e704]:
+            - generic [ref=f21e705]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e706]: Флагман/Flagship, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e707]:
+            - button "Узнать стоимость по акции" [ref=f21e708] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e712] [cursor=pointer]
+        - generic [ref=f21e716]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e718]
+          - generic [ref=f21e719]:
+            - generic [ref=f21e720]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e721]: Флагман Спорт/Flagship Sport, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e722]:
+            - button "Узнать стоимость по акции" [ref=f21e723] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e727] [cursor=pointer]
+        - generic [ref=f21e731]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e733]
+          - generic [ref=f21e734]:
+            - generic [ref=f21e735]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e736]: Флагман Спорт/Flagship Sport, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e737]:
+            - button "Узнать стоимость по акции" [ref=f21e738] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e742] [cursor=pointer]
+        - generic [ref=f21e746]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e748]
+          - generic [ref=f21e749]:
+            - generic [ref=f21e750]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e751]: Флагман Спорт/Flagship Sport, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e752]:
+            - button "Узнать стоимость по акции" [ref=f21e753] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e757] [cursor=pointer]
+        - generic [ref=f21e761]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e763]
+          - generic [ref=f21e764]:
+            - generic [ref=f21e765]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e766]: Флагман Спорт/Flagship Sport, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e767]:
+            - button "Узнать стоимость по акции" [ref=f21e768] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e772] [cursor=pointer]
+        - generic [ref=f21e776]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e778]
+          - generic [ref=f21e779]:
+            - generic [ref=f21e780]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e781]: Флагман Спорт/Flagship Sport, 2024, Автомат, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e782]:
+            - button "Узнать стоимость по акции" [ref=f21e783] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e787] [cursor=pointer]
+        - generic [ref=f21e791]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e793]
+          - generic [ref=f21e794]:
+            - generic [ref=f21e795]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e796]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e797]:
+            - button "Узнать стоимость по акции" [ref=f21e798] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e802] [cursor=pointer]
+        - generic [ref=f21e806]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e808]
+          - generic [ref=f21e809]:
+            - generic [ref=f21e810]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e811]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e812]:
+            - button "Узнать стоимость по акции" [ref=f21e813] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e817] [cursor=pointer]
+        - generic [ref=f21e821]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e823]
+          - generic [ref=f21e824]:
+            - generic [ref=f21e825]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e826]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e827]:
+            - button "Узнать стоимость по акции" [ref=f21e828] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e832] [cursor=pointer]
+        - generic [ref=f21e836]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e838]
+          - generic [ref=f21e839]:
+            - generic [ref=f21e840]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e841]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e842]:
+            - button "Узнать стоимость по акции" [ref=f21e843] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e847] [cursor=pointer]
+        - generic [ref=f21e851]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e853]
+          - generic [ref=f21e854]:
+            - generic [ref=f21e855]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e856]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e857]:
+            - button "Узнать стоимость по акции" [ref=f21e858] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e862] [cursor=pointer]
+        - generic [ref=f21e866]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e868]
+          - generic [ref=f21e869]:
+            - generic [ref=f21e870]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e871]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e872]:
+            - button "Узнать стоимость по акции" [ref=f21e873] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e877] [cursor=pointer]
+        - generic [ref=f21e881]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e883]
+          - generic [ref=f21e884]:
+            - generic [ref=f21e885]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e886]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e887]:
+            - button "Узнать стоимость по акции" [ref=f21e888] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e892] [cursor=pointer]
+        - generic [ref=f21e896]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e898]
+          - generic [ref=f21e899]:
+            - generic [ref=f21e900]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e901]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e902]:
+            - button "Узнать стоимость по акции" [ref=f21e903] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e907] [cursor=pointer]
+        - generic [ref=f21e911]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e913]
+          - generic [ref=f21e914]:
+            - generic [ref=f21e915]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e916]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e917]:
+            - button "Узнать стоимость по акции" [ref=f21e918] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e922] [cursor=pointer]
+        - generic [ref=f21e926]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e928]
+          - generic [ref=f21e929]:
+            - generic [ref=f21e930]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e931]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e932]:
+            - button "Узнать стоимость по акции" [ref=f21e933] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e937] [cursor=pointer]
+        - generic [ref=f21e941]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e943]
+          - generic [ref=f21e944]:
+            - generic [ref=f21e945]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e946]: Флагман Спорт/Flagship Sport, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e947]:
+            - button "Узнать стоимость по акции" [ref=f21e948] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e952] [cursor=pointer]
+        - generic [ref=f21e956]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e958]
+          - generic [ref=f21e959]:
+            - generic [ref=f21e960]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e961]: Флагман Спорт/Flagship Sport, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e962]:
+            - button "Узнать стоимость по акции" [ref=f21e963] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e967] [cursor=pointer]
+        - generic [ref=f21e971]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e973]
+          - generic [ref=f21e974]:
+            - generic [ref=f21e975]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e976]: Флагман Спорт/Flagship Sport, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e977]:
+            - button "Узнать стоимость по акции" [ref=f21e978] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e982] [cursor=pointer]
+        - generic [ref=f21e986]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e988]
+          - generic [ref=f21e989]:
+            - generic [ref=f21e990]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e991]: Флагман Спорт/Flagship Sport, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e992]:
+            - button "Узнать стоимость по акции" [ref=f21e993] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e997] [cursor=pointer]
+        - generic [ref=f21e1001]:
+          - img "НОВЫЙ GEELY ATLAS" [ref=f21e1003]
+          - generic [ref=f21e1004]:
+            - generic [ref=f21e1005]: НОВЫЙ GEELY ATLAS
+            - generic [ref=f21e1006]: Флагман Спорт/Flagship Sport, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1007]:
+            - button "Узнать стоимость по акции" [ref=f21e1008] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1012] [cursor=pointer]
+        - generic [ref=f21e1016]:
+          - img "GEELY OKAVANGO" [ref=f21e1018]
+          - generic [ref=f21e1019]:
+            - generic [ref=f21e1020]: GEELY OKAVANGO
+            - generic [ref=f21e1021]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1022]:
+            - button "Узнать стоимость по акции" [ref=f21e1023] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1027] [cursor=pointer]
+        - generic [ref=f21e1031]:
+          - img "GEELY OKAVANGO" [ref=f21e1033]
+          - generic [ref=f21e1034]:
+            - generic [ref=f21e1035]: GEELY OKAVANGO
+            - generic [ref=f21e1036]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1037]:
+            - button "Узнать стоимость по акции" [ref=f21e1038] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1042] [cursor=pointer]
+        - generic [ref=f21e1046]:
+          - img "GEELY OKAVANGO" [ref=f21e1048]
+          - generic [ref=f21e1049]:
+            - generic [ref=f21e1050]: GEELY OKAVANGO
+            - generic [ref=f21e1051]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1052]:
+            - button "Узнать стоимость по акции" [ref=f21e1053] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1057] [cursor=pointer]
+        - generic [ref=f21e1061]:
+          - img "GEELY OKAVANGO" [ref=f21e1063]
+          - generic [ref=f21e1064]:
+            - generic [ref=f21e1065]: GEELY OKAVANGO
+            - generic [ref=f21e1066]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1067]:
+            - button "Узнать стоимость по акции" [ref=f21e1068] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1072] [cursor=pointer]
+        - generic [ref=f21e1076]:
+          - img "GEELY OKAVANGO" [ref=f21e1078]
+          - generic [ref=f21e1079]:
+            - generic [ref=f21e1080]: GEELY OKAVANGO
+            - generic [ref=f21e1081]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1082]:
+            - button "Узнать стоимость по акции" [ref=f21e1083] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1087] [cursor=pointer]
+        - generic [ref=f21e1091]:
+          - img "GEELY OKAVANGO" [ref=f21e1093]
+          - generic [ref=f21e1094]:
+            - generic [ref=f21e1095]: GEELY OKAVANGO
+            - generic [ref=f21e1096]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1097]:
+            - button "Узнать стоимость по акции" [ref=f21e1098] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1102] [cursor=pointer]
+        - generic [ref=f21e1106]:
+          - img "GEELY OKAVANGO" [ref=f21e1108]
+          - generic [ref=f21e1109]:
+            - generic [ref=f21e1110]: GEELY OKAVANGO
+            - generic [ref=f21e1111]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1112]:
+            - button "Узнать стоимость по акции" [ref=f21e1113] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1117] [cursor=pointer]
+        - generic [ref=f21e1121]:
+          - img "GEELY OKAVANGO" [ref=f21e1123]
+          - generic [ref=f21e1124]:
+            - generic [ref=f21e1125]: GEELY OKAVANGO
+            - generic [ref=f21e1126]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1127]:
+            - button "Узнать стоимость по акции" [ref=f21e1128] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1132] [cursor=pointer]
+        - generic [ref=f21e1136]:
+          - img "GEELY MONJARO" [ref=f21e1138]
+          - generic [ref=f21e1139]:
+            - generic [ref=f21e1140]: GEELY MONJARO
+            - generic [ref=f21e1141]: Люкс/Luxury, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1142]:
+            - button "Узнать стоимость по акции" [ref=f21e1143] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1147] [cursor=pointer]
+        - generic [ref=f21e1151]:
+          - img "GEELY MONJARO" [ref=f21e1153]
+          - generic [ref=f21e1154]:
+            - generic [ref=f21e1155]: GEELY MONJARO
+            - generic [ref=f21e1156]: Люкс/Luxury, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1157]:
+            - button "Узнать стоимость по акции" [ref=f21e1158] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1162] [cursor=pointer]
+        - generic [ref=f21e1166]:
+          - img "GEELY MONJARO" [ref=f21e1168]
+          - generic [ref=f21e1169]:
+            - generic [ref=f21e1170]: GEELY MONJARO
+            - generic [ref=f21e1171]: Люкс/Luxury, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1172]:
+            - button "Узнать стоимость по акции" [ref=f21e1173] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1177] [cursor=pointer]
+        - generic [ref=f21e1181]:
+          - img "GEELY MONJARO" [ref=f21e1183]
+          - generic [ref=f21e1184]:
+            - generic [ref=f21e1185]: GEELY MONJARO
+            - generic [ref=f21e1186]: Люкс/Luxury, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1187]:
+            - button "Узнать стоимость по акции" [ref=f21e1188] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1192] [cursor=pointer]
+        - generic [ref=f21e1196]:
+          - img "GEELY MONJARO" [ref=f21e1198]
+          - generic [ref=f21e1199]:
+            - generic [ref=f21e1200]: GEELY MONJARO
+            - generic [ref=f21e1201]: Люкс/Luxury, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1202]:
+            - button "Узнать стоимость по акции" [ref=f21e1203] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1207] [cursor=pointer]
+        - generic [ref=f21e1211]:
+          - img "GEELY MONJARO" [ref=f21e1213]
+          - generic [ref=f21e1214]:
+            - generic [ref=f21e1215]: GEELY MONJARO
+            - generic [ref=f21e1216]: Люкс/Luxury, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1217]:
+            - button "Узнать стоимость по акции" [ref=f21e1218] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1222] [cursor=pointer]
+        - generic [ref=f21e1226]:
+          - img "GEELY MONJARO" [ref=f21e1228]
+          - generic [ref=f21e1229]:
+            - generic [ref=f21e1230]: GEELY MONJARO
+            - generic [ref=f21e1231]: Флагман/Flagship, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1232]:
+            - button "Узнать стоимость по акции" [ref=f21e1233] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1237] [cursor=pointer]
+        - generic [ref=f21e1241]:
+          - img "GEELY MONJARO" [ref=f21e1243]
+          - generic [ref=f21e1244]:
+            - generic [ref=f21e1245]: GEELY MONJARO
+            - generic [ref=f21e1246]: Флагман/Flagship, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1247]:
+            - button "Узнать стоимость по акции" [ref=f21e1248] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1252] [cursor=pointer]
+        - generic [ref=f21e1256]:
+          - img "GEELY MONJARO" [ref=f21e1258]
+          - generic [ref=f21e1259]:
+            - generic [ref=f21e1260]: GEELY MONJARO
+            - generic [ref=f21e1261]: Флагман/Flagship, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1262]:
+            - button "Узнать стоимость по акции" [ref=f21e1263] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1267] [cursor=pointer]
+        - generic [ref=f21e1271]:
+          - img "GEELY MONJARO" [ref=f21e1273]
+          - generic [ref=f21e1274]:
+            - generic [ref=f21e1275]: GEELY MONJARO
+            - generic [ref=f21e1276]: Флагман/Flagship, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1277]:
+            - button "Узнать стоимость по акции" [ref=f21e1278] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1282] [cursor=pointer]
+        - generic [ref=f21e1286]:
+          - img "GEELY MONJARO" [ref=f21e1288]
+          - generic [ref=f21e1289]:
+            - generic [ref=f21e1290]: GEELY MONJARO
+            - generic [ref=f21e1291]: Флагман/Flagship, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1292]:
+            - button "Узнать стоимость по акции" [ref=f21e1293] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1297] [cursor=pointer]
+        - generic [ref=f21e1301]:
+          - img "GEELY MONJARO" [ref=f21e1303]
+          - generic [ref=f21e1304]:
+            - generic [ref=f21e1305]: GEELY MONJARO
+            - generic [ref=f21e1306]: Флагман/Flagship, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1307]:
+            - button "Узнать стоимость по акции" [ref=f21e1308] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1312] [cursor=pointer]
+        - generic [ref=f21e1316]:
+          - img "GEELY MONJARO" [ref=f21e1318]
+          - generic [ref=f21e1319]:
+            - generic [ref=f21e1320]: GEELY MONJARO
+            - generic [ref=f21e1321]: Эксклюзив/Exclusive, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1322]:
+            - button "Узнать стоимость по акции" [ref=f21e1323] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1327] [cursor=pointer]
+        - generic [ref=f21e1331]:
+          - img "GEELY MONJARO" [ref=f21e1333]
+          - generic [ref=f21e1334]:
+            - generic [ref=f21e1335]: GEELY MONJARO
+            - generic [ref=f21e1336]: Эксклюзив/Exclusive, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1337]:
+            - button "Узнать стоимость по акции" [ref=f21e1338] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1342] [cursor=pointer]
+        - generic [ref=f21e1346]:
+          - img "GEELY MONJARO" [ref=f21e1348]
+          - generic [ref=f21e1349]:
+            - generic [ref=f21e1350]: GEELY MONJARO
+            - generic [ref=f21e1351]: Эксклюзив/Exclusive, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1352]:
+            - button "Узнать стоимость по акции" [ref=f21e1353] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1357] [cursor=pointer]
+        - generic [ref=f21e1361]:
+          - img "GEELY MONJARO" [ref=f21e1363]
+          - generic [ref=f21e1364]:
+            - generic [ref=f21e1365]: GEELY MONJARO
+            - generic [ref=f21e1366]: Эксклюзив/Exclusive, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1367]:
+            - button "Узнать стоимость по акции" [ref=f21e1368] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1372] [cursor=pointer]
+        - generic [ref=f21e1376]:
+          - img "GEELY MONJARO" [ref=f21e1378]
+          - generic [ref=f21e1379]:
+            - generic [ref=f21e1380]: GEELY MONJARO
+            - generic [ref=f21e1381]: Эксклюзив/Exclusive, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1382]:
+            - button "Узнать стоимость по акции" [ref=f21e1383] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1387] [cursor=pointer]
+        - generic [ref=f21e1391]:
+          - img "GEELY MONJARO" [ref=f21e1393]
+          - generic [ref=f21e1394]:
+            - generic [ref=f21e1395]: GEELY MONJARO
+            - generic [ref=f21e1396]: Эксклюзив/Exclusive, 2024, Автомат, 2.0 TGDI 238 л.с. Полный привод
+          - generic [ref=f21e1397]:
+            - button "Узнать стоимость по акции" [ref=f21e1398] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1402] [cursor=pointer]
+        - generic [ref=f21e1406]:
+          - img "GEELY PREFACE" [ref=f21e1408]
+          - generic [ref=f21e1409]:
+            - generic [ref=f21e1410]: GEELY PREFACE
+            - generic [ref=f21e1411]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1412]:
+            - button "Узнать стоимость по акции" [ref=f21e1413] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1417] [cursor=pointer]
+        - generic [ref=f21e1421]:
+          - img "GEELY PREFACE" [ref=f21e1423]
+          - generic [ref=f21e1424]:
+            - generic [ref=f21e1425]: GEELY PREFACE
+            - generic [ref=f21e1426]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1427]:
+            - button "Узнать стоимость по акции" [ref=f21e1428] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1432] [cursor=pointer]
+        - generic [ref=f21e1436]:
+          - img "GEELY PREFACE" [ref=f21e1438]
+          - generic [ref=f21e1439]:
+            - generic [ref=f21e1440]: GEELY PREFACE
+            - generic [ref=f21e1441]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1442]:
+            - button "Узнать стоимость по акции" [ref=f21e1443] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1447] [cursor=pointer]
+        - generic [ref=f21e1451]:
+          - img "GEELY PREFACE" [ref=f21e1453]
+          - generic [ref=f21e1454]:
+            - generic [ref=f21e1455]: GEELY PREFACE
+            - generic [ref=f21e1456]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1457]:
+            - button "Узнать стоимость по акции" [ref=f21e1458] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1462] [cursor=pointer]
+        - generic [ref=f21e1466]:
+          - img "GEELY PREFACE" [ref=f21e1468]
+          - generic [ref=f21e1469]:
+            - generic [ref=f21e1470]: GEELY PREFACE
+            - generic [ref=f21e1471]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1472]:
+            - button "Узнать стоимость по акции" [ref=f21e1473] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1477] [cursor=pointer]
+        - generic [ref=f21e1481]:
+          - img "GEELY PREFACE" [ref=f21e1483]
+          - generic [ref=f21e1484]:
+            - generic [ref=f21e1485]: GEELY PREFACE
+            - generic [ref=f21e1486]: Люкс/Luxury, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1487]:
+            - button "Узнать стоимость по акции" [ref=f21e1488] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1492] [cursor=pointer]
+        - generic [ref=f21e1496]:
+          - img "GEELY PREFACE" [ref=f21e1498]
+          - generic [ref=f21e1499]:
+            - generic [ref=f21e1500]: GEELY PREFACE
+            - generic [ref=f21e1501]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1502]:
+            - button "Узнать стоимость по акции" [ref=f21e1503] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1507] [cursor=pointer]
+        - generic [ref=f21e1511]:
+          - img "GEELY PREFACE" [ref=f21e1513]
+          - generic [ref=f21e1514]:
+            - generic [ref=f21e1515]: GEELY PREFACE
+            - generic [ref=f21e1516]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1517]:
+            - button "Узнать стоимость по акции" [ref=f21e1518] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1522] [cursor=pointer]
+        - generic [ref=f21e1526]:
+          - img "GEELY PREFACE" [ref=f21e1528]
+          - generic [ref=f21e1529]:
+            - generic [ref=f21e1530]: GEELY PREFACE
+            - generic [ref=f21e1531]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1532]:
+            - button "Узнать стоимость по акции" [ref=f21e1533] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1537] [cursor=pointer]
+        - generic [ref=f21e1541]:
+          - img "GEELY PREFACE" [ref=f21e1543]
+          - generic [ref=f21e1544]:
+            - generic [ref=f21e1545]: GEELY PREFACE
+            - generic [ref=f21e1546]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1547]:
+            - button "Узнать стоимость по акции" [ref=f21e1548] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1552] [cursor=pointer]
+        - generic [ref=f21e1556]:
+          - img "GEELY PREFACE" [ref=f21e1558]
+          - generic [ref=f21e1559]:
+            - generic [ref=f21e1560]: GEELY PREFACE
+            - generic [ref=f21e1561]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1562]:
+            - button "Узнать стоимость по акции" [ref=f21e1563] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1567] [cursor=pointer]
+        - generic [ref=f21e1571]:
+          - img "GEELY PREFACE" [ref=f21e1573]
+          - generic [ref=f21e1574]:
+            - generic [ref=f21e1575]: GEELY PREFACE
+            - generic [ref=f21e1576]: Флагман/Flagship, 2024, Робот, 2.0 200 л.с. Передний привод
+          - generic [ref=f21e1577]:
+            - button "Узнать стоимость по акции" [ref=f21e1578] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1582] [cursor=pointer]
+        - generic [ref=f21e1586]:
+          - img "GEELY EX5" [ref=f21e1588]
+          - generic [ref=f21e1589]:
+            - generic [ref=f21e1590]: GEELY EX5
+            - generic [ref=f21e1591]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1592]:
+            - button "Узнать стоимость по акции" [ref=f21e1593] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1597] [cursor=pointer]
+        - generic [ref=f21e1601]:
+          - img "GEELY EX5" [ref=f21e1603]
+          - generic [ref=f21e1604]:
+            - generic [ref=f21e1605]: GEELY EX5
+            - generic [ref=f21e1606]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1607]:
+            - button "Узнать стоимость по акции" [ref=f21e1608] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1612] [cursor=pointer]
+        - generic [ref=f21e1616]:
+          - img "GEELY EX5" [ref=f21e1618]
+          - generic [ref=f21e1619]:
+            - generic [ref=f21e1620]: GEELY EX5
+            - generic [ref=f21e1621]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1622]:
+            - button "Узнать стоимость по акции" [ref=f21e1623] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1627] [cursor=pointer]
+        - generic [ref=f21e1631]:
+          - img "GEELY EX5" [ref=f21e1633]
+          - generic [ref=f21e1634]:
+            - generic [ref=f21e1635]: GEELY EX5
+            - generic [ref=f21e1636]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1637]:
+            - button "Узнать стоимость по акции" [ref=f21e1638] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1642] [cursor=pointer]
+        - generic [ref=f21e1646]:
+          - img "GEELY EX5" [ref=f21e1648]
+          - generic [ref=f21e1649]:
+            - generic [ref=f21e1650]: GEELY EX5
+            - generic [ref=f21e1651]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1652]:
+            - button "Узнать стоимость по акции" [ref=f21e1653] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1657] [cursor=pointer]
+        - generic [ref=f21e1661]:
+          - img "GEELY EX5" [ref=f21e1663]
+          - generic [ref=f21e1664]:
+            - generic [ref=f21e1665]: GEELY EX5
+            - generic [ref=f21e1666]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1667]:
+            - button "Узнать стоимость по акции" [ref=f21e1668] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1672] [cursor=pointer]
+        - generic [ref=f21e1676]:
+          - img "GEELY EX5" [ref=f21e1678]
+          - generic [ref=f21e1679]:
+            - generic [ref=f21e1680]: GEELY EX5
+            - generic [ref=f21e1681]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1682]:
+            - button "Узнать стоимость по акции" [ref=f21e1683] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1687] [cursor=pointer]
+        - generic [ref=f21e1691]:
+          - img "GEELY EX5" [ref=f21e1693]
+          - generic [ref=f21e1694]:
+            - generic [ref=f21e1695]: GEELY EX5
+            - generic [ref=f21e1696]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1697]:
+            - button "Узнать стоимость по акции" [ref=f21e1698] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1702] [cursor=pointer]
+        - generic [ref=f21e1706]:
+          - img "GEELY EX5" [ref=f21e1708]
+          - generic [ref=f21e1709]:
+            - generic [ref=f21e1710]: GEELY EX5
+            - generic [ref=f21e1711]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1712]:
+            - button "Узнать стоимость по акции" [ref=f21e1713] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1717] [cursor=pointer]
+        - generic [ref=f21e1721]:
+          - img "GEELY EX5" [ref=f21e1723]
+          - generic [ref=f21e1724]:
+            - generic [ref=f21e1725]: GEELY EX5
+            - generic [ref=f21e1726]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1727]:
+            - button "Узнать стоимость по акции" [ref=f21e1728] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1732] [cursor=pointer]
+        - generic [ref=f21e1736]:
+          - img "Geely EX5 EM-I" [ref=f21e1738]
+          - generic [ref=f21e1739]:
+            - generic [ref=f21e1740]: Geely EX5 EM-I
+            - generic [ref=f21e1741]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1742]:
+            - button "Узнать стоимость по акции" [ref=f21e1743] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1747] [cursor=pointer]
+        - generic [ref=f21e1751]:
+          - img "Geely EX5 EM-I" [ref=f21e1753]
+          - generic [ref=f21e1754]:
+            - generic [ref=f21e1755]: Geely EX5 EM-I
+            - generic [ref=f21e1756]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1757]:
+            - button "Узнать стоимость по акции" [ref=f21e1758] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1762] [cursor=pointer]
+        - generic [ref=f21e1766]:
+          - img "Geely EX5 EM-I" [ref=f21e1768]
+          - generic [ref=f21e1769]:
+            - generic [ref=f21e1770]: Geely EX5 EM-I
+            - generic [ref=f21e1771]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1772]:
+            - button "Узнать стоимость по акции" [ref=f21e1773] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1777] [cursor=pointer]
+        - generic [ref=f21e1781]:
+          - img "Geely EX5 EM-I" [ref=f21e1783]
+          - generic [ref=f21e1784]:
+            - generic [ref=f21e1785]: Geely EX5 EM-I
+            - generic [ref=f21e1786]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1787]:
+            - button "Узнать стоимость по акции" [ref=f21e1788] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1792] [cursor=pointer]
+        - generic [ref=f21e1796]:
+          - img "Geely EX5 EM-I" [ref=f21e1798]
+          - generic [ref=f21e1799]:
+            - generic [ref=f21e1800]: Geely EX5 EM-I
+            - generic [ref=f21e1801]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1802]:
+            - button "Узнать стоимость по акции" [ref=f21e1803] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1807] [cursor=pointer]
+        - generic [ref=f21e1811]:
+          - img "Geely EX5 EM-I" [ref=f21e1813]
+          - generic [ref=f21e1814]:
+            - generic [ref=f21e1815]: Geely EX5 EM-I
+            - generic [ref=f21e1816]: Про/Pro, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1817]:
+            - button "Узнать стоимость по акции" [ref=f21e1818] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1822] [cursor=pointer]
+        - generic [ref=f21e1826]:
+          - img "Geely EX5 EM-I" [ref=f21e1828]
+          - generic [ref=f21e1829]:
+            - generic [ref=f21e1830]: Geely EX5 EM-I
+            - generic [ref=f21e1831]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1832]:
+            - button "Узнать стоимость по акции" [ref=f21e1833] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1837] [cursor=pointer]
+        - generic [ref=f21e1841]:
+          - img "Geely EX5 EM-I" [ref=f21e1843]
+          - generic [ref=f21e1844]:
+            - generic [ref=f21e1845]: Geely EX5 EM-I
+            - generic [ref=f21e1846]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1847]:
+            - button "Узнать стоимость по акции" [ref=f21e1848] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1852] [cursor=pointer]
+        - generic [ref=f21e1856]:
+          - img "Geely EX5 EM-I" [ref=f21e1858]
+          - generic [ref=f21e1859]:
+            - generic [ref=f21e1860]: Geely EX5 EM-I
+            - generic [ref=f21e1861]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1862]:
+            - button "Узнать стоимость по акции" [ref=f21e1863] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1867] [cursor=pointer]
+        - generic [ref=f21e1871]:
+          - img "Geely EX5 EM-I" [ref=f21e1873]
+          - generic [ref=f21e1874]:
+            - generic [ref=f21e1875]: Geely EX5 EM-I
+            - generic [ref=f21e1876]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1877]:
+            - button "Узнать стоимость по акции" [ref=f21e1878] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1882] [cursor=pointer]
+        - generic [ref=f21e1886]:
+          - img "Geely EX5 EM-I" [ref=f21e1888]
+          - generic [ref=f21e1889]:
+            - generic [ref=f21e1890]: Geely EX5 EM-I
+            - generic [ref=f21e1891]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1892]:
+            - button "Узнать стоимость по акции" [ref=f21e1893] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1897] [cursor=pointer]
+        - generic [ref=f21e1901]:
+          - img "Geely EX5 EM-I" [ref=f21e1903]
+          - generic [ref=f21e1904]:
+            - generic [ref=f21e1905]: Geely EX5 EM-I
+            - generic [ref=f21e1906]: Макс/Max, 2025, Автомат, 218 л.с. Передний привод
+          - generic [ref=f21e1907]:
+            - button "Узнать стоимость по акции" [ref=f21e1908] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f21e1912] [cursor=pointer]
+    - generic [ref=f21e1918]:
+      - img "Трейд-ин" [ref=f21e1920]
+      - generic [ref=f21e1921]:
+        - generic [ref=f21e1922]: ОБМЕН ПО ТРЕЙД-ИН НА ВЫГОДНЫХ УСЛОВИЯХ
+        - generic [ref=f21e1923]:
+          - textbox "+7 (___) ___-__-__" [ref=f21e1925]
+          - button "Отправить заявку" [ref=f21e1927] [cursor=pointer]
+        - generic [ref=f21e1931]:
+          - checkbox "Согласен на обработку персональных данных." [checked] [ref=f21e1933] [cursor=pointer]
+          - generic [ref=f21e1934] [cursor=pointer]: Согласен на обработку персональных данных.
+    - generic [ref=f21e1938]:
+      - generic [ref=f21e1939]:
+        - generic [ref=f21e1940]: Оставьте заявку на кредит
+        - generic [ref=f21e1941]: и получите одобрение за 1 день!
+      - textbox "+7 (___) ___-__-__" [ref=f21e1943]
+      - button "Отправить заявку" [ref=f21e1945] [cursor=pointer]
+      - generic [ref=f21e1949]:
+        - checkbox "Согласен на обработку персональных данных." [checked] [ref=f21e1951] [cursor=pointer]
+        - generic [ref=f21e1952] [cursor=pointer]: Согласен на обработку персональных данных.
+    - generic [ref=f21e1956]:
+      - generic [ref=f21e1957]:
+        - generic [ref=f21e1958]: Узнайте, что о нас думают клиенты
+        - generic [ref=f21e1959]: Отзывы наших клиентов на Яндекс Картах
+      - generic [ref=f21e1961]:
+        - iframe [ref=f21e1962]:
+          - generic [ref=f22e2]:
+            - generic [ref=f22e3]:
+              - link "БорисХоф Geely" [ref=f22e4] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+              - generic [ref=f22e5]:
+                - paragraph [ref=f22e6]: 5,0
+                - generic [ref=f22e7]:
+                  - list [ref=f22e9]:
+                    - listitem [ref=f22e10]
+                    - listitem [ref=f22e11]
+                    - listitem [ref=f22e12]
+                    - listitem [ref=f22e13]
+                    - listitem [ref=f22e14]
+                  - link "1256 отзывов • 2210 оценок" [ref=f22e15] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+              - link [ref=f22e17] [cursor=pointer]:
+                - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+            - generic [ref=f22e18]:
+              - paragraph [ref=f22e19]: Поставьте нам оценку
+              - link "Оставить отзыв" [ref=f22e20] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+            - generic [ref=f22e21]:
+              - generic [ref=f22e22]:
+                - generic [ref=f22e24]:
+                  - paragraph [ref=f22e25]: Варвара Саникович
+                  - paragraph [ref=f22e26]: 28 июня
+                - list [ref=f22e28]:
+                  - listitem [ref=f22e29]
+                  - listitem [ref=f22e30]
+                  - listitem [ref=f22e31]
+                  - listitem [ref=f22e32]
+                  - listitem [ref=f22e33]
+                - paragraph [ref=f22e34]:
+                  - text: Мы приобрели свою первую семейную машину в данном салоне. Объездили 5 дилеров! Борисхов сделал лучшее предложение по всем параметрам, учли наши пожелания по допам, страхованию и хорошо оценили нашу машину в трейд-ин. Благодарим менеджера Валерия Полякова и Артема Ханяна за оперативное, комфортное общение. Отдельно хотелось бы отметить саму атмосферу салона - много пространства, прекрасная зона ожидания, кофе, чай. Кажется мелочь, но это правда важно.
+                  - paragraph [ref=f22e35]:
+                    - text: ...
+                    - link "ещё" [ref=f22e36] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f22e37]:
+                - generic [ref=f22e39]:
+                  - paragraph [ref=f22e40]: Степан Соколов
+                  - paragraph [ref=f22e41]: 18 февраля
+                - list [ref=f22e43]:
+                  - listitem [ref=f22e44]
+                  - listitem [ref=f22e45]
+                  - listitem [ref=f22e46]
+                  - listitem [ref=f22e47]
+                  - listitem [ref=f22e48]
+                - paragraph [ref=f22e49]:
+                  - text: Отличный салон, все было прозрачно, чистые условия, отличное предложение дали как по авто, которое покупали, так и по авто, которое сдавали в трейд ин. По страховкам дали также великолепное предложение, более того дали ещё и скидку на КАСКО. Отдельная благодарность менеджеру отдела продаж и просто мастеру своего дела Александру Ветчинову, благодаря его помощи было кристальное понимание процесса. На моменте задумки покупки помог с выбором нужной модели, провел шикарный тест-драйв, объяснил каждую кнопку, рычажок и тумблер в автомобиле. В общем, спасибо большое салону и Александру за предоставленный сервис и автомобиль. Категорически советую!!!
+                  - paragraph [ref=f22e50]:
+                    - text: ...
+                    - link "ещё" [ref=f22e51] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f22e52]:
+                - generic [ref=f22e54]:
+                  - paragraph [ref=f22e55]: Сергей Харченков
+                  - paragraph [ref=f22e56]: 13 мая
+                - list [ref=f22e58]:
+                  - listitem [ref=f22e59]
+                  - listitem [ref=f22e60]
+                  - listitem [ref=f22e61]
+                  - listitem [ref=f22e62]
+                  - listitem [ref=f22e63]
+                - paragraph [ref=f22e64]:
+                  - text: Отличный салон. Доступны все модели Geely к просмотру и тест-драйв. Чисто, есть где перекусить пока проводишь сделку. Покупал машину с Сергеем Краузе. Он очень помог на всех этапах, от подробного инструктажа и подбора только реально нужных допников, до непосредственно помощи с регистрацией и полного инструктажа по нюансам взаимодействия с новым авто. Богатый набор дополнительных аксессуаров был установлен оперативно. В сервисном центре (расположен под салоном) виден профессионализм сервисных инженеров. Однозначно буду тут обслуживаться!
+                  - paragraph [ref=f22e65]:
+                    - text: ...
+                    - link "ещё" [ref=f22e66] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f22e67]:
+                - generic [ref=f22e69]:
+                  - paragraph [ref=f22e70]: Виталий А.
+                  - paragraph [ref=f22e71]: 26 марта
+                - list [ref=f22e73]:
+                  - listitem [ref=f22e74]
+                  - listitem [ref=f22e75]
+                  - listitem [ref=f22e76]
+                  - listitem [ref=f22e77]
+                  - listitem [ref=f22e78]
+                - paragraph [ref=f22e79]:
+                  - text: "Хочу выразить огромную благодарность команде дилерского центра БорисХоф на Шелепихе за отличный сервис и покупку автомобиля! Отдельное спасибо говорю менеджеру Александру Пузыреву. Это тот редкий случай, когда слова «клиентоцентричность» — не просто громкий лозунг, а реальный подход к работе. Александр очень помог с продажей моего старого автомобиля по трейд-ину: все прошло максимально прозрачно, быстро и без лишних нервов. Самое главное — он всегда шел мне навстречу, подстраивался под мой график и помог решить все организационные вопросы заранее, а не в день сделки. Отдельно хочу отметить зону ожидания. Здесь есть все необходимое: свежий чай, отличный кофе. Но самое главное — вкусные печеньки, которые отдельно оценила моя жена! Это, казалось бы, мелочь, но именно из таких приятных деталей складывается общее впечатление о сервисе. В общем, если вы ищете надежного дилера, который ценит своих клиентов и не подведет при оформлении трейд-ина — смело обращайтесь к Александру Пузыреву в БорисХоф на Шелепихе. Рекомендую!"
+                  - paragraph [ref=f22e80]:
+                    - text: ...
+                    - link "ещё" [ref=f22e81] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f22e82]:
+                - generic [ref=f22e84]:
+                  - paragraph [ref=f22e85]: Василий
+                  - paragraph [ref=f22e86]: 7 марта
+                - list [ref=f22e88]:
+                  - listitem [ref=f22e89]
+                  - listitem [ref=f22e90]
+                  - listitem [ref=f22e91]
+                  - listitem [ref=f22e92]
+                  - listitem [ref=f22e93]
+                - paragraph [ref=f22e94]:
+                  - text: "Оформляли покупку нового Ньюстара 001 в Борисхофе Джили на 2-Магистральной у Менеджера Максима Иванова. С участием кредитного специалиста. По сделке все максимально профессионально, корректно и прозрачно. Дали досконально проверить автомобиль, менеджер отзывчивый, хорошо подкован в технической части, отвечает на все вопросы, готов идти навстречу. Однозначно рекомендую как его лично, так и сам дилер. Помимо вышеуказанного: комфортная клиентская зона, администраторы тоже очень клиентоориентированные, есть все необходимое для комфортного ожидания. Спасибо за хорошую работу, было приятно иметь с вами дело."
+                  - paragraph [ref=f22e95]:
+                    - text: ...
+                    - link "ещё" [ref=f22e96] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+            - link "Больше отзывов на Яндекс Картах" [ref=f22e98] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=more-reviews
+        - link "БорисХоф Geely на карте Москвы — Яндекс Карты" [ref=f21e1963] [cursor=pointer]:
+          - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/
+    - generic [ref=f21e1967]:
+      - generic [ref=f21e1968]: БОРИСХОФ СИТИ
+      - generic [ref=f21e1969]:
+        - generic [ref=f21e1970]: Адрес
+        - generic [ref=f21e1971]: Москва, 2-я Магистральная ул., д. 18, стр. 22
+      - generic [ref=f21e1972]:
+        - generic [ref=f21e1973]: Режим работы
+        - generic [ref=f21e1974]: Ежедневно, 09:00 — 21:00
+      - generic [ref=f21e1975]:
+        - generic [ref=f21e1976]: Телефон
+        - link "+7(495) 230-01-10" [ref=f21e1978] [cursor=pointer]:
+          - /url: tel:+74952300110
+      - button "Заказать звонок" [ref=f21e1980] [cursor=pointer]
+    - generic [ref=f21e1985]: О дилере

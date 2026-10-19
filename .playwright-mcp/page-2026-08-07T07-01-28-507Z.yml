@@ -1,0 +1,699 @@
+- generic [active] [ref=f27e1]:
+  - link "Перейти к контенту" [ref=f27e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f27e3]:
+    - banner [ref=f27e4]:
+      - generic [ref=f27e5]:
+        - link [ref=f27e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f27e8]
+        - generic [ref=f27e9]:
+          - generic [ref=f27e10]:
+            - button "Забронировать" [ref=f27e11] [cursor=pointer]
+            - button "Открыть меню" [ref=f27e12] [cursor=pointer]
+          - generic [ref=f27e17]:
+            - generic [ref=f27e18]:
+              - generic [ref=f27e19]: Приложение
+              - generic [ref=f27e20]: italy touch
+            - link "Скачать" [ref=f27e21] [cursor=pointer]:
+              - /url: https://redirect.appmetrica.yandex.com/serve/966450630770056189
+    - generic [ref=f27e23]:
+      - heading "Наши рестораны" [level=1] [ref=f27e26]
+      - generic [ref=f27e27]:
+        - button "рады детям" [ref=f27e29] [cursor=pointer]
+        - button "с красивым видом" [ref=f27e31] [cursor=pointer]
+        - button "итальянская кухня" [ref=f27e33] [cursor=pointer]
+        - button "завтраки" [ref=f27e35] [cursor=pointer]
+        - button "на каждый день" [ref=f27e37] [cursor=pointer]
+        - button "можно с животными" [ref=f27e39] [cursor=pointer]
+      - generic [ref=f27e41]:
+        - generic [ref=f27e42]:
+          - generic [ref=f27e45]:
+            - generic [ref=f27e46]:
+              - generic [ref=f27e47]:
+                - img "«Итали» на Большой Морской белая иконка" [ref=f27e48]
+                - img "«Итали» на Большой Морской белый лого" [ref=f27e49]
+                - generic [ref=f27e50]: Loyalty
+              - generic:
+                - img "«Итали» на Большой Морской белый лого"
+                - generic:
+                  - paragraph: Гастрономическое пространство и самый камерный ресторан. Это позволяет окунуться в атмосферу римской траттории и насладиться итальянской кухней в историческом центре Петербурга.
+              - generic:
+                - img "«Итали» на Большой Морской белый лого"
+                - generic:
+                  - paragraph: ул. Большая Морская, 14
+                  - paragraph: Пн-Вс 10:00–23:00
+                  - paragraph: +7 (921) 944-03-00
+              - generic:
+                - img "Italy на Большой Морской"
+              - generic:
+                - img "Italy на Большой Морской"
+              - generic:
+                - img "Italy на Большой Морской"
+              - generic:
+                - img "Italy на Большой Морской"
+              - generic:
+                - img "Italy на Большой Морской"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e51] [cursor=pointer]
+          - generic [ref=f27e52]: «Итали» на Большой Морской
+          - generic [ref=f27e54]: Камерная траттория в центре Петербурга с завтраками целый день
+          - generic [ref=f27e56]:
+            - link "Подробнее" [ref=f27e58] [cursor=pointer]:
+              - /url: /restaurants/italy-bolshaya-morskaya
+            - button "Забронировать" [ref=f27e60] [cursor=pointer]
+        - generic [ref=f27e61]:
+          - generic [ref=f27e64]:
+            - generic [ref=f27e65]:
+              - generic [ref=f27e66]:
+                - img "«Итали» на Большом белая иконка" [ref=f27e67]
+                - img "«Итали» на Большом белый лого" [ref=f27e68]
+                - generic [ref=f27e69]: Loyalty
+              - generic:
+                - img "«Итали» на Большом белый лого"
+                - generic:
+                  - paragraph: Первое заведение, открытое 15 лет назад Михаилом Соколовым и Тимуром Дмитриевым. Ресторан сочетает в себе современную атмосферу и дух традиционных итальянских праздников. Идеальное место для дружеских и семейных встреч в самом сердце Петроградки.
+              - generic:
+                - img "«Итали» на Большом белый лого"
+                - generic:
+                  - paragraph: Большой проспект П.С., 58, 3 и 4 этажи
+                  - paragraph: Пн-Вс 10:00–23:00
+                  - paragraph: +7 (812) 900-63-33
+              - generic:
+                - img "Italy на Большом"
+              - generic:
+                - img "Italy на Большом"
+              - generic:
+                - img "Italy на Большом"
+              - generic:
+                - img "Italy на Большом"
+              - generic:
+                - img "Italy на Большом"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e70] [cursor=pointer]
+          - generic [ref=f27e71]: «Итали» на Большом
+          - generic [ref=f27e73]: Двухэтажный ресторан на каждый день с панорамным видом на Петроградку
+          - generic [ref=f27e75]:
+            - link "Подробнее" [ref=f27e77] [cursor=pointer]:
+              - /url: /restaurants/italy-bolshoy
+            - button "Забронировать" [ref=f27e79] [cursor=pointer]
+        - generic [ref=f27e80]:
+          - generic [ref=f27e83]:
+            - generic [ref=f27e84]:
+              - generic [ref=f27e85]:
+                - img "«Итали» на Московском белая иконка" [ref=f27e86]
+                - img "«Итали» на Московском белый лого" [ref=f27e87]
+                - generic [ref=f27e88]: Loyalty
+              - generic:
+                - img "«Итали» на Московском белый лого"
+                - generic:
+                  - paragraph: Самый большой ресторан из всех Italy. Команда тепло называет заведение «большим итальянским домом». Ресторан комфортен для семейных встреч с детьми, друзьями и любимыми на романтический ужин.
+              - generic:
+                - img "«Итали» на Московском белый лого"
+                - generic:
+                  - paragraph: Площадь Чернышевского, 11
+                  - paragraph: Пн-Вс 09:00–23:00
+                  - paragraph: +7 (931) 954-61-97
+              - generic:
+                - img "Italy на Московском"
+              - generic:
+                - img "Italy на Московском"
+              - generic:
+                - img "Italy на Московском"
+              - generic:
+                - img "Italy на Московском"
+              - generic:
+                - img "Italy на Московском"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e89] [cursor=pointer]
+          - generic [ref=f27e90]: «Итали» на Московском
+          - generic [ref=f27e92]: Двухэтажный ресторан с большим детским пространством около Парка Победы
+          - generic [ref=f27e94]:
+            - link "Подробнее" [ref=f27e96] [cursor=pointer]:
+              - /url: /restaurants/italy-moskovskiy
+            - button "Забронировать" [ref=f27e98] [cursor=pointer]
+        - generic [ref=f27e99]:
+          - generic [ref=f27e102]:
+            - generic [ref=f27e103]:
+              - generic [ref=f27e104]:
+                - img "«Итали» в Виленском белая иконка" [ref=f27e105]
+                - img "«Итали» в Виленском белый лого" [ref=f27e106]
+                - generic [ref=f27e107]: Loyalty
+              - generic:
+                - img "«Итали» в Виленском белый лого"
+                - generic:
+                  - paragraph: Здесь хранят традиции итальянской гастрономии, приветствуют легкий итальянский образ жизни, а атмосфера и меню ресторана переносят в путешествие по Сицилии или Тоскане. Есть отдельная современная детская комната для самых маленьких гостей.
+              - generic:
+                - img "«Итали» в Виленском белый лого"
+                - generic:
+                  - paragraph: Виленский переулок, 15
+                  - paragraph: Вс-Чт 09:00–23:00
+                  - paragraph: Пт-Сб 09:00–00:00
+                  - paragraph: +7 (812) 906-65-58
+              - generic:
+                - img "Italy в Виленском"
+              - generic:
+                - img "Italy в Виленском"
+              - generic:
+                - img "Italy в Виленском"
+              - generic:
+                - img "Italy в Виленском"
+              - generic:
+                - img "Italy в Виленском"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e108] [cursor=pointer]
+          - generic [ref=f27e109]: «Итали» в Виленском
+          - generic [ref=f27e111]: Ресторан в центре Петербурга с итальянским стилем жизни и детской комнатой
+          - generic [ref=f27e113]:
+            - link "Подробнее" [ref=f27e115] [cursor=pointer]:
+              - /url: /restaurants/italy-vilenskiy
+            - button "Забронировать" [ref=f27e117] [cursor=pointer]
+        - generic [ref=f27e118]:
+          - generic [ref=f27e121]:
+            - generic [ref=f27e122]:
+              - generic [ref=f27e123]:
+                - img "«Джем кафе» белая иконка" [ref=f27e124]
+                - img "«Джем кафе» белый лого" [ref=f27e125]
+              - generic:
+                - img "«Джем кафе» белый лого"
+                - generic:
+                  - paragraph: Jam Café — парижское кафе с открытой кухней и расслабляющей атмосферой под сводами бывшего морского ведомства в квартале HIDEOUT Residence (рядом с Никольским собором и Мариинским театром).
+                  - paragraph: В меню классика Парижа и регионов Франции — тартар, луковый суп, улитки по-бургундски, а к ним в компанию — около 70 винных этикеток и классическая коктейльная карта. Завтраки каждый день с 10:00.
+              - generic:
+                - img "«Джем кафе» белый лого"
+                - generic:
+                  - paragraph: ул. Римского-Корсакова, 22
+                  - paragraph: Пн-Чт 12:00–00:00
+                  - paragraph: Пт 12:00–01:00
+                  - paragraph: Сб 10:00–01:00
+                  - paragraph: Вс 10:00–00:00
+                  - paragraph: +7 (981) 963-11-17
+              - generic:
+                - img "Jam Café"
+              - generic:
+                - img "Jam Café"
+              - generic:
+                - img "Jam Café"
+              - generic:
+                - img "Jam Café"
+              - generic:
+                - img "Jam Café"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e126] [cursor=pointer]
+          - generic [ref=f27e127]: «Джем кафе»
+          - generic [ref=f27e129]: Модное парижское кафе с самым фотогеничным двором в Петербурге
+          - generic [ref=f27e131]:
+            - link "Подробнее" [ref=f27e133] [cursor=pointer]:
+              - /url: /restaurants/jam-cafe
+            - button "Забронировать" [ref=f27e135] [cursor=pointer]
+        - generic [ref=f27e136]:
+          - generic [ref=f27e139]:
+            - generic [ref=f27e140]:
+              - generic [ref=f27e141]:
+                - img "Joli СПб белая иконка" [ref=f27e142]
+                - img "Joli СПб белый лого" [ref=f27e143]
+              - generic:
+                - img "Joli СПб белый лого"
+                - generic:
+                  - paragraph: «Joli» в переводе с французского означает прекрасный. Grand Bistrot — ироничное объяснение нашей задумки соединить формат бистро (простой гастрономии и сервиса) с парадным образом локации и культурным кодом французского шика.
+                  - paragraph: Основная идея, заложенная в этот проект, — воспроизведение атмосферы натурального сада, созданного самой природой, от которого веет чувством тёплой ностальгии.
+                  - paragraph: "В Joli также функционируют два внутренних проекта: самобытная пекарня и цветочная лавка с необычными и сезонными композициями."
+              - generic:
+                - img "Joli СПб белый лого"
+                - generic:
+                  - paragraph: ул. Восстания, 45Б
+                  - paragraph: Пн-Вс 09:00–00:00
+                  - paragraph: +7 (931) 380-22-06
+              - generic:
+                - img "Joli Grand Bistrot"
+              - generic:
+                - img "Joli Grand Bistrot"
+              - generic:
+                - img "Joli Grand Bistrot"
+              - generic:
+                - img "Joli Grand Bistrot"
+              - generic:
+                - img "Joli Grand Bistrot"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e144] [cursor=pointer]
+          - generic [ref=f27e145]: Joli Санкт‑Петербург
+          - generic [ref=f27e147]: Светлый ресторан-сад с чувством теплой ностальгии
+          - generic [ref=f27e149]:
+            - link "Подробнее" [ref=f27e151] [cursor=pointer]:
+              - /url: /restaurants/joli-grand-bistrot
+            - button "Забронировать" [ref=f27e153] [cursor=pointer]
+        - generic [ref=f27e154]:
+          - generic [ref=f27e157]:
+            - generic [ref=f27e158]:
+              - generic [ref=f27e159]:
+                - img "Joli Москва белая иконка" [ref=f27e160]
+                - img "Joli Москва белый лого" [ref=f27e161]
+              - generic:
+                - img "Joli Москва белый лого"
+                - generic:
+                  - paragraph: "Светлый ресторан с атмосферой теплой ностальгии открылся в Москве. Перенесли все то, что вы полюбили в Санкт-Петербурге: Grand Bistrot с простой гастрономией и культурным кодом французского шика, пекарню со свежей выпечкой и цветочную лавку. А еще — посадили яблоневый сад Jardin de Joli, где в летнее время работает веранда."
+              - generic:
+                - img "Joli Москва белый лого"
+                - generic:
+                  - paragraph: ЖК Lucky, 2-я Звенигородская, 12с21
+                  - paragraph: Пн-Вс 12:00–00:00
+              - generic:
+                - img "Joli Москва — зал ресторана"
+              - generic:
+                - img "Joli Москва — интерьер"
+              - generic:
+                - img "Joli Москва — яблоневый сад Jardin de Joli"
+              - generic:
+                - img "Joli Москва — гастрономия"
+              - generic:
+                - img "Joli Москва — сервировка стола"
+              - generic:
+                - img "Joli Москва — яблоневый сад"
+              - generic:
+                - img "Joli Москва — гастрономия"
+              - generic:
+                - img "Joli Москва — интерьер"
+              - generic:
+                - img "Joli Москва — пекарня"
+              - generic:
+                - img "Joli Москва — пекарня"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e162] [cursor=pointer]
+          - generic [ref=f27e163]: Joli Москва
+          - generic [ref=f27e165]: Ресторан с пекарней, цветочной лавкой и яблоневым садом
+          - generic [ref=f27e167]:
+            - link "Подробнее" [ref=f27e169] [cursor=pointer]:
+              - /url: /restaurants/joli-moscow
+            - button "Забронировать" [ref=f27e171] [cursor=pointer]
+        - generic [ref=f27e172]:
+          - generic [ref=f27e175]:
+            - generic [ref=f27e176]:
+              - generic [ref=f27e177]:
+                - img "Juan Санкт-Петербург белая иконка" [ref=f27e178]
+                - img "Juan Санкт-Петербург белый лого" [ref=f27e179]
+              - generic:
+                - img "Juan Санкт-Петербург белый лого"
+                - generic:
+                  - paragraph: Летом во дворе открыта терраса с шезлонгами и столом для пинг-понга, создающая для гостей расслабленную и непринужденную атмосферу. Все это делает Juan одним из самых аутентичных проектов, а каждый визит туда становится для гостя невероятно увлекательным опытом.
+              - generic:
+                - img "Juan Санкт-Петербург белый лого"
+                - generic:
+                  - paragraph: ул. Восстания, 45Б
+                  - paragraph: Пн-Чт, Вс 13:00–01:00
+                  - paragraph: Пт-Сб 13:00–02:00
+                  - paragraph: +7 (929) 111-45-55
+              - generic:
+                - img "Juan Cantina Espanola"
+              - generic:
+                - img "Juan Cantina Espanola"
+              - generic:
+                - img "Juan Cantina Espanola"
+              - generic:
+                - img "Juan Cantina Espanola"
+              - generic:
+                - img "Juan Cantina Espanola"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e180] [cursor=pointer]
+          - generic [ref=f27e181]: Juan Санкт-Петербург
+          - generic [ref=f27e183]: Испано-мексиканская кантина, визуализация наших воспоминаний о солнечных днях
+          - generic [ref=f27e185]:
+            - link "Подробнее" [ref=f27e187] [cursor=pointer]:
+              - /url: /restaurants/juan-cantina-espanola
+            - button "Забронировать" [ref=f27e189] [cursor=pointer]
+        - generic [ref=f27e190]:
+          - generic [ref=f27e193]:
+            - generic [ref=f27e194]:
+              - generic [ref=f27e195]:
+                - img "Juan Москва белая иконка" [ref=f27e196]
+                - img "Juan Москва белый лого" [ref=f27e197]
+              - generic:
+                - img "Juan Москва белый лого"
+                - generic:
+                  - paragraph: Juan — это визуализация воспоминаний о солнечных путешествиях по югу Испании. Все, что делает петербургский Juan таким узнаваемым, — переносим в Москву.
+              - generic:
+                - img "Juan Москва белый лого"
+              - generic:
+                - img "Juan Москва"
+              - generic:
+                - img "Juan Москва"
+              - generic:
+                - img "Juan Москва"
+              - generic:
+                - img "Juan Москва"
+              - generic:
+                - img "Juan Москва"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e198] [cursor=pointer]
+          - generic [ref=f27e199]: Juan Москва
+          - generic [ref=f27e201]: Скоро открытие
+          - generic [ref=f27e203]:
+            - link "Подробнее" [ref=f27e205] [cursor=pointer]:
+              - /url: /restaurants/juan-moscow
+            - button "Забронировать" [ref=f27e207] [cursor=pointer]
+        - generic [ref=f27e208]:
+          - generic [ref=f27e211]:
+            - generic [ref=f27e212]:
+              - generic [ref=f27e213]:
+                - img "Salone pasta&bar Санкт-Петербург белая иконка"
+                - img "Salone pasta&bar Санкт-Петербург белый лого" [ref=f27e214]
+              - generic:
+                - img "Salone pasta&bar Санкт-Петербург белый лого"
+                - generic:
+                  - paragraph: Salone pasta&bar — это место, в котором царит культ пасты. Здесь ей выделен целый зал, в центре которого ежедневно стоят пастайоло и вручную лепят домашние тальятелле, мальтальяти и равиоли по рецептам, которые были собраны нами во время путешествий по Эмилии-Романье.
+                  - paragraph: Побывать в Salone и не попробовать тартар из говядины со сливочным соусом, баклажан Алла Пармиджана, «сумасшедшую» пицца пацца или тортелли с прошутто и трюфельной пастой — всё равно, что приехать в Рим и не увидеть Колизей.
+                  - paragraph: Особую роль в образе проекта играет бар. Напитки, которые смешивают в Salone, воспринимаются как синонимы эталонного качества, вкуса и стиля.
+                  - paragraph: А тот самый коктейль с маракуйей, легендарный Пьер Вудман, стал живой легендой не только в Петербурге и Москве, но и далеко за пределами России.
+              - generic:
+                - img "Salone pasta&bar Санкт-Петербург белый лого"
+                - generic:
+                  - paragraph: Набережная реки Фонтанки, 30
+                  - paragraph: Вс-Чт 12:00–01:00
+                  - paragraph: Пт-Сб 12:00–02:00
+                  - paragraph: +7 (921) 777-06-23
+              - generic:
+                - img "Salone pasta&bar"
+              - generic:
+                - img "Salone pasta&bar"
+              - generic:
+                - img "Salone pasta&bar"
+              - generic:
+                - img "Salone pasta&bar"
+              - generic:
+                - img "Salone pasta&bar"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e215] [cursor=pointer]
+          - generic [ref=f27e216]: Salone pasta&bar Санкт-Петербург
+          - generic [ref=f27e218]: Ресторан на Фонтанке с домашней пастой и по-настоящему дружелюбным сервисом
+          - generic [ref=f27e220]:
+            - link "Подробнее" [ref=f27e222] [cursor=pointer]:
+              - /url: /restaurants/salone-pasta-bar
+            - button "Забронировать" [ref=f27e224] [cursor=pointer]
+        - generic [ref=f27e225]:
+          - generic [ref=f27e228]:
+            - generic [ref=f27e229]:
+              - generic [ref=f27e230]:
+                - img "Salone pasta&bar Москва белая иконка"
+                - img "Salone pasta&bar Москва белый лого" [ref=f27e231]
+              - generic:
+                - img "Salone pasta&bar Москва белый лого"
+                - generic:
+                  - paragraph: Заведение, в котором влюблены в еду, музыку, кино, искусство и саму жизнь, а потому вплели эту страсть в каждую деталь — от винтажной мебели и фресок в стиле Ренессанса до ироничных работ современных художников.
+              - generic:
+                - img "Salone pasta&bar Москва белый лого"
+                - generic:
+                  - paragraph: Малая Дмитровка, 18Ас3
+                  - paragraph: Пн-Чт 09:00–00:00
+                  - paragraph: Пт 09:00–01:00
+                  - paragraph: Сб 10:00–01:00
+                  - paragraph: Вс 10:00–00:00
+                  - paragraph: +7 (929) 926-11-99
+              - generic:
+                - img "Salone pasta&bar Moscow"
+              - generic:
+                - img "Salone pasta&bar Moscow"
+              - generic:
+                - img "Salone pasta&bar Moscow"
+              - generic:
+                - img "Salone pasta&bar Moscow"
+              - generic:
+                - img "Salone pasta&bar Moscow"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e232] [cursor=pointer]
+          - generic [ref=f27e233]: Salone pasta&bar Москва
+          - generic [ref=f27e235]: Гастрозвезда Петербурга в Москве и место, в котором царит культ пасты
+          - generic [ref=f27e237]:
+            - link "Подробнее" [ref=f27e239] [cursor=pointer]:
+              - /url: /restaurants/salone-pasta-bar-moscow
+            - button "Забронировать" [ref=f27e241] [cursor=pointer]
+        - generic [ref=f27e242]:
+          - generic [ref=f27e245]:
+            - generic [ref=f27e246]:
+              - generic [ref=f27e247]:
+                - img "Bist белая иконка"
+                - img "Bist белый лого" [ref=f27e248]
+                - generic [ref=f27e249]: Loyalty
+              - generic:
+                - img "Bist белый лого"
+                - generic:
+                  - paragraph: "Ресторан с фресками, витражными окнами и пересечением двух концептуальных линий: мясо и культура Италии. Название происходит от итальянского Bistecca alla Fiorentina, что означает «стейк из говядины жареный на углях». Блюдо является одним из основных специалитетов региона Тоскана, и именно оно отражает идею места."
+              - generic:
+                - img "Bist белый лого"
+                - generic:
+                  - paragraph: «Андреевский двор», Большой пр-т В.О. 18 А
+                  - paragraph: Пн-Чт 9:00–23:00
+                  - paragraph: Пт 9:00–01:00
+                  - paragraph: Сб 10:00–01:00
+                  - paragraph: Вс 10:00–23:00
+                  - paragraph: +7 (931) 994-75-15
+              - generic:
+                - img "Bist meat & pasta bar"
+              - generic:
+                - img "Bist meat & pasta bar"
+              - generic:
+                - img "Bist meat & pasta bar"
+              - generic:
+                - img "Bist meat & pasta bar"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e250] [cursor=pointer]
+          - generic [ref=f27e251]: Bist
+          - generic [ref=f27e253]: Ресторан на Васильевском острове с мясными специалитетами и пастой, акцентом на вино и коктейли
+          - generic [ref=f27e255]:
+            - link "Подробнее" [ref=f27e257] [cursor=pointer]:
+              - /url: /restaurants/bist
+            - button "Забронировать" [ref=f27e259] [cursor=pointer]
+        - generic [ref=f27e260]:
+          - generic [ref=f27e263]:
+            - generic [ref=f27e264]:
+              - generic [ref=f27e265]:
+                - img "Бар «Легендарный медведь» белая иконка"
+                - img "Бар «Легендарный медведь» белый лого" [ref=f27e266]
+              - generic:
+                - img "Бар «Легендарный медведь» белый лого"
+                - generic:
+                  - paragraph: Легендарный бар, который называли «американским» — потому что именно в нем жители города впервые увидели барную стойку и алкогольные миксы со льдом в стакане.
+              - generic:
+                - img "Бар «Легендарный медведь» белый лого"
+                - generic:
+                  - paragraph: ул. Большая Конюшенная, 27
+                  - paragraph: Пн-Чт 16:00–01:00
+                  - paragraph: Пт-Сб 16:00–02:00
+                  - paragraph: +7 (911) 928-37-27
+              - generic:
+                - img "Бар «Медведь»"
+              - generic:
+                - img "Бар «Медведь»"
+              - generic:
+                - img "Бар «Медведь»"
+              - generic:
+                - img "Бар «Медведь»"
+              - generic:
+                - img "Бар «Медведь»"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e267] [cursor=pointer]
+          - generic [ref=f27e268]: Бар «Легендарный медведь»
+          - generic [ref=f27e270]: Самый первый коктейльный бар Российской Империи, открытый в 1906 году
+          - generic [ref=f27e272]:
+            - link "Подробнее" [ref=f27e274] [cursor=pointer]:
+              - /url: /restaurants/bear
+            - button "Забронировать" [ref=f27e276] [cursor=pointer]
+        - generic [ref=f27e277]:
+          - generic [ref=f27e280]:
+            - generic [ref=f27e281]:
+              - generic [ref=f27e282]:
+                - img "«Ателье тапас и бар» белая иконка"
+                - img "«Ателье тапас и бар» белый лого"
+              - generic:
+                - img "«Ателье тапас и бар» белый лого"
+                - generic:
+                  - paragraph: Бунтарский интерьер и слоган заведения — no bad days, уникальная испанская угольная печь, в которой блюда приобретают особый вкус, мексиканская классика в меню и высокое внимание к коктейльной карте превращают Ателье в настоящий уголок Барселоны в Петербурге.
+              - generic:
+                - img "«Ателье тапас и бар» белый лого"
+                - generic:
+                  - paragraph: Лахтинская улица, 8
+                  - paragraph: Вс-Чт 13:00–23:00
+                  - paragraph: Пт-Сб 13:00–01:00
+                  - paragraph: +7 (812) 904-08-55
+              - generic:
+                - img "Ателье tapas&bar"
+              - generic:
+                - img "Ателье tapas&bar"
+              - generic:
+                - img "Ателье tapas&bar"
+              - generic:
+                - img "Ателье tapas&bar"
+              - generic:
+                - img "Ателье tapas&bar"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e283] [cursor=pointer]
+          - generic [ref=f27e284]: «Ателье тапас и бар»
+          - generic [ref=f27e286]: Культовый тапас-бар на Петроградке с испанской угольной печью, мексиканскими блюдами и акцентом на коктейли
+          - generic [ref=f27e288]:
+            - link "Подробнее" [ref=f27e290] [cursor=pointer]:
+              - /url: /restaurants/atelier
+            - button "Забронировать" [ref=f27e292] [cursor=pointer]
+        - generic [ref=f27e293]:
+          - generic [ref=f27e296]:
+            - generic [ref=f27e297]:
+              - generic [ref=f27e298]:
+                - img "Goosegoose белая иконка"
+                - img "Goosegoose белый лого"
+                - generic [ref=f27e299]: Loyalty
+              - generic:
+                - img "Goosegoose белый лого"
+                - generic:
+                  - paragraph: Место, где классика и современность складываются в единую картину стиля вне времени. Еще в XIX веке в этом здании находился известный петербургский ресторан. И, вот, спустя 100 лет здесь можно поужинать, выпить коктейль и ощутить особенный вкус жизни.
+              - generic:
+                - img "Goosegoose белый лого"
+                - generic:
+                  - paragraph: ул. Большая Конюшенная, 27
+                  - paragraph: Вс-Чт 10:00–23:00
+                  - paragraph: Пт-Сб 10:00–00:00
+                  - paragraph: +7 (911) 928-37-27
+              - generic:
+                - img "Goose Goose"
+              - generic:
+                - img "Goose Goose"
+              - generic:
+                - img "Goose Goose"
+              - generic:
+                - img "Goose Goose"
+              - generic:
+                - img "Goose Goose"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e300] [cursor=pointer]
+          - generic [ref=f27e301]: Goosegoose
+          - generic [ref=f27e303]: Элегантный ресторан с историей в центре Петербурга
+          - generic [ref=f27e305]:
+            - link "Подробнее" [ref=f27e307] [cursor=pointer]:
+              - /url: /restaurants/goose-goose
+            - button "Забронировать" [ref=f27e309] [cursor=pointer]
+        - generic [ref=f27e310]:
+          - generic [ref=f27e313]:
+            - generic [ref=f27e314]:
+              - generic [ref=f27e315]:
+                - img "«ХИТЧ» белая иконка"
+                - img "«ХИТЧ» белый лого"
+                - generic [ref=f27e316]: Loyalty
+              - generic:
+                - img "«ХИТЧ» белый лого"
+                - generic:
+                  - paragraph: «ХИТЧ» — современный мясной ресторан со стейками, мясом dry age, открытым огнём и сильным баром, где гастрономия, атмосфера и внимание к продукту становятся частью одного впечатления.
+              - generic:
+                - img "«ХИТЧ» белый лого"
+                - generic:
+                  - paragraph: Московский проспект, 179
+                  - paragraph: Пн 12:00–23:00
+                  - paragraph: Вт-Чт 10:00–23:00
+                  - paragraph: Пт-Сб 10:00–00:00
+                  - paragraph: Вс 10:00–23:00
+                  - paragraph: +7 (921) 919-01-79
+              - generic:
+                - img "HITCH на Московском"
+              - generic:
+                - img "HITCH на Московском"
+              - generic:
+                - img "HITCH на Московском"
+              - generic:
+                - img "HITCH на Московском"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e317] [cursor=pointer]
+          - generic [ref=f27e318]: «ХИТЧ»
+          - generic [ref=f27e320]: Ресторан с собственной культурой мяса, огня и выдержки
+          - generic [ref=f27e322]:
+            - link "Подробнее" [ref=f27e324] [cursor=pointer]:
+              - /url: /restaurants/hitch
+            - button "Забронировать" [ref=f27e326] [cursor=pointer]
+        - generic [ref=f27e327]:
+          - generic [ref=f27e330]:
+            - generic [ref=f27e331]:
+              - generic [ref=f27e332]:
+                - img "«Италиани» белая иконка"
+                - img "«Италиани» белый лого"
+              - generic:
+                - img "«Италиани» белый лого"
+                - generic:
+                  - paragraph: "Доступный и качественный продукт итальянской кухни формата fast casual ресторанного качества с высокой скоростью обслуживания – всего за 7 минут. В ресторане полуавтоматическое обслуживание: заказ совершается на стойке, а блюда и напитки выносит официант."
+              - generic:
+                - img "«Италиани» белый лого"
+                - generic:
+                  - paragraph: Невский проспект, 65
+                  - paragraph: Пн-Вс Круглосуточно
+                  - paragraph: +7 (931) 396-76-05
+              - generic:
+                - img "Italiani на Невском"
+              - generic:
+                - img "Italiani на Невском"
+              - generic:
+                - img "Italiani на Невском"
+              - generic:
+                - img "Italiani на Невском"
+              - generic:
+                - img "Italiani на Невском"
+            - generic "Назад"
+            - generic "Вперёд" [ref=f27e333] [cursor=pointer]
+          - generic [ref=f27e334]: «Италиани»
+          - generic [ref=f27e336]: Итальянский fast-casual ресторан для молодых ребят на главной улице Петербурга
+          - generic [ref=f27e338]:
+            - link "Подробнее" [ref=f27e340] [cursor=pointer]:
+              - /url: /restaurants/italiani
+            - button "Забронировать" [ref=f27e342] [cursor=pointer]
+    - generic [ref=f27e344]:
+      - generic [ref=f27e345]:
+        - generic [ref=f27e346]: Получить консультацию
+        - generic [ref=f27e350]:
+          - textbox "Почта" [ref=f27e352]:
+            - /placeholder: ваша@почта.ru
+          - textbox "Имя" [ref=f27e354]:
+            - /placeholder: Ваше имя
+          - combobox "Город" [ref=f27e356] [cursor=pointer]:
+            - option "Ваш город" [disabled] [selected]
+            - option "Санкт-Петербург"
+            - option "Москва"
+          - generic [ref=f27e358] [cursor=pointer]:
+            - checkbox "Согласен(-сна) на обработку персональных данных и с пользовательским соглашением."
+            - generic [ref=f27e360]: Согласен(-сна) на обработку персональных данных и с пользовательским соглашением.
+          - button "Подписаться" [ref=f27e362] [cursor=pointer]
+      - generic [ref=f27e363]:
+        - generic [ref=f27e364]:
+          - link "Доставка" [ref=f27e366] [cursor=pointer]:
+            - /url: https://italytouch.ru
+          - link "Рестораны" [ref=f27e368] [cursor=pointer]:
+            - /url: https://italycommunity.ru/restaurants/
+          - link "О нас" [ref=f27e370] [cursor=pointer]:
+            - /url: https://italycommunity.ru/about/
+          - link "Программа лояльности" [ref=f27e372] [cursor=pointer]:
+            - /url: https://italycommunity.online/loyaltyprogram
+          - link "Ресторанам Надо" [ref=f27e374] [cursor=pointer]:
+            - /url: https://restoranamnado.ru
+          - link "Банкеты и кейтеринг" [ref=f27e376] [cursor=pointer]:
+            - /url: https://italyco.tilda.ws/banket
+          - link "Ресторанный консалтинг" [ref=f27e378] [cursor=pointer]:
+            - /url: https://italycommunity.online/consulting
+          - link "Работай с нами" [ref=f27e380] [cursor=pointer]:
+            - /url: https://italycommunity.online/work
+          - link "люди итали" [ref=f27e382] [cursor=pointer]:
+            - /url: https://italycommunity.online
+        - generic [ref=f27e383]:
+          - link "VK" [ref=f27e384] [cursor=pointer]:
+            - /url: https://vk.com/italy.community
+            - img "VK"
+          - link "Telegram" [ref=f27e385] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+            - img "Telegram"
+          - link "@MS_italycommunity" [ref=f27e386] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+      - generic [ref=f27e387]:
+        - generic [ref=f27e388]:
+          - link "Политика в отношении обработки персональных данных" [ref=f27e389] [cursor=pointer]:
+            - /url: https://italycommunity.ru/policy/
+          - link "Пользовательское соглашение" [ref=f27e390] [cursor=pointer]:
+            - /url: https://italycommunity.ru/agree/
+        - generic [ref=f27e391]: Права на сайт принадлежат ООО «ТЭД» (ИНН 7842232975, ОГРН 1257800112635).
+        - generic [ref=f27e393]: © 2020-2026. Все права защищены.
+  - generic [ref=f27e397]:
+    - generic [ref=f27e399]:
+      - text: Наш сайт использует файлы cookie для улучшения работы сайта —
+      - link "подробнее" [ref=f27e400] [cursor=pointer]:
+        - /url: /policy/
+      - text: .
+    - button "Принимаю" [ref=f27e402] [cursor=pointer]

@@ -1,0 +1,103 @@
+- generic [active] [ref=f22e1]:
+  - link "Перейти к контенту" [ref=f22e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f22e3]:
+    - banner [ref=f22e4]:
+      - generic [ref=f22e5]:
+        - link [ref=f22e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f22e8]
+        - navigation "Основное меню" [ref=f22e9]:
+          - link "Главная" [ref=f22e11] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/
+          - link "О компании" [ref=f22e13] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/about
+          - link "Шины" [ref=f22e15] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/tires
+          - link "Подбор шин" [ref=f22e17] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/podbor
+          - link "Расширенная гарантия" [ref=f22e19] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/warranty
+          - link "Где купить" [ref=f22e21] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/buy
+    - heading "Контакты" [level=1] [ref=f22e29]
+    - generic [ref=f22e34]:
+      - generic [ref=f22e35]:
+        - heading "Контакты для бизнеса" [level=2] [ref=f22e36]
+        - generic [ref=f22e37]: "«Север Авто» — официальный дистрибьютор шин Kumho в России. Для партнёров и оптовых покупателей: условия поставок, подключение к дилерской сети и работа с ассортиментом Kumho."
+        - generic [ref=f22e38]:
+          - generic [ref=f22e39]:
+            - generic [ref=f22e40]: Адрес
+            - generic [ref=f22e42]: 143900, Московская область, город Балашиха, шоссе Энтузиастов, дом 84, помещение 5
+          - link "Телефон 8 800 100 77 00" [ref=f22e43] [cursor=pointer]:
+            - /url: tel:88001007700
+            - generic [ref=f22e44]: Телефон
+            - generic [ref=f22e46]: 8 800 100 77 00
+          - link "E-mail B2B@svrauto.ru" [ref=f22e47] [cursor=pointer]:
+            - /url: mailto:B2B@svrauto.ru
+            - generic [ref=f22e48]: E-mail
+            - generic [ref=f22e50]: B2B@svrauto.ru
+      - generic "143900, Московская область, город Балашиха, шоссе Энтузиастов, дом 84, помещение 5" [ref=f22e52]
+      - generic [ref=f22e53]:
+        - heading "Получить консультацию" [level=2] [ref=f22e55]
+        - generic [ref=f22e56]: Оставьте телефон — перезвоним и ответим по поставкам и сотрудничеству.
+        - generic [ref=f22e59]:
+          - generic [ref=f22e61]:
+            - textbox "Ваше имя *" [ref=f22e62]:
+              - /placeholder: " "
+            - generic:
+              - text: Ваше имя
+              - generic: "*"
+          - generic [ref=f22e64]:
+            - textbox "Телефон *" [ref=f22e65]:
+              - /placeholder: " "
+            - generic:
+              - text: Телефон
+              - generic: "*"
+          - generic [ref=f22e67]:
+            - textbox "Сообщение" [ref=f22e68]:
+              - /placeholder: " "
+            - generic: Сообщение
+          - generic [ref=f22e70] [cursor=pointer]:
+            - checkbox "Я ознакомился с Политикой обработки персональных данных и согласен с обработкой моих персональных данных способами и для целей, указанных в Политике." [ref=f22e71]
+            - generic [ref=f22e75]:
+              - text: Я ознакомился с
+              - link "Политикой обработки персональных данных" [ref=f22e76]:
+                - /url: /data/docs/personal-data-policy.pdf
+              - text: и согласен с обработкой моих персональных данных способами и для целей, указанных в Политике.
+          - button "Отправить" [ref=f22e78] [cursor=pointer]
+      - generic [ref=f22e83]:
+        - heading "Розничным покупателям" [level=2] [ref=f22e84]
+        - generic [ref=f22e85]: Шины Kumho можно приобрести в авторизованных шинных центрах в 155 точках и 55 городах России.
+        - generic [ref=f22e86]:
+          - link "Где купить" [ref=f22e87] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/buy
+          - link "Расширенная гарантия" [ref=f22e88] [cursor=pointer]:
+            - /url: https://kumho-tires.ru/warranty
+    - generic [ref=f22e90]:
+      - link [ref=f22e93] [cursor=pointer]:
+        - /url: https://kumho-tires.ru/
+        - img "Logo" [ref=f22e94]
+      - generic [ref=f22e95]:
+        - link "Главная" [ref=f22e97] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/
+        - link "О компании" [ref=f22e99] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/about
+        - link "Шины" [ref=f22e101] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/tires
+        - link "Подбор шин" [ref=f22e103] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/podbor
+        - link "Расширенная гарантия" [ref=f22e105] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/warranty
+        - link "Где купить" [ref=f22e107] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/buy
+        - link "Контакты" [ref=f22e109] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/contacts
+      - generic [ref=f22e110]:
+        - generic [ref=f22e111]: Права на сайт принадлежат ООО «Сталкер» (ИНН 7719614965, ОГРН 1067761249654).
+        - generic [ref=f22e112]: © 2026 Север Авто. Все права защищены
+      - generic [ref=f22e113]:
+        - link "Политика обработки персональных данных" [ref=f22e114] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/data/docs/personal-data-policy.pdf
+        - link "Политика использования cookie-файлов" [ref=f22e115] [cursor=pointer]:
+          - /url: https://kumho-tires.ru/cookies-policy

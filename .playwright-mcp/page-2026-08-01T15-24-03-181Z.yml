@@ -1,0 +1,65 @@
+- generic [ref=f100e2]:
+  - banner [ref=f100e3]:
+    - generic [ref=f100e5]:
+      - img "HAVAL Pro" [ref=f100e7]
+      - generic [ref=f100e8]:
+        - generic [ref=f100e9]: БорисХоф
+        - text: Официальный дилер
+      - generic [ref=f100e10]:
+        - iframe [ref=f100e12]:
+          - link [ref=f102e2] [cursor=pointer]:
+            - /url: //yandex.ru/maps/org/189160678103/reviews?utm_source=badge&utm_medium=rating&utm_campaign=v1
+        - generic [ref=f100e13]: Москва, 2я Магистральная, 18, стр. 22
+        - link "+7 (495) 011-12-21" [ref=f100e15] [cursor=pointer]:
+          - /url: tel:+74950111221
+  - generic [ref=f100e17]:
+    - generic [ref=f100e18]: Держим цены
+    - generic [ref=f100e19]: В наличии от 18 500 ₽/мес
+    - generic [ref=f100e20]: Обновлённые HAVAL H7 и H9 в наличии
+    - generic [ref=f100e21]: Зимняя резина в подарок
+    - generic [ref=f100e22]: Выгодный trade-in
+    - generic [ref=f100e23]: Модельный ряд H3 · H5 · H7 · H9
+    - generic [ref=f100e24]: Держим цены
+    - generic [ref=f100e25]: В наличии от 18 500 ₽/мес
+    - generic [ref=f100e26]: Обновлённые HAVAL H7 и H9 в наличии
+    - generic [ref=f100e27]: Зимняя резина в подарок
+    - generic [ref=f100e28]: Выгодный trade-in
+    - generic [ref=f100e29]: Модельный ряд H3 · H5 · H7 · H9
+  - main [ref=f100e30]:
+    - generic [ref=f100e32]:
+      - generic:
+        - heading "Официальный дилер HAVAL PRO в Москве" [level=1]
+        - heading "Держим цены! В наличии от 18 500 ₽/мес. Обновленные HAVAL H7 и H9 уже в наличии!" [level=2]: Держим цены! В наличии от 18 500 ₽/мес.Обновленные HAVAL H7 и H9 уже в наличии!
+      - generic [ref=f100e33]:
+        - generic [ref=f100e34]: Предложение действует
+        - generic [ref=f100e35]:
+          - generic [ref=f100e36]:
+            - generic [ref=f100e37]: "00"
+            - generic [ref=f100e38]: Дней
+          - generic [ref=f100e39]:
+            - generic [ref=f100e40]: "00"
+            - generic [ref=f100e41]: Часов
+          - generic [ref=f100e42]:
+            - generic [ref=f100e43]: "00"
+            - generic [ref=f100e44]: Минут
+          - generic [ref=f100e45]:
+            - generic [ref=f100e46]: "00"
+            - generic [ref=f100e47]: Секунд
+    - generic [ref=f100e48]:
+      - generic [ref=f100e50]:
+        - generic [ref=f100e51]: Мария
+        - text: Менеджер отдела продаж
+      - generic [ref=f100e52]:
+        - text: "Позвонить:"
+        - link "+7 (495) 011-12-21" [ref=f100e54] [cursor=pointer]:
+          - /url: tel:+74950111221
+    - generic [ref=f100e56]:
+      - generic [ref=f100e58]:
+        - generic [ref=f100e59]: MAX выгода в августе!
+        - generic [ref=f100e69]: Ежемесячный платеж до 31 100 ₽
+        - generic [ref=f100e77]: Зимняя резина в подарок
+      - generic [ref=f100e86]: Мария печатает.
+  - contentinfo [ref=f100e90]:
+    - generic [ref=f100e91]:
+      - generic [ref=f100e92]: 2026 © ООО «БОРИСХОФ ХОЛДИНГ» ИНН 7714700709 ОГРН 5077746977930
+      - generic [ref=f100e93]: Подробные условия акции

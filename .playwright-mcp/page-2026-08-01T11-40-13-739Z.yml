@@ -1,0 +1,147 @@
+- generic [active] [ref=f14e1]:
+  - link "Перейти к контенту" [ref=f14e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f14e3]:
+    - banner [ref=f14e4]:
+      - generic [ref=f14e5]:
+        - link [ref=f14e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f14e8]
+        - generic [ref=f14e9]:
+          - generic [ref=f14e10]:
+            - button "Забронировать" [ref=f14e11] [cursor=pointer]
+            - button "Открыть меню" [ref=f14e12] [cursor=pointer]
+          - generic [ref=f14e17]:
+            - generic [ref=f14e18]:
+              - generic [ref=f14e19]: Приложение
+              - generic [ref=f14e20]: italy touch
+            - link "Скачать" [ref=f14e21] [cursor=pointer]:
+              - /url: https://redirect.appmetrica.yandex.com/serve/966450630770056189
+    - main [ref=f14e23]:
+      - generic [ref=f14e24]:
+        - generic [ref=f14e26]:
+          - generic:
+            - img "Joli Grand Bistrot"
+          - img "Joli Grand Bistrot" [ref=f14e28]
+          - generic:
+            - img "Joli Grand Bistrot"
+          - generic:
+            - img "Joli Grand Bistrot"
+          - generic:
+            - img "Joli Grand Bistrot"
+        - generic [ref=f14e38]:
+          - heading "Joli Санкт‑Петербург" [level=1] [ref=f14e39]
+          - generic [ref=f14e40]:
+            - paragraph [ref=f14e41]: Санкт-Петербург, ул. Восстания, 45Б
+            - link "+7 (931) 380-22-06" [ref=f14e42] [cursor=pointer]:
+              - /url: tel:+79313802206
+          - generic [ref=f14e43]:
+            - generic [ref=f14e44]: "Часы работы:"
+            - generic [ref=f14e47]: "Пн-Вс: 09:00–00:00"
+            - paragraph [ref=f14e48]: Завтраки до 12:30. Основное меню с 13:00.
+            - paragraph [ref=f14e49]: С 12:30 до 13:00 — небольшая пауза на кухне. Команда готовит основное меню к запуску. В это время подаём напитки, десерты и свежую выпечку из нашей пекарни.
+          - generic [ref=f14e50]:
+            - link "Меню" [ref=f14e51] [cursor=pointer]:
+              - /url: https://atelierfamily.ru/joli-menu
+            - button "Забронировать" [ref=f14e52] [cursor=pointer]
+      - generic [ref=f14e54]:
+        - generic [ref=f14e55]:
+          - img "Joli СПб белый лого"
+        - paragraph [ref=f14e57]: Светлый ресторан-сад с чувством теплой ностальгии
+        - generic [ref=f14e58]:
+          - paragraph [ref=f14e59]: «Joli» в переводе с французского означает прекрасный. Grand Bistrot — ироничное объяснение нашей задумки соединить формат бистро (простой гастрономии и сервиса) с парадным образом локации и культурным кодом французского шика.
+          - paragraph [ref=f14e60]: Основная идея, заложенная в этот проект, — воспроизведение атмосферы натурального сада, созданного самой природой, от которого веет чувством тёплой ностальгии.
+          - paragraph [ref=f14e61]: "В Joli также функционируют два внутренних проекта: самобытная пекарня и цветочная лавка с необычными и сезонными композициями."
+        - generic [ref=f14e62]:
+          - heading "Команда" [level=2] [ref=f14e63]
+          - list [ref=f14e64]:
+            - listitem [ref=f14e65]:
+              - generic [ref=f14e66]: Управляющий
+              - generic [ref=f14e67]: Екатерина Лукина
+            - listitem [ref=f14e68]:
+              - generic [ref=f14e69]: Бренд-шеф
+              - generic [ref=f14e70]: Виктор Кислинский
+            - listitem [ref=f14e71]:
+              - generic [ref=f14e72]: Бренд-кондитер
+              - generic [ref=f14e73]: Андрей Сокольников
+            - listitem [ref=f14e74]:
+              - generic [ref=f14e75]: Шеф-повар
+              - generic [ref=f14e76]: Павел Скворцов
+        - generic [ref=f14e77]:
+          - figure [ref=f14e78]:
+            - link [ref=f14e79] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/joli-grand-bistrot/covers/raw/1.jpg
+              - img "Joli Grand Bistrot" [ref=f14e80]
+          - figure [ref=f14e81]:
+            - link [ref=f14e82] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/joli-grand-bistrot/covers/raw/2.jpg
+              - img "Joli Grand Bistrot" [ref=f14e83]
+          - figure [ref=f14e84]:
+            - link [ref=f14e85] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/joli-grand-bistrot/covers/raw/3.jpg
+              - img "Joli Grand Bistrot" [ref=f14e86]
+          - figure [ref=f14e87]:
+            - link [ref=f14e88] [cursor=pointer]:
+              - /url: https://italycommunity.ru/data/img/restaurants/joli-grand-bistrot/covers/raw/4.jpg
+              - img "Joli Grand Bistrot" [ref=f14e89]
+    - generic [ref=f14e91]:
+      - generic [ref=f14e92]:
+        - generic [ref=f14e93]: Будьте в курсе
+        - generic [ref=f14e97]:
+          - textbox "Почта" [ref=f14e99]:
+            - /placeholder: ваша@почта.ru
+          - textbox "Имя" [ref=f14e101]:
+            - /placeholder: Ваше имя
+          - combobox "Город" [ref=f14e103] [cursor=pointer]:
+            - option "Ваш город" [disabled] [selected]
+            - option "Санкт-Петербург"
+            - option "Москва"
+          - generic [ref=f14e105] [cursor=pointer]:
+            - checkbox "Согласен(-сна) на обработку персональных данных и с пользовательским соглашением."
+            - generic [ref=f14e107]: Согласен(-сна) на обработку персональных данных и с пользовательским соглашением.
+          - button "Подписаться" [ref=f14e109] [cursor=pointer]
+      - generic [ref=f14e110]:
+        - generic [ref=f14e111]:
+          - link "Доставка" [ref=f14e113] [cursor=pointer]:
+            - /url: https://italytouch.ru
+          - link "Рестораны" [ref=f14e115] [cursor=pointer]:
+            - /url: https://italycommunity.ru/restaurants/
+          - link "Афиша" [ref=f14e117] [cursor=pointer]:
+            - /url: https://italycommunity.ru/events/
+          - link "О нас" [ref=f14e119] [cursor=pointer]:
+            - /url: https://italycommunity.ru/about/
+          - link "Программа лояльности" [ref=f14e121] [cursor=pointer]:
+            - /url: https://italycommunity.online/loyaltyprogram
+          - link "Ресторанам Надо" [ref=f14e123] [cursor=pointer]:
+            - /url: https://restoranamnado.ru
+          - link "Банкеты и кейтеринг" [ref=f14e125] [cursor=pointer]:
+            - /url: https://italyco.tilda.ws/banket
+          - link "Ресторанный консалтинг" [ref=f14e127] [cursor=pointer]:
+            - /url: https://italycommunity.online/consulting
+          - link "Работай с нами" [ref=f14e129] [cursor=pointer]:
+            - /url: https://italycommunity.online/work
+          - link "люди итали" [ref=f14e131] [cursor=pointer]:
+            - /url: https://italycommunity.online
+        - generic [ref=f14e132]:
+          - link "VK" [ref=f14e133] [cursor=pointer]:
+            - /url: https://vk.com/italy.community
+            - img "VK"
+          - link "Telegram" [ref=f14e134] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+            - img "Telegram"
+          - link "@MS_italycommunity" [ref=f14e135] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+      - generic [ref=f14e136]:
+        - generic [ref=f14e137]:
+          - link "Политика в отношении обработки персональных данных" [ref=f14e138] [cursor=pointer]:
+            - /url: https://italycommunity.ru/policy/
+          - link "Пользовательское соглашение" [ref=f14e139] [cursor=pointer]:
+            - /url: https://italycommunity.ru/agree/
+        - generic [ref=f14e140]: © 2020-2026. Все права защищены.
+  - generic [ref=f14e144]:
+    - generic [ref=f14e146]:
+      - text: Наш сайт использует файлы cookie для улучшения работы сайта —
+      - link "подробнее" [ref=f14e147] [cursor=pointer]:
+        - /url: /policy/
+      - text: .
+    - button "Принимаю" [ref=f14e149] [cursor=pointer]

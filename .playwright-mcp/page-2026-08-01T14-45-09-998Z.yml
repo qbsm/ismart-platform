@@ -1,0 +1,336 @@
+- generic [active] [ref=f30e1]:
+  - generic [ref=f30e4]:
+    - generic [ref=f30e5]: Москва, 2-я Магистральная ул., д. 18, стр. 22
+    - generic [ref=f30e11]:
+      - generic [ref=f30e12] [cursor=pointer]: Тест-Драйв
+      - generic [ref=f30e16] [cursor=pointer]: Записаться на сервис
+  - banner [ref=f30e21]:
+    - generic [ref=f30e23]:
+      - generic [ref=f30e24]:
+        - img "Geely" [ref=f30e27]
+        - generic [ref=f30e29]:
+          - img "БОРИСХОФ 34 года" [ref=f30e30]
+          - generic [ref=f30e31]: Официальный дилер Geely
+      - 'link "Позвонить: +7(495) 230-01-10" [ref=f30e32] [cursor=pointer]':
+        - /url: tel:+74952300110
+        - generic [ref=f30e35]: +7(495) 230-01-10
+      - button "Заказать звонок" [ref=f30e36] [cursor=pointer]
+  - main [ref=f30e40]:
+    - generic [ref=f30e41]:
+      - generic [ref=f30e43]:
+        - generic [ref=f30e44]:
+          - generic [ref=f30e45]: Автомобиль месяца
+          - heading "Новый Geely Cityray" [level=1] [ref=f30e46]
+          - generic [ref=f30e47]: Городской кроссовер в БорисХоф — на выгодных условиях
+          - generic [ref=f30e48]:
+            - generic [ref=f30e49]:
+              - generic [ref=f30e50]: Цена от
+              - generic [ref=f30e51]: 2 490 000 ₽
+            - generic [ref=f30e52]:
+              - generic [ref=f30e53]: Выгода до
+              - generic [ref=f30e54]: 370 000 ₽
+          - generic [ref=f30e55]:
+            - generic [ref=f30e56]: Доп. бонус за трейд-ин
+            - generic [ref=f30e57]: Рассрочка 0%
+            - generic [ref=f30e58]: 5 лет поддержки
+            - generic [ref=f30e59]: Подарки до 100 000 ₽
+          - button "Заказать звонок" [ref=f30e60] [cursor=pointer]
+        - img "Новый Geely Cityray" [ref=f30e66]
+      - generic [ref=f30e69]:
+        - generic [ref=f30e70]: До конца акции
+        - list [ref=f30e74]:
+          - listitem [ref=f30e75]:
+            - generic [ref=f30e76]:
+              - generic [ref=f30e77]: "2"
+              - generic [ref=f30e78]: дня
+          - listitem [ref=f30e79]: ":"
+          - listitem [ref=f30e80]:
+            - generic [ref=f30e81]:
+              - generic [ref=f30e82]: "05"
+              - generic [ref=f30e83]: часов
+          - listitem [ref=f30e84]: ":"
+          - listitem [ref=f30e85]:
+            - generic [ref=f30e86]:
+              - generic [ref=f30e87]: "14"
+              - generic [ref=f30e88]: минут
+          - listitem [ref=f30e89]: ":"
+          - listitem [ref=f30e90]:
+            - generic [ref=f30e91]:
+              - generic [ref=f30e92]: "49"
+              - generic [ref=f30e93]: секунд
+        - button "Получить предложение" [ref=f30e95] [cursor=pointer]
+    - generic [ref=f30e101]:
+      - generic [ref=f30e102] [cursor=pointer]: Официальный дилер
+      - generic [ref=f30e104] [cursor=pointer]: Покупка одним днем
+      - generic [ref=f30e106] [cursor=pointer]: в наличии с ПТС
+      - generic [ref=f30e108] [cursor=pointer]: Бонусы при трейд-ин
+      - generic [ref=f30e110] [cursor=pointer]: Уникальные условия
+    - generic [ref=f30e113]:
+      - generic [ref=f30e114]: Geely Cityray в наличии
+      - generic [ref=f30e117]:
+        - generic [ref=f30e118]:
+          - heading "НОВЫЙ GEELY CITYRAY" [level=3] [ref=f30e119]
+          - generic [ref=f30e120]: Выгода до 370 000 ₽
+          - generic [ref=f30e121]:
+            - generic [ref=f30e122]:
+              - generic [ref=f30e123]: Только до 31.08
+              - paragraph [ref=f30e127]: Доп. бонус за трейд-ин
+              - paragraph [ref=f30e130]: 5 лет поддержки
+              - paragraph [ref=f30e133]: Рассрочка 0%
+              - paragraph [ref=f30e136]: Подарки до 100 000 руб.
+            - button "Узнать цену по акции" [ref=f30e137] [cursor=pointer]
+            - button "Тест-Драйв" [ref=f30e138] [cursor=pointer]
+        - generic [ref=f30e139]:
+          - generic [ref=f30e140]: Цена от 2 490 000 руб.
+          - generic [ref=f30e142]:
+            - generic [ref=f30e143]: Экстерьер
+            - generic [ref=f30e144] [cursor=pointer]: Цвета
+          - generic [ref=f30e145]: Автомобиль месяца
+    - generic [ref=f30e149]:
+      - generic [ref=f30e150]:
+        - generic [ref=f30e151]: ПОДБЕРИТЕ КОМПЛЕКТАЦИЮ
+        - generic [ref=f30e153]:
+          - textbox "Выберите модель" [ref=f30e155] [cursor=pointer]
+          - textbox "Выберите комплектацию" [ref=f30e159] [cursor=pointer]
+      - generic [ref=f30e162]:
+        - generic [ref=f30e163]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e165]
+          - generic [ref=f30e166]:
+            - generic [ref=f30e167]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e168]: Комфорт/Comfort, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e169]:
+            - button "Узнать стоимость по акции" [ref=f30e170] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e174] [cursor=pointer]
+        - generic [ref=f30e178]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e180]
+          - generic [ref=f30e181]:
+            - generic [ref=f30e182]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e183]: Комфорт/Comfort, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e184]:
+            - button "Узнать стоимость по акции" [ref=f30e185] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e189] [cursor=pointer]
+        - generic [ref=f30e193]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e195]
+          - generic [ref=f30e196]:
+            - generic [ref=f30e197]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e198]: Комфорт/Comfort, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e199]:
+            - button "Узнать стоимость по акции" [ref=f30e200] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e204] [cursor=pointer]
+        - generic [ref=f30e208]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e210]
+          - generic [ref=f30e211]:
+            - generic [ref=f30e212]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e213]: Люкс/Luxury, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e214]:
+            - button "Узнать стоимость по акции" [ref=f30e215] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e219] [cursor=pointer]
+        - generic [ref=f30e223]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e225]
+          - generic [ref=f30e226]:
+            - generic [ref=f30e227]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e228]: Люкс/Luxury, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e229]:
+            - button "Узнать стоимость по акции" [ref=f30e230] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e234] [cursor=pointer]
+        - generic [ref=f30e238]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e240]
+          - generic [ref=f30e241]:
+            - generic [ref=f30e242]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e243]: Люкс/Luxury, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e244]:
+            - button "Узнать стоимость по акции" [ref=f30e245] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e249] [cursor=pointer]
+        - generic [ref=f30e253]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e255]
+          - generic [ref=f30e256]:
+            - generic [ref=f30e257]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e258]: Флагман/Flagship, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e259]:
+            - button "Узнать стоимость по акции" [ref=f30e260] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e264] [cursor=pointer]
+        - generic [ref=f30e268]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e270]
+          - generic [ref=f30e271]:
+            - generic [ref=f30e272]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e273]: Флагман/Flagship, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e274]:
+            - button "Узнать стоимость по акции" [ref=f30e275] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e279] [cursor=pointer]
+        - generic [ref=f30e283]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e285]
+          - generic [ref=f30e286]:
+            - generic [ref=f30e287]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e288]: Флагман/Flagship, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e289]:
+            - button "Узнать стоимость по акции" [ref=f30e290] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e294] [cursor=pointer]
+        - generic [ref=f30e298]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e300]
+          - generic [ref=f30e301]:
+            - generic [ref=f30e302]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e303]: Флагман Спорт/Flagship Sport, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e304]:
+            - button "Узнать стоимость по акции" [ref=f30e305] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e309] [cursor=pointer]
+        - generic [ref=f30e313]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e315]
+          - generic [ref=f30e316]:
+            - generic [ref=f30e317]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e318]: Флагман Спорт/Flagship Sport, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e319]:
+            - button "Узнать стоимость по акции" [ref=f30e320] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e324] [cursor=pointer]
+        - generic [ref=f30e328]:
+          - img "НОВЫЙ GEELY CITYRAY" [ref=f30e330]
+          - generic [ref=f30e331]:
+            - generic [ref=f30e332]: НОВЫЙ GEELY CITYRAY
+            - generic [ref=f30e333]: Флагман Спорт/Flagship Sport, 2024, Робот, 1.5 147 л.с. Передний привод
+          - generic [ref=f30e334]:
+            - button "Узнать стоимость по акции" [ref=f30e335] [cursor=pointer]
+            - button "Рассчитать кредит" [ref=f30e339] [cursor=pointer]
+    - generic [ref=f30e345]:
+      - img "Трейд-ин" [ref=f30e347]
+      - generic [ref=f30e348]:
+        - generic [ref=f30e349]: ОБМЕН ПО ТРЕЙД-ИН НА ВЫГОДНЫХ УСЛОВИЯХ
+        - generic [ref=f30e350]:
+          - textbox "+7 (___) ___-__-__" [ref=f30e352]
+          - button "Отправить заявку" [ref=f30e354] [cursor=pointer]
+        - generic [ref=f30e358]:
+          - checkbox "Согласен на обработку персональных данных." [checked] [ref=f30e360] [cursor=pointer]
+          - generic [ref=f30e361] [cursor=pointer]: Согласен на обработку персональных данных.
+    - generic [ref=f30e365]:
+      - generic [ref=f30e366]:
+        - generic [ref=f30e367]: Оставьте заявку на кредит
+        - generic [ref=f30e368]: и получите одобрение за 1 день!
+      - textbox "+7 (___) ___-__-__" [ref=f30e370]
+      - button "Отправить заявку" [ref=f30e372] [cursor=pointer]
+      - generic [ref=f30e376]:
+        - checkbox "Согласен на обработку персональных данных." [checked] [ref=f30e378] [cursor=pointer]
+        - generic [ref=f30e379] [cursor=pointer]: Согласен на обработку персональных данных.
+    - generic [ref=f30e383]:
+      - generic [ref=f30e384]:
+        - generic [ref=f30e385]: Узнайте, что о нас думают клиенты
+        - generic [ref=f30e386]: Отзывы наших клиентов на Яндекс Картах
+      - generic [ref=f30e388]:
+        - iframe [ref=f30e389]:
+          - generic [ref=f31e2]:
+            - generic [ref=f31e3]:
+              - link "БорисХоф Geely" [ref=f31e4] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+              - generic [ref=f31e5]:
+                - paragraph [ref=f31e6]: 5,0
+                - generic [ref=f31e7]:
+                  - list [ref=f31e9]:
+                    - listitem [ref=f31e10]
+                    - listitem [ref=f31e11]
+                    - listitem [ref=f31e12]
+                    - listitem [ref=f31e13]
+                    - listitem [ref=f31e14]
+                  - link "1254 отзыва • 2209 оценок" [ref=f31e15] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+              - link [ref=f31e17] [cursor=pointer]:
+                - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+            - generic [ref=f31e18]:
+              - paragraph [ref=f31e19]: Поставьте нам оценку
+              - link "Оставить отзыв" [ref=f31e20] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+            - generic [ref=f31e21]:
+              - generic [ref=f31e22]:
+                - generic [ref=f31e24]:
+                  - paragraph [ref=f31e25]: Варвара Саникович
+                  - paragraph [ref=f31e26]: 28 июня
+                - list [ref=f31e28]:
+                  - listitem [ref=f31e29]
+                  - listitem [ref=f31e30]
+                  - listitem [ref=f31e31]
+                  - listitem [ref=f31e32]
+                  - listitem [ref=f31e33]
+                - paragraph [ref=f31e34]:
+                  - text: Мы приобрели свою первую семейную машину в данном салоне. Объездили 5 дилеров! Борисхов сделал лучшее предложение по всем параметрам, учли наши пожелания по допам, страхованию и хорошо оценили нашу машину в трейд-ин. Благодарим менеджера Валерия Полякова и Артема Ханяна за оперативное, комфортное общение. Отдельно хотелось бы отметить саму атмосферу салона - много пространства, прекрасная зона ожидания, кофе, чай. Кажется мелочь, но это правда важно.
+                  - paragraph [ref=f31e35]:
+                    - text: ...
+                    - link "ещё" [ref=f31e36] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f31e37]:
+                - generic [ref=f31e39]:
+                  - paragraph [ref=f31e40]: Степан Соколов
+                  - paragraph [ref=f31e41]: 18 февраля
+                - list [ref=f31e43]:
+                  - listitem [ref=f31e44]
+                  - listitem [ref=f31e45]
+                  - listitem [ref=f31e46]
+                  - listitem [ref=f31e47]
+                  - listitem [ref=f31e48]
+                - paragraph [ref=f31e49]:
+                  - text: Отличный салон, все было прозрачно, чистые условия, отличное предложение дали как по авто, которое покупали, так и по авто, которое сдавали в трейд ин. По страховкам дали также великолепное предложение, более того дали ещё и скидку на КАСКО. Отдельная благодарность менеджеру отдела продаж и просто мастеру своего дела Александру Ветчинову, благодаря его помощи было кристальное понимание процесса. На моменте задумки покупки помог с выбором нужной модели, провел шикарный тест-драйв, объяснил каждую кнопку, рычажок и тумблер в автомобиле. В общем, спасибо большое салону и Александру за предоставленный сервис и автомобиль. Категорически советую!!!
+                  - paragraph [ref=f31e50]:
+                    - text: ...
+                    - link "ещё" [ref=f31e51] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f31e52]:
+                - generic [ref=f31e54]:
+                  - paragraph [ref=f31e55]: Сергей Харченков
+                  - paragraph [ref=f31e56]: 13 мая
+                - list [ref=f31e58]:
+                  - listitem [ref=f31e59]
+                  - listitem [ref=f31e60]
+                  - listitem [ref=f31e61]
+                  - listitem [ref=f31e62]
+                  - listitem [ref=f31e63]
+                - paragraph [ref=f31e64]:
+                  - text: Отличный салон. Доступны все модели Geely к просмотру и тест-драйв. Чисто, есть где перекусить пока проводишь сделку. Покупал машину с Сергеем Краузе. Он очень помог на всех этапах, от подробного инструктажа и подбора только реально нужных допников, до непосредственно помощи с регистрацией и полного инструктажа по нюансам взаимодействия с новым авто. Богатый набор дополнительных аксессуаров был установлен оперативно. В сервисном центре (расположен под салоном) виден профессионализм сервисных инженеров. Однозначно буду тут обслуживаться!
+                  - paragraph [ref=f31e65]:
+                    - text: ...
+                    - link "ещё" [ref=f31e66] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f31e67]:
+                - generic [ref=f31e69]:
+                  - paragraph [ref=f31e70]: Виталий А.
+                  - paragraph [ref=f31e71]: 26 марта
+                - list [ref=f31e73]:
+                  - listitem [ref=f31e74]
+                  - listitem [ref=f31e75]
+                  - listitem [ref=f31e76]
+                  - listitem [ref=f31e77]
+                  - listitem [ref=f31e78]
+                - paragraph [ref=f31e79]:
+                  - text: "Хочу выразить огромную благодарность команде дилерского центра БорисХоф на Шелепихе за отличный сервис и покупку автомобиля! Отдельное спасибо говорю менеджеру Александру Пузыреву. Это тот редкий случай, когда слова «клиентоцентричность» — не просто громкий лозунг, а реальный подход к работе. Александр очень помог с продажей моего старого автомобиля по трейд-ину: все прошло максимально прозрачно, быстро и без лишних нервов. Самое главное — он всегда шел мне навстречу, подстраивался под мой график и помог решить все организационные вопросы заранее, а не в день сделки. Отдельно хочу отметить зону ожидания. Здесь есть все необходимое: свежий чай, отличный кофе. Но самое главное — вкусные печеньки, которые отдельно оценила моя жена! Это, казалось бы, мелочь, но именно из таких приятных деталей складывается общее впечатление о сервисе. В общем, если вы ищете надежного дилера, который ценит своих клиентов и не подведет при оформлении трейд-ина — смело обращайтесь к Александру Пузыреву в БорисХоф на Шелепихе. Рекомендую!"
+                  - paragraph [ref=f31e80]:
+                    - text: ...
+                    - link "ещё" [ref=f31e81] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f31e82]:
+                - generic [ref=f31e84]:
+                  - paragraph [ref=f31e85]: Василий
+                  - paragraph [ref=f31e86]: 7 марта
+                - list [ref=f31e88]:
+                  - listitem [ref=f31e89]
+                  - listitem [ref=f31e90]
+                  - listitem [ref=f31e91]
+                  - listitem [ref=f31e92]
+                  - listitem [ref=f31e93]
+                - paragraph [ref=f31e94]:
+                  - text: "Оформляли покупку нового Ньюстара 001 в Борисхофе Джили на 2-Магистральной у Менеджера Максима Иванова. С участием кредитного специалиста. По сделке все максимально профессионально, корректно и прозрачно. Дали досконально проверить автомобиль, менеджер отзывчивый, хорошо подкован в технической части, отвечает на все вопросы, готов идти навстречу. Однозначно рекомендую как его лично, так и сам дилер. Помимо вышеуказанного: комфортная клиентская зона, администраторы тоже очень клиентоориентированные, есть все необходимое для комфортного ожидания. Спасибо за хорошую работу, было приятно иметь с вами дело."
+                  - paragraph [ref=f31e95]:
+                    - text: ...
+                    - link "ещё" [ref=f31e96] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+            - link "Больше отзывов на Яндекс Картах" [ref=f31e98] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=more-reviews
+        - link "БорисХоф Geely на карте Москвы — Яндекс Карты" [ref=f30e390] [cursor=pointer]:
+          - /url: https://yandex.ru/maps/org/boriskhof_geely/89970889175/
+    - generic [ref=f30e394]:
+      - generic [ref=f30e395]: БОРИСХОФ СИТИ
+      - generic [ref=f30e396]:
+        - generic [ref=f30e397]: Адрес
+        - generic [ref=f30e398]: Москва, 2-я Магистральная ул., д. 18, стр. 22
+      - generic [ref=f30e399]:
+        - generic [ref=f30e400]: Режим работы
+        - generic [ref=f30e401]: Ежедневно, 09:00 — 21:00
+      - generic [ref=f30e402]:
+        - generic [ref=f30e403]: Телефон
+        - link "+7(495) 230-01-10" [ref=f30e405] [cursor=pointer]:
+          - /url: tel:+74952300110
+      - button "Заказать звонок" [ref=f30e407] [cursor=pointer]
+    - generic [ref=f30e412]: О дилере

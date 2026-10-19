@@ -1,5 +1,6 @@
 // JavaScript для content
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('content загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для content
 });

@@ -1,0 +1,301 @@
+- generic "Google Карты" [ref=f464e2]:
+  - generic [ref=f464e3]:
+    - application "Карта·Используйте клавиши со стрелками, чтобы перемещаться по карте.·Чтобы получить подробную информацию о месте, нажмите клавишу с соответствующим номером." [ref=f464e8]
+    - generic [ref=f464e11]:
+      - search [ref=f464e14]:
+        - button "Назад" [ref=f464e16] [cursor=pointer]:
+          - generic [ref=f464e17]: 
+        - generic [ref=f464e18]:
+          - combobox [ref=f464e20]: БИЗНЕС КАР ОРЁЛ
+          - button "Поиск" [ref=f464e22] [cursor=pointer]:
+            - generic [ref=f464e23]: 
+          - button "Закрыть" [ref=f464e25] [cursor=pointer]:
+            - generic [ref=f464e26]: 
+      - generic [ref=f464e29]:
+        - generic:
+          - button [ref=f464e30] [cursor=pointer]
+          - button "Show the Input Tools menu" [ref=f464e32] [cursor=pointer]
+    - generic [ref=f464e34]:
+      - generic [ref=f464e35]:
+        - list [ref=f464e37]:
+          - listitem [ref=f464e38]:
+            - button "Меню" [ref=f464e39] [cursor=pointer]:
+              - generic [ref=f464e40]: 
+          - listitem [ref=f464e42]:
+            - button "Сохранено" [ref=f464e43] [cursor=pointer]:
+              - generic [ref=f464e44]: 
+          - listitem [ref=f464e48]:
+            - button "Недавние" [disabled] [ref=f464e49]:
+              - generic [ref=f464e50]: 
+          - listitem [ref=f464e55]:
+            - button "Скачать приложение" [ref=f464e56] [cursor=pointer]:
+              - generic [ref=f464e57]: 
+        - main "БИЗНЕС КАР ОРЁЛ" [ref=f464e65]:
+          - tablist [ref=f464e69]:
+            - tab "Обзор места \"БИЗНЕС КАР ОРЁЛ\"" [active] [ref=f464e70]:
+              - generic [ref=f464e71]: Обзор
+            - tab "Отзывы о месте \"БИЗНЕС КАР ОРЁЛ\"" [selected] [ref=f464e74]:
+              - generic [ref=f464e75]: Отзывы
+            - tab "О месте \"БИЗНЕС КАР ОРЁЛ\"" [ref=f464e78]:
+              - generic [ref=f464e79]: Информация
+          - generic [ref=f464e82]:
+            - generic [ref=f464e84]:
+              - table [ref=f464e86]:
+                - rowgroup [ref=f464e87]:
+                  - img "5-звездочные,105 отзывов" [ref=f464e88]: "5"
+                  - img "4-звездочные,21 отзыв" [ref=f464e91]: "4"
+                  - img "3-звездочные,10 отзывов" [ref=f464e94]: "3"
+                  - img "2-звездочные,8 отзывов" [ref=f464e97]: "2"
+                  - img "1-звездочные,6 отзывов" [ref=f464e100]: "1"
+              - generic [ref=f464e103]:
+                - generic [ref=f464e104]: 4,4
+                - img "4,4-звездочные" [ref=f464e105]
+                - generic [ref=f464e111]: "Отзывов: 150"
+            - generic [ref=f464e113]:
+              - generic [ref=f464e114]: Отзывы не подтверждены.
+              - button "Подробнее о раскрытии по юридическим причинам информации касательно общедоступных отзывов на Google Картах" [ref=f464e118]:
+                - generic [ref=f464e121]: 
+            - button "Оставить отзыв" [ref=f464e126] [cursor=pointer]:
+              - generic [ref=f464e127]:
+                - generic [ref=f464e128]: 
+                - generic [ref=f464e129]: Оставить отзыв
+            - generic [ref=f464e133]:
+              - textbox "Поиск отзывов" [ref=f464e134]
+              - generic: Поиск отзывов
+            - button "Самые релевантные" [ref=f464e136] [cursor=pointer]:
+              - generic [ref=f464e138]: 
+            - generic [ref=f464e141]:
+              - generic "Илона Арнаутова" [ref=f464e142]:
+                - generic [ref=f464e144]:
+                  - 'button "Илона Арнаутова: фото" [ref=f464e145]'
+                  - generic [ref=f464e147]:
+                    - button "Илона Арнаутова Местный эксперт · 223 отзыва · 358 фото" [ref=f464e149]:
+                      - generic [ref=f464e150]: Илона Арнаутова
+                      - generic [ref=f464e151]: Местный эксперт · 223 отзыва · 358 фото
+                    - button "Действия с отзывом пользователя Илона Арнаутова" [ref=f464e152] [cursor=pointer]:
+                      - generic [ref=f464e153]: 
+                  - generic [ref=f464e155]:
+                    - generic [ref=f464e156]:
+                      - img "5 звезд" [ref=f464e157]:
+                        - generic [ref=f464e158]: 
+                        - generic [ref=f464e159]: 
+                        - generic [ref=f464e160]: 
+                        - generic [ref=f464e161]: 
+                        - generic [ref=f464e162]: 
+                      - generic [ref=f464e163]: 4 года назад
+                    - generic [ref=f464e164]: Отличный салон,очень приятный персонал, давно уже не видела подобного,спасибо ещё раз за машину,всем рекомендую. Не пожалели что с другой области приехали )
+                    - button "Фото 1 в отзыве пользователя Илона Арнаутова" [ref=f464e167] [cursor=pointer]
+                    - generic [ref=f464e168]:
+                      - button "Лайк" [ref=f464e169]:
+                        - generic [ref=f464e170] [cursor=pointer]:
+                          - generic [ref=f464e171]: 
+                          - generic [ref=f464e172]: Нравится
+                      - button "Поделиться отзывом пользователя Илона Арнаутова" [ref=f464e174]:
+                        - generic [ref=f464e175] [cursor=pointer]:
+                          - generic [ref=f464e176]: 
+                          - generic [ref=f464e177]: Поделиться
+              - generic "Алексей Жуков" [ref=f464e181]:
+                - generic [ref=f464e183]:
+                  - 'button "Алексей Жуков: фото" [ref=f464e184]'
+                  - generic [ref=f464e186]:
+                    - button "Алексей Жуков 7 отзывов" [ref=f464e188]:
+                      - generic [ref=f464e189]: Алексей Жуков
+                      - generic [ref=f464e190]: 7 отзывов
+                    - button "Действия с отзывом пользователя Алексей Жуков" [ref=f464e191] [cursor=pointer]:
+                      - generic [ref=f464e192]: 
+                  - generic [ref=f464e194]:
+                    - generic [ref=f464e195]:
+                      - img "4 звезды" [ref=f464e196]:
+                        - generic [ref=f464e197]: 
+                        - generic [ref=f464e198]: 
+                        - generic [ref=f464e199]: 
+                        - generic [ref=f464e200]: 
+                        - generic [ref=f464e201]: 
+                      - generic [ref=f464e202]: 5 лет назад
+                    - generic [ref=f464e204]:
+                      - text: Все вроде ок, но несколько раз приезжал и ни разу на тест драйв не удалось на месте записаться. С учётом того что человек хочет купить автомобиль как можно быстрее ему даже не дают без предварительной записи проехаться. Дают визитку на …
+                      - button "Ещё" [ref=f464e206] [cursor=pointer]
+                    - generic [ref=f464e207]:
+                      - button "Лайк" [ref=f464e208]:
+                        - generic [ref=f464e209] [cursor=pointer]:
+                          - generic [ref=f464e210]: 
+                          - generic [ref=f464e211]: Нравится
+                      - button "Поделиться отзывом пользователя Алексей Жуков" [ref=f464e213]:
+                        - generic [ref=f464e214] [cursor=pointer]:
+                          - generic [ref=f464e215]: 
+                          - generic [ref=f464e216]: Поделиться
+              - generic "Ярослав Морозов" [ref=f464e220]:
+                - generic [ref=f464e222]:
+                  - 'button "Ярослав Морозов: фото" [ref=f464e223]'
+                  - generic [ref=f464e225]:
+                    - button "Ярослав Морозов 2 отзыва · 1 фото" [ref=f464e227]:
+                      - generic [ref=f464e228]: Ярослав Морозов
+                      - generic [ref=f464e229]: 2 отзыва · 1 фото
+                    - button "Действия с отзывом пользователя Ярослав Морозов" [ref=f464e230] [cursor=pointer]:
+                      - generic [ref=f464e231]: 
+                  - generic [ref=f464e233]:
+                    - generic [ref=f464e234]:
+                      - img "5 звезд" [ref=f464e235]:
+                        - generic [ref=f464e236]: 
+                        - generic [ref=f464e237]: 
+                        - generic [ref=f464e238]: 
+                        - generic [ref=f464e239]: 
+                        - generic [ref=f464e240]: 
+                      - generic [ref=f464e241]: 5 лет назад
+                    - generic [ref=f464e243]:
+                      - text: Я, владелец а/м TOYOTA обратился для покраски задней правой двери к официальному дилеру TOYOTA в Орле ООО «БИЗНЕС КАР ОРЕЛ». …
+                      - button "Ещё" [ref=f464e245] [cursor=pointer]
+                    - generic [ref=f464e246]:
+                      - button "1 лайк" [ref=f464e247]:
+                        - generic [ref=f464e248] [cursor=pointer]:
+                          - generic [ref=f464e249]: 
+                          - generic [ref=f464e250]: "1"
+                      - button "Поделиться отзывом пользователя Ярослав Морозов" [ref=f464e252]:
+                        - generic [ref=f464e253] [cursor=pointer]:
+                          - generic [ref=f464e254]: 
+                          - generic [ref=f464e255]: Поделиться
+              - generic "Masha PeK" [ref=f464e259]:
+                - generic [ref=f464e261]:
+                  - 'button "Masha PeK: фото" [ref=f464e262]'
+                  - generic [ref=f464e264]:
+                    - button "Masha PeK Местный эксперт · 18 отзывов · 13 фото" [ref=f464e266]:
+                      - generic [ref=f464e267]: Masha PeK
+                      - generic [ref=f464e268]: Местный эксперт · 18 отзывов · 13 фото
+                    - button "Действия с отзывом пользователя Masha PeK" [ref=f464e269] [cursor=pointer]:
+                      - generic [ref=f464e270]: 
+                  - generic [ref=f464e272]:
+                    - generic [ref=f464e273]:
+                      - img "5 звезд" [ref=f464e274]:
+                        - generic [ref=f464e275]: 
+                        - generic [ref=f464e276]: 
+                        - generic [ref=f464e277]: 
+                        - generic [ref=f464e278]: 
+                        - generic [ref=f464e279]: 
+                      - generic [ref=f464e280]: 6 лет назад
+                    - generic [ref=f464e282]:
+                      - text: Отличный диллерский центр, начиная со встречи гостя и заканчивая обслуживанием авто. Не страшно отдать своего железного коня на ТО) поверьте это надежные руки!!! И нет надобности находиться все время на рем.зоне. и контролировать каждый …
+                      - button "Ещё" [ref=f464e284] [cursor=pointer]
+                    - generic [ref=f464e285]:
+                      - button "Лайк" [ref=f464e286]:
+                        - generic [ref=f464e287] [cursor=pointer]:
+                          - generic [ref=f464e288]: 
+                          - generic [ref=f464e289]: Нравится
+                      - button "Поделиться отзывом пользователя Masha PeK" [ref=f464e291]:
+                        - generic [ref=f464e292] [cursor=pointer]:
+                          - generic [ref=f464e293]: 
+                          - generic [ref=f464e294]: Поделиться
+              - generic "Юлия Шатохина" [ref=f464e298]:
+                - generic [ref=f464e300]:
+                  - 'button "Юлия Шатохина: фото" [ref=f464e301]'
+                  - generic [ref=f464e303]:
+                    - button "Юлия Шатохина 7 отзывов" [ref=f464e305]:
+                      - generic [ref=f464e306]: Юлия Шатохина
+                      - generic [ref=f464e307]: 7 отзывов
+                    - button "Действия с отзывом пользователя Юлия Шатохина" [ref=f464e308] [cursor=pointer]:
+                      - generic [ref=f464e309]: 
+                  - generic [ref=f464e311]:
+                    - generic [ref=f464e312]:
+                      - img "5 звезд" [ref=f464e313]:
+                        - generic [ref=f464e314]: 
+                        - generic [ref=f464e315]: 
+                        - generic [ref=f464e316]: 
+                        - generic [ref=f464e317]: 
+                        - generic [ref=f464e318]: 
+                      - generic [ref=f464e319]: 6 лет назад
+                    - generic [ref=f464e320]: Спасибо огромное персоналу Тайота центр Орел. Очень вежливые и внимательные. Остались довольны,по сравнению с Тулой,Рязанью и Калугой. Отдельное спасибо менеджеру Павлу, оформил всё быстро, сразу видно,что человек старается,работает и делает все для клиентов.
+                    - generic [ref=f464e322]:
+                      - button "Лайк" [ref=f464e323]:
+                        - generic [ref=f464e324] [cursor=pointer]:
+                          - generic [ref=f464e325]: 
+                          - generic [ref=f464e326]: Нравится
+                      - button "Поделиться отзывом пользователя Юлия Шатохина" [ref=f464e328]:
+                        - generic [ref=f464e329] [cursor=pointer]:
+                          - generic [ref=f464e330]: 
+                          - generic [ref=f464e331]: Поделиться
+              - generic "Сергей Новиков" [ref=f464e335]:
+                - generic [ref=f464e337]:
+                  - 'button "Сергей Новиков: фото" [ref=f464e338]'
+                  - generic [ref=f464e340]:
+                    - button "Сергей Новиков Местный эксперт · 307 отзывов · 200 фото" [ref=f464e342]:
+                      - generic [ref=f464e343]: Сергей Новиков
+                      - generic [ref=f464e344]: Местный эксперт · 307 отзывов · 200 фото
+                    - button "Действия с отзывом пользователя Сергей Новиков" [ref=f464e345] [cursor=pointer]:
+                      - generic [ref=f464e346]: 
+                  - generic [ref=f464e348]:
+                    - generic [ref=f464e349]:
+                      - img "5 звезд" [ref=f464e350]:
+                        - generic [ref=f464e351]: 
+                        - generic [ref=f464e352]: 
+                        - generic [ref=f464e353]: 
+                        - generic [ref=f464e354]: 
+                        - generic [ref=f464e355]: 
+                      - generic [ref=f464e356]: 7 лет назад
+                    - generic [ref=f464e357]: Сделали бесплатно отзывную кампанию на мой prius 30.
+                    - button "Фото 1 в отзыве пользователя Сергей Новиков" [ref=f464e360] [cursor=pointer]
+                    - generic [ref=f464e361]:
+                      - button "1 лайк" [ref=f464e362]:
+                        - generic [ref=f464e363] [cursor=pointer]:
+                          - generic [ref=f464e364]: 
+                          - generic [ref=f464e365]: "1"
+                      - button "Поделиться отзывом пользователя Сергей Новиков" [ref=f464e367]:
+                        - generic [ref=f464e368] [cursor=pointer]:
+                          - generic [ref=f464e369]: 
+                          - generic [ref=f464e370]: Поделиться
+              - generic "Mary" [ref=f464e374]:
+                - generic [ref=f464e376]:
+                  - 'button "Mary: фото" [ref=f464e377]'
+                  - generic [ref=f464e379]:
+                    - button "Mary 11 отзывов" [ref=f464e381]:
+                      - generic [ref=f464e382]: Mary
+                      - generic [ref=f464e383]: 11 отзывов
+                    - button "Действия с отзывом пользователя Mary" [ref=f464e384] [cursor=pointer]:
+                      - generic [ref=f464e385]: 
+                  - generic [ref=f464e387]:
+                    - generic [ref=f464e388]:
+                      - img "5 звезд" [ref=f464e389]:
+                        - generic [ref=f464e390]: 
+                        - generic [ref=f464e391]: 
+                        - generic [ref=f464e392]: 
+                        - generic [ref=f464e393]: 
+                        - generic [ref=f464e394]: 
+                      - generic [ref=f464e395]: год назад
+                    - generic [ref=f464e396]: Отличный автосалон, понравилось отношение к клиентам, замечательный персонал и обслуживание. Грамотная консультация и оформление документов выбранного автомобиля оставили приятное впечатление.
+                    - generic [ref=f464e398]:
+                      - button "Лайк" [ref=f464e399]:
+                        - generic [ref=f464e400] [cursor=pointer]:
+                          - generic [ref=f464e401]: 
+                          - generic [ref=f464e402]: Нравится
+                      - button "Поделиться отзывом пользователя Mary" [ref=f464e404]:
+                        - generic [ref=f464e405] [cursor=pointer]:
+                          - generic [ref=f464e406]: 
+                          - generic [ref=f464e407]: Поделиться
+              - generic "Алексей Л." [ref=f464e411]:
+                - generic [ref=f464e413]:
+                  - 'button "Алексей Л.: фото" [ref=f464e414]'
+                  - generic [ref=f464e416]:
+                    - button "Алексей Л. Местный эксперт · 148 отзывов · 1 346 фото" [ref=f464e418]:
+                      - generic [ref=f464e419]: Алексей Л.
+                      - generic [ref=f464e420]: Местный эксперт · 148 отзывов · 1 346 фото
+                    - button "Действия с отзывом пользователя Алексей Л." [ref=f464e421] [cursor=pointer]:
+                      - generic [ref=f464e422]: 
+                  - generic [ref=f464e424]:
+                    - generic [ref=f464e425]:
+                      - img "3 звезды" [ref=f464e426]:
+                        - generic [ref=f464e427]: 
+                        - generic [ref=f464e428]: 
+                        - generic [ref=f464e429]: 
+                        - generic [ref=f464e430]: 
+                        - generic [ref=f464e431]: 
+                      - generic [ref=f464e432]: 7 лет назад
+                    - generic [ref=f464e433]: Как то менеджеры не очень хотят продать автомобиль, не подходят и т.п. надо как то с клиентами работать лучше чай, кофе и т.д. А так только 3 звёзды за то, что это Тойота.
+                    - generic [ref=f464e435]:
+                      - button "1 лайк" [ref=f464e436]:
+                        - generic [ref=f464e437] [cursor=pointer]:
+                          - generic [ref=f464e438]: 
+                          - generic [ref=f464e439]: "1"
+                      - button "Поделиться отзывом пользователя Алексей Л." [ref=f464e441]:
+                        - generic [ref=f464e442] [cursor=pointer]:
+                          - generic [ref=f464e443]: 
+                          - generic [ref=f464e444]: Поделиться
+      - button "Скрыть боковую панель" [ref=f464e479] [cursor=pointer]:
+        - generic [ref=f464e480]: 

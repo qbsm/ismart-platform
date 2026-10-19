@@ -1,5 +1,6 @@
 // JavaScript для numbered-list
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('numbered-list загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для numbered-list
 });

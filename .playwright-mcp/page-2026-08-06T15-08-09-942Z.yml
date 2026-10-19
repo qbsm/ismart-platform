@@ -1,0 +1,215 @@
+- generic [active] [ref=f12e1]:
+  - link "Перейти к контенту" [ref=f12e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f12e3]:
+    - banner [ref=f12e4]:
+      - generic [ref=f12e5]:
+        - link [ref=f12e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f12e8]
+        - button "Открыть меню" [ref=f12e10] [cursor=pointer]
+    - generic [ref=f12e20]:
+      - heading "Модели шин Kumho" [level=1] [ref=f12e23]
+      - generic [ref=f12e25]:
+        - generic [ref=f12e26]:
+          - button "Лето" [ref=f12e27] [cursor=pointer]
+          - button "Всесезонные" [ref=f12e29] [cursor=pointer]
+          - button "Зима" [ref=f12e31] [cursor=pointer]
+          - button "Шипованные" [ref=f12e33] [cursor=pointer]
+        - generic [ref=f12e35]:
+          - generic [ref=f12e37]: Диаметр
+          - combobox "Диаметр" [ref=f12e38]:
+            - option "Все"
+            - option "16" [selected]
+            - option "17"
+            - option "19"
+        - generic [ref=f12e39]:
+          - generic [ref=f12e41]: Высота профиля
+          - combobox "Высота профиля" [ref=f12e42]:
+            - option "Все"
+            - option "45"
+            - option "50"
+            - option "55" [selected]
+            - option "60"
+            - option "65"
+            - option "75"
+        - generic [ref=f12e43]:
+          - generic [ref=f12e45]: Ширина
+          - combobox "Ширина" [ref=f12e46]:
+            - option "Все"
+            - option "185"
+            - option "195"
+            - option "205" [selected]
+            - option "215"
+            - option "225"
+      - generic [ref=f12e47]:
+        - link "WI32 WinterCraft ice Kumho WI32 WinterCraft ice" [ref=f12e49] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/tires/wi32
+          - generic [ref=f12e50]: WI32
+          - generic [ref=f12e52]: WinterCraft ice
+          - img "Kumho WI32 WinterCraft ice" [ref=f12e56]
+        - link "WI51 WinterCraft ice Kumho WI51 WinterCraft ice" [ref=f12e58] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/tires/wi51
+          - generic [ref=f12e59]: WI51
+          - generic [ref=f12e61]: WinterCraft ice
+          - img "Kumho WI51 WinterCraft ice" [ref=f12e65]
+        - link "WP52+ WinterCraft Kumho WP52+ WinterCraft" [ref=f12e67] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/tires/wp52-plus
+          - generic [ref=f12e68]: WP52+
+          - generic [ref=f12e70]: WinterCraft
+          - img "Kumho WP52+ WinterCraft" [ref=f12e74]
+    - generic [ref=f12e77]:
+      - generic [ref=f12e78]:
+        - heading "Конфигуратор подбора шин" [level=2] [ref=f12e81]
+        - generic [ref=f12e82]: Четыре вопроса — тип автомобиля, сезон, приоритет и размер — и в подборке останутся только подходящие модели Kumho из этого каталога.
+      - link "Подобрать шины" [ref=f12e84] [cursor=pointer]:
+        - /url: http://kumho-tires.ru.test/podbor
+    - generic [ref=f12e87]:
+      - generic [ref=f12e88]:
+        - heading "Как выбрать шины Kumho по сезону" [level=2] [ref=f12e91]
+        - generic [ref=f12e93]:
+          - paragraph [ref=f12e94]:
+            - text: В каталоге
+            - generic [ref=f12e95]: 36 моделей и 1148 типоразмеров
+            - text: с посадочным диаметром
+            - generic [ref=f12e96]: от R12 до R22
+            - text: . Отобрать нужные помогает фильтр по сезону, диаметру, ширине и высоте профиля.
+          - paragraph [ref=f12e97]:
+            - generic [ref=f12e98]: Зимние шины
+            - text: —
+            - generic [ref=f12e99]: 9 моделей, 432 типоразмера
+            - text: "(R13–R22). Шипованные рассчитаны на лёд и укатанный снег:"
+            - link "WinterCraft ice WI32" [ref=f12e100] [cursor=pointer]:
+              - /url: /tires/wi32
+            - text: (77 типоразмеров),
+            - link "WS31" [ref=f12e101] [cursor=pointer]:
+              - /url: /tires/ws31
+            - text: и
+            - link "WinterPorTran CW11" [ref=f12e102] [cursor=pointer]:
+              - /url: /tires/cw11
+            - text: "для микроавтобусов и фургонов. Нешипованные (фрикционные) — для города и трассы с частыми переходами через ноль:"
+            - link "WinterCraft WP52+" [ref=f12e103] [cursor=pointer]:
+              - /url: /tires/wp52-plus
+            - text: (136 типоразмеров, самый широкий выбор),
+            - link "WS71" [ref=f12e104] [cursor=pointer]:
+              - /url: /tires/ws71
+            - text: для мощных кроссоверов,
+            - link "WP72" [ref=f12e105] [cursor=pointer]:
+              - /url: /tires/wp72
+            - text: ","
+            - link "WinterCraft ice WI51" [ref=f12e106] [cursor=pointer]:
+              - /url: /tires/wi51
+            - text: ","
+            - link "WS51" [ref=f12e107] [cursor=pointer]:
+              - /url: /tires/ws51
+            - text: и коммерческая
+            - link "CW51" [ref=f12e108] [cursor=pointer]:
+              - /url: /tires/cw51
+            - text: .
+          - paragraph [ref=f12e109]:
+            - generic [ref=f12e110]: Всесезонные шины
+            - text: —
+            - generic [ref=f12e111]: 11 моделей, 253 типоразмера
+            - text: "(R13–R20). Подходят там, где зима мягкая, а пробег небольшой: не нужен второй комплект и двойной шиномонтаж. Для легковых автомобилей —"
+            - link "SOLUS HA32" [ref=f12e112] [cursor=pointer]:
+              - /url: /tires/ha32
+            - text: (97 типоразмеров),
+            - link "HA32+" [ref=f12e113] [cursor=pointer]:
+              - /url: /tires/ha32-plus
+            - text: и
+            - link "HA31" [ref=f12e114] [cursor=pointer]:
+              - /url: /tires/ha31
+            - text: ; для внедорожников и пикапов — линейка Road Venture (
+            - link "AT52" [ref=f12e115] [cursor=pointer]:
+              - /url: /tires/at52
+            - text: ","
+            - link "KL71" [ref=f12e116] [cursor=pointer]:
+              - /url: /tires/kl71
+            - text: ","
+            - link "MT71" [ref=f12e117] [cursor=pointer]:
+              - /url: /tires/mt71
+            - text: ); для фургонов —
+            - link "PorTran CX11" [ref=f12e118] [cursor=pointer]:
+              - /url: /tires/cx11
+            - text: .
+          - paragraph [ref=f12e119]:
+            - generic [ref=f12e120]: Летние шины
+            - text: —
+            - generic [ref=f12e121]: 16 моделей, 463 типоразмера
+            - text: "(R12–R22): линейки ECSTA, Ecowing, CRUGEN и PorTran. В устойчивые морозы и на льду зимняя резина безопаснее любой всесезонной — всесезонные модели рассчитаны на мягкую зиму."
+          - paragraph [ref=f12e122]:
+            - generic [ref=f12e123]: Коммерческий транспорт
+            - text: — семейство PorTran,
+            - generic [ref=f12e124]: 107 усиленных C-типоразмеров
+            - text: "(R12–R18): летняя"
+            - link "PorTran KC53" [ref=f12e125] [cursor=pointer]:
+              - /url: /tires/kc53
+            - text: ", всесезонная"
+            - link "PorTran CX11" [ref=f12e126] [cursor=pointer]:
+              - /url: /tires/cx11
+            - text: ", зимние"
+            - link "WinterPorTran CW11" [ref=f12e127] [cursor=pointer]:
+              - /url: /tires/cw11
+            - text: (шипованная) и
+            - link "WinterPorTran CW51" [ref=f12e128] [cursor=pointer]:
+              - /url: /tires/cw51
+            - text: (нешипованная) — для фургонов, микроавтобусов и лёгких грузовиков.
+      - generic [ref=f12e129]:
+        - heading "Оригинальная продукция и гарантия" [level=2] [ref=f12e132]
+        - generic [ref=f12e134]:
+          - paragraph [ref=f12e135]:
+            - text: «Север Авто» —
+            - generic [ref=f12e136]: официальный дистрибьютор
+            - text: шин Kumho | Кумхо компании Kumho Tire в России. Шины поставляются напрямую и продаются через авторизованные шинные центры, поэтому на них действует
+            - generic [ref=f12e137]: гарантия производителя
+            - text: .
+          - paragraph [ref=f12e138]:
+            - text: Дополнительно работает программа
+            - link "«Расширенная гарантия Kumho»" [ref=f12e139] [cursor=pointer]:
+              - /url: /warranty
+            - text: —
+            - generic [ref=f12e140]: ещё один год защиты
+            - text: от эксплуатационных повреждений сверх заводской гарантии. Оформить её можно
+            - generic [ref=f12e141]: только на шины, купленные у авторизованных партнёров
+            - text: ": их список и карта — в разделе"
+            - link "«Где купить»" [ref=f12e142] [cursor=pointer]:
+              - /url: /buy
+            - text: ", там же отмечены центры, принимающие обращения по гарантии."
+          - paragraph [ref=f12e143]:
+            - text: На боковине любой шины Kumho есть
+            - generic [ref=f12e144]: заводская маркировка с датой производства
+            - text: — по ней видно, что шина не залежалась на складе.
+    - generic [ref=f12e146]:
+      - link [ref=f12e149] [cursor=pointer]:
+        - /url: http://kumho-tires.ru.test/
+        - img "Logo" [ref=f12e150]
+      - generic [ref=f12e151]:
+        - link "Главная" [ref=f12e153] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/
+        - link "О компании" [ref=f12e155] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/about
+        - link "Шины" [ref=f12e157] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/tires
+        - link "Подбор шин" [ref=f12e159] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/podbor
+        - link "Расширенная гарантия" [ref=f12e161] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/warranty
+        - link "Где купить" [ref=f12e163] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/buy
+        - link "Контакты" [ref=f12e165] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/contacts
+      - generic [ref=f12e166]:
+        - generic [ref=f12e167]: Права на сайт принадлежат ООО «Сталкер» (ИНН 7719614965, ОГРН 1067761249654).
+        - generic [ref=f12e168]: © 2026 Север Авто. Все права защищены
+      - generic [ref=f12e169]:
+        - link "Политика обработки персональных данных" [ref=f12e170] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/data/docs/personal-data-policy.pdf
+        - link "Политика использования cookie-файлов" [ref=f12e171] [cursor=pointer]:
+          - /url: http://kumho-tires.ru.test/cookies-policy
+  - generic [ref=f12e174]:
+    - generic [ref=f12e176]:
+      - text: Мы используем
+      - link "cookie-файлы" [ref=f12e177] [cursor=pointer]:
+        - /url: /cookies-policy/
+      - text: для вашего удобства пользования сайтом
+    - button "Принять" [ref=f12e179] [cursor=pointer]

@@ -1,5 +1,6 @@
 // JavaScript для custom-list
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('custom-list загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для custom-list
 });

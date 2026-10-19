@@ -1,0 +1,28 @@
+- generic [ref=f105e2]:
+  - generic [ref=f105e3]: VOYAH · БорисХоф
+  - generic [ref=f105e5]:
+    - img "34 года БорисХоф" [ref=f105e7]
+    - generic [ref=f105e8]:
+      - generic [ref=f105e9]: 18 июля · 12:00–18:00
+      - heading "Регистрация на мероприятие" [level=1] [ref=f105e10]
+      - paragraph [ref=f105e11]: 34 года «Навстречу новым маршрутам». Тест-драйвы, викторины и мастер-классы весь день. Оставьте заявку — ждём вас в ДЦ БорисХоф.
+      - generic [ref=f105e12]:
+        - generic [ref=f105e13]:
+          - generic [ref=f105e14]: Имя *
+          - textbox "Имя *" [ref=f105e15]:
+            - /placeholder: Ваше имя
+        - generic [ref=f105e16]:
+          - generic [ref=f105e17]: Телефон *
+          - textbox "Телефон *" [ref=f105e18]:
+            - /placeholder: +7 (___) ___-__-__
+        - generic [ref=f105e19]:
+          - generic [ref=f105e20]: Хотите пройти тест-драйв *
+          - combobox "Хотите пройти тест-драйв?" [ref=f105e22]:
+            - option "Выберите…" [disabled] [selected]
+            - option "Да"
+            - option "Нет"
+        - generic [ref=f105e23] [cursor=pointer]:
+          - checkbox "Нажимая кнопку, соглашаюсь с политикой обработки персональных данных" [ref=f105e24]
+          - generic [ref=f105e25]: Нажимая кнопку, соглашаюсь с политикой обработки персональных данных
+        - button "Зарегистрироваться" [ref=f105e26] [cursor=pointer]
+  - paragraph [ref=f105e27]: ДЦ БорисХоф, 2-я Магистральная, 18 с 22
