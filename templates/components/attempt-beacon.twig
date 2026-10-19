@@ -4,6 +4,10 @@
    цифр хватает; каждая версия — со своим seq; события копятся пачками. #}
 <script>
 (function () {
+  // Маячок собирает данные о визите и номер до отправки — только после согласия на
+  // cookie (proposal 0025): стартует в момент «Принять» или сразу, если оно дано раньше.
+  // Тело не переиндентировано, чтобы не переписывать весь маячок.
+  function boot() {
   if (window.__ismartAttempt) return;
   var EP = 'https://api.ismart.pro/v1/attempt';
   var SEND_RE = /\/api\/(send|widget-rescue)/;
@@ -492,5 +496,7 @@
   window.addEventListener('pagehide', function () {
     state.sessions.forEach(function (s) { if (active(s)) push(s, { kind: 'leave' }, true); });
   });
+  }
+  if (window.ismartConsent) window.ismartConsent.onAccept(boot); else boot();
 })();
 </script>
