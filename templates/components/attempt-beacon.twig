@@ -117,7 +117,7 @@
   function evalTouch(s, fields, trap) {
     var d = fields.phone;
     if (ready(d)) {
-      var key = [d, fields.name, fields.email, fields.policy].join('|');
+      var key = [d, fields.name, fields.email, fields.policy, JSON.stringify(fields.checks || {})].join('|');
       if (key === s.key) return;
       s.key = key;
       s.ready = true;
@@ -187,6 +187,18 @@
     for (var i = 0; i < TRAP.length; i++) if (value(f, '[name="' + TRAP[i] + '"]')) return 'filled';
     return '';
   }
+  // Все галки формы, а не одна policy (proposal 0025): галок бывает несколько, и по отчёту
+  // должно быть видно, на какой человек споткнулся.
+  function checksOf(f) {
+    var out = {};
+    var boxes = f.querySelectorAll('input[type="checkbox"][name]');
+    for (var i = 0; i < boxes.length; i++) {
+      var n = boxes[i].name;
+      if (TRAP.indexOf(n) !== -1) continue;
+      out[n.slice(0, 40)] = boxes[i].checked ? 'on' : 'off';
+    }
+    return out;
+  }
   function formFields(f) {
     var policy = f.querySelector('[name="policy"]');
     var tel = phoneInput(f);
@@ -194,7 +206,8 @@
       phone: value(f, '[name="phone_digits"]') || digitsOf(tel ? tel.value : ''),
       name: (value(f, '[name="name"]') || (nameField(f) ? nameField(f).value : '')).slice(0, 80),
       email: (value(f, '[name="email"]') || value(f, 'input[type="email"]')).slice(0, 120),
-      policy: policy ? (policy.checked ? 'on' : 'off') : ''
+      policy: policy ? (policy.checked ? 'on' : 'off') : '',
+      checks: checksOf(f)
     };
   }
   function isPhone(el) {
@@ -203,7 +216,7 @@
     var f = el.form || (el.closest ? el.closest('form') : null);
     return !!f && phoneInput(f) === el;
   }
-  function isExtraField(el) { return !!el && (el.name === 'name' || el.name === 'email' || el.name === 'policy'); }
+  function isExtraField(el) { return !!el && (el.name === 'name' || el.name === 'email' || el.type === 'checkbox'); }
 
   function onStart(e) {
     var f = formOf(e.target);
@@ -247,6 +260,7 @@
     var ev = { kind: 'attempt', fields: {}, trap: trapState(f), form: formName(f) };
     ['phone', 'name', 'email'].forEach(function (n) { if (fields[n]) ev.fields[n] = fields[n]; });
     if (fields.policy === 'off') ev.fields.policy = 'не отмечено';
+    ev.checks = fields.checks;
     push(s, ev, true);
   }, true);
 
@@ -423,10 +437,13 @@
   new MutationObserver(scanWidgets).observe(document.documentElement, { childList: true, subtree: true });
   setInterval(scanWidgets, 2000);
 
-  function report(outcome, error) {
+  function report(outcome, error, fields) {
     var s = state.last;
     if (!s) return;
-    push(s, { kind: 'result', outcome: outcome, error: error || '' }, true);
+    var ev = { kind: 'result', outcome: outcome, error: error || '' };
+    // Какие поля не прошли проверку — строкой через запятую, как их хранит хронология приёмника.
+    if (fields && fields.length) ev.fields = fields.join(',').slice(0, 200);
+    push(s, ev, true);
     if (outcome !== 'sent') return;
     if (s.channel === 'form' && s.root.dataset) delete s.root.dataset.ismartSession;
     drop(s);
@@ -434,7 +451,7 @@
   }
   document.addEventListener('ismart:send-result', function (e) {
     var det = e.detail || {};
-    report(det.outcome || '', det.error || '');
+    report(det.outcome || '', det.error || '', det.fields);
   }, true);
   function classify(status, text) {
     if (status >= 200 && status < 300) report('sent');

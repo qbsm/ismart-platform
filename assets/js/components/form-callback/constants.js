@@ -1,4 +1,13 @@
-export const API_TIMEOUT_MS = 15000;
+import { MESSAGES } from '../form-rules/messages.js';
+
+// 20 с: дольше человек уже не ждёт, а запрос дольше этого почти всегда не дойдёт.
+export const API_TIMEOUT_MS = 20000;
+// Лоадер — не сразу: ответ быстрее 300 мс не должен мигать спиннером (proposal 0025).
+export const LOADER_DELAY_MS = 300;
+// Через 6 с текст кнопки меняется: без этого долгая отправка выглядит зависшей.
+export const LOADER_SLOW_MS = 6000;
+// Пауза перед единственным повтором при обрыве связи.
+export const NETWORK_RETRY_MS = 1500;
 export const SUCCESS_RESTORE_DELAY_MS = 4000;
 export const MIN_PHONE_LENGTH_AFTER_CODE = 5;
 
@@ -33,36 +42,40 @@ export const PHONE_MASKS = {
   standard: '+999 99-999-9999',
 };
 
+// Тексты ошибок полей живут в form-rules — один набор на все стеки. Здесь — только тексты
+// самой формы: отправка, успех, отказ сервера.
 export const DEFAULT_ERROR_TEXTS = {
   ru: {
-    phone_required: 'Укажите телефон',
-    phone_invalid: 'Неверный телефон',
-    name_required: 'Укажите имя',
-    name_min_length: 'Имя от 2 символов',
-    square_required: 'Укажите площадь',
-    policy_required: 'Согласитесь с политикой',
-    email_invalid: 'Неверный E-mail',
-    form_errors: 'Пожалуйста, исправьте ошибки в форме',
-    server_error: 'Произошла ошибка при отправке формы',
+    ...MESSAGES.ru,
+    form_errors: 'Исправьте ошибки в форме',
+    server_error: 'Не удалось отправить заявку — нажмите «Отправить» ещё раз.',
     response_error: 'Произошла ошибка при обработке ответа сервера',
-    connection_error: 'Ошибка соединения с сервером',
-    sending: 'Отправляем заявку',
+    connection_error: 'Не удалось отправить: пропала связь. Данные сохранены — нажмите «Отправить» ещё раз.',
+    offline: 'Нет интернета. Данные сохранены — нажмите «Отправить», когда связь появится.',
+    online_again: 'Связь появилась — нажмите «Отправить» ещё раз.',
+    sending: 'Отправляем…',
+    sending_slow: 'Ещё немного…',
     success: 'Успешно отправлена',
+    success_text: 'Мы свяжемся с вами в ближайшее время',
+    success_text_phone: 'Перезвоним на {phone} в ближайшее время',
+    call_us: 'Или позвоните:',
+    success_edit: 'Номер с ошибкой? Исправить',
   },
   en: {
-    phone_required: 'Please enter your phone number',
-    phone_invalid: 'Invalid phone number format',
-    name_required: 'Please enter your name',
-    name_min_length: 'Name should be at least 2 characters',
-    square_required: 'Please enter area',
-    policy_required: 'You must agree to the privacy policy',
-    email_invalid: 'Invalid E-mail',
+    ...MESSAGES.en,
     form_errors: 'Please correct the errors in the form',
-    server_error: 'An error occurred while submitting the form',
+    server_error: 'Could not send the request — press Send again.',
     response_error: 'An error occurred while processing the response',
-    connection_error: 'Server connection error',
-    sending: 'Sending request',
+    connection_error: 'Could not send: the connection dropped. Your data is kept — press Send again.',
+    offline: 'No internet. Your data is kept — press Send when you are back online.',
+    online_again: 'You are back online — press Send again.',
+    sending: 'Sending…',
+    sending_slow: 'Almost there…',
     success: 'Successfully sent',
+    success_text: 'We will contact you shortly',
+    success_text_phone: 'We will call you back at {phone} shortly',
+    call_us: 'Or call us:',
+    success_edit: 'Wrong number? Edit',
   },
 };
 

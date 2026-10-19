@@ -26,8 +26,16 @@
      жёстко прописанный цвет, и у неё метка светилась жёлтым, а галочка терялась. */
   --fc-label-active: var(--color-5);
   --fc-border-hover: rgb(0 0 0 / 15%);
-  --fc-checked-bg: var(--color-6);
-  --fc-checked-border: var(--color-6);
+
+  /* Отмеченная галка — фирменным акцентом, как кнопка: согласие видно сразу (proposal 0025). */
+  --fc-checked-bg: var(--color-3);
+  --fc-check-size: 2.8rem;
+  --fc-check-radius: 0.8rem;
+
+  /* Рамка галки — серым из палитры площадки (--color-6), а не чёрным с прозрачностью: на тёмной
+     теме чёрная рамка пропадала бы. */
+  --fc-check-border: 1.5px solid var(--color-6);
+  --fc-checked-border: var(--color-3);
   --fc-checked-mark: var(--color-1);
   --fc-accent: var(--color-5);
   --fc-muted: var(--color-6);
@@ -54,6 +62,9 @@
   display: grid;
   gap: var(--fc-gap);
   grid-template-columns: 1fr;
+
+  /* Текст ошибки удлиняет ячейку поля; без start соседняя растягивалась вместе с ней. */
+  align-items: start;
   transition: opacity 0.4s var(--fc-ease), filter 0.4s var(--fc-ease);
 
   @media (--sm) {
@@ -61,11 +72,16 @@
   }
 }
 
-/* Grid dimmed during loading */
+/* На время отправки приглушены поля, но не кнопка: на ней спиннер и «Отправляем…», и бледная
+   кнопка читалась бы как неактивная (proposal 0025). */
 .form-callback.is-loading .form-callback__grid {
+  pointer-events: none;
+}
+
+.form-callback.is-loading .form-callback__grid > :not(.field-submit) {
   opacity: 0.5;
   filter: grayscale(0.3);
-  pointer-events: none;
+  transition: opacity 0.4s var(--fc-ease), filter 0.4s var(--fc-ease);
 }
 
 /* ==========================================================================
@@ -136,12 +152,29 @@
 }
 
 .form-callback__success-text {
+  max-width: 36rem;
   font-family: var(--fc-font);
   font-size: 1.5rem;
+  text-align: center;
   color: var(--fc-label);
   opacity: 0;
   transform: translateY(1rem);
   animation: fcFadeUp 0.4s 0.55s var(--fc-ease) forwards;
+}
+
+/* Вторичное действие — ссылкой, а не второй кнопкой: главное в окне — что заявка принята. */
+.form-callback__success-edit {
+  font-family: var(--fc-font);
+  font-size: 1.4rem;
+  color: var(--fc-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  background: none;
+  border: 0;
+  padding: 0.8rem;
+  cursor: pointer;
+  opacity: 0;
+  animation: fcFadeUp 0.4s 0.7s var(--fc-ease) forwards;
 }
 
 @keyframes fcSuccessPop {
@@ -456,13 +489,16 @@
 
 .form-callback__checkbox-box {
   flex-shrink: 0;
-  width: 2.2rem;
-  height: 2.2rem;
+
+  /* Крупный квадрат с заметной рамкой (proposal 0025): галку согласия пропускали, нажимая
+     «Отправить» без неё, а прежний квадрат 22 px с рамкой в 6% почти сливался с фоном. */
+  width: var(--fc-check-size);
+  height: var(--fc-check-size);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: var(--fc-border);
-  border-radius: 0.6rem;
+  border: var(--fc-check-border);
+  border-radius: var(--fc-check-radius);
   background: var(--fc-bg);
   color: transparent;
   transition:
@@ -473,8 +509,8 @@
 }
 
 .form-callback__checkbox-icon {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .form-callback__checkbox-input:checked + .form-callback__checkbox-box {
@@ -496,7 +532,29 @@
   font-size: 1.4rem;
   color: var(--fc-muted);
   line-height: 1.5;
-  padding-top: 0.2rem;
+
+  /* Первая строка подписи — по центру квадрата: строка 2.1rem, квадрат --fc-check-size. */
+  padding-top: calc((var(--fc-check-size) - 2.1rem) / 2);
+}
+
+/* Ссылки в подписях, ошибках и окне успеха переносятся как текст. Базовый general.css делает
+   a inline-block, и тогда «обработку персональных данных» или телефон целиком уезжали на
+   новую строку, оставляя дыру; длинный адрес вылезал за край на узком экране. */
+.form-callback__checkbox-text a,
+.form-callback__error-text a,
+.form-callback__success-text a {
+  display: inline;
+  overflow-wrap: anywhere;
+}
+
+/* Номер телефона — целиком: «+7» на одной строке и цифры на другой читаются как два номера.
+   Цвет — текста плашки: синяя ссылка браузера выпадала из формы. */
+.form-callback__error-text a[href^="tel:"] {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  white-space: nowrap;
 }
 
 .form-callback__checkbox-text a {
@@ -642,11 +700,17 @@
 }
 
 .form-callback__submit-spinner {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  border: 2px solid rgb(255 255 255 / 30%);
-  border-top-color: var(--color-1);
+  /* Спиннер рядом с текстом «Отправляем…», а не вместо него: одно вращение не говорит, что
+     происходит (proposal 0025). Появляется через LOADER_DELAY_MS — класс loading ставит JS. */
+  display: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: 0.8rem;
+  flex-shrink: 0;
+
+  /* Цвет — текста кнопки: у площадки кнопка бывает светлой, и белый спиннер на ней пропадал. */
+  border: 2px solid currentcolor;
+  border-right-color: transparent;
   border-radius: 50%;
   opacity: 0;
   transform: scale(0.5);
@@ -658,17 +722,13 @@
   pointer-events: none;
 }
 
-.form-callback__submit.loading .form-callback__submit-text {
-  opacity: 0;
-  transform: translateY(-0.8rem);
-}
-
 .form-callback__submit.loading .form-callback__submit-icon {
-  opacity: 0;
-  transform: translateX(1rem);
+  display: none;
 }
 
 .form-callback__submit.loading .form-callback__submit-spinner {
+  display: inline-block;
+  order: -1;
   opacity: 1;
   transform: scale(1);
   animation: fcSpin 0.7s linear infinite;
@@ -725,6 +785,11 @@
   display: none;
 }
 
+/* У галки текст ошибки стоит под подписью, а не под квадратом: так видно, к чему он. */
+.form-callback__field.field-checkbox .form-callback__error-msg {
+  padding-left: calc(var(--fc-check-size) + 1.2rem);
+}
+
 /* Error state on field wrapper */
 .form-callback__field.error .form-callback__control {
   border-color: var(--color-error);
@@ -765,6 +830,7 @@
   padding: 1.2rem 1.6rem;
   background: var(--color-error-bg);
   border: 1px solid rgb(244 67 54 / 20%);
+  border: 1px solid color-mix(in srgb, var(--color-error) 25%, transparent);
   border-radius: var(--fc-radius);
   transition: opacity 0.3s var(--fc-ease), transform 0.3s var(--fc-ease);
 }
@@ -885,6 +951,9 @@
 .form-callback--hint .form-callback__grid {
   display: flex;
   flex-direction: column;
+
+  /* Колонка flex, а не сетка: start из общего правила сжал бы поля по ширине содержимого. */
+  align-items: stretch;
 }
 
 .form-callback--hint .form-callback__field.field-submit {
@@ -894,4 +963,9 @@
 .form-callback--hint .form-callback__field.field-checkbox,
 .form-callback--hint .form-callback__field.field-rules {
   order: 2;
+}
+
+/* Плашка — последней, после галок: туда человек смотрит, нажав кнопку (proposal 0025). */
+.form-callback--hint .form-callback__error-banner {
+  order: 3;
 }

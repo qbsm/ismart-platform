@@ -123,6 +123,9 @@ export class PhoneMask {
 
   reset() {
     if (this.input) this.input.value = '';
+    // Скрытое поле form.reset() не сбрасывает: без пересчёта в нём оставались цифры прошлой
+    // заявки, и пустой номер выглядел заполненным.
+    this._syncDigits();
   }
 
   /**

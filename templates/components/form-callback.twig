@@ -43,9 +43,15 @@
                 <path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
+            {# Галка согласия без подписи — пустой квадрат, на который нельзя дать осознанное
+               согласие. Подпись по умолчанию — та же, что у галки, добавленной ниже. #}
+            {% if not fieldLabel and field.name in ['policy', 'consent'] %}
+              {% set consentHref = global.consent.href | default(global.policy.href | default('/policy/')) %}
+              {% set fieldLabel = 'Я даю согласие на <a href="' ~ consentHref ~ '" target="_blank" rel="noopener">обработку персональных данных</a>' %}
+            {% endif %}
             <span class="form-callback__checkbox-text">{{ fieldLabel | raw }}</span>
           </label>
-          <span class="form-callback__error-msg" aria-live="polite"></span>
+          <span class="form-callback__error-msg"></span>
         </div>
 
       {# --- Select --- #}
@@ -68,7 +74,7 @@
             </label>
 
           </div>
-          <span class="form-callback__error-msg" aria-live="polite"></span>
+          <span class="form-callback__error-msg"></span>
         </div>
 
       {# --- Textarea --- #}
@@ -82,7 +88,7 @@
             </label>
 
           </div>
-          <span class="form-callback__error-msg" aria-live="polite"></span>
+          <span class="form-callback__error-msg"></span>
         </div>
 
       {# --- File --- #}
@@ -102,7 +108,7 @@
             </span>
           </label>
           <span class="form-callback__file-list js-file-list"></span>
-          <span class="form-callback__error-msg" aria-live="polite"></span>
+          <span class="form-callback__error-msg"></span>
         </div>
 
       {# --- Radio --- #}
@@ -121,7 +127,7 @@
               </label>
             {% endfor %}
           </div>
-          <span class="form-callback__error-msg" aria-live="polite"></span>
+          <span class="form-callback__error-msg"></span>
         </fieldset>
 
       {# --- Default: input (text, email, tel, number) --- #}
@@ -135,11 +141,39 @@
             </label>
 
           </div>
-          <span class="form-callback__error-msg" aria-live="polite"></span>
+          <span class="form-callback__error-msg"></span>
         </div>
       {% endif %}
 
     {% endfor %}
+
+    {# --- Согласие на обработку ПДн (proposal 0025) ---
+       По 152-ФЗ (ст. 9 в ред. с 01.09.2025) согласие оформляется отдельно от других документов
+       и активным действием: «нажимая кнопку, вы соглашаетесь» его не заменяет. Если площадка
+       галку не задала, ставим её сами — обязательной и неотмеченной. Имя policy — историческое:
+       его ждут сервер, маячок и приёмник. Галок может быть больше — их задают полями формы. #}
+    {% set hasConsent = false %}
+    {% for field in fields %}
+      {% if field.type == 'checkbox' and field.name in ['policy', 'consent'] %}
+        {% set hasConsent = true %}
+      {% endif %}
+    {% endfor %}
+    {% if not hasConsent %}
+      {% set fieldId = formId ~ '_policy' %}
+      {% set consentHref = global.consent.href | default(global.policy.href | default('/policy/')) %}
+      <div class="form-callback__field field-checkbox">
+        <label class="form-callback__checkbox-wrap" for="{{ fieldId }}">
+          <input id="{{ fieldId }}" type="checkbox" name="policy" class="form-callback__checkbox-input" aria-required="true">
+          <span class="form-callback__checkbox-box" aria-hidden="true">
+            <svg class="form-callback__checkbox-icon" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 5L4.5 8.5L11 1.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <span class="form-callback__checkbox-text">{{ formConfig.label[lang_code].policy | default('Я даю согласие на <a href="' ~ consentHref ~ '" target="_blank" rel="noopener">обработку персональных данных</a>') | raw }}</span>
+        </label>
+        <span class="form-callback__error-msg"></span>
+      </div>
+    {% endif %}
 
     {# --- Submit --- #}
     <div class="form-callback__field field-submit">
@@ -161,19 +195,6 @@
         <span class="form-callback__submit-spinner" aria-hidden="true"></span>
       </button>
     </div>
-
-    {# --- Rules: не показываем, если есть чекбокс policy --- #}
-    {% set hasPolicyCheckbox = false %}
-    {% for field in fields %}
-      {% if field.type == 'checkbox' and field.name == 'policy' %}
-        {% set hasPolicyCheckbox = true %}
-      {% endif %}
-    {% endfor %}
-    {% if not hasPolicyCheckbox %}
-    <div class="form-callback__field field-full field-rules">
-      <span class="form-callback__rules-text">{{ formConfig.rules[lang_code].policy | raw }}</span>
-    </div>
-    {% endif %}
 
     {# --- Error banner --- #}
     <div class="form-callback__field field-full form-callback__error-banner hidden" aria-live="polite" aria-atomic="true">

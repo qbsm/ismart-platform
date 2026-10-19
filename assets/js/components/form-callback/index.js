@@ -2,11 +2,11 @@ import { FormApi } from './api.js';
 import { primeFormToken, primeAllTokenFields, ensureFormToken, refreshFormToken } from './token.js';
 import { formTitle } from './form-title.js';
 import { initCaptcha, appendCaptchaToken } from './captcha.js';
-import { FormValidator } from './validation.js';
+import { FormChecker } from '../form-rules/dom.js';
 import { PhoneMask } from './mask.js';
 import { FormUI } from './ui.js';
 import { I18n, resolveLang } from './i18n.js';
-import { COUNTRY_CODES, DEFAULT_ERROR_TEXTS, DEFAULT_LANG } from './constants.js';
+import { COUNTRY_CODES, DEFAULT_ERROR_TEXTS, DEFAULT_LANG, NETWORK_RETRY_MS } from './constants.js';
 import { normalizePhone } from './validation.js';
 
 export class CallbackForm {
@@ -16,14 +16,19 @@ export class CallbackForm {
     this.lang = resolveLang(config.lang || document.documentElement.lang || DEFAULT_LANG);
     this.api = new FormApi(config.apiUrl || window.url('api/send'));
     this.i18n = new I18n(config.messages || {}, this.lang);
-    this.validator = new FormValidator(this.form, this.i18n);
     this.ui = new FormUI(formElement, this.i18n);
+    // Тексты площадки из global.json → error.<lang> перекрывают тексты модуля по тем же ключам.
+    const errorTexts = ((config.messages || {}).error || {})[this.lang] || {};
+    this.checker = new FormChecker(formElement, {
+      lang: this.lang,
+      messages: errorTexts,
+      onUpdate: (count, checker) => this.ui.updateSummary(count, checker.summary(count)),
+    });
     this.mask = new PhoneMask(formElement.querySelector('input[name="phone"]'), this.lang, COUNTRY_CODES);
     this.isSubmitting = false;
     this.abortController = null;
+    this.ui.onEditPhone = (shown) => this._editPhone(shown);
     this._boundHandleSubmit = this._handleSubmit.bind(this);
-    this._boundHandleInput = this._handleInput.bind(this);
-    this._boundHandlePolicyChange = this._handlePolicyChange.bind(this);
     this._boundHandleFileChange = this._handleFileChange.bind(this);
   }
 
@@ -31,13 +36,8 @@ export class CallbackForm {
     this.mask.init();
     this._setCurrentUrl();
     primeFormToken(this.form);
+    this.checker.init();
     this.form.addEventListener('submit', this._boundHandleSubmit);
-    this.form.addEventListener('input', this._boundHandleInput);
-
-    const policyField = this.form.querySelector('input[name="policy"]');
-    if (policyField) {
-      policyField.addEventListener('change', this._boundHandlePolicyChange);
-    }
 
     // Обработка file-инпутов
     this.form.querySelectorAll('.form-callback__file-input').forEach((fileInput) => {
@@ -48,15 +48,11 @@ export class CallbackForm {
   }
 
   destroy() {
-    const policyField = this.form.querySelector('input[name="policy"]');
-    if (policyField) {
-      policyField.removeEventListener('change', this._boundHandlePolicyChange);
-    }
+    this.checker.destroy();
     this.form.querySelectorAll('.form-callback__file-input').forEach((fileInput) => {
       fileInput.removeEventListener('change', this._boundHandleFileChange);
     });
     this.form.removeEventListener('submit', this._boundHandleSubmit);
-    this.form.removeEventListener('input', this._boundHandleInput);
     if (this.abortController) {
       this.abortController.abort();
       this.abortController = null;
@@ -73,20 +69,12 @@ export class CallbackForm {
     }
 
     this.ui.clearErrors();
-    const validation = this.validator.validate();
-
-    if (!validation.isValid) {
-      Object.keys(validation.errors).forEach((fieldName) => {
-        const field = this.form.querySelector(`[name="${fieldName}"]`);
-        if (field) {
-          const fieldToMark = fieldName === 'policy' ? field.closest('.form-callback__field') || field : field;
-          this.ui.markFieldAsError(fieldToMark);
-        }
-      });
-      this.ui.showFormError(
-        validation.firstError || this.i18n.get('error', 'form_errors', DEFAULT_ERROR_TEXTS[this.lang].form_errors)
-      );
-      this._reportOutcome('validation_failed', validation.firstError || '');
+    // Все ошибки сразу, каждая под своим полем; фокус — на первое. Плашка — только сводка,
+    // когда ошибок больше одной: одну человек видит там, куда перевели фокус.
+    const check = this.checker.run();
+    if (check.errors.length) {
+      this.ui.showSummary(check.summary);
+      this._reportOutcome('validation_failed', check.errors[0].message, check.fields);
       return;
     }
 
@@ -121,6 +109,11 @@ export class CallbackForm {
     } catch (error) {
       if (error && error.name === 'AbortError') {
         this._reportOutcome('network_error', 'timeout');
+        // Без текста человек не понимает, ушла ли заявка, и уходит. Данные в форме остаются.
+        this.ui.showFormError(
+          this.i18n.get('error', 'connection_error', DEFAULT_ERROR_TEXTS[this.lang].connection_error),
+          { withPhone: true }
+        );
         return;
       }
 
@@ -131,7 +124,8 @@ export class CallbackForm {
       } else if (status) {
         outcome = `http_${status}`;
       }
-      this._reportOutcome(outcome, (error && error.message) || '');
+      const serverFields = error && error.errors && typeof error.errors === 'object' ? Object.keys(error.errors) : [];
+      this._reportOutcome(outcome, (error && error.message) || '', serverFields);
 
       this._handleError(error);
     } finally {
@@ -148,33 +142,12 @@ export class CallbackForm {
 
   /**
    * Исход попытки — сниппету маячков: он живёт отдельно от бандла и сам исхода не знает.
+   * `fields` — какие поля не прошли проверку: по ним видно, на чём спотыкаются.
    */
-  _reportOutcome(outcome, error = '') {
-    this.form.dispatchEvent(new CustomEvent('ismart:send-result', { bubbles: true, detail: { outcome, error } }));
-  }
-
-  _handleInput(event) {
-    const target = event.target;
-    if (!(target instanceof HTMLElement)) {
-      return;
-    }
-    const field = target.closest(
-      '.form-callback__control, .form-callback__file-input, .form-callback__checkbox-input, .form-callback__radio-input'
+  _reportOutcome(outcome, error = '', fields = []) {
+    this.form.dispatchEvent(
+      new CustomEvent('ismart:send-result', { bubbles: true, detail: { outcome, error, fields } })
     );
-    if (field) {
-      this.ui.clearFieldError(field);
-    }
-  }
-
-  _handlePolicyChange(event) {
-    const target = event.target;
-    if (!(target instanceof HTMLInputElement)) {
-      return;
-    }
-    if (target.checked) {
-      const container = target.closest('.form-callback__field') || target;
-      this.ui.clearFieldError(container);
-    }
   }
 
   _handleFileChange(event) {
@@ -182,9 +155,6 @@ export class CallbackForm {
     if (!(input instanceof HTMLInputElement) || input.type !== 'file') {
       return;
     }
-
-    // Очищаем ошибку поля
-    this.ui.clearFieldError(input);
 
     // Обновляем список файлов
     const fieldContainer = input.closest('.form-callback__field');
@@ -208,6 +178,15 @@ export class CallbackForm {
     });
   }
 
+  _editPhone(shown) {
+    const phone = this.form.querySelector('input[name="phone"]');
+    if (!phone) return;
+    phone.value = shown;
+    // Маска пересчитает скрытые цифры по тому же вводу, что и при наборе руками.
+    phone.dispatchEvent(new Event('input', { bubbles: true }));
+    phone.focus();
+  }
+
   _setCurrentUrl() {
     const currentUrlField = this.form.querySelector('input[name="current_url"]');
     if (currentUrlField) {
@@ -222,7 +201,7 @@ export class CallbackForm {
    */
   async _sendWithRetry(formData) {
     try {
-      return await this.api.send(formData, this.abortController.signal);
+      return await this._sendSurvivingBlip(formData);
     } catch (error) {
       if (!error || error.code !== 'TOKEN_INVALID') throw error;
 
@@ -234,6 +213,43 @@ export class CallbackForm {
       await new Promise((resolve) => setTimeout(resolve, (wait + 0.5) * 1000));
       return this.api.send(formData, this.abortController.signal);
     }
+  }
+
+  /**
+   * Обрыв связи на мобильном часто длится секунду — переход между вышками, лифт. Один повтор
+   * через NETWORK_RETRY_MS с тем же ключом идемпотентности безопасен: если первый запрос всё же
+   * дошёл и потерялся только ответ, сервер вернёт сохранённый результат, а не вторую заявку.
+   */
+  async _sendSurvivingBlip(formData) {
+    try {
+      return await this.api.send(formData, this.abortController.signal);
+    } catch (error) {
+      if (!error || error.code !== 'NETWORK_ERROR') throw error;
+      await new Promise((resolve) => setTimeout(resolve, NETWORK_RETRY_MS));
+      return this.api.send(formData, this.abortController.signal);
+    }
+  }
+
+  /**
+   * Связи нет и после повтора. Данные остаются в форме; без интернета говорим прямо, а когда он
+   * вернётся — подсказываем отправить ещё раз. Если человек уйдёт, номер уже у приёмника
+   * через маячок: досыльщик доведёт его до кабинета сам.
+   */
+  _handleNetworkError() {
+    const offline = typeof navigator !== 'undefined' && navigator.onLine === false;
+    const key = offline ? 'offline' : 'connection_error';
+    this.ui.showFormError(this.i18n.get('error', key, DEFAULT_ERROR_TEXTS[this.lang][key]), { withPhone: true });
+    if (!offline || this._waitingOnline) return;
+    this._waitingOnline = true;
+    window.addEventListener(
+      'online',
+      () => {
+        this._waitingOnline = false;
+        if (this.isSubmitting || this.ui.bannerMode !== 'form') return;
+        this.ui.showFormError(this.i18n.get('error', 'online_again', DEFAULT_ERROR_TEXTS[this.lang].online_again));
+      },
+      { once: true }
+    );
   }
 
   _buildFormData() {
@@ -251,8 +267,13 @@ export class CallbackForm {
       formData.delete('phone_digits');
     }
 
-    const policyField = this.form.querySelector('input[name="policy"]');
-    formData.set('policy', policyField && policyField.checked ? 'on' : 'off');
+    // Галки едут явным on/off: неотмеченный чекбокс FormData пропускает, и сервер не отличил
+    // бы «не поставил» от «в форме такой нет». Шлём только те, что в форме есть, — иначе форма
+    // без галки получала policy=off и отказ сервера.
+    this.form.querySelectorAll('input[type="checkbox"][name]').forEach((box) => {
+      if (this.form.querySelectorAll(`input[type="checkbox"][name="${CSS.escape(box.name)}"]`).length > 1) return;
+      formData.set(box.name, box.checked ? 'on' : 'off');
+    });
 
     // Форму могли открыть не кнопкой — тогда названия неоткуда взяться, и в заявке остаётся
     // пустая графа. Подставляем то, что видит человек: заголовок модалки или секции.
@@ -291,32 +312,40 @@ export class CallbackForm {
 
     this.form.reset();
     this.mask.reset();
+    this.checker.reset();
     this.ui.clearErrors();
-    this.ui.setSuccessState();
+    this.ui.setSuccessState(String(formData.get('phone_shown') || ''));
   }
 
   _handleError(error) {
-    const firstServerError =
-      error && error.errors && typeof error.errors === 'object' && Object.keys(error.errors).length > 0
-        ? error.errors[Object.keys(error.errors)[0]]
-        : '';
+    if (error && error.code === 'NETWORK_ERROR') {
+      this._handleNetworkError();
+      return;
+    }
 
-    if (error && error.errors && typeof error.errors === 'object') {
-      Object.entries(error.errors).forEach(([fieldName]) => {
-        const field = this.form.querySelector(`[name="${fieldName}"]`);
-        if (field) {
-          const fieldToMark = fieldName === 'policy' ? field.closest('.form-callback__field') || field : field;
-          this.ui.markFieldAsError(fieldToMark);
-        }
-      });
+    // Ошибки сервера по полям — в те же места, что ошибки фронта. В плашку идёт только то,
+    // чему в форме места нет, и сводка, если полей с ошибкой несколько.
+    if (error && error.errors && typeof error.errors === 'object' && Object.keys(error.errors).length > 0) {
+      const orphans = this.checker.showServerErrors(error.errors);
+      const summary = this.checker.summary(this.checker.errorCount);
+      if (orphans.length) {
+        // Отказ по полю, которого в форме нет, человеку не исправить: текст сервера про чужое
+        // поле ему ничего не скажет. Говорим, что делать, — повторить или позвонить; сам текст
+        // уходит в маячок вместе с исходом (fields), по нему и разбираемся.
+        this.ui.showFormError(this.i18n.get('error', 'server_error', DEFAULT_ERROR_TEXTS[this.lang].server_error), {
+          withPhone: true,
+        });
+      } else if (summary) {
+        this.ui.showSummary(summary);
+      }
+      return;
     }
 
     const message =
-      firstServerError ||
       (error && typeof error.message === 'string' && error.message) ||
       this.i18n.get('error', 'server_error', DEFAULT_ERROR_TEXTS[this.lang].server_error);
 
-    this.ui.showFormError(message);
+    this.ui.showFormError(message, { withPhone: true });
   }
 }
 

@@ -31,7 +31,7 @@ final class ApiSendAction
         private readonly FormToken $formToken,
         private readonly RescueChannel $rescue,
         private readonly CaptchaVerifier $captcha,
-        /** @var array{enable?: bool, trap_field?: string, min_age_sec?: int, required_fields?: string} */
+        /** @var array{enable?: bool, trap_field?: string, min_age_sec?: int, required_fields?: string, required_checks?: string} */
         private readonly array $formGuard = [],
     ) {}
 
@@ -366,18 +366,24 @@ final class ApiSendAction
         $phone = preg_replace('/\D+/', '', Arr::str($data, 'phone')) ?? '';
         $phoneBad = $phone === '' || strlen($phone) < 7 || strlen($phone) > 15;
         if ($phoneBad && (in_array('phone', $required, true) || $phone !== '')) {
-            $errors['phone'] = 'Неверный телефон';
+            $errors['phone'] = 'Проверьте номер телефона';
         }
 
-        $policy = Arr::str($data, 'policy');
-        if ($policy !== 'on') {
-            $errors['policy'] = 'Согласитесь с политикой';
+        // Обязательные галки — тоже свойство площадки (FORM_REQUIRED_CHECKS). По умолчанию одна:
+        // согласие на обработку ПДн под историческим именем policy. Фронт шлёт каждую галку
+        // формы явным on/off, так что «не поставил» здесь отличим от «такой галки нет».
+        foreach ($this->requiredChecks() as $check) {
+            if (Arr::str($data, $check) !== 'on') {
+                $errors[$check] = in_array($check, ['policy', 'consent'], true)
+                    ? 'Поставьте галочку согласия на обработку данных'
+                    : 'Поставьте галочку, чтобы отправить заявку';
+            }
         }
 
         $email = Arr::str($data, 'email');
         $emailBad = $email === '' || filter_var($email, FILTER_VALIDATE_EMAIL) === false;
         if ($emailBad && (in_array('email', $required, true) || $email !== '')) {
-            $errors['email'] = 'Неверный E-mail';
+            $errors['email'] = 'Проверьте e-mail — нужен адрес вида name@mail.ru';
         }
 
         if (in_array('name', $required, true) && mb_strlen(trim(Arr::str($data, 'name'))) < 2) {
@@ -394,6 +400,16 @@ final class ApiSendAction
         $fields = array_values(array_filter(array_map('trim', explode(',', $raw))));
 
         return $fields !== [] ? $fields : ['phone'];
+    }
+
+    /**
+     * @return list<string>
+     */
+    private function requiredChecks(): array
+    {
+        $raw = (string) ($this->formGuard['required_checks'] ?? 'policy');
+
+        return array_values(array_filter(array_map('trim', explode(',', $raw))));
     }
 
     /**
