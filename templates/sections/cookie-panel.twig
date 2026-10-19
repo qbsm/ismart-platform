@@ -1,11 +1,17 @@
-<section class="cookie-panel hidden" style="display: none;" aria-hidden="true">
+{# Панель согласия на cookie (proposal 0025). Текст и кнопки — из global.json → cookie-panel,
+   у каждой площадки свои. «Отклонить» — того же веса, что «Принять»: отказ должен быть таким
+   же простым, как согласие. Решение хранит consent-gate.twig, он же запускает счётчики. #}
+{% set cookiePanel = global['cookie-panel'][lang_code] | default({}) %}
+{% set acceptClass = cookiePanel.button.class | default('button button-sm outline-color-2 uppercase nowrap js-cookie') %}
+<section class="cookie-panel hidden" style="display: none;" aria-hidden="true" aria-label="{{ cookiePanel.label | default('Согласие на cookie') }}">
   <div class="container-sm">
     <div class="section__item">
       <div class="section__subitem desc-wrap">
-        <span class="desc">{{ global['cookie-panel'][lang_code].desc | raw }}</span>
+        <span class="desc">{{ cookiePanel.desc | default('Мы используем cookie и сервисы аналитики. Они включаются только с вашего согласия.') | raw }}</span>
       </div>
       <div class="section__subitem button-wrap">
-        <button class="{{ global['cookie-panel'][lang_code].button.class }}">{{ global['cookie-panel'][lang_code].button.title }}</button>
+        <button type="button" class="{{ cookiePanel.decline.class | default(acceptClass | replace({'js-cookie': 'js-cookie-decline'})) }}">{{ cookiePanel.decline.title | default('Отклонить') }}</button>
+        <button type="button" class="{{ acceptClass }}">{{ cookiePanel.button.title | default('Принять') }}</button>
       </div>
     </div>
   </div>

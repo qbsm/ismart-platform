@@ -46,6 +46,10 @@
 .cookie-panel .button-wrap {
   display: flex;
   align-items: center;
+
+  /* «Отклонить» и «Принять» рядом и одного веса: отказ не прячем. */
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .cookie-panel .desc-wrap {
@@ -74,4 +78,13 @@
     margin: 0;
     border-radius: 2rem 2rem 0 0;
   }
+}
+
+/* Ссылка на политику — заметная и переносится по словам: general.css делает a inline-block, и
+   она целиком уезжала на новую строку, оставляя дыру после предлога. */
+.cookie-panel .desc a {
+  display: inline;
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
 }

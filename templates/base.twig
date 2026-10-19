@@ -145,6 +145,8 @@
     };
   </script>
   
+  {# Шлюз согласия — раньше любых счётчиков: они ждут «Принять» через ismartConsent.onAccept. #}
+  {% include 'components/consent-gate.twig' %}
   {% include 'components/analytics.twig' %}
   
   {% include 'components/styles.twig' %}

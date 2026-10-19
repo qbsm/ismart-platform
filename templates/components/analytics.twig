@@ -1,4 +1,5 @@
-{# Yandex.Metrika — отложенная загрузка после load + requestIdleCallback.
+{# Yandex.Metrika — только после согласия на cookie (consent-gate.twig), затем отложенная
+   загрузка после load + requestIdleCallback.
    Не блокирует FCP/LCP/TBT. ID из YANDEX_METRIC_ID (можно несколько через запятую);
    без него счётчик не выводится. tag.js грузится один раз, init — на каждый счётчик. #}
 {% set _ym_ids = config.settings.yandex_metric_ids|default([]) %}
@@ -78,10 +79,19 @@
       }
     }
 
-    if (document.readyState === 'complete') {
-      deferInit();
+    // До согласия Метрика не стартует вовсе (consent-gate.twig): иначе визит, cookie _ym_uid и
+    // Вебвизор уходили бы раньше, чем человек что-то решил.
+    function start() {
+      if (document.readyState === 'complete') {
+        deferInit();
+      } else {
+        window.addEventListener('load', deferInit, { once: true });
+      }
+    }
+    if (window.ismartConsent) {
+      window.ismartConsent.onAccept(start);
     } else {
-      window.addEventListener('load', deferInit, { once: true });
+      start();
     }
   })();
 </script>

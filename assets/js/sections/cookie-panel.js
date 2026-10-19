@@ -1,49 +1,24 @@
-// JavaScript для cookie-panel
+// Панель согласия на cookie (proposal 0025). Решение хранит и исполняет consent-gate.twig
+// (window.ismartConsent): «Принять» запускает отложенные счётчики, «Отклонить» — нет. Панель
+// показывается, пока решения нет: отказ хранится полгода, согласие — год.
 import { onReady } from '../base/init.js';
 
 onReady(function () {
   const cookiePanel = document.querySelector('.cookie-panel');
   const acceptButton = document.querySelector('.js-cookie');
+  const declineButton = document.querySelector('.js-cookie-decline');
+  const consent = window.ismartConsent;
 
-  if (!cookiePanel || !acceptButton) {
+  if (!cookiePanel || !acceptButton || !consent) {
     return;
   }
 
-  // Функция для работы с cookies
-  const cookieUtils = {
-    // Установить cookie
-    set: function (name, value, days) {
-      const expires = new Date();
-      expires.setTime(expires.getTime() + days * 24 * 60 * 60 * 1000);
-      document.cookie = `${name}=${value};expires=${expires.toUTCString()};path=/;SameSite=Lax`;
-    },
-
-    // Получить cookie
-    get: function (name) {
-      const nameEQ = name + '=';
-      const ca = document.cookie.split(';');
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-      }
-      return null;
-    },
-
-    // Проверить существование cookie
-    exists: function (name) {
-      return this.get(name) !== null;
-    },
-  };
-
-  // Функция показа панели
   function showPanel() {
     cookiePanel.style.display = '';
     cookiePanel.classList.remove('hidden');
     cookiePanel.setAttribute('aria-hidden', 'false');
     cookiePanel.classList.add('opening');
 
-    // Анимация появления
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         cookiePanel.classList.remove('opening');
@@ -51,7 +26,6 @@ onReady(function () {
     });
   }
 
-  // Функция скрытия панели
   function hidePanel() {
     cookiePanel.classList.add('opening');
 
@@ -62,30 +36,21 @@ onReady(function () {
     }, 300);
   }
 
-  // Проверяем, есть ли уже согласие
-  if (cookieUtils.exists('cookie_consent')) {
-    // Согласие уже дано — панель остаётся с классом hidden
-  } else {
+  if (!consent.state()) {
     showPanel();
   }
 
-  // Обработчик клика на кнопку "Принимаю"
   acceptButton.addEventListener('click', function (e) {
     e.preventDefault();
-
-    // Устанавливаем cookie на 60 дней
-    cookieUtils.set('cookie_consent', 'accepted', 60);
-
-    // Скрываем панель
+    consent.accept();
     hidePanel();
-
-    // Сообщаем системе, что пользователь дал согласие (для отложенной загрузки аналитики)
-    try {
-      const event = new CustomEvent('cookieConsentAccepted', { detail: { source: 'cookie-panel', ts: Date.now() } });
-      window.dispatchEvent(event);
-      document.dispatchEvent(event);
-    } catch {
-      /* ignore */
-    }
   });
+
+  if (declineButton) {
+    declineButton.addEventListener('click', function (e) {
+      e.preventDefault();
+      consent.decline();
+      hidePanel();
+    });
+  }
 });
