@@ -7,7 +7,8 @@
     "build:css:prod": "cross-env NODE_ENV=production npm run build:css",
     "watch:js": "nodemon --watch assets/js -e js --exec 'npm run build:js'",
     "build:js": "webpack --config webpack.config.js",
-    "build:js:prod": "cross-env NODE_ENV=production npm run build:js",
+    "build:js:prod": "cross-env NODE_ENV=production npm run build:js && npm run check:es",
+    "check:es": "node tools/build/check-es.js",
     "clean:assets": "node tools/build/clean-assets.js",
     "watch": "concurrently \"npm run watch:css\" \"npm run watch:js\"",
     "dev": "npm run watch",
@@ -63,11 +64,18 @@
   },
   "browserslist": [
     "defaults",
-    "not dead"
+    "not dead",
+    "chrome >= 61",
+    "android >= 61",
+    "safari >= 12",
+    "ios_saf >= 12"
   ],
   "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
     "@eslint/js": "^10.0.1",
     "autoprefixer": "^10.4.24",
+    "babel-loader": "^9.2.1",
     "concurrently": "^9.2.1",
     "cross-env": "^10.1.0",
     "css-loader": "^7.1.4",
@@ -101,6 +109,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "core-js": "^3.51.0",
     "glightbox": "^3.3.1",
     "inputmask": "^5.0.9",
     "jquery": "^4.0.0",

@@ -43,4 +43,11 @@ module.exports = [
       },
     },
   },
+  // Подключаются <script> напрямую, мимо webpack и Babel (templates/components/scripts.twig) —
+  // синтаксис не новее ES2018, иначе в Chrome 61–79 / Safari 12 файл не разбирается целиком.
+  {
+    files: ['assets/js/utils/utm.js', 'assets/js/utils/web-vitals.js'],
+    languageOptions: { sourceType: 'script', ecmaVersion: 2018 },
+    rules: { 'no-unused-vars': ['error', { caughtErrors: 'none' }] },
+  },
 ];

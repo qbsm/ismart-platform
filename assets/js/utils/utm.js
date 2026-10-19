@@ -35,7 +35,7 @@
   if (hasUtm) {
     try {
       sessionStorage.setItem('utm_session', '1');
-    } catch {
+    } catch (e) {
       /* ignore */
     }
     UTM_KEYS.forEach(function (key) {
@@ -43,7 +43,7 @@
       if (val) {
         try {
           sessionStorage.setItem(key, val);
-        } catch {
+        } catch (e) {
           /* ignore */
         }
         setCookie(key, val, COOKIE_DAYS);
@@ -83,7 +83,7 @@
     getFirstTouch: function () {
       try {
         return JSON.parse(getCookie(FIRST_TOUCH) || '{}');
-      } catch {
+      } catch (e) {
         return {};
       }
     },

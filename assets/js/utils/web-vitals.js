@@ -30,7 +30,7 @@
       var last = entries[entries.length - 1];
       if (last) send('LCP', last.startTime);
     }).observe({ type: 'largest-contentful-paint', buffered: true });
-  } catch {
+  } catch (e) {
     /* browser does not support this observer */
   }
 
@@ -40,7 +40,7 @@
       var entry = list.getEntries()[0];
       if (entry) send('FID', entry.processingStart - entry.startTime);
     }).observe({ type: 'first-input', buffered: true });
-  } catch {
+  } catch (e) {
     /* browser does not support this observer */
   }
 
@@ -61,7 +61,7 @@
         send('CLS', clsValue);
       }
     });
-  } catch {
+  } catch (e) {
     /* browser does not support this observer */
   }
 
@@ -75,7 +75,7 @@
         }
       }
     }).observe({ type: 'paint', buffered: true });
-  } catch {
+  } catch (e) {
     /* browser does not support this observer */
   }
 
@@ -85,7 +85,7 @@
       var nav = list.getEntries()[0];
       if (nav) send('TTFB', nav.responseStart);
     }).observe({ type: 'navigation', buffered: true });
-  } catch {
+  } catch (e) {
     /* browser does not support this observer */
   }
 
@@ -104,7 +104,7 @@
         send('INP', maxINP);
       }
     });
-  } catch {
+  } catch (e) {
     /* browser does not support this observer */
   }
 })();

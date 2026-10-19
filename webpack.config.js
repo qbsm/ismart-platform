@@ -15,8 +15,25 @@ module.exports = {
     clean: true,
     publicPath: 'auto',
   },
+  // Старые, но живые браузеры (встроенный браузер приложения «Яндекс» на Android 8 — Chrome 64) не
+  // разбирают ES2019+ (`?.`, `??`, `catch {}`): бандл падал целиком, и формы не отправлялись — так
+  // avtofin.org потерял заявку 19.10.2026. Свой код — через Babel под browserslist из package.json,
+  // недостающие API — core-js по месту использования. Итог проверяет `npm run check:es`.
+  target: ['web', 'es2017'],
   module: {
     rules: [
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules[\\/](?!(swiper|dom7|ssr-window)[\\/])/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [['@babel/preset-env', { useBuiltIns: 'usage', corejs: '3.51', bugfixes: true }]],
+            sourceType: 'unambiguous',
+            cacheDirectory: true,
+          },
+        },
+      },
       {
         test: /\.css$/,
         use: [isProduction ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
