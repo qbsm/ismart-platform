@@ -1,4 +1,4 @@
-import { DEFAULT_ERROR_TEXTS, LOADER_DELAY_MS, LOADER_SLOW_MS } from './constants.js';
+import { DEFAULT_ERROR_TEXTS, LOADER_DELAY_MS, LOADER_SLOW_MS, SUCCESS_ROW_MAX_HEIGHT } from './constants.js';
 
 export class FormUI {
   constructor(formElement, i18n) {
@@ -194,6 +194,12 @@ export class FormUI {
 
     const overlay = document.createElement('div');
     overlay.className = 'form-callback__success';
+    // Низкая форма — строка «поле + кнопка»: столбик по центру в ней не помещается, иконка
+    // сплющивается, а центрированный текст выпадает из выравнивания строки. Там сообщение
+    // выстраивается в строку по левому краю. Порог тот же, что у оверлея на старых сайтах.
+    if (this.form.offsetHeight > 0 && this.form.offsetHeight < SUCCESS_ROW_MAX_HEIGHT) {
+      overlay.classList.add('form-callback__success--row');
+    }
     overlay.innerHTML =
       '<span class="form-callback__success-icon">' +
       '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +

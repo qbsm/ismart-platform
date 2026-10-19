@@ -119,6 +119,8 @@
 }
 
 .form-callback__success-icon {
+  /* Не сжимается: в невысокой форме столбик ужимал её по высоте, и круг становился овалом. */
+  flex-shrink: 0;
   width: 6.4rem;
   height: 6.4rem;
   border-radius: 50%;
@@ -160,6 +162,45 @@
   opacity: 0;
   transform: translateY(1rem);
   animation: fcFadeUp 0.4s 0.55s var(--fc-ease) forwards;
+}
+
+/* Окно успеха в низкой форме-строке: иконка слева, тексты столбиком по левому краю. Столбик по
+   центру там не помещается по высоте и выбивается из выравнивания строки (proposal 0025). */
+.form-callback__success--row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  place-content: center start;
+  gap: 0.2rem 1.6rem;
+  text-align: left;
+}
+
+.form-callback__success--row .form-callback__success-icon {
+  grid-row: 1 / span 3;
+  align-self: center;
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.form-callback__success--row .form-callback__success-icon svg {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.form-callback__success--row .form-callback__success-title {
+  grid-column: 2;
+  font-size: 1.8rem;
+}
+
+.form-callback__success--row .form-callback__success-text,
+.form-callback__success--row .form-callback__success-edit {
+  grid-column: 2;
+  max-width: none;
+  text-align: left;
+}
+
+.form-callback__success--row .form-callback__success-edit {
+  justify-self: start;
+  padding: 0;
 }
 
 /* Вторичное действие — ссылкой, а не второй кнопкой: главное в окне — что заявка принята. */

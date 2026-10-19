@@ -8,6 +8,8 @@ export const LOADER_DELAY_MS = 300;
 export const LOADER_SLOW_MS = 6000;
 // Пауза перед единственным повтором при обрыве связи.
 export const NETWORK_RETRY_MS = 1500;
+// Ниже этой высоты форма — строка, и окно успеха выстраивается в строку по левому краю.
+export const SUCCESS_ROW_MAX_HEIGHT = 190;
 export const SUCCESS_RESTORE_DELAY_MS = 4000;
 export const MIN_PHONE_LENGTH_AFTER_CODE = 5;
 
