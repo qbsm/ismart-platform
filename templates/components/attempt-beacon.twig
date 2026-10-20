@@ -187,9 +187,24 @@
     var h = box ? box.querySelector('h1, h2, h3, .modal__title') : null;
     return h ? String(h.textContent || '').trim().slice(0, 80) : '';
   }
+  // Ловушку, которую заполнил браузер (автозаполнение), форма на сервер не отправляет
+  // (form-callback/trap.js) — такая сессия человеческая, отчитываемся о ней отдельно.
+  function autofilled(el) {
+    var states = [':autofill', ':-webkit-autofill'];
+    for (var i = 0; i < states.length; i++) {
+      try { if (el.matches(states[i])) return true; } catch (e) { /* селектор не знаком */ }
+    }
+    return false;
+  }
   function trapState(f) {
-    for (var i = 0; i < TRAP.length; i++) if (value(f, '[name="' + TRAP[i] + '"]')) return 'filled';
-    return '';
+    var state = '';
+    for (var i = 0; i < TRAP.length; i++) {
+      var el = f.querySelector('[name="' + TRAP[i] + '"]');
+      if (!el || !String(el.value || '').trim()) continue;
+      if (!autofilled(el)) return 'filled';
+      state = 'autofill';
+    }
+    return state;
   }
   // Все галки формы, а не одна policy (proposal 0025): галок бывает несколько, и по отчёту
   // должно быть видно, на какой человек споткнулся.

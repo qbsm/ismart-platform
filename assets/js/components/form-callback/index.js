@@ -2,6 +2,7 @@ import { FormApi } from './api.js';
 import { createAbortController } from './abort.js';
 import { primeFormToken, primeAllTokenFields, ensureFormToken, refreshFormToken } from './token.js';
 import { formTitle } from './form-title.js';
+import { dropAutofilledTraps } from './trap.js';
 import { initCaptcha, appendCaptchaToken } from './captcha.js';
 import { FormChecker } from '../form-rules/dom.js';
 import { PhoneMask } from './mask.js';
@@ -255,6 +256,9 @@ export class CallbackForm {
 
   _buildFormData() {
     const formData = new FormData(this.form);
+    // Ловушку, которую вписало автозаполнение браузера, не отправляем: иначе сервер молча
+    // отбросит заявку живого человека (trap.js).
+    dropAutofilledTraps(this.form, formData);
     const phoneField = this.form.querySelector('input[name="phone"]');
     if (phoneField) {
       // Номер берём из скрытого поля, которое ведёт маска: там цифры, посчитанные из того же
