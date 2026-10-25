@@ -1,0 +1,99 @@
+- generic [active] [ref=f449e1]:
+  - generic [ref=f449e2]:
+    - generic [ref=f449e9] [cursor=pointer]:
+      - generic [ref=f449e10]: Business Car, Jeland
+      - generic [ref=f449e12]: Until 8:30 PM
+    - generic:
+      - generic:
+        - banner
+      - complementary [ref=f449e14]:
+        - generic [ref=f449e17]:
+          - generic [ref=f449e18]:
+            - generic [ref=f449e19]:
+              - generic [ref=f449e21]:
+                - button "Back" [ref=f449e22] [cursor=pointer]
+                - generic [ref=f449e25]:
+                  - button "Yandex Maps" [ref=f449e26] [cursor=pointer]
+                  - generic [ref=f449e35]:
+                    - link "Search" [ref=f449e36] [cursor=pointer]
+                    - link "Directions" [ref=f449e41] [cursor=pointer]:
+                      - /url: /maps/10/orel/routes/
+                - button "Close" [ref=f449e48] [cursor=pointer]
+              - generic [ref=f449e53]:
+                - heading "Jeland, Business Car" [level=1] [ref=f449e56]
+                - generic [ref=f449e59]:
+                  - tablist [ref=f449e64]:
+                    - tab "Overview," [ref=f449e66]:
+                      - link:
+                        - /url: /maps/org/jeland_business_car/92738572151/
+                        - text: Overview
+                    - tab "Photos, 22" [ref=f449e68]:
+                      - link:
+                        - /url: /maps/org/jeland_business_car/92738572151/gallery/
+                        - text: Photos
+                      - generic: "22"
+                    - tab "Reviews," [selected] [ref=f449e70]:
+                      - link:
+                        - /url: /maps/org/jeland_business_car/92738572151/reviews/
+                        - text: Reviews
+                    - tab "Branches," [ref=f449e72]:
+                      - link:
+                        - /url: /maps/org/jeland_business_car/92738572151/?tab=chain
+                        - text: Branches
+                    - tab "Features," [ref=f449e74]:
+                      - link:
+                        - /url: /maps/org/jeland_business_car/92738572151/?tab=features
+                        - text: Features
+                    - iframe [ref=f449e75]:
+                      
+                  - generic [ref=f449e80]:
+                    - heading "Be the first!" [level=2] [ref=f449e81]
+                    - generic [ref=f449e82]: Rate this place. Your review will help other users decide where to go
+                    - generic [ref=f449e85]:
+                      - button "1 star" [ref=f449e86] [cursor=pointer]
+                      - button "2 stars" [ref=f449e88] [cursor=pointer]
+                      - button "3 stars" [ref=f449e90] [cursor=pointer]
+                      - button "4 stars" [ref=f449e92] [cursor=pointer]
+                      - button "5 stars" [ref=f449e94] [cursor=pointer]
+            - iframe [ref=f449e96]:
+              
+          - iframe [ref=f449e97]:
+            
+      - navigation:
+        - generic [ref=f449e103]:
+          - button "Traffic conditions in Orel" [ref=f449e106] [cursor=pointer]
+          - button "Street panoramas and photos" [ref=f449e111] [cursor=pointer]
+          - button "Mirrors" [ref=f449e114] [cursor=pointer]
+          - button "Public transport moving in real time" [ref=f449e117] [cursor=pointer]
+          - button "Layers" [ref=f449e120] [cursor=pointer]
+        - generic [ref=f449e122]:
+          - button "Ruler and planimeter" [ref=f449e125] [cursor=pointer]
+          - button "Details" [ref=f449e128] [cursor=pointer]
+        - button "Profile" [ref=f449e131] [cursor=pointer]
+        - generic:
+          - generic:
+            - generic:
+              - generic [ref=f449e135]:
+                - button "Zoom in" [ref=f449e137] [cursor=pointer]
+                - button "Zoom out" [ref=f449e139] [cursor=pointer]
+              - button "Use my location" [ref=f449e143] [cursor=pointer]
+              - button "Map tilt" [ref=f449e150] [cursor=pointer]: 3D
+      - contentinfo:
+        - generic [ref=f449e152]:
+          - generic [ref=f449e153]: © Yandex
+          - link "Terms of Use" [ref=f449e154] [cursor=pointer]:
+            - /url: https://yandex.com/legal/maps_termsofuse/?lang=en
+          - link "Privacy Policy" [ref=f449e155] [cursor=pointer]:
+            - /url: https://yandex.com/legal/confidential/?lang=en
+        - link "Yandex" [ref=f449e158] [cursor=pointer]:
+          - /url: https://yandex.com
+        - generic: 100 m
+      - iframe [ref=f449e161]:
+        
+    - iframe [ref=f449e162]:
+      
+  - iframe [ref=f449e163]:
+    
+  - generic [ref=f449e166]:
+    - generic [ref=f449e167]: Business Car, Jeland
+    - generic [ref=f449e169]: Until 8:30 PM

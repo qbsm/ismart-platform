@@ -1,0 +1,92 @@
+.filter.filter-wrap {
+  --filter-control-height: 3.2rem;
+
+  width: 100%;
+  padding: 1rem;
+  border: 0.1rem solid var(--color-4);
+  border-radius: 1rem;
+
+  @media (--lg) {
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+}
+
+.filter .filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+
+  @media (--lg) {
+    gap: 1rem;
+  }
+}
+
+.filter .filter-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter .filter-group.seasons-wrap {
+  flex-wrap: wrap;
+}
+
+.filter .filter__label {
+  white-space: nowrap;
+  color: var(--color-5);
+  font-size: 0.9em;
+}
+
+.filter .custom-select {
+  width: 100%;
+  height: var(--filter-control-height);
+  box-sizing: border-box;
+  border: 0.1rem solid var(--color-4);
+  border-radius: 0.75rem;
+  background: var(--color-1);
+  color: var(--color-2);
+  line-height: 1.2;
+  padding: 0 0.8rem;
+}
+
+.filter .filter__selector {
+  height: var(--filter-control-height);
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  border: 0.1rem solid var(--color-4);
+  border-radius: 0.75rem;
+  background: var(--color-1);
+  color: var(--color-2);
+  padding: 0 0.9rem;
+  font-size: 0.95em;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter .filter__selector:hover,
+.filter .filter__selector.active {
+  border-color: var(--color-3);
+  background: var(--color-3);
+  color: var(--color-1);
+}
+
+.filter .filter__selector.disabled,
+.filter .filter__selector:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: var(--color-4);
+  background: var(--color-1);
+  color: var(--color-5);
+}
+
+.filter .filter__checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}

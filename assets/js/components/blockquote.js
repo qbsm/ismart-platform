@@ -1,5 +1,6 @@
 // JavaScript для blockquote
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('blockquote загружен');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для blockquote
 });

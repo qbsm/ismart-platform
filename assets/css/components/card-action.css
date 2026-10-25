@@ -1,0 +1,106 @@
+.card-action {
+  position: relative;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+  border-radius: 1.5rem;
+  color: var(--color-1);
+  transition: opacity var(--transition-1) ease-out;
+
+  @media (--lg) {
+    padding: 3rem;
+    border-radius: 2rem;
+  }
+}
+
+.card-action:hover {
+  opacity: 0.95;
+}
+
+.card-action__item.cover-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.card-action__item.cover-wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to right, hsl(0deg 0% 0% / 50%), hsl(0deg 0% 0% / 20%));
+  border-radius: inherit;
+  pointer-events: none;
+  transition: opacity var(--transition-1) ease-out, background var(--transition-1) ease-out;
+}
+
+.card-action__cover {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card-action__item:not(.cover-wrap) {
+  position: relative;
+  z-index: 1;
+  color: var(--color-1);
+}
+
+.card-action:hover .card-action__cover {
+  transform: scale(1.025);
+}
+
+.card-action__item.icon-wrap {
+  flex-shrink: 0;
+}
+
+.card-action__item.logo-wrap {
+}
+
+.card-action__logo {
+  height: 1.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.card-action__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.card-action__title {
+  font-size: 1.125em;
+
+  @media (--lg) {
+    font-size: 1.8em;
+  }
+}
+
+.card-action__line {
+  display: block;
+  width: 10rem;
+  height: 0.2rem;
+  margin-top: 0.5rem;
+  background-color: var(--color-3);
+}
+
+.card-action__item.title-wrap {
+  margin-top: auto;
+}
+
+.card-action__desc {
+  font-size: 1.1em;
+  color: var(--color-4);
+}

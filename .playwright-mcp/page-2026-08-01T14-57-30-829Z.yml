@@ -1,0 +1,620 @@
+- generic [ref=f81e2]:
+  - generic [ref=f81e4]:
+    - generic [ref=f81e6]: Москва, 2я Магистральная, 18, стр. 22
+    - generic [ref=f81e8]:
+      - link "+7 (495) 011-12-21" [ref=f81e10] [cursor=pointer]:
+        - /url: tel:+74950111221
+      - link "Заказать звонок" [ref=f81e11] [cursor=pointer]:
+        - /url: "#"
+  - generic [ref=f81e19]:
+    - generic [ref=f81e20]:
+      - group "1 / 3" [ref=f81e21]:
+        - generic [ref=f81e25]:
+          - generic [ref=f81e26]:
+            - heading "БорисХоф – официальный дилер Haval" [level=2] [ref=f81e27]
+            - generic [ref=f81e28]:
+              - generic [ref=f81e31]:
+                - generic [ref=f81e32]: Перезаправка кондиционера
+                - generic [ref=f81e33]: от 4 990 ₽.
+              - generic [ref=f81e36]:
+                - generic [ref=f81e37]: Мойка радиаторов
+                - generic [ref=f81e38]: От 11 990 ₽.
+              - generic [ref=f81e41]:
+                - generic [ref=f81e42]: Сход-развал
+                - generic [ref=f81e43]: За 7 000 ₽.
+              - generic [ref=f81e46]:
+                - generic [ref=f81e47]: Ремонт подвески
+                - generic [ref=f81e48]: С выгодой 40% на работы и 10% на запчасти.
+              - generic [ref=f81e51]:
+                - generic [ref=f81e52]: Комплексная диагностика
+                - generic [ref=f81e53]: При ТО-0 в подарок.
+              - generic [ref=f81e56]:
+                - generic [ref=f81e57]: Шиномонтаж
+                - generic [ref=f81e58]: За 7 000 ₽
+          - generic [ref=f81e60]:
+            - heading "Рассчитать стоимость ремонта:" [level=3] [ref=f81e61]
+            - generic [ref=f81e63]:
+              - generic [ref=f81e64]:
+                - generic [ref=f81e65]: Ваш телефон*
+                - textbox "Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон* Ваш телефон*" [ref=f81e66]:
+                  - /placeholder: +7 (___) ___-__-__
+              - button "Записаться Успешно отправлена" [ref=f81e68] [cursor=pointer]:
+                - text: Записаться
+                - generic [ref=f81e73]: Успешно отправлена
+              - generic [ref=f81e75]:
+                - text: С
+                - link "условиями" [ref=f81e76] [cursor=pointer]:
+                  - /url: https://borishof.ru/legal/
+                - text: обработки персональных данных и получения предложений - ознакомлен и согласен.
+      - group "2 / 3" [ref=f81e78]:
+        - generic [ref=f81e82]:
+          - heading "Выгода до -25% на работы" [level=2] [ref=f81e83]
+          - paragraph [ref=f81e84]: При замене тормозных дисков и колодок
+          - button "Записаться на услугу" [ref=f81e86] [cursor=pointer]
+      - group "3 / 3" [ref=f81e87]:
+        - generic [ref=f81e91]:
+          - heading "Диагностика при ТО-0" [level=2] [ref=f81e92]
+          - paragraph [ref=f81e93]: в подарок
+          - button "Записаться на услугу" [ref=f81e95] [cursor=pointer]
+    - button "Previous slide" [ref=f81e96] [cursor=pointer]: prev
+    - button "Next slide" [ref=f81e97] [cursor=pointer]: next
+    - generic [ref=f81e99]:
+      - button "Go to slide 1" [ref=f81e100] [cursor=pointer]
+      - button "Go to slide 2" [ref=f81e101] [cursor=pointer]
+      - button "Go to slide 3" [ref=f81e102] [cursor=pointer]
+  - generic [ref=f81e104]:
+    - generic [ref=f81e106]:
+      - generic [ref=f81e107]:
+        - img "Техническое обслуживание автомобилей, как по регламенту, так и внеочередное"
+      - generic [ref=f81e108]: Техническое обслуживание автомобилей, как по регламенту, так и внеочередное
+    - generic [ref=f81e111]:
+      - generic [ref=f81e112]:
+        - img "Все виды ремонта, предусмотренные производителем"
+      - generic [ref=f81e113]: Все виды ремонта, предусмотренные производителем
+    - generic [ref=f81e116]:
+      - generic [ref=f81e117]:
+        - img "Программирование базовых и дополнительных функций автомобиля"
+      - generic [ref=f81e118]: Программирование базовых и дополнительных функций автомобиля
+  - generic [ref=f81e119]:
+    - generic [ref=f81e121]:
+      - heading "Специальные предложения" [level=2] [ref=f81e123]
+      - generic [ref=f81e124]:
+        - generic [ref=f81e128]:
+          - text: Сезонный шиномонтаж
+          - link "Подробнее" [ref=f81e130] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e134]:
+          - text: Мойка радиаторов — от 11 990 ₽
+          - link "Подробнее" [ref=f81e136] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e140]:
+          - text: Перезаправка кондиционера — работа от 4 990 ₽
+          - link "Подробнее" [ref=f81e142] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e146]:
+          - generic [ref=f81e147]: Спецпредложениена ремонт тормозной системы
+          - link "Подробнее" [ref=f81e149] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e153]:
+          - generic [ref=f81e154]: Развал-схождениеза 7 000 ₽
+          - link "Подробнее" [ref=f81e156] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e160]:
+          - text: Проверка чистоты радиаторов — 2 990 ₽
+          - link "Подробнее" [ref=f81e162] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e166]:
+          - text: Диагностика при ТО-0 - в подарок
+          - link "Подробнее" [ref=f81e168] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e172]:
+          - text: Сделаем предложение на ТО выгоднее
+          - link "Подробнее" [ref=f81e174] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e178]:
+          - text: Комплексная мойка при ТО без дополнительных затрат
+          - link "Подробнее" [ref=f81e180] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f81e184]:
+          - text: Подарок в честь вашего Дня Рождения
+          - link "Подробнее" [ref=f81e186] [cursor=pointer]:
+            - /url: "#"
+      - button "Показать ещё" [ref=f81e188] [cursor=pointer]
+    - generic [ref=f81e191]:
+      - generic [ref=f81e192]: Требуется консультация?
+      - generic [ref=f81e193]: Мы ответим на все ваши вопросы
+      - generic [ref=f81e196]:
+        - generic [ref=f81e197]:
+          - generic [ref=f81e198]: Ваш телефон*
+          - textbox "+7 (___) ___-__-__" [ref=f81e199]
+        - button "Получить консультацию Успешно отправлена" [ref=f81e201] [cursor=pointer]:
+          - text: Получить консультацию
+          - generic [ref=f81e206]: Успешно отправлена
+        - generic [ref=f81e208]:
+          - text: С
+          - link "условиями" [ref=f81e209] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/
+          - text: обработки персональных данных и получения предложений - ознакомлен и согласен.
+    - generic [ref=f81e212]:
+      - heading "Услуги" [level=2] [ref=f81e214]
+      - generic [ref=f81e216]:
+        - generic [ref=f81e217]: Техническое обслуживание
+        - generic [ref=f81e218]: Слесарный ремонт
+        - generic [ref=f81e219]: Электрика
+        - generic [ref=f81e220]: Кузовной ремонт
+        - generic [ref=f81e221]: Дополнительные услуги
+      - generic [ref=f81e222]:
+        - generic [ref=f81e224]:
+          - generic [ref=f81e225]: Название услуги Замена масла двигателя
+          - generic [ref=f81e226]:
+            - text: Цена
+            - generic [ref=f81e227]: от 3 600 ₽
+        - generic [ref=f81e229]:
+          - generic [ref=f81e230]: Название услуги Замена воздушного фильтра
+          - generic [ref=f81e231]:
+            - text: Цена
+            - generic [ref=f81e232]: от 900 ₽
+        - generic [ref=f81e234]:
+          - generic [ref=f81e235]: Название услуги Замена микрофильтра салона
+          - generic [ref=f81e236]:
+            - text: Цена
+            - generic [ref=f81e237]: от 1 350 ₽
+        - generic [ref=f81e239]:
+          - generic [ref=f81e240]: Название услуги Замена передних тормозных колодок
+          - generic [ref=f81e241]:
+            - text: Цена
+            - generic [ref=f81e242]: от 4 500 ₽
+        - generic [ref=f81e244]:
+          - generic [ref=f81e245]: Название услуги Замена задних тормозных колодок
+          - generic [ref=f81e246]:
+            - text: Цена
+            - generic [ref=f81e247]: от 5 850 ₽
+        - button "Показать еще" [ref=f81e249] [cursor=pointer]
+      - generic [ref=f81e250]:
+        - generic [ref=f81e252]:
+          - generic [ref=f81e253]: Название услуги Входящая диагностика мех.неисправности
+          - generic [ref=f81e254]:
+            - text: Цена
+            - generic [ref=f81e255]: от 2 250 ₽
+        - generic [ref=f81e257]:
+          - generic [ref=f81e258]: Название услуги Замена тормозных колодок
+          - generic [ref=f81e259]:
+            - text: Цена
+            - generic [ref=f81e260]: от 4 500 ₽
+        - generic [ref=f81e262]:
+          - generic [ref=f81e263]: Название услуги Замена тормозных дисков
+          - generic [ref=f81e264]:
+            - text: Цена
+            - generic [ref=f81e265]: от 2 250 ₽
+        - generic [ref=f81e267]:
+          - generic [ref=f81e268]: Название услуги Замена шаровых опор
+          - generic [ref=f81e269]:
+            - text: Цена
+            - generic [ref=f81e270]: от 4 500 ₽
+        - generic [ref=f81e272]:
+          - generic [ref=f81e273]: Название услуги Замена передних амортизаторов
+          - generic [ref=f81e274]:
+            - text: Цена
+            - generic [ref=f81e275]: от 9 000 ₽
+        - button "Показать еще" [ref=f81e277] [cursor=pointer]
+      - generic [ref=f81e278]:
+        - generic [ref=f81e280]:
+          - generic [ref=f81e281]: Название услуги Входящая диагностика эл.неисправности
+          - generic [ref=f81e282]:
+            - text: Цена
+            - generic [ref=f81e283]: от 2 250 ₽
+        - generic [ref=f81e285]:
+          - generic [ref=f81e286]: Название услуги Замена катушки зажигания
+          - generic [ref=f81e287]:
+            - text: Цена
+            - generic [ref=f81e288]: от 900 ₽
+        - generic [ref=f81e290]:
+          - generic [ref=f81e291]: Название услуги Замена вентилятора охлаждения
+          - generic [ref=f81e292]:
+            - text: Цена
+            - generic [ref=f81e293]: от 4 500 ₽
+        - generic [ref=f81e295]:
+          - generic [ref=f81e296]: Название услуги Ремонт генераторов
+          - generic [ref=f81e297]:
+            - text: Цена
+            - generic [ref=f81e298]: от 4 500 ₽
+        - generic [ref=f81e300]:
+          - generic [ref=f81e301]: Название услуги Ремонт фар
+          - generic [ref=f81e302]:
+            - text: Цена
+            - generic [ref=f81e303]: от 22 500 ₽
+        - button "Показать еще" [ref=f81e305] [cursor=pointer]
+      - generic [ref=f81e306]:
+        - generic [ref=f81e308]:
+          - generic [ref=f81e309]: Название услуги Покраска 1 элемента
+          - generic [ref=f81e310]:
+            - text: Цена
+            - generic [ref=f81e311]: от 18 000 ₽
+        - generic [ref=f81e313]:
+          - generic [ref=f81e314]: Название услуги Замена ветрового стекла
+          - generic [ref=f81e315]:
+            - text: Цена
+            - generic [ref=f81e316]: от 13 500 ₽
+        - generic [ref=f81e318]:
+          - generic [ref=f81e319]: Название услуги Замена боковых стекол
+          - generic [ref=f81e320]:
+            - text: Цена
+            - generic [ref=f81e321]: от 9 500 ₽
+        - generic [ref=f81e323]:
+          - generic [ref=f81e324]: Название услуги Замена фары с регулировкой и адаптацией
+          - generic [ref=f81e325]:
+            - text: Цена
+            - generic [ref=f81e326]: от 15 000 ₽
+        - generic [ref=f81e328]:
+          - generic [ref=f81e329]: Название услуги Замена фонаря
+          - generic [ref=f81e330]:
+            - text: Цена
+            - generic [ref=f81e331]: от 5 500 ₽
+        - button "Показать еще" [ref=f81e333] [cursor=pointer]
+      - generic [ref=f81e334]:
+        - generic [ref=f81e336]:
+          - generic [ref=f81e337]: Название услуги Антибактериальная обработка
+          - generic [ref=f81e338]:
+            - text: Цена
+            - generic [ref=f81e339]: от 2 250 ₽
+        - generic [ref=f81e341]:
+          - generic [ref=f81e342]: Название услуги Обслуживание направляющих эл.люка
+          - generic [ref=f81e343]:
+            - text: Цена
+            - generic [ref=f81e344]: от 4 500 ₽
+        - generic [ref=f81e346]:
+          - generic [ref=f81e347]: Название услуги Тонировка задней полусферы
+          - generic [ref=f81e348]:
+            - text: Цена
+            - generic [ref=f81e349]: от 10 000 ₽
+        - generic [ref=f81e351]:
+          - generic [ref=f81e352]: Название услуги Химчистка салона автомобиля
+          - generic [ref=f81e353]:
+            - text: Цена
+            - generic [ref=f81e354]: от 5 000 ₽
+        - generic [ref=f81e356]:
+          - generic [ref=f81e357]: Название услуги Обработка передних стекол «антидождем»
+          - generic [ref=f81e358]:
+            - text: Цена
+            - generic [ref=f81e359]: от 4 500 ₽
+      - generic [ref=f81e361]:
+        - heading "Запишитесь на техническое обслуживание:" [level=5] [ref=f81e363]
+        - generic [ref=f81e366]:
+          - generic [ref=f81e367]:
+            - generic [ref=f81e368]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f81e369]
+          - button "Отправить заявку Успешно отправлена" [ref=f81e371] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f81e376]: Успешно отправлена
+          - generic [ref=f81e378]:
+            - text: С
+            - link "условиями" [ref=f81e379] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: обработки персональных данных и получения предложений - ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f81e382] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+      - generic [ref=f81e384]:
+        - heading "Запишитесь на слесарный ремонт:" [level=5] [ref=f81e386]
+        - generic [ref=f81e389]:
+          - generic [ref=f81e390]:
+            - generic [ref=f81e391]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f81e392]
+          - button "Отправить заявку Успешно отправлена" [ref=f81e394] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f81e399]: Успешно отправлена
+          - generic [ref=f81e401]:
+            - text: С
+            - link "условиями" [ref=f81e402] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: обработки персональных данных и получения предложений - ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f81e405] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+      - generic [ref=f81e407]:
+        - heading "Запишитесь на электрику:" [level=5] [ref=f81e409]
+        - generic [ref=f81e412]:
+          - generic [ref=f81e413]:
+            - generic [ref=f81e414]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f81e415]
+          - button "Отправить заявку Успешно отправлена" [ref=f81e417] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f81e422]: Успешно отправлена
+          - generic [ref=f81e424]:
+            - text: С
+            - link "условиями" [ref=f81e425] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: обработки персональных данных и получения предложений - ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f81e428] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+      - generic [ref=f81e430]:
+        - heading "Запишитесь на кузовной ремонт:" [level=5] [ref=f81e432]
+        - generic [ref=f81e435]:
+          - generic [ref=f81e436]:
+            - generic [ref=f81e437]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f81e438]
+          - button "Отправить заявку Успешно отправлена" [ref=f81e440] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f81e445]: Успешно отправлена
+          - generic [ref=f81e447]:
+            - text: С
+            - link "условиями" [ref=f81e448] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: обработки персональных данных и получения предложений - ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f81e451] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+      - generic [ref=f81e453]:
+        - heading "Запишитесь на детейлинг:" [level=5] [ref=f81e455]
+        - generic [ref=f81e458]:
+          - generic [ref=f81e459]:
+            - generic [ref=f81e460]: Ваш телефон*
+            - textbox "+7 (___) ___-__-__" [ref=f81e461]
+          - button "Отправить заявку Успешно отправлена" [ref=f81e463] [cursor=pointer]:
+            - text: Отправить заявку
+            - generic [ref=f81e468]: Успешно отправлена
+          - generic [ref=f81e470]:
+            - text: С
+            - link "условиями" [ref=f81e471] [cursor=pointer]:
+              - /url: https://borishof.ru/legal/
+            - text: обработки персональных данных и получения предложений - ознакомлен и согласен.
+        - link "iconЗаписаться через Telegram" [ref=f81e474] [cursor=pointer]:
+          - /url: https://t.me/myborishof_bot
+          - img "icon"
+          - text: Записаться через Telegram
+    - generic [ref=f81e475]:
+      - heading "Калькулятор сервисных услуг" [level=2] [ref=f81e478]
+      - generic [ref=f81e482]:
+        - heading "Выберите модель HAVAL" [level=5] [ref=f81e484]
+        - generic [ref=f81e485]: Выберите подходящий вариант
+        - generic [ref=f81e486]:
+          - generic [ref=f81e487]: JOLION
+          - generic [ref=f81e490]: DARGO X
+          - generic [ref=f81e493]: DARGO
+          - generic [ref=f81e496]: F7
+          - generic [ref=f81e499]: F7X
+          - generic [ref=f81e502]: M6
+          - generic [ref=f81e505]: POER KINGKONG
+          - generic [ref=f81e508]: POER
+          - generic [ref=f81e511]: H3
+          - generic [ref=f81e514]: H5
+          - generic [ref=f81e517]: H7
+          - generic [ref=f81e520]: H9
+        - generic [ref=f81e523]:
+          - generic [ref=f81e524]: "Готово: 0%"
+          - generic [ref=f81e527]:
+            - button [ref=f81e528] [cursor=pointer]
+            - button "Далее" [ref=f81e530] [cursor=pointer]
+    - generic [ref=f81e534]:
+      - generic [ref=f81e535]:
+        - heading "Видеообзор" [level=2] [ref=f81e537]
+        - generic [ref=f81e538]: Видеообзор делает процесс обслуживания автомобиля полностью прозрачным для Вас. Во время технического обслуживания мастер-консультант отправит Вам подробный видеообзор технического состояния автомобиля. Контролировать процесс и согласовывать работы можно прямо со смартфона.
+        - generic [ref=f81e539]: Тег video не поддерживается вашим браузером.
+        - generic [ref=f81e542]:
+          - generic [ref=f81e543]:
+            - generic [ref=f81e544]:
+              - text: 1. Фиксация отклонений
+              - generic [ref=f81e545]:
+                - img "Аккордеон"
+            - generic [ref=f81e546]: Наш технический специалист сделает видеозапись любых дополнительных отклонений с цветовым индикатором Желтый или Красный.
+          - generic [ref=f81e548]:
+            - generic [ref=f81e549]:
+              - text: 2. Уведомление
+              - generic [ref=f81e550]:
+                - img "Аккордеон"
+            - generic: Вы получите письмо с уникальной ссылкой на просмотр видео по Вашему автомобилю.
+          - generic [ref=f81e552]:
+            - generic [ref=f81e553]:
+              - text: 3. Просмотр
+              - generic [ref=f81e554]:
+                - img "Аккордеон"
+            - generic: Пройдя по уникальной ссылке, вы попадаете на персональную веб-страницу с видео-роликом и фотографиями с графическими аннотациями.
+          - generic [ref=f81e556]:
+            - generic [ref=f81e557]:
+              - text: 4. Согласование
+              - generic [ref=f81e558]:
+                - img "Аккордеон"
+            - generic: Каждое выявленное отклонение сопровождается калькуляцией, учитывающей Ваши индивидуальные условия. Просто выберите «Согласовать» для авторизации работ или «Заказать обратный звонок», если Вы хотите, чтобы наш специалист связался с Вами для дополнительных разъяснений.
+      - generic [ref=f81e560]:
+        - generic [ref=f81e561]:
+          - heading "Выгодная программа лояльности" [level=4] [ref=f81e562]
+          - button "Записаться" [ref=f81e564] [cursor=pointer]
+        - generic [ref=f81e565]: Уважаемые владельцы! БорисХоф запускает выгодное предложение по сервису «Программу лояльности». Предлагаем вам воспользоваться специальными привилегиями наших официальных сервисных центров.Специальная программа на обслуживание вашего автомобиля позволит вам сэкономить на ремонте и пройти техническое обслуживание выгодно, а специалисты наших официальных сервисных центров обслужат ваши автомобили по всем необходимым стандартам и дадут дополнительные рекомендации в случае необходимости.
+        - generic [ref=f81e567]:
+          - generic [ref=f81e569]:
+            - generic [ref=f81e570]:
+              - img "Последующие ТО с выгодой на работы и запасные части"
+            - generic [ref=f81e571]: Последующие ТО с выгодой на работы и запасные части
+          - generic [ref=f81e573]:
+            - generic [ref=f81e574]:
+              - img "Безвозмездное устранение неисправностей"
+            - generic [ref=f81e575]: Безвозмездное устранение неисправностей
+          - generic [ref=f81e577]:
+            - generic [ref=f81e578]:
+              - img "Ремонт узлов и агрегатов с выгодой"
+            - generic [ref=f81e579]: Ремонт узлов и агрегатов с выгодой
+      - generic [ref=f81e580]:
+        - generic [ref=f81e581]:
+          - generic [ref=f81e582]:
+            - img "Логотип Яндекс Сплит"
+          - heading "Делите оплату на части в БорисХоф с Яндекс Сплит" [level=4] [ref=f81e583]
+          - text: На 2 месяца без переплат, до 2-х лет — с небольшой доплатой
+        - generic [ref=f81e584]:
+          - generic [ref=f81e585]:
+            - img "Обложка блока"
+          - generic [ref=f81e586]:
+            - generic [ref=f81e588]:
+              - generic [ref=f81e589]:
+                - img "Заплатите 1/4 цены сегодня, остальное — потом"
+              - generic [ref=f81e590]: Заплатите 1/4 цены сегодня, остальное — потом
+            - generic [ref=f81e592]:
+              - generic [ref=f81e593]:
+                - img "Наведите камеру и узнайте, сколько можете потратить"
+              - generic [ref=f81e594]: Наведите камеру и узнайте, сколько можете потратить
+            - generic [ref=f81e596]:
+              - img "QR-код"
+    - generic [ref=f81e598]:
+      - generic [ref=f81e599]:
+        - generic [ref=f81e601]:
+          - generic [ref=f81e602]:
+            - generic [ref=f81e603]: БорисХоф Haval Сити Москва
+            - generic [ref=f81e604]:
+              - link "+7 (495) 011-12-21" [ref=f81e606] [cursor=pointer]:
+                - /url: tel:+74950111221
+              - generic [ref=f81e607]: Москва, ул. 2-я Магистральная, 18c22
+              - generic [ref=f81e609]: Пн-Вс 09:00-21:00
+          - generic [ref=f81e610]:
+            - generic [ref=f81e611]: Доступны услуги
+            - generic [ref=f81e612]: Экспресс обслуживание, Слесарный ремонт, Шиномонтаж, Запчасти, Аренда авто
+          - button "Записаться на сервис" [ref=f81e614] [cursor=pointer]
+        - generic [ref=f81e616]:
+          - generic [ref=f81e617]:
+            - generic [ref=f81e618]: БорисХоф Haval Pro Москва
+            - generic [ref=f81e619]:
+              - link "+7 (495) 011-12-21" [ref=f81e621] [cursor=pointer]:
+                - /url: tel:+74950111221
+              - generic [ref=f81e622]: Москва, ул. 2-я Магистральная, 18c22
+              - generic [ref=f81e624]: Пн-Вс 09:00-21:00
+          - generic [ref=f81e625]:
+            - generic [ref=f81e626]: Доступны услуги
+            - generic [ref=f81e627]: Экспресс обслуживание, Слесарный ремонт, Шиномонтаж, Запчасти, Аренда авто
+          - button "Записаться на сервис" [ref=f81e629] [cursor=pointer]
+      - generic [ref=f81e631]:
+        - iframe [ref=f81e632]:
+          - generic [ref=f82e2]:
+            - generic [ref=f82e3]:
+              - link "БорисХоф Haval City" [ref=f82e4] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=org-name
+              - generic [ref=f82e5]:
+                - paragraph [ref=f82e6]: 5,0
+                - generic [ref=f82e7]:
+                  - list [ref=f82e9]:
+                    - listitem [ref=f82e10]
+                    - listitem [ref=f82e11]
+                    - listitem [ref=f82e12]
+                    - listitem [ref=f82e13]
+                    - listitem [ref=f82e14]
+                  - link "648 отзывов • 870 оценок" [ref=f82e15] [cursor=pointer]:
+                    - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=rating
+              - link [ref=f82e17] [cursor=pointer]:
+                - /url: https://yandex.ru/maps?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=logo
+            - generic [ref=f82e18]:
+              - paragraph [ref=f82e19]: Поставьте нам оценку
+              - link "Оставить отзыв" [ref=f82e20] [cursor=pointer]:
+                - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=add_review&add-review
+            - generic:
+              - generic [ref=f82e21]:
+                - generic [ref=f82e23]:
+                  - paragraph [ref=f82e24]: Дмитрий
+                  - paragraph [ref=f82e25]: 25 мая
+                - list [ref=f82e27]:
+                  - listitem [ref=f82e28]
+                  - listitem [ref=f82e29]
+                  - listitem [ref=f82e30]
+                  - listitem [ref=f82e31]
+                  - listitem [ref=f82e32]
+                - paragraph [ref=f82e33]:
+                  - text: "Хотели покупать автомобиль в Белгороде у единственного дилера на весь город, но диллер, пользуясь своей монополией в гороле отдавал автомобиль только с ненужным доп.оборудовпнием, за которое хотел 120 тысяч и ещё допом просил 40 тысяч за доп. гарантию, а также авто был только в чёрном цвете, в итоге рассматривали Воронеж, но через Сервис Сберавто нам нашли нужный авто в салоне БорисХоф. С нами связался менеджер Альберт Дзбоев, работой которого мы остались полностью удовлетворены. Альберт рассказал нам о всех плюсах покупки авто у него, сделал полный расклад по стоимости авто. Предложил только нужные допы: зимнюю резину и коврики салона и в багажник, которые отдал в подарок, сделав дополнительную скидку от рекомендовано розничной цены производителя. Мы были приятно удивлены оперативности в работе Альберта, с которым все условия покупки были предварительно оперативно и дистанционно согласованы, в том числе поданы документы и согласована банком рассрочка 0.01% на 3 года. У нас были сомнения, стоит ли ехать в Москву и мы склонялись взять автомобиль ближе, но в последний момент взвесив все плюсы и минусы решили ехать в Москву и не пожалели. Альберт был постоянно на связи на все вопросы отвечал быстро и по существу. В Москве встретил нас у станции метро и довёз до салона на тестовом автомобиле. В салоне пришлось провести большую половину дня т.к. автомобиль только приехал на автовозе, но все необходимые мероприятия по предпрожажной подготовке были выполнены и мы уехали из салона на новом авто. В салоне есть всё необходимое для комфортного ожидания: места для зарядки гаджетов, чай, кофе, печенье, также есть столовая, есть банкомат Альфабанка. Альберту желаем побольше клиентов и благодарим за оперативное обслуживание и гостеприимство."
+                  - paragraph [ref=f82e34]:
+                    - text: ...
+                    - link "ещё" [ref=f82e35] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f82e36]:
+                - generic [ref=f82e38]:
+                  - paragraph [ref=f82e39]: Сергей Р.
+                  - paragraph [ref=f82e40]: 17 апреля
+                - list [ref=f82e42]:
+                  - listitem [ref=f82e43]
+                  - listitem [ref=f82e44]
+                  - listitem [ref=f82e45]
+                  - listitem [ref=f82e46]
+                  - listitem [ref=f82e47]
+                - paragraph [ref=f82e48]:
+                  - text: "12 апреля 2026 года заехали в салон, посмотреть haval jolion. В выборе помог Дмитрий Берлин. Чётко и по делу всё рассказал и показал, даже спустились на выдачу, посмотрели авто в другом цвете. Дмитрий грамотно помог сориентироваться среди вариантов, полностью рассказал обо всех ценах. Днём мы договорились, что берём, на пару часов отъехали, вечером забрали машину. Добавили подарки: коврики, брызговики, зимнюю резину, защитную сетку. Процесс оформления не быстрый, конечно, но и мы не корову покупали) Внесли сразу 75% стоимости автомобиля, остальное в рассрочку получилось под 0,01%. В салоне приятно находиться, чисто и уютно. Спасибо Дмитрию за профессиональный и деликатный подход"
+                  - paragraph [ref=f82e49]:
+                    - text: ...
+                    - link "ещё" [ref=f82e50] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f82e51]:
+                - generic [ref=f82e53]:
+                  - paragraph [ref=f82e54]: Елена Ольшанникова
+                  - paragraph [ref=f82e55]: 21 апреля
+                - list [ref=f82e57]:
+                  - listitem [ref=f82e58]
+                  - listitem [ref=f82e59]
+                  - listitem [ref=f82e60]
+                  - listitem [ref=f82e61]
+                  - listitem [ref=f82e62]
+                - paragraph [ref=f82e63]:
+                  - text: Покупали в апреле автомобиль Haval f7. До Борис Хоф ездили по салонам, но выбор пал именно на них. Понравилось , что сразу идёт разговор по делу, окончательная цена, возможность подарков (куда же без них), условия трейд ин (оценили лучше, чем в других автосалонах). Менеджер Юлия Андрюкова предельно понятно и ненавязчиво все изложила. Предложила тест драйв, сходили на крышу и посмотрели наш будущий автомобиль. Конечно хочется отметить сам салон. Чистота, порядок, приятные запахи. Кофе, печенья, конфетки в неограниченном количестве. Всё сотрудники очень вежливы и приветливы. Мы довольны, спасибо Юлии и Борис Хоф!
+                  - paragraph [ref=f82e64]:
+                    - text: ...
+                    - link "ещё" [ref=f82e65] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f82e66]:
+                - generic [ref=f82e68]:
+                  - paragraph [ref=f82e69]: Василий К.
+                  - paragraph [ref=f82e70]: 2 апреля
+                - list [ref=f82e72]:
+                  - listitem [ref=f82e73]
+                  - listitem [ref=f82e74]
+                  - listitem [ref=f82e75]
+                  - listitem [ref=f82e76]
+                  - listitem [ref=f82e77]
+                - paragraph [ref=f82e78]:
+                  - text: От покупки автомобиля остались только положительные эмоции. Выбирал Хавал Дарго, черный цвет, максималка, машина нужна была из наличия. Обзвонил много салонов, везде были только обещания и пустые слова. Позвонил в БорисХоф, пообщавшись с продавцом -консультантом Степаном Калининым получил всю нужную мне информацию и фото автомобиля, что он есть в наличии в салоне. При этом получил хорошую скидку и допоы в подарок. Степан все детально объяснил, так как я проживаю в другом регионе все этапы подготовки документов проходили по телефону. По прибытию в автосалон, всё , что обсуждалось ранее было предоставлено, плюсом ещё в подарок установили допы, помимо оговоренных ранее. Сама процедура оформления заняла чуть более часа, что очень приятно. Хотелось бы выразить слова благодарности Степану за оказанные услуги, человек слова, так держать.
+                  - paragraph [ref=f82e79]:
+                    - text: ...
+                    - link "ещё" [ref=f82e80] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+              - generic [ref=f82e81]:
+                - generic [ref=f82e83]:
+                  - paragraph [ref=f82e84]: Михаил Ф.
+                  - paragraph [ref=f82e85]: 29 апреля
+                - list [ref=f82e87]:
+                  - listitem [ref=f82e88]
+                  - listitem [ref=f82e89]
+                  - listitem [ref=f82e90]
+                  - listitem [ref=f82e91]
+                  - listitem [ref=f82e92]
+                - paragraph [ref=f82e93]:
+                  - text: "Недавно приобрели автомобиль Haval F7 в вашем автосалоне и остались очень довольны как самим автомобилем, так и уровнем обслуживания. Особенно хотим отметить работу менеджера Альберта. С самого начала Альберт проявил себя как настоящий профессионал: ответил на все вопросы и не навязывал дополнительных услуг. Вся сделка прошла быстро и прозрачно, оформление документов заняло минимум времени. Haval F7 превзошёл мои ожидания: современный дизайн, богатое оснащение, комфортный салон и отличная динамика. Уже успел оценить автомобиль в разных условиях — он действительно радует! Большое спасибо Альберту и всей команде за внимательное отношение и высокий уровень сервиса! Обязательно буду рекомендовать ваш автосалон друзьям и знакомым."
+                  - paragraph [ref=f82e94]:
+                    - text: ...
+                    - link "ещё" [ref=f82e95] [cursor=pointer]:
+                      - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=read-more
+            - link "Больше отзывов на Яндекс Картах" [ref=f82e97] [cursor=pointer]:
+              - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/reviews?utm_source=maps-reviews-widget&utm_medium=reviews&utm_content=more-reviews
+        - link "БорисХоф Haval City на карте Москвы — Яндекс Карты" [ref=f81e633] [cursor=pointer]:
+          - /url: https://yandex.ru/maps/org/boriskhof_haval_city/180445374933/
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic [ref=f81e637]:
+                    - link "Условия использования" [ref=f81e641] [cursor=pointer]:
+                      - /url: https://yandex.ru/legal/maps_termsofuse/?lang=ru
+                    - link [ref=f81e643] [cursor=pointer]:
+                      - /url: ""
+                  - generic [ref=f81e645]:
+                    - generic "Открыть в Яндекс Картах" [ref=f81e646]
+                    - link "Создать свою карту" [ref=f81e651] [cursor=pointer]:
+                      - /url: "https://tech.yandex.ru/maps/mapsapi/?from=api-maps "
+    - generic [ref=f81e662]:
+      - link "Правовая информация" [ref=f81e665] [cursor=pointer]:
+        - /url: https://borishof.ru/legal/
+      - generic [ref=f81e666]: Вся представленная на сайте информация, касающаяся стоимости работ, сервисного обслуживания и аксессуаров, носит информационный характер и не является публичной офертой, определяемой положениями ст. 437 (2) ГК РФ. Для получения подробной информации обращайтесь в наши сервисные центры. Опубликованная на данном сайте информация может быть изменена в любое время без предварительного уведомления.
+      - generic [ref=f81e668]:
+        - text: Вы можете получить услуги сервисного направления для автомобилей HAVAL в автосалоне официального дилера HAVAL – БорисХоф, примерную актуальную цену услуг и комплектующих можно узнать, связавшись с нами по телефону
+        - link:
+          - /url: "tel:"
+        - text: .
+      - generic [ref=f81e669]: Права на сайт принадлежат ООО «БорисХоф Холдинг» (ИНН 7714700709, ОГРН 5077746977930).
+      - generic [ref=f81e670]: © ООО «БорисХоф Холдинг». Все права защищены 2026

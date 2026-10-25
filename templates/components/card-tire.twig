@@ -1,0 +1,48 @@
+{# Унифицированный tire-card (superset; узлы под if; визуал — per-project CSS).
+   Поля: title=code|name, desc=tagline|series, cover→bg иначе 30°-фото, season/frame опц. #}
+{% set t = item.item | default(item) %}
+{% set title = t.code | default(t.name | default('')) %}
+{% set tagline = t.tagline | default(t.series | default('')) %}
+{% set season = t.season | default('') %}
+{% set cover = t.cover | default('') %}
+{% set href = item.slug is defined and item.slug ? url('/tires/' ~ item.slug) : null %}
+{% set tireImage = item.images['30deg'] is defined ? item.images['30deg'] : (item.image is defined ? item.image : null) %}
+{% set imageAlt = (tireImage and tireImage.alt is defined and tireImage.alt) ? tireImage.alt : title %}
+
+<a{% if href %} href="{{ href }}"{% endif %} class="card-tire card-wrap link"{{ href ? '' : ' role="group"' }}>
+  {% if season %}
+    <img src="{{ url('data/img/ui/' ~ season ~ '.svg') }}" class="card-tire__season" alt="{{ season }}">
+  {% endif %}
+
+  <div class="card__item cover-wrap">
+    {% if cover %}
+      <div class="card-tire__cover" style="background-image: url('{{ url(cover) }}');"></div>
+    {% elseif tireImage %}
+      {% include 'components/picture.twig' with {
+        image: tireImage,
+        alt: imageAlt,
+        class: 'card-tire__img img-responsive',
+        sizes_preset: 'card',
+        loading: 'lazy',
+        width: 400,
+        height: 400
+      } %}
+    {% endif %}
+  </div>
+
+  {% if tagline %}
+    <div class="card__item desc-wrap">
+      <span class="card__desc">{{ tagline|raw }}</span>
+    </div>
+  {% endif %}
+
+  <div class="card__item title-wrap">
+    <span class="card__title">{{ title|raw }}</span>
+  </div>
+
+  {% if t.frame is defined and t.frame %}
+    <div class="card__item frame-wrap">
+      <span class="card__frame">{{ t.frame }}</span>
+    </div>
+  {% endif %}
+</a>

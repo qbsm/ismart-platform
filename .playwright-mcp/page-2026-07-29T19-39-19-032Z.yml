@@ -1,0 +1,403 @@
+- generic [active] [ref=f55e1]:
+  - banner [ref=f55e2]:
+    - generic [ref=f55e3]:
+      - link [ref=f55e4] [cursor=pointer]:
+        - /url: /
+        - img "Omoda Logo" [ref=f55e6]
+      - navigation [ref=f55e7]:
+        - list [ref=f55e8]:
+          - listitem [ref=f55e9]:
+            - generic [ref=f55e10] [cursor=pointer]: Models
+          - listitem [ref=f55e11]:
+            - link "Finance" [ref=f55e12] [cursor=pointer]:
+              - /url: /finance
+          - listitem [ref=f55e14]:
+            - generic [ref=f55e15] [cursor=pointer]: About
+          - listitem [ref=f55e16]:
+            - generic [ref=f55e17] [cursor=pointer]: Owners
+          - listitem [ref=f55e18]:
+            - link "Offers" [ref=f55e19] [cursor=pointer]:
+              - /url: /offers
+          - listitem [ref=f55e21]:
+            - link "Car Comparison" [ref=f55e22] [cursor=pointer]:
+              - /url: /compare
+        - generic [ref=f55e24]:
+          - link "Book a Test Drive" [ref=f55e25] [cursor=pointer]:
+            - /url: /enquire/test-drive
+            - generic [ref=f55e32]:
+              - generic [ref=f55e33]: Book a
+              - text: Test Drive
+          - link "Locate a Dealer" [ref=f55e34] [cursor=pointer]:
+            - /url: /dealers
+  - generic [ref=f55e49]:
+    - generic [ref=f55e50]: CAR COMPARISON
+    - heading "Find the perfect Omoda vehicle for you." [level=2] [ref=f55e51]
+    - generic [ref=f55e52]:
+      - combobox [ref=f55e53] [cursor=pointer]:
+        - generic [ref=f55e54]:
+          - img "Choose Model" [ref=f55e55]
+          - generic [ref=f55e56]: Choose Model
+      - combobox [ref=f55e58] [cursor=pointer]:
+        - generic [ref=f55e59]:
+          - img "Choose Model" [ref=f55e60]
+          - generic [ref=f55e61]: Choose Model
+      - combobox [ref=f55e63] [cursor=pointer]:
+        - generic [ref=f55e64]:
+          - img "Choose Model" [ref=f55e65]
+          - generic [ref=f55e66]: Choose Model
+    - generic [ref=f55e68]:
+      - img "Choose Model"
+      - img "Choose Model"
+      - img "Choose Model"
+    - generic [ref=f55e69]:
+      - generic [ref=f55e70]: "-"
+      - generic [ref=f55e72]: "-"
+      - generic [ref=f55e74]: "-"
+    - generic [ref=f55e76]:
+      - generic [ref=f55e77]:
+        - link "Explore":
+          - /url: /compare
+      - generic [ref=f55e78]:
+        - link "Explore":
+          - /url: /compare
+      - generic [ref=f55e79]:
+        - link "Explore":
+          - /url: /compare
+    - heading "Power & Drive Train" [level=1] [ref=f55e80]
+    - generic [ref=f55e81]:
+      - generic [ref=f55e82]:
+        - generic [ref=f55e83]:
+          - generic [ref=f55e84]: Engine
+          - generic [ref=f55e85]: "-"
+        - generic [ref=f55e86]:
+          - generic [ref=f55e87]: Engine
+          - generic [ref=f55e88]: "-"
+        - generic [ref=f55e89]:
+          - generic [ref=f55e90]: Engine
+          - generic [ref=f55e91]: "-"
+      - generic [ref=f55e92]:
+        - generic [ref=f55e93]:
+          - generic [ref=f55e94]: Drive Unit
+          - generic [ref=f55e95]: "-"
+        - generic [ref=f55e96]:
+          - generic [ref=f55e97]: Drive Unit
+          - generic [ref=f55e98]: "-"
+        - generic [ref=f55e99]:
+          - generic [ref=f55e100]: Drive Unit
+          - generic [ref=f55e101]: "-"
+      - generic [ref=f55e102]:
+        - generic [ref=f55e103]:
+          - generic [ref=f55e104]: Maximum Power (kW/rpm)
+          - generic [ref=f55e105]: "-"
+        - generic [ref=f55e106]:
+          - generic [ref=f55e107]: Maximum Power (kW/rpm)
+          - generic [ref=f55e108]: "-"
+        - generic [ref=f55e109]:
+          - generic [ref=f55e110]: Maximum Power (kW/rpm)
+          - generic [ref=f55e111]: "-"
+      - generic [ref=f55e112]:
+        - generic [ref=f55e113]:
+          - generic [ref=f55e114]: Maximum Torque (Nm/rpm)
+          - generic [ref=f55e115]: "-"
+        - generic [ref=f55e116]:
+          - generic [ref=f55e117]: Maximum Torque (Nm/rpm)
+          - generic [ref=f55e118]: "-"
+        - generic [ref=f55e119]:
+          - generic [ref=f55e120]: Maximum Torque (Nm/rpm)
+          - generic [ref=f55e121]: "-"
+      - generic [ref=f55e122]:
+        - generic [ref=f55e123]:
+          - generic [ref=f55e124]: Fuel Consumption (L / 100km)
+          - generic [ref=f55e125]: "-"
+        - generic [ref=f55e126]:
+          - generic [ref=f55e127]: Fuel Consumption (L / 100km)
+          - generic [ref=f55e128]: "-"
+        - generic [ref=f55e129]:
+          - generic [ref=f55e130]: Fuel Consumption (L / 100km)
+          - generic [ref=f55e131]: "-"
+      - generic [ref=f55e132]:
+        - generic [ref=f55e133]:
+          - generic [ref=f55e134]: Transmission
+          - generic [ref=f55e135]: "-"
+        - generic [ref=f55e136]:
+          - generic [ref=f55e137]: Transmission
+          - generic [ref=f55e138]: "-"
+        - generic [ref=f55e139]:
+          - generic [ref=f55e140]: Transmission
+          - generic [ref=f55e141]: "-"
+    - heading "Dimensions, Weights, & Capacities" [level=1] [ref=f55e142]
+    - generic [ref=f55e143]:
+      - generic [ref=f55e144]:
+        - generic [ref=f55e145]:
+          - generic [ref=f55e146]: Seats
+          - generic [ref=f55e147]: "-"
+        - generic [ref=f55e148]:
+          - generic [ref=f55e149]: Seats
+          - generic [ref=f55e150]: "-"
+        - generic [ref=f55e151]:
+          - generic [ref=f55e152]: Seats
+          - generic [ref=f55e153]: "-"
+      - generic [ref=f55e154]:
+        - generic [ref=f55e155]:
+          - generic [ref=f55e156]: Length (mm)
+          - generic [ref=f55e157]: "-"
+        - generic [ref=f55e158]:
+          - generic [ref=f55e159]: Length (mm)
+          - generic [ref=f55e160]: "-"
+        - generic [ref=f55e161]:
+          - generic [ref=f55e162]: Length (mm)
+          - generic [ref=f55e163]: "-"
+      - generic [ref=f55e164]:
+        - generic [ref=f55e165]:
+          - generic [ref=f55e166]: Width (mm)
+          - generic [ref=f55e167]: "-"
+        - generic [ref=f55e168]:
+          - generic [ref=f55e169]: Width (mm)
+          - generic [ref=f55e170]: "-"
+        - generic [ref=f55e171]:
+          - generic [ref=f55e172]: Width (mm)
+          - generic [ref=f55e173]: "-"
+      - generic [ref=f55e174]:
+        - generic [ref=f55e175]:
+          - generic [ref=f55e176]: Height (mm)
+          - generic [ref=f55e177]: "-"
+        - generic [ref=f55e178]:
+          - generic [ref=f55e179]: Height (mm)
+          - generic [ref=f55e180]: "-"
+        - generic [ref=f55e181]:
+          - generic [ref=f55e182]: Height (mm)
+          - generic [ref=f55e183]: "-"
+      - generic [ref=f55e184]:
+        - generic [ref=f55e185]:
+          - generic [ref=f55e186]: Fuel Capacity (L)
+          - generic [ref=f55e187]: "-"
+        - generic [ref=f55e188]:
+          - generic [ref=f55e189]: Fuel Capacity (L)
+          - generic [ref=f55e190]: "-"
+        - generic [ref=f55e191]:
+          - generic [ref=f55e192]: Fuel Capacity (L)
+          - generic [ref=f55e193]: "-"
+    - heading "Exterior" [level=1] [ref=f55e194]
+    - generic [ref=f55e196]:
+      - generic [ref=f55e197]:
+        - generic [ref=f55e198]: Wheels
+        - generic [ref=f55e199]: "-"
+      - generic [ref=f55e200]:
+        - generic [ref=f55e201]: Wheels
+        - generic [ref=f55e202]: "-"
+      - generic [ref=f55e203]:
+        - generic [ref=f55e204]: Wheels
+        - generic [ref=f55e205]: "-"
+    - heading "Interior" [level=1] [ref=f55e206]
+    - generic [ref=f55e207]:
+      - generic [ref=f55e208]:
+        - generic [ref=f55e209]:
+          - generic [ref=f55e210]: Interior Colour
+          - generic [ref=f55e211]: "-"
+        - generic [ref=f55e212]:
+          - generic [ref=f55e213]: Interior Colour
+          - generic [ref=f55e214]: "-"
+        - generic [ref=f55e215]:
+          - generic [ref=f55e216]: Interior Colour
+          - generic [ref=f55e217]: "-"
+      - generic [ref=f55e218]:
+        - generic [ref=f55e219]:
+          - generic [ref=f55e220]: Seat Material
+          - generic [ref=f55e221]: "-"
+        - generic [ref=f55e222]:
+          - generic [ref=f55e223]: Seat Material
+          - generic [ref=f55e224]: "-"
+        - generic [ref=f55e225]:
+          - generic [ref=f55e226]: Seat Material
+          - generic [ref=f55e227]: "-"
+      - generic [ref=f55e228]:
+        - generic [ref=f55e229]:
+          - generic [ref=f55e230]: Leather Steering Wheel
+          - generic [ref=f55e231]: "-"
+        - generic [ref=f55e232]:
+          - generic [ref=f55e233]: Leather Steering Wheel
+          - generic [ref=f55e234]: "-"
+        - generic [ref=f55e235]:
+          - generic [ref=f55e236]: Leather Steering Wheel
+          - generic [ref=f55e237]: "-"
+    - heading "Technology" [level=1] [ref=f55e238]
+    - generic [ref=f55e239]:
+      - generic [ref=f55e240]:
+        - generic [ref=f55e241]:
+          - generic [ref=f55e242]: Driver Cluster
+          - generic [ref=f55e243]: "-"
+        - generic [ref=f55e244]:
+          - generic [ref=f55e245]: Driver Cluster
+          - generic [ref=f55e246]: "-"
+        - generic [ref=f55e247]:
+          - generic [ref=f55e248]: Driver Cluster
+          - generic [ref=f55e249]: "-"
+      - generic [ref=f55e250]:
+        - generic [ref=f55e251]:
+          - generic [ref=f55e252]: Wireless Carplay® & Android Auto™
+          - generic [ref=f55e253]: "-"
+        - generic [ref=f55e254]:
+          - generic [ref=f55e255]: Wireless Carplay® & Android Auto™
+          - generic [ref=f55e256]: "-"
+        - generic [ref=f55e257]:
+          - generic [ref=f55e258]: Wireless Carplay® & Android Auto™
+          - generic [ref=f55e259]: "-"
+      - generic [ref=f55e260]:
+        - generic [ref=f55e261]:
+          - generic [ref=f55e262]: Intelligent Voice Commands
+          - generic [ref=f55e263]: "-"
+        - generic [ref=f55e264]:
+          - generic [ref=f55e265]: Intelligent Voice Commands
+          - generic [ref=f55e266]: "-"
+        - generic [ref=f55e267]:
+          - generic [ref=f55e268]: Intelligent Voice Commands
+          - generic [ref=f55e269]: "-"
+      - generic [ref=f55e270]:
+        - generic [ref=f55e271]:
+          - generic [ref=f55e272]: Speakers
+          - generic [ref=f55e273]: "-"
+        - generic [ref=f55e274]:
+          - generic [ref=f55e275]: Speakers
+          - generic [ref=f55e276]: "-"
+        - generic [ref=f55e277]:
+          - generic [ref=f55e278]: Speakers
+          - generic [ref=f55e279]: "-"
+    - heading "Safety" [level=1] [ref=f55e280]
+    - generic [ref=f55e281]:
+      - generic [ref=f55e282]:
+        - generic [ref=f55e283]:
+          - generic [ref=f55e284]: Anti-Skid Brake System (ABS)
+          - generic [ref=f55e285]: "-"
+        - generic [ref=f55e286]:
+          - generic [ref=f55e287]: Anti-Skid Brake System (ABS)
+          - generic [ref=f55e288]: "-"
+        - generic [ref=f55e289]:
+          - generic [ref=f55e290]: Anti-Skid Brake System (ABS)
+          - generic [ref=f55e291]: "-"
+      - generic [ref=f55e292]:
+        - generic [ref=f55e293]:
+          - generic [ref=f55e294]: Front Recovery Tow Hook
+          - generic [ref=f55e295]: "-"
+        - generic [ref=f55e296]:
+          - generic [ref=f55e297]: Front Recovery Tow Hook
+          - generic [ref=f55e298]: "-"
+        - generic [ref=f55e299]:
+          - generic [ref=f55e300]: Front Recovery Tow Hook
+          - generic [ref=f55e301]: "-"
+      - generic [ref=f55e302]:
+        - generic [ref=f55e303]:
+          - generic [ref=f55e304]: Anti-Theft Alarm
+          - generic [ref=f55e305]: "-"
+        - generic [ref=f55e306]:
+          - generic [ref=f55e307]: Anti-Theft Alarm
+          - generic [ref=f55e308]: "-"
+        - generic [ref=f55e309]:
+          - generic [ref=f55e310]: Anti-Theft Alarm
+          - generic [ref=f55e311]: "-"
+  - link [ref=f55e312] [cursor=pointer]:
+    - /url: https://wa.me/+27104429714
+  - generic [ref=f55e315]:
+    - generic [ref=f55e316]: Cookies & privacy
+    - generic [ref=f55e317]:
+      - paragraph [ref=f55e318]: We use cookies to make this site work smoothly and to improve your experience.
+      - paragraph [ref=f55e319]:
+        - text: Read our
+        - link "cookies notice" [ref=f55e320] [cursor=pointer]:
+          - /url: /legal/cookie-policy
+        - text: ","
+        - link "privacy statement (non-EU)" [ref=f55e321] [cursor=pointer]:
+          - /url: /legal/privacy-statement
+        - text: ", and"
+        - link "privacy policy" [ref=f55e322] [cursor=pointer]:
+          - /url: /legal/privacy-policy
+        - text: .
+    - generic [ref=f55e323]:
+      - button "Accept cookies" [ref=f55e324] [cursor=pointer]
+      - generic [ref=f55e325]:
+        - button "Reject non-essential" [ref=f55e326] [cursor=pointer]
+        - button "Cookie settings" [ref=f55e327] [cursor=pointer]
+  - contentinfo [ref=f55e328]:
+    - generic [ref=f55e331]:
+      - link [ref=f55e334] [cursor=pointer]:
+        - /url: /enquire/test-drive
+        - heading "Book a Test Drive" [level=3] [ref=f55e340]
+        - paragraph [ref=f55e341]: "Schedule your test drive: Sign up today"
+      - link [ref=f55e344] [cursor=pointer]:
+        - /url: /news
+        - heading "News" [level=3] [ref=f55e349]
+        - paragraph [ref=f55e350]: Stay up-to-date with the latest news
+      - link [ref=f55e353] [cursor=pointer]:
+        - /url: /dealers
+        - heading "Locate a Dealer" [level=3] [ref=f55e362]
+        - paragraph [ref=f55e363]: Find your nearest OMODA dealer
+      - link [ref=f55e366] [cursor=pointer]:
+        - /url: /offers
+        - heading "Promotions" [level=3] [ref=f55e376]
+        - paragraph [ref=f55e377]: Explore our latest promotions
+    - generic [ref=f55e379]:
+      - generic [ref=f55e381]:
+        - img "OMODA" [ref=f55e384]
+        - generic [ref=f55e385]:
+          - link "010 448 5388 (Option 3)" [ref=f55e389] [cursor=pointer]:
+            - /url: tel:0104485388
+          - link "customercare@omoda.co.za" [ref=f55e395] [cursor=pointer]:
+            - /url: mailto:customercare@omoda.co.za
+      - generic [ref=f55e396]:
+        - navigation [ref=f55e398]:
+          - link "Book a Test Drive" [ref=f55e400] [cursor=pointer]:
+            - /url: /enquire/test-drive
+          - link "Locate a Dealer" [ref=f55e402] [cursor=pointer]:
+            - /url: /dealers
+          - link "News" [ref=f55e404] [cursor=pointer]:
+            - /url: /news
+          - link "Warranty" [ref=f55e406] [cursor=pointer]:
+            - /url: /owners/warranty
+          - link "Finance" [ref=f55e408] [cursor=pointer]:
+            - /url: /finance
+          - link "Careers" [ref=f55e410] [cursor=pointer]:
+            - /url: /careers
+          - link "Car Comparison" [ref=f55e412] [cursor=pointer]:
+            - /url: /compare
+        - generic [ref=f55e413]:
+          - generic [ref=f55e414]:
+            - paragraph [ref=f55e415]: Roadside Assistance
+            - link "010 448 5388 (Option 1)" [ref=f55e419] [cursor=pointer]:
+              - /url: tel:0104485388
+            - link "086 150 5555 (AA 24 Hour Service)" [ref=f55e423] [cursor=pointer]:
+              - /url: tel:0861505555
+          - generic [ref=f55e424]:
+            - link "Omoda YouTube" [ref=f55e425] [cursor=pointer]:
+              - /url: https://www.youtube.com/@omodasouthafrica
+              - img "Omoda YouTube" [ref=f55e426]
+            - link "Omoda Twitter" [ref=f55e427] [cursor=pointer]:
+              - /url: https://twitter.com/Omoda_SA
+              - img "Omoda Twitter" [ref=f55e428]
+            - link "Omoda TikTok" [ref=f55e429] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@omodasa
+              - img "Omoda TikTok" [ref=f55e430]
+            - link "Omoda Instagram" [ref=f55e431] [cursor=pointer]:
+              - /url: https://www.instagram.com/omodasouthafrica/
+              - img "Omoda Instagram" [ref=f55e432]
+            - link "Omoda Facebook" [ref=f55e433] [cursor=pointer]:
+              - /url: https://www.facebook.com/OmodaSouthAfrica/
+              - img "Omoda Facebook" [ref=f55e434]
+      - generic [ref=f55e435]:
+        - paragraph [ref=f55e436]: We use cookies to improve your experience and tailor content. You can accept, reject non-essential cookies, or change your preferences at any time.
+        - generic [ref=f55e437]:
+          - button "Cookie settings" [ref=f55e438] [cursor=pointer]
+          - link "Cookies notice" [ref=f55e439] [cursor=pointer]:
+            - /url: /legal/cookie-policy
+      - generic [ref=f55e440]:
+        - generic [ref=f55e441]: © 2026 OMODA South Africa
+        - generic [ref=f55e442]:
+          - link "Legal Information" [ref=f55e443] [cursor=pointer]:
+            - /url: /legal
+          - link "Terms & Conditions" [ref=f55e444] [cursor=pointer]:
+            - /url: /legal/terms-and-conditions
+          - link "Privacy Policy" [ref=f55e445] [cursor=pointer]:
+            - /url: /legal/privacy-policy
+          - link "Privacy statement (non-EU)" [ref=f55e446] [cursor=pointer]:
+            - /url: /legal/privacy-statement
+          - link "Cookies notice" [ref=f55e447] [cursor=pointer]:
+            - /url: /legal/cookie-policy
+  - alert [ref=f55e448]

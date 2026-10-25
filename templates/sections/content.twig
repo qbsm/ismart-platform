@@ -1,6 +1,6 @@
 <section class="{% if data.class %}{{ data.class }}{% endif %}">
     {% for item in data.items %}
-      {% if item.content and (not item.scope or item.scope == current_scope) %}
+      {% if item.content %}
       <div class="section__item {% if item.class %}{{ item.class }}{% endif %}">
         {{ include(template_from_string(item.content)) }}
       </div>

@@ -1,5 +1,6 @@
 // JavaScript для страницы 404
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('Страница 404 загружена');
+import { onReady } from '../base/init.js';
+
+onReady(function () {
   // Код для страницы 404
 });

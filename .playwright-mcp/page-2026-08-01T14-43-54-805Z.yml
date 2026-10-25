@@ -1,0 +1,56 @@
+- generic [ref=f17e2]:
+  - generic [ref=f17e5]:
+    - paragraph [ref=f17e7] [cursor=pointer]
+    - iframe [ref=f17e70]:
+      - link [ref=f18e2] [cursor=pointer]:
+        - /url: //yandex.ru/maps/org/27859391124/reviews?utm_source=badge&utm_medium=rating&utm_campaign=v1
+    - generic [ref=f17e71]:
+      - link [ref=f17e72] [cursor=pointer]:
+        - /url: tel:+74950331616
+        - img "+7 (495) 033‑16‑16" [ref=f17e73]
+      - link [ref=f17e74] [cursor=pointer]:
+        - /url: https://yandex.com/maps/-/CPWNrNnV
+  - main [ref=f17e76]:
+    - generic [ref=f17e78]:
+      - img "34 года БорисХоф" [ref=f17e80]
+      - generic [ref=f17e81]:
+        - generic [ref=f17e82]: 25 июля · 12:00–17:00
+        - heading "Приглашаем вас на мероприятие в честь 34-летия БорисХоф!" [level=1] [ref=f17e83]
+        - paragraph [ref=f17e84]: Путешествие всей семьёй!
+        - generic [ref=f17e85]:
+          - paragraph [ref=f17e86]: Программа
+          - list [ref=f17e87]:
+            - listitem [ref=f17e88]: Тест-драйвы моделей BELGEE
+            - listitem [ref=f17e89]: Активности для всей семьи
+            - listitem [ref=f17e90]: Акции в честь дня рождения БорисХоф
+          - paragraph [ref=f17e91]: Специальные активности
+          - list [ref=f17e92]:
+            - listitem [ref=f17e93]: 13:00 и 14:00 мастер-классы для детей и взрослых
+        - paragraph [ref=f17e94]: День рождения — хороший повод сказать простое спасибо каждому, кто выбирает БорисХоф. Пройдите короткую регистрацию, чтобы мы внесли вас в список гостей.
+        - paragraph [ref=f17e95]:
+          - generic [ref=f17e96]: 📍
+          - generic [ref=f17e97]: "Адрес: р-н Ново-Переделкино, кв-л 2, д. 2, стр. 1, шоурум BELGEE"
+        - generic [ref=f17e99]:
+          - generic [ref=f17e101]:
+            - generic [ref=f17e102]: Имя *
+            - textbox "Имя *" [ref=f17e104]:
+              - /placeholder: Ваше имя
+          - generic [ref=f17e106]:
+            - generic [ref=f17e107]: Телефон *
+            - textbox "Телефон *" [ref=f17e109]:
+              - /placeholder: Телефон
+          - generic [ref=f17e111]:
+            - generic [ref=f17e112]: Хотите пройти тест-драйв? *
+            - generic [ref=f17e113] [cursor=pointer]: Выберите…
+          - generic [ref=f17e117] [cursor=pointer]:
+            - checkbox "Нажимая кнопку, соглашаюсь с политикой обработки персональных данных" [ref=f17e118]
+            - generic [ref=f17e120]:
+              - text: Нажимая кнопку, соглашаюсь с
+              - link "политикой обработки персональных данных" [ref=f17e121]:
+                - /url: https://borishof.ru/legal/personal-information/
+          - button [disabled] [ref=f17e122]:
+            - paragraph [ref=f17e123]: Зарегистрироваться
+  - contentinfo [ref=f17e124]:
+    - generic [ref=f17e125]:
+      - button "Подробные условия акции" [ref=f17e126] [cursor=pointer]
+      - generic [ref=f17e127]: Права на сайт принадлежат ООО «БОРИСХОФ ХОЛДИНГ» (ИНН 7714700709, ОГРН 5077746977930) 123290, Россия, г. Москва, 2-я Магистральная ул., д. 18, стр. 22, ООО «БОРИСХОФ ХОЛДИНГ», ИНН 7714700709, ОГРН 5077746977930, +74951536873, info@borishof.ru

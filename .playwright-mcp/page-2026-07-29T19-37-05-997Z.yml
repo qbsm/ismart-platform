@@ -1,0 +1,313 @@
+- generic [ref=f49e3]:
+  - link [ref=f49e4] [cursor=pointer]:
+    - /url: " https://wa.me/0097180066632"
+  - generic [ref=f49e6]:
+    - link [ref=f49e7] [cursor=pointer]:
+      - /url: /uae/
+      - img "logo" [ref=f49e8]
+    - navigation [ref=f49e9]:
+      - generic:
+        - link:
+          - /url: /uae/afterSales
+      - generic:
+        - link:
+          - /url: /uae/bookService
+      - generic:
+        - link:
+          - /url: /uae/brand
+      - generic:
+        - link:
+          - /url: /uae/cookieNotice
+      - generic:
+        - link:
+          - /url: /uae/testDriveStatement
+      - generic:
+        - link:
+          - /url: /uae/crossBorder
+      - generic:
+        - link:
+          - /url: /uae/c5
+      - generic:
+        - link:
+          - /url: /uae/c7
+      - generic:
+        - link:
+          - /url: /uae/j5
+      - generic:
+        - link:
+          - /url: /uae/j7
+      - generic:
+        - link:
+          - /url: /uae/j7shs
+      - generic:
+        - link:
+          - /url: /uae/j8
+      - generic:
+        - link:
+          - /url: /uae/j8shs
+      - generic:
+        - link:
+          - /url: /uae/newContactUs
+      - generic:
+        - link:
+          - /url: /uae/promos
+      - generic:
+        - link:
+          - /url: /uae/shs
+      - generic:
+        - link:
+          - /url: /uae/testDrive
+      - generic:
+        - link:
+          - /url: /uae/error
+      - list [ref=f49e10]:
+        - listitem [ref=f49e11]:
+          - generic [ref=f49e12] [cursor=pointer]: ABOUT US
+        - listitem [ref=f49e14]:
+          - generic [ref=f49e15] [cursor=pointer]: MODELS
+        - listitem [ref=f49e17]:
+          - generic [ref=f49e18] [cursor=pointer]: TECHNOLOGY
+        - listitem [ref=f49e20]:
+          - generic [ref=f49e21] [cursor=pointer]: SERVICE
+        - listitem [ref=f49e23]:
+          - generic [ref=f49e24] [cursor=pointer]: OFFERS
+        - listitem [ref=f49e26]:
+          - generic [ref=f49e27] [cursor=pointer]: CONTACT US
+    - generic [ref=f49e29]:
+      - generic [ref=f49e30] [cursor=pointer]:
+        - img "Test Drive" [ref=f49e31]
+        - generic [ref=f49e32]: TEST DRIVE
+      - generic [ref=f49e36] [cursor=pointer]:
+        - generic:
+          - combobox [ref=f49e38]
+          - generic [ref=f49e39]: عربي
+  - generic [ref=f49e44]:
+    - generic [ref=f49e46]:
+      - generic [ref=f49e48]:
+        - heading [level=1] [ref=f49e49]
+        - heading "Sporty. Smart. Diamond-styled. A compact SUV built for the future." [level=5] [ref=f49e50]
+      - generic [ref=f49e52]:
+        - generic [ref=f49e53]: Starting from
+        - generic [ref=f49e54]: AED 69,900
+      - generic [ref=f49e55]:
+        - button "Test Drive" [ref=f49e56]
+        - button "Get A Quote" [ref=f49e57]
+    - generic [ref=f49e61]:
+      - generic [ref=f49e63]:
+        - heading "STYLE REDEFINED. TECH ENHANCED. YOUR CITY, ELEVATED" [level=2] [ref=f49e64]
+        - heading "Introducing the Omoda C5, the crossover SUV designed for dynamic urban living. It's a bold extension of your personal style, skillfully combining eye-catching design with technologically advanced features to redefine and elevate your city driving experience." [level=5] [ref=f49e65]
+      - button "Watch Video" [ref=f49e66]
+    - generic [ref=f49e71]:
+      - heading "ART IN MOTION" [level=2] [ref=f49e72]
+      - heading "The Omoda C5 is Art In Motion, a captivating blend of urban aesthetics and dynamic design. Its commanding Star Diamond Grille, sporty 18\" two-tone alloy wheels, sleek dynamic fastback bodywork, and distinctive floating roof design unite to create an unforgettable, stylish presence on every road." [level=5] [ref=f49e73]
+    - generic [ref=f49e74]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - group "8 / 9"
+              - group "9 / 9"
+              - group "1 / 9"
+              - group "2 / 9"
+              - group "3 / 9"
+              - group "4 / 9"
+              - group "5 / 9"
+              - group "6 / 9"
+              - group "7 / 9"
+      - generic [ref=f49e75]:
+        - generic [ref=f49e78]:
+          - generic [ref=f49e79] [cursor=pointer]: Striking Urban Design
+          - generic [ref=f49e80] [cursor=pointer]: Advanced Intelligent Technology
+          - generic [ref=f49e81] [cursor=pointer]: Dynamic & Sporty Performance
+        - generic [ref=f49e83]:
+          - paragraph [ref=f49e84]: Be Noticed Wherever You Go
+          - paragraph [ref=f49e85]: The Omoda C5 sculpts a unique presence, defining urban aesthetics with captivating style. Its bold Star Diamond Grille, aerodynamic fastback bodywork, and signature floating roof design unite to command attention and make an undeniable stylish statement on every road.
+    - generic [ref=f49e91]:
+      - heading "DYNAMIC COCKPIT. INTUITIVE COMMAND." [level=2] [ref=f49e92]
+      - heading "The Omoda C5's driver-centric cabin, with its intelligent layout and premium finishes, fosters immediate connection by placing every control within natural reach, creating a technologically advanced and exhilarating environment that invites engagement." [level=5] [ref=f49e93]
+    - generic [ref=f49e95]:
+      - generic [ref=f49e97]:
+        - heading "Sport bucket seats" [level=3] [ref=f49e98]
+        - heading "Designed for dynamic driving, the Sport Bucket Seats offer exceptional support and comfort, enhancing the cockpit's engaging, performance-oriented feel." [level=5]
+      - generic [ref=f49e99]:
+        - generic [ref=f49e101]:
+          - heading "Dual 12.3-inch Digital Displays" [level=3] [ref=f49e102]
+          - heading "Gain intuitive control and unparalleled clarity with the seamlessly integrated Dual 12.3-inch Instrument Cluster and Touchscreen Infotainment System, centralizing all driving information and entertainment." [level=5]
+        - generic [ref=f49e104]:
+          - heading "Immersive 8-Speaker Sony Sound System" [level=3] [ref=f49e105]
+          - heading "Transform your drives with the premium 8-Speaker Sony Sound System, delivering rich, crystal-clear audio for an immersive, concert-like experience." [level=5]
+    - generic [ref=f49e108]:
+      - heading "SMART TECHNOLOGIES" [level=2] [ref=f49e109]
+      - 'heading "The tech interior of the new OMODA has many advanced features: 2 high-resolution dual screens of 12.3\" each, multi-color atmospheric interior lighting, wireless charging, high-quality acoustics and much more." [level=5] [ref=f49e110]'
+    - generic [ref=f49e113]:
+      - generic:
+        - group "1 / 2" [ref=f49e114]:
+          - generic [ref=f49e116]:
+            - generic [ref=f49e117]: Performance and environmental friendliness
+            - generic [ref=f49e118]: The maximum power of the 1.6 Turbo engine is 197 hp, the maximum torque is 290 Nm.
+        - group "2 / 2":
+          - generic: Intelligent ADAS systems
+    - generic [ref=f49e131]:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - group "8 / 9"
+              - group "9 / 9"
+              - group "1 / 9"
+              - group "2 / 9"
+              - group "3 / 9"
+              - group "4 / 9"
+              - group "5 / 9"
+              - group "6 / 9"
+              - group "7 / 9"
+      - generic [ref=f49e132]:
+        - generic [ref=f49e135]:
+          - generic [ref=f49e136] [cursor=pointer]: 5-Star ANCAP and Euro NCAP Ratings
+          - generic [ref=f49e137] [cursor=pointer]: Reinforced with 78% High-Strength Steel
+          - generic [ref=f49e138] [cursor=pointer]: Comprehensive ADAS Suite
+        - paragraph [ref=f49e141]: The Omoda C5 has earned top 5-Star safety ratings from both ANCAP and Euro-NCAP, two of the world's most stringent independent crash test authorities. This global recognition underscores its exceptional structural integrity and occupant protection.
+    - generic [ref=f49e142]:
+      - generic [ref=f49e143]:
+        - heading "OMODA C5 SPECS" [level=2] [ref=f49e144]
+        - generic [ref=f49e145]:
+          - generic [ref=f49e147] [cursor=pointer]: Comfort
+          - generic [ref=f49e148] [cursor=pointer]: Luxury
+          - generic [ref=f49e149] [cursor=pointer]: Sport
+      - generic [ref=f49e151]:
+        - heading "Powertrain" [level=5] [ref=f49e152]
+        - generic [ref=f49e153]:
+          - generic [ref=f49e154]:
+            - generic [ref=f49e155]: Drivetrain
+            - generic [ref=f49e156]: Front Wheel Drive
+          - generic [ref=f49e157]:
+            - generic [ref=f49e158]: Engine Type
+            - generic [ref=f49e159]: 1.5T
+          - generic [ref=f49e160]:
+            - generic [ref=f49e161]: Transmission
+            - generic [ref=f49e162]: CVT
+          - generic [ref=f49e163]:
+            - generic [ref=f49e164]: Max Power (hp)
+            - generic [ref=f49e165]: "156"
+          - generic [ref=f49e166]:
+            - generic [ref=f49e167]: Max Torque (Nm)
+            - generic [ref=f49e168]: "230"
+          - generic [ref=f49e169]:
+            - generic [ref=f49e170]: Maximum Speed (km/h)
+            - generic [ref=f49e171]: "180"
+      - generic [ref=f49e173]:
+        - heading "Dimensions" [level=5] [ref=f49e174]
+        - generic [ref=f49e175]:
+          - generic [ref=f49e176]:
+            - generic [ref=f49e177]: Length(mm)
+            - generic [ref=f49e178]: 4,400
+          - generic [ref=f49e179]:
+            - generic [ref=f49e180]: Width(mm)
+            - generic [ref=f49e181]: 1,830
+          - generic [ref=f49e182]:
+            - generic [ref=f49e183]: Height(mm)
+            - generic [ref=f49e184]: 1,588
+          - generic [ref=f49e185]:
+            - generic [ref=f49e186]: Wheelbase(mm)
+            - generic [ref=f49e187]: 2,630
+          - generic [ref=f49e188]:
+            - generic [ref=f49e189]: Fuel Capacity(l)
+            - generic [ref=f49e190]: "51"
+      - generic [ref=f49e193]:
+        - heading "Chassis" [level=5] [ref=f49e194]
+        - generic [ref=f49e195]:
+          - generic [ref=f49e196]:
+            - generic [ref=f49e197]: Suspension
+            - generic [ref=f49e198]: "Front: McPherson / Rear: Torsion Beam"
+          - generic [ref=f49e199]:
+            - generic [ref=f49e200]: Brake
+            - generic [ref=f49e201]: "Front: Ventilated disc / Rear: Solid disc"
+          - generic [ref=f49e202]:
+            - generic [ref=f49e203]: Wheels & Tires
+            - generic [ref=f49e204]: 215/60 R17
+      - generic [ref=f49e207]:
+        - heading "Advanced Driver Assistance System & Safety" [level=5] [ref=f49e208]
+        - generic [ref=f49e209]:
+          - generic [ref=f49e210]:
+            - generic [ref=f49e211]: Airbags
+            - generic [ref=f49e212]: "4"
+          - generic [ref=f49e213]:
+            - generic [ref=f49e214]: 360° Hd Panoramic Camera+Under Chassis View
+            - generic [ref=f49e215]: Rear Camera
+          - generic [ref=f49e216]:
+            - generic [ref=f49e217]: Advanced Driver Assistance System & Safety
+            - generic [ref=f49e218]: "-"
+      - generic [ref=f49e221]:
+        - heading "Comfort & Convenience" [level=5] [ref=f49e222]
+        - generic [ref=f49e223]:
+          - generic [ref=f49e224]:
+            - generic [ref=f49e225]: Heated And Ventilated Seats
+            - generic [ref=f49e226]: "-"
+          - generic [ref=f49e227]:
+            - generic [ref=f49e228]: Wireless Apple CarPlay&Android Auto
+            - generic [ref=f49e229]: With
+          - generic [ref=f49e230]:
+            - generic [ref=f49e231]: Instrument Cluster&Infotainment
+            - generic [ref=f49e232]: 10.25-Inch Display
+          - generic [ref=f49e233]:
+            - generic [ref=f49e234]: Speakers
+            - generic [ref=f49e235]: "6"
+          - generic [ref=f49e236]:
+            - generic [ref=f49e237]: Intelligent Voice Control
+            - generic [ref=f49e238]: With
+          - generic [ref=f49e239]:
+            - generic [ref=f49e240]: Sunroof
+            - generic [ref=f49e241]: "-"
+          - generic [ref=f49e242]:
+            - generic [ref=f49e243]: Seat Material
+            - generic [ref=f49e244]: Leather
+  - generic [ref=f49e246]:
+    - generic [ref=f49e247]:
+      - generic [ref=f49e248]:
+        - generic [ref=f49e249]: Models
+        - generic [ref=f49e250]:
+          - generic [ref=f49e251] [cursor=pointer]: OMODA C5
+          - generic [ref=f49e252] [cursor=pointer]: OMODA C7
+          - generic [ref=f49e253] [cursor=pointer]: JAECOO J5
+          - generic [ref=f49e254] [cursor=pointer]: JAECOO J7
+          - generic [ref=f49e255] [cursor=pointer]: JAECOO J7 SHS
+          - generic [ref=f49e256] [cursor=pointer]: JAECOO J8
+          - generic [ref=f49e257] [cursor=pointer]: JAECOO J8 SHS
+      - generic [ref=f49e258]:
+        - generic [ref=f49e259]: Service
+        - generic [ref=f49e260]:
+          - generic [ref=f49e261] [cursor=pointer]: Service Policy
+          - generic [ref=f49e262] [cursor=pointer]: Book Service
+    - generic [ref=f49e263]:
+      - generic [ref=f49e264]:
+        - img "logo" [ref=f49e265]
+        - generic [ref=f49e266]:
+          - generic [ref=f49e267] [cursor=pointer]: Privacy & Legal
+          - generic [ref=f49e268] [cursor=pointer]: Cookies
+      - generic:
+        - link "logo":
+          - /url: https://www.tiktok.com/@omodajaecoouae
+          - img "logo"
+        - img "logo"
+        - img "logo"
+        - link "logo":
+          - /url: https://www.youtube.com/@OMODAJAECOOAE
+          - img "logo"
+        - link "logo":
+          - /url: https://www.linkedin.com/company/omoda-jaecoo-uae
+          - img "logo"
+  - generic [ref=f49e280]:
+    - paragraph [ref=f49e281]: Privacy Preference Center
+    - paragraph [ref=f49e282]:
+      - text: We place cookies in order to make sure our website works properly and to improve your browsing experience, to streamline and personalize our marketing content and to show you personalized advertisements (including on third party websites). We sometimes share cookie data with our partners for these purposes. Our cookies remember your settings and the data you fill out on forms on our website and analyse traffic to our website. Our cookies also register how you found us and collect information about your browsing habits. You can read more about our use of cookies in our
+      - link "Cookie Notice" [ref=f49e283] [cursor=pointer]:
+        - /url: /uae/cookieNotice
+      - text: .
+    - generic [ref=f49e284]:
+      - link "COOKIE SETTINGS" [ref=f49e285] [cursor=pointer]:
+        - /url: "javascript:"
+      - generic [ref=f49e286]:
+        - link "REJECT ALL" [ref=f49e287] [cursor=pointer]:
+          - /url: "javascript:"
+        - link "ACCEPT ALL" [ref=f49e288] [cursor=pointer]:
+          - /url: "javascript:"

@@ -1,0 +1,47 @@
+<article class="card-dealer" {% if item.location is defined %}data-location="{{ item.location }}"{% endif %}>
+  <div class="card-dealer__item title-wrap">
+    {% set guaranteeData = item.guarantee | default({}) %}
+    {% set bshmData = item.bshm | default({}) %}
+    {% set guaranteeVisible = guaranteeData.visible | default(false) %}
+    {% set guaranteeTitle = guaranteeData.title | default('Расширенная гарантия') %}
+    {% set bshmVisible = bshmData.visible | default(false) %}
+    {% set bshmTitle = bshmData.title | default('Бесплатный шиномонтаж') %}
+    {% if item.name is defined %}
+      <h3 class="card__title font-2 weight-600">{{ item.name | raw }}</h3>
+    {% endif %}
+    <div class="card-dealer__subitem badges-wrap">
+      {% if bshmVisible %}
+        <span class="card-dealer__badge" data-filter="bshm">{{ bshmTitle }}</span>
+      {% endif %}
+      {% if guaranteeVisible %}
+        <span class="card-dealer__badge" data-filter="guarantee">{{ guaranteeTitle }}</span>
+      {% endif %}
+    </div>
+    {% if item.address is defined %}
+      <div class="card-dealer__subitem address-wrap opacity-80">{{ item.address | raw }}</div>
+    {% endif %}
+  </div>
+
+  {% set phones = item.phones | default([]) %}
+  {% for phone in phones %}
+    {% set phoneTitle = phone.title | default('') %}
+    {% set phoneHref = phone.href | default('') %}
+    {% if phoneTitle and phoneHref %}
+      <div class="card-dealer__item opacity-80">
+        <div class="link-wrap">
+          <a href="tel:{{ phoneHref|replace({'tel:': ''}) }}" class="link link-a font-1-demi nowrap">{{ phoneTitle | raw }}</a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% set siteTitle = item.site.title | default(item.site | default('')) %}
+  {% set siteHref = item.site.href | default(item.site_href | default('')) %}
+  {% if siteTitle and siteHref %}
+    <div class="card-dealer__item opacity-80">
+      <div class="link-wrap">
+        <a href="{{ siteHref }}" target="_blank" rel="noopener noreferrer" class="link link-a nowrap">{{ siteTitle | raw }}</a>
+      </div>
+    </div>
+  {% endif %}
+</article>

@@ -4,234 +4,55 @@
       "title": "Русский",
       "code": "ru",
       "direction": "ltr"
-    },
-    {
-      "title": "English",
-      "code": "en",
-      "direction": "ltr"
     }
   ],
-  "phones": [
-    {
-      "title": "+7 (000) 000-00-00",
-      "href": "tel:+70000000000"
-    }
-  ],
+  "phones": [],
   "nav": {
     "ru": {
       "items": [
-        {
-          "title": "Главная",
-          "href": "/"
-        },
-        {
-          "title": "Услуги",
-          "href": "/services/"
-        },
-        {
-          "title": "Контакты",
-          "href": "/contacts/"
-        }
-      ]
-    },
-    "en": {
-      "items": [
-        {
-          "title": "Home",
-          "href": "/"
-        },
-        {
-          "title": "Services",
-          "href": "/services/"
-        },
-        {
-          "title": "Contacts",
-          "href": "/contacts/"
-        }
+        { "title": "Главная", "href": "/" }
       ]
     }
   },
-  "email": {
-    "title": "info@example.com",
-    "href": "mailto:info@example.com"
-  },
+  "email": "",
   "logo": {
-    "black": {
-      "src": "data/img/ui/logo-dark.svg",
-      "alt": "Logo"
+    "alt": "Site Name",
+    "horizontal": {
+      "white": { "src": "data/img/ui/logos/logo-h-color-1.svg", "alt": "Logo" },
+      "black": { "src": "data/img/ui/logos/logo-h-color-2.svg", "alt": "Logo" }
     },
-    "white": {
-      "src": "data/img/ui/logo-light.svg",
-      "alt": "Logo"
+    "vertical": {
+      "white": { "src": "data/img/ui/logos/logo-v-color-1.svg", "alt": "Logo" },
+      "black": { "src": "data/img/ui/logos/logo-v-color-2.svg", "alt": "Logo" }
     }
-  },
-  "address": {
-    "ru": [
-      {
-        "title": "Москва, ул. Примерная, д. 1",
-        "href": "#"
-      }
-    ],
-    "en": [
-      {
-        "title": "Moscow, Example st., 1",
-        "href": "#"
-      }
-    ]
   },
   "socials": [],
   "socials-headings": {
-    "ru": "Подписывайтесь на нас",
-    "en": "Follow us"
+    "ru": "Мы в социальных сетях"
   },
   "policy": {
     "ru": {
-      "title": "Политика в отношении обработки персональных данных",
+      "title": "Политика конфиденциальности",
       "href": "/policy/"
-    },
-    "en": {
-      "title": "Privacy Policy",
-      "href": "/policy/"
-    }
-  },
-  "agree": {
-    "ru": {
-      "title": "Пользовательское соглашение",
-      "href": "/agree/"
-    },
-    "en": {
-      "title": "User Agreement",
-      "href": "/agree/"
-    }
-  },
-  "blog": {
-    "ru": {
-      "title": "Блог",
-      "href": "/blog/"
     }
   },
   "copyright": {
-    "ru": "Все права защищены",
-    "en": "All rights reserved"
-  },
-  "header": {
-    "lang-switch": {
-      "icon": {
-        "src": "data/img/ui/icons/icon-triangle-down.svg"
-      }
-    }
+    "ru": "© Site Name"
   },
   "form-callback": {
     "placeholder": {
-      "ru": {
-        "phone": "+7 ( _ _ _ ) _ _ _ - _ _ - _ _",
-        "name": "Ваше имя",
-        "square": "Площадь участка"
-      },
-      "en": {
-        "phone": "+1 ( _ _ _ ) _ _ _ - _ _ _ _",
-        "name": "Your name",
-        "square": "Area in square meters"
-      }
-    },
-    "label": {
-      "ru": {
-        "policy": "Принять конфиденциальность"
-      },
-      "en": {
-        "policy": "Accept privacy policy"
-      }
-    },
-    "rules": {
-      "ru": {
-        "policy": "Нажимая на кнопку, вы даете согласие на обработку персональных данных."
-      },
-      "en": {
-        "policy": "By clicking the button, you agree to the processing of personal data."
-      }
-    },
-    "error": {
-      "ru": {
-        "name_required": "Пожалуйста, укажите ваше имя",
-        "name_min_length": "Имя должно содержать не менее 2 символов",
-        "phone_required": "Пожалуйста, укажите номер телефона",
-        "phone_invalid": "Неверный формат номера телефона",
-        "square_required": "Пожалуйста, укажите площадь участка",
-        "policy_required": "Необходимо согласиться с политикой конфиденциальности",
-        "form_errors": "Пожалуйста, исправьте ошибки в форме",
-        "invalid_method": "Недопустимый метод запроса",
-        "success": "Ваша заявка успешно отправлена!",
-        "success_title": "Спасибо за заявку!",
-        "success_text": "Мы свяжемся с вами в ближайшее время",
-        "server_error": "Произошла ошибка при отправке формы",
-        "response_error": "Произошла ошибка при обработке ответа сервера",
-        "connection_error": "Ошибка соединения с сервером"
-      },
-      "en": {
-        "name_required": "Please enter your name",
-        "name_min_length": "Name should be at least 2 characters",
-        "phone_required": "Please enter your phone number",
-        "phone_invalid": "Invalid phone number format",
-        "square_required": "Please specify the area",
-        "policy_required": "You must agree to the privacy policy",
-        "form_errors": "Please correct the errors in the form",
-        "invalid_method": "Invalid request method",
-        "success": "Your request has been successfully sent!",
-        "success_title": "Thank you for your request!",
-        "success_text": "We will contact you shortly",
-        "server_error": "An error occurred while submitting the form",
-        "response_error": "An error occurred while processing the server response",
-        "connection_error": "Server connection error"
-      }
-    },
-    "button": {
-      "ru": {
-        "title": "Получить консультацию"
-      },
-      "en": {
-        "title": "Get a consultation"
-      }
-    },
-    "link": {
-      "ru": {
-        "title": "Политика конфиденциальности"
-      },
-      "en": {
-        "title": "Privacy Policy"
-      }
-    }
-  },
-  "icons": {
-    "cup": {
-      "white": {
-        "src": "data/img/ui/icons/icon-cup-light.svg",
-        "alt": "Cup"
-      },
-      "black": {
-        "src": "data/img/ui/icons/icon-cup-dark.svg",
-        "alt": "Cup"
-      }
-    }
-  },
-  "accordion": {
-    "show-all": {
-      "ru": "Показать все",
-      "en": "Show all"
+      "name": "Имя",
+      "phone": "Телефон",
+      "email": "E-mail",
+      "message": "Сообщение"
     }
   },
   "cookie-panel": {
     "ru": {
-      "desc": "Наш сайт использует файлы cookie для улучшения работы сайта — <a href='/policy/' class='link link-color-2 font-1-normal'>подробнее</a>.",
+      "desc": "Мы используем cookie и Яндекс.Метрику, чтобы сайт работал и мы понимали, как им пользуются. Они включаются только с вашего согласия. Подробнее — в <a href='/cookies-policy/' class='link color-2 weight-400'>политике использования cookie</a>.",
       "button": {
-        "title": "Принимаю",
-        "class": "button button-sm button-outline-color-2 button-animated animation-shift uppercase link nowrap js-cookie"
-      }
-    },
-    "en": {
-      "desc": "Our website uses cookies to improve the site's performance — <a href='/en/policy/' class='link link-color-2 font-1-normal'>learn more</a>.",
-      "button": {
-        "title": "Accept",
-        "class": "button button-sm button-outline-color-2 button-animated animation-shift uppercase link nowrap js-cookie"
+        "title": "Принять",
+        "class": "button button-sm outline-color-2 button-animated animation-shift uppercase link nowrap js-cookie"
       }
     }
   }

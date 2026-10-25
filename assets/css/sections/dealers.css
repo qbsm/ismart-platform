@@ -1,0 +1,59 @@
+.dealers .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dealers .section__item.heading-wrap {
+  margin-bottom: 0.5rem;
+}
+
+.dealers .filter-group.select-wrap {
+  min-width: 16rem;
+}
+
+.dealers .section__item.map-wrap {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 0.1rem solid var(--color-4);
+}
+
+.dealers .map {
+  width: 100%;
+  height: 34rem;
+  border: 0;
+  display: block;
+
+  @media (--lg) {
+    height: 44rem;
+  }
+}
+
+.dealers .map__placemark {
+  display: none;
+}
+
+.dealers .section__item.cards-wrap {
+  display: grid;
+  gap: 1rem;
+
+  @media (--md) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (--lg) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+.dealers .card-wrap.hidden {
+  display: none;
+}
+
+.card-dealer-balloon {
+  min-width: 24rem;
+  max-width: 32rem;
+  border-color: transparent;
+}

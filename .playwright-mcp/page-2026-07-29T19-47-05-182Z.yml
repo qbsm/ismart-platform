@@ -1,0 +1,255 @@
+- generic [active] [ref=f65e1]:
+  - generic:
+    - generic:
+      - button "close popup button":
+        - img "close popup button"
+      - generic:
+        - heading "DOWNLOAD E-BROCHURE" [level=3]
+        - generic:
+          - generic:
+            - link "JAECOO J7 E-BROCHURE ":
+              - /url: /themes/demo/assets/brochure/J7_brochure_website.pdf
+            - link "OMODA C9 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/C9_Brochure.pdf
+            - link "JAECOO J7PHEV E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J7_PHEV_Brochure.pdf
+            - link "JAECOO J8 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J8_Brochure.pdf
+            - link "JAECOO J5 E-BROCHURE ":
+              - /url: /themes/demo/assets/pdf/J5_Brochure.pdf
+  - generic:
+    - generic:
+      - button "close popup button":
+        - img "close popup button"
+      - generic:
+        - generic:
+          - heading "Terms and Conditions" [level=3]
+          - paragraph: (OMODA & JAECOO Malaysia Professional Affiliate Programme)
+        - list:
+          - listitem: The list of eligible organisations, associations, institutions and/or corporation is subject to change at the sole discretion of JAECOO Auto Malaysia Sdn Bhd (“JAMSB”).
+          - listitem: In the case of an eligible corporation, the vehicle purchased must be registered under the company name.
+          - listitem: In the case of an eligible individual, the vehicle purchased must be registered under the individual's name or that of his immediate family member (spouse, parents or children).
+          - listitem: Registration under immediate family member will require documentation proof such as marriage certificate or birth certificate, whichever applicable.
+          - listitem: Customer shall submit all required documentations to JAMSB's authorised dealers, failing which the application will not be processed by JAMSB.
+          - listitem: Eligible customer shall only be entitled to all the benefits or the purchase of brand-new OMODA & JAECOO vehicle from JAMSB's authorised dealers.
+          - listitem: The applicability, computation and allowances of the benefits in each purchase shall be subject to approval by JAMSB at its absolute discretion.
+          - listitem: All decisions made by JAMSB are final and no appeals or discussions will be entertained.
+          - listitem: JAMSB reserves the right to terminate the Professional Affiliate Programme at any time without prior notice.
+          - listitem: By submitting the application to JAMSB's authorised dealers, the customer affirms that he has read, understood, and agreed to the policies in JAMSB's Privacy Policy and consent to his personal data being processed and used by JAMSB as stipulated in the said Privacy Policy in OMODA & JAECOO official website.
+          - listitem: Only cars manufactured in 2026 are eligible for PAP.
+          - listitem: These Terms and Conditions may be amended, replaced and/or deleted at any time in JAMSB's sole discretion.
+  - navigation [ref=f65e2]:
+    - link "Website Logo" [ref=f65e5] [cursor=pointer]:
+      - /url: /
+    - generic [ref=f65e33]:
+      - link "Models" [ref=f65e35] [cursor=pointer]:
+        - /url: "#"
+      - link "Services" [ref=f65e37] [cursor=pointer]:
+        - /url: "#"
+      - link "Super Hybrid System" [ref=f65e39] [cursor=pointer]:
+        - /url: /super-hybrid-system
+      - link "Book a Test Drive" [ref=f65e41] [cursor=pointer]:
+        - /url: /test-drive
+      - link "Dealer Locator" [ref=f65e43] [cursor=pointer]:
+        - /url: /dealer-locator
+      - link "About Us" [ref=f65e45] [cursor=pointer]:
+        - /url: /about-us
+      - link "Contact Us" [ref=f65e47] [cursor=pointer]:
+        - /url: /contact-us
+      - link "News & Events" [ref=f65e49] [cursor=pointer]:
+        - /url: /news-events
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - button "JAECOO"
+              - button "OMODA"
+            - generic:
+              - link "J5":
+                - /url: /modelj5
+              - link "J7":
+                - /url: /modelj7
+              - link "J7 PHEV":
+                - /url: /modelj7phev
+              - link "J8":
+                - /url: /modelj8
+          - generic:
+            - link "Download E-Brochure":
+              - /url: "#"
+            - link "Book A Test Drive":
+              - /url: /test-drive
+            - link "Coming Soon Car Loan Calculator":
+              - /url: "#"
+              - text: Coming Soon
+              - generic: Car Loan Calculator
+      - generic:
+        - generic:
+          - generic:
+            - link "Overview":
+              - /url: /services
+            - link "Insurance":
+              - /url: /insurance
+            - link "Warranty":
+              - /url: /warranty
+            - link "PHEV Calculator":
+              - /url: /j7phev-calculator
+  - generic [ref=f65e50]:
+    - generic [ref=f65e52]:
+      - img "J8 Banner" [ref=f65e53]
+      - generic [ref=f65e54]:
+        - generic [ref=f65e55]:
+          - img "J8 Banner Masthead" [ref=f65e56]
+          - link "BOOK A TEST DRIVE " [ref=f65e58] [cursor=pointer]:
+            - /url: /test-drive
+        - img "J8 Banner Masthead" [ref=f65e60]
+    - generic [ref=f65e61]:
+      - img "A side view of a JAECOO J8" [ref=f65e62]
+      - generic [ref=f65e63]:
+        - generic [ref=f65e64]:
+          - img "An icon of a battery with a lightning bolt symbolizes horsepower, representing the power and durability of a new JAECOO premium off-road SUV." [ref=f65e65]
+          - generic [ref=f65e66]:
+            - heading "Seating Configuration" [level=4] [ref=f65e67]
+            - generic [ref=f65e68]: "-Seater"
+            - heading "for AWD*" [level=4] [ref=f65e70]
+        - generic [ref=f65e71]:
+          - img "A white speedometer icon with the needle pointing to the left side represents the torque feature of the JAECOO premium off-road performance." [ref=f65e72]
+          - generic [ref=f65e73]:
+            - heading "Power" [level=4] [ref=f65e74]
+            - generic [ref=f65e75]: kW
+        - generic [ref=f65e77]:
+          - img "A diagram showcasing the new premium off-road SUV's wheelbase featuring four wheels, connected axles, and a central driveshaft to highlight JAECOO's premium off-road performance." [ref=f65e78]
+          - generic [ref=f65e79]:
+            - heading "Torque" [level=4] [ref=f65e80]
+            - generic [ref=f65e81]: Nm
+        - generic [ref=f65e83]:
+          - img "A double-headed arrow pointing up and down on a black background symbolizes the dynamic capabilities of JAECOO's new premium off-road SUV, specifically highlighting its ground clearance—the distance from the ground to the bottom of the car." [ref=f65e84]
+          - generic [ref=f65e85]:
+            - heading "Wheelbase" [level=4] [ref=f65e86]
+            - generic [ref=f65e87]: mm
+    - generic [ref=f65e91]:
+      - heading "OFF ROAD FIRST CLASS" [level=1] [ref=f65e94]
+      - generic [ref=f65e96]:
+        - heading "Intelligent All-wheel Drive System" [level=4] [ref=f65e97]
+        - paragraph [ref=f65e98]: TORQUE VECTORING is an all-wheel drive system with two clutches that distribute torque between the rear wheels independently. Increases cross-country ability, improves handling in corners.
+      - generic [ref=f65e100]:
+        - heading "CDC Adaptive Suspension" [level=4] [ref=f65e101]
+        - paragraph [ref=f65e102]: Suspension with electronic shock absorber stiffness control. Automatically adapts to road conditions, providing comfort and stability on any surface.
+    - text: prev next
+    - generic [ref=f65e126]:
+      - img "Car" [ref=f65e128]
+      - generic [ref=f65e129]:
+        - slider [ref=f65e131]: "1"
+        - paragraph [ref=f65e137]: Olive Grey
+    - generic [ref=f65e138]:
+      - generic [ref=f65e139]: Your browser does not support the video tag.
+      - generic:
+        - button "Mute video" [ref=f65e142] [cursor=pointer]
+        - button [ref=f65e144] [cursor=pointer]
+    - generic [ref=f65e146]:
+      - heading "GALLERY" [level=2] [ref=f65e148]
+      - generic [ref=f65e149]:
+        - generic [ref=f65e150]:
+          - group "1 / 4" [ref=f65e151]:
+            - img "Gallery Image 1" [ref=f65e152]
+          - group "2 / 4" [ref=f65e153]:
+            - img "Gallery Image 1" [ref=f65e154]
+          - group "3 / 4" [ref=f65e155]:
+            - img "Gallery Image 1" [ref=f65e156]
+          - group "4 / 4" [ref=f65e157]:
+            - img "Gallery Image 1" [ref=f65e158]
+        - text: prev next
+    - generic [ref=f65e160]:
+      - heading "Experience the Drive with JAECOO J8" [level=2] [ref=f65e161]
+      - generic [ref=f65e162]:
+        - link "Book a Test Drive " [ref=f65e163] [cursor=pointer]:
+          - /url: /test-drive
+        - link "DOWNLOAD E-BROCHURE " [ref=f65e165] [cursor=pointer]:
+          - /url: /themes/demo/assets/pdf/J8_Brochure.pdf
+        - link "Maintenance Schedule " [ref=f65e167] [cursor=pointer]:
+          - /url: /services#maintenance-schedule
+        - link "Price List " [ref=f65e170] [cursor=pointer]:
+          - /url: "#"
+      - generic:
+        - generic:
+          - generic:
+            - heading "2WD" [level=4]
+            - generic:
+              - link "Peninsular Malaysia":
+                - /url: /themes/demo/assets/price-list/J8_2WD_Price_List.pdf
+              - link "East Malaysia":
+                - /url: /themes/demo/assets/price-list/J8_2WD_Price_List_EM.pdf
+            - heading "AWD" [level=4]
+            - generic:
+              - link "Peninsular Malaysia":
+                - /url: /themes/demo/assets/price-list/J8_AWD_Price_List.pdf
+              - link "East Malaysia":
+                - /url: /themes/demo/assets/price-list/J8_AWD_Price_List_EM.pdf
+  - img "up arrow" [ref=f65e174] [cursor=pointer]
+  - generic [ref=f65e176]:
+    - generic [ref=f65e177]:
+      - generic [ref=f65e178]:
+        - generic [ref=f65e179]:
+          - heading "Discover" [level=5] [ref=f65e180]
+          - generic [ref=f65e181]:
+            - link "About OMODA & JAECOO" [ref=f65e182] [cursor=pointer]:
+              - /url: /about-us
+            - link "News and Events" [ref=f65e183] [cursor=pointer]:
+              - /url: /news-events
+            - link "Dealer Locator" [ref=f65e184] [cursor=pointer]:
+              - /url: /dealer-locator
+        - generic [ref=f65e185]:
+          - heading "Models" [level=5] [ref=f65e186]
+          - generic [ref=f65e187]:
+            - link "JAECOO J5" [ref=f65e188] [cursor=pointer]:
+              - /url: /modelj5
+            - link "JAECOO J7" [ref=f65e189] [cursor=pointer]:
+              - /url: /modelj7
+            - link "JAECOO J7 PHEV" [ref=f65e190] [cursor=pointer]:
+              - /url: /modelJ7phev
+            - link "JAECOO J8" [ref=f65e191] [cursor=pointer]:
+              - /url: /modelj8
+            - link "OMODA C9" [ref=f65e192] [cursor=pointer]:
+              - /url: /modelc9
+            - link "OMODA C9 PHEV" [ref=f65e193] [cursor=pointer]:
+              - /url: /modelc9phev
+        - generic [ref=f65e194]:
+          - heading "Services" [level=5] [ref=f65e195]
+          - generic [ref=f65e196]:
+            - link "Insurance" [ref=f65e197] [cursor=pointer]:
+              - /url: /insurance
+            - link "Warranty" [ref=f65e198] [cursor=pointer]:
+              - /url: /warranty
+            - link "PHEV Calculator" [ref=f65e199] [cursor=pointer]:
+              - /url: /j7phev-calculator
+            - link "Loan Calculator COMING SOON" [ref=f65e200] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f65e201]:
+          - heading "Contact Us" [level=5] [ref=f65e202]
+          - generic [ref=f65e203]:
+            - link "General Enquiry" [ref=f65e204] [cursor=pointer]:
+              - /url: /contact-us
+            - link "Book a Test Drive" [ref=f65e205] [cursor=pointer]:
+              - /url: /test-drive
+            - link "Roadside Assistance" [ref=f65e206] [cursor=pointer]:
+              - /url: /contact-us
+      - generic [ref=f65e208] [cursor=pointer]:
+        - link [ref=f65e209]:
+          - /url: https://www.facebook.com/omodajaecoomalaysia
+          - img "facebook icon" [ref=f65e210]
+        - link [ref=f65e211]:
+          - /url: https://www.instagram.com/omodajaecoo.malaysia/
+          - img "instagram icon" [ref=f65e212]
+        - link [ref=f65e213]:
+          - /url: https://www.youtube.com/@OMODAJAECOO.MALAYSIA
+          - img "youtube icon" [ref=f65e214]
+        - link [ref=f65e215]:
+          - /url: https://www.tiktok.com/@omodajaecoo.malaysia
+          - img "tiktok icon" [ref=f65e216]
+    - generic [ref=f65e217]:
+      - paragraph [ref=f65e219]: Copyright © 2025 OMODA JAECOO All Rights Reserved.JAECOO AUTO MALAYSIA SDN. BHD. 202501022926 (1624339-P)
+      - paragraph [ref=f65e221]:
+        - link "Privacy Notice" [ref=f65e223] [cursor=pointer]:
+          - /url: /privacy-notice
+        - text: "|"
+        - link "Legal Notice" [ref=f65e225] [cursor=pointer]:
+          - /url: /privacy-notice

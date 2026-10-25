@@ -1,0 +1,399 @@
+- generic [active] [ref=f70e1]:
+  - generic [ref=f70e2]:
+    - banner [ref=f70e3]:
+      - generic [ref=f70e5]:
+        - generic [ref=f70e6]:
+          - img "ESTEO" [ref=f70e8]
+          - generic [ref=f70e9]:
+            - generic [ref=f70e10]: БОРИСХОФ
+            - text: Официальный дилер
+        - generic [ref=f70e11]:
+          - link "Модельный ряд" [ref=f70e12] [cursor=pointer]:
+            - /url: "#"
+          - link "Комплектации" [ref=f70e13] [cursor=pointer]:
+            - /url: "#"
+          - link "Тест-драйв" [ref=f70e14] [cursor=pointer]:
+            - /url: "#"
+          - link "Контакты" [ref=f70e15] [cursor=pointer]:
+            - /url: "#"
+        - generic [ref=f70e16]:
+          - link "+7 (495) 532-00-11" [ref=f70e19] [cursor=pointer]:
+            - /url: tel:+74955320011
+          - button "Заказать звонок" [ref=f70e21] [cursor=pointer]
+    - main [ref=f70e27]:
+      - generic [ref=f70e29]:
+        - generic [ref=f70e31]:
+          - heading "Наивысший уровень комфорта" [level=1] [ref=f70e33]
+          - button "Получить предложение" [ref=f70e35] [cursor=pointer]
+        - generic [ref=f70e40]:
+          - generic [ref=f70e41]: Гибриды с выгодой 925 000 ₽
+          - img "EXLANTIX ET8" [ref=f70e44]
+    - generic [ref=f70e47]:
+      - generic [ref=f70e48]: Спешите! Выгода закончится через
+      - generic [ref=f70e50]:
+        - generic [ref=f70e51]:
+          - paragraph [ref=f70e52]: "02"
+          - generic [ref=f70e53]: дня
+          - text: ":"
+        - generic [ref=f70e54]:
+          - paragraph [ref=f70e55]: "05"
+          - generic [ref=f70e56]: часов
+          - text: ":"
+        - generic [ref=f70e57]:
+          - paragraph [ref=f70e58]: "04"
+          - generic [ref=f70e59]: минуты
+          - text: ":"
+        - generic [ref=f70e60]:
+          - paragraph [ref=f70e61]: "30"
+          - generic [ref=f70e62]: секунд
+      - generic [ref=f70e64]:
+        - textbox "Ваше имя" [ref=f70e66]
+        - textbox "Телефон" [ref=f70e69]
+        - generic [ref=f70e72]:
+          - text: Даю
+          - link "согласие" [ref=f70e73] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/personal-data/
+          - text: на получение информации об акциях, скидках, мероприятиях о товарах/услугах БорисХоф по телефону/электронной почте
+        - button "Получить максимальную выгоду" [ref=f70e75] [cursor=pointer]
+    - generic [ref=f70e80]:
+      - generic [ref=f70e81]: Официальный дилер
+      - generic [ref=f70e86]: Покупка одним днем
+      - generic [ref=f70e91]: Все комплектации в наличии с ПТС
+      - generic [ref=f70e96]: выгодные условия
+    - generic [ref=f70e102]:
+      - heading "Модельный ряд" [level=2] [ref=f70e103]
+      - generic [ref=f70e104]:
+        - generic [ref=f70e105]:
+          - generic [ref=f70e106]:
+            - generic [ref=f70e107]: ESTEO MX
+            - generic [ref=f70e110]:
+              - generic [ref=f70e111]: "8"
+              - generic [ref=f70e112]:
+                - generic [ref=f70e113]: лет
+                - text: Гарантии
+          - generic [ref=f70e114]:
+            - generic [ref=f70e115]: Цена от 3 890 000 ₽
+            - generic [ref=f70e117]: Выгода 100 000 ₽ по программе трейд-ин
+            - generic [ref=f70e119]: Среднеразмерный внедорожник
+            - generic [ref=f70e121]: Технологии комфорта
+            - generic [ref=f70e123]: Экологичные премиальные материалы отделки
+            - generic [ref=f70e125]: Ощутите возможности среди первых
+          - generic [ref=f70e127]:
+            - button "Получить максимальную выгоду" [ref=f70e129] [cursor=pointer]
+            - button "Комплектации" [ref=f70e133] [cursor=pointer]
+        - generic [ref=f70e136]:
+          - generic [ref=f70e137]:
+            - generic [ref=f70e138]:
+              - group "1 / 4" [ref=f70e139]
+              - group "2 / 4" [ref=f70e140]
+              - group "3 / 4" [ref=f70e141]
+              - group "4 / 4" [ref=f70e142]
+            - button "Next slide" [ref=f70e143] [cursor=pointer]: next
+            - button "Previous slide" [disabled]: prev
+          - generic [ref=f70e145]:
+            - group "1 / 4" [ref=f70e146] [cursor=pointer]
+            - group "2 / 4" [ref=f70e147] [cursor=pointer]
+            - group "3 / 4" [ref=f70e148] [cursor=pointer]
+            - group "4 / 4" [ref=f70e149] [cursor=pointer]
+      - generic [ref=f70e150]:
+        - generic [ref=f70e151]:
+          - generic [ref=f70e152]:
+            - generic [ref=f70e153]: ESTEO V27
+            - generic [ref=f70e156]:
+              - generic [ref=f70e157]: "8"
+              - generic [ref=f70e158]:
+                - generic [ref=f70e159]: лет
+                - text: Гарантии
+          - generic [ref=f70e160]:
+            - generic [ref=f70e162]:
+              - text: Выгода 1 085 000 ₽
+              - generic [ref=f70e163]: С учетом субсидии*
+            - generic [ref=f70e164]: С учетом государственной субсидии 925 000* ₽
+            - generic [ref=f70e166]: Выгода 160 000 ₽ по программе трейд-ин
+            - generic [ref=f70e168]: Полноразмерный гибридный внедорожник
+            - generic [ref=f70e170]: Повышенная проходимость и запас хода не менее 800 км
+            - generic [ref=f70e172]: Ощутите возможности среди первых
+          - generic [ref=f70e174]:
+            - button "Получить максимальную выгоду" [ref=f70e176] [cursor=pointer]
+            - button "Комплектации" [ref=f70e180] [cursor=pointer]
+        - generic [ref=f70e183]:
+          - generic [ref=f70e184]:
+            - generic [ref=f70e185]:
+              - group "1 / 4" [ref=f70e186]
+              - group "2 / 4" [ref=f70e187]
+              - group "3 / 4" [ref=f70e188]
+              - group "4 / 4" [ref=f70e189]
+            - button "Next slide" [ref=f70e190] [cursor=pointer]: next
+            - button "Previous slide" [disabled]: prev
+          - generic [ref=f70e192]:
+            - group "1 / 4" [ref=f70e193] [cursor=pointer]
+            - group "2 / 4" [ref=f70e194] [cursor=pointer]
+            - group "3 / 4" [ref=f70e195] [cursor=pointer]
+            - group "4 / 4" [ref=f70e196] [cursor=pointer]
+      - generic [ref=f70e197]:
+        - generic [ref=f70e198]:
+          - generic [ref=f70e199]:
+            - generic [ref=f70e200]: EXLANTIX ET8
+            - generic [ref=f70e203]:
+              - generic [ref=f70e204]: "8"
+              - generic [ref=f70e205]:
+                - generic [ref=f70e206]: лет
+                - text: Гарантии
+          - generic [ref=f70e207]:
+            - generic [ref=f70e209]:
+              - text: Выгода 1 085 000 ₽
+              - generic [ref=f70e210]: С учетом субсидии*
+            - generic [ref=f70e211]: С учетом государственной субсидии 925 000* ₽
+            - generic [ref=f70e213]: Выгода 160 000 ₽ по программе трейд-ин
+            - generic [ref=f70e215]: Гибридный шестиместный внедорожник
+            - generic [ref=f70e217]: Запас хода до 1100 км
+            - generic [ref=f70e219]: Ощутите возможности среди первых
+          - generic [ref=f70e221]:
+            - button "Получить максимальную выгоду" [ref=f70e223] [cursor=pointer]
+            - button "Комплектации" [ref=f70e227] [cursor=pointer]
+        - generic [ref=f70e230]:
+          - generic [ref=f70e231]:
+            - generic [ref=f70e232]:
+              - group "1 / 4" [ref=f70e233]
+              - group "2 / 4" [ref=f70e234]
+              - group "3 / 4" [ref=f70e235]
+              - group "4 / 4" [ref=f70e236]
+            - button "Next slide" [ref=f70e237] [cursor=pointer]: next
+            - button "Previous slide" [disabled]: prev
+          - generic [ref=f70e239]:
+            - group "1 / 4" [ref=f70e240] [cursor=pointer]
+            - group "2 / 4" [ref=f70e241] [cursor=pointer]
+            - group "3 / 4" [ref=f70e242] [cursor=pointer]
+            - group "4 / 4" [ref=f70e243] [cursor=pointer]
+      - generic [ref=f70e244]:
+        - generic [ref=f70e245]:
+          - generic [ref=f70e246]:
+            - generic [ref=f70e247]: EXLANTIX ET 2025
+            - generic [ref=f70e250]:
+              - generic [ref=f70e251]: "8"
+              - generic [ref=f70e252]:
+                - generic [ref=f70e253]: лет
+                - text: Гарантии
+          - generic [ref=f70e254]:
+            - generic [ref=f70e256]:
+              - text: Выгода 1 125 000 ₽
+              - generic [ref=f70e257]: С учетом субсидии*
+            - generic [ref=f70e258]: С учетом государственной субсидии 925 000* ₽
+            - generic [ref=f70e260]: Выгода 200 000 ₽ по программе трейд-ин
+            - generic [ref=f70e262]: Оплата частями
+            - generic [ref=f70e264]: Гарантия лучшей оценки обмена / Трейд-ин
+            - generic [ref=f70e266]: Постановка на учет за наш счет
+          - generic [ref=f70e268]:
+            - button "Получить максимальную выгоду" [ref=f70e270] [cursor=pointer]
+            - button "Комплектации" [ref=f70e274] [cursor=pointer]
+        - generic [ref=f70e277]:
+          - generic [ref=f70e278]:
+            - generic [ref=f70e279]:
+              - group "1 / 4" [ref=f70e280]
+              - group "2 / 4" [ref=f70e281]
+              - group "3 / 4" [ref=f70e282]
+              - group "4 / 4" [ref=f70e283]
+            - button "Next slide" [ref=f70e284] [cursor=pointer]: next
+            - button "Previous slide" [disabled]: prev
+          - generic [ref=f70e286]:
+            - group "1 / 4" [ref=f70e287] [cursor=pointer]
+            - group "2 / 4" [ref=f70e288] [cursor=pointer]
+            - group "3 / 4" [ref=f70e289] [cursor=pointer]
+            - group "4 / 4" [ref=f70e290] [cursor=pointer]
+      - generic [ref=f70e291]:
+        - generic [ref=f70e292]:
+          - generic [ref=f70e293]:
+            - generic [ref=f70e294]: EXLANTIX ET 2026
+            - generic [ref=f70e297]:
+              - generic [ref=f70e298]: "8"
+              - generic [ref=f70e299]:
+                - generic [ref=f70e300]: лет
+                - text: Гарантии
+          - generic [ref=f70e301]:
+            - generic [ref=f70e303]:
+              - text: Выгода 1 125 000 ₽
+              - generic [ref=f70e304]: С учетом субсидии*
+            - generic [ref=f70e305]: С учетом государственной субсидии 925 000* ₽
+            - generic [ref=f70e307]: Выгода 200 000 ₽ по программе трейд-ин
+            - generic [ref=f70e309]: Оплата частями
+            - generic [ref=f70e311]: Гарантия лучшей оценки обмена / Трейд-ин
+            - generic [ref=f70e313]: Постановка на учет за наш счет
+          - generic [ref=f70e315]:
+            - button "Получить максимальную выгоду" [ref=f70e317] [cursor=pointer]
+            - button "Комплектации" [ref=f70e321] [cursor=pointer]
+        - generic [ref=f70e324]:
+          - generic [ref=f70e325]:
+            - generic [ref=f70e326]:
+              - group "1 / 6" [ref=f70e327]
+              - group "2 / 6" [ref=f70e328]
+              - group "3 / 6" [ref=f70e329]
+              - group "4 / 6" [ref=f70e330]
+              - group "5 / 6" [ref=f70e331]
+              - group "6 / 6" [ref=f70e332]
+            - button "Next slide" [ref=f70e333] [cursor=pointer]: next
+            - button "Previous slide" [disabled]: prev
+          - generic [ref=f70e335]:
+            - group "1 / 6" [ref=f70e336] [cursor=pointer]
+            - group "2 / 6" [ref=f70e337] [cursor=pointer]
+            - group "3 / 6" [ref=f70e338] [cursor=pointer]
+            - group "4 / 6" [ref=f70e339] [cursor=pointer]
+            - group "5 / 6" [ref=f70e340] [cursor=pointer]
+            - group "6 / 6" [ref=f70e341] [cursor=pointer]
+      - generic [ref=f70e342]:
+        - generic [ref=f70e343]:
+          - generic [ref=f70e344]:
+            - generic [ref=f70e345]: EXLANTIX ES
+            - generic [ref=f70e348]:
+              - generic [ref=f70e349]: "8"
+              - generic [ref=f70e350]:
+                - generic [ref=f70e351]: лет
+                - text: Гарантии
+          - generic [ref=f70e352]:
+            - generic [ref=f70e353]: Выгода до 500 000 ₽
+            - generic [ref=f70e355]: Доп. оборудование на 100 000 ₽ в подарок
+            - generic [ref=f70e357]: Привилегии на сервисное обслуживание*
+            - generic [ref=f70e359]: Оплата частями
+            - generic [ref=f70e361]: Гарантия лучшей оценки обмена / Трейд-ин
+            - generic [ref=f70e363]: Постановка на учет за наш счет
+          - generic [ref=f70e365]:
+            - button "Получить максимальную выгоду" [ref=f70e367] [cursor=pointer]
+            - button "Комплектации" [ref=f70e371] [cursor=pointer]
+        - generic [ref=f70e374]:
+          - generic [ref=f70e375]:
+            - generic [ref=f70e376]:
+              - group "1 / 4" [ref=f70e377]
+              - group "2 / 4" [ref=f70e378]
+              - group "3 / 4" [ref=f70e379]
+              - group "4 / 4" [ref=f70e380]
+            - button "Next slide" [ref=f70e381] [cursor=pointer]: next
+            - button "Previous slide" [disabled]: prev
+          - generic [ref=f70e383]:
+            - group "1 / 4" [ref=f70e384] [cursor=pointer]
+            - group "2 / 4" [ref=f70e385] [cursor=pointer]
+            - group "3 / 4" [ref=f70e386] [cursor=pointer]
+            - group "4 / 4" [ref=f70e387] [cursor=pointer]
+    - generic [ref=f70e389]:
+      - heading "Комплектации" [level=2] [ref=f70e390]
+      - generic [ref=f70e391]:
+        - generic [ref=f70e392] [cursor=pointer]: ESTEO MX
+        - generic [ref=f70e393] [cursor=pointer]: ESTEO V27
+        - generic [ref=f70e394] [cursor=pointer]: EXLANTIX ET8
+        - generic [ref=f70e395] [cursor=pointer]: EXLANTIX ET 2025
+        - generic [ref=f70e396] [cursor=pointer]: EXLANTIX ET 2026
+        - generic [ref=f70e397] [cursor=pointer]: EXLANTIX ES
+      - generic [ref=f70e398]:
+        - generic [ref=f70e400]:
+          - generic [ref=f70e401]:
+            - generic [ref=f70e402]: ESTEO MX
+            - strong [ref=f70e403]: Премиум
+          - generic [ref=f70e404]:
+            - generic "Аструм" [ref=f70e405] [cursor=pointer]
+            - generic "Фантом" [ref=f70e406] [cursor=pointer]
+            - generic "Сагиттариус" [ref=f70e407] [cursor=pointer]
+            - generic "Сапфирин" [ref=f70e408] [cursor=pointer]
+          - generic [ref=f70e409]:
+            - generic [ref=f70e410]: 2,0 Турбо, 197 л.с.
+            - generic [ref=f70e412]: Автомат
+            - generic [ref=f70e414]: Полный
+          - generic [ref=f70e416]:
+            - generic [ref=f70e417]: 3 990 000 ₽
+            - button "Получить максимальную выгоду" [ref=f70e419] [cursor=pointer]
+        - generic [ref=f70e423]:
+          - generic [ref=f70e424]:
+            - generic [ref=f70e425]: ESTEO MX
+            - strong [ref=f70e426]: Флагман
+          - generic [ref=f70e427]:
+            - generic "Аструм" [ref=f70e428] [cursor=pointer]
+            - generic "Фантом" [ref=f70e429] [cursor=pointer]
+            - generic "Сагиттариус" [ref=f70e430] [cursor=pointer]
+            - generic "Сапфирин" [ref=f70e431] [cursor=pointer]
+          - generic [ref=f70e432]:
+            - generic [ref=f70e433]: 2,0 Турбо, 197 л.с.
+            - generic [ref=f70e435]: Автомат
+            - generic [ref=f70e437]: Полный
+          - generic [ref=f70e439]:
+            - generic [ref=f70e440]: 4 290 000 ₽
+            - button "Получить максимальную выгоду" [ref=f70e442] [cursor=pointer]
+    - generic [ref=f70e448]:
+      - generic [ref=f70e449]: ЕСТЬ ПРЕДЛОЖЕНИЕ ОТ КОНКУРЕНТОВ?
+      - generic [ref=f70e450]: Сравните его с нашим
+      - generic [ref=f70e452]:
+        - textbox "Ваше имя" [ref=f70e454]
+        - textbox "Телефон" [ref=f70e457]
+        - button "Получить предложение" [ref=f70e459] [cursor=pointer]
+        - generic [ref=f70e464]:
+          - text: Даю
+          - link "согласие" [ref=f70e465] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/personal-data/
+          - text: на получение информации об акциях, скидках, мероприятиях о товарах/услугах БорисХоф по телефону/электронной почте
+    - generic [ref=f70e471]:
+      - generic [ref=f70e472]: Почувствуйте динамику автомобилей ESTEO
+      - generic [ref=f70e473]: Запишитесь на тест-драйв в БорисХоф
+      - generic [ref=f70e475]:
+        - textbox "Ваше имя" [ref=f70e477]
+        - textbox "Телефон" [ref=f70e480]
+        - button "Оставить заявку" [ref=f70e482] [cursor=pointer]
+        - generic [ref=f70e487]:
+          - text: Даю
+          - link "согласие" [ref=f70e488] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/personal-data/
+          - text: на получение информации об акциях, скидках, мероприятиях о товарах/услугах БорисХоф по телефону/электронной почте
+    - generic [ref=f70e491]:
+      - generic [ref=f70e492]:
+        - generic [ref=f70e493]:
+          - generic [ref=f70e494] [cursor=pointer]: СИТИ
+          - generic [ref=f70e495] [cursor=pointer]: ВНУКОВО
+        - generic [ref=f70e496]:
+          - text: БОРИСХОФ СИТИ
+          - generic [ref=f70e497]: Официальный дилер
+        - generic [ref=f70e498]:
+          - generic [ref=f70e499]: г. Москва, ул 2-я Магистральная, д. 18 стр. 22
+          - link "+7 495 532 00 11" [ref=f70e505] [cursor=pointer]:
+            - /url: tel:+7 495 532 00 11
+          - generic [ref=f70e506]: Ежедневно – 09:00-21:00
+          - button "Заказать звонок" [ref=f70e510] [cursor=pointer]
+      - generic [ref=f70e516]:
+        - generic:
+          - generic [ref=f70e521]:
+            - link "Условия использования" [ref=f70e525] [cursor=pointer]:
+              - /url: https://yandex.ru/legal/maps_termsofuse/?lang=ru
+            - link [ref=f70e527] [cursor=pointer]:
+              - /url: ""
+          - generic [ref=f70e529]:
+            - generic "Открыть в Яндекс Картах" [ref=f70e530]
+            - link "Создать свою карту" [ref=f70e535] [cursor=pointer]:
+              - /url: "https://tech.yandex.ru/maps/mapsapi/?from=api-maps "
+        - generic:
+          - generic:
+            - generic:
+              - generic "Определить ваше местоположение" [ref=f70e538] [cursor=pointer]
+              - generic [ref=f70e547]:
+                - textbox "Адрес или объект" [ref=f70e550]
+                - generic [ref=f70e551]: Найти
+            - generic:
+              - generic [ref=f70e556]:
+                - generic [ref=f70e557]: Пробки
+                - generic [ref=f70e567]:
+                  - generic [ref=f70e568]: Сейчас
+                  - generic [ref=f70e569] [cursor=pointer]: Статистика
+              - generic [ref=f70e572]:
+                - generic [ref=f70e573] [cursor=pointer]: Слои
+                - generic [ref=f70e578]:
+                  - generic [ref=f70e579]: Схема
+                  - generic [ref=f70e584]: Спутник
+                  - generic [ref=f70e589]: Гибрид
+                  - generic [ref=f70e599]: Панорамы
+          - generic [ref=f70e610]:
+            - generic [ref=f70e611]: 6 км
+            - generic "Измерение расстояний на карте" [ref=f70e626] [cursor=pointer]
+    - contentinfo [ref=f70e642]:
+      - generic [ref=f70e643]:
+        - paragraph [ref=f70e644]: "© 2026 ООО «БорисХоф Холдинг» ИНН: 7714700709 ОГРН 5077746977930 Фактический адрес: 123290, г. Москва,2-я Магистральная ул., д. 18, стр. 1"
+        - generic [ref=f70e645]:
+          - link "Политика конфиденциальности" [ref=f70e646] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/personal-data/
+          - link "Дисклеймер" [ref=f70e647] [cursor=pointer]:
+            - /url: "#"
+  - generic [ref=f70e648] [cursor=pointer]:
+    - paragraph [ref=f70e651]: Мы используем cookies
+    - paragraph

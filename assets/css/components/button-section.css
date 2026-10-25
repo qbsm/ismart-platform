@@ -1,0 +1,79 @@
+.button-section {
+  position: relative;
+  width: 100%;
+  height: 5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 2rem;
+  border-radius: 2rem;
+  background: var(--gradient-3);
+  color: var(--color-2);
+
+  @media (--lg) {
+    height: 11rem;
+    padding: 1.4rem 3rem;
+    border-radius: 4rem;
+  }
+}
+
+.button-section:hover {
+  background: linear-gradient(to left, #000, #000);
+  color: var(--color-1);
+  opacity: 1;
+}
+
+.button-section__item.title-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button-section__title {
+  font-size: 1em;
+  font-weight: 400;
+
+  @media (--lg) {
+    font-size: 1.8em;
+  }
+}
+
+.button-section__item.icon-wrap {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: var(--color-2);
+  overflow: hidden;
+  transition: background 0.15s ease-out;
+
+  @media (--lg) {
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+  }
+}
+
+.button-section__item.icon-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.button-section:hover .button-section__item.icon-wrap.green {
+  background: #3A9550;
+}
+
+.button-section:hover .button-section__item.icon-wrap.blue {
+  background: #008ACF;
+}
+
+.button-section:hover .button-section__item.icon-wrap.red {
+  background: #C72229;
+}

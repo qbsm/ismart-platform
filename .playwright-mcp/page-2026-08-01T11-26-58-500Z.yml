@@ -1,0 +1,185 @@
+- generic [active] [ref=f8e1]:
+  - link "Перейти к контенту" [ref=f8e2] [cursor=pointer]:
+    - /url: "#page-content"
+  - generic [ref=f8e3]:
+    - banner [ref=f8e4]:
+      - generic [ref=f8e5]:
+        - link [ref=f8e7] [cursor=pointer]:
+          - /url: /
+          - img "Logo" [ref=f8e8]
+        - generic [ref=f8e9]:
+          - generic [ref=f8e10]:
+            - button "Забронировать" [ref=f8e11] [cursor=pointer]
+            - button "Открыть меню" [ref=f8e12] [cursor=pointer]
+          - generic [ref=f8e17]:
+            - generic [ref=f8e18]:
+              - generic [ref=f8e19]: Приложение
+              - generic [ref=f8e20]: italy touch
+            - link "Скачать" [ref=f8e21] [cursor=pointer]:
+              - /url: https://redirect.appmetrica.yandex.com/serve/966450630770056189
+    - main [ref=f8e23]:
+      - generic [ref=f8e24]:
+        - img "Особняк Мясникова вечером, двор с гирляндами" [ref=f8e26]
+        - generic [ref=f8e30]:
+          - generic [ref=f8e31]: Ужин при свечах
+          - heading "Ужин братьев Мясниковых при свечах" [level=1] [ref=f8e32]
+          - generic [ref=f8e33]:
+            - generic [ref=f8e34]: 23 августа, 19:00
+            - generic [ref=f8e39]: Особняк Мясникова
+      - generic [ref=f8e45]:
+        - generic [ref=f8e46]:
+          - generic [ref=f8e47]:
+            - paragraph [ref=f8e48]: Санкт-Петербург, ул. Восстания 45
+            - paragraph [ref=f8e49]: "23 августа особняк Мясникова на один вечер вернётся в Прекрасную эпоху: ужин братьев Мясниковых при свечах — общий стол от бренд-шефов Joli и Salone, музыка, танцы и разговоры об искусстве за бокалом хорошего вина."
+          - generic [ref=f8e50]:
+            - heading "Там, где история оживает" [level=2] [ref=f8e51]
+            - generic [ref=f8e52]:
+              - paragraph [ref=f8e53]: Давайте представим, что на дворе не лето 2026 года, а конец XIX — начало ХХ века. Период расцвета культуры и технического прогресса. Эпоха бульваров, кафе и кабаре. Время изобретения радио и кино.
+              - paragraph [ref=f8e54]: "В Париже строят Эйфелеву башню. В Венеции проходит первая Биеннале, а операми молодого и гениального композитора Джакомо Пуччини восхищается вся Италия. В Петербурге Врубель пишет «Демона сидящего», Чайковский создаёт Шестую симфонию, а классический русский балет достигает своего пика: на сцене Мариинского театра проходят премьеры «Спящей красавицы» и «Щелкунчика»."
+              - paragraph [ref=f8e55]: В историю этот период вошёл под названием Belle Époque, и 23 августа мы приглашаем вас на один вечер перенестись в эту самую эпоху. Тем более, что принимать гостей будет её непосредственный свидетель — особняк Мясникова, в музыкальном салоне которого в те годы ставил пьесы Всеволод Мейерхольд, выступала Вера Комиссаржевская и пел Фёдор Шаляпин.
+          - paragraph [ref=f8e57]: Музыка, танцы и разговоры об искусстве за бокалом хорошего вина. Центром притяжения станет общий стол, за которым будет подан ужин от шеф-поваров Joli и Salone.
+          - generic [ref=f8e58]:
+            - heading "Гастрономия вечера" [level=2] [ref=f8e59]
+            - paragraph [ref=f8e60]: "Меню создано специально для этого вечера и существует только в рамках этого события. В его основе — традиции русской и европейской кухни конца XIX века, сезонные продукты и авторское прочтение классических рецептов. Каждая подача дополняет атмосферу вечера, не отвлекая внимание от главного: общения, музыки и истории особняка."
+            - generic [ref=f8e61]:
+              - generic [ref=f8e62]:
+                - heading "Вэлком" [level=3] [ref=f8e63]
+                - list [ref=f8e64]:
+                  - listitem [ref=f8e65]: Расстегаи с картофелем и грибами
+                  - listitem [ref=f8e66]: Рыбники с треской и лососем
+                  - listitem [ref=f8e67]: Мини-оладьи со сметаной и щучьей икрой
+                  - listitem [ref=f8e68]: Солёные грузди со сметаной
+                  - listitem [ref=f8e69]: Редис со взбитым сливочным маслом
+                  - listitem [ref=f8e70]: Сезонные свежие овощи
+                  - listitem [ref=f8e71]: Мини-бриошь со взбитым сливочным маслом и чёрной икрой
+              - button "Показать всё меню" [ref=f8e72] [cursor=pointer]
+          - paragraph [ref=f8e74]: Без лишних формальностей, но с должным изяществом. Непринуждённый, но внимательный к каждой детали. По-итальянски гостеприимный и по-французски элегантный. Этот вечер обещает стать настоящим светским событием, где миланская спреццатура и парижский шик встречаются под сводами петербургского необарокко, даря гостям не просто впечатления, а возможность хотя бы на один вечер оказаться в той самой Прекрасной эпохе.
+          - generic [ref=f8e75]:
+            - figure [ref=f8e76]:
+              - link [ref=f8e77] [cursor=pointer]:
+                - /url: https://italycommunity.ru/data/img/events/uzhin-v-osobnyake/glasses.webp
+                - img "Башня бокалов при свечах" [ref=f8e78]
+            - figure [ref=f8e79]:
+              - link [ref=f8e80] [cursor=pointer]:
+                - /url: https://italycommunity.ru/data/img/events/uzhin-v-osobnyake/candles.webp
+                - img "Сервировка ужина при свечах" [ref=f8e81]
+            - figure:
+              - 'link "Схема прохода: особняк Мясникова, ул. Восстания, 45 — вход для гостей с улицы Восстания, а не со двора"':
+                - /url: https://italycommunity.ru/data/img/events/uzhin-v-osobnyake/map.webp
+                - 'img "Схема прохода: особняк Мясникова, ул. Восстания, 45 — вход для гостей с улицы Восстания, а не со двора"'
+        - complementary "Билеты" [ref=f8e82]:
+          - generic [ref=f8e83]:
+            - generic [ref=f8e84]:
+              - generic [ref=f8e85]: "23"
+              - generic [ref=f8e86]:
+                - generic [ref=f8e87]: августа
+                - generic [ref=f8e88]: воскресенье, 19:00
+            - list [ref=f8e89]:
+              - listitem [ref=f8e90]:
+                - generic [ref=f8e91]: Место
+                - generic [ref=f8e92]: Особняк Мясникова
+            - generic [ref=f8e93]:
+              - generic [ref=f8e94]: Участие
+              - generic [ref=f8e95]: 15 000 ₽
+            - link "Купить билет" [ref=f8e96] [cursor=pointer]:
+              - /url: "#buy"
+            - button "Поделиться событием" [ref=f8e97] [cursor=pointer]:
+              - generic [ref=f8e103]: Поделиться ссылкой
+      - generic [ref=f8e105]:
+        - generic [ref=f8e106]:
+          - heading "Купить билет" [level=2] [ref=f8e107]
+          - paragraph [ref=f8e108]: Укажите контакты и количество мест — пришлём подтверждение и ссылку на оплату на e-mail.
+        - generic [ref=f8e111]:
+          - generic [ref=f8e113]:
+            - generic [ref=f8e114]:
+              - generic [ref=f8e115]: Ужин братьев Мясниковых при свечах
+              - generic [ref=f8e116]: 23 августа, 19:00 · Особняк Мясникова
+            - generic [ref=f8e117]:
+              - generic [ref=f8e118]: участие
+              - generic [ref=f8e119]: от 15 000 ₽
+          - generic [ref=f8e120]:
+            - generic [ref=f8e121]: Имя
+            - textbox "Имя" [ref=f8e122]:
+              - /placeholder: Ваше имя
+          - generic [ref=f8e123]:
+            - generic [ref=f8e124]: Телефон
+            - textbox "Телефон" [ref=f8e125]:
+              - /placeholder: +7 (999) 123-45-67
+          - generic [ref=f8e126]:
+            - generic [ref=f8e127]: E-mail
+            - textbox "E-mail" [ref=f8e128]:
+              - /placeholder: ваша@почта.ru
+          - generic [ref=f8e129]:
+            - generic [ref=f8e130]: Количество мест
+            - generic [ref=f8e131]:
+              - button "Меньше мест" [disabled]: −
+              - spinbutton "Количество мест" [ref=f8e132]: "1"
+              - button "Больше мест" [ref=f8e133] [cursor=pointer]: +
+          - generic [ref=f8e135]:
+            - text: Итого
+            - generic [ref=f8e136]: 15 000 ₽
+          - generic [ref=f8e138] [cursor=pointer]:
+            - checkbox "Согласен(-сна) на обработку персональных данных и с пользовательским соглашением."
+            - generic [ref=f8e140]: Согласен(-сна) на обработку персональных данных и с пользовательским соглашением.
+          - button "Купить билет" [ref=f8e142] [cursor=pointer]
+    - generic [ref=f8e144]:
+      - generic [ref=f8e145]:
+        - generic [ref=f8e146]: Будьте в курсе событий
+        - generic [ref=f8e150]:
+          - textbox "Почта" [ref=f8e152]:
+            - /placeholder: ваша@почта.ru
+          - textbox "Имя" [ref=f8e154]:
+            - /placeholder: Ваше имя
+          - combobox "Город" [ref=f8e156] [cursor=pointer]:
+            - option "Ваш город" [disabled] [selected]
+            - option "Санкт-Петербург"
+            - option "Москва"
+          - generic [ref=f8e158] [cursor=pointer]:
+            - checkbox "Согласен(-сна) на обработку персональных данных и с пользовательским соглашением."
+            - generic [ref=f8e160]: Согласен(-сна) на обработку персональных данных и с пользовательским соглашением.
+          - button "Подписаться" [ref=f8e162] [cursor=pointer]
+      - generic [ref=f8e163]:
+        - generic [ref=f8e164]:
+          - link "Доставка" [ref=f8e166] [cursor=pointer]:
+            - /url: https://italytouch.ru
+          - link "Рестораны" [ref=f8e168] [cursor=pointer]:
+            - /url: https://italycommunity.ru/restaurants/
+          - link "Афиша" [ref=f8e170] [cursor=pointer]:
+            - /url: https://italycommunity.ru/events/
+          - link "О нас" [ref=f8e172] [cursor=pointer]:
+            - /url: https://italycommunity.ru/about/
+          - link "Программа лояльности" [ref=f8e174] [cursor=pointer]:
+            - /url: https://italycommunity.online/loyaltyprogram
+          - link "Ресторанам Надо" [ref=f8e176] [cursor=pointer]:
+            - /url: https://restoranamnado.ru
+          - link "Банкеты и кейтеринг" [ref=f8e178] [cursor=pointer]:
+            - /url: https://italyco.tilda.ws/banket
+          - link "Ресторанный консалтинг" [ref=f8e180] [cursor=pointer]:
+            - /url: https://italycommunity.online/consulting
+          - link "Работай с нами" [ref=f8e182] [cursor=pointer]:
+            - /url: https://italycommunity.online/work
+          - link "люди итали" [ref=f8e184] [cursor=pointer]:
+            - /url: https://italycommunity.online
+        - generic [ref=f8e185]:
+          - link "VK" [ref=f8e186] [cursor=pointer]:
+            - /url: https://vk.com/italy.community
+            - img "VK"
+          - link "Telegram" [ref=f8e187] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+            - img "Telegram"
+          - link "@MS_italycommunity" [ref=f8e188] [cursor=pointer]:
+            - /url: https://t.me/MS_italycommunity
+      - generic [ref=f8e189]:
+        - generic [ref=f8e190]:
+          - link "Политика в отношении обработки персональных данных" [ref=f8e191] [cursor=pointer]:
+            - /url: https://italycommunity.ru/policy/
+          - link "Пользовательское соглашение" [ref=f8e192] [cursor=pointer]:
+            - /url: https://italycommunity.ru/agree/
+        - generic [ref=f8e193]: © 2020-2026. Все права защищены.
+  - generic [ref=f8e197]:
+    - generic [ref=f8e199]:
+      - text: Наш сайт использует файлы cookie для улучшения работы сайта —
+      - link "подробнее" [ref=f8e200] [cursor=pointer]:
+        - /url: /policy/
+      - text: .
+    - button "Принимаю" [ref=f8e202] [cursor=pointer]

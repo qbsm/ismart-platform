@@ -1,0 +1,59 @@
+{
+  "lang": [
+    {
+      "title": "Русский",
+      "code": "ru",
+      "direction": "ltr"
+    }
+  ],
+  "phones": [],
+  "nav": {
+    "ru": {
+      "items": [
+        { "title": "Главная", "href": "/" }
+      ]
+    }
+  },
+  "email": "",
+  "logo": {
+    "alt": "Site Name",
+    "horizontal": {
+      "white": { "src": "data/img/ui/logos/logo-h-color-1.svg", "alt": "Logo" },
+      "black": { "src": "data/img/ui/logos/logo-h-color-2.svg", "alt": "Logo" }
+    },
+    "vertical": {
+      "white": { "src": "data/img/ui/logos/logo-v-color-1.svg", "alt": "Logo" },
+      "black": { "src": "data/img/ui/logos/logo-v-color-2.svg", "alt": "Logo" }
+    }
+  },
+  "socials": [],
+  "socials-headings": {
+    "ru": "Мы в социальных сетях"
+  },
+  "policy": {
+    "ru": {
+      "title": "Политика конфиденциальности",
+      "href": "/policy/"
+    }
+  },
+  "copyright": {
+    "ru": "© Site Name"
+  },
+  "form-callback": {
+    "placeholder": {
+      "name": "Имя",
+      "phone": "Телефон",
+      "email": "E-mail",
+      "message": "Сообщение"
+    }
+  },
+  "cookie-panel": {
+    "ru": {
+      "desc": "Мы используем cookie и Яндекс.Метрику, чтобы сайт работал и мы понимали, как им пользуются. Они включаются только с вашего согласия. Подробнее — в <a href='/cookies-policy/' class='link color-2 weight-400'>политике использования cookie</a>.",
+      "button": {
+        "title": "Принять",
+        "class": "button button-sm outline-color-2 button-animated animation-shift uppercase link nowrap js-cookie"
+      }
+    }
+  }
+}

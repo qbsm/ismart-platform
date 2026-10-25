@@ -37,9 +37,12 @@
 {% endif %}
 
 {# Примечание: Блок с определением window.appConfig.baseUrl и window.appConfig.langCode #}
-{# теперь находится в layout.twig ДО включения этого файла (scripts.twig) #}
+{# теперь находится в base.twig ДО включения этого файла (scripts.twig) #}
 
-{# Примечание: window.appConfig определяется в layout.twig #}
+{# Примечание: window.appConfig определяется в base.twig #}
 
 {# Подключаем скрипт для работы с UTM-метками #}
 <script src="{{ base_url }}assets/js/utils/utm.js" defer></script>
+
+{# Web Vitals мониторинг — CWV в консоль (dev) и Yandex.Metrika (prod) #}
+<script src="{{ base_url }}assets/js/utils/web-vitals.js" defer></script>

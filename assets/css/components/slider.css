@@ -1,13 +1,20 @@
 .slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slider .swiper {
+  width: 100%;
   height: 100%;
 }
 
 /**
- * Базовые стили для слайдеров Swiper
+ * Базовые стили для слайдеров Swiper.
+ * !important — только для переопределения стилей библиотеки (инлайн/высокая специфичность).
  */
 
 /* Контейнер слайдера */
-.swiper-container {
+.swiper {
   position: relative;
   width: 100%;
   height: auto;
@@ -19,6 +26,7 @@
 .swiper-wrapper {
   display: flex;
   width: 100%;
+  height: 100%;
   transition-property: transform;
 }
 
@@ -37,6 +45,7 @@
   --swiper-navigation-top-offset: 50%;
   --swiper-navigation-sides-offset: 0;
   --swiper-navigation-size: 3rem;
+
   position: absolute !important;
   top: 50% !important;
   transform: translateY(-50%) !important;
@@ -64,18 +73,18 @@
   right: auto !important;
 }
 
-.swiper-container:hover .swiper-button-next,
-.swiper-container:hover .swiper-button-prev {
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
   opacity: 0.5;
 }
 
-.swiper-container:hover .swiper-button-next:hover,
-.swiper-container:hover .swiper-button-prev:hover {
+.swiper:hover .swiper-button-next:hover,
+.swiper:hover .swiper-button-prev:hover {
   opacity: 1 !important;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   font-size: var(--swiper-navigation-size) !important;
   font-weight: bold;
   margin: 0 !important;
@@ -115,27 +124,27 @@
 }
 
 /* Компенсация отступа для всех слайдеров с padding-bottom */
-.swiper-container .swiper-button-next,
-.swiper-container .swiper-button-prev {
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
   margin-top: calc(-2rem) !important;
 }
 
 /* Убираем padding, когда пагинация отключена */
-.swiper-container[data-settings*="\"pagination\":{\"enabled\":false}"],
-.swiper-container.no-pagination {
+.swiper[data-settings*="\"pagination\":{\"enabled\":false}"],
+.swiper.no-pagination {
   padding-bottom: 0;
 }
 
 /* Скрываем пагинацию полностью, когда она отключена */
-.swiper-container[data-settings*="\"pagination\":{\"enabled\":false}"] .swiper-pagination,
-.swiper-container.no-pagination .swiper-pagination {
+.swiper[data-settings*="\"pagination\":{\"enabled\":false}"] .swiper-pagination,
+.swiper.no-pagination .swiper-pagination {
   display: none;
 }
 
 /* Сбрасываем отступ для кнопок, когда пагинация отключена */
-.swiper-container[data-settings*="\"pagination\":{\"enabled\":false}"] .swiper-button-next,
-.swiper-container[data-settings*="\"pagination\":{\"enabled\":false}"] .swiper-button-prev,
-.swiper-container.no-pagination .swiper-button-next,
-.swiper-container.no-pagination .swiper-button-prev {
+.swiper[data-settings*="\"pagination\":{\"enabled\":false}"] .swiper-button-next,
+.swiper[data-settings*="\"pagination\":{\"enabled\":false}"] .swiper-button-prev,
+.swiper.no-pagination .swiper-button-next,
+.swiper.no-pagination .swiper-button-prev {
   margin-top: 0 !important;
 }

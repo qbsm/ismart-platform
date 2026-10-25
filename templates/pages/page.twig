@@ -1,0 +1,15 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+  <div id="page-content">
+  {% if sections is defined and sections|length > 0 %}
+    {% for section in sections %}
+      {% if section.visible is not defined or section.visible %}
+        {% include 'sections/' ~ section.name ~ '.twig' ignore missing with {'data': section.data} %}
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <h1>Данные для страницы не найдены или неверный формат секций</h1>
+  {% endif %}
+  </div>
+{% endblock %}

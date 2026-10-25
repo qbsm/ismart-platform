@@ -1,0 +1,117 @@
+- generic [ref=f12e4]:
+  - generic [ref=f12e6]:
+    - generic [ref=f12e7]:
+      - link [ref=f12e10] [cursor=pointer]:
+        - /url: /list
+      - generic [ref=f12e28]:
+        - generic [ref=f12e29]:
+          - link "Обзор" [ref=f12e32] [cursor=pointer]:
+            - /url: /overview?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false
+          - generic [ref=f12e40]: Дашборды
+          - generic [ref=f12e49]: Отчеты
+          - generic [ref=f12e57]: Поведение
+          - generic [ref=f12e65]: Посетители
+        - generic [ref=f12e75]:
+          - link "Цели" [ref=f12e78] [cursor=pointer]:
+            - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goalsConversionViewKind=List
+          - link "Конверсии" [ref=f12e90] [cursor=pointer]:
+            - /url: /stat/conversion_rate?id=107236894&period=today&group=dekaminute&isMinSamplingEnabled=false&currency=RUB&attr=%7B%22attributionId%22%3A%22LastSign%22%2C%22isCrossDevice%22%3Atrue%7D&isUndefinedEnabled=false&chartMetrics=%5B%5B%22normBytime%28ym%3As%3Avisits%29%22%5D%2C%5B%22ym%3As%3AanyGoalVisits%22%5D%2C%5B%22ym%3As%3AanyGoalReaches%22%5D%5D&view=Hierarchical&goalsConversionViewKind=Chart
+        - generic [ref=f12e100]:
+          - link "Тег Менеджер" [ref=f12e103] [cursor=pointer]:
+            - /url: /ytm/overview?id=107236894
+          - generic [ref=f12e112]: Вариокуб
+        - generic [ref=f12e121]:
+          - generic [ref=f12e122]: Привлечение
+          - link "Интеграции" [ref=f12e132] [cursor=pointer]:
+            - /url: /marketplace?id=107236894
+          - link "Инсайты" [ref=f12e142] [cursor=pointer]:
+            - /url: /insights?id=107236894
+          - generic [ref=f12e150]: Настройки
+    - generic [ref=f12e158]: Свернуть
+  - generic [ref=f12e164]:
+    - generic [ref=f12e166]:
+      - generic [ref=f12e168]:
+        - generic "Kumho (kumho-tires.ru)" [ref=f12e174]:
+          - generic [ref=f12e175] [cursor=pointer]:
+            - img "Kumho (kumho-tires.ru)" [ref=f12e177]
+            - generic [ref=f12e178]: Kumho (kumho-tires.ru)
+          - generic [ref=f12e181]:
+            - link "kumho-tires.ru•" [ref=f12e182] [cursor=pointer]:
+              - /url: http://kumho-tires.ru
+            - generic [ref=f12e183]: "107236894"
+        - generic [ref=f12e185]:
+          - link "Настройка аккаунта" [ref=f12e186] [cursor=pointer]:
+            - /url: /preferences/subscriptions
+          - button "Помощь" [ref=f12e187]:
+            - generic "Помощь" [ref=f12e190] [cursor=pointer]
+          - generic [ref=f12e195]:
+            - button [ref=f12e196]
+            - generic [ref=f12e202]: "0"
+          - button [ref=f12e203]
+      - generic [ref=f12e212] [cursor=pointer]:
+        - img "fedorovich-d" [ref=f12e215]
+        - generic [ref=f12e216]: fedorovich-d
+    - generic [ref=f12e220]:
+      - generic [ref=f12e221]:
+        - generic [ref=f12e222]:
+          - generic [ref=f12e223]:
+            - generic [ref=f12e225]:
+              - generic [ref=f12e226]: Конверсии
+              - link [ref=f12e229] [cursor=pointer]:
+                - /url: /support/metrica/ru/reports/conversion
+            - generic [ref=f12e236]:
+              - button "Добавить цель" [disabled] [ref=f12e237]:
+                - generic "Добавить цель" [ref=f12e240]
+              - button [ref=f12e242]
+              - button [ref=f12e248]
+          - generic [ref=f12e255]:
+            - generic [ref=f12e256]:
+              - radiogroup [ref=f12e258]:
+                - generic "Сегодня" [ref=f12e260]:
+                  - radio "Сегодня" [checked] [ref=f12e261] [cursor=pointer]
+                - generic "Вчера" [ref=f12e265]:
+                  - radio "Вчера" [ref=f12e266] [cursor=pointer]
+                - generic "Неделя" [ref=f12e270]:
+                  - radio "Неделя" [ref=f12e271] [cursor=pointer]
+                - generic "Месяц" [ref=f12e275]:
+                  - radio "Месяц" [ref=f12e276] [cursor=pointer]
+                - generic "Квартал" [ref=f12e280]:
+                  - radio "Квартал" [ref=f12e281] [cursor=pointer]
+                - generic [ref=f12e285]:
+                  - radio "1 авг" [ref=f12e286] [cursor=pointer]
+                  - generic [ref=f12e287]: 1 авг
+              - button "Сегмент •" [disabled] [ref=f12e295]:
+                - generic [ref=f12e304]:
+                  - text: Сегмент
+                  - generic [ref=f12e305]: •
+            - button [ref=f12e313]
+        - generic [ref=f12e327]:
+          - button "Статистика • Скрыта" [ref=f12e328]:
+            - generic "Статистика • Скрыта" [ref=f12e335] [cursor=pointer]
+          - button "Метрики • Конверсия, +2" [ref=f12e340]
+          - button "Все цели" [ref=f12e348]:
+            - generic "Все цели" [ref=f12e351] [cursor=pointer]
+      - generic [ref=f12e356]:
+        - button "Поиск" [ref=f12e358]:
+          - generic "Поиск" [ref=f12e364] [cursor=pointer]
+        - button "По 10 минут" [ref=f12e367]:
+          - generic "По 10 минут" [ref=f12e370] [cursor=pointer]
+    - generic [ref=f12e444]:
+      - generic [ref=f12e445]:
+        - link "Пользовательское соглашение" [ref=f12e447] [cursor=pointer]:
+          - /url: https://yandex.ru/legal/metrica_termsofuse
+        - link "Политика конфиденциальности" [ref=f12e449] [cursor=pointer]:
+          - /url: https://yandex.ru/legal/confidential
+        - link "Справка" [ref=f12e451] [cursor=pointer]:
+          - /url: /support/metrica/ru/
+        - link "Задать вопрос" [ref=f12e453] [cursor=pointer]:
+          - /url: /support/metrica/ru/troubleshooting/
+        - link "Предложить идею" [ref=f12e455] [cursor=pointer]:
+          - /url: /support/metrica/ru/troubleshooting/idea
+      - generic [ref=f12e456]:
+        - generic [ref=f12e457]: Ru
+        - generic [ref=f12e466]:
+          - text: © 2008–2026 OOO «
+          - link "ЯНДЕКС" [ref=f12e467] [cursor=pointer]:
+            - /url: https://ya.ru
+          - text: »

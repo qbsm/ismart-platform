@@ -1,38 +1,10 @@
 {
   "name": "index",
-  "title": "Студия полного цикла — Главная",
-  "meta": [
-    {
-      "name": "description",
-      "content": "Студия полного цикла. ✔ Уникальные проекты! ✔ Все стадии проектирования под ключ."
-    },
-    {
-      "property": "og:url",
-      "content": "https://example.com/"
-    },
-    {
-      "property": "og:type",
-      "content": "website"
-    },
-    {
-      "property": "og:title",
-      "content": "Студия полного цикла — Главная"
-    },
-    {
-      "property": "og:description",
-      "content": "Студия полного цикла. ✔ Уникальные проекты! ✔ Все стадии проектирования под ключ."
-    },
-    {
-      "property": "og:site_name",
-      "content": "Студия"
-    },
-    {
-      "property": "og:image",
-      "content": "https://example.com/data/img/seo/og.webp?v=1"
-    },
-    {
-      "property": "og:image:secure_url",
-      "content": "https://example.com/data/img/seo/og.webp?v=1"
-    }
-  ]
+  "title": "iSmart Platform",
+  "description": "Тиражируемая многоязычная платформа на Slim 4 + Twig 3.",
+  "og": {
+    "type": "website",
+    "title": "iSmart Platform",
+    "description": "Тиражируемая многоязычная платформа на Slim 4 + Twig 3."
+  }
 }

@@ -26,7 +26,7 @@ window.SwiperModules = {
   Pagination,
   Scrollbar,
   EffectFade,
-  Autoplay
+  Autoplay,
 };
 
 // Регистрируем модули Swiper

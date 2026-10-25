@@ -1,0 +1,14 @@
+<div class="icon-text{{ goal.class is defined and goal.class ? ' ' ~ goal.class : '' }}">
+  {% if icon.src is defined %}
+    <div class="icon-text__icon">
+      <img src="{{ url(icon.src) }}" alt="{{ icon.alt|default('')}}" loading="lazy">
+    </div>
+  {% endif %}
+  <div class="icon-text__text">
+    {% if link is defined and link.href is defined %}
+      <a href="{{ link.href }}" class="icon-text__link link">{{ link.title|default(link.href)|raw }}</a>
+    {% elseif title is defined %}
+      <span class="icon-text__title">{{ title|raw }}</span>
+    {% endif %}
+  </div>
+</div>

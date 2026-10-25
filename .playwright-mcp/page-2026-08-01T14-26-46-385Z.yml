@@ -1,0 +1,246 @@
+- generic [active] [ref=f5e1]:
+  - generic [ref=f5e2]:
+    - banner [ref=f5e3]:
+      - generic [ref=f5e4]:
+        - generic [ref=f5e5]:
+          - generic [ref=f5e6]:
+            - generic [ref=f5e7]:
+              - img "Toyota" [ref=f5e8] [cursor=pointer]
+              - paragraph [ref=f5e9]: Тойота Центр ВнуковоОфициальный дилер
+            - img "БорисХоф — 34 года" [ref=f5e11]
+          - generic [ref=f5e12]:
+            - link "+7 (495) 153‑83‑62" [ref=f5e13] [cursor=pointer]:
+              - /url: tel:+74951538362
+            - paragraph [ref=f5e15]:
+              - img "placemark" [ref=f5e16]
+              - generic [ref=f5e17]: Москва, Киевское ш., 24км, c8
+          - button "Заказать звонок" [ref=f5e18] [cursor=pointer]
+        - generic [ref=f5e19]: Модельный рядАвто в наличииЗаявка на кредитСпецпредложениеКонтакты
+    - generic [ref=f5e25]:
+      - heading "БорисХоф — 34 года с вами" [level=1] [ref=f5e26]
+      - paragraph [ref=f5e27]: Toyota и Lexus с выгодой до 600 000 ₽.2 года гарантия в подарок
+      - button "Зафиксировать цену" [ref=f5e28] [cursor=pointer]
+    - generic [ref=f5e31]:
+      - heading "До конца акции осталось:" [level=3] [ref=f5e33]: "До конца акцииосталось:"
+      - generic [ref=f5e35]:
+        - generic [ref=f5e37]:
+          - paragraph [ref=f5e38]: "30"
+          - paragraph [ref=f5e39]: дней
+        - generic [ref=f5e44]:
+          - paragraph [ref=f5e45]: "5"
+          - paragraph [ref=f5e46]: часов
+        - generic [ref=f5e51]:
+          - paragraph [ref=f5e52]: "32"
+          - paragraph [ref=f5e53]: минут
+        - generic [ref=f5e58]:
+          - paragraph [ref=f5e59]: "13"
+          - paragraph [ref=f5e60]: секунд
+      - button "Получить выгоду" [ref=f5e64] [cursor=pointer]
+    - generic [ref=f5e66]:
+      - heading "Модельный ряд" [level=2] [ref=f5e67]
+      - generic [ref=f5e68]:
+        - generic [ref=f5e69]: к списку моделей
+        - generic [ref=f5e72]:
+          - generic [ref=f5e73] [cursor=pointer]:
+            - img "toyota_camry_ix" [ref=f5e74]
+            - generic [ref=f5e75]: TOYOTA Camry IX
+          - generic [ref=f5e76] [cursor=pointer]:
+            - img "toyota_rav_4" [ref=f5e77]
+            - generic [ref=f5e78]: Новая TOYOTA Rav 4
+          - generic [ref=f5e79] [cursor=pointer]:
+            - img "toyota_land_cruiser_250" [ref=f5e80]
+            - generic [ref=f5e81]: TOYOTA Land Cruiser 250
+          - generic [ref=f5e82] [cursor=pointer]:
+            - img "toyota_land_cruiser_300" [ref=f5e83]
+            - generic [ref=f5e84]: TOYOTA Land Cruiser 300
+          - generic [ref=f5e85] [cursor=pointer]:
+            - img "toyota_alphard" [ref=f5e86]
+            - generic [ref=f5e87]: TOYOTA Alphard
+          - generic [ref=f5e88] [cursor=pointer]:
+            - img "toyota_highlander" [ref=f5e89]
+            - generic [ref=f5e90]: TOYOTA Highlander
+          - generic [ref=f5e91] [cursor=pointer]:
+            - img "lexus_rx300" [ref=f5e92]
+            - generic [ref=f5e93]: Lexus RX300
+          - generic [ref=f5e94] [cursor=pointer]:
+            - img "lexus_rx350" [ref=f5e95]
+            - generic [ref=f5e96]: Lexus RX350
+          - generic [ref=f5e97] [cursor=pointer]:
+            - img "lexus_lx600" [ref=f5e98]
+            - generic [ref=f5e99]: Lexus LX600
+      - generic [ref=f5e100]:
+        - generic [ref=f5e104]:
+          - generic [ref=f5e105]:
+            - generic [ref=f5e106]: Выгода до 350 000 ₽
+            - heading "TOYOTA Camry IX" [level=3] [ref=f5e107]
+          - generic [ref=f5e109]:
+            - list [ref=f5e110]:
+              - listitem [ref=f5e111] [cursor=pointer]:
+                - paragraph [ref=f5e112]: Осталось всего 4 TOYOTA Camry IX. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e113] [cursor=pointer]
+        - generic [ref=f5e131]:
+          - generic [ref=f5e132]:
+            - generic [ref=f5e133]: Выгода до 350 000 ₽
+            - heading "Новая TOYOTA Rav 4" [level=3] [ref=f5e134]
+          - generic [ref=f5e136]:
+            - list [ref=f5e137]:
+              - listitem [ref=f5e138] [cursor=pointer]:
+                - paragraph [ref=f5e139]: Новая TOYOTA Rav 4 в наличии. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e140] [cursor=pointer]
+        - generic [ref=f5e159]:
+          - generic [ref=f5e160]:
+            - generic [ref=f5e161]: Выгода до 600 000 ₽
+            - heading "TOYOTA Land Cruiser 250" [level=3] [ref=f5e162]
+          - generic [ref=f5e164]:
+            - list [ref=f5e165]:
+              - listitem [ref=f5e166] [cursor=pointer]:
+                - paragraph [ref=f5e167]: Осталось всего 1 TOYOTA Land Cruiser 250. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e168] [cursor=pointer]
+        - generic [ref=f5e186]:
+          - generic [ref=f5e187]:
+            - generic [ref=f5e188]: Выгода до 600 000 ₽
+            - heading "TOYOTA Land Cruiser 300" [level=3] [ref=f5e189]
+          - generic [ref=f5e191]:
+            - list [ref=f5e192]:
+              - listitem [ref=f5e193] [cursor=pointer]:
+                - paragraph [ref=f5e194]: Осталось всего 1 TOYOTA Land Cruiser 300. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e195] [cursor=pointer]
+        - generic [ref=f5e213]:
+          - generic [ref=f5e214]:
+            - generic [ref=f5e215]: Выгода до 200 000 ₽
+            - heading "TOYOTA Alphard" [level=3] [ref=f5e216]
+          - generic [ref=f5e218]:
+            - list [ref=f5e219]:
+              - listitem [ref=f5e220] [cursor=pointer]:
+                - paragraph [ref=f5e221]: Осталось всего 1 TOYOTA Alphard. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e222] [cursor=pointer]
+        - generic [ref=f5e240]:
+          - generic [ref=f5e241]:
+            - generic [ref=f5e242]: Выгода до 400 000 ₽
+            - heading "TOYOTA Highlander" [level=3] [ref=f5e243]
+          - generic [ref=f5e245]:
+            - list [ref=f5e246]:
+              - listitem [ref=f5e247] [cursor=pointer]:
+                - paragraph [ref=f5e248]: Осталось всего 1 TOYOTA Highlander. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e249] [cursor=pointer]
+        - generic [ref=f5e267]:
+          - generic [ref=f5e268]:
+            - generic [ref=f5e269]: Выгода до 200 000 ₽
+            - heading "Lexus RX300" [level=3] [ref=f5e270]
+          - generic [ref=f5e272]:
+            - list [ref=f5e273]:
+              - listitem [ref=f5e274] [cursor=pointer]:
+                - paragraph [ref=f5e275]: Осталось всего 1 Lexus RX300. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e276] [cursor=pointer]
+        - generic [ref=f5e294]:
+          - generic [ref=f5e295]:
+            - generic [ref=f5e296]: Выгода до 200 000 ₽
+            - heading "Lexus RX350" [level=3] [ref=f5e297]
+          - generic [ref=f5e299]:
+            - list [ref=f5e300]:
+              - listitem [ref=f5e301] [cursor=pointer]:
+                - paragraph [ref=f5e302]: Осталось всего 1 Lexus RX350. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e303] [cursor=pointer]
+        - generic [ref=f5e321]:
+          - generic [ref=f5e322]:
+            - generic [ref=f5e323]: Выгода до 200 000 ₽
+            - heading "Lexus LX600" [level=3] [ref=f5e324]
+          - generic [ref=f5e326]:
+            - list [ref=f5e327]:
+              - listitem [ref=f5e328] [cursor=pointer]:
+                - paragraph [ref=f5e329]: Осталось всего 1 Lexus LX600. 2 года гарантия в подарок
+            - button "Зафиксировать цену" [ref=f5e330] [cursor=pointer]
+    - generic [ref=f5e346]:
+      - paragraph [ref=f5e347]: Авто в наличии
+      - generic [ref=f5e349]:
+        - generic [ref=f5e350] [cursor=pointer]: Toyota
+        - generic [ref=f5e351] [cursor=pointer]: Lexus
+      - generic [ref=f5e353]:
+        - generic [ref=f5e354] [cursor=pointer]: Camry
+        - generic [ref=f5e355] [cursor=pointer]: RAV4
+        - generic [ref=f5e356] [cursor=pointer]: Highlander
+        - generic [ref=f5e357] [cursor=pointer]: Land Cruiser
+        - generic [ref=f5e358] [cursor=pointer]: Land Cruiser Prado
+      - generic [ref=f5e359]:
+        - generic [ref=f5e360]:
+          - paragraph [ref=f5e361]: Toyota Camry, IX (XV80) China Market
+          - generic [ref=f5e362]:
+            - paragraph [ref=f5e363]: 2.0 CVT (173 л.с.)
+            - paragraph [ref=f5e364]: Автомат вариатор | Передний
+            - paragraph [ref=f5e365]: "2024"
+          - button "Получить предложение" [ref=f5e366] [cursor=pointer]
+        - generic [ref=f5e367]:
+          - paragraph [ref=f5e368]: Toyota Camry, IX (XV80) China Market
+          - generic [ref=f5e369]:
+            - paragraph [ref=f5e370]: 2.0 CVT (173 л.с.)
+            - paragraph [ref=f5e371]: Автомат вариатор | Передний
+            - paragraph [ref=f5e372]: "2024"
+          - button "Получить предложение" [ref=f5e373] [cursor=pointer]
+        - generic [ref=f5e374]:
+          - paragraph [ref=f5e375]: Toyota Camry, IX (XV80) China Market
+          - generic [ref=f5e376]:
+            - paragraph [ref=f5e377]: 2.0 CVT (173 л.с.)
+            - paragraph [ref=f5e378]: Автомат вариатор | Передний
+            - paragraph [ref=f5e379]: "2024"
+          - button "Получить предложение" [ref=f5e380] [cursor=pointer]
+        - generic [ref=f5e381]:
+          - paragraph [ref=f5e382]: Toyota Camry, IX (XV80) China Market
+          - generic [ref=f5e383]:
+            - paragraph [ref=f5e384]: 2.0 CVT (173 л.с.)
+            - paragraph [ref=f5e385]: Автомат вариатор | Передний
+            - paragraph [ref=f5e386]: "2024"
+          - button "Получить предложение" [ref=f5e387] [cursor=pointer]
+        - generic [ref=f5e388]:
+          - paragraph [ref=f5e389]: Toyota Camry, IX (XV80) China Market
+          - generic [ref=f5e390]:
+            - paragraph [ref=f5e391]: 2.0 CVT (173 л.с.)
+            - paragraph [ref=f5e392]: Автомат вариатор | Передний
+            - paragraph [ref=f5e393]: "2024"
+          - button "Получить предложение" [ref=f5e394] [cursor=pointer]
+        - generic [ref=f5e395]:
+          - paragraph [ref=f5e396]: Toyota Camry, IX (XV80) China Market
+          - generic [ref=f5e397]:
+            - paragraph [ref=f5e398]: 2.0 CVT (173 л.с.)
+            - paragraph [ref=f5e399]: Автомат вариатор | Передний
+            - paragraph [ref=f5e400]: "2024"
+          - button "Получить предложение" [ref=f5e401] [cursor=pointer]
+      - button "Показать ещё" [ref=f5e402] [cursor=pointer]
+    - generic [ref=f5e405]:
+      - heading "Получите кредит со сниженной ставкой от Тойота Центр Внуково" [level=2] [ref=f5e406]
+      - button "Оставить заявку" [ref=f5e407] [cursor=pointer]
+    - generic [ref=f5e409]:
+      - heading "Получите одно из лучших предложений на рынке" [level=2] [ref=f5e410]
+      - heading "Просто оставьте заявку на обратный звонок" [level=3] [ref=f5e411]
+      - button "Получить предложение" [ref=f5e412] [cursor=pointer]
+    - generic [ref=f5e414]:
+      - separator [ref=f5e415]
+      - generic [ref=f5e416]:
+        - generic [ref=f5e417]: Контакты
+        - generic [ref=f5e418]:
+          - text: Телефон
+          - link "+7 (495) 153‑83‑62" [ref=f5e419] [cursor=pointer]:
+            - /url: tel:+74951538362
+        - generic [ref=f5e421]: Тойота Центр Внуково Москва, Киевское ш., 24км, c8
+    - contentinfo [ref=f5e423]:
+      - generic [ref=f5e424]:
+        - separator [ref=f5e425]
+        - generic [ref=f5e426]:
+          - img "Toyota" [ref=f5e427]
+          - generic [ref=f5e428]: Тойота Центр Внуково
+        - generic [ref=f5e429]:
+          - link "Правовая информация" [ref=f5e430] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/
+          - link "Политика конфиденциальности" [ref=f5e431] [cursor=pointer]:
+            - /url: https://borishof.ru/legal/personal-information/
+        - generic [ref=f5e432]:
+          - text: Права на сайт принадлежат ООО «БорисХоф Т» (ИНН 7743601124, ОГРН 1067746751324), тел.
+          - link "+7 (495) 153‑83‑62" [ref=f5e433] [cursor=pointer]:
+            - /url: tel:+74951538362
+          - text: © ООО «БорисХоф Т». Все права защищены 2026
+    - generic [ref=f5e435]:
+      - paragraph [ref=f5e436]:
+        - text: БорисХоф использует файлы cookies (кукиc) для проведения аудита и сбора статистической информации, чтобы оптимизировать работу и функциональность этого сайта, сделать его более удобным для Вас. Продолжая пользоваться нашим сайтом, вы даете согласие на использование файлов cookies (кукиc). Подробнее о том, как мы используем эти данные, можно узнать в Политике cookies. Также Вы можете ознакомиться с используемыми на сайте
+        - link "рекомендательными технологиями." [ref=f5e437] [cursor=pointer]:
+          - /url: https://borishof.ru/algorithms/
+      - button "Принять" [ref=f5e438] [cursor=pointer]
+  - iframe

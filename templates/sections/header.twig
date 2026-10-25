@@ -1,70 +1,34 @@
 <header class="header js-header" itemscope itemtype="https://schema.org/Organization">
-  <div class="container container-up">
-      {% set switch_pg_path = (lang_code != config.settings.default_lang ? lang_code ~ '/pg/' : 'pg/') %}
-      {% set switch_op_path = (lang_code != config.settings.default_lang ? lang_code ~ '/op/' : 'op/') %}
-      <div class="section__item scopes-switch-wrap">
-        <div class="section__subitem scope-switch-wrap {{ current_scope == 'pg' ? 'active' : '' }}">
-          <a href="{{ url(switch_pg_path) }}" class="link uppercase {{ current_scope == 'pg' ? 'active' : '' }}">{{ global.header['scope-switch'].pg[lang_code] }}</a>  
-        </div>
-        <div class="section__subitem scope-switch-wrap {{ current_scope == 'op' ? 'active' : '' }}">
-          <a href="{{ url(switch_op_path) }}" class="link uppercase {{ current_scope == 'op' ? 'active' : '' }}">{{ global.header['scope-switch'].op[lang_code] }}</a>  
-        </div>
-      </div>
-  </div>
-  <div class="dilimiter width-100 height-1 bg-color-2 opacity-10"></div>
-  <div class="container container-down">
-    <div class="section__item logo-wrap">
-      <a href="{{ url(lang_code != config.settings.default_lang ? lang_code ~ '/' : '') }}" class="link header__logo" itemprop="url">
-        {% if global.logo.black is defined %}
-          <img src="{{ global.logo.black.src }}" alt="{{ global.logo.black.alt | default('Logo') }}" class="img-responsive" itemprop="logo">
-        {% else %}
-          <span class="heading h4 uppercase" itemprop="name">Company</span>
-        {% endif %}
+  <div class="section__item block-wrap">
+    <div class="section__subitem logo-wrap">
+      <a href="/" class="link header__logo" itemprop="url">
+        <img src="{{ url(global.logo.vertical.black.src|default('data/img/ui/logos/dealer-brand-logo-color-2.svg')) }}" alt="{{ global.logo.vertical.black.alt|default('Logo') }}" itemprop="logo" width="852" height="75">
       </a>
     </div>
-    <div class="section__item nav-wrap">
-      {% if global.nav[lang_code].items is defined %}
-        {% for item in global.nav[lang_code].items %}
-          {% if item.href is defined and item.title is defined %}
-            {% set nav_path = item.href | trim('/') %}
-            
-            {# Scope Prefix #}
-            {% set scope_segment = (current_scope == 'op' ? 'op/' : '') %}
-
-            {% if lang_code != config.settings.default_lang %}
-              {% set nav_path = lang_code ~ '/' ~ scope_segment ~ nav_path %}
-            {% else %}
-              {% set nav_path = scope_segment ~ nav_path %}
-            {% endif %}
-            
-            {% if nav_path is not empty and not nav_path ends with '/' %}
-              {% set nav_path = nav_path ~ '/' %}
-            {% endif %}
-            
-            <div class="section__subitem nav__item">
-              <a href="{{ url(nav_path) }}" class="nav__link link font-1-normal nowrap uppercase">{{ item.title }}</a>
-            </div>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-    </div>
-    <div class="section__item callback-wrap">
-      {% if global.phones is defined %}
-        {% for phone in global.phones %}
-          <a href="{{ phone.href }}" class="callback-link link nowrap font-1-medium js-callback-link animate__animated " itemprop="telephone">{{ phone.title | raw }}</a>
-        {% endfor %}
-      {% endif %}
-    </div>
-    
-    {# Scope Switcher removed #}
-
-    <div class="section__item lang-switch-wrap">
-      {% include 'components/lang-switch.twig' %}
-    </div>
-    <div class="section__item burger-icon-wrap">
+    <nav class="section__subitem nav-wrap" aria-label="Основное меню">
+      {% set pageKey = pageData.name|default(page_id|default('')) %}
+      {% for item in global.nav[lang_code].items %}
+        {% if item.visible is not defined or item.visible %}
+        {% set itemHref = item.href|default('/') %}
+        {% set normalizedItemHref = itemHref|trim('/') %}
+        {% set isActive = false %}
+        {% if normalizedItemHref == '' %}
+          {% set isActive = pageKey == 'index' %}
+        {% elseif item.active_for is defined and pageKey in item.active_for %}
+          {% set isActive = true %}
+        {% else %}
+          {% set isActive = pageKey == normalizedItemHref %}
+        {% endif %}
+        <div class="section__inner nav-link-wrap">
+          <a href="{{ url(itemHref) }}" class="link color-2 underline-center header__nav-link{{ isActive ? ' active' : '' }}">{{ item.title }}</a>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </nav>
+    <div class="section__subitem burger-icon-wrap">
       {% include 'components/burger-icon.twig' %}
     </div>
-    <div class="section__item burger-menu-wrap">
+    <div class="section__subitem burger-menu-wrap">
       {% include 'components/burger-menu.twig' with {
         items: global.nav[lang_code].items
       } %}

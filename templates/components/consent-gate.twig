@@ -1,0 +1,43 @@
+{# Шлюз согласия на cookie (proposal 0025). Аналитика и трекеры собирают персональные данные
+   (152-ФЗ, позиция Роскомнадзора), и до согласия они запускаться не должны: «продолжая
+   пользоваться сайтом, вы соглашаетесь» согласием не считается. Счётчики обёрнуты в
+   ismartConsent.onAccept и стартуют только после «Принять» — сейчас или в прошлый визит.
+   Inline и раньше счётчиков: иначе им нечем обернуться. Согласие хранится год. В панели
+   кнопка одна — «Принять» (решение владельца 19.10.2026); decline() оставлен для площадок,
+   которым понадобится явный отказ. #}
+<script>
+(function () {
+  if (window.ismartConsent) return;
+  var KEY = 'cookie_consent';
+  var queue = [];
+  function read() {
+    var m = document.cookie.match(/(?:^|;\s*)cookie_consent=([^;]*)/);
+    return m ? m[1] : '';
+  }
+  function write(value, days) {
+    var expires = new Date(Date.now() + days * 864e5).toUTCString();
+    document.cookie = KEY + '=' + value + ';expires=' + expires + ';path=/;SameSite=Lax';
+  }
+  function call(fn) { try { fn(); } catch (e) { /* чужой счётчик не должен ронять остальные */ } }
+  window.ismartConsent = {
+    state: read,
+    granted: function () { return read() === 'accepted'; },
+    onAccept: function (fn) { if (read() === 'accepted') call(fn); else queue.push(fn); },
+    accept: function () {
+      write('accepted', 365);
+      var list = queue;
+      queue = [];
+      list.forEach(call);
+      try {
+        var ev = new CustomEvent('cookieConsentAccepted', { detail: { ts: Date.now() } });
+        window.dispatchEvent(ev);
+        document.dispatchEvent(ev);
+      } catch (e) { /* старые браузеры без CustomEvent */ }
+    },
+    decline: function () {
+      write('declined', 180);
+      queue = [];
+    }
+  };
+})();
+</script>
