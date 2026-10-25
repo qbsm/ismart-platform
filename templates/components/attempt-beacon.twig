@@ -12,7 +12,7 @@
   var EP = 'https://api.ismart.pro/v1/attempt';
   // Отправка заявки: обработчик платформы (/api/send, /api/widget-rescue) и form.php старых twig-сайтов и PHP-лендингов
   // (api.ismart.pro 0001, E17) — по ответу на него маячок знает исход, даже если сайт не шлёт ismart:send-result.
-  var SEND_RE = /\/api\/(send|widget-rescue)|\/form\.php(?:[?#]|$)/;
+  var SEND_RE = /\/api\/(send|widget-rescue)|\/form\.php(?:[?#]|$)|back\/send|ajax\/send|promo-lead/;
   var PHONE_RE = /тел|phone/i;
   var NAME_RE = /имя|name/i;
   var TRAP = ['company_site', 'website'];
@@ -199,12 +199,15 @@
     if (!f.dataset.ismartSession) f.dataset.ismartSession = hex();
     /* Разметку чужой формы не трогаем: лишнее поле уехало бы в их приёмник заявок.
        Такие сессии сшиваются с заявкой по номеру, а не по ключу. */
-    if (ownForm(f)) {
-      var h = f.querySelector('input[name="idempotency_key"]');
+    // Площадка, чей обработчик принимает ключ сессии (form.php старых twig-сайтов — как request_id), объявляет
+    // имя поля в window.__ismartKeyField — тогда ключ кладётся и в её формы и заявка сшивается точно.
+    var keyField = ownForm(f) ? 'idempotency_key' : String(window.__ismartKeyField || '');
+    if (keyField) {
+      var h = f.querySelector('input[name="' + keyField + '"]');
       if (!h) {
         h = document.createElement('input');
         h.type = 'hidden';
-        h.name = 'idempotency_key';
+        h.name = keyField;
         f.appendChild(h);
       }
       h.value = f.dataset.ismartSession;
