@@ -184,6 +184,17 @@ return $projectExtraSettings + [
         'site' => Env::get('RESCUE_SITE'),
         'key' => Env::get('RESCUE_KEY'),
         'timeout' => Env::int('RESCUE_TIMEOUT', 3),
+        // Очередь досылки (RescueQueue): сбой сети, DNS или 5xx приёмника не теряет копию заявки —
+        // она ложится в logs/rescue_queue.log и досылается после ответа, после следующей заявки и
+        // командой `php tools/ops/rescue.php flush`. Выключение — одна попытка, как до 25.10.2026.
+        'queue' => Env::bool('RESCUE_QUEUE', true),
+    ],
+
+    // Каналы, которые отправляют после ответа посетителю (DeferredChannel), через запятую: mail,
+    // telegram. По умолчанию пусто — все каналы до ответа. Включать там, где почта или Telegram
+    // держат кнопку секундами; заявка к этому моменту уже у приёмника или в его очереди.
+    'notifications' => [
+        'deferred' => Env::get('FORM_DEFER_CHANNELS'),
     ],
 
     'calltouch' => [

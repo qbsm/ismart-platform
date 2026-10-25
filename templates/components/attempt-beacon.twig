@@ -490,12 +490,14 @@
   new MutationObserver(scanWidgets).observe(document.documentElement, { childList: true, subtree: true });
   setInterval(scanWidgets, 2000);
 
-  function report(outcome, error, fields) {
+  function report(outcome, error, fields, timing) {
     var s = state.last;
     if (!s) return;
     var ev = { kind: 'result', outcome: outcome, error: error || '' };
     // Какие поля не прошли проверку — строкой через запятую, как их хранит хронология приёмника.
     if (fields && fields.length) ev.fields = fields.join(',').slice(0, 200);
+    // Сколько заняла отправка и на чём: капча (как прошла, мс), запросы к серверу (мс, статус).
+    if (timing && typeof timing === 'object') ev.timing = timing;
     push(s, ev, true);
     if (outcome !== 'sent') return;
     if (s.channel === 'form' && s.root.dataset) delete s.root.dataset.ismartSession;
@@ -504,10 +506,15 @@
   }
   document.addEventListener('ismart:send-result', function (e) {
     var det = e.detail || {};
-    report(det.outcome || '', det.error || '', det.fields);
+    report(det.outcome || '', det.error || '', det.fields, det.timing);
   }, true);
   function classify(status, text) {
-    if (status >= 200 && status < 300) report('sent');
+    // Успех формы платформы отмечает сама форма (ismart:send-result) — с хронологией отправки; отметь
+    // его здесь, сессия закрылась бы раньше и timing не дошёл бы до приёмника. Прочие формы — как раньше.
+    if (status >= 200 && status < 300) {
+      var s = state.last;
+      if (!(s && s.root && s.root.getAttribute && s.root.getAttribute('data-callback-form-initialized') === '1')) report('sent');
+    }
     else if (status === 0) report('network_error', 'нет ответа');
     else report('http_' + status, String(text || '').slice(0, 120));
   }

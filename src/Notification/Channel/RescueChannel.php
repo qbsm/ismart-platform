@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace App\Notification\Channel;
 
+use App\Support\AfterResponse;
 use App\Support\Arr;
+use App\Support\RescueQueue;
 use App\Notification\ChannelInterface;
 use App\Notification\ChannelResult;
 use Psr\Log\LoggerInterface;
@@ -31,6 +33,10 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  * Подтверждение отправителя: приёмник сверяет домен с адресом, с которого пришёл запрос —
  * заявку шлёт бэкенд сайта, значит с того же IP, на который резолвится домен. Ключ нужен
  * только там, где это не так (хостинг клиента за CDN или общим адресом).
+ *
+ * С очередью (RescueQueue, в ядре включена по умолчанию, RESCUE_QUEUE) сбой сети или 5xx приёмника
+ * заявку не теряет: она ложится в очередь и досылается после ответа посетителю, после следующей
+ * заявки и командой `php tools/ops/rescue.php flush` (таймер площадки). Без очереди — одна попытка.
  */
 final class RescueChannel implements ChannelInterface
 {
@@ -41,6 +47,7 @@ final class RescueChannel implements ChannelInterface
         private readonly HttpClientInterface $httpClient,
         private readonly LoggerInterface $logger,
         private readonly array $config,
+        private readonly ?RescueQueue $queue = null,
     ) {}
 
     public function name(): string
@@ -58,8 +65,58 @@ final class RescueChannel implements ChannelInterface
     public function send(array $formData, array $uploadedFiles, string $requestId): ChannelResult
     {
         $payload = $this->buildPayload($formData, $requestId);
-        $timeout = (float) ($this->config['timeout'] ?? 10);
+        $answer = $this->deliver($payload, (float) ($this->config['timeout'] ?? 10), $requestId);
 
+        if ($answer['outcome'] === RescueQueue::SENT) {
+            // Приёмник снова доступен — заодно уходят застрявшие в очереди.
+            if ($this->queue !== null && $this->queue->items() !== []) {
+                AfterResponse::defer(fn() => $this->flushQueue());
+            }
+            return ChannelResult::success($this->name(), ['id' => $answer['id']]);
+        }
+
+        // 4xx — приёмник данные не принял, повтор не поможет: это предупреждение, не отказ канала.
+        if ($answer['outcome'] === RescueQueue::REJECT) {
+            return ChannelResult::warning($this->name(), $answer['message'], ['http_code' => $answer['http_code']]);
+        }
+
+        if ($this->queue !== null && $this->queue->enqueue($payload)) {
+            $this->logger->warning('Rescue: не дошло, заявка в очереди досылки', [
+                'request_id' => $requestId,
+                'error' => $answer['message'],
+            ]);
+            AfterResponse::defer(fn() => $this->flushQueue());
+            return ChannelResult::success($this->name(), ['queued' => true]);
+        }
+
+        return ChannelResult::failed($this->name(), $answer['message'], ['http_code' => $answer['http_code']]);
+    }
+
+    /**
+     * Досылка очереди. После ответа посетителю и из консоли ждём дольше, чем в запросе формы:
+     * кнопку это уже не держит.
+     *
+     * @return array{sent:int, left:int}
+     */
+    public function flushQueue(): array
+    {
+        if ($this->queue === null || !$this->isEnabled()) {
+            return ['sent' => 0, 'left' => $this->queue === null ? 0 : count($this->queue->items())];
+        }
+        $timeout = max(10.0, (float) ($this->config['timeout'] ?? 10));
+        return $this->queue->flush(fn(string $kind, array $payload): string => $kind === RescueQueue::CHANNELS
+            ? $this->deliverChannels($payload, $timeout)
+            : $this->deliver($payload, $timeout, (string) ($payload['request_id'] ?? ''))['outcome']);
+    }
+
+    /**
+     * Один запрос в приёмник. outcome — RescueQueue::SENT, RETRY (сеть, DNS, 5xx) или REJECT (4xx).
+     *
+     * @param array<string,mixed> $payload
+     * @return array{outcome:string, message:string, http_code:int, id:string}
+     */
+    private function deliver(array $payload, float $timeout, string $requestId): array
+    {
         try {
             $response = $this->httpClient->request('POST', (string) $this->config['url'], [
                 'headers' => ['Content-Type' => 'application/json'],
@@ -74,7 +131,7 @@ final class RescueChannel implements ChannelInterface
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
             ]);
-            return ChannelResult::failed($this->name(), $e->getMessage());
+            return ['outcome' => RescueQueue::RETRY, 'message' => $e->getMessage(), 'http_code' => 0, 'id' => ''];
         }
 
         if ($httpCode >= 200 && $httpCode < 300 && ($decoded['ok'] ?? false)) {
@@ -86,20 +143,19 @@ final class RescueChannel implements ChannelInterface
                 'id' => $id,
                 'duplicate' => (bool) ($decoded['duplicate'] ?? false),
             ]);
-            return ChannelResult::success($this->name(), ['id' => $id]);
+            return ['outcome' => RescueQueue::SENT, 'message' => '', 'http_code' => $httpCode, 'id' => $id];
         }
 
         $message = (string) ($decoded['error'] ?? 'unknown_error');
         $context = ['request_id' => $requestId, 'http_code' => $httpCode, 'message' => $message];
 
-        // 4xx — приёмник данные не принял, повтор не поможет: это предупреждение, не отказ канала.
         if ($httpCode >= 400 && $httpCode < 500) {
             $this->logger->warning('Rescue: отклонено', $context);
-            return ChannelResult::warning($this->name(), $message, ['http_code' => $httpCode]);
+            return ['outcome' => RescueQueue::REJECT, 'message' => $message, 'http_code' => $httpCode, 'id' => ''];
         }
 
         $this->logger->error('Rescue: не доставлено', $context);
-        return ChannelResult::failed($this->name(), $message, ['http_code' => $httpCode]);
+        return ['outcome' => RescueQueue::RETRY, 'message' => $message, 'http_code' => $httpCode, 'id' => ''];
     }
 
     /**
@@ -108,6 +164,9 @@ final class RescueChannel implements ChannelInterface
      * сохранена раньше любых попыток доставки, и в тот момент итогов ещё нет.
      *
      * Ошибки здесь не влияют ни на что: заявка уже принята, это только пометка для отчётности.
+     * С очередью итоги уходят после ответа посетителю, с настоящими итогами отложенных каналов. Если
+     * сама заявка ещё ждёт в очереди, итоги встают следом за ней: приёмник принимает их только к
+     * известной заявке (иначе 404).
      *
      * @param array<string,string> $channels
      */
@@ -126,19 +185,53 @@ final class RescueChannel implements ChannelInterface
             $payload['key'] = (string) $this->config['key'];
         }
 
+        if ($this->queue === null) {
+            $this->deliverChannels($payload, 3.0);
+            return;
+        }
+        // После ответа и после отложенных каналов (письмо, Telegram — DeferredChannel): их задачи
+        // встали в AfterResponse раньше, к этому моменту настоящий итог уже известен.
+        $queue = $this->queue;
+        AfterResponse::defer(function () use ($payload, $queue, $requestId): void {
+            $payload['channels'] = array_merge($payload['channels'], DeferredChannel::results());
+            if ($queue->hasLead($requestId)) {
+                $queue->enqueue($payload, RescueQueue::CHANNELS);
+                return;
+            }
+            if ($this->deliverChannels($payload, 10.0) === RescueQueue::RETRY) {
+                $queue->enqueue($payload, RescueQueue::CHANNELS);
+            }
+        });
+    }
+
+    /**
+     * Итоги каналов в приёмник. SENT — приняты; RETRY — сеть, 5xx или 404 (заявки у приёмника ещё
+     * нет); REJECT — прочие 4xx.
+     *
+     * @param array<string,mixed> $payload
+     */
+    private function deliverChannels(array $payload, float $timeout): string
+    {
+        $requestId = (string) ($payload['request_id'] ?? '');
         try {
-            $this->httpClient->request('POST', $this->channelsUrl(), [
+            $code = $this->httpClient->request('POST', $this->channelsUrl(), [
                 'headers' => ['Content-Type' => 'application/json'],
                 'body' => (string) json_encode($payload, JSON_UNESCAPED_UNICODE),
-                'timeout' => 3,
-                'max_duration' => 3,
+                'timeout' => $timeout,
+                'max_duration' => $timeout,
             ])->getStatusCode();
         } catch (TransportException|ExceptionInterface $e) {
             $this->logger->info('Rescue: итоги каналов не доехали', [
                 'request_id' => $requestId,
                 'error' => $e->getMessage(),
             ]);
+            return RescueQueue::RETRY;
         }
+        if ($code >= 200 && $code < 300) {
+            return RescueQueue::SENT;
+        }
+        $this->logger->info('Rescue: итоги каналов не приняты', ['request_id' => $requestId, 'http_code' => $code]);
+        return $code === 404 || $code >= 500 ? RescueQueue::RETRY : RescueQueue::REJECT;
     }
 
     private function channelsUrl(): string

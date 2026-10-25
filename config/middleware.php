@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Handler\HttpErrorHandler;
 use App\Handler\ServerErrorHandler;
+use App\Middleware\AfterResponseMiddleware;
 use App\Middleware\CorsMiddleware;
 use App\Middleware\CorrelationIdMiddleware;
 use App\Middleware\LanguageMiddleware;
@@ -30,6 +31,9 @@ return static function (App $app): void {
     $app->add($container->get(CorsMiddleware::class));
     $app->addBodyParsingMiddleware();
     $app->add($container->get(RateLimitMiddleware::class));
+    // Ответ формы раньше задач «после ответа» (очередь приёмника, отложенные каналы) там, где SAPI
+    // не умеет закрыть соединение сам (Apache + mod_php): точная длина, Connection: close, без сжатия.
+    $app->add(AfterResponseMiddleware::class);
     $app->add(LanguageMiddleware::class);
 
     $app->addRoutingMiddleware();

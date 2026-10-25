@@ -775,7 +775,13 @@
   animation: fcSpin 0.7s linear infinite;
 }
 
+/* Начало задано явно: иначе кадр «from» берётся из transform: scale(1) кнопки, а scale → rotate(360deg)
+   интерполируется матрицами, у которых оба конца — единичная матрица, и кольцо стоит на месте. */
 @keyframes fcSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
   to {
     transform: rotate(360deg);
   }

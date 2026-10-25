@@ -3,7 +3,14 @@ import { createAbortController } from './abort.js';
 import { primeFormToken, primeAllTokenFields, ensureFormToken, refreshFormToken } from './token.js';
 import { formTitle } from './form-title.js';
 import { dropAutofilledTraps } from './trap.js';
-import { initCaptcha, appendCaptchaToken } from './captcha.js';
+import {
+  initCaptcha,
+  appendCaptchaToken,
+  captchaToken,
+  hasLateCaptchaToken,
+  lastCaptcha,
+  captchaOnScreen,
+} from './captcha.js';
 import { FormChecker } from '../form-rules/dom.js';
 import { PhoneMask } from './mask.js';
 import { FormUI } from './ui.js';
@@ -81,6 +88,9 @@ export class CallbackForm {
     }
 
     this.isSubmitting = true;
+    // Хронология отправки для приёмника: без неё «отправлялось 15 секунд» не разложить на капчу,
+    // сервер и повторы.
+    this.timing = { started: performance.now(), steps: [] };
     this.ui.setLoadingState();
     this.abortController = createAbortController();
     let hasSucceeded = false;
@@ -93,7 +103,8 @@ export class CallbackForm {
         formData.set('idempotency_key', this.form.dataset.ismartSession);
       }
       await ensureFormToken(formData, this.form);
-      await appendCaptchaToken(formData);
+      await appendCaptchaToken(formData, { late: () => this._submitWithLateCaptcha() });
+      this._step('captcha', lastCaptcha());
       const response = await this._sendWithRetry(formData);
 
       if (response.processing === true) {
@@ -111,11 +122,13 @@ export class CallbackForm {
     } catch (error) {
       if (error && error.name === 'AbortError') {
         this._reportOutcome('network_error', 'timeout');
+        if (this._showCaptchaPending()) return;
         // Без текста человек не понимает, ушла ли заявка, и уходит. Данные в форме остаются.
         this.ui.showFormError(
           this.i18n.get('error', 'connection_error', DEFAULT_ERROR_TEXTS[this.lang].connection_error),
           { withPhone: true }
         );
+        this._retryIfLateCaptcha();
         return;
       }
 
@@ -129,7 +142,9 @@ export class CallbackForm {
       const serverFields = error && error.errors && typeof error.errors === 'object' ? Object.keys(error.errors) : [];
       this._reportOutcome(outcome, (error && error.message) || '', serverFields);
 
-      this._handleError(error);
+      const captchaRelated = status === 0 || (error && error.code === 'CAPTCHA_INVALID');
+      if (!(captchaRelated && this._showCaptchaPending())) this._handleError(error);
+      if (captchaRelated) this._retryIfLateCaptcha();
     } finally {
       this.isSubmitting = false;
       if (hasSucceeded) {
@@ -147,9 +162,30 @@ export class CallbackForm {
    * `fields` — какие поля не прошли проверку: по ним видно, на чём спотыкаются.
    */
   _reportOutcome(outcome, error = '', fields = []) {
-    this.form.dispatchEvent(
-      new CustomEvent('ismart:send-result', { bubbles: true, detail: { outcome, error, fields } })
-    );
+    const detail = { outcome, error, fields };
+    if (this.timing && outcome !== 'validation_failed') {
+      detail.timing = { total_ms: Math.round(performance.now() - this.timing.started), steps: this.timing.steps };
+    }
+    this.form.dispatchEvent(new CustomEvent('ismart:send-result', { bubbles: true, detail }));
+  }
+
+  /** Шаг отправки в хронологию: капча (как прошла и сколько ждали) или запрос к серверу. */
+  _step(kind, data) {
+    if (this.timing && this.timing.steps.length < 8) this.timing.steps.push({ k: kind, ...data });
+  }
+
+  async _timedSend(formData) {
+    const started = performance.now();
+    try {
+      const response = await this.api.send(formData, this.abortController.signal);
+      this._step('send', { ms: Math.round(performance.now() - started), status: 200 });
+      return response;
+    } catch (error) {
+      let status = error && typeof error.status === 'number' ? error.status : 0;
+      if (error && error.name === 'AbortError') status = 'timeout';
+      this._step('send', { ms: Math.round(performance.now() - started), status });
+      throw error;
+    }
   }
 
   _handleFileChange(event) {
@@ -205,6 +241,7 @@ export class CallbackForm {
     try {
       return await this._sendSurvivingBlip(formData);
     } catch (error) {
+      if (error && error.code === 'CAPTCHA_INVALID') return this._resendWithFreshCaptcha(formData, error);
       if (!error || error.code !== 'TOKEN_INVALID') throw error;
 
       const token = await refreshFormToken();
@@ -213,8 +250,45 @@ export class CallbackForm {
       formData.set('form_token', token);
       const wait = Number(error.retryAfter) > 0 ? Number(error.retryAfter) : 3;
       await new Promise((resolve) => setTimeout(resolve, (wait + 0.5) * 1000));
-      return this.api.send(formData, this.abortController.signal);
+      return this._timedSend(formData);
     }
+  }
+
+  /**
+   * Капча не успела: на подозрительной сессии (VPN, вкладка часами висела открытой) картинка
+   * появляется позже тихого ожидания, и заявка ушла без её ответа. Сервер отказал — проверка
+   * проходит заново, человек решает картинку, заявка уходит сама, данные в форме те же.
+   * Ответа нет и теперь — показываем отказ сервера.
+   */
+  async _resendWithFreshCaptcha(formData, error) {
+    const token = await captchaToken({ fresh: true, late: () => this._submitWithLateCaptcha() });
+    this._step('captcha', lastCaptcha());
+    if (!token) throw error;
+    formData.set('smart-token', token);
+    return this._timedSend(formData);
+  }
+
+  /**
+   * Картинку капчи человек решил, когда форма уже показала ошибку (ответ опоздал, или связь
+   * подвисла и запрос оборвался по тайм-ауту). Ошибка не должна оставаться: заявка уходит сама,
+   * с этим ответом — captchaToken отдаст его первым. Отправленную или уходящую форму не трогаем.
+   */
+  /** Окно капчи ещё на экране — просим пройти проверку вместо ошибки; ответ отправит заявку сам. */
+  _showCaptchaPending() {
+    if (!captchaOnScreen()) return false;
+    this.ui.showFormError(this.i18n.get('error', 'captcha_pending', DEFAULT_ERROR_TEXTS[this.lang].captcha_pending));
+    return true;
+  }
+
+  /** Ответ капчи пришёл, пока висел оборвавшийся запрос, — сразу ещё раз, уже с ним. */
+  _retryIfLateCaptcha() {
+    if (hasLateCaptchaToken()) setTimeout(() => this._submitWithLateCaptcha(), 0);
+  }
+
+  _submitWithLateCaptcha() {
+    if (this.isSubmitting || this.form.classList.contains('is-success') || !this.form.isConnected) return;
+    if (this.ui.bannerMode !== 'form') return;
+    this._handleSubmit({ preventDefault() {} });
   }
 
   /**
@@ -224,11 +298,11 @@ export class CallbackForm {
    */
   async _sendSurvivingBlip(formData) {
     try {
-      return await this.api.send(formData, this.abortController.signal);
+      return await this._timedSend(formData);
     } catch (error) {
       if (!error || error.code !== 'NETWORK_ERROR') throw error;
       await new Promise((resolve) => setTimeout(resolve, NETWORK_RETRY_MS));
-      return this.api.send(formData, this.abortController.signal);
+      return this._timedSend(formData);
     }
   }
 

@@ -56,7 +56,7 @@ public/index.php → DI Container → Middleware Stack → Routes → PageAction
 
 ### Middleware Stack (порядок важен)
 
-RequestDuration → CorrelationId → SecurityHeaders → CORS → BodyParsing → RateLimit → Language → Redirect → TrailingSlash → Routing → ErrorHandling
+RequestDuration → CorrelationId → SecurityHeaders → CORS → BodyParsing → RateLimit → AfterResponse → Language → Redirect → TrailingSlash → Routing → ErrorHandling
 
 ### Event Dispatcher (PSR-14, league/event)
 
@@ -64,7 +64,7 @@ RequestDuration → CorrelationId → SecurityHeaders → CORS → BodyParsing �
 
 ### Notification Channels (ADR-0005)
 
-`ApiSendAction` отправляет submit формы в 4 базовых канала через `NotificationDispatcher`: `mail`, `calltouch`, `telegram`, `google_sheets`. Каждый канал — отдельный класс под `ChannelInterface` (`src/Notification/Channel/`). Канал без credentials отдаёт `disabled` через `isEnabled()`, не падает. JSON response содержит `channels: {name: status}`. Throwable одного канала изолируется и не блокирует остальные.
+`ApiSendAction` отправляет submit формы через `NotificationDispatcher`: `rescue` (приёмник api.ismart.pro, первым), `mail`, `calltouch`, `telegram`, `google_sheets`. Копия в приёмник не теряется при сбое сети — очередь `RescueQueue` (`RESCUE_QUEUE`, по умолчанию вкл.), досылка `php tools/ops/rescue.php flush`. Почту и Telegram можно отправлять после ответа посетителю (`FORM_DEFER_CHANNELS=mail,telegram`, по умолчанию выкл.): задачи «после ответа» — `AfterResponse`, ответ раньше них под Apache + mod_php — `AfterResponseMiddleware` (ADR-0017). Каждый канал — отдельный класс под `ChannelInterface` (`src/Notification/Channel/`). Канал без credentials отдаёт `disabled` через `isEnabled()`, не падает. JSON response содержит `channels: {name: status}`. Throwable одного канала изолируется и не блокирует остальные.
 
 ### Twig Extensions
 

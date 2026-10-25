@@ -155,7 +155,7 @@ final class ApiSendAction
                 return $this->json($response, 422, [
                     'success' => false,
                     'code' => 'CAPTCHA_INVALID',
-                    'message' => 'Не удалось подтвердить, что вы человек. Обновите страницу и попробуйте снова.',
+                    'message' => 'Не получилось пройти проверку «я не робот». Нажмите «Отправить» ещё раз.',
                     'request_id' => $requestId,
                 ]);
             }
