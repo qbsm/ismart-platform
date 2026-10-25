@@ -10,7 +10,9 @@
   function boot() {
   if (window.__ismartAttempt) return;
   var EP = 'https://api.ismart.pro/v1/attempt';
-  var SEND_RE = /\/api\/(send|widget-rescue)/;
+  // Отправка заявки: обработчик платформы (/api/send, /api/widget-rescue) и form.php старых twig-сайтов и PHP-лендингов
+  // (api.ismart.pro 0001, E17) — по ответу на него маячок знает исход, даже если сайт не шлёт ismart:send-result.
+  var SEND_RE = /\/api\/(send|widget-rescue)|\/form\.php(?:[?#]|$)/;
   var PHONE_RE = /тел|phone/i;
   var NAME_RE = /имя|name/i;
   var TRAP = ['company_site', 'website'];
