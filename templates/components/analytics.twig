@@ -15,6 +15,10 @@
 {% if _ym_ids is empty and config.settings.yandex_metric_id|default(0) %}
   {% set _ym_ids = [config.settings.yandex_metric_id] %}
 {% endif %}
+{# Старый ключ дополнительных счётчиков (yandex_metric_extra_ids) — у части площадок общий счётчик сети живёт только в нём. #}
+{% for _ym_x in config.settings.yandex_metric_extra_ids|default([]) %}
+  {% if _ym_x and _ym_x not in _ym_ids %}{% set _ym_ids = _ym_ids|merge([_ym_x]) %}{% endif %}
+{% endfor %}
 {% set _ct_ids = config.settings.calltouch_counters|default([]) %}
 {% if _ct_ids is empty and config.settings.calltouch_client_id|default('') %}
   {% set _ct_ids = config.settings.calltouch_client_id|split(',')|map(v => v|trim)|filter(v => v) %}
