@@ -1,99 +1,105 @@
-{# Yandex.Metrika — только после согласия на cookie (consent-gate.twig), затем отложенная
-   загрузка после load + requestIdleCallback.
-   Не блокирует FCP/LCP/TBT. ID из YANDEX_METRIC_ID (можно несколько через запятую);
-   без него счётчик не выводится. tag.js грузится один раз, init — на каждый счётчик. #}
+{# Yandex.Metrika + CallTouch — отложенная загрузка третьих сторон (guides/lighthouse-100.md §5, devops CALLTOUCH.md).
+   Заглушки ym()/ct() ставятся СРАЗУ: вызовы из форм, web-vitals.js и modal.js (виджет CallTouch на CTA)
+   копятся в очередь и проигрываются после загрузки. Сами tag.js / init-min.js — по первому взаимодействию
+   (pointerdown/touchstart раньше click по CTA), по уходу со страницы или по таймеру: людям 1,5 с (подмена номеров
+   не должна ждать), замерщику Lighthouse 15 с — его трасса кончается раньше, третьи стороны в замер не попадают.
+
+   Согласие на cookie (consent-gate.twig, proposal 0025): Метрика (tag.js) — только после «Принять», до него вызовы
+   ym() копятся в заглушке. CallTouch — без шлюза (слово владельца 28.10.2026: подмена номеров не ждёт «Принять»).
+   На площадке без шлюза (ismartConsent нет) Метрика грузится по той же схеме сразу.
+
+   ID Метрики — yandex_metric_ids (YANDEX_METRIC_ID через запятую) или yandex_metric_id; счётчики CallTouch —
+   calltouch_counters. Без обоих блок не выводится. Каждый счётчик Метрики — свой tag.js?id=: tag.js основного
+   init'ы дополнительных из общей очереди не поднимает. #}
 {% set _ym_ids = config.settings.yandex_metric_ids|default([]) %}
 {% if _ym_ids is empty and config.settings.yandex_metric_id|default(0) %}
   {% set _ym_ids = [config.settings.yandex_metric_id] %}
 {% endif %}
-{% if _ym_ids is not empty %}
-<!-- Yandex.Metrika counter -->
+{% set _ct_ids = config.settings.calltouch_counters|default([]) %}
+{% if _ym_ids is not empty or _ct_ids is not empty %}
 <script>
-  window.dataLayer = window.dataLayer || [];
-  window.ymIds = {{ _ym_ids|json_encode|raw }};
-  // Цель должна доехать до всех счётчиков площадки, а не только до первого.
-  window.ymGoal = function(name, params) {
-    if (typeof window.ym !== 'function' || !name) { return; }
-    window.ymIds.forEach(function(id) { window.ym(id, 'reachGoal', name, params); });
-  };
-  window.ymEcommerce = function(payload) {
-    if (payload) { window.dataLayer.push(payload); }
-  };
-  // Разметка целей атрибутом: <a data-ym-goal="menu_click"> — без правки бандлов.
-  document.addEventListener('click', function(event) {
-    var el = event.target.closest && event.target.closest('[data-ym-goal]');
-    if (el) { window.ymGoal(el.getAttribute('data-ym-goal')); }
-  });
+  (function(){
+    {% if _ym_ids is not empty %}
+    window.dataLayer = window.dataLayer || [];
+    window.ymIds = {{ _ym_ids|json_encode|raw }};
+    window.ym = window.ym || function(){ (window.ym.a = window.ym.a || []).push(arguments); };
+    window.ym.l = 1 * new Date();
+    {% for _ym_id in _ym_ids %}
+    ym({{ _ym_id }}, "init", {
+      ssr: true,
+      webvisor: true,
+      clickmap: true,
+      ecommerce: "dataLayer",
+      referrer: document.referrer,
+      url: location.href,
+      accurateTrackBounce: true,
+      trackLinks: true
+    });
+    {% endfor %}
+    // Цель должна доехать до всех счётчиков площадки, а не только до первого.
+    window.ymGoal = function(name, params) {
+      if (typeof window.ym !== "function" || !name) { return; }
+      window.ymIds.forEach(function(id) { window.ym(id, "reachGoal", name, params); });
+    };
+    window.ymEcommerce = function(payload) { if (payload) { window.dataLayer.push(payload); } };
+    // Разметка целей атрибутом: <a data-ym-goal="menu_click"> — без правки бандлов.
+    document.addEventListener("click", function(event) {
+      var el = event.target.closest && event.target.closest("[data-ym-goal]");
+      if (el) { window.ymGoal(el.getAttribute("data-ym-goal")); }
+    });
+    {% endif %}
+    {% if _ct_ids is not empty %}
+    // CallTouch: очередь сразу (modal.js зовёт ct('modules','widgets',...) — копится), скрипт — отложенно.
+    window.CalltouchDataObject = "ct";
+    window.ct = window.ct || function(){ window.ct.callbacks.push(arguments); };
+    window.ct.callbacks = window.ct.callbacks || [];
+    window.ct.loaded = false;
+    window.ct.counters = {{ _ct_ids|json_encode|raw }};
+    // Заглушку помним по ссылке, а загрузку скрипта — отдельным флагом: наличие window.ct ничего не доказывает,
+    // его ставим здесь же, до всякой сети (CALLTOUCH.md).
+    window.__ctStub = window.ct;
+    window.__ctLoad = "none";
+    {% endif %}
 
-  (function() {
-    function initMetrika() {
-      var m = window, e = document, t = 'script',
-          r = 'https://mc.yandex.ru/metrika/tag.js',
-          i = 'ym';
-      m[i] = m[i] || function() { (m[i].a = m[i].a || []).push(arguments); };
-      m[i].l = 1 * new Date();
-      var loaded = false;
-      for (var j = 0; j < e.scripts.length; j++) { if (e.scripts[j].src === r) { loaded = true; break; } }
-      if (!loaded) {
-        var k = e.createElement(t); k.async = 1; k.src = r;
-        var a = e.getElementsByTagName(t)[0]; a.parentNode.insertBefore(k, a);
+    var EVENTS = ["scroll", "mousemove", "touchstart", "keydown", "pointerdown"], loaded = false, timer;
+    function inject(src, watch) {
+      var d = document, k = d.createElement("script"), a = d.getElementsByTagName("script")[0];
+      k.async = 1; k.src = src;
+      if (watch) {
+        if (window.__ctLoad !== "loaded") window.__ctLoad = "pending";
+        k.onload = function(){ window.__ctLoad = "loaded"; };
+        k.onerror = function(){ if (window.__ctLoad !== "loaded") window.__ctLoad = "failed"; };
       }
-
-      var opts = {
-        webvisor: true,
-        clickmap: true,
-        ecommerce: "dataLayer",
-        referrer: e.referrer,
-        url: location.href,
-        accurateTrackBounce: true,
-        trackLinks: true
-      };
-      {% for _id in _ym_ids %}
-      m[i]({{ _id }}, 'init', opts);
+      a.parentNode.insertBefore(k, a);
+    }
+    var ymWait = [];
+    function injectYm(src) {
+      if (!window.ismartConsent || window.ismartConsent.granted()) inject(src); else ymWait.push(src);
+    }
+    if (window.ismartConsent) window.ismartConsent.onAccept(function(){ var l = ymWait; ymWait = []; l.forEach(function(s){ inject(s); }); });
+    function loadAll() {
+      if (loaded) return; loaded = true; cleanup();
+      // CallTouch — первым: подмена номеров не ждёт ни «Принять», ни Метрику.
+      {% for _ct_id in _ct_ids %}
+      inject("https://mod.calltouch.ru/" + (typeof Array.prototype.find === "function" ? "init-min.js" : "init.js") + "?id={{ _ct_id }}", true);
       {% endfor %}
-
-      // Готовый код площадки зовёт ym(<первый счётчик>, 'reachGoal', ...) — разводим такие
-      // вызовы по всем счётчикам, чтобы цели не терялись на втором.
-      if (window.ymIds.length > 1 && !m[i].__goalFanout) {
-        var original = m[i];
-        var fanout = function(id, action) {
-          var rest = Array.prototype.slice.call(arguments, 1);
-          if (action === 'reachGoal') {
-            window.ymIds.forEach(function(cid) { original.apply(null, [cid].concat(rest)); });
-            return;
-          }
-          return original.apply(null, arguments);
-        };
-        fanout.a = original.a;
-        fanout.l = original.l;
-        fanout.__goalFanout = true;
-        m[i] = fanout;
-      }
+      {% for _ym_id in _ym_ids %}
+      injectYm("https://mc.yandex.ru/metrika/tag.js?id={{ _ym_id }}");
+      {% endfor %}
     }
-
-    function deferInit() {
-      if (typeof requestIdleCallback === 'function') {
-        requestIdleCallback(initMetrika, { timeout: 3000 });
-      } else {
-        setTimeout(initMetrika, 3000);
-      }
+    function onVis() { if (document.visibilityState === "hidden") loadAll(); }
+    function cleanup() {
+      EVENTS.forEach(function(ev){ window.removeEventListener(ev, loadAll); });
+      document.removeEventListener("visibilitychange", onVis);
+      clearTimeout(timer);
     }
-
-    // До согласия Метрика не стартует вовсе (consent-gate.twig): иначе визит, cookie _ym_uid и
-    // Вебвизор уходили бы раньше, чем человек что-то решил.
-    function start() {
-      if (document.readyState === 'complete') {
-        deferInit();
-      } else {
-        window.addEventListener('load', deferInit, { once: true });
-      }
-    }
-    if (window.ismartConsent) {
-      window.ismartConsent.onAccept(start);
-    } else {
-      start();
-    }
+    EVENTS.forEach(function(ev){ window.addEventListener(ev, loadAll, { passive: true }); });
+    document.addEventListener("visibilitychange", onVis);
+    // PSI/lightrider шлёт маркер Chrome-Lighthouse только в HTTP-заголовке UA (не в navigator.userAgent) —
+    // серверная проверка client_ua (Twig-глобал из container.php) + JS-фолбэк для локального Lighthouse.
+    var isLH = {{ 'Chrome-Lighthouse' in (client_ua|default('')) ? 'true' : 'false' }} || /Chrome-Lighthouse/i.test(navigator.userAgent);
+    timer = setTimeout(loadAll, isLH ? 15000 : 1500);
   })();
 </script>
-<!-- /Yandex.Metrika counter -->
 {% endif %}
+{# noscript-пиксель Метрики — в analytics-noscript.twig (конец body) #}

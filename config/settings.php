@@ -107,6 +107,8 @@ return $projectExtraSettings + [
     // в appConfig, по нему JS шлёт цели.
     'yandex_metric_id' => $yandex_metric_ids[0] ?? 0,
     'yandex_metric_ids' => $yandex_metric_ids,
+    // Счётчики CallTouch (CALLTOUCH_CLIENT_ID, через запятую) — analytics.twig грузит их отложенно.
+    'calltouch_counters' => array_values(array_filter(array_map('trim', explode(',', (string) (getenv('CALLTOUCH_CLIENT_ID') ?: ''))))),
     // Имя сайта: подставляется в <title>, если у страницы нет своего заголовка
     'site_name' => (string) ($projectConfig['site_name'] ?? ''),
     // slug в URL => page_id (из project.php)

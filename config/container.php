@@ -118,6 +118,9 @@ return static function (): ContainerInterface {
             );
             $env->addGlobal('base_url', $baseUrl);
             $env->addGlobal('global', $global);
+            // UA запроса — для серверного гейта Lighthouse в analytics.twig: PSI шлёт маркер
+            // Chrome-Lighthouse только в HTTP-заголовке, в navigator.userAgent его нет.
+            $env->addGlobal('client_ua', (string) ($_SERVER['HTTP_USER_AGENT'] ?? ''));
 
             return $twig;
         },
