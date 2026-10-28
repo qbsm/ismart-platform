@@ -4,9 +4,10 @@
    цифр хватает; каждая версия — со своим seq; события копятся пачками. #}
 <script>
 (function () {
-  // Маячок собирает данные о визите и номер до отправки — только после согласия на
-  // cookie (proposal 0025): стартует в момент «Принять» или сразу, если оно дано раньше.
-  // Тело не переиндентировано, чтобы не переписывать весь маячок.
+  // Маячок стартует сразу (слово владельца 28.10.2026: номер, введённый в форму, должен оказаться в приёмнике
+  // независимо от кнопки и панели cookie; для посетителя всё как обычно). До «Принять» идентификатор посетителя
+  // и метки первого визита живут только в памяти страницы — в localStorage они пишутся после согласия.
+  // Метрика и CallTouch — по-прежнему только после «Принять» (шлюз 0025). Тело не переиндентировано.
   function boot() {
   if (window.__ismartAttempt) return;
   var EP = 'https://api.ismart.pro/v1/attempt';
@@ -32,12 +33,17 @@
     while (s.length < 32) s += Math.floor(Math.random() * 16).toString(16);
     return s;
   }
+  // Хранить в браузере — только с согласием на cookie; до него — в памяти страницы, после «Принять» переносим.
+  function stored() { return !window.ismartConsent || window.ismartConsent.granted(); }
+  var memVisitor = '';
   function visitor() {
     try {
-      var v = localStorage.getItem('ismart_visitor');
-      if (!v) { v = hex(); localStorage.setItem('ismart_visitor', v); }
+      var v = localStorage.getItem('ismart_visitor') || memVisitor;
+      if (!v) v = hex();
+      memVisitor = v;
+      if (stored()) localStorage.setItem('ismart_visitor', v);
       return v;
-    } catch (e) { return ''; }
+    } catch (e) { return memVisitor || (memVisitor = hex()); }
   }
   /* Первое касание (api.ismart.pro proposal 0001, E18): откуда человек пришёл в первый раз. Метки первого визита
      живут 90 дней в localStorage и уходят с form_start и touch; приёмник кладёт их в заявку при сшивке сессии.
@@ -62,11 +68,17 @@
         landing: (location.protocol + '//' + location.host + location.pathname).slice(0, 300),
         at: Date.now()
       };
-      localStorage.setItem(FIRST_KEY, JSON.stringify(ft));
+      if (stored()) localStorage.setItem(FIRST_KEY, JSON.stringify(ft));
       return ft;
     } catch (e) { return null; }
   }
   var FIRST = firstTouch();
+  if (window.ismartConsent) window.ismartConsent.onAccept(function () {
+    try {
+      if (memVisitor && !localStorage.getItem('ismart_visitor')) localStorage.setItem('ismart_visitor', memVisitor);
+      if (FIRST && !localStorage.getItem(FIRST_KEY)) localStorage.setItem(FIRST_KEY, JSON.stringify(FIRST));
+    } catch (e) {}
+  });
   function digitsOf(v) { return String(v || '').replace(/\D+/g, ''); }
   function ready(d) { return d.length >= (/^[78]/.test(d) ? 11 : 10); }
   function cookie(name) {
@@ -553,6 +565,6 @@
     state.sessions.forEach(function (s) { if (active(s)) push(s, { kind: 'leave' }, true); });
   });
   }
-  if (window.ismartConsent) window.ismartConsent.onAccept(boot); else boot();
+  boot();
 })();
 </script>
