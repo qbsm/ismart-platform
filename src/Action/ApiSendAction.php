@@ -159,6 +159,10 @@ final class ApiSendAction
                     'request_id' => $requestId,
                 ]);
             }
+            if ($verdict['reason'] === 'empty') {
+                $observed = Arr::str($data, 'guard_observed');
+                $data['guard_observed'] = ($observed !== '' ? $observed . ', ' : '') . 'captcha:empty';
+            }
         }
 
         // Идемпотентность

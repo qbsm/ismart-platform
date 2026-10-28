@@ -59,11 +59,14 @@ final class CaptchaVerifierTest extends TestCase
         self::assertSame('failed', $verdict['reason']);
     }
 
-    public function testEmptyTokenRejected(): void
+    /**
+     * Виджет не отработал (блокировщик, долгая проверка) — вердикта нет, заявка проходит.
+     */
+    public function testEmptyTokenPasses(): void
     {
         $verdict = $this->verifier(new MockHttpClient())->verify('', '127.0.0.1', 'req');
 
-        self::assertFalse($verdict['passed']);
+        self::assertTrue($verdict['passed']);
         self::assertSame('empty', $verdict['reason']);
     }
 
