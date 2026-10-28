@@ -8,7 +8,7 @@
   <div class="container-sm">
     <div class="section__item">
       <div class="section__subitem desc-wrap">
-        <span class="desc">{{ cookiePanel.desc | default('Мы используем cookie и сервисы аналитики. Они включаются только с вашего согласия.') | raw }}</span>
+        <span class="desc">{{ cookiePanel.desc | default('Мы используем файлы cookie, чтобы сайт работал корректно, а также для аналитики. Нажимая «Принять», вы соглашаетесь на их использование.') | raw }}</span>
       </div>
       <div class="section__subitem button-wrap">
         <button type="button" class="{{ acceptClass }}">{{ cookiePanel.button.title | default('Принять') }}</button>
