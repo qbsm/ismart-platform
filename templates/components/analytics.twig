@@ -9,13 +9,16 @@
    На площадке без шлюза (ismartConsent нет) Метрика грузится по той же схеме сразу.
 
    ID Метрики — yandex_metric_ids (YANDEX_METRIC_ID через запятую) или yandex_metric_id; счётчики CallTouch —
-   calltouch_counters. Без обоих блок не выводится. Каждый счётчик Метрики — свой tag.js?id=: tag.js основного
+   calltouch_counters (или calltouch_client_id, через запятую). Без обоих блок не выводится. Каждый счётчик Метрики — свой tag.js?id=: tag.js основного
    init'ы дополнительных из общей очереди не поднимает. #}
 {% set _ym_ids = config.settings.yandex_metric_ids|default([]) %}
 {% if _ym_ids is empty and config.settings.yandex_metric_id|default(0) %}
   {% set _ym_ids = [config.settings.yandex_metric_id] %}
 {% endif %}
 {% set _ct_ids = config.settings.calltouch_counters|default([]) %}
+{% if _ct_ids is empty and config.settings.calltouch_client_id|default('') %}
+  {% set _ct_ids = config.settings.calltouch_client_id|split(',')|map(v => v|trim)|filter(v => v) %}
+{% endif %}
 {% if _ym_ids is not empty or _ct_ids is not empty %}
 <script>
   (function(){
