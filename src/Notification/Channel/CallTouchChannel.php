@@ -215,6 +215,16 @@ final class CallTouchChannel implements ChannelInterface
             }
         }
 
+        $clientIp = $this->clientIp($formData);
+        if ($clientIp !== '') {
+            $payload['clientIp'] = $clientIp;
+        }
+
+        $callUrl = $this->requestUrl($formData);
+        if ($callUrl !== '') {
+            $payload['callUrl'] = $callUrl;
+        }
+
         return $payload;
     }
 
@@ -241,15 +251,14 @@ final class CallTouchChannel implements ChannelInterface
         }
 
         // current_url — имя, под которым страницу заявки шлёт форма платформы.
-        $requestUrl = trim((string) (
-            $formData['request_url']
-            ?? $formData['requestUrl']
-            ?? $formData['page_url']
-            ?? $formData['current_url']
-            ?? ''
-        ));
+        $requestUrl = $this->requestUrl($formData);
         if ($requestUrl !== '') {
             $payload['requestUrl'] = $requestUrl;
+        }
+
+        $clientIp = $this->clientIp($formData);
+        if ($clientIp !== '') {
+            $payload['clientIp'] = $clientIp;
         }
 
         // Без sessionId источник заявки не определяется; пустым слать нельзя —
@@ -286,5 +295,30 @@ final class CallTouchChannel implements ChannelInterface
             ?? $_COOKIE['_ct_session_id']
             ?? ''
         );
+    }
+
+    /**
+     * @param array<string,mixed> $formData
+     */
+    private function requestUrl(array $formData): string
+    {
+        return trim((string) (
+            $formData['request_url']
+            ?? $formData['requestUrl']
+            ?? $formData['page_url']
+            ?? $formData['current_url']
+            ?? ''
+        ));
+    }
+
+    /**
+     * @param array<string,mixed> $formData
+     */
+    private function clientIp(array $formData): string
+    {
+        $ip = trim((string) ($formData['_ip'] ?? ''));
+        $public = filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE);
+
+        return $public === false ? '' : $ip;
     }
 }
