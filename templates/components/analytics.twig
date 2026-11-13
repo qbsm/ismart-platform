@@ -81,7 +81,7 @@
     }
     var ymWait = [];
     function injectYm(src) {
-      if (!window.ismartConsent || window.ismartConsent.granted()) inject(src); else ymWait.push(src);
+      if (!window.ismartConsent || window.ismartConsent.notice || window.ismartConsent.granted()) inject(src); else ymWait.push(src);
     }
     if (window.ismartConsent) window.ismartConsent.onAccept(function(){ var l = ymWait; ymWait = []; l.forEach(function(s){ inject(s); }); });
     function loadAll() {

@@ -22,6 +22,7 @@
   }
   function call(fn) { try { fn(); } catch (e) { /* чужой счётчик не должен ронять остальные */ } }
   window.ismartConsent = {
+    notice: {{ (global['cookie-panel'][lang_code].mode ?? '') == 'notice' ? 'true' : 'false' }},
     state: read,
     granted: function () { return read() === 'accepted'; },
     onAccept: function (fn) { if (read() === 'accepted') call(fn); else queue.push(fn); },
