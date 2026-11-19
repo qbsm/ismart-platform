@@ -1,5 +1,5 @@
 // Мелкие помощники — их импортируют тесты и код площадок. Сама проверка формы с выводом
-// ошибок — в form-rules (proposal 0025).
+// ошибок — в form-rules.
 import { MIN_PHONE_LENGTH_AFTER_CODE } from './constants.js';
 
 export function normalizePhone(value) {

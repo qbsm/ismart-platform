@@ -5,10 +5,7 @@ onReady(function () {
   const burgerIcon = document.getElementById('burgerIcon');
   const burgerMenu = document.getElementById('burgerMenu');
 
-  // Блокировка фона — overflow на html. Прежний вариант (body: fixed +
-  // top: -scrollY + scrollTo при закрытии) рассчитывал на то, что скролл-контейнер —
-  // body: при документ-скроллере он сдвигал страницу и уносил из вида липкую шапку,
-  // а сохранённая позиция сбрасывала скролл в начало.
+  // Блокировка фона — overflow на html.
   function lockScroll(lock) {
     document.documentElement.style.overflow = lock ? 'hidden' : '';
   }

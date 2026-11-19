@@ -341,7 +341,7 @@ export class CallbackForm {
       const digits = String(formData.get('phone_digits') || '');
       formData.set('phone', digits || normalizePhone(phoneField.value));
       // Показанное едет рядом и дальше приёмника не идёт: по расхождению с цифрами видно,
-      // что поле меняли мимо маски, — иначе про такое узнаёшь от заказчика.
+      // что поле меняли мимо маски.
       formData.set('phone_shown', phoneField.value);
       formData.delete('phone_digits');
     }
