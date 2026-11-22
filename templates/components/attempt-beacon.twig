@@ -372,8 +372,7 @@
     return ph.charAt(0) === '+' && (ph.replace(/\D+/g, '').length + (ph.match(/[_#]/g) || []).length) >= 6;
   }
   /* Фрейм самого CallTouch — единственное место, где можно взять поле без явных признаков:
-     у виджета Changan подписи нет вовсе (placeholder пустой, type=text, ни имени, ни маски),
-     и сессии там не заводились — восемь виджетных заявок за двое суток против двух сессий. */
+     у виджета подписи может не быть вовсе (placeholder пустой, type=text, ни имени, ни маски). */
   function ctFrame(frame) {
     try { return /calltouch/i.test(String(frame.id || frame.name || '')); } catch (e) { return false; }
   }
